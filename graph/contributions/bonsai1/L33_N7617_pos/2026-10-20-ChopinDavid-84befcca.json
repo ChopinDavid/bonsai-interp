@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-84befcca",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N7617+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:14:21+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N7617_pos/2026-10-20-ChopinDavid-84befcca.tests.json"
+ },
+ "label": "Fires on the word immediately before a ' for' that is the locked-in next token of a collocation or institutional name (cause for concern, Department for X, take no for an answer, dollar for dollar, strapped for cash, pound for pound, paid for by, cares for), i.e. a next-token predictor of a near-certain collocational ' for' that still fires when the collocation is broken ('cause of concern'), and stays quiet where 'for' is only likely rather than locked in (thank you for, waiting for, keys for me) and on the same words outside the collocation (verb cause, US Department of).",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N7617_pos/2026-10-20-ChopinDavid-84befcca.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.023,
+     "peak": " cause"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.926,
+     "peak": " cause"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.527,
+     "peak": " Department"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.596,
+     "peak": " no"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.705,
+     "peak": " dollar"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.529,
+     "peak": " strapped"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.654,
+     "peak": " pound"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.217,
+     "peak": " paid"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.0,
+     "peak": " death"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": " agent"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": " expensive"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": "Param"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": "ter"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " asked"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.625,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Collocation-locked 'for' predicted",
+ "unit_kind": "sparse feature",
+ "confidence": 0.7,
+ "notes": "Probes (fraction of max 568): 'no cause for concern' 0.969; 'a cause of concern' 0.629 (fires though 'of' follows: reads the EXPECTED for); 'take no for an answer' 0.778; 'dollar for dollar' 0.542; 'UK Department for Education' 0.419; 'strapped for cash' 0.401; 'pound for pound' 0.322. Same words outside the collocation: verb 'can cause' 0.0, 'US Department of' 0.045, 'the dollar fell' 0.003, 'strapped the suitcase' 0.003. Merely-likely 'for' is QUIET: 'thank you for' 0.003, 'friends are for' 0.031, 'waiting for' 0.0, 'keys for me' 0.004. H1 (any confident for-prediction) and H3 (lexical ' cause') refuted; H2 (locked collocational for) wins. Corpus top-32 peaks: ' cause' x7, ' Department' x4, ' paid' x3, ' dollar' x2, ' Society' x2, ' pound', ' no', ' cares', ' strapped', all before a locked 'for' or an expected one ('pound after pound' 468, 'cause of concern' 452). Probes run ~0.5x corpus for the same word (Department 0.419 vs 0.887, strapped 0.401 vs 0.75, pound 0.322 vs 0.82); expectations come from probes. Logit effect promotes only ' for'/'For'/'-for'/' pour'/' fur'/' dlya'; density 0.046% >0.1max, 100% +x+, L33/36: sparse next-token feature. Opposite pole weak (max 128): 'especialmente para', 'market for', same pre-for slot, reversed sign. Caveats: fixed/free may be a confidence threshold in the 1-bit model; F8 'paid for by' has corpus 440, no probe; untested: 'Society for', 'grounds for', 'eye for an eye'.",
+ "selection": "random draw"
+}

@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-77c51da4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N1472-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:16:01+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N1472_neg/2026-10-20-ChopinDavid-77c51da4.tests.json"
+ },
+ "label": "Fires on the token that commits a clause to a present person's or group's standing background: prior tenure, roles or residence cast as present-relevant history (has/have worked, lived, served; previously worked; spent N years at; remember X from his time; familiar from my previous job) or a standing tie to another person (relationship to/with, a grandparent who), but not when the same verb narrates a dated event with no present frame, not on 'experience' as something a person brings to a role, and not on relationships between abstractions.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N1472_neg/2026-10-20-ChopinDavid-77c51da4.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.659,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.95,
+     "peak": " lived"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.915,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.381,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.338,
+     "peak": " remember"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.459,
+     "peak": " similar"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.341,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.587,
+     "peak": " worked"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.018,
+     "peak": " accounts"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.071,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.045,
+     "peak": " relationship"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": " twenty"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.064,
+     "peak": " supporters"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.151,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.523,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "person's background and ties",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 13.3): 'volunteers have lived in the neighbourhood' 1.11 (' lived'); Arabic 'ممن لهم خبرة طويلة' 0.95; 'your relationship to the applicant' 0.81 (' to'); 'previously worked at two London agencies' 0.64 (' worked'); 'Before joining us, Tom spent eight years at' 0.60 (' spent'); 'relationship with your supervisor' 0.56 (' with'); 'grandparent who grew up abroad' 0.49 ('parent'); 'have served on similar committees before' 0.47 (peak ' similar', not ' served'; fire 6 keeps it); 'Fans may remember Davies from' 0.46 (peak ' remember'; corpus 'remember Eck from' peaked ' from' 0.81; either carries fire 5); 'familiar with the software from my previous job' 0.38 (' my'). Lows: 'After college, Maria worked for six years as a paralegal' 0.02 vs corpus 'pleased to welcome Laurie Kirkland as Director... Laurie worked for several years' 0.98: same tense; the present frame is the difference; 'brings two decades of experience' 0.03 (vs Arabic 'have long experience' 0.95); 'relationship between inflation and unemployment' 0.02; 'generator worked perfectly' 0.01; 'have agreed to meet next Thursday' 0.005; 'company has operated since 1985' 0.18 (organisation history, weak offshoot). The peak lands on whichever token commits the clause (max over tokens). Corpus 'Between them the trio have' (0.89) fired predictively on ' have'; no near miss uses that frame. The + pole peaks on He/him/She; the logit effect promotes ' previously', ' recently', ' previous'.",
+ "selection": "random draw"
+}

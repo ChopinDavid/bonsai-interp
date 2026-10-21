@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-88425b41",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3495+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:16:04+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N3495_pos/2026-10-20-ChopinDavid-88425b41.tests.json"
+ },
+ "label": "The standalone Arabic shadda token 'ّ' when it geminates a short bare-consonant stem piece of a high-frequency word — strongest after the ح-stems (حقّ, حدّ, حدّث, حجّة) and the particles إنّ/كلّ/أمّا, weak after the probed stems مرّ/دقّ/سجّ (0.05-0.24) — with the bare ح-stem pieces ' حق' and ' الح'+'د' also firing (0.24/0.72) without any shadda.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N3495_pos/2026-10-20-ChopinDavid-88425b41.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.668,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.857,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.928,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.547,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.516,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.434,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.624,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.432,
+     "peak": "ّ"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.066,
+     "peak": " حق"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": "صة"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": "ين"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.031,
+     "peak": "ئ"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.116,
+     "peak": " التج"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.028,
+     "peak": "ر"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.071,
+     "peak": "ّ"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.071,
+     "peak": "ّ"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.586,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "Shadda after short Arabic stems",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Probes (fraction of max 5.97): shadda after ' حق' (بحقّه) 0.888; bare ' الح'+'د' (الحد, no shadda) 0.723 on 'د'; two-shadda probe كلّ…وأيّ (' كل'+'ّ', ' وأ'+'ي'+'ّ') 0.62, peak unattributed; إنّ 0.408; bare ' حق' 0.236; سجّادة (' س'+'ج'+'ّ') 0.242; دقّ 0.173; مرّة (' مر'+'ّ') 0.05; vocalized الطَّالِبُ 0.026; diacritics without shadda 0.033; plain prose 0.046; single-token الحاج 0.048; English/Spanish floors < 0.03. Corpus peaks: حقّ 1.0, الشقّ 0.92, أمّا 0.81 (line-initial), حجّة 0.80, الحمّام 0.77, بِالْحَقِّ 0.77 (on 'ق'), حدّث 0.77, الزخّار 0.72, حدَّ (' حد'+'َ'+'ّ') 0.72, الأمّة 0.69. So 'any shadda' is refuted (مرّة, دقّ < 0.2), a pure ح-stem reading is incomplete (كلّ, إنّ, أمّا, الشقّ fire), and the vowel-mark condition is secondary (حدَّ fires after a fatha). The response is set by the preceding stem piece: a lexical, partly mapped set of frequent short stems. Tokenizer: ' كل'+'ّ', ' إن'+'ّ', ' أم'+'ّ'+'ا', ' ب'+'حق'+'ّ', ' في'+' حق'+'ّ', ' الح'+'د'+'ّ', ' حد'+'ّ'+'ث', ' ح'+'ج'+'ّ'+'ة'; ' الحق' is one token (الحقّ unprobed, not used); ' حق', ' كل', ' أي', ' إن', ' أما', ' العم' are single tokens; near misses avoid ' الح'+X, ' المح' and ' الج'+'د'. Offshoots: Latin pieces 'rsa' (U|rsa 0.707) and 'stand' (In|stand 0.528), excluded. Opposite pole (max 15.3, dominant): Spanish continuation piece after an accented vowel (á|r, Cá|d, F|ó). Caveats: layer 6, logit effect incoherent; + pole is the weak side of an orthography axis.",
+ "selection": "random draw"
+}

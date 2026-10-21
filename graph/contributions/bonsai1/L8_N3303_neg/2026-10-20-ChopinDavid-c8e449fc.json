@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-c8e449fc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3303-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:15:26+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N3303_neg/2026-10-20-ChopinDavid-c8e449fc.tests.json"
+ },
+ "label": "A continuation piece inside a tokenizer-split regional place name (river, department, county, province, town) in English prose, usually the second piece, with a strong lexical skew to French/British geography: Lo|ire far above all else, then T|ynes|ide/Ty|ne, B|ante|ay Meanchey, Aberde|ens|hire, Alic|ante; single-token places in the same frames sit at roughly 0.1-0.3, and split person/company/fictional names or the same pieces inside common nouns are near zero.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N3303_neg/2026-10-20-ChopinDavid-c8e449fc.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.498,
+     "peak": "ire"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.537,
+     "peak": "ir"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.839,
+     "peak": "ynes"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.58,
+     "peak": "ne"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.491,
+     "peak": "ante"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.706,
+     "peak": "ens"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.248,
+     "peak": "ante"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.679,
+     "peak": "ire"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": " angl"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.104,
+     "peak": " Brittany"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.098,
+     "peak": " Leeds"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.153,
+     "peak": " Clyde"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.081,
+     "peak": " Devon"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.048,
+     "peak": " Punjab"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.05,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": "ante"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.629,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Split regional toponym (Loire)",
+ "unit_kind": "sparse feature",
+ "confidence": 0.45,
+ "notes": "Probes (fraction of max 6.66): Loire 0.926 ('ire'); Alicante 0.313 ('ante'); Shropshire 0.23 ('rop'); Mandalay 0.214 (' Mandal'); Oaxaca 0.137; Dubrovnik 0.132 (' Dub'); Wollongong 0.095; Eire 0.065 (' E'). Same pieces outside places: grimoire 0.03, vigilante 0.012, Infante 0.076. Split non-place names: Dostoevsky 0.022, Novartis 0.043, Narnia 0.011. Floors 0.012-0.03. Single-token places: Cambridge/Durham/Kent/Hampshire 0.13; Lyon in a 'capital of its department' frame 0.295 (hot near miss; that frame is avoided). Corpus top beyond Loire/Loir (1.0, 0.80, 0.79): Tyneside 0.74 x2, Tyne 0.74, Banteay 0.68 x2, Aberdeenshire 0.61; all but Loire sat in regionally primed text (Newcastle, Wallsend/Durham, Kbal Spean, Grampian/Dee), so unprobed fire names get one regional cue before them, matched in the near misses (Leeds, Glasgow, French, Royal Cornwall Show, India's). Reading: place recognition gated on a split name (single-token Kent/Hampshire do not fire), heavily lexical; bare pieces are not the trigger (E|ire 0.065 vs Lo|ire 0.926; vigil|ante 0.012); the peak can be the first piece (Mandal, Dub, E). Caveats: diffuse (0.2% of tokens >0.1 max; off-pattern ' have', 發生, 在 at 0.66-0.68, so ' have' is kept out of the fire set); only Loire and Alicante are probe-verified configurations; within-class generalization is weak (Oaxaca, Dubrovnik, Wollongong, Eire <0.14), so the unprobed single-letter-head Dordogne was dropped for a second Loire frame. All triggers tokenizer-verified mid-sentence; no sentence-initial capitalized split in either set. + pole unrelated: Chinese modal 会/會 (max 24.25, 100% +x+).",
+ "selection": "random draw"
+}

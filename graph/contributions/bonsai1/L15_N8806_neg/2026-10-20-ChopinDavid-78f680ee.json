@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-78f680ee",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N8806-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:15:05+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N8806_neg/2026-10-20-ChopinDavid-78f680ee.tests.json"
+ },
+ "label": "The name of the host venue when an official summit, conference, or tournament is identified by where it was held (targets agreed at Kyoto, talks at Copenhagen, the Masters at Augusta), as opposed to the same city named as a mere place or the same event described without its venue.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N8806_neg/2026-10-20-ChopinDavid-78f680ee.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.328,
+     "peak": " Kyoto"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.208,
+     "peak": " interim"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.05,
+     "peak": " peace"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.346,
+     "peak": "ton"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.039,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.31,
+     "peak": " Glasgow"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.201,
+     "peak": " Rey"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.085,
+     "peak": "ations"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.06,
+     "peak": " binding"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.102,
+     "peak": " interim"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": " sixth"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.169,
+     "peak": " conference"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.079,
+     "peak": " war"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": " Rey"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.22,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.205,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "event named by venue",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Probes (frac of max 11.19): 'climate talks at Copenhagen' 0.567 (peak ' Copenhagen'), matching corpus maxima 'vice captains at Gl|eneagles' and 'meetings at Canc|un' (1.00). In the Cancun snippet 'at the Copenhagen summit' and bare 'Kyoto' did not peak, so only event-noun + at + venue is measured high; six fires use it, Kyoto (participle + at) and Augusta (object noun + at, cf. Gleneagles) probe the broader label. Corpus forms lost 40-80% as single sentences: venue 1.00->0.57; ' Act' 0.88->0.257 (Inflation Reduction Act, peak ' Act'; Clean Water Act 0.197, peak ' Clean', vs no-name legislative 0.209); delegate-to-the 0.99->0.202 (peak ' Chicago'); attended-the 0.78->0.428 (peak ' the'). Offshoots: 'attended the queen' 0.428, bit.ly code 0.388, PMC digits 0.387, '115 Stat.' 0.217. Rejected: H1 ' Act' (0.20-0.26), H3 topic ('clean water law' 0.091); Council of Trent 0.147, Lusitania 0.129, Shake Shack 0.011, non-statute 'Act'/'act' 0.02-0.04, floors ~0.03. + pole: generic temporal/process progression (next harvest, aged, takes hold, new census). Pieces: ' Kyoto', ' Oslo', ' Dayton', ' Glasgow', ' Geneva', ' Augusta' single; ' Bret|ton| Woods', ' Rey|k|jav|ik' multi. Caveats: venue claim rests on one fresh probe; density 0.40% >0.1 max, so venue-free diplomatic prose may sit 0.1-0.2; quiet 4-6 test a city as plain place (one after 'at'); near misses avoid 'delegate(s) to the' and named-Treaty forms, which can fire alone.",
+ "selection": "random draw"
+}

@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-7a4a6102",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N7052-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:14:35+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N7052_neg/2026-10-20-ChopinDavid-7a4a6102.tests.json"
+ },
+ "label": "Final piece of a premodified content noun phrase (adjective/noun compound, possessive + noun, or multi-piece name) that has just opened a clause after a lead-in, as subject, small-clause subject after 'makes', or copula complement after 'that's/it's', in punchy editorial or marketing copy, before the predicate arrives; the same NP as an object, a pronoun subject, or a bare 'the X of Y' subject stays quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N7052_neg/2026-10-20-ChopinDavid-7a4a6102.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.418,
+     "peak": " sushi"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.201,
+     "peak": " photography"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.372,
+     "peak": " boots"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.085,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.56,
+     "peak": " service"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.243,
+     "peak": "ine"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.514,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.274,
+     "peak": " recognition"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.064,
+     "peak": " sushi"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " much"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.051,
+     "peak": " mud"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " consulting"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.049,
+     "peak": " service"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.096,
+     "peak": "ine"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.055,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.216,
+     "peak": " passwords"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.323,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Clause-opening compound NP head",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Probes split on left context up to the NP head. HIGH: 'lab meat makes Kobe beef' 0.73; 'serum, your skin' 0.51; 'Folks, that's building management' 0.50; 'it's Azeroth' 0.35 ('th'); 'experiments your students' 0.24; 'Make no mistake, genetic engineering' 0.21. LOW, same words as objects: 'went into genetic engineering' 0.016, 'ordered Kobe beef' 0.016, 'gentle on your skin' 0.094, 'award-winning skin jelly' 0.081: compound-anywhere and register-alone fail. Position alone: 'Little buddy, you are' 0.064 (peak ' best'), bare 'Honestly, fraud is' 0.15, 'the future of farming' 0.083, 'the Treaty of Paris' 0.046; dry sentence-initial subjects 0.02-0.09 (no lead-in confound; corpus 'How the Jesus Phone was' 0.73 of max). Density 0.28% >0.1max keeps a register qualifier; Q3 tests it. Pronoun exclusion rests on one probe vs corpus #3 'Caves, you are the best!' 0.88 of max, so Q1 puts 'you' right after a fronted-adverbial comma; Q4/Q5 use they/we; Q0/Q2/Q6 are imperatives (no subject NP) testing object position alone. Lead-in commas never peaked ('serum,' -> ' skin'). Tokens: all eight fire heads plus ' Tokyo' ' fingerprint' ' passwords' ' agency' ' stretches' are single; ' Tat','oo','ine' (peak on 'ine', or on 'ley'/',' of 'Mos Eis|ley'); ' cant','ina' sits in both F5 and Q5. - pole logit effect promotes ' awaits' ' become' ' surely': predicate-next. + pole is the mirror: clause-final idiom completions ('look no further' 0.056 here).",
+ "selection": "random draw"
+}

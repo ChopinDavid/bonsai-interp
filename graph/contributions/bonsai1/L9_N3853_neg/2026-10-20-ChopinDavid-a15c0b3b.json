@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-a15c0b3b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N3853-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:14:04+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N3853_neg/2026-10-20-ChopinDavid-a15c0b3b.tests.json"
+ },
+ "label": "The word that completes the formal name of a physical- or natural-science institution, journal or field, usually the discipline name itself (Journal of ⟦Physics⟧, Department of ⟦Physics⟧, American Physical ⟦Society⟧, physical ⟦scientists⟧, Conservation ⟦Biology⟧), not the same word used as a casual school subject and not mathematics or a humanities discipline in the same frame.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N3853_neg/2026-10-20-ChopinDavid-a15c0b3b.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.597,
+     "peak": " Physics"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.743,
+     "peak": " Teachers"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.197,
+     "peak": " Physics"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.386,
+     "peak": " Physics"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.526,
+     "peak": " Society"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.117,
+     "peak": " sciences"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.125,
+     "peak": " science"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.089,
+     "peak": " survey"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.056,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.043,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.029,
+     "peak": " she"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " Society"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.082,
+     "peak": " physics"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.038,
+     "peak": " student"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.082,
+     "peak": " Algebra"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.291,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "physical/natural-science institution names",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Probes (fraction of max 10.06): 'American Journal of Physics' 1.07 (' Physics'), 'Nature Physics' 0.73, 'American Physical Society' 0.73 (peak ' Society', no physics token), electron mass '9.11 x 10^-31 kg' 0.67 (peak on digit '1'), 'physical science concepts' 0.56, 'physical scientists' 0.56, 'journal Conservation Biology' 0.40. LOW: casual 'hated physics' 0.10, course title 'Introduction to Physics' 0.17, 'favorite subject was science' 0.18, 'Department of Mathematics' 0.06, 'teaches chemistry' 0.08, 'science fiction' 0.06, 'physical exam' 0.07, floors 0.03-0.05. Bare token (H1) refuted: the same word drops to 0.10-0.17 outside a name/field frame. Frame alone is not enough: 'Department of Mathematics' is at floor, so the completing word must name a natural/physical science; the + pole takes the mathematical side (' vector', ' math', ' Calculate'). Fires copy the high frames with fresh content (Journal/Association/Department/Institute of Physics, American Physical Society, physical science(s), a natural-science journal); years were dropped from F3/F5 so peaks land on the claimed token, because the pole spikes on digits in science text (corpus '9.1⟦0⟧939' 1.00, 'April 2⟦2⟧' 0.79, probe 0.67), a known offshoot both sets avoid. Near misses keep the register and swap the discipline for law, economics, history, humanities or algebra, or keep the word in its school-subject or bodily sense; no sentence contains a digit. Caveat: ' Society'/' Association' may fire after any learned-society adjective; N2 and N4 test exactly that.",
+ "selection": "random draw"
+}

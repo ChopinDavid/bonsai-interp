@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-3d01a632",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N7150+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:14:49+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N7150_pos/2026-10-20-ChopinDavid-3d01a632.tests.json"
+ },
+ "label": "Fires at the ' of' that introduces the name or kind of a formal written instrument of settlement or decree ('Treaty / Edict / Peace / Pact of ___', also lowercase 'treaty of alliance'), and comparably (0.53) on ' the' after 'signed the' when such an instrument is imminent, but not at the same ' of' that names battles, sieges, assemblies, titles, institutions, polities or unilateral declarations.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N7150_pos/2026-10-20-ChopinDavid-3d01a632.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.714,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.649,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.513,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.647,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.921,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.669,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.869,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.855,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.298,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.161,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.234,
+     "peak": " Ver"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.166,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.06,
+     "peak": " Charles"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.105,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.125,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.512,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.692,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "treaty/edict-name 'of' anticipator",
+ "unit_kind": "contextual",
+ "confidence": 0.72,
+ "notes": "Probes (frac of max 60.25, peak ' of' unless noted): Treaty of Paris 0.751, Edict of Nantes 0.748, Versailles (late) 0.595, Pact of Steel 0.461, Peace of Augsburg 0.432, 'treaty of cooperation' 0.360, Act of Union 0.359, partitive 'Each treaty of the series' 0.275, corpus 'treaty of alliance' 0.71: no proper name needed. Low: Council of Trent 0.144, Congress of Vienna 0.139, Declaration of Independence 0.104, Duke of Wellington 0.068, University of Chicago 0.014, far-domain 0.03. H2 (lexeme) out: Edict ties Treaty; H3 (toponym predictor) out: Duke/University/Congress have toponyms yet <= 0.14. Settlement-imminent ' the': 'signed the agreement at Westphalia' 0.529, 'the treaty was signed in Breda' 0.306, so such prose without 'X of' is NOT a safe near miss; the contrast is 'X of Name' with event/assembly/title/institution/polity nouns, as the logit direction predicts (suppresses ' Conference', ' meeting', ' victory'). Battle of Waterloo's 0.273 peaked off-trigger (' Hundred'); its on-trigger value is unknown (<0.273); near misses avoid 'signed/ended/by the' lead-ins. Siege, Kingdom, Bank are unprobed; only 232 corpus tokens exceed 0.3*max, so common 'Kingdom/Battle of' rarely fires. Arbroath is the one boundary item (document noun + toponym in the 'in the X of' slot; its analog predicted abstract 'Independence'). Tokens: ' of' is its own; ' Edict' -> ' Ed'+'ict'; other head nouns single. - pole: agent/temporal ' by'/' after', same register.",
+ "selection": "random draw"
+}

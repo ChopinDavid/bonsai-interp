@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-c5d9767f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N879+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:15:32+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N879_pos/2026-10-20-ChopinDavid-c5d9767f.tests.json"
+ },
+ "label": "Fires on a named sugar read as a dietary sweetener or nutrient — fructose (token 'uctose') near max, agave at about half, sucrose about a third, glucose itself not registering — and only weakly on the same word as a chemical (~0.25) or a proper name (~0.16), or on bare 'sugar' in a single sentence (~0.18, rising to ~0.5 inside long sugar-focused text).",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N879_pos/2026-10-20-ChopinDavid-c5d9767f.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.542,
+     "peak": "uctose"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.574,
+     "peak": "uctose"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.492,
+     "peak": "uctose"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.891,
+     "peak": "uctose"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.571,
+     "peak": "uctose"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.675,
+     "peak": "uctose"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.843,
+     "peak": "uctose"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.368,
+     "peak": "ave"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " fiber"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " down"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.242,
+     "peak": " honey"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.111,
+     "peak": " sugar"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": " almonds"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.065,
+     "peak": "uctose"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.137,
+     "peak": "uctose"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.573,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "fructose as dietary sugar",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Probes (of 23.4 max): fructose in a liver/soda sentence 0.888 (peak 'uctose'); hyphenated high-fructose corn syrup fed to bees 0.447 (the only hyphenated corpus hit, 0.48, is also a bee passage and the 0.98 health-prose hit is unhyphenated: '-fr' and context are confounded, so F2 keeps the hyphen in diet prose); fructose as a chemistry-fair ring structure 0.25; a mare named Fructose 0.158: one token, 5.6x range by context. Siblings: agave as sweetener 0.44 ('ave'); 'table sugar is sucrose' 0.309 ('rose'); glucose + sweetener 0.275 (peak 'ener', not glucose); added sugar 0.175 (peak ' from'); lactose 0.022; honey/maple 0.073; starch/fiber 0.067; Sugar nickname 0.005. Corpus ' sugar' is 7/32 top peaks (Added sugar 0.50, Sug|ars 0.54), all inside long sugar documents. Sports-scoring side-feature (corpus 0.43-0.58) fell to 0.076/0.102 in single sentences; kept out of both sets. H1 (lexical) refuted by agave 0.44 and that range. Predictive hint (' simple' before 'sugars' 0.49 in corpus): Q1 deliberately keeps a 'loaded with' slot predicting 'sugar'. Tokenizer: ' fr'/' Fr'/'-fr' + 'uctose' in every position used; ' ag'+'ave'. Fire: 7 fructose sentences in diet/metabolism prose + 1 agave sweetener. Near misses: 4 nutrition items with no named sugar, honey as calories, bare 'sugar' off the corpus frame, band Fructose, single-crystal fructose. - pole (U-boats, multiple sclerosis) unrelated: polysemantic; density 0.017% > 0.1 max.",
+ "selection": "random draw"
+}

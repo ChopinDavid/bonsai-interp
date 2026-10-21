@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-a712db27",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3613+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:14:24+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N3613_pos/2026-10-20-ChopinDavid-a712db27.tests.json"
+ },
+ "label": "A linker token (' where' strongest, ' which' in 'in/at which', German ' wo', Russian ' для'; ' of' and ' to' moderate; ' for' weak) immediately after a noun naming a physical place, strongest for generic place nouns (place, spot, haven, refuge, space, Ort) and weaker for specific concrete ones (field, garden, venue, market), opening the phrase that says what happens there or what the place is for; the same ' where' after an abstract, temporal or institutional noun, interrogative ' where', and place noun + ' that' or + verb stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N3613_pos/2026-10-20-ChopinDavid-a712db27.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.537,
+     "peak": " where"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.444,
+     "peak": " where"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.346,
+     "peak": " which"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.752,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.886,
+     "peak": " where"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.533,
+     "peak": " where"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.571,
+     "peak": " place"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.788,
+     "peak": " wo"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " them"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.106,
+     "peak": " supplied"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.131,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.061,
+     "peak": " would"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.047,
+     "peak": " wo"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.554,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "place-noun + where/of/to",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Probes (fraction of max 15.94): place noun + ' where' 0.692 (place), 0.705 (sanctuary); German 'Ort, wo' 0.766; 'spot in which' 0.684 (peak ' which'); 'haven of' 0.612; 'area to' 0.458; 'the market, where' 0.415; 'venue for' 0.338. Corpus: 'A place where' 1.0 (document-initial; mid-sentence items run ~0.7), 'a place of peace' 0.78, 'A haven to learn' 0.75, 'site at which' 0.73, 'safe areas for' 0.71, Russian 'места для' 0.81. The word alone is not the unit: complement ' where' 0.099 ('asked me where') and 0.103 ('decided where to'), peaks elsewhere; ' where' after abstract nouns 0.022 ('a moment where'), 0.012 ('cases where'); institutional 'a company where' 0.108. The place noun alone is not the unit: 'a cabin that' 0.061, motion frame 'moved the workshop to' 0.053, 'lies at the origin' 0.028, floors <= 0.01. Gradient: generic place nouns 0.61-0.77 vs concrete nouns weaker ('market, where' 0.415, 'venue for' 0.338); F2/F3/F6 are the deliberate concrete-noun tier. The - pole is the mirror: locative preposition after a verb of position/motion ('origin at', 'moved his studio to', 'a point at which'), i.e. place still to come. Caveats: ' for' is weak (0.338) and not used as a fire; 'point' is read spatially by the - pole, so the abstract-noun near miss uses temporal 'a week where'; N4 'reached the inn and asked for' puts ' inn' three tokens before ' for' (cf. 'calls for' 0.004); post-place ' with'/' by' untested and avoided; N8 German ', wo' unprobed. Density 0.22% above 0.1 max; logit list is noise at L6.",
+ "selection": "random draw"
+}

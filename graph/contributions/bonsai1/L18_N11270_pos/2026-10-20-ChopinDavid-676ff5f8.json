@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-ChopinDavid-676ff5f8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N11270+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:14:58+00:00",
+ "recipe": {
+  "toolchain_commit": "cdb940b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N11270_pos/2026-10-20-ChopinDavid-676ff5f8.tests.json"
+ },
+ "label": "A vehicle, mount, carried-gear or locomotion token (truck, bus, horse, backpack, walk, drive) whose preceding context places it at rest or in place - parked, tied up, listed as a facility or amenity, used as an object, moving about within a confined spot - rather than travelling along a route toward a destination; the - pole takes the en-route / along / escort reading of the same words.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N11270_pos/2026-10-20-ChopinDavid-676ff5f8.tests.json",
+   "prereg_commit": "cdb940b",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.724,
+     "peak": " truck"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.426,
+     "peak": " bus"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.082,
+     "peak": " horse"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.714,
+     "peak": " backpack"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.219,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.574,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.637,
+     "peak": " drive"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.555,
+     "peak": " truck"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.128,
+     "peak": " convoy"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.069,
+     "peak": " across"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.207,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": " guide"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.037,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.046,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.072,
+     "peak": " road"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.059,
+     "peak": " mile"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.565,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "cdb940b",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "vehicle at rest, not en route",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 17.75) split on the frame BEFORE the token, not the token. Matched pairs: ' truck' 0.475 in a facility list ('car park, petrol station and a truck wash') and 0.209 in 'keys in the truck parked' vs 0.067 after 'rumbling along the dusty highway'; ' backpack' 0.498 used as a pillow vs 0.165 'hikers shouldered their backpacks and set off'; ' walk' 0.608 'chairs surrounded me ... had to walk around' vs ' walking' 0.021 'down the dark street'. Also 'tied his horse to the post' 0.403; 'aircraft to park ... service vehicles' 0.400 (peak ' vehicles'); 'parked the van' 0.326; 'with bus transportation' 0.474 vs 'patrol cars roared alongside, escorting' 0.118. Meaning without a locomotion token does not fire: 'paced around the kitchen' 0.011. - pole mirror: ' along' x4, ' escort', ' driving', 'had to walk the 2 km' (-0.73 of -max); logits suppress ' journey', ' along', ' route', promote ' static', ' vacant'. Fire items copy the 0.40-0.61 configs with the at-rest cue in LEFT context (list with 'overnight parking', 'and bus service', dismounted horse, backpack sat on, cramped-kitchen walk, 'parked a fuel truck', parking talk then 'just drive' = corpus 0.74, 'parked ... stood an old truck'). Near misses keep the same single tokens (tokenizer-verified) and put a route cue (along, across the valley, into the climb, into the journey, mile after mile) BEFORE the token. Caveats: 'means of transportation' with no left context scored 0.12, so the cue must precede the noun; peaks smear onto the next token; half the corpus top-16 is non-English, tested in English only.",
+ "selection": "random draw"
+}
