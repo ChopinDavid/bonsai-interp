@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-77c51da4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N1472-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N1472",
+   "pole": "-",
+   "label": "Fires on the token that commits a clause to a present person's or group's standing background: prior tenure, roles or residence cast as present-relevant history (has/have worked, lived, served; previously worked; spent N years at; remember X from his time; familiar from my previous job) or a standing tie to another person (relationship to/with, a grandparent who), but not when the same verb narrates a dated event with no present frame, not on 'experience' as something a person brings to a role, and not on relationships between abstractions.",
+   "fire": [
+    "Our new treasurer, Hannah Price, has previously worked as an auditor for two regional banks.",
+    "Nearly half of the shop's regular customers have lived on this street for more than thirty years.",
+    "On the form, describe your relationship to the patient and whether you hold power of attorney.",
+    "Mr. Okafor, who takes over as head in September, spent eleven years at a comprehensive school in Leeds.",
+    "Older supporters may still remember Keane from his two seasons in goal for the reserves.",
+    "Both of the incoming trustees have served on similar boards elsewhere in the health service.",
+    "Since the wedding, how would you describe your relationship with your father-in-law?",
+    "Several of the senior nurses have worked alongside Dr. Reyes at two other hospitals."
+   ],
+   "quiet": [
+    "Last Tuesday, Hannah Price worked a twelve-hour shift reconciling the branch's accounts.",
+    "Most of the regulars at the corner shop have agreed to boycott the street market next week.",
+    "In the chart notes, record the relationship between the dosage and the patient's reported symptoms.",
+    "During the assembly, Mr. Okafor spent twenty minutes at the lectern reading out the prize list.",
+    "At the charity match next Saturday, Keane will greet the older supporters at the gate.",
+    "The two incoming trustees have asked for the hospital's accounts to be published before Friday's vote.",
+    "After the honeymoon, how often did you end up having dinner with your father-in-law?",
+    "Dr. Reyes says the senior nurses bring decades of experience to the new cardiac unit."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire >= 0.3: fires 1-4, 7 and 8 copy configurations that scored 0.56-1.11 (previously worked, have lived, relationship to/with, spent N years at, have worked); the soft ones are fire 6 (have served on similar boards, model peak ' similar' 0.47) and fire 5 (may remember Keane from, 0.46), each ~0.3-0.45; median fire ~0.55. Near misses mostly <= 0.1; the risks are NM4 (' spent' + minutes at a single event, ~0.15-0.25), NM6 ('incoming trustees have' before 'asked', could fire predictively ~0.1-0.2), NM1 (dated simple-past 'worked', rests on the one Maria probe) and NM7 (accompaniment 'dinner with your father-in-law', ~0.1). Expect 0-1 near miss >= 0.3; AUROC ~0.93.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "person's background and ties",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 13.3): 'volunteers have lived in the neighbourhood' 1.11 (' lived'); Arabic 'ممن لهم خبرة طويلة' 0.95; 'your relationship to the applicant' 0.81 (' to'); 'previously worked at two London agencies' 0.64 (' worked'); 'Before joining us, Tom spent eight years at' 0.60 (' spent'); 'relationship with your supervisor' 0.56 (' with'); 'grandparent who grew up abroad' 0.49 ('parent'); 'have served on similar committees before' 0.47 (peak ' similar', not ' served'; fire 6 keeps it); 'Fans may remember Davies from' 0.46 (peak ' remember'; corpus 'remember Eck from' peaked ' from' 0.81; either carries fire 5); 'familiar with the software from my previous job' 0.38 (' my'). Lows: 'After college, Maria worked for six years as a paralegal' 0.02 vs corpus 'pleased to welcome Laurie Kirkland as Director... Laurie worked for several years' 0.98: same tense; the present frame is the difference; 'brings two decades of experience' 0.03 (vs Arabic 'have long experience' 0.95); 'relationship between inflation and unemployment' 0.02; 'generator worked perfectly' 0.01; 'have agreed to meet next Thursday' 0.005; 'company has operated since 1985' 0.18 (organisation history, weak offshoot). The peak lands on whichever token commits the clause (max over tokens). Corpus 'Between them the trio have' (0.89) fired predictively on ' have'; no near miss uses that frame. The + pole peaks on He/him/She; the logit effect promotes ' previously', ' recently', ' previous'."
+}

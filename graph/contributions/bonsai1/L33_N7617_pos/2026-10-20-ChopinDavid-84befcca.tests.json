@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-84befcca",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N7617+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N7617",
+   "pole": "+",
+   "label": "Fires on the word immediately before a ' for' that is the locked-in next token of a collocation or institutional name (cause for concern, Department for X, take no for an answer, dollar for dollar, strapped for cash, pound for pound, paid for by, cares for), i.e. a next-token predictor of a near-certain collocational ' for' that still fires when the collocation is broken ('cause of concern'), and stays quiet where 'for' is only likely rather than locked in (thank you for, waiting for, keys for me) and on the same words outside the collocation (verb cause, US Department of).",
+   "fire": [
+    "A little redness around the stitches is usually not cause for alarm.",
+    "Falling infection rates across the region are genuine cause for celebration.",
+    "Benefit claims are handled by the UK Department for Work and Pensions.",
+    "Her agent refused to take no for an answer and called the publisher back twice.",
+    "The company matches employee pension contributions dollar for dollar up to six percent.",
+    "Nurses on the night shift are chronically strapped for time and rarely eat properly.",
+    "Among the welterweights of her era she remains, pound for pound, the hardest puncher in the division.",
+    "Visitors can still admire the chapels and frescoes paid for by the city's wool merchants."
+   ],
+   "quiet": [
+    "Tight bandaging can cause numbness and swelling below the wound.",
+    "Across the region, heart disease remains the leading cause of death.",
+    "Inspectors from the US Department of Agriculture shut the packing plant after the outbreak.",
+    "The agent kept no record of which editors had already seen the manuscript.",
+    "A weaker dollar has made the company's overseas pension payments noticeably more expensive.",
+    "Paramedics strapped the injured climber to a stretcher before the long descent.",
+    "Before every weigh-in she would shed nearly a pound a day to make the welterweight limit.",
+    "The restorers were paid in cash, and nobody asked where the money had come from."
+   ]
+  }
+ ],
+ "predictions": "6-8/8 fire >= 0.30: cause items (F1, F2) 0.8-0.9, no-for-an-answer (F4) ~0.75, dollar (F5) ~0.5, Department (F3) and strapped (F6) ~0.4, paid-for-by (F8, corpus frame, unprobed) 0.3-0.6, pound (F7) 0.25-0.35 and may miss 0.30. Median ~0.45; floor ~0.3 even if F3, F6, F7, F8 all miss. 7-8/8 near misses < 0.10, modelled on the 0.0-0.045 probe configurations. N2 'leading cause of death' (noun ' cause' with 'of' locked in) is the one deliberate leak candidate; N8 'were paid in cash' (verb ' paid', 'for' plausible but not locked) is a secondary soft risk, expected < 0.10 given 'thank you for' 0.003 and 'waiting for' 0.0. AUROC ~0.93-0.97.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "Collocation-locked 'for' predicted",
+ "unit_kind": "sparse feature",
+ "confidence": 0.7,
+ "notes": "Probes (fraction of max 568): 'no cause for concern' 0.969; 'a cause of concern' 0.629 (fires though 'of' follows: reads the EXPECTED for); 'take no for an answer' 0.778; 'dollar for dollar' 0.542; 'UK Department for Education' 0.419; 'strapped for cash' 0.401; 'pound for pound' 0.322. Same words outside the collocation: verb 'can cause' 0.0, 'US Department of' 0.045, 'the dollar fell' 0.003, 'strapped the suitcase' 0.003. Merely-likely 'for' is QUIET: 'thank you for' 0.003, 'friends are for' 0.031, 'waiting for' 0.0, 'keys for me' 0.004. H1 (any confident for-prediction) and H3 (lexical ' cause') refuted; H2 (locked collocational for) wins. Corpus top-32 peaks: ' cause' x7, ' Department' x4, ' paid' x3, ' dollar' x2, ' Society' x2, ' pound', ' no', ' cares', ' strapped', all before a locked 'for' or an expected one ('pound after pound' 468, 'cause of concern' 452). Probes run ~0.5x corpus for the same word (Department 0.419 vs 0.887, strapped 0.401 vs 0.75, pound 0.322 vs 0.82); expectations come from probes. Logit effect promotes only ' for'/'For'/'-for'/' pour'/' fur'/' dlya'; density 0.046% >0.1max, 100% +x+, L33/36: sparse next-token feature. Opposite pole weak (max 128): 'especialmente para', 'market for', same pre-for slot, reversed sign. Caveats: fixed/free may be a confidence threshold in the 1-bit model; F8 'paid for by' has corpus 440, no probe; untested: 'Society for', 'grounds for', 'eye for an eye'."
+}

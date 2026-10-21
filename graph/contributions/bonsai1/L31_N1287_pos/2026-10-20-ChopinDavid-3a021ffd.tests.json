@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-3a021ffd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N1287+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N1287",
+   "pole": "+",
+   "label": "Fires on the token immediately before the word 'empire(s)' is completed - the first piece ' em'/' Emp'/' им' of a split empire word, or the adjective/determiner right before a whole-token ' Empire' - when the model predicts that lexeme next (cross-lingual; weaker for 'emperor'); only weakly (~0.1 of max) on the ' em'/' им' piece in other words, and not on imperial topic as such.",
+   "fire": [
+    "Within two generations the steppe horsemen had welded together the largest of all the land empires in history.",
+    "The two publishers spent forty years assembling rival newspaper empires on opposite coasts.",
+    "Historians still argue about why the western half of the Roman Empire fell apart in the fifth century.",
+    "At its greatest extent the Persian Empire stretched from the Indus valley to the shores of the Aegean.",
+    "Rival Spanish and Portuguese Empires divided the Atlantic world along a line drawn by the Pope in 1494.",
+    "В состав Российской империи Финляндия вошла в 1809 году после войны со Швецией.",
+    "После смерти Чингисхана его огромная империя была разделена между четырьмя сыновьями.",
+    "Throughout the Later Han the court was dominated by eunuchs who ruled in the name of child emperors."
+   ],
+   "quiet": [
+    "The Viking raiders needed barely two generations to destabilise the wealthiest kingdoms of northern Europe.",
+    "Over four decades the two publishers printed competing morning papers on opposite coasts.",
+    "For most of the republic's five centuries the Roman state was governed by two consuls elected each year.",
+    "Under Vytautas the Grand Duchy of Lithuania stretched from the Baltic shore to the Black Sea.",
+    "After the caliphate broke apart in 1031, Muslim Spain splintered into petty states ruled by local emirs.",
+    "Купцы Новгорода нанимали вооружённую охрану для защиты своего имущества на торговых путях.",
+    "Когда Ярослав Мудрый умер, его обширное княжество было поделено между пятью сыновьями.",
+    "During the long minority of Henry VI the English court was dominated by magnates who ruled in the name of the boy king."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire >= 0.30; Russian items 0.55-0.70 (analogue 0.71), 'western half of the Roman' ~0.50 (0.529), 'the Persian' before ' Empire' 0.40-0.55 (Roman/Ottoman 0.529/0.408), 'rival newspaper em|pires' ~0.45 (business 0.472), 'land em|pires' 0.28-0.42 (historical analogue < 0.344 at ' em'), ' Emp'|ires ~0.35 (0.369), 'child emperors' 0.20-0.30 (0.236) - the risk item, probably the lowest fire but still above every near miss. Median fire ~0.40-0.45. Near misses: 6 of 8 < 0.10; the hard ones are 'the Roman state' in a republic frame (analogue 0.061) and 'wealthiest kingdoms' at ' wealthiest', 0.05-0.15; ' em'|irs after 'local' <= 0.12 (emporium 0.101); 0 at or above 0.30. AUROC ~0.97-1.0.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "predicts 'empire' next",
+ "unit_kind": "sparse feature",
+ "confidence": 0.8,
+ "notes": "Probes support H1 (next-token prediction of 'empire'; fractions of max 764): Russian ' им'|пер|ии after Российской 0.71; ' Roman' before whole-token ' Empire' 0.529; business 'rival media em|pires' 0.472 (peak ' em'; no polity, so topic is irrelevant); ' Ottoman' before ' Empire' 0.408; colonial ' Emp'|ires 0.369; 'four great empires' 0.344 but peak on the final '.', so ' em' in a plain historical frame scored < 0.344 (corpus ' em'|pires 0.74-0.83); Korean 로마 제국 0.266 (peak not on '마'); ' em'|per|ors 0.236 (emperor covered, weaker). Token reading refuted, weak residual: ' em'|por|ium 0.101, ' им'|ид|ж 0.077. Meaning reading refuted: 'imperial authority' 0.069, 'late republic, the Roman Senate' 0.061 (peak ' Roman'; republic frame suppresses), Kingdom of Poland 0.018, Tudor 0.002. Hazard: 'the Ottoman state' 0.26 at ' Ottoman' - imperial adjectives fire before their noun; ' Roman' is used only in a republic frame. - pole (max 130): same axis, ' the'/' young' before duke/king/prince. Fire set: 2x ' em'|pires (one business), 1x ' Emp'|ires, 2x single-token adjective before ' Empire' (Roman, Persian; Mongol dropped: 'ol' is a word-final piece, only analogue Korean 0.266), 2x Russian ' им'|пер, 1x ' em'|per|ors after 'child'. Near misses: kingdoms/Grand Duchy/the Roman state/boy king/papers, Russian neuter 'обширное княжество' (gender excludes империя), word-piece controls ' em'|irs after 'ruled by local' and ' им'|уществ|а; splits tokenizer-verified."
+}

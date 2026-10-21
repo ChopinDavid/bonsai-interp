@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-dd7dee65",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N6893-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N6893",
+   "pole": "-",
+   "label": "The token ' quite' (lowercase, leading space) when the nearest preceding content word is a lexical verb or the verb's object noun/pronoun; near-zero when a finite copula (is/was/are) or 'not' stands within two tokens before it, and for degree synonyms (rather, fairly, very) in the same slot.",
+   "fire": [
+    "Over the past decade the village has grown quite noticeably, with new houses along the ridge.",
+    "When the lights dimmed, the audience settled quite quickly and the first act began.",
+    "Since the merger, the bank has handled customer complaints quite differently.",
+    "By the third week the seedlings in the greenhouse had spread quite vigorously.",
+    "During the drought the price of hay climbed quite steeply across the region.",
+    "The old mill wheel still turns, though the stream that drives it has narrowed quite dramatically.",
+    "Even without a map, the scouts found the trail quite easily and reached camp before dark.",
+    "In her second season the young pitcher controlled her fastball quite well, striking out ten."
+   ],
+   "quiet": [
+    "By the end of the drought the water in the village reservoir was quite low for the season.",
+    "The new hiking trails above the village are quite steep in places.",
+    "The seedlings in the greenhouse had not quite reached the top of the frame by June.",
+    "Under the new manager the bank has handled customer complaints rather differently.",
+    "During the dry summer the price of feed climbed fairly steeply across the valley.",
+    "Once the curtain rose, the crowd settled very quickly and the play began.",
+    "As the house lights faded, the audience went quiet and the overture began.",
+    "The scouts (quite literally) stumbled onto the trail back to camp before dark."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire >= 0.20 (expected 0.3-0.8, median ~0.45); 1-2 fires may fall near 0.1 as 'had to replace quite a few' did (0.12, cause unknown). Near misses 1-2 (copula + ' quite') <= 0.05 (probes 0.016-0.023, peaks moved off ' quite'); 4-6 (rather/fairly/very in the fire slot) <= 0.03; 7 (verb + ' quiet') <= 0.05; 8 ('(quite') <= 0.03. Near miss 3 ('had not quite') is the one real leak risk: the only 'not' probe was 'was not quite' (0.018) and corpus 'had jumped quite' fires at 0.68, so expect <= 0.10 if 'not' suppresses but 0.3-0.6 if only the copula does; if it reaches 0.30 the 'not' clause of the label is wrong and the finite copula is the only established suppressor. 0-1 near misses >= 0.30; AUROC ~0.93-1.0. Risk fires: 1 and 5 (' quite' at 0-based token 8, the earliest in the set; probes at 5/6/9 scored 0.12/0.53/0.72). Near misses 1-2 would sink the context claim if they reach 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "' quite' after verb/object",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Card: 30/32 top peaks are ' quite' (max 3.69; 28 tokens >0.3*max, all +g -u; 97% leak mass (-g +u) below 0.3). Probes: verb/object + ' quite' fired - 'defense quite considerably' 0.72, 'rose quite rapidly' 0.53 - but 'had to replace quite a few' only 0.12 (cause unknown; ' quite' at 0-based 5/6/9 gave 0.12/0.53/0.72). Copula killed it: 'was quite' 0.016, 'are quite' 0.023, 'was not quite' 0.018, 'was, quite frankly' 0.017 (peaks moved off ' quite'), though corpus 'that, quite frankly' is 0.69, so the copula suppresses across one token. The only 'not' probe also had ' was' two tokens back, so 'not' alone is untested until near miss 3; have/be auxiliaries do not suppress ('had jumped quite' 0.68, 'can be accomplished quite' 0.76): the established suppressor is a finite is/was/are within two tokens. Token identity needed: ' rather'/' fairly'/' pretty'/' very' in slot 0.011-0.018 (= floor 0.018-0.019); ' quiet' 0.029; no-space 'quite' 0.018/0.042; ' Quite' 0.015. Verdict: H2 context-gated ' quite'; H1 refuted by copulas, H3 by synonyms. Fires: lexical verb or direct object directly before ' quite' (preceding words all single tokens), ' quite' at 0-based 8-15, no copula or 'not'. Near misses: 2 copula + ' quite', 1 'had not quite', 3 synonyms in slot, verb + ' quiet', '(quite' (' (' + 'quite'). + pole: ' or' echo detector, unrelated. Tiny max so 0.20 (0.74 raw) is not automatic; 0.12 probe = unexplained variance."
+}

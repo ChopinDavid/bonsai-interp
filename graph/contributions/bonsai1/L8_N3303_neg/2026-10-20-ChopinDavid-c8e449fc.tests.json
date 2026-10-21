@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-c8e449fc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3303-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N3303",
+   "pole": "-",
+   "label": "A continuation piece inside a tokenizer-split regional place name (river, department, county, province, town) in English prose, usually the second piece, with a strong lexical skew to French/British geography: Lo|ire far above all else, then T|ynes|ide/Ty|ne, B|ante|ay Meanchey, Aberde|ens|hire, Alic|ante; single-token places in the same frames sit at roughly 0.1-0.3, and split person/company/fictional names or the same pieces inside common nouns are near zero.",
+   "fire": [
+    "Local fishermen on the lower Loire still net shad and lamprey when the river rises in spring.",
+    "French mushroom growers in Loir-et-Cher raise their crop in caves cut into the soft limestone.",
+    "Fans in Newcastle and across Tyneside expect the club to sign a new striker before the window shuts.",
+    "The Newcastle shipyards that once lined the Tyne built destroyers for two world wars.",
+    "Most farmers in Cambodia's Banteay Meanchey province lost their rice crop to the August floods.",
+    "At this year's Royal Highland Show, cattle breeders from Aberdeenshire dominated the show ring.",
+    "Many retired couples from Britain bought thousands of flats on the Spanish coast around Alicante during the nineties.",
+    "Salt marshes in Pays de la Loire supply most of the sea salt sold in Paris."
+   ],
+   "quiet": [
+    "Some anglers on the upper Thames still take trout and perch when the water clears in autumn.",
+    "French cider makers in Brittany press their apples in the first cold weeks of November.",
+    "Most fans in Leeds and across Yorkshire expect the club to sign a new striker before the window shuts.",
+    "The Glasgow yards that once lined the Clyde launched liners and tankers for two world wars.",
+    "At the Royal Cornwall Show this year, sheep farmers from Devon took most of the top prizes in the ring.",
+    "Many farmers in India's Punjab state lost their rice crop to the August floods.",
+    "Large paintings by Rubens draw thousands of visitors to the cathedral every summer.",
+    "Every debutante in the county was presented at the castle ball that season."
+   ]
+  }
+ ],
+ "predictions": "Fire: Loire x2 0.7-0.95 (river frame probed 0.926; Pays de la Loire is a new region frame), Loir 0.3-0.7, Tyneside 0.3-0.7, Tyne 0.3-0.6, Banteay Meanchey 0.3-0.6, Aberdeenshire 0.2-0.6, Alicante 0.2-0.4; 7/8 >= 0.2, median 0.4-0.55. Near misses: the five cued single-token places (Thames, Brittany, Yorkshire, Clyde, Devon) 0.08-0.25 with 0-1 reaching 0.3 (Lyon precedent 0.295; the Thames/Clyde river frames and French-cued Brittany are the likeliest), Punjab 0.05-0.2, Rubens/debutante 0.01-0.08. AUROC 0.90-0.97. Risks: Alicante and Aberdeenshire landing under 0.2 on the fire side; two cued single-token places crossing 0.3 on the near-miss side.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "Split regional toponym (Loire)",
+ "unit_kind": "sparse feature",
+ "confidence": 0.45,
+ "notes": "Probes (fraction of max 6.66): Loire 0.926 ('ire'); Alicante 0.313 ('ante'); Shropshire 0.23 ('rop'); Mandalay 0.214 (' Mandal'); Oaxaca 0.137; Dubrovnik 0.132 (' Dub'); Wollongong 0.095; Eire 0.065 (' E'). Same pieces outside places: grimoire 0.03, vigilante 0.012, Infante 0.076. Split non-place names: Dostoevsky 0.022, Novartis 0.043, Narnia 0.011. Floors 0.012-0.03. Single-token places: Cambridge/Durham/Kent/Hampshire 0.13; Lyon in a 'capital of its department' frame 0.295 (hot near miss; that frame is avoided). Corpus top beyond Loire/Loir (1.0, 0.80, 0.79): Tyneside 0.74 x2, Tyne 0.74, Banteay 0.68 x2, Aberdeenshire 0.61; all but Loire sat in regionally primed text (Newcastle, Wallsend/Durham, Kbal Spean, Grampian/Dee), so unprobed fire names get one regional cue before them, matched in the near misses (Leeds, Glasgow, French, Royal Cornwall Show, India's). Reading: place recognition gated on a split name (single-token Kent/Hampshire do not fire), heavily lexical; bare pieces are not the trigger (E|ire 0.065 vs Lo|ire 0.926; vigil|ante 0.012); the peak can be the first piece (Mandal, Dub, E). Caveats: diffuse (0.2% of tokens >0.1 max; off-pattern ' have', 發生, 在 at 0.66-0.68, so ' have' is kept out of the fire set); only Loire and Alicante are probe-verified configurations; within-class generalization is weak (Oaxaca, Dubrovnik, Wollongong, Eire <0.14), so the unprobed single-letter-head Dordogne was dropped for a second Loire frame. All triggers tokenizer-verified mid-sentence; no sentence-initial capitalized split in either set. + pole unrelated: Chinese modal 会/會 (max 24.25, 100% +x+)."
+}

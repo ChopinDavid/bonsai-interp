@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-78f680ee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N8806-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N8806",
+   "pole": "-",
+   "label": "The name of the host venue when an official summit, conference, or tournament is identified by where it was held (targets agreed at Kyoto, talks at Copenhagen, the Masters at Augusta), as opposed to the same city named as a mere place or the same event described without its venue.",
+   "fire": [
+    "The emissions targets agreed at Kyoto were never ratified by the Senate.",
+    "The interim self-rule deal from the secret talks at Oslo unravelled within a decade.",
+    "The three-week peace talks at Dayton ended the Bosnian war with a map that satisfied nobody.",
+    "The fixed exchange-rate system from the monetary conference at Bretton Woods survived until 1971.",
+    "Nicklaus won his sixth green jacket at Augusta in 1986 with a back-nine charge.",
+    "After two weeks of overnight sessions, the climate conference at Glasgow produced a watered-down pact on coal.",
+    "The arms-control summit at Reykjavik broke up without a deal on missile defence.",
+    "Both delegations returned to the ceasefire talks at Geneva after a tense weekend of shelling."
+   ],
+   "quiet": [
+    "Diplomats accepted binding emissions targets that winter, but the Senate never ratified them.",
+    "An interim self-rule deal reached after months of secret back-channel talks unravelled within a decade.",
+    "A back-nine charge nobody saw coming gave Nicklaus his sixth green jacket in 1986.",
+    "Exhausted negotiators finally closed the climate conference two days late with a watered-down pact on coal.",
+    "The ferry docks at Geneva's old harbour twice an hour throughout the summer season.",
+    "Most of the old merchant houses in Kyoto survived the war because the city was never bombed.",
+    "The hot springs an hour's drive from Reykjavik stay open through the darkest weeks of winter.",
+    "Senators refused to ratify the test-ban agreement despite a decade of lobbying by arms-control groups."
+   ]
+  }
+ ],
+ "predictions": "Six fires in the probed event-noun + at + venue form (Oslo, Dayton, Bretton Woods, Glasgow, Reykjavik, Geneva) ~0.35-0.55; Kyoto (participle + at) and Augusta (object noun + at) are the structural probes and may sit 0.15-0.35; so 5-7/8 fire >= 0.30, median ~0.35. Near misses: no-venue diplomacy/golf items 0.08-0.22 (cf. no-name legislative prose 0.209), city-as-place items 0.05-0.20, with 'ferry docks at Geneva's' the single designated risk (0.15-0.30, may cross); AUROC ~0.90-0.93. Bretton Woods and Reykjavik are multi-piece, so their peak may land on a later piece.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "event named by venue",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Probes (frac of max 11.19): 'climate talks at Copenhagen' 0.567 (peak ' Copenhagen'), matching corpus maxima 'vice captains at Gl|eneagles' and 'meetings at Canc|un' (1.00). In the Cancun snippet 'at the Copenhagen summit' and bare 'Kyoto' did not peak, so only event-noun + at + venue is measured high; six fires use it, Kyoto (participle + at) and Augusta (object noun + at, cf. Gleneagles) probe the broader label. Corpus forms lost 40-80% as single sentences: venue 1.00->0.57; ' Act' 0.88->0.257 (Inflation Reduction Act, peak ' Act'; Clean Water Act 0.197, peak ' Clean', vs no-name legislative 0.209); delegate-to-the 0.99->0.202 (peak ' Chicago'); attended-the 0.78->0.428 (peak ' the'). Offshoots: 'attended the queen' 0.428, bit.ly code 0.388, PMC digits 0.387, '115 Stat.' 0.217. Rejected: H1 ' Act' (0.20-0.26), H3 topic ('clean water law' 0.091); Council of Trent 0.147, Lusitania 0.129, Shake Shack 0.011, non-statute 'Act'/'act' 0.02-0.04, floors ~0.03. + pole: generic temporal/process progression (next harvest, aged, takes hold, new census). Pieces: ' Kyoto', ' Oslo', ' Dayton', ' Glasgow', ' Geneva', ' Augusta' single; ' Bret|ton| Woods', ' Rey|k|jav|ik' multi. Caveats: venue claim rests on one fresh probe; density 0.40% >0.1 max, so venue-free diplomatic prose may sit 0.1-0.2; quiet 4-6 test a city as plain place (one after 'at'); near misses avoid 'delegate(s) to the' and named-Treaty forms, which can fire alone."
+}

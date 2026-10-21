@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-a15c0b3b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N3853-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N3853",
+   "pole": "-",
+   "label": "The word that completes the formal name of a physical- or natural-science institution, journal or field, usually the discipline name itself (Journal of ⟦Physics⟧, Department of ⟦Physics⟧, American Physical ⟦Society⟧, physical ⟦scientists⟧, Conservation ⟦Biology⟧), not the same word used as a casual school subject and not mathematics or a humanities discipline in the same frame.",
+   "fire": [
+    "Their measurements appeared in the European Journal of Physics nearly a decade ago.",
+    "The summer meeting of the American Association of Physics Teachers was held in Portland.",
+    "He was appointed chair of the Department of Physics at Leeds late in his career.",
+    "For many years the Institute of Physics ran its public lectures from a hall in London.",
+    "Membership in the American Physical Society grew steadily through the following decade.",
+    "Most of the grant money went to the physical sciences rather than the humanities.",
+    "The district adopted a new physical science textbook for ninth graders.",
+    "Their reef survey eventually ran as a short paper in the journal Marine Biology."
+   ],
+   "quiet": [
+    "His essay on tort reform appeared in the Journal of Legal Studies nearly a decade ago.",
+    "The annual conference of the American Economic Association was held in Boston.",
+    "Two years later she became chair of the Department of History at Cornell.",
+    "Members of the Massachusetts Historical Society gathered each spring in a hall near Boston Common.",
+    "Nobody in our dorm wanted to take physics before lunch on a Friday.",
+    "Every student had to take physical education twice a week until tenth grade.",
+    "The bulk of the funding went to the humanities rather than the business school.",
+    "Her proof ran to forty pages in the Journal of Algebra."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire >= 0.30 with median ~0.60 (expected roughly F1 1.0, F2 0.85, F5 0.7, F3 0.65, F4 0.6, F7 0.55, F6 0.5, F8 0.35); 0-1 near misses >= 0.30; AUROC ~0.95. Fire risks: F8 ' Biology' after 'Marine' (the Conservation Biology analogue reached only 0.40) and F6 ' sciences', which is one token distinct from the probed ' science', so an untested generalization (singular ' science' and ' scientists' both 0.56). Near-miss risks: N2 ' Association' after 'American Economic' and N4 ' Society' after 'Massachusetts Historical' are the two learned-society-frame items; the only evidence on that slot is ' Society' at 0.73 after 'American Physical', so if the society frame rather than the science adjective carried it, both could reach 0.30 and the test fails, which would mean the label is wrong about science-specificity and should widen to learned-society names. N6 ' education' after 'physical' tests adjective priming ('physical exam' 0.07, peak elsewhere). The mathematics/humanities-in-frame exclusion rests on a single probe ('Department of Mathematics' 0.06); N1, N3 and N8 test it and should land 0.05-0.15. N5 casual ' physics' should land ~0.10-0.17 like the probes; N7 has no trigger at all and should sit at floor.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "physical/natural-science institution names",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Probes (fraction of max 10.06): 'American Journal of Physics' 1.07 (' Physics'), 'Nature Physics' 0.73, 'American Physical Society' 0.73 (peak ' Society', no physics token), electron mass '9.11 x 10^-31 kg' 0.67 (peak on digit '1'), 'physical science concepts' 0.56, 'physical scientists' 0.56, 'journal Conservation Biology' 0.40. LOW: casual 'hated physics' 0.10, course title 'Introduction to Physics' 0.17, 'favorite subject was science' 0.18, 'Department of Mathematics' 0.06, 'teaches chemistry' 0.08, 'science fiction' 0.06, 'physical exam' 0.07, floors 0.03-0.05. Bare token (H1) refuted: the same word drops to 0.10-0.17 outside a name/field frame. Frame alone is not enough: 'Department of Mathematics' is at floor, so the completing word must name a natural/physical science; the + pole takes the mathematical side (' vector', ' math', ' Calculate'). Fires copy the high frames with fresh content (Journal/Association/Department/Institute of Physics, American Physical Society, physical science(s), a natural-science journal); years were dropped from F3/F5 so peaks land on the claimed token, because the pole spikes on digits in science text (corpus '9.1⟦0⟧939' 1.00, 'April 2⟦2⟧' 0.79, probe 0.67), a known offshoot both sets avoid. Near misses keep the register and swap the discipline for law, economics, history, humanities or algebra, or keep the word in its school-subject or bodily sense; no sentence contains a digit. Caveat: ' Society'/' Association' may fire after any learned-society adjective; N2 and N4 test exactly that."
+}

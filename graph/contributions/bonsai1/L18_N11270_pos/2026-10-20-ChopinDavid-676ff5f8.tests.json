@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-676ff5f8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N11270+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N11270",
+   "pole": "+",
+   "label": "A vehicle, mount, carried-gear or locomotion token (truck, bus, horse, backpack, walk, drive) whose preceding context places it at rest or in place - parked, tied up, listed as a facility or amenity, used as an object, moving about within a confined spot - rather than travelling along a route toward a destination; the - pole takes the en-route / along / escort reading of the same words.",
+   "fire": [
+    "Besides the loading docks, the site has a staff canteen, a weighbridge, overnight parking and a truck bay.",
+    "Tickets for the concert include a hot supper at the pavilion and bus service back to the hotels.",
+    "The rider loosened the girth and left her horse tethered in the shade of the stable wall.",
+    "When the bench turned out to be wet, he sat on his backpack and waited for the shop to open.",
+    "The kitchen was so cramped that the two cooks kept having to walk around each other all evening.",
+    "Before refuelling, the ground crew chocked the wheels of the aircraft and parked a fuel truck beside the wing.",
+    "Parking behind the hall is never a problem, so just drive in and leave the car wherever there is space.",
+    "In the yard behind the farmhouse, parked beside the woodpile, stood an old truck with its bonnet propped open."
+   ],
+   "quiet": [
+    "For three days the convoy rolled along the coast road, every truck caked in red dust.",
+    "Halfway across the valley the scout urged his horse into a canter toward the distant pass.",
+    "Two miles into the climb the heavy backpack was already dragging at her shoulders.",
+    "The guide led us along the ridge for an hour, and from there we had to walk the last six miles toward the hut.",
+    "Twenty minutes into the journey, still crawling along the ring road, the bus had barely moved in the heavy traffic.",
+    "With the escort riding alongside, the royal carriage rattled on through village after village toward the capital.",
+    "After hours on the river road they were still driving along in silence when the lights of the city came into view.",
+    "Mile after mile the two men kept walking along the empty road toward the harbour."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire >= 0.30 with median 0.30-0.40; F7 ('just drive' after one clause of parking talk, corpus analog 0.74) and F8 ('parked ... stood an old truck', nearest English probe 0.209) are the likeliest to land at 0.20-0.30. Near misses 0.02-0.20; N4 (' walk' carrying the 0.608 bigram 'had to walk' after 'led us along the ridge'), N3 (' backpack' mid-climb, analog 0.165) and N5 (' bus', a 15.88 corpus token, after 'crawling along the ring road') are the likeliest to reach 0.20-0.30; none expected above 0.30. AUROC ~0.92.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "vehicle at rest, not en route",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 17.75) split on the frame BEFORE the token, not the token. Matched pairs: ' truck' 0.475 in a facility list ('car park, petrol station and a truck wash') and 0.209 in 'keys in the truck parked' vs 0.067 after 'rumbling along the dusty highway'; ' backpack' 0.498 used as a pillow vs 0.165 'hikers shouldered their backpacks and set off'; ' walk' 0.608 'chairs surrounded me ... had to walk around' vs ' walking' 0.021 'down the dark street'. Also 'tied his horse to the post' 0.403; 'aircraft to park ... service vehicles' 0.400 (peak ' vehicles'); 'parked the van' 0.326; 'with bus transportation' 0.474 vs 'patrol cars roared alongside, escorting' 0.118. Meaning without a locomotion token does not fire: 'paced around the kitchen' 0.011. - pole mirror: ' along' x4, ' escort', ' driving', 'had to walk the 2 km' (-0.73 of -max); logits suppress ' journey', ' along', ' route', promote ' static', ' vacant'. Fire items copy the 0.40-0.61 configs with the at-rest cue in LEFT context (list with 'overnight parking', 'and bus service', dismounted horse, backpack sat on, cramped-kitchen walk, 'parked a fuel truck', parking talk then 'just drive' = corpus 0.74, 'parked ... stood an old truck'). Near misses keep the same single tokens (tokenizer-verified) and put a route cue (along, across the valley, into the climb, into the journey, mile after mile) BEFORE the token. Caveats: 'means of transportation' with no left context scored 0.12, so the cue must precede the noun; peaks smear onto the next token; half the corpus top-16 is non-English, tested in English only."
+}

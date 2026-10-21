@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-3d01a632",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N7150+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N7150",
+   "pole": "+",
+   "label": "Fires at the ' of' that introduces the name or kind of a formal written instrument of settlement or decree ('Treaty / Edict / Peace / Pact of ___', also lowercase 'treaty of alliance'), and comparably (0.53) on ' the' after 'signed the' when such an instrument is imminent, but not at the same ' of' that names battles, sieges, assemblies, titles, institutions, polities or unilateral declarations.",
+   "fire": [
+    "Spain and Portugal split the newly discovered lands between themselves along a meridian drawn up in the Treaty of Tordesillas in 1494.",
+    "After nearly three years of fighting along the Canadian border, American and British negotiators restored the prewar boundaries through the Treaty of Ghent.",
+    "Russia took Estonia, Livonia and Ingria from an exhausted Sweden by the Treaty of Nystad in 1721, closing the Great Northern War.",
+    "Mexico lost nearly half of its national territory when its commissioners accepted the Treaty of Guadalupe Hidalgo in February 1848.",
+    "Having refused to recant before the emperor, Luther was placed under the imperial ban by the Edict of Worms, and only Frederick the Wise's protection kept him safe.",
+    "Nicene Christianity became the empire's official creed when Theodosius and his co-emperors promulgated the Edict of Thessalonica in 380.",
+    "In 1697, worn down by nine years of war against the Grand Alliance, Louis XIV recognised William III as king of England in the Peace of Ryswick.",
+    "Franco traded air and naval bases for American economic aid when his government concluded the Pact of Madrid in September 1953."
+   ],
+   "quiet": [
+    "Prussia's army was shattered in a single October day at the Battle of Jena, and Napoleon rode into Berlin less than two weeks later.",
+    "Vauban's engineers brought the Siege of Namur to a successful conclusion in 1692 after barely a month of methodical trench work.",
+    "Metternich persuaded the other great powers to let France intervene against the Spanish liberals at the Congress of Verona in 1822.",
+    "Arian teaching was condemned and the creed given its earliest form when the bishops gathered at the Council of Nicaea in 325.",
+    "After defeating Manfred at Benevento in 1266, the Angevin prince Charles seized the Kingdom of Sicily and held it thereafter as a papal fief.",
+    "Charles I's favourite, the Duke of Buckingham, was stabbed to death by a disgruntled officer at Portsmouth in 1628 while preparing a fleet for La Rochelle.",
+    "William III financed his long war against Louis XIV largely with loans from the newly chartered Bank of England, which opened its books in 1694.",
+    "Scotland's nobles asserted their right to choose their own king in the Declaration of Arbroath, a letter sent to Pope John XXII in 1320."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire >= 0.35 (Treaty and Edict items 0.55-0.75, Peace and Pact items 0.40-0.50); median fire ~0.60. Near misses: Bank of England 0.02-0.06 (University of Chicago analog 0.014), Duke of Buckingham 0.05-0.12 (Duke of Wellington 0.068; no settlement frame), Kingdom of Sicily 0.05-0.15 (unprobed polity; density argument), Congress of Verona and Council of Nicaea 0.10-0.16 (probed 0.139/0.144), Battle of Jena 0.10-0.25 (the Waterloo probe's on-trigger ' of' value is unknown but below its 0.273 off-trigger peak), Siege of Namur untested and expected to pattern with Battle at 0.10-0.25, Declaration of Arbroath 0.15-0.35 (the single budgeted >= 0.30 item: a written document with a toponym in the 'in the X of' slot). 0-1 near miss reaches 0.30; AUROC ~0.97. The risk items are Arbroath first, then Battle/Siege.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "treaty/edict-name 'of' anticipator",
+ "unit_kind": "contextual",
+ "confidence": 0.72,
+ "notes": "Probes (frac of max 60.25, peak ' of' unless noted): Treaty of Paris 0.751, Edict of Nantes 0.748, Versailles (late) 0.595, Pact of Steel 0.461, Peace of Augsburg 0.432, 'treaty of cooperation' 0.360, Act of Union 0.359, partitive 'Each treaty of the series' 0.275, corpus 'treaty of alliance' 0.71: no proper name needed. Low: Council of Trent 0.144, Congress of Vienna 0.139, Declaration of Independence 0.104, Duke of Wellington 0.068, University of Chicago 0.014, far-domain 0.03. H2 (lexeme) out: Edict ties Treaty; H3 (toponym predictor) out: Duke/University/Congress have toponyms yet <= 0.14. Settlement-imminent ' the': 'signed the agreement at Westphalia' 0.529, 'the treaty was signed in Breda' 0.306, so such prose without 'X of' is NOT a safe near miss; the contrast is 'X of Name' with event/assembly/title/institution/polity nouns, as the logit direction predicts (suppresses ' Conference', ' meeting', ' victory'). Battle of Waterloo's 0.273 peaked off-trigger (' Hundred'); its on-trigger value is unknown (<0.273); near misses avoid 'signed/ended/by the' lead-ins. Siege, Kingdom, Bank are unprobed; only 232 corpus tokens exceed 0.3*max, so common 'Kingdom/Battle of' rarely fires. Arbroath is the one boundary item (document noun + toponym in the 'in the X of' slot; its analog predicted abstract 'Independence'). Tokens: ' of' is its own; ' Edict' -> ' Ed'+'ict'; other head nouns single. - pole: agent/temporal ' by'/' after', same register."
+}

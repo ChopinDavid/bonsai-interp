@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-d6e6aa00",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N10834-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N10834",
+   "pole": "-",
+   "label": "In Arabic, the no-space continuation piece 'ور' fires when it directly follows the token ' أم' (أمور/أمورهم), while the same 'ور' after any other prefix (نور, مرور, أجور, even الأمور via ' الأم') stays near floor, so for 'ور' the unit reads the ' أم'+'ور' bigram rather than the piece; the standalone piece 'م' (أمم as ' أم'+'م', corpus لِيُؤْمِنُوا) also fires with or without ' أم' before it, and ' أم' as a standalone word before a space-initial token is not claimed.",
+   "fire": [
+    "تولى الوزير أمور التعليم بعد تعيينه.",
+    "تركت لهم أمورهم يديرونها كما يريدون.",
+    "لا تتدخل في أمور الآخرين بلا سبب.",
+    "اجتمع الشيوخ ليتشاوروا في أمورنا.",
+    "قرأت عن أمم عاشت قبل آلاف السنين.",
+    "يختلف الزوجان على أمور صغيرة كل يوم.",
+    "سافر الأب ليرتب أموره قبل الزواج.",
+    "درس الطلاب تاريخ أمم بنت حضارات عظيمة."
+   ],
+   "quiet": [
+    "بعد تعيينه تولى الوزير الأمور التعليمية كلها.",
+    "يتابع العمدة شؤون المدينة كل يوم.",
+    "راقب المدير حضور الموظفين كل صباح.",
+    "توقف مرور الشاحنات على الجسر الحديدي.",
+    "طالب العمال برفع أجور الشهر الماضي.",
+    "سأل الشيوخ هل نتشاور اليوم أم غدا.",
+    "غلب شعور الخوف على الجميع في تلك الليلة.",
+    "جمع التاجر أموال كثيرة من التجارة."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire >= 0.30. Items 2, 5, 8 put the trigger at token index 4 (the position of probes 1/12, 0.40/0.47) and items 1, 3, 6 at index 5-6, so expect 0.35-0.47 there; 0.5-0.6 only for items 4 and 7 (index 8-11, like probe 2 at 0.63). Median ~0.42-0.45, well above 0.20. Near misses mostly 0.04-0.15 (probe analogs: الأمور 0.08, نور 0.10, شؤون 0.10, أجور 0.12, شعور 0.13, مرور 0.15); however 2/10 trigger-free Arabic probes leaked >= 0.30 on unrelated tokens ('تها' 0.56, ' عندما' 0.49), so ~1.6 leaks are expected across 8 near misses against a cap of 1 — a fail on the leak criterion is plausible (~40-50%) even if the bigram claim holds. Quiet 6 (standalone ' أم' = 'or') is the label-discriminating risk: >= 0.30 there means the unit reads only the previous token. AUROC ~0.90-0.97.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "'ور' after Arabic ' أم' (أمور)",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Probes (fraction of max 0.30): 'ور' right after ' أم' fires — أمور 0.40, أمورهم 0.63 (peak 'ور'); ' أم'+'م' أمم 0.47 (peak 'م'). The same 'ور' after any other prefix is quiet: الأمور (' الأم'+'ور') 0.08, نور 0.10, أجور 0.12, شعور 0.13, مرور 0.15; controls دور 0.04, عصور 0.05, شؤون 0.10, English 0.06-0.12. So H1 ('ور' anywhere) is refuted; for 'ور' the driver is the ' أم' bigram (corpus top 4 are all ' أم'+'ور', 0.30-0.24). That dependence is shown only for 'ور': corpus 'م' peaks (4/32) include لِيُؤْمِنُوا twice (0.70/0.63 of max) with no ' أم', so bare 'م' fires on its own. Near misses therefore contain no standalone 'م' (القديم -> ' الق','دي','م' was replaced by الحديدي -> ' الح','دي','دي'), no '�' byte fragment (4/32 corpus peaks; يشاؤون in fire 2 was replaced by يريدون), and none of the probe leak tokens 'تها' (0.56), ' عندما' (0.49). Quiet 6 is the discriminating item: ' أم' as the standalone word 'or' before space-initial ' غ' — unprobed; if it reaches 0.30 the unit is a pure previous-token detector and the no-space qualifier fails. أمراض/أمطار/أمير (' أم'+other piece) are unprobed and excluded from both sets; أموال is ' أ','مو','ال' (no ' أم'). Offshoot leak: Romance mid-word pieces 'ada' 0.62, 'issance' 0.51, Catalan 'ó' 0.65 (8/32 corpus peaks) — not tested. Broad flag: 2.8% of tokens >0.1·max, leak regime 81%. The + pole is the mirror: space-initial word starts, mostly Arabic ' و' (15/32). Logit effect is noise at layer 1."
+}

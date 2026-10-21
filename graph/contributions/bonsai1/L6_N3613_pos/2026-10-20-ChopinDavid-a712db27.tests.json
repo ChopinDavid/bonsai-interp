@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-a712db27",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3613+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N3613",
+   "pole": "+",
+   "label": "A linker token (' where' strongest, ' which' in 'in/at which', German ' wo', Russian ' для'; ' of' and ' to' moderate; ' for' weak) immediately after a noun naming a physical place, strongest for generic place nouns (place, spot, haven, refuge, space, Ort) and weaker for specific concrete ones (field, garden, venue, market), opening the phrase that says what happens there or what the place is for; the same ' where' after an abstract, temporal or institutional noun, interrogative ' where', and place noun + ' that' or + verb stay quiet.",
+   "fire": [
+    "After the fire, the old barn became a refuge where stray cats slept through the winter.",
+    "Behind the school lies a field where the children fly their kites every spring.",
+    "The monks kept a walled garden in which herbs were grown for the infirmary.",
+    "For the exhausted travelers the inn was a place of rest and warm soup.",
+    "Their grandmother's attic was a spot where the cousins traded secrets.",
+    "The abandoned station turned into a venue where local bands played on Fridays.",
+    "The cabin by the lake was a quiet place to finish the novel.",
+    "Der alte Hafen war ein Ort, wo die Fischer ihre Netze flickten."
+   ],
+   "quiet": [
+    "Stray cats slept through the winter in the barn, and nobody chased them out.",
+    "Every spring the field fills with children flying kites after school.",
+    "The monks grew herbs in a walled garden that supplied the infirmary.",
+    "The exhausted travelers reached the inn and asked for a bowl of warm soup.",
+    "The cousins traded secrets in their grandmother's attic every summer.",
+    "On Fridays the local bands never knew where they would be playing next.",
+    "There came a week where the novel simply refused to be finished.",
+    "Die Fischer fragten sich, wo sie ihre Netze flicken sollten."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire >= 0.30: generic-noun items F1 'refuge where', F4 'place of', F5 'spot where', F8 'Ort, wo' 0.55-0.8; F7 'place to' ~0.45-0.55 (model 'area to' 0.458); concrete-noun tier F2 'field where', F3 'garden in which', F6 'venue where' 0.3-0.5 (model 'market, where' 0.415 vs 'company where' 0.108) and these three are the fires most likely to dip to ~0.2. Median ~0.55. Near misses: 0-1 >= 0.30, most <= 0.10. N8 (German complement ', wo' after 'sich', unprobed; English interrogative analogues 0.099/0.103, but the comma + ' wo' bigram mirrors the 0.766 fire frame) is the one deliberately hard item allowed to be the single leak, ~0.1-0.25; N3 'garden that' (model 0.061) and N1 'barn,' + and are the next risks; N7 'a week where' should sit near 'a moment where' 0.022. AUROC ~0.97-1.0.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "place-noun + where/of/to",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Probes (fraction of max 15.94): place noun + ' where' 0.692 (place), 0.705 (sanctuary); German 'Ort, wo' 0.766; 'spot in which' 0.684 (peak ' which'); 'haven of' 0.612; 'area to' 0.458; 'the market, where' 0.415; 'venue for' 0.338. Corpus: 'A place where' 1.0 (document-initial; mid-sentence items run ~0.7), 'a place of peace' 0.78, 'A haven to learn' 0.75, 'site at which' 0.73, 'safe areas for' 0.71, Russian 'места для' 0.81. The word alone is not the unit: complement ' where' 0.099 ('asked me where') and 0.103 ('decided where to'), peaks elsewhere; ' where' after abstract nouns 0.022 ('a moment where'), 0.012 ('cases where'); institutional 'a company where' 0.108. The place noun alone is not the unit: 'a cabin that' 0.061, motion frame 'moved the workshop to' 0.053, 'lies at the origin' 0.028, floors <= 0.01. Gradient: generic place nouns 0.61-0.77 vs concrete nouns weaker ('market, where' 0.415, 'venue for' 0.338); F2/F3/F6 are the deliberate concrete-noun tier. The - pole is the mirror: locative preposition after a verb of position/motion ('origin at', 'moved his studio to', 'a point at which'), i.e. place still to come. Caveats: ' for' is weak (0.338) and not used as a fire; 'point' is read spatially by the - pole, so the abstract-noun near miss uses temporal 'a week where'; N4 'reached the inn and asked for' puts ' inn' three tokens before ' for' (cf. 'calls for' 0.004); post-place ' with'/' by' untested and avoided; N8 German ', wo' unprobed. Density 0.22% above 0.1 max; logit list is noise at L6."
+}

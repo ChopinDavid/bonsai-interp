@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-05c10f70",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N8294-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N8294",
+   "pole": "-",
+   "label": "The head word of an adverbial or connective interjection that a comma has just opened inside an unfinished clause ('that, ultimately', 'was, frankly', 'Now, though', 'que, además', 'что, кажется'), as distinct from the clause simply resuming after that comma or the same adverb used with no comma or after a clause boundary.",
+   "fire": [
+    "The engineers warned that, eventually, every bridge in the county would need replacing.",
+    "The keynote was, admittedly, far longer than the schedule allowed.",
+    "Here, then, is the whole of the argument in a single page.",
+    "Now, though, the harbor is silent except for the gulls.",
+    "The orchard survived the frost but, sadly, lost most of its early blossom.",
+    "The jury was, by all accounts, unable to agree until late in the afternoon.",
+    "El ministro reconoció que, además, el presupuesto llegará con retraso.",
+    "Она сказала, что, кажется, забыла ключи дома."
+   ],
+   "quiet": [
+    "The county surveyor believes that every bridge in the district will eventually need replacing.",
+    "The keynote ran over by an hour; admittedly, the schedule had been optimistic.",
+    "The whole of the argument fits on a single page, though.",
+    "By evening, the harbor is silent except for the gulls.",
+    "The old pear trees came through the frost but sadly lost most of their blossom.",
+    "The twelve jurors, a panel of strangers, took most of the afternoon to agree.",
+    "La ministra admitió además que el presupuesto llegará con retraso.",
+    "Она кажется забывчивой и часто оставляет ключи дома."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire >= 0.30 (expected range 0.30-1.0, median ~0.55); the multi-word head 'was, by all accounts,' is the one fire that may fall to 0.25-0.45 (cf. 'is, in fact,' 0.419, peak ' in'). Near misses: 5 of 8 < 0.10; the fronted 'By evening, the harbor', the appositive 'jurors, a panel' and the no-comma verb 'Она кажется' may reach 0.10-0.25; 0 near misses >= 0.30; AUROC ~0.96. Other fire risk: 'but, sadly' (English conjunction + comma + adverb was not probed directly, but it matches the corpus max 'но, кажется').",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "comma-interjected adverb",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Probes (fraction of -pole max 17.12). Comma-opened adverbials fired in every language and lexical item: 'agreed that, ultimately,' 1.151; 'Он, кажется,' 0.892; 'committee was, frankly,' 0.70; 'Such, then,' 0.584; 'necesario, además,' 0.529; 'were, like his father's' 0.492; 'is, in fact,' 0.419 (peak ' in'); 'как правило,' 0.406 (peak ' правило': the phrase head, not comma+1). Lexical reading refuted: bare ' therefore' 0.012, temporal ' then' 0.018, 'and then' 0.005, verb ' like' 0.073. Clause-boundary cases quiet: '; therefore,' 0.014 (peak ';'), clause-final ', though.' 0.07, 'The results, however,' 0.165, + pole shape 'that, the meeting' 0.172 (peak ','). So the unit reads the token after an intrusive comma: negative when it is an interjected adverbial head, positive when the clause resumes with a determiner/pronoun/verb (+ pole peaks ' the' x7, ' it' x4, ' a' x4). Near misses drop only the comma-interjection: 'that' + bare adverb (0.012 analog), '; admittedly,' (0.014), clause-final ', though.' (0.07), fronted 'By evening, the' and appositive 'jurors, a panel' (+ pole shape, 0.172 analog; the hard ones), bare ' además', and 'Она кажется' as finite verb with no comma (minimal pair of 'Он, кажется,' 0.892; untested in Russian, English analogs 0.012-0.073). Caveat: 'however' after a full NP scored 0.165 vs Russian subject+comma 0.41-0.89, so full-NP subjects may weaken it; density 0.145% > 0.1 max means weak background on ordinary comma-adjacent adverbs."
+}

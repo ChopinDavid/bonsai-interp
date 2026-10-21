@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-3ff67f13",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N2648+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N2648",
+   "pole": "+",
+   "label": "Marine-megafauna context feature that peaks on the list connector (',', ' and', ' and the') right before another headline sea-animal species name is expected, sharks above all (also rays, dolphins, tuna); the same list frame filled with freshwater fish, seabirds, invertebrates or land animals stays low, and whether small reef fish also stay low is the boundary this test probes.",
+   "fire": [
+    "Along the outer wall, the guides pointed out blacktip, grey reef and silvertip sharks patrolling the current.",
+    "The sanctuary protects whale sharks, scalloped hammerheads and oceanic whitetips that gather around the seamount each spring.",
+    "Fishermen in the gulf complained that bull sharks, spinner sharks and the occasional great hammerhead were stealing their catch.",
+    "Spearfishers off the point have learned to expect dusky sharks, blacknose sharks and the odd mako trailing their catch up to the boat.",
+    "Beyond the breakers, lifeguards have logged great whites, bull sharks and the odd tiger shark in recent weeks.",
+    "Boat tours out of the harbour usually find bottlenose, common and Risso's dolphins feeding along the shelf edge.",
+    "The shallow flats of the lagoon are a nursery for southern stingrays, cownose rays and the occasional manta.",
+    "Longliners working the warm current target yellowfin, bigeye and albacore tuna, along with the odd swordfish."
+   ],
+   "quiet": [
+    "Fly fishers on the upper river still take brook trout, cutthroat and the occasional mountain whitefish before the water warms.",
+    "Electrofishing in the lower reaches turned up pike, perch and a handful of large bream.",
+    "The island's cliffs are crowded with gannets, razorbills and fulmars from April to August.",
+    "Rock-poolers at low tide turn up hermit crabs, limpets and beadlet anemones within minutes of starting.",
+    "Dredge samples from the offshore sites consisted mainly of urchins, whelks and sea cucumbers (Okafor and Lind 2011).",
+    "The volunteers spent the morning counting sharks from the dive boat, then sorted their gear, rinsed the cameras and logged the dive.",
+    "The house reef is busy with damselfish, wrasse and juvenile parrotfish, none of them longer than a hand.",
+    "On the headland path, walkers often see rabbits, skylarks and the occasional adder stretched out in the sun."
+   ]
+  }
+ ],
+ "predictions": "Shark-list fires (idx 0-4) >= 0.45 at ',' or ' and' (probe analogue 0.773 at ' and'; corpus 229/220). Dolphin, ray and tuna fires (idx 5-7) have no probe support: expect 0.15-0.50, tuna weakest and possibly below 0.20. Expect 6/8 fire >= 0.30, median >= 0.35. Near misses: freshwater (x2), seabird, land and academic items 0.01-0.12 (analogues 0.093, 0.038, 0.011, 0.062); rock-pool, counting-sharks and house-reef items ride the ~0.15 marine baseline (analogues 0.148, 0.152, 0.144) and may land 0.12-0.30; the house-reef small-fish list is the discriminating item and the one near miss allowed >= 0.30 (could reach 0.40 given the lionfish corpus hit). AUROC ~0.90-0.96; the test fails on AUROC rather than the median if the three non-shark fires all land under the three marine near misses, or if two near misses reach 0.30. If only the non-shark fires fail, the label narrows to sharks; if the house-reef item fires, the label gains 'small reef fish not excluded'.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "upcoming shark/megafauna name",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Only high probe: 'nurse, lemon and tiger sharks' 0.773 at ' and'; all else <= 0.27. Corpus: 'bull⟦ and⟧ reef sharks' 229, 'oceanic whitetip⟦,⟧ scalloped hammerhead' 220, 'with⟦ the⟧ Smooth Stingray' 170, 'common dolphin⟦,⟧ bottlenose' 131, 'by⟦ a⟧ shark' 113, tuna 93: peak = token before the species name, never the name. Bare determiner 'knocked into the water by a humpback whale' 0.052 (peak ' whale'): the species must already be predictable; determiner frame dropped. Lows: trout 0.093, aquarium 0.144, coral/clams 0.148, academic polychaetes 0.062, seabirds 0.038, lions 0.011, shark survey->hotel 0.152, fisheries 0.162, word-sense and floor controls <= 0.09. Small-reef-fish exclusion rests on one corpus peak position (' like' sharks 94.5 over the gobies/blennies connectors), not a probe, and 'threat⟦ invasive⟧ lionfish' hits 92 (0.40): the house-reef near miss is the direct test. Offshoot: habitat/sediment slots at 0.24-0.27 (beach/sand 0.239, seabed sediment 0.237, river silt 0.267; 'inner and⟦ outer⟧ reefs' 109.5; logit promotes ' sediment', ' Clay'): near misses avoid slots where reef/coral/beach/sand/sediment/lagoon is the predictable next word; fires may contain them. Opposite pole: fluvial/limnology and academic geoscience lists ('lotic⟦ and⟧ lentic', 'fluvial geomorphology⟦,⟧', karst); logit suppresses ' stream', ' channel'. Tokens: ',', ' and', ' the', ' odd', ' occasional' single; species names split after the read position; 'bronze whalers' (' wh'+'alers') dropped."
+}

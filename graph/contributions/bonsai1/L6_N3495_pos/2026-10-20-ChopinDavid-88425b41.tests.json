@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-88425b41",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3495+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-20T20:30:02+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N3495",
+   "pole": "+",
+   "label": "The standalone Arabic shadda token 'ّ' when it geminates a short bare-consonant stem piece of a high-frequency word — strongest after the ح-stems (حقّ, حدّ, حدّث, حجّة) and the particles إنّ/كلّ/أمّا, weak after the probed stems مرّ/دقّ/سجّ (0.05-0.24) — with the bare ح-stem pieces ' حق' and ' الح'+'د' also firing (0.24/0.72) without any shadda.",
+   "fire": [
+    "اعترفت الحكومة أخيراً بحقّ السكان في مياه النهر بعد نزاع طويل.",
+    "وصف التقرير ما جرى في حقّ الصيادين بأنه اعتداء لا يمكن تبريره.",
+    "اكتشف المدير أن الشركة تجاوزت الحدّ المسموح به في الإنفاق خلال الصيف.",
+    "وفي المساء حدّث الشيخ تلاميذه عن سنوات الدراسة في القاهرة.",
+    "يعرف الجيران كلّ تفاصيل القصة لأنهم شاهدوا ما جرى من النافذة.",
+    "ويقول المزارعون إنّ موسم الزيتون هذا العام جاء مبكراً بسبب الطقس الدافئ.",
+    "انتظر التجار ارتفاع الأسعار، أمّا الفلاحون فقد باعوا ما لديهم مبكراً.",
+    "عرض الطالب أمام اللجنة حجّة قوية أقنعت جميع الأعضاء."
+   ],
+   "quiet": [
+    "دافع الوكيل عن حق موكله في محاكمة عادلة أمام القضاء.",
+    "نقلت الصحف المحلية كل تفاصيل القصة في صباح اليوم التالي.",
+    "راجع الموظف الأرقام مرتين ولم يلاحظ أي خلل في التقرير.",
+    "يقول الصيادون في الميناء إن البحر كان هادئاً طوال الأسبوع الماضي.",
+    "باع التجار بضاعتهم بسرعة، أما أصحاب الدكاكين فقد انتظروا موسم الأعياد.",
+    "وبعد نقاش طويل قرّر أعضاء المجلس تأجيل التصويت إلى الأسبوع المقبل.",
+    "جلس الأطفال حول المعلّمة يستمعون إلى قصة قبل النوم.",
+    "استأجر العم سيّارة قديمة ليوصل أبناءه إلى المدرسة في الصباح."
+   ]
+  }
+ ],
+ "predictions": "Fires: بحقّ (' ب'+'حق'+'ّ', probe 0.888) and في حقّ (' في'+' حق'+'ّ', the corpus-max configuration) 0.8-1.0; الحدّ (' الح'+'د'+'ّ') >= 0.7 (bare 'د' alone 0.723); حدّث (' حد'+'ّ'+'ث') ~0.75 (corpus 0.77); حجّة (' ح'+'ج'+'ّ'+'ة') ~0.7 (corpus 0.80, unprobed); إنّ ~0.4 (0.408); كلّ 0.3-0.6 (the 0.62 probe had two shaddas, peak unattributed); أمّا 0.3-0.8 (corpus 0.81 was line-initial 'أم'+'ّ'; ' أم'+'ّ' unprobed; الأمّة 0.69 supports the stem). Median ~0.7, floor ~0.4 even if كلّ and أمّا disappoint. Near misses: bare كل/أي/إن/أما 0.05-0.2 (plain-prose floor 0.046); bare ' حق' 0.2-0.3 (probe 0.236, the honest ح-stem drop-the-trigger case); قرّر (' ق'+'ر'+'ّ'+'ر', shadda after a single-letter piece, the shape of الشقّ/حجّة/الحمّام at 0.72-0.92 in the corpus, only سجّادة 0.242 probed) 0.15-0.45; المعلّمة (' عل'+'ّ', shares ل with كلّ) and سيّارة (' سي'+'ّ', a فعّالة noun like الحمّام 0.77) 0.1-0.4. Expect 1-2 near misses >= 0.30 (bare حق, المعلّمة, سيّارة or قرّر most likely), AUROC ~0.93. If two or more of the shadda near misses breach, the lexical (frequent-stem) reading is refuted in favour of a token-shape reading (shadda after any short bare consonant piece), a valid failed-label result; if only bare حق breaches, the stem reading holds and the shadda acts as a booster on top of the stem piece.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "Shadda after short Arabic stems",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Probes (fraction of max 5.97): shadda after ' حق' (بحقّه) 0.888; bare ' الح'+'د' (الحد, no shadda) 0.723 on 'د'; two-shadda probe كلّ…وأيّ (' كل'+'ّ', ' وأ'+'ي'+'ّ') 0.62, peak unattributed; إنّ 0.408; bare ' حق' 0.236; سجّادة (' س'+'ج'+'ّ') 0.242; دقّ 0.173; مرّة (' مر'+'ّ') 0.05; vocalized الطَّالِبُ 0.026; diacritics without shadda 0.033; plain prose 0.046; single-token الحاج 0.048; English/Spanish floors < 0.03. Corpus peaks: حقّ 1.0, الشقّ 0.92, أمّا 0.81 (line-initial), حجّة 0.80, الحمّام 0.77, بِالْحَقِّ 0.77 (on 'ق'), حدّث 0.77, الزخّار 0.72, حدَّ (' حد'+'َ'+'ّ') 0.72, الأمّة 0.69. So 'any shadda' is refuted (مرّة, دقّ < 0.2), a pure ح-stem reading is incomplete (كلّ, إنّ, أمّا, الشقّ fire), and the vowel-mark condition is secondary (حدَّ fires after a fatha). The response is set by the preceding stem piece: a lexical, partly mapped set of frequent short stems. Tokenizer: ' كل'+'ّ', ' إن'+'ّ', ' أم'+'ّ'+'ا', ' ب'+'حق'+'ّ', ' في'+' حق'+'ّ', ' الح'+'د'+'ّ', ' حد'+'ّ'+'ث', ' ح'+'ج'+'ّ'+'ة'; ' الحق' is one token (الحقّ unprobed, not used); ' حق', ' كل', ' أي', ' إن', ' أما', ' العم' are single tokens; near misses avoid ' الح'+X, ' المح' and ' الج'+'د'. Offshoots: Latin pieces 'rsa' (U|rsa 0.707) and 'stand' (In|stand 0.528), excluded. Opposite pole (max 15.3, dominant): Spanish continuation piece after an accented vowel (á|r, Cá|d, F|ó). Caveats: layer 6, logit effect incoherent; + pole is the weak side of an orthography axis."
+}
