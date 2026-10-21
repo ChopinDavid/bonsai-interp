@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-20-ChopinDavid-75c62a33",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N12088-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:47:08+00:00",
+ "recipe": {
+  "toolchain_commit": "9e30a54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N12088_neg/2026-10-20-ChopinDavid-75c62a33.tests.json"
+ },
+ "label": "The piece carrying the 'l' right after a separate 'w' piece in the syllable wal/wall (Arabic الو|ال|دين, الو|ل|يد, و|ول ستريت; Japanese ウォ|ール; English 'Wall Street'), not other Arabic words with و or ل.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N12088_neg/2026-10-20-ChopinDavid-75c62a33.tests.json",
+   "prereg_commit": "9e30a54",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.947,
+     "peak": "ال"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.793,
+     "peak": "ال"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.816,
+     "peak": "ول"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.89,
+     "peak": "ول"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.938,
+     "peak": "ール"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.301,
+     "peak": "ール"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.796,
+     "peak": "ول"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.877,
+     "peak": "ال"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.045,
+     "peak": "تاب"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.232,
+     "peak": "ال"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.037,
+     "peak": " عمر"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.245,
+     "peak": "أغل"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": "京"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.099,
+     "peak": "壁"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.119,
+     "peak": "ولد"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.235,
+     "peak": "ال"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.847,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "9e30a54",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "'l' after w: wal/wall",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 157): 'الوالدين' 0.924 ('ال' after 'و'), 'الوليد بن عبد الملك' 0.786 ('ول'), 'بورصة وول ستريت' 0.839, 'ウォールストリート' 0.941 ('ール'), English 'The Wall Street Journal' 0.561 (' Wall'). Weaker or quiet: 'ويل ديورانت' 0.221, 'الولد' 0.118 (one token 'ولد'), 'اليوم الأول' 0.062, plain Arabic 0.026. Card top: و|ول ديورانت, ウォ|ール, الو|ال|دين. Every Arabic fire item splits as ' الو'|'ال' or ' و'|'ول' (tokenizer-checked); the single piece 'وال' in والديه was not probed and is avoided.",
+ "selection": "random draw"
+}

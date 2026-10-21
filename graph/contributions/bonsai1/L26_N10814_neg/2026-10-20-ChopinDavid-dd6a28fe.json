@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-20-ChopinDavid-dd6a28fe",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N10814-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:45:58+00:00",
+ "recipe": {
+  "toolchain_commit": "9e30a54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N10814_neg/2026-10-20-ChopinDavid-dd6a28fe.tests.json"
+ },
+ "label": "The token right after a copula or conditional that holds the predication open: ' not' after 'is/was', and ' it' after conditional 'if' or an inverted question 'is'; the same 'is'/'if' followed by any other word stays quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N10814_neg/2026-10-20-ChopinDavid-dd6a28fe.tests.json",
+   "prereg_commit": "9e30a54",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.475,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.185,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.436,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.438,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.436,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.423,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.507,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.583,
+     "peak": " not"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " snow"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.064,
+     "peak": " still"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.036,
+     "peak": " tests"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.092,
+     "peak": " it"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.437,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "9e30a54",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'is not' / 'if it'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 63.75): ' not' after 'hotel is' 0.818; ' it' after 'If' 0.437-0.507 and after inverted 'is' 0.311-0.458; 'is not a scam' 0.275. Quiet: sentence-initial 'It is raining' 0.009, 'Not only' 0.137, 'notice' 0.005. Card: ' not' x11 and ' it' x8 in the top 32.",
+ "selection": "random draw"
+}

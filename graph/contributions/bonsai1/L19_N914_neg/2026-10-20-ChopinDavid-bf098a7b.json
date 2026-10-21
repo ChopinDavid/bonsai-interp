@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-20-ChopinDavid-bf098a7b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N914-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:46:08+00:00",
+ "recipe": {
+  "toolchain_commit": "9e30a54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N914_neg/2026-10-20-ChopinDavid-bf098a7b.tests.json"
+ },
+ "label": "The opening word of a gloss that defines a unit or technical term just used, e.g. '(A terabyte is ...' or '. An exaflop is ...', as opposed to parentheses that cite, point to a figure, or add an aside.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N914_neg/2026-10-20-ChopinDavid-bf098a7b.tests.json",
+   "prereg_commit": "9e30a54",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.319,
+     "peak": "A"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.303,
+     "peak": "A"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.173,
+     "peak": "A"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.129,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.038,
+     "peak": "A"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.064,
+     "peak": " pet"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.377,
+     "peak": "A"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.328,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.025,
+     "peak": " sheet"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": " two"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": " lost"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " three"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.032,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " bridge"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.03,
+     "peak": " survey"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.238,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "9e30a54",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "opens a definition gloss",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Probes (fraction of max 28.6): '(A terabyte is a thousand gigabytes.)' 0.322 at 'A'; 'An exaflop is a billion billion' 0.225 at ' An'; 'referring to the highest alert level' 0.194; dash gloss 'AUVs - autonomous' 0.154; '– short for' 0.050. Quiet: '(see Figure 2 ...)' 0.026, '(Smith and Jones, 2010)' 0.018, unit without a gloss 0.021. Card top: '(A terabyte is' 1.0, '. A petaflop is' 0.90.",
+ "selection": "random draw"
+}

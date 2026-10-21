@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-20-ChopinDavid-071a40cd",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N10465+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:47:20+00:00",
+ "recipe": {
+  "toolchain_commit": "9e30a54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N10465_pos/2026-10-20-ChopinDavid-071a40cd.tests.json"
+ },
+ "label": "The final token of an embedded 'what X is' clause in step-by-step reasoning instructions (identify what the conclusion is.), against the same instructions phrased without the embedded question.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N10465_pos/2026-10-20-ChopinDavid-071a40cd.tests.json",
+   "prereg_commit": "9e30a54",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.031,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.314,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.21,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.226,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.112,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.101,
+     "peak": " work"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.032,
+     "peak": " method"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.19,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.364,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.13,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.191,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.101,
+     "peak": " work"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.032,
+     "peak": " method"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.149,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.578,
+    "median_fire": 0.151,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "9e30a54",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "end of 'what X is' clause",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Probes (fraction of max 14.4) were mostly weak: 'identify what the conclusion is.' 0.455 (peak '.'), 'a one-unit cube is the standard unit' 0.240 (' is'), 'then dw is equal' 0.136, 'spins are used' 0.073, 'difficulty putting' 0.037. Neutral prose -0.002 to 0.020. Card top examples are mixed (comma before 'then dw', ' is', ' putting', a header colon), so this label tests only the strongest probe.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-20-ChopinDavid-90f55072",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N8871+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-21T02:47:37+00:00",
+ "recipe": {
+  "toolchain_commit": "9e30a54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N8871_pos/2026-10-20-ChopinDavid-90f55072.tests.json"
+ },
+ "label": "A byte-level partial token, i.e. an incomplete UTF-8 character that the tokenizer had to split into bytes (space-initial katakana words, Arabic-Indic digits, rare kanji), not text made only of whole-character tokens.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N8871_pos/2026-10-20-ChopinDavid-90f55072.tests.json",
+   "prereg_commit": "9e30a54",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.885,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.782,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.824,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.953,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.73,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.633,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.898,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.091,
+     "peak": " �"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": "映"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": "始"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.04,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.034,
+     "peak": " الجامعة"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.072,
+     "peak": " الز"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": "ت"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.038,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.855,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "9e30a54",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "partial UTF-8 byte token",
+ "unit_kind": "lexical",
+ "confidence": 0.7,
+ "notes": "Probes (fraction of max 206): space-separated katakana lists 0.53-0.81 (peak ' �'), Arabic-Indic date ٣٠-٨-٢٠١١ 0.837, a kanji sentence with a byte-split character 0.494; whole-token Japanese sentence 0.003, the same hotel amenities in English 0.034, the date in Western digits 0.036. Last layer, so this is the model handling incomplete characters.",
+ "selection": "random draw"
+}
