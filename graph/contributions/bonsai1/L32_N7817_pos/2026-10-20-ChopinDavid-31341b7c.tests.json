@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-31341b7c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N7817+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N7817",
+   "pole": "+",
+   "label": "Function words and conjunctions linking quantities, materials or alternatives in practical construction and earthworks prose (tons of fill, full or partial basement, gravels, light soil and sand), against the same function words in narrative or general prose.",
+   "fire": [
+    "Spread a layer of crushed stone and compact it before pouring the slab.",
+    "The crew hauled twenty tons of topsoil and gravel to the new site.",
+    "Dig the footing to below the frost line and fill it with lean concrete.",
+    "Clay or silty soil holds water, so add drainage before building the wall.",
+    "Order ten cubic yards of fill for the driveway and five for the patio.",
+    "A crawl space or a full basement both need a vapour barrier on the floor.",
+    "Backfill the trench with sand and gravel, then tamp it in thin layers.",
+    "The engineer specified a mix of cement, sand and aggregate for the footings."
+   ],
+   "quiet": [
+    "She spread the blanket on the grass and opened the picnic basket.",
+    "The crew hauled their bags and guitars into the van after the show.",
+    "He dug through the drawer and found the letter from his sister.",
+    "Tea or coffee will be served in the hall after the lecture.",
+    "Order two pizzas for the party and a salad for the vegetarians.",
+    "A novel or a book of poems both make a good gift for a reader.",
+    "Fill the glass with ice and lemonade, then add a sprig of mint.",
+    "The chef specified a mix of butter, sugar and flour for the crust."
+   ]
+  }
+ ],
+ "predictions": "5-7/8 fire >= 0.30 (probes: construction and quantity sentences 0.42-0.65); general prose with the same function words 0.01-0.14. The pole is diffuse ('web and mobile' 0.66 also fired), so a narrative near miss may leak.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "linkers in earthworks prose",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Probes (fraction of max 62.25): 'trench dug into the ground and filled with stone' 0.653 (' with'), 'tons of fill' 0.610, 'a full or partial basement' 0.507, 'gravels, light soil and sand' 0.418, 'between an hour and an hour' 0.565, 'web and mobile apps' 0.663. Quiet: 'two symphonies and an encore' 0.139, 'free waterproofing estimate' 0.197, narrative 0.012. Diffuse pole (0.45% of tokens over 0.1 of max); unit kind unclear."
+}

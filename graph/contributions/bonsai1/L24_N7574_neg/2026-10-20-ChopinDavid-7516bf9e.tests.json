@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-7516bf9e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N7574-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N7574",
+   "pole": "-",
+   "label": "The participle ' reported' in a passive 'was/were reported + state' clause in incident reports (were reported stolen, was reported missing), not active 'reported' or the noun 'report'.",
+   "fire": [
+    "Two laptops and a camera were reported stolen from the office on Friday.",
+    "A hiker was reported missing near the summit late on Sunday.",
+    "Three passengers were reported injured after the bus left the road.",
+    "The cargo was reported lost at sea during the storm.",
+    "Several cars were reported damaged after the hailstorm on Tuesday night.",
+    "The vessel was reported overdue when it failed to reach port.",
+    "Four cattle were reported missing from the farm after the gate was left open.",
+    "Garden tools and a ladder were reported taken from the shed overnight."
+   ],
+   "quiet": [
+    "The office manager reported the theft of two laptops on Friday.",
+    "Rangers reported that a hiker had not returned from the summit.",
+    "The driver's report said three passengers had minor injuries.",
+    "Newspapers reported heavy losses at sea during the storm.",
+    "Insurance reporters toured the streets after the hailstorm.",
+    "The harbour master reported the vessel's position to the coastguard.",
+    "The farmer reported four cattle missing after the gate was left open.",
+    "A neighbour noticed the shed door open and called the police."
+   ]
+  }
+ ],
+ "predictions": "4-7/8 fire >= 0.30 (only one probe: 'were reported stolen' 0.325); near misses with active 'reported' or 'report' expected <= 0.1. The label rests on a single high probe, so a fail is likely and would be informative.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "passive 'reported' + state",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Probes (fraction of max 26.25) were mostly weak: 'were reported stolen' 0.325 (' reported'); 'the thief was present' 0.160; 'was discovered only after' 0.012; 'is registered' 0.041; 'membership is free' 0.055 (peak elsewhere); 'sweeping and permanent' 0.056. Card top examples are predicate words after a copula (present, permanent, free, discovered, reported, registered), but that broader reading failed in probes. The + pole is broad (4.1% of tokens)."
+}

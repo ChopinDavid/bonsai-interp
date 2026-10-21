@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-e763ee29",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N12247+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N12247",
+   "pole": "+",
+   "label": "The piece 'diam'/'ам'/'iam' of the word diameter (and Diamox) when the tokenizer splits it as diam|eter in any language (diameters, diamètre, диаметр), not other dia- words such as diamond, diagonal or диван.",
+   "fire": [
+    "The new tunnels have internal diameters of seven metres, wider than the old ones.",
+    "Le tronc mesure plus d'un mètre de diamètre à la base.",
+    "Вырежьте из картона круг диаметром пятнадцать сантиметров.",
+    "Old wells in the village were dug with diameters of barely a metre.",
+    "Il diametro del pozzo è di circa due metri.",
+    "Трубы большого диаметра укладывают на песчаную подушку.",
+    "Mountaineers on the expedition carried Diamox for the high camps.",
+    "Measure the inner diameters of both pipes before buying the coupling."
+   ],
+   "quiet": [
+    "The new tunnel is lined with concrete and lit along its whole length.",
+    "Le bijou est orné d'un diamant taillé en poire.",
+    "Вырежьте из картона квадрат со стороной пятнадцать сантиметров.",
+    "Old wells in the village were dug by hand and lined with stone.",
+    "Il diagramma mostra la crescita della popolazione negli ultimi anni.",
+    "Трубы укладывают по диагонали через весь участок.",
+    "Mountaineers on the expedition carried spare gloves for the high camps.",
+    "Measure the length of both pipes before buying the coupling."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire >= 0.30 (probes 0.62-0.82 across English plural, French, Russian and Diamox); near misses with whole-token diamond (0.009) and other dia- words expected <= 0.05.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'diam' piece of diameter",
+ "unit_kind": "lexical",
+ "confidence": 0.8,
+ "notes": "Probes (fraction of max 215): Russian 'диаметром' 0.774 and 0.817 ('ам'), English ' diam|eters' 0.622 and 0.671, French ' diam|ètre' 0.716, ' D|iam|ox' 0.707 ('iam'). Quiet: ' diamond' (one token) 0.009, ' parameters' (one token) 0.017, Russian 'диван' 0.004. The singular English ' diameter' is a single token and was not tested. Card also shows param|yxovirus and パラ|メ|ータ at lower levels. French 'diamant' (' diam'|'ant') is a deliberate hard near miss: the same piece in the word for diamond."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-b6d077ea",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N704+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N704",
+   "pole": "+",
+   "label": "The piece 'ants' (or 'ANTS'/'ANT') of 'Plants' when the word is split as Pl|ants, i.e. written without a leading space at the start of a line or straight after punctuation; other -ants words and other Pl- words stay quiet.",
+   "fire": [
+    "Spring checklist:\nPlants with yellow leaves usually need more nitrogen.",
+    "Balcony garden, week 2:\nPlants on the east side get the morning light.",
+    "Read the label first.Plants grown from seed need a frost-free start.",
+    "Chapter 4\nPlants of the mint family have square stems and opposite leaves.",
+    "Care sheet:\nPlants kept indoors should be turned every week toward the window.",
+    "Shade border ideas.Plants for dry shade include ferns and hellebores.",
+    "Native garden notes:\nPlants that attract bees should flower from April to October.",
+    "CATALOGUE OF RARE PLANTS\nSection one lists the alpine species."
+   ],
+   "quiet": [
+    "Spring checklist:\nPlanets visible this month include Venus and Mars.",
+    "Balcony garden, week 2:\nAnts on the east side have built a nest under the pots.",
+    "Read the label first.Pans with a non-stick coating need low heat.",
+    "Chapter 4\nElephants of the savanna live in herds led by an old female.",
+    "Care sheet:\nGiants of the forest such as oaks need deep soil.",
+    "Shade border ideas.Plans for the new bed include a stone path.",
+    "Native garden notes:\nGrants for school gardens open in April.",
+    "CATALOGUE OF RARE PLANES\nSection one lists the early gliders."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire >= 0.30 (probes 0.73-0.75 for Pl|ants, 0.57 for PL|ANT); near misses with Ele|phants, Ants, Gi|ants, Pl|anes etc. <= 0.07.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ants' in Pl|ants",
+ "unit_kind": "lexical",
+ "confidence": 0.75,
+ "notes": "Probes (fraction of max 31.1): line-initial 'Plants that need full sun' 0.747, 'tips.Plants in clay' 0.728 (both 'ants'), 'PLANT ROOM' 0.568 ('ANT'), line-initial singular 'Plant the bulbs' 0.205, spaced ' plants' 0.333 (one token, avoided in both sets). Quiet: line-initial 'Elephants' 0.003 (peak elsewhere), 'Ants' 0.002, 'Planes' 0.067, 'power plant' 0.003. Layer 1: a spelling-unit pole; the corpus also shows 'ante' and Arabic 'بات' at lower levels."
+}

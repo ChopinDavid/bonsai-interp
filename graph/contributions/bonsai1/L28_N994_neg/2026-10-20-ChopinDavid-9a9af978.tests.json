@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-9a9af978",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N994-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N994",
+   "pole": "-",
+   "label": "Census apportionment prose: the word right before (or around) 'census' when the count is the decennial population census (after the census, at each census, the 2010 Census); the same frames with an election, survey or other event stay quiet.",
+   "fire": [
+    "Congressional districts are redrawn after every census to keep them equal in population.",
+    "Each state's number of seats is recalculated after the decennial census.",
+    "The city has grown by forty thousand people since the last census.",
+    "Officials expect the town to lose a seat when districts are adjusted after the next census.",
+    "Analysts compared county populations from the 2000 and 2010 census counts.",
+    "The new map is based on population figures from the 2020 Census.",
+    "Ireland carries out a national census every five years.",
+    "Under the constitution, seats are reapportioned after each census of the population."
+   ],
+   "quiet": [
+    "Congressional districts are often fought over after every election.",
+    "Each state's number of delegates is recalculated after the primary season.",
+    "The city has added forty new parks since the last mayor took office.",
+    "Officials expect the town to lose a school when budgets are cut next year.",
+    "Analysts compared county unemployment from the 2000 and 2010 annual reports.",
+    "The new map is based on satellite images from the 2020 survey flights.",
+    "Ireland holds a national arts festival every five years.",
+    "Under the constitution, the president is elected every four years."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire >= 0.30 (probes: 'after the census' 1.0, 'after each census' 0.70, 'at the last census' 0.69, 'census every ten' 0.60, 'the 2010 Census' 0.41); near misses with election/Olympics/practice frames 0.004-0.13.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "anticipates 'census'",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Probes (fraction of max 640): 'redistricted every ten years after the census' 0.996 (' after'), 'apportioned after each census' 0.697 (' each'), 'recorded at the last census' 0.694 (' last'), 'a statewide census every ten years' 0.600 (' every'), 'figures from the 2010 Census' 0.410 (digit '1'), 'included in the United States Census' 0.353. Quiet: 'The 2010 Winter Olympics' 0.076, 'after each election' 0.134, 'every ten days' 0.004. The logit effect of the - pole promotes census, population and enumeration: a next-token predictor."
+}

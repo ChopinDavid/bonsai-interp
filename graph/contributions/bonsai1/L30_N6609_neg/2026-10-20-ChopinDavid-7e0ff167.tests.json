@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-7e0ff167",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N6609-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N6609",
+   "pole": "-",
+   "label": "The modifier word that opens a multiword technical term in physics and nonlinear-dynamics prose (phase in 'phase transition', chaotic in 'chaotic map', inter- in 'intermetallic'), not the same word in its everyday sense.",
+   "fire": [
+    "Near the critical point the magnet undergoes a second-order phase transition.",
+    "Students first map the phase diagram of a simple binary mixture.",
+    "Each trajectory in phase space follows the flow of the equations of motion.",
+    "The logistic equation is the simplest example of chaotic dynamics in one dimension.",
+    "Their circuit drives two coupled chaotic oscillators into synchrony.",
+    "Small errors grow exponentially on a chaotic attractor such as the Lorenz system.",
+    "Annealing the alloy precipitates hard intermetallic phases along the grain boundaries.",
+    "Below the transition temperature the polymer blend shows phase separation into droplets."
+   ],
+   "quiet": [
+    "The second phase of the stadium renovation will start next spring.",
+    "Our office was chaotic all week because of the move to the new building.",
+    "The airport has an international terminal and a smaller regional one.",
+    "The school is in the final phase of hiring new teachers for the autumn.",
+    "Near the critical point the magnet's susceptibility grows without bound.",
+    "Students first measure how quickly salt dissolves in warm water.",
+    "Annealing the alloy relieves stress and softens the metal for rolling.",
+    "The Lorenz equations were first written down to model convection in the atmosphere."
+   ]
+  }
+ ],
+ "predictions": "6-8/8 fire >= 0.30 (probes: phase transitions 1.01, coupled chaotic maps 0.76, intermetallic 0.58); everyday phase/chaotic 0.02 and trigger-free physics ~0.01, so 0 near misses >= 0.30.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "opens physics compound term",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 51): 'catastrophe theory and phase transitions' 1.01, 'coupled chaotic maps' 0.76, 'intermetallic compounds' 0.58 (' inter'), 'artificial intelligence' after optimisation 0.27. Everyday senses: 'next phase of the project' 0.015, 'a chaotic morning' 0.016, 'artificial flowers' 0.023. Physics without these modifiers: 'self-organized criticality' 0.006. The + pole is function words in the same register; the logit effect touches linear/nonlinear."
+}

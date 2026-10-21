@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-1876c579",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11762-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N11762",
+   "pole": "-",
+   "label": "Dense layer-1 pole: on at a low level for about a third of all tokens; best guess for its peaks is words in code and software documentation (returns, implements, %), but probes fired as strongly on plain words (little, simpler), so no label is claimed.",
+   "fire": [
+    "This method returns a list of the open connections.",
+    "The helper implements a simple cache for the parsed config files.",
+    "log.info('loaded %d rows' % count)",
+    "This function returns None if the key is missing.",
+    "The module implements the client side of the protocol.",
+    "msg = 'user %s logged in' % name",
+    "Calling close() returns the socket to the pool.",
+    "This class implements a thread-safe queue."
+   ],
+   "quiet": [
+    "The garden looked a little greener after the rain.",
+    "Her second novel has a simpler plot than the first.",
+    "He returns to the village every summer to see his parents.",
+    "The children waited a little longer for the bus.",
+    "The old recipe is simpler than the one in the new book.",
+    "The ferry returns to the harbour at six in the evening.",
+    "She smiled a little when she heard the news.",
+    "The map was simpler to read once we found the legend."
+   ]
+  }
+ ],
+ "predictions": "Expected to fail: plain prose near misses fired 0.11-0.79 in probes, so near misses will reach 0.30. Recorded to mark the pole dense, not to find a meaning.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense (code-doc guess)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: 32.2% of tokens reach 0.1 of max (max 0.24), gate-closed regime 100%; flagged dense. Probes (fraction of max): 'This returns the value' 0.785, 'a simpler format' 0.793, 'looked up a little' 0.761, 'This file implements' 0.490, \"'%s' % params\" 0.476, 'She returns from Paris' 0.457, 'tuned up' 0.311, 'flooded the fields after' 0.115."
+}

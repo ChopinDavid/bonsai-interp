@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-bf098a7b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N914-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N914",
+   "pole": "-",
+   "label": "The opening word of a gloss that defines a unit or technical term just used, e.g. '(A terabyte is ...' or '. An exaflop is ...', as opposed to parentheses that cite, point to a figure, or add an aside.",
+   "fire": [
+    "The new camera records 8K video at sixty frames a second. (A frame is one still image.)",
+    "Each tanker carries about two million barrels. (A barrel is roughly 159 litres.)",
+    "The fund lost forty basis points last quarter. (A basis point is one hundredth of a percent.)",
+    "Some pulsars spin hundreds of times per second. A pulsar is a rapidly rotating neutron star.",
+    "The plot covered almost three hectares. (A hectare is ten thousand square metres.)",
+    "The quake released energy measured in petajoules. A petajoule is a million billion joules.",
+    "Engineers quoted the bridge's load in kilonewtons. (A kilonewton is a thousand newtons.)",
+    "The galaxy lies about two megaparsecs away. (A megaparsec is about 3.26 million light years.)"
+   ],
+   "quiet": [
+    "The new camera records 8K video at sixty frames a second (see the spec sheet for details).",
+    "Each tanker carries about two million barrels (Shipping Review, 2019).",
+    "The fund lost forty basis points last quarter, its worst result in years.",
+    "Some pulsars spin hundreds of times per second, as the survey in Table 3 shows.",
+    "The plot covered almost three hectares (the old map is wrong about this).",
+    "The quake released a great deal of energy, and buildings swayed for a minute.",
+    "Engineers quoted the bridge's load in kilonewtons (Figure 4).",
+    "The galaxy lies about two megaparsecs away, according to the new survey."
+   ]
+  }
+ ],
+ "predictions": "5-7/8 fire >= 0.20 with median ~0.25 (probes: '(A terabyte is' 0.32, '. An exaflop is' 0.225, 'referring to' 0.19); citation/figure parentheses 0.02-0.03. AUROC risk is low, median risk is real.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "opens a definition gloss",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Probes (fraction of max 28.6): '(A terabyte is a thousand gigabytes.)' 0.322 at 'A'; 'An exaflop is a billion billion' 0.225 at ' An'; 'referring to the highest alert level' 0.194; dash gloss 'AUVs - autonomous' 0.154; '– short for' 0.050. Quiet: '(see Figure 2 ...)' 0.026, '(Smith and Jones, 2010)' 0.018, unit without a gloss 0.021. Card top: '(A terabyte is' 1.0, '. A petaflop is' 0.90."
+}

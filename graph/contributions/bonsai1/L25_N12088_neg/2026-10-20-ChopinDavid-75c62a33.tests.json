@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-75c62a33",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N12088-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N12088",
+   "pole": "-",
+   "label": "The piece carrying the 'l' right after a separate 'w' piece in the syllable wal/wall (Arabic الو|ال|دين, الو|ل|يد, و|ول ستريت; Japanese ウォ|ール; English 'Wall Street'), not other Arabic words with و or ل.",
+   "fire": [
+    "ينبغي على الوالدين متابعة دراسة أبنائهم كل أسبوع.",
+    "زار الطالب الوالد المريض في المستشفى صباح الجمعة.",
+    "حكم الوليد بن عبد الملك الدولة الأموية عشر سنوات.",
+    "أغلقت أسواق وول ستريت على انخفاض كبير يوم الجمعة.",
+    "ウォール街の株価は金曜日に大きく下がった。",
+    "東京のホテルの部屋は白いウォールで囲まれていた。",
+    "تحدث المذيع عن رد فعل وول ستريت على قرار البنك المركزي.",
+    "شكرت الطالبة الوالدة على دعمها طوال سنوات الدراسة."
+   ],
+   "quiet": [
+    "ينبغي على الأب والأم متابعة دراسة أبنائهم كل أسبوع.",
+    "زار الطالب الجد المريض في المستشفى صباح الجمعة.",
+    "حكم عمر بن عبد العزيز الدولة الأموية سنتين فقط.",
+    "أغلقت أسواق نيويورك على انخفاض كبير يوم الجمعة.",
+    "東京の株価は金曜日に大きく下がった。",
+    "東京のホテルの部屋は白い壁で囲まれていた。",
+    "ذهب الولد مع أصدقائه إلى الملعب بعد المدرسة.",
+    "شكرت الطالبة أمها على دعمها طوال سنوات الدراسة."
+   ]
+  }
+ ],
+ "predictions": "6-8/8 fire >= 0.30 (probes: الوالدين 0.92, الوليد 0.79, وول ستريت 0.84, ウォール 0.94, English Wall Street 0.56); near misses with الأب والأم, الولد, الأول expected <= 0.12.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'l' after w: wal/wall",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 157): 'الوالدين' 0.924 ('ال' after 'و'), 'الوليد بن عبد الملك' 0.786 ('ول'), 'بورصة وول ستريت' 0.839, 'ウォールストリート' 0.941 ('ール'), English 'The Wall Street Journal' 0.561 (' Wall'). Weaker or quiet: 'ويل ديورانت' 0.221, 'الولد' 0.118 (one token 'ولد'), 'اليوم الأول' 0.062, plain Arabic 0.026. Card top: و|ول ديورانت, ウォ|ール, الو|ال|دين. Every Arabic fire item splits as ' الو'|'ال' or ' و'|'ول' (tokenizer-checked); the single piece 'وال' in والديه was not probed and is avoided."
+}

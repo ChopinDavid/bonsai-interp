@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-5118d1c8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N1476-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N1476",
+   "pole": "-",
+   "label": "The words ' humans' and ' fats' as the object of a preposition in health or safety prose (toxicity to humans, a balance of fats), not the same words as a sentence subject.",
+   "fire": [
+    "The pesticide is considered harmless to humans but deadly to bees.",
+    "Few of these mushrooms are dangerous to humans when cooked properly.",
+    "Bird flu rarely spreads to humans, but farm workers are tested every month.",
+    "The study measured how lead in soil passes from crops to humans.",
+    "Each meal plan aims for a healthy ratio of fats to carbohydrates.",
+    "Athletes need a steady intake of fats during long training blocks.",
+    "The label lists the grams of fats, sugars and fibre in each serving.",
+    "Researchers tested whether the virus could jump from mice to humans."
+   ],
+   "quiet": [
+    "Humans have used this mushroom in cooking for thousands of years.",
+    "In the lab, humans and mice responded to the drug in very different ways.",
+    "Early humans probably lived in small groups along the coast.",
+    "Fats are digested more slowly than sugars, so they keep you full longer.",
+    "Healthy fats tend to come from nuts, seeds and oily fish.",
+    "The pesticide is considered harmless to people but deadly to bees.",
+    "Each meal plan aims for a healthy mix of vegetables and grains.",
+    "The label lists the calories and the sugar content of each serving."
+   ]
+  }
+ ],
+ "predictions": "5-7/8 fire >= 0.30 (probes: 'toxicity to humans' 0.70, 'balance of fats' 0.46); the other nouns probed were weaker (temperatures 0.15), so the label is narrow. Near misses with humans/fats as subjects ~0.03-0.05; 0-1 >= 0.30.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "humans/fats as prep. object",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Probes (fraction of max 13.9): 'little or no toxicity to humans or pets' 0.696 (' humans'), 'a good balance of fats, carbs' 0.456 (' fats'). Weaker: 'small towns' 0.206 (peak ' from'), 'high temperatures' 0.150, '80-year-old' 0.079, 'closed on Saturday' 0.068. Same words as subjects: 'The humans in the story' 0.045 (peak elsewhere), 'Saturday was' 0.029. The pole is broad (0.75% of tokens over 0.1 of max), so this is a narrow word-in-context label, not the pole's whole job."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-a375a5f9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N3738+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N3738",
+   "pole": "+",
+   "label": "German-language contact and credits blocks: the extension hyphen inside a German-format phone number and the inner pieces of German surnames in name lists; English contact blocks and ordinary German prose stay low.",
+   "fire": [
+    "Ihr Ansprechpartner: Thomas Brenninger, Tel.: +49 89 4412-307, Fax: +49 89 4412-308",
+    "Kontakt\nKlinik am Park\nTelefon: +49 221 9875-140\nE-Mail: info@example.de",
+    "Rufen Sie uns an unter 0711 2233-415 oder schreiben Sie uns eine Nachricht.",
+    "Pressestelle der Stadtwerke, Telefon: +49 40 3311-2290",
+    "Es spielten: Katharina Wolfsteiner, Jens Pikowski und Ulrike Hammerschmidt.",
+    "Redaktion: Bernhard Kreuzwieser, Sabine Tomaschitz, Florian Gschwendtner",
+    "Fotos: Michaela Pfisterer und Christoph Grabenhofer",
+    "Für Rückfragen steht Ihnen Frau Edeltraud Schnabelmayr unter +49 6221 387-512 zur Verfügung."
+   ],
+   "quiet": [
+    "Your contact: Thomas Brennan, Tel.: (312) 441-2307, Fax: (312) 441-2308",
+    "Contact\nPark Clinic\nPhone: 020 7946-0140\nEmail: info@example.com",
+    "Call us on 0161 223-3415 or send us a message through the website.",
+    "Press office of the city utilities, phone: 0141 331-2290",
+    "Cast: Katherine Wolf, James Peters and Ursula Hammond.",
+    "Editors: Bernard Cross, Sabine Thomas, Florian Green",
+    "Das Museum zeigt im Sommer eine große Ausstellung über die Geschichte der Stadt.",
+    "Wir freuen uns auf Ihren Besuch und wünschen Ihnen eine gute Anreise."
+   ]
+  }
+ ],
+ "predictions": "6-8/8 fire >= 0.30 (German phone hyphen 0.89-1.18, split surname 0.905); near misses: English contact blocks ~0.02, German contact lines without an extension hyphen unknown (~0.1-0.3), German prose ~0.17-0.26 is the leak risk.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German contact/name block",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Probes (fraction of max 24.25): 'Tel.: +49 30 2601-2518' 0.89 and a Pressekontakt block 1.18, both peaking on '-'; 'Elke Pikatz' 0.905 ('atz'). English contact blocks with hyphenated numbers 0.010-0.021. German prose 0.17-0.26 (Ausstellung, Weihnachten). Card: phone hyphens and split German surnames dominate; the - pole is weak (7.5)."
+}

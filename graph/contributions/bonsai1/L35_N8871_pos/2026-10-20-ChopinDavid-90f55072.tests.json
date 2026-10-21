@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-90f55072",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N8871+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N8871",
+   "pole": "+",
+   "label": "A byte-level partial token, i.e. an incomplete UTF-8 character that the tokenizer had to split into bytes (space-initial katakana words, Arabic-Indic digits, rare kanji), not text made only of whole-character tokens.",
+   "fire": [
+    "館内施設 レストラン バー プール サウナ",
+    "今週のランキング エンタメ スポーツ グルメ",
+    "おすすめ ゲーム アニメ マンガ",
+    "سجل الطالب في يوم ١٥-٩-٢٠١٨ في الجامعة.",
+    "وصل عدد الزوار إلى ٣٤٥٠ زائرا في الأسبوع الأول.",
+    "販売中 マンション アパート テナント",
+    "تبدأ الدراسة في ٢٠٢٣ في الحرم الجديد.",
+    "人気カテゴリ ファッション インテリア ガジェット"
+   ],
+   "quiet": [
+    "今日は友達と一緒に映画を見に行きました。",
+    "明日の会議は午後三時から始まります。",
+    "Hotel facilities: restaurant, bar, pool, sauna.",
+    "سجل الطالب في يوم 15-9-2018 في الجامعة.",
+    "وصل عدد الزوار إلى 3450 زائرا في الأسبوع الأول.",
+    "Apartments and offices for sale and for rent.",
+    "تبدأ الدراسة في العام المقبل في الحرم الجديد.",
+    "Popular categories: fashion, interior design, gadgets."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire >= 0.30 (probes 0.49-0.84 whenever a byte token is present); near misses whose characters are all whole tokens expected <= 0.04.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "partial UTF-8 byte token",
+ "unit_kind": "lexical",
+ "confidence": 0.7,
+ "notes": "Probes (fraction of max 206): space-separated katakana lists 0.53-0.81 (peak ' �'), Arabic-Indic date ٣٠-٨-٢٠١١ 0.837, a kanji sentence with a byte-split character 0.494; whole-token Japanese sentence 0.003, the same hotel amenities in English 0.034, the date in Western digits 0.036. Last layer, so this is the model handling incomplete characters."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-dd6a28fe",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N10814-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N10814",
+   "pole": "-",
+   "label": "The token right after a copula or conditional that holds the predication open: ' not' after 'is/was', and ' it' after conditional 'if' or an inverted question 'is'; the same 'is'/'if' followed by any other word stays quiet.",
+   "fire": [
+    "For a budget hotel, the breakfast here is not terrible at all.",
+    "Tell me honestly, is it worth paying extra for the window seat?",
+    "If it snows overnight, the school will open two hours late.",
+    "The old printer is not broken, it just needs a new cartridge.",
+    "If it works on the test server, we will deploy it on Monday.",
+    "Doctor, is it safe to fly two weeks after the operation?",
+    "If it be your will, my lord, I shall ride at dawn.",
+    "The second-hand bike was not expensive, and it rides well."
+   ],
+   "quiet": [
+    "For a budget hotel, the breakfast here is fine for the price.",
+    "Tell me honestly, should we pay extra for the window seat?",
+    "If you see snow overnight, expect the school to open late.",
+    "The old printer still works once it has a new cartridge.",
+    "If we pass the tests on the staging server, we deploy on Monday.",
+    "Doctor, how soon after the operation can I fly?",
+    "It was late when the knight rode out to meet the king.",
+    "The second-hand bike was cheap, and it rides well."
+   ]
+  }
+ ],
+ "predictions": "6-8/8 fire >= 0.30 (probes: 'is not bad' 0.82, 'If it be so' 0.51, 'is it your worship' 0.46, 'If it rains' 0.44, 'Is it okay' 0.31, 'is not a scam' 0.28); near misses 'is fine', 'If you', 'It is' expected <= 0.1.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'is not' / 'if it'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Probes (fraction of max 63.75): ' not' after 'hotel is' 0.818; ' it' after 'If' 0.437-0.507 and after inverted 'is' 0.311-0.458; 'is not a scam' 0.275. Quiet: sentence-initial 'It is raining' 0.009, 'Not only' 0.137, 'notice' 0.005. Card: ' not' x11 and ' it' x8 in the top 32."
+}

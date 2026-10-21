@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-b984526f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N4446+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N4446",
+   "pole": "+",
+   "label": "Second-person self-help and relationship-advice prose about feelings and expression (tone of voice, singing to unwind, 'are you with me'), against second-person practical instructions with no emotional content.",
+   "fire": [
+    "When you feel unheard, tell your partner how you feel in a calm, gentle voice.",
+    "Still carrying that old resentment? Are you with me so far? Let's let it go together.",
+    "Humming or singing in the car is a lovely way to release the stress of the day.",
+    "Learn to express your needs with kindness instead of waiting for others to guess them.",
+    "If your friend snaps at you, pause, breathe, and answer with warmth rather than anger.",
+    "Journaling about your feelings each night can help you understand what you really need.",
+    "Notice the tone of your inner voice and speak to yourself as you would to a friend.",
+    "Healthy relationships grow when both people feel safe sharing their fears and hopes."
+   ],
+   "quiet": [
+    "When the printer jams, open the side panel and pull the paper out gently.",
+    "Still using the old router? Check the model number on the back before updating.",
+    "Change the oil in your car every ten thousand kilometres or once a year.",
+    "Learn to sharpen your kitchen knives with a whetstone instead of a pull-through sharpener.",
+    "If the tap drips, turn off the water and replace the washer inside.",
+    "Labelling your freezer bags with the date helps you use food before it spoils.",
+    "Check the tyre pressure each month and inflate to the figure on the door frame.",
+    "Tomato plants grow best when they get at least six hours of sun a day."
+   ]
+  }
+ ],
+ "predictions": "4-7/8 fire >= 0.30 (probes 0.30-0.53 on varied tokens); neutral instructions 0.01-0.06. A weak pole (max 3.89, both sign regimes), so the median may sit near 0.3.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "emotional self-help register",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Probes (fraction of max 3.89): 'Are you with me?' 0.529 (' with'), 'singing to unwind' 0.360, 'conduct relationships with' 0.306, 'tone of voice' 0.304, 'boss calls you in' 0.203, 'sign up' 0.100. Neutral: horse jumps 0.058, train timetable 0.034, committee budget 0.008. The peak token varies, so this is a register label, not a word label; the - pole fires on manipulation and boundaries."
+}

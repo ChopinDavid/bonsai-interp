@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-0758d351",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N7517-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N7517",
+   "pole": "-",
+   "label": "In Chinese how-to and report prose, the colon or comma that closes an introductory heading or method phrase and opens the explanation (方法如下：推算月经周期：…), not ordinary punctuation in Chinese narrative.",
+   "fire": [
+    "如何判断西瓜是否成熟？方法如下：敲击瓜皮：声音清脆的一般比较新鲜。",
+    "保存蔬菜的三个技巧：第一，冷藏：叶菜应先擦干再放进冰箱。",
+    "家庭急救常识：止血方法：用干净的纱布压住伤口五分钟。",
+    "选购电脑的步骤如下：确定预算：先想好自己能接受的价格。",
+    "新手养花须知：浇水原则：见干见湿，不要每天浇水。",
+    "计算房贷的方法：等额本息：每月还款金额保持不变。",
+    "如何提高睡眠质量？建议如下：固定作息：每天同一时间上床。",
+    "预防感冒的办法：勤洗手：外出回家后先用肥皂洗手。"
+   ],
+   "quiet": [
+    "我们在夏天买了一个西瓜，回家后切开，发现非常甜。",
+    "妈妈把蔬菜放进冰箱，然后开始准备晚饭。",
+    "他在路上摔了一跤，膝盖流了一点血，很快就好了。",
+    "去年我花了很多时间挑选电脑，最后买了一台笔记本。",
+    "奶奶每天早上都会给阳台上的花浇水。",
+    "他们去年买了房子，每个月都要按时还贷款。",
+    "昨天晚上我睡得很早，今天早上精神很好。",
+    "这个冬天我感冒了两次，每次都休息了好几天。"
+   ]
+  }
+ ],
+ "predictions": "4-7/8 fire >= 0.30 (one strong probe: method-step colon 0.73; intro phrases 0.20-0.26); Chinese narrative 0.03-0.11. Median may land near 0.3.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Chinese intro-phrase colon",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Probes (fraction of max 50): '方法如下：推算月经周期：如…' 0.732 at '：'; 'LEDinside调查研究' 0.262 (at 调查); '根据我们的测算，' 0.203; '总括来说' 0.196; English section heading line-break 0.153. Quiet: Chinese narrative 0.033-0.107, English 0.005. Card top: '通过测算，' 1.0, '推算月經周期：' 0.89. The + pole fires on Chinese commas generally."
+}

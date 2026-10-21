@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-20-ChopinDavid-071a40cd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N10465+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-21T02:35:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N10465",
+   "pole": "+",
+   "label": "The final token of an embedded 'what X is' clause in step-by-step reasoning instructions (identify what the conclusion is.), against the same instructions phrased without the embedded question.",
+   "fire": [
+    "Before you start the proof, write down what the hypothesis is.",
+    "Read the problem twice and decide what the unknown is.",
+    "Step one: find out what the main claim of the passage is.",
+    "First, ask yourself what the question really is.",
+    "In each argument, underline what the premise is.",
+    "Look at the graph and work out what the slope is.",
+    "Before choosing a method, figure out what the goal is.",
+    "Check the units on both sides and note what the answer is."
+   ],
+   "quiet": [
+    "Before you start the proof, write down the hypothesis.",
+    "Read the problem twice and name the unknown quantity.",
+    "Step one: find the main claim of the passage.",
+    "First, ask yourself the question again in simpler words.",
+    "In each argument, underline the premise in pencil.",
+    "Look at the graph and work out the slope of the line.",
+    "Before choosing a method, agree on a clear goal.",
+    "Check the units on both sides and write down the answer."
+   ]
+  }
+ ],
+ "predictions": "3-6/8 fire >= 0.30, resting on one probe ('what the conclusion is.' 0.455); near misses without the embedded clause ~0.02-0.14. A weak, unclear pole; a fail is plausible.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "end of 'what X is' clause",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Probes (fraction of max 14.4) were mostly weak: 'identify what the conclusion is.' 0.455 (peak '.'), 'a one-unit cube is the standard unit' 0.240 (' is'), 'then dw is equal' 0.136, 'spins are used' 0.073, 'difficulty putting' 0.037. Neutral prose -0.002 to 0.020. Card top examples are mixed (comma before 'then dw', ' is', ' putting', a header colon), so this label tests only the strongest probe."
+}
