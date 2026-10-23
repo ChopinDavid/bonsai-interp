@@ -4,7 +4,7 @@
  "layer": 25,
  "index": 8045,
  "pole": "+",
- "label": "A piece partway through an extreme verdict, good or bad, before the rest of it arrives: an inner chunk of an intense judging adjective or adverb that is split into several tokens, mainly because it is written in ALL CAPS or broken by a hyphen (INCREDIBLE, FABULOUS, HORRENDOUS in caps; extra-ordinary; Russian замечательный); the opening word of a praise compound or idiom (first-rate, top-notch, world-class, state of the art, out of this world, show-stopping); and ' nothing' right after is/was opening a verdict (was nothing special, is nothing short of). Quiet on the same judging words spelled normally in lowercase (incredible, spectacular, magnificent arrive as one token), on plain superlatives (the best I have ever seen), on literal uses of the openers (the top of the hill, around the world, the state of Ohio), on ' nothing' after a comma or in literal uses (nothing left in the cupboard), and on neutral words in caps or split (RECTANGULAR, CALIFORNIA, photosynthesis).",
+ "label": "A strong verdict that is still arriving in pieces: an inner chunk of an intense judging word, good or bad, that is split into several tokens because it is written in ALL CAPS or broken by a hyphen (INCREDIBLE, HORRIBLE, WONDERFUL, TERRIFYING in caps; extra-ordinary; Russian замечательный); the middle of a vivid verdict idiom or compound (out of this world, show-stopping, state-of-the-art, mind-blowing, second to none); and ' nothing' right after is/was opening a verdict (was nothing special, is nothing short of). Quiet on the same judging words spelled normally in lowercase (incredible, magnificent, dreadful arrive as one token), on plain superlatives (the best I have ever seen), on neutral words in caps (DELIVERED, MASSACHUSETTS), on literal uses (the state of Ohio, around the world), on ' nothing' after a comma or in literal uses (nothing in the cupboard), and on the rank compounds first-rate, first-class, top-notch and top-tier.",
  "short": "exceptional/remarkable intensifier",
  "kind": "meaning",
  "status": "held",
@@ -1107,6 +1107,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-23-moridinamael-4efc193c"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N8045_pos/2026-10-23-moridinamael-275f5335.tests.json",
+   "prereg_commit": "cfe1d908",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.619,
+     "peak": "RED"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.551,
+     "peak": "R"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.403,
+     "peak": "DER"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.477,
+     "peak": "ERR"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.765,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.567,
+     "peak": "еч"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.916,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.217,
+     "peak": " show"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.04,
+     "peak": " dreadful"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " magnificent"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.031,
+     "peak": " DEL"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " ever"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.037,
+     "peak": " MASS"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " world"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.101,
+     "peak": " state"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.207,
+     "peak": " first"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.559,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-23-moridinamael-275f5335"
   }
  ],
  "label_history": [
@@ -1139,6 +1261,11 @@
    "2026-10-23-moridinamael-024612bd",
    "A piece partway through an extreme verdict, good or bad, before the rest of it arrives: an inner chunk of an intense judging adjective or adverb that is split into several tokens, mainly because it is written in ALL CAPS or broken by a hyphen (INCREDIBLE, FABULOUS, HORRENDOUS in caps; extra-ordinary; Russian замечательный); the opening word of a praise compound or idiom (first-rate, top-notch, world-class, state of the art, out of this world, show-stopping); and ' nothing' right after is/was opening a verdict (was nothing special, is nothing short of). Quiet on the same judging words spelled normally in lowercase (incredible, spectacular, magnificent arrive as one token), on plain superlatives (the best I have ever seen), on literal uses of the openers (the top of the hill, around the world, the state of Ohio), on ' nothing' after a comma or in literal uses (nothing left in the cupboard), and on neutral words in caps or split (RECTANGULAR, CALIFORNIA, photosynthesis).",
    "held"
+  ],
+  [
+   "2026-10-23-moridinamael-275f5335",
+   "A strong verdict that is still arriving in pieces: an inner chunk of an intense judging word, good or bad, that is split into several tokens because it is written in ALL CAPS or broken by a hyphen (INCREDIBLE, HORRIBLE, WONDERFUL, TERRIFYING in caps; extra-ordinary; Russian замечательный); the middle of a vivid verdict idiom or compound (out of this world, show-stopping, state-of-the-art, mind-blowing, second to none); and ' nothing' right after is/was opening a verdict (was nothing special, is nothing short of). Quiet on the same judging words spelled normally in lowercase (incredible, magnificent, dreadful arrive as one token), on plain superlatives (the best I have ever seen), on neutral words in caps (DELIVERED, MASSACHUSETTS), on literal uses (the state of Ohio, around the world), on ' nothing' after a comma or in literal uses (nothing in the cupboard), and on the rank compounds first-rate, first-class, top-notch and top-tier.",
+   "held"
   ]
  ],
  "examples": [],
@@ -1157,20 +1284,21 @@
   "2026-10-23-moridinamael-4f6ca081",
   "2026-10-23-moridinamael-4bdba59c",
   "2026-10-23-moridinamael-024612bd",
-  "2026-10-23-moridinamael-4efc193c"
+  "2026-10-23-moridinamael-4efc193c",
+  "2026-10-23-moridinamael-275f5335"
  ],
  "qc": {
   "confirm": 3,
   "dispute": 0,
-  "refine": 5
+  "refine": 6
  },
  "replications": [],
  "scrutiny": {
   "level": 3,
   "name": "checked",
-  "test_rounds": 9,
-  "sentences": 144,
+  "test_rounds": 10,
+  "sentences": 160,
   "contributors": 2,
-  "qc": 8
+  "qc": 9
  }
 }
