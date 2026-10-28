@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-28-moridinamael-6cc333b8",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N12088+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:37:27+00:00",
+ "neighbours": [
+  {
+   "unit": "L16/N12088",
+   "pole": "+",
+   "label": "a comma or linking word (allowing, enabling, which, often) right after a finished factual clause in formal, informational writing",
+   "fire": [
+    "The bridge was completed in 1932, allowing traffic to cross the river without a ferry.",
+    "Copper is an excellent conductor of electricity, which makes it the standard material for household wiring.",
+    "The enzyme breaks down starch into simple sugars, enabling the body to absorb energy quickly.",
+    "Monsoon rains arrive in the region each June, often causing widespread flooding in low-lying districts.",
+    "The treaty was signed by forty-two nations, which established a common framework for maritime law.",
+    "The new railway line connects the two largest cities, allowing commuters to travel between them in under an hour.",
+    "Satellites in geostationary orbit remain fixed above one point on the equator, enabling continuous weather monitoring.",
+    "The species feeds mainly on bamboo shoots, often consuming more than twenty kilograms per day."
+   ],
+   "quiet": [
+    "The bridge was completed in 1932. Before that, people took a ferry.",
+    "Copper is an excellent conductor of electricity.",
+    "lol my phone charger is copper inside or something idk",
+    "Monsoon rains arrive in the region each June.",
+    "Forty-two nations signed the treaty in the spring.",
+    "The new railway line connects the two largest cities.",
+    "Do satellites in geostationary orbit actually stay above one spot?",
+    "The species feeds mainly on bamboo shoots."
+   ]
+  }
+ ],
+ "predictions": "Weak cell (resident peak ~0.2-0.3 of max). Expect AUROC around 0.9, median fire near 0.2; risk is that the median misses the 0.20 bar.",
+ "short": "connector after a finished factual clause",
+ "roles": ["feeds bonsai1/L18/N10678+"],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-out"
+  ]
+ }
+}
