@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-dce15fe7",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N7874-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T20:27:22+00:00",
+ "recipe": {
+  "toolchain_commit": "4532f0ca",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L21_N7874_neg/2026-10-28-ChopinDavid-dce15fe7.tests.json"
+ },
+ "label": "the period of the page abbreviation 'p.' / 'pp.' in citations; periods of other abbreviations (Fig., vol., No., a.m.) and sentence-final periods stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N7874_neg/2026-10-28-ChopinDavid-dce15fe7.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.831,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.791,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.866,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.542,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.695,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.489,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.984,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.658,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.174,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.163,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " quite"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": "ki"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.053,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.743,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4532f0ca",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "the '.' of citation 'p.' / 'pp.'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.8,
+ "notes": "Card: '.' x31 of 32, all in 'p.'/'pp.' page citations. Probe: '(Miller, 1999, p. 42)' 0.886, 'pp. 88-104' 0.866, 'memoir, p. 211' 0.570; 'Fig. 4' 0.004, 'vol. 7' 0.005, 'No. 12' 0.007, '5 p.m.' 0.003, sentence end 0.005.",
+ "selection": "random draw"
+}
