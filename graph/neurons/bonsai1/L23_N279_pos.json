@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N279_pos/2026-10-28-C-Eckleman235-f99007ac.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.321,
+     "peak": " your"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.016,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.038,
+     "peak": " temples"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.034,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.293,
+     "peak": " like"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.216,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.02,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.375,
+     "peak": " your"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.058,
+     "peak": "Hold"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " closed"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.061,
+     "peak": " dominated"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.017,
+     "peak": " found"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.076,
+     "peak": " cord"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.077,
+     "peak": " ribs"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.672,
+    "median_fire": 0.127,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-f99007ac"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L23_N279_pos/2026-10-28-C-Eckleman235-86ec966d.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-f99007ac",
+   "the word just before a body part or a comparison object: your or his before body parts, like or as in comparisons",
+   "failed"
+  ],
+  [
    "2026-10-28-C-Eckleman235-86ec966d",
    "Determiners and comparison words (your, his, her, a, of, like) that set up a body part or a physical size comparison",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-f99007ac",
   "2026-10-28-C-Eckleman235-86ec966d"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

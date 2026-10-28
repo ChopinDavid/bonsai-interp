@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N6749_neg/2026-10-28-C-Eckleman235-c69307b0.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.39,
+     "peak": "-thirds"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.62,
+     "peak": " simple"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.297,
+     "peak": " simple"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.291,
+     "peak": "-thirds"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.22,
+     "peak": " simple"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.114,
+     "peak": "ths"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.225,
+     "peak": " simple"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.323,
+     "peak": "-thirds"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.109,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.145,
+     "peak": " Senate"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.033,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.041,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.058,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.235,
+     "peak": " qu"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.31,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-c69307b0"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L30_N6749_neg/2026-10-28-C-Eckleman235-c865c56f.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-c69307b0",
+   "threshold qualifier right before an expected 'majority' (predicts 'majority' next)",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-c865c56f",
    "predicts 'majority/minority': a word just before an expected 'majority' (slim, simple, supermajority piece, ethnic)",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-c69307b0",
   "2026-10-28-C-Eckleman235-c865c56f"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

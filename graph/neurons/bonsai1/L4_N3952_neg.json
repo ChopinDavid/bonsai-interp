@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3952_neg/2026-10-28-C-Eckleman235-b20e845a.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.506,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.354,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.572,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.86,
+     "peak": " passphrase"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.588,
+     "peak": " phrases"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.361,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.54,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.42,
+     "peak": " phrase"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "Repeat"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.0,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": " ordering"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " contract"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " sentence"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": "S"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.523,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-b20e845a"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L4_N3952_neg/2026-10-28-C-Eckleman235-234bafd4.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-b20e845a",
+   "the word ' phrase' (and passphrase) as a lexical token",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-234bafd4",
    "the word 'phrase' (phrase/phrases/passphrase and split pieces, incl. Russian 'фраза')",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-b20e845a",
   "2026-10-28-C-Eckleman235-234bafd4"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

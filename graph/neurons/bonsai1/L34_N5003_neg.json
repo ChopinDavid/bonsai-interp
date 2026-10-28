@@ -4,12 +4,134 @@
  "layer": 34,
  "index": 5003,
  "pole": "-",
- "label": "predicts 'header': the word just before 'header' (pin header, double header, status/response header, in code or hardware)",
+ "label": "slot right before an expected 'header' (predicts 'header' in code and text)",
  "short": "word before 'header'",
  "kind": "contextual",
- "status": "failed",
+ "status": "held",
  "depth": "quick",
  "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N5003_neg/2026-10-28-C-Eckleman235-f6d97770.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.662,
+     "peak": " double"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.341,
+     "peak": " pin"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.854,
+     "peak": " double"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.721,
+     "peak": " pin"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.278,
+     "peak": " double"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.066,
+     "peak": "onymous"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.095,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.304,
+     "peak": " male"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.052,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.037,
+     "peak": " metal"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " road"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.06,
+     "peak": ".session"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.095,
+     "peak": " self"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.22,
+     "peak": " green"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.502,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-f6d97770"
+  },
   {
    "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L34_N5003_neg/2026-10-28-C-Eckleman235-5b2942d7.tests.json",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-f6d97770",
+   "slot right before an expected 'header' (predicts 'header' in code and text)",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-5b2942d7",
    "predicts 'header': the word just before 'header' (pin header, double header, status/response header, in code or hardware)",
    "failed"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-f6d97770",
   "2026-10-28-C-Eckleman235-5b2942d7"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

@@ -4,8 +4,8 @@
  "layer": 1,
  "index": 5986,
  "pole": "-",
- "label": "the token ' quite' (degree adverb: quite a few, quite easy, quite another)",
- "short": "the word 'quite'",
+ "label": "' quite' as a degree intensifier before an adjective or noun",
+ "short": "' quite' as degree intensifier",
  "kind": "lexical",
  "status": "held",
  "depth": "quick",
@@ -131,12 +131,139 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-28-C-Eckleman235-77712de2"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N5986_neg/2026-10-28-C-Eckleman235-85b72d7a.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.806,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.829,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.722,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.93,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.815,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.668,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.805,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.864,
+     "peak": " quite"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": " confusing"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " decent"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " different"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " bus"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " still"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.81,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-85b72d7a"
   }
  ],
  "label_history": [
   [
    "2026-10-28-C-Eckleman235-77712de2",
    "the token ' quite' (degree adverb: quite a few, quite easy, quite another)",
+   "held"
+  ],
+  [
+   "2026-10-28-C-Eckleman235-85b72d7a",
+   "' quite' as a degree intensifier before an adjective or noun",
    "held"
   ]
  ],
@@ -149,7 +276,8 @@
   "C-Eckleman235"
  ],
  "contributions": [
-  "2026-10-28-C-Eckleman235-77712de2"
+  "2026-10-28-C-Eckleman235-77712de2",
+  "2026-10-28-C-Eckleman235-85b72d7a"
  ],
  "qc": {
   "confirm": 0,
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

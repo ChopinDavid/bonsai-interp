@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N10377_neg/2026-10-28-C-Eckleman235-742b130f.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.745,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.941,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.475,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.423,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.717,
+     "peak": "='"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.644,
+     "peak": "='"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.004,
+     "peak": " maps"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.62,
+     "peak": "='"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.165,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " Accept"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.027,
+     "peak": "In"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " checks"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.047,
+     "peak": " size"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.072,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": " maps"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": "='"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.632,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-742b130f"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L27_N10377_neg/2026-10-28-C-Eckleman235-06b737c2.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-742b130f",
+   "the opening quote before a language or locale code in a setting (locale = 'pt')",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-06b737c2",
    "opening quote or delimiter (', \", =', /, ://, comma in a list) placed where a language or locale code (en, de, ru, zh-tw) comes next, in code, URLs and metadata lists",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-742b130f",
   "2026-10-28-C-Eckleman235-06b737c2"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

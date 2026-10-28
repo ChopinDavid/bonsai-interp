@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10806_pos/2026-10-28-C-Eckleman235-7862a271.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.066,
+     "peak": " policy"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.006,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.27,
+     "peak": " Jordan"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.539,
+     "peak": " Jordan"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.199,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.067,
+     "peak": " Jordan"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.14,
+     "peak": " Beijing"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.643,
+     "peak": " Jordan"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.067,
+     "peak": " policy"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": " bus"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.163,
+     "peak": " River"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.449,
+     "peak": " Kobe"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " factory"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " stadium"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.265,
+     "peak": " Lagos"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.188,
+     "peak": " Bulls"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.617,
+    "median_fire": 0.17,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-C-Eckleman235-7862a271"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L11_N10806_pos/2026-10-28-C-Eckleman235-f57411db.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-7862a271",
+   "the names China and Jordan (a short list of names, not a distinction)",
+   "failed"
+  ],
+  [
    "2026-10-28-C-Eckleman235-f57411db",
    "names of Chinese regions and companies (Guangdong, Tencent, Sichuan, Shenzhen) and famous athlete names such as Michael Jordan and David Beckham; weak, mixed name pole",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-7862a271",
   "2026-10-28-C-Eckleman235-f57411db"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

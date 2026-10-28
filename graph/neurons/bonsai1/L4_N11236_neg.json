@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N11236_neg/2026-10-28-C-Eckleman235-bf66ab05.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.134,
+     "peak": " unbearable"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.338,
+     "peak": "exc"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.209,
+     "peak": " irresponsible"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.217,
+     "peak": " uncont"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.394,
+     "peak": "preh"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.036,
+     "peak": " unstable"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.133,
+     "peak": " unthinkable"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.567,
+     "peak": " intoler"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.0,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " delays"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": " engineers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.0,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.213,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-bf66ab05"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L4_N11236_neg/2026-10-28-C-Eckleman235-6dff039d.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-bf66ab05",
+   "stem after a negating prefix on an adjective (in-, un-, indis-)",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-6dff039d",
    "stem pieces of split negated adjectives after in-/un-/il- (inflexible, intolerable, ungrateful, ilimitado)",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-bf66ab05",
   "2026-10-28-C-Eckleman235-6dff039d"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

@@ -5,8 +5,8 @@
  "index": 12190,
  "pole": "+",
  "label": "Name pieces of upstate New York places in Iroquois/regional context (Mohawk, Syracuse, Armonk, New York)",
- "short": "Upstate New York place-name pieces",
- "kind": "contextual",
+ "short": "New York State and NYC places",
+ "kind": "lexical",
  "status": "held",
  "depth": "quick",
  "tests": [
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-28-C-Eckleman235-8f836694"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N12190_pos/2026-10-28-C-Eckleman235-f24ec4b0.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 1,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.013,
+     "peak": " town"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.005,
+     "peak": " cardiac"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.365,
+     "peak": "kills"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.007,
+     "peak": " New"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.229,
+     "peak": " York"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.017,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.004,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.005,
+     "peak": " both"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": " town"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": " cardiac"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.343,
+     "peak": "kills"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " Chicago"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " both"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.555,
+    "median_fire": 0.01,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-C-Eckleman235-f24ec4b0"
   }
  ],
  "label_history": [
@@ -138,6 +260,11 @@
    "2026-10-28-C-Eckleman235-8f836694",
    "Name pieces of upstate New York places in Iroquois/regional context (Mohawk, Syracuse, Armonk, New York)",
    "held"
+  ],
+  [
+   "2026-10-28-C-Eckleman235-f24ec4b0",
+   "the York in New York State and New York City place names",
+   "failed"
   ]
  ],
  "examples": [],
@@ -149,7 +276,8 @@
   "C-Eckleman235"
  ],
  "contributions": [
-  "2026-10-28-C-Eckleman235-8f836694"
+  "2026-10-28-C-Eckleman235-8f836694",
+  "2026-10-28-C-Eckleman235-f24ec4b0"
  ],
  "qc": {
   "confirm": 0,
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

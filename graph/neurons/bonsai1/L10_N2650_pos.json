@@ -4,8 +4,8 @@
  "layer": 10,
  "index": 2650,
  "pole": "+",
- "label": "Weak, diffuse pole on modifier words inside British institutional names (Liberal Democrat, Department for Education); no clear label",
- "short": "Weak UK institutional modifiers",
+ "label": "UK public-institution names (weak, broad; no clean trigger found)",
+ "short": "UK institution names, weak and broad",
  "kind": "dense / positional",
  "status": "dense",
  "depth": "quick",
@@ -131,12 +131,139 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-28-C-Eckleman235-5600c666"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N2650_pos/2026-10-28-C-Eckleman235-d571e48b.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.05,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.081,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.03,
+     "peak": "Of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.07,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.05,
+     "peak": "liament"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.107,
+     "peak": " month"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.106,
+     "peak": " visa"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.068,
+     "peak": " Service"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.162,
+     "peak": " forecast"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.078,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.065,
+     "peak": " school"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.059,
+     "peak": " ruling"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.094,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.146,
+     "peak": " month"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.073,
+     "peak": " figures"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.092,
+     "peak": " hospital"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.312,
+    "median_fire": 0.069,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-d571e48b"
   }
  ],
  "label_history": [
   [
    "2026-10-28-C-Eckleman235-5600c666",
    "Weak, diffuse pole on modifier words inside British institutional names (Liberal Democrat, Department for Education); no clear label",
+   "failed"
+  ],
+  [
+   "2026-10-28-C-Eckleman235-d571e48b",
+   "UK public-institution names (weak, broad; no clean trigger found)",
    "failed"
   ]
  ],
@@ -149,7 +276,8 @@
   "C-Eckleman235"
  ],
  "contributions": [
-  "2026-10-28-C-Eckleman235-5600c666"
+  "2026-10-28-C-Eckleman235-5600c666",
+  "2026-10-28-C-Eckleman235-d571e48b"
  ],
  "qc": {
   "confirm": 0,
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

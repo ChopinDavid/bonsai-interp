@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N7538_neg/2026-10-28-C-Eckleman235-c9afb6e9.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.872,
+     "peak": " Reconstruction"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.801,
+     "peak": " Reconstruction"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.311,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.597,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.249,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.568,
+     "peak": " Reconstruction"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.168,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.97,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.217,
+     "peak": " Bureau"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.048,
+     "peak": " Age"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": " towel"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.042,
+     "peak": " make"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.073,
+     "peak": " states"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.037,
+     "peak": "ians"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": " want"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": " that"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.583,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-c9afb6e9"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L11_N7538_neg/2026-10-28-C-Eckleman235-63653244.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-c9afb6e9",
+   "the words Reconstruction (US post-Civil War) and back in the sleeping-posture sense; mixed, two unrelated senses",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-63653244",
    "The token ' Reconstruction' (post-Civil War US South) and ' back' after 'sleep on your'; two separate triggers",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-c9afb6e9",
   "2026-10-28-C-Eckleman235-63653244"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

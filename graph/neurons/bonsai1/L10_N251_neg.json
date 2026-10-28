@@ -4,12 +4,134 @@
  "layer": 10,
  "index": 251,
  "pole": "-",
- "label": "The token ' China' (and Yangtze) right after a regional or directional modifier: southern, South, East, central China",
+ "label": "southern and eastern China and the Yangtze or Wu region (South China, East China Sea, Zhejiang, Yangzi)",
  "short": "Directional + China; Yangtze",
  "kind": "contextual",
- "status": "failed",
+ "status": "held",
  "depth": "quick",
  "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N251_neg/2026-10-28-C-Eckleman235-8bf6a55f.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.64,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.476,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.862,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.392,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.226,
+     "peak": " rice"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.156,
+     "peak": " Suz"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.235,
+     "peak": "jiang"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.839,
+     "peak": " China"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": " often"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " fishing"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.097,
+     "peak": "heat"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.04,
+     "peak": "ips"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.079,
+     "peak": " along"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.074,
+     "peak": "ol"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": " He"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.081,
+     "peak": "mers"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.434,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-8bf6a55f"
+  },
   {
    "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L10_N251_neg/2026-10-28-C-Eckleman235-93eca541.tests.json",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-8bf6a55f",
+   "southern and eastern China and the Yangtze or Wu region (South China, East China Sea, Zhejiang, Yangzi)",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-93eca541",
    "The token ' China' (and Yangtze) right after a regional or directional modifier: southern, South, East, central China",
    "failed"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-8bf6a55f",
   "2026-10-28-C-Eckleman235-93eca541"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N11900_neg/2026-10-28-C-Eckleman235-24c0fe34.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.912,
+     "peak": "arg"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.334,
+     "peak": "ary"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.289,
+     "peak": "ary"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.415,
+     "peak": "ary"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.385,
+     "peak": "ary"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.447,
+     "peak": "adel"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.279,
+     "peak": "ary"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.264,
+     "peak": "ary"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.371,
+     "peak": " Storm"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": "athe"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.207,
+     "peak": "ys"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": "arks"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": " free"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.081,
+     "peak": "adel"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.135,
+     "peak": "ons"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.36,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-C-Eckleman235-24c0fe34"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L11_N11900_neg/2026-10-28-C-Eckleman235-3157c827.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-24c0fe34",
+   "low confidence: a fragment of the name Targaryens (no clear general pattern found)",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-3157c827",
    "mid-word subword fragment inside a rare proper name or uncommon foreign word (e.g. T|arg|aryens, Biz|ka|ia); weak, mixed pole",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-24c0fe34",
   "2026-10-28-C-Eckleman235-3157c827"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

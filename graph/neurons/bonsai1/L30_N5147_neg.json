@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N5147_neg/2026-10-28-C-Eckleman235-9b6164b1.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.094,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.132,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.417,
+     "peak": "inv"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.356,
+     "peak": "inv"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.111,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.268,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.091,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.417,
+     "peak": "inv"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": " unw"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " felt"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " stayed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.068,
+     "peak": " party"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.0,
+     "peak": " picked"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.021,
+     "peak": " unexpected"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.2,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-9b6164b1"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L30_N5147_neg/2026-10-28-C-Eckleman235-a47733c5.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-9b6164b1",
+   "the 'inv' piece of invited/uninvited (invitation sense)",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-a47733c5",
    "the 'inv-' piece of invite words (Inv|ites, un|inv|ited, _inv|ites): fires on the split piece before '-ited/-ites'",
    "held"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-9b6164b1",
   "2026-10-28-C-Eckleman235-a47733c5"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

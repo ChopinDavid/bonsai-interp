@@ -4,9 +4,9 @@
  "layer": 15,
  "index": 6877,
  "pole": "-",
- "label": "The word ' Journal' ending a British/economics/medical journal title in a reference, and the 'bmj' DOI piece",
- "short": "'Journal' in journal titles; BMJ DOI",
- "kind": "contextual",
+ "label": "the word Journal in a journal title inside a scholarly reference (Postgraduate Medical Journal, Economic Journal, BMJ)",
+ "short": "Journal in a scholarly citation",
+ "kind": "lexical",
  "status": "failed",
  "depth": "quick",
  "tests": [
@@ -131,12 +131,139 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-28-C-Eckleman235-16cbdfb8"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N6877_neg/2026-10-28-C-Eckleman235-4172324a.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.819,
+     "peak": " Journal"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.051,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.692,
+     "peak": " Journal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.05,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.046,
+     "peak": " Journal"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.031,
+     "peak": " Ecology"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.05,
+     "peak": "5"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.052,
+     "peak": " Pediatric"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.324,
+     "peak": " Bulletin"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.048,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": "M"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " ("
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.05,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-C-Eckleman235-4172324a"
   }
  ],
  "label_history": [
   [
    "2026-10-28-C-Eckleman235-16cbdfb8",
    "The word ' Journal' ending a British/economics/medical journal title in a reference, and the 'bmj' DOI piece",
+   "failed"
+  ],
+  [
+   "2026-10-28-C-Eckleman235-4172324a",
+   "the word Journal in a journal title inside a scholarly reference (Postgraduate Medical Journal, Economic Journal, BMJ)",
    "failed"
   ]
  ],
@@ -149,7 +276,8 @@
   "C-Eckleman235"
  ],
  "contributions": [
-  "2026-10-28-C-Eckleman235-16cbdfb8"
+  "2026-10-28-C-Eckleman235-16cbdfb8",
+  "2026-10-28-C-Eckleman235-4172324a"
  ],
  "qc": {
   "confirm": 0,
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

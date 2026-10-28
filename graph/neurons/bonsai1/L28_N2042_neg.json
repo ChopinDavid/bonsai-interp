@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N2042_neg/2026-10-28-C-Eckleman235-0239fd02.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.23,
+     "peak": " Mc"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.023,
+     "peak": " brothers"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.021,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.596,
+     "peak": " Mac"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.377,
+     "peak": "Greg"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.224,
+     "peak": " Mc"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.235,
+     "peak": " Mac"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.202,
+     "peak": " Mc"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.019,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.032,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " tree"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.121,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": " I"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": "'s"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.227,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-0239fd02"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L28_N2042_neg/2026-10-28-C-Eckleman235-a8ca8a80.tests.json",
    "prereg_commit": "ec3a9104",
    "author": "C-Eckleman235",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-0239fd02",
+   "the name stem after Mc or Mac in Scottish and Irish surnames (McNair, MacAulay, MacKinnon, McGeechan)",
+   "failed"
+  ],
+  [
    "2026-10-28-C-Eckleman235-a8ca8a80",
    "Scottish Mc-surname pieces and Gaelic Scottish place-name pieces (McG-, McAu-, Craigievar-style)",
    "failed"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-0239fd02",
   "2026-10-28-C-Eckleman235-a8ca8a80"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

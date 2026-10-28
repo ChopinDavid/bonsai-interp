@@ -4,12 +4,134 @@
  "layer": 9,
  "index": 5545,
  "pole": "-",
- "label": "the token 'classmethod' (and 'staticmethod') right after '@' in a Python decorator line",
+ "label": "the name in a Python @classmethod or @staticmethod decorator (the line above a def)",
  "short": "@classmethod / @staticmethod decorator token",
  "kind": "lexical",
- "status": "failed",
+ "status": "held",
  "depth": "quick",
  "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N5545_neg/2026-10-28-C-Eckleman235-17efcf4f.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.823,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.641,
+     "peak": "staticmethod"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.809,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.745,
+     "peak": "staticmethod"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.897,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.638,
+     "peak": "staticmethod"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.846,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.847,
+     "peak": "classmethod"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.095,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.047,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.1,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.265,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.334,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.051,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.099,
+     "peak": "):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " long"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.816,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-C-Eckleman235-17efcf4f"
+  },
   {
    "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L9_N5545_neg/2026-10-28-C-Eckleman235-644c0b94.tests.json",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-28-C-Eckleman235-17efcf4f",
+   "the name in a Python @classmethod or @staticmethod decorator (the line above a def)",
+   "held"
+  ],
+  [
    "2026-10-28-C-Eckleman235-644c0b94",
    "the token 'classmethod' (and 'staticmethod') right after '@' in a Python decorator line",
    "failed"
@@ -149,6 +276,7 @@
   "C-Eckleman235"
  ],
  "contributions": [
+  "2026-10-28-C-Eckleman235-17efcf4f",
   "2026-10-28-C-Eckleman235-644c0b94"
  ],
  "qc": {
@@ -159,10 +287,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }
