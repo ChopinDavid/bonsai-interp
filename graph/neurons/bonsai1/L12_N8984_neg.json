@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N8984-",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 8984,
+ "pole": "-",
+ "label": "live performance events and venues: concerts, gigs, shows, opening acts, open-mic nights; recorded music and non-performance events in the same frames stay low",
+ "short": "live performance events",
+ "kind": "topic/meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N8984_neg/2026-10-28-ChopinDavid-9f3273e4.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.475,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.665,
+     "peak": " night"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.628,
+     "peak": " nights"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.576,
+     "peak": " bands"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.251,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.793,
+     "peak": "liner"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.18,
+     "peak": " sold"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.189,
+     "peak": " packed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.034,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.096,
+     "peak": "Tickets"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.059,
+     "peak": " singer"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.048,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.063,
+     "peak": " theatre"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.525,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-9f3273e4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-9f3273e4",
+   "live performance events and venues: concerts, gigs, shows, opening acts, open-mic nights; recorded music and non-performance events in the same frames stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-9f3273e4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

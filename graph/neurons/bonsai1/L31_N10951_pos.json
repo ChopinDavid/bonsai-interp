@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L31/N10951+",
+ "model": "bonsai1",
+ "layer": 31,
+ "index": 10951,
+ "pole": "+",
+ "label": "the inner pieces of South Asian and Arabic personal names that the tokenizer splits into several tokens (Nase|er|udd|in, I|q|bal); single-token English names in the same slot stay low",
+ "short": "inner pieces of split South Asian / Arabic names",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N10951_pos/2026-10-28-ChopinDavid-adbac89b.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.185,
+     "peak": "ab"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.569,
+     "peak": " Z"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.118,
+     "peak": "unn"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.02,
+     "peak": "un"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.216,
+     "peak": " N"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.208,
+     "peak": " brother"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.443,
+     "peak": " Z"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.186,
+     "peak": "ab"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " Wilson"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " shared"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " Mary"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " patent"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.017,
+     "peak": " advocate"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " managed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " Wilson"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.197,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-adbac89b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-adbac89b",
+   "the inner pieces of South Asian and Arabic personal names that the tokenizer splits into several tokens (Nase|er|udd|in, I|q|bal); single-token English names in the same slot stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-adbac89b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

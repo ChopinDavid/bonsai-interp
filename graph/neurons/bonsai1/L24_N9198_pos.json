@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N9198+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 9198,
+ "pole": "+",
+ "label": "an author's remark that something is being omitted or simplified (I'll skip, left out, for simplicity, long enough already); the same frames without the omission meaning stay low",
+ "short": "authorial omission / brevity remark",
+ "kind": "topic/meaning",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N9198_pos/2026-10-28-ChopinDavid-7840d569.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.489,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.466,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.88,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": -0.001,
+     "peak": "I"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.37,
+     "peak": " because"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.032,
+     "peak": "Rather"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.04,
+     "peak": " already"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.127,
+     "peak": " short"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.036,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": "We"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.035,
+     "peak": " exactly"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.046,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.037,
+     "peak": " versions"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.248,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-7840d569"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-7840d569",
+   "an author's remark that something is being omitted or simplified (I'll skip, left out, for simplicity, long enough already); the same frames without the omission meaning stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-7840d569"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

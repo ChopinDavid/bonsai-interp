@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N6204+",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 6204,
+ "pole": "+",
+ "label": "online-shop and retail purchase language: stock availability, carts and baskets, notify-me requests, dispatch of orders; the same sentence frames outside buying and selling stay low",
+ "short": "retail / online-shop purchase context",
+ "kind": "topic/meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N6204_pos/2026-10-28-ChopinDavid-f4e08268.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.602,
+     "peak": " when"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.242,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.78,
+     "peak": " online"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.249,
+     "peak": " your"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.481,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.36,
+     "peak": " offer"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.263,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.508,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.084,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.026,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.112,
+     "peak": " can"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.128,
+     "peak": " are"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.116,
+     "peak": " offer"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.08,
+     "peak": " currently"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.085,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.42,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-f4e08268"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-f4e08268",
+   "online-shop and retail purchase language: stock availability, carts and baskets, notify-me requests, dispatch of orders; the same sentence frames outside buying and selling stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-f4e08268"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
