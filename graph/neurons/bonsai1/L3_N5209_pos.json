@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N5209+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 5209,
+ "pole": "+",
+ "label": "dense / positional: fires weakly on most tokens of ordinary text (32.5% of tokens reach 0.1 of a tiny max, gate-closed echo regime); no specific trigger. Best-guess test: content words in flowing prose vs bare symbol strings",
+ "short": "dense, no specific trigger",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N5209_pos/2026-10-28-ChopinDavid-7f64cab4.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.344,
+     "peak": " stones"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.236,
+     "peak": " nearly"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.293,
+     "peak": " handwriting"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.414,
+     "peak": " students"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.552,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.713,
+     "peak": "役"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.287,
+     "peak": " light"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.42,
+     "peak": " arrived"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.08,
+     "peak": " ;"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.029,
+     "peak": " --"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.295,
+     "peak": " e"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.282,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.28,
+     "peak": " +"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.275,
+     "peak": " ."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.196,
+     "peak": " x"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": " |"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.379,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-7f64cab4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-7f64cab4",
+   "dense / positional: fires weakly on most tokens of ordinary text (32.5% of tokens reach 0.1 of a tiny max, gate-closed echo regime); no specific trigger. Best-guess test: content words in flowing prose vs bare symbol strings",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-7f64cab4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

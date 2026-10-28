@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N7995+",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 7995,
+ "pole": "+",
+ "label": "guess: rare technical title words and word pieces in references and building/health jargon (Journal of Obesity, bal|ustr|ades, retrofit); plain everyday rewrites stay low. Weak pole (max 3.06)",
+ "short": "guess: technical title words (Journal of Obesity, balustrade)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N7995_pos/2026-10-28-ChopinDavid-f0923c6a.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.114,
+     "peak": " Obesity"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.075,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.233,
+     "peak": "ustr"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.259,
+     "peak": " seismic"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.015,
+     "peak": " review"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.506,
+     "peak": "usters"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.088,
+     "peak": " retrofit"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.498,
+     "peak": " Obesity"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": " published"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.075,
+     "peak": " repaint"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.102,
+     "peak": " tiles"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.006,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.016,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.883,
+    "median_fire": 0.174,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-f0923c6a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-f0923c6a",
+   "guess: rare technical title words and word pieces in references and building/health jargon (Journal of Obesity, bal|ustr|ades, retrofit); plain everyday rewrites stay low. Weak pole (max 3.06)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-f0923c6a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

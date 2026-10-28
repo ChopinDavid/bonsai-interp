@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N10771-",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 10771,
+ "pole": "-",
+ "label": "German running text, strongest on list separators and articles in German inventories (Herd, Backofen, ...; einen Tisch, einen Stuhl); English or French translations of the same content stay low",
+ "short": "German-language text (list commas, articles)",
+ "kind": "topic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N10771_neg/2026-10-28-ChopinDavid-0f17fdc6.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.35,
+     "peak": " eine"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.528,
+     "peak": " großen"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.197,
+     "peak": "rot"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.367,
+     "peak": " kleinen"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.354,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.906,
+     "peak": " und"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.441,
+     "peak": " eine"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.147,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.079,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.087,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.077,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.221,
+     "peak": " small"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " bed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.177,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.047,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.36,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-0f17fdc6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-0f17fdc6",
+   "German running text, strongest on list separators and articles in German inventories (Herd, Backofen, ...; einen Tisch, einen Stuhl); English or French translations of the same content stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-0f17fdc6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

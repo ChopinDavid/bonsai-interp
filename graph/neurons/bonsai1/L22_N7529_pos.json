@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L22/N7529+",
+ "model": "bonsai1",
+ "layer": 22,
+ "index": 7529,
+ "pole": "+",
+ "label": "' starting' in the progressive inchoative 'be starting to' (we're starting to, I'm starting to realise): onset of a change in state; the same sentences without the inchoative and nominal 'starting' stay low",
+ "short": "'starting' in 'be starting to' (onset of change)",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N7529_pos/2026-10-28-ChopinDavid-a14d8b70.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.39,
+     "peak": " starting"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.164,
+     "peak": " starting"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.149,
+     "peak": " starting"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.116,
+     "peak": " starting"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.086,
+     "peak": " starting"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.063,
+     "peak": " starting"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.132,
+     "peak": " starting"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.104,
+     "peak": "With"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.096,
+     "peak": " hope"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " bus"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.045,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": " evening"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.034,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.029,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.068,
+     "peak": " at"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.124,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-a14d8b70"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-a14d8b70",
+   "' starting' in the progressive inchoative 'be starting to' (we're starting to, I'm starting to realise): onset of a change in state; the same sentences without the inchoative and nominal 'starting' stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-a14d8b70"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
