@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d709ac43",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N4150-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N4150",
+   "pole": "-",
+   "label": "the complement of a verification verb: ' against' after 'check/compare X', ' for' after 'Check', ' compliance/conformity' after 'ensuring'; the same words outside verification stay low",
+   "fire": [
+    "Each invoice is checked against the purchase order before payment.",
+    "Inspectors verify the compliance of every site once a year.",
+    "The script compares each hash against a list of known files.",
+    "def scan(text):\n    # Check for an empty string before parsing\n    if not text:\n        return []",
+    "The auditor tested the ledger against the bank statements.",
+    "Ensuring the conformity of each part is the factory's main task.",
+    "The guard checked my ticket against the passenger list.",
+    "def validate(row):\n    \"\"\" Check the row against the schema. \"\"\"\n    return True"
+   ],
+   "quiet": [
+    "Each invoice is printed on blue paper before payment.",
+    "Inspectors visit the canteen of every site once a year.",
+    "The script copies each hash into a list of known files.",
+    "def scan(text):\n    # Strip the whitespace before parsing\n    if not text:\n        return []",
+    "The auditor leaned against the wall outside the bank.",
+    "Improving the comfort of each chair is the factory's main task.",
+    "The guard handed my ticket back with a smile.",
+    "def load(row):\n    \"\"\" Read the row into a dict. \"\"\"\n    return {}"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on the verification complement; 'against' and the same frames without verification below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "complement of a check / verify verb",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: weak pole (max 5.72) on ' against' ('Check a tile Coordinate against the bounds'), ' to'/' for' after '# Check', ' compliance' after 'Ensuring the'. Probe: 'Ensuring the compliance of staff' 0.896, 'Check a tile against the bounds' 0.847, '# Check for a valid config' 0.333, '# Check to see' 0.167, 'check to see whether the door' 0.129; '# Try to see' 0.109, '# Load the config' 0.034."
+}

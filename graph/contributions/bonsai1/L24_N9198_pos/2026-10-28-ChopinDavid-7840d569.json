@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-7840d569",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N9198+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T20:28:13+00:00",
+ "recipe": {
+  "toolchain_commit": "4532f0ca",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N9198_pos/2026-10-28-ChopinDavid-7840d569.tests.json"
+ },
+ "label": "an author's remark that something is being omitted or simplified (I'll skip, left out, for simplicity, long enough already); the same frames without the omission meaning stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N9198_pos/2026-10-28-ChopinDavid-7840d569.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.489,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.466,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.88,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": -0.001,
+     "peak": "I"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.37,
+     "peak": " because"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.032,
+     "peak": "Rather"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.04,
+     "peak": " already"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.127,
+     "peak": " short"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.036,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": "We"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.035,
+     "peak": " exactly"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.046,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.037,
+     "peak": " versions"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.248,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4532f0ca",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "authorial omission / brevity remark",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.5,
+ "notes": "Card top: 'spare me their description;', 'wages for simplicity', 'this page is already long enough', 'left out just because of time'. Probe: 'left out just because of time' 0.589, 'skip the proofs ... already long enough' 0.442, 'spare me their description' 0.215, 'for simplicity from now on' 0.126; non-omission frames 0.015-0.055, but 'let me first describe the fuel system' 0.159.",
+ "selection": "random draw"
+}

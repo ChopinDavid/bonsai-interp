@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e46d1307",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N11694+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N11694",
+   "pole": "+",
+   "label": "inner digits of a file-size or frequency figure (the '2' of '620 KB', the '5' of '250 Hz'); digits in years, ages, counts and room numbers stay low",
+   "fire": [
+    "Download the user manual (PDF, 620 KB) from the support page.",
+    "The full minutes are attached as a Word file (380 KB).",
+    "Brochure in Welsh (PDF, 950 KB), updated last spring.",
+    "The subwoofer handles everything from 30 Hz to 180 Hz cleanly.",
+    "Attachment: site_plan.pdf (870 KB), sent by the architect.",
+    "The low-pass filter removes everything above 350 Hz.",
+    "Read the summary of the findings (PDF, 410 KB) before the meeting.",
+    "Click here for the price list (Excel, 260 KB) and the order form."
+   ],
+   "quiet": [
+    "The castle was rebuilt in 1620 after the great fire.",
+    "The full school has 380 pupils and twelve teachers.",
+    "Bus number 950 runs every twenty minutes, even on Sundays.",
+    "The choir has sung in 30 towns over the past 18 years.",
+    "Her grandmother turned 87 last spring and still gardens daily.",
+    "Room 350 is on the third floor, next to the library.",
+    "The marathon had 410 runners this year, a new record.",
+    "The village sits at 260 metres above the sea, below the ridge."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9 on file-size and Hz digits; years, ages and counts below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digits of file sizes / Hz figures",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: digits inside '98 KB', '7370KB', '170 Koctets', '700 Kb', '20 Hz-250 Hz', plus 'a 360'. Probe: '(PDF, 740 KB)' 0.891, '20 Hz to 250 Hz' 0.652, 'a 360' 0.556; '54.3 MB' 0.114, 'R1 = 100k' 0.059; year 1745 0.002, age 34 0.001, 'extension 4417' 0.018."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-dce15fe7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N7874-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N7874",
+   "pole": "-",
+   "label": "the period of the page abbreviation 'p.' / 'pp.' in citations; periods of other abbreviations (Fig., vol., No., a.m.) and sentence-final periods stay low",
+   "fire": [
+    "This point is made clearly in Hartley (2011, p. 57) and again later.",
+    "For the full table, see Okafor and Lindqvist, pp. 140-162.",
+    "The phrase is borrowed from an earlier essay (Duval 1987, p. 9).",
+    "Their survey results are summarised in Chapter 2, pp. 33-48.",
+    "As one critic put it, the novel never quite lands (Reyes, 2016, p. 203).",
+    "The letter is reproduced in full in the appendix, pp. 301-305.",
+    "Kowalski notes the same pattern in rural parishes (1994, p. 118).",
+    "A similar argument appears in the second edition, p. 76, in a footnote."
+   ],
+   "quiet": [
+    "This point is made clearly in Hartley (2011, Fig. 5) and again later.",
+    "For the full table, see Okafor and Lindqvist, vol. 3, chapter two.",
+    "The phrase is borrowed from an earlier essay written by Duval in 1987.",
+    "Their survey results are summarised in Chapter 2 of the final report.",
+    "As one critic put it, the novel never quite lands. Others disagreed.",
+    "The letter arrived at 9 a.m. and was read aloud to the family.",
+    "Kowalski notes the same pattern in rural parishes (No. 118 in the register).",
+    "A similar argument appears in the second edition, Ch. 4, under a new heading."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9 on the '.' after p/pp; other abbreviation periods below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the '.' of citation 'p.' / 'pp.'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.8,
+ "notes": "Card: '.' x31 of 32, all in 'p.'/'pp.' page citations. Probe: '(Miller, 1999, p. 42)' 0.886, 'pp. 88-104' 0.866, 'memoir, p. 211' 0.570; 'Fig. 4' 0.004, 'vol. 7' 0.005, 'No. 12' 0.007, '5 p.m.' 0.003, sentence end 0.005."
+}

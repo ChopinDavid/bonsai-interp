@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-71e7e718",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1068-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N1068",
+   "pole": "-",
+   "label": "French text: function words and word pieces of French sentences (des, les, ad|hérents, n'); the same sentences in English, Spanish, Italian or German stay low",
+   "fire": [
+    "Hier soir, nous avons dîné chez des amis près de la gare.",
+    "Les enfants jouent dans le jardin pendant que les parents discutent.",
+    "Je vous remercie pour votre lettre et pour les photos.",
+    "La mairie organise une fête pour tous les habitants du quartier.",
+    "Elle a acheté des fleurs au marché avant de rentrer.",
+    "Nous espérons vous voir nombreux à la réunion de jeudi.",
+    "Le train pour Lyon part dans dix minutes du quai numéro trois.",
+    "Il n'a pas encore reçu les résultats de son examen."
+   ],
+   "quiet": [
+    "Last night we had dinner with some friends near the station.",
+    "Los niños juegan en el jardín mientras los padres hablan.",
+    "Vi ringrazio per la vostra lettera e per le foto.",
+    "Das Rathaus organisiert ein Fest für alle Bewohner des Viertels.",
+    "She bought some flowers at the market before going home.",
+    "Esperamos verles a todos en la reunión del jueves.",
+    "Der Zug nach Lyon fährt in zehn Minuten von Gleis drei ab.",
+    "He has not yet received the results of his exam."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.7 on French sentences; translations below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "French text",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.7,
+ "notes": "Card top 10: nine French snippets (des, les, n', ad|hérents, De|ux) and 'active: the striatum'. Probe: 'Chers adhérents' 0.615, 'sur les Champs-Élysées' 0.491, 'mettons des guillemets' 0.485; English 0.002-0.005, Spanish 0.003, Italian 0.051, German 0.044; 'becomes active: the striatum' 0.293 (an English leak from the card)."
+}

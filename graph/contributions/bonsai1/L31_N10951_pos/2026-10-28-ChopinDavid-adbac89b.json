@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-adbac89b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N10951+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T20:28:28+00:00",
+ "recipe": {
+  "toolchain_commit": "4532f0ca",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L31_N10951_pos/2026-10-28-ChopinDavid-adbac89b.tests.json"
+ },
+ "label": "the inner pieces of South Asian and Arabic personal names that the tokenizer splits into several tokens (Nase|er|udd|in, I|q|bal); single-token English names in the same slot stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N10951_pos/2026-10-28-ChopinDavid-adbac89b.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.185,
+     "peak": "ab"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.569,
+     "peak": " Z"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.118,
+     "peak": "unn"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.02,
+     "peak": "un"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.216,
+     "peak": " N"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.208,
+     "peak": " brother"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.443,
+     "peak": " Z"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.186,
+     "peak": "ab"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " Wilson"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " shared"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " Mary"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " patent"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.017,
+     "peak": " advocate"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " managed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " Wilson"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.197,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4532f0ca",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "inner pieces of split South Asian / Arabic names",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: name onsets after titles or commas (Prof. Dr. S|aeed, Ms. A|reet, Sh|antanu, Sh|abana). Probe: 'Shabana Azmi and Naseeruddin Shah' 0.638, 'Hammad Iqbal and Bilal Ahmed' 0.431 (peak 'al'), Georgian 'Nino Kapanadze' 0.185, 'Prof. Dr. Saeed Rahman' 0.153, 'Ms. Aisha Siddiqui' 0.115; 'Michael Brown' 0.009, 'Sarah Collins' 0.026. Test uses long multi-piece names (checked with tok.py) because short ones fired weakly.",
+ "selection": "random draw"
+}

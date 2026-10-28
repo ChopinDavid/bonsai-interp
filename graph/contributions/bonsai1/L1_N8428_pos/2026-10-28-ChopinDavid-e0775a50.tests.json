@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e0775a50",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N8428+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N8428",
+   "pole": "+",
+   "label": "the word 'syndrome' in any form (' syndrome', synd|rom|es, Russian синдр|ом); other names for disorders stay low",
+   "fire": [
+    "Doctors described several overlap syndromes in the new review.",
+    "Her son was diagnosed with Asperger syndrome at the age of six.",
+    "Irritable bowel syndrome affects many adults in the region.",
+    "Withdrawal syndromes can begin within hours of the last dose.",
+    "The clinic specialises in rare inherited syndromes of the skin.",
+    "Tourette syndrome often begins with simple motor tics.",
+    "В отличие от других синдромов, этот проходит быстро.",
+    "Many pain syndromes are poorly understood by patients."
+   ],
+   "quiet": [
+    "Doctors described several overlap conditions in the new review.",
+    "Her son was diagnosed with autism at the age of six.",
+    "Irritable bowel disease affects many adults in the region.",
+    "Withdrawal symptoms can begin within hours of the last dose.",
+    "The clinic specialises in rare inherited disorders of the skin.",
+    "Tourette's disorder often begins with simple motor tics.",
+    "В отличие от других болезней, эта проходит быстро.",
+    "Many pain conditions are poorly understood by patients."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-1.0 on syndrome/syndromes; 'disorder', 'disease', 'condition' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the word 'syndrome'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.85,
+ "notes": "Card peaks ' syndrome' x14, 'rom' x10 (synd|rom|es), 'ом' x4 (Russian). Probe: 'genetic syndromes' 0.998, 'Down syndrome' 0.482, 'Chronic fatigue syndrome' 0.351, Russian 'Синдромы' 0.712; 'genetic disorders' 0.000, 'rare disease' 0.003, 'palindrome' 0.051, 'aerodrome' 0.001; 'crime syndicate' 0.276 (shared piece ' synd', kept out of the test)."
+}

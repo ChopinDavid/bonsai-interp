@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d5926a9b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N2505-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N2505",
+   "pole": "-",
+   "label": "unclear broad pole; best guess: the indentation token that opens an 'else:' line after a nested return/pass in Python code",
+   "fire": [
+    "class Cache:\n    def get(self, key):\n        if key in self.store:\n            return self.store[key]\n        else:\n            return None",
+    "def parse(line):\n    if line.startswith('#'):\n        return None\n    else:\n        return line.split(',')",
+    "for row in rows:\n    if row.empty:\n        continue\n    else:\n        out.append(row)",
+    "def handler(event):\n    if event.kind == 'quit':\n        running = False\n        return 'bye'\n    else:\n        dispatch(event)",
+    "try:\n    value = int(text)\nexcept ValueError:\n    if strict:\n        raise\n    else:\n        value = 0",
+    "def pick(items):\n    if not items:\n        pass\n    else:\n        return items[0]",
+    "while queue:\n    job = queue.pop()\n    if job.done:\n        log(job)\n    else:\n        queue.append(job)",
+    "def sign(n):\n    if n >= 0:\n        return 1\n    else:\n        return -1"
+   ],
+   "quiet": [
+    "class Cache:\n    def get(self, key):\n        value = self.store.get(key)\n        return value",
+    "def parse(line):\n    line = line.strip()\n    return line.split(',')",
+    "for row in rows:\n    out.append(row)\n    count += 1",
+    "def handler(event):\n    kind = event.kind\n    dispatch(event)",
+    "The parser reads each value as an integer, and falls back to zero otherwise.",
+    "def pick(items):\n    first = items[0]\n    return first",
+    "The queue is drained one job at a time until nothing remains.",
+    "def sign(n):\n    result = n // abs(n)\n    return result"
+   ]
+  }
+ ],
+ "predictions": "guess: fire 0.2-0.5 on the indent before else; code without else and prose below 0.1; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess: indentation before 'else:'",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card FLAG broad (1.1% of tokens reach 0.1 of max); top 10 are 6 indentation tokens before 'else:'. Probe was flat: small if/else snippets peaked at 0.023-0.064 and prose at 0.005-0.039, so the probes do not support the indentation reading; best-guess test only."
+}

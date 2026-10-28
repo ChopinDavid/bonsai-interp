@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-7840d569",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N9198+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N9198",
+   "pole": "+",
+   "label": "an author's remark that something is being omitted or simplified (I'll skip, left out, for simplicity, long enough already); the same frames without the omission meaning stay low",
+   "fire": [
+    "I won't go through every step here, since the article is already quite long.",
+    "There are a few exceptions, but I'll leave them out for the sake of brevity.",
+    "We will ignore air resistance for simplicity in what follows.",
+    "I could list more examples, but I'll spare you the rest of them.",
+    "Some technical caveats were left out simply because of space limits.",
+    "Rather than derive the formula, I'll just state the result here.",
+    "There are other cases too, but this chapter is long enough already.",
+    "To keep things short, I won't describe the older versions of the tool."
+   ],
+   "quiet": [
+    "I went through every step here, since the instructions were quite long.",
+    "There are a few exceptions, and the appendix lists all of them.",
+    "We will measure air resistance carefully in what follows.",
+    "I could list more examples, and the next section does exactly that.",
+    "Some technical caveats were added to the contract last year.",
+    "Next we derive the formula, then we apply it to the data.",
+    "There are other cases too, and this chapter covers each of them.",
+    "The older versions of the tool are described in the next chapter."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.6 on omission remarks; non-omission rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "authorial omission / brevity remark",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.5,
+ "notes": "Card top: 'spare me their description;', 'wages for simplicity', 'this page is already long enough', 'left out just because of time'. Probe: 'left out just because of time' 0.589, 'skip the proofs ... already long enough' 0.442, 'spare me their description' 0.215, 'for simplicity from now on' 0.126; non-omission frames 0.015-0.055, but 'let me first describe the fuel system' 0.159."
+}

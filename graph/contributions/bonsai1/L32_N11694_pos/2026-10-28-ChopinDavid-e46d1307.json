@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-e46d1307",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N11694+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T20:30:08+00:00",
+ "recipe": {
+  "toolchain_commit": "4532f0ca",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N11694_pos/2026-10-28-ChopinDavid-e46d1307.tests.json"
+ },
+ "label": "inner digits of a file-size or frequency figure (the '2' of '620 KB', the '5' of '250 Hz'); digits in years, ages, counts and room numbers stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N11694_pos/2026-10-28-ChopinDavid-e46d1307.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.903,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.836,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.962,
+     "peak": "5"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.516,
+     "peak": "8"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.798,
+     "peak": "7"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.261,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.823,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.752,
+     "peak": "6"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " rebuilt"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": "Bus"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": "Room"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " marathon"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " above"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.81,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4532f0ca",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "digits of file sizes / Hz figures",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: digits inside '98 KB', '7370KB', '170 Koctets', '700 Kb', '20 Hz-250 Hz', plus 'a 360'. Probe: '(PDF, 740 KB)' 0.891, '20 Hz to 250 Hz' 0.652, 'a 360' 0.556; '54.3 MB' 0.114, 'R1 = 100k' 0.059; year 1745 0.002, age 34 0.001, 'extension 4417' 0.018.",
+ "selection": "random draw"
+}

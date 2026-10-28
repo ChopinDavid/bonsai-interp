@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-f4e08268",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N6204+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N6204",
+   "pole": "+",
+   "label": "online-shop and retail purchase language: stock availability, carts and baskets, notify-me requests, dispatch of orders; the same sentence frames outside buying and selling stay low",
+   "fire": [
+    "These boots are sold out in your size; notify me when they are back.",
+    "Select a colour, then add the lamp to your cart and proceed to payment.",
+    "Sorry, this item is currently not available for online orders.",
+    "You can change the quantity of each product in your basket before paying.",
+    "Orders placed before noon are dispatched by courier the same day.",
+    "Several shops in town offer second-hand bikes at fair prices.",
+    "The novel is currently available online for 4.99 pounds in paperback.",
+    "Please email me when this blender is back in stock."
+   ],
+   "quiet": [
+    "These boots are muddy after the hike; clean them when you are back.",
+    "Select a colour, then paint the lamp and leave it to dry overnight.",
+    "Sorry, the manager is currently not available for interviews.",
+    "You can change the order of each paragraph in your essay before submitting.",
+    "Letters written before noon are read aloud at the meeting the same day.",
+    "Several parks in town offer quiet benches with views of the lake.",
+    "The novel is currently studied in schools across the country.",
+    "Please call me when the kettle is boiling."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.6 on retail frames; non-retail rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "retail / online-shop purchase context",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.45,
+ "notes": "Card peaks spread over function words in shop pages ('some offer secondhand books', 'Notify me when', 'Add to Cart', 'not available'). Probe: 'notify me when it returns' 0.560, 'basket ... checkout' 0.454, 'some sell for under ten pounds' 0.257; 'river is currently too high' 0.014, 'Add the flour' 0.023, 'museum ... some display' 0.069; 'Free shipping is available' -0.031 (sentence-initial) and 'library lends used vinyl records' 0.195 (lending leaks)."
+}

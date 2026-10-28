@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-6d2df751",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N240+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T20:28:45+00:00",
+ "recipe": {
+  "toolchain_commit": "4532f0ca",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N240_pos/2026-10-28-ChopinDavid-6d2df751.tests.json"
+ },
+ "label": "a determiner or quantifier where a drop, tear or other small bit of liquid (or of a plant) is expected next ('spill even one', 'shed a few', 'a tiny'); the same determiners outside a liquid setup stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N240_pos/2026-10-28-ChopinDavid-6d2df751.tests.json",
+   "prereg_commit": "4532f0ca",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.686,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.083,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.789,
+     "peak": " single"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.657,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.284,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.266,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.423,
+     "peak": " tiny"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.407,
+     "peak": " single"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.095,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.053,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.07,
+     "peak": " few"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.157,
+     "peak": " tiny"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.237,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.085,
+     "peak": " tiny"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.175,
+     "peak": " single"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.415,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4532f0ca",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "predicts 'drop' after a quantifier in a liquid setup",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: peaks on 'One' before 'drop of Christian blood', '几' before tear-drops, ' tiny' before 'droplet'; the pole promotes ' drop'/' drops'. Probe: 'spill even one drop' 0.643 and 'spill even one grain' 0.643 (peak on ' one', so it predicts from the setup), 'tiny droplet of rain' 0.633, 'shed a few tears' 0.476, 'A single tear' 0.251; 'A single car rolled' 0.048, 'every quarter' 0.014; plant setups also fire ('a nearby tree' 0.360, 'a row of potatoes' 0.226). Near misses remove the liquid setup, not only the noun.",
+ "selection": "random draw"
+}
