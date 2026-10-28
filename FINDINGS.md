@@ -1032,3 +1032,14 @@ compose@8 tested the next 8,000 one-part covers of compose@7's queue. **6,353 of
     and words with an inflection (" enjoy"/" enjoyed").
 - **Layers 12–17 again yield almost nothing** (12 assigned).
 
+## 2026-10-28: The end of the one-part queue, and precision predicts a hold (compose@9)
+
+compose@9 tested every one-part cover left in the queue. **8,958 of 29,044 poles were assigned** (1 of 29,031 placebo
+tests held), which brings the assignment-grade total to about 29,360 (3.3% of 884,736 poles).
+
+- **The hold rate falls down the ranking,** from 67% in the first 5,000 to 7% in the last 5,000.
+- **Selection precision predicts it:** 11% held at a precision of 0.1–0.2, 29% at 0.2–0.3, 51% at 0.3–0.5 and 70% at
+  0.5 or more.
+- **compose@7–9 assigned 18,974 poles, 18,718 of them by a single word set,** most of which no earlier pass had tested.
+- **Layers 12–17:** 61 assigned of 490 tested. They remain the dark band.
+
