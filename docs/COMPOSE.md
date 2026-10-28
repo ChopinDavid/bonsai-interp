@@ -442,3 +442,35 @@ pole compose@3–7 tested; 7,215 were testable.
 The one-part word test keeps finding assignment-grade token detectors well down the ranking (88% held here, against
 98% for compose@7's top slice). Layers 12–17 again yield almost nothing.
 
+## Round 9 (compose@9): the rest of the one-part queue
+
+compose@8's engine, unchanged (`bonsai_interp/compose/round9.py`), on every one-part cover left in the queue: 30,661
+selected, 29,044 testable. Poles compose@3–8 tested were left out.
+
+| | |
+|---|---|
+| Protocol | 8340340b |
+| Pre-registration | 35884f15 |
+| Summary | ae3e6de2 |
+
+- **Assigned: 8,958 of 29,044 poles**, against **1 of 29,031** placebo tests (a next-token adjective condition on
+  L5/N3898+).
+- **By part:** word sets held 8,804 of 26,958; conjunctions 154 of 2,086.
+- **By depth:** L0–5 3,668, L6–11 1,217, L12–17 61, L18–23 1,202, L24–29 2,368, L30–35 442.
+- **The hold rate falls down the ranking:** 67% in the first 5,000, then 52%, 35%, 21%, 13% and 7% in the last 5,000.
+- **Precision predicts it:**
+
+| selection precision | held |
+|---|---:|
+| 0.1–0.2 | 11% (1,384 of 12,636) |
+| 0.2–0.3 | 29% (1,790 of 6,216) |
+| 0.3–0.5 | 51% (3,567 of 7,026) |
+| ≥ 0.5 | 70% (2,217 of 3,166) |
+
+### Reading
+
+compose@7–9 assigned 18,974 poles, 18,718 of them by a single word set. The ranking worked: 98% held at the top of the queue,
+88% in compose@8's slice, 31% here. A cover's precision on the selection split (how often the trigger fires the pole
+when it occurs) is the best single predictor of whether its held-out 8 + 8 holds. The 0.1 floor admits many covers that
+fail; the queue is now exhausted, so later rounds need new hypotheses, not a lower bar.
+
