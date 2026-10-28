@@ -157,6 +157,7 @@ placebos, a held-out 8 + 8, and the 50% coverage rule.
 | compose@4 (docs/COMPOSE.md) | the same cover with format conditions and the conditions one and two tokens back | 320 held, all assignment-grade; words in a local frame (after a number, after a conjunction, `(self` after a def name) |
 | compose@5 (docs/COMPOSE.md) | the same cover with far-context conditions (a condition in the last 8 tokens, or dense in the last 32) | 22 held of 407; far context adds little; pairs of conditions and WordNet supersenses never reach precision |
 | compose@6 (docs/COMPOSE.md) | the same cover with anticipation conditions (a condition at the next token or the one after) | 37 held of 650; phrasal-verb heads that expect their particle, f-string prefixes; mostly deep |
+| compose@7 (docs/COMPOSE.md) | union covers: one part, or two parts with distinct triggers, each part tested | 3,663 of 5,518 poles assigned; 3,616 are one-part word sets, mostly L0–5 token detectors no pass had tested |
 
 All of it is in the atlas: lib_* columns (the best test per pole across passes, its coverage, every condition held) and
 census_flags. It shows on `play card`, `play search --kind …` and the map.
