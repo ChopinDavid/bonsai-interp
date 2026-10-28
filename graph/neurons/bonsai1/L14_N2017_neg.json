@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L14/N2017-",
+ "model": "bonsai1",
+ "layer": 14,
+ "index": 2017,
+ "pole": "-",
+ "label": "Russian news-style plural agent endings (-ские, -ли, -ики) naming who did something; weak and mostly Russian",
+ "short": "Russian plural agent/verb endings",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N2017_neg/2026-10-28-C-Eckleman235-d7133f40.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.155,
+     "peak": "еры"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.199,
+     "peak": "цев"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.187,
+     "peak": "ты"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.336,
+     "peak": "или"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.071,
+     "peak": "ались"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.135,
+     "peak": "ы"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.064,
+     "peak": "ие"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.104,
+     "peak": "ы"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.077,
+     "peak": "ил"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.173,
+     "peak": "ца"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.027,
+     "peak": " на"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.096,
+     "peak": "ет"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.048,
+     "peak": "замен"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": "ь"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.044,
+     "peak": "ме"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.046,
+     "peak": "еп"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.145,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-d7133f40"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-C-Eckleman235-d7133f40",
+   "Russian news-style plural agent endings (-ские, -ли, -ики) naming who did something; weak and mostly Russian",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L13/N2535-"
+ ],
+ "contributors": [
+  "C-Eckleman235"
+ ],
+ "contributions": [
+  "2026-10-28-C-Eckleman235-d7133f40"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

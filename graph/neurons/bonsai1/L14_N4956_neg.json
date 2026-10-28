@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L14/N4956-",
+ "model": "bonsai1",
+ "layer": 14,
+ "index": 4956,
+ "pole": "-",
+ "label": "Digit tokens inside early-20th-century years and mid-century aircraft numbers (19[2]x, 194[x], F-[4]), weak",
+ "short": "Digits in 1910s-40s years, F-4",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N4956_neg/2026-10-28-C-Eckleman235-5b7c7c26.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.07,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.056,
+     "peak": " port"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.079,
+     "peak": "ate"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.557,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.146,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.068,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.648,
+     "peak": "5"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.123,
+     "peak": " autumn"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.043,
+     "peak": " first"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.059,
+     "peak": " port"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.059,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.241,
+     "peak": "fire"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": "He"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.065,
+     "peak": " employed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.194,
+     "peak": "7"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.045,
+     "peak": " built"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.101,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-5b7c7c26"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-C-Eckleman235-5b7c7c26",
+   "Digit tokens inside early-20th-century years and mid-century aircraft numbers (19[2]x, 194[x], F-[4]), weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L13/N3506+"
+ ],
+ "contributors": [
+  "C-Eckleman235"
+ ],
+ "contributions": [
+  "2026-10-28-C-Eckleman235-5b7c7c26"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

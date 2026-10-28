@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L27/N10377-",
+ "model": "bonsai1",
+ "layer": 27,
+ "index": 10377,
+ "pole": "-",
+ "label": "opening quote or delimiter (', \", =', /, ://, comma in a list) placed where a language or locale code (en, de, ru, zh-tw) comes next, in code, URLs and metadata lists",
+ "short": "Delimiter before a language code",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N10377_neg/2026-10-28-C-Eckleman235-06b737c2.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.68,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.005,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.427,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.518,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.657,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.971,
+     "peak": ".com"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.641,
+     "peak": "=\""
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.453,
+     "peak": " ("
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": " {'"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.149,
+     "peak": "://"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.056,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": "_LIMIT"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.268,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.097,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " ("
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.649,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-06b737c2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-C-Eckleman235-06b737c2",
+   "opening quote or delimiter (', \", =', /, ://, comma in a list) placed where a language or locale code (en, de, ru, zh-tw) comes next, in code, URLs and metadata lists",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "feeds bonsai1/L29/N7370+"
+ ],
+ "contributors": [
+  "C-Eckleman235"
+ ],
+ "contributions": [
+  "2026-10-28-C-Eckleman235-06b737c2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L11/N11900-",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 11900,
+ "pole": "-",
+ "label": "mid-word subword fragment inside a rare proper name or uncommon foreign word (e.g. T|arg|aryens, Biz|ka|ia); weak, mixed pole",
+ "short": "Subword pieces of rare names",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N11900_neg/2026-10-28-C-Eckleman235-3157c827.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.443,
+     "peak": "arg"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.448,
+     "peak": "ia"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.085,
+     "peak": "isters"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.354,
+     "peak": "d"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.204,
+     "peak": "que"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.236,
+     "peak": "bor"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.154,
+     "peak": "thr"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.739,
+     "peak": "as"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " told"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.02,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.295,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-3157c827"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-C-Eckleman235-3157c827",
+   "mid-word subword fragment inside a rare proper name or uncommon foreign word (e.g. T|arg|aryens, Biz|ka|ia); weak, mixed pole",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L10/N7509+"
+ ],
+ "contributors": [
+  "C-Eckleman235"
+ ],
+ "contributions": [
+  "2026-10-28-C-Eckleman235-3157c827"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L11/N10806+",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 10806,
+ "pole": "+",
+ "label": "names of Chinese regions and companies (Guangdong, Tencent, Sichuan, Shenzhen) and famous athlete names such as Michael Jordan and David Beckham; weak, mixed name pole",
+ "short": "Chinese places/companies, Jordan, Beckham",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10806_pos/2026-10-28-C-Eckleman235-f57411db.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.345,
+     "peak": "uan"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.263,
+     "peak": " gaming"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.47,
+     "peak": " Jordan"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.433,
+     "peak": "dong"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.287,
+     "peak": " Beckham"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.225,
+     "peak": "enzhen"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.209,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.102,
+     "peak": "zhou"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.032,
+     "peak": "quake"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": "Anal"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.269,
+     "peak": " Bird"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.046,
+     "peak": " factories"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": "er"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": " prototype"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": " southern"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.055,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.275,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-f57411db"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-C-Eckleman235-f57411db",
+   "names of Chinese regions and companies (Guangdong, Tencent, Sichuan, Shenzhen) and famous athlete names such as Michael Jordan and David Beckham; weak, mixed name pole",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L10/N7854+"
+ ],
+ "contributors": [
+  "C-Eckleman235"
+ ],
+ "contributions": [
+  "2026-10-28-C-Eckleman235-f57411db"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

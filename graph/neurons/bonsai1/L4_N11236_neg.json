@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L4/N11236-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 11236,
+ "pole": "-",
+ "label": "stem pieces of split negated adjectives after in-/un-/il- (inflexible, intolerable, ungrateful, ilimitado)",
+ "short": "stem piece of in-/un- adjectives",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N11236_neg/2026-10-28-C-Eckleman235-6dff039d.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.836,
+     "peak": "lexible"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.654,
+     "peak": "ateful"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.484,
+     "peak": " indiscrim"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.731,
+     "peak": "imit"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.602,
+     "peak": " intoler"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.762,
+     "peak": "put"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.261,
+     "peak": "exc"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.537,
+     "peak": "est"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": " strict"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.001,
+     "peak": " free"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " files"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " constant"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": "It"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.628,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-C-Eckleman235-6dff039d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-C-Eckleman235-6dff039d",
+   "stem pieces of split negated adjectives after in-/un-/il- (inflexible, intolerable, ungrateful, ilimitado)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "feeds bonsai1/L5/N7124-"
+ ],
+ "contributors": [
+  "C-Eckleman235"
+ ],
+ "contributions": [
+  "2026-10-28-C-Eckleman235-6dff039d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
