@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-51811b2f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N4400-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N4400",
+   "pole": "-",
+   "label": "biographical detail of how or where a person lived, was raised or became a citizen",
+   "fire": [
+    "The painter lived modestly, almost frugally, in two rooms above a bakery.",
+    "Born in Ohio, the novelist was raised in Kenya by missionary parents.",
+    "The composer emigrated in 1938 and became a British citizen ten years later.",
+    "In old age the duke lived quietly on a small estate near the coast.",
+    "She grew up in a fishing village and spent her teenage years in Lisbon.",
+    "The philosopher lived austerely and gave most of his income away.",
+    "After the war, the scientist settled in Canada and took Canadian citizenship.",
+    "The actress was raised in Manila but moved to London as a young woman."
+   ],
+   "quiet": [
+    "The painter worked quickly, almost carelessly, on two canvases at once.",
+    "Founded in Ohio, the company was sold to a Kenyan investor in 2001.",
+    "The composer finished the symphony in 1938 and published it ten years later.",
+    "In autumn the geese gather on a small lake near the coast.",
+    "The festival was held in a fishing village and later moved to Lisbon.",
+    "The engine runs smoothly and uses very little fuel.",
+    "After the war, the factory was rebuilt and produced Canadian tractors.",
+    "The film was shot in Manila but edited in London over the summer."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire; animals living somewhere and events held somewhere stay under 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "where and how someone lived",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'lived very simply' 0.815, 'born in ... raised in China' 0.670, 'became a U.S. citizen' 0.728, 'cousin who lived in Chile' 0.196; penguins live 0.200, bacteria 0.016, concert held in US 0.023, 'worked very hard' 0.057."
+}

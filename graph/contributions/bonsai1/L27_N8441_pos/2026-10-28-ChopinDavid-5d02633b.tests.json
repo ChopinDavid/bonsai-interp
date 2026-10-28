@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-5d02633b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N8441+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N8441",
+   "pole": "+",
+   "label": "context that predicts dispute or conflict resolution (settling, resolving or arbitrating a disagreement)",
+   "fire": [
+    "Rather than suing each other, the two firms agreed to settle their disagreement through arbitration.",
+    "The village elders met every month to resolve quarrels between neighbouring families.",
+    "Many employment contracts now require mediation as the first step in any workplace dispute.",
+    "The treaty created a tribunal for resolving border conflicts between the two states.",
+    "Counsellors teach teenagers peaceful ways to settle arguments with classmates.",
+    "The court encouraged the landlord and tenant to try mediation before a trial.",
+    "International arbitration is a common way of settling trade disputes between companies.",
+    "The ombudsman helps customers resolve complaints against their energy supplier."
+   ],
+   "quiet": [
+    "Rather than driving, the two friends agreed to take an alternative route along the coast.",
+    "The village bakers met every month to compare recipes for rye bread.",
+    "Many employment contracts now require a medical check as the first step in any new job.",
+    "The treaty created a fund for building new bridges between the two states.",
+    "Counsellors teach teenagers simple ways to settle into a new school routine.",
+    "The court encouraged the public to use the new entrance before the trial.",
+    "International shipping is a common way of moving bulk goods between continents.",
+    "The software helps photographers resolve fine detail in very dark images."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire above 0.5; the same verbs and 'alternative' in non-conflict senses stay under 0.3",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "settling disputes",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'alternative dispute resolution' 0.960, 'forum for resolving disputes' 0.911, 'methods for settling conflicts' 0.983, 'settle quarrels' 0.908, 'resolve their own peer problems' 0.649; 'alternative energy' 0.259, 'settle the bill' 0.229, 'resolve display errors' 0.169. Logit effect promotes ' dispute', ' conflict'."
+}

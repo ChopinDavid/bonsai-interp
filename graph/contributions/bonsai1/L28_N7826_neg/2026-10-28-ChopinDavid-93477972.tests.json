@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-93477972",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N7826-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N7826",
+   "pole": "-",
+   "label": "'negative' (and similar words) naming unpleasant feelings or thoughts in psychology and therapy text",
+   "fire": [
+    "Cognitive therapy helps clients notice negative thoughts and replace them with balanced ones.",
+    "Participants completed a scale measuring positive and negative affect each evening.",
+    "Rumination keeps people stuck in negative feelings long after the event has passed.",
+    "The workshop taught nurses how to manage negative emotions such as anger and guilt.",
+    "Children who hear constant criticism often develop negative beliefs about themselves.",
+    "Journaling may reduce negative mood in students facing exam stress.",
+    "Patients with depression tend to recall negative memories more easily than happy ones.",
+    "Mindfulness practice lowered negative self-talk among the volunteers in the trial."
+   ],
+   "quiet": [
+    "Electrons carry a negative charge and are attracted to the positive plate.",
+    "Participants completed a scale measuring height and weight each evening.",
+    "Subtracting a larger number from a smaller one gives a negative result.",
+    "The workshop taught nurses how to manage medical records and staff rotas.",
+    "The pregnancy test came back negative, so the clinic sent her home.",
+    "Journaling may help students plan their revision before exams.",
+    "Connect the negative terminal of the battery to the metal frame of the car.",
+    "The film camera produced a negative that was later printed in the darkroom."
+   ]
+  }
+ ],
+ "predictions": "about half fire, around 0.2-0.4; 'negative' in physics, maths and test results near 0",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "negative feelings (psych)",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: 'addressed negative thoughts' 0.345, 'report negative emotions' 0.162, 'accepting our present feelings' 0.141; battery terminal 0.040, negative number 0.016, test negative 0.002, 'Positive emotions' 0.052. Probe values were weaker than the top examples, so the median is at risk."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-8f7b9c56",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N4967+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N4967",
+   "pole": "+",
+   "label": "the comma that separates one author from the next in a reference-list author string (after the initials, before the next surname)",
+   "fire": [
+    "Literature cited\nNakamura, H., Brandt, E., and Silva, J. (2014). Wetland nitrogen budgets. Hydrobiologia 730: 55-70.",
+    "References\nDubois, A. M., Kowalski, P., & Ahmed, N. (2018). Teacher burnout. Journal of School Psychology, 66, 1-14.",
+    "Further reading\nFerreira L, Novak T, Osei K, Lund B. Gut microbiota in infants. Pediatr Res. 2019;85:12-19.",
+    "Sources\nKim, S. Y., Laurent, D., Okoye, C. E., & Moretti, G. (2007). Urban heat islands. Climate Research, 34, 201-215.",
+    "Works cited\nBjork, T., Mendes, R., and Hale, W. (1999). Fire regimes in boreal forest. Ecology 80: 410-422.",
+    "Bibliography\nPatel R, Johansson E, Ricci M. Statins and muscle pain. Lancet. 2012;379:300-308.",
+    "References\nOrtega, F. J., Whitfield, K., & Tanaka, Y. (2021). Second language anxiety. Modern Language Journal, 105, 77-95.",
+    "Cited literature\nAbara, C., Lindgren, H., Petrov, I., and Moss, D. (2003). River sediment transport. Geomorphology 52: 9-30."
+   ],
+   "quiet": [
+    "In the study, Nakamura, Brandt and Silva measured nitrogen in three wetlands over two years.",
+    "Professor Dubois wrote to Kowalski and Ahmed about the burnout survey last spring.",
+    "Our lab hosted visiting scientists from Lisbon, Prague and Accra during the summer.",
+    "When Kim and Laurent met Okoye at the conference, they discussed urban heat islands.",
+    "The fieldwork by Bjork, who led the team, took place in northern Sweden.",
+    "Patients reported muscle pain, fatigue and cramps after starting the new statin.",
+    "The bus stopped at Ortega Street, Whitfield Road and Tanaka Square before noon.",
+    "After lunch, Abara and Lindgren went down to the river to collect sediment samples."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire; near misses (the same names and initials in running prose) stay under 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "comma between cited authors",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: reference-list entries 0.595, 0.494, 0.716; the same surnames listed in prose 0.086; 'Dr. K. Martin,' in prose 0.165; number lists 0.005."
+}

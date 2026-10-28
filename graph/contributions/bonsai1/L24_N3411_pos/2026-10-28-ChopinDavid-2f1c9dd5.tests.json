@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-2f1c9dd5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N3411+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N3411",
+   "pole": "+",
+   "label": "the full stop that closes the givens of a quantitative word problem, just before the question ('Find ...', 'How much ...')",
+   "fire": [
+    "A car accelerates uniformly from rest to 24 m/s in 6 s. Find its acceleration.",
+    "A rectangle has a length of 12 cm and a width of 5 cm. Find the length of its diagonal.",
+    "A tank holds 800 litres and drains at 25 litres per minute. How long until it is empty?",
+    "A block of mass 4 kg rests on a slope inclined at 30 degrees. Determine the normal force.",
+    "Maria invests $2,000 at 5% interest compounded yearly. How much will she have after 3 years?",
+    "A stone is dropped from a height of 45 m. Calculate the time it takes to hit the ground.",
+    "A train covers 180 km in 2.5 hours. What is its average speed?",
+    "A spring stretches 3 cm under a load of 6 N. Find the spring constant."
+   ],
+   "quiet": [
+    "The car slowed down near the bridge. Its headlights caught a deer at the edge of the road.",
+    "The room was cold and quiet. She lit the fire and sat down with a book.",
+    "The tank stood behind the old barn. Rust had eaten through one side of it.",
+    "The block of flats was built in 1972. Most of the tenants have lived there for decades.",
+    "Maria opened a small bakery last spring. Her bread sells out every morning.",
+    "The stone wall runs along the lane. Ivy covers most of it in summer.",
+    "The train left the station late. Passengers grumbled as it crawled through the suburbs.",
+    "The spring garden was full of tulips. Bees moved slowly between the flowers."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire; full stops in narrative and plain factual prose about 0.05-0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "end of word-problem givens",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: velocity components '. Find' 0.824, '45 mm. Find' 0.352, '$15 deposited each week. How much' 0.280; narrative '. The hallway' 0.074, '. Lunch was' 0.075; plain facts leaked to 0.206-0.215. Logit effect of the opposite pole promotes 'What', 'Find', 'Determine'."
+}

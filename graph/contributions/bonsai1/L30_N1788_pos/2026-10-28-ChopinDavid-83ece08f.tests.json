@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-83ece08f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N1788+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N1788",
+   "pole": "+",
+   "label": "the end of one part in a breakdown of a whole into shares or members (one ..., the other ...; first X, second Y; 47 percent good)",
+   "fire": [
+    "Of the votes cast, 52 percent went to the mayor, 31 percent to her rival and the rest were spoiled.",
+    "The prize money is split: the winner gets $40,000, the runner-up $15,000 and third place $5,000.",
+    "One valve lets cold water into the boiler, the other lets hot water out.",
+    "Population growth was 2%, of which 1.5% was due to migration and the rest to births.",
+    "Of the apples harvested, 60 percent were graded premium, 30 percent standard and 10 percent cider.",
+    "The two lanes are divided: one carries buses, and the other carries bicycles.",
+    "Half of the budget goes to salaries, a quarter to rent and the remainder to equipment.",
+    "Of the survey respondents, 40 percent were satisfied, 35 percent neutral and 25 percent unhappy."
+   ],
+   "quiet": [
+    "After the votes were counted, the mayor thanked her staff and went home to sleep.",
+    "The prize ceremony was held in the town hall, and the winner gave a short speech.",
+    "He turned the valve slowly, and cold water began to fill the old boiler.",
+    "Population growth slowed last year, and officials blamed the rising cost of housing.",
+    "After the apples were harvested, we washed them, packed them and drove to the market.",
+    "The two lanes merge near the bridge, and traffic often slows there in the morning.",
+    "When the budget arrived, the manager read it, signed it and sent it back.",
+    "After the survey closed, the team met for coffee, and the results were discussed."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire around 0.3-0.7; commas in narrative sequences near 0",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "item in a breakdown",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: '0.8% was due to natural increase' 0.766, '47 percent good' 0.611, prize breakdown '$25,000' 0.474, 'one bus ... , and the other' 0.332, 'one pipe ..., the other' 0.277; narrative commas 0.003-0.006; 'First ...; second' 0.024."
+}

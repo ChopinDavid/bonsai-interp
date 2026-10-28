@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-3a614121",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N2519-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N2519",
+   "pole": "-",
+   "label": "placement words in descriptions of sport technique or a playing area (golf course, fencing, racket grip)",
+   "fire": [
+    "In fencing, the foil is held in the right hand while the left arm stays raised behind you.",
+    "On this course the rough is cut long between the fairway and the trees on the left.",
+    "Keep the bat close to the pad and lean over the front foot when you defend.",
+    "The tee box sits on a ridge above the narrow fairway that bends to the right.",
+    "Grip the club with the left hand on top and the thumb pointing down the shaft.",
+    "The bunker guards the front of the green, so most players aim for the back.",
+    "In archery, the bow is held in the left hand and the string drawn to the chin.",
+    "The serve must land in the diagonal box on the far side of the net."
+   ],
+   "quiet": [
+    "At dinner, the fork is placed on the left and the knife on the right of the plate.",
+    "The meeting is held in the evening and usually runs for about an hour.",
+    "Keep the receipt close to the invoice and file both at the end of the month.",
+    "The town hall sits on a hill above the market square in the old town.",
+    "Hold the baby with one hand under the head while you wash the hair.",
+    "The bakery stands at the front of the street, so most people stop there first.",
+    "In winter, the plant is kept in a warm room and watered once a week.",
+    "The letter must arrive in the post office before the end of the week."
+   ]
+  }
+ ],
+ "predictions": "about half fire above 0.3; table-setting and calendar 'in the' near misses quiet",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sport placement and layout",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Top examples are golf, sword and kendo. Probe: 'racket in the right hand' 0.665, 'between the tees' 0.758, 'edge of a narrow stream' 0.308; cup on 'the left side of the plate' 0.013, 'in the afternoon' 0.012, castle bridge 0.057."
+}

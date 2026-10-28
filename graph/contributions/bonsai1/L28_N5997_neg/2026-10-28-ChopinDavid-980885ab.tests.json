@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-980885ab",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N5997-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N5997",
+   "pole": "-",
+   "label": "the word that introduces an age or life stage (before/around/over/by + age, year of life), the setup for 'early'/'young'",
+   "fire": [
+    "Most children with the condition start to walk before age two, a little later than their peers.",
+    "The guidelines apply to patients over 65 years of age with high blood pressure.",
+    "Signs of the disorder often appear around eighteen months of age, when speech should begin.",
+    "Bone density peaks at about age thirty and declines slowly afterwards.",
+    "Many smokers begin the habit before the age of sixteen, according to the survey.",
+    "The rash typically shows up during the second year of life in affected infants.",
+    "Adolescents under 18 years old need written consent from a parent to take part.",
+    "By the age of five, most children can hop on one foot and draw a simple person."
+   ],
+   "quiet": [
+    "Most ferries to the island leave before ten in the morning during the summer season.",
+    "The discount applies to orders over 65 dollars placed through the website.",
+    "Signs of spring often appear around the middle of March, when the snow melts.",
+    "The market reaches its busiest point at about noon and quietens afterwards.",
+    "Many shoppers finish their errands before the start of the evening rush.",
+    "The festival takes place during the second week of June in the old town.",
+    "Parcels under 18 kilograms can be sent by standard post without a form.",
+    "By the end of the meeting, most members had agreed on a simple budget."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire; the same prepositions before clock or calendar times stay near 0",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "lead-in to an age",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'before age three' 0.880, 'over 18 years old' 0.688, 'about the fifth year of life' 0.511, 'around six months of age' 0.497; 'before noon' 0.000, 'around nine' 0.002, 'before the deadline' 0.004. Logit effect promotes ' young', ' early'."
+}

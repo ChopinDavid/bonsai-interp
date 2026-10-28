@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-29c14c01",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N10424-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N10424",
+   "pole": "-",
+   "label": "the one exposed to harm: being hurt, frightened, kept safe or vulnerable (the patient side of harm)",
+   "fire": [
+    "Police feared the teenager might try to hurt himself before they arrived.",
+    "The new fence is meant to keep the children safe from the busy road.",
+    "Our cat gets frightened whenever the neighbours set off fireworks.",
+    "Coastal towns are especially vulnerable to storms and flooding.",
+    "The nurse worried that the patient would injure herself during the night.",
+    "Guards were posted at the gate to keep the refugees safe from attack.",
+    "The small country has been a frequent victim of border raids.",
+    "Elderly people living alone are most at risk during heat waves."
+   ],
+   "quiet": [
+    "Police feared the teenager might try to leave the city before they arrived.",
+    "The new fence is meant to mark the edge of the garden by the road.",
+    "Our cat gets hungry whenever the neighbours start cooking dinner.",
+    "Coastal towns are especially popular with tourists in the summer.",
+    "The nurse worried that the patient would wake early during the night.",
+    "Guards were posted at the gate to check the tickets of visitors.",
+    "The small country has been a frequent winner of football trophies.",
+    "Elderly people living in the village often grow tomatoes in summer."
+   ]
+  }
+ ],
+ "predictions": "about half fire above 0.3; the agent side of harm (accused, attacked) and neutral states quiet",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "exposed to harm",
+ "unit_kind": "sparse feature",
+ "confidence": "low",
+ "notes": "Probe: 'harm himself' 0.520, 'keep our soldiers safe' 0.430, 'puppy gets scared' 0.296, 'major victim' 0.195, 'most vulnerable' 0.170; 'have suffered heavy losses' only 0.011; 'accused of attacking' 0.086; neutral 0.014-0.021."
+}
