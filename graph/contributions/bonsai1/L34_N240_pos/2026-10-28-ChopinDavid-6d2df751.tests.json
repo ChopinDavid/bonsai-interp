@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-6d2df751",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N240+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N240",
+   "pole": "+",
+   "label": "a determiner or quantifier where a drop, tear or other small bit of liquid (or of a plant) is expected next ('spill even one', 'shed a few', 'a tiny'); the same determiners outside a liquid setup stay low",
+   "fire": [
+    "She squeezed the lemon until not even one more drop came out.",
+    "Add just a few drops of vanilla to the batter.",
+    "The old tap leaked a single drop every few seconds.",
+    "He wept quietly, shedding a few tears onto the letter.",
+    "In the heat, a tiny bead of sweat formed on his brow.",
+    "Don't waste even one drop of this expensive oil.",
+    "Morning dew hung in tiny droplets on the spider's web.",
+    "The nurse let a single drop of blood fall onto the test strip."
+   ],
+   "quiet": [
+    "She checked the list until not even one more name was missing.",
+    "Add just a few pages of notes to the report.",
+    "The old clock chimed a single time every hour.",
+    "He worked quietly, writing a few lines onto the letter.",
+    "In the end, a tiny mistake formed the basis of the lawsuit.",
+    "Don't waste even one minute of this expensive meeting.",
+    "Morning traffic moved in tiny steps along the motorway.",
+    "The clerk let a single page of the file fall onto the desk."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.65 on the quantifier in a liquid setup; the same quantifiers with no liquid below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts 'drop' after a quantifier in a liquid setup",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: peaks on 'One' before 'drop of Christian blood', '几' before tear-drops, ' tiny' before 'droplet'; the pole promotes ' drop'/' drops'. Probe: 'spill even one drop' 0.643 and 'spill even one grain' 0.643 (peak on ' one', so it predicts from the setup), 'tiny droplet of rain' 0.633, 'shed a few tears' 0.476, 'A single tear' 0.251; 'A single car rolled' 0.048, 'every quarter' 0.014; plant setups also fire ('a nearby tree' 0.360, 'a row of potatoes' 0.226). Near misses remove the liquid setup, not only the noun."
+}

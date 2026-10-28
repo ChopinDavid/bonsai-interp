@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-be3a63c3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N11403-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N11403",
+   "pole": "-",
+   "label": "phrases that locate something by position relative to a structure (from the back row, the driver's side, beneath the crust, from the grandstand); the same scenes without a positional phrase stay low",
+   "fire": [
+    "She waved to us from the front row of the hall.",
+    "The mechanic crawled under the passenger side of the van.",
+    "Water collects in a hidden layer beneath the desert sand.",
+    "From the upper deck, fans could watch the whole pitch.",
+    "The cat hid behind the far end of the sofa.",
+    "A thin channel links the inner and outer walls of the cell.",
+    "He shouted up from the bottom of the stairwell.",
+    "The nerve runs along the inner side of the elbow."
+   ],
+   "quiet": [
+    "She waved to us cheerfully before the show began.",
+    "The mechanic quickly fixed the brakes of the van.",
+    "Water is scarce for farmers in the desert towns.",
+    "Fans cheered loudly when the home team scored.",
+    "The cat slept peacefully for most of the day.",
+    "A thin report summarises two studies of the cell.",
+    "He shouted angrily about the broken heater.",
+    "The nerve was damaged during the elbow surgery."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on positional phrases; rewrites without them below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "position relative to a structure",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.4,
+ "notes": "Card: weak pole (max 8.25) on ' row', ' side', ' underlying', ' above', ' doorway', ' exterior'. Probe: 'driver's side' 0.513, 'from the grandstand' 0.472, 'the back row' 0.361, 'beneath its icy crust' 0.229, 'underlying muscle' 0.212; rewrites 0.011-0.119."
+}

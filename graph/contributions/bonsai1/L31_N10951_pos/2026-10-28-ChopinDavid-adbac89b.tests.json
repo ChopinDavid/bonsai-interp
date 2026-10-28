@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-adbac89b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N10951+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N10951",
+   "pole": "+",
+   "label": "the inner pieces of South Asian and Arabic personal names that the tokenizer splits into several tokens (Nase|er|udd|in, I|q|bal); single-token English names in the same slot stay low",
+   "fire": [
+    "The keynote was delivered by Shahabuddin Qureshi of Karachi.",
+    "The prize was shared by Iftikhar Hussain and Zulfiqar Mirza.",
+    "Our thanks go to Mehrunnisa Begum for translating the letters.",
+    "The patent lists Raghunathan Iyer as its main inventor.",
+    "The case was argued by advocate Naseeruddin Farooqui last week.",
+    "The new branch is managed by Fatimah Zulkifli and her brother.",
+    "A poem by Iqbal opened the ceremony, read by Zulfiqar Mirza.",
+    "The study was led by Raghunathan Iyer and Shahabuddin Qureshi."
+   ],
+   "quiet": [
+    "The keynote was delivered by Thomas Wilson of Manchester.",
+    "The prize was shared by Peter Johnson and David Miller.",
+    "Our thanks go to Mary Jones for translating the letters.",
+    "The patent lists Robert Smith as its main inventor.",
+    "The case was argued by advocate James Taylor last week.",
+    "The new branch is managed by Susan Clark and her brother.",
+    "A poem by Keats opened the ceremony, read by David Miller.",
+    "The study was led by Robert Smith and Thomas Wilson."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.6 on long split names; single-token English names below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner pieces of split South Asian / Arabic names",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: name onsets after titles or commas (Prof. Dr. S|aeed, Ms. A|reet, Sh|antanu, Sh|abana). Probe: 'Shabana Azmi and Naseeruddin Shah' 0.638, 'Hammad Iqbal and Bilal Ahmed' 0.431 (peak 'al'), Georgian 'Nino Kapanadze' 0.185, 'Prof. Dr. Saeed Rahman' 0.153, 'Ms. Aisha Siddiqui' 0.115; 'Michael Brown' 0.009, 'Sarah Collins' 0.026. Test uses long multi-piece names (checked with tok.py) because short ones fired weakly."
+}

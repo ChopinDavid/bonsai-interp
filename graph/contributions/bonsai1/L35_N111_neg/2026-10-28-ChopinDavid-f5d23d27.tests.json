@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-f5d23d27",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N111-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N111",
+   "pole": "-",
+   "label": "a German word piece directly before an '-ig' suffix (wen|ige, Bew|ält|igung, wür|d|igen); the same sentences with a synonym that has no -ig piece stay low",
+   "fire": [
+    "Er bat um Entschuldigung für die lange Verspätung.",
+    "Nach dem Streit versuchte sie, das Kind zu beruhigen.",
+    "Die Kündigung kam für alle Mitarbeiter völlig überraschend.",
+    "Beim Umzug wurde der alte Schrank leider beschädigt.",
+    "Für den Antrag brauchen Sie eine Bescheinigung vom Arzt.",
+    "Am Abend kamen nur noch wenige Gäste in das Lokal.",
+    "Studenten erhalten im Museum eine Ermäßigung von zehn Prozent.",
+    "Die beiden Länder konnten sich auf einen Vertrag verständigen."
+   ],
+   "quiet": [
+    "Er bat um Verständnis für die lange Verspätung.",
+    "Nach dem Streit versuchte sie, das Kind zu trösten.",
+    "Die Nachricht kam für alle Mitarbeiter völlig überraschend.",
+    "Beim Umzug wurde der alte Schrank leider zerkratzt.",
+    "Für den Antrag brauchen Sie einen Brief vom Arzt.",
+    "Am Abend kamen nur noch drei Gäste in das Lokal.",
+    "Studenten erhalten im Museum einen Rabatt von zehn Prozent.",
+    "Die beiden Länder schlossen am Ende einen Vertrag."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.8 on the piece before -ig/-igen/-igung; synonym rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German stem piece before '-ig'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.65,
+ "notes": "Card peaks ' wen' x5, 'ält' x3, 'ünd' x3, 'd' x2 (wür|d|igen), all before '-ig'. Probe: 'würdigen' 0.806 (peak 'd'), 'Bewältigung' 0.286, 'Beschäftigten' 0.250, 'wenige' 0.188; synonym rewrites 0.003-0.008, English 0.002. Splits checked with tok.py (Entschuldigung, beruhigen, Kündigung, beschädigt, Bescheinigung all split before 'ig')."
+}

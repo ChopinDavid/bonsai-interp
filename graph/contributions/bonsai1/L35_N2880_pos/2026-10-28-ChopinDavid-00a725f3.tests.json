@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-00a725f3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N2880+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N2880",
+   "pole": "+",
+   "label": "the byte-fallback token that merges the Japanese long-vowel mark 'ー' with the first byte of the next katakana (ラ|ー�|�|ン in ラーメン); katakana words that tokenize whole stay low",
+   "fire": [
+    "昨日の夜、家の近くでラーメンを食べました。",
+    "息子はハンバーガーが大好きです。",
+    "母は近くのスーパーマーケットで野菜を買いました。",
+    "今日のお昼はカレーライスにしよう。",
+    "旅行のためにスーツケースを新しく買いました。",
+    "会社のサーバーが朝から止まっています。",
+    "週末に友達とラーメン屋に行く予定です。",
+    "このお店のハンバーガーはとても大きい。"
+   ],
+   "quiet": [
+    "昨日の夜、家の近くでお寿司を食べました。",
+    "息子はケーキが大好きです。",
+    "母は近くのお店でテレビを買いました。",
+    "今日のお昼はうどんにしよう。",
+    "旅行のためにカメラを新しく買いました。",
+    "会社のメールが朝から届きません。",
+    "週末に友達とタクシーで出かける予定です。",
+    "このお店のボールペンはとても書きやすい。"
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on 'ー�' in ラーメン, ハンバーガー, スーパーマーケット; whole-token katakana (ケーキ, テレビ) below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "byte token 'ー�' inside katakana words",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card peaks ' �' x20, 'ー�' x8: byte pieces inside katakana words. Probe: ディナーデート 0.830, コーヒーメーカー 0.646, ブルーベリーエキス 0.481 (all peak 'ー�'); エンタメ -0.003 (no byte split), GPU / kanji-only sentences ~0. Every item checked with tok.py: fire words contain 'ー�', near-miss katakana words are whole tokens."
+}

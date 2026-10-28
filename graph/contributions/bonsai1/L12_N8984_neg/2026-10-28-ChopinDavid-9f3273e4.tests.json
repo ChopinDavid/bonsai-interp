@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-9f3273e4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N8984-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N8984",
+   "pole": "-",
+   "label": "live performance events and venues: concerts, gigs, shows, opening acts, open-mic nights; recorded music and non-performance events in the same frames stay low",
+   "fire": [
+    "Thousands queued outside the stadium for the band's reunion gig.",
+    "Tickets for the jazz night at the Blue Lantern go on sale Monday.",
+    "The singer closed her world tour with two nights at the national arena.",
+    "Every Friday the pub hosts an open-mic night with local bands.",
+    "The orchestra gave a free outdoor performance in the park.",
+    "After the support act, the crowd roared as the headliner walked on.",
+    "The theatre added a matinee show because the evening was sold out.",
+    "We danced all night at a packed rave in an old warehouse."
+   ],
+   "quiet": [
+    "Thousands queued outside the shop for the new phone release.",
+    "Tickets for the train to the coast go on sale Monday.",
+    "The singer released her new album on streaming services.",
+    "Every Friday the pub serves a roast dinner with local ale.",
+    "The orchestra recorded the symphony in a quiet studio.",
+    "After the meeting, the staff walked back to their desks.",
+    "The theatre added new seats because the old ones were broken.",
+    "We slept all night in a quiet room in an old farmhouse."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.65 on live-performance sentences; recorded music and other events below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "live performance events",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.55,
+ "notes": "Card: ' live' x3, 'Club', ' concert', ' Event', ' act', ' pm', 'head|lining', ' shows', ' Forum' in gig listings. Probe: 'sold-out concert at the city arena' 0.641, 'stand-up set at the club' 0.542, 'headlining show' 0.460, 'live music' 0.413, 'opening act' 0.376; 'recorded a new album in a small studio' 0.112, 'arena hosted a basketball game' 0.220, farmers market 0.012, committee 0.002."
+}

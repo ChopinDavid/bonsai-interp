@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-033a19d8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N4366+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N4366",
+   "pole": "+",
+   "label": "the token ' only' in the correlative 'not only ... (but also)'; ' only' meaning 'just' or 'sole' and 'not' with other words stay low",
+   "fire": [
+    "The plan was risky. Not only would it cost millions, it could also fail.",
+    "Critics loved the film. Not only was the acting superb, the music was too.",
+    "The village is remote. Not only does the bus rarely come, the road floods.",
+    "Our new oven is great. Not only does it bake evenly, it also heats fast.",
+    "That summer was strange. Not only did it snow in June, the river froze.",
+    "She is talented. Not only can she paint, she also writes poetry.",
+    "The fix helped. Not only were the crashes gone, the app felt quicker.",
+    "He was generous. Not only did he pay the bill, he drove us home."
+   ],
+   "quiet": [
+    "The plan was risky. It would only work if the weather held.",
+    "Critics loved the film. The acting was superb, and the music too.",
+    "The village is remote. The bus comes only twice a week.",
+    "Our new oven is great. It is the only one in the shop with a timer.",
+    "That summer was strange. It did not rain at all in June.",
+    "She is talented. She paints and also writes poetry.",
+    "The fix helped. Not all of the crashes were gone, though.",
+    "He was generous. He paid the bill and drove us home."
+   ]
+  }
+ ],
+ "predictions": "fire 0.7-0.8 on ' only' after 'Not'; other ' only' and 'not' below 0.02",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' only' in 'not only'",
+ "unit_kind": "context",
+ "confidence": 0.85,
+ "notes": "Card: ' only' x31 of 32, every one in 'Not only'. Probe: three 'Not only' sentences 0.729-0.776; 'It only works' 0.008, 'Only three people' 0.005, 'the only one' -0.001, 'Not all roads' 0.008."
+}

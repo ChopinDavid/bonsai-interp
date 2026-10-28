@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-59e6a2bb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N2972-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N2972",
+   "pole": "-",
+   "label": "unclear; best guess: the line-ending '.\\n' of a sentence in a dash-bulleted list followed by another list item",
+   "fire": [
+    "The workshop has three parts.\n- Part one explains how vowels are formed in the mouth.\n- Part two covers the minerals found in the region.\n- Part three is a short quiz.",
+    "Tips for commuters:\n- Leave early to avoid the worst of the traffic on the ring road.\n- Don't carry more than two bags.\n- Check the timetable the night before.",
+    "Course outline:\n- Week one introduces the basic tools of the trade.\n- Week two looks at the history of the craft.\n- Week three is a field trip.",
+    "Before you start:\n- Make sure the power is switched off at the wall.\n- Keep children away from the work area.\n- Wear gloves at all times.",
+    "Our findings:\n- Most patients recovered within a month of treatment.\n- Side effects were rare and mild.\n- Costs fell by a third.",
+    "Packing list:\n- Bring a warm jacket for the evenings in the mountains.\n- Pack at least two pairs of socks.\n- Carry a small first-aid kit.",
+    "Rules of the club:\n- Members must sign in at the front desk on arrival.\n- Guests pay a small fee.\n- Phones stay in the lockers.",
+    "What changed in this version:\n- The menu now loads much faster on older phones.\n- Several crashes were fixed.\n- The icons were redrawn."
+   ],
+   "quiet": [
+    "The workshop has three parts: how vowels are formed, the minerals of the region, and a short quiz.",
+    "Commuters should leave early, carry no more than two bags, and check the timetable the night before.",
+    "The course introduces the basic tools in week one, the history of the craft in week two, and a field trip in week three.",
+    "Before you start, switch off the power, keep children away, and wear gloves at all times.",
+    "Most patients recovered within a month, side effects were rare, and costs fell by a third.",
+    "Bring a warm jacket, at least two pairs of socks and a small first-aid kit for the mountains.",
+    "Members sign in at the front desk, guests pay a small fee, and phones stay in the lockers.",
+    "In this version the menu loads faster, several crashes were fixed and the icons were redrawn."
+   ]
+  }
+ ],
+ "predictions": "guess: fire 0.2-0.5 on '.\\n' inside a dash list; the same items run together in one line below 0.1; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess: '.\\n' ending a bulleted list item",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: '.\\n' x14, mostly before '- ' list lines ('...in the sound.\\n- Neural networks'). Probe was flat: dash lists with periods scored 0.025-0.058 and prose 0.024-0.051, so the probes do not support the reading; best-guess test only."
+}
