@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N8904+",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 8904,
+ "pole": "+",
+ "label": "a bare word-initial letter piece (' R', ' r', ' p', ' P') that starts a split rare name or anatomical term",
+ "short": "split-word initial letter",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N8904_pos/2026-10-28-ChopinDavid-fb35030a.tests.json",
+   "prereg_commit": "d8cb58b2",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.635,
+     "peak": " R"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.425,
+     "peak": " R"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.101,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.218,
+     "peak": "z"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.716,
+     "peak": " r"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.147,
+     "peak": " P"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.52,
+     "peak": " R"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.934,
+     "peak": " R"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " ancient"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": " Swedish"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.055,
+     "peak": "inn"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " dorsal"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " f"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " language"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.473,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-fb35030a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-fb35030a",
+   "a bare word-initial letter piece (' R', ' r', ' p', ' P') that starts a split rare name or anatomical term",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-fb35030a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N7826-",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 7826,
+ "pole": "-",
+ "label": "'negative' (and similar words) naming unpleasant feelings or thoughts in psychology and therapy text",
+ "short": "negative feelings (psych)",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N7826_neg/2026-10-28-ChopinDavid-93477972.tests.json",
+   "prereg_commit": "d8cb58b2",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.631,
+     "peak": " negative"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.47,
+     "peak": " positive"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.044,
+     "peak": " negative"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.361,
+     "peak": " negative"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.091,
+     "peak": " negative"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.329,
+     "peak": " negative"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.036,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.224,
+     "peak": " negative"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": "rons"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.034,
+     "peak": " medical"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": " home"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " plan"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.036,
+     "peak": " negative"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": " negative"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.977,
+    "median_fire": 0.277,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-93477972"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-93477972",
+   "'negative' (and similar words) naming unpleasant feelings or thoughts in psychology and therapy text",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-93477972"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

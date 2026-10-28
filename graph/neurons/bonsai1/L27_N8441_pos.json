@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L27/N8441+",
+ "model": "bonsai1",
+ "layer": 27,
+ "index": 8441,
+ "pole": "+",
+ "label": "context that predicts dispute or conflict resolution (settling, resolving or arbitrating a disagreement)",
+ "short": "settling disputes",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N8441_pos/2026-10-28-ChopinDavid-5d02633b.tests.json",
+   "prereg_commit": "d8cb58b2",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.444,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.638,
+     "peak": " resolve"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.887,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.85,
+     "peak": " resolving"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.952,
+     "peak": " settle"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.573,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.161,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.281,
+     "peak": " resolve"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.123,
+     "peak": " alternative"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.033,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " require"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.134,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.835,
+     "peak": " settle"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.095,
+     "peak": " encouraged"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": "International"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.098,
+     "peak": " resolve"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.744,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-ChopinDavid-5d02633b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-5d02633b",
+   "context that predicts dispute or conflict resolution (settling, resolving or arbitrating a disagreement)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-5d02633b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
