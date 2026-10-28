@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-29904cb0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N8476-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T23:28:23+00:00",
+ "recipe": {
+  "toolchain_commit": "459437a4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N8476_neg/2026-10-28-ChopinDavid-29904cb0.tests.json"
+ },
+ "label": "' also' opening an alternative-name apposition after a name (X, also known as / also called / also referred to as Y); additive 'also' in other uses stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N8476_neg/2026-10-28-ChopinDavid-29904cb0.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.184,
+     "peak": " also"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.434,
+     "peak": " also"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.446,
+     "peak": " also"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.084,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.202,
+     "peak": " also"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.16,
+     "peak": " also"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.713,
+     "peak": " also"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.194,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": "b"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": "bers"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " port"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " its"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.198,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "459437a4",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'also' in 'X, also known as Y'",
+ "unit_kind": "context",
+ "confidence": 0.75,
+ "notes": "Card: ' also' x19, 'also' x6, 'Also' x3, nearly all '..., also known as'. Probe: 'Acetaminophen, also called' 0.469, 'Edinburgh, also known as' 0.284, 'Bradford, also referred to as' 0.207; additive 'also sings' 0.012, 'also stopped' 0.009, 'is also used' 0.012, 'known locally as' (no also) 0.037.",
+ "selection": "random draw"
+}
