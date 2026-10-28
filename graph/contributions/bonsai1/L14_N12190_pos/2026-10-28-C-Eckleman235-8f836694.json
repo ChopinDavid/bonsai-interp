@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-8f836694",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N12190+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:11:59+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N12190_pos/2026-10-28-C-Eckleman235-8f836694.tests.json"
+ },
+ "label": "Name pieces of upstate New York places in Iroquois/regional context (Mohawk, Syracuse, Armonk, New York)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N12190_pos/2026-10-28-C-Eckleman235-8f836694.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.72,
+     "peak": " York"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.583,
+     "peak": " York"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.159,
+     "peak": "town"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.922,
+     "peak": " York"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.464,
+     "peak": "ica"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.517,
+     "peak": " York"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.156,
+     "peak": " York"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.009,
+     "peak": " toward"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": " eastern"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.038,
+     "peak": " Mexico"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": "plain"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " Valley"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " from"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.491,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 6,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "Upstate New York place-name pieces",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L11/N10296+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes were weak: 'upstate New York near Plattsburgh' scored 0.007, Mohawk Valley 0.39, Armonk 0.19, Empire State Building 0.08. The pole seems to need an Iroquois/regional-history context, so fire items lean on that and quiet items keep the same genre in other states.",
+ "roles": [
+  "reads bonsai1/L11/N10296+"
+ ],
+ "selection": "step-in from bonsai1/L11/N10296+ (10x queue, model pilot: sonnet)"
+}

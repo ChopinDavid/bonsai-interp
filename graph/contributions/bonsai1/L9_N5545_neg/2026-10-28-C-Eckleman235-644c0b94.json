@@ -1,0 +1,163 @@
+{
+ "id": "2026-10-28-C-Eckleman235-644c0b94",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N5545-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:13:10+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N5545_neg/2026-10-28-C-Eckleman235-644c0b94.tests.json"
+ },
+ "label": "the token 'classmethod' (and 'staticmethod') right after '@' in a Python decorator line",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N5545_neg/2026-10-28-C-Eckleman235-644c0b94.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.061,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.611,
+     "peak": "staticmethod"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.916,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.684,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.559,
+     "peak": "staticmethod"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.862,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.734,
+     "peak": "classmethod"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.648,
+     "peak": "staticmethod"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.454,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.373,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.101,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " Tests"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.112,
+     "peak": "():\n"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": "():\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": "   "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.709,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 8,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "@classmethod / @staticmethod decorator token",
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L10/N9424- (zeroing this neuron removes 1.00 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: classmethod 0.62-0.82 and staticmethod 0.60 fired; other decorators stayed under 0.2. The word in prose scored 0.48, so the pole is partly lexical; I kept prose out of the quiet set (it contains the trigger) and used other decorators and a decorator description without the word.",
+ "roles": [
+  "feeds bonsai1/L10/N9424-"
+ ],
+ "selection": "step-out from bonsai1/L10/N9424- (10x queue, model pilot: sonnet)",
+ "trigger": {
+  "words": [
+   "classmethod",
+   "staticmethod"
+  ]
+ }
+}

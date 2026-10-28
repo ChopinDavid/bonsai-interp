@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-644c0b94",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N5545-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:27+00:00",
+ "selection": "step-out from bonsai1/L10/N9424- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L9/N5545",
+   "pole": "-",
+   "label": "the token 'classmethod' (and 'staticmethod') right after '@' in a Python decorator line",
+   "fire": [
+    "import os\n\nclass Cache(object):\n    store = {}\n\n    @classmethod\n    def reset(cls):\n        cls.store.clear()",
+    "class Shape:\n    sides = 0\n\n    def area(self):\n        return 0\n\n    @staticmethod\n    def unit():\n        return 1",
+    "class User(Base):\n    __tablename__ = 'users'\n\n    id = Column(Integer, primary_key=True)\n\n    @classmethod\n    def by_email(cls, session, email):\n        return session.query(cls).filter_by(email=email).first()",
+    "class Tests(unittest.TestCase):\n    @classmethod\n    def tearDownClass(cls):\n        cls.server.stop()",
+    "def helper():\n    pass\n\n\nclass Matrix:\n    def __init__(self, rows):\n        self.rows = rows\n\n    @staticmethod\n    def identity(n):\n        return Matrix([[1 if i == j else 0 for j in range(n)] for i in range(n)])",
+    "class Animal:\n    count = 0\n\n    @classmethod\n    def how_many(cls):\n        return cls.count",
+    "\tdef run(self):\n\t\tpass\n\n\t@classmethod\n\tdef parse(cls, text):\n\t\treturn cls()",
+    "class Node:\n    def __init__(self, v):\n        self.v = v\n\n    @staticmethod\n    def compare(a, b):\n        return a.v < b.v"
+   ],
+   "quiet": [
+    "import os\n\nclass Cache(object):\n    store = {}\n\n    @property\n    def size(self):\n        return len(self.store)",
+    "class Shape:\n    sides = 0\n\n    def area(self):\n        return 0\n\n    @abc.abstractmethod\n    def perimeter(self):\n        pass",
+    "class User(Base):\n    __tablename__ = 'users'\n\n    id = Column(Integer, primary_key=True)\n\n    @validates('email')\n    def check_email(self, key, value):\n        return value.lower()",
+    "class Tests(unittest.TestCase):\n    @unittest.skip('flaky')\n    def test_stop(self):\n        self.server.stop()",
+    "def helper():\n    pass\n\n\nclass Matrix:\n    def __init__(self, rows):\n        self.rows = rows\n\n    def identity(self, n):\n        return Matrix([[1 if i == j else 0 for j in range(n)] for i in range(n)])",
+    "A decorator wraps a function; Python also lets you attach one to a method inside a class body, as long as it is placed on the line above the def.",
+    "@app.route('/home')\ndef home():\n    return render_template('home.html')",
+    "class Node:\n    def __init__(self, v):\n        self.v = v\n\n    @functools.total_ordering\n    def __lt__(self, other):\n        return self.v < other.v"
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L10/N9424-"
+ ],
+ "short": "@classmethod / @staticmethod decorator token",
+ "trigger": {
+  "words": [
+   "classmethod",
+   "staticmethod"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L10/N9424- (zeroing this neuron removes 1.00 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: classmethod 0.62-0.82 and staticmethod 0.60 fired; other decorators stayed under 0.2. The word in prose scored 0.48, so the pole is partly lexical; I kept prose out of the quiet set (it contains the trigger) and used other decorators and a decorator description without the word."
+}

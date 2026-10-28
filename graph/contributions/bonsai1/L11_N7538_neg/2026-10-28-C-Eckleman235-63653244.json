@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-63653244",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N7538-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:11:57+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N7538_neg/2026-10-28-C-Eckleman235-63653244.tests.json"
+ },
+ "label": "The token ' Reconstruction' (post-Civil War US South) and ' back' after 'sleep on your'; two separate triggers",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N7538_neg/2026-10-28-C-Eckleman235-63653244.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.556,
+     "peak": " Reconstruction"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.906,
+     "peak": " Reconstruction"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.221,
+     "peak": " Reconstruction"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.395,
+     "peak": " Reconstruction"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.427,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.294,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.526,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.032,
+     "peak": " towel"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.066,
+     "peak": "reed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.152,
+     "peak": " election"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.064,
+     "peak": " traced"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " Deal"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.046,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " sleeping"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": " knees"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.02,
+     "peak": " turned"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.411,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 6,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "Reconstruction era; sleeping on your back",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N9052+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: Reconstruction 0.89/0.50 and 'sleeping on your back' 0.82 fired; Poland/Jews did not (0.14), so the label drops them. Pole is a mix of two tokens; quiet items include side-sleeping and the Civil War without the word Reconstruction.",
+ "roles": [
+  "reads bonsai1/L10/N9052+"
+ ],
+ "selection": "step-in from bonsai1/L10/N9052+ (10x queue, model pilot: sonnet)"
+}

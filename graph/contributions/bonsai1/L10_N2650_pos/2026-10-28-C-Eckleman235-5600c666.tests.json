@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-5600c666",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N2650+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:31+00:00",
+ "selection": "step-in from bonsai1/L9/N268- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L10/N2650",
+   "pole": "+",
+   "label": "Weak, diffuse pole on modifier words inside British institutional names (Liberal Democrat, Department for Education); no clear label",
+   "fire": [
+    "Polls put Labour narrowly ahead of the Liberal Democrat candidate in the by-election.",
+    "The report was commissioned by the Department for Health after the inquiry.",
+    "Our second year seminar covers the traditional sources of medieval history.",
+    "The tribunal sits alongside the High Court in a building near the river.",
+    "The grant was awarded jointly by the Department for Energy and a research council.",
+    "She stood for the Scottish Green Party in the district elections.",
+    "Ministers at the Department for Work met charity leaders on Monday.",
+    "The Welsh Liberal group lost two seats in the council vote."
+   ],
+   "quiet": [
+    "Polls put the incumbent narrowly ahead of the independent candidate in the by-election.",
+    "The report was commissioned by the health board after the inquiry.",
+    "Our weekly seminar covers the standard sources of medieval history.",
+    "The tribunal sits alongside the courthouse in a building near the river.",
+    "The grant was awarded jointly by a regional charity and a research council.",
+    "She stood for the local council in the district elections.",
+    "Officials at the town hall met charity leaders on Monday.",
+    "The village committee lost two members in the parish vote."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L9/N268-"
+ ],
+ "short": "Weak UK institutional modifiers",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L9/N268- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: No probe cleared 0.3 (best 0.20 for 'Green Party'); max activation is only 2.89 and 6.6% of tokens exceed 0.1 of max, so near misses will fire weakly. Expect an inconclusive or failed test."
+}

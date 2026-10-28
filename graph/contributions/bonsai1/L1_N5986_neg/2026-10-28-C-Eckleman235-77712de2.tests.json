@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-77712de2",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N5986-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:28+00:00",
+ "selection": "step-out from bonsai1/L2/N6893- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L1/N5986",
+   "pole": "-",
+   "label": "the token ' quite' (degree adverb: quite a few, quite easy, quite another)",
+   "fire": [
+    "Honestly, the hike was quite exhausting by the end of the second day.",
+    "In the old village archive we found quite a number of unsigned letters.",
+    "My brother's apartment is quite small, but he keeps it spotless.",
+    "After the merger, the office felt quite different from before.",
+    "def retry(n):\n    # this loop is quite slow, so cache the result\n    return cached(n)",
+    "\"It's quite possible,\" the engineer admitted, \"that we missed something.\"",
+    "The final chapter takes quite a turn, and I did not see it coming.",
+    "They were quite unprepared for the cold when the ferry docked."
+   ],
+   "quiet": [
+    "Honestly, the hike was rather exhausting by the end of the second day.",
+    "In the old village archive we found a great number of unsigned letters.",
+    "My brother's apartment is fairly small, but he keeps it spotless.",
+    "After the merger, the office felt completely different from before.",
+    "def retry(n):\n    # this loop is pretty slow, so cache the result\n    return cached(n)",
+    "\"It's entirely possible,\" the engineer admitted, \"that we missed something.\"",
+    "The final chapter goes silent for a while, and I did not see it coming.",
+    "The reading room stayed quiet while the ferry docked outside."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L2/N6893-"
+ ],
+ "short": "the word 'quite'",
+ "trigger": {
+  "words": [
+   " quite"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L2/N6893- (zeroing this neuron removes 0.86 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: all four 'quite' sentences scored 0.7-0.98; synonyms rather/fairly stayed ~0 and 'quiet' reached 0.2, so I kept one 'quiet' near miss as the hard edge. Label stays at the token level because the top 32 are all ' quite'."
+}

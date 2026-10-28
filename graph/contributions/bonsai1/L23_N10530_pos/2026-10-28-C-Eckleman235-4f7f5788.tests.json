@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-4f7f5788",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N10530+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:28+00:00",
+ "selection": "step-out from bonsai1/L24/N11621- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L23/N10530",
+   "pole": "+",
+   "label": "the verb right after an existential 'there' or a fronted place/time phrase (there will be, there stands, wird/будет): subject-after-verb order, multilingual",
+   "fire": [
+    "Behind the barn there lies a pond nobody has fished in years.",
+    "Next month there will be a vote on the new parking rules.",
+    "Over the hills there came a sound like distant thunder.",
+    "In diesem Gebäude wird künftig ein Museum untergebracht.",
+    "В следующем году в городе будет открыт новый парк.",
+    "On the shelf there sits a dusty clock that no one winds.",
+    "In the report are described the main causes of the delay.",
+    "Au sommet de la colline se trouve un vieux moulin."
+   ],
+   "quiet": [
+    "The pond lies behind the barn, and nobody has fished in years.",
+    "The vote on the new parking rules happens next month.",
+    "A sound like distant thunder came over the hills.",
+    "Man bringt künftig ein Museum in diesem Gebäude unter.",
+    "В следующем году город откроет новый парк.",
+    "A dusty clock sits on the shelf, and no one winds it.",
+    "The report describes the main causes of the delay.",
+    "Le vieux moulin se trouve au sommet de la colline."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L24/N11621-"
+ ],
+ "short": "verb in inverted/existential order",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L24/N11621- (zeroing this neuron removes 0.74 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes fired 0.47-0.75 on 'there stands', 'there will', German 'wird' and Russian 'будет'; subject-first versions stayed ~0. 'Is there' scored exactly 0.3 on 'there', so I left questions out except as ordinary subject-first near misses. Pole is broad (many weak activations), so expect noise."
+}

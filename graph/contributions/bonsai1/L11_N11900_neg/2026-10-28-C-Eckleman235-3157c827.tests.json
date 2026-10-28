@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-3157c827",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N11900-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:30+00:00",
+ "selection": "step-in from bonsai1/L10/N7509+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L11/N11900",
+   "pole": "-",
+   "label": "mid-word subword fragment inside a rare proper name or uncommon foreign word (e.g. T|arg|aryens, Biz|ka|ia); weak, mixed pole",
+   "fire": [
+    "The dragon riders of the Targaryen house fill the pages of that fantasy saga.",
+    "They drove from Donostia toward Gipuzkoa and then crossed into Navarra.",
+    "Wikipedia lists the Lannisters, the Starks and the Baratheons as the major families.",
+    "The ship was named after the Norse figure Sigurdsdottir, a navigator in the sagas.",
+    "A Basque shepherd from Araba told me the village name came from Euskara.",
+    "Gimli, Thorin Oakenshield and the dwarves of Erebor march in the second scene.",
+    "Anthropologists studied the Dothraki-inspired conlang next to Klingon and Quenya.",
+    "Residents of Plovdiv and Burgas debated the new bridge near Stara Zagora."
+   ],
+   "quiet": [
+    "The royal families of the old kingdom fill the pages of that history book.",
+    "They drove from the city toward the coast and then crossed into the next country.",
+    "Wikipedia lists the schools, the hospitals and the libraries as the major buildings.",
+    "The ship was named after a famous captain, a navigator in the old stories.",
+    "A local shepherd from the hills told me the village name came from the river.",
+    "The old man, the farmer and the children walk home in the second scene.",
+    "Linguists studied the invented language next to French and Spanish.",
+    "Residents of the town and the village debated the new bridge near the market."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L10/N7509+"
+ ],
+ "short": "Subword pieces of rare names",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N7509+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: 'arg' in Targaryens 0.77 and 'ka' in Bizkaia 0.85 fired, but other rare-name splits (Tigrayan, Vilhjalmsson) only 0.13, so only some fragments work. Whole-word near misses keep the sentence shape without any rare name; evidence for the label is thin, hence low confidence."
+}

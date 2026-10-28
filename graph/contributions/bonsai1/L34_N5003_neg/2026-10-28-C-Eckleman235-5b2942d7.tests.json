@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-5b2942d7",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5003-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:29+00:00",
+ "selection": "step-out from bonsai1/L35/N8831- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L34/N5003",
+   "pole": "-",
+   "label": "predicts 'header': the word just before 'header' (pin header, double header, status/response header, in code or hardware)",
+   "fire": [
+    "Plug the ribbon cable into the 6-pin female header on the Arduino.",
+    "The Mets split a doubleheader with Atlanta on Saturday.",
+    "def parse(self, raw):\n    previous_header = raw.split('\\n')[0]\n    return previous_header",
+    "The loader reads the custom status header to learn the file version.",
+    "The mailer adds a hidden routing header to every outgoing message.",
+    "Solder a 4-pin male header to the sensor breakout board.",
+    "Ticket sales jumped when the park scheduled a twin-bill double header for July.",
+    "headers = {}\nheaders['Accept'] = 'text/html'  # request header for the client"
+   ],
+   "quiet": [
+    "Plug the ribbon cable into the 6-pin socket on the Arduino.",
+    "The Mets split a series of games with Atlanta on Saturday.",
+    "def parse(self, raw):\n    first_line = raw.split('\\n')[0]\n    return first_line",
+    "The loader reads the custom status code to learn the file version.",
+    "The mailer adds a hidden routing tag to every outgoing message.",
+    "Solder a 4-pin male connector to the sensor breakout board.",
+    "Ticket sales jumped when the park scheduled a twin night for July.",
+    "options = {}\noptions['Accept'] = 'text/html'  # request value for the client"
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L35/N8831-"
+ ],
+ "short": "word before 'header'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L35/N8831- (zeroing this neuron removes 0.66 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: 'pin', 'double' and code 'response' before header scored 0.37-0.84, but 'header' itself only 0.06, so it fires on the preceding position. Hard-edge near misses swap header for another noun while keeping frame. Some weak leak (0.17-0.2) on code and connector contexts."
+}

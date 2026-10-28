@@ -1,0 +1,166 @@
+{
+ "id": "2026-10-28-C-Eckleman235-be298ba8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11561+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:09+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N11561_pos/2026-10-28-C-Eckleman235-be298ba8.tests.json"
+ },
+ "label": "the word 'campaign' (campaign/campaigns/Campaign and split pieces, code and other languages too)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N11561_pos/2026-10-28-C-Eckleman235-be298ba8.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.551,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.58,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.688,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.601,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.831,
+     "peak": "agne"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.64,
+     "peak": " campaigns"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.697,
+     "peak": " Campaign"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.653,
+     "peak": " campaign"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": "unteers"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " charity"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": "in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " advert"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " marque"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " candidates"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " mode"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.045,
+     "peak": " Champagne"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.647,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "the word 'campaign'",
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N9830- (zeroing this neuron removes 0.85 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes fired 0.5-0.9 across English, code and French, and meaning-only paraphrases (drive, canvassing, offensive) stayed near 0, so it is lexical. Champagne scored exactly 0.3, kept as the one hard-edge near miss.",
+ "roles": [
+  "feeds bonsai1/L5/N9830-"
+ ],
+ "selection": "step-out from bonsai1/L5/N9830- (10x queue, model pilot: sonnet)",
+ "trigger": {
+  "words": [
+   " campaign",
+   " campaigns",
+   " Campaign",
+   "_campaign",
+   "campagne"
+  ]
+ }
+}

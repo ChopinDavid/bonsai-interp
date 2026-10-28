@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-a8ca8a80",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2042-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:31+00:00",
+ "selection": "step-in from bonsai1/L22/N5705+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L28/N2042",
+   "pole": "-",
+   "label": "Scottish Mc-surname pieces and Gaelic Scottish place-name pieces (McG-, McAu-, Craigievar-style)",
+   "fire": [
+    "Midfielder Callum McGregor set up the winner late in the second half.",
+    "The novelist Alexander McCall Smith was raised partly in Edinburgh.",
+    "The estate belonged to the laird of Dunvegan and lay on the island of Skye.",
+    "Angus McKinnon spent his career as a minister in Perthshire.",
+    "The old castle of Crathes stands in Aberdeenshire beside the river Dee.",
+    "Defender Stuart McKenzie was booked twice before half-time.",
+    "Tourists walk the shore at Culzean, near Ayr, before visiting Kintyre.",
+    "Her cousin Duncan McPhail was elected councillor for Lochaber."
+   ],
+   "quiet": [
+    "Midfielder Callum Hudson set up the winner late in the second half.",
+    "The novelist Alexander Fleming was raised partly in Manchester.",
+    "The estate belonged to the squire of Haddon and lay in the Peak District.",
+    "Angus Fletcher spent his career as a minister in Wiltshire.",
+    "The old castle of Warwick stands in the Midlands beside the river Avon.",
+    "Defender Seamus O'Brien was booked twice before half-time.",
+    "Tourists walk the shore at Brighton, near Hove, before visiting the pier.",
+    "Her cousin Gareth Williams was elected councillor for Gwynedd."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L22/N5705+"
+ ],
+ "short": "Scottish Mc- names, Gaelic places",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L22/N5705+ (zeroing the anchor removes 0.99 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: McGinn scored 1.02 and Craigievar 0.55 in probes, but MacLeod (0.06) and Walter Scott (0.02) did not, so the label is Mc- surnames and Gaelic place pieces rather than anything Scottish. Quiet items use English, Irish and Welsh names as the neighbouring concept."
+}

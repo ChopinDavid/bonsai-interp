@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-93eca541",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N251-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:32+00:00",
+ "selection": "step-in from bonsai1/L0/N6904- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L10/N251",
+   "pole": "-",
+   "label": "The token ' China' (and Yangtze) right after a regional or directional modifier: southern, South, East, central China",
+   "fire": [
+    "Heavy flooding hit villages across central China and displaced thousands of families.",
+    "Rice harvests in south-west China were hurt by the drought this autumn.",
+    "Coastal cities along the East China Sea built new container terminals.",
+    "Barges carry cement up the Yangtze to inland construction sites.",
+    "Tea growers in southern China expect a smaller crop after the cold snap.",
+    "The university in South China opened a new campus for engineering students.",
+    "Migrants moved from the countryside to factory towns in southeast China.",
+    "Fishermen on the middle reaches of the Yangtze report fewer catches."
+   ],
+   "quiet": [
+    "China announced new rules for foreign investment in the technology sector.",
+    "Heavy flooding hit villages across central Vietnam and displaced thousands of families.",
+    "Rice harvests in south-west Japan were hurt by the drought this autumn.",
+    "Coastal cities along the Baltic Sea built new container terminals.",
+    "Barges carry cement up the Rhine to inland construction sites.",
+    "Tea growers in northern India expect a smaller crop after the cold snap.",
+    "The university in Beijing opened a new campus for engineering students.",
+    "Fishermen on the middle reaches of the Danube report fewer catches."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L0/N6904-"
+ ],
+ "short": "Directional + China; Yangtze",
+ "unit_kind": "contextual",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L0/N6904- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: All four probes cleared 0.4 (southern China 0.70, Yangtze 0.86, South China Sea 0.56, eastern China 0.40); bare 'China exported' stayed at 0.04. Hard edges: bare China, Beijing, and parallel regions of other countries and rivers (southern Japan scored 0.12, northern Vietnam 0.21)."
+}

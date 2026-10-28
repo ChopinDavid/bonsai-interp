@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-5b7c7c26",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N4956-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:31+00:00",
+ "selection": "step-in from bonsai1/L13/N3506+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L14/N4956",
+   "pole": "-",
+   "label": "Digit tokens inside early-20th-century years and mid-century aircraft numbers (19[2]x, 194[x], F-[4]), weak",
+   "fire": [
+    "The first aircraft carrier trials were conducted in 1922, followed by a long refit.",
+    "Parish records show the family arrived at the port in 1925 and settled inland.",
+    "The sultanate was formally dissolved in 1923 by the new government.",
+    "Pilots who flew the F-4 in the sixties remember its enormous thrust.",
+    "He recalled that in 1916 the front line shifted almost every week.",
+    "Construction of the dam began in the spring of 1931 and employed thousands.",
+    "The Sabre and the MiG-15 met over the strait in 1952.",
+    "Huts were built hastily at the training ground in the autumn of 1940."
+   ],
+   "quiet": [
+    "The first reusable rockets were tested in 2015, followed by a long refit.",
+    "Parish records show the family arrived at the port in the early spring and settled inland.",
+    "The monarchy was formally dissolved in the eleventh century by a royal decree.",
+    "Pilots who flew the Spitfire in the war remember its enormous agility.",
+    "He recalled that in the nineties the market shifted almost every week.",
+    "Construction of the cathedral began in the thirteenth century and employed thousands.",
+    "The Concorde and the 747 shared the runway in the seventies.",
+    "Huts were built hastily at the training ground in 2008 for the relief effort."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L13/N3506+"
+ ],
+ "short": "Digits in 1910s-40s years, F-4",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L13/N3506+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: All my year probes stayed below 0.2 (best 1943 at 0.20), so the pole is weak on plain years; the packet shows hits on the third digit of 192x/194x and on F-4. Quiet items use written-out centuries and other eras."
+}

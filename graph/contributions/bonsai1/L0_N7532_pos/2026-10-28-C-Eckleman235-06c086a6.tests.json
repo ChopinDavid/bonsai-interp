@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-06c086a6",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N7532+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:29+00:00",
+ "selection": "step-out from bonsai1/L2/N3163+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L0/N7532",
+   "pole": "+",
+   "label": "the token ' said' / ' says' (reporting verb after a quote or speaker; also legal 'said document')",
+   "fire": [
+    "\"The bridge will reopen in May,\" city engineer Paula Reyes said.",
+    "As the old proverb goes, easier said than done.",
+    "At the counter the clerk said, \"Fill out the form and bring it back on Monday.\"",
+    "The tenant shall return said equipment to the landlord within ten days.",
+    "\"It's a great honor,\" the winner says in a short statement.",
+    "That said, I still think the plan is worth a try.",
+    "Researchers found no side effects, the lead author said on Tuesday.",
+    "\"Nobody expected this result,\" Dr. Okafor said to the press."
+   ],
+   "quiet": [
+    "\"The bridge will reopen in May,\" city engineer Paula Reyes added.",
+    "As the old proverb goes, easier to preach than to practice.",
+    "He asked, \"Can you let me in, but only for a week?\"",
+    "The tenant shall return the equipment to the landlord within ten days.",
+    "\"It's a great honor,\" the winner writes in a short statement.",
+    "Even so, I still think the plan is worth a try.",
+    "Researchers found no side effects, the lead author noted on Tuesday.",
+    "\"Nobody expected this result,\" Dr. Okafor explained to the press."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L2/N3163+"
+ ],
+ "short": "the word 'said'",
+ "trigger": {
+  "words": [
+   " said",
+   " says"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L2/N3163+ (zeroing this neuron removes 0.62 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: 'said' fired 0.6-0.77 in both quote attribution and legal 'said document'; 'says' was borderline (0.30) and replied/told/stated all stayed under 0.1, so it is the token and not the reporting-verb function. Near misses use other reporting verbs."
+}

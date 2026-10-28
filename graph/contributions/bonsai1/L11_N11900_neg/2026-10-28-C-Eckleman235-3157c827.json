@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-3157c827",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N11900-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:11:54+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N11900_neg/2026-10-28-C-Eckleman235-3157c827.tests.json"
+ },
+ "label": "mid-word subword fragment inside a rare proper name or uncommon foreign word (e.g. T|arg|aryens, Biz|ka|ia); weak, mixed pole",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N11900_neg/2026-10-28-C-Eckleman235-3157c827.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.443,
+     "peak": "arg"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.448,
+     "peak": "ia"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.085,
+     "peak": "isters"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.354,
+     "peak": "d"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.204,
+     "peak": "que"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.236,
+     "peak": "bor"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.154,
+     "peak": "thr"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.739,
+     "peak": "as"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " told"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.02,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.295,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 6,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "Subword pieces of rare names",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N7509+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: 'arg' in Targaryens 0.77 and 'ka' in Bizkaia 0.85 fired, but other rare-name splits (Tigrayan, Vilhjalmsson) only 0.13, so only some fragments work. Whole-word near misses keep the sentence shape without any rare name; evidence for the label is thin, hence low confidence.",
+ "roles": [
+  "reads bonsai1/L10/N7509+"
+ ],
+ "selection": "step-in from bonsai1/L10/N7509+ (10x queue, model pilot: sonnet)"
+}

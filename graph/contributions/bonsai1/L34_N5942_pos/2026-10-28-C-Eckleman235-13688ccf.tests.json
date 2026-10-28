@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-13688ccf",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5942+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:27+00:00",
+ "selection": "step-out from bonsai1/L35/N4245- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L34/N5942",
+   "pole": "+",
+   "label": "the word naming a field or group right before 'jargon' (or similar: speak, terminology), where a jargon noun is predicted, plus the ' j' of jargon itself after such a modifier",
+   "fire": [
+    "Reading the textbook, I kept stumbling over the dense financial jargon that assumed years of prior study.",
+    "My uncle is a pilot and tends to drop aviation jargon into every dinner conversation.",
+    "The manual explains the setup, but the engineering jargon in chapter three will lose most readers.",
+    "Doctors who skip medical jargon get better trust ratings from their patients.",
+    "Her thesis is full of academic jargon, which is fine for specialists but hard for everyone else.",
+    "Teenagers invent internet jargon so fast that parents cannot keep up.",
+    "Fans of the sport throw around coaching jargon like 'zone blitz' without explaining it.",
+    "The support agent switched from technical jargon to simple language once he noticed my confusion."
+   ],
+   "quiet": [
+    "Reading the textbook, I kept stumbling over the dense financial tables that assumed years of prior study.",
+    "My uncle is a pilot and tends to drop stories about his flights into every dinner conversation.",
+    "The manual explains the setup, but the engineering diagrams in chapter three will lose most readers.",
+    "Doctors who skip long appointments get worse trust ratings from their patients.",
+    "Her thesis is full of academic citations, which is fine for specialists but hard for everyone else.",
+    "Teenagers invent new songs so fast that parents cannot keep up.",
+    "Fans of the sport throw around nicknames like 'Big Easy' without explaining them.",
+    "The support agent switched from reading a script to speaking naturally once he noticed my confusion."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L35/N4245-"
+ ],
+ "short": "Field word before 'jargon'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L35/N4245- (zeroing this neuron removes 0.87 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: ' j' of jargon fired 0.73-0.95; the field word before 'terminology' and 'speak' was weak (0.05-0.19), and 'legal' alone fired 0.43 before a non-jargon noun, so I avoided 'legal' in the quiet set. I made the label mainly 'jargon' after a field modifier, and near misses keep the field word with a different noun."
+}

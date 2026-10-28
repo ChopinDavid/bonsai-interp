@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-06b737c2",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N10377-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:27+00:00",
+ "selection": "step-out from bonsai1/L29/N7370+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L27/N10377",
+   "pole": "-",
+   "label": "opening quote or delimiter (', \", =', /, ://, comma in a list) placed where a language or locale code (en, de, ru, zh-tw) comes next, in code, URLs and metadata lists",
+   "fire": [
+    "class Greeter:\n    def hello(self, lang):\n        if lang == 'ja':\n            return 'konnichiwa'\n        elif lang == 'it':\n            return 'ciao'",
+    "SUPPORTED = [\n    {'locale': 'nl', 'name': 'Dutch'},\n    {'locale': 'sv', 'name': 'Swedish'},\n]",
+    "Docs in other languages: https://ru.wikipedia.org/wiki/Moscow redirects to the Russian article.",
+    "Audio tracks on this disc: EN, JA, KO, ZH, TH, VI",
+    "settings.configure(\n    LANGUAGE_CODE = 'pl',\n    TIME_ZONE = 'Europe/Warsaw',\n)",
+    "The page exists in translations: see http://example.com/de/about and http://example.com/fr/about",
+    "msg = translate(\"Welcome back\", target=\"es\")\nprint(msg)",
+    "Available dubs: Spanish (ES), German (DE), Hindi (HI), Arabic (AR)"
+   ],
+   "quiet": [
+    "class Greeter:\n    def hello(self, mood):\n        if mood == 'happy':\n            return 'hurray'\n        elif mood == 'sad':\n            return 'alas'",
+    "SUPPORTED = [\n    {'fruit': 'apple', 'name': 'Fuji'},\n    {'fruit': 'pear', 'name': 'Bosc'},\n]",
+    "Docs in other sections: https://example.org/blog/2020/moscow redirects to the travel article about Moscow.",
+    "Audio tracks on this disc: STEREO, MONO, SURROUND, COMMENTARY, DEMO",
+    "settings.configure(\n    DEBUG_LEVEL = 'high',\n    TIME_LIMIT = 'none',\n)",
+    "The page exists in sections: see http://example.com/news/about and http://example.com/shop/about",
+    "msg = format(\"Welcome back\", style=\"bold\")\nprint(msg)",
+    "Available colours: Crimson (CR), Navy (NV), Olive (OL), Amber (AM)"
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L29/N7370+"
+ ],
+ "short": "Delimiter before a language code",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L29/N7370+ (zeroing this neuron removes 1.00 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: locale code slots in code and subtitle lists fired 0.8-0.99, URL subdomain weaker (0.32), same structure with colors stayed under 0.1. So it is the language-code-expected slot, not any quote. Hard near misses reuse the same code/URL shapes with non-language values."
+}

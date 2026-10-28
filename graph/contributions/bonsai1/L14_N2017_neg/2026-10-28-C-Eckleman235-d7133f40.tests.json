@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-d7133f40",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N2017-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:31+00:00",
+ "selection": "step-in from bonsai1/L13/N2535- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L14/N2017",
+   "pole": "-",
+   "label": "Russian news-style plural agent endings (-ские, -ли, -ики) naming who did something; weak and mostly Russian",
+   "fire": [
+    "Милиционеры проверили документы у всех пассажиров автобуса.",
+    "По словам очевидцев, нападавшие скрылись на машине.",
+    "Эксперты считают, что цены на нефть вырастут.",
+    "Следователи допросили свидетелей и изъяли записи камер.",
+    "Студенты отказались сдавать экзамен и вышли из аудитории.",
+    "Журналисты узнали об этом из официального сообщения.",
+    "Рабочие завода объявили забастовку и потребовали повышения зарплат.",
+    "Организаторы отменили концерт из-за непогоды."
+   ],
+   "quiet": [
+    "Утром я проверил документы и положил их в сумку.",
+    "По словам очевидца, нападавший скрылся на машине.",
+    "Эксперт считает, что цены на нефть вырастут.",
+    "Следователь допросил свидетеля и изъял записи камеры.",
+    "Студент отказался сдавать экзамен и вышел из аудитории.",
+    "Дождь шёл всю ночь, и река поднялась над берегами.",
+    "Старый дом стоял на холме, окружённый яблонями.",
+    "Организатор отменил концерт из-за непогоды."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L13/N2535-"
+ ],
+ "short": "Russian plural agent/verb endings",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L13/N2535- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: Russian 'Полицейские' reached 0.28, English group-subject sentences about 0.18, nothing clearly above 0.3. Packet top examples are Russian -ли/-ики endings, so the test is Russian-only with singular-subject near misses as the hard edge."
+}

@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-86ec966d",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N279+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:31+00:00",
+ "selection": "step-in from bonsai1/L22/N7665- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L23/N279",
+   "pole": "+",
+   "label": "Determiners and comparison words (your, his, her, a, of, like) that set up a body part or a physical size comparison",
+   "fire": [
+    "To stretch the calf, place your right foot behind you and press the heel flat.",
+    "The hailstones were as large as a golf ball and dented the roof.",
+    "He slept on the sofa with his arm hanging over the edge.",
+    "The fish measured about the length of your forearm and weighed little.",
+    "Cup the ball in your palm and let it rest against your fingertips.",
+    "The tunnel was roughly the width of a small car and twice as dark.",
+    "She sat upright with her hands folded in her lap and her chin raised.",
+    "Lay the patient down with his legs raised above the level of the heart."
+   ],
+   "quiet": [
+    "To stretch the calf, lean forward gently and press the heel flat.",
+    "The hailstones were large and heavy and dented the roof.",
+    "He slept on the sofa until noon, exhausted by the long drive.",
+    "The fish was caught early and weighed very little.",
+    "Cup the ball gently and let it rest against the wall.",
+    "The tunnel was narrow and twice as dark as the corridor.",
+    "She sat upright, silent and attentive, as the speaker began.",
+    "Lay the patient down and monitor the heart rate every few minutes."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L22/N7665-"
+ ],
+ "short": "Body-part / size-comparison determiners",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L22/N7665- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: All four fire probes cleared 0.3 (your 0.86, 'as big as a' 0.48, 'of' 0.37) and the generic prose probes stayed near zero. Quiet items keep the physical-instruction genre but drop the determiner/comparison slot."
+}

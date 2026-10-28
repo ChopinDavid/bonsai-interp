@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-6f038c10",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N3991+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:14+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N3991_pos/2026-10-28-C-Eckleman235-6f038c10.tests.json"
+ },
+ "label": "Pacific island place names in the middle of a name (Micronesia, Polynesia, Caroline Islands) in plant/history context",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N3991_pos/2026-10-28-C-Eckleman235-6f038c10.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.356,
+     "peak": "ynes"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.133,
+     "peak": "ae"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.273,
+     "peak": " Pacific"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.054,
+     "peak": " A"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.054,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.143,
+     "peak": " nineteenth"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.506,
+     "peak": "ynes"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.063,
+     "peak": " grown"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.073,
+     "peak": "an"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.077,
+     "peak": "ae"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.143,
+     "peak": " plateau"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.084,
+     "peak": " basin"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.08,
+     "peak": " outside"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.088,
+     "peak": " crops"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.043,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.097,
+     "peak": "cus"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.648,
+    "median_fire": 0.138,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "Oceanic island group names",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L12/N4075+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Only the Micronesia probe cleared 0.3 (0.42); Fiji, Mauritius and the Caribbean stayed under 0.1. So the label sticks to Pacific names mid-name in botanical/historical prose, with other regions as near misses.",
+ "roles": [
+  "reads bonsai1/L12/N4075+"
+ ],
+ "selection": "step-in from bonsai1/L12/N4075+ (10x queue, model pilot: sonnet)"
+}

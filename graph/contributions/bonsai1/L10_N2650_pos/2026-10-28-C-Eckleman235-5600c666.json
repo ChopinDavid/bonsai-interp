@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-5600c666",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N2650+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:11:50+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L10_N2650_pos/2026-10-28-C-Eckleman235-5600c666.tests.json"
+ },
+ "label": "Weak, diffuse pole on modifier words inside British institutional names (Liberal Democrat, Department for Education); no clear label",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N2650_pos/2026-10-28-C-Eckleman235-5600c666.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.074,
+     "peak": " Democrat"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.172,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.115,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.098,
+     "peak": " High"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.145,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.058,
+     "peak": "She"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.057,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.555,
+     "peak": " Liberal"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.118,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.065,
+     "peak": " health"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.181,
+     "peak": " sources"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.077,
+     "peak": " sits"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.06,
+     "peak": " awarded"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.058,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.081,
+     "peak": "Officials"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.061,
+     "peak": " parish"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.602,
+    "median_fire": 0.107,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 6,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "Weak UK institutional modifiers",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L9/N268- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: No probe cleared 0.3 (best 0.20 for 'Green Party'); max activation is only 2.89 and 6.6% of tokens exceed 0.1 of max, so near misses will fire weakly. Expect an inconclusive or failed test.",
+ "roles": [
+  "reads bonsai1/L9/N268-"
+ ],
+ "selection": "step-in from bonsai1/L9/N268- (10x queue, model pilot: sonnet)"
+}

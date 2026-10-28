@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-8f836694",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N12190+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:30+00:00",
+ "selection": "step-in from bonsai1/L11/N10296+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L14/N12190",
+   "pole": "+",
+   "label": "Name pieces of upstate New York places in Iroquois/regional context (Mohawk, Syracuse, Armonk, New York)",
+   "fire": [
+    "The Haudenosaunee confederacy centered on villages along the Mohawk River and Onondaga Lake in central New York.",
+    "Delegates from the Cayuga nation met near Auburn in the heart of western New York.",
+    "A software firm moved its offices to Tarrytown, N.Y., a short drive from Westchester.",
+    "Hunters in the Catskill region of southern New York set out camps beside the reservoir each November.",
+    "The Oneida Nation reservation lies near Utica, in the heart of upstate New York.",
+    "He taught at a small college in Ithaca, in the Finger Lakes region of New York State.",
+    "Hudson Valley farms near Poughkeepsie supply apples to markets across the state of New York.",
+    "The old canal once carried grain from Buffalo toward Rochester and the Hudson."
+   ],
+   "quiet": [
+    "The Cherokee nation was centered on villages along the Tennessee River and the Hiwassee in the southern Appalachians.",
+    "Delegates from the Wampanoag nation met near Plymouth in the heart of eastern Massachusetts.",
+    "A software firm moved its offices to Hillsboro, Oregon, a short drive from Portland.",
+    "Hunters in the Cascade region of northern Washington set out camps beside the reservoir each November.",
+    "The Navajo Nation reservation lies near Gallup, in the high desert of New Mexico.",
+    "He taught at a small college in Burlington, in the Champlain Valley of Vermont.",
+    "Central Valley farms near Fresno supply almonds to markets across the state of California.",
+    "The old canal once carried grain from Cleveland toward Columbus and the river."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L11/N10296+"
+ ],
+ "short": "Upstate New York place-name pieces",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L11/N10296+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes were weak: 'upstate New York near Plattsburgh' scored 0.007, Mohawk Valley 0.39, Armonk 0.19, Empire State Building 0.08. The pole seems to need an Iroquois/regional-history context, so fire items lean on that and quiet items keep the same genre in other states."
+}

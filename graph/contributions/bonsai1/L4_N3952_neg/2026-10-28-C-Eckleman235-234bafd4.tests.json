@@ -1,0 +1,59 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-234bafd4",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3952-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:28+00:00",
+ "selection": "step-out from bonsai1/L5/N7938- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L4/N3952",
+   "pole": "-",
+   "label": "the word 'phrase' (phrase/phrases/passphrase and split pieces, incl. Russian 'фраза')",
+   "fire": [
+    "A good teacher explains why each phrase in the poem was chosen.",
+    "Students underline every noun phrase in the paragraph.",
+    "To unlock the vault, enter the secret passphrase twice.",
+    "The slogan is a catchy phrase that stuck in everyone's head.",
+    "Он повторил одну и ту же фразу несколько раз.",
+    "Rewrite each clause as a short prepositional phrase to save space.",
+    "She coined a phrase that critics still quote today.",
+    "In musical theory, a phrase is a unit ending in a cadence."
+   ],
+   "quiet": [
+    "A good teacher explains why each line in the poem was chosen.",
+    "Students underline every noun in the paragraph.",
+    "To unlock the vault, enter the secret code twice.",
+    "The slogan is a catchy tune that stuck in everyone's head.",
+    "Он повторил одно и то же слово несколько раз.",
+    "Rewrite each clause as a short statement to save space.",
+    "She went through a difficult phase that critics still discuss today.",
+    "In moon science, a phase is one stage of the monthly cycle."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L5/N7938-"
+ ],
+ "short": "the word 'phrase'",
+ "trigger": {
+  "words": [
+   " phrase",
+   " phrases",
+   "phrase",
+   "фраза"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N7938- (zeroing this neuron removes 0.80 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: phrase/phrases/passphrase and Russian 'раз' piece all 0.4-0.8; sentence/idiom/password/phase stayed under 0.05, so this is the lexical item and not a meaning-only pole. Kept 'phase' and synonym near misses as hard edges."
+}

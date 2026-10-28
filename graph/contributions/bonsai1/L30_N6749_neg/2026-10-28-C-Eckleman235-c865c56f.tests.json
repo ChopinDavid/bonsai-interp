@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-c865c56f",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N6749-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:28+00:00",
+ "selection": "step-out from bonsai1/L33/N5906+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L30/N6749",
+   "pole": "-",
+   "label": "predicts 'majority/minority': a word just before an expected 'majority' (slim, simple, supermajority piece, ethnic)",
+   "fire": [
+    "Labour only held a slim majority after the 2017 election.",
+    "Passing the amendment takes a two-thirds majority in both chambers.",
+    "Voters in the district are mostly from an ethnic minority group.",
+    "The council approved the plan by a narrow majority of seven to five.",
+    "Under that rule, a simple majority of members present decides the vote.",
+    "Critics fear the tyranny of the majority in small town elections.",
+    "A supermajority threshold protects the constitution from quick changes.",
+    "The party lost its working majority when two members defected."
+   ],
+   "quiet": [
+    "Labour only held a few seats after the 2017 election.",
+    "Passing the amendment takes a formal vote in both chambers.",
+    "Voters in the district are mostly from farming families nearby.",
+    "The council approved the plan after a long hearing of seven hours.",
+    "Under that rule, every member present must sign the document.",
+    "Critics fear the cost of the program in small town budgets.",
+    "A recount threshold protects the election from quick disputes.",
+    "The party lost its leader when two members defected."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L33/N5906+"
+ ],
+ "short": "word before 'majority'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L33/N5906+ (zeroing this neuron removes 0.76 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probe: 'slim', 'small' and the 'major' piece fired (0.4-0.6), while generic voting talk stayed under 0.05 and a bare 'the' scored only 0.11. So it is a next-token prediction of majority/minority, not voting in general; fire items put the context right before the word."
+}

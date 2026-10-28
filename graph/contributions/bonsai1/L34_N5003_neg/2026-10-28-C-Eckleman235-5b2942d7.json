@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-5b2942d7",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5003-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:58+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N5003_neg/2026-10-28-C-Eckleman235-5b2942d7.tests.json"
+ },
+ "label": "predicts 'header': the word just before 'header' (pin header, double header, status/response header, in code or hardware)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N5003_neg/2026-10-28-C-Eckleman235-5b2942d7.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.6,
+     "peak": " female"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.958,
+     "peak": " double"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.834,
+     "peak": " previous"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.067,
+     "peak": " file"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.112,
+     "peak": " message"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.749,
+     "peak": " male"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.81,
+     "peak": " double"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.153,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.479,
+     "peak": "-pin"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.063,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.076,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.064,
+     "peak": " file"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.089,
+     "peak": " routing"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.749,
+     "peak": " male"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.022,
+     "peak": " park"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.087,
+     "peak": " client"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.836,
+    "median_fire": 0.674,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "word before 'header'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L35/N8831- (zeroing this neuron removes 0.66 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: 'pin', 'double' and code 'response' before header scored 0.37-0.84, but 'header' itself only 0.06, so it fires on the preceding position. Hard-edge near misses swap header for another noun while keeping frame. Some weak leak (0.17-0.2) on code and connector contexts.",
+ "roles": [
+  "feeds bonsai1/L35/N8831-"
+ ],
+ "selection": "step-out from bonsai1/L35/N8831- (10x queue, model pilot: sonnet)"
+}

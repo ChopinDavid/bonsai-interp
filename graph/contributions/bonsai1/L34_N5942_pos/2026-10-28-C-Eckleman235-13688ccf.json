@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-13688ccf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5942+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:13:05+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N5942_pos/2026-10-28-C-Eckleman235-13688ccf.tests.json"
+ },
+ "label": "the word naming a field or group right before 'jargon' (or similar: speak, terminology), where a jargon noun is predicted, plus the ' j' of jargon itself after such a modifier",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N5942_pos/2026-10-28-C-Eckleman235-13688ccf.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.814,
+     "peak": " j"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.515,
+     "peak": " j"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.537,
+     "peak": " j"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.218,
+     "peak": " j"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.58,
+     "peak": " j"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.39,
+     "peak": " j"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.517,
+     "peak": " j"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.723,
+     "peak": " j"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.387,
+     "peak": " financial"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " engineering"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": " ratings"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.271,
+     "peak": " academic"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.051,
+     "peak": " around"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.527,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "Field word before 'jargon'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L35/N4245- (zeroing this neuron removes 0.87 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: ' j' of jargon fired 0.73-0.95; the field word before 'terminology' and 'speak' was weak (0.05-0.19), and 'legal' alone fired 0.43 before a non-jargon noun, so I avoided 'legal' in the quiet set. I made the label mainly 'jargon' after a field modifier, and near misses keep the field word with a different noun.",
+ "roles": [
+  "feeds bonsai1/L35/N4245-"
+ ],
+ "selection": "step-out from bonsai1/L35/N4245- (10x queue, model pilot: sonnet)"
+}

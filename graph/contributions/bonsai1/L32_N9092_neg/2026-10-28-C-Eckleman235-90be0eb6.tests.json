@@ -1,0 +1,60 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-90be0eb6",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9092-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:29+00:00",
+ "selection": "step-out from bonsai1/L35/N3415+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L32/N9092",
+   "pole": "-",
+   "label": "the 'conf-' / 'reaff-' piece of confirm words (re|conf|irms, reaff|irmed, confirmation), multilingual",
+   "fire": [
+    "Use the green key to confirm your choice at the voting booth.",
+    "The new study reconfirms what earlier surveys had found.",
+    "You will get a booking confirmation by email within minutes.",
+    "Le ministre a réaffirmé son soutien lors du sommet.",
+    "Moody's affirms the company's credit rating again this quarter.",
+    "Please confirm your registration by clicking the link we sent.",
+    "Las pruebas confirman que el motor funciona sin fallos.",
+    "Die Bestätigung der Bestellung kommt per E-Mail."
+   ],
+   "quiet": [
+    "Use the green key to select your choice at the voting booth.",
+    "The new study repeats what earlier surveys had found.",
+    "You will get a booking receipt by email within minutes.",
+    "Le ministre a exprimé son soutien lors du sommet.",
+    "Moody's lowers the company's credit rating again this quarter.",
+    "Please complete your registration by clicking the link we sent.",
+    "Las pruebas muestran que el motor funciona sin fallos.",
+    "Die Rechnung der Bestellung kommt per E-Mail."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L35/N3415+"
+ ],
+ "short": "'conf'/'reaff' piece of confirm",
+ "trigger": {
+  "words": [
+   "conf",
+   "reaff",
+   "aff",
+   "confirm",
+   "Bestätigung"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L35/N3415+ (zeroing this neuron removes 0.63 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: only the explicit French ' conf' piece cleared 0.3 (0.68); pure prediction contexts (reply to... to, further re) stayed 0.16-0.36 and one near miss hit 0.36, so the label is the piece rather than prediction. Mixed evidence, hence low confidence."
+}

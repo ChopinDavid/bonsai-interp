@@ -1,0 +1,61 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-f57411db",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10806+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:30+00:00",
+ "selection": "step-in from bonsai1/L10/N7854+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L11/N10806",
+   "pole": "+",
+   "label": "names of Chinese regions and companies (Guangdong, Tencent, Sichuan, Shenzhen) and famous athlete names such as Michael Jordan and David Beckham; weak, mixed name pole",
+   "fire": [
+    "Earthquake relief teams from Sichuan arrived by truck before dawn.",
+    "Analysts say Tencent will keep expanding its gaming and messaging business.",
+    "The young Chicago crowd cheered every time Michael Jordan touched the ball.",
+    "Exports from Guangdong rose again as new factories opened along the river.",
+    "After retiring from football, David Beckham launched a clothing brand.",
+    "Startups in Shenzhen can get a prototype board made within a few days.",
+    "Heavy rain flooded villages across central China last week, officials said.",
+    "Researchers at a university in Guangzhou published the trial results in March."
+   ],
+   "quiet": [
+    "Earthquake relief teams from Oregon arrived by truck before dawn.",
+    "Analysts say Netflix will keep expanding its streaming and original film business.",
+    "The young Boston crowd cheered every time Larry Bird touched the ball.",
+    "Exports from Bavaria rose again as new factories opened along the river.",
+    "After retiring from tennis, Roger Federer launched a shoe brand.",
+    "Startups in Austin can get a prototype board made within a few days.",
+    "Heavy rain flooded villages across southern Brazil last week, officials said.",
+    "Researchers at a university in Toronto published the trial results in March."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L10/N7854+"
+ ],
+ "short": "Chinese places/companies, Jordan, Beckham",
+ "trigger": {
+  "words": [
+   "Guangdong",
+   "Tencent",
+   "Sichuan",
+   "Shenzhen",
+   "Jordan",
+   "Beckham"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N7854+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: Tencent 0.45, Jordan 0.44 and Guangdong 0.31 cleared 0.3 (barely); Persian Gulf did not (0.05), so I dropped Gulf. The pole is weak with a closed-gate regime, so fire items stay near the threshold; near misses swap in same-genre non-Chinese places, companies and athletes."
+}

@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-a47733c5",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N5147-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:29+00:00",
+ "selection": "step-out from bonsai1/L34/N1406+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L30/N5147",
+   "pole": "-",
+   "label": "the 'inv-' piece of invite words (Inv|ites, un|inv|ited, _inv|ites): fires on the split piece before '-ited/-ites'",
+   "fire": [
+    "Download our free printable Birthday Invitations for your next party.",
+    "Several uninvited guests wandered into the wedding reception.",
+    "show_invites = config.get('show_invites', False)",
+    "Only Invited speakers may present at the closing session.",
+    "Spread the news with our elegant Wedding Invites online.",
+    "Nobody likes feeling uninvited at the office holiday gathering.",
+    "def send_invitations(users):\n    for u in users:\n        prompt_for_invites(u)",
+    "Reply to the Invitation card by the end of the month."
+   ],
+   "quiet": [
+    "Download our free printable Birthday Cards for your next party.",
+    "Several unexpected guests wandered into the wedding reception.",
+    "show_banner = config.get('show_banner', False)",
+    "Only keynote speakers may present at the closing session.",
+    "Spread the news with our elegant Wedding Menus online.",
+    "Nobody likes feeling ignored at the office holiday gathering.",
+    "def send_messages(users):\n    for u in users:\n        prompt_for_replies(u)",
+    "Reply to the greeting card by the end of the month."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L34/N1406+"
+ ],
+ "short": "'inv' piece of invite words",
+ "trigger": {
+  "words": [
+   "Inv",
+   "inv",
+   "_inv"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L34/N1406+ (zeroing this neuron removes 0.65 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: only the explicit ' Inv' piece scored well (0.74); prediction-style contexts ('was pointedly not', 'cordially') were 0.06-0.26, so I label the piece, not the prediction. Fire items therefore contain the invite word; near misses swap it for a plain noun."
+}

@@ -1,0 +1,165 @@
+{
+ "id": "2026-10-28-C-Eckleman235-234bafd4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3952-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:13:07+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N3952_neg/2026-10-28-C-Eckleman235-234bafd4.tests.json"
+ },
+ "label": "the word 'phrase' (phrase/phrases/passphrase and split pieces, incl. Russian 'фраза')",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3952_neg/2026-10-28-C-Eckleman235-234bafd4.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.47,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.512,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.663,
+     "peak": " passphrase"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.436,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.752,
+     "peak": "раз"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.55,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.553,
+     "peak": " phrase"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.693,
+     "peak": " phrase"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " explains"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": " paragraph"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " enter"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": "ил"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " clause"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.049,
+     "peak": " phase"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.099,
+     "peak": " phase"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.552,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "the word 'phrase'",
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N7938- (zeroing this neuron removes 0.80 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: phrase/phrases/passphrase and Russian 'раз' piece all 0.4-0.8; sentence/idiom/password/phase stayed under 0.05, so this is the lexical item and not a meaning-only pole. Kept 'phase' and synonym near misses as hard edges.",
+ "roles": [
+  "feeds bonsai1/L5/N7938-"
+ ],
+ "selection": "step-out from bonsai1/L5/N7938- (10x queue, model pilot: sonnet)",
+ "trigger": {
+  "words": [
+   " phrase",
+   " phrases",
+   "phrase",
+   "фраза"
+  ]
+ }
+}

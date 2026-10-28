@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-4f7f5788",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N10530+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:18+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N10530_pos/2026-10-28-C-Eckleman235-4f7f5788.tests.json"
+ },
+ "label": "the verb right after an existential 'there' or a fronted place/time phrase (there will be, there stands, wird/будет): subject-after-verb order, multilingual",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N10530_pos/2026-10-28-C-Eckleman235-4f7f5788.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.533,
+     "peak": " lies"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.475,
+     "peak": " will"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.656,
+     "peak": " came"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.57,
+     "peak": " wird"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.611,
+     "peak": " будет"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.604,
+     "peak": " sits"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.534,
+     "peak": " described"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.52,
+     "peak": " se"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": " lies"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": " month"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " came"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.073,
+     "peak": " году"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " causes"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " vieux"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.552,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "verb in inverted/existential order",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L24/N11621- (zeroing this neuron removes 0.74 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes fired 0.47-0.75 on 'there stands', 'there will', German 'wird' and Russian 'будет'; subject-first versions stayed ~0. 'Is there' scored exactly 0.3 on 'there', so I left questions out except as ordinary subject-first near misses. Pole is broad (many weak activations), so expect noise.",
+ "roles": [
+  "feeds bonsai1/L24/N11621-"
+ ],
+ "selection": "step-out from bonsai1/L24/N11621- (10x queue, model pilot: sonnet)"
+}

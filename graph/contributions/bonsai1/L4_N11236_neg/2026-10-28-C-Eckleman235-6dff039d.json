@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-6dff039d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11236-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:13:06+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a9104",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N11236_neg/2026-10-28-C-Eckleman235-6dff039d.tests.json"
+ },
+ "label": "stem pieces of split negated adjectives after in-/un-/il- (inflexible, intolerable, ungrateful, ilimitado)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N11236_neg/2026-10-28-C-Eckleman235-6dff039d.tests.json",
+   "prereg_commit": "ec3a9104",
+   "author": "C-Eckleman235",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.836,
+     "peak": "lexible"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.654,
+     "peak": "ateful"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.484,
+     "peak": " indiscrim"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.731,
+     "peak": "imit"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.602,
+     "peak": " intoler"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.762,
+     "peak": "put"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.261,
+     "peak": "exc"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.537,
+     "peak": "est"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": " strict"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.001,
+     "peak": " free"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " files"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " constant"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": "It"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.628,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a9104",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "stem piece of in-/un- adjectives",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N7124- (zeroing this neuron removes 0.60 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: the stem pieces after the negating prefix scored 0.6-0.84 in English and Spanish, and the positive forms (flexible, tolerable, grateful, elevado) were ~0, so the prefix matters. Near misses swap in non-negated synonyms; fire items vary the stems because the piece, not one word, carries it.",
+ "roles": [
+  "feeds bonsai1/L5/N7124-"
+ ],
+ "selection": "step-out from bonsai1/L5/N7124- (10x queue, model pilot: sonnet)"
+}

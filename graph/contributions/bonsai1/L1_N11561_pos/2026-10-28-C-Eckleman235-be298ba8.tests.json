@@ -1,0 +1,60 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-be298ba8",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11561+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:28+00:00",
+ "selection": "step-out from bonsai1/L5/N9830- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L1/N11561",
+   "pole": "+",
+   "label": "the word 'campaign' (campaign/campaigns/Campaign and split pieces, code and other languages too)",
+   "fire": [
+    "Volunteers spent the autumn knocking on doors for the mayor's re-election campaign.",
+    "The charity's awareness campaign reached two million viewers online.",
+    "Rommel's North Africa campaign ended in retreat after El Alamein.",
+    "SELECT name FROM ads WHERE campaign_id = 42 ORDER BY spend;",
+    "Il a dirigé la campagne de publicité pendant trois ans.",
+    "Several rival campaigns were fighting over the same small group of undecided voters.",
+    "In this game you can switch to Campaign mode after the tutorial.",
+    "She started a petition and a local campaign to save the library."
+   ],
+   "quiet": [
+    "Volunteers spent the autumn knocking on doors for the mayor's re-election bid.",
+    "The charity's awareness drive reached two million viewers online.",
+    "Rommel's North Africa offensive ended in retreat after El Alamein.",
+    "SELECT name FROM ads WHERE advert_id = 42 ORDER BY spend;",
+    "Il a dirigé la publicité de la marque pendant trois ans.",
+    "Several rival candidates were fighting over the same small group of undecided voters.",
+    "In this game you can switch to Story mode after the tutorial.",
+    "Guests toasted the new year with a bottle of Champagne at midnight."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L5/N9830-"
+ ],
+ "short": "the word 'campaign'",
+ "trigger": {
+  "words": [
+   " campaign",
+   " campaigns",
+   " Campaign",
+   "_campaign",
+   "campagne"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N9830- (zeroing this neuron removes 0.85 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes fired 0.5-0.9 across English, code and French, and meaning-only paraphrases (drive, canvassing, offensive) stayed near 0, so it is lexical. Champagne scored exactly 0.3, kept as the one hard-edge near miss."
+}

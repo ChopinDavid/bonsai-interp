@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-63653244",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N7538-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:30+00:00",
+ "selection": "step-in from bonsai1/L10/N9052+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L11/N7538",
+   "pole": "-",
+   "label": "The token ' Reconstruction' (post-Civil War US South) and ' back' after 'sleep on your'; two separate triggers",
+   "fire": [
+    "Freedmen's schools expanded rapidly in Louisiana during Reconstruction, though funding was uneven.",
+    "The Compromise of 1877 is often said to have closed the era of Reconstruction.",
+    "In her lecture on Reconstruction, the professor traced how Black voters shaped Southern legislatures.",
+    "Many scholars now argue that Reconstruction was an unfinished revolution in civil rights.",
+    "Doctors advise pregnant women not to sleep on their back late in the third trimester.",
+    "If you tend to snore, lying on your back can make it noticeably worse.",
+    "People with sciatica often find relief if they sleep on your back with a pillow under the knees.",
+    "Back sleepers sometimes wake with stiffness, so try placing a rolled towel beneath your lower spine."
+   ],
+   "quiet": [
+    "Freedmen's schools expanded rapidly in Louisiana after the Civil War, though funding was uneven.",
+    "The Compromise of 1877 is often said to have settled a disputed presidential election.",
+    "In her lecture on the Gilded Age, the professor traced how railroad barons shaped Northern politics.",
+    "Many scholars now argue that the New Deal was an unfinished experiment in social policy.",
+    "Doctors advise pregnant women not to lie flat on a hard floor late in the third trimester.",
+    "If you tend to snore, sleeping on your side can make it noticeably better.",
+    "People with sciatica often find relief if they sleep with a pillow between the knees.",
+    "She turned and went back to the kitchen to check on the rice."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L10/N9052+"
+ ],
+ "short": "Reconstruction era; sleeping on your back",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N9052+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: Reconstruction 0.89/0.50 and 'sleeping on your back' 0.82 fired; Poland/Jews did not (0.14), so the label drops them. Pole is a mix of two tokens; quiet items include side-sleeping and the Civil War without the word Reconstruction."
+}

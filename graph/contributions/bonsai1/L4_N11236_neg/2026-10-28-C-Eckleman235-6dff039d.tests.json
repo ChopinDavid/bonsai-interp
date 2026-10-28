@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-6dff039d",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11236-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:29+00:00",
+ "selection": "step-out from bonsai1/L5/N7124- (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L4/N11236",
+   "pole": "-",
+   "label": "stem pieces of split negated adjectives after in-/un-/il- (inflexible, intolerable, ungrateful, ilimitado)",
+   "fire": [
+    "The regime was known for its inflexible and intolerant rules.",
+    "She felt ungrateful for complaining about the free ticket.",
+    "Servers offer unlimited storage and indiscriminate access to files.",
+    "El plan incluye un número ilimitado de entradas gratuitas.",
+    "His intolerable rudeness made the dinner unbearable for everyone.",
+    "The judge called the claim indisputable and the evidence uncontroversial.",
+    "It was an unprecedented and inexcusable failure of oversight.",
+    "Their immodest boasting and impatient replies annoyed the committee."
+   ],
+   "quiet": [
+    "The regime was known for its strict and harsh rules.",
+    "She felt thankful for receiving the free ticket.",
+    "Servers offer large storage and careful access to files.",
+    "El plan incluye un número reducido de entradas gratuitas.",
+    "His constant rudeness made the dinner tiresome for everyone.",
+    "The judge called the claim valid and the evidence clear.",
+    "It was a serious and costly failure of oversight.",
+    "Their modest boasting and patient replies pleased the committee."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L5/N7124-"
+ ],
+ "short": "stem piece of in-/un- adjectives",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N7124- (zeroing this neuron removes 0.60 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: the stem pieces after the negating prefix scored 0.6-0.84 in English and Spanish, and the positive forms (flexible, tolerable, grateful, elevado) were ~0, so the prefix matters. Near misses swap in non-negated synonyms; fire items vary the stems because the piece, not one word, carries it."
+}

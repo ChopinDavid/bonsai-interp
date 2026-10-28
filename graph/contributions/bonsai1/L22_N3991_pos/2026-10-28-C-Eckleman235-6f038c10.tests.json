@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-6f038c10",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N3991+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:05:30+00:00",
+ "selection": "step-in from bonsai1/L12/N4075+ (10x queue, model pilot: sonnet)",
+ "neighbours": [
+  {
+   "unit": "L22/N3991",
+   "pole": "+",
+   "label": "Pacific island place names in the middle of a name (Micronesia, Polynesia, Caroline Islands) in plant/history context",
+   "fire": [
+    "Botanists think the breadfruit was carried by canoe across Polynesia long before European contact.",
+    "Archaeologists dated the pottery on Yap, in the Caroline Islands of Micronesia, to roughly two thousand years ago.",
+    "Early voyagers noted that taro was cultivated on every high island of the South Pacific.",
+    "Linguists trace the Austronesian languages through Melanesia and into Polynesia.",
+    "The wartime airfield on Guam sits in the Mariana chain of western Micronesia.",
+    "Missionaries introduced new crops to Tahiti and the Society Islands in the early nineteenth century.",
+    "Sailors stopped at Tonga and Samoa to take on yams before crossing Polynesia again.",
+    "The kava plant is grown across Vanuatu and much of Melanesia."
+   ],
+   "quiet": [
+    "Botanists think the potato was carried by traders across the Andes long before European contact.",
+    "Archaeologists dated the pottery found in Cyprus to roughly two thousand years ago.",
+    "Early travelers noted that wheat was cultivated on every plateau of the Anatolian interior.",
+    "Linguists trace the Bantu languages through Cameroon and into the Congo basin.",
+    "The wartime airfield outside Norwich sits in the flat farmland of eastern England.",
+    "Missionaries introduced new crops to Peru and the Andean highlands in the early nineteenth century.",
+    "Sailors stopped at Malta and Crete to take on olives before crossing the Mediterranean again.",
+    "The saffron crocus is grown across Kashmir and much of Iran."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code sonnet-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L12/N4075+"
+ ],
+ "short": "Oceanic island group names",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (sonnet arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L12/N4075+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Sonnet 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Only the Micronesia probe cleared 0.3 (0.42); Fiji, Mauritius and the Caribbean stayed under 0.1. So the label sticks to Pacific names mid-name in botanical/historical prose, with other regions as near misses."
+}
