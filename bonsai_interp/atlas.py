@@ -90,6 +90,7 @@ LIB_SOURCES = {  # every deterministic pass whose per-pole results join the atla
     "compose@5": ROOT / "data" / "compose" / "bonsai1.compose5.results.jsonl.gz",
     "compose@6": ROOT / "data" / "compose" / "bonsai1.compose6.results.jsonl.gz",
     "compose@7": ROOT / "data" / "compose" / "bonsai1.compose7.results.jsonl.gz",
+    "compose@8": ROOT / "data" / "compose" / "bonsai1.compose8.results.jsonl.gz",
 }
 GRAMMAR_KIND = {"sweeplib@3": "grammar", "sweeplib@4": "pos", "sweeplib@5": "code"}  # passes on the grammar engine
 

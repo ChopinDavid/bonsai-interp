@@ -416,3 +416,29 @@ parts to reach half their activations are not described by those two parts. The 
 one-part word test, which found 3,616 early-layer token detectors that no earlier pass had tested. Layers 12–17 again
 yield almost nothing (2 assigned).
 
+## Round 8 (compose@8): one-part covers, next slice
+
+compose@7's engine, unchanged (`bonsai_interp/compose/round8.py`), testing only one-part covers, since two-part covers
+held in both parts for 2% of poles. The next 8,000 one-part covers by the same ranking were selected, leaving out every
+pole compose@3–7 tested; 7,215 were testable.
+
+| | |
+|---|---|
+| Protocol | de573f8a |
+| Pre-registration | 370f9844 |
+| Summary | 9393067a |
+
+- **Assigned: 6,353 of 7,215 poles**, against **0 of 7,207** placebo tests.
+- **By part:** word sets held 6,298 of 7,002; conjunctions 55 of 213.
+- **By depth:** L0–5 4,096, L6–11 585, L12–17 12, L18–23 638, L24–29 924, L30–35 98.
+- **Deep word poles (L21–29, 1,710 assigned)** are mostly word-initial pieces with their capitalized forms (" dem"/" Dem",
+  " rem"/" Rem", " exp"/" Exp", " sil"/" silicon") and whole words with an inflection (" enjoy"/" enjoyed",
+  " consistent"/" consistently", " chronic"/" acute").
+- **Conjunctions** are mostly a word after a word class: " article" or " basis" after a determiner, " like" after a
+  noun, " again" after an adverb.
+
+### Reading
+
+The one-part word test keeps finding assignment-grade token detectors well down the ranking (88% held here, against
+98% for compose@7's top slice). Layers 12–17 again yield almost nothing.
+

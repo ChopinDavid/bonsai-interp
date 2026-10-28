@@ -1011,7 +1011,7 @@ compose@6 added conditions on the next token and the one after, which the model 
 ## 2026-10-28: Untested token detectors, and union covers (compose@7)
 
 compose@7 allowed a two-part label ("X where c holds, or Y") with each part tested on its own. **3,663 of 5,518 poles
-were assigned** (0 of 7,267 placebo tests held), which brings the assignment-grade total from 10,379 to about 14,040.
+were assigned** (0 of 7,267 placebo tests held), which brings the assignment-grade total from 10,379 to 14,053.
 
 - **Most of the yield is one-part word sets: 3,616 of 3,694 held.** 3,600 of the assigned poles had no earlier result
   from any deterministic pass: early-layer token detectors (3,284 in L0–5) that the condition-based rounds never
@@ -1020,4 +1020,15 @@ were assigned** (0 of 7,267 placebo tests held), which brings the assignment-gra
   leading space, " line" as a verb or " lining", " else" after a conjunction or " otherwise".
 - **Deep word poles:** 61 fire on the document boundary token; others on " United", " Santa" and "://".
 - **Layers 12–17 again yield almost nothing** (2 assigned).
+
+## 2026-10-28: Token detectors further down the queue (compose@8)
+
+compose@8 tested the next 8,000 one-part covers of compose@7's queue. **6,353 of 7,215 poles were assigned** (0 of
+7,207 placebo tests held), which brings the assignment-grade total to about 20,400.
+
+- **Word sets held 6,298 of 7,002**, in two bands:
+  - L0–5 (4,096 assigned);
+  - L21–29 (1,710 assigned), mostly word-initial pieces with their capitalized forms (" dem"/" Dem", " rem"/" Rem")
+    and words with an inflection (" enjoy"/" enjoyed").
+- **Layers 12–17 again yield almost nothing** (12 assigned).
 
