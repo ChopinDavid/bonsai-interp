@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-f24ec4b0",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N12190+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:55+00:00",
+ "selection": "step-in from bonsai1/L11/N10296+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L14/N12190",
+   "pole": "+",
+   "label": "the York in New York State and New York City place names",
+   "fire": [
+    "Her grandmother moved from Italy to a small town in New York in 1921.",
+    "The hospital in New York has a new cardiac unit on the third floor.",
+    "We drove through the Catskills, then took the thruway into New York City.",
+    "Students from New York often choose colleges in New England.",
+    "The Adirondack lakes of New York draw anglers all summer.",
+    "Crowds gathered outside the New York Stock Exchange for the announcement.",
+    "The Hudson River flows through the eastern part of New York State.",
+    "Minnesota and New York both passed funding bills for rural broadband."
+   ],
+   "quiet": [
+    "Her grandmother moved from Italy to a small town in Ohio in 1921.",
+    "The hospital in Ohio has a new cardiac unit on the third floor.",
+    "We drove through the Catskills, then took the thruway into Boston.",
+    "Students from Ohio often choose colleges in New England.",
+    "The Green Mountain lakes of Vermont draw anglers all summer.",
+    "Crowds gathered outside the Chicago Board of Trade for the announcement.",
+    "The Ohio River flows through the southern part of Indiana.",
+    "Minnesota and Ohio both passed funding bills for rural broadband."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L11/N10296+"
+ ],
+ "short": "New York State and NYC places",
+ "trigger": {
+  "words": [
+   "York"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L11/N10296+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: York fired at 0.62 inside New York, Albany only 0.27 and 0.06, and Square and Canal were weak. The quiet near misses that name other states stayed below 0.3 except Erie Canal in Ohio at 0.22, so the York token, not the wider topic, carries the pole. Confidence is medium because the probes had only four sentences."
+}

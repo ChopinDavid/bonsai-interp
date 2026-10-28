@@ -1,0 +1,61 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-3a3c5206",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9092-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:54+00:00",
+ "selection": "step-out from bonsai1/L35/N3415+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L32/N9092",
+   "pole": "-",
+   "label": "stem of affirm/reaffirm (asserting again), not confirm",
+   "fire": [
+    "The senate will reaffirm its support for the treaty this month.",
+    "The judge reaffirmed that the contract was binding.",
+    "The doctor affirms that the scans show no fracture.",
+    "The minister reaffirmed the government's commitment to schools.",
+    "Her statement affirmed the team's decision to rebuild.",
+    "The board reaffirmed its earlier vote on the budget.",
+    "The company affirms it will keep prices steady.",
+    "Researchers reaffirmed the old finding with a larger sample."
+   ],
+   "quiet": [
+    "The senate will restate its support for the treaty this month.",
+    "The judge said the contract was still binding.",
+    "The doctor reports that the scans show no fracture.",
+    "The minister confirmed the government will keep funding schools.",
+    "Her statement explained the team's decision to rebuild.",
+    "The board discussed its earlier vote on the budget again.",
+    "The company promises it will keep prices steady.",
+    "I am confused about why the scans were repeated."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L35/N3415+"
+ ],
+ "short": "affirm/reaffirm stem, not confirm",
+ "trigger": {
+  "words": [
+   "reaffirm",
+   "reaffirmed",
+   "reaffirms",
+   "affirm",
+   "affirms",
+   "affirmed"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L35/N3415+ (zeroing this neuron removes 0.63 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes did not support the spelling-stem label: 'reaffirm' and 'reaffirmed' (0.36, 0.50) and 'affirms' (0.33) fired, but plain 'confirm' (0.13) did not, and 'confused' (0.01) stayed low, which argues against a 'conf' piece. The label is now about the affirm/reaffirm stem; 'confirm' is kept as a near miss to see whether it stays quiet."
+}

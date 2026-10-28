@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-85b72d7a",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N5986-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:53+00:00",
+ "selection": "step-out from bonsai1/L2/N6893- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L1/N5986",
+   "pole": "-",
+   "label": "' quite' as a degree intensifier before an adjective or noun",
+   "fire": [
+    "The new software update is quite confusing for older users.",
+    "Honestly, the cafeteria lunch was quite good.",
+    "The lake looked quite different at dawn after the flood.",
+    "It was quite a long walk to the station.",
+    "Her answer seemed quite reasonable to the committee.",
+    "The paint dries quite slowly in cold rooms.",
+    "We were quite sure the bus had already left.",
+    "He is quite tall for his age."
+   ],
+   "quiet": [
+    "Older users find the new software update confusing.",
+    "Surprisingly, the cafeteria lunch turned out decent.",
+    "Once the storm passed, the lake looked different at dawn.",
+    "That walk to the station took a long time.",
+    "Her answer made sense to the committee members.",
+    "Paint takes a long time to dry in cold rooms.",
+    "We were certain the bus had already left.",
+    "He is tall for his age, yet still a child."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L2/N6893-"
+ ],
+ "short": "' quite' as degree intensifier",
+ "trigger": {
+  "words": [
+   "quite"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L2/N6893- (zeroing this neuron removes 0.86 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: All four probe fire sentences scored 0.80 to 0.94 and all four same-frame near misses stayed under 0.01, including 'very' and 'still' as controls, so the token and its degree sense hold. Band samples also show ' quite' in degree uses, so the sense is consistent; the test is the bare word in a degree slot, not the only sense of quite, which I did not probe."
+}

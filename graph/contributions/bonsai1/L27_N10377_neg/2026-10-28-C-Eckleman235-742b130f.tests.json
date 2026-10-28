@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-742b130f",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N10377-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:52+00:00",
+ "selection": "step-out from bonsai1/L29/N7370+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L27/N10377",
+   "pole": "-",
+   "label": "the opening quote before a language or locale code in a setting (locale = 'pt')",
+   "fire": [
+    "Set the interface to lang = 'fi' in the config file before you deploy.",
+    "The browser sent Accept-Language: 'ko' with every request from the kiosk.",
+    "In settings.ini, the entry translation = 'cy' selects the Welsh strings.",
+    "Our test harness loops over the list ['de', 'it', 'ro'] when it checks the strings.",
+    "If the user picks locale='nb', the page should render in Norwegian Bokmal.",
+    "Set hreflang='el' on the alternate link for the Greek version of the page.",
+    "The importer reads the column code 'tr' and maps each row to Turkish text.",
+    "Pass the flag preferred_lang='vi' and the server returns the Vietnamese copy."
+   ],
+   "quiet": [
+    "Set the interface to theme = 'dark' in the config file before you deploy.",
+    "The browser sent Accept-Encoding: 'gzip' with every request from the kiosk.",
+    "In settings.ini, the entry timeout = '30' sets how long the client waits.",
+    "Our test harness loops over the list ['red', 'blue', 'green'] when it checks the strings.",
+    "If the user picks size='xl', the page should render in the larger layout.",
+    "Set rel='nofollow' on the alternate link for the Greek version of the page.",
+    "The importer reads the column code 'A7' and maps each row to a shelf number.",
+    "Pass the flag verbose='yes' and the server returns the full request log."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L29/N7370+"
+ ],
+ "short": "quote before a locale code",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L29/N7370+ (zeroing this neuron removes 1.00 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: the quote before 'pt' in a locale setting scored 0.81, but the dropdown and name-field probes only reached 0.17 to 0.19, so the pole fires mainly on a quoted code inside a setting. Near misses use the same settings frames with quoted non-language values, which stayed low in the probes. A quoted language code in other contexts may stay below threshold, so expect a partial result."
+}

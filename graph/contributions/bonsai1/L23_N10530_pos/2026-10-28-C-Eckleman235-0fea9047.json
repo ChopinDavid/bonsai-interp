@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-0fea9047",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N10530+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:17+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N10530_pos/2026-10-28-C-Eckleman235-0fea9047.tests.json"
+ },
+ "label": "verb right after a fronted 'there' or place phrase (existential inversion)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N10530_pos/2026-10-28-C-Eckleman235-0fea9047.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.492,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.618,
+     "peak": " lies"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.449,
+     "peak": " stands"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.549,
+     "peak": " sits"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.731,
+     "peak": " comes"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.473,
+     "peak": " hung"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.375,
+     "peak": " stood"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.579,
+     "peak": " hidden"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": " hay"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.299,
+     "peak": " there"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " library"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " sits"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.116,
+     "peak": " gibt"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " station"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " hid"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.52,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "verb after fronted there/place",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L24/N11621- (zeroing this neuron removes 0.74 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probe fire sentences scored 0.31 to 0.98 (comes highest, stands borderline), and subject-first, 'has', German 'gibt' and 'is standing' stayed low. The one miss was the yes/no question 'Is there...' at 0.30, which counts as firing at the threshold, so a question near miss is a real edge. The label is about the verb after a fronted place, not the word there.",
+ "roles": [
+  "feeds bonsai1/L24/N11621-"
+ ],
+ "selection": "step-out from bonsai1/L24/N11621- (10x queue, model pilot: haiku)"
+}

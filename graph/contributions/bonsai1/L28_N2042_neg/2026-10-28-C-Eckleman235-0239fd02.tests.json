@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-0239fd02",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2042-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:56+00:00",
+ "selection": "step-in from bonsai1/L22/N5705+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L28/N2042",
+   "pole": "-",
+   "label": "the name stem after Mc or Mac in Scottish and Irish surnames (McNair, MacAulay, MacKinnon, McGeechan)",
+   "fire": [
+    "Callum McLeod signed for the club on a three-year deal.",
+    "The McIver brothers ran the mill until the 1950s.",
+    "Fiona MacLennan wrote the history of the island's crofts.",
+    "Angus MacRae was born in a village on the Isle of Lewis.",
+    "The MacGregor clan crest shows a pine tree and a motto in Latin.",
+    "Robbie McPhail took over the pipe band in 2004.",
+    "The tour guide, Iain MacLeod, pointed out the ruined castle.",
+    "Kirsty McAllister was named the club's player of the year."
+   ],
+   "quiet": [
+    "Callum Reid signed for the club on a three-year deal.",
+    "The Brennan brothers ran the mill until the 1950s.",
+    "Fiona Gallagher wrote the history of the island's crofts.",
+    "Angus Baird was born in a village on the Isle of Lewis.",
+    "The Campbell clan crest shows a pine tree and a motto in Latin.",
+    "Robbie Thomson took over the pipe band in 2004.",
+    "The tour guide, Iain Ferguson, pointed out the ruined castle.",
+    "Kirsty Anderson was named the club's player of the year."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L22/N5705+"
+ ],
+ "short": "Mc or Mac prefixed Scottish surnames",
+ "trigger": {
+  "words": [
+   "Mc",
+   "Mac"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L22/N5705+ (zeroing the anchor removes 0.99 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes fired on all four Mc or Mac names (0.35 to 0.87) and stayed low on the plain-name near misses (0.02 to 0.03), including the raincoat sense of mac. The Campbell near miss tests a Scottish surname without the prefix. Confidence is medium because the probes were four sentences."
+}

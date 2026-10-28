@@ -1,0 +1,163 @@
+{
+ "id": "2026-10-28-C-Eckleman235-9b6164b1",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N5147-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:37+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L30_N5147_neg/2026-10-28-C-Eckleman235-9b6164b1.tests.json"
+ },
+ "label": "the 'inv' piece of invited/uninvited (invitation sense)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N5147_neg/2026-10-28-C-Eckleman235-9b6164b1.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.094,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.132,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.417,
+     "peak": "inv"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.356,
+     "peak": "inv"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.111,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.268,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.091,
+     "peak": " invited"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.417,
+     "peak": "inv"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": " unw"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " felt"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " stayed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.068,
+     "peak": " party"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.0,
+     "peak": " picked"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.021,
+     "peak": " unexpected"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.2,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "'inv' of invited/uninvited",
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L34/N1406+ (zeroing this neuron removes 0.65 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes were partial: 'invited' (0.23) and 'uninvited' (0.42) fired, but 'Invaders' (0.21) and 'invitations' (0.14) stayed under 0.3, so the piece is tied to the invited words rather than all inv- words. The meaning-only near misses (unwanted, asked, picked) stayed under 0.07, which supports a word-level label, but the set is small and the label should be read as a token-level partial.",
+ "roles": [
+  "feeds bonsai1/L34/N1406+"
+ ],
+ "selection": "step-out from bonsai1/L34/N1406+ (10x queue, model pilot: haiku)",
+ "trigger": {
+  "words": [
+   "invited",
+   "uninvited"
+  ]
+ }
+}

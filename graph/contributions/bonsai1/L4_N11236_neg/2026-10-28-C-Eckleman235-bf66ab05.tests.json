@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-bf66ab05",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11236-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:54+00:00",
+ "selection": "step-out from bonsai1/L5/N7124- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L4/N11236",
+   "pole": "-",
+   "label": "stem after a negating prefix on an adjective (in-, un-, indis-)",
+   "fire": [
+    "The landlord's demands were unreasonable and unbearable for tenants.",
+    "Her inexcusable delay cost the team the contract.",
+    "The committee called the plan irresponsible and unworkable.",
+    "The storm was unpredictable and uncontrollable for the crews.",
+    "They faced incomprehensible rules and unforgivable delays.",
+    "The engineers rejected the unstable design after testing.",
+    "The losses in the valley were unthinkable after the flood.",
+    "The judge found the defendant's conduct intolerable and dishonest."
+   ],
+   "quiet": [
+    "The landlord's demands were harsh and hard for tenants to bear.",
+    "Her costly delay cost the team the contract.",
+    "The committee called the plan wasteful and clumsy.",
+    "The storm was fierce and hard to forecast for the crews.",
+    "They faced puzzling rules and frustrating delays.",
+    "The engineers rejected the shaky design after testing.",
+    "The losses in the valley were staggering after the flood.",
+    "The judge found the defendant's conduct shameful and deceitful."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L5/N7124-"
+ ],
+ "short": "stem after in-/un- negation",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N7124- (zeroing this neuron removes 0.60 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: All four probe fire words fired (0.50 to 1.02), and the no-prefix controls 'strict', 'cannot' and 'thoughtful' stayed under 0.01. But 'unarmed' (a negated word I had put in both sets) fired at 0.42, so the pole follows the negating prefix generally, not the 'intolerable' sense. The label is broadened to the prefix, and the test quiet set now has no negated word at all."
+}

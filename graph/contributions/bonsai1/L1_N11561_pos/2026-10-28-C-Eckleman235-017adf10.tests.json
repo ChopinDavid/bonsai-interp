@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-017adf10",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11561+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:53+00:00",
+ "selection": "step-out from bonsai1/L5/N9830- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L1/N11561",
+   "pole": "+",
+   "label": "the word ' campaign' in any sense (political, marketing, military)",
+   "fire": [
+    "The mayor kicked off her campaign with a rally downtown.",
+    "Our campaign to replace the old school buses raised forty thousand dollars.",
+    "The Pacific Campaign of 1944 hinged on naval supply lines.",
+    "Last week a campaign for the new phone began on television.",
+    "Volunteers spent every weekend on the petition campaign.",
+    "The vaccine campaign reached rural clinics before the end of June.",
+    "Her book tour was part of a wider publicity campaign.",
+    "The anti-litter campaigns in the city worked better than expected."
+   ],
+   "quiet": [
+    "Downtown, the mayor opened her reelection bid with a rally.",
+    "Fundraising to replace the old school buses reached forty thousand dollars.",
+    "Historians debate the Pacific war's supply problems in 1944.",
+    "Television ads for the new phone started running last week.",
+    "Every weekend, helpers gathered signatures for the petition.",
+    "Rural clinics received vaccines before the end of June.",
+    "A publicity push surrounded her book release.",
+    "Efforts against street litter in the city worked better than expected."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L5/N9830-"
+ ],
+ "short": "word 'campaign', any sense",
+ "trigger": {
+  "words": [
+   "campaign",
+   "campaigns",
+   "Campaign"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N9830- (zeroing this neuron removes 0.85 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probe fire sentences scored 0.50 to 0.82, a bit weaker than the peak, but all cleared 0.3; no meaning-only near miss fired (all under 0.02, including the 'marketing' and 'candidate' sentences), so the pole tracks the word more than the campaign meaning. Fire items are all the word, so this label says the word in any sense; the meaning-only test is the one still open."
+}

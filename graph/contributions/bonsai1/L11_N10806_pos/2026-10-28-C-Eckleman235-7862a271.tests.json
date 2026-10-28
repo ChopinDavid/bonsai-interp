@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-7862a271",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10806+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:54+00:00",
+ "selection": "step-in from bonsai1/L10/N7854+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L11/N10806",
+   "pole": "+",
+   "label": "the names China and Jordan (a short list of names, not a distinction)",
+   "fire": [
+    "Hong Kong investors watched the markets in China rally after the policy news.",
+    "Her trip through China took three weeks by train and by bus.",
+    "The Jordan River forms part of the border between Israel and Jordan.",
+    "Coach Phil Jackson once praised Jordan as the best guard he had ever coached.",
+    "The factory in southern China shipped chips to Europe last spring.",
+    "Fans in Jordan queued for hours outside the stadium before the final.",
+    "The reporter traveled from Beijing to a village in rural China.",
+    "Basketball cards from the nineties show Jordan in his Bulls jersey."
+   ],
+   "quiet": [
+    "Hong Kong investors watched the markets in Asia rally after the policy news.",
+    "Her trip through Korea took three weeks by train and by bus.",
+    "The Nile River forms part of the border between Egypt and Sudan.",
+    "Coach Phil Jackson once praised Kobe as the best guard he had ever coached.",
+    "The factory in southern Vietnam shipped chips to Europe last spring.",
+    "Fans in Qatar queued for hours outside the stadium before the final.",
+    "The reporter traveled from Lagos to a village in rural Nigeria.",
+    "Basketball cards from the nineties show Pippen in his Bulls jersey."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L10/N7854+"
+ ],
+ "short": "China and Jordan names",
+ "trigger": {
+  "words": [
+   "China",
+   "Jordan"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N7854+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: China scored 1.11 and Jordan 0.58, Guangzhou (the zhou piece) 0.42, but Persian Gulf only 0.04 and the common-noun probes all stayed below 0.07. So the pole is mostly the China and Jordan tokens, not the Gulf or a general place-name family; the packet's Gulf hits were weak. The card also flags a gate-closed regime (95 percent echo), so this is a narrow, low-confidence label. Fire and near misses both use new sentences."
+}

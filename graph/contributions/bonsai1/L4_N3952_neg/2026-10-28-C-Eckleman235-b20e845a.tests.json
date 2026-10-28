@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-b20e845a",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3952-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:53+00:00",
+ "selection": "step-out from bonsai1/L5/N7938- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L4/N3952",
+   "pole": "-",
+   "label": "the word ' phrase' (and passphrase) as a lexical token",
+   "fire": [
+    "Memorize the phrase she repeated during the speech.",
+    "The reader stumbled over an awkward phrase near the end.",
+    "Each lesson introduces a useful phrase for ordering food abroad.",
+    "The passphrase must be at least twelve words long.",
+    "Several phrases in the contract were ambiguous to lawyers.",
+    "He wrote the closing phrase on the chalkboard.",
+    "Translate this phrase into Spanish for the guests.",
+    "A good slogan is a short, memorable phrase."
+   ],
+   "quiet": [
+    "Repeat the line she spoke during the speech.",
+    "A sentence near the end confused the reader badly.",
+    "Lessons this week cover ordering food abroad.",
+    "Every account needs a password of at least twelve characters.",
+    "Lawyers found the contract's clauses unclear in places.",
+    "On the chalkboard, the teacher circled the last line.",
+    "Put the sentence into Spanish for the guests.",
+    "Slogans work best when they are short and catchy."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L5/N7938-"
+ ],
+ "short": "word 'phrase' and passphrase",
+ "trigger": {
+  "words": [
+   "phrase",
+   "phrases",
+   "passphrase"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N7938- (zeroing this neuron removes 0.80 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probe fire sentences scored 0.42 to 0.66 (passphrase highest) and every same-frame near miss stayed under 0.01 (password, sentence, and idea controls included), so the token holds. Band samples included phrasal and Russian pieces that I did not test, so the label is limited to the word phrase and its passphrase compound."
+}

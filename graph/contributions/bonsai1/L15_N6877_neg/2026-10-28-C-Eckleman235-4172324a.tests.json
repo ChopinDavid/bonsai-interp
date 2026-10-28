@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-4172324a",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N6877-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:55+00:00",
+ "selection": "step-in from bonsai1/L12/N586- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L15/N6877",
+   "pole": "-",
+   "label": "the word Journal in a journal title inside a scholarly reference (Postgraduate Medical Journal, Economic Journal, BMJ)",
+   "fire": [
+    "Adams, R. (2008). Pricing in small firms. Economic Journal 118: 210-224.",
+    "Okafor, E. (2015). Insulin resistance in youth. Journal of Pediatric Endocrinology 38: 77-84.",
+    "Reyes, M. (2012). Hip fracture outcomes. Canadian Medical Journal 184: 1201-1207.",
+    "Hoffman, K. (2009). Monetary shocks. Quarterly Economic Journal 124: 33-61.",
+    "Ibrahim, S. (2016). Wound care in clinics. Journal of Wound Care 25: 90-97.",
+    "Novak, J. (2019). Asthma in urban schools. Pediatric Journal 143: e20181122.",
+    "Dubois, A. (2011). Soil microbes under drought. Ecology Journal 92: 55-63.",
+    "Moreau, C. (2014). Reading in Scottish schools. Scottish Medical Journal 59: 8-13."
+   ],
+   "quiet": [
+    "She kept a diary on the voyage and wrote about the storms.",
+    "Lindqvist, A. (2015). Glucose control in teens. Pediatric Review 38: 77-84.",
+    "Stanek, P. (2013). Hip fracture recovery. Canadian Medical Bulletin 184: 1201-1207.",
+    "Tanaka, H. (2010). Inflation pass-through. Quarterly Economic Letters 124: 33-61.",
+    "The nurse logged the wound dressing changes in the clinic chart each morning.",
+    "Mira's notebook held her travel notes, sketches and a list of recipes.",
+    "Ruiz, F. (2011). Soil microbes under drought. Ecology Letters 92: 55-63.",
+    "The reading group met in the library to discuss the new poetry collection."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L12/N586-"
+ ],
+ "short": "Journal in a scholarly citation",
+ "trigger": {
+  "words": [
+   "Journal"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L12/N586- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: Journal fired at 0.82, 0.57 and 0.34 in medical and economic titles, but Journal of Ecology gave only 0.02, so the title words matter. The diary sense stayed at 0.01, and Review and Lancet swaps stayed below 0.3 (0.19 and 0.18), which supports Journal as the token. Confidence is medium."
+}

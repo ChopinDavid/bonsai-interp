@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-bf66ab05",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11236-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:13:03+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N11236_neg/2026-10-28-C-Eckleman235-bf66ab05.tests.json"
+ },
+ "label": "stem after a negating prefix on an adjective (in-, un-, indis-)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N11236_neg/2026-10-28-C-Eckleman235-bf66ab05.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.134,
+     "peak": " unbearable"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.338,
+     "peak": "exc"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.209,
+     "peak": " irresponsible"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.217,
+     "peak": " uncont"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.394,
+     "peak": "preh"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.036,
+     "peak": " unstable"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.133,
+     "peak": " unthinkable"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.567,
+     "peak": " intoler"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.0,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " delays"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": " engineers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.0,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.213,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 8,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "stem after in-/un- negation",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N7124- (zeroing this neuron removes 0.60 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: All four probe fire words fired (0.50 to 1.02), and the no-prefix controls 'strict', 'cannot' and 'thoughtful' stayed under 0.01. But 'unarmed' (a negated word I had put in both sets) fired at 0.42, so the pole follows the negating prefix generally, not the 'intolerable' sense. The label is broadened to the prefix, and the test quiet set now has no negated word at all.",
+ "roles": [
+  "feeds bonsai1/L5/N7124-"
+ ],
+ "selection": "step-out from bonsai1/L5/N7124- (10x queue, model pilot: haiku)"
+}

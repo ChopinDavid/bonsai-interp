@@ -1,0 +1,59 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-f99007ac",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N279+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:56+00:00",
+ "selection": "step-in from bonsai1/L22/N7665- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L23/N279",
+   "pole": "+",
+   "label": "the word just before a body part or a comparison object: your or his before body parts, like or as in comparisons",
+   "fire": [
+    "Hold the rope with your right hand and keep your back straight.",
+    "The owl turned its head as if it heard something in the grass.",
+    "She rubbed her temples and closed her eyes against the glare.",
+    "Tall as a giraffe, the tree dominated the clearing.",
+    "The beetle looks like a tiny jewel when the sun hits its shell.",
+    "He tucked his shirt in and pulled his belt tight.",
+    "Bread that rises as slowly as this one needs a warm kitchen.",
+    "Keep your elbows close to your ribs during the swing."
+   ],
+   "quiet": [
+    "Hold the rope with the handle facing out and keep the line taut.",
+    "The owl turned toward the sound and listened in the grass.",
+    "She rubbed the dish and closed the cabinet against the draft.",
+    "Tall trees dominated the clearing near the stream.",
+    "The beetle is found under bark on dead logs in the spring.",
+    "He tucked the map in and pulled the cord tight.",
+    "Bread that rises slowly needs a warm kitchen to finish.",
+    "Keep the elbows close and the ribs aligned during the swing."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L22/N7665-"
+ ],
+ "short": "word before body part or comparison",
+ "trigger": {
+  "words": [
+   "like",
+   "as",
+   "your",
+   "his"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L22/N7665- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: his fired at 0.22, like at 0.18, with at 0.31 and a in as wide as at 0.43, while the non-body sentences stayed at 0.02 to 0.03. The card's top tokens are mostly possessives and articles, so the comparison reading is the anchor's idea, not the card's, and the pattern is only partly supported by probes."
+}

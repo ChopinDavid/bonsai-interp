@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-28-C-Eckleman235-91bf1ab9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N2017-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:02+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N2017_neg/2026-10-28-C-Eckleman235-91bf1ab9.tests.json"
+ },
+ "label": "a plural group of human agents who did an action (officials, doctors, scientists), named as the agent of the action",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N2017_neg/2026-10-28-C-Eckleman235-91bf1ab9.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.182,
+     "peak": " they"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.153,
+     "peak": "ers"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.029,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.128,
+     "peak": "itors"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.194,
+     "peak": "Experts"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.207,
+     "peak": "es"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.039,
+     "peak": " rise"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.062,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.061,
+     "peak": " unsafe"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.068,
+     "peak": " records"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.049,
+     "peak": " shows"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.102,
+     "peak": "caster"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.079,
+     "peak": " officer"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.061,
+     "peak": " rise"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.672,
+    "median_fire": 0.141,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "plural human agents of an action",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L13/N2535- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes did not fire on the verbs: told, say and Officials stayed at 0.01 to 0.25. The one strong hit was the noun officials at 0.42 inside a passive sentence, so the card's plural-verb reading was revised to a plural human agent noun. The passive near miss was thought stayed low at 0.04, but a singular forecaster sentence is a hard edge the test checks.",
+ "roles": [
+  "reads bonsai1/L13/N2535-"
+ ],
+ "selection": "step-in from bonsai1/L13/N2535- (10x queue, model pilot: haiku)"
+}

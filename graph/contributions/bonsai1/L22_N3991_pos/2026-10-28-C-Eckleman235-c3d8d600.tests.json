@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-c3d8d600",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N3991+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:55+00:00",
+ "selection": "step-in from bonsai1/L12/N4075+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L22/N3991",
+   "pole": "+",
+   "label": "island and Pacific place names (weak; probes did not confirm)",
+   "fire": [
+    "The Marshall Islands and Kiribati lie north of the equator in the central Pacific.",
+    "Tahiti and the Cook Islands were visited by Captain Cook in the 1770s.",
+    "Fishing canoes from Fiji crossed the Pacific islands for trade.",
+    "The Solomon Islands have a long history of trade with Papua New Guinea.",
+    "Pitcairn Island was settled by mutineers from the Bounty.",
+    "The Maldives are a chain of low coral islands in the Indian Ocean.",
+    "Coral atolls like Tuvalu are at risk from rising seas.",
+    "Hawaiian volcanoes shaped the chain of islands west of Kauai."
+   ],
+   "quiet": [
+    "The Gobi Desert lies in the interior of northern China and southern Mongolia.",
+    "Ghana and Nigeria were visited by Portuguese traders in the 1480s.",
+    "Canoes from the Amazon basin were used for trade between river villages.",
+    "The Pyrenees mark the border between France and Spain.",
+    "Mountain passes like the Brenner are closed in winter.",
+    "The Carpathians stretch across Romania, Ukraine and Slovakia.",
+    "Lake Baikal holds about a fifth of the world's unfrozen fresh water.",
+    "Fishing boats from Norway crossed the Barents Sea for cod."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L12/N4075+"
+ ],
+ "short": "Pacific and island place names, weak",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L12/N4075+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes did not support the island label: the best probe was Hawaii at 0.30, the other island sentences were 0.03 to 0.08, and two non-island near misses reached 0.12. The card's island evidence is weak and mixed with code tokens, so this test is expected to fail and records the failure; it is not a confirmed label."
+}

@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-c9afb6e9",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N7538-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:55+00:00",
+ "selection": "step-in from bonsai1/L10/N9052+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L11/N7538",
+   "pole": "-",
+   "label": "the words Reconstruction (US post-Civil War) and back in the sleeping-posture sense; mixed, two unrelated senses",
+   "fire": [
+    "The Freedmen's Bureau operated during Reconstruction to help newly freed families.",
+    "Her grandfather grew up in Mississippi during the years of Reconstruction.",
+    "Rest on your back with a rolled towel behind the neck for comfort.",
+    "Lying on your back at night can make snoring worse for some people.",
+    "After Reconstruction ended, many Southern states passed segregation laws.",
+    "Historians debate whether Reconstruction succeeded in its goals.",
+    "Sleeping on the back is recommended for people with reflux who want to keep their spine straight.",
+    "Some people find that sleeping on their back causes the airway to narrow."
+   ],
+   "quiet": [
+    "The Freedmen's Bureau operated during the Civil War to help newly freed families.",
+    "Her grandfather grew up in Mississippi during the years of the Gilded Age.",
+    "Rest on your side with a rolled towel behind the neck for comfort.",
+    "Lying on your side at night can make snoring worse for some people.",
+    "After the Civil War ended, many Southern states passed new labor laws.",
+    "Historians debate whether the New Deal succeeded in its goals.",
+    "Sleeping on the side is recommended for people with reflux who want to keep their spine straight.",
+    "Some people find that sleeping on their side causes the airway to narrow."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L10/N9052+"
+ ],
+ "short": "Reconstruction or sleeping on your back",
+ "trigger": {
+  "words": [
+   "Reconstruction",
+   "back"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N9052+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: the back sleep sense fired strongly (0.94) and Reconstruction fired at 0.47 and 0.87, but Jews and Poland (0.36) were marginal and the card is mixed. A single label does not describe both senses, so the test is weak evidence for one pole meaning; the side-sleep and Civil War near misses are the hard edges."
+}

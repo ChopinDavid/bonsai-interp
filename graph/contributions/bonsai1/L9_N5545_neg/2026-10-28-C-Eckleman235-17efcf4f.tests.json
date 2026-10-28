@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-17efcf4f",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N5545-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:52+00:00",
+ "selection": "step-out from bonsai1/L10/N9424- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L9/N5545",
+   "pole": "-",
+   "label": "the name in a Python @classmethod or @staticmethod decorator (the line above a def)",
+   "fire": [
+    "class Loader:\n    def __init__(self, root):\n        self.root = root\n\n    @classmethod\n    def from_env(cls):\n        return cls(os.environ['ROOT'])",
+    "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    @staticmethod\n    def origin():\n        return Point(0, 0)",
+    "class Cache(dict):\n    @classmethod\n    def empty(cls):\n        return cls()",
+    "class Units:\n    _table = {}\n\n    @staticmethod\n    def convert(value, unit):\n        return value * _table[unit]",
+    "class Session:\n    registry = []\n\n    @classmethod\n    def current(cls):\n        return cls.registry[-1]",
+    "class Matrix:\n    @staticmethod\n    def identity(n):\n        return [[int(i == j) for j in range(n)] for i in range(n)]",
+    "class Shape:\n    def __init__(self, sides):\n        self.sides = sides\n\n    @classmethod\n    def square(cls, size):\n        return cls(4 * [size])",
+    "class Report:\n    @classmethod\n    def build(cls, rows):\n        return cls(rows)"
+   ],
+   "quiet": [
+    "class Loader:\n    def __init__(self, root):\n        self.root = root\n\n    @property\n    def env(self):\n        return self.root",
+    "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def origin(self):\n        return Point(0, 0)",
+    "class Cache(dict):\n    @abstractmethod\n    def empty(self):\n        raise NotImplementedError",
+    "class Units:\n    _table = {}\n\n    @functools.lru_cache\n    def convert(value, unit):\n        return value * _table[unit]",
+    "class Session:\n    registry = []\n\n    @property\n    def current(self):\n        return self.registry[-1]",
+    "class Matrix:\n    def identity(self, n):\n        return [[int(i == j) for j in range(n)] for i in range(n)]",
+    "class Shape:\n    def __init__(self, sides):\n        self.sides = sides\n\n    @property\n    def square(self):\n        return 4 * self.sides",
+    "The team's planning session for the autumn trip ran long and ended with a vote."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L10/N9424-"
+ ],
+ "short": "@classmethod / @staticmethod decorator name",
+ "trigger": {
+  "words": [
+   "classmethod",
+   "staticmethod"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L10/N9424- (zeroing this neuron removes 1.00 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: the classmethod decorator scored 0.85 to 0.93 and the staticmethod decorator 0.67, so the pole is about the decorator name, not only classmethod (the edge hint's '@classmethod / @staticmethod' wording fits). The prose mention 'class method' scored 0.19, and @property scored 0.06. Near misses keep the Python class frame with other decorators or plain defs."
+}

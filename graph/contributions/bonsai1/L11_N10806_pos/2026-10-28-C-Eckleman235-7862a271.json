@@ -1,0 +1,163 @@
+{
+ "id": "2026-10-28-C-Eckleman235-7862a271",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10806+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:11:52+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N10806_pos/2026-10-28-C-Eckleman235-7862a271.tests.json"
+ },
+ "label": "the names China and Jordan (a short list of names, not a distinction)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10806_pos/2026-10-28-C-Eckleman235-7862a271.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.066,
+     "peak": " policy"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.006,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.27,
+     "peak": " Jordan"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.539,
+     "peak": " Jordan"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.199,
+     "peak": " China"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.067,
+     "peak": " Jordan"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.14,
+     "peak": " Beijing"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.643,
+     "peak": " Jordan"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.067,
+     "peak": " policy"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": " bus"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.163,
+     "peak": " River"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.449,
+     "peak": " Kobe"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " factory"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " stadium"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.265,
+     "peak": " Lagos"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.188,
+     "peak": " Bulls"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.617,
+    "median_fire": 0.17,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "China and Jordan names",
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L10/N7854+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: China scored 1.11 and Jordan 0.58, Guangzhou (the zhou piece) 0.42, but Persian Gulf only 0.04 and the common-noun probes all stayed below 0.07. So the pole is mostly the China and Jordan tokens, not the Gulf or a general place-name family; the packet's Gulf hits were weak. The card also flags a gate-closed regime (95 percent echo), so this is a narrow, low-confidence label. Fire and near misses both use new sentences.",
+ "roles": [
+  "reads bonsai1/L10/N7854+"
+ ],
+ "selection": "step-in from bonsai1/L10/N7854+ (10x queue, model pilot: haiku)",
+ "trigger": {
+  "words": [
+   "China",
+   "Jordan"
+  ]
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "id": "2026-10-28-C-Eckleman235-017adf10",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11561+",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:08+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N11561_pos/2026-10-28-C-Eckleman235-017adf10.tests.json"
+ },
+ "label": "the word ' campaign' in any sense (political, marketing, military)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N11561_pos/2026-10-28-C-Eckleman235-017adf10.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.614,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.658,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.949,
+     "peak": " Campaign"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.675,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.573,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.552,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.42,
+     "peak": " campaign"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.668,
+     "peak": " campaigns"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " rally"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": "Fund"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " war"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " ads"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " petition"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " clinics"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " publicity"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " worked"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.636,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "word 'campaign', any sense",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L5/N9830- (zeroing this neuron removes 0.85 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probe fire sentences scored 0.50 to 0.82, a bit weaker than the peak, but all cleared 0.3; no meaning-only near miss fired (all under 0.02, including the 'marketing' and 'candidate' sentences), so the pole tracks the word more than the campaign meaning. Fire items are all the word, so this label says the word in any sense; the meaning-only test is the one still open.",
+ "roles": [
+  "feeds bonsai1/L5/N9830-"
+ ],
+ "selection": "step-out from bonsai1/L5/N9830- (10x queue, model pilot: haiku)",
+ "trigger": {
+  "words": [
+   "campaign",
+   "campaigns",
+   "Campaign"
+  ]
+ }
+}

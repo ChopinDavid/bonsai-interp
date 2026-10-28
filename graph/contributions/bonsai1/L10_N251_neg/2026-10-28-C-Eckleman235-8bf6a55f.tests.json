@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-8bf6a55f",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N251-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:57+00:00",
+ "selection": "step-in from bonsai1/L0/N6904- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L10/N251",
+   "pole": "-",
+   "label": "southern and eastern China and the Yangtze or Wu region (South China, East China Sea, Zhejiang, Yangzi)",
+   "fire": [
+    "Monsoon floods hit the provinces of southern China every June.",
+    "The fishing fleets of eastern China work the coast from Shanghai southward.",
+    "Silk production in southern China dates back more than two thousand years.",
+    "Ships sailed the East China Sea carrying porcelain to Japan.",
+    "Lakes along the Yangzi floodplain were drained for rice fields.",
+    "Wu dialects are still spoken in the cities around Suzhou.",
+    "The Zhejiang coast is known for its tea hills and fishing ports.",
+    "Winters are mild in southern China, but summers are humid."
+   ],
+   "quiet": [
+    "Winter storms often bring heavy snow to northern China each January.",
+    "The fishing fleets of northern Japan work the coast from Hokkaido southward.",
+    "Wheat production in northern China dates back more than two thousand years.",
+    "Ships sailed the Baltic Sea carrying amber to Germany.",
+    "Lakes along the Danube floodplain were drained for hay fields.",
+    "Mongol dialects are still spoken in the grasslands around Hohhot.",
+    "The Hebei coast is known for its salt flats and grain ports.",
+    "Summers are dry in northern China, but winters are bitterly cold."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L0/N6904-"
+ ],
+ "short": "southern and eastern China, Yangzi region",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L0/N6904- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes fired on all four southern or eastern items (0.38 to 0.82, with China, Zhejiang and Wu peaks) and stayed low on the northern and other-country near misses (0.03 to 0.08). The trigger is context-based, so the declared trigger is null; northern China appears in near misses, which the test allows because the trigger is not a single word."
+}

@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-374a19b7",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N7532+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:54+00:00",
+ "selection": "step-out from bonsai1/L2/N3163+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L0/N7532",
+   "pole": "+",
+   "label": "' said' as a speech tag after a quotation (also legal 'said')",
+   "fire": [
+    "'The water is safe to drink,' the engineer said.",
+    "'The vote happens tomorrow,' the clerk said on Tuesday.",
+    "Then, she said, the tide would turn at noon.",
+    "The coil must be wound onto said spindle before the motor starts.",
+    "'Our budget is balanced for the first time,' the governor said at the podium.",
+    "Each said bracket must be welded to the frame.",
+    "'Nobody saw the fire start,' the witness said under oath.",
+    "The mayor said the new library would open in March."
+   ],
+   "quiet": [
+    "'We will fix it by Monday,' the foreman added.",
+    "'The vote happens tomorrow,' the clerk replied on Tuesday.",
+    "Then, she noted, the tide would turn at noon.",
+    "The coil must be wound onto the spindle before the motor starts.",
+    "'Our budget is balanced for the first time,' the governor told reporters.",
+    "Each bracket must be welded to the frame before painting.",
+    "'Nobody saw the fire start,' the witness shouted under oath.",
+    "The mayor announced that the new library would open in March."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L2/N3163+"
+ ],
+ "short": "word 'said' (speech and legal)",
+ "trigger": {
+  "words": [
+   "said"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L2/N3163+ (zeroing this neuron removes 0.62 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probe 'said' fire sentences scored 0.64 to 0.73 and the legal 'said' scored 0.64, while 'added' (0.09) and 'shouted' (0.01) stayed low, so the pole is specific to the token and not to speech verbs generally. 'says' only reached 0.29, so I did not claim it. My probe quiet item 'Said is a common word' contained the trigger and fired at 0.61, which is my error; the test quiet set here contains no 'said'."
+}

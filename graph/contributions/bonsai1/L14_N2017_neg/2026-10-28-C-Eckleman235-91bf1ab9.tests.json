@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-91bf1ab9",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N2017-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:56+00:00",
+ "selection": "step-in from bonsai1/L13/N2535- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L14/N2017",
+   "pole": "-",
+   "label": "a plural group of human agents who did an action (officials, doctors, scientists), named as the agent of the action",
+   "fire": [
+    "Investigators said the fire began in the kitchen, and they were confident.",
+    "Engineers warned that the bridge would fail under heavy trucks.",
+    "Teachers reported higher absence rates after the flu season.",
+    "Auditors found missing receipts in three departments last year.",
+    "Nurses noticed the patient's fever returned overnight.",
+    "Experts say the storm will reach the coast by Friday.",
+    "Witnesses told police they saw a red van leave the lot.",
+    "Economists predict that prices will rise again next spring."
+   ],
+   "quiet": [
+    "The fire was thought to have started in the kitchen.",
+    "The bridge was declared unsafe after the inspection report.",
+    "Absence rates rose after the flu season, according to the records.",
+    "The receipts were found missing from the ledger last year.",
+    "The patient's fever returned overnight, the chart shows.",
+    "A forecaster says the storm will reach the coast by Friday.",
+    "The witness told the officer she saw a red van leave the lot.",
+    "Prices are expected to rise again next spring, the report notes."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L13/N2535-"
+ ],
+ "short": "plural human agents of an action",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L13/N2535- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes did not fire on the verbs: told, say and Officials stayed at 0.01 to 0.25. The one strong hit was the noun officials at 0.42 inside a passive sentence, so the card's plural-verb reading was revised to a plural human agent noun. The passive near miss was thought stayed low at 0.04, but a singular forecaster sentence is a hard edge the test checks."
+}

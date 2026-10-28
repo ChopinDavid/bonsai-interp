@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-0fea9047",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N10530+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:53+00:00",
+ "selection": "step-out from bonsai1/L24/N11621- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L23/N10530",
+   "pole": "+",
+   "label": "verb right after a fronted 'there' or place phrase (existential inversion)",
+   "fire": [
+    "Inside the old barn there was a rusted tractor and some hay.",
+    "Beyond the ridge there lies a valley full of wildflowers.",
+    "Behind the library there stands a bronze statue of the founder.",
+    "At the end of the pier there sits a small wooden bench.",
+    "Across the harbor there comes a faint sound of bells.",
+    "Along the north wall are hung three faded maps.",
+    "Near the station stood the ruins of a brewery.",
+    "Beneath the floorboards is hidden a box of letters."
+   ],
+   "quiet": [
+    "The old barn has a rusted tractor and some hay.",
+    "Is there a faint sound of bells across the harbor?",
+    "The statue of the founder stands behind the library.",
+    "The small wooden bench sits at the end of the pier.",
+    "Im Hafen gibt es ein altes Boot mit blauem Segel.",
+    "Three faded maps were hung by the cook on the north wall.",
+    "The ruins of a brewery can be seen near the station.",
+    "She hid a box of letters beneath the floorboards."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L24/N11621-"
+ ],
+ "short": "verb after fronted there/place",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L24/N11621- (zeroing this neuron removes 0.74 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probe fire sentences scored 0.31 to 0.98 (comes highest, stands borderline), and subject-first, 'has', German 'gibt' and 'is standing' stayed low. The one miss was the yes/no question 'Is there...' at 0.30, which counts as firing at the threshold, so a question near miss is a real edge. The label is about the verb after a fronted place, not the word there."
+}

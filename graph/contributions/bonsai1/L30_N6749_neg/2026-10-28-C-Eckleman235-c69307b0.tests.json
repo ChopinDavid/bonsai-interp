@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-c69307b0",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N6749-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:53+00:00",
+ "selection": "step-out from bonsai1/L33/N5906+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L30/N6749",
+   "pole": "-",
+   "label": "threshold qualifier right before an expected 'majority' (predicts 'majority' next)",
+   "fire": [
+    "Under the bylaws, amendments need a two-thirds majority of members.",
+    "The bill cleared the Senate with a simple majority after two days.",
+    "Ordinances pass by a simple majority of the councilors present.",
+    "The board approved the budget by a two-thirds majority vote.",
+    "Under budget reconciliation, bills need only a simple majority.",
+    "Passage requires a three-fifths majority in each chamber.",
+    "The charter requires a supermajority, not a simple majority, to change the constitution.",
+    "A two-thirds majority is required to remove the chair."
+   ],
+   "quiet": [
+    "Amendments to the bylaws must be sent in writing to every member.",
+    "After two days of debate, the Senate sent the bill back to committee.",
+    "Local ordinances wait for a public hearing and a final reading.",
+    "The budget went to the board at its spring meeting.",
+    "Reconciliation bills get drafted by staff before the vote.",
+    "Final passage happens only after the clerk signs the paper.",
+    "The charter describes how officers are chosen each year.",
+    "No vote happens until a quorum of members is present."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L33/N5906+"
+ ],
+ "short": "qualifier before 'majority' (partial)",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L33/N5906+ (zeroing this neuron removes 0.76 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes only partly held: 'two-thirds' (0.44) and 'simple' (0.59) fired, but plain 'by a' (0.23) and 'The' (0.04) did not, and the quiet 'needs a written notice' frame reached 0.35. So the pole responds to the qualifier of a vote threshold, not to 'a' alone, and this label is a context, not a word. The fire and quiet sets are new and should be read as a probable partial."
+}

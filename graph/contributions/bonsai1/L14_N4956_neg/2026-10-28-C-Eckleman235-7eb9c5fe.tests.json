@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-7eb9c5fe",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N4956-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:56+00:00",
+ "selection": "step-in from bonsai1/L13/N3506+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L14/N4956",
+   "pole": "-",
+   "label": "the digits of a 1900s year written as numerals (the 2 in 1927); probes did not confirm",
+   "fire": [
+    "The bridge was completed in 1937 after three years of work.",
+    "Their first album came out in 1969 on a small label in Memphis.",
+    "The census of 1911 lists the family living above the shop.",
+    "Ships were rerouted through the canal from 1915 onward.",
+    "She finished her thesis in 1948, the same year the clinic opened.",
+    "Prices fell sharply between 1929 and 1933 across the region.",
+    "The monastery was rebuilt in 1906 after a fire.",
+    "Old photos from 1958 show the market square still unpaved."
+   ],
+   "quiet": [
+    "The bridge was completed in 2037 after three years of work.",
+    "The recipe calls for 2 cups of rice and 3 cloves of garlic.",
+    "Their first album came out with catalogue code M-4418 on a small label.",
+    "Ships were rerouted through the canal, carrying 35 tons of grain each trip.",
+    "She finished her thesis in the late forties, the same year the clinic opened.",
+    "Prices fell sharply in the early thirties across the region.",
+    "The monastery was rebuilt by the twentieth-century order after a fire.",
+    "Call the front desk at extension 1906 if you need a room."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L13/N3506+"
+ ],
+ "short": "digits of a 1900s year",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L13/N3506+ (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes did not support the year label: year digits fired only 0.03 to 0.15, below the 0.3 bar, and the spelled-out late-twenties sentence reached 0.18. The corpus strong examples were years, but this test is expected to fail and records that the probes disagreed."
+}

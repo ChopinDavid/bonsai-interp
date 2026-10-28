@@ -1,0 +1,162 @@
+{
+ "id": "2026-10-28-C-Eckleman235-4172324a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N6877-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:08+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N6877_neg/2026-10-28-C-Eckleman235-4172324a.tests.json"
+ },
+ "label": "the word Journal in a journal title inside a scholarly reference (Postgraduate Medical Journal, Economic Journal, BMJ)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N6877_neg/2026-10-28-C-Eckleman235-4172324a.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.819,
+     "peak": " Journal"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.051,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.692,
+     "peak": " Journal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.05,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.046,
+     "peak": " Journal"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.031,
+     "peak": " Ecology"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.05,
+     "peak": "5"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.052,
+     "peak": " Pediatric"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.324,
+     "peak": " Bulletin"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.048,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": "M"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " ("
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.05,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "Journal in a scholarly citation",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L12/N586- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes: Journal fired at 0.82, 0.57 and 0.34 in medical and economic titles, but Journal of Ecology gave only 0.02, so the title words matter. The diary sense stayed at 0.01, and Review and Lancet swaps stayed below 0.3 (0.19 and 0.18), which supports Journal as the token. Confidence is medium.",
+ "roles": [
+  "reads bonsai1/L12/N586-"
+ ],
+ "selection": "step-in from bonsai1/L12/N586- (10x queue, model pilot: haiku)",
+ "trigger": {
+  "words": [
+   "Journal"
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-f6d97770",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5003-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:54+00:00",
+ "selection": "step-out from bonsai1/L35/N8831- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L34/N5003",
+   "pole": "-",
+   "label": "slot right before an expected 'header' (predicts 'header' in code and text)",
+   "fire": [
+    "The club clinched the title by winning the first game of a double",
+    "Attach the ribbon to the female 8 pin",
+    "Our softball team won its first game of the double",
+    "Solder the jumper to the male 20 pin",
+    "The Cubs won the opener of Saturday's double",
+    "class ApiClient:\n    def call(self, url, user):\n        self.anonymous_actor_",
+    "class Exporter:\n    def send(self, rows):\n        self.anonymous_actor_",
+    "Plug the 6 pin male connector into the board"
+   ],
+   "quiet": [
+    "Attach the ribbon to the board with two screws.",
+    "The connector comes with a metal shell and cable.",
+    "The Tigers dropped the opener of the road trip in Detroit on Friday.",
+    "Plug the sensor into the wall outlet near the window.",
+    "class ApiClient:\n    def call(self, url, user):\n        self.session_",
+    "class Exporter:\n    def send(self, rows):\n        self.writer_",
+    "The club finished the season with a losing record.",
+    "Solder the jumper to the green wire."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L35/N8831-"
+ ],
+ "short": "slot before 'header' (partial)",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L35/N8831- (zeroing this neuron removes 0.66 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes were mixed: 'double' (0.80) and the hardware 'pin' (0.38) fired, but the short code prompts ('self.anonymous_actor_') and 'request' stayed under 0.1. The code items here are multi-line as the brief asks, but this is an untested change and the label is a context slot, not a token. The 'pin' near miss shared a prefix with the probe fire item in the probe round, so I made the hardware quiet items different."
+}

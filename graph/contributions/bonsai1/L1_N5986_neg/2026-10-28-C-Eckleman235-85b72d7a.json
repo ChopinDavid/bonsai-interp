@@ -1,0 +1,162 @@
+{
+ "id": "2026-10-28-C-Eckleman235-85b72d7a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N5986-",
+ "contributor": "C-Eckleman235",
+ "created": "2026-10-28T20:12:09+00:00",
+ "recipe": {
+  "toolchain_commit": "c704cc2f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N5986_neg/2026-10-28-C-Eckleman235-85b72d7a.tests.json"
+ },
+ "label": "' quite' as a degree intensifier before an adjective or noun",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N5986_neg/2026-10-28-C-Eckleman235-85b72d7a.tests.json",
+   "prereg_commit": "c704cc2f",
+   "author": "C-Eckleman235",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.806,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.829,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.722,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.93,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.815,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.668,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.805,
+     "peak": " quite"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.864,
+     "peak": " quite"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": " confusing"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " decent"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " different"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " bus"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " still"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.81,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "bands",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c704cc2f",
+  "minutes": 7,
+  "batch_size": 25,
+  "dtype": "float16"
+ },
+ "short": "' quite' as degree intensifier",
+ "unit_kind": "lexical",
+ "confidence": 0.85,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L2/N6893- (zeroing this neuron removes 0.86 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: All four probe fire sentences scored 0.80 to 0.94 and all four same-frame near misses stayed under 0.01, including 'very' and 'still' as controls, so the token and its degree sense hold. Band samples also show ' quite' in degree uses, so the sense is consistent; the test is the bare word in a degree slot, not the only sense of quite, which I did not probe.",
+ "roles": [
+  "feeds bonsai1/L2/N6893-"
+ ],
+ "selection": "step-out from bonsai1/L2/N6893- (10x queue, model pilot: haiku)",
+ "trigger": {
+  "words": [
+   "quite"
+  ]
+ }
+}

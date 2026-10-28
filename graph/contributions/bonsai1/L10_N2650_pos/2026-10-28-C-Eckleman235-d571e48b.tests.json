@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-d571e48b",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N2650+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:56+00:00",
+ "selection": "step-in from bonsai1/L9/N268- (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L10/N2650",
+   "pole": "+",
+   "label": "UK public-institution names (weak, broad; no clean trigger found)",
+   "fire": [
+    "The Office for Budget Responsibility revised its growth forecast on Tuesday.",
+    "The Competition and Markets Authority opened a probe into the supermarket merger.",
+    "Ofsted rated the secondary school as requires improvement.",
+    "The Court of Appeal upheld the ruling on housing benefit.",
+    "Parliament's Public Accounts Committee criticised the rail contracts.",
+    "The Crown Prosecution Service reviewed the case files last month.",
+    "The Home Office published new visa figures for students.",
+    "The National Health Service trust announced a new cancer unit in Leeds."
+   ],
+   "quiet": [
+    "The Bureau of Labor Statistics revised its jobs forecast on Tuesday.",
+    "The Federal Trade Commission opened a probe into the supermarket merger.",
+    "The school inspectors rated the local high school as needing support.",
+    "The appeals panel upheld the ruling on housing benefit.",
+    "The city council committee criticised the bus contracts.",
+    "The prosecutor reviewed the case files last month.",
+    "The immigration office published new visa figures for students.",
+    "The hospital district announced a new cancer unit in Leeds."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "reads bonsai1/L9/N268-"
+ ],
+ "short": "UK institution names, weak and broad",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole reads the held pole bonsai1/L9/N268- (zeroing the anchor removes 1.00 of this pole's activation), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes showed no separation: the institution sentences peaked at 0.09 to 0.14 and the non-UK or non-institution near misses reached 0.05 to 0.13. The card's 6.6 percent broad coverage suggests a weak, dense-like unit, so the test is recorded as a likely failure rather than a confirmed UK institution label."
+}

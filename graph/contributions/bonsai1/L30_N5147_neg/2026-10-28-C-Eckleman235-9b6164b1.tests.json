@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-28-C-Eckleman235-9b6164b1",
+ "contributor": "C-Eckleman235",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N5147-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T20:04:54+00:00",
+ "selection": "step-out from bonsai1/L34/N1406+ (10x queue, model pilot: haiku)",
+ "neighbours": [
+  {
+   "unit": "L30/N5147",
+   "pole": "-",
+   "label": "the 'inv' piece of invited/uninvited (invitation sense)",
+   "fire": [
+    "She was invited to speak at the regional conference.",
+    "Every member of the team was invited to the awards dinner.",
+    "The uninvited reporters waited outside the gate.",
+    "He felt uninvited at the family reunion.",
+    "Students not invited to the event stayed in class.",
+    "I was never invited, yet I still showed up at the party.",
+    "Two neighbours were invited to judge the pie contest.",
+    "The uninvited guest brought a case of cider."
+   ],
+   "quiet": [
+    "She was asked to speak at the regional conference.",
+    "Every member of the team got a seat at the awards dinner.",
+    "The unwelcome reporters waited outside the gate.",
+    "He felt out of place at the family reunion.",
+    "Students who missed the event stayed in class.",
+    "I was never asked, yet I still showed up at the party.",
+    "Two neighbours were picked to judge the pie contest.",
+    "The unexpected guest brought a case of cider."
+   ]
+  }
+ ],
+ "methods": {
+  "agent": "claude-code haiku-5.5 (subagent; Opus orchestration)",
+  "screens": [
+   "card",
+   "bands",
+   "probe"
+  ]
+ },
+ "roles": [
+  "feeds bonsai1/L34/N1406+"
+ ],
+ "short": "'inv' of invited/uninvited",
+ "trigger": {
+  "words": [
+   "invited",
+   "uninvited"
+  ]
+ },
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Model pilot (haiku arm; the same pole is tested independently by the other arm, pairing disclosed): this pole feeds the held pole bonsai1/L34/N1406+ (zeroing this neuron removes 0.65 of the anchor's peak), from a batched edge measurement with 8 same-layer placebos. Label and all 16 sentences written by the Haiku 5.5 labeller from a packet (card + all-pole band samples + the edge hint) and one probe round of 8 sentences (none reused). An Opus gate checked rule-level items only and edited nothing. Labeller's note: Probes were partial: 'invited' (0.23) and 'uninvited' (0.42) fired, but 'Invaders' (0.21) and 'invitations' (0.14) stayed under 0.3, so the piece is tied to the invited words rather than all inv- words. The meaning-only near misses (unwanted, asked, picked) stayed under 0.07, which supports a word-level label, but the set is small and the label should be read as a token-level partial."
+}
