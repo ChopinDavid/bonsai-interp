@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-291cad88",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N6050-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T22:29:26+00:00",
+ "recipe": {
+  "toolchain_commit": "d23155d0",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N6050_neg/2026-10-28-ChopinDavid-291cad88.tests.json"
+ },
+ "label": "the varying token of a parallel repeated construction: the second member that mirrors an earlier one (rsa_key/dsa_key, _fw/_bw, goals/assists, X, Y, Z); the same token without a mirrored predecessor stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N6050_neg/2026-10-28-ChopinDavid-291cad88.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.274,
+     "peak": " assists"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.026,
+     "peak": "pts"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.028,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.032,
+     "peak": ".hidden"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.037,
+     "peak": " rebounds"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.052,
+     "peak": "y"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.032,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.037,
+     "peak": " interceptions"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.022,
+     "peak": " winter"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": "pts"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": "_path"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": ".hidden"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " flat"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.035,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d23155d0",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "second member of a parallel pair (dsa after rsa, _bw after _fw)",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card peaks: ' d' in 'dsa_key' after an identical rsa_key line (-20.0), '_bw' after '_fw', '_vals', ' assists' after goals, ' y =' after x, ' Z' in 'X, Y, Z', ' j' in nested for. Probe: '4 goals and 5 assists' 0.290, 'X, Y, Z = pts.T' 0.226; tuple 'header, body' 0.026, nested for i/j 0.019, plain assignments 0.012-0.018. Guess-level; weak and mostly in code.",
+ "selection": "random draw"
+}
