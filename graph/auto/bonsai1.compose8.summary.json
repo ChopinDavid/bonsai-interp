@@ -1,0 +1,105 @@
+{
+ "protocol": "compose@8",
+ "kind": "cover",
+ "scored": "2026-10-28T21:43:33+00:00",
+ "toolchain_commit": "370f9844",
+ "prereg_commit": "370f9844c0de",
+ "poles_tested": 7215,
+ "poles_assigned": 6353,
+ "part_tests": 7215,
+ "parts_held": 6353,
+ "placebo_tests": 7207,
+ "placebo_held": 0,
+ "breakdown": {
+  "all": {
+   "poles": 7215,
+   "assigned": 6353,
+   "part_tests": 7215,
+   "parts_held": 6353
+  },
+  "parts 1": {
+   "poles": 7215,
+   "assigned": 6353,
+   "part_tests": 7215,
+   "parts_held": 6353
+  },
+  "band 0-5": {
+   "poles": 4574,
+   "assigned": 4096,
+   "part_tests": 4574,
+   "parts_held": 4096
+  },
+  "band 24-29": {
+   "poles": 1093,
+   "assigned": 924,
+   "part_tests": 1093,
+   "parts_held": 924
+  },
+  "band 6-11": {
+   "poles": 669,
+   "assigned": 585,
+   "part_tests": 669,
+   "parts_held": 585
+  },
+  "band 18-23": {
+   "poles": 704,
+   "assigned": 638,
+   "part_tests": 704,
+   "parts_held": 638
+  },
+  "band 30-35": {
+   "poles": 157,
+   "assigned": 98,
+   "part_tests": 157,
+   "parts_held": 98
+  },
+  "band 12-17": {
+   "poles": 18,
+   "assigned": 12,
+   "part_tests": 18,
+   "parts_held": 12
+  }
+ },
+ "assigned_by_layer": [
+  1252,
+  567,
+  392,
+  853,
+  640,
+  392,
+  135,
+  149,
+  255,
+  28,
+  14,
+  4,
+  6,
+  0,
+  1,
+  0,
+  2,
+  3,
+  4,
+  15,
+  33,
+  113,
+  248,
+  225,
+  205,
+  228,
+  169,
+  125,
+  117,
+  80,
+  41,
+  9,
+  9,
+  6,
+  15,
+  18
+ ],
+ "results_file": "bonsai1.compose8.results.jsonl.gz",
+ "results_sha256": "6f449cae92806ce6e070c21cd58c676c4de75f4a4f8e4b2436f951055b605d58",
+ "coverage_file": "bonsai1.compose8.coverage.jsonl.gz",
+ "tests_sha256": "81dc9faba17df5862a1d787dacd39b372890cd003abb3e00b78cce64355e11d9"
+}
