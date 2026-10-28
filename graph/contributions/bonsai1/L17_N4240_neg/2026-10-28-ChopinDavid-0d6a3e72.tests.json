@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-0d6a3e72",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N4240-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N4240",
+   "pole": "-",
+   "label": "the ordinal suffix of a cumulative milestone count (his 3,000th career hit, her 40th goal of the season); position ordinals and plain counts in the same sports frames stay low",
+   "fire": [
+    "On Tuesday night the veteran centre scored his 600th career goal against Boston.",
+    "With a single to left field she collected her 2,000th hit in the majors.",
+    "The coach celebrated his 500th win with the club after a narrow victory.",
+    "Late in the match the striker netted his 30th league goal of the season.",
+    "The pitcher recorded his 3,500th strikeout in the second inning.",
+    "That evening the quarterback threw his 400th touchdown pass of his career.",
+    "The referee took charge of his 1,000th professional match last weekend.",
+    "With the putt she claimed her 50th tournament victory on the tour."
+   ],
+   "quiet": [
+    "On Tuesday night the veteran centre scored a late goal against Boston.",
+    "With a single to left field she drove in the winning run in the ninth.",
+    "The coach celebrated a narrow win with the club after a tense evening.",
+    "Late in the match the striker netted a goal from the edge of the box.",
+    "The pitcher recorded a strikeout in the second inning.",
+    "That evening the quarterback threw a long touchdown pass in the third quarter.",
+    "The referee took charge of the cup final last weekend.",
+    "The tournament ends on the 14th of June with a gala dinner."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on 'th' of the milestone ordinal; rewrites without a running count below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "ordinal of a cumulative milestone count (500th goal)",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Broad pole (1.0% of tokens). Card peak '3,320th career hit' (-13.69), '40 buts cette saison', 'one-half of all comet discoveries', 'every evening'. Probe: '3,000th career home run' 0.698, '40th goal of the season' 0.350, 'half of all' 0.240; 'in the seventh inning' (position ordinal) 0.035, 'scored a goal' 0.034."
+}

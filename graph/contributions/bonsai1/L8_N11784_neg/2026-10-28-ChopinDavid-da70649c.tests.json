@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-da70649c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N11784-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N11784",
+   "pole": "-",
+   "label": "a split abstract noun naming the scope or attainment of something in formal non-English text: 'ere' of German -bereich compounds and Russian 'достиж-' (achievement); other nouns in the same sentences stay low",
+   "fire": [
+    "Die Kommission hat den Geltungsbereich der neuen Verordnung deutlich eingeschränkt.",
+    "Учёные представили последние достижения в области генетики растений.",
+    "Der Aufgabenbereich der Abteilung umfasst Planung und Einkauf.",
+    "Конференция была посвящена достижениям отечественной медицины за десять лет.",
+    "Im Anwendungsbereich des Gesetzes gelten besondere Fristen für Unternehmen.",
+    "Главные достижения команды в этом сезоне связаны с новым тренером.",
+    "Das Gericht prüfte, ob der Fall in den Geltungsbereich des Vertrags fällt.",
+    "Министр рассказал о достижениях региона в строительстве дорог."
+   ],
+   "quiet": [
+    "Die Kommission hat den Text der neuen Verordnung deutlich eingeschränkt.",
+    "Учёные представили последние новости в области генетики растений.",
+    "Der Leiter der Abteilung kümmert sich um Planung und Einkauf.",
+    "Конференция была посвящена проблемам отечественной медицины за десять лет.",
+    "Im Rahmen des Gesetzes gelten besondere Fristen für Unternehmen.",
+    "Главные трудности команды в этом сезоне связаны с новым тренером.",
+    "Das Gericht prüfte, ob der Fall unter die Regeln des Vertrags fällt.",
+    "Министр рассказал о планах региона в строительстве дорог."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0 on the piece; same sentences with other nouns below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'-bereich' (scope) / 'достиж-' (achievement) noun pieces",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Weak pole (max 4.81), broad 0.7%. Card: ' достиж', 'ere' of Anwendungsbereich x2, Arabic البعد, ' aspect', ' court'. Probe: 'Anwendungsbereich der Richtlinie' 1.078, 'революционные достижения' 0.711, 'either aspect of' 0.358, but 'either of his books' 0.488 (leak at ' his'), 'scope of the directive' 0.060. English is unreliable, so the test stays in German and Russian."
+}

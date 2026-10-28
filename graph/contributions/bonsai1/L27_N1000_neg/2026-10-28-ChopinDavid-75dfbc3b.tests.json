@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-75dfbc3b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N1000-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N1000",
+   "pole": "-",
+   "label": "references to the research literature in biomedical prose: 'recent' studies/evidence and citation endings; the same word in everyday prose stays low",
+   "fire": [
+    "The mechanism is still debated, but recent work in zebrafish points to a role for retinoic acid.",
+    "Inflammation in the gut is common in these patients. Recent findings link it to altered microbiota.",
+    "This view is supported by recent experiments showing that the channel opens under stretch.",
+    "Several groups have measured the effect, and a recent meta-analysis confirmed a modest benefit.",
+    "Earlier models ignored the cytoskeleton. More recent studies show that actin guides vesicle transport.",
+    "The receptor was thought to be inactive in adults, yet recent evidence from mouse knockouts suggests otherwise.",
+    "Mitochondrial fission is tightly regulated, and recent reports implicate Drp1 phosphorylation.",
+    "Neuronal migration depends on reelin signalling, as recent imaging studies of the cortex have shown."
+   ],
+   "quiet": [
+    "The plot is still debated, but recent episodes of the show point to a twist in the final season.",
+    "Traffic in the city is common at rush hour. Recent roadworks have made it worse.",
+    "This view is supported by her recent holiday photos showing the beach under grey skies.",
+    "Several friends have tried the cafe, and a recent visit confirmed the coffee is good.",
+    "Earlier phones had small screens. More recent models are larger and heavier.",
+    "The shop was thought to be closed, yet a recent sign in the window suggests otherwise.",
+    "House prices are rising, and recent reports from estate agents mention long queues.",
+    "The garden depends on regular watering, as the recent dry weather has shown."
+   ]
+  }
+ ],
+ "predictions": "fire 0.12-0.25 on 'recent' or citation tokens in biology writing; everyday 'recent' below 0.07",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'recent' research / citation context in biomedical prose",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card: ' recent' x5, ' Recent' x2, '.' x6 at citation ends, all in biology/medicine writing. Probe: 'from recent studies of mitochondrial transport' 0.159, 'In their recent study' 0.119, 'Recent evidence suggests' 0.119, reference entry 0.173; 'older studies' 0.071, 'My recent trip' 0.066, 'Due to recent rain' 0.013. Weak: probes peak below 0.2 of max, so this test may fail on the median."
+}

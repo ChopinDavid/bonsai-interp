@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-b721c577",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N9928-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N9928",
+   "pole": "-",
+   "label": "positions in corporate financial-results text where an earnings metric comes next (revenue and [earnings], [net] income, EPS were): the pole predicts net/income/earnings; company news without a results frame stays low",
+   "fire": [
+    "The retailer topped analyst forecasts for sales and profit in the third quarter.",
+    "Diluted earnings per share rose to 1.12 dollars from 0.94 dollars a year earlier.",
+    "For the full year the group posted net income of 2.3 billion euros.",
+    "Quarterly revenue climbed 8 percent, while operating income was flat.",
+    "The insurer reported a net loss of 45 million pounds for the half year.",
+    "Adjusted EBITDA margin widened to 21 percent as costs fell.",
+    "Shares jumped after the chipmaker said net profit doubled in the quarter.",
+    "The airline's quarterly results showed earnings before tax of 310 million dollars."
+   ],
+   "quiet": [
+    "The retailer opened forty new stores across the north in the third quarter.",
+    "The company moved its headquarters to Denver from Chicago a year earlier.",
+    "For the full year the group hired 2,300 new engineers in Europe.",
+    "The new store layout was praised by shoppers, while parking was a problem.",
+    "The insurer appointed a new chief executive for the half year.",
+    "The product launch was delayed to the spring as tests continued.",
+    "Shares of the chipmaker were added to the index in the quarter.",
+    "The airline's new route connects Lisbon with Boston three times a week."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.9 in results frames; company news without results below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot before an earnings metric in results text",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' net' x4, ' and' x3, ' a' x3 in earnings releases; the opposite pole suppresses ' net', ' EPS', ' income', ' earnings'. Probe: 'revenue and earnings' 0.968, 'Earnings per share were' 0.414, 'net income divided' 0.297, 'reported a net profit' 0.259; 'opened a new branch' 0.004, 'museum reported a sharp rise' 0.025. Leak: 'beat the consensus estimate for attendance' 0.413 (the frame alone sets up the prediction)."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-8626bee5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3977+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3977",
+   "pole": "+",
+   "label": "the first, word-initial piece of a rare Latinate word that the tokenizer splits (' atroc'|ious, ' Prov'|ost, ' alb'|opictus, ' obl'|anceolate); common single-token synonyms in the same slot stay low",
+   "fire": [
+    "Witnesses described the conditions in the camp as atrocious and inhumane.",
+    "After the ceremony the guests were greeted by the Provost and two deans.",
+    "The upper leaves are oblanceolate, narrowing gradually toward the stem.",
+    "Local health officers are tracking the spread of Aedes albopictus this summer.",
+    "Critics called the referee's decision atrocious and demanded a review.",
+    "Every summer the family rents a small farmhouse in rural Provence.",
+    "The lower petals are obovate and the bracts oblanceolate with fine hairs.",
+    "Samples of Aedes albopictus were collected from tyres near the port."
+   ],
+   "quiet": [
+    "Witnesses described the conditions in the camp as terrible and inhumane.",
+    "After the ceremony the guests were greeted by the president and two deans.",
+    "The upper leaves are narrow, getting thinner gradually toward the stem.",
+    "Local health officers are tracking the spread of the tiger mosquito this summer.",
+    "Critics called the referee's decision awful and demanded a review.",
+    "Every summer the family rents a small farmhouse in rural France.",
+    "The lower petals are round and the bracts long with fine hairs.",
+    "Samples of the mosquito were collected from tyres near the port."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.35 on the split first piece; single-token synonyms below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first piece of a split rare Latinate word (atroc-, Prov-, obl-)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Tiny pole (max 2.23, gate-closed echo regime dominates). Card peaks ' Prov' x4, ' atroc' x3, ' alb' x2, ' obl', ' Proc', ' Conv'. Probe: 'Aedes albopictus' 0.304, 'oblanceolate' 0.287, 'atrocious' 0.277, 'Provost' 0.251; 'terrible' 0.051, 'Dean' 0.058, single-token 'procurement' 0.087. Low confidence: weak unit, label is about split stems."
+}

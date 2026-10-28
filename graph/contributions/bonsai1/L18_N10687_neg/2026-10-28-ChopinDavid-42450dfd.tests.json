@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-42450dfd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N10687-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N10687",
+   "pole": "-",
+   "label": "the end of a narrative clause reporting a character's doubt, distrust or unimpressed reaction (she was unimpressed. / doesn't trust James,); the same narrative with a trusting or pleased reaction, or a question, stays low",
+   "fire": [
+    "Tom listened to the excuse in silence. He didn't believe a word of it. Then he turned away.",
+    "Lena looked at the painting for a long time. She was not impressed. \"Is that all?\" she asked.",
+    "Marcus doesn't trust his new partner, but he needs the money too badly to quit.",
+    "The old man read the letter twice. He was thoroughly unconvinced. Outside, the rain kept falling.",
+    "When the boy promised to pay her back, Rosa was sceptical. She had heard it all before.",
+    "Ellen watched the salesman demonstrate the blender. She remained doubtful. It looked cheap.",
+    "Jake had heard the rumour from his cousin. He was suspicious of it, and said so at dinner.",
+    "The captain studied the map they had bought. He was utterly bewildered. Nothing matched the coast."
+   ],
+   "quiet": [
+    "Tom listened to the plan in silence. He liked every word of it. Then he turned away.",
+    "Lena looked at the painting for a long time. She was moved. Is that a real Vermeer?",
+    "Marcus admires his new partner, and he plans to stay with the firm for years.",
+    "The old man read the letter twice. He was very pleased. Outside, the rain kept falling.",
+    "When the boy promised to pay her back, Rosa smiled warmly and gave him the money.",
+    "Ellen watched the salesman demonstrate the blender. She bought two. It looked solid.",
+    "Jake had heard the news from his cousin. He was happy about it, and said so at dinner.",
+    "The captain studied the map they had bought. He nodded with approval. Everything matched the coast."
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.3 at the clause-final punctuation; trusting/pleased rewrites below 0.12",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "clause end after a character's doubtful/unimpressed reaction",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card peaks are clause-final punctuation in fiction: 'She was unimpressed.', 'Abby doesn't trust James,', 'Bet was completely mystified', 'merely excuses for his abrupt departure.', '\"Very true,\" said Henry'. Probe: 'doesn't trust James,' 0.229, 'She was unimpressed.' 0.199, statements with 'said' 0.13; question versions 0.031-0.087, report prose 0.022. Guess-level; weak."
+}

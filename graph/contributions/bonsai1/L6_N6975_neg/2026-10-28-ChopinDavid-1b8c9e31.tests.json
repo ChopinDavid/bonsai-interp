@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-1b8c9e31",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N6975-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N6975",
+   "pole": "-",
+   "label": "the masculine/neuter genitive ending of a German possessive determiner when the tokenizer splits it off (Ih|res, de|ines, se|ines, me|ines); feminine/plural -er forms of the same possessives stay low",
+   "fire": [
+    "Bitte prüfen Sie vor der Abreise den Zustand Ihres Mietwagens sorgfältig.",
+    "Der Arzt fragte nach der Dauer Ihres Aufenthalts in der Klinik.",
+    "Ich habe die Fotos deines Urlaubs am Meer endlich angeschaut.",
+    "Er erzählte stolz von den Erfolgen seines jüngsten Sohnes.",
+    "Die Sanierung meines alten Hauses kostet mehr als erwartet.",
+    "Wir bitten um die Angabe Ihres Geburtsdatums im Formular.",
+    "Die Lehrerin lobte die Qualität deines letzten Aufsatzes sehr.",
+    "Nach dem Tod seines Vaters übernahm er den kleinen Betrieb."
+   ],
+   "quiet": [
+    "Bitte prüfen Sie vor der Abreise den Zustand Ihrer Mietwagen sorgfältig.",
+    "Der Arzt fragte nach der Dauer Ihrer Behandlung in der Klinik.",
+    "Ich habe die Fotos deiner Reise ans Meer endlich angeschaut.",
+    "Er erzählte stolz von den Erfolgen seiner jüngsten Tochter.",
+    "Die Sanierung meiner alten Wohnung kostet mehr als erwartet.",
+    "Wir bitten um die Angabe Ihrer Adresse im Formular.",
+    "Die Lehrerin lobte die Qualität deiner letzten Arbeit sehr.",
+    "Nach dem Tod seiner Mutter übernahm er den kleinen Betrieb."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on the split -res/-ines ending; Ihrer/deiner/seiner rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German possessive genitive -es ending (Ih|res, de|ines)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.65,
+ "notes": "Card: 'res' x6, 'ines' x5, 'ischen' x3, 'es' x2, all genitive possessive/adjective endings. Probe: 'Nutzung Ihres Kontos' 0.774, 'Farbe deines neuen Fahrrads' 0.682, 'des politischen' 0.321, 'unseres Daches' 0.281; feminine 'Ihrer Karte' 0.035, 'unserer Dächer' 0.029, English 0.008."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-75dfbc3b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N1000-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T22:29:57+00:00",
+ "recipe": {
+  "toolchain_commit": "d23155d0",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N1000_neg/2026-10-28-ChopinDavid-75dfbc3b.tests.json"
+ },
+ "label": "references to the research literature in biomedical prose: 'recent' studies/evidence and citation endings; the same word in everyday prose stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N1000_neg/2026-10-28-ChopinDavid-75dfbc3b.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.342,
+     "peak": " recent"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.495,
+     "peak": " Recent"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.099,
+     "peak": " recent"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.129,
+     "peak": " recent"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.222,
+     "peak": " recent"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.448,
+     "peak": " recent"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.537,
+     "peak": " recent"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.566,
+     "peak": " recent"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.207,
+     "peak": " recent"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": "Traffic"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.073,
+     "peak": " recent"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.092,
+     "peak": " recent"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": " larger"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.041,
+     "peak": " recent"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " reports"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " shown"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.395,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d23155d0",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'recent' research / citation context in biomedical prose",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card: ' recent' x5, ' Recent' x2, '.' x6 at citation ends, all in biology/medicine writing. Probe: 'from recent studies of mitochondrial transport' 0.159, 'In their recent study' 0.119, 'Recent evidence suggests' 0.119, reference entry 0.173; 'older studies' 0.071, 'My recent trip' 0.066, 'Due to recent rain' 0.013. Weak: probes peak below 0.2 of max, so this test may fail on the median.",
+ "selection": "random draw"
+}

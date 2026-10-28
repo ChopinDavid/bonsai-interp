@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-cf65af09",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N12149+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N12149",
+   "pole": "+",
+   "label": "word pieces of a few rare proper names split by the tokenizer: 'appe' of the Python framework name frappe in code, and 'iping' of Taiping; the iced drink 'frappe' in prose and similar code with other module names stay low",
+   "fire": [
+    "import frappe\nfrom frappe import _\n\ndef execute(filters=None):\n    rows = frappe.get_all('Sales Invoice', fields=['name'])\n    return rows",
+    "def validate(self):\n    if not self.customer:\n        frappe.throw(_('Customer is required'))",
+    "Hong Xiuquan proclaimed himself king and led the Taiping armies toward Nanjing.",
+    "@frappe.whitelist()\ndef get_balance(account):\n    return frappe.db.sql('select sum(debit) from tabGL')",
+    "def on_submit(self):\n    doc = frappe.get_doc('Stock Entry', self.stock_entry)\n    doc.cancel()",
+    "Millions died during the Taiping uprising of the mid-nineteenth century.",
+    "def get_context(context):\n    context.items = frappe.get_list('Item', limit=20)\n    return context",
+    "Western observers in Shanghai watched the Taiping forces with growing alarm."
+   ],
+   "quiet": [
+    "import django\nfrom django.utils.translation import gettext as _\n\ndef execute(filters=None):\n    rows = Invoice.objects.values('name')\n    return rows",
+    "def validate(self):\n    if not self.customer:\n        raise ValueError(_('Customer is required'))",
+    "Sun Yat-sen proclaimed a republic and led the revolutionary armies toward Nanjing.",
+    "@app.route('/balance')\ndef get_balance(account):\n    return db.session.execute('select sum(debit) from gl')",
+    "def on_submit(self):\n    doc = self.get_doc('Stock Entry', self.stock_entry)\n    doc.cancel()",
+    "Millions died during the Boxer uprising at the end of the nineteenth century.",
+    "We stopped for a mocha frappe and a slice of cake before the train.",
+    "Western observers in Shanghai watched the Boxer forces with growing alarm."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.7 on fr|appe in code and Ta|iping; django/self rewrites and the drink below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'appe' of frappe in code; 'iping' of Taiping",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: 'appe' x13 (all frappe ERPNext code), 'iping' (Taiping, top at 25.5), D&C and Nauvoo (Mormon scripture). Probe: Taiping 0.698, frappe.whitelist code 0.329, frappe.db.get_value 0.292, D&C 0.138; django code 0.013, self.db 0.022, 'iced frappe' 0.015, Boxer Rebellion 0.052. A list, not one distinction: the shared feature is a rare-name piece."
+}

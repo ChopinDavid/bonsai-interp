@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-8626bee5",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3977+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T22:29:44+00:00",
+ "recipe": {
+  "toolchain_commit": "d23155d0",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N3977_pos/2026-10-28-ChopinDavid-8626bee5.tests.json"
+ },
+ "label": "the first, word-initial piece of a rare Latinate word that the tokenizer splits (' atroc'|ious, ' Prov'|ost, ' alb'|opictus, ' obl'|anceolate); common single-token synonyms in the same slot stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3977_pos/2026-10-28-ChopinDavid-8626bee5.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.302,
+     "peak": " atroc"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.263,
+     "peak": " Prov"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.238,
+     "peak": " obl"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.298,
+     "peak": " alb"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.288,
+     "peak": " atroc"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.268,
+     "peak": " Prov"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.331,
+     "peak": " obl"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.291,
+     "peak": " alb"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.066,
+     "peak": "ane"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.049,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.051,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.053,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.054,
+     "peak": " awful"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.046,
+     "peak": " farmhouse"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.069,
+     "peak": " br"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.05,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.289,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d23155d0",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "first piece of a split rare Latinate word (atroc-, Prov-, obl-)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Tiny pole (max 2.23, gate-closed echo regime dominates). Card peaks ' Prov' x4, ' atroc' x3, ' alb' x2, ' obl', ' Proc', ' Conv'. Probe: 'Aedes albopictus' 0.304, 'oblanceolate' 0.287, 'atrocious' 0.277, 'Provost' 0.251; 'terrible' 0.051, 'Dean' 0.058, single-token 'procurement' 0.087. Low confidence: weak unit, label is about split stems.",
+ "selection": "random draw"
+}

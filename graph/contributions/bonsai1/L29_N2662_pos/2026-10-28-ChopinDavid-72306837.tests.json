@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-72306837",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N2662+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N2662",
+   "pole": "+",
+   "label": "masculine plural human reference in Arabic (the relative الذين, plural verbs like كانوا, plural nouns like الرجال): the plural side of a number-agreement distinction whose other pole (feminine/singular ها, التي) promotes English is/has; singular counterparts stay lower",
+   "fire": [
+    "أكد الوزير أن العمال الذين أصيبوا في الحادث يتلقون العلاج الآن.",
+    "وشكر رئيس النادي اللاعبين الذين ساهموا في الفوز بالبطولة.",
+    "يقول الباحثون إن الأطفال الذين ينامون جيدا يتعلمون بسرعة أكبر.",
+    "في القرن الماضي كان الصيادون يخرجون إلى البحر قبل الفجر.",
+    "وأشار التقرير إلى أن المزارعين الذين فقدوا محاصيلهم سيحصلون على تعويض.",
+    "استقبل المستشفى المرضى الذين نقلوا من المدينة المجاورة.",
+    "تحدث المعلم عن الجنود الذين دافعوا عن المدينة في تلك الحرب.",
+    "قالت الشرطة إن الشبان الذين شاركوا في الشجار غادروا المكان."
+   ],
+   "quiet": [
+    "أكد الوزير أن العامل الذي أصيب في الحادث يتلقى العلاج الآن.",
+    "وشكر رئيس النادي اللاعب الذي ساهم في الفوز بالبطولة.",
+    "يقول الباحث إن الطفلة التي تنام جيدا تتعلم بسرعة أكبر.",
+    "في القرن الماضي كان الصياد يخرج إلى البحر قبل الفجر.",
+    "وأشار التقرير إلى أن المزارع الذي فقد محصوله سيحصل على تعويض.",
+    "استقبل المستشفى المريضة التي نقلت من المدينة المجاورة.",
+    "تحدث المعلم عن الجندي الذي دافع عن المدينة في تلك الحرب.",
+    "قالت الشرطة إن الشاب الذي شارك في الشجار غادر المكان."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on الذين / plural forms; singular rewrites (الذي, كان) around 0.1-0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Arabic masculine plural human reference (الذين, كانوا)",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card + pole: ' الذين' x4, 'ين' x3, 'هم' x3, ' كانوا' x2, 'ون' x2. Card - pole: 'ها', ' التي', promotes is/has, suppresses are/were. Probe: 'الطلاب الذين نجحوا' 0.715, 'الرجال يعملون' 0.418, 'كانوا يعيشون' 0.268; singular 'الطالب الذي' 0.196, 'الرجل يعمل' 0.177, feminine 'الطالبة التي' 0.090; leak 'بالطبع' 0.440 (off-distinction)."
+}

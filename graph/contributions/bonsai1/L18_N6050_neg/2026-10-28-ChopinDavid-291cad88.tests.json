@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-291cad88",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N6050-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N6050",
+   "pole": "-",
+   "label": "the varying token of a parallel repeated construction: the second member that mirrors an earlier one (rsa_key/dsa_key, _fw/_bw, goals/assists, X, Y, Z); the same token without a mirrored predecessor stays low",
+   "fire": [
+    "The striker finished the season with 12 goals and 9 assists in all competitions.",
+    "import numpy as np\ncoords = np.load('pts.npy')\nlat, lon, alt = coords.T\nprint(lat.max())",
+    "rsa_path = os.path.join(home, '.ssh', 'id_rsa')\ndsa_path = os.path.join(home, '.ssh', 'id_dsa')",
+    "self.hidden_fw = layer_fw(x)\nself.hidden_bw = layer_bw(x)\nout = concat(self.hidden_fw, self.hidden_bw)",
+    "As a rookie he recorded 31 points and 14 rebounds in the opener.",
+    "x_min = data[:, 0].min()\nx_max = data[:, 0].max()\ny_min = data[:, 1].min()",
+    "train_loss = run(train_loader)\nval_loss = run(val_loader)\nprint(train_loss, val_loss)",
+    "In her final year she logged 40 tackles and 6 interceptions for the club."
+   ],
+   "quiet": [
+    "The striker finished the season with a new contract and a winter injury.",
+    "import numpy as np\ncoords = np.load('pts.npy')\nprint(coords.T.max())",
+    "key_path = os.path.join(home, '.ssh', 'config')\nprint(key_path)",
+    "out = layer(x)\nself.hidden = out\nreturn self.hidden",
+    "As a rookie he signed with the team in the summer before the opener.",
+    "total = data[:, 0].sum()\nprint('total', total)",
+    "loss = run(loader)\nprint('loss', loss)",
+    "In her final year she moved to a larger flat near the club."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on the mirrored member; versions with no preceding parallel item below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second member of a parallel pair (dsa after rsa, _bw after _fw)",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card peaks: ' d' in 'dsa_key' after an identical rsa_key line (-20.0), '_bw' after '_fw', '_vals', ' assists' after goals, ' y =' after x, ' Z' in 'X, Y, Z', ' j' in nested for. Probe: '4 goals and 5 assists' 0.290, 'X, Y, Z = pts.T' 0.226; tuple 'header, body' 0.026, nested for i/j 0.019, plain assignments 0.012-0.018. Guess-level; weak and mostly in code."
+}
