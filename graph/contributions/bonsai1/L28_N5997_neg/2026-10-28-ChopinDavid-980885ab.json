@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-980885ab",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N5997-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T21:29:49+00:00",
+ "recipe": {
+  "toolchain_commit": "d8cb58b2",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N5997_neg/2026-10-28-ChopinDavid-980885ab.tests.json"
+ },
+ "label": "the word that introduces an age or life stage (before/around/over/by + age, year of life), the setup for 'early'/'young'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N5997_neg/2026-10-28-ChopinDavid-980885ab.tests.json",
+   "prereg_commit": "d8cb58b2",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.768,
+     "peak": " before"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.409,
+     "peak": " over"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.224,
+     "peak": " should"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.303,
+     "peak": " about"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.482,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.404,
+     "peak": " second"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.303,
+     "peak": " under"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.242,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " leave"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": "5"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " spring"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.051,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " agreed"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.354,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d8cb58b2",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "lead-in to an age",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'before age three' 0.880, 'over 18 years old' 0.688, 'about the fifth year of life' 0.511, 'around six months of age' 0.497; 'before noon' 0.000, 'around nine' 0.002, 'before the deadline' 0.004. Logit effect promotes ' young', ' early'.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-8f7b9c56",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N4967+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T21:28:55+00:00",
+ "recipe": {
+  "toolchain_commit": "d8cb58b2",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N4967_pos/2026-10-28-ChopinDavid-8f7b9c56.tests.json"
+ },
+ "label": "the comma that separates one author from the next in a reference-list author string (after the initials, before the next surname)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N4967_pos/2026-10-28-ChopinDavid-8f7b9c56.tests.json",
+   "prereg_commit": "d8cb58b2",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.554,
+     "peak": ".,"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.621,
+     "peak": ".,"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.448,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.458,
+     "peak": ".,"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.565,
+     "peak": ".,"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.528,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.603,
+     "peak": ".,"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.602,
+     "peak": ".,"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.079,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.05,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " during"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.027,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": "work"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "amps"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.083,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.559,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d8cb58b2",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "comma between cited authors",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: reference-list entries 0.595, 0.494, 0.716; the same surnames listed in prose 0.086; 'Dr. K. Martin,' in prose 0.165; number lists 0.005.",
+ "selection": "random draw"
+}
