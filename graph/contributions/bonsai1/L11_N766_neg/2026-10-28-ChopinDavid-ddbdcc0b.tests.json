@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-ddbdcc0b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N766-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N766",
+   "pole": "-",
+   "label": "a phrase announcing a list of instances, at the point where the list is about to begin (questions include:, Ways to enter:\\n-); prose that names the same things without announcing a list stays low",
+   "fire": [
+    "The workshop is open to all ages. Topics covered include: knots, sails and safety.",
+    "How to apply:\n- Fill in the online form\n- Attach a short CV",
+    "Popular dishes on the menu include: lentil soup, grilled fish and baklava.",
+    "Things to bring:\n- A water bottle\n- Sturdy shoes",
+    "Interview questions may include: why do you want this job?",
+    "Ways to support the library:\n- Donate books\n- Volunteer on Saturdays",
+    "Common symptoms include: fever, cough and a sore throat.",
+    "To enter the contest:\n- Like our page\n- Tag a friend"
+   ],
+   "quiet": [
+    "The workshop is open to all ages and covers knots, sails and safety.",
+    "You can apply by filling in the online form and attaching a short CV.",
+    "The lentil soup on the menu is popular, and so is the grilled fish.",
+    "Please bring a water bottle and sturdy shoes on the day.",
+    "The interviewer asked why I wanted this job.",
+    "You can support the library by donating books on Saturdays.",
+    "She had a fever, a cough and a sore throat last week.",
+    "He entered the contest by liking the page and tagging a friend."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.5 at 'include' or the first list marker; non-list rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "announcement of a list of examples ('include:', 'Ways to X:\\n-')",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Weak pole (max 3.42, gate-closed leak 88%). Card: '.g' x5, ' example' x3, '-' x3, 'weise', 'Sample questions include:\\n', 'Ways to enter:\\n-'. Probe: 'Sample questions include:' 0.521, 'Ways to enter:\\n- Follow' 0.373; but 'For example,' only 0.052, 'e.g.' 0.082, 'например' 0.109, 'beispielsweise' 0.169. So the list announcement, not the word 'example'."
+}

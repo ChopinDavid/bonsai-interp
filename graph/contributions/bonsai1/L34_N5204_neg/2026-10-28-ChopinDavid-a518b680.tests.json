@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a518b680",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5204-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N5204",
+   "pole": "-",
+   "label": "the split first piece ' swe'/' Swe'/' sw' of a sweep-family word (sweeper, Sweeping, swamped): the pole fires where the word is not yet complete and predicts sweep/encompass; whole-token sweep words and other words stay low",
+   "fire": [
+    "This winter the council bought a new street sweeper and a salt truck.",
+    "After the party she grabbed the carpet sweeper and cleaned the hall.",
+    "Weekly tasks:\n- Sweeping the porch and steps\n- Watering the plants",
+    "The robotic floor sweeper finished the kitchen in ten minutes.",
+    "Heavy rain had swamped the low fields along the river by morning.",
+    "Steps for closing the shop:\n- Sweeping the floor behind the counter\n- Locking the till",
+    "The old chimney sweeper climbed onto the roof with his brushes.",
+    "A cordless sweeper is handy for crumbs under the dining table."
+   ],
+   "quiet": [
+    "This winter the council bought a new street cleaner and a salt truck.",
+    "After the party she grabbed the carpet cleaner and cleaned the hall.",
+    "Weekly tasks:\n- Washing the porch and steps\n- Watering the plants",
+    "The robotic floor cleaner finished the kitchen in ten minutes.",
+    "Heavy rain had flooded the low fields along the river by morning.",
+    "Steps for closing the shop:\n- Mopping the floor behind the counter\n- Locking the till",
+    "The old roofer climbed onto the roof with his brushes.",
+    "A cordless vacuum is handy for crumbs under the dining table."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.6 on ' swe'/' Swe'; synonym rewrites and whole-token 'sweeping' below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first piece of a split 'sweep' word (swe|eper, Swe|eping)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: ' swe' x2 (sweeper), ' Swe' (Sweeping), ' sw' (swamped), 'we' (Windswept), Arabic 'تش' of تشمل and 包 of 包羅萬有 (both 'encompass'); the + pole promotes encompass/sweep. Probe: '- Sweeping any loose dirt' 0.585, 'swamped' 0.377, 'take a sweeper' 0.222, 'powers the sweeper' 0.211; whole-token 'sweeping scope' 0.149, 'vacuum' 0.045, 'sweater' 0.010."
+}

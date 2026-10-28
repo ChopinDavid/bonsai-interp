@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e152f342",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N425-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N425",
+   "pole": "-",
+   "label": "the second character of the word for 'sun': 陽 after 太 (Japanese/Chinese 太陽) and Korean 양 after 태 (태양); 陽 in other words and 太 before other characters stay low",
+   "fire": [
+    "朝早く起きると、山の向こうから太陽が昇ってきました。",
+    "夏の太陽はとても強いので、帽子をかぶってください。",
+    "이 지역은 일 년 내내 태양이 강하게 비친다.",
+    "屋根の上に太陽光パネルを設置しました。",
+    "아이들은 해변에서 뜨거운 태양 아래 모래성을 쌓았다.",
+    "這個城市每年有三百天都能看到太陽。",
+    "冬になると太陽が沈むのがずっと早くなります。",
+    "우리는 언덕 위에서 지는 태양을 바라보았다."
+   ],
+   "quiet": [
+    "朝早く起きると、山の向こうから月が昇ってきました。",
+    "夏の日差しはとても強いので、帽子をかぶってください。",
+    "이 지역은 일 년 내내 바람이 강하게 분다.",
+    "屋根の上に新しいアンテナを設置しました。",
+    "아이들은 해변에서 시원한 바람 아래 모래성을 쌓았다.",
+    "這個城市每年有三百天都是晴天。",
+    "冬になると陽気な祭りが町で開かれます。",
+    "우리는 언덕 위에서 지는 노을을 바라보았다."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.9 on 陽/양 after 太/태; 陽気, 太平洋, 月 rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "陽/양 of 'sun' (太陽, 태양)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.7,
+ "notes": "Card: '陽' x7 (all 太陽), '양' x2 (태양), '連' x10 (関連). Probe: '태양은' 0.870, '太陽の光' 0.588, '太陽系' 0.524, '太陽廣場' 0.402, '関連商品' 0.350; '陽気な性格' 0.022, '太平洋' 0.014, '月の光' 0.015, English 'sun' 0.014. '連' also fires; the test is on the sun word."
+}

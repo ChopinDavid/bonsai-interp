@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-08205bfd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N3463+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N3463",
+   "pole": "+",
+   "label": "Portuguese-language material embedded in English text: the '(Portuguese: ...)' gloss and Portuguese word pieces (brasile-iras); the same frames with Spanish, Italian or other glosses stay low",
+   "fire": [
+    "The fortress of Elmina was rebuilt in 1637. Its tower (Portuguese: Torre de Menagem) still stands.",
+    "The harbour city of Porto is known locally for its bridge (Portuguese: Ponte Dom Luís I).",
+    "Among his best-loved pieces is the suite Cirandas brasileiras for solo piano.",
+    "The national anthem of Mozambique (Portuguese: Pátria Amada) was adopted in 2002.",
+    "The old university library of Coimbra (Portuguese: Biblioteca Joanina) is open to visitors.",
+    "She recorded a set of Canções brasileiras with a small string quartet in 1958.",
+    "Cape Verde, officially the Republic of Cabo Verde (Portuguese: República de Cabo Verde), is an island nation.",
+    "The festival closed with the Choros brasileiros, a cycle of dances for guitar and flute."
+   ],
+   "quiet": [
+    "The fortress of Elmina was rebuilt in 1637. Its tower (Dutch: Woontoren) still stands.",
+    "The harbour city of Genoa is known locally for its lighthouse (Italian: Lanterna di Genova).",
+    "Among his best-loved pieces is the suite Danzas españolas for solo piano.",
+    "The national anthem of Paraguay (Spanish: Paraguayos, República o Muerte) was adopted in 1846.",
+    "The old university library of Salamanca (Spanish: Biblioteca General) is open to visitors.",
+    "She recorded a set of Canciones argentinas with a small string quartet in 1958.",
+    "Equatorial Guinea, officially the Republic of Equatorial Guinea (Spanish: República de Guinea Ecuatorial), is a nation.",
+    "The festival closed with the Danses françaises, a cycle of dances for guitar and flute."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 near '(Portuguese:' and Portuguese word pieces; Spanish/other glosses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Portuguese-language gloss or word inside English text",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: Portuguese institutions and glosses (Coimbra '(Portuguese: Sé Velha', 'Bachianas brasileiras', 'Coroa portuguesa', 'República de Angola'). Probe: Coimbra '(Portuguese:' 0.814, 'Bachianas Brasileiras' 0.756, 'Instituto ... Porto' 0.357; Spanish gloss 0.065, Madrid Instituto 0.108, 'Rio de Janeiro in Brazil' 0.099, Oslo 0.002. So the Portuguese language, not Brazil or Iberia as places."
+}

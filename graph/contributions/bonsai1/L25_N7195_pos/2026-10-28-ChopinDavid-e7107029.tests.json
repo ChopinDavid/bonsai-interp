@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e7107029",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N7195+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N7195",
+   "pole": "+",
+   "label": "the preposition after a parent's mention of their child (my daughter is in / pick my son up from / the kids are home from), where school is the expected continuation; the same frames with an adult subject stay low",
+   "fire": [
+    "We moved last spring, and now my son is in a new school near the river.",
+    "Our youngest is in fourth grade this year and loves his teacher.",
+    "On Fridays I leave work early to pick my daughter up from practice.",
+    "Now that both of our girls are in college, the house feels very quiet.",
+    "My twins went back to class on Monday after the long holiday.",
+    "Her son is in kindergarten, so she can only work mornings.",
+    "When the kids are home from school, the kitchen turns into chaos.",
+    "I drop my little boy off at daycare before catching the bus."
+   ],
+   "quiet": [
+    "We moved last spring, and now my brother is in a new office near the river.",
+    "Our manager is in Berlin this week and loves the conference.",
+    "On Fridays I leave work early to pick my car up from the garage.",
+    "Now that both of our tenants are in Spain, the house feels very quiet.",
+    "My colleagues went back to the office on Monday after the long holiday.",
+    "Her husband is in the navy, so she can only travel in summer.",
+    "When the guests are back from the beach, the kitchen turns into chaos.",
+    "I drop my laptop off at the repair shop before catching the bus."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.5 on in/from/to after a child subject, whatever follows; adult-subject rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "preposition after a child subject, predicting school",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' to' x5, ' in' x4, ' from' x3, ' at' x3 after child subjects, mostly before 'school/college'. Probe: 'My daughter is in high school' 0.490 and 'My daughter is in the kitchen' 0.490 (identical: the setup fires, not the destination), 'kids are in college' 0.458, 'pick my son up from school' 0.306; 'engineers are in a meeting' 0.017, 'walked to the station' 0.012."
+}

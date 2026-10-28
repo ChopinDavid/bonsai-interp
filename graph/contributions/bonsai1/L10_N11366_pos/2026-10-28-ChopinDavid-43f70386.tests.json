@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-43f70386",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N11366+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T22:21:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N11366",
+   "pole": "+",
+   "label": "the internal motion of molecules and atoms in physics and chemistry: vibrational and rotational states, bonds vibrating, degrees of freedom; everyday vibration (phones, engines) stays low",
+   "fire": [
+    "When the molecule absorbs infrared light, its carbon-oxygen bond begins vibrating faster.",
+    "At low temperature only the lowest vibrational state of the gas is populated.",
+    "A linear molecule has two rotational degrees of freedom and several vibrational modes.",
+    "The spectrum shows a band of rotational transitions on either side of the vibrational line.",
+    "In a crystal the atoms vibrate about fixed lattice sites, and these vibrations are quantised as phonons.",
+    "Heating the gas excites vibrational modes of the diatomic molecules.",
+    "Each normal mode of water corresponds to a distinct way the atoms vibrate together.",
+    "Raman scattering probes the vibrational energy levels of the sample."
+   ],
+   "quiet": [
+    "When the phone receives a message, its small motor begins vibrating on the desk.",
+    "At low temperature only the lowest shelf of the freezer stays frozen.",
+    "A linear road has two lanes in each direction and several exits.",
+    "The audio track shows a band of noise on either side of the vocal line.",
+    "In a stadium the fans sway about fixed seats, and the chants echo around the stands.",
+    "Heating the pan melts the butter in a few seconds.",
+    "Each member of the choir corresponds to a distinct voice in the song.",
+    "The washing machine shakes loudly during the spin cycle."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.4 on vibration/rotation/quantum-state words in molecular physics; everyday vibration below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "molecular vibration / rotation (degrees of freedom)",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.6,
+ "notes": "Card: ' vibrating' (bonds, 21.6), formaldehyde transitions, ' quantum' x3, ' rotational' x2, 'ibrate', 'atomic', 'degree' of freedom; also insect ' thor'(ax) and ely'tra'. Probe: 'rotational and vibrational energy levels' 1.447, 'set chemical bonds vibrating' 0.790, 'Particles in solids vibrate' 0.312, 'internal degree of freedom' 0.312, 'diatomic' 0.276; 'phone started vibrating' 0.012, 'bonds breaking' 0.036."
+}
