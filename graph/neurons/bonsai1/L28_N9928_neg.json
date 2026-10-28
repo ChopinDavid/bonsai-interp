@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N9928-",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 9928,
+ "pole": "-",
+ "label": "positions in corporate financial-results text where an earnings metric comes next (revenue and [earnings], [net] income, EPS were): the pole predicts net/income/earnings; company news without a results frame stays low",
+ "short": "slot before an earnings metric in results text",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N9928_neg/2026-10-28-ChopinDavid-b721c577.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.732,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.372,
+     "peak": " per"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.232,
+     "peak": " income"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.627,
+     "peak": " operating"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.121,
+     "peak": " net"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.494,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.455,
+     "peak": " net"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.259,
+     "peak": " earnings"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " Denver"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.029,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " appointed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " added"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " week"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.413,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-b721c577"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-b721c577",
+   "positions in corporate financial-results text where an earnings metric comes next (revenue and [earnings], [net] income, EPS were): the pole predicts net/income/earnings; company news without a results frame stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-b721c577"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

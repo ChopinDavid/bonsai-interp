@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N10687-",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 10687,
+ "pole": "-",
+ "label": "the end of a narrative clause reporting a character's doubt, distrust or unimpressed reaction (she was unimpressed. / doesn't trust James,); the same narrative with a trusting or pleased reaction, or a question, stays low",
+ "short": "clause end after a character's doubtful/unimpressed reaction",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N10687_neg/2026-10-28-ChopinDavid-42450dfd.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.424,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.29,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.306,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.43,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.396,
+     "peak": "ical"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.303,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.849,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.376,
+     "peak": "ered"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.276,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.11,
+     "peak": " looked"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.07,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.203,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.353,
+     "peak": " smiled"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.219,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.387,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.288,
+     "peak": " nodded"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.386,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-28-ChopinDavid-42450dfd"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-42450dfd",
+   "the end of a narrative clause reporting a character's doubt, distrust or unimpressed reaction (she was unimpressed. / doesn't trust James,); the same narrative with a trusting or pleased reaction, or a question, stays low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-42450dfd"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

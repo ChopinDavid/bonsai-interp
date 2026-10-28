@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N3977+",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 3977,
+ "pole": "+",
+ "label": "the first, word-initial piece of a rare Latinate word that the tokenizer splits (' atroc'|ious, ' Prov'|ost, ' alb'|opictus, ' obl'|anceolate); common single-token synonyms in the same slot stay low",
+ "short": "first piece of a split rare Latinate word (atroc-, Prov-, obl-)",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3977_pos/2026-10-28-ChopinDavid-8626bee5.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.302,
+     "peak": " atroc"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.263,
+     "peak": " Prov"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.238,
+     "peak": " obl"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.298,
+     "peak": " alb"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.288,
+     "peak": " atroc"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.268,
+     "peak": " Prov"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.331,
+     "peak": " obl"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.291,
+     "peak": " alb"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.066,
+     "peak": "ane"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.049,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.051,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.053,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.054,
+     "peak": " awful"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.046,
+     "peak": " farmhouse"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.069,
+     "peak": " br"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.05,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.289,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-8626bee5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-8626bee5",
+   "the first, word-initial piece of a rare Latinate word that the tokenizer splits (' atroc'|ious, ' Prov'|ost, ' alb'|opictus, ' obl'|anceolate); common single-token synonyms in the same slot stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-8626bee5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

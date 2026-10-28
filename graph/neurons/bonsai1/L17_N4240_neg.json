@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L17/N4240-",
+ "model": "bonsai1",
+ "layer": 17,
+ "index": 4240,
+ "pole": "-",
+ "label": "the ordinal suffix of a cumulative milestone count (his 3,000th career hit, her 40th goal of the season); position ordinals and plain counts in the same sports frames stay low",
+ "short": "ordinal of a cumulative milestone count (500th goal)",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N4240_neg/2026-10-28-ChopinDavid-0d6a3e72.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.665,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.62,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.693,
+     "peak": " win"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.884,
+     "peak": " goal"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.616,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.641,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.553,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.41,
+     "peak": "th"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.038,
+     "peak": " against"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.049,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.054,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.061,
+     "peak": " edge"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " inning"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.043,
+     "peak": " evening"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.041,
+     "peak": " weekend"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.077,
+     "peak": " "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.631,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-0d6a3e72"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-0d6a3e72",
+   "the ordinal suffix of a cumulative milestone count (his 3,000th career hit, her 40th goal of the season); position ordinals and plain counts in the same sports frames stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-0d6a3e72"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

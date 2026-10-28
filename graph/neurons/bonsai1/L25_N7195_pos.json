@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N7195+",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 7195,
+ "pole": "+",
+ "label": "the preposition after a parent's mention of their child (my daughter is in / pick my son up from / the kids are home from), where school is the expected continuation; the same frames with an adult subject stay low",
+ "short": "preposition after a child subject, predicting school",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N7195_pos/2026-10-28-ChopinDavid-e7107029.tests.json",
+   "prereg_commit": "d23155d0",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.41,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.441,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.504,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.537,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.412,
+     "peak": " after"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.364,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.241,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.437,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.268,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.037,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.17,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.043,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.206,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.091,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.162,
+     "peak": " off"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.424,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-e7107029"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-e7107029",
+   "the preposition after a parent's mention of their child (my daughter is in / pick my son up from / the kids are home from), where school is the expected continuation; the same frames with an adult subject stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-e7107029"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
