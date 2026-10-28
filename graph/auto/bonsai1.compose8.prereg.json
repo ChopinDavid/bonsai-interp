@@ -1,0 +1,15 @@
+{
+ "protocol": "compose@8",
+ "protocol_commit": "de573f8ae18f74080ff4a1c4f4f6c2473cfccf19",
+ "written": "2026-10-28T21:22:32+00:00",
+ "tests_file": "bonsai1.compose8.tests.jsonl.gz",
+ "tests_sha256": "81dc9faba17df5862a1d787dacd39b372890cd003abb3e00b78cce64355e11d9",
+ "select_file": "bonsai1.compose8.select.json.gz",
+ "select_sha256": "2c188523367b90a172104597a8224237bee466c65de36f19ae1c75b7e7fb98fa",
+ "counts": {
+  "items": 6468,
+  "untestable": 635,
+  "poles": 7215,
+  "tests": 7215
+ }
+}
