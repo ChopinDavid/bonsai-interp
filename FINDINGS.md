@@ -1008,3 +1008,16 @@ compose@6 added conditions on the next token and the one after, which the model 
   - " is" or " was" before a passive participle.
 - **Two late class poles:** the next word is a past-tense verb (L34), or a third-person singular verb (L35).
 
+## 2026-10-28: Untested token detectors, and union covers (compose@7)
+
+compose@7 allowed a two-part label ("X where c holds, or Y") with each part tested on its own. **3,663 of 5,518 poles
+were assigned** (0 of 7,267 placebo tests held), which brings the assignment-grade total from 10,379 to about 14,040.
+
+- **Most of the yield is one-part word sets: 3,616 of 3,694 held.** 3,600 of the assigned poles had no earlier result
+  from any deterministic pass: early-layer token detectors (3,284 in L0–5) that the condition-based rounds never
+  reached.
+- **Two-part covers rarely hold:** 34 of 1,778 poles had both parts hold. Examples: a spelling with and without its
+  leading space, " line" as a verb or " lining", " else" after a conjunction or " otherwise".
+- **Deep word poles:** 61 fire on the document boundary token; others on " United", " Santa" and "://".
+- **Layers 12–17 again yield almost nothing** (2 assigned).
+

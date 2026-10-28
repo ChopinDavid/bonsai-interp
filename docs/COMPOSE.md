@@ -373,3 +373,46 @@ Anticipation poles are real and mostly deep: two thirds of the holds are in L18�
 prediction-type poles. The phrasal-verb heads show the pattern well. A verb that takes a particle has a pole at
 several depths that fires before the particle arrives. Layers 12–17 again yield 1 hold.
 
+## Round 7 (compose@7): union covers
+
+A label can now have two parts: "X where c holds, or Y" (`bonsai_interp/compose/round7.py`, conditions from
+`conds4.py`).
+- **A part** is a word set alone (the pole fires on these tokens, not on other tokens of the same frequency) or a
+  compose@3 conjunction (these tokens where c holds, not the same tokens elsewhere).
+- **A cover** is one part covering at least half of the pole's sampled strong activations, or two parts that do so
+  together. The two parts have disjoint tokens and at most one is a word set; a single part is preferred when one
+  reaches half.
+- **Assignment:** each part is tested on its own (quick-8+8@2), and the pole is assignment-grade when every part held.
+  Its coverage is the union's.
+
+| | |
+|---|---|
+| Protocol | 79d94d22 |
+| Pre-registration | 3dae0209 |
+| Summary | e0133fad |
+
+The queue held 43,874 poles that no earlier round had assigned or compose@3–6 had tested. 6,000 were selected (4,000
+one-part, 2,000 two-part); 5,518 had every part testable.
+
+- **Assigned: 3,663 of 5,518 poles**, against **0 of 7,267** placebo tests.
+- **One-part covers: 3,629 of 3,740 assigned.** Word sets held 3,616 of 3,694; conjunctions 13 of 46.
+- **Two-part covers: 34 of 1,778 assigned.** Their parts held 640 of 3,556 (word parts 477 of 1,297, conjunction
+  parts 163 of 2,259).
+- **By depth:** L0–5 3,284 (L0 alone 1,482), L6–11 127, L12–17 2, L18–35 250.
+- **3,600 of the 3,663 had no earlier result from any deterministic pass.** They are token detectors that the
+  condition-based rounds never reached, because a word set alone was not in their library.
+- **Deep word poles** include 61 on the document boundary token, and poles on " United", " Santa", " grand", "://"
+  and " absolutely".
+- **Two-part examples:**
+  - a spelling with and without its leading space (" ic" alone, and "ic" after punctuation);
+  - " line" as a verb, or " lining";
+  - " last" as a verb, or " duration";
+  - " else" after a conjunction, or " otherwise" after a determiner.
+
+### Reading
+
+The union format itself adds little: two-part covers rarely hold in both parts (2%), so most poles that need two
+parts to reach half their activations are not described by those two parts. The round's yield comes from the
+one-part word test, which found 3,616 early-layer token detectors that no earlier pass had tested. Layers 12–17 again
+yield almost nothing (2 assigned).
+

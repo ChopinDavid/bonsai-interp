@@ -89,6 +89,7 @@ LIB_SOURCES = {  # every deterministic pass whose per-pole results join the atla
     "compose@4": ROOT / "data" / "compose" / "bonsai1.compose4.results.jsonl.gz",
     "compose@5": ROOT / "data" / "compose" / "bonsai1.compose5.results.jsonl.gz",
     "compose@6": ROOT / "data" / "compose" / "bonsai1.compose6.results.jsonl.gz",
+    "compose@7": ROOT / "data" / "compose" / "bonsai1.compose7.results.jsonl.gz",
 }
 GRAMMAR_KIND = {"sweeplib@3": "grammar", "sweeplib@4": "pos", "sweeplib@5": "code"}  # passes on the grammar engine
 
@@ -99,14 +100,28 @@ def _cover(proto):
 
 
 def _compose3_cov(path):
-    """{(pole, item key): coverage} from compose@3's selection file (beside its results)."""
+    """{(pole, item key): coverage} from compose@3's selection file (beside its results). compose@7's union covers: each
+    part's own coverage, and the union's for every part of a pole whose parts all held (its coverage file)."""
     from bonsai_interp.compose.round3 import _key
+    from bonsai_interp.compose.round7 import _key as _part_key
     sel = Path(str(path).replace(".results.jsonl.gz", ".select.json.gz"))
     if not sel.exists():
         return {}
     with gzip.open(sel, "rt", encoding="utf-8") as f:
         hyps = json.loads(f.readline())["hypotheses"]
-    return {(h["neuron"], _key(h)): h["coverage"] for h in hyps}
+    out = {}
+    for h in hyps:
+        if "parts" in h:
+            out.update({(h["neuron"], _part_key(pt)): pt["coverage"] for pt in h["parts"]})
+        else:
+            out[(h["neuron"], _key(h))] = h["coverage"]
+    cp = Path(str(path).replace(".results.", ".coverage."))
+    if any("parts" in h for h in hyps) and cp.exists():
+        with gzip.open(cp, "rt", encoding="utf-8") as f:
+            for line in f:
+                c = json.loads(line)
+                out.update({(c["neuron"], t["condition"]): c["union_coverage"] for t in c["tests"]})
+    return out
 
 
 def _lib_rows(proto, path):
