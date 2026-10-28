@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-2003ed86",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N4643-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N4643",
+   "pole": "-",
+   "label": "a past participle of describing, citing or mentioning that points back to earlier text (décrits ci-dessus, described above, citadas arriba), predicting 'above'; the same nouns without such a back-pointing participle stay low",
+   "fire": [
+    "Les étapes décrites ci-dessus doivent être suivies dans l'ordre.",
+    "Pour les raisons exposées ci-dessus, nous refusons la proposition.",
+    "Following the procedure described above, the samples were dried.",
+    "Les documents cités ci-dessus sont disponibles en ligne.",
+    "With the settings described earlier, the camera works in low light.",
+    "Les conditions décrites plus haut s'appliquent à tous les clients.",
+    "The examples cited above show how common the error is.",
+    "Selon les critères définis ci-dessus, le projet est éligible."
+   ],
+   "quiet": [
+    "Les étapes de la recette doivent être suivies dans l'ordre.",
+    "Pour plusieurs raisons, nous refusons la proposition.",
+    "Following a long afternoon in the sun, the samples were dried.",
+    "Les documents de la mairie sont disponibles en ligne.",
+    "With a new lens, the camera works in low light.",
+    "Les conditions de vente s'appliquent à tous les clients.",
+    "These three short stories show how common the error is.",
+    "Selon le directeur de l'école, le projet est éligible."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.4 on the participle (French strongest); rewrites without the participle below 0.03",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "back-pointing participle predicting 'above' (décrit ci-dessus)",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: déc|rit ci-dessus, Arabic المذك|ورة, Russian излож|енных, cit|adas arriba, процитирован|ное; + pole promotes ' above', ' aforementioned', '以上', ' выше'. Probe: 'décrits ci-dessus' 0.410, 'method described above' 0.223, 'citadas arriba' 0.091, 'As mentioned above' 0.042 (weak); controls 0.005-0.009."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-0f17fdc6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N10771-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N10771",
+   "pole": "-",
+   "label": "German running text, strongest on list separators and articles in German inventories (Herd, Backofen, ...; einen Tisch, einen Stuhl); English or French translations of the same content stay low",
+   "fire": [
+    "Die Wohnung hat einen Balkon, eine Badewanne, zwei Schlafzimmer und eine Garage.",
+    "Im Bad finden Sie Handtücher, Seife, Föhn und einen großen Spiegel.",
+    "Zum Frühstück gibt es Brot, Butter, Käse, Wurst und frisches Obst.",
+    "Das Ferienhaus bietet einen Garten, einen Grill und einen kleinen Teich.",
+    "Bitte bringen Sie Bettwäsche, Handtücher und Hausschuhe selbst mit.",
+    "Der Laden verkauft Töpfe, Pfannen, Teller und Besteck zu guten Preisen.",
+    "In der Nähe gibt es einen Bäcker, eine Apotheke und einen Supermarkt.",
+    "Die Miete umfasst Strom, Wasser, Heizung und die Nutzung der Sauna."
+   ],
+   "quiet": [
+    "The flat has a balcony, a bathtub, two bedrooms and a garage.",
+    "In the bathroom you will find towels, soap, a hairdryer and a large mirror.",
+    "For breakfast there is bread, butter, cheese, ham and fresh fruit.",
+    "The holiday house offers a garden, a grill and a small pond.",
+    "Please bring your own bed linen, towels and slippers.",
+    "The shop sells pots, pans, plates and cutlery at good prices.",
+    "Nearby there is a bakery, a pharmacy and a supermarket.",
+    "The rent covers electricity, water, heating and use of the sauna."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on German list commas/articles; English and French versions below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German-language text (list commas, articles)",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: German list commas (Töpfen, Handtüchern; Kochplatte, Bettcouch), ' zu', ' und', '-er' inflections. Probe: 'mit Herd, Backofen, Spülmaschine' 0.896, 'einen Schrank, einen Tisch' 0.531, 'Frühstück und' 0.328, 'Wir freuen uns' 0.145; English list 0.058-0.059, English hotel 0.005, French list 0.088, floor 0.135."
+}

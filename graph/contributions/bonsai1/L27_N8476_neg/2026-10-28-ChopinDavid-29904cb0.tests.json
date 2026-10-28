@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-29904cb0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N8476-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N8476",
+   "pole": "-",
+   "label": "' also' opening an alternative-name apposition after a name (X, also known as / also called / also referred to as Y); additive 'also' in other uses stays low",
+   "fire": [
+    "The river Thames, also known as the Isis in Oxford, flows east to London.",
+    "Ibuprofen, also sold as Advil, reduces fever and swelling.",
+    "Mount Everest, also called Chomolungma, lies on the border with Tibet.",
+    "The Great Depression, also referred to as the Slump, began in 1929.",
+    "Mumbai, also known as Bombay, is the capital of Maharashtra.",
+    "Vitamin C, also called ascorbic acid, is found in citrus fruit.",
+    "Saint Nicholas, also known as Nicholas of Myra, was a Greek bishop.",
+    "The Netherlands, also referred to as Holland, is famous for its canals."
+   ],
+   "quiet": [
+    "The river Thames flows east to London and is also crossed by many bridges.",
+    "Ibuprofen reduces fever and is also useful against swelling.",
+    "Climbers on Mount Everest also face strong winds near the summit.",
+    "The Great Depression began in 1929 and also hurt farmers badly.",
+    "Mumbai is the capital of Maharashtra and also a major port.",
+    "Citrus fruit contains vitamin C and also some fibre.",
+    "Nicholas was a Greek bishop who also gave gifts to the poor.",
+    "The Netherlands is famous for its canals and also for its cheese."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on ' also' after a name and comma; additive 'also' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'also' in 'X, also known as Y'",
+ "unit_kind": "context",
+ "confidence": 0.75,
+ "notes": "Card: ' also' x19, 'also' x6, 'Also' x3, nearly all '..., also known as'. Probe: 'Acetaminophen, also called' 0.469, 'Edinburgh, also known as' 0.284, 'Bradford, also referred to as' 0.207; additive 'also sings' 0.012, 'also stopped' 0.009, 'is also used' 0.012, 'known locally as' (no also) 0.037."
+}

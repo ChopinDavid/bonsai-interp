@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-93481efb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N6829-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N6829",
+   "pole": "-",
+   "label": "accusation of wrongdoing in a criminal-justice frame: the charge or illicit item after sentenced/investigated/cracked down (for fraud, synthetic drugs); praise or neutral frames with the same structure stay low",
+   "fire": [
+    "The mayor was jailed for five years for embezzlement and money laundering.",
+    "Customs officers seized a shipment of synthetic opioids at the port.",
+    "The senator was investigated by prosecutors for illegal campaign donations.",
+    "Last week the banker was convicted of fraud and insider trading.",
+    "Police raided the warehouse and arrested three men for drug trafficking.",
+    "The coach was suspended for two seasons for bribing referees.",
+    "Officials vowed to crack down on counterfeit pills sold online.",
+    "The executive faces charges of tax evasion and obstruction of justice."
+   ],
+   "quiet": [
+    "The mayor was honoured for five years of work on public parks.",
+    "Customs officers inspected a shipment of synthetic rubber at the port.",
+    "The senator was thanked by voters for new funding for schools.",
+    "Last week the banker was promoted to head of the London office.",
+    "Volunteers cleaned the warehouse and painted it for the youth club.",
+    "The coach was praised for two seasons of steady improvement.",
+    "Officials vowed to expand free vaccines offered at clinics.",
+    "The executive gave a speech on growth and customer service."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45 inside the charge; praise/neutral rewrites below 0.08",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "criminal charge / illicit-item context",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card peaks: ' for' after 'federal prison' and 'investigated by the Department of Justice', ' synthetic' drugs, ' against' President, Nixon ' had' ordered the break-in, ' than' after villain. Probe: 'cracked down on synthetic drugs' 0.449, 'sentenced ... for bribery and fraud' 0.417, 'investigated by the FBI for illegal wiretapping' 0.261; villain 'than' 0.046 (fails), award/praise rewrites 0.012-0.038, 'synthetic fibers' 0.060."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-55c5779a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N9918+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N9918",
+   "pole": "+",
+   "label": "a predicate that holds something up for regard or attention (considered, discussed as, interesting to note, worthy of mention); plain reporting verbs about the same subjects stay low",
+   "fire": [
+    "Most critics considered the novel her finest work to date.",
+    "It is interesting to see how quickly the town recovered after the flood.",
+    "Especially worthy of praise is the cast's handling of the final scene.",
+    "The board discussed the engineer as a possible chief of operations.",
+    "Scholars have long considered the poem a response to the civil war.",
+    "What is interesting about the fossil is the shape of its jaw.",
+    "Also worthy of note is the low price of the basic model.",
+    "Local papers discussed the coach as the obvious successor to the manager."
+   ],
+   "quiet": [
+    "Most critics read the novel during a single weekend in May.",
+    "After the flood the town rebuilt its bridge and two schools.",
+    "In the final scene the cast walks slowly off the stage.",
+    "The board hired the engineer to repair the cooling system.",
+    "Scholars have long translated the poem into several languages.",
+    "The fossil was found by a farmer near the riverbank.",
+    "The basic model ships with a charger and a short cable.",
+    "Local papers printed the coach's name on the front page."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.45 on the regard predicate; plain-verb rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "regard/noteworthiness predicates (considered, worthy, interesting)",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: ' interesting' x5, ' Consider' x2, ' considered', ' worthy', ' discussed', ' counted' (weak, max 5.06). Probe: 'interesting to note' 0.441, 'worthy of mention' 0.258, 'considered the treaty' 0.247, 'discussed the senator as' 0.208; census 'counted' 0.050, 'wrote about' 0.032, 'printed a photo' 0.081."
+}

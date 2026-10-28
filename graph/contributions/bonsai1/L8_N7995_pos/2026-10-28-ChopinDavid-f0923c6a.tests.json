@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-f0923c6a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N7995+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N7995",
+   "pole": "+",
+   "label": "guess: rare technical title words and word pieces in references and building/health jargon (Journal of Obesity, bal|ustr|ades, retrofit); plain everyday rewrites stay low. Weak pole (max 3.06)",
+   "fire": [
+    "Their paper was published in the Journal of Obesity last spring.",
+    "Results appeared in the British Journal of Nutrition in 2019.",
+    "The terrace is lined with stone balustrades and tall urns.",
+    "Engineers will retrofit the old school with seismic bracing.",
+    "A review in Obesity Reviews summarised forty trials of the diet.",
+    "Workers replaced the cracked balusters on the main staircase.",
+    "The city offers grants to retrofit homes with heat pumps.",
+    "The authors cite the International Journal of Obesity twice."
+   ],
+   "quiet": [
+    "Their story was published in the school magazine last spring.",
+    "Results appeared in the town newsletter in 2019.",
+    "The terrace is lined with flower pots and tall chairs.",
+    "Engineers will repaint the old school before September.",
+    "A friend in the club summarised forty recipes for the diet.",
+    "Workers replaced the cracked tiles on the main staircase.",
+    "The city offers grants to repair homes after storms.",
+    "The authors thank their families twice."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.5 on the technical word; plain rewrites below 0.08",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess: technical title words (Journal of Obesity, balustrade)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: weak (max 3.06), mixed: (PH|ED), bal|ustr|ades, 'International Style', B|SC, 'Journal of Obesity', Nut|r, GEW|EX, ' retrofit' x2, ' Hurricane'. Probe: 'International Journal of Obesity' 0.520, balustrades 0.230, retrofit 0.104, (PWD) 0.044; plain rewrites 0.007-0.080. Guess-level."
+}

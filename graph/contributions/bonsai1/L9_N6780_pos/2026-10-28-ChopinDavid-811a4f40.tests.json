@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-811a4f40",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N6780+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N6780",
+   "pole": "+",
+   "label": "guess: the assignment operator ' =' (and tuple-unpacking commas) after a variable name inside indented numerical Python code; lines in the same code without an assignment stay low",
+   "fire": [
+    "class Model:\n    def forward(self, x):\n        h = self.layer1(x)\n        h = torch.relu(h)\n        out = self.layer2(h)\n        return out",
+    "def solve(a, b):\n    for i in range(100):\n        mid = 0.5 * (a + b)\n        if f(mid) > 0:\n            b = mid\n        else:\n            a = mid\n    return mid",
+    "    def update(self, grad):\n        self.m = self.beta * self.m + (1 - self.beta) * grad\n        self.v = self.v * 0.99\n        return self.m",
+    "        weights = np.ones(n, dtype='double')\n        weights = weights / weights.sum()\n        return weights",
+    "    def load(self, path):\n        (header, body) = self.read(path)\n        self.rows = body.split('\\n')",
+    "        x = numpy.linspace(0, 1, 50)\n        y = numpy.sin(x)\n        plt.plot(x, y)",
+    "            tokens = text.split()\n            counts = Counter(tokens)\n            total = sum(counts.values())",
+    "    def reset(self):\n        self.buffer = bytearray(64)\n        self.offset = 0"
+   ],
+   "quiet": [
+    "class Model:\n    def forward(self, x):\n        return self.layer2(torch.relu(self.layer1(x)))",
+    "def solve(a, b):\n    for i in range(100):\n        print(f(a), f(b))\n    return None",
+    "    def update(self, grad):\n        self.history.append(grad)\n        return self.m",
+    "        return np.ones(n, dtype='double') / n",
+    "    def load(self, path):\n        print(self.read(path))\n        self.rows.clear()",
+    "        plt.plot(numpy.linspace(0, 1, 50))\n        plt.show()",
+    "            print(text.split())\n            print(len(text))",
+    "    def reset(self):\n        self.buffer.clear()\n        self.log('reset')"
+   ]
+  }
+ ],
+ "predictions": "fire weakly (0.05-0.2) on ' =' in long indented code; versions without assignment below 0.04",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess: ' =' assignment in indented numeric Python",
+ "unit_kind": "token/lexical",
+ "confidence": 0.15,
+ "notes": "Card: ' =' x15 (self.encoding =, e = tf.concat, mu =, x =, alpha = np.zeros), tuple-unpacking ',' x4, max 11.25. Probe did NOT reproduce: every short snippet 0.023-0.041, assignments and controls alike. Peaks need long, deeply indented numerical code. Guess-level test using longer indented passages."
+}

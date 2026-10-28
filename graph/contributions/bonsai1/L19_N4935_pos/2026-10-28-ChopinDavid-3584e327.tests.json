@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-3584e327",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N4935+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N4935",
+   "pole": "+",
+   "label": "retail and shopping commerce: stores, shoppers, baskets, loyalty schemes and warehouse logistics; the same sentence frames about non-retail institutions stay low",
+   "fire": [
+    "Holiday spending lifted sales at the big retailers in December.",
+    "The supermarket rewards frequent shoppers with discounts at checkout.",
+    "Last spring the outlet mall added a dozen clothing stores.",
+    "In the depot a worker used a forklift to stack boxes of detergent.",
+    "Analysts expect retail prices for televisions to fall again.",
+    "Many customers now fill their online shopping cart on a phone.",
+    "The grocery chain launched a loyalty card for regular buyers.",
+    "According to the survey, consumers visit the store twice a week."
+   ],
+   "quiet": [
+    "Holiday rain lifted water levels in the big reservoirs in December.",
+    "The museum rewards frequent visitors with free lectures on Sundays.",
+    "Last spring the university added a dozen science classrooms.",
+    "In the harbour a worker used a crane to lift the fishing boat.",
+    "Analysts expect interest rates for mortgages to fall again.",
+    "Many students now fill their reading list with free textbooks.",
+    "The library launched a reading club for retired teachers.",
+    "According to the survey, patients visit the clinic twice a year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.75 on retail words; non-retail rewrites below 0.12",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "retail / shopping commerce",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: ' retail' x4, 'kl' (forklift) x3, ' Retail', ' basket', ' retailers', 'Show|room', 'Loy|alty', Macy; - pole promotes ' retail', ' shopping'. Probe: forklift 0.732, shoppers basket 0.647, retail chain 0.545, store showroom 0.407, loyalty points 0.375; hospital clinics 0.108, river depth 0.013, tractor 0.010."
+}

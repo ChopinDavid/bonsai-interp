@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-6bbf3734",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10941+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N10941",
+   "pole": "+",
+   "label": "leavened bread-making: dough rising and leavened bread names (rise, sourdough, challah, yeast and glucose producing gas); non-bread crafts and cooking with the same sentence frames stay low",
+   "fire": [
+    "Cover the bowl with a towel and let the dough rise for two hours.",
+    "My grandmother baked a sweet challah every Friday afternoon.",
+    "The bakery's sourdough has a thick crust and an open crumb.",
+    "Once the yeast is active, the loaves will rise in a warm kitchen.",
+    "Punch down the dough after it has risen to twice its size.",
+    "A good rye starter makes the bread rise slowly and taste sour.",
+    "She shaped the brioche dough and left it to rise overnight.",
+    "Carbon dioxide from the yeast makes the dough rise and become airy."
+   ],
+   "quiet": [
+    "Cover the bowl with a towel and let the soup cool for two hours.",
+    "My grandmother knitted a warm scarf every Friday afternoon.",
+    "The potter's vase has a thick glaze and a narrow neck.",
+    "Once the glue is dry, the shelves will hold in a warm kitchen.",
+    "Stir the sauce after it has simmered for twenty minutes.",
+    "A good cheese grater makes the pasta taste rich and salty.",
+    "She shaped the clay bowl and left it to dry overnight.",
+    "Steam from the kettle makes the window fog and become wet."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.8 on 'rise'/bread names; non-bread rewrites below 0.08",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "bread leavening (dough rising, sourdough, challah)",
+ "unit_kind": "topic",
+ "confidence": 0.5,
+ "notes": "Card: S|ourd|ough, sour milk, chall|ah, 'rise' in baking, glucose fermentable, plus weaker ' structure', ' flow'. Probe: 'makes the bread rise' 0.784, 'starter and rises overnight' 0.709, 'challah dough' 0.504, 'batter will rise in the oven' 0.273; glaze 0.056, wool cloth 0.073, paint 0.021, galaxy structure 0.017."
+}
