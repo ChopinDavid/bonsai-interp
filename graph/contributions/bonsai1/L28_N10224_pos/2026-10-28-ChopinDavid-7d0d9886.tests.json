@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-7d0d9886",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N10224+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N10224",
+   "pole": "+",
+   "label": "the auxiliary or link word after a subject that is about to be launched or started (project, investigation, war, campaign), predicting 'launched/undertaken/initiated'",
+   "fire": [
+    "After the floods, a major rebuilding programme was started across the region.",
+    "Following the complaints, an inquiry was opened into the hospital's finances.",
+    "When the border was crossed, a counter-offensive was ordered by the general.",
+    "In 2015, a nationwide vaccination campaign was launched in rural districts.",
+    "After the leak, criminal proceedings were initiated against two officials.",
+    "Once funding arrived, an ambitious excavation was begun at the hillfort.",
+    "After the attack, a massive manhunt was mounted across three counties.",
+    "In response to the strike, emergency talks were convened by the minister."
+   ],
+   "quiet": [
+    "After the floods, a large bowl of soup was served to every volunteer.",
+    "Following the complaints, the hospital car park was painted a lighter grey.",
+    "When the border was crossed, the scenery was green and very quiet.",
+    "In 2015, a small grey kitten was found in a box in rural districts.",
+    "After the leak, the kitchen floor was wet and slippery for hours.",
+    "Once funding arrived, the old office was cleaner and much brighter.",
+    "After the attack, the weather was cold and windy across three counties.",
+    "In response to the strike, the trains were almost empty all morning."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire; auxiliaries after subjects that are served, eaten or described stay under 0.3",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "before 'launched'",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'a large project was [undertaken]' 0.890, 'Investigations were [launched]' 0.571, 'a holy war is [declared]' 0.467; 'a large dinner was' 0.106, 'The survey was completed' 0.154, 'The investigations were slow' 0.250 (subject alone sets up the prediction). Logit effect promotes ' launch', ' initiate'."
+}

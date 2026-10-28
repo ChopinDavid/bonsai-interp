@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d6bce035",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N11695+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N11695",
+   "pole": "+",
+   "label": "the word right after a polity noun (city, country, regime, state), where the named territory or ruler is about to come",
+   "fire": [
+    "The poet was born in the city of Basra and later moved to Baghdad.",
+    "Many refugees fled the regime of the general after the coup.",
+    "Traders from the kingdom of Aksum sailed across the Red Sea.",
+    "The explorers finally reached the country of the Mandan people.",
+    "Western powers were slow to condemn the government of the colonel.",
+    "The army prepared to invade a neighbouring province in the spring.",
+    "Pilgrims travelled to the holy city of Varanasi every winter.",
+    "The treaty was signed with the republic of Venice in 1454."
+   ],
+   "quiet": [
+    "The poet was born in a house with a small garden and later moved away.",
+    "Many campers fled the rain and slept in the car after the storm.",
+    "Traders filled a crate of dried figs and loaded it onto the cart.",
+    "The explorers finally reached the bottom of the steep valley.",
+    "Students were slow to finish the homework after the long weekend.",
+    "The chef prepared to bake a large cake for the wedding party.",
+    "Pilgrims carried a jar of honey and a loaf of bread every winter.",
+    "The letter was signed with a fountain pen in blue ink."
+   ]
+  }
+ ],
+ "predictions": "fire around 0.25 (weak pole); container nouns ('a box of') near 0",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "polity noun before its name",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Weak pole (max 17). Probe: 'the city of', 'the country of', 'the regime of', 'one of the regional courts', 'invade a neighbouring' all 0.25-0.28; 'a pot of' 0.023, 'a box of' 0.003, software update 0.100."
+}

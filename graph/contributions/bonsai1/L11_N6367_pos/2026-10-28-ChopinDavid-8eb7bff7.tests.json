@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-8eb7bff7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N6367+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N6367",
+   "pole": "+",
+   "label": "inner pieces of split internet- and geek-culture names (Terraria, xkcd, Cthulhu and the like)",
+   "fire": [
+    "Best indie games of the decade:\nTerraria still has the most loyal player base.",
+    "My kids keep asking for more #Terraria mods every weekend.",
+    "There is always a relevant xkcd comic for every software argument.",
+    "He linked the xkcd strip about standards in the team chat.",
+    "The horror anthology is full of Cthulhu cults and forbidden books.",
+    "New update notes:\nTerraria 1.4 adds a final boss and new biomes.",
+    "She spent most of high school reading Homestuck on her laptop.",
+    "My favourite soundtrack:\nUndertale has the best boss music I know."
+   ],
+   "quiet": [
+    "Best indie games of the decade:\nthe farming sims still have the most loyal players.",
+    "My kids keep asking for more Minecraft mods every weekend.",
+    "There is always a relevant newspaper cartoon for every political argument.",
+    "He linked the news article about standards in the team chat.",
+    "The horror anthology is full of vampire cults and forbidden books.",
+    "New update notes:\nversion 1.4 adds a final boss and new levels.",
+    "She spent most of high school reading Tolkien on her laptop.",
+    "My favourite soundtrack:\nthat old western has the best battle music I know."
+   ]
+  }
+ ],
+ "predictions": "the known names fire (Terraria, xkcd, Cthulhu); untested names (Homestuck, Undertale) uncertain; mainstream single-token titles quiet",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "geek-culture name pieces",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Very sparse pole (density 0.006%). Probe: 'Terr'+'aria' 0.959, 'xk'+'cd' 0.867, 'C'+'th'+'ulhu' 0.367, 'what to make of' 0.201, 'Pretty sure' 0.259; Minecraft 0.118. 'Terraria' only splits without a leading space, so fire items put it after a newline or symbol."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-19fdcc69",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N619+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N619",
+   "pole": "+",
+   "label": "the 'or' / 'instead' that adds a worse or replacing alternative after a negated or failed outcome",
+   "fire": [
+    "If the seeds do not sprout within two weeks or the soil grows mould, start again.",
+    "The treatment may not work at all, or it might make the symptoms worse.",
+    "Some pupils don't have laptops at home or share a single phone with siblings.",
+    "He didn't complain about the noise. Instead he bought a pair of earplugs.",
+    "The repair did not fix the leak or even made it slightly bigger.",
+    "If your dog stops eating or seems unusually tired, call the vet.",
+    "The new drug performed no better than the placebo or was slightly worse.",
+    "She refused to give up. Instead she rewrote the whole proposal overnight."
+   ],
+   "quiet": [
+    "If the seeds sprout within two weeks, move the trays to a sunny window and water lightly.",
+    "The treatment comes as a tablet or a syrup, taken twice a day with food.",
+    "Some pupils bring laptops to school and share them with friends in class.",
+    "He liked the quiet street. He bought a house there and planted roses.",
+    "The repair fixed the leak and the plumber left a short invoice.",
+    "Your dog can sleep in the kitchen or the hallway, whichever it prefers.",
+    "The new drug comes in red or blue packaging depending on the dose.",
+    "She loved the project. She rewrote the whole proposal overnight for fun."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire around 0.3-0.6; plain choice 'or' near 0",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "alternative after a negation",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'may not improve or it could' 0.631, 'does not heal properly or becomes' 0.370, 'don't own cars or' 0.309, '. Instead' 0.360, 'no better or even worse' 0.325; 'tea or coffee' 0.002, 'card or cash' 0.005, 'never called back, but' 0.040."
+}

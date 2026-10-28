@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-b23d3260",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N4693-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N4693",
+   "pole": "-",
+   "label": "a word-internal piece of a rare or oddly spelled word (IPA transcriptions, demonyms, archaic or mixed-case spellings)",
+   "fire": [
+    "In the guide, the name is transcribed [ˈvɛrɪtəs] for English speakers.",
+    "Scholars debate soteriological questions in the early Syriac fathers.",
+    "The mayor thanked all Tucsonans for their patience during the roadworks.",
+    "The forum post read: wHaT iS gOiNg On WiTh ThIs UpDaTe?",
+    "Medieval talismans and phylacteries were worn against fever.",
+    "The traveller sayeth that the bridge be broken beyond repair.",
+    "Linguists write the vowel as [ˈbʊkəs] in the narrow transcription.",
+    "Ecclesiological disputes divided the council for many years."
+   ],
+   "quiet": [
+    "In the guide, the name is written in bold for English speakers.",
+    "Scholars debate important questions in the early church writings.",
+    "The mayor thanked all residents for their patience during the roadworks.",
+    "The forum post asked what is going on with this update.",
+    "Medieval rings and necklaces were worn at every wedding.",
+    "The traveller says that the bridge is broken beyond repair.",
+    "Linguists write the vowel in a simple way in the short guide.",
+    "Political disputes divided the council for many years."
+   ]
+  }
+ ],
+ "predictions": "weak pole (max 4.3, gate-closed regime); expect several fire items near 0.2-0.5 and common-word near misses near 0.02",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "rare-word inner pieces",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: IPA 's' 0.500, 'Eschatological' 0.291, 'Wichitans' 0.270, alternating-case 'ThUnDeR' 0.248, 'Amulets' 0.163; plain sentences 0.023-0.025. Tiny max: low confidence."
+}

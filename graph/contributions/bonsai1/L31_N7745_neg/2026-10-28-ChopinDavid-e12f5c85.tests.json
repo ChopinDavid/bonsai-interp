@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e12f5c85",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N7745-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N7745",
+   "pole": "-",
+   "label": "text about blindness and vision loss (low vision, visual impairment, blind readers), not other disabilities",
+   "fire": [
+    "The new app reads menus aloud for diners with visual impairments who cannot see the printed text.",
+    "Guide dogs are trained for years before they are matched with owners who have lost their sight.",
+    "The museum offers tactile tours so that visitors with low vision can explore the sculptures by touch.",
+    "Children who are born blind learn to read braille with their fingertips from an early age.",
+    "Many people with severe visual impairment rely on a white cane to travel safely around town.",
+    "The charity records newspapers onto audio for subscribers who are blind or partially sighted.",
+    "After the stroke, her vision deteriorated until she was registered as legally blind.",
+    "Screen magnifiers and high-contrast settings help readers with poor eyesight use computers."
+   ],
+   "quiet": [
+    "The new app translates menus for diners who do not speak the local language.",
+    "Hearing dogs are trained for years before they are matched with owners who have lost their hearing.",
+    "The museum offers wheelchair tours so that visitors with limited mobility can reach every gallery.",
+    "Children who are born deaf learn sign language from their parents at an early age.",
+    "Many people with severe arthritis rely on a walking frame to move safely around the house.",
+    "The charity delivers newspapers to subscribers who live in remote farming villages.",
+    "After the stroke, his speech slowed and he needed months of therapy to walk again.",
+    "Keyboard shortcuts and custom macros help office workers use spreadsheets faster."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire around 0.3-0.6; deafness and wheelchair near misses quiet",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "blindness and vision loss",
+ "unit_kind": "sparse feature",
+ "confidence": "medium",
+ "notes": "Probe: 'people with visual impairments' 0.616, 'blind or have low vision' 0.375, Federation of the Blind 0.144; deaf captions 0.004, wheelchair ramps 0.078, window blinds 0.005; large-print for mystery readers leaked 0.186."
+}

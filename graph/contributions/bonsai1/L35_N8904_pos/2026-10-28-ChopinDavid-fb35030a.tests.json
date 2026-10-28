@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-fb35030a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N8904+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T21:21:47+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N8904",
+   "pole": "+",
+   "label": "a bare word-initial letter piece (' R', ' r', ' p', ' P') that starts a split rare name or anatomical term",
+   "fire": [
+    "The ancient Rhaetian tribes lived in the high valleys of the Alps.",
+    "The Swedish Riksdag voted on the budget late on Thursday night.",
+    "The pterion is the thinnest part of the skull above the ear.",
+    "In 1918 the second Rzeczpospolita was proclaimed in Warsaw.",
+    "The dorsal rami of the spinal nerves supply the muscles of the back.",
+    "Merchants from Pskov traded furs along the river routes.",
+    "Families gather for a festive meal on the evening of Rosh Hashanah.",
+    "The Verkhovna Rada passed the new language law after a long debate."
+   ],
+   "quiet": [
+    "The ancient Roman tribes lived in the low valleys near the coast.",
+    "The Swedish parliament voted on the budget late on Thursday night.",
+    "The temple is the thinnest part of the skull above the ear.",
+    "In 1918 the second republic was proclaimed in the capital.",
+    "The dorsal roots of the spinal nerves carry signals from the skin.",
+    "Merchants from Paris traded furs along the river routes.",
+    "Families gather for a festive meal on the evening of the holiday.",
+    "The national parliament passed the new language law after a long debate."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire; whole-token words starting with r/p quiet",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split-word initial letter",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Spelling-unit pole. Probe: ' R'+'ada' 0.899, ' p'+'lex'+'us' 0.621, ' r'+'ami' 0.557, ' p'+'ons' 0.318, ' R'+'ost'+'ock' 0.275, ' rh' 0.251, ' p'+'ia' 0.102; plain sentence 0.001. Splits checked with tok.py."
+}
