@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-f13d50fd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N8439-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N8439",
+   "pole": "-",
+   "label": "the replacement-string argument of a Python str.replace() call (replace('-', '_'), replace(' ', '-')); the same code without a replace call stays low",
+   "fire": [
+    "name = raw.strip().replace(' ', '_').lower()\nreturn name",
+    "key = key.replace('/', '_')\ncache[key] = value",
+    "col = header.replace('-', '_')\ndf = df.rename(columns={header: col})",
+    "tag = label.lower().replace(' ', '_')\nprint(tag)",
+    "text = text.replace('_', ' ').title()\nreturn text",
+    "def clean(s):\n    return s.replace('.', '_')",
+    "for k in keys:\n    out[k.replace('-', '_')] = data[k]",
+    "fname = title.replace(' ', '-') + '.html'\nsave(fname)"
+   ],
+   "quiet": [
+    "name = raw.strip().lower()\nreturn name",
+    "key = key.strip()\ncache[key] = value",
+    "col = header.lower()\ndf = df.rename(columns={header: col})",
+    "tag = label.lower().strip()\nprint(tag)",
+    "text = text.strip().title()\nreturn text",
+    "def clean(s):\n    return s.strip()",
+    "for k in keys:\n    out[k.lower()] = data[k]",
+    "fname = title.lower() + '.html'\nsave(fname)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.6 on the quoted argument after the comma; versions without replace below 0.03",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Python .replace() string argument",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: \" '_\" x4, \" '\" x3, ' '-' in .replace(' ', '-'), plus indentation before a closing ')' on its own line. Probe: \".replace('-', '_')\" 0.571, \".replace(' ', '-')\" 0.165; multi-line call with closing paren 0.025-0.028 (did not reproduce), versions without replace 0.007-0.011."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-f13d50fd",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N8439-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T23:29:40+00:00",
+ "recipe": {
+  "toolchain_commit": "459437a4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N8439_neg/2026-10-28-ChopinDavid-f13d50fd.tests.json"
+ },
+ "label": "the replacement-string argument of a Python str.replace() call (replace('-', '_'), replace(' ', '-')); the same code without a replace call stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N8439_neg/2026-10-28-ChopinDavid-f13d50fd.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.691,
+     "peak": " '_"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.434,
+     "peak": " '_"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.692,
+     "peak": " '_"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.581,
+     "peak": " '_"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.592,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.562,
+     "peak": " '_"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.877,
+     "peak": " '_"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.189,
+     "peak": " ',"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": "return"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": "cache"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": "={"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " label"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": ".strip"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.018,
+     "peak": ".strip"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.043,
+     "peak": ".lower"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " title"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.587,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "459437a4",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Python .replace() string argument",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: \" '_\" x4, \" '\" x3, ' '-' in .replace(' ', '-'), plus indentation before a closing ')' on its own line. Probe: \".replace('-', '_')\" 0.571, \".replace(' ', '-')\" 0.165; multi-line call with closing paren 0.025-0.028 (did not reproduce), versions without replace 0.007-0.011.",
+ "selection": "random draw"
+}

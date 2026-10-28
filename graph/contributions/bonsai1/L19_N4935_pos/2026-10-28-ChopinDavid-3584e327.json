@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-3584e327",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N4935+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T23:28:10+00:00",
+ "recipe": {
+  "toolchain_commit": "459437a4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N4935_pos/2026-10-28-ChopinDavid-3584e327.tests.json"
+ },
+ "label": "retail and shopping commerce: stores, shoppers, baskets, loyalty schemes and warehouse logistics; the same sentence frames about non-retail institutions stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N4935_pos/2026-10-28-ChopinDavid-3584e327.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.62,
+     "peak": " retailers"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.217,
+     "peak": " shoppers"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.295,
+     "peak": " mall"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.747,
+     "peak": "kl"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.721,
+     "peak": " retail"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.338,
+     "peak": " cart"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.363,
+     "peak": " loyalty"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.359,
+     "peak": " consumers"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.132,
+     "peak": " levels"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.097,
+     "peak": " frequent"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.039,
+     "peak": " crane"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.07,
+     "peak": "ysts"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.081,
+     "peak": " textbooks"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.034,
+     "peak": " retired"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " visit"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.361,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "459437a4",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "retail / shopping commerce",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: ' retail' x4, 'kl' (forklift) x3, ' Retail', ' basket', ' retailers', 'Show|room', 'Loy|alty', Macy; - pole promotes ' retail', ' shopping'. Probe: forklift 0.732, shoppers basket 0.647, retail chain 0.545, store showroom 0.407, loyalty points 0.375; hospital clinics 0.108, river depth 0.013, tractor 0.010.",
+ "selection": "random draw"
+}

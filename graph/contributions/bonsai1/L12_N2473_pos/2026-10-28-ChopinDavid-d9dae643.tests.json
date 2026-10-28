@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d9dae643",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N2473+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N2473",
+   "pole": "+",
+   "label": "mathematical well-definedness and structure predicates in math/physics exposition (not unique, cannot be defined, a multiple of, depends on the basis); the same sentence frames about everyday objects stay low",
+   "fire": [
+    "The solution of this differential equation is unique only if both boundary values are fixed.",
+    "Because the second column is a multiple of the first, the matrix is singular.",
+    "The logarithm cannot be defined continuously on the whole complex plane.",
+    "The choice of basis is not unique, but the dimension of the space is.",
+    "In this theory, the potential is defined only up to a constant.",
+    "Any eigenvector multiplied by a scalar is again an eigenvector, so it is not unique.",
+    "The limit is well defined because the sequence is bounded and monotone.",
+    "A tensor of this kind cannot be written uniquely as a sum of simple tensors."
+   ],
+   "quiet": [
+    "The winner of this contest is chosen only if both judges are present.",
+    "Because the second shelf is full of books, the cupboard is heavy.",
+    "The road cannot be repaired quickly during the rainy season.",
+    "The choice of hotel is ours, but the dates of the trip are fixed.",
+    "In this village, the bakery is open only in the morning.",
+    "Any guest who arrives late is still welcome at the dinner.",
+    "The bridge is safe because the steel beams are new and strong.",
+    "A meal of this kind cannot be cooked quickly in a small kitchen."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.75 on the predicate in a math context; everyday rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "math well-definedness predicates (unique, defined, multiple of)",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' unique' (vector decomposition not unique), ' phases', g|auge, ' extended' (coordinates), weight ' vectors', ' defined' (meter cannot be defined), ' multiple' (row is a multiple of another), ' basis'. Probe: 'cannot be defined globally' 0.765, 'not unique because it depends on the basis' 0.544, 'a multiple of another' 0.427, 'can be extended past the horizon' 0.059 (weak); everyday rewrites 0.003-0.028."
+}

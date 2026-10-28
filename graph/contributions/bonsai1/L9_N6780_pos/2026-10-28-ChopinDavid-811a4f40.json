@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-811a4f40",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N6780+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-28T23:30:10+00:00",
+ "recipe": {
+  "toolchain_commit": "459437a4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N6780_pos/2026-10-28-ChopinDavid-811a4f40.tests.json"
+ },
+ "label": "guess: the assignment operator ' =' (and tuple-unpacking commas) after a variable name inside indented numerical Python code; lines in the same code without an assignment stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N6780_pos/2026-10-28-ChopinDavid-811a4f40.tests.json",
+   "prereg_commit": "459437a4",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.035,
+     "peak": "class"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.126,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.039,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.039,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.032,
+     "peak": " body"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.042,
+     "peak": " x"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.014,
+     "peak": "(tokens"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.042,
+     "peak": " reset"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": "def"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": "(grad"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": ".ones"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " def"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.032,
+     "peak": ".linspace"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " print"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.043,
+     "peak": " reset"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.758,
+    "median_fire": 0.039,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "459437a4",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "guess: ' =' assignment in indented numeric Python",
+ "unit_kind": "token/lexical",
+ "confidence": 0.15,
+ "notes": "Card: ' =' x15 (self.encoding =, e = tf.concat, mu =, x =, alpha = np.zeros), tuple-unpacking ',' x4, max 11.25. Probe did NOT reproduce: every short snippet 0.023-0.041, assignments and controls alike. Peaks need long, deeply indented numerical code. Guess-level test using longer indented passages.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-7f64cab4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N5209+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N5209",
+   "pole": "+",
+   "label": "dense / positional: fires weakly on most tokens of ordinary text (32.5% of tokens reach 0.1 of a tiny max, gate-closed echo regime); no specific trigger. Best-guess test: content words in flowing prose vs bare symbol strings",
+   "fire": [
+    "He walked slowly along the beach, picking up smooth stones.",
+    "Their journey across the mountains took nearly three weeks.",
+    "She glanced at the letter and smiled at the familiar handwriting.",
+    "Teaching older students about history requires good stories.",
+    "아이들이 공원에서 즐겁게 뛰어놀고 있었다.",
+    "会議では新しい計画の役割について話し合いました。",
+    "The old fisherman mended his nets in the morning light.",
+    "They hurried home before the heavy rain arrived."
+   ],
+   "quiet": [
+    "; ; ; ; ; ; ; ;",
+    "-- -- -- -- --",
+    "a b c d e f g",
+    "0 0 0 0 0 0 0 0",
+    "+ + + + + + +",
+    ". . . . . . .",
+    "x x x x x x x x",
+    "| | | | | | |"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 almost everywhere; an 8+8 test is not expected to separate",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense, no specific trigger",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: dense flag 32.5%, max 0.45, -x- echo 100%. Probe: every sentence 0.23-0.74, including the far-domain floor 0.229 and a digit string 0.310. Test included only as a best guess."
+}

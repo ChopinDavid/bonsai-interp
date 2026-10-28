@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-f244f51b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N10435+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N10435",
+   "pole": "+",
+   "label": "commentary that frames the present era or humanity in general (our time, right now, as if, years from now); concrete procedural or descriptive text stays lower. Broad pole, many tokens fire weakly",
+   "fire": [
+    "Future generations may judge us harshly for how we treated our planet.",
+    "Smartphones have changed the way we live our lives in just a decade.",
+    "She is easily one of the finest novelists of our generation.",
+    "Everyone seems to be talking about inflation right now.",
+    "We behave as if there will always be enough fresh water.",
+    "A century from now, people will laugh at the gadgets of our age.",
+    "In an age when attention is scarce, silence has become a luxury.",
+    "Most of us go on living as if nothing could ever change."
+   ],
+   "quiet": [
+    "Preheat the oven and grease a baking tin with a little butter.",
+    "Insert the battery and close the cover until it clicks.",
+    "The valley floor is covered with clay and loose gravel.",
+    "The table has four legs and a drawer on the left side.",
+    "Turn left at the bridge and park behind the post office.",
+    "Each box holds twelve jars of honey and a packing slip.",
+    "The fence posts are spaced two metres apart along the field.",
+    "Water the seedlings every morning and keep them in the shade."
+   ]
+  }
+ ],
+ "predictions": "fire 0.18-0.4 on 'our'/'now'/'as if' in era-framing commentary; procedural text below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "framing the present era / humanity in general",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: broad flag (3.5% of tokens reach 0.1 of max); peaks ' if' (as if), ' may', ' our' (lives), ' time' (of our time), ' now' (right now). Probe: 'as if the oceans' 0.402, 'of our time' 0.273, 'our era' 0.266, 'right now' 0.182; recipe 0.039, bolt 0.045, chapter 0.038, floor 0.095."
+}

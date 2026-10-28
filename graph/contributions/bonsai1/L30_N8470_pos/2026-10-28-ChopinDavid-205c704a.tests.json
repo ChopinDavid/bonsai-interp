@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-205c704a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N8470+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N8470",
+   "pole": "+",
+   "label": "cell-culture laboratory context: the token naming or introducing the cell type or source used in an experiment (cultured fibroblasts, human kidney cells, skin cells from patients); non-cellular experiments with the same frame stay low",
+   "fire": [
+    "The team grew human fibroblasts in dishes coated with gelatin.",
+    "For the assay, primary human hepatocytes were treated with the compound.",
+    "Neurons were derived from skin cells donated by two patients.",
+    "We transfected HeLa cells and Chinese hamster ovary cells with the vector.",
+    "In this study, human retinal cells were exposed to blue light for an hour.",
+    "Mouse embryonic fibroblasts were seeded at low density before staining.",
+    "The virus was grown in monkey kidney cells before purification.",
+    "The group isolated stem cells from human umbilical cord blood."
+   ],
+   "quiet": [
+    "The team grew tomato plants in pots filled with compost.",
+    "For the survey, adult volunteers were asked about their sleep.",
+    "Bricks were made from clay donated by two local quarries.",
+    "We painted the fence and the garden shed with the same varnish.",
+    "In this study, office workers were exposed to loud music for an hour.",
+    "Garden seedlings were planted at low density before the rain.",
+    "The wine was aged in oak barrels before bottling.",
+    "The group collected samples of river water near the city."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.7 on the cell-type/source token; non-cellular rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "cell-culture lab cell types",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' human' x8 before cell types, ' fib'(roblast) x3, ' with' skin cells, ' as' before cell types; - pole promotes ' fib', ' cells', ' CHO'. Probe: 'cultured mouse fibroblasts' 0.693, 'human embryonic kidney cells' 0.552, 'skin cells from three patients' 0.235, 'such as lung epithelial' 0.064 (weak); 'cultured mouse colonies' 0.378 (the verb 'cultured' alone fires), human volunteers 0.092, soil 0.028."
+}

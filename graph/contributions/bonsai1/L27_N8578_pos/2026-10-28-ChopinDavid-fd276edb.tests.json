@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-fd276edb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N8578+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N8578",
+   "pole": "+",
+   "label": "combat engagement of targets: weapons ranges, sighting and attacking in military or chess contexts (beyond visual range, engage aircraft, line of sight to fire, take the rook); civilian rewrites with the same frames stay low",
+   "fire": [
+    "The frigate's missiles can engage targets well beyond the horizon.",
+    "Black can capture the bishop on e5 and win a pawn.",
+    "The tank's gun can hit enemy armour at a range of three kilometres.",
+    "Anti-aircraft batteries opened fire on the incoming bombers.",
+    "The sniper needs a clear line of sight to hit the target.",
+    "The interceptor locked onto the enemy jet and fired a missile.",
+    "White sacrifices the knight on f7 to attack the king.",
+    "The howitzer can strike positions twenty miles away without seeing them."
+   ],
+   "quiet": [
+    "The ferry's engines can carry passengers well beyond the harbour.",
+    "The baker can bake the bread at noon and sell it warm.",
+    "The tractor's plough can turn soil at a rate of three acres an hour.",
+    "Shop owners opened their doors to the incoming tourists.",
+    "The photographer needs a clear view of the bride and groom.",
+    "The pilot greeted the passengers and served coffee.",
+    "The gardener plants roses near the fence each spring.",
+    "The bus can reach villages twenty miles away in an hour."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.9 in combat/attack contexts; civilian rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "combat engagement / targeting (weapons, chess)",
+ "unit_kind": "topic",
+ "confidence": 0.5,
+ "notes": "Card: 'beyond visual range', 'take the Rook on a8', 'Airborne Countermeasures', 'Self-Propelled Howitzer', 'designed to engage aircraft', 'line of sight to fire'; - pole suppresses ' tactics', ' formations'. Probe: 'beyond visual range' 0.910, 'take the rook on' 0.374, any chess move 0.376, 'line of sight to fire' 0.281, 'engage aircraft' 0.249; airliner 0.011, servers 0.016, painter 0.011."
+}

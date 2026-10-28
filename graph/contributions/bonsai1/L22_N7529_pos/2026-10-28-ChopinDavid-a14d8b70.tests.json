@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a14d8b70",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N7529+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-28T23:21:53+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N7529",
+   "pole": "+",
+   "label": "' starting' in the progressive inchoative 'be starting to' (we're starting to, I'm starting to realise): onset of a change in state; the same sentences without the inchoative and nominal 'starting' stay low",
+   "fire": [
+    "After three rainy weeks, we're starting to lose hope for the harvest.",
+    "Honestly, I'm starting to think the bus will never come.",
+    "The new policy is starting to show results in the poorer districts.",
+    "As the evening went on, the guests were starting to feel sleepy.",
+    "Her knee is starting to ache again after the long walk.",
+    "Slowly the city is starting to recover from the earthquake.",
+    "By the third chapter, readers are starting to doubt the narrator.",
+    "With prices up again, families are starting to cut back on meat."
+   ],
+   "quiet": [
+    "After three rainy weeks, we have lost hope for the harvest.",
+    "Honestly, I think the bus will never come.",
+    "The new policy shows results in the poorer districts.",
+    "As the evening went on, the guests felt sleepy.",
+    "Her knee aches again after the long walk.",
+    "The city's starting point for the marathon is the old stadium.",
+    "By the third chapter, readers doubt the narrator.",
+    "Her starting salary at the bank was modest."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on ' starting'; rewrites without it and nominal 'starting point/line' below 0.06",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'starting' in 'be starting to' (onset of change)",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: ' starting' x6, ' become' x4, ' began' x4, ' start'. Probe: \"We're starting to get tired\" 0.271 (only clear hit); 'will start producing' 0.027, 'began to collapse' 0.041, 'could become the first' 0.114, rewrites 0.018-0.041, 'starting line' 0.020. Label narrowed to the progressive 'starting to'."
+}
