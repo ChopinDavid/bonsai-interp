@@ -1,0 +1,46 @@
+{
+ "contribution": "2026-10-29-moridinamael-f159bee1",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N6611+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:09:08+00:00",
+ "neighbours": [
+  {
+   "unit": "L23/N6611",
+   "pole": "+",
+   "label": "the subject or verb of a clause reported after 'said/told/promised that', especially a second 'and that he/she…' clause",
+   "roles": ["reads bonsai1/L22/N8234+"],
+   "fire": [
+    "She told me that she would call tonight and that she would bring the documents.",
+    "The mayor promised that the bridge would reopen by spring and that tolls would stay the same.",
+    "He said that he was tired and that he wanted to go home early.",
+    "My grandmother told us that the farm had belonged to her father and that it would never be sold.",
+    "The coach said that the team played hard and that they deserved the win.",
+    "The landlord promised that he would fix the heater and that he would lower the rent.",
+    "Maria told her brother that she had found the keys and that she had left them on the table.",
+    "The doctor said that the wound was healing and that the stitches could come out Friday."
+   ],
+   "quiet": [
+    "For never shall you lie by Portia's side\nWith an unquiet soul.",
+    "Of one poor scruple, nay, if the scale do turn\nBut in the estimation of a hair,",
+    "She called me tonight and brought the documents with her.",
+    "The mayor reopened the bridge in spring and kept the tolls the same.",
+    "He was tired, so he went home early.",
+    "My grandmother's farm belonged to her father, and it was never sold.",
+    "The team played hard and deserved the win, according to the box score.",
+    "The landlord fixed the heater last week and lowered the rent."
+   ]
+  }
+ ],
+ "predictions": "Expect a weak or failed result: probes only reached 0.1-0.26 of max, and the pole's top examples are verse line breaks that this label does not cover.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-down"
+  ]
+ }
+}
