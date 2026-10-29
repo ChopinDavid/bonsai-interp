@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-91e671a1",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11066+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T10:28:58+00:00",
+ "recipe": {
+  "toolchain_commit": "e6e7551e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N11066_pos/2026-10-29-ChopinDavid-91e671a1.tests.json"
+ },
+ "label": "a noun naming how water, fuel or goods are provided (supply, source, tanker, reservoir) in a provisioning context; the same sentence frame with a quality or appearance noun stays lower (a dense unit)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N11066_pos/2026-10-29-ChopinDavid-91e671a1.tests.json",
+   "prereg_commit": "e6e7551e",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.9,
+     "peak": " supply"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.496,
+     "peak": " source"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.405,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.634,
+     "peak": " tanker"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.593,
+     "peak": " supply"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.261,
+     "peak": " camp"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.491,
+     "peak": " river"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.814,
+     "peak": " tanker"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.209,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.15,
+     "peak": " doors"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.151,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.234,
+     "peak": " fishing"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.279,
+     "peak": "ers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.239,
+     "peak": " songs"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.482,
+     "peak": " river"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.133,
+     "peak": " morning"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.544,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e6e7551e",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "provisioning noun (supply)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: + pole max 0.71, FLAG dense (50.3%), gate-closed regime; peaks on ' supply' x6 (water supply), 'chemical'/'chem' (alchemy), ' tanker'. The - pole also peaks on ' supply'. Probe: 'water supply' 0.758, 'supply lines' 0.671, 'water source' 0.658, ' tanker' 0.798, 'alchemists' 0.900; 'water quality' 0.310, 'She read a novel' 0.196.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-91e671a1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11066+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N11066",
+   "pole": "+",
+   "label": "a noun naming how water, fuel or goods are provided (supply, source, tanker, reservoir) in a provisioning context; the same sentence frame with a quality or appearance noun stays lower (a dense unit)",
+   "fire": [
+    "During the siege the defenders dug a tunnel to protect their water supply.",
+    "The village depends on a single well as its only water source.",
+    "Trucks brought a fresh supply of fuel to the stranded airport.",
+    "An oil tanker ran aground off the coast during the storm.",
+    "Engineers built a reservoir to secure the city's drinking water supply.",
+    "The camp ran low on rations after the supply convoy was delayed.",
+    "Farmers fear the river will fail as a source of irrigation water.",
+    "Each morning a water tanker refills the tanks at the school."
+   ],
+   "quiet": [
+    "During the siege the defenders dug a tunnel beneath the old chapel.",
+    "The village is famous for the colour of its painted doors.",
+    "Trucks brought a crowd of fans to the stadium for the final.",
+    "An old fishing boat was repainted green during the summer.",
+    "Engineers studied the history of the city's oldest bridge.",
+    "The camp grew quiet after the evening songs had ended.",
+    "Farmers fear the river will flood the lower fields again.",
+    "Each morning a teacher unlocks the gates at the school."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.8 on supply/source/tanker; quality, colour, history nouns 0.2-0.4",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "provisioning noun (supply)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: + pole max 0.71, FLAG dense (50.3%), gate-closed regime; peaks on ' supply' x6 (water supply), 'chemical'/'chem' (alchemy), ' tanker'. The - pole also peaks on ' supply'. Probe: 'water supply' 0.758, 'supply lines' 0.671, 'water source' 0.658, ' tanker' 0.798, 'alchemists' 0.900; 'water quality' 0.310, 'She read a novel' 0.196."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-667cddfd",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N2471+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T10:30:13+00:00",
+ "recipe": {
+  "toolchain_commit": "e6e7551e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N2471_pos/2026-10-29-ChopinDavid-667cddfd.tests.json"
+ },
+ "label": "the object of a testing, simulating or research verb: the thing a facility, drill or experiment is built to test or simulate (test integrated performance, test ways of containing); the same frame with an everyday verb (sell, grow, decorate) stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N2471_pos/2026-10-29-ChopinDavid-667cddfd.tests.json",
+   "prereg_commit": "e6e7551e",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.239,
+     "peak": "ersonic"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.168,
+     "peak": " chemical"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.118,
+     "peak": " advanced"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.524,
+     "peak": " integrated"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.189,
+     "peak": " traffic"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.352,
+     "peak": " son"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.237,
+     "peak": " fatigue"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.105,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " neighbourhood"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " soldiers"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": " museum"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " coast"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " winter"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": " thirty"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.213,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e6e7551e",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "object of test/simulate",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 18.0, no single token; top examples follow test/simulate/research ('test ways of containing civil turmoil', 'simulate collective intelligence', 'test integrated aircraft', 'research nuclear fusion'); the - pole suppresses simulate/mock/test. Probe: 'test integrated engine performance' 0.534, 'test ways of' 0.339, 'simulate collective' 0.187, 'research nuclear' 0.164, 'simulate an incoming' 0.155; 'sell ways of decorating' 0.022, 'grow roses' 0.021.",
+ "selection": "random draw"
+}

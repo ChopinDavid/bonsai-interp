@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bd4ccc51",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2981-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N2981",
+   "pole": "-",
+   "label": "metalinguistic talk about word forms: the token that introduces a cited affix, source word or gloss in an etymology or grammar explanation (the suffix, the Latin word, from ne- \"not\"); quotation marks and 'from' in non-linguistic sentences stay low",
+   "fire": [
+    "The English word 'butter' goes back to the Greek boutyron, from bous \"cow\".",
+    "To make the plural of most nouns, simply attach the suffix -s to the stem.",
+    "The verb derives from Old French, ultimately from the Latin word currere, to run.",
+    "In German the prefix ver- often adds a sense of loss or error to a verb.",
+    "Our word 'salary' comes from the Latin salarium, linked to sal \"salt\".",
+    "The diminutive is formed by adding the ending -chen, as in Mädchen.",
+    "Linguists trace the name to an Old Norse root meaning \"bay\".",
+    "The term 'telephone' combines the Greek tele \"far\" with phone \"voice\"."
+   ],
+   "quiet": [
+    "The farm near our village still makes its butter from the milk of six cows.",
+    "To make the soup, simply attach the lid and simmer the pot for an hour.",
+    "The runner comes from a small town in France and trains every morning.",
+    "In Germany the trains often arrive late during heavy snow.",
+    "Our boss said the salary review would happen in the spring.",
+    "The girl bought a little cake at the bakery, as she does every Sunday.",
+    "Sailors anchored their boat in a quiet bay near the harbour.",
+    "The old telephone in the hall rang twice and then went silent."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 in etymology and affix explanations; quoted signs and place origins below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "etymology / word-form talk",
+ "unit_kind": "topic",
+ "confidence": 0.55,
+ "notes": "Card: max 49.5, peaks on ' (\"' / ' \"' before glosses in etymologies, ' Latin', ' Greek', ' suffix', 'position' (preposition). Probe: 'add the suffix -ing' 0.988, 'from ne- \"not\"' 0.744, 'The prefix \"micro\"' 0.572, 'the Latin word' 0.411, 'preposition von' 0.358; sign read \"closed\" 0.019, 'comes from a small town in Ohio' 0.014. Leak seen: vote '50.4% against and 49.6%' 0.535."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-63d11ffe",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N914-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N914",
+   "pole": "-",
+   "label": "product specification and safety-compliance text: certifications, standards, hygienic design and hazard guidance in product or service descriptions; the same words in everyday narrative or sport stay low",
+   "fire": [
+    "The cloud service is certified under ISO 27001, PCI DSS, and GDPR requirements.",
+    "Product features: food-grade stainless steel, hygienic seals, and an easy-clean surface.",
+    "The cot complies with EN 716 safety standards and includes a waterproof mattress.",
+    "Each heater carries CE and UL certification and an automatic tip-over cut-off.",
+    "Safety notes: never cover the vent, and keep the charger away from flammable materials.",
+    "The valve body is certified to NSF/ANSI 61 for drinking water applications.",
+    "Our hosting meets FedRAMP, SOC 1, and HITRUST compliance for health data.",
+    "The helmet is tested to EN 1078 and comes with an adjustable fit system."
+   ],
+   "quiet": [
+    "Grandpa told us long stories about the farm while we ate supper by the stove.",
+    "She hung her wet coat by the fire and poured a cup of tea for her brother.",
+    "The team's standards slipped badly in the second half of the season.",
+    "He spent the weekend painting his daughter's bedroom a soft yellow.",
+    "We drove to the coast and spent the afternoon collecting shells on the beach.",
+    "My cousin moved to Leeds last spring and found a job at a bookshop.",
+    "The old dog slept under the kitchen table while the children played cards.",
+    "After the concert, the band signed autographs for their fans outside."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 inside spec or compliance lists; narrative uses of paint, standards, fire below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "spec / compliance text",
+ "unit_kind": "topic",
+ "confidence": 0.4,
+ "notes": "Card: max 23.4, no single token; top examples are a bushfire guide, smoke-detector rules, hygienic machine design, AS/NZ Standards, ISO/SOC2/HIPAA. Probe: 'HIPAA certifications' 0.655, 'hygienic design ... easy to clean' 0.654, 'bushfire' 0.447, 'AS/NZ Standards' 0.366; 'painted the fence' 0.012, 'football standards' 0.008, market narrative 0.013."
+}

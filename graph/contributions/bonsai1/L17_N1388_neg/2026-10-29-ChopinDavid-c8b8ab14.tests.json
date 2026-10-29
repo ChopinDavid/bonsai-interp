@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c8b8ab14",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N1388-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N1388",
+   "pole": "-",
+   "label": "lack of moisture: dry weather or soil, dehydration, parched or desiccated conditions; 'dry' in the sense of humour or wine and wet conditions stay low (the meaning, not the word)",
+   "fire": [
+    "After three months without rain, the fields were dry and cracked.",
+    "Hikers should carry extra water, because dehydration sets in fast in the heat.",
+    "This cactus prefers dry, sandy soil and very little watering.",
+    "The lake bed lay parched under the summer sun.",
+    "Farmers say this has been the driest spring in forty years.",
+    "The patient was severely dehydrated after two days of fever.",
+    "Store the seeds in a dry place away from any moisture.",
+    "Hot, dry winds swept across the plains and withered the crops."
+   ],
+   "quiet": [
+    "After three months of steady rain, the fields were muddy and green.",
+    "Hikers should carry a warm jacket, because the weather changes fast in the hills.",
+    "This fern prefers damp, shady soil and regular watering.",
+    "The lake lay calm and full under the summer sun.",
+    "Critics say this has been the funniest film in forty years, thanks to its dry wit.",
+    "The patient was very tired after two days of meetings.",
+    "Her speech was full of dry humour that made the audience laugh.",
+    "Cool, wet winds swept across the plains and soaked the crops."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on dry/dehydrated/parched in the moisture sense; 'dry humour', 'dry wit' and wet weather below 0.06",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dryness / lack of water",
+ "unit_kind": "meaning",
+ "confidence": 0.6,
+ "notes": "Card: max 14.9, peaks on ' dry' x4 (dry weather, dry soils), ' dehydration', 'hydr' (dehydrated), 'icc' (desiccation), 'oc' (suffocating desert wind). Probe: 'a dry start to the year, almost no rain' 0.666, 'parched' 0.623, 'dehydration' 0.598, 'soil kept dry' 0.330; 'wet start' 0.022, 'dry sense of humour' 0.046, 'sore throat' 0.034. Leak: 'wx.ALIGN_RIGHT' 0.282."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-45921ea2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N11539+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T10:29:29+00:00",
+ "recipe": {
+  "toolchain_commit": "e6e7551e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N11539_pos/2026-10-29-ChopinDavid-45921ea2.tests.json"
+ },
+ "label": "the stem of a love-or-hate emotion word across scripts: Arabic حب (love), Russian ненавид- (hate), the heart emoticon '<3' and English 'heart' in 'heartily'; neutral words in the same languages and '< 3' as a comparison stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N11539_pos/2026-10-29-ChopinDavid-45921ea2.tests.json",
+   "prereg_commit": "e6e7551e",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.46,
+     "peak": "حب"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.743,
+     "peak": "حب"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.367,
+     "peak": "حب"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.791,
+     "peak": "ид"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.842,
+     "peak": "ид"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.626,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.693,
+     "peak": "حب"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.715,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " يقول"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " مع"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": "دي"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": "уп"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " уже"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": "تحدث"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " you"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.704,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e6e7551e",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "love/hate emotion stem",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 34.5, peaks on 'حب' x12 (أحب, المحبة, محبي), 'ид' in ненавидишь, '3' in '<3', ' heart' in heartily. Probe: 'تحبه' 0.937, 'ненавидит' 0.807, 'أحببنا' 0.696, 'heartily' 0.684, '<3' 0.592, 'الحب' 0.393; neutral Arabic market sentence 0.020, 'x < 3' 0.016, hotel sentence 0.006.",
+ "selection": "random draw"
+}

@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-24785faf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N4017-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N4017",
+   "pole": "-",
+   "label": "the word piece 'ler' completing a surname the tokenizer splits (Mend|ler, Sad|ler); surnames that are a single token (Butler, Chandler, Miller) stay low",
+   "fire": [
+    "The review was written by Anna Sadler for the weekend paper.",
+    "Our new coach, Mark Hendler, starts work next Monday.",
+    "The lead role went to the young actress Clara Mendler this year.",
+    "Last night the novelist Peter Ostler signed copies at the shop.",
+    "The court heard evidence from Doctor Ruth Sadler on Tuesday.",
+    "The lab of Professor Jonas Fendler studies bird migration.",
+    "Tickets for the show with Emma Mendler sold out quickly.",
+    "The report credits engineer Sam Tadler with the design."
+   ],
+   "quiet": [
+    "The review was written by Anna Butler for the weekend paper.",
+    "Our new coach, Mark Chandler, starts work next Monday.",
+    "The lead role went to the young actress Clara Miller this year.",
+    "Last night the novelist Peter Fuller signed copies at the shop.",
+    "The court heard evidence from Doctor Ruth Taylor on Tuesday.",
+    "The lab of Professor Jonas Walker studies bird migration.",
+    "Tickets for the show with Emma Turner sold out quickly.",
+    "The report credits engineer Sam Hughes with the design."
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.9 on 'ler' in split surnames; single-token surnames below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ler' surname piece",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 12.2, peaks on 'ler' x4 (Bridgit Mendler, Sadler x3), 'ar' (Sankar), ' Army'. Probe: 'Mendler' 0.901, \"Sadler's Wells\" 0.501, 'Sadler and Pedersen' 0.474; 'Chandler' 0.014, 'butler' 0.012, river sentence 0.008.",
+ "trigger": {
+  "words": [
+   "ler"
+  ]
+ }
+}

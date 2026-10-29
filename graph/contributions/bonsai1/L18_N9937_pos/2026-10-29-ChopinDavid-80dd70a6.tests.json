@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-80dd70a6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N9937+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N9937",
+   "pole": "+",
+   "label": "a statement that dates a historical or technological milestone: the token just before the year (in, the event noun) where a date is expected; best guess, probes stayed low",
+   "fire": [
+    "The first transatlantic telegraph cable was completed in 1858.",
+    "Television broadcasts in colour began in the United States in 1954.",
+    "The Berlin Wall fell in 1989, opening the border between east and west.",
+    "With the release of Windows 95, personal computing reached millions of homes.",
+    "The first successful polio vaccine was announced in 1955.",
+    "Slavery was abolished across the British Empire in 1833.",
+    "The Wright brothers made their first powered flight in 1903.",
+    "The euro became the official currency of twelve countries in 2002."
+   ],
+   "quiet": [
+    "The old telegraph office now sells coffee and cakes to tourists.",
+    "Television shows in our house were always watched after dinner.",
+    "The garden wall fell down after the storm, so we rebuilt it.",
+    "With the window open, the room filled with the smell of rain.",
+    "The nurse gave the child a sticker after the vaccine.",
+    "The old mill was sold to a family from the next village.",
+    "The brothers made pancakes for breakfast on Sunday.",
+    "The coins in my pocket were enough to buy a newspaper."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.25 on ' in' / event noun before the year of a milestone; everyday sentences below 0.02",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "milestone date slot",
+ "unit_kind": "contextual",
+ "confidence": 0.2,
+ "notes": "Card: max 45.0, no single token; top examples are dated milestones ('Declaration of Independence at Philadelphia.', 'launch of the iPhone in 2007', 'repealed in 1846', 'First flight'). Probe: weak across the board: 'iPhone in 2007' 0.186, 'Declaration' 0.136, 'freezing point' 0.134, 'repealed in 1846' 0.105; without year 0.100; everyday sentences 0.001-0.009. Likely to fail on median."
+}

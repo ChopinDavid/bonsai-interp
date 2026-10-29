@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-667cddfd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N2471+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N2471",
+   "pole": "+",
+   "label": "the object of a testing, simulating or research verb: the thing a facility, drill or experiment is built to test or simulate (test integrated performance, test ways of containing); the same frame with an everyday verb (sell, grow, decorate) stays low",
+   "fire": [
+    "The wind tunnel was built to test supersonic wing designs.",
+    "Army engineers ran a drill to simulate a chemical attack on the base.",
+    "The lab was set up to research advanced battery chemistry.",
+    "The prototype rocket was used to test integrated guidance systems.",
+    "Students wrote software to simulate traffic flow in the city.",
+    "The ship was refitted to test experimental sonar equipment.",
+    "The rig is designed to test structural fatigue in bridge cables.",
+    "The exercise was meant to simulate a large earthquake hitting the capital."
+   ],
+   "quiet": [
+    "The bakery was built to sell fresh bread to the neighbourhood.",
+    "Army cooks ran a kitchen to feed the soldiers on the base.",
+    "The shop was set up to repair old bicycles for students.",
+    "The old rocket was moved to a museum in the capital.",
+    "Students wrote poems about the river flowing through the city.",
+    "The ship was refitted to carry tourists along the coast.",
+    "The barn is designed to store hay for the winter months.",
+    "The party was meant to celebrate her retirement after thirty years."
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.55 on the noun phrase after test/simulate/research; everyday verbs below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "object of test/simulate",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 18.0, no single token; top examples follow test/simulate/research ('test ways of containing civil turmoil', 'simulate collective intelligence', 'test integrated aircraft', 'research nuclear fusion'); the - pole suppresses simulate/mock/test. Probe: 'test integrated engine performance' 0.534, 'test ways of' 0.339, 'simulate collective' 0.187, 'research nuclear' 0.164, 'simulate an incoming' 0.155; 'sell ways of decorating' 0.022, 'grow roses' 0.021."
+}

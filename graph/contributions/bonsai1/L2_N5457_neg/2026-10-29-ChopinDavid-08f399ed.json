@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-08f399ed",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N5457-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T10:28:56+00:00",
+ "recipe": {
+  "toolchain_commit": "e6e7551e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N5457_neg/2026-10-29-ChopinDavid-08f399ed.tests.json"
+ },
+ "label": "a broad, low-amplitude unit that is weakly on for most text; best guess: proper-name word pieces (surnames split into pieces) peak slightly above common words",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N5457_neg/2026-10-29-ChopinDavid-08f399ed.tests.json",
+   "prereg_commit": "e6e7551e",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 7,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.756,
+     "peak": " Whit"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.337,
+     "peak": "land"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.477,
+     "peak": " Oxford"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.458,
+     "peak": "v"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.322,
+     "peak": "agh"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.334,
+     "peak": " new"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.408,
+     "peak": " violin"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.482,
+     "peak": "ack"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.316,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.294,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.321,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.414,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.308,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.313,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.408,
+     "peak": " violin"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.391,
+     "peak": "Read"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.836,
+    "median_fire": 0.433,
+    "near_misses_at_0.3": 7
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e6e7551e",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "dense; name pieces guess",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: max 0.52, FLAG dense (41.5% of tokens over 0.1 max), gate-closed regime 100%; peaks on ' Whit' (Whitman), 'ad' (dead), ' Shields', 'izo' (Suizo). Probe: 'Amber Shields' 0.751, 'Walt Whitman' 0.609, 'paginated' 0.517; plain sentences still 0.28-0.46 ('small cafe' 0.461), so near misses will fire.",
+ "selection": "random draw"
+}
