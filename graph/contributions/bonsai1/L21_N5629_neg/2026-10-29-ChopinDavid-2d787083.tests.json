@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2d787083",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N5629-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N5629",
+   "pole": "-",
+   "label": "unclear; best guess: assignment and parameter positions in longer Python code (params = {}, 'key': value entries, call arguments), which short snippets did not fire. Probably a context pole that needs more preceding code than an 8 + 8 test gives",
+   "fire": [
+    "class Client:\n    def trades(self, symbol):\n        method = 'alltrades'\n        params = {'symbol': symbol, 'limit': 50}\n        response = self.request(method, params)\n        return response.json()",
+    "def fetch(self, url, query=None):\n    headers = {'Accept': 'application/json'}\n    query = query or {}\n    request = self._client.get(url, query, headers)\n    return request",
+    "stats = {\n    'tx_octets': 0,\n    'tx_packets': 0,\n    'rx_octets': 0,\n    'rx_packets': 0,\n}\ncounters = stats",
+    "payload = {\"jsonrpc\": \"1.0\", \"id\": \"test\", \"method\": \"getbalance\", \"params\": []}\nbody = json.dumps(payload)\nresult = post(url, body)",
+    "input_file = os.path.join(root, name)\nworking_file = input_file\noutput_file = working_file + '.out'\nlog.info('file: %s' % output_file)",
+    "def configure(self, cnf=None, **kw):\n    if kw:\n        cnf = _merge((cnf, kw))\n    else:\n        cnf = _merge(cnf)\n    self.options = cnf",
+    "for path, target in hardlinks.items():\n    if path == target:\n        continue\n    mapping[path] = target\n    count = count + 1",
+    "config = Config()\nconfig.host = 'localhost'\nconfig.port = 8080\nconfig.timeout = 30\nserver = Server(config)"
+   ],
+   "quiet": [
+    "The client builds a method name and a parameter dictionary, sends the request and returns the decoded response.",
+    "The fetch helper sets a JSON accept header, fills in an empty query and hands both to the HTTP client.",
+    "The statistics block keeps four counters, two for transmitted and two for received traffic.",
+    "The RPC payload names the method, carries an empty parameter list and is posted as a JSON string.",
+    "The script joins the root and the file name, keeps a working copy and logs the output path.",
+    "The configure method merges keyword options into the existing configuration before storing it.",
+    "The loop skips entries that map to themselves and counts the remaining hard links.",
+    "The server is built from a configuration that sets the host, the port and a thirty-second timeout."
+   ]
+  }
+ ],
+ "predictions": "probably fails: every probe snippet scored below 0.07, so fire items may reach 0.05-0.2 and near misses stay near 0.01",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Python assignment/parameter positions (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: ' =' x5, ',' x4, indentation x2, 'params', \"':\" in Python request/config code; max 29, density 0.26%. Probe: params = {} 0.033, client.get(url, ...) 0.009, dict of 'tx_octets': 0 0.029, JSON-RPC 0.015, assignment 0.007, docstring 0.066, SQL 0.012, prose 0.009. The probe did not transfer; the test uses longer multi-line passages as a best guess."
+}

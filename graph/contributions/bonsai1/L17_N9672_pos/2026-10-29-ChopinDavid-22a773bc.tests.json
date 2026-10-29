@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-22a773bc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N9672+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N9672",
+   "pole": "+",
+   "label": "unclear; best guess: argumentative prose that assigns blame or names a threat to someone (the blame lies on their shoulders, it is scarier to hand them your address, rents pose a greater threat), as opposed to neutral description",
+   "fire": [
+    "The council knew about the cracks for years. In truth, the fault rests squarely on the inspectors who signed off on the bridge.",
+    "People worry about sharing photos. Honestly, it is more dangerous to hand a stranger your phone number than your face.",
+    "The bank promised reforms. Yet it is the board, which ignored every audit, that bears the blame for the collapse.",
+    "Wages have stalled for a decade. Meanwhile unchecked speculation poses an even greater danger to young families.",
+    "The minister blamed the weather. In fact the responsibility lies with the agency that cut the maintenance budget.",
+    "Critics call the tax harmless. In reality it threatens small shops far more than the chains it was aimed at.",
+    "The coach praised the players. But the failure sits on the shoulders of the owners who sold the best striker.",
+    "Everyone fears the virus. Yet the hospital cuts, which nobody voted for, are the greater threat to this town."
+   ],
+   "quiet": [
+    "The council repainted the bridge last year. The inspectors signed off on the work in the spring.",
+    "People enjoy sharing photos. Most of them also share their phone number with friends.",
+    "The bank announced reforms. The board, which meets monthly, published the audit in June.",
+    "Wages have risen for a decade. Meanwhile new housing has given young families more choice.",
+    "The minister mentioned the weather. The agency that manages the roads publishes its budget online.",
+    "Shoppers like the new market. In practice it serves small shops as well as the chains nearby.",
+    "The coach praised the players. The owners who bought the club last year attended the match.",
+    "Everyone talks about the festival. The hospital, which was renovated recently, hosts the opening concert."
+   ]
+  }
+ ],
+ "predictions": "probably fails: the probe reached only 0.13 on blame sentences and 0.005-0.03 on neutral ones, so fire items may sit around 0.1-0.2 and near misses near 0.01",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "blame or threat stance (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token (',' x4, ' the' x2, ' on', ' to'); top examples are mid-document commentary about blame, hostility and threats; max 21, density 0.13%. Probe: 'the blame lies on the organisers' shoulders' 0.130, 'scarier to hand them your home address' 0.098, 'pose an even greater threat' 0.032, 'governments, which are hostile' 0.006, neutral 0.005-0.013. The probe did not transfer; the test records a best guess with two-sentence passages."
+}

@@ -1,0 +1,63 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7093a31d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N8219-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N8219",
+   "pole": "-",
+   "label": "the word pieces 'ider', 'eder' and 'ader' (and the whole token ' cider') when a word is split before them: tax|ider|my, Ha|ider, S|eder, N|ader, Kre|ider, bre|eder; words ending in -der that are a single token (spider, rider, wider, consider, leader, elder) stay silent",
+   "fire": [
+    "The museum hired a taxidermist to restore the moth-eaten bear.",
+    "Our neighbour Kreider sells fresh eggs at the Saturday market.",
+    "The whole family drove to Aunt Ruth's for the Seder this year.",
+    "A pint of dry cider costs four pounds at the village pub.",
+    "The dog breeder recommended a smaller kennel for the puppies.",
+    "The old mill still presses ciders from windfall apples each October.",
+    "The minister appointed Bader to lead the inquiry into the fire.",
+    "An eider duck nested among the rocks below the lighthouse."
+   ],
+   "quiet": [
+    "The museum hired a founder to restore the moth-eaten bear.",
+    "Our neighbour Snyder sells fresh eggs at the Saturday market.",
+    "The whole family drove to Aunt Ruth's for the dinner this year.",
+    "A pint of dry lager costs four pounds at the village pub.",
+    "The dog trainer recommended a smaller kennel for the puppies.",
+    "The old mill still presses juices from windfall apples each October.",
+    "The minister appointed Ryder to lead the inquiry into the fire.",
+    "A slender heron nested among the rocks below the lighthouse."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-1.0 on the piece; near misses below 0.05 because every -der word there is one token ('der' alone, as in ch|ow|der, fires about 0.3)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the pieces 'ider'/'eder'/'ader'",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: 'ider' x9, ' cider' x6, 'der' x5, 'eder' x4, 'ader' x4 of the top 32; max 40, density 0.023%. Probe: taxidermy 0.973 ('ider'), Haider 0.690, Seder 0.624 ('eder'), cider 0.621, Nader 0.560 ('ader'), chowder 0.289 ('der'); single-token spider 0.003, rider 0.002, apple juice 0.002. A layer-4 spelling unit for the '-der' syllable when it arrives as its own piece.",
+ "trigger": {
+  "words": [
+   "cider",
+   "ciders",
+   "taxidermist",
+   "taxidermy",
+   "Kreider",
+   "Seder",
+   "breeder",
+   "Bader",
+   "eider",
+   "Haider",
+   "Nader"
+  ]
+ }
+}

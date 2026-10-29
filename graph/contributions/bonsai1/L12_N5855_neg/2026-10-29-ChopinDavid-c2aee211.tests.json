@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c2aee211",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5855-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N5855",
+   "pole": "-",
+   "label": "the colon inside a clock time (9:30, 7:00am); colons in ratios, scores and labels stay silent. Time-of-day in words (half past nine) and heat or hot-weather text are weaker secondary triggers (0.3-0.45 in the probe), so this label is partial",
+   "fire": [
+    "The library opens at 10:00 and closes at 6:30 on weekdays.",
+    "Our train leaves Paddington at 8:15 tomorrow morning.",
+    "Choir practice runs from 7:00 to 8:45 every Wednesday.",
+    "Please arrive by 11:30 so we can start the tour on time.",
+    "The pharmacy is open Saturdays from 9:00am until 1:00pm.",
+    "Kick-off has been moved to 3:15 because of the parade.",
+    "The last ferry back to the mainland sails at 5:40.",
+    "I set the alarm for 6:20 so I could catch the early bus."
+   ],
+   "quiet": [
+    "The library's ratio of staff to visitors is about 1:40 on weekdays.",
+    "Our train is listed under platform 8, coach B, tomorrow morning.",
+    "Choir practice finished with a vote of 7:2 in favour of the new hymn.",
+    "Please note: we start the tour as soon as everyone has arrived.",
+    "The pharmacy mixes the syrup at a dilution of 1:10 for children.",
+    "Kick-off has been moved to another day because of the parade.",
+    "The last ferry back to the mainland sails after the market closes.",
+    "Final score: the visitors won 3:0 after a quiet second half."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.85 on ':'; near misses below 0.1 for other colons, with weak leaks up to 0.3 possible on schedule sentences without a numeric time",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "colon in a clock time",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: ':' x22 of the top 32 (all hh:mm times), plus ' heat' x2, ' September' x2, ' leave', ' cool' (hot-weather safety text); max 14.6, density 0.055%; the + pole peaks on ' summer'. Probe: '9:30 to 10:30' 0.816, '9:00am to 4pm' 0.682, '7:30 a.m.' 0.369; ratio 3:2 0.020, score 3:1 0.010, 'Note:' 0.003; 'half past nine' 0.315 (' nine'), 'heat illness' 0.449, 'closed vehicle on a hot day' 0.397. The colon is the main trigger; the heat theme is a second one that this test does not cover."
+}
