@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f4c1f0e6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1172-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1172",
+   "pole": "-",
+   "label": "receptor pharmacology: drugs and transmitters that bind, block or activate receptors (agonist, antagonist, adrenergic, dopamine receptors) and the tolerance that follows; surgery, anatomy and 'antagonist' or 'tolerance' in their everyday senses stay low",
+   "fire": [
+    "Antihistamines relieve hay fever by blocking H1 receptors in the nose.",
+    "Morphine acts as an agonist at mu-opioid receptors in the spinal cord.",
+    "Atropine is a muscarinic antagonist used to dry secretions before surgery.",
+    "Caffeine works by blocking adenosine receptors in the brain.",
+    "Long-term use of benzodiazepines produces tolerance and withdrawal.",
+    "Antipsychotics reduce symptoms by blocking dopamine D2 receptors.",
+    "Salbutamol stimulates beta-2 receptors to open the airways.",
+    "The drug's affinity for the serotonin receptor explains its side effects."
+   ],
+   "quiet": [
+    "Antihistamines are sold without a prescription at most pharmacies.",
+    "The surgeon drained the abscess and closed the wound with stitches.",
+    "The villain of the play is a cunning antagonist to the young prince.",
+    "The hike builds endurance and tolerance for cold weather.",
+    "A cast was fitted to the broken wrist for six weeks.",
+    "The nurse measured his blood pressure and pulse before the operation.",
+    "The dentist filled two cavities and polished her teeth.",
+    "The clinic opens at eight and closes at six on weekdays."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "receptor pharmacology",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: alpha-adrenerg|ic, antagonist, G-protein-cou|pled, receptor, muscar|inic, Re|ceptor Antagonists, Pharmac|ology, release at the synapse, tolerance (max 33). Probe: adrenergic receptors 0.771, nicotinic receptors 0.780, opioid antagonist 0.431, tolerance to doses 0.311, synapse 0.160; the antagonist of a novel 0.059, ligament surgery 0.006, receptionist 0.007. The meaning test passed: 'antagonist' outside pharmacology is silent."
+}

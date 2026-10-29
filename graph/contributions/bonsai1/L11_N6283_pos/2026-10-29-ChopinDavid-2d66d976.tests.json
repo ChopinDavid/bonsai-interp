@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2d66d976",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N6283+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N6283",
+   "pole": "+",
+   "label": "a word piece completing a journal name inside a bibliographic reference ('BMC Micro|biology', 'Curr Pharm Des', 'Educational Psych|ologist'); the same words in prose and in book references stay low",
+   "fire": [
+    "- Kim, S. et al. Gut bacteria and host metabolism. BMC Microbiology 14, 112 (2014). [CrossRef]",
+    "- Lopez R. Antibody engineering in plants. Curr Opin Biotechnol. 2010;21:55-62.",
+    "- Nakamura, T. Cognitive load in the classroom. Educational Psychologist, 38(1), 1-4.",
+    "- Weiss, P. Protein folding kinetics. Trends Biochem Sci. 2003;28:18-25. [PubMed]",
+    "- Osei, K. Floodplain sediments of the Niger. Journal of African Earth Sciences 22, 301-310.",
+    "- Chen, L. Ion channels in neurons. Nature Neuroscience 9, 1200-1207 (2006).",
+    "- Ferreira, M. Soil fungi and crop yield. Applied Microbiology and Biotechnology 77, 455-462.",
+    "- Haddad, N. Rhythm and memory. Journal of Cognitive Neuroscience 15, 870-880 (2003)."
+   ],
+   "quiet": [
+    "- Kim, S. Gut bacteria and host metabolism. Cambridge: Cambridge University Press, 2014.",
+    "Lopez studied antibody engineering in plants for twenty years.",
+    "- Nakamura, T. Cognitive load in the classroom. Tokyo: Iwanami, 2003.",
+    "Weiss spent her career on protein folding kinetics at the institute.",
+    "- Osei, K. Floodplain sediments of the Niger. Accra: Ghana Universities Press, 1996.",
+    "Chen's lecture on ion channels in neurons drew a large crowd.",
+    "- Ferreira, M. Soil fungi and crop yield. Lisbon: Gradiva, 2008.",
+    "Haddad taught a course on rhythm and memory last spring."
+   ]
+  }
+ ],
+ "predictions": "probably fails: fire items 0.05-0.2, near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "journal name in a reference",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: weak (max 5.88): EMBO Rep, BMC Micro|biology, Current Opinion in Micro|biology, CrystEng|Comm, Planetary and Space Science, Journal of Feminist Studies, Educational Psych|ologist, Curr Pharm Des, all in reference lists. Probe: Nature Immun|ology 0.163, Marine Ecology Progress Series 0.064, J Exp Biol 0.046; microbiology in prose 0.017, book reference 0.017, journal name in prose 0.017, reference without a journal 0.059. The direction is right but the level is far below 0.3, so the test is expected to fail."
+}

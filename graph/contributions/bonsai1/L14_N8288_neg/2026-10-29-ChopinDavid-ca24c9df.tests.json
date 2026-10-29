@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ca24c9df",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N8288-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N8288",
+   "pole": "-",
+   "label": "pairing and complement relations between the symbols of a notational system: DNA bases that pair (A with T, guanine with cytosine), letters that are confused or paired (b and d), named strings, notes and intervals in music; 'letter' as mail or law, and music or biology without named symbols, stay low",
+   "fire": [
+    "In RNA, uracil takes the place of thymine and pairs with adenine.",
+    "The Watson-Crick rules say that C bonds to G and A bonds to T.",
+    "Young readers often mix up the letters p and q.",
+    "The open D string of the cello rings a fifth above the G.",
+    "In Morse code the letter E is a single dot and T a single dash.",
+    "A capital I and a lowercase l look identical in this typeface.",
+    "The chord stacks a major third on top of the root note C.",
+    "Each codon of three bases, such as AUG, specifies one amino acid."
+   ],
+   "quiet": [
+    "In the lab, the technician labelled the tubes and put them on ice.",
+    "The Watson family moved to a farm outside the town.",
+    "Young readers often lose their place on a crowded page.",
+    "The cello was carried onto the stage in a padded case.",
+    "He sealed the letter and dropped it in the box on the corner.",
+    "The contract was signed to the letter of the agreement.",
+    "The pianist bowed and walked slowly off the stage.",
+    "Each cell carries a copy of the organism's genetic material."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0; near misses below 0.05, though 'strings' of a violin leaked 0.238 in the probe",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "paired symbols (bases, letters, notes)",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: 'guanine (G) pairs with cytosine' -26.38, 'A-T and G-C' -21.62, 'the E string' -19.62, 'twin letters' -19.38, codons, 'each letter of the script', 'fifths'. Probe: 'adenine (A) pairs with thymine (T)' 1.142, the same without the letters 0.754 (so the pairing meaning fires without letter symbols), 'letters b and d' 0.490, 'G string' 0.418, stop codons 0.273; 'posted the letter' 0.002, 'letter of the law' 0.005, violin strings replaced 0.238."
+}

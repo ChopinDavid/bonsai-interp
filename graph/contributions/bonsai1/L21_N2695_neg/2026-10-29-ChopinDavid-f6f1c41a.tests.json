@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f6f1c41a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N2695-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N2695",
+   "pole": "-",
+   "label": "the end of a fronted day or title phrase that opens a sentence, just before its comma ('On Monday, ...', 'In The Long Goodbye, Chandler ...'); the same phrase at the end of the sentence and other fronted adjuncts ('After the storm,') stay low",
+   "fire": [
+    "On Thursday, the council approved the new bus routes.",
+    "In The Long Goodbye, Chandler sends Marlowe to Mexico.",
+    "On Saturday, firefighters contained the blaze near the harbour.",
+    "In Bleak House, Dickens mocks the slowness of the courts.",
+    "On Monday morning, the shares fell by eight percent.",
+    "In Silent Spring, Carson warned about pesticides.",
+    "On Sunday, thousands marched through the city centre.",
+    "In Middlemarch, Eliot follows the lives of a whole town."
+   ],
+   "quiet": [
+    "The council approved the new bus routes on Thursday.",
+    "Chandler sends Marlowe to Mexico in The Long Goodbye.",
+    "After the fire, the harbour was closed for a week.",
+    "Dickens mocks the slowness of the courts in Bleak House.",
+    "Despite the warnings, the shares fell by eight percent.",
+    "Carson warned about pesticides in Silent Spring.",
+    "Although it rained, thousands marched through the city centre.",
+    "Eliot follows the lives of a whole town in Middlemarch."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.35 at the day/title word or the comma; sentence-final versions around 0.1, other adjuncts below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "fronted date/title before comma",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: 'On Monday,' -13.19, 'On Tuesday,' -12.31, 'In A Virtuous Education,' -14.38, code loop headers before ':' (-14). Probe: 'On Wednesday,' 0.318 at Wednesday, 'In Her Final Diary,' 0.231 at the comma; 'After the storm,' 0.014, for-loop header 0.066, the same day at sentence end 0.133, controls 0.02. The code side did not reproduce in short snippets, so the prose side is tested."
+}

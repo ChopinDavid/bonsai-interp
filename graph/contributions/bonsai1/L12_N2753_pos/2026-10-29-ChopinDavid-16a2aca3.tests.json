@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-16a2aca3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N2753+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N2753",
+   "pole": "+",
+   "label": "a grade or class designation inside a rating scheme ('NYHA Class II', 'magnitude M 6.8', 'Class A power supply', 'Category 4'); the same situations described without a scheme label stay low",
+   "fire": [
+    "The patient was classified as NYHA Class III and started on diuretics.",
+    "At dawn a M 7.4 earthquake struck off the coast.",
+    "The charger meets the Class A standard for external power supplies.",
+    "Her tumour was staged as Stage II under the TNM system.",
+    "The storm was rated Category 4 when it made landfall.",
+    "The laser is a Class 3B device and needs protective goggles.",
+    "On the Richter scale the tremor registered M 5.9.",
+    "The wine was graded Premier Cru by the regional board."
+   ],
+   "quiet": [
+    "The patient was short of breath and started on diuretics.",
+    "At dawn a powerful earthquake struck off the coast.",
+    "The charger is efficient enough for most external power supplies.",
+    "Her tumour was small and had not spread.",
+    "The storm was fierce when it made landfall.",
+    "The laser is powerful and needs protective goggles.",
+    "The tremor was strong enough to rattle the windows.",
+    "The wine was praised by the regional board."
+   ]
+  }
+ ],
+ "predictions": "mixed: 3-4 of 8 fire items above 0.3; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "grade/class designation",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card: weak (max 5.88, 48% echo regime): 'M 7.1', IP|SS score, 'stage IV', 'Class A', 'NYHA Class I', 'Classification', 'color' assigned. Probe: NYHA Class II 0.515, M 6.8 0.406 (peak '6'), GHS classification 0.178, Class B 0.115, stage III 0.055; controls 0.009-0.092. Half the probes fired, so this is a low-confidence test."
+}

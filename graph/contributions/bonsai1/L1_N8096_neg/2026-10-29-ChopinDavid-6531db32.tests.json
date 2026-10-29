@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6531db32",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N8096-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N8096",
+   "pole": "-",
+   "label": "a short mid-word spelling piece such as 'el', 'elman', 'рес' or 'ез' continuing a word that began with the fragment 'Ad' / 'ад' / 'Р' (Ad|el|phi, Ad|elman, IP-ад|рес, Р|ез|ерв); single-token spellings of similar names (Adelaide, Toronto) stay lower",
+   "fire": [
+    "The casino magnate Sheldon Adelson funded the campaign.",
+    "Explorers named the penguin colony after Adelie Land.",
+    "The old prince Adelbert refused to leave the castle.",
+    "Сервер присвоил каждому компьютеру новый IP-адрес.",
+    "Администратор заблокировал IP-адрес нарушителя.",
+    "Федеральный Резерв поднял ставку в среду.",
+    "The mayor of Adelanto opened the new library.",
+    "The nurse Adelheid worked night shifts all winter."
+   ],
+   "quiet": [
+    "The casino magnate Steve Wynn funded the campaign.",
+    "Explorers named the penguin colony after Victoria Land.",
+    "The old prince Rupert refused to leave the castle.",
+    "Сервер присвоил каждому компьютеру новое имя.",
+    "Администратор заблокировал учётную запись нарушителя.",
+    "Федеральный банк поднял ставку в среду.",
+    "The mayor of Toronto opened the new library.",
+    "The nurse Brigitte worked night shifts all winter."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.8 on the piece after Ad/ад/Р; near misses below 0.2 (Adelaide gave 0.176 and whole-word адрес 0.370 in the probe)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'el'/'ез'/'рес' piece after Ad-/ад-/Р-",
+ "unit_kind": "lexical",
+ "confidence": 0.4,
+ "notes": "Card: tiny max 0.93, broad (3.4%), gate-closed regime; peaks 'ез' x8, 'el' x7, 'рес' x3 after ад-, Ad-, Р-. Probe: Ad|el|anto 0.754, Ad|el|phi 0.742, IP-ад|рес 0.697, Ad|elman 0.640, Р|ез|олюция 0.608; Ad|eline 0.117, Adelaide (one token) 0.176, адрес (one token) 0.370, Toronto -0.004. A layer-1 spelling pole; the piece identity after the fragment seems to matter more than the fragment."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-cad98a04",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N7214-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N7214",
+   "pole": "-",
+   "label": "a predicate about to be qualified by a later-time clause ('did not reach the island until ...', 'will be instituted when ...', 'may still be ...'); the same statements anchored to a completed past time stay low",
+   "fire": [
+    "The vines were planted in 1850. Wine from the valley did not reach Paris until the railway arrived.",
+    "The hospital has ordered the scanners. The new protocol will be adopted when the staff have been trained.",
+    "Engineers have mapped the seabed. Deep-sea mining may still be years away from being profitable.",
+    "The treaty was signed in haste. Its terms were not enforced until a second war broke out.",
+    "Funding was approved last year. The bridge will be opened when the final inspection is complete.",
+    "Fossils show the species was widespread. It did not disappear from Europe until the last ice age.",
+    "The drug passed its trials. Cheaper generic versions may not appear for another decade.",
+    "The land was cleared. Settlers did not move into the valley until the fort was built."
+   ],
+   "quiet": [
+    "The vines were planted in 1850. Wine from the valley reached Paris by rail in 1862.",
+    "The hospital ordered the scanners. The new protocol was adopted in March after the staff training.",
+    "Engineers have mapped the seabed. Deep-sea mining began there in 2019 and proved profitable.",
+    "The treaty was signed in haste. Its terms were enforced strictly from the first day.",
+    "Funding was approved last year. The bridge opened in May after the final inspection.",
+    "Fossils show the species was widespread. It vanished from Europe during the last ice age.",
+    "The drug passed its trials. Cheaper generic versions appeared within a year.",
+    "The land was cleared. Settlers moved into the valley the same summer the fort was built."
+   ]
+  }
+ ],
+ "predictions": "probably fails: fire items 0.05-0.2, near misses below 0.03",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicate before until/when clause",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: ' instituted' before 'when' -27.38, ' may' before 'be cheaper' -22.25, ' lives' before 'when' -21.75, ' until' -18.25; the + pole promotes 'initial/early' and suppresses 'later/after/eventually', so the - pole should sit where a later-time continuation is predicted. Probe: 'not ... until the' 0.154, 'will be implemented when' 0.038, 'saves lives when' 0.037, 'may still be' 0.025; past-anchored controls 0.006-0.011. The probes did not reproduce the card, so this is a best-guess test with two-sentence context."
+}

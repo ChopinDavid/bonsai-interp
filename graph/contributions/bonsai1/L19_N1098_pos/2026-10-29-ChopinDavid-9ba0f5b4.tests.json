@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9ba0f5b4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N1098+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N1098",
+   "pole": "+",
+   "label": "the modifier that completes a dictionary-style gloss or crossword clue in a numbered definition list ('rodent having a long tail', 'bird with a white head'); ordinary sentences about the same things stay low",
+   "fire": [
+    "12. Domestic animal having soft fur and a long tail.\n13. Shallow dish used for serving soup.",
+    "3. Tropical fruit with a thick yellow skin.\n4. Wooden frame used to support climbing plants.",
+    "8. Large flightless bird having powerful legs.\n9. Metal pin used to hold two boards together.",
+    "21. Sweet spread made from crushed fruit and sugar.\n22. Small boat with a flat bottom.",
+    "6. Evergreen shrub having glossy leaves and red berries.\n7. Narrow passage between two buildings.",
+    "15. Brass instrument with three valves and a flared bell.\n16. Loose garment worn over other clothes.",
+    "2. Freshwater fish having a whiskered mouth.\n3. Heavy curtain hung across a doorway.",
+    "9. Hand tool with a flat blade used for digging.\n10. Covered walkway along the side of a building."
+   ],
+   "quiet": [
+    "Our cat has soft fur and a long tail, and she sleeps on the sofa.",
+    "The bananas at the market had thick yellow skins and were very sweet.",
+    "The ostrich ran across the field on its powerful legs.",
+    "Grandmother made jam from crushed strawberries and a little sugar.",
+    "The holly bush by the gate has glossy leaves and red berries in winter.",
+    "He played the trumpet in the school band for three years.",
+    "The catfish in the river have long whiskers around the mouth.",
+    "I dug the vegetable bed with a spade and raked the soil flat."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.3; near misses below 0.05, with some weak leaks because the pole is broad",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "definition-gloss modifier",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: broad (2.4% of tokens), max 8.31, peaks on ' having' in a crossword clue, ' up' in 'picks up', '):\\n' and '\\n\\n' in code. Probe: 'rodent having a long tail' 0.287, 'bird of prey with a white head' 0.290, 'picks up the pace' 0.276, elif code 0.191; cleft 'that' 0.051, plain sentences 0.009-0.014. The gloss reading is the only one that gives new cases, so it is tested at low confidence."
+}
