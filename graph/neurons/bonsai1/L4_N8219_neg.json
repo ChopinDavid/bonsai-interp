@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N8219-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 8219,
+ "pole": "-",
+ "label": "the word pieces 'ider', 'eder' and 'ader' (and the whole token ' cider') when a word is split before them: tax|ider|my, Ha|ider, S|eder, N|ader, Kre|ider, bre|eder; words ending in -der that are a single token (spider, rider, wider, consider, leader, elder) stay silent",
+ "short": "the pieces 'ider'/'eder'/'ader'",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N8219_neg/2026-10-29-ChopinDavid-7093a31d.tests.json",
+   "prereg_commit": "7e0fcc8b",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.881,
+     "peak": "ider"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.354,
+     "peak": "ider"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.485,
+     "peak": "eder"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.64,
+     "peak": " cider"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.005,
+     "peak": " kenn"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.671,
+     "peak": "iders"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.502,
+     "peak": "ader"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.498,
+     "peak": "ider"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " founder"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " Snyder"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " Aunt"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": "ager"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " kenn"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "fall"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.07,
+     "peak": " Ryder"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " nested"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.5,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-7093a31d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-7093a31d",
+   "the word pieces 'ider', 'eder' and 'ader' (and the whole token ' cider') when a word is split before them: tax|ider|my, Ha|ider, S|eder, N|ader, Kre|ider, bre|eder; words ending in -der that are a single token (spider, rider, wider, consider, leader, elder) stay silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-7093a31d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

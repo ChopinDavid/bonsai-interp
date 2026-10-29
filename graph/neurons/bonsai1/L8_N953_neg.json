@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N953-",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 953,
+ "pole": "-",
+ "label": "a surname split into several tokens: fires on a piece of the name (Brun|ner, Tier|ney, High|more, Dur|den, C|umber|batch); single-token surnames (Smith, Jones, Weaver) and split place or common names stay low",
+ "short": "piece of a multi-token surname",
+ "kind": "token",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N953_neg/2026-10-29-ChopinDavid-12a51bf5.tests.json",
+   "prereg_commit": "7e0fcc8b",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.092,
+     "peak": " C"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.081,
+     "peak": "itt"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.494,
+     "peak": "ur"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.054,
+     "peak": " pale"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.079,
+     "peak": " Helm"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.191,
+     "peak": " Mull"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.63,
+     "peak": "man"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.112,
+     "peak": " Square"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.105,
+     "peak": " Young"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.051,
+     "peak": " physics"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.174,
+     "peak": " Scott"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.053,
+     "peak": " pale"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " hospital"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.178,
+     "peak": " act"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.099,
+     "peak": " Square"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.719,
+    "median_fire": 0.102,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-12a51bf5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-12a51bf5",
+   "a surname split into several tokens: fires on a piece of the name (Brun|ner, Tier|ney, High|more, Dur|den, C|umber|batch); single-token surnames (Smith, Jones, Weaver) and split place or common names stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-12a51bf5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

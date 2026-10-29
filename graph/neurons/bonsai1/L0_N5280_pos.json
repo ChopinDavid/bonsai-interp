@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N5280+",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 5280,
+ "pole": "+",
+ "label": "the six-space whitespace token: a line indented by exactly seven spaces before a word or symbol (the tokenizer gives a six-space token plus a space-initial token); lines indented by four, six, eight or more spaces produce other whitespace tokens and stay low",
+ "short": "the six-space indent token",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N5280_pos/2026-10-29-ChopinDavid-3190261c.tests.json",
+   "prereg_commit": "7e0fcc8b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.751,
+     "peak": "      "
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.837,
+     "peak": "      "
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.952,
+     "peak": "      "
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.749,
+     "peak": "      "
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.827,
+     "peak": "      "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.808,
+     "peak": "      "
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.844,
+     "peak": "      "
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.873,
+     "peak": "      "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.032,
+     "peak": "    "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.062,
+     "peak": "        "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.109,
+     "peak": "     "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.105,
+     "peak": "                "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.04,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.044,
+     "peak": "   "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.832,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-3190261c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-3190261c",
+   "the six-space whitespace token: a line indented by exactly seven spaces before a word or symbol (the tokenizer gives a six-space token plus a space-initial token); lines indented by four, six, eight or more spaces produce other whitespace tokens and stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-3190261c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

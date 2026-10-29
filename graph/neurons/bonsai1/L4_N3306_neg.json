@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N3306-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 3306,
+ "pole": "-",
+ "label": "the token ' men' in the generic sense of humankind (all men are created equal, the hearts of men, the sons of men); ' men' for a specific group (three men were arrested, the men on the night shift) and generic 'people', 'women' or 'creatures' stay low",
+ "short": "' men' as humankind",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3306_neg/2026-10-29-ChopinDavid-c9595ad4.tests.json",
+   "prereg_commit": "7e0fcc8b",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.319,
+     "peak": " men"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.603,
+     "peak": " men"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.363,
+     "peak": " men"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.474,
+     "peak": " men"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.206,
+     "peak": " men"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.107,
+     "peak": " men"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.18,
+     "peak": " men"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.267,
+     "peak": " men"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.025,
+     "peak": " equal"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " souls"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": " laws"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.036,
+     "peak": " men"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.059,
+     "peak": " men"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " end"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.072,
+     "peak": " men"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.293,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-c9595ad4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-c9595ad4",
+   "the token ' men' in the generic sense of humankind (all men are created equal, the hearts of men, the sons of men); ' men' for a specific group (three men were arrested, the men on the night shift) and generic 'people', 'women' or 'creatures' stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-c9595ad4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
