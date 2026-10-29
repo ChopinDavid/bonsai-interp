@@ -1,0 +1,163 @@
+{
+ "id": "2026-10-29-ChopinDavid-76e9b01d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11126+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T18:30:27+00:00",
+ "recipe": {
+  "toolchain_commit": "7e0fcc8b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N11126_pos/2026-10-29-ChopinDavid-76e9b01d.tests.json"
+ },
+ "label": "Spanish ' ser' as its own token: the infinitive (puede ser, debe ser) and the stem of split future forms (ser|án, ser|emos); other Spanish verbs in the same frames stay low (the pole is broad, and English ' the' after a sentence-initial 'The' also fired 0.3-0.4, so the test is in Spanish)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N11126_pos/2026-10-29-ChopinDavid-76e9b01d.tests.json",
+   "prereg_commit": "7e0fcc8b",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.414,
+     "peak": " ser"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.218,
+     "peak": " ser"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.29,
+     "peak": " ser"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.486,
+     "peak": " ser"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.329,
+     "peak": " ser"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.551,
+     "peak": " ser"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.127,
+     "peak": " ser"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.37,
+     "peak": " ser"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.07,
+     "peak": " del"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.058,
+     "peak": " qu"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.046,
+     "peak": " menos"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.086,
+     "peak": " puede"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.057,
+     "peak": "ire"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.072,
+     "peak": " del"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.113,
+     "peak": " cerr"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.087,
+     "peak": " jue"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.35,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7e0fcc8b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Spanish ' ser' token",
+ "unit_kind": "token",
+ "confidence": 0.5,
+ "notes": "Card: ' ser' x14 of the top 32 in Spanish, max 0.55, density 3.6% (FLAG broad). Probe: 'no podrá ser mayor' 0.639, 'serán exactamente' 0.902, 'llegue a ser presidente' 0.429, 'queremos ser delegados' 0.187; 'podrá estar' 0.070, 'hacer de delegados' 0.124, 'quedarán' 0.154, English sermon 0.023; English floor sentences 0.300 and 0.386 on ' the'. tok.py: será and sería are single tokens, so fire items use ser, serán, seremos, serás.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "ser",
+   "serán",
+   "seremos",
+   "serás",
+   "seré",
+   "serían",
+   "seres"
+  ]
+ }
+}

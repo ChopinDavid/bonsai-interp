@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-22a773bc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N9672+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T18:30:25+00:00",
+ "recipe": {
+  "toolchain_commit": "7e0fcc8b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N9672_pos/2026-10-29-ChopinDavid-22a773bc.tests.json"
+ },
+ "label": "unclear; best guess: argumentative prose that assigns blame or names a threat to someone (the blame lies on their shoulders, it is scarier to hand them your address, rents pose a greater threat), as opposed to neutral description",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N9672_pos/2026-10-29-ChopinDavid-22a773bc.tests.json",
+   "prereg_commit": "7e0fcc8b",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.252,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.602,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.056,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.189,
+     "peak": " poses"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.367,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.22,
+     "peak": " more"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.23,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.361,
+     "peak": " threat"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": " spring"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " Most"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " board"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " weather"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.018,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.241,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7e0fcc8b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "blame or threat stance (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token (',' x4, ' the' x2, ' on', ' to'); top examples are mid-document commentary about blame, hostility and threats; max 21, density 0.13%. Probe: 'the blame lies on the organisers' shoulders' 0.130, 'scarier to hand them your home address' 0.098, 'pose an even greater threat' 0.032, 'governments, which are hostile' 0.006, neutral 0.005-0.013. The probe did not transfer; the test records a best guess with two-sentence passages.",
+ "selection": "random draw"
+}
