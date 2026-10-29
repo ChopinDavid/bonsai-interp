@@ -1,0 +1,46 @@
+{
+ "contribution": "2026-10-28-moridinamael-dabfe9e1",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N2413+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:08:15+00:00",
+ "roles": ["feeds bonsai1/L16/N12088+"],
+ "neighbours": [
+  {
+   "unit": "L2/N2413",
+   "pole": "+",
+   "label": "the words 'evade', 'evasion' and 'evasive' (and 'antiproliferative'), not synonyms like avoid or escape",
+   "fire": [
+    "The suspect tried to evade the police by driving down a narrow alley.",
+    "He was charged with tax evasion after the audit uncovered hidden accounts.",
+    "When asked about the missing funds, the mayor gave an evasive answer.",
+    "Tumor cells can evade the immune system by hiding their surface markers.",
+    "The pilot performed an evasive maneuver to avoid the incoming bird flock.",
+    "Her evasion of every direct question frustrated the interviewer.",
+    "The compound showed strong antiproliferative effects on cancer cell lines.",
+    "Some viruses mutate quickly enough to evade existing vaccines."
+   ],
+   "quiet": [
+    "The suspect tried to escape the police by driving down a narrow alley.",
+    "He was charged with fraud after the audit uncovered hidden accounts.",
+    "When asked about the missing funds, the mayor gave a vague answer.",
+    "Tumor cells can hide from the immune system by masking their surface markers.",
+    "The pilot made a sharp turn to avoid the incoming bird flock.",
+    "Her dodging of every direct question frustrated the interviewer.",
+    "The compound showed strong toxic effects on cancer cell lines.",
+    "Some viruses mutate quickly enough to escape existing vaccines."
+   ]
+  }
+ ],
+ "predictions": "Expect 6-7/8 fire; evade/evasion strong, evasive and antiproliferative weaker; near misses near zero.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-out"
+  ]
+ }
+}
