@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N5296+",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 5296,
+ "pole": "+",
+ "label": "function words inside legal or contractual clauses (warranty conditions, statutory definitions: 'void if the product is', 'means the possession of'); the same topics in casual prose stay low",
+ "short": "legal-clause register",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N5296_pos/2026-10-29-ChopinDavid-3731fe8a.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.404,
+     "peak": " an"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.335,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.421,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.222,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.161,
+     "peak": " product"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.175,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.114,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.127,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " tried"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.05,
+     "peak": " Leeds"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": " fine"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " me"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.076,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.127,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": " few"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.071,
+     "peak": " cancelled"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.977,
+    "median_fire": 0.199,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-3731fe8a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-3731fe8a",
+   "function words inside legal or contractual clauses (warranty conditions, statutory definitions: 'void if the product is', 'means the possession of'); the same topics in casual prose stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-3731fe8a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

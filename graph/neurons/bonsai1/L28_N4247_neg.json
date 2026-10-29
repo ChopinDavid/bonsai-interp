@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N4247-",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 4247,
+ "pole": "-",
+ "label": "the adjective in 'in a [adjective] mood / frame of mind / shape' describing a person's mental state; the same 'in a good / strong [noun]' frame for objects or situations (condition, position, place) stays low",
+ "short": "'in a good mood' mental-state frame",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N4247_neg/2026-10-29-ChopinDavid-1b72f822.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.468,
+     "peak": " cheerful"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.05,
+     "peak": " frame"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.313,
+     "peak": "umpy"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.666,
+     "peak": " peaceful"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.592,
+     "peak": " better"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.262,
+     "peak": " happy"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.941,
+     "peak": " frame"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.193,
+     "peak": " terrible"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.224,
+     "peak": " cleaner"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": "ed"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.342,
+     "peak": " stronger"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.038,
+     "peak": " messy"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " alley"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.53,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-1b72f822"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-1b72f822",
+   "the adjective in 'in a [adjective] mood / frame of mind / shape' describing a person's mental state; the same 'in a good / strong [noun]' frame for objects or situations (condition, position, place) stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-1b72f822"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

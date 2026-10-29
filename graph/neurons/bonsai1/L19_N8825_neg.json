@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N8825-",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 8825,
+ "pole": "-",
+ "label": "guess: the first named product or component in a chemistry or genetics enumeration ('into oxygen and water', '47, XXY'); everyday lists of goods stay low",
+ "short": "first item of a scientific pair (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N8825_neg/2026-10-29-ChopinDavid-27eaa9f1.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.059,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.096,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.263,
+     "peak": " X"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.152,
+     "peak": " nitrogen"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.16,
+     "peak": " dioxide"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.152,
+     "peak": " hydrogen"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.046,
+     "peak": " dioxide"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.049,
+     "peak": " ethanol"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.042,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.042,
+     "peak": " blue"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.03,
+     "peak": " converts"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " leaves"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.02,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " turns"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.04,
+     "peak": " bags"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.124,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-27eaa9f1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-27eaa9f1",
+   "guess: the first named product or component in a chemistry or genetics enumeration ('into oxygen and water', '47, XXY'); everyday lists of goods stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-27eaa9f1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

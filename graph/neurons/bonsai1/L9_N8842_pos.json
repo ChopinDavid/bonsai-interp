@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N8842+",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 8842,
+ "pole": "+",
+ "label": "a relational word that locates one element of a geometric figure relative to another (sides containing the angle, arcs on which the angles stand, a line encircling the body); the same verbs used outside geometry stay low",
+ "short": "geometric relation word",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N8842_pos/2026-10-29-ChopinDavid-9b223fc1.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.166,
+     "peak": " opposite"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.273,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.325,
+     "peak": " meet"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.832,
+     "peak": " standing"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.314,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.749,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.457,
+     "peak": " circumference"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.884,
+     "peak": " sum"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.055,
+     "peak": " opposite"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.085,
+     "peak": "Draw"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.103,
+     "peak": " had"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.022,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.069,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.002,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.603,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-9b223fc1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-9b223fc1",
+   "a relational word that locates one element of a geometric figure relative to another (sides containing the angle, arcs on which the angles stand, a line encircling the body); the same verbs used outside geometry stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-9b223fc1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N3576+",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 3576,
+ "pole": "+",
+ "label": "the possessive or noun inside the wholehearted-effort idiom 'with all my heart / with all his might / with my whole being'; 'with all her friends / luggage' in a literal sense stays low",
+ "short": "'with all my heart' idiom",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N3576_pos/2026-10-29-ChopinDavid-d6d16b0f.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.039,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.568,
+     "peak": " her"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.49,
+     "peak": " my"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.692,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.474,
+     "peak": " hearts"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.063,
+     "peak": " being"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.658,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.489,
+     "peak": " soul"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.261,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.129,
+     "peak": " her"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.107,
+     "peak": " my"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.057,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.097,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.121,
+     "peak": " whole"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.14,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.232,
+     "peak": " her"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.613,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d6d16b0f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d6d16b0f",
+   "the possessive or noun inside the wholehearted-effort idiom 'with all my heart / with all his might / with my whole being'; 'with all her friends / luggage' in a literal sense stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d6d16b0f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
