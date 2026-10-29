@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L22/N4411-",
+ "model": "bonsai1",
+ "layer": 22,
+ "index": 4411,
+ "pole": "-",
+ "label": "an 'oo'-spelled piece ('oo', 'ool', 'Roo') inside a rare proper name that the tokenizer splits (V|ool|stra, K|oo|zai, D|ool|ittle); everyday words with 'oo' (school, book) and similar names without 'oo' stay low",
+ "short": "'oo' piece inside a split proper name",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N4411_neg/2026-10-29-ChopinDavid-c047fe9d.tests.json",
+   "prereg_commit": "e5909ca6",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.652,
+     "peak": "oo"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.898,
+     "peak": "ool"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.371,
+     "peak": "ools"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.505,
+     "peak": "ool"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.695,
+     "peak": " Roo"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.995,
+     "peak": "ool"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.716,
+     "peak": "ool"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.558,
+     "peak": "ool"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": "ries"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " building"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.021,
+     "peak": "eter"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " Kenya"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " coach"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.133,
+     "peak": "meer"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " walked"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.673,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-c047fe9d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-c047fe9d",
+   "an 'oo'-spelled piece ('oo', 'ool', 'Roo') inside a rare proper name that the tokenizer splits (V|ool|stra, K|oo|zai, D|ool|ittle); everyday words with 'oo' (school, book) and similar names without 'oo' stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-c047fe9d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

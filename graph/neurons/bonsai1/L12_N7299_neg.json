@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N7299-",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 7299,
+ "pole": "-",
+ "label": "selecting HTML/DOM elements in code: CSS child selectors ('>'), find/find_all and similar calls on a parsed page, and the element variables they return; code that does arithmetic or list handling without a document stays low",
+ "short": "DOM element selection in code",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N7299_neg/2026-10-29-ChopinDavid-096cfa3e.tests.json",
+   "prereg_commit": "e5909ca6",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.882,
+     "peak": "(a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.072,
+     "peak": ">"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.029,
+     "peak": "')."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.187,
+     "peak": " >"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.721,
+     "peak": "_all"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.452,
+     "peak": "\"]/"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.835,
+     "peak": "('"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.498,
+     "peak": ">"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": "()"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": " max"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": "))\n"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.022,
+     "peak": "(cost"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.046,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.02,
+     "peak": "')"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.778,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-096cfa3e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-096cfa3e",
+   "selecting HTML/DOM elements in code: CSS child selectors ('>'), find/find_all and similar calls on a parsed page, and the element variables they return; code that does arithmetic or list handling without a document stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-096cfa3e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

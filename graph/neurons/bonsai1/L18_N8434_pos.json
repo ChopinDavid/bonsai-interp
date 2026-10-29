@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N8434+",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 8434,
+ "pole": "+",
+ "label": "guess: the break between a web page's metadata or header line (poster, date, site name, signature) and the start of its content; ordinary narrative sentences stay low",
+ "short": "guess: web header/content boundary",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N8434_pos/2026-10-29-ChopinDavid-f80637c9.tests.json",
+   "prereg_commit": "e5909ca6",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.038,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.007,
+     "peak": " Contact"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.002,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.024,
+     "peak": " had"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": -0.007,
+     "peak": " reels"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.023,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.001,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.023,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.004,
+     "peak": " told"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": "Tom"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " had"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.0,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " anyone"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.004,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " with"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.625,
+    "median_fire": 0.015,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-f80637c9"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-f80637c9",
+   "guess: the break between a web page's metadata or header line (poster, date, site name, signature) and the start of its content; ordinary narrative sentences stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-f80637c9"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
