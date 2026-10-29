@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-29-moridinamael-8b0489d4",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L35/N6360+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:48:46+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "A space-initial byte-fallback token: a space followed by a non-ASCII character such as '÷', a CJK character or an accented capital ('Ú'); quiet when the same content is written in ASCII."
+ },
+ "neighbours": [
+  {
+   "unit": "L35/N6360",
+   "pole": "+",
+   "label": "A space-led split-byte token: a space merged with the lead byte of a character the tokenizer breaks into bytes. Fires for Latin-1 symbols and letters after a space (÷ × ß ø Þ ð ú Ú) and for CJK characters in the U+6000-6FFF block (源 慈 欧 洗); quiet for emoji, Cyrillic, Greek, Korean, other CJK blocks (e.g. 鬱 蠡), accented letters inside words, and ASCII twins.",
+   "fire": [
+    "Compute 12 ÷ 4 on the board before the bell rings.",
+    "The storage room measures 3 × 5 meters.",
+    "In German, the letter ß is called Eszett.",
+    "The Danish letter ø appears in many place names.",
+    "Old English scribes used the letter Þ for the th sound.",
+    "Icelandic still writes ð in many everyday words.",
+    "The sign by the harbor read Úlfur Hall.",
+    "In Spanish, the word tú carries an accent, and teachers say ú marks the stress."
+   ],
+   "quiet": [
+    "Compute 12 / 4 on the board before the bell rings.",
+    "The storage room measures 3 x 5 meters.",
+    "In German, the letters ss are called a double s.",
+    "The Greek letter λ appears in many formulas.",
+    "Old English scribes used the letters th for that sound.",
+    "Russian still writes ж in many everyday words.",
+    "The sign by the harbor read Ulfur Hall.",
+    "In French, the word café carries an accent that marks the stress."
+   ]
+  }
+ ],
+ "predictions": "Expect 6-8 of 8 fire sentences above 0.2 (Latin-1 symbols were 0.5-0.9 in my exploration); risk is the ASCII twins: '12 / 4' and '3 x 5' may reach ~0.25 on a lone space token, and ú/Ú/ø may be whole tokens in some frames.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "which",
+   "bank-solo",
+   "inverse-gmoo"
+  ]
+ }
+}
