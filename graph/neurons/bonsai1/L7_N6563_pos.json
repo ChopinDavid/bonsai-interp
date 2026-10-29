@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L7/N6563+",
+ "model": "bonsai1",
+ "layer": 7,
+ "index": 6563,
+ "pole": "+",
+ "label": "Recognizes the damasc-/damask- spelling family across city names and other meanings.",
+ "short": "damasc-/damask- spellings",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N6563_pos/2026-10-29-lm1909-d22b2886.tests.json",
+   "prereg_commit": "27799df3",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.582,
+     "peak": " Damascus"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.795,
+     "peak": "ASC"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.647,
+     "peak": "ask"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.582,
+     "peak": "ask"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.911,
+     "peak": "ask"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.725,
+     "peak": "asco"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.875,
+     "peak": "asc"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.967,
+     "peak": "asc"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": " Syrian"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " hidden"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": "cade"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " rose"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.039,
+     "peak": " Aleppo"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " sue"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " mi"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "On"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.76,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-lm1909-d22b2886"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-lm1909-d22b2886",
+   "Recognizes the damasc-/damask- spelling family across city names and other meanings.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-29-lm1909-d22b2886"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
