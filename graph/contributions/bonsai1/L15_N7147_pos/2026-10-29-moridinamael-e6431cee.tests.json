@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-29-moridinamael-e6431cee",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N7147+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:56:43+00:00",
+ "roles": ["feeds bonsai1/L17/N10144+"],
+ "neighbours": [
+  {
+   "unit": "L15/N7147",
+   "pole": "+",
+   "label": "a different word right after a comma that restates the word just before it (a near-synonym: wishes, desires; big, huge)",
+   "short": "near-synonym restating the previous word",
+   "fire": [
+    "She whispered all her secret wishes, desires she had never told anyone.",
+    "The castle had a big, huge courtyard full of fountains.",
+    "He felt tired, exhausted after the long shift at the hospital.",
+    "It was a quiet, silent morning in the mountain village.",
+    "The puppy was small, tiny enough to fit in a teacup.",
+    "We need a quick, rapid response from the support team.",
+    "The old map was ancient, antique paper that crumbled at the edges.",
+    "Her answer was clear, obvious to everyone in the room."
+   ],
+   "quiet": [
+    "She whispered all her secret wishes, then blew out the candles on the cake.",
+    "The castle had a big, sunny courtyard full of fountains.",
+    "He felt tired, but he still cooked dinner after the long shift.",
+    "It was a quiet, foggy morning in the mountain village.",
+    "The puppy was small, brown and fit easily in a teacup.",
+    "We need a quick response from the support team by Friday.",
+    "The old map was ancient, and someone had folded it into quarters.",
+    "Her answer was clear, so the meeting ended early."
+   ]
+  }
+ ],
+ "predictions": "Fire sentences should score 0.3-0.5 of max; near misses near zero. Risk: second word in the pair may be weaker when the pair is not an intensifier.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo",
+   "step-out",
+   "blind-room"
+  ]
+ }
+}
