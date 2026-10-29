@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-11adc6ea",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N7093+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T01:28:54+00:00",
+ "recipe": {
+  "toolchain_commit": "70b82816",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N7093_pos/2026-10-28-ChopinDavid-11adc6ea.tests.json"
+ },
+ "label": "the name and signature of a unit-test method (def test_<condition>(self):) and its 'Test a ...' docstring: the pole marks code that states a tested condition; the same names as ordinary methods outside a test stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N7093_pos/2026-10-28-ChopinDavid-11adc6ea.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.515,
+     "peak": "_empty"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.475,
+     "peak": "ails"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.506,
+     "peak": "_with"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.577,
+     "peak": "):\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.58,
+     "peak": " valid"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.639,
+     "peak": "_un"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.669,
+     "peak": "_without"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.565,
+     "peak": "):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.026,
+     "peak": "):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": "):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " h"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": "):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": "):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.571,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "70b82816",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "unit-test method signature naming a tested condition",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: '):\\n' x9 and ' test' x7 in def test_...(self) lines. Probe: test_upload docstring 'Test a valid upload' 0.590, test_parse_empty_string 0.586, test_login_with_invalid_password 0.491, test_get_missing_key 0.463; class Parser handle_missing_file 0.139, def parse_empty_string 0.019, prose 'We ran a test' 0.050.",
+ "selection": "random draw"
+}
