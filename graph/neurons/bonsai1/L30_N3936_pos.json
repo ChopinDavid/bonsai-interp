@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N3936+",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 3936,
+ "pole": "+",
+ "label": "a next-token predictor for 'digit(s)'/'numeral(s)': the token right before the place where 'digit' is expected (a six-_, the last four _, three different _, '[0-9]+ matches one or more _'); the same count words where the coming noun is clearly something else (letters, animals, years) stay low",
+ "short": "predicts the word 'digit'",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N3936_pos/2026-10-29-ChopinDavid-337b6f2d.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.301,
+     "peak": " six"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.03,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.57,
+     "peak": " three"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.105,
+     "peak": " digits"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.945,
+     "peak": " single"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.298,
+     "peak": " seven"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.33,
+     "peak": " three"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.576,
+     "peak": " possible"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": "-z"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " least"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.074,
+     "peak": " single"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " seven"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " tie"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": "Over"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.316,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-337b6f2d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-337b6f2d",
+   "a next-token predictor for 'digit(s)'/'numeral(s)': the token right before the place where 'digit' is expected (a six-_, the last four _, three different _, '[0-9]+ matches one or more _'); the same count words where the coming noun is clearly something else (letters, animals, years) stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-337b6f2d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

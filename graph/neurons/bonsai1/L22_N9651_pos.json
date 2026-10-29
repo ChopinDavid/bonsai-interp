@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L22/N9651+",
+ "model": "bonsai1",
+ "layer": 22,
+ "index": 9651,
+ "pole": "+",
+ "label": "unclear; best guess: in a Python function body, the statement (usually the final return, or its indent) that resumes after a line that ends or suspends normal control flow: a bare raise, a pdb.set_trace() call, a commented-out statement or a nested block; straight-line bodies that just assign and return, and prose about code, stay lower",
+ "short": "Python statement resuming after raise/breakpoint/comment (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N9651_pos/2026-10-29-ChopinDavid-15b34069.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.447,
+     "peak": ".read"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.211,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.348,
+     "peak": " return"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.408,
+     "peak": " c"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.426,
+     "peak": " return"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.175,
+     "peak": " return"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.345,
+     "peak": ".strip"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.092,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.312,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.359,
+     "peak": " best"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.151,
+     "peak": "(items"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.347,
+     "peak": " c"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.237,
+     "peak": " hit"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.276,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " to"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.703,
+    "median_fire": 0.346,
+    "near_misses_at_0.3": 3
+   },
+   "contribution": "2026-10-29-ChopinDavid-15b34069"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-15b34069",
+   "unclear; best guess: in a Python function body, the statement (usually the final return, or its indent) that resumes after a line that ends or suspends normal control flow: a bare raise, a pdb.set_trace() call, a commented-out statement or a nested block; straight-line bodies that just assign and return, and prose about code, stay lower",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-15b34069"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

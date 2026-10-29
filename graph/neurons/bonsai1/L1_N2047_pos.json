@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N2047+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 2047,
+ "pole": "+",
+ "label": "dense: on for about half of all tokens (max 0.17); strongest on the function words of first-person conversational prose (my, how, who, that, most) and weakest on bare lists of names and numbers. Best-guess test only",
+ "short": "dense; first-person blog function words (guess)",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N2047_pos/2026-10-29-ChopinDavid-51da278b.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 5,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.663,
+     "peak": " most"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.618,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.321,
+     "peak": " my"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.642,
+     "peak": "Most"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.591,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.534,
+     "peak": " who"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.421,
+     "peak": " how"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.557,
+     "peak": " most"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.242,
+     "peak": "Berlin"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.436,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.232,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.395,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.347,
+     "peak": " green"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.386,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.237,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.34,
+     "peak": " "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.574,
+    "near_misses_at_0.3": 5
+   },
+   "contribution": "2026-10-29-ChopinDavid-51da278b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-51da278b",
+   "dense: on for about half of all tokens (max 0.17); strongest on the function words of first-person conversational prose (my, how, who, that, most) and weakest on bare lists of names and numbers. Best-guess test only",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-51da278b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

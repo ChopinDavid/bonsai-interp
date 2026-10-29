@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L5/N7186-",
+ "model": "bonsai1",
+ "layer": 5,
+ "index": 7186,
+ "pole": "-",
+ "label": "an Arabic spelling unit: the piece 'ت' that completes تحت- when a prefixed و/ف/س splits the word (و|تح|ت|اج, و|تح|ت, و|تح|ت|فل, و|تح|ت|كر), and the piece 'حت' in الت|حت|ية (infrastructure); the unsplit tokens ' تحت' and ' تحتاج'/' يحتاج' stay low, as do و|تح... words whose next piece is not 'ت' (و|تحديد)",
+ "short": "the piece 'ت' after 'تح' (split تحت)",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N7186_neg/2026-10-29-ChopinDavid-5caf9bc4.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.11,
+     "peak": "ت"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.178,
+     "peak": "ت"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.785,
+     "peak": "حت"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.919,
+     "peak": "ت"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.278,
+     "peak": "ت"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.316,
+     "peak": "ت"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.365,
+     "peak": "ت"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.801,
+     "peak": "حت"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": "الم"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.195,
+     "peak": " تحت"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.232,
+     "peak": "ث"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": "ز"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.218,
+     "peak": "خ"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": "تص"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.023,
+     "peak": "رم"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.03,
+     "peak": "سور"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 1.144,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-5caf9bc4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-5caf9bc4",
+   "an Arabic spelling unit: the piece 'ت' that completes تحت- when a prefixed و/ف/س splits the word (و|تح|ت|اج, و|تح|ت, و|تح|ت|فل, و|تح|ت|كر), and the piece 'حت' in الت|حت|ية (infrastructure); the unsplit tokens ' تحت' and ' تحتاج'/' يحتاج' stay low, as do و|تح... words whose next piece is not 'ت' (و|تحديد)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-5caf9bc4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

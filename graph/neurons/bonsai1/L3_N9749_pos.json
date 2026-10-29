@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N9749+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 9749,
+ "pole": "+",
+ "label": "the token ' al' / 'al' as a word piece: the Arabic article in transliterated names (al-Din, al-Andalus, al-Khwarizmi) and the piece inside split words (bet|al|ains, Jethal|al), with weaker firing on other short pieces (' etc', ' Tal'); names without the article and whole words stay low. A broad, gate-closed echo pole (max 1.7), so weak leaks are expected",
+ "short": "the piece ' al'/'al'",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N9749_pos/2026-10-29-ChopinDavid-ac1d58b6.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.426,
+     "peak": " al"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.608,
+     "peak": " al"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.498,
+     "peak": " al"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.442,
+     "peak": " al"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.583,
+     "peak": "al"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.674,
+     "peak": "al"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.645,
+     "peak": " al"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.134,
+     "peak": " Kant"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.172,
+     "peak": " Yun"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " rulers"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.037,
+     "peak": " broadcast"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.1,
+     "peak": " name"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.133,
+     "peak": " beet"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.037,
+     "peak": " actor"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.046,
+     "peak": " appears"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.041,
+     "peak": " Kant"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.54,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-ac1d58b6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-ac1d58b6",
+   "the token ' al' / 'al' as a word piece: the Arabic article in transliterated names (al-Din, al-Andalus, al-Khwarizmi) and the piece inside split words (bet|al|ains, Jethal|al), with weaker firing on other short pieces (' etc', ' Tal'); names without the article and whole words stay low. A broad, gate-closed echo pole (max 1.7), so weak leaks are expected",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-ac1d58b6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
