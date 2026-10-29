@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-moridinamael-c026a829",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N5319-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:00:21+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The word-start tokens ' tantr', ' smallest', ' stre', ' unn' and ' frequ' (tantrums, smallest, streptomycin, unnerving, frequented); quiet on synonyms that use other tokens."
+ },
+ "trigger": {
+  "tokens": [" tantr", " unn", " stre", " frequ", " smallest", " mankind", " strict", " closely", " optimum"]
+ },
+ "neighbours": [
+  {
+   "unit": "L0/N5319",
+   "pole": "-",
+   "label": "Specific word-start tokens, not a meaning: ' tantr', ' unn', ' stre', ' frequ', ' smallest', ' mankind', ' strict', ' closely', ' optimum' (tantrums, unnerving, streptomycin, frequented); quiet on their synonyms and look-alikes (largest, eerie, penicillin, humanity).",
+   "fire": [
+    "Keep structured environments and strict routines.",
+    "We worked more closely with the doctors.",
+    "The toddler threw tantrums every evening before bed.",
+    "There was something unnerving about the empty hallway.",
+    "Doctors treated the infection with streptomycin.",
+    "We frequented the little cafe near the station.",
+    "Even the smallest mistake can crash the program.",
+    "The invention changed the course of mankind forever."
+   ],
+   "quiet": [
+    "The toddler cried and screamed every evening before bed.",
+    "There was something eerie about the empty hallway.",
+    "Doctors treated the infection with penicillin.",
+    "We often visited the little cafe near the station.",
+    "Even the largest mistake can be fixed with patience.",
+    "The invention changed the course of humanity forever.",
+    "Our teacher was firm about homework deadlines.",
+    "She watched carefully as the chemist mixed the solutions."
+   ]
+  }
+ ],
+ "predictions": "Expect 7-8/8 fire to clear 0.20 (strict and closely are context-dependent, may be weak) and near misses near zero; the list is a lexical one, so I expect it to hold.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "bank-solo",
+   "inverse-gmoo"
+  ]
+ }
+}

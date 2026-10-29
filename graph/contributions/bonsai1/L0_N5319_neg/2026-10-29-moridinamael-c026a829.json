@@ -1,0 +1,171 @@
+{
+ "id": "2026-10-29-moridinamael-c026a829",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N5319-",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T18:00:56+00:00",
+ "recipe": {
+  "toolchain_commit": "15b009d8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L0_N5319_neg/2026-10-29-moridinamael-c026a829.tests.json"
+ },
+ "label": "Specific word-start tokens, not a meaning: ' tantr', ' unn', ' stre', ' frequ', ' smallest', ' mankind', ' strict', ' closely', ' optimum' (tantrums, unnerving, streptomycin, frequented); quiet on their synonyms and look-alikes (largest, eerie, penicillin, humanity).",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N5319_neg/2026-10-29-moridinamael-c026a829.tests.json",
+   "prereg_commit": "15b009d8",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.229,
+     "peak": " strict"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.288,
+     "peak": " closely"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.364,
+     "peak": " tantr"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.331,
+     "peak": " unn"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.442,
+     "peak": " stre"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.263,
+     "peak": " frequ"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.198,
+     "peak": " smallest"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.404,
+     "peak": " mankind"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.079,
+     "peak": " screamed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": " eerie"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " visited"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.06,
+     "peak": " largest"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " course"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " homework"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.063,
+     "peak": " chem"
+    }
+   ],
+   "probed_before": {
+    "fire": 1,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.309,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "15b009d8",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The word-start tokens ' tantr', ' smallest', ' stre', ' unn' and ' frequ' (tantrums, smallest, streptomycin, unnerving, frequented); quiet on synonyms that use other tokens."
+ },
+ "trigger": {
+  "tokens": [
+   " tantr",
+   " unn",
+   " stre",
+   " frequ",
+   " smallest",
+   " mankind",
+   " strict",
+   " closely",
+   " optimum"
+  ]
+ }
+}
