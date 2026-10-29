@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a01cc133",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N3626+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N3626",
+   "pole": "+",
+   "label": "the first piece of a writer's or philosopher's surname split across tokens (Wool|f, Desc|artes): the pole marks that opening piece; names that are a single token stay low",
+   "fire": [
+    "Critics often compare Mrs Dalloway with the diaries of Virginia Woolf.",
+    "Her thesis traces how Woolf shaped the modern essay.",
+    "In the seminar we read Descartes on the problem of doubt.",
+    "The lecture contrasted Descartes with the empiricist Locke.",
+    "A new biography of Virginia Woolf appeared this spring.",
+    "Students argued about whether Descartes really proved his own existence.",
+    "The museum shows letters that Woolf wrote to her sister.",
+    "Her reading list began with Woolf and ended with Joyce."
+   ],
+   "quiet": [
+    "Critics often compare Great Expectations with the diaries of Charles Dickens.",
+    "Her thesis traces how Austen shaped the modern novel.",
+    "In the seminar we read Plato on the problem of justice.",
+    "The lecture contrasted Hume with the rationalist Kant.",
+    "A new biography of Jane Austen appeared this spring.",
+    "Students argued about whether Plato really believed in the forms.",
+    "The museum shows letters that Dickens wrote to his sister.",
+    "Her reading list began with Milton and ended with Keats."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.7 on ' Wool' / ' Desc'; single-token author names below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first piece of a split author surname",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: broad weak pole (max 1.52), ' Wool' x4, ' Desc' x3, ' SMP'. Probe: Woolf 0.719, Herman (Melville, Herman) 0.406, Descartes 0.283, ISTE12 '1' 0.582; Charles Dickens 0.007, SMPTE 0.080. Woolf and Descartes split as ' Wool'+'f' and ' Desc'+'art'+'es'."
+}

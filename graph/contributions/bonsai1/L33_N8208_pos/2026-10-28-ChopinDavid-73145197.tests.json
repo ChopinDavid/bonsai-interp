@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-73145197",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N8208+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N8208",
+   "pole": "+",
+   "label": "an infix word in compact technical notation that joins two terms: 'x' between dimensions (H x W, 6 x 4) and 'as' in an import alias; the same content written out in prose stays low",
+   "fire": [
+    "Overall size, H x W: 30 x 20 cm, framed.",
+    "import numpy as np\nimport pandas as pd",
+    "The rug measures 8 x 10 feet and is hand woven.",
+    "from datetime import datetime as dt",
+    "Canvas dimensions (W x H): 1920 x 1080 pixels.",
+    "import matplotlib.pyplot as plt",
+    "The crate is 40 x 30 x 25 inches when packed.",
+    "from collections import OrderedDict as OD"
+   ],
+   "quiet": [
+    "Overall, the framed picture is thirty centimetres high and twenty wide.",
+    "import numpy\nimport pandas",
+    "The rug is eight feet wide and ten feet long and is hand woven.",
+    "from datetime import datetime",
+    "The canvas is wide enough for a full screen image.",
+    "import matplotlib.pyplot",
+    "The crate is about forty inches long when packed.",
+    "from collections import OrderedDict"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on ' x' or ' as'; prose versions below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "infix 'x' / 'as' in compact notation",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: scattered: ' x' in H x W x D, ' as' in 'uniform as rand', ' for' in comprehensions, '-' in тренинг-центр. Probe: 'H x W x D: 6 x 4 x 2' 0.724, 'uniform as rand' 0.514; comprehension for 0.095, for-loop 0.012, 'six inches wide' 0.006, 'dramatically' (spam) 0.008. Two notations joined in one label, which is a list rather than a distinction; a fail would show they are separate."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-436dbeb6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2753-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N2753",
+   "pole": "-",
+   "label": "the token just before a stock completion that the reader can predict: the article in a textbook analogy ('like the glass in a greenhouse'), 'Were' in the title Their Eyes Were Watching God, 'a' before 'swimming pool': the same nouns without the stock phrase stay low",
+   "fire": [
+    "Zora Neale Hurston wrote Their Eyes Were Watching God in Haiti.",
+    "Our book club finally read Their Eyes Were Watching God this month.",
+    "Methane traps heat much like the glass of a greenhouse.",
+    "The atmosphere acts like the glass panes in a greenhouse.",
+    "Clouds can hold warmth in, like a greenhouse does at night.",
+    "Sunlight drew rippling lines on the floor of a swimming pool.",
+    "Her new novel was compared to Their Eyes Were Watching God.",
+    "Coins glinted at the deep end of a swimming pool."
+   ],
+   "quiet": [
+    "Zora Neale Hurston wrote her most famous novel in Haiti.",
+    "Our book club finally read a long American novel this month.",
+    "Methane traps heat much more strongly than carbon dioxide.",
+    "The atmosphere has several layers above the clouds.",
+    "Clouds can hold warmth in on a cold night.",
+    "Sunlight drew rippling lines on the kitchen floor.",
+    "Her new novel was compared to a book from the thirties.",
+    "Coins glinted at the bottom of the fountain."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.75 on the token before the stock completion; plain uses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token before a stock phrase completion",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: ' a' x6, ' like' x5, ' Were' x2 (Their Eyes Were Watching God; 'like the glass in a greenhouse'; 'bottom of a swimming pool'). Probe: Their Eyes Were 0.748, 'like the glass in a greenhouse' 0.714, balloon simile 0.268, swimming pool 0.200, ribbon simile 0.153; 'I would like a cup of tea' 0.090, 'bought a balloon' 0.004, 'a table' 0.006."
+}

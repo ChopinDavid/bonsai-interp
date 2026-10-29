@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a8016e65",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N6072-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N6072",
+   "pole": "-",
+   "label": "a Russian spatial preposition (на, в, у) introducing a noun phrase, sentence-initial or not: the pole marks the preposition token; Russian sentences built without these prepositions stay low",
+   "fire": [
+    "Дождь кончился поздно. На улице пахло мокрой травой.",
+    "Мальчик положил книгу на подоконник и ушёл.",
+    "Поезд опоздал на час. В вагоне было душно.",
+    "Сестра давно мечтала жить в деревне.",
+    "Гости разошлись поздно. У хозяйки болела голова.",
+    "Ключи остались у соседа, поэтому мы ждали.",
+    "Собака уснула на ковре возле камина.",
+    "Зима выдалась холодной. В реке замёрзла вода."
+   ],
+   "quiet": [
+    "Дождь кончился поздно. Мокрая трава пахла сладко.",
+    "Мальчик отложил книгу и заплакал.",
+    "Поезд опоздал. Пассажирам было душно.",
+    "Сестра давно мечтала жить деревенской жизнью.",
+    "Гости разошлись поздно. Хозяйка задремала.",
+    "Ключи забрал сосед, поэтому мы ждали.",
+    "Собака задремала, свернувшись клубком.",
+    "Зима выдалась холодной. Река замёрзла."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.7 on на/в/у; preposition-free Russian below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Russian preposition на/в/у",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: ' На' x10, ' на' x6, ' у' x5, German ' Mit'. Probe: sentence-initial На 0.644, В 0.628, У 0.563, mid-sentence на 0.648; German Mit 0.526; English On 0.096, lowercase mit 0.129; a sentence with only 'на' moved and С initial 0.334, so near misses avoid all prepositions."
+}

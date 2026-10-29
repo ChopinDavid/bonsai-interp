@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-a8016e65",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N6072-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T02:26:56+00:00",
+ "recipe": {
+  "toolchain_commit": "99e22478",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N6072_neg/2026-10-28-ChopinDavid-a8016e65.tests.json"
+ },
+ "label": "a Russian spatial preposition (на, в, у) introducing a noun phrase, sentence-initial or not: the pole marks the preposition token; Russian sentences built without these prepositions stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N6072_neg/2026-10-28-ChopinDavid-a8016e65.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.733,
+     "peak": " На"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.317,
+     "peak": " у"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.58,
+     "peak": " В"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.073,
+     "peak": " в"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.568,
+     "peak": " У"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.101,
+     "peak": "К"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.079,
+     "peak": " к"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.573,
+     "peak": " В"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.088,
+     "peak": " М"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.036,
+     "peak": " от"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.305,
+     "peak": "По"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.048,
+     "peak": "С"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " Х"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.101,
+     "peak": "К"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.073,
+     "peak": " св"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.075,
+     "peak": "З"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.443,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "99e22478",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "Russian preposition на/в/у",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: ' На' x10, ' на' x6, ' у' x5, German ' Mit'. Probe: sentence-initial На 0.644, В 0.628, У 0.563, mid-sentence на 0.648; German Mit 0.526; English On 0.096, lowercase mit 0.129; a sentence with only 'на' moved and С initial 0.334, so near misses avoid all prepositions.",
+ "selection": "random draw"
+}

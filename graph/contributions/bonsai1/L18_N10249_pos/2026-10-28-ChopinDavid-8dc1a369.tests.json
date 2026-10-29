@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-8dc1a369",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N10249+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N10249",
+   "pole": "+",
+   "label": "a comma (often after a closing quote or parenthesis) that ends a line inside an open function call or literal in code, with the next argument aligned on the following line: the same call on one line stays near zero",
+   "fire": [
+    "    session = requests.post('https://api.example.com/v1/items',\n                            json=payload,\n                            timeout=30)",
+    "        widget = Button(parent,\n                        text='Save',\n                        command=self.save)",
+    "    mock_open = mock.patch('builtins.open',\n                           side_effect=IOError)",
+    "        value = settings.get('color',\n                             defaults['color'])",
+    "    matrix = np.array([[1, 2, 3],\n                       [4, 5, 6]])",
+    "            logger.info('Starting job %s',\n                        job_id)",
+    "    field = CharField(_('Email'),\n                      max_length=120)",
+    "        out = re.sub(r'\\s+',\n                     ' ',\n                     text)"
+   ],
+   "quiet": [
+    "    session = requests.post('https://api.example.com/v1/items', json=payload, timeout=60)",
+    "        widget = Button(parent, text='Open', command=self.open)",
+    "    mock_open = mock.patch('builtins.open', side_effect=OSError)",
+    "        value = settings.get('font', defaults['font'])",
+    "    matrix = np.array([[7, 8, 9], [1, 2, 3]])",
+    "            logger.info('Stopping job %s', job_id)",
+    "    field = CharField(_('Phone'), max_length=40)",
+    "        out = re.sub(r'\\s+', '_', line)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.4 on ',\\n' / \"',\\n\"; one-line calls and prose below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "line-ending comma inside an open call",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ',\\n' x13, \"',\\n\" x7 in aligned multi-line Python calls. Probe: compute(alpha,\\n 0.200, request('GET',\\n 0.192, TextField(_('Username'),\\n 0.122; the same request on one line 0.007, a list on one line 0.010, prose with a line-break comma 0.006. Fire items use deeper alignment, as in the card."
+}

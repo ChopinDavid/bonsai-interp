@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d9fde0f1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N11589+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N11589",
+   "pole": "+",
+   "label": "the prize at stake in a competition (the only remaining spot, a seat, the top prize, one giveaway item): the pole marks the word naming the contested reward; the same nouns outside a contest stay low",
+   "fire": [
+    "Six clubs are battling for the last remaining place in the final.",
+    "Whoever wins the primary will claim a seat in the House.",
+    "Dozens of bakers entered the fair competing for the grand prize.",
+    "This week we are giving away one camera to one lucky subscriber.",
+    "Three runners are chasing the only spot left on the Olympic team.",
+    "The two candidates are fighting for a single seat on the council.",
+    "Young pianists from twelve countries competed for the first prize.",
+    "Two rival towns bid for the only available slot to host the games."
+   ],
+   "quiet": [
+    "Six clubs met for a friendly dinner after the final.",
+    "The winner of the raffle sat in a seat near the stage.",
+    "Dozens of bakers came to the fair to sell their bread.",
+    "This week we are giving our old camera a good cleaning.",
+    "Three runners went for a slow jog around the track.",
+    "The two candidates shared a single table at lunch.",
+    "Young pianists from twelve countries played together at dinner.",
+    "Two rival towns share the only road through the valley."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on the reward word or its determiner; non-competitive uses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "contested prize in a competition",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: 'the only remaining play-off berth', 'earning a seat in the Senate', 'the top prize', giveaways. Probe: 'fighting for the only remaining playoff spot' 0.959, 'earn a seat in the Senate' 0.433, 'giving away one free bicycle to one lucky reader' 0.394, 'competing for the top prize' 0.362, lucrative contract 0.155; friendly match 0.069, sitting in a seat 0.005, giving a bicycle paint 0.039."
+}

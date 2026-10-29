@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-1b3f057e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N5470+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N5470",
+   "pole": "+",
+   "label": "the token 'on' as a word-final piece inside a split name or word (Sh|on|ubi, Mich|on, Gar|on, Hur|on): the pole marks that spelling unit; the word ' on' and names where 'on' is inside a whole token stay near zero",
+   "fire": [
+    "The court heard testimony from Ana Garon on Monday.",
+    "Lake Huron froze early this winter.",
+    "The ship's captain, Marc Klugon, kept a careful log.",
+    "Photographs by Lucie Michon fill the second gallery.",
+    "The farmer used a siphon to drain the flooded cellar.",
+    "Critics praised the new translation of Proudhon's essays.",
+    "Snow fell along the shores of Lake Huron all night.",
+    "The judge read the verdict to Claire Garon's family."
+   ],
+   "quiet": [
+    "The court heard testimony from Ana Gordon on Monday.",
+    "Lake Erie froze early this winter.",
+    "The ship's captain, Marc Simon, kept a careful log.",
+    "Photographs by Lucie Brandon fill the second gallery.",
+    "The farmer used a pump to drain the flooded cellar.",
+    "Critics praised the new translation of Byron's poems.",
+    "Snow fell along the shores of Lake Erie all night.",
+    "The judge read the verdict to Claire Gordon's family."
+   ]
+  }
+ ],
+ "predictions": "fire 0.7-1.0 on the 'on' piece; ' on' and whole-token names below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-internal piece 'on'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.8,
+ "notes": "Card: 'on' x32, all as a piece of a split name (Shonubi, Knowshon, Michon, Proudhon, siphon). Probe: Shonubi 1.035, Proudhon 0.833, Manchon 0.811, siphon 0.781, Cichon 0.769; 'Simon' (one token) 0.004, preposition ' on' 0.013. Tokenizer: Garon -> Gar|on, Huron -> Hur|on, Klugon -> Kl|ug|on."
+}
