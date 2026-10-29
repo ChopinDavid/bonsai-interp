@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N4571-",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 4571,
+ "pole": "-",
+ "label": "the bare verb after a negated or hedging modal in legal/academic prose ('need not have', 'is considered'); the plain affirmative rewrite stays low",
+ "short": "verb after 'need not'",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N4571_neg/2026-10-29-ChopinDavid-4847885b.tests.json",
+   "prereg_commit": "d7384432",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.066,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.049,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.151,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.08,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.092,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.054,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.089,
+     "peak": " take"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.064,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.053,
+     "peak": " must"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.107,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.046,
+     "peak": " receive"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.061,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.069,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.035,
+     "peak": " be"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.073,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-4847885b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-4847885b",
+   "the bare verb after a negated or hedging modal in legal/academic prose ('need not have', 'is considered'); the plain affirmative rewrite stays low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-4847885b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L20/N1256-",
+ "model": "bonsai1",
+ "layer": 20,
+ "index": 1256,
+ "pole": "-",
+ "label": "the first word of a multi-word place name when the rest of the name must follow ('Santa [Cruz]', 'St[.] Regis', 'Mount [Rainier]'); single-word places and 'Santa' as Santa Claus stay lower",
+ "short": "first word of a place name",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N1256_neg/2026-10-29-ChopinDavid-e77f6f8f.tests.json",
+   "prereg_commit": "d7384432",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.491,
+     "peak": " Santa"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.408,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.121,
+     "peak": " Santa"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.313,
+     "peak": " Mount"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.15,
+     "peak": " Santa"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.105,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.195,
+     "peak": " Santa"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.249,
+     "peak": " Mount"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": " Catal"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": " led"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " coast"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.039,
+     "peak": "Snow"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.222,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-e77f6f8f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-e77f6f8f",
+   "the first word of a multi-word place name when the rest of the name must follow ('Santa [Cruz]', 'St[.] Regis', 'Mount [Rainier]'); single-word places and 'Santa' as Santa Claus stay lower",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-e77f6f8f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N5494-",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 5494,
+ "pole": "-",
+ "label": "a final 'y' that the tokenizer splits off as its own piece after a stem piece (' Tr'+'aged'+'y', ' eleg'+'y', ' leth'+'arg'+'y'); the same word as a single token, or a word without the split -y, stays low",
+ "short": "split-off final 'y' piece",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N5494_neg/2026-10-29-ChopinDavid-754684b8.tests.json",
+   "prereg_commit": "d7384432",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.407,
+     "peak": "aged"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.324,
+     "peak": "y"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.583,
+     "peak": "y"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.904,
+     "peak": "y"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.851,
+     "peak": "y"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.424,
+     "peak": "y"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.671,
+     "peak": "y"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.41,
+     "peak": "y"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.251,
+     "peak": " tragedy"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.035,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.068,
+     "peak": " strange"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " utility"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.06,
+     "peak": " teams"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": " Comedy"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": "His"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.503,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-754684b8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-754684b8",
+   "a final 'y' that the tokenizer splits off as its own piece after a stem piece (' Tr'+'aged'+'y', ' eleg'+'y', ' leth'+'arg'+'y'); the same word as a single token, or a word without the split -y, stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-754684b8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

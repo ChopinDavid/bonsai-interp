@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N1993+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 1993,
+ "pole": "+",
+ "label": "the noun after emphatic identity 'the very' ('the very industry they claim to save'); the same noun without 'very' stays low",
+ "short": "noun after emphatic 'the very'",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N1993_pos/2026-10-29-ChopinDavid-39c188b0.tests.json",
+   "prereg_commit": "d7384432",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.347,
+     "peak": " workers"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.654,
+     "peak": " schools"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.023,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.118,
+     "peak": " friends"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.171,
+     "peak": " cells"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.445,
+     "peak": " farmers"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.343,
+     "peak": " clinics"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.124,
+     "peak": " species"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " next"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.028,
+     "peak": " say"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": " destroyed"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " regiment"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.043,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.037,
+     "peak": " border"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.066,
+     "peak": " towns"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.044,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.257,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-39c188b0"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-39c188b0",
+   "the noun after emphatic identity 'the very' ('the very industry they claim to save'); the same noun without 'very' stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-39c188b0"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

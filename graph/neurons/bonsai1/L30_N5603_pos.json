@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N5603+",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 5603,
+ "pole": "+",
+ "label": "the slot right before a person's name in a role or credit phrase ('through winger ___', 'co-written by ___'): a name is expected next; the same phrases continued with a common noun stay low",
+ "short": "before a person's name",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N5603_pos/2026-10-29-ChopinDavid-51bd287a.tests.json",
+   "prereg_commit": "d7384432",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.129,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.29,
+     "peak": "grid"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.049,
+     "peak": " match"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.196,
+     "peak": " Helena"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.212,
+     "peak": "back"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.159,
+     "peak": " Rafael"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.234,
+     "peak": "maker"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.144,
+     "peak": "uki"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.039,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " small"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": " match"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.062,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " try"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": " essays"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.048,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": " March"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.177,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-51bd287a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-51bd287a",
+   "the slot right before a person's name in a role or credit phrase ('through winger ___', 'co-written by ___'): a name is expected next; the same phrases continued with a common noun stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-51bd287a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
