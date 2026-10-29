@@ -4,10 +4,10 @@
  "layer": 18,
  "index": 10678,
  "pole": "+",
- "label": "the last piece of a rare Spanish, Italian, African or Nordic surname that the tokenizer splits (Bermude|z, Arriet|a, Haraldss|on); common surnames like Smith and long Slavic names (-ov, -ski, -icz) stay weak",
+ "label": "the end of a person's foreign-origin surname right after a first name (Spanish, Japanese, Arabic, Nordic: Henry Gonzales, Kenji Watanabe); the same name as a company or place, and plain English surnames like Smith, stay weak",
  "short": "last piece of a split rare/foreign personal name",
  "kind": "lexical",
- "status": "unresolved",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -375,6 +375,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-28-moridinamael-fcb7e587"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N10678_pos/2026-10-28-moridinamael-b492c1f6.tests.json",
+   "prereg_commit": "a9e3c8bb",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.519,
+     "peak": "ales"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.713,
+     "peak": "abe"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.253,
+     "peak": "ad"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.231,
+     "peak": "ist"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.218,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.144,
+     "peak": "ashi"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.341,
+     "peak": "il"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.253,
+     "peak": " Joh"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.11,
+     "peak": " chemistry"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.237,
+     "peak": "ji"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.094,
+     "peak": "At"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.068,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.171,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.064,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.173,
+     "peak": " Taylor"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.167,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.253,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-moridinamael-b492c1f6"
   }
  ],
  "label_history": [
@@ -392,6 +514,11 @@
    "2026-10-28-moridinamael-fcb7e587",
    "the last piece of a rare Spanish, Italian, African or Nordic surname that the tokenizer splits (Bermude|z, Arriet|a, Haraldss|on); common surnames like Smith and long Slavic names (-ov, -ski, -icz) stay weak",
    "failed"
+  ],
+  [
+   "2026-10-28-moridinamael-b492c1f6",
+   "the end of a person's foreign-origin surname right after a first name (Spanish, Japanese, Arabic, Nordic: Henry Gonzales, Kenji Watanabe); the same name as a company or place, and plain English surnames like Smith, stay weak",
+   "held"
   ]
  ],
  "examples": [],
@@ -404,21 +531,22 @@
  "contributions": [
   "2026-10-22-lm1909-cb515f2e",
   "2026-10-28-moridinamael-1b420a32",
-  "2026-10-28-moridinamael-fcb7e587"
+  "2026-10-28-moridinamael-fcb7e587",
+  "2026-10-28-moridinamael-b492c1f6"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 2
+  "refine": 3
  },
  "replications": [],
  "coverage": null,
  "scrutiny": {
   "level": 3,
   "name": "checked",
-  "test_rounds": 3,
-  "sentences": 48,
+  "test_rounds": 4,
+  "sentences": 64,
   "contributors": 2,
-  "qc": 2
+  "qc": 3
  }
 }
