@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N11207-",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 11207,
+ "pole": "-",
+ "label": "a spoken discourse marker (So, Well, actually) that opens an answer after a speaker label in an interview transcript; the same answers without the marker stay low",
+ "short": "discourse marker opening a transcript answer",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N11207_neg/2026-10-28-ChopinDavid-33fa95ca.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.013,
+     "peak": "Y"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.015,
+     "peak": " strain"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.019,
+     "peak": " worth"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.027,
+     "peak": " Detroit"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.011,
+     "peak": "P"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.009,
+     "peak": "ON"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.014,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.011,
+     "peak": " gain"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": "Y"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " strain"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": "P"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": "ON"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " gain"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.516,
+    "median_fire": 0.013,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-33fa95ca"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-33fa95ca",
+   "a spoken discourse marker (So, Well, actually) that opens an answer after a speaker label in an interview transcript; the same answers without the marker stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-33fa95ca"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

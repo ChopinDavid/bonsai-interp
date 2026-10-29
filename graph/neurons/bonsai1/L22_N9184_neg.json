@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L22/N9184-",
+ "model": "bonsai1",
+ "layer": 22,
+ "index": 9184,
+ "pole": "-",
+ "label": "the clause introduced by 'unless' (an exception condition): the pole fires on 'unless' and the start of its clause; the same sentences with 'if', 'when' or 'because' stay low",
+ "short": "'unless' exception clause",
+ "kind": "word",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N9184_neg/2026-10-28-ChopinDavid-a9e8bbb8.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.204,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.047,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.024,
+     "peak": " arrives"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.042,
+     "peak": " snow"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.01,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.1,
+     "peak": " says"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.049,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.05,
+     "peak": " show"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " not"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": " Mondays"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": "You"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.025,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.082,
+     "peak": " accept"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " is"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.048,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-a9e8bbb8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-a9e8bbb8",
+   "the clause introduced by 'unless' (an exception condition): the pole fires on 'unless' and the start of its clause; the same sentences with 'if', 'when' or 'because' stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-a9e8bbb8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N6745+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 6745,
+ "pole": "+",
+ "label": "the passive verb after a negated modal (cannot be executed, could not be reached): the pole marks what is reported impossible; the same sentences with a positive modal stay low",
+ "short": "passive verb after 'cannot be' / 'could not be'",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N6745_pos/2026-10-28-ChopinDavid-33a14e5c.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.093,
+     "peak": " script"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.197,
+     "peak": " reached"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.127,
+     "peak": " account"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.132,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.033,
+     "peak": " file"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.083,
+     "peak": " recovered"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.026,
+     "peak": " tickets"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.031,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.022,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.1,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.026,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " file"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.025,
+     "peak": " old"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " tickets"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": "ikers"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.867,
+    "median_fire": 0.088,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-33a14e5c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-33a14e5c",
+   "the passive verb after a negated modal (cannot be executed, could not be reached): the pole marks what is reported impossible; the same sentences with a positive modal stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-33a14e5c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

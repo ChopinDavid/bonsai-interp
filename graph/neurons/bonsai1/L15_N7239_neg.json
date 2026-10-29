@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N7239-",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 7239,
+ "pole": "-",
+ "label": "first-person past narration (memoir or letter voice: I had, our army, my cousin): the pole marks a narrator telling their own past; the same sentences retold in the third person stay low",
+ "short": "first-person past narration (vs third person)",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N7239_neg/2026-10-28-ChopinDavid-4d29ac7c.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.401,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.322,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.784,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.287,
+     "peak": " door"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.443,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.12,
+     "peak": " my"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.27,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.24,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.126,
+     "peak": " winter"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.05,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.063,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.182,
+     "peak": " door"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.036,
+     "peak": "He"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.159,
+     "peak": " summer"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.114,
+     "peak": " time"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.304,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-4d29ac7c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-4d29ac7c",
+   "first-person past narration (memoir or letter voice: I had, our army, my cousin): the pole marks a narrator telling their own past; the same sentences retold in the third person stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-4d29ac7c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

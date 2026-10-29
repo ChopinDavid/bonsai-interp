@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N11430-",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 11430,
+ "pole": "-",
+ "label": "the token just before a 'print' identifier in code (self.|printText, score|_print): the pole predicts the word 'print'; the same code calling draw/show/log methods stays low",
+ "short": "code token predicting a 'print' identifier",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N11430_neg/2026-10-28-ChopinDavid-1709c353.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.798,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.825,
+     "peak": " debug"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.539,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.495,
+     "peak": " tree"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.255,
+     "peak": "       "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.544,
+     "peak": " pretty"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.552,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.144,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.121,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.14,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.048,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.069,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.255,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.333,
+     "peak": " pretty"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.118,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.144,
+     "peak": "       "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.542,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-ChopinDavid-1709c353"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-1709c353",
+   "the token just before a 'print' identifier in code (self.|printText, score|_print): the pole predicts the word 'print'; the same code calling draw/show/log methods stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-1709c353"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

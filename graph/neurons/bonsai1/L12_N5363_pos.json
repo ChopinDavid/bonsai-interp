@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N5363+",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 5363,
+ "pole": "+",
+ "label": "destruction or damage of a built structure or body part (destroyed, torn down, damaged): the pole marks the harm word; the same sentences with repair or healthy states stay low",
+ "short": "destruction / damage (vs repair, intact)",
+ "kind": "meaning",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N5363_pos/2026-10-28-ChopinDavid-fa2a426a.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.434,
+     "peak": " destroyed"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.169,
+     "peak": " remove"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.134,
+     "peak": " tearing"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.128,
+     "peak": " destroyed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.232,
+     "peak": " damaged"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.199,
+     "peak": " ground"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.285,
+     "peak": " destroyed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.088,
+     "peak": " damaged"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.191,
+     "peak": " guarded"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.028,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.059,
+     "peak": " restoring"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " hit"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.195,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.04,
+     "peak": "els"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.152,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.828,
+    "median_fire": 0.184,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-fa2a426a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-fa2a426a",
+   "destruction or damage of a built structure or body part (destroyed, torn down, damaged): the pole marks the harm word; the same sentences with repair or healthy states stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-fa2a426a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
