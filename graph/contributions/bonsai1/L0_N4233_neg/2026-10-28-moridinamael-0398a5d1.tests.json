@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-28-moridinamael-0398a5d1",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N4233-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:48:47+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the token ' magnitude' (and similar abstract measurement nouns) mid-sentence after 'and' or 'of'; an early-layer token unit with a tiny range"
+ },
+ "neighbours": [
+  {
+   "unit": "L0/N4233",
+   "pole": "-",
+   "label": "a bare 'magnitude' (or duration, size, amplitude) with no 'the' before it, right after another abstract noun in a list ('likelihood and magnitude'); quiet after 'the' or a verb",
+   "fire": [
+    "Analysts tried to estimate the likelihood and magnitude of a second recession.",
+    "The report assesses the frequency and magnitude of floods along the river.",
+    "Researchers measured the timing and duration of each sleep episode.",
+    "Engineers recorded the frequency and amplitude of the bridge's vibrations.",
+    "We need to understand the scope and size of the problem before acting.",
+    "The study compared the onset and duration of symptoms across groups.",
+    "Insurers price policies based on probability and magnitude of loss.",
+    "Doctors noted the location, intensity and duration of the patient's pain."
+   ],
+   "quiet": [
+    "Analysts tried to estimate the likelihood of a second recession and the magnitude of its effects.",
+    "The report assesses how often floods occur along the river and how severe they are.",
+    "Researchers measured when each sleep episode began and how long it lasted.",
+    "Engineers recorded the frequency of the bridge's vibrations and the amplitude too.",
+    "We need to understand the scope of the problem before acting.",
+    "The study compared the onset of symptoms across groups, noting the duration.",
+    "Insurers price policies based on how likely and how large a loss might be.",
+    "Doctors noted where the pain was and how intense it felt."
+   ]
+  }
+ ],
+ "predictions": "Expect a weak pass or a fail: my probes put 'likelihood and magnitude' at about 0.27 of max and other pairs (scope and size, timing and duration) lower; near misses with 'the magnitude' or 'the amplitude too' should sit near 0.05, but the 0.30 bar is high for this small-range unit.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo"
+  ]
+ }
+}
