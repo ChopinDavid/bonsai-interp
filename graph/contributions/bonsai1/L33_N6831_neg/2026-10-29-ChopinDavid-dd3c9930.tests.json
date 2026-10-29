@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-dd3c9930",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N6831-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N6831",
+   "pole": "-",
+   "label": "the enclitic '-n'/'arn'/'ndon' pieces of French inverted 'nous' and Spanish reflexive -nos verb forms (Pouvons-nous, juntarnos, sirviéndonos); analytic rewrites and English stay low",
+   "fire": [
+    "Devons-nous vraiment accepter ces conditions sans poser la moindre question ?",
+    "Vamos a reunirnos en la plaza antes de que empiece el desfile.",
+    "Pourrions-nous envisager une autre date pour la réunion du conseil ?",
+    "Deberíamos prepararnos bien antes de presentar el informe al comité.",
+    "Allons-nous enfin obtenir une réponse claire de la part du ministère ?",
+    "Tenemos que organizarnos mejor si queremos terminar el proyecto a tiempo.",
+    "Pouvons-nous compter sur votre soutien lors du prochain vote ?",
+    "Es hora de sentarnos todos juntos y aclararnos sobre el plan."
+   ],
+   "quiet": [
+    "Est-ce que nous devons vraiment accepter ces conditions sans poser de question ?",
+    "Vamos a vernos en la plaza antes de que empiece el desfile.",
+    "Pouvez-vous envisager une autre date pour la réunion du conseil ?",
+    "Debemos estar listos antes de presentar el informe al comité.",
+    "Should we finally get a clear answer from the ministry about the delay?",
+    "Tenemos que planear mejor si queremos terminar el proyecto a tiempo.",
+    "Est-ce que nous pouvons compter sur votre soutien lors du prochain vote ?",
+    "It is time for all of us to sit down together and agree on the plan."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.52 on the '-n'/'arn'/'ndon' piece; 'Pouvez-vous' (-vez), 'reunir' (-ir), English rewrites below 0.18",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "French -nous / Spanish -nos enclitic pieces",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 195, peaks ' de', '-n', 'arn', 'ndon'. Probe: Pouvons-nous '-n' 0.523, sirviéndonos 'ndon' 0.487, juntarnos 'arn' 0.303; Pouvez-vous 'vez' 0.320 (partial leak), reunir 'ir' 0.120, 'City of Sails' ' of' 0.817 (' of' and ' de' also fire, a second trigger). Tokcheck confirms the clitic pieces; fire items use -nous/-nos verbs."
+}

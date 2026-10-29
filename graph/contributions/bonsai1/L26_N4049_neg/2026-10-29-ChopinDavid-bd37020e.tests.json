@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bd37020e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N4049-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N4049",
+   "pole": "-",
+   "label": "a token in a how-to / self-help instruction list giving behaviour tips (bulleted 'Turn off', 'Keep ... at a reasonable level', 'ask them to'); the same tokens in a non-instruction list or factual sentence stay low",
+   "fire": [
+    "Tips for a calmer morning:\n- Lay out your clothes the night before.\n- Avoid checking your phone until after breakfast.\n- Keep your tone gentle with the children.",
+    "To defuse an argument, lower your voice and ask the other person to explain their side first.",
+    "When you feel the urge to interrupt, pause, take a breath, and let the speaker finish.",
+    "Keep your screen brightness at a comfortable level so your eyes do not tire by evening.",
+    "If a conversation turns hostile, politely excuse yourself and step away for a few minutes.",
+    "Set a firm bedtime for the kids and stick to the same routine every single night.",
+    "To build the habit, start small, reward yourself often, and never skip two days in a row.",
+    "When your child asks a hard question, stay calm, listen fully, and answer honestly."
+   ],
+   "quiet": [
+    "Steps to repot a fern:\n- Loosen the roots.\n- Add fresh compost.\n- Water it thoroughly.",
+    "To finish the stew, lower the heat and let the pot simmer for another forty minutes.",
+    "When the river rises, the water spills over the bank and floods the lower meadow.",
+    "Keep the greenhouse humidity at a steady level so the orchids do not dry out by evening.",
+    "If the trail turns steep, the loose gravel can slide away under your boots.",
+    "The volume of the storage tank is about forty litres when it is completely full.",
+    "To make the dye, boil the roots, strain the liquid, and let it cool overnight.",
+    "When the kettle boils, the whistle sounds and steam pours from the little spout."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.3 on list items of behaviour advice; garden chore list, factual volume sentence below 0.05",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token inside a behaviour-tip instruction list",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: max 42.5, peaks ' and'/' to'/' or' inside advice lists, ' at' (reasonable level), ' should'; '+' pole promotes ' stay', ' indoors' (stay-home advice). Probe: bullet header 'Tips for a better night' 1.316, 'excuse yourself and leave' 0.300, 'at a reasonable level' 0.228; garden-chore bullets 0.025, 'fire can spread' 0.030, 'volume of the tank' 0.010. Fires on behaviour-advice phrasing, not any list."
+}

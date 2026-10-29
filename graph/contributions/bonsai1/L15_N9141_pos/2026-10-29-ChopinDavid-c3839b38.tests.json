@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c3839b38",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N9141+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N9141",
+   "pole": "+",
+   "label": "a token inside King James / scriptural narrative prose (archaic 'unto', 'ye', 'shall', gospel cadence); the same events told in plain modern English stay lower",
+   "fire": [
+    "And it came to pass that the people gathered unto him beside the sea, and he taught them.",
+    "Verily I say unto you, whosoever shall humble himself as a child shall be greatest.",
+    "And she brought forth her firstborn son, and wrapped him in swaddling clothes.",
+    "Then went he up into the mountain, and his disciples came unto him, and he opened his mouth.",
+    "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened.",
+    "And the king sent forth his servants to call them that were bidden to the wedding.",
+    "Blessed are the meek, for they shall inherit the earth, saith the Lord.",
+    "And when he had thus spoken, he breathed on them, and saith unto them, Receive ye."
+   ],
+   "quiet": [
+    "That afternoon a crowd gathered by the shore, and he spent an hour answering their questions.",
+    "I'm telling you honestly, anyone who stays humble like a child ends up ahead in the long run.",
+    "She gave birth to her first son and wrapped him in a soft blanket against the cold.",
+    "He walked up the hill, his students followed, and he began his talk with a short story.",
+    "If you ask for help you will usually get it, and if you search you will probably find it.",
+    "The host sent his staff out to remind all the invited guests about the dinner.",
+    "People who stay humble tend to be the ones who inherit the family business.",
+    "The committee reviewed the budget line by line and approved the final figures by noon."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.7 in archaic scriptural prose; modern paraphrases and business prose below 0.15",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token in KJV/scriptural narrative cadence",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 3.95, peaks on tokens within gospel/KJV passages (' name', ' man', ' she', commas in 'and he'). Probe: 'bearing a pitcher of water' 0.684, 'given you; seek' 0.418, 'his servants followed' 0.404; modern paraphrase 'meet a man carrying a water jug' 0.359 (leaks), plain-business 0.062. Weak unit (max ~4)."
+}

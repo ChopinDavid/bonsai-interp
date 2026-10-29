@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-95cb4a87",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N2366-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N2366",
+   "pole": "-",
+   "label": "a legal/technical head noun in set phrases (legal 'advice', U.S. 'territory', genetic 'carriers', principal 'investigator'); the same words in everyday senses stay low",
+   "fire": [
+    "This brochure is for information only and should not be taken as legal advice.",
+    "Puerto Rico has been a U.S. territory since the end of the Spanish-American War.",
+    "Both parents were found to be carriers of the recessive allele for the condition.",
+    "The content on this page does not constitute tax or legal advice of any kind.",
+    "Guam remained an unincorporated territory under the control of the United States navy.",
+    "Genetic testing showed that one in twenty people in the village were carriers.",
+    "Please consult a qualified attorney before relying on any legal advice from a forum.",
+    "The island was an overseas territory long before it petitioned for full statehood."
+   ],
+   "quiet": [
+    "She thanked her sister for the kind advice about which school to choose.",
+    "The dog marked its territory along every fence post on the morning walk.",
+    "The airline's main carriers flew the parcels across the country overnight.",
+    "He gave me some blunt advice about my golf swing on the ninth hole.",
+    "The wolves defended their hunting territory from a rival pack in the valley.",
+    "Several budget carriers now compete on the route between the two cities.",
+    "My grandmother's advice about bread is to let the dough rest overnight.",
+    "The cat slept on the warm windowsill all afternoon without a care."
+   ]
+  }
+ ],
+ "predictions": "fire 0.8+ on 'advice' in 'legal advice', 'territory' in 'U.S. territory', 'carriers' in genetic sense; everyday senses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "head noun of legal/technical set phrases",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 8.62, peaks ' advice', ' territory', ' carriers', '-ator' (investigator). Probe: 'legal advice' 0.857, 'U.S. territory' 0.848, genetic 'carriers' 0.884; 'advice about the contract' 0.024, 'territory mapped by settlers' 0.021, 'carriers delivered parcels' 0.042, 'principal investigator' only 0.081. Each fire item places the word in its set-phrase sense."
+}

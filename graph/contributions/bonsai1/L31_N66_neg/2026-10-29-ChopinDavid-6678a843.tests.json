@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6678a843",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N66-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N66",
+   "pole": "-",
+   "label": "a noun naming a low-status or rank-and-file worker/soldier in a group (migrant workers, enlisted men, janitors, labourers, a fellow soldier); white-collar professionals and non-worker rewrites stay low",
+   "fire": [
+    "The orchards hire hundreds of seasonal farmhands who sleep in crowded bunkhouses each harvest.",
+    "By 1943 the regiment counted forty officers and more than nine hundred enlisted men.",
+    "Underpaid dishwashers and line cooks walked out of the hotel kitchen on Friday night.",
+    "The textile mill depended on migrant labourers brought in from the neighbouring province.",
+    "Stooped field hands moved down the rows picking strawberries in the summer heat.",
+    "The dock employed casual stevedores who were paid by the hour and hired day to day.",
+    "Night-shift cleaners and porters kept the vast hospital running while the city slept.",
+    "The plantation's indentured workers earned only a few coins for a long day of cutting cane."
+   ],
+   "quiet": [
+    "The clinic hired three new cardiologists who each trained at a famous teaching hospital.",
+    "By 1943 the university counted forty professors and more than nine hundred graduate students.",
+    "Two senior architects and a structural engineer reviewed the tower's revised plans.",
+    "The textile mill installed new looms shipped in from the neighbouring province.",
+    "Tall sunflowers swayed down the rows in the gentle warmth of the summer afternoon.",
+    "The firm employed salaried consultants who advised clients across the whole region.",
+    "A quiet librarian and two curators kept the vast archive running while the city slept.",
+    "The estate's prize horses earned ribbons at every show across the county that year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.7 on migrant/enlisted/low-paid labourers; 'machines', 'small child', 'same town' below 0.17",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun for a rank-and-file worker or soldier",
+ "unit_kind": "concept",
+ "confidence": 0.45,
+ "notes": "Card: max 226, peaks ' migrant', ' fellow', ' five'/'0' (enlisted counts), ' and' in worker lists; '+' pole promotes ' doctor', ' engineers', ' professionals'. Probe: 'migrant workers' 0.634, 'more than 600 enlisted men' 0.726, 'low-paid janitors' 0.394; 'fellow soldier' 0.072, 'machines' 0.170, 'small child' 0.004. The distinction is low-status labour vs skilled professions (the + pole)."
+}

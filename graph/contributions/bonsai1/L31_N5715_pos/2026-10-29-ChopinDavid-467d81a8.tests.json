@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-467d81a8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N5715+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N5715",
+   "pole": "+",
+   "label": "the space token before a year or fiscal-year range that names a reporting period (revenue/production/tuition for 2015, 2019-2020); non-year numbers in the same slot and year-free rewrites stay low",
+   "fire": [
+    "Total wheat exports fell by nearly a third in 2009 before recovering the following season.",
+    "The firm now expects adjusted earnings for 2017 to come in at the top of its guidance.",
+    "Enrollment figures for the 2021-2022 academic year were released by the district on Monday.",
+    "Government spending on roads rose steadily from 2004 through the end of the decade.",
+    "The museum reported record attendance in 2013, its first full year after the renovation.",
+    "Analysts raised their price target after strong results for the fiscal year 2018.",
+    "Average rainfall in the basin was far below normal in 2011 and again in 2012.",
+    "The county's budget for 2020 set aside extra money for emergency flood repairs."
+   ],
+   "quiet": [
+    "Total wheat exports fell by nearly a third last season before recovering the next one.",
+    "The firm now expects adjusted earnings of about forty cents a share this quarter.",
+    "Enrollment figures for the incoming class were released by the district on Monday.",
+    "Government spending on roads rose steadily through the end of the decade.",
+    "The museum reported record attendance last spring, its first season after the renovation.",
+    "Analysts raised their price target after a strong set of quarterly results.",
+    "Average rainfall in the basin was far below normal for two years running.",
+    "The county's budget set aside extra money for emergency flood repairs this time."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.3 on the ' ' before a year that labels a period; '15 million', 'the 12 students', no-year rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "space before a reporting-period year/year-range",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: max 310, dominated by a single ' ' token, peaks before 2003-06, 2012, 2015 etc.; '-' pole promotes ' FY', ' fiscal', ' year'. Probe: 'for 2016' 0.302, '2019-2020 school year' 0.287, 'in 2008 compared' 0.237, 'for the 12 students' 0.238 (leaks — any 'for the <num>'); 'by 15 million' 0.102, no-year population 0.001. A space-before-year predictor; low confidence, 'for the N' also fires."
+}

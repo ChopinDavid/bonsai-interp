@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1a734c21",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N7972+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N7972",
+   "pole": "+",
+   "label": "the Japanese auxiliary ending 'している' (-shiteiru, progressive/stative 'is ~ing'); the past 'した' and plain non-progressive forms stay lower",
+   "fire": [
+    "彼は毎日気にして所の前を掃除しているので、いつもきれいだ。",
+    "この図書館は市内の多くの学校と連携している。",
+    "彼女は今、東京の病院で看護師として働いている。",
+    "その会社は新しい工場を建設しようと計画している。",
+    "毎朝彼は駅の前で友達を待っている。",
+    "このデータは毎時更新されているので、常に最新だ。",
+    "子供たちは席に座って先生の話を聞いている。",
+    "村の人々はその祖先を深く敬っている。"
+   ],
+   "quiet": [
+    "彼は昨日、所の前をきれいに掃除した。",
+    "この図書館は市内の多くの学校と連携した。",
+    "彼女は昨年まで東京の病院で看護師として働いた。",
+    "その会社は来年新しい工場を建設する。",
+    "毎朝彼は駅の前で友達を待つ。",
+    "このデータは昨日更新された。",
+    "子供たちは席に座って先生の話を聞いた。",
+    "The cat slept on the warm windowsill all afternoon without a care."
+   ]
+  }
+ ],
+ "predictions": "fire 0.9+ on 'している'; past 'した' ~0.8 (partial leak), plain 'す'/'つ' forms ~0.5, English near zero",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Japanese progressive auxiliary 'している'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 1.65, FLAG broad and gate-closed, 'している' x16 dominates. Probe: three 'している' items 0.943/0.973/0.979, 'っている' 0.744; past 'した' 0.803/0.739 leaks heavily, plain 'こなす' 0.528, 'だ待つ' 0.476, English 0.102. A weak broad unit; past-tense near misses leak, so holds depend on 'している' vs plain dictionary form."
+}

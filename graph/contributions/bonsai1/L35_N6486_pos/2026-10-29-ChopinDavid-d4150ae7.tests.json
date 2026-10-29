@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d4150ae7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N6486+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N6486",
+   "pole": "+",
+   "label": "a word-internal piece immediately after a prefix boundary in long/technical words (' var'ieg, non-'acc'us, ar'ith, non-'com'ed, ' ca'str), often near the start of a window; whole-token synonyms stay low",
+   "fire": [
+    "The male's plumage is far more variegated than the drab brown of the female.",
+    "A non-accusatory opening line keeps the mediation from collapsing into blame.",
+    "The population expands geometrically while the food supply grows only arithmetically.",
+    "Dermatologists recommend a non-comedogenic cream for skin that breaks out easily.",
+    "The calves were castrated by the vet before being turned out onto the summer pasture.",
+    "Her argument was almost perspicacious, cutting straight to the flaw in the proof.",
+    "The old recipe calls for a thoroughly desquamated almond, peeled of its brown skin.",
+    "The herd of young steers was castrated early to make them easier to handle."
+   ],
+   "quiet": [
+    "The male's plumage is far more colourful than the drab brown of the female.",
+    "A gentle opening line keeps the mediation from collapsing into blame.",
+    "The population expands quickly while the food supply grows only slowly.",
+    "Dermatologists recommend a light cream for skin that breaks out easily.",
+    "The calves were weaned by the farmer before being turned out onto the summer pasture.",
+    "Her argument was almost brilliant, cutting straight to the flaw in the proof.",
+    "The old recipe calls for a thoroughly peeled almond, stripped of its brown skin.",
+    "The herd of young steers was branded early to make them easier to handle."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.85 on the piece after the boundary; 'striped', 'friendly', 'light' synonyms below 0.05",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece after a prefix/stem boundary in long words",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: max 119.5, FLAG positional (75% at window pos 0), peaks ' var', ' ca', 'acc', 'bl'. Probe: variegated 0.841, non-accusatory 0.815, castrated 0.731, arithmetically 0.656, non-comedogenic 0.559; 'striped' 0.006, 'friendly' 0.002, 'light formula' 0.047. Positional spelling unit; fire items keep the multi-piece word, near misses swap a plain synonym."
+}
