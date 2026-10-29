@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-28-moridinamael-94d9592d",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N4273+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:16:37+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "a handful of specific tokens: ' Yellowstone', the Arabic piece 'سبة' (as in بالنسبة/نسبة), the drug-name piece 'oxetine', and Japanese '出会い系', as against sibling tokens of the same kind"
+ },
+ "trigger": {
+  "tokens": [" Yellowstone", "金陵", "出会い系", "_ylim", "oxetine", "سبة", "يسر", "ليم"]
+ },
+ "neighbours": [
+  {
+   "unit": "L0/N4273",
+   "pole": "+",
+   "label": "a lookup of specific rare tokens, not a shared meaning: ' Yellowstone', '金陵', '出会い系', '_ylim', the drug piece 'oxetine', and the Arabic pieces 'سبة', 'يسر', 'ليم'; sibling tokens of the same kind (Yosemite, 南京, _xlim, sertraline) stay quiet",
+   "fire": [
+    "We spent three days hiking in Yellowstone last summer.",
+    "The Yellowstone River flows north into Montana before joining the Missouri.",
+    "李白曾多次游历金陵，留下了许多诗篇。",
+    "出会い系アプリを使った詐欺に注意してください。",
+    "Call ax.set_ylim(0, 100) to fix the range of the vertical axis.",
+    "Fluoxetine is one of the most commonly prescribed antidepressants.",
+    "Her doctor switched her from paroxetine to a different medication.",
+    "ارتفعت نسبة البطالة في المدينة هذا العام."
+   ],
+   "quiet": [
+    "We spent three days hiking in Yosemite last summer.",
+    "The Snake River flows west across Idaho before joining the Columbia.",
+    "李白曾多次游历南京，留下了许多诗篇。",
+    "マッチングアプリを使った詐欺に注意してください。",
+    "Call ax.set_xlim(0, 100) to fix the range of the horizontal axis.",
+    "Sertraline is one of the most commonly prescribed antidepressants.",
+    "Her doctor switched her from citalopram to a different medication.",
+    "ارتفع معدل البطالة في المدينة هذا العام."
+   ]
+  }
+ ],
+ "predictions": "Expect most fire items to clear 0.3; Yosemite may leak weakly (~0.2); the bare 'نسبة' item is the riskiest fire item.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
