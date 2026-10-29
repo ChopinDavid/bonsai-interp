@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N4158+",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 4158,
+ "pole": "+",
+ "label": "a modifier naming a measured physical or biochemical property that is about to be followed by its index or constant (glycemic [index], binding [constant/affinity], Lipschitz [constant]); the same nouns with ordinary measures (sugar content, energy) or everyday senses stay low",
+ "short": "property word predicting index/constant",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N4158_pos/2026-10-29-ChopinDavid-a397725e.tests.json",
+   "prereg_commit": "e6e7551e",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.868,
+     "peak": "emic"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.765,
+     "peak": "emic"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.25,
+     "peak": " affinity"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.742,
+     "peak": " binding"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.371,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.934,
+     "peak": "emic"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.186,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.406,
+     "peak": "emic"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.104,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.06,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.154,
+     "peak": " antibody"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.028,
+     "peak": " bound"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " road"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " fibre"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " book"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": " protein"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.817,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-a397725e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a397725e",
+   "a modifier naming a measured physical or biochemical property that is about to be followed by its index or constant (glycemic [index], binding [constant/affinity], Lipschitz [constant]); the same nouns with ordinary measures (sugar content, energy) or everyday senses stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a397725e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L17/N1388-",
+ "model": "bonsai1",
+ "layer": 17,
+ "index": 1388,
+ "pole": "-",
+ "label": "lack of moisture: dry weather or soil, dehydration, parched or desiccated conditions; 'dry' in the sense of humour or wine and wet conditions stay low (the meaning, not the word)",
+ "short": "dryness / lack of water",
+ "kind": "meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N1388_neg/2026-10-29-ChopinDavid-c8b8ab14.tests.json",
+   "prereg_commit": "e6e7551e",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.705,
+     "peak": " dry"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.522,
+     "peak": " dehydration"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.661,
+     "peak": " dry"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.726,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.873,
+     "peak": "est"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.926,
+     "peak": "hydr"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.155,
+     "peak": " dry"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.58,
+     "peak": " dry"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " three"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": "H"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": "This"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.233,
+     "peak": " sun"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.043,
+     "peak": "niest"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": " days"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": " laugh"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.027,
+     "peak": " plains"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.683,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-c8b8ab14"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-c8b8ab14",
+   "lack of moisture: dry weather or soil, dehydration, parched or desiccated conditions; 'dry' in the sense of humour or wine and wet conditions stay low (the meaning, not the word)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-c8b8ab14"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
