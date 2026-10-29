@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5008c271",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N666+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N666",
+   "pole": "+",
+   "label": "contemplative practice instructions: directing attention inward to the breath, the body or the present moment in meditation and mindfulness; the same instruction syntax aimed at ordinary tasks stays low",
+   "fire": [
+    "Lie on the mat, let your shoulders soften, and bring your awareness to your breathing.",
+    "Notice each thought as it arises, then let it go and come back to the breath.",
+    "Mindful walking means feeling each step and the contact of the feet with the ground.",
+    "With every exhale, let the tension leave your body and rest in stillness.",
+    "In this meditation you slowly scan the body from the crown of the head to the toes.",
+    "If you get distracted, simply bring your mind back to the sensation of breathing.",
+    "Sitting in silence, the monk rested his attention on the rise and fall of the belly.",
+    "Breathe in slowly, hold for a moment, and observe the stillness inside you."
+   ],
+   "quiet": [
+    "Lie on the mat, lift your shoulders, and do twenty sit-ups at a steady pace.",
+    "Notice each typo as it appears, then fix it and come back to the paragraph.",
+    "Brisk walking means taking long steps and swinging your arms as you go.",
+    "With every push, lift the weight higher and lock your elbows at the top.",
+    "In this inspection you slowly check the car from the hood to the rear bumper.",
+    "If you get distracted, simply bring your eyes back to the line you were reading.",
+    "Sitting in the office, the clerk kept his attention on the stack of invoices.",
+    "Pour in the flour slowly, stir for a moment, and check the dough for lumps."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.7; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "meditative attention instructions",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.45,
+ "notes": "Card: + pole top examples 'focus your thoughts on breathing', 'visualization and suggestion', 'Right mindfulness includes the remembering of the', 'return to the present', plus Gelephu and Avalokitesvara pieces. Probe: 'Right mindfulness includes awareness of the body and' 0.700, 'focus your attention on your breath' 0.601, 'return to the present moment' 0.285; desk version 0.047, 'return to the agenda' 0.007; 'The practice uses visualization' 0.028 (did not fire)."
+}

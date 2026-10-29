@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7b02158f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N9573+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N9573",
+   "pole": "+",
+   "label": "a word-initial capital Ó (Óscar, Órgano, Ómnibus), which the tokenizer splits into two byte tokens; unaccented O, the single-token capitals Á and É, and Ú stay low",
+   "fire": [
+    "Ayer por la tarde Óscar llegó tarde a la reunión del club.",
+    "El concierto de música para Órgano empezó a las ocho.",
+    "Mi abuelo tomaba el Ómnibus todos los días para ir al trabajo.",
+    "La entrevista con Óscar Martínez salió en el periódico local.",
+    "En la catedral hay un Órgano antiguo de dos teclados.",
+    "Según el entrenador, Óscar jugará como titular el domingo.",
+    "La parada del Ómnibus está frente a la plaza mayor.",
+    "El premio fue para Óscar López por su primera novela."
+   ],
+   "quiet": [
+    "Ayer por la tarde Oscar llegó tarde a la reunión del club.",
+    "El concierto de música para Ángel empezó a las ocho.",
+    "Mi abuelo tomaba el autobús todos los días para ir al trabajo.",
+    "La entrevista con Úrsula Martínez salió en el periódico local.",
+    "En la catedral hay un Ícono antiguo de dos colores.",
+    "Según el entrenador, Ángel jugará como titular el domingo.",
+    "La parada del Ébano está frente a la plaza mayor.",
+    "El premio fue para Oscar López por su primera novela."
+   ]
+  }
+ ],
+ "predictions": "fire 0.85-0.95 on the Ó byte; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-initial capital Ó",
+ "unit_kind": "token/lexical",
+ "confidence": 0.55,
+ "notes": "Card: + pole peaks on '�' byte tokens of ' Ó' (Órgano, Óscar, Ótr, Ómnibus). Probe: 'Óscar' 0.906, 'Órgano' 0.911, 'Ómnibus' 0.870; 'Úrsula' 0.168 (same first byte, different second byte), 'Oscar' 0.012, 'Ángel' 0.021, 'Ética' 0.036. So the pole reads the Ó byte pair specifically."
+}

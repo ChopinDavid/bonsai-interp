@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0683e7f4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N7212-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N7212",
+   "pole": "-",
+   "label": "the Spanish token ' he', both the first-person auxiliary of haber ('que he leído', 'he tenido') and the he- piece of split words ('hebras'); 'has' or 'ha' in the same slot and English ' he' stay low",
+   "fire": [
+    "Es la película más larga que he visto en mi vida.",
+    "Desde que llegué al pueblo he tenido mucha suerte con el trabajo.",
+    "Es la mejor comida que he probado en esta ciudad.",
+    "Por suerte, este año he viajado a tres países distintos.",
+    "Pica el ajo y corta el pimiento en hebras muy finas.",
+    "Es la canción más triste que he escuchado nunca.",
+    "Con este equipo he ganado dos campeonatos seguidos.",
+    "Es el lugar más tranquilo que he conocido en años."
+   ],
+   "quiet": [
+    "Es la película más larga que has visto en tu vida.",
+    "Desde que llegó al pueblo ha tenido mucha suerte con el trabajo.",
+    "Es la mejor comida que hemos probado en esta ciudad.",
+    "Por suerte, este año viajamos a tres países distintos.",
+    "Pica el ajo y corta el pimiento en tiras muy finas.",
+    "Es la canción más triste que ha escuchado nunca.",
+    "Con este equipo ganamos dos campeonatos seguidos.",
+    "Es el lugar más tranquilo que conozco en años."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.45 on ' he'; near misses below 0.1; 'me he' contexts are weaker",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Spanish ' he' token",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: gate-closed regime, broad flag, max 2.48, peaks ' he' x18 in Spanish (he visto, hechos, hebras), ' ein' x7. Probe: 'que he leído' 0.397, 'finas hebras' 0.352, 'me he explicado' 0.120, 'hechos' 0.132 (peak not on he); 'has leído' 0.027, English 'he has read' 0.030, German 'ein' 0.172. Fire items avoid the weaker 'me he'."
+}

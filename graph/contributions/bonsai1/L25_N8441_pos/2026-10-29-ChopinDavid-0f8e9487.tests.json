@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0f8e9487",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N8441+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N8441",
+   "pole": "+",
+   "label": "the charge or operating state of a battery or power device (goes dead, completely flat, holds a charge, gone bad); the same state language about non-electrical things (bread goes stale) stays low",
+   "fire": [
+    "If you leave the lights on, the car battery will be completely flat by morning.",
+    "My phone battery goes dead after only a few hours now.",
+    "The new cells hold their charge for months on the shelf.",
+    "The remote stopped working because its batteries had gone flat.",
+    "A lithium pack that is fully drained may refuse to charge again.",
+    "The flashlight battery was dead, so we walked back in the dark.",
+    "This power bank keeps a full charge even after a year in the drawer.",
+    "Cold weather drains a car battery until it is nearly empty."
+   ],
+   "quiet": [
+    "If you leave the milk out, it will be completely sour by morning.",
+    "My houseplants droop after only a few days without water.",
+    "The new spices keep their flavor for months on the shelf.",
+    "The garden hose stopped working because it had sprung a leak.",
+    "A loaf that is fully dried out may be hard to slice again.",
+    "The bread was stale, so we made toast for breakfast.",
+    "This rice keeps its texture even after a year in the pantry.",
+    "Cold weather dries the soil until it is nearly dust."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "battery/device power state",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.35,
+ "notes": "Card: + pole broad-ish (0.83%), top examples battery 'goes dead', sectors 'gone bad', samplers 'remain inactive', battery 'completely flat'. Probe: 'completely flat' 0.661, 'goes dead' 0.395, 'holds a full charge' 0.392, 'gone bad' 0.311, 'remain inactive' 0.206; 'bread goes stale' 0.100, 'meeting ends' 0.016. Label widened from degradation to power state because 'holds a full charge' fired."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4a900b4f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N3688-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N3688",
+   "pole": "-",
+   "label": "scope adverbs of totality, extremity or limit across languages: Korean ' 모두' (all), Chinese 最 (most), Russian ' всего' (only, in all), French ' déjà' (already); the same sentences without the scope word stay at the floor",
+   "fire": [
+    "주말에는 친구들이 모두 공원에 모였습니다.",
+    "그 영화는 어른과 아이 모두 좋아했습니다.",
+    "那是我们班里最聪明的学生。",
+    "这是全城最古老的一座建筑。",
+    "В зале было всего десять человек.",
+    "Она потратила всего пять минут на ответ.",
+    "Le train était déjà parti quand nous sommes arrivés.",
+    "Nous avons déjà vu ce film deux fois."
+   ],
+   "quiet": [
+    "주말에는 친구들이 공원에 모였습니다.",
+    "그 영화는 어른들이 좋아했습니다.",
+    "那是我们班里一个聪明的学生。",
+    "这是全城一座古老的建筑。",
+    "В зале было десять человек.",
+    "Она потратила пять минут на ответ.",
+    "Le train était parti quand nous sommes arrivés.",
+    "Nous avons vu ce film deux fois."
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.7 on the scope word; near misses 0.05-0.15 (filler floor near 0.13)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "all/most/only/already scope words",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: broad flag (1.3%), max 0.75, peaks ' 모두' x7, '最', ' всего', ' déjà', ' inherently'. Probe: '모두 서울에' 0.616, '모두에게' 0.651, '中最' 0.696, 'всего две' 0.468, 'déjà fini' 0.543; same Korean without 모두 0.101, Chinese without 最 0.016, English filler 0.132."
+}

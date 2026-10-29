@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7f220ebf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3503+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3503",
+   "pole": "+",
+   "label": "dense, weak unit; best guess: word pieces of technical or abstract nouns (RISC, _rotation, 内部 'interior', consumption) sit above a high floor that ordinary words also reach",
+   "fire": [
+    "The chip is built on a RISC architecture with a small cache.",
+    "The function is_palindrome returns true for mirrored strings.",
+    "この建物の内部はとても静かです。",
+    "Household consumption fell sharply during the second quarter.",
+    "Early ARM chips followed the RISC idea of simple instructions.",
+    "Call is_sorted before merging the two arrays.",
+    "車の内部を掃除するのに一時間かかった。",
+    "The report tracks energy consumption across the region."
+   ],
+   "quiet": [
+    "The chip is built on a new design with a small cache.",
+    "The function returns true when the two strings match.",
+    "この建物はとても静かです。",
+    "Household spending fell sharply during the second quarter.",
+    "Early chips followed the idea of simple instructions.",
+    "Check the list before merging the two arrays.",
+    "車を掃除するのに一時間かかった。",
+    "The report tracks energy use across the region."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8; near misses 0.15-0.35, so near misses may cross 0.30",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; technical word pieces",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card: FLAG dense (38.5% of tokens reach 0.1 of max), max 0.20, gate-closed regime. Probe: 'RISC' 0.816, 'is_rotation' 0.711, '内部' 0.662, 'consumption' 0.423, 'faced criticism' 0.400; filler sentences 0.126-0.293. Expected to fail on near misses because of the floor."
+}

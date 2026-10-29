@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c902593c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N10140+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N10140",
+   "pole": "+",
+   "label": "best guess: a claim that an outcome persists or continues despite a countervailing trend ('will continue to', 'yet ... still'); plain descriptive sentences stay low",
+   "fire": [
+    "Although sales have dropped, the company will continue to hire engineers.",
+    "Rents have risen for years, yet many families still choose the city.",
+    "Even as rainfall declines, the river will continue to supply the valley.",
+    "Factories have closed, yet the town is still growing slowly.",
+    "Despite the cuts, the library will continue to open on Sundays.",
+    "Prices fell sharply, yet farmers are still earning more than before.",
+    "As budgets shrink, the agency will continue to fund local clinics.",
+    "Membership has declined, yet the club is still the largest in the region."
+   ],
+   "quiet": [
+    "After the sales meeting, the company hired two new engineers.",
+    "Rents in the city are listed on a public website.",
+    "The river runs through the valley and past the old mill.",
+    "The factory is located at the edge of the town.",
+    "The library is open on Sundays from noon until five.",
+    "Farmers sell their crops at the market every Friday.",
+    "The agency funds local clinics through a yearly grant.",
+    "The club meets in the community hall on Tuesday evenings."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.35; near misses below 0.05; median may fall below 0.20",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; persistence despite a trend",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token (',', ' are', ' will', ' but'), max 21.75, top 'oceans will continue to provide'. Probe: 'yet union members are still better paid' 0.341, 'forests will continue to absorb' 0.264, 'body will produce almost no insulin' 0.093, 'But the worst part' 0.032, filler 0.010-0.016. Weak, mixed probe support."
+}
