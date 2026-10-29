@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-28-moridinamael-fcb7e587",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L18/N10678+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:24:18+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the last piece of a rare or foreign person's name that the tokenizer splits into several pieces, in any language (Bermude|z, Kristoffers|en); common names like Smith stay quiet"
+ },
+ "neighbours": [
+  {
+   "unit": "L18/N10678",
+   "pole": "+",
+   "label": "the last piece of a rare Spanish, Italian, African or Nordic surname that the tokenizer splits (Bermude|z, Arriet|a, Haraldss|on); common surnames like Smith and long Slavic names (-ov, -ski, -icz) stay weak",
+   "fire": [
+    "Saudi-based Shoaibi Group joined forces with international investors.",
+    "The committee thanked Professor Elena Bermudez for her years of service.",
+    "Our new neighbor, Iñaki Arrieta, brought over a tray of pastries.",
+    "The goal was scored by Haraldsson in the final minute.",
+    "According to historian Giulia Scarabelli, the fresco was restored twice.",
+    "The report was written by Chukwuemeka Okonkwo and two colleagues.",
+    "Mrs. Sigríður Gunnarsdóttir opened the bakery in 1987.",
+    "Detective Pellegrinetti refused to comment on the case."
+   ],
+   "quiet": [
+    "The grant was awarded to Dr Maria Lopez, who led the project.",
+    "The committee thanked Professor Elena Smith for her years of service.",
+    "Our new neighbor, John Brown, brought over a tray of pastries.",
+    "The goal was scored by Ivanov in the final minute.",
+    "According to historian Anna Kowalski, the fresco was restored twice.",
+    "The report was written by Tom Johnson and two colleagues.",
+    "Mrs. Wilson opened the bakery in 1987.",
+    "Detective Jankowicz refused to comment on the case."
+   ]
+  }
+ ],
+ "predictions": "Expect about 5-6 of 8 fire items above 0.20 (Hispanic/Italian/Nordic names strong, Shoaibi Group and Gunnarsdottir uncertain); risk: this neuron has a ~0.2-0.3 noise floor on ordinary text, so near misses may leak and AUROC may land near 0.85.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
