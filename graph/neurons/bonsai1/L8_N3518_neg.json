@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N3518-",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 3518,
+ "pole": "-",
+ "label": "a wrong or misspelled word in a slot the grammar has already fixed (will away, please fee free, to founded, cognitive leaning for learning): the pole marks a word that does not fit the verb or noun the context demands; the correct word in the same slot stays low",
+ "short": "wrong word in a fixed slot",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N3518_neg/2026-10-28-ChopinDavid-669ac0e6.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.72,
+     "peak": " away"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.239,
+     "peak": " fee"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.466,
+     "peak": " ready"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.238,
+     "peak": " founded"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.293,
+     "peak": " leaning"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.999,
+     "peak": " ready"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.162,
+     "peak": " away"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.474,
+     "peak": " founded"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.019,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " said"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.049,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": " read"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " readers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " friends"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.034,
+     "peak": " lesson"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.47,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-669ac0e6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-669ac0e6",
+   "a wrong or misspelled word in a slot the grammar has already fixed (will away, please fee free, to founded, cognitive leaning for learning): the pole marks a word that does not fit the verb or noun the context demands; the correct word in the same slot stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-669ac0e6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

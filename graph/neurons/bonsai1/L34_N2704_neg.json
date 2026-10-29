@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N2704-",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 2704,
+ "pole": "-",
+ "label": "the final piece of a split abstract noun in formal Spanish (and French or German) text that will take a 'de/du' genitive (para la Conserv|ación de, el envejec|imiento de, la Grund|lage seiner): the pole sets up the coming 'of'; formal sentences in the same languages without such a split head noun stay low",
+ "short": "Romance head noun before 'de'",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N2704_neg/2026-10-28-ChopinDavid-a24f9b7b.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.105,
+     "peak": "ial"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.074,
+     "peak": " la"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.068,
+     "peak": "cimiento"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.128,
+     "peak": "as"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.022,
+     "peak": " red"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.082,
+     "peak": " la"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.059,
+     "peak": "amiento"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.101,
+     "peak": "io"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.046,
+     "peak": "e"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.051,
+     "peak": " sur"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " año"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " ley"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": " red"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.082,
+     "peak": " la"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.058,
+     "peak": "pos"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.092,
+     "peak": "io"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.773,
+    "median_fire": 0.078,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-a24f9b7b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-a24f9b7b",
+   "the final piece of a split abstract noun in formal Spanish (and French or German) text that will take a 'de/du' genitive (para la Conserv|ación de, el envejec|imiento de, la Grund|lage seiner): the pole sets up the coming 'of'; formal sentences in the same languages without such a split head noun stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-a24f9b7b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L21/N6046+",
+ "model": "bonsai1",
+ "layer": 21,
+ "index": 6046,
+ "pole": "+",
+ "label": "guess: in multi-line Python code, the end of a function name at a call site, or its first argument token, inside a longer script or doctest (create_annotated_heatmap(z, assert_roundtrip(value, next_meetings): the pole marks a call being opened",
+ "short": "guess: call-site name in code",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N6046_pos/2026-10-28-ChopinDavid-c30207c2.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.011,
+     "peak": "])\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.017,
+     "peak": "(value"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.043,
+     "peak": "(grid"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.011,
+     "peak": "())\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.009,
+     "peak": "')\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.03,
+     "peak": "(limit"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.008,
+     "peak": "):\n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.008,
+     "peak": " events"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": " prints"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " way"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " shows"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " are"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " prints"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": " object"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.852,
+    "median_fire": 0.011,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-c30207c2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-c30207c2",
+   "guess: in multi-line Python code, the end of a function name at a call site, or its first argument token, inside a longer script or doctest (create_annotated_heatmap(z, assert_roundtrip(value, next_meetings): the pole marks a call being opened",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-c30207c2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

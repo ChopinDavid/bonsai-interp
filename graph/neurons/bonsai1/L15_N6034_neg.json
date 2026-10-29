@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N6034-",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 6034,
+ "pole": "-",
+ "label": "broad, weak; guess: a concrete noun naming a physical surface, landform or object in a descriptive scene (sandy banks, mountain peaks, the lawn, a probe): the pole leans toward tangible places and things; abstract nouns in similar sentences stay lower",
+ "short": "broad: concrete place and object nouns",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N6034_neg/2026-10-28-ChopinDavid-f7b3c3d7.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.179,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.205,
+     "peak": " peaks"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.322,
+     "peak": " park"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.354,
+     "peak": " beach"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.243,
+     "peak": "ly"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.29,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.074,
+     "peak": "alt"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.535,
+     "peak": " cliffs"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.037,
+     "peak": " spring"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.026,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " spent"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": " mind"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.073,
+     "peak": "erman"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.069,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.039,
+     "peak": " arguments"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.113,
+     "peak": " quickly"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.266,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-f7b3c3d7"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-f7b3c3d7",
+   "broad, weak; guess: a concrete noun naming a physical surface, landform or object in a descriptive scene (sandy banks, mountain peaks, the lawn, a probe): the pole leans toward tangible places and things; abstract nouns in similar sentences stay lower",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-f7b3c3d7"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

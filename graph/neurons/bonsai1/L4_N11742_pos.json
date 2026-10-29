@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N11742+",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 11742,
+ "pole": "+",
+ "label": "dense, weak unit; best guess: capitalized name words and 'slope' words (' Great', ' Meadows', ' slope') sit above a high floor that ordinary words also reach",
+ "short": "dense; names and slope words",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N11742_pos/2026-10-28-ChopinDavid-8c87ba75.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 5,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.721,
+     "peak": " Great"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.766,
+     "peak": " Meadows"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.622,
+     "peak": " slope"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.655,
+     "peak": " Great"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.674,
+     "peak": " slope"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.761,
+     "peak": " Meadows"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.792,
+     "peak": " slope"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.586,
+     "peak": " Great"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.375,
+     "peak": " h"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.293,
+     "peak": " spoke"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.405,
+     "peak": " ledge"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.253,
+     "peak": " said"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.396,
+     "peak": " toward"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.387,
+     "peak": " senator"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.263,
+     "peak": " path"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.308,
+     "peak": " old"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.698,
+    "near_misses_at_0.3": 5
+   },
+   "contribution": "2026-10-28-ChopinDavid-8c87ba75"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-8c87ba75",
+   "dense, weak unit; best guess: capitalized name words and 'slope' words (' Great', ' Meadows', ' slope') sit above a high floor that ordinary words also reach",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-8c87ba75"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
