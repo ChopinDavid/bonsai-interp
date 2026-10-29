@@ -1,0 +1,20 @@
+{
+ "id": "2026-10-29-moridinamael-73c1",
+ "kind": "map",
+ "neuron": "bonsai1/L23/N6611+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T16:09:35+00:00",
+ "recipe": {
+  "toolchain_commit": "459077d4",
+  "command": "single-unit zero ablation, downstream (play step --down)"
+ },
+ "edges": [
+  {
+   "from": "bonsai1/L22/N8234+",
+   "to": "bonsai1/L23/N6611+",
+   "kind": "feeds",
+   "weight": 0.32,
+   "method": "single-unit zero ablation, downstream (play step --down)"
+  }
+ ]
+}
