@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L31/N10080+",
+ "model": "bonsai1",
+ "layer": 31,
+ "index": 10080,
+ "pole": "+",
+ "label": "earth-science technical prose (plate tectonics, seismology, rock formation, hydrogeology): the pole fires on connective tokens inside geoscience descriptions; the same sentence frames about biology, finance or daily life stay low",
+ "short": "geoscience technical prose",
+ "kind": "topic",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N10080_pos/2026-10-28-ChopinDavid-996f4bc2.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.107,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.238,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.11,
+     "peak": " located"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.886,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": -0.019,
+     "peak": " surveys"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.071,
+     "peak": " flows"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.591,
+     "peak": " beneath"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.279,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": "Along"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.043,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": " bird"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " market"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": " large"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " golden"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.174,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-996f4bc2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-996f4bc2",
+   "earth-science technical prose (plate tectonics, seismology, rock formation, hydrogeology): the pole fires on connective tokens inside geoscience descriptions; the same sentence frames about biology, finance or daily life stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-996f4bc2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N3074-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 3074,
+ "pole": "-",
+ "label": "the uppercase acronym pieces 'HA', 'FA', 'HOA' and 'HOS' (hyaluronic acid, HAART, Football Association, homeowners association); other uppercase acronyms stay low",
+ "short": "acronym pieces HA / FA / HOA / HOS",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3074_neg/2026-10-28-ChopinDavid-3a73bd69.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.837,
+     "peak": "HA"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.731,
+     "peak": "A"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.603,
+     "peak": " HA"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.513,
+     "peak": " FA"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.579,
+     "peak": " HA"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.749,
+     "peak": "A"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.473,
+     "peak": " FA"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.897,
+     "peak": "OS"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " contain"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " voted"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " Pr"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " ease"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": "AS"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.667,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-3a73bd69"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-3a73bd69",
+   "the uppercase acronym pieces 'HA', 'FA', 'HOA' and 'HOS' (hyaluronic acid, HAART, Football Association, homeowners association); other uppercase acronyms stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-3a73bd69"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

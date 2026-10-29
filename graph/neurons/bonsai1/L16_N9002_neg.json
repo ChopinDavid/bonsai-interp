@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N9002-",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 9002,
+ "pole": "-",
+ "label": "a word-piece that completes a technical term split across tokens (decolor|ized, dile|mmas); everyday words and whole-token terms in the same sentences stay low",
+ "short": "inner word-piece of a split technical term",
+ "kind": "token",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N9002_neg/2026-10-28-ChopinDavid-1b546c5a.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.171,
+     "peak": "olor"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.021,
+     "peak": " patients"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.155,
+     "peak": "ained"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.02,
+     "peak": "These"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.027,
+     "peak": " quickly"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.021,
+     "peak": " case"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.355,
+     "peak": "ized"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.034,
+     "peak": " ethics"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " patients"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.035,
+     "peak": " slide"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": "These"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.054,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " case"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.221,
+     "peak": " washed"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": " discussed"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.641,
+    "median_fire": 0.03,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-1b546c5a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-1b546c5a",
+   "a word-piece that completes a technical term split across tokens (decolor|ized, dile|mmas); everyday words and whole-token terms in the same sentences stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-1b546c5a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

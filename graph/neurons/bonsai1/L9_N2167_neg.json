@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N2167-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 2167,
+ "pole": "-",
+ "label": "signal-processing and electronics-design vocabulary (Bode magnitude, sidelobe, equiripple filter, logic synthesis, least significant bit); the same words used outside engineering stay low",
+ "short": "signal-processing / circuit-design terms",
+ "kind": "topic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N2167_neg/2026-10-28-ChopinDavid-31dd3b78.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.253,
+     "peak": " decade"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.741,
+     "peak": "obe"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.309,
+     "peak": " taps"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.236,
+     "peak": " synthesis"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.024,
+     "peak": " significant"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.27,
+     "peak": "ode"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.002,
+     "peak": "obe"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.465,
+     "peak": " synthesis"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.017,
+     "peak": "On"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": " kitchen"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": " legs"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": "After"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " showed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " landscape"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.022,
+     "peak": " bedroom"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": "Their"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.289,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-31dd3b78"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-31dd3b78",
+   "signal-processing and electronics-design vocabulary (Bode magnitude, sidelobe, equiripple filter, logic synthesis, least significant bit); the same words used outside engineering stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-31dd3b78"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
