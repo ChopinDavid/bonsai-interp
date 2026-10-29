@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-moridinamael-f159bee1",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N6611+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T16:09:26+00:00",
+ "recipe": {
+  "toolchain_commit": "459077d4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N6611_pos/2026-10-29-moridinamael-f159bee1.tests.json"
+ },
+ "label": "the subject or verb of a clause reported after 'said/told/promised that', especially a second 'and that he/she…' clause",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N6611_pos/2026-10-29-moridinamael-f159bee1.tests.json",
+   "prereg_commit": "459077d4",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.018,
+     "peak": " would"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.009,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.01,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.054,
+     "peak": " grandmother"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.014,
+     "peak": " played"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.033,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.012,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.067,
+     "peak": " Friday"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.024,
+     "peak": " lie"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " documents"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": " toll"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.054,
+     "peak": " grandmother"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " week"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.484,
+    "median_fire": 0.016,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "step-down"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "459077d4",
+  "minutes": 0,
+  "batch_size": 1
+ }
+}
