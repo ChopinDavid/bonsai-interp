@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 1
    },
    "contribution": "2026-10-24-ChopinDavid-bf595514"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N9518_neg/2026-10-29-moridinamael-eaac7ed9.tests.json",
+   "prereg_commit": "52b86125",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.551,
+     "peak": "ips"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.464,
+     "peak": "ip"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.575,
+     "peak": "pt"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.096,
+     "peak": " cylindrical"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.196,
+     "peak": "ips"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.5,
+     "peak": "pt"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.028,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.005,
+     "peak": " hour"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " planted"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": "ologist"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.001,
+     "peak": " grabbed"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": " welded"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.0,
+     "peak": " recipe"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.098,
+     "peak": " flattened"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.082,
+     "peak": " script"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.852,
+    "median_fire": 0.33,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-eaac7ed9"
   }
  ],
  "label_history": [
@@ -138,21 +260,28 @@
    "2026-10-24-ChopinDavid-bf595514",
    "the word piece 'ips' when it is split off as its own token ('tul|ips', 'equ|ips', 'wh|ips', 'goss|ips'), as against words that end in -ips but are a single token ('chips', 'ships', 'tips', 'clips')",
    "held"
+  ],
+  [
+   "2026-10-29-moridinamael-eaac7ed9",
+   "the letter pieces 'ips', 'ip' and 'pt' inside a longer or rare word (tul|ips, ov|ip|osition, Up|t|own), and the word ' cylindrical'; whole common words like 'ships' or 'script' stay quiet",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-24-ChopinDavid-bf595514"
+  "2026-10-24-ChopinDavid-bf595514",
+  "2026-10-29-moridinamael-eaac7ed9"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": {
@@ -161,11 +290,11 @@
   "strong": 3574
  },
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
