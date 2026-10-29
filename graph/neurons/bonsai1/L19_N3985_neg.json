@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N3985-",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 3985,
+ "pole": "-",
+ "label": "'in' (or the space before a number) that dates when an event happened or will happen, especially a return or resumption ('returned to playing in 2003', 'ready in 6 months'): the pole marks a time anchor for an event; 'in' with a place stays low",
+ "short": "'in' + time anchoring an event",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N3985_neg/2026-10-28-ChopinDavid-aab296ea.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.094,
+     "peak": " teaching"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.053,
+     "peak": " touring"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.375,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.037,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.188,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.062,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.262,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.112,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.095,
+     "peak": " teaching"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.053,
+     "peak": " touring"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.375,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " break"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.188,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.054,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.253,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.112,
+     "peak": " to"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.5,
+    "median_fire": 0.103,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-ChopinDavid-aab296ea"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-aab296ea",
+   "'in' (or the space before a number) that dates when an event happened or will happen, especially a return or resumption ('returned to playing in 2003', 'ready in 6 months'): the pole marks a time anchor for an event; 'in' with a place stays low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-aab296ea"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

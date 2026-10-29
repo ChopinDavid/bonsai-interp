@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N6064-",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 6064,
+ "pole": "-",
+ "label": "text about people's identifying or demographic attributes as data to protect or compare (personally identifiable information, personal details, without regard to race): the pole marks privacy and demographic-attribute language; the same sentence frames about non-personal data stay low",
+ "short": "personal / demographic attribute data",
+ "kind": "topic/meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N6064_neg/2026-10-28-ChopinDavid-e7c63507.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.431,
+     "peak": " identifiable"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.284,
+     "peak": " personal"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.427,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.182,
+     "peak": " factors"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.258,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.763,
+     "peak": " identified"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.129,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.159,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " store"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.106,
+     "peak": " your"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.087,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " quarter"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.058,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": " working"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.075,
+     "peak": " for"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.271,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-e7c63507"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-e7c63507",
+   "text about people's identifying or demographic attributes as data to protect or compare (personally identifiable information, personal details, without regard to race): the pole marks privacy and demographic-attribute language; the same sentence frames about non-personal data stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-e7c63507"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

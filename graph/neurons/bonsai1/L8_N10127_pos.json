@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N10127+",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 10127,
+ "pole": "+",
+ "label": "the stem of a fairly rare verb or adjective of manner and intent (strive, juxtapose, stipulate, jot, geared, quintile): an early lexical pole on less-frequent words; common synonyms in the same slot (try, say, write, aimed) stay low",
+ "short": "rare-word stems (strive, juxtap-, stip-)",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N10127_pos/2026-10-28-ChopinDavid-d50eaca3.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.412,
+     "peak": " striving"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.072,
+     "peak": " juxtap"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.401,
+     "peak": " stip"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.428,
+     "peak": " jot"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.511,
+     "peak": " geared"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.559,
+     "peak": " quint"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.647,
+     "peak": " pinpoint"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.37,
+     "peak": " baff"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": " member"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.08,
+     "peak": " exhibit"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.057,
+     "peak": " leash"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": " word"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.123,
+     "peak": "-time"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": "amilies"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.149,
+     "peak": " cause"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.1,
+     "peak": " sudden"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.47,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-d50eaca3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-d50eaca3",
+   "the stem of a fairly rare verb or adjective of manner and intent (strive, juxtapose, stipulate, jot, geared, quintile): an early lexical pole on less-frequent words; common synonyms in the same slot (try, say, write, aimed) stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-d50eaca3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

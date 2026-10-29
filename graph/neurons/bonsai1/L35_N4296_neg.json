@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N4296-",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 4296,
+ "pole": "-",
+ "label": "a bare word-initial ' F'/' f' piece that starts a split German word (F|ähigkeit, F|ische, f|ahren, F|ett): the pole marks the F-onset spelling unit; German words where F is part of a whole-word token (Fehler, Feld, Frage) stay low",
+ "short": "German split-off ' F' onset",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N4296_neg/2026-10-28-ChopinDavid-5f2b9d2c.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.887,
+     "peak": " f"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.615,
+     "peak": " F"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.665,
+     "peak": " F"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.671,
+     "peak": " f"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.426,
+     "peak": " F"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.392,
+     "peak": " f"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.585,
+     "peak": " F"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.535,
+     "peak": " f"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.061,
+     "peak": " Feld"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.112,
+     "peak": " Re"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.132,
+     "peak": "pf"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " dem"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.017,
+     "peak": " den"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": " den"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.131,
+     "peak": " Bl"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.047,
+     "peak": " meine"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.6,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-5f2b9d2c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-5f2b9d2c",
+   "a bare word-initial ' F'/' f' piece that starts a split German word (F|ähigkeit, F|ische, f|ahren, F|ett): the pole marks the F-onset spelling unit; German words where F is part of a whole-word token (Fehler, Feld, Frage) stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-5f2b9d2c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

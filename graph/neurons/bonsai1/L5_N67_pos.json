@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L5/N67+",
+ "model": "bonsai1",
+ "layer": 5,
+ "index": 67,
+ "pole": "+",
+ "label": "a '/' or '-' that joins two words or names with no space, as in menus, headings and place names (News/Updates, Challenges/ What's Next, St-Etienne-Loire): the pole marks the unspaced separator; the same items joined by 'and' or spaces stay low",
+ "short": "unspaced '/' or '-' separator",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N67_pos/2026-10-28-ChopinDavid-d634e681.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.655,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.386,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.554,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.579,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.461,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.639,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.626,
+     "peak": "/"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.591,
+     "peak": "/"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": " News"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " covers"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.048,
+     "peak": " S"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": " Dess"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " Careers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.02,
+     "peak": " Search"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": "Chapter"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.043,
+     "peak": " Login"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.585,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-d634e681"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-d634e681",
+   "a '/' or '-' that joins two words or names with no space, as in menus, headings and place names (News/Updates, Challenges/ What's Next, St-Etienne-Loire): the pole marks the unspaced separator; the same items joined by 'and' or spaces stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-d634e681"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
