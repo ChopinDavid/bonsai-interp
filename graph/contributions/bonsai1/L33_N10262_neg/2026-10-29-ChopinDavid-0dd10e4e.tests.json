@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0dd10e4e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N10262-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N10262",
+   "pole": "-",
+   "label": "inside a code comment, the 'to' or 'and' that introduces the next processing verb ('used to convert', 'Parse and write', 'abspath to make', 'Combine the output, and return'), peak on that 'to'/'and'; the same phrases in prose and comments without a verb to introduce stay low",
+   "fire": [
+    "# Read the manifest and build the index of entries.\nindex = build_index(read_manifest(path))",
+    "# Use shlex.split to break the command into arguments.\nargs = shlex.split(cmd)",
+    "    # Strip the header, and return the body.\n    return text.split('\\n', 1)[1]",
+    "# Walk the tree and collect every leaf node.\nleaves = [n for n in walk(tree) if n.is_leaf]",
+    "# This helper is used to normalise paths before comparison.\ndef norm(p):\n    return os.path.normpath(p)",
+    "# Load the schema and validate each record against it.\nschema = load(SCHEMA)\nfor rec in records:\n    validate(rec, schema)",
+    "    # Call textwrap.dedent to remove the common indent.\n    body = textwrap.dedent(body)",
+    "# Merge the two dicts and drop any empty values.\nmerged = {k: v for k, v in {**a, **b}.items() if v}"
+   ],
+   "quiet": [
+    "# Index of entries, keyed by name.\nindex = build_index(read_manifest(path))",
+    "# Arguments for the subprocess call.\nargs = shlex.split(cmd)",
+    "    # Body only, no header.\n    return text.split('\\n', 1)[1]",
+    "# Leaf nodes of the tree.\nleaves = [n for n in walk(tree) if n.is_leaf]",
+    "# Path normalisation helper.\ndef norm(p):\n    return os.path.normpath(p)",
+    "Load the schema and validate each record against it before saving.",
+    "The editor removes the common indent from the pasted text.",
+    "# FIXME: empty values should not be here\nmerged = {k: v for k, v in {**a, **b}.items() if v}"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.45 on ' to'/' and'; near misses below 0.12",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'to'/'and' before a verb in a code comment",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' to' x10, ' and' x4, ' m'(unge), ' Name', ' after', ' be'; all inside Python/Sphinx comments ('to make it possible to resolve relative paths', '# Parse and write Markdown pages', 'will be used to convert quotes'); the + pole suppresses ' resolve/expand/emit/dis', so this - pole promotes those verbs; max 168, density 0.14%. Probe: '# Parse and write the pages' 0.424 (peak and), '# Use os.path.abspath to make' 0.358 (peak to), '# Combine the output, and return it' 0.214, '# If true ... used to convert' 0.150 (peak on ' ='), '# Relative to the documentation root' 0.037, '# TODO' 0.112; prose 'used to convert' 0.049, 'absolute path to make sure' 0.108, bare def 0.025, floor 0.019."
+}

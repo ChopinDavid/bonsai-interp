@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2f97ba39",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N4248+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N4248",
+   "pole": "+",
+   "label": "a weak, broad unit on the boundaries of listing and citation lines: the separator or first word before a date, heading or item in schedule lines, reference lists and '|'-separated news indexes ('Retrieved 2011-04-02', 'news | 16 May', 'Confidential to My'); ordinary prose stays near zero",
+   "fire": [
+    "- Reuters. Bridge reopens after repairs. Retrieved 2012-06-14.\n- BBC News. Floods recede. Retrieved 2012-06-15.",
+    "6 p.m. - Yoga (first Monday)\n7 p.m. - Trivia (third)\n8 p.m. - Darts",
+    "3. local | 2 March 2014\n4. weather | 3 March 2014",
+    "Confidential to My Faithful Correspondents:\n\"Your letters kept me going.\"",
+    "- ^ a b United Press International. Dam Fails in Storm. Retrieved: 9 July 2009.",
+    "- GlobalSecurity.org, M109 Paladin (Self-Propelled Howitzer); retrieved 2011-3-8",
+    "Past performance is no guarantee.\nFor details, visit our office.",
+    "    self.assertTrue(self.restart_soft_called)\n    self.assertEqual(self.calls, 2)"
+   ],
+   "quiet": [
+    "The bridge reopened after repairs and the floods receded within a week.",
+    "On Mondays there is yoga at six and trivia at seven.",
+    "The local news on the second of March covered the weather.",
+    "She thanked her faithful correspondents for their letters.",
+    "A dam failed during the storm, the press agency reported in July.",
+    "The howitzer entered service in the early sixties.",
+    "Past performance is no guarantee of future results, the adviser said.",
+    "The test checks that the soft restart was called twice."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.4; near misses below 0.1; the pole is weak (max 7.1, 2.3% of tokens above 0.1 of max) and is registered as a best guess",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "listing/citation line boundaries",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: ' ' x6, '.' x3, '   ' x3, newline x3, '.\\n' x2, ' I' x2; examples are schedule lines (7 p.m. - Bunco), reference entries with retrieved dates, 'news | 16 May 2013', 'Confidential to My Irish Readers', test code; broad flag; the - pole is dense (11.6%). Probe: 'Confidential to My Loyal Readers' 0.359 (peak My), 'Retrieved 2011-04-02' 0.301 (peak on the date), 'news | 16 May' 0.231, assertTrue line 0.199, '7 p.m. - Bingo' 0.164, prose 0.029-0.078, floor 0.054."
+}

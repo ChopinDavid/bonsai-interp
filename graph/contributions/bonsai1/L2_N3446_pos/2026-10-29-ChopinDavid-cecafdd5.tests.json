@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-cecafdd5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N3446+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N3446",
+   "pole": "+",
+   "label": "a dense, early unit on the subject that opens a new clause after a sentence or clause boundary: subject pronouns (we, It, they, I, He, you) strongest, noun-phrase subjects ('The authors', 'the members') also fire; sentence-initial subjects with no preceding clause and verbs/objects stay lower",
+   "fire": [
+    "When the rain stopped, we carried the chairs back inside.",
+    "The bridge was closed for a month. It reopened in June.",
+    "If they call again, they will ask for the manager.",
+    "As soon as I finished, I posted the letter.",
+    "The engine stalled twice. We pushed the car to the verge.",
+    "Before you leave, you should lock the back door.",
+    "The dog barked all night. He finally fell asleep at dawn.",
+    "Although she was tired, she kept reading until midnight."
+   ],
+   "quiet": [
+    "Snow covered the chairs on the terrace overnight.",
+    "The bridge reopened in June after a month of repairs.",
+    "The manager asked the callers to try again later.",
+    "Posting the letter took only a minute.",
+    "The engine stalled twice on the hill road.",
+    "Lock the back door before leaving the house.",
+    "Barking kept the neighbours awake all night.",
+    "Reading until midnight left her tired the next day."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.7 on the pronoun; near misses mostly below 0.2, but noun subjects after a boundary leaked 0.47-0.52 in the probe, so an 8 + 8 test can hardly pass",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "clause-opening subject after a boundary",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: ' you' x6, ' It' x6, ' we' x4, ' they' x3, ' I' x3, ' They' x3, ' He', ' WHO'; max 2.62, density 5.6% (broad flag), gate-closed echo regime 100%; layer 2. Probe: 'Once they decide, they' 0.701, '. It describes' 0.576, 'When I paint, I' 0.580, ', we walked' 0.534; '. The authors describe' 0.515, 'the members will' 0.472 (peak will), ', the villagers' 0.129, 'Rain fell' 0.037, floor 0.111. Registered as dense / positional."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-fb226a74",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N1200+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N1200",
+   "pole": "+",
+   "label": "a next-token predictor for a business-entity noun (company, firm, maker, manufacturer, conglomerate): the modifier or determiner right before it ('his own construction _', 'a private _', 'the Japanese _', 'mining _'), peak on that word; the same determiners before non-business nouns stay low, but a modifier that itself predicts a firm ('a private detective') fires",
+   "fire": [
+    "She spent a decade at a small software company in Leeds.",
+    "The port was sold to a Dutch shipping firm last spring.",
+    "Toyota, the Japanese carmaker, reported record profits.",
+    "After the merger he founded his own consulting firm.",
+    "The patent belongs to a Swiss pharmaceutical company.",
+    "The site was cleared by a local construction company.",
+    "The route is run by a family-owned bus company.",
+    "The parts come from a Taiwanese electronics manufacturer."
+   ],
+   "quiet": [
+    "She spent a decade at a small village school in Leeds.",
+    "The port was sold to the city council last spring.",
+    "The new hybrid sedan sold in record numbers.",
+    "After the merger he moved to his own apartment.",
+    "The patent describes a new chemical process.",
+    "The site was cleared by a crew of local volunteers.",
+    "The route is run by a family of retired drivers.",
+    "The parts come from a port near Kaohsiung."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.35-0.6 on the word before the company noun; near misses below 0.2 (near misses avoid 'private' and nationality adjectives, which set up the prediction)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts 'company/firm'",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' the' x4, 'es' x4 (Aktieng|es|ellschaft), ' an' x3, ' private' x2, ' a' x2, ' own', ' mining', ' Japanese', 'edish' (turbine company); the + pole promotes ' nonprofit', ' charities', ' NGO'; max 74, density 0.037%. Probe: 'his own construction company' 0.550 (peak construction), 'the Japanese maker' 0.533, 'a private firm' 0.478, 'mining companies' 0.423; 'a private detective' 0.478 (the modifier sets up the prediction), 'his own house' 0.176, 'oldest families' 0.143, 'the company employs' 0.031 (nothing after the noun), 'local nonprofit' 0.020, floor 0.000."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9718e903",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N4247+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N4247",
+   "pole": "+",
+   "label": "an adjective naming the geographic or jurisdictional level of a thing (continental shelf, territorial dispute, regional semifinals, national convention, Landes-finale), peak on the adjective; other -al adjectives (financial, medical, annual) and the nouns continent/nation/region stay low; 'municipal' and 'national' were weak in the probe",
+   "fire": [
+    "The survey mapped the entire continental slope off Norway.",
+    "Both governments agreed to settle the territorial claim by arbitration.",
+    "Her choir won the regional championship two years running.",
+    "The Republican national convention opened with a long speech.",
+    "The rail line crosses the continental divide near Butte.",
+    "Fishing rights in the territorial waters were disputed for decades.",
+    "Growers from across the province met at the regional fair.",
+    "The Second Continental Congress met in Philadelphia."
+   ],
+   "quiet": [
+    "The survey mapped the entire coastal slope off Norway.",
+    "Both governments agreed to settle the financial claim by arbitration.",
+    "Her choir won the choral championship two years running.",
+    "The Republican fundraising dinner opened with a long speech.",
+    "The rail line crosses the great divide near Butte.",
+    "Fishing rights in the coastal waters were disputed for decades.",
+    "Growers from across the province met at the annual fair.",
+    "The Second Vatican Council met in Rome."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on continental/territorial/regional, lower on national; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "scale/jurisdiction adjective",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' continental' x3, 'ing' x3, ' national' x2, ' National' x2, ' territorial', ' Continental', ' regional', Landes|finale, weiterführend|en; max 20.6, density 0.35%. Probe: continental 0.714, territorial 0.673, regional 0.405, Landesfinale 0.413 (peak es), District-level 0.238, municipal 0.184, 'national convention' 0.181 (peak on party), financial 0.083, medical 0.128, nation 0.151, floor 0.026."
+}

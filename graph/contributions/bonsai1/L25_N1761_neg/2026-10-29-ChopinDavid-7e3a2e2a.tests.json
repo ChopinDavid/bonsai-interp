@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7e3a2e2a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N1761-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N1761",
+   "pole": "-",
+   "label": "the function word that opens a locative or circumstantial complement of a narrative predicate of being, living or suffering ('lived in a hut by', 'was in danger', 'anyone in there', 'had been arrested', 'hunted for their pelts', 'in my street'); temporal 'in 1848', 'interested in' and 'had been to Paris' stay low",
+   "fire": [
+    "Long ago a blind weaver lived in a cottage at the edge of the marsh.",
+    "She feared that her brother was in serious trouble with the law.",
+    "If anybody was in the barn that night, nobody ever admitted it.",
+    "The villagers said the miller had been murdered for his gold.",
+    "Seals were slaughtered for their oil all along that coast.",
+    "I never told the people in my building what had happened.",
+    "By then the old captain had been dead for nearly a year.",
+    "Nobody knew whether the children were in the house when it burned."
+   ],
+   "quiet": [
+    "Long ago a blind weaver finished the tapestry in only a week.",
+    "She feared that her brother was interested in the wrong people.",
+    "If anybody noticed the smoke that night, nobody ever admitted it.",
+    "The villagers said the miller had sold his gold in 1850.",
+    "Seals were counted every spring all along that coast.",
+    "I never told the people what happened in the end.",
+    "By then the old captain had been to Lisbon three times.",
+    "Nobody knew whether the children had learned the song in English."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.6 on in/by/for/their/been; near misses below 0.12",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "narrative locative/circumstantial complement opener",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' in' x9, ' been' x3, ' of' x3, ' from' x3, ' the' x2, ' for'; narrative examples (lived in a house, had been executed, hunters for their fur, in my area, is in danger, anyone in there), Chinese 在/于; max 47.25, density 0.44%. Probe: 'lived in a hut by the shore' 0.597 (peak ' by'), 'was in danger' 0.571, 'hunted for their pelts' 0.481 (peak ' their'), 'in my street' 0.324, 'anyone in there' 0.277, 'had been arrested' 0.264, 'had been to Paris' 0.106, 'signed in 1848' 0.003, 'interested in' 0.013, Chinese 0.087, floor 0.013. A broad narrative-circumstance pole rather than a single word."
+}
