@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-28-moridinamael-30a34943",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N5718+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:32:50+00:00",
+ "roles": ["reads bonsai1/L19/N529+"],
+ "neighbours": [
+  {
+   "unit": "L22/N5718",
+   "pole": "+",
+   "label": "the 'and' / guest count in a forum 'Users browsing this forum: No registered users and N guests' footer",
+   "fire": [
+    "Who is online: Users browsing this forum: No registered users and 1 guest",
+    "Users browsing this forum: No registered users and 12 guests\nYou cannot post new topics in this forum",
+    "Board index » General Discussion. Users browsing this forum: No registered users and 7 guests",
+    "Users browsing this forum: No registered users and 25 guests. Powered by phpBB.",
+    "Jump to: Off-Topic. Users browsing this forum: No registered users and 2 guests",
+    "Users browsing this forum: No registered users and 48 guests\nYou cannot reply to topics in this forum",
+    "Return to Classic Cars Restoration. Users browsing this forum: No registered users and 5 guests",
+    "WHO IS ONLINE\nUsers browsing this forum: No registered users and 9 guests"
+   ],
+   "quiet": [
+    "Users browsing this forum: Bing [Bot]",
+    "Who is online: In total there are 14 users online",
+    "You cannot post new topics in this forum\nYou cannot reply to topics in this forum",
+    "Board index » General Discussion. All times are UTC + 1 hour.",
+    "Powered by phpBB. Style by Arty.",
+    "Jump to: Off-Topic. Select a forum to continue.",
+    "Most users ever online was 512 on Sat Mar 04, 2017",
+    "Return to Classic Cars Restoration. Page 1 of 3."
+   ]
+  }
+ ],
+ "predictions": "expect most fire sentences well above near misses; the resident reads low, so the median may be near the 0.20 bar",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
