@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-21a87f47",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N8840+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T05:26:05+00:00",
+ "recipe": {
+  "toolchain_commit": "d3411ab8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N8840_pos/2026-10-29-ChopinDavid-21a87f47.tests.json"
+ },
+ "label": "the token ' #' used as a symbol attached to a code or quantity (hex color '#00ff99', a weight '6000 #'); the same sentences with a word instead of the symbol stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N8840_pos/2026-10-29-ChopinDavid-21a87f47.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.19,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.153,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.484,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.664,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.382,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.245,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.468,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.155,
+     "peak": " #"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": " orange"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.001,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.107,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " button"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.052,
+     "peak": " pounds"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": " style"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.055,
+     "peak": " pounds"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " week"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.314,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3411ab8",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "' #' symbol before code or after quantity",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: + pole max 3.3, peak ' #' before hex color and list numbers, plus 'ile' pieces. Probe: '#00ff99' 0.815, '6000 #' 0.533, '# 12' with a space 0.083, '#include' 0.087, 'teal' 0.018, 'number 12' 0.016. Fire items use ' #' attached to hex codes or after a weight.",
+ "selection": "random draw"
+}

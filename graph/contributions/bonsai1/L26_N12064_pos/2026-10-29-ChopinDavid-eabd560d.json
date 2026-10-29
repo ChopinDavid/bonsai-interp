@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-eabd560d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N12064+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T05:26:18+00:00",
+ "recipe": {
+  "toolchain_commit": "d3411ab8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N12064_pos/2026-10-29-ChopinDavid-eabd560d.tests.json"
+ },
+ "label": "a physical object reaching or entering a changed state in a hands-on process: the pronoun or verb at the point where something is lit, dries, stops or inflates ('lit it', 'when it's dry', 'when it stops'); clerical actions on objects ('read it', 'filed it') stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N12064_pos/2026-10-29-ChopinDavid-eabd560d.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.498,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.449,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.487,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.573,
+     "peak": " will"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.83,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.35,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.689,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.757,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.087,
+     "peak": " opened"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.084,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.09,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.042,
+     "peak": " put"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.247,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.029,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.262,
+     "peak": " will"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.535,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3411ab8",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "object entering a physical state change",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: + pole peaks on ' it', ' to', ' take' (take fire), ' when', in lighting, drying, inflating and elevator contexts. Probe: 'struck it, and lit it' 0.976, 'when it's dry' 0.681, 'mattress will inflate' 0.606, 'when it stops' 0.469, 'take fire' 0.347, 'until it cools down' 0.272; 'read it, and filed it' 0.103, 'approved it' 0.005.",
+ "selection": "random draw"
+}

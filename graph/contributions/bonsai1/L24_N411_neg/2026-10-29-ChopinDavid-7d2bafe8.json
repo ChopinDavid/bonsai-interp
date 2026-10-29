@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-7d2bafe8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N411-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T05:27:06+00:00",
+ "recipe": {
+  "toolchain_commit": "d3411ab8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N411_neg/2026-10-29-ChopinDavid-7d2bafe8.tests.json"
+ },
+ "label": "the second piece of a surname split after ' Sh' ('Sh|ul|man', 'Sh|ul|amith', 'Sh|uk|ardin'); names that are single tokens or split differently (Sherman, Schulman, Shuler) stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N411_neg/2026-10-29-ChopinDavid-7d2bafe8.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.896,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.886,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.776,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.851,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.57,
+     "peak": "uk"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.811,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.766,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.031,
+     "peak": "ul"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.123,
+     "peak": " Sherman"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.186,
+     "peak": " Schul"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": "ties"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " Rachel"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.227,
+     "peak": " Schul"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " years"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.831,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3411ab8",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "piece after ' Sh' in split surnames",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: - pole peaks 'ul' x9 in 'Shulman' citations, 'umb', 'uk', 'ue' after ' Sh'. Probe: 'Shulman (1986)' 0.820, 'Shulamith' 0.804, 'Shukardin' 0.557; 'Schulman' 0.216, 'Sherman' 0.041, 'Shuler' ('Sh|uler') 0.017. Fire items use Shulman/Shulamith/Shukardin forms; near misses swap to differently split names.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-0a73e925",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N11194+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T05:26:03+00:00",
+ "recipe": {
+  "toolchain_commit": "d3411ab8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N11194_pos/2026-10-29-ChopinDavid-0a73e925.tests.json"
+ },
+ "label": "best guess: a determiner or modifier that narrows a noun phrase to one member of a set ('or other', 'any other', 'a single'); weak in short sentences",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N11194_pos/2026-10-29-ChopinDavid-0a73e925.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.083,
+     "peak": " other"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.21,
+     "peak": " other"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.068,
+     "peak": " single"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.181,
+     "peak": " other"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.276,
+     "peak": " other"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.037,
+     "peak": " single"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.091,
+     "peak": " other"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.008,
+     "peak": " read"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.031,
+     "peak": " stairs"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": " club"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": "Even"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.046,
+     "peak": " arrives"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " class"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.087,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3411ab8",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "guess; set-narrowing modifiers",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token (' other' x4, ' single' x2, ' depressive', ' school'), max 26.5. Probe: 'or other piece' 0.104, 'Any other officer' 0.091, 'a single positive test' 0.083, 'major depressive disorder' 0.077, stockpot 0.021, committee 0.007. Probe magnitudes are far below 0.20, so this is a weak best guess.",
+ "selection": "random draw"
+}
