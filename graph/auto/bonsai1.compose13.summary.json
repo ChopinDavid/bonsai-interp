@@ -1,0 +1,203 @@
+{
+ "protocol": "compose@13",
+ "kind": "cover",
+ "scored": "2026-10-29T17:20:06+00:00",
+ "toolchain_commit": "f6c83738",
+ "prereg_commit": "f6c83738052d",
+ "poles_tested": 19149,
+ "sharp": 14829,
+ "broad": 1096,
+ "unreplicated": 3224,
+ "placebo_tests": 19116,
+ "placebo_held": 2,
+ "breakdown": {
+  "all": {
+   "poles": 19149,
+   "sharp": 14829,
+   "broad": 1096,
+   "unreplicated": 3224
+  },
+  "band 0-5": {
+   "poles": 11265,
+   "sharp": 9257,
+   "broad": 621,
+   "unreplicated": 1387
+  },
+  "source compose@9": {
+   "poles": 8781,
+   "sharp": 5457,
+   "broad": 512,
+   "unreplicated": 2812
+  },
+  "items 4-8": {
+   "poles": 7892,
+   "sharp": 5614,
+   "broad": 391,
+   "unreplicated": 1887
+  },
+  "neighbour_cos 0.10-0.13": {
+   "poles": 5267,
+   "sharp": 3664,
+   "broad": 343,
+   "unreplicated": 1260
+  },
+  "source compose@8": {
+   "poles": 6286,
+   "sharp": 5667,
+   "broad": 359,
+   "unreplicated": 260
+  },
+  "source compose@7": {
+   "poles": 3613,
+   "sharp": 3409,
+   "broad": 179,
+   "unreplicated": 25
+  },
+  "items 2-3": {
+   "poles": 10465,
+   "sharp": 8756,
+   "broad": 636,
+   "unreplicated": 1073
+  },
+  "neighbour_cos <0.10": {
+   "poles": 12570,
+   "sharp": 10535,
+   "broad": 427,
+   "unreplicated": 1608
+  },
+  "neighbour_cos 0.13-0.16": {
+   "poles": 809,
+   "sharp": 396,
+   "broad": 167,
+   "unreplicated": 246
+  },
+  "items 9-16": {
+   "poles": 792,
+   "sharp": 459,
+   "broad": 69,
+   "unreplicated": 264
+  },
+  "source compose@12": {
+   "poles": 469,
+   "sharp": 296,
+   "broad": 46,
+   "unreplicated": 127
+  },
+  "neighbour_cos >=0.16": {
+   "poles": 503,
+   "sharp": 234,
+   "broad": 159,
+   "unreplicated": 110
+  },
+  "band 6-11": {
+   "poles": 1882,
+   "sharp": 1385,
+   "broad": 81,
+   "unreplicated": 416
+  },
+  "band 12-17": {
+   "poles": 42,
+   "sharp": 19,
+   "broad": 5,
+   "unreplicated": 18
+  },
+  "band 18-23": {
+   "poles": 1958,
+   "sharp": 1439,
+   "broad": 165,
+   "unreplicated": 354
+  },
+  "band 24-29": {
+   "poles": 3435,
+   "sharp": 2451,
+   "broad": 182,
+   "unreplicated": 802
+  },
+  "band 30-35": {
+   "poles": 567,
+   "sharp": 278,
+   "broad": 42,
+   "unreplicated": 247
+  }
+ },
+ "sharp_by_layer": [
+  3171,
+  1281,
+  870,
+  1653,
+  1326,
+  956,
+  304,
+  292,
+  649,
+  89,
+  38,
+  13,
+  0,
+  6,
+  2,
+  2,
+  3,
+  6,
+  14,
+  49,
+  88,
+  260,
+  479,
+  549,
+  582,
+  602,
+  421,
+  330,
+  312,
+  204,
+  92,
+  34,
+  21,
+  28,
+  39,
+  64
+ ],
+ "broad_by_layer": [
+  230,
+  76,
+  69,
+  118,
+  72,
+  56,
+  18,
+  18,
+  30,
+  6,
+  9,
+  0,
+  0,
+  2,
+  0,
+  1,
+  0,
+  2,
+  6,
+  12,
+  16,
+  29,
+  45,
+  57,
+  47,
+  39,
+  41,
+  26,
+  13,
+  16,
+  11,
+  3,
+  7,
+  1,
+  8,
+  12
+ ],
+ "results_file": "bonsai1.compose13.results.jsonl.gz",
+ "results_sha256": "cea429c20e610ffd86be2e9c131477c404a39dd545236ddbedb23cd9f791ae95",
+ "coverage_file": "bonsai1.compose13.coverage.jsonl.gz",
+ "tests_sha256": "4a273f3b11fe82dbaa0d43e6aad955bb88d3c136324eee2f0b1d7ae2f1dedc15"
+}

@@ -576,3 +576,61 @@ A wider cover finds a few hundred more poles, mostly in layers 0–11. Several l
 sharpen (a rhyme, a field, first names). With compose@11 this ends the n-gram cover line. compose@7–12 assigned 27,309
 poles, almost none of them in layers 12–17.
 
+## Round 13 (compose@13): label precision
+
+compose@7–12 tested a word cover ("fires on these tokens") against other tokens of the same frequency. That null is easy:
+a pole that fires on a whole category passes it with a few of the category's commonest members. compose@13
+(`bonsai_interp/compose/round13.py`) re-tests every pole assigned by a one-part word cover of compose@7, 8, 9 or 12.
+- **Neighbour test:** the cover's tokens against their nearest tokens in the model's input embedding (8 per cover token,
+  by cosine). Inflections and glued variants of a cover token are left out (the twin pass tested those). No activation
+  is read to choose the neighbours.
+- **Control:** the same 8 fire snippets against compose@7's frequency-matched null, on fresh pairs, so a neighbour
+  failure is not resampling noise.
+- **Verdicts:**
+  - sharp: both tests held;
+  - broad: the control held and the neighbour test failed;
+  - unreplicated: the control failed.
+- **Assignment does not change:** the verdict qualifies an assigned cover.
+
+| | |
+|---|---|
+| Protocol | ae632819 |
+| Pre-registration | f6c83738 |
+| Summary | b87aa859 |
+
+- **19,149 poles tested; 2 of 19,116 placebo tests held.**
+- **Sharp 14,829, broad 1,096, unreplicated 3,224.** Of the 15,925 covers that replicated, 93% are sharp.
+- **The broad rate rises as the neighbours get closer:**
+
+  | Mean neighbour cosine | < 0.10 | 0.10–0.13 | 0.13–0.16 | ≥ 0.16 |
+  |---|---|---|---|---|
+  | Broad, of replicated covers | 3.9% | 8.6% | 30% | 40% |
+
+  Most covers have only distant neighbours (cosine under 0.10), so "sharp" is a strong claim only where the
+  neighbours are close.
+- **Broad covers are categories the list sampled:**
+  - " I", " we" also fire on " you" and " they" (L24);
+  - " likely", " probably" also fire on " usually" and " certainly" (L6);
+  - " nervous", " nerve", " neural" also fire on " brain" and " muscle" (L22);
+  - " bison", " Montana", " elk", " Yellowstone" also fire on other US states (L6);
+  - "-five", "-four", "teen" also fire on other number words (L1).
+- **By depth,** broad of replicated: L0–5 6.3%, L6–11 5.5%, L18–23 10%, L24–29 6.9%, L30–35 13%.
+- **Replication tracks selection precision:**
+
+  | Selection precision | ≥ 0.5 | 0.3–0.5 | 0.2–0.3 | < 0.2 |
+  |---|---|---|---|---|
+  | Unreplicated | 4.9% | 27% | 46% | 61% |
+
+  By source: compose@7 0.7%, compose@8 4.1%, compose@9 32%, compose@12 27%. In 2,646 of the 3,224 failures the cover
+  tokens' median fire is under 0.20: at low precision most occurrences of the tokens leave the pole quiet, and a single
+  8 + 8 test holds when its draw happens to catch the ones that fire.
+
+### Reading
+
+Where a word cover replicates, it names the tokens and not the category around them in 93% of poles. That is the clean,
+one-job reading at the token level, with a caveat: the model's 1-bit embedding puts most cover tokens far from their
+nearest neighbours. The broad covers are where a category label ("first- and second-person pronouns", "hedges",
+"body and nervous system") should replace the list; the survey can write those. The larger finding is replication:
+an assignment from one 8 + 8 test at selection precision under 0.5 is fragile. About a third of compose@9's
+assignments did not replicate on fresh pairs. The automatic tier's assignment-grade count should carry that, and the
+pair and triple covers need the same check.
