@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-28-moridinamael-13c08f5f",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N529+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:01:02+00:00",
+ "roles": ["reads bonsai1/L18/N10678+"],
+ "selection": "step-in from bonsai1/L18/N10678+",
+ "short": "party-state tag end after politician",
+ "neighbours": [
+  {
+   "unit": "L19/N529",
+   "pole": "+",
+   "label": "the end of a party-state tag after a politician's name, like D-Calif. or (Mass.)",
+   "fire": [
+    "Sen. Harold Brenner (D-Calif.) said the bill would not pass before the recess.",
+    "Rep. Lisa Montgomery, R-Texas, voted against the spending package on Tuesday.",
+    "\"We need answers,\" said Rep. Daniel Whitfield (R-Ohio) after the hearing.",
+    "The amendment was introduced by Sen. Carol Avery, D-Mass., and two Republican co-sponsors.",
+    "Rep. Thomas Kearney (D-N.Y.) called the ruling a victory for tenants.",
+    "Sen. Margaret Hollis, R-Ala., has blocked the nomination for months.",
+    "Critics included Rep. Jason Pruitt (D-Ill.), who chairs the subcommittee.",
+    "Gov. Ellen Strand (D-Minn.) will testify before the panel next week."
+   ],
+   "quiet": [
+    "Telephone messages left Friday for both Gagne and his agent, Scott Boras, were",
+    "Sen. Patty Murray said the plan would cut costs for families.",
+    "Sen. Harold Brenner said the bill would not pass before the recess.",
+    "Rep. Lisa Montgomery voted against the spending package on Tuesday.",
+    "\"We need answers,\" said Rep. Daniel Whitfield after the hearing.",
+    "The amendment was introduced by a Massachusetts senator and two Republican co-sponsors.",
+    "Thomas Kearney, a New York congressman, called the ruling a victory for tenants.",
+    "The company moved its headquarters from Calif. to Texas last year."
+   ]
+  }
+ ],
+ "predictions": "Fire sentences should clear the bar (tags scored 0.3-0.9 in probes); risk: news-text near misses sit near 0.2 and the pole is broader than the label.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
