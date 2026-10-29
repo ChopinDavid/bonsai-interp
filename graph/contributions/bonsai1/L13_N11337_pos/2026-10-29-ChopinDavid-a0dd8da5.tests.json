@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a0dd8da5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N11337+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N11337",
+   "pole": "+",
+   "label": "something being given up or surrendered in exchange for something else (the thing traded away in a 'surrender X in exchange for Y' bargain); the same nouns held or used without being traded away stay low",
+   "fire": [
+    "In the deal, the rebels agreed to surrender their weapons in exchange for an amnesty.",
+    "Many employees accept lower salaries in exchange for the freedom to work from home.",
+    "Under the settlement, the company will relinquish its patents in return for a cash payment.",
+    "Early settlers were asked to forfeit their hunting rights in exchange for farmland.",
+    "Each member state cedes some sovereignty in return for access to the common market.",
+    "The prisoner offered to give up the names of his partners in exchange for a shorter sentence.",
+    "Some travellers trade away their privacy in exchange for faster airport security checks.",
+    "The club sacrificed its youngest striker in return for two experienced defenders."
+   ],
+   "quiet": [
+    "In the deal, the rebels were allowed to keep their weapons while the talks continued.",
+    "Many employees enjoy higher salaries and the freedom to work from home.",
+    "Under the settlement, the company will continue to license its patents to partners.",
+    "Early settlers kept their hunting rights and also cleared new farmland.",
+    "Each member state keeps its own sovereignty over taxes and defence.",
+    "The prisoner refused to say anything at all during the long interview.",
+    "Some travellers value their privacy and avoid posting photos online.",
+    "The club signed its youngest striker to a new five-year contract."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.7 on the surrendered object or ' up' in a give-up-for bargain; same objects kept, not traded, below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "thing surrendered in a trade-off",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: ' up' in 'give up natural rights in return for civil rights' 28.0, 'giving up something now and receiving something in the future', plus '@wraps' and ' new' function in code. Probe: 'surrender certain liberties in exchange for protection' 0.680 (peak ' liberties'), 'give up its claim ... in return for trade access' 0.227, 'give up sugar' 0.201, but 'decided to give up and went to bed' 0.013 and 'bought a new car' 0.007; '@functools.wraps' 0.569 is a separate code trigger not tested here."
+}

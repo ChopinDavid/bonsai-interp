@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-62ed10d3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N154+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N154",
+   "pole": "+",
+   "label": "a publisher-code digit inside an ISBN in a bibliographic citation (the digits after 'ISBN 0-9' or '978-0-9'), as opposed to the same digit strings in phone or order numbers and to citations without an ISBN",
+   "fire": [
+    "Brown, L. Rivers of the North. Edinburgh: Canongate, 1991. ISBN 0-9523456-3-7",
+    "Taylor, M. A Guide to Moths. Leeds: Field Press, 1987. ISBN 0-9507123-0-4",
+    "Hughes, P. Old Mills of Kent. Ashford: Weald Books, 2001. ISBN 0-9538812-2-9",
+    "Green, R. The Canal Age. Bristol: Harbour Press, 1996. ISBN 0-9515567-4-1",
+    "Walker, S. Local Churches. York: Minster Books, 1999. ISBN 0-9534001-7-3",
+    "Clark, D. Coastal Paths. Truro: Tamar Press, 1993. ISBN 0-9520078-1-5",
+    "Evans, T. Welsh Slate. Bangor: Gwynedd Press, 1989. ISBN 0-9511234-6-0",
+    "Price, A. The Moorland Year. Exeter: Dart Books, 2002. ISBN 0-9541200-5-8"
+   ],
+   "quiet": [
+    "Brown, L. Rivers of the North. Edinburgh: Canongate, 1991. pp. 112-130.",
+    "For bookings, ring the Field Press office on 0-9507123 after ten.",
+    "Hughes, P. Old Mills of Kent. Ashford: Weald Books, 2001. Chapter 4.",
+    "Your parcel reference is 0-9515567-4 and it will arrive on Monday.",
+    "Walker, S. Local Churches. York: Minster Books, 1999. Second edition.",
+    "The meeting was logged on 05/03/1993 at 10:15:22 by the clerk.",
+    "Evans, T. Welsh Slate. Bangor: Gwynedd Press, 1989. Out of print.",
+    "Our account number with the printer is 954-1200-58 for all invoices."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-1.0 on digits after 'ISBN 0-9'; phone, order and date digits below 0.17",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digit inside an ISBN",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: weak gate-closed pole, peaks on '5','3','1','2' after 'ISBN 0-9' or '978-0-9' in citations, plus '...Read more' and a date. Probe: 'Penguin, 1994. ISBN 0-9512345-1-2' 1.054 (peak '5'), 'ISBN 978-0-9876543-2-1' 0.277; same digits as phone 'Call our office at 0-9512345' 0.099, 'order number is 978-0-9876543' 0.164, citation with 'pp. 201-204' 0.083, date 0.048."
+}

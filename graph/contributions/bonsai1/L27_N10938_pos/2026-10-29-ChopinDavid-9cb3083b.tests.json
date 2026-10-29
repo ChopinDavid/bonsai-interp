@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9cb3083b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N10938+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N10938",
+   "pole": "+",
+   "label": "a person collapsing or falling down onto the ground or floor ('fell to the ground'), as opposed to objects falling, figurative falls (prices, in love) and people moving down without falling",
+   "fire": [
+    "The runner stumbled near the finish line and fell to the ground.",
+    "Struck by the blow, the guard staggered and fell to the floor.",
+    "She fainted in the heat and fell to the ground beside the bench.",
+    "After the shot rang out, the soldier fell to the earth without a sound.",
+    "The old man slipped on the ice and fell hard onto the pavement.",
+    "Exhausted, the climber dropped his pack and fell to his knees.",
+    "Hit by the tackle, the winger fell to the turf clutching his ankle.",
+    "The boxer took one more punch and fell to the canvas."
+   ],
+   "quiet": [
+    "The runner slowed near the finish line and sat down on the grass.",
+    "During the storm, the guard's lantern fell off the hook and broke.",
+    "She felt faint in the heat and rested on the bench for a while.",
+    "After the shot rang out, the soldier ran toward the trees without a sound.",
+    "Share prices fell sharply when the results were announced.",
+    "Exhausted, the climber dropped his pack and leaned against a rock.",
+    "On his first trip to Lisbon, the winger fell in love with the city.",
+    "The boxer took one more punch and walked back to his corner."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45 on ' to'/' fell' in 'X fell to the ground/floor'; vases, prices and 'fell in love' below 0.07",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "a person falling to the ground",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' fell' x6 ('the victim fell to the ground', 'Jim Turner fell dead', 'a lead fell off', 'pacifier fell out'), ' across', ' spread' worldwide. Probe: 'tripped on the stairs and fell to the ground' 0.427 (peak ' to'); 'vase fell off the shelf' 0.063, 'Stock prices fell' 0.014, 'fell in love' 0.060, 'rumour spread across' 0.062, 'disease spread through' 0.027. Spreading triggers in the card did not reproduce, so the label is the falling-person case only."
+}

@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c2d4213c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N2942+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N2942",
+   "pole": "+",
+   "label": "the piece 'itate'/'itating'/'itative' when it completes the word meditate (after ' med'); the same piece in imitate, agitate or cogitate, and meditation described without the word, stay low",
+   "fire": [
+    "Before every exam, the nervous student would meditate quietly in her room.",
+    "Monks in the hills meditate for several hours before sunrise.",
+    "My grandfather began meditating after he retired from the railway.",
+    "Several retreats teach beginners how to meditate without falling asleep.",
+    "The film opens with a slow, meditative shot of the frozen lake.",
+    "On long flights I find that meditating helps me ignore the noise.",
+    "Her teacher told her to meditate on the verse before the next lesson.",
+    "The album has a calm, meditative quality that suits late evenings."
+   ],
+   "quiet": [
+    "Before every exam, the nervous student would imitate her teacher's calm voice.",
+    "Parrots in the hills imitate the calls of other birds before sunrise.",
+    "My grandfather began agitating for better pensions after he retired.",
+    "Several coaches teach beginners how to breathe slowly and stay relaxed.",
+    "The film opens with a slow, quiet shot of the frozen lake.",
+    "On long flights I find that closing my eyes helps me ignore the noise.",
+    "Her teacher told her to think carefully about the verse before the next lesson.",
+    "The album has a calm, gentle quality that suits late evenings."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.9 on 'itate'/'itating'/'itative' after ' med'; im|itate, ag|itate, cog|itate and word-free meditation below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'itate' in meditate",
+ "unit_kind": "token/lexical",
+ "confidence": 0.75,
+ "notes": "Card: 'itate' x10, 'itative' x4, 'itating' x4 after ' med'/'Med', plus ' meditation'. Probe: 'tries to meditate' 0.853, 'meditating in the temple' 0.718, 'meditative paintings' 0.728; 'imitate' 0.002, 'agitate' 0.001, 'cogitate' 0.014, 'hesitate' 0.001, yoga/breathing without the word 0.006. Spelling unit bound to the med- stem, i.e. the word meditate.",
+ "trigger": {
+  "words": [
+   "meditate",
+   "meditating",
+   "meditative"
+  ]
+ }
+}

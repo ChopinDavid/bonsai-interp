@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-40a09595",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N11772-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N11772",
+   "pole": "-",
+   "label": "the word right after 'end' (or 'beginning') in a span phrase, chiefly ' to'/'_to' in end-to-end, in prose and in code identifiers; other 'X to X' phrases and 'start' identifiers stay low",
+   "fire": [
+    "The consultants promised end to end support for the new payroll system.",
+    "def test_end_to_end_checkout(self):\n    self.assertEqual(run_checkout(), 'ok')",
+    "Our platform offers end to end encryption for every message.",
+    "We ran an end to end test of the whole pipeline before the release.",
+    "def run_end_to_end(config):\n    return pipeline(config).execute()",
+    "At the beginning of every meeting, the chair reads the minutes aloud.",
+    "The agency handles the project end to end, from design to delivery.",
+    "class EndToEndTest(unittest.TestCase):\n    def test_end_to_end_upload(self):\n        pass"
+   ],
+   "quiet": [
+    "The consultants promised round the clock support for the new payroll system.",
+    "def test_checkout_total(self):\n    self.assertEqual(run_checkout(), 'ok')",
+    "Our platform offers strong encryption for every message.",
+    "We ran a quick smoke test of the whole pipeline before the release.",
+    "def run_pipeline(config):\n    return pipeline(config).execute()",
+    "During every meeting, the chair reads the minutes aloud.",
+    "The agency handles the project door to door, from design to delivery.",
+    "class UploadTest(unittest.TestCase):\n    def test_upload_size(self):\n        pass"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on ' to'/'_to' after 'end' and on the token after 'the beginning of'; 'start_index', 'door to door', 'from start to finish' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' to' in end-to-end",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: '_map' after 'start', '_to' in '_get_end_to_end', 'End to End Assessment', 'Beginn aus', 'بداية كل', 'Начало для', 'centro de'. Probe: 'def test_end_to_end_flow' 0.885 (peak '_to'), 'end to end testing' 0.446, 'At the beginning of each lesson' 0.295 (peak ' each'), 'starts at eight in the centre' 0.137; 'start_index = 0' 0.038, 'middle_index' 0.009, 'show begins with' 0.024. Near misses use other X-to-X phrases, untested."
+}

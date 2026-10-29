@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-75b79181",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N1795+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N1795",
+   "pole": "+",
+   "label": "the optional-plural marker '(s'/'(es' glued to a noun, as in 'item(s)' or 'box(es)', in forms and notices; ordinary plurals and other parentheses stay low",
+   "fire": [
+    "Please attach a copy of the receipt(s) to your refund request.",
+    "All passenger(s) listed on the booking must show photo ID at check-in.",
+    "Indicate the language(s) you speak fluently in the box below.",
+    "The tenant(s) shall pay the rent on the first day of each month.",
+    "Remove the battery cover and replace the fuse(s) if the unit fails to start.",
+    "Select the class(es) you wish to enrol in for the autumn term.",
+    "Any visitor(s) under sixteen must be accompanied by an adult.",
+    "Return the completed form to the office within ten day(s) of receipt."
+   ],
+   "quiet": [
+    "Please attach a copy of the receipts to your refund request.",
+    "All passengers listed on the booking must show photo ID at check-in.",
+    "Indicate the languages you speak fluently in the box below (for example, French).",
+    "The tenants shall pay the rent on the first day of each month.",
+    "Remove the battery cover (on the back) and replace the fuse if the unit fails to start.",
+    "Select the classes you wish to enrol in for the autumn term.",
+    "Any visitors under sixteen must be accompanied by an adult.",
+    "Return the completed form to the office within ten days of receipt."
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.7 on '(s'/'(es' after a noun; plain plurals and other parenthetical remarks below 0.03",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "optional plural '(s)'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.8,
+ "notes": "Card: '(s' x17 dominates ('food item(s)', 'Author(s)', 'listing(s)'), '(es' in 'suffix(es)'. Probe: 'name(s)' 0.657, 'item(s)' 0.602, 'extension(es)' 0.638, 'author(s)' 0.455, 'dog(s)' 0.611; same sentence with 'names' 0.005, '(see the map ...)' 0.010, '(and a pear)' 0.010.",
+ "trigger": {
+  "words": [
+   "(s",
+   "(es"
+  ]
+ }
+}

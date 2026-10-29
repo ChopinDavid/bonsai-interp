@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4430d8f8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N11319+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N11319",
+   "pole": "+",
+   "label": "the word ' follow' inside the compound 'follow-up', and ' lack' in the fixed phrase 'for lack of'; the same words in ordinary verb or noun uses stay low",
+   "fire": [
+    "All patients had a follow-up appointment six weeks after surgery.",
+    "The nurse scheduled a follow-up call for the next morning.",
+    "Results from the two-year follow-up were published last spring.",
+    "Please send a short follow-up email after the interview.",
+    "The plan was dropped for lack of support in the council.",
+    "Nobody was charged for lack of reliable witnesses.",
+    "The festival was cancelled, not for lack of interest but because of the rain.",
+    "The garden died for lack of water during the long summer."
+   ],
+   "quiet": [
+    "All patients had another appointment six weeks after surgery.",
+    "The nurse asked them to follow the diet for the next month.",
+    "Results from the two-year study were published last spring.",
+    "Please send a short thank-you email after the interview.",
+    "The plan was dropped after a lack of support became obvious.",
+    "Nobody was charged because the witnesses were unreliable.",
+    "The festival was cancelled, not because of interest but because of the rain.",
+    "The garden died during the long, dry summer."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.85 on ' follow' before '-up' and ' lack' after 'for'; 'follow the', 'a lack of' below 0.12",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' follow' in follow-up, ' lack' in for lack of",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Card: broad weak pole (max 1.34, 1.7% of tokens), peaks ' follow' x5 ('with follow-up were', 'carry-over'), ' lack' x4 ('not for lack of applicants', 'Because of lack of money'). Probe: 'with follow-up visits' 0.832, 'for lack of funding' 0.659; 'Due to a lack of evidence' 0.105, 'We will follow the instructions' 0.098, 'carry the boxes' 0.158, 'because the money ran out' -0.026. Lexical list rather than a distinction; tested as found.",
+ "trigger": {
+  "words": [
+   "follow",
+   "lack"
+  ]
+ }
+}

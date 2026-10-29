@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-79acbfec",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N2752+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N2752",
+   "pole": "+",
+   "label": "the punchline turn of a question-and-answer joke (the answer line that delivers the gag), as opposed to a plain factual Q-and-A in the same format",
+   "fire": [
+    "Q. Why don't skeletons fight each other?\nA. They don't have the guts.",
+    "Q. What do you call a fish with no eyes?\nA. A fsh.",
+    "Q. Why did the scarecrow win an award?\nA. Because he was outstanding in his field.",
+    "Q. How does a penguin build its house?\nA. Igloos it together.",
+    "Q. Why can't a bicycle stand up by itself?\nA. It's two tired.",
+    "Q. What did the ocean say to the beach?\nA. Nothing, it just waved.",
+    "Q. Why did the tomato blush?\nA. It saw the salad dressing.",
+    "Q. What do you call a sleeping bull?\nA. A bulldozer."
+   ],
+   "quiet": [
+    "Q. How many bones are in the human body?\nA. An adult has 206 bones.",
+    "Q. What do you call a baby kangaroo?\nA. It is called a joey.",
+    "Q. Why did the train arrive late?\nA. There was a signal fault near the station.",
+    "Q. How does a penguin keep warm?\nA. It has a thick layer of fat and dense feathers.",
+    "Q. Why can't I log in to my account?\nA. Your password may have expired.",
+    "Q. What did the report say about the beach?\nA. The water quality was good.",
+    "Q. Why do tomatoes turn red?\nA. Lycopene builds up as they ripen.",
+    "Q. What do you call a group of crows?\nA. It is called a murder."
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.3 on the answer line of a joke; factual Q/A answers below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "punchline of a Q/A joke",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: no single token: 'registered voters.' (joke), 'A. Honey, I'm home!' after a sex joke, 'use the word allegedly', 'sink your teeth into', 'deregulation'. Probe weak: chicken-crossing joke answer 0.260 (peak ' get'), quoted critic phrase 0.135, factual 'Q. What time does the store open? A. It opens at nine.' 0.027, idiom 'sink your teeth into' 0.050, saying 0.014. Best guess, low confidence."
+}

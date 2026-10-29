@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ddba4d88",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N430+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N430",
+   "pole": "+",
+   "label": "continuing learning in a work or career setting (educational assistance, professional development, going on to further study), as opposed to workplace benefits that are not about learning and to education as a general system",
+   "fire": [
+    "Our benefits package includes tuition support and educational assistance for every staff member.",
+    "The hospital funds ongoing professional development for its nurses each year.",
+    "After her apprenticeship, she plans to go on to further training in electrical engineering.",
+    "Managers are expected to set aside time for their own professional learning.",
+    "The firm reimburses employees who take continuing education courses at night.",
+    "Many engineers return to college mid-career to pursue further qualifications.",
+    "Perks include flexible hours, educational assistance and a gym membership.",
+    "The union negotiated paid leave for workers who enrol in further education."
+   ],
+   "quiet": [
+    "Our benefits package includes life insurance and a company car for every staff member.",
+    "The hospital funds free parking for its nurses each year.",
+    "After her apprenticeship, she plans to move to a bigger flat in the city.",
+    "Managers are expected to set aside time for their weekly budget reviews.",
+    "The firm reimburses employees who take taxis home late at night.",
+    "Many engineers return to their home towns mid-career to raise a family.",
+    "Perks include flexible hours, free lunches and a gym membership.",
+    "The country's school system was reformed after the elections."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on ' educational'/' development'/' further'/' continue' in work-and-learning contexts; non-learning benefits and education-system talk below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "career-linked continuing education",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' continuing' x8 ('continuing education'), 'Paid time off - Educational Assistance', 'for further education', 'continue their own professional learning', Russian 'к продолжению образования'. Probe: 'educational assistance to all employees' 0.826, 'pursue their own professional development' 0.618, 'go on to further study' 0.514, 'decided to continue her education' 0.520; but 'continue her job at the same bank' also 0.520 (peak ' continue'), so fire items avoid relying on bare 'continue'. 'dental coverage and a pension plan' 0.075, 'education system in Finland' 0.014."
+}

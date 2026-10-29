@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2cf3a315",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N1791-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N1791",
+   "pole": "-",
+   "label": "a code comment naming a position in a loop structure (the modifier before 'loop': inner, outer, main, nested), where 'loop' is the predicted next word; code comments about other operations and prose uses of the same modifiers stay low",
+   "fire": [
+    "for row in grid:\n    # skip the rest of the inner loop when the cell is empty\n    for cell in row:\n        if not cell:\n            continue",
+    "while running:\n    # leave the outer loop after the last batch\n    batch = next(loader)",
+    "def serve(self):\n    # each pass of the main loop handles one request\n    while True:\n        self.handle()",
+    "for a in xs:\n    for b in ys:\n        # this counter is reset by the nested loop\n        n = 0",
+    "for epoch in range(epochs):\n    # the inner loop walks over the minibatches\n    for x, y in data:\n        step(x, y)",
+    "def poll(self):\n    # sleep briefly at the end of the outer loop\n    while self.alive:\n        time.sleep(0.1)",
+    "for k in keys:\n    # values from the previous loop are still cached here\n    use(cache[k])",
+    "def run_game(self):\n    # draw the frame at the bottom of the main loop\n    while self.on:\n        self.draw()"
+   ],
+   "quiet": [
+    "for row in grid:\n    # convert the cell to a string before printing\n    print(str(row))",
+    "def close(self):\n    # flush the buffer and release the file handle\n    self.f.close()",
+    "def serve(self):\n    # read the port number from the config file\n    port = cfg['port']",
+    "def load(path):\n    # open the image and convert it to greyscale\n    return Image.open(path).convert('L')",
+    "def total(prices):\n    # add tax to every price and return the sum\n    return sum(p * 1.2 for p in prices)",
+    "The hotel's inner courtyard was full of lemon trees and old benches.",
+    "The runners finished the outer lap of the park just before noon.",
+    "The main square of the village fills with stalls every Saturday."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.4 on ' inner'/' outer'/' main'/' nested' or ' the' before 'loop' in a code comment; other comments and prose below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "loop-position word in code comment",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: peaks on ' a'/' the'/' inside'/' main'/' nested' in comments like 'outside of the main loop', 'last iteration of the previous loop'; the + pole suppresses ' loop'/' nested'/' inner', so this pole promotes them. Probe: '# break out of the inner loop' 1.377, '# exit the outer loop' 1.312, '# once per iteration of the main loop' 0.714, '# inside a try block' 0.399; '# write the results to disk' 0.039, '# compute the area' 0.011, prose 'inner rooms' 0.077, prose 'ran a loop' 0.015."
+}
