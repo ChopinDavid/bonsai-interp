@@ -43,12 +43,30 @@ button, select, input { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--mark); outline-offset: 2px; }
 
 /* header */
-.top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: end; }
-.tally { display: flex; gap: 14px 22px; flex-wrap: wrap; justify-content: flex-end; max-width: 440px; font-variant-numeric: tabular-nums; }
-.tally div { display: flex; flex-direction: column; }
-.tally b { font: 700 1.6rem/1.1 var(--display); }
-.tally span { font-size: 0.78rem; color: var(--ink-3); }
-@media (max-width: 760px) { .top { grid-template-columns: 1fr; } }
+.top { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: end; }
+
+/* progress: what share of the model is labelled, by whom, and where */
+.progress { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 18px 28px; border-top: 2px solid var(--ink); padding-top: 14px; }
+@media (max-width: 900px) { .progress { grid-template-columns: 1fr; } }
+.progress .intro { grid-column: 1 / -1; color: var(--ink-2); max-width: 88ch; font-size: 0.95rem; }
+.progress .intro b { color: var(--ink); }
+.pgroups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; min-width: 0; }
+@media (max-width: 560px) { .pgroups { grid-template-columns: 1fr; } }
+.pgroup { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.pgroup h3 { display: flex; align-items: baseline; gap: 8px; }
+.pgroup h3 i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; flex: none; }
+.pgroup .note { font-size: 0.8rem; color: var(--ink-2); }
+.stats { display: flex; flex-direction: column; gap: 8px; margin: 0; font-variant-numeric: tabular-nums; }
+.stats div { display: grid; grid-template-columns: 5.4em minmax(0, 1fr); gap: 0 10px; align-items: baseline; }
+.stats dt { font: 700 1.3rem/1.15 var(--display); text-align: right; }
+.stats dd { margin: 0; font-size: 0.82rem; color: var(--ink-2); }
+.stats dd small { display: block; color: var(--ink-3); font-size: 0.76rem; }
+.pfig { margin: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.pfig .total { font-size: 0.95rem; color: var(--ink-2); }
+.pfig .total b { font: 700 1.3rem/1.15 var(--display); color: var(--ink); font-variant-numeric: tabular-nums; }
+.pfig svg { width: 100%; height: auto; display: block; color: var(--ink-3); }
+.pfig figcaption { font-size: 0.78rem; color: var(--ink-3); }
+.pfig .readout { font: 0.78rem var(--mono); color: var(--ink-2); min-height: 1.3em; }
 .preview { font-size: 0.82rem; color: var(--ink-2); border-left: 3px solid var(--contested); padding-left: 10px; max-width: 70ch; }
 
 /* map + desk */
@@ -182,8 +200,29 @@ td.n { font-family: var(--mono); text-align: right; }
       <p class="cite">Testing the claim of Nick Cammarata's <a href="https://already-clean.goodfire.com/" target="_blank" rel="noopener"><i>Neural Networks Are Already Clean</i></a> (Goodfire, 2026) that most native neurons have one main job, against the dictionary-learning view of Anthropic's <a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html" target="_blank" rel="noopener"><i>Towards Monosemanticity</i></a> (Bricken et al., 2023).</p>
       <p class="cite">A project by Matt Freeman · <a href="https://x.com/moridinamael" target="_blank" rel="noopener">@moridinamael on X</a> · <a href="https://www.linkedin.com/in/matt-freeman-phd" target="_blank" rel="noopener">LinkedIn</a></p>
     </div>
-    <div class="tally" id="tally"></div>
   </header>
+
+  <section class="progress" aria-labelledby="prog-h">
+    <p class="intro"><span class="eyebrow" id="prog-h" style="display:block;margin-bottom:4px">How far the map has got</span>Bonsai-8B has <b>442,368</b> MLP neurons (36 layers &times; 12,288). A neuron's output can be positive or negative, and the two directions often do different jobs, so each direction, a <b>pole</b>, is labelled on its own: <b>884,736 poles</b> in all. A label is <b>assignment-grade</b> when it passed its test on held-out text and explains at least half of the pole's strong activity.</p>
+    <div class="pgroups">
+      <div class="pgroup">
+        <h3><i style="background:var(--held)"></i>Survey labels</h3>
+        <p class="note">Written by people and their AI agents, committed before the test ran, then tested and merged through a pull request.</p>
+        <dl class="stats" id="stats-survey"></dl>
+      </div>
+      <div class="pgroup">
+        <h3><i style="background:var(--s1)"></i>Automatic labels</h3>
+        <p class="note">From deterministic passes over the corpus; no language model writes them. Each is a hypothesis tested on held-out text, kept apart from the survey's labels.</p>
+        <dl class="stats" id="stats-auto"><div><dt>&hellip;</dt><dd>loading the atlas</dd></div></dl>
+      </div>
+    </div>
+    <figure class="pfig">
+      <p class="total" id="prog-total"></p>
+      <svg id="prog-layers" viewBox="0 0 520 150" role="img" aria-label="Share of each layer's poles with an assignment-grade label"></svg>
+      <div class="readout" id="prog-readout">hover a layer</div>
+      <figcaption>Share of each layer's 24,576 poles with an assignment-grade label, survey or automatic. Layer 12 was held out of the automatic screen as a control.</figcaption>
+    </figure>
+  </section>
 
   <div class="survey">
     <div class="sheet" style="display:flex;flex-direction:column;gap:12px">
@@ -321,16 +360,50 @@ td.n { font-family: var(--mono); text-align: right; }
       <div class="hint" style="margin:0">Corpus statistics, not a label: a starting point to test with fresh sentences.</div></div>`;
   }
 
-  // tally
+  // progress: survey and automatic labels, their share of all poles, and the share per layer
+  const POLES = 2 * L_N * N_N, fmt = x => x.toLocaleString("en-US");
+  const share = (x, of = POLES) => { const v = 100 * x / of; return (v >= 10 ? v.toFixed(0) : v >= 1 ? v.toFixed(1) : v >= 0.1 ? v.toFixed(2) : v > 0 ? v.toFixed(3) : "0") + "%"; };
+  const stat = (v, what, sub) => `<div><dt>${typeof v === "number" ? fmt(v) : v}</dt><dd>${what}${sub ? `<small>${sub}</small>` : ""}</dd></div>`;
   const held = N.filter(r => r.status === "held").length, partial = N.filter(r => r.status === "partial").length;
-  const assigned = N.filter(r => r.status === "held" && r.coverage != null).length;
-  document.getElementById("tally").innerHTML =
-    `<div><b>${(L_N * N_N).toLocaleString()}</b><span>neurons</span></div>` +
-    `<div><b>${N.length}</b><span>poles surveyed</span></div>` +
-    `<div title="${assigned} with coverage measured at 50% or more; ${held - assigned} not measured yet. ${partial} more labels held their test but cover under half of their pole's activity (partial)."><b>${held}</b><span>labels holding</span></div>` +
-    `<div><b>${(100 * N.length / (2 * L_N * N_N)).toFixed(4)}%</b><span>of the map</span></div>` +
-    `<div id="tally-screen" hidden><b></b><span>poles screened (auto)</span></div>` +
-    `<div id="tally-hits" hidden><b></b><span>poles with word hits</span></div>`;
+  const surveyAsg = N.filter(r => r.status === "held" && r.coverage != null);
+  const surveyNeurons = new Set(N.map(r => r.L + "/" + r.n)).size;
+  document.getElementById("stats-survey").innerHTML =
+    stat(N.length, "poles surveyed", `${share(N.length)} of all poles, on ${fmt(surveyNeurons)} neurons`) +
+    stat(held, "labels holding", `passed their pre-registered 8 + 8 test${partial ? `; ${fmt(partial)} more hold but cover under half of their pole (partial)` : ""}`) +
+    stat(surveyAsg.length, "assignment-grade", "holding, with coverage measured at 50% or more");
+  function renderProgress() {
+    const A = SCREEN && SCREEN.auto, el = document.getElementById("stats-auto");
+    const per = Array.from({ length: L_N }, () => new Set());
+    surveyAsg.forEach(r => per[r.L].add(2 * r.n + (r.pole === "-" ? 1 : 0)));
+    let aPoles = 0, aHeld = 0, aAsg = 0;
+    if (A) for (const [L, v] of Object.entries(A)) { aPoles += v.poles; aHeld += v.held; aAsg += v.assigned.length; v.assigned.forEach(p => per[+L].add(p)); }
+    el.innerHTML = A ? stat(aPoles, "poles screened", `every pole in ${Object.keys(A).length} of ${L_N} layers: word statistics and a first hypothesis`) +
+      stat(aHeld, "held a test", `${share(aHeld)} of all poles`) + stat(aAsg, "assignment-grade", `${share(aAsg)} of all poles`)
+      : stat("&ndash;", screenMsg);
+    const tot = per.reduce((a, s) => a + s.size, 0);
+    document.getElementById("prog-total").innerHTML = `<b>${fmt(tot)}</b> poles (${share(tot)} of all) have an assignment-grade label, survey or automatic.`;
+    drawLayers(per.map(s => s.size), A);
+  }
+  function drawLayers(n, A) {
+    const svg = document.getElementById("prog-layers"), out = document.getElementById("prog-readout");
+    const W = 520, H = 150, mL = 34, mR = 6, mT = 8, mB = 22, per = 2 * N_N, bw = (W - mL - mR) / L_N;
+    const top = Math.max(0.05, Math.ceil(Math.max(...n) / per * 10) / 10), y = v => mT + (1 - v / top) * (H - mT - mB);
+    let g = [0, top / 2, top].map(t => `<line x1="${mL}" x2="${W - mR}" y1="${y(t)}" y2="${y(t)}" stroke="currentColor" stroke-opacity="${t ? 0.25 : 0.6}"/>` +
+      `<text x="${mL - 6}" y="${y(t) + 4}" text-anchor="end" font-size="10" fill="currentColor">${Math.round(100 * t)}%</text>`).join("");
+    n.forEach((c, L) => {
+      const x = mL + L * bw, v = c / per, missing = A && !A[L];
+      g += missing ? `<line x1="${x + bw / 2}" x2="${x + bw / 2}" y1="${y(0) - 12}" y2="${y(0) - 2}" stroke="currentColor" stroke-dasharray="2 2"/>`
+        : `<rect x="${x + 1}" y="${Math.min(y(v), y(0) - 1)}" width="${bw - 2}" height="${Math.max(1, y(0) - y(v))}" rx="2" fill="var(--s1)"/>`;
+      if (L % 6 === 0 || L === L_N - 1) g += `<text x="${x + bw / 2}" y="${H - 6}" text-anchor="middle" font-size="10" fill="currentColor">L${L}</text>`;
+      g += `<rect data-l="${L}" x="${x}" y="${mT}" width="${bw}" height="${H - mT - mB}" fill="transparent"/>`;
+    });
+    svg.innerHTML = g;
+    svg.onmousemove = e => { const L = e.target.dataset ? e.target.dataset.l : undefined; if (L === undefined) return;
+      out.textContent = A && !A[L] ? `Layer ${L}: held out of the automatic screen (survey labels only: ${fmt(n[L])})`
+        : `Layer ${L}: ${fmt(n[L])} of ${fmt(per)} poles (${share(n[L], per)}) assignment-grade`; };
+    svg.onmouseleave = () => { out.textContent = "hover a layer"; };
+  }
+  renderProgress();
 
   // map
   const cv = document.getElementById("map"), ctx = cv.getContext("2d"), tip = document.createElement("div");
@@ -385,10 +458,16 @@ td.n { font-family: var(--mono); text-align: right; }
       ctx.strokeStyle = css("--mark"); ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, y, 10, 0, 2 * Math.PI); ctx.stroke();
       ctx.beginPath(); ctx.moveTo(x - 16, y); ctx.lineTo(x - 11, y); ctx.moveTo(x + 11, y); ctx.lineTo(x + 16, y); ctx.moveTo(x, y - 16); ctx.lineTo(x, y - 11); ctx.moveTo(x, y + 11); ctx.lineTo(x, y + 16); ctx.stroke(); }
   }
+  function screenedText() {
+    const sc = SCREEN.screened || [], rest = [...Array(L_N).keys()].filter(L => !sc.includes(L));
+    const hits = Object.values(SCREEN.counts).reduce((a, c) => a + (c[SCREEN.groups.length - 1] || 0), 0);
+    return (!sc.length ? "none yet" : rest.length <= 3 ? `every layer but ${rest.join(", ")}` : `layers ${sc.join(", ")}`) +
+      (hits ? ` · "word hit" = corpus word statistics (other layers)` : "");
+  }
   function legend() { document.getElementById("legend").innerHTML = (colorBy === "status" ? STATUS.map(s => `<span${s === "withheld" ? ' title="the trigger is sensitive content (e.g. a slur): recorded with a masked description, never shown or tested live"' : s === "partial" ? ' title="the label held its test, but its trigger covers under half of the pole&#39;s strong activations: information, not the pole&#39;s assignment"' : ""}><i style="background:var(--${s})"></i>${s === "withheld" ? "withheld (sensitive)" : s}</span>`).join("")
     : colorBy === "screen" ? (SCREEN ? SCREEN.groups.map((s, g) => { const k = Object.values(SCREEN.counts).reduce((a, c) => a + (c[g] || 0), 0);
-        return `<button type="button" data-g="${g}" aria-pressed="${screenOnly === g}" title="show only this group"><i style="background:${sgColor(g)}"></i>${esc(s)} <span class="mono">${k.toLocaleString()}</span></button>`; }).join("") +
-        `<span>taller tick = auto test held · dots = surveyed poles · screened: layers ${(SCREEN.screened || []).join(", ") || "none yet"} · "word hit" = corpus word statistics (other layers)</span>` +
+        return k ? `<button type="button" data-g="${g}" aria-pressed="${screenOnly === g}" title="show only this group"><i style="background:${sgColor(g)}"></i>${esc(s)} <span class="mono">${k.toLocaleString()}</span></button>` : ""; }).join("") +
+        `<span>taller tick = auto test held · dots = surveyed poles · screened: ${screenedText()}</span>` +
         `<span title="layer 12 is where the screen's rule was designed, so scoring it there would test the rule on its own design data; it keeps its earlier auto-token@1 result (34 of 644 held)">L12 held out: the layer used to design the screen</span>`
       : `<span>${esc(screenMsg)}</span>`)
     : SCR.slice(1).map((s, i) => `<span><i style="background:var(--h${i + 1})"></i>${i + 1} ${s}</span>`).join("")) +
@@ -680,12 +759,10 @@ td.n { font-family: var(--mono); text-align: right; }
   deep(); window.addEventListener("hashchange", deep);
   const redraw =() => { draw(view.sel); if (view.level === "block") drawBlock(); };
   fetch("screens/bins.json").then(r => r.ok ? r.json() : Promise.reject()).then(j => { SCREEN = j;
-    const k = Object.values(j.counts).reduce((a, c) => a + c.slice(0, 8).reduce((x, y) => x + y, 0), 0), el = document.getElementById("tally-screen");
-    const h = Object.values(j.counts).reduce((a, c) => a + c.reduce((x, y) => x + y, 0), 0), eh = document.getElementById("tally-hits");
-    el.querySelector("b").textContent = k.toLocaleString(); el.hidden = false; eh.querySelector("b").textContent = h.toLocaleString(); eh.hidden = false; legend(); redraw();
+    renderProgress(); legend(); redraw();
     if (!picked) { setColor("screen"); startCycle(); }
     if (view.level === "neuron") openNeuron(view.L, view.n); })
-    .catch(() => { screenMsg = "The atlas is not published here (it appears on the hosted map)."; legend(); });
+    .catch(() => { screenMsg = "The atlas is not published here (it appears on the hosted map)."; renderProgress(); legend(); });
   ["pointerdown", "keydown", "wheel"].forEach(t => document.querySelector(".survey").addEventListener(t, stopCycle, { passive: true }));
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", redraw);
   new MutationObserver(redraw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });

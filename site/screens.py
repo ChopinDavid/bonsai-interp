@@ -11,6 +11,9 @@ release and runs this.
 - L<L>.json: columnar per layer: pole indices, then word ids / lift / coverage / trigger flags (5 per pole, -1 padded),
   plus bin, context, test and auroc for screened poles. Loaded when someone opens a block or a neuron in that layer.
 - vocab.json: id -> text for every word id used, loaded once.
+bins.json also carries, per layer, the automatic tier's progress for the map's tally: the poles in the atlas, how many
+held an automatic test (the screen's or a deterministic pass's), and the pole indices that are assignment-grade (a held
+test whose trigger or label covers >= ASSIGN of the pole's strong activations, as compose/round2.characterized counts).
 """
 import json
 import sys
@@ -31,6 +34,7 @@ GROUP_OF = {b: i for i, (_, bins) in enumerate(GROUPS) for b in bins}
 LIB_GROUP = {"copy": "copy", "topic": "topic", "lang": "context", "predict": "context", "struct": "format", "number": "format",
              "twin": "lexical", "grammar": "context", "compose": "context", "pos": "lexical", "code": "context", "cover": "context"}
 OTHER, HIT = 7, 8
+ASSIGN = 0.5
 
 
 def _lib_labels():
@@ -53,7 +57,7 @@ def main(src=ROOT / "data" / "atlas"):
     vt = _read(src / "vocab.arrow")
     vocab = dict(zip(vt["tok"].to_pylist(), vt["text"].to_pylist()))
     OUT.mkdir(exist_ok=True)
-    layers, counts, used = {}, {}, set()
+    layers, counts, used, auto = {}, {}, set(), {}
     for p in files:
         t = _read(p).to_pydict()
         L = int(t["layer"][0])
@@ -61,11 +65,19 @@ def main(src=ROOT / "data" / "atlas"):
         cols = {"pole": [], "w": [], "lift": [], "cov": [], "trig": [], "bin": [], "context": [], "test": [], "auroc": [], "lib": [], "lib_test": [],
                 "lib_label": [], "lib_cov": []}
         has_lib = "lib_kind" in t
+        a_held, a_asg = 0, []
         for i, pole in enumerate(t["pole"]):
             words, b = t["hit_tok"][i], t["bin"][i]
             trig = t["hit_trigger"][i]
             lk = t["lib_kind"][i] if has_lib else None
             lib_held = lk is not None and t["lib_test"][i] == "held"
+            scr_held = t["test"][i] == "held"
+            if scr_held or lib_held:
+                a_held += 1
+                trig_cov = max([x for x, g in zip(t["hit_coverage"][i] or [], trig or []) if g] or [0])
+                lib_cov = (t["lib_coverage"][i] or 0) if lib_held and "lib_coverage" in t else 0
+                if (scr_held and trig_cov >= ASSIGN) or lib_cov >= ASSIGN:
+                    a_asg.append(pole)
             if b == "weak" or (b in ("unexplained", "rare") and not any(trig)):
                 b = None  # nothing specific to show beyond the words
             if b is None and not any(trig) and not words and lk is None:
@@ -105,11 +117,12 @@ def main(src=ROOT / "data" / "atlas"):
                 cols.pop(k)
         layers[str(L)] = "".join(chars)
         counts[str(L)] = c
+        auto[str(L)] = {"poles": len(t["pole"]), "held": a_held, "assigned": a_asg}
         (OUT / f"L{L}.json").write_text(json.dumps(cols, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8", newline="\n")
     (OUT / "vocab.json").write_text(json.dumps({str(k): mask_token(vocab.get(k, "")) for k in sorted(used)}, ensure_ascii=False, separators=(",", ":")) + "\n",
                                     encoding="utf-8", newline="\n")
     bins = {"protocol": ["auto-token@2", "sweeplib@1", "sweeplib@2", "sweeplib@3", "compose@1"], "groups": [g for g, _ in GROUPS], "layers": layers, "counts": counts,
-            "screened": sorted(int(L) for L, cc in counts.items() if sum(cc[:HIT]) > 0), "lib_labels": _lib_labels()}
+            "screened": sorted(int(L) for L, cc in counts.items() if sum(cc[:HIT]) > 0), "lib_labels": _lib_labels(), "auto": auto}
     (OUT / "bins.json").write_text(json.dumps(bins, separators=(",", ":")) + "\n", encoding="utf-8", newline="\n")
     print(f"wrote site/screens/: {len(layers)} layers ({len(bins['screened'])} screened), "
           f"{sum(sum(cc[:HIT]) for cc in counts.values()):,} screened poles, {sum(cc[HIT] for cc in counts.values()):,} word-hit poles")
