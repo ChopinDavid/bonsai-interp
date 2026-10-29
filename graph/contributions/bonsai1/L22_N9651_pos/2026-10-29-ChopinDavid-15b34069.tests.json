@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-15b34069",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N9651+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N9651",
+   "pole": "+",
+   "label": "unclear; best guess: in a Python function body, the statement (usually the final return, or its indent) that resumes after a line that ends or suspends normal control flow: a bare raise, a pdb.set_trace() call, a commented-out statement or a nested block; straight-line bodies that just assign and return, and prose about code, stay lower",
+   "fire": [
+    "def load(path):\n    try:\n        f = open(path)\n    except IOError:\n        raise\n    return f.read()",
+    "def nearest(points, q):\n    d = sorted(points, key=lambda p: dist(p, q))\n    pdb.set_trace()\n    return d[0]",
+    "def encode(params):\n    for k, v in params.items():\n        if v is None:\n            raise ValueError(k)\n    return urlencode(params)",
+    "def count_tags(words):\n    c = Counter(words)\n    # print(c.most_common(5))\n    return c",
+    "def lookup(self, code):\n    if code in self.cache:\n        return self.cache[code]\n    else:\n        self.misses += 1\n    return None",
+    "def pack(bits):\n    vec = np.zeros(len(bits), dtype=np.uint8)\n    # vec[0] = 1\n    return np.packbits(vec)",
+    "def check(cmd):\n    if not cmd:\n        raise RuntimeError('empty')\n\n    return cmd.strip()",
+    "def build(self):\n    cell = make_cell(self.units)\n    import pdb; pdb.set_trace()\n    return cell"
+   ],
+   "quiet": [
+    "def load(path):\n    f = open(path)\n    text = f.read()\n    return text",
+    "def nearest(points, q):\n    d = sorted(points, key=lambda p: dist(p, q))\n    best = d[0]\n    return best",
+    "def encode(params):\n    items = list(params.items())\n    return urlencode(items)",
+    "def count_tags(words):\n    c = Counter(words)\n    top = c.most_common(5)\n    return c",
+    "def lookup(self, code):\n    hit = self.cache.get(code)\n    self.hits += 1\n    return hit",
+    "def pack(bits):\n    vec = np.zeros(len(bits), dtype=np.uint8)\n    vec[0] = 1\n    return np.packbits(vec)",
+    "The function raises an error when the command is empty and otherwise strips it.",
+    "Set a breakpoint before the return statement to inspect the cell object."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.45 on the resuming statement; near misses below 0.15 (a plain assign-and-return body reached 0.15 in the probe, so leaks are likely and the test may fail)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Python statement resuming after raise/breakpoint/comment (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: ' return' x8 and indentation tokens ('   ', '       ', '           ') in Python: 'return test_data_classification' after pdb.set_trace(), 'return urllib.urlencode' after 'raise', '#    return np.packbits' in commented code, 'return count' after a commented print, 'else:' after a return, 'return a[nx, ny]' after a blank line; max 60, density 0.11%. Probe: try/except/raise then return 0.338, if/else then return 0.214 (on the indent), for-loop then return 0.073, if-return blank-line return 0.043; plain 'v = a[i]; return v' 0.151, 'return s' after sum 0.039, script lines 0.010, prose 0.005. The dedent reading did not transfer; the raise/breakpoint reading is the registered guess."
+}

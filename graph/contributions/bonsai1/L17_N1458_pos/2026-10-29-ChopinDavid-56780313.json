@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-56780313",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N1458+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:34:58+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N1458_pos/2026-10-29-ChopinDavid-56780313.tests.json"
+ },
+ "label": "the word that completes a hedged claim of partial degree or influence in expository prose (played a role, only a proportion, isn't perfect, run into the billions, also affect, factors involved, will inevitably change); the negative pole is the other side of the distinction, sameness (same, equally, identical, unchanged)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N1458_pos/2026-10-29-ChopinDavid-56780313.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.343,
+     "peak": " role"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.527,
+     "peak": " perfect"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.566,
+     "peak": " proportion"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.404,
+     "peak": " billions"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.044,
+     "peak": " affect"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.2,
+     "peak": " effect"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.447,
+     "peak": " factors"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.167,
+     "peak": " change"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " approved"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.02,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": " finished"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.108,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.374,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "hedged partial-degree claim",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: no single token ('.' x4, ',' x2, then perfect, role, proportion, affect, billions, change, tiempo, effect, factors); max 13.1, density 0.45%; the - pole peaks on same/equally/identical/unchanged. Probe: 'only a fraction' 0.380, 'is perfect' (negated) 0.372, 'run into the millions' 0.317, 'plays a role' 0.294, 'also affect' 0.178, 'may contribute' 0.040; 'exactly the same treatment' 0.022, 'identical' 0.021, neutral 0.017. The + pole marks 'this matters to some degree' claims, the - pole 'no difference' claims.",
+ "selection": "random draw"
+}

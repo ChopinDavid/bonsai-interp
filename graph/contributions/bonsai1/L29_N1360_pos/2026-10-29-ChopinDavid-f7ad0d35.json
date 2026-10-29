@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-f7ad0d35",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N1360+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:35:57+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N1360_pos/2026-10-29-ChopinDavid-f7ad0d35.tests.json"
+ },
+ "label": "a next-token predictor for a split derivational suffix: the stem token right before -ship/-hip, -ness or French -esse arrives as its own piece (rulers|hip, author|ship, readers|hip, kings|hip, steward|ship, apprentices|hip, lighthead|ed|ness, vie|illes|se, fa|ibles|se); the logit effect promotes 'ness', 'hip', 'ship', 'hood'. The same stems as whole words (the kings, the author) and single-token -ship/-hood words (friendship, brotherhood) stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N1360_pos/2026-10-29-ChopinDavid-f7ad0d35.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.282,
+     "peak": " kings"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.434,
+     "peak": " steward"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.448,
+     "peak": " apprentices"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.289,
+     "peak": " author"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.162,
+     "peak": " readers"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.32,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.292,
+     "peak": "illes"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.576,
+     "peak": "ibles"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.282,
+     "peak": " kings"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.266,
+     "peak": " steward"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.26,
+     "peak": " apprentices"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.289,
+     "peak": " author"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.162,
+     "peak": " readers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " complained"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.055,
+     "peak": " enf"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.291,
+     "peak": "ibles"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.852,
+    "median_fire": 0.306,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "stem before a split -ship/-ness suffix",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' kings' x4, ' author' x3, ' readers' x2, ' rulers', ' headed' before hip/ship/ness, and French vie|illes|se, fa|ibles|se, délic|ates|se; max 302, density 0.12%; direct logit promotes ness/hip/ty/ship/hood. Probe: rulership 0.579 (peak rulers), authorship 0.493, vieillesse 0.354, readership 0.273, lightheadedness 0.275, brotherhood 0.023 (hood after a whole word), 'the kings ruled' 0.123, 'the author of' 0.128, friendship (one token) 0.003. tok.py: kingship, stewardship, apprenticeship split as stem + hip/ship; leadership, ownership, happiness, childhood are single tokens and are kept out of the fire set.",
+ "selection": "random draw"
+}

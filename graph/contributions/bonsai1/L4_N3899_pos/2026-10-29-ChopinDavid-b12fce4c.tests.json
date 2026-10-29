@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b12fce4c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3899+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3899",
+   "pole": "+",
+   "label": "the abbreviated honorific token before a surname: ' Dr' (strongest in the corpus), ' Mrs', ' Mr', ' Ms'; spelled-out titles (Professor, Sir, Lady, doctor) and bare names stay low",
+   "fire": [
+    "The vaccine trial was overseen by Dr Amara Nwosu in Lagos.",
+    "Asked about the delay, Dr Lindgren blamed the weather.",
+    "According to Dr Sekhon, the comet will return in 2061.",
+    "Residents told reporters that Mr Haddad had kept the shop open for forty years.",
+    "The letter was signed by Mrs Whitfield on behalf of the committee.",
+    "A spokeswoman said Ms Oyelaran would not be commenting.",
+    "Earlier this year Dr Kowalczyk published a study on sleep.",
+    "In the final scene Mr Darcy finally speaks to Elizabeth."
+   ],
+   "quiet": [
+    "The vaccine trial was overseen by Professor Amara Nwosu in Lagos.",
+    "Asked about the delay, the surgeon blamed the weather.",
+    "According to Sekhon, the comet will return in 2061.",
+    "Residents told reporters that old Haddad had kept the shop open for forty years.",
+    "The letter was signed by Lady Whitfield on behalf of the committee.",
+    "A spokeswoman said Oyelaran would not be commenting.",
+    "Earlier this year the doctor published a study on sleep.",
+    "In the final scene Sir Thomas finally speaks to Elizabeth."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.12-0.6 on the honorific (Mr was the weakest in the probe at 0.13); near misses below 0.03",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the honorific tokens Dr/Mr/Mrs/Ms",
+ "unit_kind": "token",
+ "confidence": 0.65,
+ "notes": "Card: ' Dr' x21, ' Mr' x5, ' Mrs' x3, 'Dr' x2, 'Mr' x1 of the top 32, all before a surname in news prose; max 17.6, density 0.044%; the - pole is ' said' x27. Probe: Mrs 0.547, Dr 0.306, Ms 0.189, Mr 0.133; Professor 0.002, Sir 0.018, 'the doctor' 0.016, bare names 0.008. tok.py: Dr, Mr, Mrs, Ms, Professor, Sir, Lady are single tokens.",
+ "trigger": {
+  "words": [
+   "Dr",
+   "Mr",
+   "Mrs",
+   "Ms"
+  ]
+ }
+}

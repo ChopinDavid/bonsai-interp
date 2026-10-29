@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-17e6ef1c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N9341+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:36:12+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N9341_pos/2026-10-29-ChopinDavid-17e6ef1c.tests.json"
+ },
+ "label": "office-document software and file formats: Word, PowerPoint, Google Docs/Sheets, LibreOffice, PDF/DOCX/PPTX/ODT/EPUB conversion, document views (Print Layout, Outline, Track Changes); other software topics (databases, servers, networking, compilers) and paper documents stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N9341_pos/2026-10-29-ChopinDavid-17e6ef1c.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.109,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.561,
+     "peak": " without"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.216,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.266,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.847,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.068,
+     "peak": " view"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.109,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.537,
+     "peak": " web"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": "addy"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " supports"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "In"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " shows"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " steel"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": " printed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " or"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.061,
+     "peak": " from"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.704,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "office document formats and apps",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: Google Docs, PPTX and PPT, web version of Office, Word 2007 XML, outline format, pandoc's format list, 'Optimize for web' in a PDF script, Microsoft Office, Print Layout view; max 187, density 0.126%; the - pole promotes export/Online/web/import. Probe: 'export as PDF, DOCX or ODT' 1.055, 'Pandoc converts Markdown to HTML, EPUB and' 0.815, 'Google Docs supports comments on PowerPoint' 0.811, 'web version of Office' 0.395, 'Print Layout view' 0.292; 'MySQL, Postgres and SQLite' 0.071, router WPA2/WPA3 0.012, paper documents 0.003, Microsoft earnings 0.051. Image and audio format lists were not probed and are kept out of the test.",
+ "selection": "random draw"
+}

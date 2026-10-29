@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-26f0dabc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N424-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:35:41+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N424_neg/2026-10-29-ChopinDavid-26f0dabc.tests.json"
+ },
+ "label": "the second or later item of a coordinated run of like words: the point where a parallel series continues (hissed and ROARED, sparkles and SHIMMERS, running and JUMPING and shouting, Bubbles! BALLOONS!, travel smart, travel stress-FREE,); the same verbs used alone, and plain repetition of a noun, stay low; the + pole peaks on the 'and' and ',' that join such items",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N424_neg/2026-10-29-ChopinDavid-26f0dabc.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.574,
+     "peak": "aned"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.581,
+     "peak": "aned"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.265,
+     "peak": " drinking"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.148,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.839,
+     "peak": "!"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.423,
+     "peak": "ing"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.578,
+     "peak": "ams"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.706,
+     "peak": " rolling"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.062,
+     "peak": " night"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " boots"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " stories"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " gentle"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " square"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.033,
+     "peak": " arms"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": "His"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.071,
+     "peak": " bells"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.576,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "second conjunct of a parallel series",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ',' x7, '!' then ro|ared, bob|bing, ' shines', pump|kins in 'hissed and roared', 'nodding and bobbing and bowing', 'sparkles and shines', 'Dry Ice! Bubbles!', 'travel smart, travel stress-free,'; max 23.8, density 0.235%; the + pole is ' and' x15 ',' x13. Probe: 'Bubbles! Balloons!' 0.756 (on '!'), 'hissed and roared' 0.572, 'sparkles and shimmers' 0.447, 'running and jumping and shouting' 0.372 (peak jumping), 'Eat well, sleep well,' 0.217; 'roared' alone 0.007, 'shimmers' alone 0.092, 'shouting' alone 0.091, 'The frogs, the frogs' 0.036.",
+ "selection": "random draw"
+}

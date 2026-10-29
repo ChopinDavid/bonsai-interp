@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-15b34069",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N9651+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:36:56+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N9651_pos/2026-10-29-ChopinDavid-15b34069.tests.json"
+ },
+ "label": "unclear; best guess: in a Python function body, the statement (usually the final return, or its indent) that resumes after a line that ends or suspends normal control flow: a bare raise, a pdb.set_trace() call, a commented-out statement or a nested block; straight-line bodies that just assign and return, and prose about code, stay lower",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N9651_pos/2026-10-29-ChopinDavid-15b34069.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.447,
+     "peak": ".read"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.211,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.348,
+     "peak": " return"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.408,
+     "peak": " c"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.426,
+     "peak": " return"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.175,
+     "peak": " return"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.345,
+     "peak": ".strip"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.092,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.312,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.359,
+     "peak": " best"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.151,
+     "peak": "(items"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.347,
+     "peak": " c"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.237,
+     "peak": " hit"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.276,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " to"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.703,
+    "median_fire": 0.346,
+    "near_misses_at_0.3": 3
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Python statement resuming after raise/breakpoint/comment (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: ' return' x8 and indentation tokens ('   ', '       ', '           ') in Python: 'return test_data_classification' after pdb.set_trace(), 'return urllib.urlencode' after 'raise', '#    return np.packbits' in commented code, 'return count' after a commented print, 'else:' after a return, 'return a[nx, ny]' after a blank line; max 60, density 0.11%. Probe: try/except/raise then return 0.338, if/else then return 0.214 (on the indent), for-loop then return 0.073, if-return blank-line return 0.043; plain 'v = a[i]; return v' 0.151, 'return s' after sum 0.039, script lines 0.010, prose 0.005. The dedent reading did not transfer; the raise/breakpoint reading is the registered guess.",
+ "selection": "random draw"
+}

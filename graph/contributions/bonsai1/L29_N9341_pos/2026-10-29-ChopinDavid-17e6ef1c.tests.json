@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-17e6ef1c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N9341+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N9341",
+   "pole": "+",
+   "label": "office-document software and file formats: Word, PowerPoint, Google Docs/Sheets, LibreOffice, PDF/DOCX/PPTX/ODT/EPUB conversion, document views (Print Layout, Outline, Track Changes); other software topics (databases, servers, networking, compilers) and paper documents stay low",
+   "fire": [
+    "The template can be saved as DOTX, PDF or plain RTF.",
+    "LibreOffice Writer opens most Word 2010 files without trouble.",
+    "In Keynote you can export the deck as PPTX or as a PDF handout.",
+    "Track Changes in Word shows every edit in the margin.",
+    "Google Sheets imports XLSX and CSV files directly from Drive.",
+    "Use Outline view to rearrange the headings of a long document.",
+    "Pandoc can turn a Markdown file into DOCX, ODT or EPUB.",
+    "The Office 365 web apps lack a few desktop formatting options."
+   ],
+   "quiet": [
+    "The server can be configured with Nginx, Apache or Caddy.",
+    "The Linux kernel supports most USB adapters without trouble.",
+    "In the terminal you can compile the code with gcc or clang.",
+    "Version control in Git shows every change in the history.",
+    "The warehouse imports steel and copper directly from Chile.",
+    "Use the index to find the chapters of a long printed book.",
+    "The router can run on 2.4 GHz, 5 GHz or both bands.",
+    "Microsoft reported record revenue from its cloud division."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0, strongest on the 'or'/'and' inside a format list; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "office document formats and apps",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: Google Docs, PPTX and PPT, web version of Office, Word 2007 XML, outline format, pandoc's format list, 'Optimize for web' in a PDF script, Microsoft Office, Print Layout view; max 187, density 0.126%; the - pole promotes export/Online/web/import. Probe: 'export as PDF, DOCX or ODT' 1.055, 'Pandoc converts Markdown to HTML, EPUB and' 0.815, 'Google Docs supports comments on PowerPoint' 0.811, 'web version of Office' 0.395, 'Print Layout view' 0.292; 'MySQL, Postgres and SQLite' 0.071, router WPA2/WPA3 0.012, paper documents 0.003, Microsoft earnings 0.051. Image and audio format lists were not probed and are kept out of the test."
+}

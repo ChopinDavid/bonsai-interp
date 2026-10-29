@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-59d35932",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N8017+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:36:17+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N8017_pos/2026-10-29-ChopinDavid-59d35932.tests.json"
+ },
+ "label": "unclear; best guess: the institution noun (School, Academy, Institute, Research Center) or the piece 'ological' when it heads a proper name built on a field of study (Nuclear Power School, Graphic Design School, Gemological Institute, Meteorological Office, Rehabilitation Engineering Research Center); the same nouns as common nouns, and the names without the field modifier, stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N8017_pos/2026-10-29-ChopinDavid-59d35932.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.762,
+     "peak": " School"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.065,
+     "peak": "ological"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.504,
+     "peak": " School"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.504,
+     "peak": " Institute"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.727,
+     "peak": " Engineering"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.237,
+     "peak": "ological"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.441,
+     "peak": " Academy"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.165,
+     "peak": " Institute"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": " camp"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.047,
+     "peak": " warning"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.06,
+     "peak": " school"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.105,
+     "peak": " institute"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": "os"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.16,
+     "peak": " academy"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.021,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.473,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "field-of-study institution name (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: ' School' x7, ' Association' x4, ' Academy' x3, 'ological' x2, ' Institute' x2 in Nuclear Power School, Graphic Design School, Gem|ological Institute, Global Sourcing Association, Cyberbullying Research Center, i.R.O.C.K. Academy, plus 'gaming add|ictions' at the top; max 7.4, density 0.17%. Probe: Gemological 0.606 (on 'ological'), Naval Postgraduate School 0.217, Royal Academy of 0.163, American Heart Association 0.047, Pew Research Center 0.018; common-noun school/association/center 0.04-0.05, Harvard University 0.039. The probe transferred weakly, so this is registered as a guess.",
+ "selection": "random draw"
+}
