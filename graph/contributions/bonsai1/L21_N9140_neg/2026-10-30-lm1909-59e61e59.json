@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-59e61e59",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N9140-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:54:09+00:00",
+ "recipe": {
+  "toolchain_commit": "c4d33712",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L21_N9140_neg/2026-10-30-lm1909-59e61e59.tests.json"
+ },
+ "label": "' large' describing broad scale or extent ('compare large brain regions', 'large areas', 'large-scale'), where a size adjective is expected; the same phrases with 'small/tiny' or no size word stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N9140_neg/2026-10-30-lm1909-59e61e59.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.508,
+     "peak": " large"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.072,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.127,
+     "peak": " regions"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.066,
+     "peak": " large"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.138,
+     "peak": " large"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.591,
+     "peak": " large"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.12,
+     "peak": " large"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.043,
+     "peak": " large"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.024,
+     "peak": " tiny"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " detail"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": " regions"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": "Farm"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.047,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " small"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": " far"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.123,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c4d33712",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'large' for broad scale",
+ "unit_kind": "lexical / prediction",
+ "confidence": 0.35,
+ "notes": "Card: ' large' x7, ' big' x3, ' huge' (compare⟦ large⟧ brain regions; one⟦ big⟧ image); output promotes ' large', ' overall', ' bulk' and suppresses ' small', ' local', ' finer'. Exploratory probe: 'compare large brain regions' 0.48, 'one big loaf' 0.16, 'huge knife' 0.02; 'tiny' 0.02. The test keeps to 'large' for scale.",
+ "selection": "random draw"
+}

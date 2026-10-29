@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-229e482a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N8356+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:54:48+00:00",
+ "recipe": {
+  "toolchain_commit": "c4d33712",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N8356_pos/2026-10-30-lm1909-229e482a.tests.json"
+ },
+ "label": "A number that counts units in a quantity, strongest as a compound modifier ('a 200 word essay', 'a five question quiz', 'six 20-minute episodes'); the same tasks described without a number stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N8356_pos/2026-10-30-lm1909-229e482a.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.636,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.193,
+     "peak": " ten"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.374,
+     "peak": "-minute"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.185,
+     "peak": " three"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.45,
+     "peak": "5"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.094,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.194,
+     "peak": " thirty"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.06,
+     "peak": " hour"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " offers"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": " online"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": " short"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": " ran"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " includes"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " between"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": "She"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.194,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c4d33712",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "number counting units ('200 word essay')",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: '0' x9 (a 2⟦0⟧0 word essay; six 2⟦0⟧-minute episodes), ' five' x5 (five question quiz), ' eight', ' many' (how many words); output suppresses counted plurals (' wins', ' awards'). Exploratory probe: compound modifiers 0.41-0.73; plain counts 'under 200 words' 0.37 and 'five questions' 0.23 also fire, so near misses drop the number.",
+ "selection": "random draw"
+}
