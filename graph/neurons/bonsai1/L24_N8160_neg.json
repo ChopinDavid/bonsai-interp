@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N8160-",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 8160,
+ "pole": "-",
+ "label": "a Russian adverb or predicative modifying a verb (самостоятельно, легко, лучше, больше, разрешено): the pole marks the adverb; the same Russian sentences without it stay low",
+ "short": "Russian adverb modifying a verb",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N8160_neg/2026-10-28-ChopinDavid-b7325d1c.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.372,
+     "peak": " быстро"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.204,
+     "peak": " самостоятельно"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.425,
+     "peak": "нее"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.534,
+     "peak": " больше"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.492,
+     "peak": "ено"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.673,
+     "peak": "че"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.43,
+     "peak": "но"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.54,
+     "peak": " лучше"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.169,
+     "peak": " исп"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.181,
+     "peak": " помощи"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.166,
+     "peak": "ать"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.23,
+     "peak": "ют"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.134,
+     "peak": "ят"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.273,
+     "peak": "ов"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.155,
+     "peak": "ировать"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.142,
+     "peak": " нов"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.461,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-b7325d1c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-b7325d1c",
+   "a Russian adverb or predicative modifying a verb (самостоятельно, легко, лучше, больше, разрешено): the pole marks the adverb; the same Russian sentences without it stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-b7325d1c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

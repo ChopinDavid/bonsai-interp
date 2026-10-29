@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N11589+",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 11589,
+ "pole": "+",
+ "label": "the prize at stake in a competition (the only remaining spot, a seat, the top prize, one giveaway item): the pole marks the word naming the contested reward; the same nouns outside a contest stay low",
+ "short": "contested prize in a competition",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N11589_pos/2026-10-28-ChopinDavid-d9fde0f1.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.874,
+     "peak": " place"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.568,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.322,
+     "peak": " prize"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.523,
+     "peak": " away"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.635,
+     "peak": " spot"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.636,
+     "peak": " seat"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.204,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.751,
+     "peak": " only"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.073,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.102,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": " bread"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.049,
+     "peak": " giving"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.028,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.077,
+     "peak": " table"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " pian"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.423,
+     "peak": " only"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.601,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-28-ChopinDavid-d9fde0f1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-d9fde0f1",
+   "the prize at stake in a competition (the only remaining spot, a seat, the top prize, one giveaway item): the pole marks the word naming the contested reward; the same nouns outside a contest stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-d9fde0f1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

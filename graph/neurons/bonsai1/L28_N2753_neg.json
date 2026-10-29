@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N2753-",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 2753,
+ "pole": "-",
+ "label": "the token just before a stock completion that the reader can predict: the article in a textbook analogy ('like the glass in a greenhouse'), 'Were' in the title Their Eyes Were Watching God, 'a' before 'swimming pool': the same nouns without the stock phrase stay low",
+ "short": "token before a stock phrase completion",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N2753_neg/2026-10-28-ChopinDavid-436dbeb6.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.851,
+     "peak": " Were"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.975,
+     "peak": " Were"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.498,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.452,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.408,
+     "peak": " like"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.058,
+     "peak": " pool"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.923,
+     "peak": " Were"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.02,
+     "peak": " gl"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": "Z"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": "ane"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": " several"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.08,
+     "peak": " hold"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.047,
+     "peak": " drew"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " gl"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.475,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-436dbeb6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-436dbeb6",
+   "the token just before a stock completion that the reader can predict: the article in a textbook analogy ('like the glass in a greenhouse'), 'Were' in the title Their Eyes Were Watching God, 'a' before 'swimming pool': the same nouns without the stock phrase stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-436dbeb6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

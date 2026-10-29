@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N8208+",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 8208,
+ "pole": "+",
+ "label": "an infix word in compact technical notation that joins two terms: 'x' between dimensions (H x W, 6 x 4) and 'as' in an import alias; the same content written out in prose stays low",
+ "short": "infix 'x' / 'as' in compact notation",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N8208_pos/2026-10-28-ChopinDavid-73145197.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.47,
+     "peak": " x"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.019,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.048,
+     "peak": " x"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.013,
+     "peak": " dt"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.36,
+     "peak": " x"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.005,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.059,
+     "peak": " x"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.134,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " cent"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": "import"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " datetime"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "import"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": " import"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.992,
+    "median_fire": 0.053,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-73145197"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-73145197",
+   "an infix word in compact technical notation that joins two terms: 'x' between dimensions (H x W, 6 x 4) and 'as' in an import alias; the same content written out in prose stays low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-73145197"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

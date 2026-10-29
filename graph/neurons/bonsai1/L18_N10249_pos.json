@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N10249+",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 10249,
+ "pole": "+",
+ "label": "a comma (often after a closing quote or parenthesis) that ends a line inside an open function call or literal in code, with the next argument aligned on the following line: the same call on one line stays near zero",
+ "short": "line-ending comma inside an open call",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N10249_pos/2026-10-28-ChopinDavid-8dc1a369.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.401,
+     "peak": "',\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.113,
+     "peak": ",\n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.575,
+     "peak": "',\n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.385,
+     "peak": "',\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.619,
+     "peak": "],\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.013,
+     "peak": "',\n"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.209,
+     "peak": "'),\n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.064,
+     "peak": "',\n"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": "="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": "(parent"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "built"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " defaults"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": "_id"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": "="
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " '_',"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.297,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-8dc1a369"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-8dc1a369",
+   "a comma (often after a closing quote or parenthesis) that ends a line inside an open function call or literal in code, with the next argument aligned on the following line: the same call on one line stays near zero",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-8dc1a369"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

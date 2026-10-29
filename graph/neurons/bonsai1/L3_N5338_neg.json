@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N5338-",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 5338,
+ "pole": "-",
+ "label": "a single letter written straight after a digit (7q31, 5l, 3h, 12v), as a unit or locus code: the pole marks the letter piece; the same quantities with the unit spelled out stay low",
+ "short": "letter right after a digit (7q31, 3l)",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N5338_neg/2026-10-28-ChopinDavid-cc704ccf.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.37,
+     "peak": "p"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.528,
+     "peak": "l"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.4,
+     "peak": "h"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.274,
+     "peak": "v"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.393,
+     "peak": "q"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.464,
+     "peak": "l"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.297,
+     "peak": "h"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.435,
+     "peak": "q"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.007,
+     "peak": " arm"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.037,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.101,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.059,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.008,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.022,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.397,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-cc704ccf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-cc704ccf",
+   "a single letter written straight after a digit (7q31, 5l, 3h, 12v), as a unit or locus code: the pole marks the letter piece; the same quantities with the unit spelled out stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-cc704ccf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

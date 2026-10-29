@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N1358-",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 1358,
+ "pole": "-",
+ "label": "a bare 'D' token that opens a proper name split into pieces (D|alian, D|reyfus, D|vorak): the pole marks the word-initial D piece; names split from other letters stay low",
+ "short": "word-initial 'D' piece of a split name",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N1358_neg/2026-10-28-ChopinDavid-91baeec1.tests.json",
+   "prereg_commit": "99e22478",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.152,
+     "peak": " D"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.135,
+     "peak": " D"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.008,
+     "peak": " concert"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.045,
+     "peak": " delayed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.008,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.03,
+     "peak": " published"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.267,
+     "peak": " D"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.038,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " left"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " concert"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " delayed"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " published"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": " year"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " by"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.041,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-ChopinDavid-91baeec1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-ChopinDavid-91baeec1",
+   "a bare 'D' token that opens a proper name split into pieces (D|alian, D|reyfus, D|vorak): the pole marks the word-initial D piece; names split from other letters stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-28-ChopinDavid-91baeec1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
