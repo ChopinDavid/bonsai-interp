@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-754684b8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N5494-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N5494",
+   "pole": "-",
+   "label": "a final 'y' that the tokenizer splits off as its own piece after a stem piece (' Tr'+'aged'+'y', ' eleg'+'y', ' leth'+'arg'+'y'); the same word as a single token, or a word without the split -y, stays low",
+   "fire": [
+    "The play was billed as a Greek Tragedy in three acts.",
+    "At the funeral her nephew read a short elegy he had written.",
+    "A strange lethargy settled over the town in August.",
+    "Shares of Dynegy fell sharply after the merger news.",
+    "Public health teams sprayed for Aedes aegypti after the outbreak.",
+    "The museum opened a show called Modern Tragedy and Farce.",
+    "His poem was half elegy and half love letter.",
+    "Winter brought a dull lethargy to the whole crew."
+   ],
+   "quiet": [
+    "The play was billed as a Greek tragedy in three acts.",
+    "At the funeral her nephew read a short poem he had written.",
+    "A strange calm settled over the town in August.",
+    "Shares of the utility fell sharply after the merger news.",
+    "Public health teams sprayed for mosquitoes after the outbreak.",
+    "The museum opened a show called Modern Comedy and Farce.",
+    "His poem was half lament and half love letter.",
+    "Winter brought a dull fatigue to the whole crew."
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.75 on the split 'y'; single-token forms below 0.16",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split-off final 'y' piece",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Tiny pole (max 1.11), gate-closed leak regime. Probe: 'aegypti' 'y' 0.736, 'Tragedy' 0.653, 'elegy' 0.573, 'lethargy' 0.493, Arabic 'طريقة' 'قة' 0.654; lowercase single-token ' tragedy' 0.154, ' energy' 0.049, 'poem' 0.011.",
+ "trigger": {
+  "pieces": [
+   "y"
+  ]
+ }
+}

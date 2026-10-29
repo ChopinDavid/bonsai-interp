@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1375d74e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N5803-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N5803",
+   "pole": "-",
+   "label": "the suspended (hanging) hyphen of a coordinated compound, where the shared second part is left out ('two-, three-', 'Ein- und Ausgang'); full compounds stay low",
+   "fire": [
+    "The camp is open to five-, six- and seven-year-olds this summer.",
+    "Der Bahnhof hat getrennte Ein- und Ausgänge für Reisende.",
+    "Rooms come in one-, two- or three-bed layouts.",
+    "Wir verkaufen Sommer- und Winterreifen zu fairen Preisen.",
+    "The course offers two-, four- and six-week options.",
+    "Die Schule bietet Vor- und Nachmittagskurse an.",
+    "Tickets for 10-, 20- and 30-ride passes are sold online.",
+    "Im Park gibt es Spiel- und Liegewiesen für alle."
+   ],
+   "quiet": [
+    "The camp is open to children aged five to seven this summer.",
+    "Der Bahnhof hat getrennte Eingänge und Ausgänge für Reisende.",
+    "Rooms come in a one-bed or a larger family layout.",
+    "Wir verkaufen Sommerreifen und Winterreifen zu fairen Preisen.",
+    "The course offers a two-week option and a longer one.",
+    "Die Schule bietet Kurse am Vormittag und Nachmittag an.",
+    "Tickets for single rides and monthly passes are sold online.",
+    "Im Park gibt es Spielwiesen und Liegewiesen für alle."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.95 on '-,' or '-' before und/or; full compounds below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "suspended hyphen",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Probe: 'two-, three- or four-year-old' '-,' 0.930, 'Fuß- und Radwege' 0.656; English 'short- and long-term' only 0.213 (peak ' and'), so English '- and' is weaker; full compounds 0.011-0.073; 'omega-3' 0.020."
+}

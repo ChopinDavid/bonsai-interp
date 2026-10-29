@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ca0b9fab",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N4891-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N4891",
+   "pole": "-",
+   "label": "the copula (is/are) in a customer-facing rule or terms statement ('Payment is due', 'Pets are welcome for a fee'); the copula in a plain description stays low",
+   "fire": [
+    "Cancellation policy: a full refund is available up to 48 hours before arrival.",
+    "Late check-out is possible on request and may be charged at half the nightly rate.",
+    "Tickets are non-refundable but may be exchanged for another date.",
+    "A valid photo ID is required at the front desk for all guests.",
+    "Smoking is prohibited in all rooms, and a cleaning fee will apply.",
+    "Group bookings are accepted for parties of up to twelve people.",
+    "The balance is payable on arrival by card or cash.",
+    "Children under five are free when sharing a bed with an adult."
+   ],
+   "quiet": [
+    "The hotel garden is quiet in the evening, and the roses are in bloom.",
+    "Our room was small, but the view over the bay is lovely.",
+    "The old ferry is painted blue and its deck is worn smooth.",
+    "In winter the village is nearly empty and the lake is frozen.",
+    "The front desk is made of oak and the lamps are made of brass.",
+    "The breakfast room is on the top floor, where the light is soft.",
+    "The town square is lined with cafes that are busy at noon.",
+    "Her grandparents are retired farmers whose house is near the river."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on is/are in policy lines; descriptive copulas below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "copula in a policy rule",
+ "unit_kind": "context",
+ "confidence": 0.7,
+ "notes": "Probe: 'Payment in full is due' 0.904, 'Early arrival is subject to availability' 0.875, 'a deposit of 20% is required' 0.818, 'Refunds are not available' 0.572, 'pets are welcome for a small cleaning charge' 0.401; descriptive 'lighthouse is painted' 0.050, 'kitchen is small' 0.020, 'river is wide' 0.045."
+}

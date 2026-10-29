@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d791601d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N6147-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N6147",
+   "pole": "-",
+   "label": "the digits of a statistical significance threshold or p-value ('p < 0.05', 'alpha of 0.01'); the same decimals as amounts or concentrations stay low",
+   "fire": [
+    "The difference between groups was significant (p < 0.01).",
+    "Results with p values under 0.05 were treated as significant.",
+    "We set the alpha level at 0.05 for all two-tailed tests.",
+    "Mortality was lower in the treated arm (P < 0.001).",
+    "Only three genes passed the threshold of p < 0.05 after correction.",
+    "Scores improved after training (p = 0.03, n = 40).",
+    "A p-value of less than 0.05 indicated a significant effect.",
+    "The interaction term was not significant (p > 0.05)."
+   ],
+   "quiet": [
+    "The buffer contained 0.01 M sodium chloride and glycine.",
+    "Add 0.05 ml of the dye to each well and wait.",
+    "The coating is about 0.05 mm thick on each side.",
+    "Each tablet contains 0.001 g of the active ingredient.",
+    "The fee rose by 0.05 dollars per litre last month.",
+    "Stir in 0.03 kg of sugar and heat gently.",
+    "The wire has a diameter of 0.05 inches.",
+    "Rainfall was 0.05 inches higher than last year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.65 on the '0' after 'p < 0.'; amounts below 0.12",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "p-value threshold digits",
+ "unit_kind": "meaning",
+ "confidence": 0.65,
+ "notes": "Probe: 'p-value below 0.01' 0.512, 'ttest_ind(...)[1] > 0.05' 0.612, '(p < 0.05)' 0.391, 'significance level of p across N tests, the chance' 1.000 (peak ' the'); '0.05% sodium azide' 0.114, '0.05 g of salt' 0.077, bus '0.05' 0.026."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-cf65e943",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N9626+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N9626",
+   "pole": "+",
+   "label": "an interior word piece of a rare foreign surname or compound that the tokenizer breaks into several pieces ('Prof'+'ar', 'tele'+'ts'+'un'+'amis'); common names in the same slot stay low",
+   "fire": [
+    "The shortstop Ozhaino Albies signed a new deal this winter.",
+    "The ballet was choreographed by Nurlan Abdykalykov in Almaty.",
+    "Goals came from Wojciech Szczepański and a late penalty.",
+    "The singer Altynbek Dzhumabaev opened the festival.",
+    "The paper was led by Gudmundur Thorvaldsson of Reykjavik.",
+    "The pitcher Jharel Cotton was traded to a new club.",
+    "The icon painter Fyodor Zubarkhanov worked in Yaroslavl.",
+    "The poet Ingeborg Wachtmeister read from her new book."
+   ],
+   "quiet": [
+    "The shortstop John Miller signed a new deal this winter.",
+    "The ballet was choreographed by Anna Lee in London.",
+    "Goals came from Tom Brown and a late penalty.",
+    "The singer Mary Hill opened the festival.",
+    "The paper was led by Peter Ward of Leeds.",
+    "The pitcher Mark Bell was traded to a new club.",
+    "The icon painter Paul King worked in York.",
+    "The poet Jane Young read from her new book."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on a mid-name piece; common short names below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inside a rare split name",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Broad pole (2.4% of tokens at 0.1 of max). Probe: 'Profar' 'ar' 0.680, 'teletsunamis' 'un' 0.604, 'Fürchtegott' 'ott' 0.325, 'Asylmuratova' 'mur' 0.314; 'Anakin' 0.081; plain rewrites 0.013-0.037."
+}

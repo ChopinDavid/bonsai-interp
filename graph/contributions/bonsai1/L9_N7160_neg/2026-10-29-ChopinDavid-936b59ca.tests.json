@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-936b59ca",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N7160-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N7160",
+   "pole": "-",
+   "label": "a word inside a set phrase whose next word is all but fixed ('a whole new [light]', 'the most famous [of all]'); the same words outside the set phrase stay low",
+   "fire": [
+    "After the trip she saw her hometown in a whole new light.",
+    "Moving abroad opened up a whole new world for the children.",
+    "Of all the lighthouses on the coast, this is the oldest of all.",
+    "He is perhaps the greatest climber of all time.",
+    "The remodel gave the old barn a whole new look.",
+    "That winter was the coldest of all the winters she remembered.",
+    "The new coach brought a whole new attitude to the team.",
+    "Many call it the strangest mystery of all."
+   ],
+   "quiet": [
+    "After the trip she painted her hometown in soft evening light.",
+    "Moving abroad was hard at first for the children.",
+    "This lighthouse on the coast was built in the last century.",
+    "He is a strong climber who trains every weekend.",
+    "The remodel gave the old barn a new roof and doors.",
+    "That winter was cold, and the river froze in January.",
+    "The new coach brought fresh players to the team.",
+    "Many call it a strange case that nobody solved."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 on 'new'/'of' in the idiom; free uses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inside a fixed phrase",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Tiny pole (max 2.59), gate-closed leak regime; card dominated by '.\\n'. Probe: 'in a whole new light' 0.664, 'the most mysterious of all' 0.529, 'a whole different way' 0.271, 'a good idea' 0.153, '.\\n' sentences 0.12-0.16."
+}

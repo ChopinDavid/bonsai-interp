@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4877230e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N2467+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N2467",
+   "pole": "+",
+   "label": "the first word of a Python full-line '#' comment inside code ('# reset the counter'); the same code without the comment, or the word in prose, stays low",
+   "fire": [
+    "def save(items, path):\n    # skip writing when there is nothing to save\n    if not items:\n        return",
+    "while queue:\n    node = queue.pop()\n    # mark the node as visited\n    seen.add(node)",
+    "def parse(line):\n    parts = line.split(',')\n    # strip whitespace from every field\n    return [p.strip() for p in parts]",
+    "for user in users:\n    # update the last login time\n    user.touch()",
+    "class Cache:\n    def clear(self):\n        # drop every cached entry\n        self.store = {}",
+    "try:\n    conn = connect(url)\nexcept Timeout:\n    # retry once before giving up\n    conn = connect(url)",
+    "def total(prices):\n    # sum the prices and round to cents\n    return round(sum(prices), 2)",
+    "if args.verbose:\n    # print the full config for debugging\n    print(config)"
+   ],
+   "quiet": [
+    "def save(items, path):\n    if not items:\n        return\n    write(path, items)",
+    "while queue:\n    node = queue.pop()\n    seen.add(node)\n    visit(node)",
+    "def parse(line):\n    parts = line.split(',')\n    return [p.strip() for p in parts]",
+    "for user in users:\n    user.touch()\n    user.save()",
+    "class Cache:\n    def clear(self):\n        self.store = {}\n        self.hits = 0",
+    "try:\n    conn = connect(url)\nexcept Timeout:\n    conn = connect(backup_url)",
+    "To total the bill, sum the prices and round the result to cents.",
+    "If the flag is set, print the full config so you can debug it."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.4 on the word after '#'; uncommented code and prose below 0.07",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first word of a # comment",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Probe: '# return an empty list' 0.336, '# reset the counter' 0.337; same code without comment 0.005/0.028; 'return' in prose 0.026; trailing inline '# normalize' 0.064; C '// return' 0.148."
+}

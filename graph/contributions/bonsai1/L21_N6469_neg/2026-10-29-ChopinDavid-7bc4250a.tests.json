@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7bc4250a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N6469-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N6469",
+   "pole": "-",
+   "label": "the clause after a consequence frame 'It was no surprise, then, that' / 'Small wonder, then, that'; the same events told without the frame stay low",
+   "fire": [
+    "The budget had been cut for years. It was little surprise, then, that the bridge failed.",
+    "She trained every morning before dawn. It was no wonder, then, that she won the race.",
+    "The harvest had failed twice. Small wonder, then, that prices doubled.",
+    "He had never lost a case. It was hardly surprising, then, that clients lined up.",
+    "The roads were icy all week. It was no surprise, then, that schools closed.",
+    "The band had sold out every show. It came as no shock, then, that a second tour was announced.",
+    "The mill was the town's only employer. It was little wonder, then, that its closure hurt.",
+    "The film had a huge budget. It was unsurprising, then, that studio hopes ran high."
+   ],
+   "quiet": [
+    "The budget had been cut for years, and last spring the bridge failed.",
+    "She trained every morning before dawn and won the race in June.",
+    "The harvest had failed twice, and prices doubled in the markets.",
+    "He had never lost a case, and clients lined up at his office.",
+    "The roads were icy all week, and schools closed on Tuesday.",
+    "The band had sold out every show, and a second tour began in May.",
+    "The mill was the town's only employer until it closed last year.",
+    "The film had a huge budget and was shot in three countries."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.45 on 'that' after the frame; plain narration below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'no surprise, then, that'",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Guess. Card peaks on ' was', 'So when', 'then,', 'Hence, when'. Probe: 'It was no surprise, then, that' 0.443; 'Hence, when the producer called' 0.162; 'She was there when' 0.132; 'was one of the first' 0.100; plain rewrites 0.006-0.028."
+}

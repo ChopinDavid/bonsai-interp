@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-39c188b0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N1993+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N1993",
+   "pole": "+",
+   "label": "the noun after emphatic identity 'the very' ('the very industry they claim to save'); the same noun without 'very' stays low",
+   "fire": [
+    "The new law may harm the very workers it was written to help.",
+    "Critics say the cuts will weaken the very schools they claim to support.",
+    "The fire destroyed the very archive that had survived two wars.",
+    "He ended up betraying the very friends who had sheltered him.",
+    "The drug may damage the very cells it is meant to repair.",
+    "The plan could ruin the very farmers it promises to rescue.",
+    "They stripped funding from the very clinics that served the poorest towns.",
+    "The policy threatens the very species it was designed to protect."
+   ],
+   "quiet": [
+    "The new law may harm workers in the shipping trade next year.",
+    "Critics say the cuts will weaken schools across the region.",
+    "The fire destroyed an archive that had survived two wars.",
+    "He ended up betraying friends from his old regiment.",
+    "The drug may damage cells in the liver at high doses.",
+    "The plan could ruin farmers along the southern border.",
+    "They stripped funding from clinics in the poorest towns.",
+    "The policy threatens species that live in shallow reefs."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.6 on the noun after 'the very'; without 'very' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun after emphatic 'the very'",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card top: 'the very industry they claim' 27.88 (max). Probe: 'the very industry they were meant to protect' 0.556 vs 'the industry this year' 0.026; 'in question' 0.140, 'corals' 0.168, 'Among' 0.103. The rest of the pole is broad and unexplained; this tests only the strongest configuration."
+}

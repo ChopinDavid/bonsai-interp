@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-51bd287a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N5603+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N5603",
+   "pole": "+",
+   "label": "the slot right before a person's name in a role or credit phrase ('through winger ___', 'co-written by ___'): a name is expected next; the same phrases continued with a common noun stay low",
+   "fire": [
+    "The opening goal came from striker Mateo Alvarez just before the break.",
+    "The novel was translated by Ingrid Halvorsen and Pieter de Vries.",
+    "Late in the match the hosts equalised through midfielder Kofi Mensah.",
+    "The study was co-authored by Helena Brandt and Jonas Weber last year.",
+    "Their only try was scored by fullback Liam O'Connell in the second half.",
+    "The essays were edited by Margarethe Olsen and Rafael Duarte.",
+    "The winner was set up by playmaker Dario Conti on the left wing.",
+    "The report was drafted by Yuki Tanaka and Erik Nilsson in March."
+   ],
+   "quiet": [
+    "The opening goal came from a deflected shot just before the break.",
+    "The novel was translated by a small team of volunteers in Oslo.",
+    "Late in the match the hosts equalised through a header from a corner.",
+    "The study was co-authored by researchers at two universities last year.",
+    "Their only try was scored from a lineout drive in the second half.",
+    "The essays were edited by the journal's staff over the summer.",
+    "The winner was set up by a quick free kick on the left wing.",
+    "The report was drafted by the planning office in March."
+   ]
+  }
+ ],
+ "predictions": "weak: fire 0.1-0.2 at the role noun or the name; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "before a person's name",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Guess. Card peaks sit on the token before a name ('CEO Rose', '2011, Elizabeth', 'flyhalf Joe', 'Beatrice and Klaus'). Probe was weak: 'through winger Callum' 0.140, 'co-written by Andrea' 0.133, 'founder Martin' 0.016, 'reminding Sofia' 0.020; non-name controls 0.017-0.041."
+}

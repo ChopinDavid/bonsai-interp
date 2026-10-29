@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-66e8ad5f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N11241+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N11241",
+   "pole": "+",
+   "label": "the verb that introduces a derived result in technical exposition ('from the tree above, we get', 'giving the forward map'); everyday 'we get'/'we have' stay low",
+   "fire": [
+    "Substituting the boundary values into the equation, we get a closed form.",
+    "From the table of splits above, we get three simple decision rules.",
+    "Applying the chain rule twice, we get the second derivative directly.",
+    "Combining the two bounds above, we get the desired inequality.",
+    "After normalizing each column, we get a matrix with unit norms.",
+    "Expanding the product term by term, we get a quadratic in x.",
+    "Taking logs on both sides, we get a linear relation in t.",
+    "Summing over all states, we get the partition function."
+   ],
+   "quiet": [
+    "On Saturdays we get bread from the bakery near the station.",
+    "When it rains we get a lot of mud in the yard.",
+    "At the market we get fresh fish every Friday morning.",
+    "Every summer we get visitors from my aunt's village.",
+    "In the evening we get the children ready for bed.",
+    "Most mornings we get coffee before the train arrives.",
+    "During storms we get power cuts that last for hours.",
+    "Around noon we get lunch at the cafe by the park."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on get/obtain/giving after a derivation; everyday uses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'we get' introducing a result",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Probe: 'Based on the decision tree above, we get' 0.888, 'giving the forward map' 0.327, 'we have to ignore cleanup errors' 0.138, 'tensor with shape' 0.126; everyday 'We have a dog' 0.086, 'get a maximum score' 0.017."
+}
