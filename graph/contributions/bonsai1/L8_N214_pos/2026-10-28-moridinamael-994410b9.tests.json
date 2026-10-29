@@ -1,0 +1,46 @@
+{
+ "contribution": "2026-10-28-moridinamael-994410b9",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N214+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:54:41+00:00",
+ "roles": ["feeds bonsai1/L10/N7287+"],
+ "neighbours": [
+  {
+   "unit": "L8/N214",
+   "pole": "+",
+   "label": "English 'a' or 'an' right after 'as' when something is portrayed, seen or serving as something (regarded as a, serve as an)",
+   "fire": [
+    "She is widely regarded as a pioneer of modern architecture.",
+    "The old warehouse now serves as an art gallery for local painters.",
+    "In the film, the detective is portrayed as a lonely man haunted by his past.",
+    "Many critics saw the novel as an attack on the education system.",
+    "He worked as a waiter for two years before opening his own café.",
+    "The spare bedroom doubles as an office when my sister visits.",
+    "The river was long considered as a natural border between the two kingdoms.",
+    "Use this flat stone as a hammer if you forgot your tools."
+   ],
+   "quiet": [
+    "She is widely regarded as the pioneer of modern architecture.",
+    "The old warehouse now houses an art gallery for local painters.",
+    "In the film, the detective is a lonely man haunted by his past.",
+    "Many critics saw the novel attacking the education system.",
+    "He worked as waiter and cook for two years before opening his own café.",
+    "The spare bedroom becomes my office when my sister visits.",
+    "The river was long considered the natural border between the two kingdoms.",
+    "Use this flat stone like a hammer if you forgot your tools."
+   ]
+  }
+ ],
+ "predictions": "Expect most fire sentences to peak on the a/an after 'as' at roughly 0.2-0.4 of max; near misses low, maybe 'worked as waiter' or 'like a hammer' leaking.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-out"
+  ]
+ }
+}
