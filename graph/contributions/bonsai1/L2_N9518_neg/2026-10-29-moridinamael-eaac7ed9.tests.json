@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-29-moridinamael-eaac7ed9",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L2/N9518-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:31:46+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the word piece 'ips' when it is split off as its own token ('tul|ips', 'equ|ips', 'wh|ips', 'goss|ips'), as against words that end in -ips but are a single token ('chips', 'ships', 'tips', 'clips')"
+ },
+ "neighbours": [
+  {
+   "unit": "L2/N9518",
+   "pole": "-",
+   "label": "the letter pieces 'ips', 'ip' and 'pt' inside a longer or rare word (tul|ips, ov|ip|osition, Up|t|own), and the word ' cylindrical'; whole common words like 'ships' or 'script' stay quiet",
+   "fire": [
+    "She planted a row of red tulips along the garden fence.",
+    "The entomologist recorded oviposition on the underside of the leaves.",
+    "We grabbed dinner at a little diner in Uptown before the show.",
+    "The engineer welded a cylindrical tank to the frame.",
+    "The recipe calls for roasted parsnips and fresh thyme.",
+    "The fossil of a glyptodont was displayed in the museum hall.",
+    "Old surveyors modeled the Earth as an ellipsoid rather than a sphere.",
+    "The cryptic crossword clue left him stumped for an hour."
+   ],
+   "quiet": [
+    "She planted a row of red roses along the garden fence.",
+    "The entomologist recorded egg-laying on the underside of the leaves.",
+    "We grabbed dinner at a little diner downtown before the show.",
+    "The engineer welded a round tank to the frame.",
+    "The recipe calls for roasted carrots and fresh thyme.",
+    "The fossil of a giant sloth was displayed in the museum hall.",
+    "Old surveyors modeled the Earth as slightly flattened rather than round.",
+    "The tricky clue in the script left him stumped for an hour."
+   ]
+  }
+ ],
+ "predictions": "Expect about 5-6 of 8 fire sentences to light up; glyptodont, ellipsoid and cryptic are the risky ones. Near misses should stay low.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
