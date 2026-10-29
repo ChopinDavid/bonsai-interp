@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0a9c7b1b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N7183-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N7183",
+   "pole": "-",
+   "label": "the head noun after 'International' (or 'League of') in the name of a body ('International Development', 'International Organization', 'League of Nations'); the same nouns without that modifier stay low",
+   "fire": [
+    "The report was published by the International Energy Agency last week.",
+    "She spent ten years working at the International Court of Justice.",
+    "The funds came from the International Monetary Fund in Washington.",
+    "Delegates met at the headquarters of the International Labour Organization.",
+    "The treaty was drafted under the League of Nations after the war.",
+    "He chaired the International Committee of the Red Cross for a decade.",
+    "The rules are set by the International Olympic Committee.",
+    "The town hosted the International Federation of Chess this summer."
+   ],
+   "quiet": [
+    "The report was published by the energy agency of the city last week.",
+    "She spent ten years working at the court house in her town.",
+    "The funds came from a small savings fund in Washington.",
+    "Delegates met at the headquarters of the local labour union.",
+    "The treaty was drafted under a new government after the war.",
+    "He chaired the school committee for a decade.",
+    "The rules are set by the club committee each year.",
+    "The town hosted a chess club meeting this summer."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.85 on the noun after International/League of; the same nouns without the modifier below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun after 'International'",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Probe: 'International Development' 0.842, 'International Community' 0.752, 'League of Nations' 0.748, 'International Organization' 0.749, lowercase 'international development' 0.586, 'international community' 0.369; 'The organization of the files' 0.004."
+}

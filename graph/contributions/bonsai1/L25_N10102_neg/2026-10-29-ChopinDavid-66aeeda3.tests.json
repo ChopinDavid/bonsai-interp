@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-66aeeda3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N10102-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N10102",
+   "pole": "-",
+   "label": "the word 'National'/'national' (strongest capitalised in institution names: National Guard, National Museum); other institution words stay lower",
+   "fire": [
+    "Last spring my class toured the National Gallery in the capital.",
+    "Her uncle joined the National Guard right after high school.",
+    "The data came from the National Weather Service in Maryland.",
+    "Every summer they camp in a different National Park out west.",
+    "The study was funded by the National Institutes of Health.",
+    "His grandfather worked for the National Railway for forty years.",
+    "The bill was debated for hours in the National Assembly.",
+    "She won a scholarship from the National Science Foundation."
+   ],
+   "quiet": [
+    "Last spring my class toured the Science Museum in the capital.",
+    "Her uncle joined the Army Reserve right after high school.",
+    "The data came from the Weather Office in Maryland.",
+    "Every summer they camp in a different state forest out west.",
+    "The study was funded by the Federal Health Agency.",
+    "His grandfather worked for the City Railway for forty years.",
+    "The bill was debated for hours in the town council.",
+    "She won a scholarship from the Royal Society of Chemistry."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on ' National'; institution names without it (Science Museum, City Council, Army Reserve) below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'National'",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Probe: 'National Guard' 0.645, 'National Museum' 0.593, 'National Academy' 0.320, lowercase 'national team' 0.403, 'national parks' 0.285; 'International' 0.335, 'Federal' 0.194, playground filler 0.023. Avoiding International/Federal in near misses would hide leaks, so one near miss keeps 'Federal'."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e9e9e02f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6960-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N6960",
+   "pole": "-",
+   "label": "a few unrelated rare names: the 'og' of 'Azog', 'Library' in the brand 'Open Library', and the chapter number in 'Exodus 6'",
+   "fire": [
+    "In the film, Azog leads the orcs against the dwarves at the gate.",
+    "The pale orc Azog was said to have survived the great battle.",
+    "Readers can find old scanned novels on the Open Library catalogue.",
+    "Our teacher used the Open Library to borrow a rare history book.",
+    "The pastor read aloud from Exodus 6 during the evening service.",
+    "The promise of freedom is repeated in Exodus 6:6 and again later.",
+    "Tolkien fans still argue about whether Azog died at Moria.",
+    "Many classic children's books are free to read on Open Library."
+   ],
+   "quiet": [
+    "In the film, the orc captain leads the attack against the dwarves.",
+    "The pale orc was said to have survived the great battle.",
+    "Readers can find old printed novels at the city library downtown.",
+    "Our teacher used the school library to borrow a rare history book.",
+    "The pastor read aloud from Genesis during the evening service.",
+    "The promise of freedom is repeated in the psalms and again later.",
+    "Tolkien fans still argue about whether the goblin king died at Moria.",
+    "Many classic children's books are free to borrow from the library."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.85 on 'og' in Azog, ' Library' after 'Open', '6' after 'Exodus'; the same words in ordinary use below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Azog / Open Library / Exodus 6",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Probe: Azog 'og' 0.847, 'Exodus 6:3' 0.673, 'Open Library' 0.637, 'openlibrary' 0.238; 'public library' 0.014, 'door was open' 0.022, 'Open Education' 0.111. No shared pattern found; a list, kept as a list."
+}

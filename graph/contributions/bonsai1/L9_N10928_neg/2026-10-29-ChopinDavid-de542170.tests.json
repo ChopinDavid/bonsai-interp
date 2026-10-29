@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-de542170",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N10928-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N10928",
+   "pole": "-",
+   "label": "framing an outcome as possible rather than actual: 'potential for', 'danger of', 'possibility of', 'it is possible that', 'risk of'",
+   "fire": [
+    "Doctors warned of the potential for side effects in older patients.",
+    "Hikers should know there is a danger of rockfall on the upper trail.",
+    "The forecast raised the possibility of snow later in the week.",
+    "Engineers said it is possible that the dam will need repairs soon.",
+    "Because of the risk of fire, campers may not light stoves here.",
+    "Investors worry about the potential for losses if prices fall.",
+    "Sailors were told about the danger of sudden storms in the strait.",
+    "Officials admitted the possibility of delays on the new rail line."
+   ],
+   "quiet": [
+    "Doctors reported side effects in several older patients last year.",
+    "Hikers saw a rockfall on the upper trail last Tuesday.",
+    "The forecast was right, and snow fell later in the week.",
+    "Engineers said the dam was repaired last summer.",
+    "Because the fire spread, campers left the site at night.",
+    "Investors recorded losses when prices fell in March.",
+    "Sailors were caught in a sudden storm in the strait.",
+    "Officials announced delays on the new rail line on Monday."
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.9 on the possibility word or its 'for'/'of'; the same events stated as having happened below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "possible (risky) outcome",
+ "unit_kind": "meaning",
+ "confidence": 0.65,
+ "notes": "Probe: 'potential for harm' 0.879, 'real danger of' 0.811, 'possibility of' 0.561, 'It is possible that' 0.474; actual-event rewrites 0.006-0.014. Near misses state the same event as fact."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1c238c2d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N12270-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N12270",
+   "pole": "-",
+   "label": "the change noun after a percentage or amount ('a 15 percent rise', 'a 10% decrease', 'a 6-point drop'): the size of a change being named",
+   "fire": [
+    "Ticket sales hit 2 million, a 30 percent increase from the year before.",
+    "Exports fell sharply last quarter, an 8% decline from the spring.",
+    "The city recorded 410 burglaries, a 12 percent drop over 2021.",
+    "Rents climbed again in March, a 5 percent rise in a single month.",
+    "Hospital visits reached 9,000, a 20% jump compared with last winter.",
+    "The firm's profit was $4 million, a 40 percent fall from 2019.",
+    "Turnout was 61 percent, a three-point increase on the previous vote.",
+    "Coffee prices reached a record high, a 25% surge since January."
+   ],
+   "quiet": [
+    "Ticket sales hit 2 million, and 30 percent of buyers were students.",
+    "Exports fell sharply last quarter as ports closed for repairs.",
+    "The city recorded 410 burglaries, mostly in the northern districts.",
+    "Rents climbed again in March as more families moved to the area.",
+    "Hospital visits reached 9,000, with 20% of patients over seventy.",
+    "The firm's profit was $4 million, most of it from overseas sales.",
+    "Turnout was 61 percent, with long queues at many polling stations.",
+    "Coffee prices reached a record high after frost hit the farms."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.7 on rise/increase/decrease/drop after a number; a percentage of a whole ('15 percent of students') and change words without a number below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "% change noun",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Probe: '15 percent rise' 0.578, '10% decrease' 0.461, '$300 less' 0.117, '12 per cent' 0.067; '15 percent of the students' 0.033, 'strong growth' 0.025. The change noun after a quantity carries it."
+}

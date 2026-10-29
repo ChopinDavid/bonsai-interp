@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-272e3646",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N6482-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N6482",
+   "pole": "-",
+   "label": "' out' completing the idiom 'turn(s/ed) out' (= proves to be); literal 'out' after motion or 'fill out' stays low",
+   "fire": [
+    "We feared the worst, but as it turns out, nobody was hurt in the crash.",
+    "Our guide said the trail was short; it turned out to take six hours.",
+    "The old painting in the attic turned out to be a valuable original.",
+    "My neighbour seemed grumpy, but as it turns out, he is very kind.",
+    "Everyone blamed the cat, but it turned out that the dog broke the vase.",
+    "The quiet student turned out to be the best speaker in the class.",
+    "We packed umbrellas, and as it turned out, we never needed them.",
+    "His simple plan turned out better than any of the expensive ones."
+   ],
+   "quiet": [
+    "We feared the worst, so we rushed out of the house after the crash.",
+    "Our guide said the trail was short; we set out at six in the morning.",
+    "The old painting in the attic was carried out to the van by two men.",
+    "My neighbour seemed grumpy, but he still helps me take out the bins.",
+    "Everyone blamed the cat, so we kept it out of the kitchen all week.",
+    "The quiet student handed out the worksheets to the class.",
+    "We packed umbrellas, and the rain poured down as we stepped outside.",
+    "His simple plan was written on a single sheet of paper."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 on ' out' in 'as it turns out'/'it turned out that'; literal and phrasal 'out' below 0.1, though the pole is broad (6.7% of tokens reach 0.1 of max)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'turns out' idiom",
+ "unit_kind": "dense / positional",
+ "confidence": 0.35,
+ "notes": "Probe: 'as it turns out' 0.530, 'It turned out that' 0.477, 'ran out of' -0.003, 'fill out' 0.083 (peak elsewhere). Card flags broad and gate-closed regime; German '-ten' scored 0.740 and ' nationwide' 0.361, so the pole is not only this idiom. Testing the strongest English context."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-23c46433",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N11619+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N11619",
+   "pole": "+",
+   "label": "the reference group in a comparison of groups ('than their peers', 'than non-smokers', 'compared to those who'): the token naming the group a group is measured against",
+   "fire": [
+    "Teenagers who play sports are less likely than their peers to start smoking.",
+    "Night-shift nurses report more back pain than their daytime colleagues.",
+    "Coffee drinkers tend to live slightly longer than non-drinkers in the study.",
+    "Children raised with pets had fewer allergies than those raised without them.",
+    "Volunteers who walked daily slept better than their inactive neighbours.",
+    "Bilingual adults scored higher on the task than monolingual adults.",
+    "Patients given the drug recovered faster than those given a placebo.",
+    "Farm workers face far greater injury risks than their office counterparts."
+   ],
+   "quiet": [
+    "Teenagers who play sports often start training early in the morning.",
+    "Night-shift nurses report back pain after long weekend shifts.",
+    "Coffee drinkers tend to drink their first cup before breakfast.",
+    "Children raised with pets often learn to care for animals early.",
+    "Volunteers who walked daily kept a diary of their sleep.",
+    "Bilingual adults completed the task in a quiet testing room.",
+    "Patients given the drug were checked by nurses every four hours.",
+    "Farm workers face long hours during the harvest season."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 at the start of the group after 'than'/'compared to'; the same study claims without a comparison, and 'rather than' with verbs, below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "comparison reference group",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Probe: 'than their classmates' 0.728 (peak ' their'), 'than non-smokers' 0.573 (peak ' non'), 'faster than the old one' 0.262, sentence-initial 'Compared to adults' 0.171; no-comparison versions 0.006-0.027, 'rather walk than drive' 0.013."
+}

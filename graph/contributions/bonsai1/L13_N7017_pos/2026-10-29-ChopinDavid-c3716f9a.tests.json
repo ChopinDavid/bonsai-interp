@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c3716f9a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N7017+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N7017",
+   "pole": "+",
+   "label": "reframing in a field's vocabulary: ' terms'/'parlance'/'terminology' in 'in <field> terms', 'to put it in <field> terms'; 'terms' as contract conditions or vocabulary items stays low",
+   "fire": [
+    "The team lost every match, or, in sporting terms, had a disastrous year.",
+    "Put in financial terms, the repairs cost more than the house is worth.",
+    "In musical terms, the second movement slows to a gentle lullaby.",
+    "The engine overheated, which, in plain terms, means the trip is over.",
+    "To put it in gardening terms, the project needs pruning before it grows.",
+    "The patient's heart stopped briefly; in medical terms, a cardiac arrest.",
+    "In military terms, the retreat was a careful withdrawal, not a rout.",
+    "The bug froze the app, or, in programmer terms, caused a deadlock."
+   ],
+   "quiet": [
+    "The team lost every match and agreed new terms with its coach in June.",
+    "Under the financial terms, the buyer pays the repairs before the sale.",
+    "In music class, the children practised a gentle lullaby on recorders.",
+    "The engine overheated, which meant we waited by the road for hours.",
+    "The gardening club agreed on terms for sharing the new greenhouse.",
+    "The patient learned the medical terms for every bone in the hand.",
+    "In the military, the retreat began at dawn under heavy rain.",
+    "The bug froze the app, so the programmers worked late to fix it."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9 on ' terms' in 'in <field> terms'; 'terms' of a deal, 'terms' as words learned, and 'in the long term' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'in X terms' reframing",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Probe: 'in cooking terms' 0.871, 'in business terms' 0.734, 'To use chess terminology' 0.343, 'In legal parlance' 0.292; 'terms of the contract' 0.006, 'learned new terms' 0.005. The frame (rephrasing in a domain's jargon) carries it, not the word."
+}

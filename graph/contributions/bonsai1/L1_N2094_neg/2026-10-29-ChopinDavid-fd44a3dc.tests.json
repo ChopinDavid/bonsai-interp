@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-fd44a3dc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N2094-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N2094",
+   "pole": "-",
+   "label": "the piece after 'Vi'/'V' in capitalised German Viel-/Vielen-/Vielzahl ('iel', 'el', 'elen'); lowercase single-token ' viel'/' vielen' stays low",
+   "fire": [
+    "Das Konzert beginnt um acht Uhr.\nViel Vergnügen und bis bald!",
+    "Danke für die schöne Karte.\nViel Liebe an die ganze Familie.",
+    "Im Garten wachsen eine Vielzahl seltener Blumen und Kräuter.",
+    "Wir haben deine Nachricht gelesen.\nVielen Dank für die Einladung!",
+    "Der Laden führt eine Vielzahl regionaler Käsesorten.",
+    "Das neue Spiel ist da.\nViel Glück beim ersten Level!",
+    "Ihr Paket ist unterwegs.\nVielen Dank für Ihren Einkauf bei uns.",
+    "Die Stadt bietet eine Vielzahl kostenloser Museen an."
+   ],
+   "quiet": [
+    "Das Konzert beginnt um acht Uhr.\nWir wünschen gute Unterhaltung!",
+    "Danke für die schöne Karte, wir haben uns vielen Leuten gezeigt.",
+    "Im Garten wachsen viel mehr Blumen als im letzten Jahr.",
+    "Wir haben deine Nachricht gelesen.\nHerzlichen Dank für die Einladung!",
+    "Der Laden führt sehr viel regionalen Käse.",
+    "Das neue Spiel ist da.\nAlles Gute beim ersten Level!",
+    "Ihr Paket ist unterwegs.\nBesten Dank für Ihren Einkauf bei uns.",
+    "Die Stadt bietet einige kostenlose Museen an."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-1.0 on 'iel'/'el'/'elen' after 'V'/'Vi'/' Vi'; lowercase ' viel'/' vielen' single tokens below 0.3",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German Vi|el piece",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Probe: 'Viel Spaß' 1.010 ('iel'), 'Vielzahl' 0.753 (' Vi'+'el'), 'Vielen Dank' 0.682 ('elen'), lowercase ' viel' 0.257, ' vielen' 0.010, English ' else'/' elf' ≤0.014. Tokenizer: 'Vielen'->Vi+elen, 'Viel'->V+iel, ' Vielzahl'->' Vi'+el+zahl."
+}

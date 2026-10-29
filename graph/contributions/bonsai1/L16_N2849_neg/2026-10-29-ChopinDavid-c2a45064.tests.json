@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c2a45064",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N2849-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N2849",
+   "pole": "-",
+   "label": "the final ' and' that closes a list of three or more parallel items ('reduce, reuse, recycle, and ...'); 'and' joining just two items or two clauses stays low",
+   "fire": [
+    "The coach told us to stretch, run, jump, and rest between drills.",
+    "Good stories answer when, where, why, and how something happened.",
+    "The recipe calls for flour, sugar, eggs, and a pinch of salt.",
+    "Volunteers will plant, water, weed, and harvest the garden.",
+    "The museum covers art, science, history, and music.",
+    "Remember to stop, look, listen, and then cross the street.",
+    "We visited Paris, Rome, Vienna, and Prague on the trip.",
+    "The robot can sort, stack, scan, and pack the boxes."
+   ],
+   "quiet": [
+    "The coach told us to stretch and then run between drills.",
+    "Good stories explain why something happened and who was there.",
+    "The recipe calls for flour and a pinch of salt.",
+    "Volunteers will plant the seeds and water the garden.",
+    "The museum covers art and is open late on Fridays.",
+    "Remember to look both ways and then cross the street.",
+    "We visited Paris in spring and loved the trip.",
+    "The robot can sort the boxes and then pack them."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.75 on the last ' and' of a 3+ item list; 'and' between two words or clauses below 0.06",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "list-closing 'and'",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Probe: 'who, what, where, and' 0.756, 'reduce, reuse, recycle, and' 0.560, 'apples, pears, plums, and' 0.187, 'Lions, tigers, and' 0.173; two-clause 'and' 0.011, 'tired and hungry' 0.017, 'Bread and butter' 0.048. Short parallel items (wh-words, verbs) score highest."
+}
