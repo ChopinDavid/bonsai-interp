@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-moridinamael-0279ec6e",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N11519+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:23:41+00:00",
+ "roles": ["feeds bonsai1/L22/N8234+"],
+ "neighbours": [
+  {
+   "unit": "L21/N11519",
+   "pole": "+",
+   "label": "the point where someone's own spoken words begin: the colon after a speaker's name, the end of an interview question, or an opening quote mark that starts a full quoted sentence (not a short quoted fragment inside a sentence)",
+   "fire": [
+    "\"We have been preparing for years for a successful landing by Curiosity, and all signs are good,\" Dave Lavery, MSL programme executive, said.",
+    "MAYOR: We will reopen the bridge by the end of the month.",
+    "Interviewer: What made you decide to leave the band? Singer: Honestly, we had just stopped having fun.",
+    "She looked up from the map and said, \"We should have turned left at the old mill.\"",
+    "\"I have never seen a storm move this fast,\" the forecaster admitted.",
+    "Q: How long did the restoration take? A: Almost three years, working mostly on weekends.",
+    "JULIET: O Romeo, Romeo, wherefore art thou Romeo?",
+    "The coach turned to the bench and shouted, \"Everyone up, we are not finished yet!\""
+   ],
+   "quiet": [
+    "He told the court that he had never seen the man before.",
+    "The mayor said the bridge would reopen by the end of the month.",
+    "The interviewer asked the singer why she had left the band, and she explained they had stopped having fun.",
+    "She looked up from the map and suggested that they should have turned left at the old mill.",
+    "The forecaster admitted she had never seen a storm move so fast.",
+    "The restoration took almost three years, mostly on weekends.",
+    "The critic called the film a \"triumph\" despite its slow opening.",
+    "The coach told everyone on the bench to get up because they were not finished."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire, at most 1 near miss above 0.30",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo",
+   "step-out"
+  ]
+ }
+}
