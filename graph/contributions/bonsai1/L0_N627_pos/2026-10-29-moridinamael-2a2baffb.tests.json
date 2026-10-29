@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-29-moridinamael-2a2baffb",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N627+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:01:55+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "short consonant/syllable word piece that ends a split rare name or compound ('z' in Lent|z, 'an' in Virt|an|en, 'd' in hydro|d|ynamics)"
+ },
+ "neighbours": [
+  {
+   "unit": "L0/N627",
+   "pole": "+",
+   "label": "a 1-2 letter fragment token glued straight onto a short word stem, in names or technical terms ('z' in Lent|z, 'an' in Virt|an|en, 'd' in hydro|d|ynamics); quiet when the name or word is one whole token",
+   "fire": [
+    "Professor Lentz presented her findings on soil chemistry at the morning session.",
+    "The Finnish skier Virtanen finished third in the sprint.",
+    "Her thesis applied hydrodynamics to the flow around small boat hulls.",
+    "Dr. Przybylski signed the lab report before lunch.",
+    "The sample was separated using capillary electrophoresis.",
+    "Our new neighbor, Mr. Szczygiel, fixed the fence himself.",
+    "Engineers modeled the plasma with magnetohydrodynamic equations.",
+    "The award went to the chemist Kowalczyk for her catalyst work."
+   ],
+   "quiet": [
+    "Professor Smith presented her findings on soil chemistry at the morning session.",
+    "The Finnish skier Johnson finished third in the sprint.",
+    "Her thesis applied physics to the flow around small boat hulls.",
+    "Dr. Brown signed the lab report before lunch.",
+    "The sample was separated using a simple filter.",
+    "Our new neighbor, Mr. Green, fixed the fence himself.",
+    "Engineers modeled the plasma with simple computer equations.",
+    "The award went to the chemist Miller for her catalyst work."
+   ]
+  }
+ ],
+ "predictions": "Expect a partial pass: Lentz, Virtanen and hydrodynamics fire; Przybylski, Kowalczyk, Szczygiel and electrophoresis may stay quiet (earlier probe: Kowalczyk 0.04). Maybe 3-4/8 fire, 0 near misses.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
