@@ -1,0 +1,160 @@
+{
+ "id": "2026-10-29-ChopinDavid-b12fce4c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3899+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:36:44+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N3899_pos/2026-10-29-ChopinDavid-b12fce4c.tests.json"
+ },
+ "label": "the abbreviated honorific token before a surname: ' Dr' (strongest in the corpus), ' Mrs', ' Mr', ' Ms'; spelled-out titles (Professor, Sir, Lady, doctor) and bare names stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3899_pos/2026-10-29-ChopinDavid-b12fce4c.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.294,
+     "peak": " Dr"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.147,
+     "peak": " Dr"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.202,
+     "peak": " Dr"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.082,
+     "peak": " Mr"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.109,
+     "peak": " Whit"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.333,
+     "peak": " Ms"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.155,
+     "peak": " Dr"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.032,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " overse"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " surgeon"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " told"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.017,
+     "peak": " Whit"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": " spokeswoman"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " sleep"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " Thomas"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.151,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "the honorific tokens Dr/Mr/Mrs/Ms",
+ "unit_kind": "token",
+ "confidence": 0.65,
+ "notes": "Card: ' Dr' x21, ' Mr' x5, ' Mrs' x3, 'Dr' x2, 'Mr' x1 of the top 32, all before a surname in news prose; max 17.6, density 0.044%; the - pole is ' said' x27. Probe: Mrs 0.547, Dr 0.306, Ms 0.189, Mr 0.133; Professor 0.002, Sir 0.018, 'the doctor' 0.016, bare names 0.008. tok.py: Dr, Mr, Mrs, Ms, Professor, Sir, Lady are single tokens.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "Dr",
+   "Mr",
+   "Mrs",
+   "Ms"
+  ]
+ }
+}

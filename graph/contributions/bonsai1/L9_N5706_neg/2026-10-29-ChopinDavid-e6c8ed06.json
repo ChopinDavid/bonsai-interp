@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-e6c8ed06",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N5706-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:36:41+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N5706_neg/2026-10-29-ChopinDavid-e6c8ed06.tests.json"
+ },
+ "label": "a digit used as a list or section number at the start of a line in a numbered list or reference list (7., 3), - 12 CLINICAL, 6. Menz), strongest mid-document and for later or two-digit numbers; the same lists with bullets or letters, and digits used as quantities inside prose, stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N5706_neg/2026-10-29-ChopinDavid-e6c8ed06.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.045,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.27,
+     "peak": "8"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.088,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.306,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.017,
+     "peak": " year"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.158,
+     "peak": "8"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.083,
+     "peak": "7"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.096,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.024,
+     "peak": " Pain"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.052,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " raised"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " visitors"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": "을"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " warm"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " report"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.092,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "list-number digit at line start",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: '3' x8, '7' x6, '5' x5 at line starts: '⏎7. 찬송가', '⏎3. Eaton', '- 1⟦2⟧ CLINICAL', ' ⟦4⟧⏎', '3) 설교', '7) FAA', ' 3. Pain', '⏎6. Menz'; max 12, density 0.038%. Probe: references '5. ... 6.' 0.267 (peak '6'), contents '- 12 ... - 13' 0.209 (peak '3'), agenda '7) 8)' 0.065, recipe '1. 2. 3.' 0.022; '3 apples and 7 pears' 0.017, '2026 in room 304' 0.022, bulleted recipe 0.020, lettered agenda 0.023. Short first-item lists barely fire, so the test uses later item numbers after a lead-in line.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-ac989045",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3314-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T19:36:21+00:00",
+ "recipe": {
+  "toolchain_commit": "ed39006a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N3314_neg/2026-10-29-ChopinDavid-ac989045.tests.json"
+ },
+ "label": "a non-initial piece of a romanised Sanskrit/Hindi word or name that the tokenizer splits (Tul|si, Am|rit|sar, Bh|akt|apur, D|harma, Adv|ait|a, Var|an|asi, Lak|sh|mi, Han|uman); Indic words that are single tokens (yoga, karma, Delhi, Mumbai, Krishna, Gandhi) and split names from other languages (Szymanowski, Tchaikovsky) stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N3314_neg/2026-10-29-ChopinDavid-ac989045.tests.json",
+   "prereg_commit": "ed39006a",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.023,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.101,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.291,
+     "peak": "uman"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.06,
+     "peak": "ura"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.051,
+     "peak": "ish"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.194,
+     "peak": "atri"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.051,
+     "peak": "hya"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.035,
+     "peak": " festival"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.075,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.185,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " park"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": "ot"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.045,
+     "peak": "ost"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " festival"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " disputed"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " festival"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.797,
+    "median_fire": 0.055,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ed39006a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "inner piece of a split romanised Indic word",
+ "unit_kind": "token",
+ "confidence": 0.55,
+ "notes": "Card: Tul|asi, Tul|si x2, suk|h|hi, Adv|ait|a, Amar Das, Bh|akt|apur, Am|rit|sar, SatyaY|ug, D|harma; max 18.9, density 0.043%. Probe: Tulsi 0.629 ('si'), Amritsar 0.526 ('rit'), Bhaktapur 0.498 ('akt'), Dharma 0.360 ('harma'), Advaita 0.336, Diwali 0.092 ('ali'), yoga/karma 0.020, Delhi/Mumbai 0.004, Szymanowski 0.009. tok.py: Varanasi, Lakshmi, Hanuman, Mathura, Upanishads, Navratri, Ayodhya, Ganesha all split; Krishna, Gandhi, Kolkata, Chennai, Delhi, Guru are single tokens.",
+ "selection": "random draw"
+}
