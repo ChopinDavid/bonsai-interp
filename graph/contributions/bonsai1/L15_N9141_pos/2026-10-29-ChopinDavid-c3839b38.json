@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-c3839b38",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N9141+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T08:30:51+00:00",
+ "recipe": {
+  "toolchain_commit": "0cb06b68",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N9141_pos/2026-10-29-ChopinDavid-c3839b38.tests.json"
+ },
+ "label": "a token inside King James / scriptural narrative prose (archaic 'unto', 'ye', 'shall', gospel cadence); the same events told in plain modern English stay lower",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N9141_pos/2026-10-29-ChopinDavid-c3839b38.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.108,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.223,
+     "peak": " himself"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.422,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.756,
+     "peak": " him"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.418,
+     "peak": " given"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.147,
+     "peak": " servants"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.114,
+     "peak": "ek"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.125,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.169,
+     "peak": " crowd"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.073,
+     "peak": " anyone"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.089,
+     "peak": " blanket"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.068,
+     "peak": " story"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.068,
+     "peak": " find"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.036,
+     "peak": " staff"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.042,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.054,
+     "peak": " noon"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.185,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "0cb06b68",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "token in KJV/scriptural narrative cadence",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 3.95, peaks on tokens within gospel/KJV passages (' name', ' man', ' she', commas in 'and he'). Probe: 'bearing a pitcher of water' 0.684, 'given you; seek' 0.418, 'his servants followed' 0.404; modern paraphrase 'meet a man carrying a water jug' 0.359 (leaks), plain-business 0.062. Weak unit (max ~4).",
+ "selection": "random draw"
+}

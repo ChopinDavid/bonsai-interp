@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-827506d6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N2236-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T08:31:35+00:00",
+ "recipe": {
+  "toolchain_commit": "0cb06b68",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N2236_neg/2026-10-29-ChopinDavid-827506d6.tests.json"
+ },
+ "label": "the word ' one' used as a pronoun or selector ('one of', 'one another', 'one signal', 'one day'); the digit '1' and rewrites that drop 'one' stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N2236_neg/2026-10-29-ChopinDavid-827506d6.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.263,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.33,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.289,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.131,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.15,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.179,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.109,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.358,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.037,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " two"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.035,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " made"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.021,
+     "peak": "They"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.221,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "0cb06b68",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "the pronoun/selector word ' one'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.75,
+ "notes": "Card: max 31.75, ' one' x31 dominates. Probe: 'hear one signal' 0.571, 'one of the best' 0.381, 'one another' 0.191, 'one day' 0.173; digit '1 signal' 0.079, 'among the best' 0.016, 'each other' 0.016, 'two of us' 0.012. Clean single-token unit; fire items keep the word ' one', near misses replace it.",
+ "selection": "random draw"
+}

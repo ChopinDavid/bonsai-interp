@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-d4150ae7",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N6486+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T08:33:03+00:00",
+ "recipe": {
+  "toolchain_commit": "0cb06b68",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N6486_pos/2026-10-29-ChopinDavid-d4150ae7.tests.json"
+ },
+ "label": "a word-internal piece immediately after a prefix boundary in long/technical words (' var'ieg, non-'acc'us, ar'ith, non-'com'ed, ' ca'str), often near the start of a window; whole-token synonyms stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N6486_pos/2026-10-29-ChopinDavid-d4150ae7.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.692,
+     "peak": " var"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.136,
+     "peak": "acc"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.647,
+     "peak": " ar"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.57,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.724,
+     "peak": " ca"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.326,
+     "peak": " pers"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.124,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.633,
+     "peak": " ca"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": " male"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " blame"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " only"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.086,
+     "peak": "D"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.063,
+     "peak": " we"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " brown"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " them"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.601,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "0cb06b68",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "piece after a prefix/stem boundary in long words",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: max 119.5, FLAG positional (75% at window pos 0), peaks ' var', ' ca', 'acc', 'bl'. Probe: variegated 0.841, non-accusatory 0.815, castrated 0.731, arithmetically 0.656, non-comedogenic 0.559; 'striped' 0.006, 'friendly' 0.002, 'light formula' 0.047. Positional spelling unit; fire items keep the multi-piece word, near misses swap a plain synonym.",
+ "selection": "random draw"
+}
