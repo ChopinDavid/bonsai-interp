@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-b6ff4e25",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N9346-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:34:52+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N9346_neg/2026-10-29-ChopinDavid-b6ff4e25.tests.json"
+ },
+ "label": "the word that closes two conjoined predicates as holding together: 'at' in 'X and Y at the same time' / 'all at once', and the second member of French 'tant ... que'; the conjoined pair without the closer, 'simultaneously', the temporal 'at the same time as', and 'all at once' meaning suddenly are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N9346_neg/2026-10-29-ChopinDavid-b6ff4e25.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.307,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.707,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.571,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.263,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.464,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.169,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.024,
+     "peak": " tant"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.008,
+     "peak": "aires"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.025,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " price"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.049,
+     "peak": " kind"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " ancient"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": "ieux"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": " at"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.883,
+    "median_fire": 0.285,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "'at' closing 'X and Y at the same time'",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: max 57.75, density 0.085%, ' at' x10 (familiar at the same time, calm and dramatic all at once), ',' (не столько вверх, сколько вширь), ' nu' (tant à l'oeil nu qu'à), mach|o (tanto el macho como), ' has' (no political symbolism has the power), Python else:/except: indentation, 既...也. Probe: 'audacious and tediously familiar at the same time' 0.609, 'so calm and so dramatic all at once' 0.642, 'tant à l'oeil nu qu'aux caméras' 0.572 (peak ' nu'), tanto ... como 0.290, 'not so much upward as outward' 0.020, Python else 0.085, 'Both the male and the female' 0.004; 'familiar at the start' 0.013, 'at the same time as the mayor' 0.017, single predicates 0.005-0.018. The English simultaneity closer and French tant...que carry it.",
+ "selection": "random draw"
+}

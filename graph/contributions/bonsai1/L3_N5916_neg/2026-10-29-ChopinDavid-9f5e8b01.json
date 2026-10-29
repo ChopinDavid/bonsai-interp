@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-29-ChopinDavid-9f5e8b01",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N5916-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:33:32+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N5916_neg/2026-10-29-ChopinDavid-9f5e8b01.tests.json"
+ },
+ "label": "the token ' moment' after a determiner (the moment he..., a moment, that moment); near-synonyms (instant, second, point, occasion) and the stems momentum/momentarily are weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N5916_neg/2026-10-29-ChopinDavid-9f5e8b01.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.858,
+     "peak": " moment"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.413,
+     "peak": " moment"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.515,
+     "peak": " moment"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.679,
+     "peak": " moment"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.711,
+     "peak": " moment"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.287,
+     "peak": " moment"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.442,
+     "peak": " moment"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.849,
+     "peak": " moment"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.223,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " went"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.102,
+     "peak": " quiet"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.079,
+     "peak": " building"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " phone"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.088,
+     "peak": " judgement"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.101,
+     "peak": " lost"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.597,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "the token ' moment'",
+ "unit_kind": "token",
+ "confidence": 0.5,
+ "notes": "Card: max 0.84 (weak), broad flag 3.371%, ' moment' x18 of the top 32 (the moment that, the moment we're in, a moment its velocity). Probe: 'This is the moment he had been waiting for' 0.711, 'a brief moment of silence' 0.397, 'At the moment there are' 0.191, but 'every moment of the trip' 0.037 (peak moved to ' of'); instant 0.071, momentum 0.208, momentarily 0.103, 'At present' 0.128, ticking clock 0.121. The determiner-plus-moment frame carries it; 'every moment' does not, so fire items all use the/a/that moment.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "moment",
+   "moments"
+  ]
+ }
+}

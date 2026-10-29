@@ -1,0 +1,162 @@
+{
+ "id": "2026-10-29-ChopinDavid-cbd9d15e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N11324+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:33:23+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N11324_pos/2026-10-29-ChopinDavid-cbd9d15e.tests.json"
+ },
+ "label": "the word lock/locked/locks, strongest as the verb of confinement or binding (locked in a dispute, locked up, locks him in, locks out moisture) and weaker for the literal door or the noun; synonyms in the same frames (stuck, detained, binds, keeps out, tied up) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N11324_pos/2026-10-29-ChopinDavid-cbd9d15e.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.869,
+     "peak": " locked"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.823,
+     "peak": " locked"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.755,
+     "peak": " locks"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.495,
+     "peak": " locks"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.878,
+     "peak": " locked"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.703,
+     "peak": " locked"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.704,
+     "peak": " locked"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.635,
+     "peak": " locked"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.238,
+     "peak": " stuck"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " detained"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.151,
+     "peak": " binds"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.039,
+     "peak": " keeps"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.291,
+     "peak": " tied"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.074,
+     "peak": " other"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.08,
+     "peak": " fixed"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.73,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "the verb lock (confine, bind)",
+ "unit_kind": "token",
+ "confidence": 0.75,
+ "notes": "Card: max 366, density 0.035%, ' locked' x11, ' lock' x5, ' Lock' x2, '锁', plus ' you'/' him' right after lock (lock you in, locks him up). Probe: locked in a dispute 0.931, locks him in 0.947 (peak ' him'), locked up 0.793, locks out moisture 0.470, the door was locked 0.311; nouns: the lock on the gate 0.458, a lock of hair 0.474, canal lock 0.133; synonyms trapped 0.231, confined 0.113, bolted 0.217. Lexical with a sense gradient: confinement and binding senses strongest. Trigger declared as the word family.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "lock",
+   "locked",
+   "locks",
+   "locking",
+   "Lock",
+   "Locked"
+  ]
+ }
+}

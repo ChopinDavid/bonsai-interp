@@ -1,0 +1,163 @@
+{
+ "id": "2026-10-29-ChopinDavid-c1400ac2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N3737-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:34:27+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N3737_neg/2026-10-29-ChopinDavid-c1400ac2.tests.json"
+ },
+ "label": "a dense unit (40% of tokens above 0.1 of max) that is strongest on the words cartridge(s), seize(d) and setback(s); their synonyms (drum, capture, blow, confiscate) sit on the dense floor of 0.2-0.5",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N3737_neg/2026-10-29-ChopinDavid-c1400ac2.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 6,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.845,
+     "peak": " cartridge"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.719,
+     "peak": " seize"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.813,
+     "peak": " setback"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.845,
+     "peak": " cartridges"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.744,
+     "peak": " seized"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.943,
+     "peak": " setback"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.855,
+     "peak": " cartridge"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.797,
+     "peak": " seize"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.442,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.197,
+     "peak": " bridge"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.326,
+     "peak": " contract"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.354,
+     "peak": " counter"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.416,
+     "peak": " kilograms"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.374,
+     "peak": " disappointment"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.368,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.181,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.829,
+    "near_misses_at_0.3": 6
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "dense; peaks on cartridge / seize / setback",
+ "unit_kind": "dense / positional",
+ "confidence": 0.4,
+ "notes": "Card: max 0.44, dense flag 39.9% of tokens above 0.1 of max, gate-closed regime 100%; peaks ' cartridges' x7, ' seize' x4, ' setback' x4, ' بشكل' x3, cart|ouch|es. Probe: seize 0.931, cartridges 0.870, setback 0.859, cartridge 0.839; the synonym controls 0.210-0.443 and the unrelated floor sentence 0.489 (peak ' market'). The three words are real peaks on a dense background; the test records that, and the unit_kind is set to dense / positional as the card advises.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "cartridge",
+   "cartridges",
+   "seize",
+   "seized",
+   "seizing",
+   "setback",
+   "setbacks"
+  ]
+ }
+}

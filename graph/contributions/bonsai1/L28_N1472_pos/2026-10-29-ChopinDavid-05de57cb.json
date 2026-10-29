@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-29-ChopinDavid-05de57cb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N1472+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:32:42+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N1472_pos/2026-10-29-ChopinDavid-05de57cb.tests.json"
+ },
+ "label": "the '://' token of a URL scheme (https://, http://, ftp://), strongest in code comments, docstrings and documentation; a bare www. address, the word http, time colons, '::' and '//' are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N1472_pos/2026-10-29-ChopinDavid-05de57cb.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.179,
+     "peak": "docs"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.982,
+     "peak": "://"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.466,
+     "peak": "://"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.676,
+     "peak": "://"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.127,
+     "peak": "/example"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.252,
+     "peak": "xiv"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.285,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.438,
+     "peak": "://"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": "import"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.575,
+     "peak": "CI"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " faster"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.111,
+     "peak": "/example"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": "In"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " http"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.293,
+     "peak": "-"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.844,
+    "median_fire": 0.361,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "the '://' of a URL scheme",
+ "unit_kind": "token",
+ "confidence": 0.8,
+ "notes": "Card: max 148, density 0.163%, '://' x24 of the top 32, nearly all in code comments and docstrings (Download paper at http://arxiv..., # http://stackoverflow...). Probe: https://github 0.501, ftp:// 0.713, http://www.example.org in prose 0.177; www.example.com 0.049, 10:30 0.004, std::cout 0.002, '//' comment 0.009, the word http 0.024. The token is the trigger; prose URLs score lower than code-context ones, so half the fire items sit in code or markdown.",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   "://"
+  ]
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "id": "2026-10-29-ChopinDavid-ee1b0175",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N11784+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:34:03+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N11784_pos/2026-10-29-ChopinDavid-ee1b0175.tests.json"
+ },
+ "label": "a non-Latin word piece that spells a 'd' onset and is continued by the next token: katakana 'ド' (ド|ア, ド|リンク, ヘアド|ライヤー), Cyrillic 'род' (аэрод|ром, род|ина) and Arabic ' الد' (الد|واء); fused words containing the same sound (ドレス, ドイツ, الكتاب) and Latin d-fragments in prose (d|how, d|old|rums) are weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N11784_pos/2026-10-29-ChopinDavid-ee1b0175.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.005,
+     "peak": "見"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.003,
+     "peak": "冷"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.013,
+     "peak": "した"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.0,
+     "peak": "間"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.008,
+     "peak": "ушки"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.002,
+     "peak": "ли"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.003,
+     "peak": " في"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.202,
+     "peak": " الد"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.139,
+     "peak": "ディ"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.001,
+     "peak": "前の"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "を"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": "んでいる"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " билет"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.028,
+     "peak": "قر"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " dawn"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.594,
+    "median_fire": 0.004,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "non-Latin 'd' piece continued by the next token",
+ "unit_kind": "token",
+ "confidence": 0.45,
+ "notes": "Card: max 191, density 0.111%, peaks 'ド' x3 (ヘアド|ライヤー), 'род' (аэрод|ром), ' الد' x3 (مجلس الد|وما), ' d' x4, ' D' x3, '.d' x3, '-d' x5 in code (D|ASHBOARD, .d|jango) and prose (oil d|erricks). Probe: ヘアドライヤー 0.723 (peak ド), аэродром 0.696 (peak род); the Latin prose fragments did not transfer: d|aff|od|ils 0.143, d|hal 0.081, d|err|icks 0.079, d|uros 0.031; single-token dog 0.001, other-onset fragments 0.018-0.080. The - pole peaks on space-initial ' д'/' د'. The label is restricted to the non-Latin pieces the probe confirmed, with Arabic ' الد' from the card untested; Latin prose fragments are near misses.",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   "ド",
+   "род",
+   " الد"
+  ]
+ }
+}
