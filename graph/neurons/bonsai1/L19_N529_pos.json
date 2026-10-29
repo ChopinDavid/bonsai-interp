@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L19/N529+",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 529,
+ "pole": "+",
+ "label": "the end of a party-state tag after a politician's name, like D-Calif. or (Mass.)",
+ "short": "party-state tag end after politician",
+ "kind": null,
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N529_pos/2026-10-28-moridinamael-13c08f5f.tests.json",
+   "prereg_commit": "474980ae",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.111,
+     "peak": ".)"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.082,
+     "peak": " Montgomery"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.211,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.124,
+     "peak": "ponsors"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.123,
+     "peak": "ney"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.065,
+     "peak": " has"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.276,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.137,
+     "peak": ".)"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.189,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.14,
+     "peak": " cut"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.11,
+     "peak": "ner"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.067,
+     "peak": " Montgomery"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.138,
+     "peak": " Rep"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.13,
+     "peak": "ponsors"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.165,
+     "peak": "ney"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.082,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.477,
+    "median_fire": 0.123,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-moridinamael-13c08f5f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-moridinamael-13c08f5f",
+   "the end of a party-state tag after a politician's name, like D-Calif. or (Mass.)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L18/N10678+"
+ ],
+ "contributors": [
+  "moridinamael"
+ ],
+ "contributions": [
+  "2026-10-28-moridinamael-13c08f5f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
