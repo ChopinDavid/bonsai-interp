@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-94517072",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N11097+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T12:27:28+00:00",
+ "recipe": {
+  "toolchain_commit": "ae7d07ff",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N11097_pos/2026-10-29-ChopinDavid-94517072.tests.json"
+ },
+ "label": "a space-prefixed opening bracket that starts a literal value in code: ' (' / \" ('\" / ' (\"' / ' (\\n' opening a tuple or string literal after '=' or ':', and the space between numbers in a bracketed numeric literal; call parentheses with no space, list brackets and prose parentheses stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N11097_pos/2026-10-29-ChopinDavid-94517072.tests.json",
+   "prereg_commit": "ae7d07ff",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.799,
+     "peak": " (\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.544,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.56,
+     "peak": " (\""
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.738,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.599,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.422,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.633,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.317,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.071,
+     "peak": " ['"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.088,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "_g"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.043,
+     "peak": " ['"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " refused"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.227,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.58,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ae7d07ff",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "' (' opening a code literal",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: \" ('\" x9 (South migration field tuples) 8.0, ' (\\n' after '=' in CHOICES tuples, ' ' between numbers in '[[1 2 3]' and 'PointZ (1 2 3)', '= (\"The fat cat'. Probe: '= (\"The fat cat...\")' 1.043, 'CHOICES = (\\n' 0.788, \"'groups': ('django...'\" 0.773, '[[1 2 3]' 0.751; 'compute(a, b)' -0.006, \"['a', 'b']\" 0.125, prose '(quietly)' 0.042, '(1, 2)' in prose 0.042.",
+ "selection": "random draw"
+}

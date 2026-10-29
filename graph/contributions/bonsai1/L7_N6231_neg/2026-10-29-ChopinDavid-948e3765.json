@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-948e3765",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6231-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T12:27:50+00:00",
+ "recipe": {
+  "toolchain_commit": "ae7d07ff",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N6231_neg/2026-10-29-ChopinDavid-948e3765.tests.json"
+ },
+ "label": "a standalone capital letter from the end of the alphabet (W, X) used as a symbol, initial or variable name; standalone early-alphabet letters (A, B, C, D) in the same frames and ordinary W-words stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N6231_neg/2026-10-29-ChopinDavid-948e3765.tests.json",
+   "prereg_commit": "ae7d07ff",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.897,
+     "peak": " W"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.131,
+     "peak": " marks"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.542,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.363,
+     "peak": " X"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.476,
+     "peak": " W"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.035,
+     "peak": " X"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.332,
+     "peak": " W"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.253,
+     "peak": " X"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.258,
+     "peak": " H"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.038,
+     "peak": " marks"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.051,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " initialized"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " internet"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " Brian"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " axis"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.348,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ae7d07ff",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "standalone symbol letter W/X",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Card: ' W' x9 and '.' x11 after initials: 'W+, W- and Z bosons', 'WE (write enable)', 'W_T_list', 'W. Leszl', 'W. D. Phillips', '\"X\"' in a list. Probe: 'W and Z bosons' 0.874 (peak ' bos'), 'letters W, X, Y and Z' 0.697 (peak ' X'), 'WE' 0.567, 'W_vP' 0.531, 'W. D. Phillips' 0.433; 'J. A., K. L., P. R.' initials 0.034, 'We went to the beach' 0.011, 'west wing' 0.037. Unsure whether the pole is W/X-specific or the peak on ' bos' points to particle names; registered as a guess.",
+ "selection": "random draw"
+}
