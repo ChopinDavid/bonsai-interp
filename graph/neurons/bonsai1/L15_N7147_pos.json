@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L15/N7147+",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 7147,
+ "pole": "+",
+ "label": "a different word right after a comma that restates the word just before it (a near-synonym: wishes, desires; big, huge)",
+ "short": null,
+ "kind": null,
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N7147_pos/2026-10-29-moridinamael-e6431cee.tests.json",
+   "prereg_commit": "98ae7b47",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.389,
+     "peak": " desires"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.466,
+     "peak": " huge"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.5,
+     "peak": " exhausted"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.351,
+     "peak": " silent"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.358,
+     "peak": " tiny"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.331,
+     "peak": " rapid"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.22,
+     "peak": " antique"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.37,
+     "peak": " obvious"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " all"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " sunny"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.041,
+     "peak": "gy"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " fit"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " had"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " clear"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.364,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-e6431cee"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-moridinamael-e6431cee",
+   "a different word right after a comma that restates the word just before it (a near-synonym: wishes, desires; big, huge)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "feeds bonsai1/L17/N10144+"
+ ],
+ "contributors": [
+  "moridinamael"
+ ],
+ "contributions": [
+  "2026-10-29-moridinamael-e6431cee"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
