@@ -1,0 +1,165 @@
+{
+ "id": "2026-10-28-moridinamael-de2710fe",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N1707+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T04:12:58+00:00",
+ "recipe": {
+  "toolchain_commit": "83e042d4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N1707_pos/2026-10-28-moridinamael-de2710fe.tests.json"
+ },
+ "label": "the final ZIP digits of the Free Software Foundation address (\"Boston, MA 02110-1301\") at the end of a GPL license notice",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N1707_pos/2026-10-28-moridinamael-de2710fe.tests.json",
+   "prereg_commit": "83e042d4",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 1,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.195,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.273,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.114,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.27,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.201,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.097,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.418,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.203,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.285,
+     "peak": "盘"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.416,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.106,
+     "peak": "www"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.134,
+     "peak": "/>."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.082,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.144,
+     "peak": " Lesser"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.095,
+     "peak": " Licensed"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.236,
+     "peak": " file"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.625,
+    "median_fire": 0.202,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "step-down"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "83e042d4",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "roles": [
+  "reads bonsai1/L19/N529+"
+ ],
+ "edges": [
+  {
+   "from": "bonsai1/L19/N529+",
+   "to": "bonsai1/L24/N1707+",
+   "kind": "feeds",
+   "weight": 0.01,
+   "method": "single-unit zero ablation, downstream (play step --down)"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-28-moridinamael-de2710fe",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N1707+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:12:42+00:00",
+ "roles": ["reads bonsai1/L19/N529+"],
+ "neighbours": [
+  {
+   "unit": "L24/N1707",
+   "pole": "+",
+   "label": "the final ZIP digits of the Free Software Foundation address (\"Boston, MA 02110-1301\") at the end of a GPL license notice",
+   "fire": [
+    "* along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+    "# You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.",
+    "// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
+    "* You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA */",
+    "-- along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+    "% Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+    "; You should have received a copy of the GNU General Public License along with GNU Emacs; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+    "dnl along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+   ],
+   "quiet": [
+    "回家刻成盘，保存起来。",
+    "# Licensed under the Apache License, Version 2.0 (the License); you may not use this file except in compliance with the License.",
+    "* along with this program. If not, see <https://www.gnu.org/licenses/>.",
+    "# You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.",
+    "// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY.",
+    "* You should have received a copy of the GNU Lesser General Public License along with this library; see the file COPYING.LIB for details. */",
+    "-- Licensed under the MIT License; see the LICENSE file in the project root for full license information.",
+    "% Copyright (C) 2009 The Authors. Permission is granted to copy, distribute and modify this file."
+   ]
+  }
+ ],
+ "predictions": "Real FSF addresses fire well (~0.4-0.5); the Apache header leak may reach 0.3-0.4 and could break the near-miss limit.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "card",
+   "probe",
+   "inverse-gmoo",
+   "step-down"
+  ]
+ }
+}
