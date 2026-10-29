@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-a9afe1f9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N543+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T17:35:45+00:00",
+ "recipe": {
+  "toolchain_commit": "d5cdb31f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N543_pos/2026-10-29-ChopinDavid-a9afe1f9.tests.json"
+ },
+ "label": "the token before the name of an academic discipline or technical field, predicting it ('Department of', 'Faculty of', 'Journal of Applied', 'Professor of', 'Introduction to'); 'of' before ordinary nouns ('a bunch of keys', 'captain of the team') stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N543_pos/2026-10-29-ChopinDavid-a9afe1f9.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.356,
+     "peak": " Chemical"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.357,
+     "peak": " Veterinary"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.522,
+     "peak": " Applied"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.404,
+     "peak": " Marine"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.7,
+     "peak": " Computational"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.417,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.35,
+     "peak": "oretical"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.49,
+     "peak": " Organic"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.101,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " left"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.044,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": " owners"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.41,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d5cdb31f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "predicts an academic field name",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' of' x6, 'Application' x3, ' Applied' x2, ' Clinical', ' Generation' before Electrocardiography, Microbiology, Mathematics, Capitalism, Quantity Surveying, Multimedia (max 298, last layer); the - pole suppresses ' math', ' physical', ' literary'. Probe: 'Industrial and Applied' 0.536, 'Department of' 0.423, 'Introduction to' 0.378, 'Journal of Clinical' 0.361, 'Bachelor of' 0.343; 'Birth of a Nation' 0.199, 'head of' 0.002, 'cup of' 0.002.",
+ "selection": "random draw"
+}

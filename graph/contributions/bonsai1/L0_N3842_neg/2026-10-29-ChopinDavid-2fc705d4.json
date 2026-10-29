@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-29-ChopinDavid-2fc705d4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N3842-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T17:36:37+00:00",
+ "recipe": {
+  "toolchain_commit": "d5cdb31f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L0_N3842_neg/2026-10-29-ChopinDavid-2fc705d4.tests.json"
+ },
+ "label": "the Spanish token pieces 'iere' (requ|iere, sug|iere, ref|iere, conf|iere) and ' vi' (vi|enen, vi|ernes) when not sentence-initial; whole-token verbs (necesita, quiere, indica) and other pieces (lleg|an, jue|ves) stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N3842_neg/2026-10-29-ChopinDavid-2fc705d4.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.344,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.357,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.458,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.393,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.04,
+     "peak": " vi"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.51,
+     "peak": " vi"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.671,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.673,
+     "peak": " vi"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.086,
+     "peak": "ina"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.209,
+     "peak": "ima"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.374,
+     "peak": " firm"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.129,
+     "peak": "ivos"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.038,
+     "peak": "ing"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.099,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.162,
+     "peak": " quiere"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.069,
+     "peak": " lleg"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.425,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d5cdb31f",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "Spanish pieces 'iere' and ' vi'",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: 'iere' x11 (requiere), ' vi' x10 (vienen, viuda), 'into' x3, ' util' x2 (max 2.41, layer 0). Probe: requiere 0.611 ('iere'), vienen 0.548 (' vi'), viernes 0.442 (' vi'), sugiere 0.268; but 'La viuda' only 0.100 (the piece is the second token of the sentence), necesita 0.092, quiere 0.094 (one token), llegan 0.204 ('istas'), floor 0.010. Splits checked with the tokenizer; every trigger sits mid-sentence.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   "iere",
+   " vi"
+  ]
+ }
+}
