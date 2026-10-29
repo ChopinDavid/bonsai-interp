@@ -1096,3 +1096,14 @@ in the model's input embedding (inflections left out), and again against the fre
     test holds when its draw catches the ones that fire.
 - **Consequence:** about 3,200 of the 37,629 assignment-grade poles rest on a cover that failed a fresh test. The pair and
   triple covers (compose@10–12) need the same replication before the count is quoted without that caveat.
+
+## 2026-10-29: Pair and triple covers mostly replicate (compose@14)
+
+compose@14 re-tested the 7,818 poles assigned by a pair or triple cover, with their own tests on fresh pairs. **6,941
+replicated (89%);** 0 of 7,810 placebo tests held.
+
+- **Pairs fail 9.8% of the time, triples 27%.** Failures rise as selection precision falls (7.6% at ≥ 0.7, 25% at
+  0.3–0.5) and with depth (8.5% in L0–5, about 25–30% past L12).
+- **Most failures are near misses that fire,** not a silent cover: the same token in another context also fires.
+- **With compose@13:** 4,101 of the 26,967 automatic assignments that were re-tested (15%) failed a fresh test. If an
+  assignment had to replicate, the assignment-grade total would be about 33,500 (3.8% of poles) instead of 37,629.

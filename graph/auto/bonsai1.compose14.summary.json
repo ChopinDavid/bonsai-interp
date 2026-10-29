@@ -1,0 +1,131 @@
+{
+ "protocol": "compose@14",
+ "kind": "cover",
+ "scored": "2026-10-29T18:15:07+00:00",
+ "toolchain_commit": "2fcd8eb1",
+ "prereg_commit": "2fcd8eb1b697",
+ "poles_tested": 7818,
+ "replicated": 6941,
+ "unreplicated": 877,
+ "placebo_tests": 7810,
+ "placebo_held": 0,
+ "breakdown": {
+  "all": {
+   "poles": 7818,
+   "replicated": 6941,
+   "unreplicated": 877
+  },
+  "band 0-5": {
+   "poles": 4126,
+   "replicated": 3777,
+   "unreplicated": 349
+  },
+  "source compose@10": {
+   "poles": 6981,
+   "replicated": 6309,
+   "unreplicated": 672
+  },
+  "kind pair": {
+   "poles": 7184,
+   "replicated": 6480,
+   "unreplicated": 704
+  },
+  "precision >=0.7": {
+   "poles": 5177,
+   "replicated": 4786,
+   "unreplicated": 391
+  },
+  "precision 0.5-0.7": {
+   "poles": 1716,
+   "replicated": 1461,
+   "unreplicated": 255
+  },
+  "precision 0.3-0.5": {
+   "poles": 925,
+   "replicated": 694,
+   "unreplicated": 231
+  },
+  "source compose@12": {
+   "poles": 203,
+   "replicated": 171,
+   "unreplicated": 32
+  },
+  "source compose@11": {
+   "poles": 634,
+   "replicated": 461,
+   "unreplicated": 173
+  },
+  "kind triple": {
+   "poles": 634,
+   "replicated": 461,
+   "unreplicated": 173
+  },
+  "band 6-11": {
+   "poles": 3151,
+   "replicated": 2768,
+   "unreplicated": 383
+  },
+  "band 12-17": {
+   "poles": 81,
+   "replicated": 56,
+   "unreplicated": 25
+  },
+  "band 18-23": {
+   "poles": 192,
+   "replicated": 141,
+   "unreplicated": 51
+  },
+  "band 24-29": {
+   "poles": 197,
+   "replicated": 145,
+   "unreplicated": 52
+  },
+  "band 30-35": {
+   "poles": 71,
+   "replicated": 54,
+   "unreplicated": 17
+  }
+ },
+ "unreplicated_by_layer": [
+  52,
+  54,
+  37,
+  67,
+  66,
+  73,
+  161,
+  120,
+  50,
+  27,
+  17,
+  8,
+  0,
+  10,
+  7,
+  1,
+  5,
+  2,
+  0,
+  4,
+  8,
+  7,
+  15,
+  17,
+  8,
+  11,
+  6,
+  6,
+  13,
+  8,
+  2,
+  4,
+  0,
+  0,
+  1,
+  10
+ ],
+ "results_file": "bonsai1.compose14.results.jsonl.gz",
+ "results_sha256": "bef85b20a2474d5e6a8456afb1a27ddfdfccc1baf10d97268e2462563f501a7f",
+ "coverage_file": "bonsai1.compose14.coverage.jsonl.gz",
+ "tests_sha256": "3275023217eb03f3118dabe02f1c0ea1962dec977fd4cefed17749396f34fdf9"
+}
