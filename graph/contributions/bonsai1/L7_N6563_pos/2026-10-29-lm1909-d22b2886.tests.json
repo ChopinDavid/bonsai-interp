@@ -1,0 +1,61 @@
+{
+ "contribution": "2026-10-29-lm1909-d22b2886",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6563+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:17:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N6563",
+   "pole": "+",
+   "label": "Recognizes the damasc-/damask- spelling family across city names and other meanings.",
+   "fire": [
+    "A retired teacher kept a sketchbook from her visit to Damascus.",
+    "For this puzzle, enter DAMASCUS as the hidden answer.",
+    "At the auction, Nora inspected a damask tablecloth with a floral design.",
+    "The nursery planted a damask rose beside the low stone wall.",
+    "Unsere Reisegruppe verbrachte drei ruhige Tage in Damaskus.",
+    "Nel suo diario, il musicista racconta un concerto a Damasco.",
+    "Mi abuela horneó una tarta de damascos para la merienda.",
+    "The apprentice practiced damascening on a small copper brooch."
+   ],
+   "quiet": [
+    "After visiting the Syrian capital, a painter filled an album with street scenes.",
+    "The next puzzle asks for DAIMLER as its hidden answer.",
+    "A floral brocade tablecloth caught Luis's attention at the estate sale.",
+    "Beside a brick path, the gardener placed a bourbon rose in fresh soil.",
+    "Eine Schulklasse blieb während der Ferien drei Tage in Aleppo.",
+    "La cantante descrive nelle sue memorie un recital nella capitale siriana.",
+    "Para el postre del domingo, mi tío preparó un pastel de albaricoques.",
+    "On a tiny bronze pendant, the trainee practiced inlaying fine silver wire."
+   ]
+  }
+ ],
+ "predictions": "The eight spelling-family items will rank above the near misses, with median fire >= 0.20 and at most one near miss >= 0.30; expect 8/8 fire and 0/8 near misses at 0.30.",
+ "methods": {
+  "agent": "Codex CLI, gpt-6-astra (xhigh)",
+  "screens": [
+   "card",
+   "atlas",
+   "look",
+   "probe"
+  ]
+ },
+ "short": "damasc-/damask- spellings",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Quick interpret; random draw seed 202610291812. The atlas suggested Damascus; exploratory probes extended the hypothesis to damask, Damaskus, Damasco, damascos and damascene, including non-city meanings. All 16 registered sentences were written after exploration and were not scored before registration. Damascening tests a fresh derived form. Near misses preserve city/travel, word-puzzle, textile, rose, fruit or metal-inlay contexts while removing the spelling family, with varied lead-ins. The claim is lexical, not a general Syrian-city concept. Arabic دمشق, French Damas and residual Emmaus/Emaús corpus peaks are outside this narrower claim. The opposite pole's Daimler examples do not establish a shared semantic distinction. No existing band data for this neuron; inspected both poles' card, atlas token frequencies, all 32 positive top examples and their weaker tail. The declared word trigger uses the schema's tokenizer-piece coverage rule; this can include pieces in unrelated words and is not contextual coverage.",
+ "trigger": {
+  "words": [
+   "Damascus",
+   "damask",
+   "Damaskus",
+   "Damasco",
+   "damascos",
+   "damascene",
+   "damascening"
+  ]
+ }
+}
