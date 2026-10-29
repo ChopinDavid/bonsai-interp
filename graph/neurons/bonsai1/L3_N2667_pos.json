@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N2667+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 2667,
+ "pole": "+",
+ "label": "the piece that completes a Latinate word the tokenizer splits after a -ment stem (ornament|ation, sediment|ation, regiment|al, Fragment|ation, ferment|ación), and the stem Increment itself; the same words when they are a single token (fragmentation, incremental, documentation) and bare stems are weak",
+ "short": "suffix piece after a split -ment stem",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N2667_pos/2026-10-29-ChopinDavid-eacc4c32.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.046,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.831,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.584,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.42,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.942,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.288,
+     "peak": "al"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.544,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.145,
+     "peak": "o"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.083,
+     "peak": " decoration"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.22,
+     "peak": " fragmentation"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.333,
+     "peak": " documentation"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.229,
+     "peak": " experimentation"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.193,
+     "peak": " implementation"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.76,
+     "peak": " incremental"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.105,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": " semanas"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.734,
+    "median_fire": 0.482,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-29-ChopinDavid-eacc4c32"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-eacc4c32",
+   "the piece that completes a Latinate word the tokenizer splits after a -ment stem (ornament|ation, sediment|ation, regiment|al, Fragment|ation, ferment|ación), and the stem Increment itself; the same words when they are a single token (fragmentation, incremental, documentation) and bare stems are weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-eacc4c32"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

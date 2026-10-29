@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L14/N10433-",
+ "model": "bonsai1",
+ "layer": 14,
+ "index": 10433,
+ "pole": "-",
+ "label": "a plural noun counted by a numeral in a tally or survivors list (seven grandchildren, several stab wounds, four penalties), peak on the counted noun and strongest on grandchildren in obituaries; the same noun without a count is silent",
+ "short": "counted plural noun in a tally (grandchildren)",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N10433_neg/2026-10-29-ChopinDavid-a55639d7.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.383,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.226,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.25,
+     "peak": " stab"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.317,
+     "peak": " penalties"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.352,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.143,
+     "peak": " infantry"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.07,
+     "peak": " penalties"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.246,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.087,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.273,
+     "peak": " stab"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.21,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.181,
+     "peak": " infantry"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.051,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.066,
+     "peak": " Joe"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.844,
+    "median_fire": 0.248,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-a55639d7"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a55639d7",
+   "a plural noun counted by a numeral in a tally or survivors list (seven grandchildren, several stab wounds, four penalties), peak on the counted noun and strongest on grandchildren in obituaries; the same noun without a count is silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a55639d7"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

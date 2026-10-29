@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N5339-",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 5339,
+ "pole": "-",
+ "label": "the word 'disease' in any form (disease, Disease, diseases, dise|ased); synonyms such as illness, disorder, infection and condition are silent",
+ "short": "the word 'disease'",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N5339_neg/2026-10-29-ChopinDavid-41ee8f1d.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.744,
+     "peak": " disease"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.74,
+     "peak": " Disease"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.526,
+     "peak": " diseases"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.774,
+     "peak": " disease"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.45,
+     "peak": "ased"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.81,
+     "peak": " disease"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.805,
+     "peak": " disease"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.718,
+     "peak": " disease"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.038,
+     "peak": " infection"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " Health"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " conditions"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.282,
+     "peak": " disorder"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": " elm"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.163,
+     "peak": " illness"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " drought"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.051,
+     "peak": "alaria"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.742,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-41ee8f1d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-41ee8f1d",
+   "the word 'disease' in any form (disease, Disease, diseases, dise|ased); synonyms such as illness, disorder, infection and condition are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-41ee8f1d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

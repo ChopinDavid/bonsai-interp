@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N7285+",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 7285,
+ "pole": "+",
+ "label": "guess for an unexplained pole: the connective (and, with, of, from, because) that introduces the second member of a pair of named siblings in encyclopedic prose (the X-1C ... the X-1D; FTSE 100 ... FTSE 250; amylases from B. licheniformis ... from B. subtilis), weak",
+ "short": "connective before the sibling of a named item (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N7285_pos/2026-10-29-ChopinDavid-3b5cfea0.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.263,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.189,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.231,
+     "peak": " than"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.395,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.02,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.366,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.088,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.21,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.04,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.19,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.231,
+     "peak": " than"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.292,
+     "peak": " destroyed"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " expect"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.337,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.042,
+     "peak": " Only"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.219,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.586,
+    "median_fire": 0.221,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-3b5cfea0"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-3b5cfea0",
+   "guess for an unexplained pole: the connective (and, with, of, from, because) that introduces the second member of a pair of named siblings in encyclopedic prose (the X-1C ... the X-1D; FTSE 100 ... FTSE 250; amylases from B. licheniformis ... from B. subtilis), weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-3b5cfea0"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
