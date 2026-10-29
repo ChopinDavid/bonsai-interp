@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-moridinamael-b492c1f6",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L18/N10678+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:40:34+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the last piece of a rare Spanish, Italian, African or Nordic surname that the tokenizer splits (Bermude|z, Arriet|a, Haraldss|on); common surnames like Smith and long Slavic names (-ov, -ski, -icz) stay weak"
+ },
+ "neighbours": [
+  {
+   "unit": "L18/N10678",
+   "pole": "+",
+   "label": "the end of a person's foreign-origin surname right after a first name (Spanish, Japanese, Arabic, Nordic: Henry Gonzales, Kenji Watanabe); the same name as a company or place, and plain English surnames like Smith, stay weak",
+   "fire": [
+    "Our new chemistry teacher, Henry Gonzales, starts on Monday.",
+    "The report was written by Kenji Watanabe and reviewed last week.",
+    "At the front desk, Layla Haddad handed me a visitor badge.",
+    "The winning goal was scored by Erik Lindqvist in the final minute.",
+    "Please forward the invoice to Maria Fernandez before Friday.",
+    "In the novel, Yuki Takahashi returns to her village after twenty years.",
+    "The bakery on the corner is run by Omar Khalil and his sister.",
+    "Our team lead, Astrid Johansson, approved the new schedule."
+   ],
+   "quiet": [
+    "Our new chemistry teacher, Henry Smith, starts on Monday.",
+    "The report was written by Kenji and reviewed last week.",
+    "At the front desk, Layla Brown handed me a visitor badge.",
+    "The winning goal was scored by our captain in the final minute.",
+    "Please forward the invoice to the Toyota office before Friday.",
+    "In the novel, the heroine returns to her village in Hokkaido after twenty years.",
+    "The bakery on the corner is run by Omar Taylor and his sister.",
+    "Our team lead, Astrid Walker, approved the new schedule."
+   ]
+  }
+ ],
+ "predictions": "Unsure: the resident scale reads low and several fire names (Fernandez, Johansson) may be whole common tokens; expect about 5/8 fire with median near 0.25 and 0-1 near misses at 0.3",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors",
+   "quick-test"
+  ]
+ }
+}
