@@ -662,3 +662,44 @@ strata, on pairs drawn with a new seed, with a placebo.
 The pair covers mostly replicate, better than compose@9's word covers did, since a pair cover's selection precision is
 higher (≥ 0.3 by rule, ≥ 0.7 for most). Together compose@13 and @14 re-tested 26,967 automatic assignments; 4,101
 (15%) failed a fresh test. Low precision predicts it in both rounds, and so does depth.
+
+## Round 15 (compose@15): replication of the screen assignments
+
+compose@13 and @14's replication, for the largest set of automatic assignments they left: the 7,960 poles assigned by
+the auto-token@2 screen (atlas test held, a trigger covering ≥ 0.5 of the strong activations) and by nothing compose@13
+or @14 re-tested (`bonsai_interp/compose/round15.py`).
+- **Test:** each pole's held auto test, drawn again by the same construction on the same testing windows, with a new seed.
+  Every window the original test used is left out; the original draw was rebuilt from its seed and matched the original
+  tests file for all 7,960 poles.
+- **Judge:** the auto test's own (quick-8+8@2, last token, three preambles), with a placebo of fire snippets against fire
+  snippets.
+- **Verdicts:** replicated (held) or unreplicated (failed). 408 poles had too few unused snippets (untestable).
+- **Assignment does not change.**
+
+| | |
+|---|---|
+| Protocol | 37bbacc7 |
+| Pre-registration | 293ff983 |
+| Summary | 5454ab6b |
+
+- **6,704 of 7,552 replicated (89%);** 2 of 6,881 placebo tests held.
+- **By bin, the label's kind decides it:**
+
+  | Bin | lexical | context | copy | predictive | format | collocation |
+  |---|---|---|---|---|---|---|
+  | Poles | 4,269 | 1,970 | 52 | 750 | 240 | 271 |
+  | Unreplicated | 1.3% | 18% | 25% | 31% | 35% | 39% |
+
+- **By trigger precision:** 2.3% unreplicated at ≥ 0.7, 19% at 0.5–0.7, 35% at 0.3–0.5, 17% under 0.3.
+- **By depth:** L0–5 7.1%; every later band 19–24%.
+- **How they fail:** in 755 of the 848 failures the pole still fires on the trigger (median fire ≥ 0.20). The near
+  misses fire too: the trigger where the rule fails, or a swapped word. The trigger is right; the context rule is
+  narrower than the pole.
+
+### Reading
+
+A lexical screen label ("the token X") replicates almost always (98.7%). A rule label ("X after Y", "X before a
+subword", "X at a line start") fails a fresh draw 18–39% of the time, and mostly by being too narrow: the pole fires on X
+outside the rule as well. With compose@13 and @14, 34,519 automatic assignments have now been re-tested, and 4,949 (14%)
+failed a fresh test. About 3,100 assignments are still untested this way (the twin pass, compose@3–6's condition covers,
+compose@1–2, and the 408 untestable here).
