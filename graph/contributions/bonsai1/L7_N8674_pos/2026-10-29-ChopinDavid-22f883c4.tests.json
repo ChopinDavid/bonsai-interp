@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-22f883c4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N8674+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N8674",
+   "pole": "+",
+   "label": "the head noun of the classroom compounds 'construction paper' and 'creative writing'; the same nouns in other compounds (tissue paper, research paper, handwriting) stay low",
+   "fire": [
+    "For the art lesson each child got a pair of scissors and two sheets of red construction paper.",
+    "Cut a heart shape out of pink construction paper and glue it onto the card.",
+    "The teacher keeps a stack of construction paper in the cupboard behind her desk.",
+    "We folded green construction paper into little frogs that could jump.",
+    "My daughter wants to join the creative writing club at her middle school.",
+    "He teaches creative writing to adults on Tuesday nights at the library.",
+    "The magazine runs a creative writing contest every summer for teenagers.",
+    "After retiring, she finally took a creative writing workshop in Vermont."
+   ],
+   "quiet": [
+    "For the art lesson each child got a pair of scissors and two sheets of white printer paper.",
+    "Cut a heart shape out of pink tissue paper and glue it onto the card.",
+    "The teacher keeps a stack of graded papers in the cupboard behind her desk.",
+    "We folded old newspaper into little hats that the kids wore all day.",
+    "My daughter wants to improve her handwriting before she starts middle school.",
+    "He teaches technical writing to engineers on Tuesday nights at the library.",
+    "The magazine runs a photography contest every summer for teenagers.",
+    "After retiring, she finally wrote a long research paper on local history."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on ' paper' after 'construction' and ' writing' after 'creative'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'paper'/'writing' in construction paper, creative writing",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 8.69, peaks ' paper' x6 (construction paper) and ' writing' x5 (creative writing). Probe: 'construction paper' 0.699, 'creative writing class' 0.633; 'tissue paper' 0.017, 'colored paper' 0.024, 'research paper' 0.014, 'newspaper' 0.013, 'construction crew' 0.017, 'handwriting' 0.041."
+}

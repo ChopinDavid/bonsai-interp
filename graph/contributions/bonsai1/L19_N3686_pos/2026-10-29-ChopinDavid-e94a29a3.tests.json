@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e94a29a3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N3686+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N3686",
+   "pole": "+",
+   "label": "the closing word of a short qualifying aside that restates how something holds: 'too' in 'so, too,' and 'nature' in 'X in nature'; the bare 'so' and 'nature' as a topic stay low",
+   "fire": [
+    "Just as cities need planning, so, too, do small villages.",
+    "As the old king had feared, so, too, did his son fear the northern clans.",
+    "Workers want fair pay; so, too, do the managers above them.",
+    "Just as the river shapes the valley, so, too, does the wind shape the hills.",
+    "The disease is chronic in nature and can last for many years.",
+    "The changes were modest in nature and did not affect the budget.",
+    "Most of the complaints were minor in nature and easy to fix.",
+    "The conflict was largely economic in nature rather than religious."
+   ],
+   "quiet": [
+    "Just as cities need planning, small villages need it as well.",
+    "As the old king had feared, his son was attacked by the northern clans.",
+    "Workers want fair pay, and the managers above them agree.",
+    "Just as the river shapes the valley, the wind shapes the hills.",
+    "The disease lasts for many years and is hard to treat.",
+    "The changes were modest and did not affect the budget.",
+    "Most of the complaints were minor and easy to fix.",
+    "She loves nature and spends every weekend hiking in the hills."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.4 on ' too' after 'so,' and ' nature' after 'in'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'too' in 'so, too', 'nature' in 'in nature'",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 14.62, broad (0.9% of tokens >= 0.1 of max), peaks ' too' (so, too,), ' basis', ' means', ' compared', ' nature' (deciduous in nature), ' variety'. Probe: 'so, too,' 0.332, 'deciduous in nature' 0.270; 'on the basis of' 0.009, 'by means of' 0.025, 'in a variety of' 0.053, 'as compared to' 0.012. Only two of six configurations fired; a guess."
+}

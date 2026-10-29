@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-43549c79",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N7512+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N7512",
+   "pole": "+",
+   "label": "the line break that opens a multi-line list literal in Python (`NAME = [` then a newline), together with comment-block and docstring line breaks; inline lists and ordinary statements stay lower",
+   "fire": [
+    "import os\n\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n]",
+    "from setuptools import setup\n\nREQUIREMENTS = [\n    'requests',\n    'numpy',\n]",
+    "\"\"\"Known file types.\"\"\"\n\nEXTENSIONS = [\n    '.txt',\n    '.csv',\n]",
+    "import re\n\nPATTERNS = [\n    re.compile('a+'),\n    re.compile('b+'),\n]",
+    "# Servers we talk to.\nMIRRORS = [\n    'http://mirror1.example.org',\n    'http://mirror2.example.org',\n]",
+    "import logging\n\nHANDLERS = [\n    logging.StreamHandler(),\n]",
+    "class Config:\n    PLUGINS = [\n        'cache',\n        'auth',\n    ]",
+    "LANGUAGES = [\n    # (code, name)\n    ('en', 'English'),\n    ('de', 'German'),\n]"
+   ],
+   "quiet": [
+    "import os\n\nINSTALLED_APPS = ('django.contrib.admin', 'django.contrib.auth')",
+    "from setuptools import setup\n\nsetup(name='tool', version='0.1')",
+    "import sys\n\nprint(sys.argv[1])",
+    "import re\n\nmatch = re.search('a+', text)",
+    "import json\n\ndata = json.loads(raw)",
+    "import logging\n\nlogger = logging.getLogger(__name__)",
+    "class Config:\n    DEBUG = True\n    PORT = 8080",
+    "The shop sells apples, pears, plums and cherries in the autumn."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.6 on the ' [\\n' token; near misses below 0.3",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "newline opening a multi-line Python list",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 8.31, peaks '\\n' x11, '#', ' [\\n' x3 (ERROR_STATES = [, MYSQL_CHARACTER_SETS = [), '.\\n\\n' and '\"\"\"\\n' in docstrings. Probe: 'ALLOWED_HOSTS = [\\n' 0.604, 'COLORS = [\\n' 0.479, comment block 0.338, docstring 0.226; the inline list scored 0.270 on ' =', 'x = compute(a, b)' 0.111, prose 0.002-0.018."
+}

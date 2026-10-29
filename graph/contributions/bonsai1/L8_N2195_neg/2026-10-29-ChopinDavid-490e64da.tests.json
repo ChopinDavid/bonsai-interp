@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-490e64da",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N2195-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N2195",
+   "pole": "-",
+   "label": "the '=' (or 'by' in 'defined by') that introduces the definition of a symbol in mathematical prose ('where k = ...', 'defined by g(x) = ...'); code assignments and verbal definitions stay low",
+   "fire": [
+    "The expected number of trials is roughly m p, where p = 1/6 for a fair die.",
+    "Let g be the map defined by g(t) = t^2 - 1 on the interval.",
+    "The area grows like r^2 times a constant k, where k = pi/4 in this case.",
+    "Consider the sequence defined by a_n = 2a_{n-1} + 3 for n at least one.",
+    "The error is bounded by C h^2, where C = max |f''| over the interval.",
+    "The rate is then lambda N, where N = the number of active sites.",
+    "Let h be the function defined by h(x) = 3x - 7 for all real x.",
+    "The total cost is A + B, where A = the fixed fee and B is the variable part."
+   ],
+   "quiet": [
+    "The expected number of trials is roughly m p, where p is one sixth for a fair die.",
+    "Let g be the map that squares a number and subtracts one on the interval.",
+    "The area grows like r^2 times a constant k, which is pi over four in this case.",
+    "Consider the sequence in which each term is twice the previous one plus three.",
+    "The error is bounded by C h^2, and C depends on the second derivative.",
+    "The rate is then lambda times the number of active sites.",
+    "Let h be the function that triples a number and subtracts seven.",
+    "The total cost is the fixed fee plus the variable part of the bill."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0 on ' =' after 'where <symbol>' and on ' by' after 'defined'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'=' defining a symbol in math prose",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: max 13.31, peaks ' =' x16, mostly 'where c =', 'where N =', 'Where A =', and ' by' in 'defined by'. Probe: 'where c = 10/9' 0.703, 'defined by f(x)' 1.100, 't_i = sum_j' 0.287; code 'scale = c * I' 0.028; 'where c is ten over nine' 0.151, 'equals four' 0.018."
+}
