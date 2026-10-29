@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-28-moridinamael-fcb7e587",
+ "kind": "qc",
+ "neuron": "bonsai1/L18/N10678+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T00:24:33+00:00",
+ "recipe": {
+  "toolchain_commit": "e626222e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N10678_pos/2026-10-28-moridinamael-fcb7e587.tests.json"
+ },
+ "label": "the last piece of a rare Spanish, Italian, African or Nordic surname that the tokenizer splits (Bermude|z, Arriet|a, Haraldss|on); common surnames like Smith and long Slavic names (-ov, -ski, -icz) stay weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N10678_pos/2026-10-28-moridinamael-fcb7e587.tests.json",
+   "prereg_commit": "e626222e",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.271,
+     "peak": " Group"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.45,
+     "peak": "z"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.365,
+     "peak": "eta"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.266,
+     "peak": "sson"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.275,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.284,
+     "peak": "wo"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.164,
+     "peak": "ir"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.187,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.18,
+     "peak": " Lopez"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.08,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.161,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.16,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.283,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.245,
+     "peak": " Johnson"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.105,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.167,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.273,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "inverse-gmoo",
+   "look",
+   "neighbors",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "e626222e",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the last piece of a rare or foreign person's name that the tokenizer splits into several pieces, in any language (Bermude|z, Kristoffers|en); common names like Smith stay quiet"
+ }
+}
