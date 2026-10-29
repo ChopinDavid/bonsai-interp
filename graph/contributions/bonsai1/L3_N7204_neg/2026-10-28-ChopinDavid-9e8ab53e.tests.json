@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-9e8ab53e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N7204-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N7204",
+   "pole": "-",
+   "label": "dense early pole that is strongest on words broken across a line (doc- tors, ident ifications) and on OCR-damaged text; best guess: a word split mid-spelling by a stray hyphen or space; the same words written whole stay lower",
+   "fire": [
+    "The engi- neers said the gov- ernment had ap- proved the plan.",
+    "Our teach- er asked the stu- dents to re- write the essay.",
+    "The farm- ers com- plained that the har- vest was late.",
+    "The mu- seum will exhi- bit the paint- ings next month.",
+    "The coun- cil voted to im- prove the drain- age system.",
+    "His doc- tor recom- mended a long va- cation by the sea.",
+    "The ship- ping com- pany an- nounced new routes.",
+    "The re- port de- scribed the con- dition of the roads."
+   ],
+   "quiet": [
+    "The engineers said the government had approved the plan.",
+    "Our teacher asked the students to rewrite the essay.",
+    "The farmers complained that the harvest was late.",
+    "The museum will exhibit the paintings next month.",
+    "The council voted to improve the drainage system.",
+    "His doctor recommended a long vacation by the sea.",
+    "The shipping company announced new routes.",
+    "The report described the condition of the roads."
+   ]
+  }
+ ],
+ "predictions": "fire 0.20-0.40 on the broken fragments; the same sentences written whole below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "broken / hyphen-split words (dense)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: dense (10.5% of tokens reach 0.1 of max), gate-closed regime, top examples are OCR newspaper text with broken words ('t ions', 'deple tion', 'ident ifications', 'strain ing'). Probe: 'doc- tors … pa- tient … im- proving' 0.367, 'shown … indicated' 0.282, 'iterative procedures' 0.178, 'ident ifications' 0.174; plain sentences 0.046-0.090. Dense pole: an 8 + 8 test may not pass."
+}

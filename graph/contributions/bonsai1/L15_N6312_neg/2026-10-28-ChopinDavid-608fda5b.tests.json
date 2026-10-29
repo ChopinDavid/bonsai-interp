@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-608fda5b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N6312-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N6312",
+   "pole": "-",
+   "label": "a comparison marker ('as if', 'like') in technical documentation saying that software behaves or is used like something else (mounts volumes as if they were local, SQL like queries, accessed like the following): the pole marks the technical 'works like X' comparison; the same technical sentences without the comparison, and everyday 'as if', stay low",
+   "fire": [
+    "The driver presents the cloud bucket as if it were a folder on your laptop.",
+    "The tool supports filtering, sorting and Excel like formulas in the browser.",
+    "Settings in this module can be read like a normal Python dictionary.",
+    "The emulator lets old games run as if they were on the original console.",
+    "Each record can be accessed like an attribute on the result object.",
+    "The library offers caching, retries and curl like options for requests.",
+    "Remote files are opened as if they were stored on the local disk.",
+    "The config object behaves like a dictionary but also supports dot access."
+   ],
+   "quiet": [
+    "The driver presents the cloud bucket in a separate window on your laptop.",
+    "The tool supports filtering, sorting and simple formulas in the browser.",
+    "Settings in this module are loaded once when the program starts.",
+    "The emulator lets old games run on modern hardware without lag.",
+    "Each record is stored in its own row of the result table.",
+    "The library offers caching, retries and timeouts for requests.",
+    "Remote files are opened over the network and cached for an hour.",
+    "The config object is created once and shared across the app."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45 at like/as if; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "technical 'works like X' comparison",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: ' like' x5, ' if' ('as if they were extensions'), 'SQL like queries', 'accessed like the following', 'works as a context manager'. Probe: 'accessed like the following example' 0.434, 'as if they were local disks' 0.393, 'SQL like queries' 0.328, 'works as a context manager' 0.187; everyday 'danced as if' 0.066, 'I like coffee' 0.014, technical sentences without the comparison 0.133 and 0.055."
+}

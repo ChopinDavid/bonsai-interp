@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-aab296ea",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N3985-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N3985",
+   "pole": "-",
+   "label": "'in' (or the space before a number) that dates when an event happened or will happen, especially a return or resumption ('returned to playing in 2003', 'ready in 6 months'): the pole marks a time anchor for an event; 'in' with a place stays low",
+   "fire": [
+    "She went back to teaching full time in 2011 after her children grew up.",
+    "The band reunited and returned to touring in 2019.",
+    "The new bridge should be open in 18 months if funding holds.",
+    "He came back to competitive chess in 2015 after a long break.",
+    "The painting was given back to the museum in 1952.",
+    "The factory resumed production in 2021 after the floods.",
+    "Our shop will reopen in 3 weeks with a new menu.",
+    "After years abroad, he returned to acting in 2008."
+   ],
+   "quiet": [
+    "She went back to teaching full time in Denver after her children grew up.",
+    "The band reunited and returned to touring in Europe.",
+    "The new bridge should be open in the north of town soon.",
+    "He came back to competitive chess in Moscow after a long break.",
+    "The painting was given back to the museum in Vienna.",
+    "The factory resumed production in the old building after the floods.",
+    "Our shop will reopen in the mall with a new menu.",
+    "After years abroad, he returned to acting in London."
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.30 at 'in' or the year's space; place versions below 0.10",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'in' + time anchoring an event",
+ "unit_kind": "context",
+ "confidence": 0.2,
+ "notes": "Card: broad, weak; ' ' x6 (before years and month counts), ' in' x2, ' by', ' become'. Probe: 'returned to playing the piano in 2003' 0.313, 'variations will become apparent' 0.190, 'in 6 months' 0.151, 'by shifting each letter' 0.144; 'in 1946' only 0.077, 'in London' 0.077, 'in time' 0.095. Weak and inconsistent: this is a guess."
+}

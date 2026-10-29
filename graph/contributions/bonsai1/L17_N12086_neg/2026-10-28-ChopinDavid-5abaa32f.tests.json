@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-5abaa32f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N12086-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N12086",
+   "pole": "-",
+   "label": "a noun naming a proposed measure whose adoption is still pending (a bill, a proposal, plans, candidate vaccines under development): the pole marks policy or product proposals under consideration; the same words in non-proposal senses (a bill to pay, a duck's bill) and unrelated nouns stay low",
+   "fire": [
+    "Critics in the Senate say the new farm bill would hurt small growers.",
+    "Under the governor's proposal, teachers would get a five percent raise.",
+    "Both houses passed their own immigration bills before the summer recess.",
+    "Several dengue vaccines are being tested, but none is approved yet.",
+    "Supporters argue the zoning proposal will bring cheaper housing.",
+    "The mayor's budget proposals have stalled in the city council.",
+    "Under the draft legislation, landlords would have to register online.",
+    "Lawmakers amended the transit bill twice before the final vote."
+   ],
+   "quiet": [
+    "Critics in the Senate say the new stadium looks far too expensive.",
+    "Under the bright lights, the teachers posed for a group photo.",
+    "Both houses were closed to visitors during the summer heat.",
+    "Several dengue patients are being treated at the regional hospital.",
+    "She finally paid the gas bill after the second reminder.",
+    "The pelican scooped a fish up in its long bill.",
+    "Under the old bridge, kids were fishing for carp on Sunday.",
+    "Lawmakers ate lunch together twice before the final session."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.55 on bill/proposal/vaccine words; near misses below 0.10",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pending proposal / bill",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.4,
+ "notes": "Card: ' bill' x6, ' bills' x3, ' proposal' x2, ' vaccines' x2 ('Under the bill', 'the NALC's proposal', 'Several Zika vaccines are being created'). Probe: 'malaria vaccines are being developed' 0.542, 'reform bills' 0.434, 'the proposal is needed' 0.252, 'Under the bill' 0.238, 'union's plan' 0.122; electricity bill 0.003, duck's bill 0.016, weather 0.013."
+}

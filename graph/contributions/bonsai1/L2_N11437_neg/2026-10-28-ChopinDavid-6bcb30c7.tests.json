@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-6bcb30c7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N11437-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N11437",
+   "pole": "-",
+   "label": "' not' written as a separate word after 'can' ('can not'), and the German pronominal adverb ' dafür': an early lexical pole; 'cannot', 'does not' and the same German sentences without 'dafür' stay low",
+   "fire": [
+    "Unfortunately the old printer can not handle double-sided pages.",
+    "Small owls can not carry prey as heavy as a rabbit.",
+    "This coupon can not be combined with other offers.",
+    "Without a permit, visitors can not camp near the lake.",
+    "The museum guards can not let anyone touch the paintings.",
+    "Our software can not open files saved in the newer format.",
+    "Das ist ein gutes Beispiel dafür, wie man Energie spart.",
+    "Ich danke dir dafür, dass du mir geholfen hast."
+   ],
+   "quiet": [
+    "Unfortunately the old printer cannot handle double-sided pages.",
+    "Small owls do not carry prey as heavy as a rabbit.",
+    "This coupon is valid only on weekends.",
+    "Without a permit, visitors are not allowed to camp near the lake.",
+    "The museum guards won't let anyone touch the paintings.",
+    "Our software can open files saved in the older format.",
+    "Das ist ein gutes Beispiel, wie man Energie spart.",
+    "Ich danke dir, weil du mir geholfen hast."
+   ]
+  }
+ ],
+ "predictions": "fire 0.40-0.55 on ' not' or ' dafür'; near misses below 0.10",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' not' in 'can not' / ' dafür'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: weak pole (max 0.69), ' not' x11 (all 'can not'), ' dafür' x4. Probe: 'This key can not be used' 0.554, 'lynx can not tell' 0.405, 'dafür, dass' 0.492, 'geflochten, dafür einfach' 0.490; 'cannot' 0.035, 'does not' 0.041, 'can tell' 0.047. Two unrelated words; no shared meaning is claimed."
+}

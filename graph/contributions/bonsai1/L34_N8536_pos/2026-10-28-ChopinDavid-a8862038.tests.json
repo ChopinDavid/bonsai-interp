@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a8862038",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N8536+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N8536",
+   "pole": "+",
+   "label": "the interior or final piece of an acronym spelled as several tokens, especially one in parentheses after its spelled-out name (P|ACT, CAL|M, UN|IOS|IL): the pole marks a capitalized abbreviation being assembled piece by piece; acronyms that are a single token, and the same sentences without the acronym, stay low",
+   "fire": [
+    "Samples were stored by the glacier archive and climate inventory (GLACIER) team.",
+    "Patients filled in the outcome measurement system survey (PROMIS) every month.",
+    "The navy tested the radar under the long-range detection project (TRIDENT).",
+    "Funding came from the rural broadband innovation scheme (BRISK) in 2019.",
+    "Results were checked by the network of village unit monitors (NOVUM) each spring.",
+    "Children joined the school reading and kindness program (SPARKLE) after lunch.",
+    "Data were pooled across the regional oncology study groups (ROSG) in Europe.",
+    "Our lab joined the coastal erosion monitoring network (CEMNET) last year."
+   ],
+   "quiet": [
+    "Samples were stored by the American space agency (NASA) in Houston.",
+    "Patients filled in a short health survey every month at the clinic.",
+    "The navy tested the radar with help from the space agency (NASA) last year.",
+    "Funding came from the European Union (EU) in 2019 for rural roads.",
+    "Results were checked by the World Health Organization (WHO) each spring.",
+    "Children joined the school reading program after lunch on Tuesdays.",
+    "Data were pooled across several cancer study groups in Europe.",
+    "Our lab joined a coastal erosion monitoring network last year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.30-0.65 on the later acronym pieces; single-token acronyms and no-acronym versions below 0.25",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "multi-token acronym pieces",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: top examples are all mid-acronym pieces (PACT, CALM, PATROLS, UNIOSIL, EAGMST). Probe: (PACT) 0.627, (UNIOSIL) 0.638, (CALM) 0.444, (EAGMST) 0.397, FAST 0.294; NASA 0.048; same sentence without (PACT) 0.247 (the 'cost tool' wording leaked, so near misses here use single-token acronyms or plain wording). Acronym splits checked with the tokenizer."
+}

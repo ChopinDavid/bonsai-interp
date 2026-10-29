@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d50eaca3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N10127+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N10127",
+   "pole": "+",
+   "label": "the stem of a fairly rare verb or adjective of manner and intent (strive, juxtapose, stipulate, jot, geared, quintile): an early lexical pole on less-frequent words; common synonyms in the same slot (try, say, write, aimed) stay low",
+   "fire": [
+    "Every member of the team is striving to finish the bridge by spring.",
+    "The exhibit juxtaposes old farm tools with modern sculptures.",
+    "The lease stipulates that pets must be kept on a leash.",
+    "During the lecture I tried to jot down every new word.",
+    "Her latest workshop is geared toward first-time home buyers.",
+    "Families in the top quintile own most of the country's wealth.",
+    "Doctors still cannot pinpoint the cause of his headaches.",
+    "The sudden silence baffled everyone in the room."
+   ],
+   "quiet": [
+    "Every member of the team is working to finish the bridge by spring.",
+    "The exhibit places old farm tools next to modern sculptures.",
+    "The lease says that pets must be kept on a leash.",
+    "During the lecture I tried to write down every new word.",
+    "Her latest workshop is aimed at first-time home buyers.",
+    "Families in the top group own most of the country's wealth.",
+    "Doctors still cannot find the cause of his headaches.",
+    "The sudden silence surprised everyone in the room."
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.80 on the rare word; common synonyms below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "rare-word stems (strive, juxtap-, stip-)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Card: broad weak pole, ' juxtap' x5, ' stip' x3, ' quint' x2, ' baff' x2, ' pinpoint' x2, ' striving'. Probe: 'juxtapose' 0.801, 'striving to accomplish' 0.734, 'geared toward' 0.604, 'stipulates' 0.502, 'jot down' 0.497, 'quintile' 0.484; 'trying to accomplish' 0.072, 'says that' 0.049."
+}

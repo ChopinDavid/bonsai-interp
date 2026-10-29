@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e9711949",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N11935-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N11935",
+   "pole": "-",
+   "label": "a layer-dimension argument in neural-network code (hidden_size, out_channels, embedding_size, the unit count passed to a cell or layer): the pole marks the size of a model layer; other '_size' variables (page_size, font_size) and the same words in prose stay low",
+   "fire": [
+    "self.proj = nn.Linear(config.hidden_size, config.vocab_size)",
+    "layer = nn.Conv2d(in_channels, out_channels, kernel_size=3)",
+    "self.embed = nn.Embedding(vocab_size, embedding_size)",
+    "cell = tf.keras.layers.LSTMCell(256)",
+    "self.fc = nn.Linear(4 * hidden_size, hidden_size)",
+    "W = tf.Variable(tf.zeros([input_dim, hidden_units]))",
+    "self.gru = nn.GRU(embed_dim, hidden_size, batch_first=True)",
+    "block = ResidualBlock(out_channels, out_channels)"
+   ],
+   "quiet": [
+    "results = db.query(limit=page_size, offset=start)",
+    "label = tk.Label(root, text='Hi', font=('Arial', font_size))",
+    "buffer = bytearray(chunk_size)",
+    "print('Total rows:', len(rows))",
+    "with open(path, 'r') as f: data = f.read()",
+    "thumb = img.resize((width, height))",
+    "The model has a large hidden layer and many channels.",
+    "queue = deque(maxlen=max_items)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45 on the dimension token; near misses below 0.10",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "NN layer-dimension argument",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: '_size' x5, ' hidden' x2, '_channels', 'GRUCell(2)', '[2*hidden_size, 2*hidden_size]'. Probe: 'nn.LayerNorm(config.hidden_size' 0.408, 'GRUCell(128)' 0.355, '[2*hidden_size, hidden_size]' 0.351, 'ResidualConvUnit(out_channels)' 0.261; 'page_size' 0.016, 'font_size = 12' 0.012, prose 'hidden size of the model' 0.039."
+}

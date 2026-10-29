@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-14013bb9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N10681-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N10681",
+   "pole": "-",
+   "label": "' the' as the article right after a preposition or particle (to the, behind the, over to the): the pole reads 'the' that opens a prepositional object; other determiners in the same slot, and 'the' after 'because', stay low",
+   "fire": [
+    "After the storm, the family drove back to the house to check the damage.",
+    "Years of planning went on behind the walls of the old factory.",
+    "When the shift ended, she carried the boxes over to the truck.",
+    "He spent most of his childhood near the harbor in Lisbon.",
+    "Every evening the old man walked down to the river to fish.",
+    "The volunteers handed the donations over to the shelter on Friday.",
+    "They finally moved from the city to the countryside last June.",
+    "Over time the students grew used to the noise of the trains."
+   ],
+   "quiet": [
+    "Once it stopped raining, the family drove back to a motel to wait it out.",
+    "Years of planning went on behind closed doors at that factory.",
+    "When her shift ended, she carried two boxes over to her car.",
+    "He spent most of his childhood near a harbor in Portugal.",
+    "Every evening my grandfather walked down to his boat to fish.",
+    "The volunteers handed their donations over to a shelter on Friday.",
+    "They finally moved from Chicago to a farm last June.",
+    "Over time, students grew used to trains rattling past."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.40 on ' the'; same sentences with a/his/her in that slot below 0.12",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' the' after a preposition",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: broad, weak (max 0.29), ' the' x25 of the top 32, mostly after to/of/behind. Probe: 'moving to the coast' 0.373, 'behind the curtain' 0.306, 'over to the city' 0.292; 'because the price' 0.031, 'sent to a regional office' 0.097, code 0.041."
+}
