@@ -4,10 +4,10 @@
  "layer": 1,
  "index": 5539,
  "pole": "+",
- "label": "the word piece 'aste'/'aster'/'asted' when it is split off a short prefix (t|aster, ro|aster, -w|aste, dism|asted), as against the same or similar words that are a single token (toaster, master, waste)",
+ "label": "the word piece 'aste'/'aster'/'asted' split off a prefix (t|aster, e-w|aste, dist|aste, dism|asted), strong; the same sounds as one whole token (waste, master, board, toaster) are weaker or silent",
  "short": "split piece 'aste(r)'",
  "kind": "word",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 1
    },
    "contribution": "2026-10-24-ChopinDavid-c0994193"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N5539_pos/2026-10-29-moridinamael-190f0b94.tests.json",
+   "prereg_commit": "4e59a293",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.733,
+     "peak": "aster"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.61,
+     "peak": "aste"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.693,
+     "peak": "aste"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.616,
+     "peak": "asted"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.453,
+     "peak": "aster"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.341,
+     "peak": "aster"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.394,
+     "peak": "aster"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.348,
+     "peak": "asted"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.057,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.087,
+     "peak": " plate"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.062,
+     "peak": " point"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": " drifted"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " hack"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": "ubs"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.034,
+     "peak": " off"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.531,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-190f0b94"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-24-ChopinDavid-c0994193",
    "the word piece 'aste'/'aster'/'asted' when it is split off a short prefix (t|aster, ro|aster, -w|aste, dism|asted), as against the same or similar words that are a single token (toaster, master, waste)",
    "held"
+  ],
+  [
+   "2026-10-29-moridinamael-190f0b94",
+   "the word piece 'aste'/'aster'/'asted' split off a prefix (t|aster, e-w|aste, dist|aste, dism|asted), strong; the same sounds as one whole token (waste, master, board, toaster) are weaker or silent",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-24-ChopinDavid-c0994193"
+  "2026-10-24-ChopinDavid-c0994193",
+  "2026-10-29-moridinamael-190f0b94"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.0583,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 5646
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
