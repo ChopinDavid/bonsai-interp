@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-6dbc335e",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N612-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N612",
+   "pole": "-",
+   "label": "'came' in 'X came to mean / refer to / encompass / represent' — a word, name or symbol whose sense shifted over time; the plain present or original sense ('the term means', 'originally meant') and literal 'came to the party' stay quiet.",
+   "fire": [
+    "In medieval Latin the word gradually came to mean any written record.",
+    "Over time the label came to cover all sparkling wines from the region.",
+    "By the 1800s the title came to denote a minor official.",
+    "Later the phrase came to describe any reckless gamble.",
+    "Eventually the badge came to stand for loyalty to the crown.",
+    "In English the term came to include both rivers and canals.",
+    "With time the nickname came to refer to the whole team.",
+    "Within a century the color came to signal mourning."
+   ],
+   "quiet": [
+    "In medieval Latin the word meant a written record of a sale.",
+    "Today the label covers all sparkling wines from the region.",
+    "In the 1800s the title was given to a minor official.",
+    "Originally the phrase described a reckless gamble at cards.",
+    "The badge stands for loyalty to the crown.",
+    "In English the term includes both rivers and canals.",
+    "Fans use the nickname for the whole team.",
+    "The guests came to the funeral dressed in black."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5; near misses below 0.1; median fire may be close to 0.20",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'came to mean' (a sense shifting over time)",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.5,
+ "notes": "Card: peaks on ' came' x4, ' come' x4, ' into' x4, ' brought' x4, ' drawn' x2 (the word also came to be used for; the term came to encompass; has come to be regarded). Exploratory probe: 'came to encompass/mean/refer/represent' 0.29-0.53; 'came to be used/known' 0.09-0.18; 'has come to signify' 0.04; 'drawn into political debates' 0.32; literal 'came to the party' 0.03. The test keeps to 'came to <verb of meaning>'."
+}

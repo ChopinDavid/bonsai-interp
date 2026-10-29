@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-b5348c82",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N4656+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N4656",
+   "pole": "+",
+   "label": "Dense unit with no specific trigger: on for most tokens (78% of corpus tokens reach 0.1 of max), strongest on ' the' and other function words; best guess tested here: ' the' in ordinary prose versus the same prose without 'the'.",
+   "fire": [
+    "They walked along the beach until sunset.",
+    "My brother fixed the fence last weekend.",
+    "We waited outside the station for an hour.",
+    "She put her keys on the shelf by the door.",
+    "Our team finished the project ahead of schedule.",
+    "He read the letter twice before answering.",
+    "The kids played in the garden all afternoon.",
+    "I found my old notes under the bed."
+   ],
+   "quiet": [
+    "They walked along a beach until sunset.",
+    "My brother fixed our fence last weekend.",
+    "We waited outside a station for an hour.",
+    "She put her keys on a shelf by her door.",
+    "Our team finished its project ahead of schedule.",
+    "He read her letter twice before answering.",
+    "Kids played in our garden all afternoon.",
+    "I found my old notes under my bed."
+   ]
+  }
+ ],
+ "predictions": "everything 0.4-0.8; expected to fail (dense)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "dense (function words, ' the')",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card flags dense (78% of tokens reach 0.1 of max, 32% reach 0.3) and a gate-closed regime (-x- echo 100%); top peaks ' the' x13, '?\\n' x6, ' его' x3. Exploratory probe: every sentence 0.33-0.77, including code. An 8 + 8 test is expected to fail; recorded as dense / positional."
+}

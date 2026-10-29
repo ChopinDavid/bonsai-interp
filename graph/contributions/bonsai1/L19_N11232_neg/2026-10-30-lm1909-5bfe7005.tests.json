@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-5bfe7005",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N11232-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N11232",
+   "pole": "-",
+   "label": "Digits inside ADS Bibcode identifiers in reference lists (the volume and page fields of strings like 'Bibcode:1988Natur.331..147G'); the same references with only a DOI, PMID or ISSN stay quiet.",
+   "fire": [
+    "Science 287 (5459): 1773–1776. Bibcode:2000Sci...287.1773C. doi:10.1126/science.287.5459.1773.",
+    "Icarus 105 (2): 400–416. Bibcode:1993Icar..105..400W.",
+    "Astron. J. 128 (3): 1364–1390. Bibcode:2004AJ....128.1364M.",
+    "J. Geophys. Res. 96: 7523–7530. Bibcode:1991JGR....96.7523H.",
+    "Mon. Not. R. Astron. Soc. 351 (4): 1151–1160. Bibcode:2004MNRAS.351.1151K.",
+    "Phys. Rev. Lett. 81 (12): 2582. Bibcode:1998PhRvL..81.2582R.",
+    "Planet. Space Sci. 58: 1–12. Bibcode:2010P&SS...58....1T.",
+    "Nature 414 (6862): 338–341. Bibcode:2001Natur.414..338L."
+   ],
+   "quiet": [
+    "Science 287 (5459): 1773–1776. doi:10.1126/science.287.5459.1773. PMID 10710299.",
+    "Icarus 105 (2): 400–416. ISSN 0019-1035.",
+    "Astron. J. 128 (3): 1364–1390. Retrieved 14 March 2011.",
+    "J. Geophys. Res. 96: 7523–7530. doi:10.1029/91JB00102.",
+    "Mon. Not. R. Astron. Soc. 351 (4): 1151–1160. arXiv:astro-ph/0403422.",
+    "Phys. Rev. Lett. 81 (12): 2582. PMID 9908791.",
+    "Planet. Space Sci. 58: 1–12. Archived from the original on 2 May 2009.",
+    "Nature 414 (6862): 338–341. doi:10.1038/35104547."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.95; near misses below 0.15 (the arXiv id is the riskiest)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "digits in Bibcode identifiers",
+ "unit_kind": "contextual",
+ "confidence": 0.8,
+ "notes": "Card: every top example is the last digit of a Bibcode page field (..601D, ..163L, ..147G). Exploratory probe: Bibcodes 0.68-0.95, same citations with DOI only 0.10, page number in prose 0.07."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-63403394",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N2022-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N2022",
+   "pole": "-",
+   "label": "The author-attribution line in a code file's header comment ('# Author: Name', '# Written by Name <email>', '# By Name', 'Developer: Name'), firing around the label and the end of the name; header comments that describe the file without naming an author stay quiet.",
+   "fire": [
+    "#!/usr/bin/env python\n# Author: Priya Raman\n# Created: 2017-05-02\nimport json",
+    "# backup.sh\n# Written by Marco Vitale <marco@example.org>\n# License: MIT",
+    "# Scheduler module\n# By Lena Hoffmann\n# (c) 2015\nimport time",
+    "# -*- coding: utf-8 -*-\n# Developer: Kwame Mensah\nimport os",
+    "# Image resizer\n# Maintainer: Sofia Lindgren <sofia@example.net>\nfrom PIL import Image",
+    "\"\"\"Simple chat bot.\n\nAuthor: Daniel Okoro\n\"\"\"\nimport random",
+    "# Copyright 2012 by Hiro Tanaka\n# All rights reserved.\nimport sys",
+    "# Weather scraper\n# Coded by Ana Ruiz, 2019\nimport requests"
+   ],
+   "quiet": [
+    "#!/usr/bin/env python\n# Purpose: parse the config\n# Created: 2017-05-02\nimport json",
+    "# backup.sh\n# Copies the home folder to the NAS\n# License: MIT",
+    "# Scheduler module\n# Runs queued jobs every minute\n# Version 2\nimport time",
+    "# -*- coding: utf-8 -*-\n# Helper functions for the parser\nimport os",
+    "# Image resizer\n# Requires Pillow 8 or later\nfrom PIL import Image",
+    "\"\"\"Simple chat bot.\n\nReplies with a random greeting.\n\"\"\"\nimport random",
+    "# Settings for the test suite\n# Edit these before running.\nimport sys",
+    "# Weather scraper\n# Fetches the daily forecast\nimport requests"
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "author line in a code file header",
+ "unit_kind": "contextual / format",
+ "confidence": 0.6,
+ "notes": "Card: top examples are author lines at the top of code files ('# Developer : Hamdy...', '# Written by Wil Cooley <...>', '# By Tomas Pollak'), peaking on ' :', '\\n', '>\\n' after the name. Exploratory probe: four author headers 0.33-0.38; a header without author 0.07; prose 'written by' 0.02."
+}

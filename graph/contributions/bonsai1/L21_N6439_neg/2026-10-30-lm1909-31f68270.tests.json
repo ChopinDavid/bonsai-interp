@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-31f68270",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N6439-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N6439",
+   "pole": "-",
+   "label": "In code, an identifier piece repeated from a line above in a parallel statement (merge_all ... merge_all, MenuItem(_('Accept')) ... MenuItem(_('Decline')), <img ... <img), firing on the repeated piece; the same code where the second line uses a new identifier stays quiet.",
+   "fire": [
+    "    self.train_op = tf.summary.merge_all(key='train')\n    self.valid_op = tf.summary.merge_all(key='valid')\n",
+    "        ok_button = Button(_('Save'), icon_name='document-save')\n        ok_button.show()\n        no_button = Button(_('Discard'), icon_name='edit-delete')\n",
+    "    def test_upper(self):\n        source = '<span id=\"a\">Hi</span>'\n        target = '<span id=\"A\">HI</span>'\n",
+    "        if refresh:\n            self.reload_cache_from_db(force=True)\n        else:\n            self.reload_cache_from_db()\n",
+    "    x_train = scaler.fit_transform(x_train)\n    x_test = scaler.fit_transform(x_test)\n",
+    "        with Session().set_options(debug=True), \\\n             Session().set_options(trace=False):\n            run()\n",
+    "    left_panel = Panel(parent, width=200, title='Files')\n    right_panel = Panel(parent, width=400, title='Preview')\n",
+    "        self.events_all = load_events(path, kind='all')\n        self.events_new = load_events(path, kind='new')\n"
+   ],
+   "quiet": [
+    "    self.train_op = tf.summary.merge_all(key='train')\n    self.saver = tf.train.Saver(max_to_keep=3)\n",
+    "        ok_button = Button(_('Save'), icon_name='document-save')\n        ok_button.show()\n        window.resize(400, 300)\n",
+    "    def test_upper(self):\n        source = '<span id=\"a\">Hi</span>'\n        expected = len(source) + 2\n",
+    "        if refresh:\n            self.reload_cache_from_db(force=True)\n        else:\n            log.info('skipped')\n",
+    "    x_train = scaler.fit_transform(x_train)\n    model = LogisticRegression(C=1.0)\n",
+    "        with Session().set_options(debug=True):\n            result = compute(values)\n            print(result)\n",
+    "    left_panel = Panel(parent, width=200, title='Files')\n    status = 'ready'\n",
+    "        self.events_all = load_events(path, kind='all')\n        self.count = 0\n"
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.6; near misses below 0.05; may fail on the median",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "repeated identifier in parallel code lines",
+ "unit_kind": "code / repeat",
+ "confidence": 0.35,
+ "notes": "Card: no single token; peaks on code identifier pieces ('_db', '_events', 'Story', '_all', \"'),\", '_context', 'img'), several of them repeats of a piece earlier in the snippet. Exploratory probe on one-line snippets: all below 0.03; multi-line: merge_all repeated 0.65, MenuItem(_('Decline')) after an Accept line 0.28, repeated '<img' 0.20, non-repeating multi-line code 0.01. Low confidence."
+}

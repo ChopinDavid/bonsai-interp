@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-57e4c8fe",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N80-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N80",
+   "pole": "-",
+   "label": "Pairing for family or offspring: being married (' married', German 'verheiratet') and animal breeding (' breeding'); the same people and animals described without marriage or breeding stay quiet.",
+   "fire": [
+    "Dr. Patel is married and has three children.",
+    "Our new neighbour is married to a pilot.",
+    "Sie ist seit zehn Jahren verheiratet.",
+    "Der Lehrer ist verheiratet und wohnt in Köln.",
+    "The ranch is known for breeding quarter horses.",
+    "Salmon return upstream to their breeding grounds.",
+    "The kennel stopped breeding dogs last year.",
+    "My cousin is married with two young daughters."
+   ],
+   "quiet": [
+    "Dr. Patel is a surgeon and has three cars.",
+    "Our new neighbour is friends with a pilot.",
+    "Sie ist seit zehn Jahren Lehrerin.",
+    "Der Lehrer ist freundlich und wohnt in Köln.",
+    "The ranch is known for training quarter horses.",
+    "Salmon return upstream every autumn after years at sea.",
+    "The kennel stopped boarding dogs last year.",
+    "My cousin is busy with two young puppies."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.6; near misses below 0.1; may fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "being married / animal breeding",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.4,
+ "notes": "Card: peaks on ' married' x6, ' family' x3, 'eding' (breeding), German 'verheir|at|et', Arabic 'تزوّج'. Exploratory probe: verheiratet 0.50-0.58, breeding 0.33-0.38, 'is married with' 0.29, 'married to' 0.19, 'married his partner' 0.07, 'large family' 0.22. Weak and uneven; the test may fail on the median."
+}

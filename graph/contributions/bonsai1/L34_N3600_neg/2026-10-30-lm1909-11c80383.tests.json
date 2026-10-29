@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-11c80383",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N3600-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N3600",
+   "pole": "-",
+   "label": "Text that writes negatives or subtraction with the Unicode minus sign '−' (U+2212): the pole fires on the tokens just before a '−' (and right after one) in such text; the same text typed with the ASCII hyphen-minus '-' stays quiet.",
+   "fire": [
+    "The forecast calls for a low of −9 °C (16 °F) tonight and −12 °C on Friday.",
+    "If x = −3, then 2x − 5 equals −11.",
+    "The station recorded −40 °F, which is also −40 °C, the coldest day of the decade.",
+    "Its binding energy is −13.6 eV, and the next level sits at −3.4 eV.",
+    "After the fee the balance stood at −250 dollars, and later at −310.",
+    "Solve for y: y − 7 = −2, so y = 5.",
+    "Apparent magnitudes range from −1.5 for Sirius to −26.7 for the Sun.",
+    "The measured moment is below 8.7 × 10−29 e cm, improving on earlier 10−27 limits."
+   ],
+   "quiet": [
+    "Tonight's forecast calls for a low of -9 °C (16 °F), with -12 °C expected Friday.",
+    "If x = -3, then 2x - 5 equals -11.",
+    "The station logged -40 °F, which also equals -40 °C, the coldest day in ten years.",
+    "Its binding energy is -13.6 eV, while the next level sits at -3.4 eV.",
+    "Once the fee was charged the balance was -250 dollars, and later -310.",
+    "Solve for y: y - 7 = -2, giving y = 5.",
+    "Brightness values run from -1.5 for Sirius to -26.7 for the Sun.",
+    "The measured moment is below 8.7 × 10^-29 e cm, improving on older 10^-27 limits."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9; ASCII near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Unicode minus sign '−' text",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.7,
+ "notes": "Card: top examples all sit next to a U+2212 minus (−16 °F (−27 °C); a − b = a + (−b); 10−28); the + pole's output promotes the ASCII ' -' and suppresses ' −', so the - pole pushes toward the Unicode minus. Exploratory probe: Unicode versions 0.57-0.85, identical ASCII versions 0.006-0.023."
+}

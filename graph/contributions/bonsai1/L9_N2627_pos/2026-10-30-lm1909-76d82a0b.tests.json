@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-76d82a0b",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N2627+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N2627",
+   "pole": "+",
+   "label": "Youth subcultures and alternative music or lifestyle scenes (punk, grunge, acid jazz, skateboarding, hip-hop and graffiti, pot-smoking hippies), firing on the scene's name; mainstream or establishment pastimes in the same frames stay quiet.",
+   "fire": [
+    "As a teenager he lived for hardcore punk shows and skate parks.",
+    "The band mixed surf rock with garage psych and a bit of grunge.",
+    "She spent the nineties in the goth scene, dyeing her hair black.",
+    "Their zine covered acid jazz, trip-hop and underground raves.",
+    "The kids on our block were into breakdancing and graffiti.",
+    "My uncle was a stoner who followed the Grateful Dead around the country.",
+    "In art school he discovered emo music and skateboarding.",
+    "The festival drew hippies, bikers and heavy metal fans."
+   ],
+   "quiet": [
+    "As a teenager he lived for chess tournaments and the debate club.",
+    "The orchestra mixed Brahms with Mozart and a bit of Haydn.",
+    "She spent the nineties in the church choir, singing every Sunday.",
+    "Their newsletter covered opera, ballet and chamber concerts.",
+    "The kids on our block were into baseball and swimming.",
+    "My uncle was a banker who followed the stock market every day.",
+    "In art school he discovered oil painting and pottery.",
+    "The festival drew families, gardeners and flower show fans."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.8; near misses below 0.1; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "youth subcultures / alternative scenes",
+ "unit_kind": "semantic",
+ "confidence": 0.35,
+ "notes": "Card: no single token; peaks on ' jazz' (acid jazz), ' жизнь' (sex life), ' Pie' (American Pie), ' on' (smokes marijuana on), ' meme' (kink meme), 'vana' (Nirvana). The - pole is a strong tattoo unit. Exploratory probe: acid jazz 0.83, punk/skateboarding 0.83, marijuana 0.82, kink meme 0.70, grunge 0.65, hip-hop/graffiti 0.44, pot-smoking hippies 0.31, but ecstasy at a rave 0.03, LSD 0.17, sex life 0.19; chess/classical 0.02-0.07. A list-like label; drugs and sex were inconsistent, so the test keeps to scenes."
+}

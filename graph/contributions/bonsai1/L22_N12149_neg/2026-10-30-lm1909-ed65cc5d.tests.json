@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-ed65cc5d",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N12149-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N12149",
+   "pole": "-",
+   "label": "The opening of an aside that interrupts a clause mid-phrase: the ' (' or comma-phrase that starts a parenthetical such as '(to us)', '(issued in 2015)' or ', after the war,', before the sentence resumes; the same content placed outside the clause stays quiet.",
+   "fire": [
+    "My aunt's habit (endearing to some, maddening to others) of humming at dinner never changed.",
+    "We finally bought a used (but nearly new) car for the trip.",
+    "The widespread use, after the war, of penicillin cut deaths sharply.",
+    "Critics pointed to the company's statement (issued in 2015) that nothing had changed.",
+    "The old (to me, at least) building on the corner has been sold.",
+    "His plan (which nobody had actually read) was approved by the board.",
+    "The rapid spread, during the 1990s, of mobile phones changed daily life.",
+    "Her quiet (some said cold) manner made the interviews difficult."
+   ],
+   "quiet": [
+    "My aunt kept humming at dinner, and the habit never changed.",
+    "We finally bought a used car for the trip to the coast.",
+    "Penicillin came into wide use after the war and cut deaths sharply.",
+    "Critics pointed to a statement the company issued in 2015.",
+    "The old building on the corner has been sold to a developer.",
+    "Nobody had read his plan, but the board approved it anyway.",
+    "Mobile phones spread rapidly in the 1990s and changed daily life.",
+    "Her quiet manner made the interviews difficult for the reporters."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "start of a mid-clause parenthetical aside",
+ "unit_kind": "contextual / syntactic",
+ "confidence": 0.65,
+ "notes": "Card: peaks on ' (' x10 and commas that open an interruption (habit (undoubtedly annoying...) of; adoption, after 1900, of; new (to us) house). Exploratory probe: asides 0.47-0.95, same sentences without the aside 0.004-0.07."
+}
