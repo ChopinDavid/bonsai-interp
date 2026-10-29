@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-dfb3f290",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N7163+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N7163",
+   "pole": "+",
+   "label": "Digits of the end page in a citation's page range (389–⟦3⟧99, 133–⟦1⟧45, 1269–1⟦2⟧80), after the dash; citations that give a single page and non-citation ranges stay quiet.",
+   "fire": [
+    "Am. J. Bot. 88 (4): 562–575. doi:10.2307/2657047.",
+    "Ecology 79: 2032–2040.",
+    "J Neurosci. 2010;30:4512–4521.",
+    "Proc. R. Soc. B 271: 1185–1192. PMID 15306369.",
+    "Cell 125 (2): 315–326.",
+    "Evolution 58 (3): 641–654.",
+    "Brain Res. 1998;812:113–121.",
+    "Annu. Rev. Ecol. Syst. 31: 343–366."
+   ],
+   "quiet": [
+    "Am. J. Bot. 88 (4): 562. doi:10.2307/2657047.",
+    "Ecology 79: 2032.",
+    "J Neurosci. 2010;30:4512.",
+    "Proc. R. Soc. B 271: 1185. PMID 15306369.",
+    "Cell 125 (2): 315.",
+    "Evolution 58 (3): 641.",
+    "Brain Res. 1998;812:113.",
+    "Annu. Rev. Ecol. Syst. 31: 343."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.75; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "end-page digits of a citation page range",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Card: every top example is a digit after the dash of a journal page range (344-3⟦4⟧9, 597-6⟦0⟧7, 133–⟦1⟧45, 1269–1⟦2⟧80, 389–⟦3⟧99). Exploratory probe: page ranges 0.52-0.71; single page 0.09-0.15; 'aged 3–5' 0.006."
+}

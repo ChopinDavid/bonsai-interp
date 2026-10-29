@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a60c2be2",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N8347-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N8347",
+   "pole": "-",
+   "label": "Digits that continue a number whose first digit is 3 (the second 3 of 3T3, the 3306 port, localhost:3000, section 333): the pole reacts to a preceding '3' inside the same number; the same numbers starting with another digit stay quiet.",
+   "fire": [
+    "The default MySQL port is 3306 on most servers.",
+    "Open localhost:3000 in your browser to see the app.",
+    "NIH 3T3 cells were seeded at low density.",
+    "The petition cites section 333 of the act.",
+    "The order number is 3381 in our records.",
+    "The hall seats 3500 people for concerts.",
+    "Call extension 3127 for the front desk.",
+    "The model 3390 printer is out of toner."
+   ],
+   "quiet": [
+    "The default Postgres port is 5432 on most servers.",
+    "Open localhost:8080 in your browser to see the app.",
+    "HeLa cells were seeded at low density.",
+    "The petition cites section 542 of the act.",
+    "The order number is 7781 in our records.",
+    "The hall seats 4500 people for concerts.",
+    "Call extension 6127 for the front desk.",
+    "The model 5590 printer is out of toner."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.85; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "digits after a leading 3 in a number",
+ "unit_kind": "token / contextual",
+ "confidence": 0.6,
+ "notes": "Card: '3' x18 of the top 32, mostly a digit after an earlier 3 in the same number (3T⟦3⟧, 310⟦3⟧848, 315⟦3⟧6000, 330⟦6⟧, 300⟦0⟧, 33⟦3⟧). Exploratory probe: 3T3 0.85, 3306 0.40, 3000 0.42, 3103848 0.26; 5432 0.06, 8080 0.01, 7103848 0.03."
+}

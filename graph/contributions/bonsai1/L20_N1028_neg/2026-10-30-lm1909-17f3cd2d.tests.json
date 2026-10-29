@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-17f3cd2d",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N1028-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N1028",
+   "pole": "-",
+   "label": "The punctuation that closes a press-release dateline ('DUBLIN, Ohio, 10 October 2012—', 'CHAMPAIGN, Ill. -', 'SAN DIEGO, Dec. 27, 2016 –', '(BUSINESS WIRE)--') before the story starts; the same places and dates in ordinary prose stay quiet.",
+   "fire": [
+    "BOSTON, Mass., March 3, 2015—Researchers at the hospital reported a new treatment.",
+    "AUSTIN, Texas (April 9, 2018) – The city council approved the new budget.",
+    "SEATTLE, WA - The company announced record profits on Tuesday.",
+    "LONDON, 12 June 2019 — The museum will reopen its west wing next month.",
+    "PALO ALTO, Calif.--(BUSINESS WIRE)--The startup raised $40 million.",
+    "DENVER, Colo., Nov. 2, 2014 /PRNewswire/ -- Health officials urged flu shots.",
+    "TORONTO, Ontario — The university named a new president on Friday.",
+    "MADISON, Wis. — A new study finds that bees prefer purple flowers."
+   ],
+   "quiet": [
+    "Researchers at a Boston hospital reported a new treatment in March 2015.",
+    "In April 2018 the Austin city council approved the new budget.",
+    "The Seattle company announced record profits on Tuesday.",
+    "The London museum will reopen its west wing in July 2019.",
+    "A Palo Alto startup said it had raised $40 million.",
+    "In November 2014 health officials in Denver urged flu shots.",
+    "The university in Toronto named a new president on Friday.",
+    "A new study from Madison finds that bees prefer purple flowers."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "end of a press-release dateline",
+ "unit_kind": "format / contextual",
+ "confidence": 0.7,
+ "notes": "Card: peaks on '.\\n', '.', ' -', ')—', '—', '.--' right after news datelines (DUBLIN, Ohio, ... 2012—; CHAMPAIGN, Ill. -; FOSTER CITY, Calif.--(BUSINESS WIRE)--) and after 'For more information, visit www...'. Exploratory probe: datelines 0.35-0.63; the same facts in prose 0.005-0.055."
+}

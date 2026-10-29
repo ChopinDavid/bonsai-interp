@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-fdf77e3b",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N9364+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N9364",
+   "pole": "+",
+   "label": "Low-confidence guess: the name of a technical concept in study-notes or textbook prose about psychology and medicine (Gestalt Psychology, ankylosing spondylitis, relative species abundance), firing on the term itself; the same sentences with a plain description stay quiet.",
+   "fire": [
+    "The theory grew out of Behaviourist Psychology in the 1950s.",
+    "Patients with rheumatoid arthritis often report morning stiffness.",
+    "Outline two criticisms of cognitive dissonance theory.",
+    "A lack of vitamin D can cause osteomalacia in adults.",
+    "Researchers in Developmental Psychology study how infants learn.",
+    "Symptoms of multiple sclerosis vary between patients.",
+    "Describe the role of operant conditioning in phobias.",
+    "Ecologists measure species richness in each plot."
+   ],
+   "quiet": [
+    "The theory grew out of earlier work in the 1950s.",
+    "Patients with this condition often report morning stiffness.",
+    "Outline two criticisms of the theory.",
+    "A lack of vitamin D can cause problems in adults.",
+    "Researchers at the university study how infants learn.",
+    "Symptoms vary between patients.",
+    "Describe the role of learning in phobias.",
+    "Ecologists count plants in each plot."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "technical term in study notes (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Broad pole (2.7% of tokens above 0.1). Card: ' Psychology' x2, ' species', 'pond' (spondylitis), ' sc' (scurvy), ' de' (desensitisation), ' refugees'. Exploratory probe weak: spondylitis 0.26, Gestalt Psychology 0.17, scurvy 0.06, desensitisation 0.01. Expected to fail."
+}

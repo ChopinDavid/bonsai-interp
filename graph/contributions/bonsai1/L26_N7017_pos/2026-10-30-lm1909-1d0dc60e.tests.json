@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-1d0dc60e",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N7017+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N7017",
+   "pole": "+",
+   "label": "The start of a relative clause that says how things are or ought to be ('the way things are going', 'all the things we have to do', 'what he should be doing'), firing on 'things' or the clause subject; the same nouns as plain objects stay quiet.",
+   "fire": [
+    "Nobody likes the way things are run at the office.",
+    "There are so many things we need to fix before Friday.",
+    "Critics keep telling the coach what he ought to do.",
+    "She worries about how things will turn out.",
+    "Make a list of the things you have to finish today.",
+    "Everyone has an opinion on what the team should change.",
+    "I like the way things are going with the project.",
+    "We talked about the things that really matter in life."
+   ],
+   "quiet": [
+    "Nobody likes the new manager at the office.",
+    "There are so many broken chairs in the hall.",
+    "Critics keep praising the coach in the papers.",
+    "She worries about her exams next week.",
+    "Make a list of groceries for the trip.",
+    "Everyone has an opinion on the team's new kit.",
+    "I like the new design for the project.",
+    "We talked about our holiday plans over dinner."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "how things are / ought to be (relative clause)",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.4,
+ "notes": "Card: peaks on ' you' x5, ' we' x3, ' what' x3, 'things' (I dream of things that never were; all the things we have to do; the way things are going; what Tiger should be doing); output promotes ' what', ' ought', ' should'. Exploratory probe: 0.16-0.45 on such clauses, 0.001 on plain objects."
+}

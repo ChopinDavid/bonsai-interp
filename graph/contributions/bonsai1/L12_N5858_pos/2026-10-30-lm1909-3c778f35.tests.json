@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3c778f35",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5858+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N5858",
+   "pole": "+",
+   "label": "A verb of wanting, liking or willingness under negation ('don't want to', 'not someone I'd like to have', 'wouldn't push', 'don't feel like'), firing on the verb or the word after it; the same sentences without the negation stay low.",
+   "fire": [
+    "Honestly, I don't want to talk about it anymore.",
+    "She's not a person I'd like to work with again.",
+    "We wouldn't recommend that hotel to anyone.",
+    "After the long shift he didn't feel like cooking.",
+    "They never wanted to move out of the city.",
+    "I really wouldn't bet on the weather this weekend.",
+    "My kids don't like it when I sing in the car.",
+    "He didn't care to explain why he was late."
+   ],
+   "quiet": [
+    "Honestly, I want to talk about it some more.",
+    "She's a person I worked with years ago.",
+    "We recommended that hotel to our friends.",
+    "After the long shift he started cooking dinner.",
+    "They moved out of the city in the spring.",
+    "I checked the weather for this weekend.",
+    "My kids laugh when I sing in the car.",
+    "He explained why he was late."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "negated want / like / willingness",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.65,
+ "notes": "Card: peaks on ' want' x5, ' good' x5, ' have', ' not', ' fun' (not someone I'd like to have a beer with; I really don't like that; I wouldn't push the point; didn't want to biff; don't feel like deleting). Exploratory probe: negated versions 0.27-0.93; un-negated 'I'd like to have dinner' 0.21, 'I really want to go back' 0.10, 'would push' 0.04. Near misses here drop both the negation and the desire verb."
+}
