@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-28-moridinamael-4a5f46fc",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N5799+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:03:44+00:00",
+ "roles": ["reads bonsai1/L20/N808-"],
+ "neighbours": [
+  {
+   "unit": "L22/N5799",
+   "pole": "+",
+   "label": "Words inside the help=\"...\" description string of a Python argparse add_argument call (multi-line code context)",
+   "fire": [
+    "parser = argparse.ArgumentParser()\nparser.add_argument(\"--epochs\", type=int, default=10,\n                    help=\"Number of full passes over the training data\")",
+    "parser.add_argument(\n    \"--output-dir\",\n    help=\"Directory where checkpoints and logs will be written\",\n)",
+    "ap.add_argument('-v', '--verbose', action='store_true',\n                help='Print extra debugging information to stderr')",
+    "parser.add_argument(\"--lr\", type=float, default=3e-4,\n    help=\"Initial learning rate for the Adam optimizer\")\nargs = parser.parse_args()",
+    "sub = subparsers.add_parser(\"fetch\")\nsub.add_argument(\"url\",\n                 help=\"The remote address to download the archive from\")",
+    "parser.add_argument(\n    \"--seed\", type=int, default=42,\n    help=\"Random seed used to make experiments reproducible\"\n)",
+    "group = parser.add_mutually_exclusive_group()\ngroup.add_argument(\"--quiet\", action=\"store_true\",\n                   help=\"Suppress all output except fatal errors\")",
+    "parser.add_argument('--batch-size', type=int, default=32,\n                    help='How many samples are processed together on each step')"
+   ],
+   "quiet": [
+    "parser = argparse.ArgumentParser()\nparser.add_argument(\"--epochs\", type=int, default=10)\n# Number of full passes over the training data",
+    "parser.add_argument(\n    \"--output-dir\",\n    default=\"./runs\",\n)\nprint(\"Directory where checkpoints and logs will be written\")",
+    "ap.add_argument('-v', '--verbose', action='store_true')\nlogger.debug('Print extra debugging information to stderr')",
+    "parser.add_argument(\"--lr\", type=float, default=3e-4)\nargs = parser.parse_args()\noptimizer = Adam(model.parameters(), lr=args.lr)",
+    "sub = subparsers.add_parser(\"fetch\")\nsub.add_argument(\"url\", metavar=\"URL\")\nresp = requests.get(args.url, timeout=30)",
+    "parser.add_argument(\n    \"--seed\", type=int, default=42,\n)\nrandom.seed(args.seed)  # make experiments reproducible",
+    "group = parser.add_mutually_exclusive_group()\ngroup.add_argument(\"--quiet\", action=\"store_true\")\nraise SystemExit(\"Suppress all output except fatal errors\")",
+    "parser.add_argument('--batch-size', type=int, default=32)\nloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True)"
+   ]
+  }
+ ],
+ "predictions": "Unsure: the pole is diffuse and the full model read help-string words at 0.4-0.5 of max. I expect a borderline result, maybe 5/8 fire with 1-2 near misses leaking.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo",
+   "step-down"
+  ]
+ }
+}

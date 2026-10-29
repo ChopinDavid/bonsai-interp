@@ -1,0 +1,165 @@
+{
+ "id": "2026-10-28-moridinamael-4a5f46fc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N5799+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T03:04:00+00:00",
+ "recipe": {
+  "toolchain_commit": "d1d96a75",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N5799_pos/2026-10-28-moridinamael-4a5f46fc.tests.json"
+ },
+ "label": "Words inside the help=\"...\" description string of a Python argparse add_argument call (multi-line code context)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N5799_pos/2026-10-28-moridinamael-4a5f46fc.tests.json",
+   "prereg_commit": "d1d96a75",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.031,
+     "peak": " passes"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.45,
+     "peak": " where"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.091,
+     "peak": "Print"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.022,
+     "peak": " optimizer"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.168,
+     "peak": " download"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.033,
+     "peak": "seed"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.117,
+     "peak": " all"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.032,
+     "peak": " step"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.02,
+     "peak": " passes"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.27,
+     "peak": " where"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.087,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.037,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.092,
+     "peak": "=\""
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.061,
+     "peak": "ducible"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.034,
+     "peak": "\")\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": "batch"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.547,
+    "median_fire": 0.062,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "step-down"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "d1d96a75",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "roles": [
+  "reads bonsai1/L20/N808-"
+ ],
+ "edges": [
+  {
+   "from": "bonsai1/L20/N808-",
+   "to": "bonsai1/L22/N5799+",
+   "kind": "feeds",
+   "weight": 0.01,
+   "method": "single-unit zero ablation, downstream (play step --down)"
+  }
+ ]
+}
