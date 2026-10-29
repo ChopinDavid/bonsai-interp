@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-c5fd399b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N2945-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:27:14+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N2945_neg/2026-10-29-ChopinDavid-c5fd399b.tests.json"
+ },
+ "label": "an adjective that classifies something by its chemical or molecular nature ('chemical reactions', 'ionic groups', 'phen-olic compounds', 'amino acids'); physical or non-chemical modifiers in the same slot stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N2945_neg/2026-10-29-ChopinDavid-c5fd399b.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.208,
+     "peak": " chemical"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.62,
+     "peak": "ionic"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.89,
+     "peak": "olic"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.359,
+     "peak": " chemical"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.057,
+     "peak": "ionic"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.627,
+     "peak": " amino"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.388,
+     "peak": " chemical"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.921,
+     "peak": "olic"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.097,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.103,
+     "peak": " dissolve"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.03,
+     "peak": " wine"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " tested"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.095,
+     "peak": "ins"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.025,
+     "peak": " eat"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": " sealed"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " from"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.758,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "chemical-nature classifier adjective",
+ "unit_kind": "meaning/context",
+ "confidence": 0.55,
+ "notes": "Card: - pole peaks ' chemical' x7, 'ionic' x4, ' amino' x4, 'olic' x2, ' organic' x2, also 'conditional', 'Propositional'. Probe: 'ionic groups' 1.016, 'chemical reactions' 0.772, 'phenolic compounds' 0.552, 'chemical weapons' 0.449, 'amino acids' 0.396, 'propositional logic' 0.381; 'nuclear weapons' 0.005, 'friction' 0.015.",
+ "selection": "random draw"
+}

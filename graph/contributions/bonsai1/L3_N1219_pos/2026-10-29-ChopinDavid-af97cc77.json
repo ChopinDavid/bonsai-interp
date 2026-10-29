@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-af97cc77",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N1219+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:27:46+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N1219_pos/2026-10-29-ChopinDavid-af97cc77.tests.json"
+ },
+ "label": "best guess: the capitalized first piece of a split proper name (' S' in 'S|isyphus', ' Sp' in 'Sp|inoza'); dense and gate-closed, so near misses fire 0.1-0.45",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N1219_pos/2026-10-29-ChopinDavid-af97cc77.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.322,
+     "peak": " S"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.23,
+     "peak": " ideas"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.187,
+     "peak": " philosopher"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.148,
+     "peak": " famous"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.3,
+     "peak": "We"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.239,
+     "peak": "Her"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.229,
+     "peak": " voy"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.182,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.13,
+     "peak": " punishment"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.2,
+     "peak": " ideas"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.198,
+     "peak": " old"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.148,
+     "peak": " famous"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.288,
+     "peak": "We"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.237,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.125,
+     "peak": " voy"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.186,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.695,
+    "median_fire": 0.23,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "guess; first piece of a split proper name",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: max 1.11, broad (7.3% of tokens) and dense on the other pole (15%), gate-closed regime 100%, peaks ' S' x3, ' D', ' Sp', ' Jesus', ' United'. Probe: 'Sisyphus' 0.823, 'Spinoza' 0.777, 'United Nations' 0.705, 'Downtimes' 0.631; plain controls 0.090-0.284, but the filler 'The cat slept' scored 0.469. Low confidence because of the density.",
+ "selection": "random draw"
+}

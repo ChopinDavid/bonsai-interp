@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-75bbf4b5",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N5254+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:26:30+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N5254_pos/2026-10-29-ChopinDavid-75bbf4b5.tests.json"
+ },
+ "label": "in Python code, the name of a value-conversion or constructor call right before its parenthesis ('int(', 'float(', 'np.array(', 'time.time('); the same lines without the conversion call stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N5254_pos/2026-10-29-ChopinDavid-75bbf4b5.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.152,
+     "peak": " int"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.577,
+     "peak": ".time"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.351,
+     "peak": ".array"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.101,
+     "peak": " float"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.176,
+     "peak": ".time"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.095,
+     "peak": " int"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.438,
+     "peak": ".array"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.404,
+     "peak": " float"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.063,
+     "peak": "(count"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": "pired"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": "price"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.036,
+     "peak": "done"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": "('"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.211,
+     "peak": "data"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.027,
+     "peak": ")"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.263,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Python conversion/constructor call name",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: + pole peaks '.array' x5, '.time' x2, ' int', ' str', '.split', 'float', 'flt'. Probe: 'time.time()' 0.390, 'np.array(' 0.272, 'float(' 0.260, 'int(' 0.167, 'str(' 0.117; the same code without the call 0.021, 'print(' 0.011, a list comprehension 0.171.",
+ "selection": "random draw"
+}

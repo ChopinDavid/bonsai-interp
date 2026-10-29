@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-5b74525b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N5952-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:26:02+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N5952_neg/2026-10-29-ChopinDavid-5b74525b.tests.json"
+ },
+ "label": "membership among equals: the word that places someone inside a group of peers or members acting together ('peer' mentoring, 'member of', activities 'with' fellow students); the same sentences with a non-peer relation stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N5952_neg/2026-10-29-ChopinDavid-5b74525b.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.5,
+     "peak": " peer"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.211,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.374,
+     "peak": " pupils"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.131,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.332,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.393,
+     "peak": " group"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.127,
+     "peak": " peer"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.232,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.056,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.121,
+     "peak": " club"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.053,
+     "peak": " sports"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " clinic"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.024,
+     "peak": " town"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.033,
+     "peak": " students"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.041,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " ago"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.282,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "belonging among peers",
+ "unit_kind": "meaning/context",
+ "confidence": 0.45,
+ "notes": "Card: - pole peaks ' peer' x2, ' of' (founding member of), ' kids' (with other kids), ' in' (participate in); the opposite direction promotes 'shared', 'mutual', 'fellow', 'solidarity'. Probe: 'peer mentoring' 0.570, 'founding member of' 0.644, 'activities with local students' 0.507, 'peer support group' 0.286; 'play with other kids' only 0.056; tutoring club 0.030, therapist 0.024.",
+ "selection": "random draw"
+}

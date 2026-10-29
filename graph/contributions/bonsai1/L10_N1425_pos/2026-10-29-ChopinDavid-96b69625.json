@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-96b69625",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N1425+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:25:53+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L10_N1425_pos/2026-10-29-ChopinDavid-96b69625.tests.json"
+ },
+ "label": "best guess: a noun or stem that completes a technical or descriptive compound after a modifier ('hot environment', 'lingu-ist', 'records law'); weak and broad",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N1425_pos/2026-10-29-ChopinDavid-96b69625.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.094,
+     "peak": " environment"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.19,
+     "peak": " lingu"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.052,
+     "peak": "Pl"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.187,
+     "peak": " lingu"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.054,
+     "peak": " environment"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": -0.001,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.18,
+     "peak": " lingu"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.201,
+     "peak": " records"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.108,
+     "peak": " outside"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.04,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": "Pl"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.047,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": "Fish"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.01,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.047,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.047,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.836,
+    "median_fire": 0.137,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "guess; head of descriptive compound",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: broad (1.7% of tokens), mixed peaks on word pieces (' lingu', 'ства', 'itude', 'ernen') and ' environment', ' law'. Probe: 'hot environment' 0.451, 'linguist' 0.261, 'records law' 0.140; 'historian' 0.076, 'high altitude' 0.043, Russian 0.027, filler 0.047. A weak best guess built on the two strongest probe configurations.",
+ "selection": "random draw"
+}
