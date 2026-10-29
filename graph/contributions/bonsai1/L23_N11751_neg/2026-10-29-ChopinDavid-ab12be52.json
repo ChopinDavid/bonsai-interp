@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-ab12be52",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N11751-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T11:31:21+00:00",
+ "recipe": {
+  "toolchain_commit": "41bd6c10",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N11751_neg/2026-10-29-ChopinDavid-ab12be52.tests.json"
+ },
+ "label": "a parenthetical discourse phrase set off inside a non-English sentence ('как правило', 'comme on le sait', 'es decir', '言うまでもなく'), as opposed to the same languages without such an aside; broad pole, weak margins expected",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N11751_neg/2026-10-29-ChopinDavid-ab12be52.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.339,
+     "peak": " как"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.19,
+     "peak": " genre"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.351,
+     "peak": " es"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.277,
+     "peak": "、"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.14,
+     "peak": " ce"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.48,
+     "peak": "та"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.145,
+     "peak": " sup"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.247,
+     "peak": "でも"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.197,
+     "peak": "ятся"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.192,
+     "peak": " genre"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.136,
+     "peak": " agua"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.262,
+     "peak": "この"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.071,
+     "peak": " ce"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.39,
+     "peak": "та"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.059,
+     "peak": "La"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.115,
+     "peak": "東"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.734,
+    "median_fire": 0.262,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "41bd6c10",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "parenthetical aside in non-English text",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: broad (4.2% of tokens), peaks on discourse words across Arabic, Korean, Japanese, Russian, German, French ('فلا', 'как правило', 'bietet'). Probe: Russian 'как правило' 0.480, French 'comme on le sait' 0.352, Spanish 'es decir' 0.287, Japanese '言うまでもなく' 0.254; English translations 0.146 and 0.068, German 'Ab Montag bietet' 0.129, 'The cat sat on the mat.' 0.036. Best guess on a broad pole.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-f8488faf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N5580+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T11:31:43+00:00",
+ "recipe": {
+  "toolchain_commit": "41bd6c10",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N5580_pos/2026-10-29-ChopinDavid-f8488faf.tests.json"
+ },
+ "label": "the reflexive pronoun of a French pronominal verb in a compound tense ('s'est', 'nous nous', 'se sont', 'vous vous'), as opposed to the same verbs conjugated with 'avoir' and no reflexive pronoun",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N5580_pos/2026-10-29-ChopinDavid-f8488faf.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.433,
+     "peak": "'est"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.882,
+     "peak": " nous"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.63,
+     "peak": " se"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.708,
+     "peak": " vous"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.662,
+     "peak": "'est"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.77,
+     "peak": " nous"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.51,
+     "peak": " se"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.633,
+     "peak": "'est"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.136,
+     "peak": " se"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": "ne"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " vac"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": "ès"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": "Au"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " cuisine"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " avant"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.647,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "41bd6c10",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "French reflexive pronoun (s'est, nous nous)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: \"'est\" x2, ' nos', ' se', ' nous' in 'Nous nous sommes engagés', 'celles-ci se ont', Spanish 'a mí nos complace', plus English ' give'/' giving' a welcome; - pole suppresses ' give'. Probe: \"elle s'est trouvé un partenaire\" 0.908, 'Nous nous sommes engagés' 0.694, 'give a warm welcome' 0.556; same sentence with 'elle a trouvé' 0.017, 'Merci à vous' 0.042, 'please welcome our new teacher' 0.000. Tested on the French reflexive only.",
+ "selection": "random draw"
+}
