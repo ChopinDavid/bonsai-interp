@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-29-moridinamael-2a2baffb",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N627+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T23:02:17+00:00",
+ "recipe": {
+  "toolchain_commit": "8e792b27",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L0_N627_pos/2026-10-29-moridinamael-2a2baffb.tests.json"
+ },
+ "label": "a 1-2 letter fragment token glued straight onto a short word stem, in names or technical terms ('z' in Lent|z, 'an' in Virt|an|en, 'd' in hydro|d|ynamics); quiet when the name or word is one whole token",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N627_pos/2026-10-29-moridinamael-2a2baffb.tests.json",
+   "prereg_commit": "8e792b27",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.01,
+     "peak": "z"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.768,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.821,
+     "peak": "d"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.041,
+     "peak": "by"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.066,
+     "peak": "is"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.09,
+     "peak": "Our"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.15,
+     "peak": "oh"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.057,
+     "peak": " catalyst"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.027,
+     "peak": " Smith"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.058,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": "Dr"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " simple"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.096,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.027,
+     "peak": "Engine"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.053,
+     "peak": " catalyst"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.12,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "8e792b27",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "short consonant/syllable word piece that ends a split rare name or compound ('z' in Lent|z, 'an' in Virt|an|en, 'd' in hydro|d|ynamics)"
+ }
+}
