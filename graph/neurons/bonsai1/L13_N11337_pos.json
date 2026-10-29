@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N11337+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 11337,
+ "pole": "+",
+ "label": "something being given up or surrendered in exchange for something else (the thing traded away in a 'surrender X in exchange for Y' bargain); the same nouns held or used without being traded away stay low",
+ "short": "thing surrendered in a trade-off",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N11337_pos/2026-10-29-ChopinDavid-a0dd8da5.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.045,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.122,
+     "peak": " salaries"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.097,
+     "peak": " relinqu"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.235,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.469,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.089,
+     "peak": " up"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.124,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.064,
+     "peak": " sacrificed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.044,
+     "peak": " keep"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.053,
+     "peak": " higher"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.041,
+     "peak": " continue"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.054,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.184,
+     "peak": " sovereignty"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "-year"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.11,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-a0dd8da5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a0dd8da5",
+   "something being given up or surrendered in exchange for something else (the thing traded away in a 'surrender X in exchange for Y' bargain); the same nouns held or used without being traded away stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a0dd8da5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

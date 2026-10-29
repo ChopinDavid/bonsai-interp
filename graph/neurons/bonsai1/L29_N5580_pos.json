@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N5580+",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 5580,
+ "pole": "+",
+ "label": "the reflexive pronoun of a French pronominal verb in a compound tense ('s'est', 'nous nous', 'se sont', 'vous vous'), as opposed to the same verbs conjugated with 'avoir' and no reflexive pronoun",
+ "short": "French reflexive pronoun (s'est, nous nous)",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N5580_pos/2026-10-29-ChopinDavid-f8488faf.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.433,
+     "peak": "'est"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.882,
+     "peak": " nous"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.63,
+     "peak": " se"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.708,
+     "peak": " vous"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.662,
+     "peak": "'est"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.77,
+     "peak": " nous"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.51,
+     "peak": " se"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.633,
+     "peak": "'est"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.136,
+     "peak": " se"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": "ne"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " vac"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": "ès"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": "Au"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " cuisine"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " avant"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.647,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-f8488faf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-f8488faf",
+   "the reflexive pronoun of a French pronominal verb in a compound tense ('s'est', 'nous nous', 'se sont', 'vous vous'), as opposed to the same verbs conjugated with 'avoir' and no reflexive pronoun",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-f8488faf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

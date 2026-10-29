@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L27/N10938+",
+ "model": "bonsai1",
+ "layer": 27,
+ "index": 10938,
+ "pole": "+",
+ "label": "a person collapsing or falling down onto the ground or floor ('fell to the ground'), as opposed to objects falling, figurative falls (prices, in love) and people moving down without falling",
+ "short": "a person falling to the ground",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N10938_pos/2026-10-29-ChopinDavid-9cb3083b.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.632,
+     "peak": " fell"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.642,
+     "peak": " fell"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.582,
+     "peak": " fell"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.475,
+     "peak": " fell"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.433,
+     "peak": " fell"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.434,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.617,
+     "peak": " fell"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.722,
+     "peak": " fell"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.164,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.251,
+     "peak": " fell"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.092,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.035,
+     "peak": " without"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.017,
+     "peak": " prices"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.174,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.107,
+     "peak": " fell"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.043,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.599,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-9cb3083b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-9cb3083b",
+   "a person collapsing or falling down onto the ground or floor ('fell to the ground'), as opposed to objects falling, figurative falls (prices, in love) and people moving down without falling",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-9cb3083b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
