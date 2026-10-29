@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-fc80aea9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N1683+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T04:29:26+00:00",
+ "recipe": {
+  "toolchain_commit": "1e68a567",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N1683_pos/2026-10-28-ChopinDavid-fc80aea9.tests.json"
+ },
+ "label": "a preposition that a preceding verb governs, above all Spanish 'a' after verbs such as sumarse, añadir, unirse, ayudar (se suma a, se le añade a): the pole marks the verb's required preposition; 'a' in time or manner phrases (a las cinco, a veces) stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N1683_pos/2026-10-28-ChopinDavid-fc80aea9.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.053,
+     "peak": "er"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.619,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.751,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.097,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.12,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.561,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.708,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.126,
+     "peak": " preg"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.061,
+     "peak": "cho"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.108,
+     "peak": " poco"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.045,
+     "peak": " esta"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.093,
+     "peak": " tarde"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.047,
+     "peak": "curso"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.071,
+     "peak": "uel"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.059,
+     "peak": "ar"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.12,
+     "peak": " preg"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.867,
+    "median_fire": 0.344,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1e68a567",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "verb-governed preposition 'a'",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' a' x8, ' to' x7, ' в' x4, ' à' x4, all right after a verb that takes them (se suma a, añade a, increased to, added to, opposition à, ponerse a). Probe: 'se le añade a estos' 0.819, 'se suma a la lista' 0.476, 'increased to include' 0.275, 'opposition à' 0.196; 'Nos vemos a las cinco' 0.044, unrelated English 0.016. Spanish only in this test.",
+ "selection": "random draw"
+}
