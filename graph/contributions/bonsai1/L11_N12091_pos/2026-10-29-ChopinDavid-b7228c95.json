@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-b7228c95",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N12091+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T09:25:21+00:00",
+ "recipe": {
+  "toolchain_commit": "f7bd5fcf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N12091_pos/2026-10-29-ChopinDavid-b7228c95.tests.json"
+ },
+ "label": "a transport-hub noun or name (airport, station, a named airport) given as the reference point of a place's location or route; other landmarks in the same 'minutes from X' frame stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N12091_pos/2026-10-29-ChopinDavid-b7228c95.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.772,
+     "peak": " Airport"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.968,
+     "peak": " Airport"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.56,
+     "peak": " station"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.643,
+     "peak": " Airport"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.913,
+     "peak": " Airport"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.21,
+     "peak": " station"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.66,
+     "peak": " Airport"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.501,
+     "peak": " station"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.119,
+     "peak": " cathedral"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.132,
+     "peak": " harbour"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.135,
+     "peak": " reach"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.085,
+     "peak": " car"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.066,
+     "peak": " garden"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.166,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.215,
+     "peak": " city"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.651,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f7bd5fcf",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "airport/station as location anchor",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 30.1, peaks on ' Airport' (Dubai International Airport), 'ford' (Leeds/Bradford airport), Russian 'станции', 机场, Firenze Sud exit. Probe: 'Heathrow Airport' 0.665, 'train station' 0.407, Bologna exit 0.244, bare 'airport' in non-travel uses 0.19-0.23, 'river and a large park' 0.051.",
+ "selection": "random draw"
+}

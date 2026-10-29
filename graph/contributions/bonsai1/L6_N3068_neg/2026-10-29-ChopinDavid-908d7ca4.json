@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-908d7ca4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3068-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T09:27:04+00:00",
+ "recipe": {
+  "toolchain_commit": "f7bd5fcf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N3068_neg/2026-10-29-ChopinDavid-908d7ca4.tests.json"
+ },
+ "label": "a word for bringing something in from somewhere else (imported, imports, porting software); exporting or producing locally stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N3068_neg/2026-10-29-ChopinDavid-908d7ca4.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.577,
+     "peak": " imported"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.508,
+     "peak": " imports"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.683,
+     "peak": "ing"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.725,
+     "peak": " imported"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.684,
+     "peak": " imported"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.568,
+     "peak": "ing"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.755,
+     "peak": " imported"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.667,
+     "peak": " imports"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " cheese"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.19,
+     "peak": " exports"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": "ing"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " brewed"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " sells"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " food"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.675,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f7bd5fcf",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "import / port (bring in from elsewhere)",
+ "unit_kind": "lexical",
+ "confidence": 0.7,
+ "notes": "Card: max 14.3, peaks on ' imported' x7, ' import', 'ing' (porting Flash/Jitsi to other environments), 引进 (introduce), 移 (move), 搬 (carry). Probe: 'is imported from France' 0.674, 'imports most of its oil' 0.415, 'porting the game' 0.562, 'imported into Ireland' 0.885; 'produced in France' 0.026, 'exports' 0.125, 'testing the game' 0.007.",
+ "selection": "random draw"
+}
