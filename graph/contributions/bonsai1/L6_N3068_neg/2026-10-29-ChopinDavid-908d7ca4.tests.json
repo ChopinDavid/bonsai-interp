@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-908d7ca4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3068-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N3068",
+   "pole": "-",
+   "label": "a word for bringing something in from somewhere else (imported, imports, porting software); exporting or producing locally stays low",
+   "fire": [
+    "Nearly all the cheese in that shop is imported from Switzerland.",
+    "Japan imports most of the wheat it uses for bread.",
+    "The team is porting the old desktop app to Linux this year.",
+    "Coffee was first imported into Europe by Venetian traders.",
+    "The village shop sells imported beer at very high prices.",
+    "Our studio finished porting the racing game to the new console.",
+    "Many of the plants in the park were imported from Asia.",
+    "The island imports almost all of its fuel by ship."
+   ],
+   "quiet": [
+    "Nearly all the cheese in that shop is made in Switzerland.",
+    "Japan exports most of the cars it builds to America.",
+    "The team is redesigning the old desktop app for Linux this year.",
+    "Coffee was first brewed in Europe by Venetian traders.",
+    "The village shop sells local beer at very low prices.",
+    "Our studio finished testing the racing game on the new console.",
+    "Many of the plants in the park were grown from seed.",
+    "The island produces almost all of its food on small farms."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on imported/imports/porting; exported/produced/grown below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "import / port (bring in from elsewhere)",
+ "unit_kind": "lexical",
+ "confidence": 0.7,
+ "notes": "Card: max 14.3, peaks on ' imported' x7, ' import', 'ing' (porting Flash/Jitsi to other environments), 引进 (introduce), 移 (move), 搬 (carry). Probe: 'is imported from France' 0.674, 'imports most of its oil' 0.415, 'porting the game' 0.562, 'imported into Ireland' 0.885; 'produced in France' 0.026, 'exports' 0.125, 'testing the game' 0.007."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9b223fc1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N8842+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N8842",
+   "pole": "+",
+   "label": "a relational word that locates one element of a geometric figure relative to another (sides containing the angle, arcs on which the angles stand, a line encircling the body); the same verbs used outside geometry stay low",
+   "fire": [
+    "In any triangle, the angle opposite the longer side is the greater one.",
+    "Draw a circle passing through the three vertices of the triangle.",
+    "The two lines containing the angle meet at the vertex B.",
+    "Angles standing on the same arc of a circle are equal to one another.",
+    "A tangent touching the circle at P is perpendicular to the radius.",
+    "The parallelogram contained by the two sides has twice the area of the triangle.",
+    "Let a chord be drawn joining the two points on the circumference.",
+    "The square described on the hypotenuse equals the sum of the other two squares."
+   ],
+   "quiet": [
+    "In any family, the child opposite the oldest at dinner is often the quietest.",
+    "Draw a picture of the three houses on the street where you live.",
+    "The two boxes containing the books arrived at the office on Monday.",
+    "Children standing on the same step of the stairs had their photo taken.",
+    "A waiter touching the table at the corner spilled the soup.",
+    "The parcel contained two sweaters and a pair of gloves.",
+    "Let a friend be invited to join the two of you at the cinema.",
+    "The meal described on the menu was much smaller than we expected."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0 in Euclid-style figure descriptions; everyday 'containing', 'stand on', 'encircling' below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "geometric relation word",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 5.7, peaks on ' first' (first = distance(a, b) after triangle), 'cling' (line encircling the body), ' containing' (sides containing the right angle), ' on' (angles on which they stand), ' occupied', medio ' punto'. Probe: 'sides containing the right angle' 0.867, 'arcs on which they stand' 1.013, 'line encircling the body' 0.597, 'space occupied' 0.117, 'leans from the vertical' 0.011, park/football -0.002."
+}

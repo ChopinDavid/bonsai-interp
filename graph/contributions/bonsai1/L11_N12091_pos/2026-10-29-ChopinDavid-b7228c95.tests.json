@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b7228c95",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N12091+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N12091",
+   "pole": "+",
+   "label": "a transport-hub noun or name (airport, station, a named airport) given as the reference point of a place's location or route; other landmarks in the same 'minutes from X' frame stay low",
+   "fire": [
+    "Our guesthouse sits just ten minutes from Gatwick Airport by train.",
+    "The villa is a short drive from Malaga Airport along the coast road.",
+    "From the hostel it takes five minutes on foot to reach the central station.",
+    "Guests arriving by plane should book a transfer from Schiphol Airport in advance.",
+    "The apartment lies close to Frankfurt Airport, which makes early flights easy.",
+    "Walk out of the hotel, turn left, and the railway station is right ahead.",
+    "A shuttle bus runs every hour between the resort and Faro Airport.",
+    "Our office is two stops from the main station on the northern line."
+   ],
+   "quiet": [
+    "Our guesthouse sits just ten minutes from the cathedral by bicycle.",
+    "The villa is a short drive from the fishing harbour along the coast road.",
+    "From the hostel it takes five minutes on foot to reach the old market.",
+    "Guests arriving by car should book a parking space near the museum in advance.",
+    "The apartment lies close to the botanical garden, which makes morning walks easy.",
+    "Walk out of the hotel, turn left, and the bakery is right ahead.",
+    "A small ferry runs every hour between the resort and the island.",
+    "Our office is two blocks from the city library on the north side."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on named airports and stations; museums, beaches, cathedrals below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "airport/station as location anchor",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 30.1, peaks on ' Airport' (Dubai International Airport), 'ford' (Leeds/Bradford airport), Russian 'станции', 机场, Firenze Sud exit. Probe: 'Heathrow Airport' 0.665, 'train station' 0.407, Bologna exit 0.244, bare 'airport' in non-travel uses 0.19-0.23, 'river and a large park' 0.051."
+}

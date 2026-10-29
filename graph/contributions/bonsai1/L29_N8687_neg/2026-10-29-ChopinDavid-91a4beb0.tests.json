@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-91a4beb0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N8687-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N8687",
+   "pole": "-",
+   "label": "guess: the first operand on the right-hand side of an accumulating combine in tensor code (x = x + ..., out = tf.concat(...)); plain assignments and calls in the same code stay low",
+   "fire": [
+    "class Block(nn.Module):\n    def forward(self, x):\n        y = self.attn(x)\n        x = x + y\n        return x",
+    "def encode(self, ids):\n    tok = self.tok_emb(ids)\n    pos = self.pos_emb(ids)\n    emb = tok + pos\n    return emb",
+    "def merge(self, fw, bw):\n    states = tf.concat([fw, bw], axis=-1)\n    return states",
+    "def residual(self, h):\n    out = self.mlp(self.norm(h))\n    h = h + out\n    return h",
+    "for batch in loader:\n    loss = model(batch)\n    total = total + loss\nprint(total)",
+    "def combine(a, b, mode):\n    if mode == 'sum':\n        return a + b\n    return a * b",
+    "dfs = [pd.read_csv(p) for p in paths]\n\nfull = pd.concat(dfs)\nfull.to_csv('all.csv')",
+    "def forward(self, x, skip):\n    x = self.up(x)\n    x = torch.cat([x, skip], dim=1)\n    return x"
+   ],
+   "quiet": [
+    "class Block(nn.Module):\n    def forward(self, x):\n        y = self.attn(x)\n        x = self.drop(y)\n        return x",
+    "def encode(self, ids):\n    tok = self.tok_emb(ids)\n    emb = self.norm(tok)\n    return emb",
+    "def merge(self, fw, bw):\n    states = self.proj(fw)\n    return states",
+    "def residual(self, h):\n    out = self.mlp(self.norm(h))\n    h = self.act(out)\n    return h",
+    "for batch in loader:\n    loss = model(batch)\n    loss.backward()\nprint(loss)",
+    "def combine(a, b, mode):\n    if mode == 'max':\n        return max(a, b)\n    return min(a, b)",
+    "dfs = [pd.read_csv(p) for p in paths]\n\nfirst = dfs[0]\nfirst.to_csv('one.csv')",
+    "def forward(self, x, skip):\n    x = self.up(x)\n    x = self.conv(x)\n    return x"
+   ]
+  }
+ ],
+ "predictions": "weak: probe max 0.165; expect median below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "operand of a combine in tensor code (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 138, peaks on ' embeddings' (embeddings = embeddings + position_embeddings), \" '\" (combine_fn == 'sum'), ' pd' (pd.concat), ' tf' (tf.concat), ' \".\"' (join); logits on + pole promote AND/OR/union. Probe weak: multi-line 'h = h + self.pos(x)' 0.165, \"mode == 'sum'\" 0.099, one-line concat/join 0.01-0.04."
+}

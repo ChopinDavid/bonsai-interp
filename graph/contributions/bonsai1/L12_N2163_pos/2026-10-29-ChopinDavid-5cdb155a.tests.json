@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5cdb155a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N2163+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N2163",
+   "pole": "+",
+   "label": "guess: words describing a structure that physically holds, keeps or supports something in place (hold them up, keep the joint stable); unrelated uses of keep and hold stay low",
+   "fire": [
+    "Tie the young vines to wires so the stakes hold them up in the wind.",
+    "Strong tendons help to keep the knee stable when you land.",
+    "Wooden props hold the tunnel roof up while the miners dig.",
+    "The splint helps to keep the broken finger straight for weeks.",
+    "Guy ropes hold the tent up even in a strong gale.",
+    "The muscles of the back help to keep the spine upright.",
+    "Brackets under the shelf hold it up against the heavy books.",
+    "A cast helps to keep the wrist still while the bone heals."
+   ],
+   "quiet": [
+    "Tie the parcel with string so the post office can deliver it.",
+    "Strong coffee helps to keep me awake during long meetings.",
+    "Wooden toys hold the children's interest for hours.",
+    "The teacher helps to keep the class quiet during tests.",
+    "Old photos hold many memories of our trip to Spain.",
+    "The rules of the club help to keep members informed.",
+    "Coupons hold their value until the end of the year.",
+    "A diary helps to keep track of appointments and birthdays."
+   ]
+  }
+ ],
+ "predictions": "weak: probe max 0.209; expect median below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "physical support (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 7.1, regimes split 53/47, peaks scattered (' discrim'inated, ' to' facilitate, ' remains' conductive, aided ' by', dip'stick', hold them ' up', ' keep' warm). Probe weak: 'hold them up' 0.190, 'help to keep the joint stable' 0.209, 'beam supports' 0.045, 'kept letters in a drawer' 0.055."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-67a7bdba",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N11016-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N11016",
+   "pole": "-",
+   "label": "crop-processing words (plantation, roasting, harvest) when the crop is tea, coffee or cocoa; the same words for wheat, peanuts or meat stay low",
+   "fire": [
+    "In Kenya the tea plantations stretch across the highlands for miles.",
+    "Small batch roasting brings out the fruity notes in Ethiopian coffee.",
+    "Workers on the coffee plantation pick the ripe cherries by hand.",
+    "After the cocoa harvest, the beans are fermented under banana leaves.",
+    "Darjeeling growers wait for the first flush harvest of tea each spring.",
+    "Light roasting keeps more of the acidity in the coffee beans.",
+    "Many cocoa plantations in Ivory Coast rely on family labour.",
+    "The estate runs tours of its tea plantation and drying sheds."
+   ],
+   "quiet": [
+    "In Kansas the wheat fields stretch across the plains for miles.",
+    "Slow roasting brings out the sweetness in a leg of lamb.",
+    "Workers on the cotton farm pick the ripe bolls by hand.",
+    "After the grape harvest, the juice is fermented in steel tanks.",
+    "Potato growers wait for the first harvest of new potatoes each spring.",
+    "Light toasting keeps more of the crunch in the almonds.",
+    "Many rubber farms in Malaysia rely on family labour.",
+    "The estate runs tours of its apple orchard and cider sheds."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 for tea/coffee/cocoa cultivation and roasting; same words for other crops below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "tea/coffee/cocoa crop processing",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 9.9, peaks on 'asting' (coffee roasting), ' plant' (green tea plantations), ' harvest' (spring harvest tea), ' bean' (vanilla bean), ' green' (green tea). Probe: coffee roasting 0.664, tea plantations 0.794, cocoa harvest 0.352, tea harvest 0.213, drinking green tea 0.053, peanuts roasted 0.029, wheat harvest 0.019, roasting chicken 0.063."
+}

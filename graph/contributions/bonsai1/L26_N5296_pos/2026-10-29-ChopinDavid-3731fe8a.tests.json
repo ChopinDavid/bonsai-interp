@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3731fe8a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N5296+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N5296",
+   "pole": "+",
+   "label": "function words inside legal or contractual clauses (warranty conditions, statutory definitions: 'void if the product is', 'means the possession of'); the same topics in casual prose stay low",
+   "fire": [
+    "This warranty shall not apply if the device has been repaired by an unauthorised person.",
+    "Affiliate means any entity that directly or indirectly controls the Company.",
+    "The guarantee is void where the goods are used in a manner contrary to the instructions.",
+    "Confidential Information means all information disclosed by either party under this Agreement.",
+    "The Seller shall not be liable for any loss arising from the misuse of the product.",
+    "Processing means any operation performed on personal data, whether or not by automated means.",
+    "The licence terminates automatically if the Licensee breaches any provision of this clause.",
+    "Notwithstanding the foregoing, the Buyer may cancel the order within fourteen days."
+   ],
+   "quiet": [
+    "My phone stopped working after my cousin tried to repair it at home.",
+    "Our company has a small office in Leeds and another in York.",
+    "The goods arrived late, but they still worked fine in the kitchen.",
+    "My friend told me some secret information about the new job.",
+    "The shop was friendly when I took the broken toaster back.",
+    "I keep all my photos on a laptop and back them up every week.",
+    "He stopped paying for the music app after a few months.",
+    "In the end we cancelled the order and bought a cheaper sofa."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.75 in warranty/definition clauses; casual prose about products and data below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "legal-clause register",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 20.9, density 0.63%, peaks on ' the', ' by' (in particular by reference to), ' present' (present or threatened destruction), ' THE' (ALL WARRANTIES ARE VOID IF THE BICYCLE), ' between'. Probe: warranty void clause 0.755, personal-data definition 0.426, 'control means the possession' 0.415, disability contact 0.108, 'All measurements are approximate' 0.150, beach 0.039."
+}

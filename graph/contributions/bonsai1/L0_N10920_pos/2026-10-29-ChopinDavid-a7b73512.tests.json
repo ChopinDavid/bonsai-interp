@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a7b73512",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N10920+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N10920",
+   "pole": "+",
+   "label": "the token for compulsion: English ' forced' and Chinese/Japanese 逼 / 迫; 'force' as a noun, 'compelled' and 'chose' stay low",
+   "fire": [
+    "During the flood, many villagers were forced to sleep in the school.",
+    "Heavy debts forced the farmer to sell his land.",
+    "老板逼员工每天加班到深夜。",
+    "The rebels forced the convoy to turn back at the border.",
+    "他妈妈逼他学钢琴十年。",
+    "After the injury she was forced to retire from tennis.",
+    "债主天天上门逼债。",
+    "我们不能逼孩子做他们不喜欢的事。"
+   ],
+   "quiet": [
+    "During the flood, many villagers chose to sleep in the school.",
+    "Heavy debts led the farmer to sell his land.",
+    "老板让员工每天加班到深夜。",
+    "The rebels asked the convoy to turn back at the border.",
+    "他妈妈让他学钢琴十年。",
+    "After the injury she decided to retire from tennis.",
+    "债主天天上门要债。",
+    "我们不能让孩子做他们不喜欢的事。"
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.85 on ' forced' and 逼/迫; 'force' noun and synonyms below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token 'forced' / 逼 / 迫",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 9.3, peak tokens ' forced' x20, 迫 x7, 逼 x3, 强迫 x2 (layer 0, so a token unit). Probe: 'were forced to leave' 0.239, 'Prices forced' 0.273, 'a forced smile' 0.276, 被迫 0.293, 警察逼他 0.846; 'compelled' 0.098, 'The force of the wind' 0.054, 'chose' 0.008."
+}

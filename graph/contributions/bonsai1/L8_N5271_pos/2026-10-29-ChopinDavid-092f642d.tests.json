@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-092f642d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N5271+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N5271",
+   "pole": "+",
+   "label": "a verb of deliberately watching or looking at something as an activity ('interesting to watch', 'look at', 'watch what/where') and its complement; the noun 'watch' (timepiece) and passive 'see' stay low",
+   "fire": [
+    "The crowd gathered on the bridge to watch the boats race below.",
+    "It was funny to watch the puppies chase their own tails.",
+    "Before you try the dance, watch how the teacher moves her feet.",
+    "We spent the evening looking at the stars from the porch.",
+    "Kids love to watch the trains pass by the station.",
+    "It is amazing to watch a spider build its web at dawn.",
+    "Stand back and watch what happens when the vinegar hits the soda.",
+    "She stopped at the gallery to look at the new paintings."
+   ],
+   "quiet": [
+    "The crowd gathered on the bridge when the boats raced below.",
+    "It was funny when the puppies chased their own tails.",
+    "Before you try the dance, buy shoes that fit your feet.",
+    "We spent the evening sitting on the porch under the stars.",
+    "Kids love the trains that pass by the station.",
+    "My grandfather gave me his gold watch on my birthday.",
+    "Stand back from the table when the vinegar hits the soda.",
+    "She stopped at the gallery but it was closed for repairs."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0 on watch/look at as an activity; wristwatch and 'see' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "deliberate watching",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 8.6, peaks on ' watch' x7 (interesting to watch them), ' at', ' what' (watch what the others are doing), ' look' (interesting to look at), Russian 'Видел по телику'; the - pole is ' see'. Probe: 'interesting to watch them argue' 1.061, 'to watch videos' 0.518, 'watch what the other players do' 0.493, 'fascinating to look at old photographs' 0.646, 'Watch where you are going' 0.723; 'a new watch' 0.039, 'could see the mountains' 0.038; 'interesting to read' 0.467."
+}

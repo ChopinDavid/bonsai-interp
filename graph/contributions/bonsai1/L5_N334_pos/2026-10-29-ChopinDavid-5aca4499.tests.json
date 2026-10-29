@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5aca4499",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N334+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N334",
+   "pole": "+",
+   "label": "an adjective used as a manner complement right after a verb in a strategy or lifestyle phrase (win big, shop smart, start small, buy local, go green); the same adjectives in front of a noun stay low",
+   "fire": [
+    "Our coach always tells us to dream big and work hard.",
+    "When money is tight, it pays to shop smart at the end of the season.",
+    "Most successful bakeries start small and add new ovens later.",
+    "The campaign urges residents to eat local and support nearby farms.",
+    "Investors who bet big on the startup lost everything in a year.",
+    "For a weekend in the mountains you should pack light and wear layers.",
+    "The city wants every office to go green by the end of the decade.",
+    "Students are encouraged to think big about their final projects."
+   ],
+   "quiet": [
+    "Our coach always gives us a big speech before the game.",
+    "When money is tight, a smart shopper waits for the end of the season.",
+    "Most successful bakeries have a small oven in the back room.",
+    "The campaign praises local farms that sell to nearby shops.",
+    "Investors who made a big bet on the startup lost everything in a year.",
+    "For a weekend in the mountains you need a light jacket and good boots.",
+    "The city painted every office a pale green by the end of the decade.",
+    "Students have a big project to finish before the summer."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 after the verb; attributive uses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "verb + flat adjective idiom",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Card: max 19.3, peaks on ' big' (winning big, think big), ' small' (start small, shopping small), ' smart' (shop smart, travel smart), ' young' (die young), ' local' (buy local), ' green' (go green). Probe: 'win big' 0.907, 'shop smart' 0.847, 'start small' 0.814, 'buy local' 0.616, 'go green' 0.367, 'runs fast' 0.183; attributive 'a big house' 0.009, 'The small dog' 0.015."
+}
