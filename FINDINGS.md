@@ -1055,3 +1055,15 @@ tests held), which brings the assignment-grade total to about 36,360 (4.1% of 88
 - **Layers 6–11 gave 2,679 poles** and layers 12–17 gave 92, the most any round has found there.
 - **Precision predicts the hold again:** 46% at 0.3–0.5, 88% above 1.
 
+## 2026-10-28: Three tokens add little (compose@11)
+
+compose@11 added the token two back to compose@10's pair covers. Only 1,837 poles had such a cover, and **640 of
+1,609 tested poles were assigned** (40%; 0 of 1,599 placebo tests held). The assignment-grade total is now about
+36,960.
+
+- **What held were mostly fixed phrases:** "insofar as", "above all", "brought about" and "in and out" (L4–7), and
+  "even if" after a clause (L22).
+- **Number and time patterns** were selected often and held less (175 of 507).
+- **The n-gram covers end here.** The read token gave about 19,000 poles (compose@7–9), the previous token another
+  7,000 (compose@10), and the token two back 640.
+

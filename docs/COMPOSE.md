@@ -514,3 +514,35 @@ often, gave 2,679 poles here. Layers 12–17 gave 92, more than any earlier roun
 eligible poles. Many held covers are lists of pairs rather than one distinction: they are assignment-grade by coverage,
 and a sharper label is a matter for the survey.
 
+## Round 11 (compose@11): triple covers
+
+compose@10's pair cover with one more token (`bonsai_interp/compose/round11.py`): the pole fires on these (token two
+back, previous token, token) triples, at most 8 covering half of its sampled strong activations.
+- **Selection:** precision of at least 0.3, and at least 1.5× the precision of the same pairs alone.
+- **Near misses:** the same pair after another token two back, and the same two tokens before another token.
+
+| | |
+|---|---|
+| Protocol | 31e8d492 |
+| Pre-registration | 03dac4d5 |
+| Summary | 6a42e537 |
+
+1,837 poles had a triple cover; 1,609 were testable.
+
+- **Assigned: 640 of 1,609 poles (40%)**, against **0 of 1,599** placebo tests.
+- **By depth:** L0–5 163, L6–11 361, L12–17 26, L18–23 36, L24–29 37, L30–35 17.
+- **By precision:** 26% held at 0.3–0.5, 45% at 0.5–1, 66% above 1.
+- **Number and time patterns** were selected often and held less: 175 of 507.
+- **Phrases held well:**
+  - "insofar as" and "to the extent that" (L7);
+  - "brought about" and "comes around" (L6);
+  - "above all" and "first of all" (L4);
+  - "in and out" (L6);
+  - "even if" after a clause (L22);
+  - license headers on `#` lines (L22, L23).
+
+### Reading
+
+The token two back adds little: 1,837 candidate poles against compose@10's 13,128, and a lower hold rate. The n-gram
+covers have reached their limit at three tokens. Most of what they find in layers 6–11 are fixed phrases.
+
