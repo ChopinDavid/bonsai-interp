@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-75bbf4b5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N5254+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N5254",
+   "pole": "+",
+   "label": "in Python code, the name of a value-conversion or constructor call right before its parenthesis ('int(', 'float(', 'np.array(', 'time.time('); the same lines without the conversion call stay low",
+   "fire": [
+    "    for line in lines:\n        count = int(line.strip())\n        total += count",
+    "    if cache.expired and time.time() > cache.expiry:\n        cache.refresh()",
+    "    weights = np.array(config['weights'])\n    return weights.sum()",
+    "    price = float(row['price']) * rate\n    rows.append(price)",
+    "        start = time.time()\n        result = solve(board)\n        elapsed = time.time() - start",
+    "    port = int(os.environ.get('PORT', 8080))\n    app.run(port=port)",
+    "    pixels = numpy.array(image.getdata())\n    return pixels.reshape(h, w)",
+    "    score = float(fields[2]) / maximum\n    scores.append(score)"
+   ],
+   "quiet": [
+    "    for line in lines:\n        count = line.strip()\n        total.append(count)",
+    "    if cache.expired:\n        cache.refresh()",
+    "    weights = config['weights']\n    return weights",
+    "    price = row['price']\n    rows.append(price)",
+    "        log.info('solving board')\n        result = solve(board)\n        log.info('done')",
+    "    port = os.environ.get('PORT')\n    app.run(port=port)",
+    "    pixels = image.getdata()\n    return pixels",
+    "    print(fields[2], maximum)\n    scores.append(fields)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.4 on the call name; near misses below 0.1; median near 0.25",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Python conversion/constructor call name",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: + pole peaks '.array' x5, '.time' x2, ' int', ' str', '.split', 'float', 'flt'. Probe: 'time.time()' 0.390, 'np.array(' 0.272, 'float(' 0.260, 'int(' 0.167, 'str(' 0.117; the same code without the call 0.021, 'print(' 0.011, a list comprehension 0.171."
+}

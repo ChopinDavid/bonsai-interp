@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b05a2aa1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N10876-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N10876",
+   "pole": "-",
+   "label": "a singular count noun whose article has been dropped after an adjective ('releases precise amount of', 'serve as good source of'); the same phrase with 'a' or 'the' stays low",
+   "fire": [
+    "The pump delivers small dose of medicine into the blood each hour.",
+    "Fresh fruit is excellent source of vitamins for growing children.",
+    "Music has always been essential part of village festivals.",
+    "The new app is cheap replacement for the old office software.",
+    "Our team needs clear picture of the costs before we decide.",
+    "The library was ideal spot to study during the long winter.",
+    "Regular exercise remains important factor in healthy ageing.",
+    "This booklet gives brief overview of the tax rules for students."
+   ],
+   "quiet": [
+    "The pump delivers a small dose of medicine into the blood each hour.",
+    "Fresh fruit is an excellent source of vitamins for growing children.",
+    "Music has always been an essential part of village festivals.",
+    "The new app is a cheap replacement for the old office software.",
+    "Our team needs a clear picture of the costs before we decide.",
+    "The library was the ideal spot to study during the long winter.",
+    "Regular exercise remains an important factor in healthy ageing.",
+    "This booklet gives a brief overview of the tax rules for students."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on the noun; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun missing its article",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: - pole peaks ' source', ' part', ' amount', ' alternative', ' understanding', ' period', ' fraction', ' place', all after an adjective with no article. Probe: 'precise amount' 0.757, 'constant part' 0.559, 'good source' 0.555, 'appropriate place' 0.411, 'secure alternative' 0.401; with the article 0.063, 0.004, 0.005, 0.008."
+}

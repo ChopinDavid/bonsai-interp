@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0abcfecb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N8062-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N8062",
+   "pole": "-",
+   "label": "best guess: word-initial pieces of Arabic words (the definite article 'ال' joined to a split word: ' الأ', ' الص'); weak and broad, English control text stays near 0.1",
+   "fire": [
+    "سافرنا إلى مدينة الأقصر لرؤية المعابد القديمة.",
+    "يعيش في الأمازون عدد كبير من الحيوانات النادرة.",
+    "درس الطلاب الأوصاف والأسماء في حصة اللغة.",
+    "زار الوفد مدينة الإسكندرية في الصيف الماضي.",
+    "تحدث المعلم عن الأنهار الكبيرة في أفريقيا.",
+    "اشترت أمي الأقمشة من السوق القديم.",
+    "قرأ أخي عن الأهرامات في كتاب التاريخ.",
+    "يحب جدي الأغاني الشعبية القديمة كثيراً."
+   ],
+   "quiet": [
+    "We travelled to the city of Luxor to see the old temples.",
+    "A great number of rare animals live in the Amazon.",
+    "The students studied adjectives and nouns in the language class.",
+    "The delegation visited Alexandria last summer.",
+    "The teacher talked about the great rivers of Africa.",
+    "My mother bought the fabrics at the old market.",
+    "My brother read about the pyramids in a history book.",
+    "My grandfather loves the old folk songs very much."
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.3; near misses 0.02-0.15; median below 0.20 is likely",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; split Arabic al- word pieces",
+ "unit_kind": "token/lexical",
+ "confidence": 0.2,
+ "notes": "Card: max 3.55, peaks ' الأ' x5, ' �', ' الح' x2, plus snake_case suffixes '_LEG', '_pin'. Probe: 'الأمازون' 0.169, 'الأسماء ... الأوصاف' 0.262, 'الأقصر' 0.300 (peak ' الص'), but Arabic without 'الأ' 0.275 and an English filler 0.143; snake_case code 0.014-0.032. Near misses are English translations, so the test mostly asks whether Arabic al- pieces beat English text."
+}

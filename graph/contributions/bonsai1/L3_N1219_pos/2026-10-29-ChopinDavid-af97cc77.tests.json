@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-af97cc77",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N1219+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N1219",
+   "pole": "+",
+   "label": "best guess: the capitalized first piece of a split proper name (' S' in 'S|isyphus', ' Sp' in 'Sp|inoza'); dense and gate-closed, so near misses fire 0.1-0.45",
+   "fire": [
+    "In the myth, the punishment of Sisyphus never comes to an end.",
+    "Many readers first met the ideas of Spinoza in a library.",
+    "After the war, the philosopher Schopenhauer was rarely read.",
+    "The famous lectures of Wittgenstein were written down by students.",
+    "We read the letters of Seneca during the winter term.",
+    "Her thesis compared the poems of Sappho with later verse.",
+    "Few people today remember the voyages of Magellan in detail.",
+    "The paintings of Delacroix hang in a quiet room of the museum."
+   ],
+   "quiet": [
+    "In the myth, the punishment of the giant never comes to an end.",
+    "Many readers first met these ideas in a library.",
+    "After the war, the old philosopher was rarely read.",
+    "The famous lectures were written down by students.",
+    "We read the old letters during the winter term.",
+    "Her thesis compared the early poems with later verse.",
+    "Few people today remember the old voyages in detail.",
+    "The paintings hang in a quiet room of the museum."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.85 on the name's first piece; near misses 0.1-0.45; overlap is likely",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; first piece of a split proper name",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: max 1.11, broad (7.3% of tokens) and dense on the other pole (15%), gate-closed regime 100%, peaks ' S' x3, ' D', ' Sp', ' Jesus', ' United'. Probe: 'Sisyphus' 0.823, 'Spinoza' 0.777, 'United Nations' 0.705, 'Downtimes' 0.631; plain controls 0.090-0.284, but the filler 'The cat slept' scored 0.469. Low confidence because of the density."
+}

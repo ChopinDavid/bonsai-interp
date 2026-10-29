@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-48ef45e4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N8153-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N8153",
+   "pole": "-",
+   "label": "the capitalized first piece of a word the tokenizer splits (' Sc' in 'Sc|ythe', ' T' in 'T|umble'); a capitalized word that is a single token in the same slot stays low",
+   "fire": [
+    "In the old painting, Death carries a long Scythe over one shoulder.",
+    "The desert guide warned us about the Scorpion hiding under rocks.",
+    "Mix the flour and butter, then Scramble the eggs in a separate pan.",
+    "The pirate captain was a known Scoundrel along the coast.",
+    "Farmers placed a Scarecrow in the middle of the cornfield.",
+    "Kids love to Tumble down the grassy hill behind the school.",
+    "The village festival ended with a game called Scuttle on the green.",
+    "The train ride offered beautiful Scenery along the river valley."
+   ],
+   "quiet": [
+    "In the old painting, Death carries a long Sword over one shoulder.",
+    "The desert guide warned us about the Snake hiding under rocks.",
+    "Mix the flour and butter, then Beat the eggs in a separate pan.",
+    "The pirate captain was a known Thief along the coast.",
+    "Farmers placed a Statue in the middle of the cornfield.",
+    "Kids love to Run down the grassy hill behind the school.",
+    "The village festival ended with a game called Football on the green.",
+    "The train ride offered beautiful Views along the river valley."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.95 on ' Sc' or ' T'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "capitalized first piece of a split word",
+ "unit_kind": "spelling unit",
+ "confidence": 0.6,
+ "notes": "Card: - pole peaks ' Sc' x7, ' T' x5, ' sc' x4, ' Sh' x2 at the start of split words (Scablands, Scrape, Scandal, Toss). Probe: 'Scablands' 0.927, 'Scrape' 0.816, 'Scandal' 0.760, 'Toss' 0.521, 'Shredder' 0.228; 'Scaffold' (one token) 0.003, 'Wipe' 0.057, 'affair' 0.048. Every fire word was checked to split as ' Sc' or ' T' + rest; near misses use single-token capitalized words."
+}

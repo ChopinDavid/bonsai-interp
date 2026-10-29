@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-86f70373",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N4392-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N4392",
+   "pole": "-",
+   "label": "the determiner that opens the destination of a going-to phrase ('walking to my car', 'a trip to the zoo', 'a ride to a party'); the same noun phrase as a direct object of a non-motion verb stays low",
+   "fire": [
+    "When I was driving to my office, the radio announced the storm.",
+    "After the game we all headed to the beach for a swim.",
+    "Every Sunday she walks to her grandmother's house on the hill.",
+    "The bus took us to a small village near the border.",
+    "Late at night he hurried to his kitchen to check the oven.",
+    "Our class went on a field trip to the museum last Friday.",
+    "My cousin offered me a lift to the station this morning.",
+    "Once the rain stopped, the children ran to their bikes."
+   ],
+   "quiet": [
+    "When I was cleaning my office, the radio announced the storm.",
+    "After the game we all photographed the beach at sunset.",
+    "Every Sunday she bakes bread at her grandmother's house on the hill.",
+    "The bus was full of tourists from a small village near the border.",
+    "Late at night he tidied his kitchen and checked the oven.",
+    "Our class wrote a report about the museum last Friday.",
+    "My cousin repaired my bike at the station this morning.",
+    "Once the rain stopped, the children painted their bikes."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.85 on the determiner after motion 'to'; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "determiner of a motion destination",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: - pole peaks ' a' x12, ' the' x6, ' your' x5, ' my' x3, almost all after 'to' in 'walking to my car', 'went to my bedroom', 'trip to the zoo', 'headed to your classes'. Probe: 'walking to my car' 0.753, 'went to my bedroom' 0.856, 'a ride to a party' 0.508, 'trip to the zoo' 0.386, also 'use a little' 0.475; 'washing my car' 0.126, 'cleaned my bedroom' 0.198, 'animals at the zoo' 0.150."
+}

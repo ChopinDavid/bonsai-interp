@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3fba46a7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N2542+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N2542",
+   "pole": "+",
+   "label": "best guess: the linking word ('is', 'as', 'namely') where a sentence turns to restate or identify what a preceding phrase refers to ('and that is being honest'); weak in short sentences",
+   "fire": [
+    "Most coaches agree on one point, and that is being patient with beginners.",
+    "There is only one rule in this kitchen, and that is cleaning as you go.",
+    "Grandma had one secret for good bread, and that is letting the dough rest.",
+    "Our goal this year is simple, and that is keeping every customer happy.",
+    "The hardest part of moving, people say, and that is saying goodbye to neighbours.",
+    "My father taught me one thing, and that is showing up on time.",
+    "The best cure for a cold, the doctor said, and that is getting plenty of sleep.",
+    "Teachers want one thing from parents, and that is reading with their children."
+   ],
+   "quiet": [
+    "Most coaches agree that beginners need patient teaching and clear feedback.",
+    "Everyone in this kitchen cleans as they go during a busy shift.",
+    "Grandma always let the dough rest before baking her bread.",
+    "This year we want every customer to leave the shop happy.",
+    "Moving house was hard because we had to leave our neighbours.",
+    "My father always showed up on time for work and church.",
+    "The doctor told me to get plenty of sleep to fight the cold.",
+    "Parents can help by reading with their children every night."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.2; near misses near 0.05; median below 0.20 is likely, so expect a fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; restating link word",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: no single token (' as' x4, ' than' x3, ':' x3, 'ely' x2), max 4.38. Probe: 'and that is being honest' 0.164; 'is that wet socks' 0.053, 'namely, red' 0.056, plain sentences 0.027-0.091. A weak best guess."
+}

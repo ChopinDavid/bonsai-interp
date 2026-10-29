@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5b74525b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N5952-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N5952",
+   "pole": "-",
+   "label": "membership among equals: the word that places someone inside a group of peers or members acting together ('peer' mentoring, 'member of', activities 'with' fellow students); the same sentences with a non-peer relation stay low",
+   "fire": [
+    "Every new nurse is paired with a peer mentor during the first month.",
+    "Last spring the club became a founding member of the national league.",
+    "Visiting pupils join sports activities with local pupils each afternoon.",
+    "The clinic offers a peer counseling service run by former patients.",
+    "Our town is a full member of the regional water partnership.",
+    "International students take part in group projects with Dutch students.",
+    "After the program she trained as a peer educator for her school.",
+    "Two years ago the city became a member of the climate alliance."
+   ],
+   "quiet": [
+    "Every new nurse is assigned a supervisor during the first month.",
+    "Last spring the club bought new uniforms for the national league.",
+    "Visiting pupils play sports on the field each afternoon.",
+    "The clinic offers a counseling service run by trained psychologists.",
+    "Our town pays a fee for the regional water supply.",
+    "International students write their projects alone in the library.",
+    "After the program she trained as a teacher at her school.",
+    "Two years ago the city signed a contract for new buses."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.65 on 'peer', 'of' after member, or 'with' after a joint activity; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "belonging among peers",
+ "unit_kind": "meaning/context",
+ "confidence": 0.45,
+ "notes": "Card: - pole peaks ' peer' x2, ' of' (founding member of), ' kids' (with other kids), ' in' (participate in); the opposite direction promotes 'shared', 'mutual', 'fellow', 'solidarity'. Probe: 'peer mentoring' 0.570, 'founding member of' 0.644, 'activities with local students' 0.507, 'peer support group' 0.286; 'play with other kids' only 0.056; tutoring club 0.030, therapist 0.024."
+}
