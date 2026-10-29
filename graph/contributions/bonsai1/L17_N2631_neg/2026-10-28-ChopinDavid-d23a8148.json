@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-d23a8148",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N2631-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T00:27:45+00:00",
+ "recipe": {
+  "toolchain_commit": "855ed148",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N2631_neg/2026-10-28-ChopinDavid-d23a8148.tests.json"
+ },
+ "label": "a ruler, regime or government as the holder of political power in a historical or political account (forced the president to dismiss his government, attempts to increase the power of the monarchy); the same words in everyday non-political settings stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N2631_neg/2026-10-28-ChopinDavid-d23a8148.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.176,
+     "peak": " power"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.436,
+     "peak": "ar"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.534,
+     "peak": " rule"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.381,
+     "peak": "ta"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.363,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.449,
+     "peak": " stay"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.524,
+     "peak": " government"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.101,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " warm"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " phones"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.051,
+     "peak": " crowned"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " months"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.063,
+     "peak": " moved"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.408,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "855ed148",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "rulers/governments holding power in political history",
+ "unit_kind": "topic",
+ "confidence": 0.55,
+ "notes": "Card: ' government' x4, ' his' x3 (the ruler's), ' Bolshevik' x2, ' Lincoln' x2, Shevardnadze, Charles, Pandu, Lon Nol. Probe: 'power of the monarchy' 0.770, 'socialist government' 0.578, 'dismiss his entire government' 0.568, 'seizing power' 0.516, 'Divine Right of Kings' 0.335; 'government website' 0.031, 'neighbor Charles' 0.005.",
+ "selection": "random draw"
+}

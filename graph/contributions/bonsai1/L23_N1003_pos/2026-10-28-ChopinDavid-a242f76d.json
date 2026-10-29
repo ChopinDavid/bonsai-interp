@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-a242f76d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N1003+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T00:26:27+00:00",
+ "recipe": {
+  "toolchain_commit": "855ed148",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N1003_pos/2026-10-28-ChopinDavid-a242f76d.tests.json"
+ },
+ "label": "a pronoun that opens the content clause after a speech or knowledge verb (announced it would, told me he was, let them know you care); the same pronouns as plain main-clause subjects stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N1003_pos/2026-10-28-ChopinDavid-a242f76d.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.606,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.449,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.838,
+     "peak": " its"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.589,
+     "peak": " they"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.397,
+     "peak": " she"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.663,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.645,
+     "peak": " you"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.52,
+     "peak": " she"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " Friday"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": " late"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": "After"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " running"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.033,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.186,
+     "peak": " your"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.597,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "855ed148",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "pronoun subject of a reported clause",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' he' x7, ' it' x6, ' its' x3 right after 'announced (that)', 'let them know', 'told you'. Probe: 'announced its plan' 0.898, 'let them know you care' 0.754, 'announced he would' 0.640, 'announced that it would' 0.560, 'told me he was' 0.411, 'said that she would' 0.449; rewrites without the reporting verb 0.002-0.019.",
+ "selection": "random draw"
+}
