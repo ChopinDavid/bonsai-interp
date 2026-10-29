@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N2753+",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 2753,
+ "pole": "+",
+ "label": "a grade or class designation inside a rating scheme ('NYHA Class II', 'magnitude M 6.8', 'Class A power supply', 'Category 4'); the same situations described without a scheme label stay low",
+ "short": "grade/class designation",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N2753_pos/2026-10-29-ChopinDavid-16a2aca3.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.712,
+     "peak": " Class"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.18,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.206,
+     "peak": " Class"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.524,
+     "peak": "M"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.025,
+     "peak": " when"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.368,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.242,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.032,
+     "peak": " wine"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.076,
+     "peak": "ure"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.04,
+     "peak": " dawn"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.041,
+     "peak": " most"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.048,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " fierce"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.03,
+     "peak": " protective"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " trem"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.039,
+     "peak": " wine"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.828,
+    "median_fire": 0.224,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-16a2aca3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-16a2aca3",
+   "a grade or class designation inside a rating scheme ('NYHA Class II', 'magnitude M 6.8', 'Class A power supply', 'Category 4'); the same situations described without a scheme label stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-16a2aca3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

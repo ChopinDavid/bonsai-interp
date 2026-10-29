@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N8433+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 8433,
+ "pole": "+",
+ "label": "the CJK token '장' / '場' standing as its own token inside a word (Korean 매장, 회장, 극장; Chinese and Japanese 商場, 職場, 劇場); single-token words that contain the syllable (市場, 場合, 現場) and sentences without it stay low",
+ "short": "'장'/'場' as its own token",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N8433_pos/2026-10-29-ChopinDavid-b9c4cbb5.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.043,
+     "peak": "출"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.058,
+     "peak": "장"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.136,
+     "peak": "장"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.151,
+     "peak": "장"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.047,
+     "peak": "場"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.099,
+     "peak": "場"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.027,
+     "peak": "滿"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.009,
+     "peak": "週"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.017,
+     "peak": "는"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": "말"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": "�"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": "생"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": "昨天"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "見"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": "點"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": "公園"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.053,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-b9c4cbb5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-b9c4cbb5",
+   "the CJK token '장' / '場' standing as its own token inside a word (Korean 매장, 회장, 극장; Chinese and Japanese 商場, 職場, 劇場); single-token words that contain the syllable (市場, 場合, 現場) and sentences without it stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-b9c4cbb5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

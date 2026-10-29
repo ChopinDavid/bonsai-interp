@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N6283+",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 6283,
+ "pole": "+",
+ "label": "a word piece completing a journal name inside a bibliographic reference ('BMC Micro|biology', 'Curr Pharm Des', 'Educational Psych|ologist'); the same words in prose and in book references stay low",
+ "short": "journal name in a reference",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N6283_pos/2026-10-29-ChopinDavid-2d66d976.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.931,
+     "peak": "biology"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.314,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.474,
+     "peak": "ologist"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.223,
+     "peak": "chem"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.281,
+     "peak": " Earth"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.217,
+     "peak": " Neuroscience"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.19,
+     "peak": "biology"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.088,
+     "peak": " Neuroscience"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.026,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.054,
+     "peak": " engineering"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": " institute"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.038,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.04,
+     "peak": " channels"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.252,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-2d66d976"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-2d66d976",
+   "a word piece completing a journal name inside a bibliographic reference ('BMC Micro|biology', 'Curr Pharm Des', 'Educational Psych|ologist'); the same words in prose and in book references stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-2d66d976"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

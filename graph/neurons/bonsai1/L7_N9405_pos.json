@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L7/N9405+",
+ "model": "bonsai1",
+ "layer": 7,
+ "index": 9405,
+ "pole": "+",
+ "label": "the token that completes a fixed multi-word term or proper name set up by the previous word ('transition states', 'flux-cored', 'Kurt Russell', 'Operations Management', 'storm-petrel'); the same frames with a generic word in that slot stay low",
+ "short": "completion of a fixed collocation",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N9405_pos/2026-10-29-ChopinDavid-582e19ad.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.635,
+     "peak": " state"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.774,
+     "peak": "ored"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.22,
+     "peak": " Stewart"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.044,
+     "peak": " Ecology"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.221,
+     "peak": " Management"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.371,
+     "peak": "et"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.067,
+     "peak": " energy"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.02,
+     "peak": " post"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.17,
+     "peak": " stage"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " switched"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": " Glasgow"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " spring"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " years"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": "ale"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " heat"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.02,
+     "peak": " post"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.221,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-582e19ad"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-582e19ad",
+   "the token that completes a fixed multi-word term or proper name set up by the previous word ('transition states', 'flux-cored', 'Kurt Russell', 'Operations Management', 'storm-petrel'); the same frames with a generic word in that slot stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-582e19ad"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
