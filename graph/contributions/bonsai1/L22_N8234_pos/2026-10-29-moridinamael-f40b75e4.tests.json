@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-29-moridinamael-f40b75e4",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L22/N8234+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:10+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "news-style reported speech after a '..., X said' attribution, quoted or paraphrased, as against the same topics written with no speaker attribution"
+ },
+ "neighbours": [
+  {
+   "unit": "L22/N8234",
+   "pole": "+",
+   "label": "the opening quote mark that resumes a named source's words in news or interview text (not fiction dialogue, not paraphrase)",
+   "fire": [
+    "\"We expect the bridge to reopen by spring,\" said city engineer Maria Lopez. \"Crews are working double shifts to make that happen.\"",
+    "\"Prices have stabilized,\" the central bank spokesman told reporters on Tuesday. \"But we remain cautious about the months ahead.\"",
+    "\"It was the hardest race of my career,\" Okafor said after crossing the finish line. \"I honestly didn't think my legs would hold up.\"",
+    "\"Our clinic saw twice as many patients this winter,\" said Dr. Helen Park, the facility's director. \"We simply need more staff.\"",
+    "\"The data are clear,\" said lead author James Whitfield in an interview. \"Warmer oceans are pushing these fish north.\"",
+    "\"We did not authorize those payments,\" the company said in a statement. \"An internal review is now under way.\"",
+    "\"I grew up on this street,\" said resident Tomas Reyes, 64. \"Seeing the old bakery close feels like losing a relative.\"",
+    "\"The team showed real character tonight,\" coach Linda Burke told the press. \"We never stopped believing we could come back.\""
+   ],
+   "quiet": [
+    "City engineer Maria Lopez said she expects the bridge to reopen by spring, adding that crews are working double shifts.",
+    "The central bank spokesman told reporters on Tuesday that prices had stabilized but that officials remain cautious about the months ahead.",
+    "\"I don't think I can run another step,\" Mara gasped, collapsing by the old oak. \"Leave me here and go on without me.\"",
+    "Dr. Helen Park, the clinic's director, said the facility saw twice as many patients this winter and needs more staff.",
+    "Lead author James Whitfield explained in an interview that warmer oceans are pushing the fish north.",
+    "The company said in a statement that it had not authorized the payments and that an internal review is under way.",
+    "\"Where have you been all night?\" the old witch hissed, stirring her cauldron. \"The moon rose hours ago.\"",
+    "Coach Linda Burke told the press that her team showed real character and never stopped believing in a comeback."
+   ]
+  }
+ ],
+ "predictions": "Expect about 6/8 fire above 0.20 and near misses mostly under 0.10; the fiction near misses are the risk.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "bank-solo",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
