@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5caf9bc4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N7186-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N7186",
+   "pole": "-",
+   "label": "an Arabic spelling unit: the piece 'ت' that completes تحت- when a prefixed و/ف/س splits the word (و|تح|ت|اج, و|تح|ت, و|تح|ت|فل, و|تح|ت|كر), and the piece 'حت' in الت|حت|ية (infrastructure); the unsplit tokens ' تحت' and ' تحتاج'/' يحتاج' stay low, as do و|تح... words whose next piece is not 'ت' (و|تحديد)",
+   "fire": [
+    "المدينة تنمو بسرعة وتحتاج إلى مدارس جديدة.",
+    "تقع القرية على التل وتحت التل يمر الوادي.",
+    "تستثمر الشركة في البنية التحتية للاتصالات.",
+    "تجتمع الأسرة كل عام وتحتفل بعيد الجد.",
+    "الدواء مفيد وتحتاجه الأم بعد الولادة.",
+    "البلاد غنية بالنفط وتحتكر الدولة تصديره.",
+    "المدرسة قديمة وتحتاج إلى ترميم عاجل.",
+    "خطة الحكومة تشمل الطرق والجسور والمرافق التحتية."
+   ],
+   "quiet": [
+    "المدينة تنمو بسرعة والسكان يحتاجون إلى مدارس جديدة.",
+    "تقع القرية على التل ويمر الوادي تحت التل.",
+    "تستثمر الشركة في التعليم والاتصالات.",
+    "تجتمع الأسرة كل عام وتزور بيت الجد.",
+    "الدواء مفيد وتأخذه الأم بعد الولادة.",
+    "البلاد غنية بالنفط وتصدر الدولة معظمه.",
+    "المدرسة قديمة وتحديد موعد الترميم ضروري.",
+    "خطة الحكومة تشمل الطرق والجسور والمرافق العامة."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-1.3 on the 'ت' or 'حت' piece; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the piece 'ت' after 'تح' (split تحت)",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: 'حت' x8, 'ت' x5, 'حي' x3 in وتح|ت|اجه, وتح|ت|سب, وتح|ت (under), الت|حت|ية, al-Ta|ht|awi; max 10.6, density 0.039%. Probe: وتحت 1.359, وتحتاج 1.024 (both on 'ت'), البنية التحتية 0.750 (on 'حت'), يحتوي 0.318 (ي|حت|وي), Tahtawi 0.309 ('ht'), unsplit ' تحت' 0.072-0.133, المحتوى 0.025, تحديد 0.019, no-حت control 0.052. tok.py: وتحتل splits و|تح|تل, وتحتفظ و|تح|تف|ظ (no bare 'ت'), so the test keeps to words that give the bare 'ت' piece."
+}

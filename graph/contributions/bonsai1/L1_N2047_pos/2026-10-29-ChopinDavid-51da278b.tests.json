@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-51da278b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N2047+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N2047",
+   "pole": "+",
+   "label": "dense: on for about half of all tokens (max 0.17); strongest on the function words of first-person conversational prose (my, how, who, that, most) and weakest on bare lists of names and numbers. Best-guess test only",
+   "fire": [
+    "When I tell people how I started my shop, most of them laugh.",
+    "Anyone who reads my posts knows that I love cheap coffee.",
+    "Here is how my grandmother taught me to fold the dough.",
+    "Most of the questions I get are about how to price a quilt.",
+    "If you follow my recipes, tell me how they turned out.",
+    "Those of you who have been reading since 2010 will remember this.",
+    "I have no idea how my cat learned to open that cupboard.",
+    "What surprised me most was how many of you wrote back."
+   ],
+   "quiet": [
+    "Berlin, Hamburg, Munich, Cologne, Frankfurt.",
+    "Table 4: 3.2 8.75 6.0 12.5 9.25",
+    "Oak, ash, elm, beech, birch.",
+    "Monday 9:00, Tuesday 10:30, Friday 14:00.",
+    "Red, blue, green, yellow, purple.",
+    "Price: 24.99. Weight: 1.2 kg. Colour: grey.",
+    "Tokyo, Osaka, Kyoto, Nagoya, Sapporo.",
+    "Flour 500 g, sugar 200 g, butter 250 g."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.95; near misses 0.1-0.4 because the pole is dense, so the test may fail on the near misses even if the ordering holds",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; first-person blog function words (guess)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: FLAG dense, 48.6% of tokens above 0.1 of max, 10.1% above 0.3; max 0.17; regime -x- echo 100%; peaks ' most' x4, ' reading' x4, ' that' x3, ' my' x2, ' how' x2. Probe: 'instructions on how' 0.925, 'comment on my blog' 0.911, 'Most of my friends' 0.642, 'Anyone who' 0.617; code 0.443, SQL 0.523, a numeric table 0.381, a list of cities 0.159, the far-domain floor 0.233. Registered as dense / positional with a best-guess contrast of chatty prose against bare lists."
+}

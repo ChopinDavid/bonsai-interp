@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3fc3345f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N9099+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N9099",
+   "pole": "+",
+   "label": "building energy efficiency: green-building standards and measures (LEED, ASHRAE, ENERGY STAR, Passive House, insulation, duct sealing, glazing, energy audits) and the resulting reduction in heating, cooling or water use; buildings described without efficiency, and fuel efficiency outside buildings (cars, vans), stay low",
+   "fire": [
+    "Sealing the ductwork cut the home's cooling costs by a quarter.",
+    "The library was the first public building in the state to reach LEED Platinum.",
+    "Triple-glazed windows reduce heat loss through the building envelope.",
+    "Under ASHRAE 62.1 the ventilation rate depends on floor area and occupancy.",
+    "An energy audit found that the attic insulation was well below the recommended R-value.",
+    "Passive House buildings need almost no heating even in a cold winter.",
+    "Upgrading to a high-efficiency boiler lowered the school's gas use by 30 percent.",
+    "ENERGY STAR certified offices use about a third less energy than typical buildings."
+   ],
+   "quiet": [
+    "Repainting the hallway brightened the home's entrance considerably.",
+    "The library was the first public building in the state to have an escalator.",
+    "Stained-glass windows line the north wall of the old chapel.",
+    "Under the new zoning rules the car park depends on floor area and occupancy.",
+    "A survey found that the attic was full of boxes left by the previous owner.",
+    "Victorian terraced houses often have cellars and narrow back gardens.",
+    "Switching to a smaller engine lowered the van's fuel use by 30 percent.",
+    "Modern offices use open floor plans and shared meeting rooms."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7, strongest on 'reduce/cut' and on the standard's name; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "building energy-efficiency measures",
+ "unit_kind": "topic",
+ "confidence": 0.55,
+ "notes": "Card: USGBC/LEED, 'reduce the energy requirements for air conditioning', insulated ducts and reduced operating costs, National Insulation Association, 70 per cent less water, blower door, ASHRAE Fundamentals, energy use 30 percent below; max 108, density 0.024%; the - pole suppresses 'window'. Probe: LEED Gold 0.653, 'insulation ... reduce heating bills' 0.563, ASHRAE 90.1 0.560, blower door 0.160, '40 percent less water' 0.117; tower with forty floors 0.053, hybrid car 40 percent less fuel 0.062, farmhouse 0.001, budget 0.004."
+}

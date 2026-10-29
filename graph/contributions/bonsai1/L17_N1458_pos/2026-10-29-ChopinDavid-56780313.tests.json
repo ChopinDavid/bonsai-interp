@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-56780313",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N1458+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N1458",
+   "pole": "+",
+   "label": "the word that completes a hedged claim of partial degree or influence in expository prose (played a role, only a proportion, isn't perfect, run into the billions, also affect, factors involved, will inevitably change); the negative pole is the other side of the distinction, sameness (same, equally, identical, unchanged)",
+   "fire": [
+    "Most economists agree that housing costs played a role in the slowdown.",
+    "Even its supporters admit the new curriculum is far from perfect.",
+    "In practice only a proportion of the donated food ever reaches the shelters.",
+    "Repairs to the old stadium are expected to run into the billions.",
+    "Sleep quality can also affect how well students remember what they read.",
+    "Caffeine has a mild effect on blood pressure in most adults.",
+    "A mix of genetic and environmental factors seems to be involved.",
+    "Whatever the committee decides, the schedule will inevitably change."
+   ],
+   "quiet": [
+    "Most economists agree that housing costs stayed the same during the slowdown.",
+    "Its supporters say the new curriculum was approved in March.",
+    "In practice all of the donated food is delivered to the shelters on Fridays.",
+    "Repairs to the old stadium were finished in the spring.",
+    "Students read the same chapter before the exam.",
+    "Caffeine is found in coffee, tea and chocolate.",
+    "The two samples were identical in colour and weight.",
+    "Whatever the committee decides, the schedule will be posted online."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.45 on the completing word (role, perfect, fraction, millions, affect, effect, factors, change); near misses about the same topics without a degree claim below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "hedged partial-degree claim",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: no single token ('.' x4, ',' x2, then perfect, role, proportion, affect, billions, change, tiempo, effect, factors); max 13.1, density 0.45%; the - pole peaks on same/equally/identical/unchanged. Probe: 'only a fraction' 0.380, 'is perfect' (negated) 0.372, 'run into the millions' 0.317, 'plays a role' 0.294, 'also affect' 0.178, 'may contribute' 0.040; 'exactly the same treatment' 0.022, 'identical' 0.021, neutral 0.017. The + pole marks 'this matters to some degree' claims, the - pole 'no difference' claims."
+}

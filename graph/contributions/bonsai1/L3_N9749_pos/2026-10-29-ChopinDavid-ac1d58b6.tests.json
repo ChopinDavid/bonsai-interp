@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ac1d58b6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N9749+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N9749",
+   "pole": "+",
+   "label": "the token ' al' / 'al' as a word piece: the Arabic article in transliterated names (al-Din, al-Andalus, al-Khwarizmi) and the piece inside split words (bet|al|ains, Jethal|al), with weaker firing on other short pieces (' etc', ' Tal'); names without the article and whole words stay low. A broad, gate-closed echo pole (max 1.7), so weak leaks are expected",
+   "fire": [
+    "The astronomer al-Battani measured the length of the year.",
+    "Cordoba flourished under the rulers of al-Andalus.",
+    "The network al-Jazeera broadcast the speech live.",
+    "Algebra takes its name from a book by al-Khwarizmi.",
+    "Red beet pigments known as betalains fade when heated.",
+    "The actor Jethalal became a household name in India.",
+    "The caliph Harun al-Rashid appears in the Arabian Nights.",
+    "Philosophers such as Plato, Kant etc. discussed justice."
+   ],
+   "quiet": [
+    "The astronomer Ibn Yunus measured the length of the year.",
+    "Cordoba flourished under the rulers of Castile.",
+    "The network BBC World broadcast the speech live.",
+    "Geometry takes its name from a Greek word for measuring land.",
+    "Red beet pigments known as anthocyanins fade when heated.",
+    "The actor Dilip Kumar became a household name in India.",
+    "The caliph Harun appears in the Arabian Nights.",
+    "Philosophers such as Plato and Kant discussed justice."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on the al piece ('etc' about 0.3); near misses below 0.25",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the piece ' al'/'al'",
+ "unit_kind": "token",
+ "confidence": 0.5,
+ "notes": "Card: ' al' x11, 'al' x4, 'AL' x2, 'Al' x2, ' etc' at the top; max 1.72, density 1.2% (FLAG broad), regime -x- echo 100% (the - pole is ' al' x28 at max 44.8, so the + pole is its gate-closed echo). Probe: 'Qutb al-Din' 0.738, 'betalains' 0.730, 'al-Hussein' 0.702, 'etc.' 0.336, ' Tal|ley' 0.236, 'Beet|root' 0.214, 'Ibn Sina' 0.041, 'Mill Road' 0.082. tok.py: al-Battani, al-Andalus, al-Jazeera, al-Khwarizmi, al-Rashid all give ' al' as its own token; Castile, Dilip and Yunus do not contain an al piece.",
+ "trigger": {
+  "tokens": [
+   " al",
+   "al",
+   " Al",
+   "Al",
+   " AL",
+   "AL"
+  ]
+ }
+}

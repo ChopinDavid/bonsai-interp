@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1b87810f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N8646-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N8646",
+   "pole": "-",
+   "label": "the word 'bulb(s)' and 'tuber(s)/tuberous' in the botanical sense (underground storage organs: daffodil bulbs, dahlia tubers), with weaker firing on the inner pieces of split technical words (ca|ust|ic, chir|p); light bulbs and seeds stay low",
+   "fire": [
+    "In autumn gardeners lift the dahlia tubers and store them dry.",
+    "Daffodil bulbs should go in the ground before the first frost.",
+    "Most lilies grow from scaly bulbs rather than from seed.",
+    "Squirrels dug up half the crocus bulbs we planted last week.",
+    "The begonia forms a tuberous root that rests over winter.",
+    "Onions and garlic are bulbs that store food underground.",
+    "Hyacinth bulbs can be forced indoors for early flowers.",
+    "Wild tulips spread slowly by producing small offset bulbs."
+   ],
+   "quiet": [
+    "In autumn gardeners rake the fallen leaves and store them dry.",
+    "Daffodil seeds should go in the ground before the first frost.",
+    "Most lilies prefer rich soil rather than sandy ground.",
+    "Squirrels dug up half the lettuce seedlings we planted last week.",
+    "The begonia forms a thick stem that rests over winter.",
+    "Onions and garlic are vegetables that store well in a cool shed.",
+    "The hallway light bulb flickered and went out this morning.",
+    "The lamp needs a new bulb with a warmer glow."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.4 on bulbs/tubers (a weak pole: the probe maximum was 0.38); near misses below 0.1, including 'light bulb' and 'bulb' after a lamp",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "botanical bulbs and tubers",
+ "unit_kind": "lexical",
+ "confidence": 0.35,
+ "notes": "Card: ' bulbs' x4, ' bulb' x4, 'ust' x3 (Ca|ust|ic), 'bs' x3 (Bul|bs), 'er' (tub|er|ous), 'p' (chir|p); max 24.6 but only caustic reaches it, the bulb examples sit near 10; density 0.007%. Probe: 'bulbs are underground buds' 0.378, 'tulip bulbs' 0.200, tuberous 0.234 ('er'), caustic 0.201 ('ust'), chirp 0.104, PCOS 0.218 (peak ' cycles'), 'light bulb' 0.007, 'tulip seeds' 0.045, 'fibrous roots' 0.095. The plant-vs-lamp contrast is the testable part; the test declares the word trigger so coverage is measured exactly.",
+ "trigger": {
+  "words": [
+   "bulb",
+   "bulbs",
+   "tuber",
+   "tubers",
+   "tuberous"
+  ]
+ }
+}

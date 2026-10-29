@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-337b6f2d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N3936+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N3936",
+   "pole": "+",
+   "label": "a next-token predictor for 'digit(s)'/'numeral(s)': the token right before the place where 'digit' is expected (a six-_, the last four _, three different _, '[0-9]+ matches one or more _'); the same count words where the coming noun is clearly something else (letters, animals, years) stay low",
+   "fire": [
+    "To unlock the phone you must type in a six-digit passcode.",
+    "Write down any three different digits and reverse their order.",
+    "The pattern [0-9]{3} matches exactly three digits in a row.",
+    "Your password must contain at least two digits and one symbol.",
+    "Add up the individual digits of the number until a single digit remains.",
+    "The new postcodes have seven digits instead of five.",
+    "Children learn to read two-digit numbers before three-digit ones.",
+    "Every even number ends in one of five possible digits."
+   ],
+   "quiet": [
+    "To unlock the gate you must turn the key three full turns.",
+    "She tried on three different dresses before choosing the blue one.",
+    "The pattern [a-z]{3} matches exactly three lowercase letters in a row.",
+    "Your essay must contain at least two quotations and one chart.",
+    "Add up the individual scores of the players until a single winner remains.",
+    "The new uniforms have seven pockets instead of five.",
+    "Children learn to tie their shoes before they learn to swim.",
+    "Over the last four years the rent has risen twice."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on the token before digit(s); near misses below 0.15 (the probe's 'the last four' predicted digits at 0.38 even before 'letters', so near misses avoid that frame)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts the word 'digit'",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' ' x10, '-' x4 (the '-' in [0-9]), ' different', ' each' before numerals/digit; logit effect promotes ' digit', '-digit', ' digital' and suppresses ' letter(s)'; max 235, density 0.036%. Probe: 'three different' (numerals) 0.657, '[0-9]+ matches one or more' 0.540, 'the last four' 0.379 before both digits and letters (the prefix decides, not the word after), phone number 0.134, 'Round each' (digit) 0.053, '[a-z]+ matches one or more' 0.053, 'three different metaphors' 0.003. A prediction unit for the word digit."
+}

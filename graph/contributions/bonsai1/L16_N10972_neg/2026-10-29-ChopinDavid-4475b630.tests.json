@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4475b630",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N10972-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N10972",
+   "pole": "-",
+   "label": "a body of knowledge named as a field: 'subject knowledge', 'content knowledge', 'domain knowledge/expertise', 'background/prior/specialist knowledge' (peak on the field word or on 'knowledge'); the same words outside that sense (the subject of a sentence, a domain name, the content of a box) and plain factual recall stay low",
+   "fire": [
+    "Effective tutors pair strong content knowledge with clear explanations.",
+    "The role requires deep domain knowledge of insurance regulation.",
+    "Pupils with more background knowledge understand the passage faster.",
+    "The firm hired her for her subject-matter expertise in tax law.",
+    "Expert knowledge in a narrow field does not transfer easily.",
+    "The test measures prior knowledge before the course begins.",
+    "Nurses bring clinical knowledge that engineers often lack.",
+    "Specialist knowledge of the local geology guided the dig."
+   ],
+   "quiet": [
+    "Effective tutors pair clear explanations with plenty of patience.",
+    "The role requires a valid driving licence and weekend availability.",
+    "Pupils with more sleep understand the passage faster.",
+    "The firm hired her for her contacts in the tax office.",
+    "The subject of the painting is a woman reading a letter.",
+    "The domain registration must be renewed every year.",
+    "The content of the parcel was listed on the customs form.",
+    "The students revised the dates for the history test."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.45; near misses below 0.06",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "knowledge as a field (X knowledge)",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' subject' x3, ' knowledge' x3, ' content' x2, ' domain' x2, ' science' x2 in 'subject-matter knowledge', 'domain expertise', 'content knowledge', 'Clinical Domain'; max 23.4, density 0.043%. Probe: 'content knowledge' 0.399 (peak knowledge), 'subject knowledge' 0.251 (peak knowledge), 'domain expertise' 0.210 (peak domain), 'science stories' 0.056, 'literary skill' 0.009, 'subject of the sentence' 0.044, 'domain name' 0.006, 'content of the box' 0.013, 'memorised the facts' 0.008."
+}

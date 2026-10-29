@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ac989045",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3314-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N3314",
+   "pole": "-",
+   "label": "a non-initial piece of a romanised Sanskrit/Hindi word or name that the tokenizer splits (Tul|si, Am|rit|sar, Bh|akt|apur, D|harma, Adv|ait|a, Var|an|asi, Lak|sh|mi, Han|uman); Indic words that are single tokens (yoga, karma, Delhi, Mumbai, Krishna, Gandhi) and split names from other languages (Szymanowski, Tchaikovsky) stay low",
+   "fire": [
+    "Pilgrims bathe in the Ganges at Varanasi before dawn.",
+    "The merchant prayed to Lakshmi for a prosperous year.",
+    "A statue of Hanuman guards the entrance to the shrine.",
+    "Krishna is said to have spent his childhood in Mathura.",
+    "The verses of the Upanishads were composed centuries later.",
+    "Thousands dance during the nine nights of Navratri.",
+    "The disputed site at Ayodhya drew crowds last week.",
+    "Children leave sweets for Ganesha during the festival."
+   ],
+   "quiet": [
+    "Pilgrims gather in Delhi for the ceremony before dawn.",
+    "The merchant prayed to Krishna for a prosperous year.",
+    "A statue of Gandhi stands at the entrance to the park.",
+    "The composer Tchaikovsky spent his childhood in Votkinsk.",
+    "The novels of Dostoevsky were written decades later.",
+    "Thousands visit Kolkata during the autumn festival.",
+    "The disputed site at Chennai drew crowds last week.",
+    "Children leave sweets for the guru during the festival."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.65 on a non-initial piece; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner piece of a split romanised Indic word",
+ "unit_kind": "token",
+ "confidence": 0.55,
+ "notes": "Card: Tul|asi, Tul|si x2, suk|h|hi, Adv|ait|a, Amar Das, Bh|akt|apur, Am|rit|sar, SatyaY|ug, D|harma; max 18.9, density 0.043%. Probe: Tulsi 0.629 ('si'), Amritsar 0.526 ('rit'), Bhaktapur 0.498 ('akt'), Dharma 0.360 ('harma'), Advaita 0.336, Diwali 0.092 ('ali'), yoga/karma 0.020, Delhi/Mumbai 0.004, Szymanowski 0.009. tok.py: Varanasi, Lakshmi, Hanuman, Mathura, Upanishads, Navratri, Ayodhya, Ganesha all split; Krishna, Gandhi, Kolkata, Chennai, Delhi, Guru are single tokens."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e6c8ed06",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N5706-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N5706",
+   "pole": "-",
+   "label": "a digit used as a list or section number at the start of a line in a numbered list or reference list (7., 3), - 12 CLINICAL, 6. Menz), strongest mid-document and for later or two-digit numbers; the same lists with bullets or letters, and digits used as quantities inside prose, stay low",
+   "fire": [
+    "The survey asked about daily activities.\n3. Pain has limited my ability to climb stairs.\n4. Pain has made it hard to sleep.",
+    "Further reading\n7. Brown T. Pollinators in decline. Ecology Letters 12, 3-9.\n8. Green P. Bee habitats. Oikos 44, 101-110.",
+    "Points raised at the hearing:\n5) The drainage plan is incomplete.\n6) The access road is too narrow.",
+    "Contents\n- 11 DESCRIPTION\n- 12 CLINICAL STUDIES\n- 13 HOW SUPPLIED",
+    "The exhibit was judged a success and will return next year. 4\nSee the photograph on the following page.",
+    "그는 세 가지 원칙을 강조했다.\n7. 매일 기도하라.\n8. 이웃을 사랑하라.",
+    "After the warm-up the coach listed the drills.\n6. Twenty push-ups.\n7. Ten sprints across the hall.",
+    "Reasons given in the report:\n3. Costs rose faster than expected.\n4. The supplier missed two deadlines."
+   ],
+   "quiet": [
+    "The survey asked about daily activities.\n- Pain has limited my ability to climb stairs.\n- Pain has made it hard to sleep.",
+    "Further reading\n- Brown T. Pollinators in decline. Ecology Letters.\n- Green P. Bee habitats. Oikos.",
+    "Points raised at the hearing:\nc) The drainage plan is incomplete.\nd) The access road is too narrow.",
+    "Contents\n- DESCRIPTION\n- CLINICAL STUDIES\n- HOW SUPPLIED",
+    "The exhibit was judged a success and drew 4 thousand visitors.\nSee the photograph on the following page.",
+    "그는 세 가지 원칙을 강조했다.\n- 매일 기도하라.\n- 이웃을 사랑하라.",
+    "After the warm-up the coach asked for 6 push-ups and 7 sprints across the hall.",
+    "Reasons given in the report:\n- Costs rose 3 percent faster than expected.\n- The supplier missed 4 deadlines."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.3 on the enumerating digit (a weak transfer: the probe maximum was 0.27); near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "list-number digit at line start",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: '3' x8, '7' x6, '5' x5 at line starts: '⏎7. 찬송가', '⏎3. Eaton', '- 1⟦2⟧ CLINICAL', ' ⟦4⟧⏎', '3) 설교', '7) FAA', ' 3. Pain', '⏎6. Menz'; max 12, density 0.038%. Probe: references '5. ... 6.' 0.267 (peak '6'), contents '- 12 ... - 13' 0.209 (peak '3'), agenda '7) 8)' 0.065, recipe '1. 2. 3.' 0.022; '3 apples and 7 pears' 0.017, '2026 in room 304' 0.022, bulleted recipe 0.020, lettered agenda 0.023. Short first-item lists barely fire, so the test uses later item numbers after a lead-in line."
+}

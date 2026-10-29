@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-59d35932",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N8017+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N8017",
+   "pole": "+",
+   "label": "unclear; best guess: the institution noun (School, Academy, Institute, Research Center) or the piece 'ological' when it heads a proper name built on a field of study (Nuclear Power School, Graphic Design School, Gemological Institute, Meteorological Office, Rehabilitation Engineering Research Center); the same nouns as common nouns, and the names without the field modifier, stay low",
+   "fire": [
+    "After boot camp he was sent to Nuclear Power School in Charleston.",
+    "The Meteorological Office issued a storm warning for the coast.",
+    "She studied typography at the Graphic Design School in Basel.",
+    "The Horological Institute certifies watch repairers.",
+    "Funding went to a Rehabilitation Engineering Research Center in Ohio.",
+    "The Zoological Society runs the city's two zoos.",
+    "Graduates of the Culinary Arts Academy find work quickly.",
+    "The Pharmacological Institute tested the new compound."
+   ],
+   "quiet": [
+    "After boot camp he was sent to a base in Charleston.",
+    "The weather office issued a storm warning for the coast.",
+    "She studied typography at a small school in Basel.",
+    "The institute certifies watch repairers.",
+    "Funding went to a research team in Ohio.",
+    "The society runs the city's two zoos.",
+    "Graduates of the academy find work quickly.",
+    "The laboratory tested the new compound."
+   ]
+  }
+ ],
+ "predictions": "mixed: 'ological' pieces 0.4-0.7, School/Academy 0.1-0.3, Association/Center may stay near 0.05, so the test may fail; near misses below 0.06",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "field-of-study institution name (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: ' School' x7, ' Association' x4, ' Academy' x3, 'ological' x2, ' Institute' x2 in Nuclear Power School, Graphic Design School, Gem|ological Institute, Global Sourcing Association, Cyberbullying Research Center, i.R.O.C.K. Academy, plus 'gaming add|ictions' at the top; max 7.4, density 0.17%. Probe: Gemological 0.606 (on 'ological'), Naval Postgraduate School 0.217, Royal Academy of 0.163, American Heart Association 0.047, Pew Research Center 0.018; common-noun school/association/center 0.04-0.05, Harvard University 0.039. The probe transferred weakly, so this is registered as a guess."
+}

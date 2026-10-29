@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f7ad0d35",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N1360+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N1360",
+   "pole": "+",
+   "label": "a next-token predictor for a split derivational suffix: the stem token right before -ship/-hip, -ness or French -esse arrives as its own piece (rulers|hip, author|ship, readers|hip, kings|hip, steward|ship, apprentices|hip, lighthead|ed|ness, vie|illes|se, fa|ibles|se); the logit effect promotes 'ness', 'hip', 'ship', 'hood'. The same stems as whole words (the kings, the author) and single-token -ship/-hood words (friendship, brotherhood) stay low",
+   "fire": [
+    "The chronicle traces the kingship of Wessex back to Cerdic.",
+    "The trust took over stewardship of the woodland in 1998.",
+    "He finished his apprenticeship with a carpenter in Leeds.",
+    "Doubts about the authorship of the play surfaced in the 1850s.",
+    "Sunday's readership figures were the best in a decade.",
+    "The patient complained of dizziness and lightheadedness after standing.",
+    "Dans sa vieillesse, il revenait souvent au village de son enfance.",
+    "Il protégeait la faiblesse et l'innocence avec courage."
+   ],
+   "quiet": [
+    "The chronicle traces the kings of Wessex back to Cerdic.",
+    "The trust took over the woodland from its steward in 1998.",
+    "The apprentices finished their first year with a carpenter in Leeds.",
+    "Doubts about the author of the play surfaced in the 1850s.",
+    "Sunday's readers were the most loyal in a decade.",
+    "The patient complained of dizziness and a headache after standing.",
+    "Dans ses vieux jours, il revenait souvent au village de son enfance.",
+    "Il protégeait les faibles et les innocents avec courage."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.6 on the stem token; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "stem before a split -ship/-ness suffix",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' kings' x4, ' author' x3, ' readers' x2, ' rulers', ' headed' before hip/ship/ness, and French vie|illes|se, fa|ibles|se, délic|ates|se; max 302, density 0.12%; direct logit promotes ness/hip/ty/ship/hood. Probe: rulership 0.579 (peak rulers), authorship 0.493, vieillesse 0.354, readership 0.273, lightheadedness 0.275, brotherhood 0.023 (hood after a whole word), 'the kings ruled' 0.123, 'the author of' 0.128, friendship (one token) 0.003. tok.py: kingship, stewardship, apprenticeship split as stem + hip/ship; leadership, ownership, happiness, childhood are single tokens and are kept out of the fire set."
+}

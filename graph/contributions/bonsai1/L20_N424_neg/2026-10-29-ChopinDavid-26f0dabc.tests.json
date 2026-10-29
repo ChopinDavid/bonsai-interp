@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-26f0dabc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N424-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:37+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N424",
+   "pole": "-",
+   "label": "the second or later item of a coordinated run of like words: the point where a parallel series continues (hissed and ROARED, sparkles and SHIMMERS, running and JUMPING and shouting, Bubbles! BALLOONS!, travel smart, travel stress-FREE,); the same verbs used alone, and plain repetition of a noun, stay low; the + pole peaks on the 'and' and ',' that join such items",
+   "fire": [
+    "Outside the window the wind howled and moaned all night.",
+    "The old floorboards creaked and groaned under his boots.",
+    "All evening the guests were eating and drinking and laughing.",
+    "Wash gently, rinse thoroughly, and let the wool dry flat.",
+    "Fireworks! Lanterns! Music on every corner!",
+    "The puppy kept wriggling and squirming in her arms.",
+    "His new watch glitters and gleams in the sunlight.",
+    "Down the hill the children came tumbling and rolling and shrieking."
+   ],
+   "quiet": [
+    "Outside the window the wind howled all night.",
+    "The old floorboards groaned under his boots.",
+    "All evening the guests were laughing at his stories.",
+    "Let the wool dry flat after a gentle wash.",
+    "There were lanterns on every corner of the square.",
+    "The puppy kept squirming in her arms.",
+    "His new watch gleams in the sunlight.",
+    "The bells, the bells are ringing again tonight."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.75 on the end of the second (or third) item; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second conjunct of a parallel series",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ',' x7, '!' then ro|ared, bob|bing, ' shines', pump|kins in 'hissed and roared', 'nodding and bobbing and bowing', 'sparkles and shines', 'Dry Ice! Bubbles!', 'travel smart, travel stress-free,'; max 23.8, density 0.235%; the + pole is ' and' x15 ',' x13. Probe: 'Bubbles! Balloons!' 0.756 (on '!'), 'hissed and roared' 0.572, 'sparkles and shimmers' 0.447, 'running and jumping and shouting' 0.372 (peak jumping), 'Eat well, sleep well,' 0.217; 'roared' alone 0.007, 'shimmers' alone 0.092, 'shouting' alone 0.091, 'The frogs, the frogs' 0.036."
+}
