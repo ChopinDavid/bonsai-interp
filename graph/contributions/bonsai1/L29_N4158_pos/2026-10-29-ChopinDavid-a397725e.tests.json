@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a397725e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N4158+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N4158",
+   "pole": "+",
+   "label": "a modifier naming a measured physical or biochemical property that is about to be followed by its index or constant (glycemic [index], binding [constant/affinity], Lipschitz [constant]); the same nouns with ordinary measures (sugar content, energy) or everyday senses stay low",
+   "fire": [
+    "Dietitians advise choosing breads with a lower glycemic index.",
+    "Brown rice has a moderate glycemic load compared with white rice.",
+    "The antibody showed a strong binding affinity for the spike protein.",
+    "Researchers estimated the binding constant by titration calorimetry.",
+    "We assume the gradient is Lipschitz with a known constant L.",
+    "Oats are often listed among foods with a low glycemic response.",
+    "The ligand's binding free energy was computed with molecular dynamics.",
+    "Patients on a high glycemic diet showed larger insulin spikes."
+   ],
+   "quiet": [
+    "Dietitians advise choosing breads with a higher fibre content.",
+    "Brown rice has a nuttier flavour compared with white rice.",
+    "The antibody was stored in a fridge at four degrees.",
+    "Researchers bound the old notebooks with fresh leather covers.",
+    "We assume the road is closed during the night.",
+    "Oats are often listed among foods with lots of fibre.",
+    "The bookbinder repaired the binding of the old atlas.",
+    "Patients on a high protein diet reported less hunger."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9 on 'glyc|emic', ' binding' before affinity/constant, 'Lipsch|itz'; ordinary measures below 0.25",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "property word predicting index/constant",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 88.5, peaks on 'emic' x8 (glycemic index), ' affinity', ' binding', 'itz' (Lipschitz); output promotes ' constant', ' index', ' indices'. Probe: 'glycemic index' 0.919, 'binding constant' 0.637, 'binding affinity' 0.557, 'Lipschitz' 0.545; 'sugar content' 0.235, 'activation energy' 0.218, sticky-note 'binding' 0.353, garden sentence 0.010."
+}

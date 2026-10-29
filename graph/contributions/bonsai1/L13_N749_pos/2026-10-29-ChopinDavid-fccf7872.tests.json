@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-fccf7872",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N749+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N749",
+   "pole": "+",
+   "label": "a short prefix glued onto the identifier or number that follows it: the leading underscore of a private Python name (self._x, class _X) and a letter page prefix in a citation (pp. P266, S213); the same names and page ranges without the prefix stay low",
+   "fire": [
+    "class Parser:\n    def __init__(self):\n        self._tokens = []\n        self._pos = 0",
+    "class Cache:\n    def get(self, key):\n        return self._store.get(key)",
+    "class _Sentinel:\n    pass\n\nMISSING = _Sentinel()",
+    "Brain Research Bulletin, vol. 12, pp. P101-P118, 2003.",
+    "class Timer:\n    def start(self):\n        self._started = time.time()",
+    "Clinical Infectious Diseases, 54(Suppl 3): S201-S209.",
+    "class Pool:\n    def size(self):\n        return len(self._workers)",
+    "Annals of Oncology, vol. 30, pp. P45-P52."
+   ],
+   "quiet": [
+    "class Parser:\n    def __init__(self):\n        self.tokens = []\n        self.pos = 0",
+    "class Cache:\n    def get(self, key):\n        return self.store.get(key)",
+    "class Sentinel:\n    pass\n\nMISSING = Sentinel()",
+    "Brain Research Bulletin, vol. 12, pp. 101-118, 2003.",
+    "class Timer:\n    def start(self):\n        self.started = time.time()",
+    "Clinical Infectious Diseases, 54(3): 201-209.",
+    "class Pool:\n    def size(self):\n        return len(self.workers)",
+    "Annals of Oncology, vol. 30, pp. 45-52."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.9 on '._' / ' _' / page-letter ' P'; plain attributes and bare page numbers below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "underscore / page-letter prefix",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 19.4, peaks on '._' x4 (self._texmanager), ' _' (class _dummy...), ':S' / ' P' / ' S' page prefixes in journal citations, ' than' (more than 20). Probe: 'pp. P266' 0.914, 'self._cache' 0.805, 'class _InternalHelper' 0.374, 'more than 20' 0.401; 'self.cache' 0.039, 'class InternalHelper' 0.024, 'about 20' 0.141."
+}

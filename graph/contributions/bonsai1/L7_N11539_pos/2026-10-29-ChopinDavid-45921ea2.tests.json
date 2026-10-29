@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-45921ea2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N11539+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N11539",
+   "pole": "+",
+   "label": "the stem of a love-or-hate emotion word across scripts: Arabic حب (love), Russian ненавид- (hate), the heart emoticon '<3' and English 'heart' in 'heartily'; neutral words in the same languages and '< 3' as a comparison stay low",
+   "fire": [
+    "كتب لها رسالة يقول فيها إنه يحبها منذ سنوات.",
+    "نحن نحب هذه المدينة ونزورها كل صيف.",
+    "كان الأطفال يحبون جدتهم كثيرا.",
+    "Она ненавидела зиму и мечтала о море.",
+    "Мой брат ненавидит ждать в очереди.",
+    "Happy birthday to my best friend <3",
+    "تحدث الشاعر عن محبة الوطن في قصيدته الأخيرة.",
+    "See you all at the meetup tomorrow, love you guys <3"
+   ],
+   "quiet": [
+    "كتب لها رسالة يقول فيها إنه سيسافر غدا.",
+    "نحن نزور هذه المدينة كل صيف مع العائلة.",
+    "كان الأطفال يلعبون في الحديقة طوال اليوم.",
+    "Она купила билет и поехала к морю.",
+    "Мой брат работает в банке уже пять лет.",
+    "Happy birthday, the party starts at 3",
+    "تحدث الشاعر عن تاريخ المدينة في قصيدته الأخيرة.",
+    "See you all at the meetup tomorrow, if n < 3 we cancel"
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on حب / ненавид / '<3'; neutral Arabic or Russian sentences and 'x < 3' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "love/hate emotion stem",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 34.5, peaks on 'حب' x12 (أحب, المحبة, محبي), 'ид' in ненавидишь, '3' in '<3', ' heart' in heartily. Probe: 'تحبه' 0.937, 'ненавидит' 0.807, 'أحببنا' 0.696, 'heartily' 0.684, '<3' 0.592, 'الحب' 0.393; neutral Arabic market sentence 0.020, 'x < 3' 0.016, hotel sentence 0.006."
+}

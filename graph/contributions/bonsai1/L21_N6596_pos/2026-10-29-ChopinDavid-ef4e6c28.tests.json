@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ef4e6c28",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N6596+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N6596",
+   "pole": "+",
+   "label": "the multiplication ' x' (and the number after it) inside a prime-factorization chain such as 2 x 3 x 7; ' x' in dimensions (4 x 5 metres), as a variable or as a mark stays low",
+   "fire": [
+    "Breaking 360 into primes gives 360 = 2 x 2 x 2 x 3 x 3 x 5.",
+    "The prime factors of 1001 are 7 x 11 x 13.",
+    "Written as primes, 924 = 2 x 2 x 3 x 7 x 11.",
+    "Its factorization is 2 x 5 x 5 x 41, so 2050 is not square-free.",
+    "We can check that 4290 = 2 x 3 x 5 x 11 x 13.",
+    "Since 210 = 2 x 3 x 5 x 7, it is the product of the first four primes.",
+    "The number 3003 splits into 3 x 7 x 11 x 13.",
+    "Factoring 2310 gives 2 x 3 x 5 x 7 x 11, the first five primes."
+   ],
+   "quiet": [
+    "The kitchen table measures 2 x 3 feet and seats four people.",
+    "The poster is printed at 60 x 90 centimetres on glossy paper.",
+    "If 2x + 5 = 11, then x equals 3.",
+    "The box is 30 x 20 x 10 centimetres and weighs one kilo.",
+    "Please put an x next to each item you want to order.",
+    "The garden plot is 5 x 8 metres, enough for vegetables.",
+    "The sprite sheet uses tiles of 16 x 16 pixels.",
+    "We need a 4 x 4 grid of tiles for the bathroom floor."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.7 in factorization chains; dimensions, variables and check-box x below 0.03",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' x' in factorization chain",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 48.5, peaks on ' x' and ' ' in '4912 = 2 x 2 x 2 x 2 x 3...' and '714 = 2 x 3 x 7 x 17'. Probe: '2 x 2 x 2 x 2 x 307' 0.636, '2 x 3 x 7 x 17' 0.563; '4 x 5 metres' 0.004, '305x345 pixels' 0.010, 'solve for x' 0.011, 'mark with an x' 0.010, '6 times 7' 0.007."
+}

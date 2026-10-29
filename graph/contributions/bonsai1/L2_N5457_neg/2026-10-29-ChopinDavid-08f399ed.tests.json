@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-08f399ed",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N5457-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N5457",
+   "pole": "-",
+   "label": "a broad, low-amplitude unit that is weakly on for most text; best guess: proper-name word pieces (surnames split into pieces) peak slightly above common words",
+   "fire": [
+    "Yesterday the poet Lorna Whitfield read from her new collection.",
+    "The award went to the sculptor Petra Dunmoreland for her bronze work.",
+    "Our guest tonight is the historian Marcus Quellbrook from Oxford.",
+    "The gallery shows recent prints by Ingrid Halvorsen and her students.",
+    "Last week the chef Tomas Brennagh opened a bistro downtown.",
+    "A new mural by Delphine Ashcombe now covers the station wall.",
+    "The violinist Arvo Kesselring will tour Japan in the spring.",
+    "Readers loved the debut novel by Simone Thackwell."
+   ],
+   "quiet": [
+    "Yesterday the poet read from her new collection in the library.",
+    "The award went to the sculptor for her bronze work by the harbour.",
+    "Our guest tonight is a historian who studies old maps.",
+    "The gallery shows recent prints by local students this month.",
+    "Last week the chef opened a small bistro downtown.",
+    "A new mural now covers the long wall of the station.",
+    "The violinist will tour Japan in the spring with an orchestra.",
+    "Readers loved the debut novel about a lighthouse keeper."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.75 on split surnames; plain common-word sentences 0.3-0.5 (expected to fail as a dense unit)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; name pieces guess",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: max 0.52, FLAG dense (41.5% of tokens over 0.1 max), gate-closed regime 100%; peaks on ' Whit' (Whitman), 'ad' (dead), ' Shields', 'izo' (Suizo). Probe: 'Amber Shields' 0.751, 'Walt Whitman' 0.609, 'paginated' 0.517; plain sentences still 0.28-0.46 ('small cafe' 0.461), so near misses will fire."
+}

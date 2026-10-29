@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-81201685",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N509+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N509",
+   "pole": "+",
+   "label": "the sign of a quantity: sign conditions such as '< 0' / '> 0' on a variable in maths, and sign() calls; zero used as a count, an index or an initial value stays low",
+   "fire": [
+    "Suppose that tan u > 0 and sec u < 0; find sin u.",
+    "If the derivative f'(x) < 0 on the interval, the function is decreasing.",
+    "The step direction is given by torch.sign(grad) times the learning rate.",
+    "We know that cos a < 0 while sin a > 0, so a lies in the second quadrant.",
+    "The update uses np.sign(error) to choose the direction of the correction.",
+    "For the discriminant b^2 - 4ac < 0 the equation has no real roots.",
+    "Since the product xy < 0, exactly one of x and y is negative.",
+    "The loss adds lam * T.sgn(w) to the gradient for L1 regularisation."
+   ],
+   "quiet": [
+    "Suppose that tan u = 3 and sec u = 5; find sin u.",
+    "If the derivative is computed on the interval, the function is plotted.",
+    "The step size is given by the learning rate times a decay factor.",
+    "We know that the angle a lies in the second quadrant of the circle.",
+    "The update uses a moving average to smooth the correction.",
+    "For the equation x^2 - 5x + 6 the two roots are 2 and 3.",
+    "Since the product xy equals 12, both numbers are factors of 12.",
+    "The loss adds the squared weights to the gradient for L2 regularisation."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.9 on '0' in sign conditions and 'sign(x'; zero as count or index below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sign condition / sign()",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 14.0, peaks on '0' x6 in '>= 0', '> 0', '< 0', on '.sign' and 'sgn(param'. Probe: 'sin t < 0 and cos t > 0' 0.789, 'np.sign(x)' 0.906, code 'if value > 0' 0.201, 'assert x >= 0' 0.162; 'count = 0' 0.011, 'items[0]' 0.010, '0 complaints' 0.034, 'value > 10' 0.026."
+}

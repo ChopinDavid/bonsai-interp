@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e06ffe40",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N1650-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T10:22:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N1650",
+   "pole": "-",
+   "label": "a demonstrative determiner ('such', 'that', 'this', 'such' in legal drafting) pointing back to a noun already defined earlier in a formal or legal text; best guess, probes stayed low",
+   "fire": [
+    "Licensee shall keep all Confidential Information secret and shall not disclose such Confidential Information to any third party without consent.",
+    "If any provision of this Agreement is held invalid, such provision shall be limited to the minimum extent necessary.",
+    "The Company may collect Usage Data, and you may request that we delete such Usage Data at any time.",
+    "Where a Member owns shares of the Fund, such Member shall receive notice of every meeting.",
+    "Any notice given under this Section shall be in writing, and such notice shall be deemed received after five days.",
+    "The Buyer may inspect the Goods, and if such Goods are defective the Buyer may reject them.",
+    "Each Party grants the other a licence to its Marks, provided that such Marks are used only as permitted.",
+    "The Tenant shall pay a deposit, and the Landlord shall return such deposit within thirty days."
+   ],
+   "quiet": [
+    "Licensee shall keep all Confidential Information secret and shall not disclose it to any third party without consent.",
+    "If any provision of this Agreement is held invalid, the remaining provisions shall continue in full force.",
+    "The Company may collect Usage Data, and you may request that we delete it at any time.",
+    "Where a Member owns shares of the Fund, the Member shall receive notice of every meeting.",
+    "Any notice given under this Section shall be in writing and shall be deemed received after five days.",
+    "The Buyer may inspect the Goods, and if any are defective the Buyer may reject them.",
+    "Each Party grants the other a licence to its Marks, provided they are used only as permitted.",
+    "The Tenant shall pay a deposit, and the Landlord shall return it within thirty days."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.4 on ' such'/' that' as anaphoric determiners in long legal sentences; complementiser 'that' and 'such as' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "anaphoric 'such' (legal)",
+ "unit_kind": "contextual",
+ "confidence": 0.2,
+ "notes": "Card: max 51.0, peaks on ' that' x10, ' such' x9, Arabic ' تلك', Chinese '该' as determiners ('such Personal Data', 'such issuer', 'that money'). Probe: short versions stayed low: 'such shares' 0.107, 'that money' 0.098, 'such data' 0.022, 'this risk' 0.009; complementiser 'said that' 0.020, 'such as' 0.015. The pole may need longer legal context; this is a guess."
+}
