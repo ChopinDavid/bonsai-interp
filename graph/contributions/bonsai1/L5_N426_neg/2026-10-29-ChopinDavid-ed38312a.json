@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-29-ChopinDavid-ed38312a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N426-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:32:29+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N426_neg/2026-10-29-ChopinDavid-ed38312a.tests.json"
+ },
+ "label": "the word piece 'غي' where the Arabic root of change (تغيير, تغيّر, متغيّر) is split as ت/الت/مت + غي + ير/ّ, and the piece 'am' closing a split surname (Brautig|am, Grish|am); the fused token 'غير' (تغير, صغير, غير), lone 'غ' and the surname piece 'ham' are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N426_neg/2026-10-29-ChopinDavid-ed38312a.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.765,
+     "peak": "غي"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.603,
+     "peak": "غي"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.801,
+     "peak": "غي"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.432,
+     "peak": "غي"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.625,
+     "peak": "ّ"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.806,
+     "peak": "غي"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.016,
+     "peak": " copies"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.086,
+     "peak": "am"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.064,
+     "peak": " المت"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.169,
+     "peak": "كت"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": " آ"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.279,
+     "peak": "يمة"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.283,
+     "peak": "ي"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.054,
+     "peak": " الق"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.023,
+     "peak": " striker"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " paper"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.614,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "the piece 'غي' of the change root; 'am' surname piece",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: max 5.59, density 0.101%, peaks 'غي' x15 (التغي|ير, مت|غي|روا, تغي|ّ|ر), 'ّ' x3 after تغي, 'am' x3 (Brautig|am). Probe: التغيير 0.808, التغيّرات 0.816, تغيّر 0.760 (peak on the shadda), Brautigam 0.791 (peak 'am'); the fused token تغير 0.231, بتغذية 0.334 (lone غ), غياب 0.243, غير 0.172, صغير 0.039, plain Arabic 0.035. A spelling unit for the piece 'غي' plus the English piece 'am'; the tokenizer splits the change root only in some forms (تغيير, تغيّر, متغيّر) and fuses it in others (تغير, متغيرات), which the near misses use.",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   "غي",
+   "am"
+  ]
+ }
+}

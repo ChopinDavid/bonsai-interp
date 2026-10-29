@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-49182478",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N1128+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:33:30+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N1128_pos/2026-10-29-ChopinDavid-49182478.tests.json"
+ },
+ "label": "the noun naming a stage of a training programme that a learner passes through (internship, placement, practicum, final or capstone project, thesis, dissertation, 'student' as trainee); pupils in general, professors, employees and ordinary jobs in the same frames are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N1128_pos/2026-10-29-ChopinDavid-49182478.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.635,
+     "peak": "icum"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.104,
+     "peak": " design"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.111,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.06,
+     "peak": " student"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.472,
+     "peak": " placement"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.478,
+     "peak": " together"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.357,
+     "peak": " partner"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.281,
+     "peak": " degree"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.114,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.098,
+     "peak": " design"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " submitted"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " operated"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " spent"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": " term"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.319,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "training-programme stage noun",
+ "unit_kind": "meaning",
+ "confidence": 0.55,
+ "notes": "Card: max 27.75, density 0.041%, peaks ' student' x5 (student teaching, journalism student), ' placement', ' project' (final project), ' Masters' (thesis), ' program', Pr|akt|ikant, Prá|ctic|um; promotes internship/project. Probe: final project 0.621, internship 0.474, teaching placement 0.400, Masters thesis 0.321, architecture student 0.277; 'The students lined up in the playground' 0.056, professor 0.005, employee 0.020, lecture 0.003, kitchen service 0.010. The meaning is the trainee stage, not the word student: fire items use fresh stage nouns (practicum, dissertation, capstone, work placement, fieldwork, trainee teachers).",
+ "selection": "random draw"
+}

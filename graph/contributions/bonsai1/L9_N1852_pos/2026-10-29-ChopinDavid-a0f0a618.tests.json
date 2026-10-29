@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a0f0a618",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1852+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1852",
+   "pole": "+",
+   "label": "the first token of a new item in a run-on list whose items are concatenated with no separators (scraped feature lists, amenity lists, lab-test lists: 'Free breakfast Free parking Pets allowed'); the same items separated by commas, newlines or bullets, or written as prose, are silent",
+   "fire": [
+    "Specifications Screen size 6.1 inches Battery 4000 mAh Storage 128 GB Weight 174 g Colour Graphite",
+    "Services Oil change Brake repair Tyre fitting Wheel alignment Battery replacement",
+    "Ingredients Wheat flour Sugar Palm oil Cocoa powder Salt Baking soda",
+    "Symptoms Fever Headache Sore throat Loss of smell Fatigue Muscle aches",
+    "Languages spoken English French Arabic Portuguese Japanese",
+    "Course modules Introduction to Statistics Linear Algebra Probability Theory Data Visualisation",
+    "Room facilities Air conditioning Flat-screen TV Minibar Safe Tea and coffee maker",
+    "Export formats PDF CSV Excel JSON XML Plain text"
+   ],
+   "quiet": [
+    "Specifications: screen size 6.1 inches, battery 4000 mAh, storage 128 GB, weight 174 g, colour graphite.",
+    "Services:\nOil change\nBrake repair\nTyre fitting\nWheel alignment",
+    "Ingredients: wheat flour, sugar, palm oil, cocoa powder, salt, baking soda.",
+    "Common symptoms include fever, headache, a sore throat and loss of smell.",
+    "The staff speak English, French, Arabic, Portuguese and Japanese.",
+    "Course modules:\n- Introduction to Statistics\n- Linear Algebra\n- Probability Theory",
+    "Each room has air conditioning, a flat-screen TV, a minibar and a safe.",
+    "You can export to PDF, CSV, Excel, JSON, XML or plain text."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.0 on the first token of some item; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "new item in a separator-less run-on list",
+ "unit_kind": "context",
+ "confidence": 0.75,
+ "notes": "Card: max 12.38, density 0.110%, peaks ' 무료' x3 (무료 조식 무료 고속 인터넷 무료 주차), ' family' (Omega 3 fatty acid family Omega 6), ' Highlight' (Read text aloud Highlight words), ' Кон' (ЭЭГ МРТ Консультация), ' Information' (Activation Information), ' Elect' (Protons Electrons), all in scraped text where list items run together. Probe: amenities run-on 1.017 (peak ' Free'), tests run-on 0.577, fatty-acid run-on 0.555, features run-on 0.521, 'Protons Electrons Neutrons' 0.263; the comma-separated version 0.028, newline-separated 0.072, prose 0.004-0.009. A layout unit: the boundary where a new item starts without any separator."
+}

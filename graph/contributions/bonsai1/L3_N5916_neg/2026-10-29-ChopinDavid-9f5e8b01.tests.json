@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9f5e8b01",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N5916-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N5916",
+   "pole": "-",
+   "label": "the token ' moment' after a determiner (the moment he..., a moment, that moment); near-synonyms (instant, second, point, occasion) and the stems momentum/momentarily are weak",
+   "fire": [
+    "She knew it was the moment to speak up.",
+    "For a moment nobody moved.",
+    "He remembers the moment the lights went out.",
+    "There was a moment when the whole room went quiet.",
+    "This is the moment the whole season has been building towards.",
+    "At that moment the phone rang.",
+    "In a moment of weakness he agreed.",
+    "It was the moment she had dreaded all week."
+   ],
+   "quiet": [
+    "She knew it was the time to speak up.",
+    "For an instant nobody moved.",
+    "He remembers the second the lights went out.",
+    "There was a point when the whole room went quiet.",
+    "This is the occasion the whole season has been building towards.",
+    "At that point the phone rang.",
+    "In a lapse of judgement he agreed.",
+    "The momentum she had built all week was lost."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on ' moment'; near misses below 0.2; a broad pole (3.4% of tokens above 0.1), so some controls will sit around 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the token ' moment'",
+ "unit_kind": "token",
+ "confidence": 0.5,
+ "notes": "Card: max 0.84 (weak), broad flag 3.371%, ' moment' x18 of the top 32 (the moment that, the moment we're in, a moment its velocity). Probe: 'This is the moment he had been waiting for' 0.711, 'a brief moment of silence' 0.397, 'At the moment there are' 0.191, but 'every moment of the trip' 0.037 (peak moved to ' of'); instant 0.071, momentum 0.208, momentarily 0.103, 'At present' 0.128, ticking clock 0.121. The determiner-plus-moment frame carries it; 'every moment' does not, so fire items all use the/a/that moment.",
+ "trigger": {
+  "words": [
+   "moment",
+   "moments"
+  ]
+ }
+}

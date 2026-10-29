@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-95c1f17c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N896-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:34:12+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N896_neg/2026-10-29-ChopinDavid-95c1f17c.tests.json"
+ },
+ "label": "guess for an unclear pole: a head noun or preposition that opens a restrictive specification of a quantity or condition (hear sounds [as low as 20 Hz], products [with less packaging], jobs [that were not demanding]); the same verbs with an ordinary object are silent; weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N896_neg/2026-10-29-ChopinDavid-95c1f17c.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.067,
+     "peak": "oh"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.316,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.025,
+     "peak": " paid"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.021,
+     "peak": "im"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.124,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.026,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.036,
+     "peak": " sensor"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.267,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.026,
+     "peak": " room"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " top"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " went"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " pump"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " garage"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.057,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.82,
+    "median_fire": 0.052,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "head of a restrictive specification (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 11.12, density 0.327%, no shared token: hear ' sounds' as low as 20 Hz, test_bug_render|_with|_none, work ' on' the, get ' something' that will last, ' borrow' money at 4 per cent, ' snap' away at 7fps, water ' through' pipes that leak, products ' with' less packaging, ' rooms' with no windows, work ' in' jobs that. Probe: 'sounds as low as' 0.241 (peak ' as'), 'products with less packaging' 0.257, 'jobs that were not' 0.110, 'rooms with no windows' 0.087, 'snap away at' 0.078, 'borrow money at' 0.038; controls 0.015-0.142 ('snap photos of' 0.142). Direction weakly right, magnitude too small; registered as a guess.",
+ "selection": "random draw"
+}

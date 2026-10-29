@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-95c1f17c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N896-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N896",
+   "pole": "-",
+   "label": "guess for an unclear pole: a head noun or preposition that opens a restrictive specification of a quantity or condition (hear sounds [as low as 20 Hz], products [with less packaging], jobs [that were not demanding]); the same verbs with an ordinary object are silent; weak",
+   "fire": [
+    "Most adults can hear tones as high as 15 kilohertz.",
+    "Choose detergents with fewer additives if your skin is sensitive.",
+    "She took shifts that paid less but ended before dark.",
+    "The pump moves water through hoses that are only a centimetre wide.",
+    "They rented offices with no natural light for half the price.",
+    "You can lease a car at two per cent over the base rate.",
+    "The sensor can detect vibrations as faint as a footstep.",
+    "Buy fruit with fewer blemishes from the back of the stall."
+   ],
+   "quiet": [
+    "Most adults can hear the kettle from the next room.",
+    "Choose the detergent on the top shelf if your skin is sensitive.",
+    "She took the shifts and went home before dark.",
+    "The pump moves water into the tank behind the barn.",
+    "They rented the offices for half the price.",
+    "You can lease a car from the garage on the corner.",
+    "The sensor can detect the footsteps in the hall.",
+    "Buy the fruit from the back of the stall."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.3; near misses below 0.1; the probe maximum was 0.257, so the test will probably not hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "head of a restrictive specification (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 11.12, density 0.327%, no shared token: hear ' sounds' as low as 20 Hz, test_bug_render|_with|_none, work ' on' the, get ' something' that will last, ' borrow' money at 4 per cent, ' snap' away at 7fps, water ' through' pipes that leak, products ' with' less packaging, ' rooms' with no windows, work ' in' jobs that. Probe: 'sounds as low as' 0.241 (peak ' as'), 'products with less packaging' 0.257, 'jobs that were not' 0.110, 'rooms with no windows' 0.087, 'snap away at' 0.078, 'borrow money at' 0.038; controls 0.015-0.142 ('snap photos of' 0.142). Direction weakly right, magnitude too small; registered as a guess."
+}

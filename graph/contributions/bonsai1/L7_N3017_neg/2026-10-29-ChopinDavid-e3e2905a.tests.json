@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e3e2905a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N3017-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N3017",
+   "pole": "-",
+   "label": "the first token of a continuation line inside a multi-line code comment block or docstring (the '#', ' *', ' %', '--' or indentation that opens the next line of comment prose); lines of code, SQL continuation lines, HTML and prose lists in the same files are silent",
+   "fire": [
+    "#\n# Configuration for the nightly build\n#\n#   Set BUILD_DIR before running.\n#   Logs go to /var/log/nightly.\n#\nBUILD_DIR=/opt/build\n",
+    "/*\n * Copyright 2019 Example Labs\n *\n * This file is part of libfoo.\n * It is distributed under the MIT License.\n */\n#include <stdio.h>\n",
+    "    # Walk the tree:\n    #\n    #   visit(node) -> children\n    #\n    # Returns the list of leaves in order.\n    leaves = []\n",
+    "def parse(text):\n    \"\"\"Parse a config string.\n\n    :param text: the raw text, or ``None``\n    :returns: a dict of options\n        keyed by section name\n    \"\"\"\n    return {}\n",
+    "<!--\n  Page layout for the archive.\n\n  Edit the header in header.html,\n  not here.\n-->\n<div class=\"archive\">\n",
+    "--\n-- Schema for the orders table\n--\n--   One row per order line.\n--   Prices are stored in cents.\n--\nCREATE TABLE orders (id INT);\n",
+    "      % Compute the running mean:\n      %\n      %   m(k) = m(k-1) + (x(k) - m(k-1)) / k\n      %\n      m = zeros(1, n);\n",
+    "#!/bin/bash\n#\n# Rotate the logs.\n#\n#   Usage: rotate.sh <dir>\n#   Keeps the last seven files.\n#\nset -e\n"
+   ],
+   "quiet": [
+    "BUILD_DIR=/opt/build\nLOG_DIR=/var/log/nightly\nexport BUILD_DIR LOG_DIR\nmake -C \"$BUILD_DIR\" all\n",
+    "#include <stdio.h>\nint main(void) {\n    printf(\"hello\\n\");\n    return 0;\n}\n",
+    "    leaves = []\n    for node in tree:\n        if not node.children:\n            leaves.append(node)\n    return leaves\n",
+    "def parse(text):\n    options = {}\n    for line in text.splitlines():\n        key, value = line.split('=')\n        options[key] = value\n    return options\n",
+    "<div class=\"archive\">\n  <h1>Archive</h1>\n  <ul>\n    <li>2019</li>\n    <li>2020</li>\n  </ul>\n</div>\n",
+    "CREATE TABLE orders (\n    id INT,\n    line INT,\n    price_cents INT\n);\n",
+    "Shopping list:\n  - two onions\n  - a bag of rice\n  - olive oil\n  - seven eggs\n",
+    "Usage: rotate.sh <dir>\n\nRotates the logs in the given directory.\nKeeps the last seven files.\n"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on a comment-line marker; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "line-opening marker inside a comment block",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: max 14.38, density 0.068%, peaks '#' x4, ' :' x5 (:raises in a docstring), '   ' x3, ' @', ' *', ' -', ' ...' at the start of comment lines in license headers, docstrings and MATLAB '%' comments; the + pole peaks on the closing '\"\"\"\\n' and '#\\n'. Probe: C '/* ... *' block 0.793 (peak ' *'), indented '# Compile the loop' block 0.720 (peak ' #'), shebang + '#' license header 0.558, docstring with :param/:raises 0.249; code without comments 0.019, SQL continuation 0.017, prose dash list 0.020, inline '# the counter' 0.143. Fire items are multi-line comment blocks in six comment syntaxes; near misses are the same files' code or the comment prose without the markers."
+}

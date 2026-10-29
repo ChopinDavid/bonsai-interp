@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-49182478",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N1128+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N1128",
+   "pole": "+",
+   "label": "the noun naming a stage of a training programme that a learner passes through (internship, placement, practicum, final or capstone project, thesis, dissertation, 'student' as trainee); pupils in general, professors, employees and ordinary jobs in the same frames are silent",
+   "fire": [
+    "During her nursing practicum she rotated through three wards.",
+    "He spent his gap year on an unpaid internship at a design studio.",
+    "The dissertation must be submitted before the end of the second year.",
+    "As a medical student he shadowed surgeons every Friday.",
+    "Her work placement with the council turned into a full-time job.",
+    "The capstone project brings together everything taught in the course.",
+    "Trainee teachers spend the spring term in a partner school.",
+    "The fieldwork component of the degree takes place in Kenya."
+   ],
+   "quiet": [
+    "During her years on the ward she trained dozens of nurses.",
+    "He spent his gap year working at a design studio.",
+    "The annual report must be submitted before the end of the second quarter.",
+    "As a surgeon he operated every Friday morning.",
+    "Her job with the council lasted twenty years.",
+    "The budget brings together everything spent in the year.",
+    "The teachers meet in the staff room during the spring term.",
+    "The headquarters of the charity are in Kenya."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on the stage noun; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "training-programme stage noun",
+ "unit_kind": "meaning",
+ "confidence": 0.55,
+ "notes": "Card: max 27.75, density 0.041%, peaks ' student' x5 (student teaching, journalism student), ' placement', ' project' (final project), ' Masters' (thesis), ' program', Pr|akt|ikant, Prá|ctic|um; promotes internship/project. Probe: final project 0.621, internship 0.474, teaching placement 0.400, Masters thesis 0.321, architecture student 0.277; 'The students lined up in the playground' 0.056, professor 0.005, employee 0.020, lecture 0.003, kitchen service 0.010. The meaning is the trainee stage, not the word student: fire items use fresh stage nouns (practicum, dissertation, capstone, work placement, fieldwork, trainee teachers)."
+}

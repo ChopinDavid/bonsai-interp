@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-05de57cb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N1472+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N1472",
+   "pole": "+",
+   "label": "the '://' token of a URL scheme (https://, http://, ftp://), strongest in code comments, docstrings and documentation; a bare www. address, the word http, time colons, '::' and '//' are silent",
+   "fire": [
+    "# See https://docs.python.org/3/library/json.html for details\nimport json\n",
+    "Download the dataset from http://archive.ics.uci.edu/ml/ before running the script.",
+    "    \"\"\"Parse a feed.\n\n    Based on http://feedparser.readthedocs.io/en/latest/\n    \"\"\"\n",
+    "The mirror at ftp://mirror.example.edu/debian/ is faster from campus.",
+    "[Report an issue](https://github.com/example/tool/issues) if the build fails.",
+    "Source: https://arxiv.org/abs/1706.03762, section 3.",
+    "- Homepage: http://www.gnu.org/software/bash/\n- License: GPL\n",
+    "The API lives at https://api.example.com/v2/users and needs a token."
+   ],
+   "quiet": [
+    "# See docs.python.org/3/library/json.html for details\nimport json\n",
+    "Download the dataset from the UCI machine learning archive before running the script.",
+    "The mirror at mirror.example.edu is faster from campus.",
+    "[Report an issue](github.com/example/tool/issues) if the build fails.",
+    "The train leaves at 07:45 and arrives at 11:20.",
+    "In Rust, the path std::collections::HashMap names the map type.",
+    "The protocol name http is written in lower case in the header.",
+    "- Homepage: www.gnu.org/software/bash\n- License: GPL\n"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.9 on '://'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the '://' of a URL scheme",
+ "unit_kind": "token",
+ "confidence": 0.8,
+ "notes": "Card: max 148, density 0.163%, '://' x24 of the top 32, nearly all in code comments and docstrings (Download paper at http://arxiv..., # http://stackoverflow...). Probe: https://github 0.501, ftp:// 0.713, http://www.example.org in prose 0.177; www.example.com 0.049, 10:30 0.004, std::cout 0.002, '//' comment 0.009, the word http 0.024. The token is the trigger; prose URLs score lower than code-context ones, so half the fire items sit in code or markdown.",
+ "trigger": {
+  "pieces": [
+   "://"
+  ]
+ }
+}

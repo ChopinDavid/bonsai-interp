@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-e3e2905a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N3017-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T23:33:36+00:00",
+ "recipe": {
+  "toolchain_commit": "73732db4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N3017_neg/2026-10-29-ChopinDavid-e3e2905a.tests.json"
+ },
+ "label": "the first token of a continuation line inside a multi-line code comment block or docstring (the '#', ' *', ' %', '--' or indentation that opens the next line of comment prose); lines of code, SQL continuation lines, HTML and prose lists in the same files are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N3017_neg/2026-10-29-ChopinDavid-e3e2905a.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.4,
+     "peak": "#"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.649,
+     "peak": " *"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.717,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.264,
+     "peak": " :"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.286,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.219,
+     "peak": "--"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.665,
+     "peak": " %"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.488,
+     "peak": "#"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.05,
+     "peak": "BUILD"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.114,
+     "peak": " <"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " not"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": "def"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.163,
+     "peak": "<div"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.052,
+     "peak": "CREATE"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " oil"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.079,
+     "peak": "Rot"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.444,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "73732db4",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "line-opening marker inside a comment block",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: max 14.38, density 0.068%, peaks '#' x4, ' :' x5 (:raises in a docstring), '   ' x3, ' @', ' *', ' -', ' ...' at the start of comment lines in license headers, docstrings and MATLAB '%' comments; the + pole peaks on the closing '\"\"\"\\n' and '#\\n'. Probe: C '/* ... *' block 0.793 (peak ' *'), indented '# Compile the loop' block 0.720 (peak ' #'), shebang + '#' license header 0.558, docstring with :param/:raises 0.249; code without comments 0.019, SQL continuation 0.017, prose dash list 0.020, inline '# the counter' 0.143. Fire items are multi-line comment blocks in six comment syntaxes; near misses are the same files' code or the comment prose without the markers.",
+ "selection": "random draw"
+}

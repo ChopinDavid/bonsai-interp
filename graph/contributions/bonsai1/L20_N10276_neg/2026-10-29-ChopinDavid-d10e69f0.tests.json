@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d10e69f0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N10276-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N10276",
+   "pole": "-",
+   "label": "concessive 'even' (even at, even if, even though, even in) and 'despite' after a stated claim, marking that the claim holds in an extreme or adverse case; 'although', 'whether or not', 'because' and the adjective even (an even surface) are silent",
+   "fire": [
+    "The board approved the plan without debate. They would fund it, even at the cost of the summer programme.",
+    "The library has grown fast since 2010. Its catalogue now lets even casual readers find rare manuscripts.",
+    "The ferry was running late again. We decided to cross anyway, even though the sea was rough.",
+    "The code compiles cleanly on the old boards. It fits in memory, even with every option enabled.",
+    "The village is tiny and far from the coast. Visitors come all year, even in the depths of winter.",
+    "Our striker has not scored since March. The coach keeps picking him, despite the pressure from fans.",
+    "The treaty was signed in haste. Both sides honoured it, even after the border war of 1962.",
+    "The recipe is forgiving. It works, even if you forget the salt."
+   ],
+   "quiet": [
+    "The board approved the plan without debate. They would fund it from the summer programme's budget.",
+    "The library has grown fast since 2010. Its catalogue now lets casual readers find rare manuscripts.",
+    "The ferry was running late again. We decided to cross anyway, although the sea was rough.",
+    "The code compiles cleanly on the old boards. It fits in memory with every option enabled.",
+    "The village is tiny and far from the coast. Visitors come mainly in the warm months of summer.",
+    "Our striker has not scored since March. The coach keeps picking him because of his work rate.",
+    "The treaty was signed in haste. The border was surveyed and made even along the river.",
+    "The recipe is forgiving. It works whether or not you add the salt."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.5 on even/despite; near misses below 0.1; the probe transfer was weak, so this may not hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "concessive even/despite after a claim",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: max 24.62, density 0.126%, ' even' x18, ' Even' x3, ' despite' x2, ' have' (may have a population of ... but) in mid-document concessions (', even at so great an expense', 'enabled even novices', 'even if the routing delay is long'). Probe on single sentences was weak: 'let even novices' 0.191, 'even though his hands' 0.102, 'even if the weather' 0.010, 'despite its humble origins' 0.057, 'may have ... but' 0.043; 'although' 0.055, adjective even 0.004-0.013. The card's hits all follow earlier context, so fire items are two-sentence passages with the claim first and the concession second; confidence low."
+}
