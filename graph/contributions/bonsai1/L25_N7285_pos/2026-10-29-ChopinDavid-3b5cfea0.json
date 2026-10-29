@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-3b5cfea0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N7285+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T22:36:51+00:00",
+ "recipe": {
+  "toolchain_commit": "d84ec3d5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N7285_pos/2026-10-29-ChopinDavid-3b5cfea0.tests.json"
+ },
+ "label": "guess for an unexplained pole: the connective (and, with, of, from, because) that introduces the second member of a pair of named siblings in encyclopedic prose (the X-1C ... the X-1D; FTSE 100 ... FTSE 250; amylases from B. licheniformis ... from B. subtilis), weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N7285_pos/2026-10-29-ChopinDavid-3b5cfea0.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.263,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.189,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.231,
+     "peak": " than"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.395,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.02,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.366,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.088,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.21,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.04,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.19,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.231,
+     "peak": " than"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.292,
+     "peak": " destroyed"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " expect"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.337,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.042,
+     "peak": " Only"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.219,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.586,
+    "median_fire": 0.221,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d84ec3d5",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "connective before the sibling of a named item (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: max 41.5, density 0.020%, peaks ' and', ' of', ' from', ' with', ' to', ' in' in encyclopedic text where a named item has a sibling nearby: 'amylases from Bacillus subtilis' after B. licheniformis, 'never constructed. The X-1D' after X-1C, 'FTSE 100 ... 5,000 and the FTSE 250', 'super species with the Common flameback', 'too long with the Looking Glass' after Wonderland, 'primary curves, because they alone'. Probe: every sibling sentence scored 0.006-0.106 and the controls the same (0.011-0.106), so the sibling reading did not transfer; registered as a guess with longer two-sentence passages.",
+ "selection": "random draw"
+}

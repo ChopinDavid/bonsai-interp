@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-9a5bf19c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N8565-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T22:36:14+00:00",
+ "recipe": {
+  "toolchain_commit": "d84ec3d5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N8565_neg/2026-10-29-ChopinDavid-9a5bf19c.tests.json"
+ },
+ "label": "guess for a weak context pole: the comma or preposition that opens a restrictive qualifier after a complete noun phrase ($10 per person, for a one-hour class; persons of good character; adults ages 19-50); the same phrase without the qualifier is silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N8565_neg/2026-10-29-ChopinDavid-9a5bf19c.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.313,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.048,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.201,
+     "peak": " adults"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.081,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.101,
+     "peak": " per"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.02,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.026,
+     "peak": " except"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.207,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.109,
+     "peak": " dollars"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.034,
+     "peak": " grant"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.2,
+     "peak": " adults"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.057,
+     "peak": " are"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " groups"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.043,
+     "peak": " thanked"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": " pool"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.703,
+    "median_fire": 0.091,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d84ec3d5",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "opener of a restrictive qualifier (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 37, density 0.017%, peaks ' in' x10 ('2nd place in the 30-39 division', 'runs in terms of inertia'), ',' ('$10 per person, for a one-hour'), ' of' ('persons of good character'), ' adults' ('for adults ages 19-50'), ' (' ('anything (plumbing related'), plus code accessors. Probe: 'per person, for the whole evening' 0.233 (peak ','), 'persons of good character' 0.232, 'for adults ages 18 and over' 0.162, 'under-12 category' 0.073, '(car related' 0.029; controls 0.017-0.162 ('for adults and 5 mg for children' 0.162). Direction right, magnitude too small; registered as a guess.",
+ "selection": "random draw"
+}
