@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-197f383f",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10048+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:57:58+00:00",
+ "selection": "picked",
+ "neighbours": [
+  {
+   "unit": "L11/N10048",
+   "pole": "+",
+   "label": "Wildlife management that moves wild animals into or between wild habitats: releasing, relocating, tagging-and-release, stocking waters and hatchery rearing for the wild (firing on 'release(d)', 'into', the moved animals); pets, zoo and farm animals handled in the same way stay quiet.",
+   "fire": [
+    "Biologists relocated the wolves to a remote valley in the north.",
+    "The trust breeds otters in pens and then frees them along the river.",
+    "Each autumn the agency stocks the mountain lakes with young trout.",
+    "Volunteers carried the rescued hedgehogs back to the woods.",
+    "The hatchery rears sturgeon to restore the river's wild population.",
+    "Rangers darted the rhinos and flew them to a new reserve.",
+    "Rehabilitated seals were set free on the beach at dawn.",
+    "Conservationists reintroduced lynx into the forest last year."
+   ],
+   "quiet": [
+    "The family moved their dog to a new house in the north.",
+    "The zoo breeds otters in pens and shows them to visitors.",
+    "Each autumn the farm fills its ponds with ducks for the market.",
+    "Volunteers carried the kittens back to the shelter.",
+    "The pet shop rears goldfish for home aquariums.",
+    "Vets sedated the zoo's rhino and moved it to a new pen.",
+    "The ponies were led into the stable at dusk.",
+    "The breeder introduced a new rooster into the henhouse last year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.9; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "second-round"
+  ]
+ },
+ "short": "moving animals into the wild (release, relocate, stock)",
+ "unit_kind": "semantic",
+ "confidence": 0.55,
+ "notes": "Round 2 for this pole (round 1, sweep 1: 'releasing animals into the wild' failed on near misses: tagging sea turtles 0.41, a hatchery counting fry 0.33, while all 8 releases fired, median 0.75). Refinement probe: tagging and moving bears 0.50, hatchery salmon for the river 0.26, stocking a reservoir 0.23; pet cat 0.000, zoo enclosure 0.04, farmer moving cows 0.09. New label: the wider wildlife-release setting; near misses keep the handling of animals but make them pets, zoo or farm animals."
+}
