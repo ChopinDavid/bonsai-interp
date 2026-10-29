@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-83470db5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N9084+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N9084",
+   "pole": "+",
+   "label": "the digits of a measured quantity with a unit or rate (1.2 mi/s, 0.5 calories per gram, 1/4 cup, 10 cents a pound); numbers that are years, phone numbers, chapter or page numbers stay low",
+   "fire": [
+    "The glacier is retreating by about 30 metres (98 feet) every year.",
+    "Mix in 1/2 teaspoon of salt and 3/4 cup of warm milk.",
+    "The car uses roughly 6.5 litres of fuel per 100 kilometres.",
+    "Bananas cost 59 cents a pound at the market this week.",
+    "The probe travels at 17 kilometres per second (10.6 mi/s).",
+    "Each tablet contains 0.25 milligrams of the active ingredient.",
+    "The island lies about 40 miles (64 km) off the coast.",
+    "Sea levels have risen roughly 3.3 millimetres per year since 1993."
+   ],
+   "quiet": [
+    "The glacier was first photographed by explorers in 1898.",
+    "Turn to page 214 and read the second paragraph.",
+    "The flight number is 742 and it leaves from gate B.",
+    "She moved to Berlin in 2015 after finishing her degree.",
+    "Call our office on 020 7946 0321 for an appointment.",
+    "Psalm 23 is often read aloud at funerals.",
+    "The bus route 38 runs past the hospital every morning.",
+    "Chapter 9 explains how the old kingdom collapsed."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0 on the digits of a quantity with units; years, phone and chapter numbers below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digits of a measured quantity",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: dense for a late layer (0.95% of tokens), top examples all quantities with units: '0.5 calories per gram', '(1.2 mi/s)', '1/4 cup', '11 inches per year', '0.6 mile', '10 cents a pound', '(1,000 mL)'. Probe: '(1.2 mi/s)' 0.955, '10 cents a pound' 0.475, '1/4 cup' 0.469, '11 inches per year' 0.410 (peak ' per'), '0.5 calories per gram' 0.292; 'born in 1987' 0.000, 'Call 555 1234' 0.000, 'chapter 12' 0.031."
+}

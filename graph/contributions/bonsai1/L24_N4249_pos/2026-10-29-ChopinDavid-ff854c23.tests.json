@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ff854c23",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N4249+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N4249",
+   "pole": "+",
+   "label": "the word piece ' Inf' that begins a split capitalised name (Inf|owars, Inf|ineon, Inf|ographic, Inf|ante, Inf|initi); whole-word tokens that start with the same letters (Info, Inform, Infant, infection, Infos|ys) stay low",
+   "fire": [
+    "Several hosts on Infowars repeated the claim without evidence.",
+    "Shares of Infineon rose after the German chipmaker raised its forecast.",
+    "Our designer made an Infographic summarizing the survey results.",
+    "The defender Carlos Infante scored his first goal of the season.",
+    "My uncle traded his old sedan for a silver Infiniti last spring.",
+    "The quote was taken from an entry on Infoplease about state capitals.",
+    "The reference was published by Infobase in a three-volume edition.",
+    "Analysts said Infineon could benefit from rising demand for electric cars."
+   ],
+   "quiet": [
+    "Several hosts on the radio repeated the claim without evidence.",
+    "Shares of Infosys rose after the Indian firm raised its forecast.",
+    "Our designer made an Info sheet summarizing the survey results.",
+    "The nurse checked on the Infant ward twice every night.",
+    "My uncle caught an infection after a minor cut on his hand.",
+    "The quote was taken from an Inform magazine article about capitals.",
+    "The doctor used an infrared thermometer to check our temperature.",
+    "Analysts said the company could benefit from rising demand for electric cars."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-1.0 on ' Inf' when it is its own token; whole tokens Info/Inform/Infant/infection and ' Infos' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' Inf' word piece",
+ "unit_kind": "token/lexical",
+ "confidence": 0.7,
+ "notes": "Card: ' Inf' x17, ' inf' x6 at 160-182 (Infowars, Infoplease, Infographic, Infobase, Infineon, Infante). Probe: Infowars 1.038, Infineon 0.841, Infante 0.839, Infographic 0.769, Infiniti 0.654; ' Infos'|ys 0.082, ' Info' 0.033. ' Infinity' (single token) reached 0.342, so it is kept out of the near misses. Tokenizer splits checked."
+}

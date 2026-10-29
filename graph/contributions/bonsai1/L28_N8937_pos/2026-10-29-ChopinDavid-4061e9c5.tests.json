@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4061e9c5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N8937+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N8937",
+   "pole": "+",
+   "label": "' ecosystem' used as a modifier for what ecosystems do or provide (ecosystem services, ecosystem function, ecosystem processes) in ecology prose; 'ecosystem' as a head noun for a place, and the business/software sense, stay low",
+   "fire": [
+    "Forests deliver vital ecosystem services like carbon storage and clean water.",
+    "Economists have tried to put a price on ecosystem services provided by mangroves.",
+    "Invasive plants can disrupt ecosystem processes such as nutrient cycling.",
+    "The report estimates the value of ecosystem services lost to deforestation.",
+    "Soil fungi play a central role in maintaining ecosystem function in grasslands.",
+    "Farmers benefit from key ecosystem services including pest control by birds.",
+    "Restoring peatlands helps recover lost ecosystem functions over several decades.",
+    "Urban parks supply cultural ecosystem services such as recreation and calm."
+   ],
+   "quiet": [
+    "The mangrove ecosystem shelters young fish from larger predators.",
+    "Forests in the north are a fragile ecosystem that recovers slowly from fire.",
+    "The startup ecosystem in Berlin has attracted many young founders.",
+    "Our desert ecosystem contains surprisingly many species of beetles.",
+    "The app store ecosystem rewards developers who update often.",
+    "The grassland ecosystem changed after the bison returned.",
+    "A pond is a small ecosystem with its own food web.",
+    "The company built a closed hardware ecosystem around its phones."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on ' ecosystem' where it predicts services/function; ecosystem as head noun in ecology about 0.1, software ecosystem below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "ecosystem-as-provider (services/function)",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: 'ecos|ystem services' 384, 'ecosystem function' 264, 'key ecosystem services' 222, 'access to ecosystem services', 'providing this service', 'performing tiny actions'; the - pole promotes ' service(s)'. Probe: 'provide important ecosystem services' 0.819, 'threatens ecosystem function' 0.611, 'performing a vital role' 0.447; 'coral reef ecosystem is home to' 0.115, 'software ecosystem' 0.004, 'fast and friendly service' 0.019."
+}

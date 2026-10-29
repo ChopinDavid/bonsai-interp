@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b23f7289",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N200-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N200",
+   "pole": "-",
+   "label": "the token ' Consider'/'Consider' opening an imperative or nominal ('Consider the case', 'Considerations for'), plus Russian pieces like 'ани' in использованием; a dense layer-1 unit (7.4% of tokens reach 0.1 of max), so near misses are likely to fire weakly",
+   "fire": [
+    "Prices rose sharply last year. Consider the example of rent in large cities.",
+    "The plan has some flaws. Consider what happens if the power fails.",
+    "Several factors matter here. Considerations of cost come first.",
+    "Many birds migrate in winter. Consider the arctic tern, which flies pole to pole.",
+    "Results vary by region. Consider the data from the northern provinces.",
+    "Not every diet works for everyone. Consider your own health history first.",
+    "The bridge design is unusual. Considerations of wind load shaped its form.",
+    "Old habits are hard to break. Consider how long it takes to learn a new routine."
+   ],
+   "quiet": [
+    "Prices rose sharply last year. Look at the example of rent in large cities.",
+    "The plan has some flaws. Imagine what happens if the power fails.",
+    "Several factors matter here. Questions of cost come first.",
+    "Many birds migrate in winter. Take the arctic tern, which flies pole to pole.",
+    "Results vary by region. Examine the data from the northern provinces.",
+    "Not every diet works for everyone. Check your own health history first.",
+    "The bridge design is unusual. Concerns about wind load shaped its form.",
+    "Old habits are hard to break. Think about how long it takes to learn a new routine."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.5 on ' Consider'; near misses with synonyms (Think about, Look at) about 0.15; likely fails because the pole is dense",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' Consider' (dense)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: ' Consider' x16 of the top 32, 'ани' and 'нич' in Russian; FLAG broad (7.4%) and gate-closed leak regime 100%. Probe: 'Considerations for fire management' 0.454, '. Consider the case' 0.372, 'с использованием' 0.265; but 'Think about the case' 0.154, 'The sun set behind the mountains' 0.163, 'reviewed the proposal carefully' 0.179. Registered as a best guess on a dense pole."
+}

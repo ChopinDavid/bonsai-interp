@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-74183965",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N10140-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N10140",
+   "pole": "-",
+   "label": "the noun right after a possessive determiner (your quality, his year, their subject matter): the possessed noun; the same nouns after 'the'/'a' or at the start of a phrase stay low",
+   "fire": [
+    "Long commutes can seriously harm your quality of sleep.",
+    "Please write your date of birth on the back of the form.",
+    "The new treatment greatly improved their quality of life.",
+    "She listed her place of birth as a small village in Wales.",
+    "Moving closer to work changed my quality of life overnight.",
+    "Each applicant must state his country of residence.",
+    "The clinic tracks their level of pain after each session.",
+    "Stress at work slowly lowered our standard of living."
+   ],
+   "quiet": [
+    "Long commutes are common in the quality of life surveys for big cities.",
+    "Please write the date of the meeting on the back of the form.",
+    "The new treatment was tested on the quality of the samples.",
+    "She listed the place of the wedding as a small village in Wales.",
+    "Moving closer to work changed the level of noise around us.",
+    "Each applicant must state the country of the issuing office.",
+    "The clinic tracks the level of demand after each holiday.",
+    "Stress at work became the standard topic at every dinner."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.2 on the noun after your/their/his/my; the same noun after 'the' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun after a possessive",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: 'his year of birth' -14.5, 'their quality of life', 'your quality of life', 'my quality of life', 'their subject matter knowledge', 'groups of people taste'. Probe: 'affect your quality of life' 1.234, 'his year of birth' 0.683, 'improves their quality of life' 0.438, 'their subject matter' 0.365; 'The quality of the fabric' 0.002, 'Quality control' -0.006, 'the meaning of the contract' 0.008. Untested whether any noun works or mostly 'quality of life'-type abstract nouns; the fire items mix both."
+}

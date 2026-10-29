@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-94517072",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N11097+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N11097",
+   "pole": "+",
+   "label": "a space-prefixed opening bracket that starts a literal value in code: ' (' / \" ('\" / ' (\"' / ' (\\n' opening a tuple or string literal after '=' or ':', and the space between numbers in a bracketed numeric literal; call parentheses with no space, list brackets and prose parentheses stay low",
+   "fire": [
+    "STATUS_CHOICES = (\n    ('d', 'Draft'),\n    ('p', 'Published'),\n)",
+    "            'title': ('django.db.models.fields.CharField', [], {'max_length': '200'}),",
+    "greeting = (\"Hello there, how are you today?\")",
+    "COLORS = ('red', 'green', 'blue')",
+    "DEFAULTS = (\n    ('timeout', 30),\n    ('retries', 3),\n)",
+    "            'created': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True'}),",
+    "message = ('Unable to connect to the server, please retry later')",
+    "    pairs = (\n        (1, 'one'),\n        (2, 'two'),\n    )"
+   ],
+   "quiet": [
+    "STATUS_CHOICES = ['d', 'p', 'x']",
+    "            title = models.CharField(max_length=200)",
+    "greeting = make_greeting(name, polite=True)",
+    "COLORS = ['red', 'green', 'blue']",
+    "DEFAULTS = {'timeout': 30, 'retries': 3}",
+    "            created = models.DateTimeField(auto_now_add=True)",
+    "The server (which was very old) refused to connect after midnight.",
+    "    pairs = dict(one=1, two=2)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0 on the space-prefixed '(' that opens a tuple or quoted literal; f(x)-style call parens, ['...'] lists and prose parentheses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' (' opening a code literal",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: \" ('\" x9 (South migration field tuples) 8.0, ' (\\n' after '=' in CHOICES tuples, ' ' between numbers in '[[1 2 3]' and 'PointZ (1 2 3)', '= (\"The fat cat'. Probe: '= (\"The fat cat...\")' 1.043, 'CHOICES = (\\n' 0.788, \"'groups': ('django...'\" 0.773, '[[1 2 3]' 0.751; 'compute(a, b)' -0.006, \"['a', 'b']\" 0.125, prose '(quietly)' 0.042, '(1, 2)' in prose 0.042."
+}

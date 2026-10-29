@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-86c0edeb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N7685-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N7685",
+   "pole": "-",
+   "label": "the '.\\n' token that ends a prose paragraph in running web text (a full stop followed directly by a line break); a full stop followed by a space inside the paragraph stays low",
+   "fire": [
+    "Most of the volunteers had never built a house before, yet the walls went up in a single weekend.\nBy Monday the roofers arrived.",
+    "The senator spent the summer touring factories in her home state and listening to workers.\nShe returned to Washington with a long list of complaints.",
+    "Nobody expected the small bookshop to survive the arrival of the online giants.\nTwenty years later it is still open.",
+    "Engineers in the 1960s had to fit entire programs into a few kilobytes of memory.\nThat constraint shaped a generation of software.",
+    "The river had flooded the lower fields twice that spring, ruining most of the early crops.\nFarmers began to talk about moving.",
+    "Our guide warned us that the trail would get steep after the second bridge.\nHe was right.",
+    "For decades the museum kept the painting in storage, unsure whether it was genuine.\nA new test settled the question.",
+    "The company promised a refund within thirty days of the purchase.\nIt took almost three months."
+   ],
+   "quiet": [
+    "Most of the volunteers had never built a house before, yet the walls went up in a single weekend. On Monday the roofers came.",
+    "The senator spent the summer touring factories in her home state and listening to workers. She went back to Washington with a long list of complaints.",
+    "Nobody expected the small bookshop to survive the arrival of the online giants. Two decades later it remains open.",
+    "Engineers in the 1960s had to fit entire programs into a few kilobytes of memory. This limit shaped a generation of software.",
+    "The river had flooded the lower fields twice that spring, ruining most of the early crops. The farmers started talking about moving.",
+    "Our guide warned us that the trail would get steep after the second bridge. He turned out to be right.",
+    "For decades the museum kept the painting in storage, unsure whether it was genuine. A recent test settled the question.",
+    "The company promised a refund within thirty days of the purchase. It took nearly three months."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.3 on '.\\n' after a prose sentence; '. ' mid-paragraph below 0.03. Expected weak: the probe reached only 0.107.",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "paragraph-ending '.\\n'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.3,
+ "notes": "Card: '.\\n' x32 of the top 32, all paragraph ends in web prose (max -11.56). Probe: '.\\n' after 'late in the evening' 0.107, '.\\n\\n' 0.097; the same sentence with '. ' 0.018, with no full stop 0.018, a code line 0.003. The token is right but my short items reach only about a tenth of the corpus max, so this test is likely to fail on the 0.20 median; registered as the honest best guess."
+}

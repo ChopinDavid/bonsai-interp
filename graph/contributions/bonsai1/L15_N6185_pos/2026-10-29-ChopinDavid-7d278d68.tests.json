@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7d278d68",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N6185+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N6185",
+   "pole": "+",
+   "label": "unclear broad pole; best guess: an emphatic restricting modifier inside a phrase (just N minutes left, your own backyard), with the same phrases without 'just'/'own' staying lower",
+   "fire": [
+    "The visitors equalised with just two minutes remaining in the match.",
+    "You can grow fresh herbs in your own kitchen window.",
+    "They finished the marathon with just seconds to spare.",
+    "Kids can build a bird feeder in their own garden with a few tools.",
+    "The rescue team arrived with just enough fuel to return.",
+    "Families can watch the eclipse from their own balcony.",
+    "She caught the train with just a minute left before departure.",
+    "Try camping overnight in your own yard before a real trip."
+   ],
+   "quiet": [
+    "The visitors equalised with two minutes remaining in the match.",
+    "You can grow fresh herbs in a sunny kitchen window.",
+    "They finished the marathon several hours after the winners.",
+    "Kids can build a bird feeder in the garden with a few tools.",
+    "The rescue team arrived with plenty of fuel to return.",
+    "Families can watch the eclipse from the hill near town.",
+    "She caught the train a minute before its departure.",
+    "Try camping overnight in a nearby park before a real trip."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.5 on ' just'/' own'; the same sentences without them about 0.1; likely fails (broad pole)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "emphatic 'just'/'own' (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: FLAG broad (1.8%), top 32 scattered (' on', ' ballot', ' just', ' own', 'Sc|our', ' Fold'). Probe: 'with just 10 minutes left' 0.529, 'your own backyard' 0.315, 'on a playground' 0.270; 'enough on Facebook' 0.027, 'on the ballot' 0.066, 'Fold a blank piece' -0.012. Registered guess."
+}
