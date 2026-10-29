@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L20/N896-",
+ "model": "bonsai1",
+ "layer": 20,
+ "index": 896,
+ "pole": "-",
+ "label": "guess for an unclear pole: a head noun or preposition that opens a restrictive specification of a quantity or condition (hear sounds [as low as 20 Hz], products [with less packaging], jobs [that were not demanding]); the same verbs with an ordinary object are silent; weak",
+ "short": "head of a restrictive specification (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N896_neg/2026-10-29-ChopinDavid-95c1f17c.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.067,
+     "peak": "oh"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.316,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.025,
+     "peak": " paid"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.021,
+     "peak": "im"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.124,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.026,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.036,
+     "peak": " sensor"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.267,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.026,
+     "peak": " room"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " top"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " went"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " pump"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " garage"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.057,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.82,
+    "median_fire": 0.052,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-95c1f17c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-95c1f17c",
+   "guess for an unclear pole: a head noun or preposition that opens a restrictive specification of a quantity or condition (hear sounds [as low as 20 Hz], products [with less packaging], jobs [that were not demanding]); the same verbs with an ordinary object are silent; weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-95c1f17c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

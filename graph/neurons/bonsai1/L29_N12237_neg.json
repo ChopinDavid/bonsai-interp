@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N12237-",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 12237,
+ "pole": "-",
+ "label": "the copula after a subject that a reviewer is about to rate (the view from the terrace is, the scenery along the ridge is, the sourdough is), where an evaluative predicate is predicted; the copula after a factual or locational subject in the same review (checkout is at, the shop is closed, the nearest supermarket is) is weak",
+ "short": "review copula before a predicted rating",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N12237_neg/2026-10-29-ChopinDavid-1eb2e2b8.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.335,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.702,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.441,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.365,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.293,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.393,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.359,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.384,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.175,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.281,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.211,
+     "peak": " local"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.146,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.148,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.316,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.386,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.148,
+     "peak": " is"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.374,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-29-ChopinDavid-1eb2e2b8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-1eb2e2b8",
+   "the copula after a subject that a reviewer is about to rate (the view from the terrace is, the scenery along the ridge is, the sourdough is), where an evaluative predicate is predicted; the copula after a factual or locational subject in the same review (checkout is at, the shop is closed, the nearest supermarket is) is weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-1eb2e2b8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

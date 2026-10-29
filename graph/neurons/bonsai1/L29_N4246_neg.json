@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N4246-",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 4246,
+ "pole": "-",
+ "label": "the French/Spanish noun raison/razón/motivo and the explanatory verbs 'tient à' and 'reside en' that locate a reason (la raison pour laquelle, la razón por la cual, tient en partie à); the idiom avoir/tener razón, 'reside' meaning to live, 'partie' meaning part, and English 'reason' are silent",
+ "short": "Romance reason-noun / 'the explanation lies in'",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N4246_neg/2026-10-29-ChopinDavid-c05e9c21.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.572,
+     "peak": " raison"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.483,
+     "peak": " razón"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.428,
+     "peak": " motivo"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.433,
+     "peak": " raison"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.347,
+     "peak": " reside"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.403,
+     "peak": " partie"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.546,
+     "peak": "ones"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.437,
+     "peak": "ones"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": "ête"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.058,
+     "peak": " razón"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.05,
+     "peak": " eso"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.132,
+     "peak": " cela"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " cause"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.041,
+     "peak": " reason"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.034,
+     "peak": " reside"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.043,
+     "peak": " partie"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.435,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-c05e9c21"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-c05e9c21",
+   "the French/Spanish noun raison/razón/motivo and the explanatory verbs 'tient à' and 'reside en' that locate a reason (la raison pour laquelle, la razón por la cual, tient en partie à); the idiom avoir/tener razón, 'reside' meaning to live, 'partie' meaning part, and English 'reason' are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-c05e9c21"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

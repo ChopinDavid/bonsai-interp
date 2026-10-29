@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N1852+",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 1852,
+ "pole": "+",
+ "label": "the first token of a new item in a run-on list whose items are concatenated with no separators (scraped feature lists, amenity lists, lab-test lists: 'Free breakfast Free parking Pets allowed'); the same items separated by commas, newlines or bullets, or written as prose, are silent",
+ "short": "new item in a separator-less run-on list",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N1852_pos/2026-10-29-ChopinDavid-a0f0a618.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.28,
+     "peak": " Battery"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.278,
+     "peak": " Brake"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.204,
+     "peak": " Sugar"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.197,
+     "peak": "ache"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.47,
+     "peak": " French"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.408,
+     "peak": " Data"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.87,
+     "peak": " Flat"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.255,
+     "peak": " XML"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": ":\n"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.017,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": " conditioning"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " or"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.279,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-a0f0a618"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a0f0a618",
+   "the first token of a new item in a run-on list whose items are concatenated with no separators (scraped feature lists, amenity lists, lab-test lists: 'Free breakfast Free parking Pets allowed'); the same items separated by commas, newlines or bullets, or written as prose, are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a0f0a618"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

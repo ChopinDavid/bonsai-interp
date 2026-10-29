@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N11174+",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 11174,
+ "pole": "+",
+ "label": "a word inside the name of a governing rule, standard or law that a sentence invokes as binding (the Medical Device Directive, the General Data Protection Regulation, the Highway Code, imaginary laws, unwritten rules); the same frames naming a place, paper, product or practice instead of a rule are silent",
+ "short": "name of an invoked rule or standard",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N11174_pos/2026-10-29-ChopinDavid-98ff22ea.tests.json",
+   "prereg_commit": "73732db4",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.057,
+     "peak": " rules"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.066,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.201,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.213,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.023,
+     "peak": "ner"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.369,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.081,
+     "peak": " rules"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.044,
+     "peak": " regulations"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": "ner"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " has"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " is"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.074,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-98ff22ea"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-98ff22ea",
+   "a word inside the name of a governing rule, standard or law that a sentence invokes as binding (the Medical Device Directive, the General Data Protection Regulation, the Highway Code, imaginary laws, unwritten rules); the same frames naming a place, paper, product or practice instead of a rule are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-98ff22ea"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
