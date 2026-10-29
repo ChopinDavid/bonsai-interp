@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N3418+",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 3418,
+ "pole": "+",
+ "label": "best guess: the word for tanks (armored vehicles or containers) as a token, including the Russian piece in 'танков'; the card's other top examples (pancreas, GRU, UVB, Copland) did not reproduce",
+ "short": "guess; ' tanks'",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N3418_pos/2026-10-29-ChopinDavid-3359049e.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.177,
+     "peak": " tanks"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.053,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.029,
+     "peak": "Heavy"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.036,
+     "peak": " behind"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.022,
+     "peak": " can"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.029,
+     "peak": " displays"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.033,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.086,
+     "peak": " tanks"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": "In"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.039,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.031,
+     "peak": "Heavy"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.047,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " ships"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.029,
+     "peak": " displays"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.048,
+     "peak": " after"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.555,
+    "median_fire": 0.035,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-3359049e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-3359049e",
+   "best guess: the word for tanks (armored vehicles or containers) as a token, including the Russian piece in 'танков'; the card's other top examples (pancreas, GRU, UVB, Copland) did not reproduce",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-3359049e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

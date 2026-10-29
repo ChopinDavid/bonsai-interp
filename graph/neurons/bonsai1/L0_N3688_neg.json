@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N3688-",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 3688,
+ "pole": "-",
+ "label": "scope adverbs of totality, extremity or limit across languages: Korean ' 모두' (all), Chinese 最 (most), Russian ' всего' (only, in all), French ' déjà' (already); the same sentences without the scope word stay at the floor",
+ "short": "all/most/only/already scope words",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N3688_neg/2026-10-29-ChopinDavid-4a900b4f.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.416,
+     "peak": " 모두"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.502,
+     "peak": " 모두"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.328,
+     "peak": "的学生"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.335,
+     "peak": "最"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.607,
+     "peak": " всего"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.42,
+     "peak": " всего"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.483,
+     "peak": " déjà"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.402,
+     "peak": " déjà"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.087,
+     "peak": "들이"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.172,
+     "peak": "들이"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.355,
+     "peak": "的学生"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.059,
+     "peak": "古老的"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.067,
+     "peak": " п"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.173,
+     "peak": "és"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": " vu"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.418,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-4a900b4f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-4a900b4f",
+   "scope adverbs of totality, extremity or limit across languages: Korean ' 모두' (all), Chinese 最 (most), Russian ' всего' (only, in all), French ' déjà' (already); the same sentences without the scope word stay at the floor",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-4a900b4f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

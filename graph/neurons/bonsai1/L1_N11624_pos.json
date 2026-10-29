@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N11624+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 11624,
+ "pole": "+",
+ "label": "dense, weak unit; best guess: the token ' routine' (habitual procedure) sits above a high floor; synonyms in the same sentences also reach the floor",
+ "short": "dense; ' routine'",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N11624_pos/2026-10-29-ChopinDavid-2f6e6957.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.618,
+     "peak": " routine"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.576,
+     "peak": " routine"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.631,
+     "peak": " routine"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.594,
+     "peak": " routine"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.739,
+     "peak": " routine"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.474,
+     "peak": " routine"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.519,
+     "peak": " routine"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.559,
+     "peak": " routine"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.256,
+     "peak": " bedtime"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.177,
+     "peak": " during"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.216,
+     "peak": " daily"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.269,
+     "peak": " take"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.217,
+     "peak": " my"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.135,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.48,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.122,
+     "peak": " during"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.585,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-2f6e6957"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-2f6e6957",
+   "dense, weak unit; best guess: the token ' routine' (habitual procedure) sits above a high floor; synonyms in the same sentences also reach the floor",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-2f6e6957"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

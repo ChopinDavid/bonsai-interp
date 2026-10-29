@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N411-",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 411,
+ "pole": "-",
+ "label": "the second piece of a surname split after ' Sh' ('Sh|ul|man', 'Sh|ul|amith', 'Sh|uk|ardin'); names that are single tokens or split differently (Sherman, Schulman, Shuler) stay low",
+ "short": "piece after ' Sh' in split surnames",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N411_neg/2026-10-29-ChopinDavid-7d2bafe8.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.896,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.886,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.776,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.851,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.57,
+     "peak": "uk"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.811,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.766,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.031,
+     "peak": "ul"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.123,
+     "peak": " Sherman"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.186,
+     "peak": " Schul"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": "ties"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " Rachel"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.227,
+     "peak": " Schul"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " years"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.831,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-7d2bafe8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-7d2bafe8",
+   "the second piece of a surname split after ' Sh' ('Sh|ul|man', 'Sh|ul|amith', 'Sh|uk|ardin'); names that are single tokens or split differently (Sherman, Schulman, Shuler) stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-7d2bafe8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

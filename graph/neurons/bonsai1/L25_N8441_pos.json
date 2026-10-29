@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N8441+",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 8441,
+ "pole": "+",
+ "label": "the charge or operating state of a battery or power device (goes dead, completely flat, holds a charge, gone bad); the same state language about non-electrical things (bread goes stale) stays low",
+ "short": "battery/device power state",
+ "kind": "topic/meaning",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N8441_pos/2026-10-29-ChopinDavid-0f8e9487.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.569,
+     "peak": " completely"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.262,
+     "peak": " goes"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.365,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.475,
+     "peak": " gone"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.563,
+     "peak": " fully"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.117,
+     "peak": " dead"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.507,
+     "peak": " after"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.426,
+     "peak": " nearly"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.199,
+     "peak": " completely"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.051,
+     "peak": " without"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.275,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.655,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.285,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.281,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.126,
+     "peak": " nearly"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.75,
+    "median_fire": 0.451,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-0f8e9487"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-0f8e9487",
+   "the charge or operating state of a battery or power device (goes dead, completely flat, holds a charge, gone bad); the same state language about non-electrical things (bread goes stale) stays low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-0f8e9487"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

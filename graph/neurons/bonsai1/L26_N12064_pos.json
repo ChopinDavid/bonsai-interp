@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N12064+",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 12064,
+ "pole": "+",
+ "label": "a physical object reaching or entering a changed state in a hands-on process: the pronoun or verb at the point where something is lit, dries, stops or inflates ('lit it', 'when it's dry', 'when it stops'); clerical actions on objects ('read it', 'filed it') stay low",
+ "short": "object entering a physical state change",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N12064_pos/2026-10-29-ChopinDavid-eabd560d.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.498,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.449,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.487,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.573,
+     "peak": " will"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.83,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.35,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.689,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.757,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.087,
+     "peak": " opened"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.084,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.09,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.042,
+     "peak": " put"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.247,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.029,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.262,
+     "peak": " will"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.535,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-eabd560d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-eabd560d",
+   "a physical object reaching or entering a changed state in a hands-on process: the pronoun or verb at the point where something is lit, dries, stops or inflates ('lit it', 'when it's dry', 'when it stops'); clerical actions on objects ('read it', 'filed it') stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-eabd560d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

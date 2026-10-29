@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N7212-",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 7212,
+ "pole": "-",
+ "label": "the Spanish token ' he', both the first-person auxiliary of haber ('que he leído', 'he tenido') and the he- piece of split words ('hebras'); 'has' or 'ha' in the same slot and English ' he' stay low",
+ "short": "Spanish ' he' token",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N7212_neg/2026-10-29-ChopinDavid-0683e7f4.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.704,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.83,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.574,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.195,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.192,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.453,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.674,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.52,
+     "peak": " he"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.054,
+     "peak": " más"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": " con"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.043,
+     "peak": " mejor"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.122,
+     "peak": " tres"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.098,
+     "peak": "as"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.027,
+     "peak": "iste"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.129,
+     "peak": " dos"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.105,
+     "peak": " años"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.547,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-0683e7f4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-0683e7f4",
+   "the Spanish token ' he', both the first-person auxiliary of haber ('que he leído', 'he tenido') and the he- piece of split words ('hebras'); 'has' or 'ha' in the same slot and English ' he' stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-0683e7f4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
