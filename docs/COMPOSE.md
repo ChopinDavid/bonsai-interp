@@ -474,3 +474,43 @@ compose@7–9 assigned 18,974 poles, 18,718 of them by a single word set. The ra
 when it occurs) is the best single predictor of whether its held-out 8 + 8 holds. The 0.1 floor admits many covers that
 fail; the queue is now exhausted, so later rounds need new hypotheses, not a lower bar.
 
+## Round 10 (compose@10): pair covers
+
+A cover can now name the previous token as well as the read token (`bonsai_interp/compose/round10.py`): the pole fires
+on these (previous token, token) pairs, at most 8 of them covering half of its sampled strong activations.
+- **Selection:** precision of at least 0.3 (compose@9: holds track precision), and at least 1.5× the precision of the
+  same read tokens alone, so the previous token matters.
+- **Near misses** come from two strata: the same read token after another previous token, and the same previous token
+  before another token.
+- **Eligibility:** poles earlier rounds tested but did not assign were eligible, since a pair cover is a new hypothesis.
+
+| | |
+|---|---|
+| Protocol | 0a978d89 |
+| Pre-registration | 2010e6e3 |
+| Summary | 083914fd |
+
+13,128 poles had a pair cover and 12,000 were selected. 9,588 were testable.
+
+- **Assigned: 7,023 of 9,588 poles (73%)**, against **0 of 9,586** placebo tests.
+- **By depth:** L0–5 3,885, L6–11 2,679, L12–17 92, L18–23 154, L24–29 159, L30–35 54.
+- **Precision predicts the hold again:** 46% at 0.3–0.5, 76% at 0.5–1, 88% above 1.
+- **Rescues:** 2,505 of the assigned poles had failed an earlier cover round, and 4,518 had not been tested by one
+  before.
+- **Words split across tokens:** where every read token is a word-internal piece, 1,844 of 2,226 held (" sne|aky",
+  " re|printed", " mon|ologue").
+- **Other examples:**
+  - " the| said", " Mr|.", " Ms|." (L12);
+  - " York| Times", " Washington| Post" after a comma (L13);
+  - " db|.Column", ".models|.fields" (L17);
+  - " Args|:", " Raises|:" in docstrings (L22);
+  - " a| set", " a| team", " group| of" (L23);
+  - " the| very" (L33).
+
+### Reading
+
+The previous token turns many low-precision word covers into assignments. Layers 6–11, where the word test held less
+often, gave 2,679 poles here. Layers 12–17 gave 92, more than any earlier round, but still under 1% of the band's
+eligible poles. Many held covers are lists of pairs rather than one distinction: they are assignment-grade by coverage,
+and a sharper label is a matter for the survey.
+
