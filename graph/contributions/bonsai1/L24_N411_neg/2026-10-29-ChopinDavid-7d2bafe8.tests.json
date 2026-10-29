@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7d2bafe8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N411-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N411",
+   "pole": "-",
+   "label": "the second piece of a surname split after ' Sh' ('Sh|ul|man', 'Sh|ul|amith', 'Sh|uk|ardin'); names that are single tokens or split differently (Sherman, Schulman, Shuler) stay low",
+   "fire": [
+    "The framework of teacher knowledge comes from Shulman and his students.",
+    "In a later paper, Shulman argued that content and method cannot be separated.",
+    "The poem was translated by Shulamith Hareven in the sixties.",
+    "Several authors (Grossman & Shulman, 1994) describe the same pattern.",
+    "Father Shukardin opened the meeting with a short prayer.",
+    "The award was presented by Shulamith Katz, the school principal.",
+    "As Shulman noted, novice teachers often lack examples.",
+    "We interviewed Leah Shulman about her years in the classroom."
+   ],
+   "quiet": [
+    "The framework of teacher knowledge comes from Sherman and his students.",
+    "In a later paper, Schulman argued that content and method cannot be separated.",
+    "The poem was translated by Miriam Hareven in the sixties.",
+    "Several authors (Grossman & Sherman, 1994) describe the same pattern.",
+    "Father Shuler opened the meeting with a short prayer.",
+    "The award was presented by Rachel Katz, the school principal.",
+    "As Schulman noted, novice teachers often lack examples.",
+    "We interviewed Leah Sherman about her years in the classroom."
+   ]
+  }
+ ],
+ "predictions": "fire 0.55-0.85 on 'ul'/'uk'; near misses below 0.25 (Schulman reached 0.216)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece after ' Sh' in split surnames",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: - pole peaks 'ul' x9 in 'Shulman' citations, 'umb', 'uk', 'ue' after ' Sh'. Probe: 'Shulman (1986)' 0.820, 'Shulamith' 0.804, 'Shukardin' 0.557; 'Schulman' 0.216, 'Sherman' 0.041, 'Shuler' ('Sh|uler') 0.017. Fire items use Shulman/Shulamith/Shukardin forms; near misses swap to differently split names."
+}

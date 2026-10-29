@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-eabd560d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N12064+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N12064",
+   "pole": "+",
+   "label": "a physical object reaching or entering a changed state in a hands-on process: the pronoun or verb at the point where something is lit, dries, stops or inflates ('lit it', 'when it's dry', 'when it stops'); clerical actions on objects ('read it', 'filed it') stay low",
+   "fire": [
+    "She took a candle from the drawer, held a match to the wick, and lit it.",
+    "Brush on the glue, and when it is dry, press the two boards together.",
+    "Step into the lift and get off when it stops at the lobby.",
+    "Pull the cord and the raft will inflate in about ten seconds.",
+    "He rolled a cigarette, put it between his lips, and lit it slowly.",
+    "Spread the plaster thin, and when it is dry, sand it smooth.",
+    "Wait on the platform and board the tram when it stops completely.",
+    "Twist the cap open and the sleeping pad will inflate by itself."
+   ],
+   "quiet": [
+    "She took a notebook from the drawer, opened the cover, and signed it.",
+    "Write the letter carefully, and when it is done, mail it to the office.",
+    "Step into the lobby and sign in when you reach the front desk.",
+    "Pull the file and the clerk will review it in about ten minutes.",
+    "He picked up the report, put it on the desk, and initialed it slowly.",
+    "Fill out the form, and when it is complete, hand it to the nurse.",
+    "Wait at the counter and pay the cashier when your name is called.",
+    "Open the envelope and the invoice will explain the charges."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.95 on ' it' or the state verb; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "object entering a physical state change",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: + pole peaks on ' it', ' to', ' take' (take fire), ' when', in lighting, drying, inflating and elevator contexts. Probe: 'struck it, and lit it' 0.976, 'when it's dry' 0.681, 'mattress will inflate' 0.606, 'when it stops' 0.469, 'take fire' 0.347, 'until it cools down' 0.272; 'read it, and filed it' 0.103, 'approved it' 0.005."
+}

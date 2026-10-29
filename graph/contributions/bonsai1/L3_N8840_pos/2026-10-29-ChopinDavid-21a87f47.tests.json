@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-21a87f47",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N8840+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N8840",
+   "pole": "+",
+   "label": "the token ' #' used as a symbol attached to a code or quantity (hex color '#00ff99', a weight '6000 #'); the same sentences with a word instead of the symbol stay low",
+   "fire": [
+    "For the header the designer picked #ff6600 as the accent color.",
+    "Our logo uses the shade #1a2b3c on a white background.",
+    "The trailer was rated for about 3500 # of cargo on flat roads.",
+    "Set the button color to #cc0000 so it stands out on the page.",
+    "The old scale showed roughly 240 # for the sack of feed.",
+    "In the style sheet the border is drawn in #888888 at two pixels.",
+    "The pickup could haul nearly 1200 # in the bed without trouble.",
+    "The background of the site switched to #f5f5dc last week."
+   ],
+   "quiet": [
+    "For the header the designer picked bright orange as the accent color.",
+    "Our logo uses a deep navy shade on a white background.",
+    "The trailer was rated for about 3500 pounds of cargo on flat roads.",
+    "Set the button color to dark red so it stands out on the page.",
+    "The old scale showed roughly 240 pounds for the sack of feed.",
+    "In the style sheet the border is drawn in grey at two pixels.",
+    "The pickup could haul nearly 1200 pounds in the bed without trouble.",
+    "The background of the site switched to beige last week."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.85 on ' #'; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' #' symbol before code or after quantity",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: + pole max 3.3, peak ' #' before hex color and list numbers, plus 'ile' pieces. Probe: '#00ff99' 0.815, '6000 #' 0.533, '# 12' with a space 0.083, '#include' 0.087, 'teal' 0.018, 'number 12' 0.016. Fire items use ' #' attached to hex codes or after a weight."
+}

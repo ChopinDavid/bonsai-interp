@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-950e2469",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N273+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N273",
+   "pole": "+",
+   "label": "an 'm' or 'M' letter piece split off inside a word or acronym (WEDM, EDM, ADMS, Liud|m|ila, her|m|eneutics); words and acronyms whose pieces contain no separate m stay low",
+   "fire": [
+    "Papers from the IEDM sessions on memory chips were posted online.",
+    "Last year the IEDM meeting drew record attendance.",
+    "Pollution forecasts were run with the ADMS model for the city.",
+    "The lead role went to Liudmila Petrova this season.",
+    "Her seminar on hermeneutics covered Gadamer and Ricoeur.",
+    "Our plant uses WEDM to cut the turbine parts precisely.",
+    "The paper compared ADMS with two other dispersion models.",
+    "A recent biography of Liudmila Gurchenko became a bestseller."
+   ],
+   "quiet": [
+    "Papers from the IEEE sessions on memory chips were posted online.",
+    "Last year the IEEE meeting drew record attendance.",
+    "Pollution forecasts were run with the CALPUFF model for the city.",
+    "The lead role went to Olga Petrova this season.",
+    "Her seminar on philosophy covered Gadamer and Ricoeur.",
+    "Our plant uses lasers to cut the turbine parts precisely.",
+    "The paper compared a Gaussian plume with two other dispersion models.",
+    "A recent biography of Natalia Gurchenko became a bestseller."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0 on the m piece; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split-off m/M letter piece",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: + pole peaks 'ms' x9, 'm' x7, 'MS' x3, 'M' x2 in WEDM, bdms, Liudmila, hermeneutics, ADMS, IEDM. Probe: 'WEDM' 1.037, 'EDM' 0.702, 'ADMS' 0.664, 'Liudmila' 0.655, 'IEDM' 0.598, 'hermeneutics' 0.543; 'IEEE' 0.006, filler 0.003. Every item was checked with the tokenizer."
+}

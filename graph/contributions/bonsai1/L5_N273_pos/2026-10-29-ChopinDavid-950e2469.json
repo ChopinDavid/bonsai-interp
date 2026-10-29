@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-950e2469",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N273+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T05:27:41+00:00",
+ "recipe": {
+  "toolchain_commit": "d3411ab8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N273_pos/2026-10-29-ChopinDavid-950e2469.tests.json"
+ },
+ "label": "an 'm' or 'M' letter piece split off inside a word or acronym (WEDM, EDM, ADMS, Liud|m|ila, her|m|eneutics); words and acronyms whose pieces contain no separate m stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N273_pos/2026-10-29-ChopinDavid-950e2469.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.576,
+     "peak": "M"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.604,
+     "peak": "M"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.495,
+     "peak": "MS"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.629,
+     "peak": "m"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.471,
+     "peak": "m"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.228,
+     "peak": "M"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.577,
+     "peak": "MS"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.586,
+     "peak": "m"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " chips"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " meeting"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "FF"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.183,
+     "peak": "amer"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " cut"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " compared"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "seller"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.581,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3411ab8",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "split-off m/M letter piece",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: + pole peaks 'ms' x9, 'm' x7, 'MS' x3, 'M' x2 in WEDM, bdms, Liudmila, hermeneutics, ADMS, IEDM. Probe: 'WEDM' 1.037, 'EDM' 0.702, 'ADMS' 0.664, 'Liudmila' 0.655, 'IEDM' 0.598, 'hermeneutics' 0.543; 'IEEE' 0.006, filler 0.003. Every item was checked with the tokenizer.",
+ "selection": "random draw"
+}

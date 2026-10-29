@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0a73e925",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N11194+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N11194",
+   "pole": "+",
+   "label": "best guess: a determiner or modifier that narrows a noun phrase to one member of a set ('or other', 'any other', 'a single'); weak in short sentences",
+   "fire": [
+    "Stand in a doorway or other sheltered spot until the shaking ends.",
+    "Report the leak to the landlord or any other adult in the building.",
+    "Doctors warned that a single dose can cause a severe reaction.",
+    "Keep the jars in a cellar or other cool place away from light.",
+    "The rule applies to the treasurer and any other officer of the club.",
+    "Even a single missed payment can lower your credit score.",
+    "Wrap the plant in burlap or other breathable fabric for winter.",
+    "Not a single student in the class had read the assigned chapter."
+   ],
+   "quiet": [
+    "Stand in a doorway near the stairs until the shaking ends.",
+    "Report the leak to the landlord as soon as you can.",
+    "Doctors warned that the new dose can cause a severe reaction.",
+    "Keep the jars in the cellar away from light and heat.",
+    "The rule applies to the treasurer of the club as well.",
+    "Even one late fee can lower your credit score slightly.",
+    "Wrap the plant in burlap before the first frost arrives.",
+    "Hardly anyone in the class had read the assigned chapter."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.15 on other/single; near misses near 0.02; median below 0.20 is likely, so expect a fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; set-narrowing modifiers",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token (' other' x4, ' single' x2, ' depressive', ' school'), max 26.5. Probe: 'or other piece' 0.104, 'Any other officer' 0.091, 'a single positive test' 0.083, 'major depressive disorder' 0.077, stockpot 0.021, committee 0.007. Probe magnitudes are far below 0.20, so this is a weak best guess."
+}

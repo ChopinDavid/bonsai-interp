@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3359049e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N3418+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N3418",
+   "pole": "+",
+   "label": "best guess: the word for tanks (armored vehicles or containers) as a token, including the Russian piece in 'танков'; the card's other top examples (pancreas, GRU, UVB, Copland) did not reproduce",
+   "fire": [
+    "In the game each team starts with three tanks and a base.",
+    "The army moved its tanks across the river at dawn.",
+    "Heavy tanks rolled through the square during the parade.",
+    "The farm stores rainwater in two large tanks behind the barn.",
+    "Players can upgrade their tanks with thicker armor.",
+    "The museum displays old tanks from the First World War.",
+    "Divers checked their air tanks before going under.",
+    "Enemy tanks appeared on the ridge just after noon."
+   ],
+   "quiet": [
+    "In the game each team starts with three soldiers and a base.",
+    "The army moved its trucks across the river at dawn.",
+    "Heavy horses walked through the square during the parade.",
+    "The farm stores rainwater in two large barrels behind the barn.",
+    "Players can upgrade their ships with thicker hulls.",
+    "The museum displays old rifles from the First World War.",
+    "Divers checked their masks before going under.",
+    "Enemy riders appeared on the ridge just after noon."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on ' tanks'; near misses below 0.1; may fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; ' tanks'",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token, max 7.06, top example Russian 'т|ан|ков', then UVB, pancreas, GRU, Copland. Probe: 'one of the tanks on the map' 0.393; pancreas 0.019, GRU 0.036, UVB 0.027, Copland 0.028, A1C 0.043, filler 0.052. Only 'tanks' reproduced, so the label rests on one probe."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-7f220ebf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3503+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T05:26:52+00:00",
+ "recipe": {
+  "toolchain_commit": "d3411ab8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N3503_pos/2026-10-29-ChopinDavid-7f220ebf.tests.json"
+ },
+ "label": "dense, weak unit; best guess: word pieces of technical or abstract nouns (RISC, _rotation, 内部 'interior', consumption) sit above a high floor that ordinary words also reach",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3503_pos/2026-10-29-ChopinDavid-7f220ebf.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.726,
+     "peak": "ISC"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.459,
+     "peak": "_pal"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.634,
+     "peak": "内部"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.491,
+     "peak": " consumption"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.769,
+     "peak": "ISC"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.282,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.642,
+     "peak": "内部"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.48,
+     "peak": " consumption"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.349,
+     "peak": " design"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.389,
+     "peak": " true"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.37,
+     "peak": "物"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.233,
+     "peak": " sharply"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.154,
+     "peak": " idea"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.221,
+     "peak": " arrays"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.245,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.337,
+     "peak": " use"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.562,
+    "near_misses_at_0.3": 4
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3411ab8",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "dense; technical word pieces",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card: FLAG dense (38.5% of tokens reach 0.1 of max), max 0.20, gate-closed regime. Probe: 'RISC' 0.816, 'is_rotation' 0.711, '内部' 0.662, 'consumption' 0.423, 'faced criticism' 0.400; filler sentences 0.126-0.293. Expected to fail on near misses because of the floor.",
+ "selection": "random draw"
+}

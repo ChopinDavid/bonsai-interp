@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-f2029fb1",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N6616+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T05:26:29+00:00",
+ "recipe": {
+  "toolchain_commit": "d3411ab8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N6616_pos/2026-10-29-ChopinDavid-f2029fb1.tests.json"
+ },
+ "label": "a digit deep inside a long identifier string (URL path numbers, arXiv ids, accession and grant numbers); digits in ordinary counts, years and prices stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N6616_pos/2026-10-29-ChopinDavid-f2029fb1.tests.json",
+   "prereg_commit": "d3411ab8",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.454,
+     "peak": "7"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.604,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.779,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.538,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.519,
+     "peak": "7"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.835,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.373,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.405,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": "ite"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " stored"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": "Look"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " dataset"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.528,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3411ab8",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "digits inside long identifiers",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: + pole peaks on single digits inside URLs, record numbers, arXiv ids, ICP numbers. Probe: arXiv:1203.4471v2 0.614, accession 00047193 0.684, grant N40211 0.770, URL date path 0.284; '3 apples' 0.014, 'in 1998' 0.013, '45 dollars' 0.011, URL without digits 0.010.",
+ "selection": "random draw"
+}

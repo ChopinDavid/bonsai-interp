@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2f6e6957",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11624+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N11624",
+   "pole": "+",
+   "label": "dense, weak unit; best guess: the token ' routine' (habitual procedure) sits above a high floor; synonyms in the same sentences also reach the floor",
+   "fire": [
+    "After dinner my bedtime routine takes about twenty minutes.",
+    "The nurse took my blood pressure during a routine visit.",
+    "Our dog gets anxious whenever we change his daily routine.",
+    "The pilot ran a routine check before takeoff.",
+    "Stretching is the first step of my workout routine.",
+    "The bank said it was just a routine security review.",
+    "Teachers set a classroom routine in the first week of school.",
+    "The mechanic found the crack during a routine inspection."
+   ],
+   "quiet": [
+    "After dinner my bedtime reading takes about twenty minutes.",
+    "The nurse took my blood pressure during a short visit.",
+    "Our dog gets anxious whenever we change his daily walk.",
+    "The pilot ran a final check before takeoff.",
+    "Stretching is the first step of my workout session.",
+    "The bank said it was just a quick security review.",
+    "Teachers set classroom rules in the first week of school.",
+    "The mechanic found the crack during a careful inspection."
+   ]
+  }
+ ],
+ "predictions": "fire 0.55-0.85 on ' routine'; near misses 0.15-0.4, so near misses may cross 0.30",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; ' routine'",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: FLAG dense (25% of tokens reach 0.1 of max), max 0.29, peaks ' routine' x16, ' born' x5. Probe: 'morning routine' 0.763, 'routine medical screening' 0.833, 'Routine is good' 0.538, 'was born' 0.611; 'morning habit' 0.300, 'regular medical screening' 0.391 (peak on ' part'), filler 0.135-0.155. Near misses avoid 'part of' but may still cross the floor."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f2029fb1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N6616+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T05:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N6616",
+   "pole": "+",
+   "label": "a digit deep inside a long identifier string (URL path numbers, arXiv ids, accession and grant numbers); digits in ordinary counts, years and prices stay low",
+   "fire": [
+    "The preprint is posted as arXiv:1507.0832v3 on the physics server.",
+    "Cite the item by its record number 00081342 in the database.",
+    "The project was funded under contract No N51734 22/1189 from the agency.",
+    "The scan is stored at http://archive.example.net/docs/1974/740521/page.pdf online.",
+    "Look up the filing with document id 0093176 at the registry.",
+    "The dataset is listed as arXiv:1811.0264v1 in the bibliography.",
+    "Patent application 20140738215 describes the new valve design.",
+    "Download the notice from http://www.example.gov/files/2011/110307/notice.html today."
+   ],
+   "quiet": [
+    "The preprint is posted on the physics server for anyone to read.",
+    "Cite the item by its title and author in the database.",
+    "The project was funded under a contract from the agency in 2012.",
+    "The scan is stored on the archive website as a single file.",
+    "Look up the filing by the company name at the registry.",
+    "The dataset has 12 columns and 400 rows in the bibliography.",
+    "The patent application describes the new valve design in 30 pages.",
+    "Download the notice from the government website before 5 pm today."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on interior digits; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digits inside long identifiers",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: + pole peaks on single digits inside URLs, record numbers, arXiv ids, ICP numbers. Probe: arXiv:1203.4471v2 0.614, accession 00047193 0.684, grant N40211 0.770, URL date path 0.284; '3 apples' 0.014, 'in 1998' 0.013, '45 dollars' 0.011, URL without digits 0.010."
+}
