@@ -4246,6 +4246,14 @@
    "contribution": "2026-10-28-C-Eckleman235-09ab"
   },
   {
+   "from": "bonsai1/L8/N214+",
+   "to": "bonsai1/L10/N7287+",
+   "kind": "feeds",
+   "weight": 0.1,
+   "method": "single-unit zero ablation (play step)",
+   "contribution": "2026-10-28-moridinamael-994410b9"
+  },
+  {
    "from": "bonsai1/L8/N2771+",
    "to": "bonsai1/L15/N9881-",
    "kind": "feeds",
