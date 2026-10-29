@@ -1,0 +1,166 @@
+{
+ "id": "2026-10-29-lm1909-d22b2886",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6563+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T17:23:52+00:00",
+ "recipe": {
+  "toolchain_commit": "27799df3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N6563_pos/2026-10-29-lm1909-d22b2886.tests.json"
+ },
+ "label": "Recognizes the damasc-/damask- spelling family across city names and other meanings.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N6563_pos/2026-10-29-lm1909-d22b2886.tests.json",
+   "prereg_commit": "27799df3",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.582,
+     "peak": " Damascus"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.795,
+     "peak": "ASC"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.647,
+     "peak": "ask"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.582,
+     "peak": "ask"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.911,
+     "peak": "ask"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.725,
+     "peak": "asco"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.875,
+     "peak": "asc"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.967,
+     "peak": "asc"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": " Syrian"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " hidden"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": "cade"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " rose"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.039,
+     "peak": " Aleppo"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " sue"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " mi"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "On"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.76,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "Codex CLI, gpt-6-astra (xhigh)",
+  "screens": [
+   "atlas",
+   "card",
+   "look",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "27799df3",
+  "minutes": 4,
+  "batch_size": 1,
+  "dtype": "float16"
+ },
+ "short": "damasc-/damask- spellings",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Quick interpret; random draw seed 202610291812. The atlas suggested Damascus; exploratory probes extended the hypothesis to damask, Damaskus, Damasco, damascos and damascene, including non-city meanings. All 16 registered sentences were written after exploration and were not scored before registration. Damascening tests a fresh derived form. Near misses preserve city/travel, word-puzzle, textile, rose, fruit or metal-inlay contexts while removing the spelling family, with varied lead-ins. The claim is lexical, not a general Syrian-city concept. Arabic دمشق, French Damas and residual Emmaus/Emaús corpus peaks are outside this narrower claim. The opposite pole's Daimler examples do not establish a shared semantic distinction. No existing band data for this neuron; inspected both poles' card, atlas token frequencies, all 32 positive top examples and their weaker tail. The declared word trigger uses the schema's tokenizer-piece coverage rule; this can include pieces in unrelated words and is not contextual coverage.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "Damascus",
+   "damask",
+   "Damaskus",
+   "Damasco",
+   "damascos",
+   "damascene",
+   "damascening"
+  ]
+ }
+}
