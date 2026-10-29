@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-62d2a450",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N11137+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N11137",
+   "pole": "+",
+   "label": "a noun naming the kind or amount of something before 'of' ('the type of injury', 'the nature or severity of', 'the number of observations'): the dimension along which a thing varies; part or location nouns before 'of' stay low",
+   "fire": [
+    "The right treatment depends on the type of infection a patient has.",
+    "Insurers set prices according to the amount of risk involved.",
+    "Teachers adjust the lesson to the level of each student's reading.",
+    "Doctors first ask about the nature of the pain before testing.",
+    "The fine varies with the quantity of waste that was dumped.",
+    "Results depend heavily on the kind of soil in each field.",
+    "Researchers recorded the number of birds seen at each site.",
+    "Wages differ by the degree of skill each job requires."
+   ],
+   "quiet": [
+    "The right treatment depends on the patient and the clinic.",
+    "Insurers send a letter at the end of the year.",
+    "Teachers stand at the front of the room during the lesson.",
+    "Doctors first wash their hands before testing.",
+    "The fine was paid at the office of the town clerk.",
+    "The farmer walked to the corner of each field.",
+    "Researchers sat on the bank of the river at each site.",
+    "Wages are paid on the first day of every month."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.35 on type/nature/amount/number; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "kind/amount noun before 'of'",
+ "unit_kind": "meaning/context",
+ "confidence": 0.5,
+ "notes": "Card: + pole peaks ' type' x9, ' amount' x3, ' level' x3, ' types', ' nature', ' quantity'; the - pole promotes 'nature', 'types', 'kinds'. Probe: 'the type of brain injury' 0.326, 'quality and volume of' 0.303, 'the nature or severity of' 0.256, 'the number of observations' 0.209; 'the roof of the barn' 0.001, 'the edge of the table' 0.003, 'the patient and the doctor' 0.167."
+}

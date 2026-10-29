@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-86f70373",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N4392-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:27:02+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N4392_neg/2026-10-29-ChopinDavid-86f70373.tests.json"
+ },
+ "label": "the determiner that opens the destination of a going-to phrase ('walking to my car', 'a trip to the zoo', 'a ride to a party'); the same noun phrase as a direct object of a non-motion verb stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N4392_neg/2026-10-29-ChopinDavid-86f70373.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.782,
+     "peak": " my"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.345,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.989,
+     "peak": " her"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.311,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.698,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.273,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.436,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.807,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.371,
+     "peak": " my"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.468,
+     "peak": " her"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.475,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.17,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.373,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.052,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.567,
+    "near_misses_at_0.3": 4
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "determiner of a motion destination",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: - pole peaks ' a' x12, ' the' x6, ' your' x5, ' my' x3, almost all after 'to' in 'walking to my car', 'went to my bedroom', 'trip to the zoo', 'headed to your classes'. Probe: 'walking to my car' 0.753, 'went to my bedroom' 0.856, 'a ride to a party' 0.508, 'trip to the zoo' 0.386, also 'use a little' 0.475; 'washing my car' 0.126, 'cleaned my bedroom' 0.198, 'animals at the zoo' 0.150.",
+ "selection": "random draw"
+}

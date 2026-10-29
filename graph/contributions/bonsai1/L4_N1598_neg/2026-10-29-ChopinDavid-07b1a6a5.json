@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-07b1a6a5",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N1598-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:26:49+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N1598_neg/2026-10-29-ChopinDavid-07b1a6a5.tests.json"
+ },
+ "label": "best guess: the word ' debt' (owed money or owed gratitude), strongest when followed by 'of'; weak and gate-closed",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N1598_neg/2026-10-29-ChopinDavid-07b1a6a5.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.123,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.095,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.194,
+     "peak": " debt"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.131,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.114,
+     "peak": " soldiers"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.061,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.312,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.156,
+     "peak": " debt"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.04,
+     "peak": " who"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.037,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.037,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.072,
+     "peak": " soldiers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.037,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.073,
+     "peak": " admits"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.039,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.127,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "guess; the word 'debt'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.15,
+ "notes": "Card: max 5.5, gate-closed regime 96%, peaks ' debt' x10, ' interest' x4, 'bt' x3, ' indebted' x2. Probe: 'a debt of gratitude' 0.269 (peak on ' of'), 'pay down its debt' 0.125, 'amounts of debt' 0.047, 'bonds' 0.054, controls/governance 0.060, filler 0.044.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bb08a5b1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N534-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N534",
+   "pole": "-",
+   "label": "best guess: the first piece of a name or reverent pronoun in scriptural or epic narrative ('My offering', 'daughter named Du-hsala', 'at A-ulis'); broad, so near misses fire weakly",
+   "fire": [
+    "The Lord said to Moses, bring Me the firstfruits of your harvest.",
+    "The old king had five sons and a daughter named Duryodhani.",
+    "In the epic, the hero sailed from Ithaca toward the walls of Ilion.",
+    "And God said, you shall keep My sabbaths and honour My sanctuary.",
+    "The queen gave birth to twins, whom the sage named Lava and Kusha.",
+    "The fleet waited at Aulis for a wind that never came.",
+    "Then He said to the prophet, go and speak My words to the people.",
+    "The warrior Arjuna lifted his bow before the battle of Kurukshetra."
+   ],
+   "quiet": [
+    "The farmer said to his son, bring me the first apples of the harvest.",
+    "The old king had five sons and a large army in the north.",
+    "In the story, the sailor left his village and went to sea.",
+    "And the teacher said, you must keep your notebooks neat and clean.",
+    "The queen gave birth to twins in the summer palace.",
+    "The fleet waited in the harbour for a wind that never came.",
+    "Then the mayor said to the clerk, go and read the notice to the people.",
+    "The young soldier lifted his rifle before the long march began."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses 0.1-0.2; overlap is likely",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; names and reverent pronouns in scripture/epic",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: broad (4.5% of tokens), peaks on ' My' (Exodus), ' Du' (Duhsala), ' I' (Iphigeneia), Arabic hadith names and 'وسلم'. Probe: 'take My offering' 0.573, 'named Duhsala' 0.550, 'Aulis' 0.312, 'وسلم' 0.205; 'no matter how many times' 0.149, 'lived in a great palace' 0.098."
+}

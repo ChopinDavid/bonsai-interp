@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9154bac7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N10863-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N10863",
+   "pole": "-",
+   "label": "'unique' in the sense of particular to a group's situation ('the unique needs of', 'your unique business'): needs or challenges specific to someone; 'unique' meaning one of a kind ('a unique shape') and sentences without it stay low",
+   "fire": [
+    "Our nurses are trained to handle the unique needs of elderly patients.",
+    "The guide explains the unique challenges facing small farms in winter.",
+    "We design every policy around your unique family situation.",
+    "The program addresses the unique concerns of veterans returning to college.",
+    "Each plan is built to fit the unique goals of your company.",
+    "Counsellors understand the unique pressures that young athletes face.",
+    "The clinic serves the unique health needs of migrant workers.",
+    "Our advisers know the unique risks that freelance writers carry."
+   ],
+   "quiet": [
+    "Our nurses are trained to handle the daily needs of elderly patients.",
+    "The museum owns a unique painting that no other gallery has.",
+    "We design every policy around a simple monthly payment.",
+    "The program covers tuition for veterans returning to college.",
+    "This vase has a unique pattern that was never repeated.",
+    "Counsellors meet young athletes once a week after practice.",
+    "The clinic gives free flu shots to migrant workers.",
+    "Each fingerprint is unique, and no two people share one."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.75 on ' unique' before needs/challenges/business; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'unique' as group-specific needs",
+ "unit_kind": "meaning/context",
+ "confidence": 0.5,
+ "notes": "Card: - pole peaks ' unique' x9 (unique challenges, unique business, unique needs), plus 'developmentally', 'geriatrics'; the opposite direction suppresses 'unique', 'specialized', 'tailored'. Probe: 'unique challenges' 0.582, 'your unique business' 0.751, 'unique needs of autistic students' 0.520; 'a unique shape' (one of a kind) 0.014, 'daily challenges' 0.109, 'small business' 0.214, 'the needs of all students' 0.111. Near misses mix one-of-a-kind 'unique' and plain replacements."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-9154bac7",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N10863-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T06:26:22+00:00",
+ "recipe": {
+  "toolchain_commit": "d81c928d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N10863_neg/2026-10-29-ChopinDavid-9154bac7.tests.json"
+ },
+ "label": "'unique' in the sense of particular to a group's situation ('the unique needs of', 'your unique business'): needs or challenges specific to someone; 'unique' meaning one of a kind ('a unique shape') and sentences without it stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N10863_neg/2026-10-29-ChopinDavid-9154bac7.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.872,
+     "peak": " unique"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.12,
+     "peak": " facing"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.147,
+     "peak": " situation"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.53,
+     "peak": " unique"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.184,
+     "peak": " unique"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.57,
+     "peak": " unique"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.595,
+     "peak": " needs"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.462,
+     "peak": " carry"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.139,
+     "peak": " handle"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.001,
+     "peak": " other"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " every"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.046,
+     "peak": " veterans"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.026,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " workers"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.496,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d81c928d",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'unique' as group-specific needs",
+ "unit_kind": "meaning/context",
+ "confidence": 0.5,
+ "notes": "Card: - pole peaks ' unique' x9 (unique challenges, unique business, unique needs), plus 'developmentally', 'geriatrics'; the opposite direction suppresses 'unique', 'specialized', 'tailored'. Probe: 'unique challenges' 0.582, 'your unique business' 0.751, 'unique needs of autistic students' 0.520; 'a unique shape' (one of a kind) 0.014, 'daily challenges' 0.109, 'small business' 0.214, 'the needs of all students' 0.111. Near misses mix one-of-a-kind 'unique' and plain replacements.",
+ "selection": "random draw"
+}

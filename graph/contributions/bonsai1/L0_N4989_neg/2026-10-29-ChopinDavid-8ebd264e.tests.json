@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-8ebd264e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N4989-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N4989",
+   "pole": "-",
+   "label": "a space before a katakana word inside Japanese text, where the space makes the word start with a byte-fallback token (' �'); the same katakana word written without the space stays low",
+   "fire": [
+    "駅の近くに新しいお店ができました。入口の横に ショップ の看板があります。",
+    "部屋には机とテレビがあります。ご旅行の際は ホテル の予約をお忘れなく。",
+    "週末に公園へ行きました。父は古い カメラ で写真を撮りました。",
+    "ご不明な点があれば、お気軽に カスタマー サービス までご連絡ください。",
+    "ランチの時間になりました。店員さんが メニュー を持ってきてくれました。",
+    "ログインできない場合は、新しい パスワード を設定してください。",
+    "弟は毎晩遅くまで ゲーム をしています。母は少し心配しています。",
+    "駅前の大きな ビル の中に図書館があります。"
+   ],
+   "quiet": [
+    "駅の近くに新しいお店ができました。入口の横にショップの看板があります。",
+    "部屋には机とテレビがあります。ご旅行の際はホテルの予約をお忘れなく。",
+    "週末に公園へ行きました。父は古いカメラで写真を撮りました。",
+    "ご不明な点があれば、お気軽にカスタマーサービスまでご連絡ください。",
+    "ランチの時間になりました。店員さんがメニューを持ってきてくれました。",
+    "ログインできない場合は、新しいパスワードを設定してください。",
+    "弟は毎晩遅くまでゲームをしています。母は少し心配しています。",
+    "駅前の大きなビルの中に図書館があります。"
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0 on the byte token after the space; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "space before katakana word in Japanese",
+ "unit_kind": "token/lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 0.30, peaks '�' x18 on space-initial katakana in Japanese hotel and shop text, plus '_parser' x4. Probe: 'フロント デスク' 0.616, 'ローリング ヒルズ' 0.962, 'メタ データ' 0.663; the same without the space 0.209, 0.095, 0.088; English 0.052. '_parser' in code also scored 0.502 (not tested here). Every fire word was checked to split as ' �' '�'."
+}

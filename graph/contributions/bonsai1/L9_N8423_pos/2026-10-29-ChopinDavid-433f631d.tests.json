@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-433f631d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N8423+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N8423",
+   "pole": "+",
+   "label": "the attribute of a testing decorator in Python test code: '.fixture' in '@pytest.fixture' and '.patch' in '@mock.patch'; other decorators ('@property', '@app.route', '@staticmethod') stay low",
+   "fire": [
+    "import pytest\nfrom shop.models import Cart\n\n\n@pytest.fixture\ndef empty_cart():\n    return Cart()",
+    "class TestMailer(unittest.TestCase):\n\n    @mock.patch('mailer.smtp.SMTP')\n    def test_send(self, smtp):\n        pass",
+    "import pytest\n\n\n@pytest.fixture(scope='session')\ndef db_engine():\n    return create_engine(URL)",
+    "class TestClock(unittest.TestCase):\n\n    @mock.patch.object(clock.Clock, 'now')\n    def test_tick(self, now):\n        pass",
+    "import pytest\n\n\n@pytest.fixture(autouse=True)\ndef reset_env(monkeypatch):\n    monkeypatch.delenv('TOKEN')",
+    "class TestUpload(unittest.TestCase):\n\n    @mock.patch('storage.client.put')\n    def test_upload(self, put):\n        pass",
+    "import pytest\n\n\n@pytest.fixture(params=[1, 2, 3])\ndef size(request):\n    return request.param",
+    "class TestCache(unittest.TestCase):\n\n    @mock.patch.object(cache.Store, 'get')\n    def test_hit(self, get):\n        pass"
+   ],
+   "quiet": [
+    "from shop.models import Cart\n\n\nclass Shop:\n    @property\n    def empty_cart(self):\n        return Cart()",
+    "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/send')\ndef send():\n    return 'ok'",
+    "from sqlalchemy import create_engine\n\n\n@functools.lru_cache\ndef db_engine():\n    return create_engine(URL)",
+    "class Clock:\n\n    @staticmethod\n    def now():\n        return time.time()",
+    "import os\n\n\n@contextmanager\ndef reset_env():\n    yield os.environ.copy()",
+    "class Uploader:\n\n    @classmethod\n    def upload(cls, put):\n        return put()",
+    "import click\n\n\n@click.command()\ndef size():\n    print(3)",
+    "class Store:\n\n    @abstractmethod\n    def get(self, key):\n        pass"
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.8 on '.fixture' or '.patch'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "@pytest.fixture / @mock.patch decorator",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: + pole peaks '.patch' x17, '.fixture' x7 in decorators. Probe: '@pytest.fixture' 0.746, '@mock.patch.object' 0.467, '@mock.patch(' 0.370, 'with mock.patch' (not a decorator) 0.199; '@app.route' 0.096, '@staticmethod' 0.066, '@property' 0.016, English 'patch the fence' 0.008."
+}

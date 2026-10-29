@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c5fd399b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N2945-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N2945",
+   "pole": "-",
+   "label": "an adjective that classifies something by its chemical or molecular nature ('chemical reactions', 'ionic groups', 'phen-olic compounds', 'amino acids'); physical or non-chemical modifiers in the same slot stay low",
+   "fire": [
+    "Rust forms through a slow chemical process on wet iron.",
+    "Table salt is held together by ionic bonds between its atoms.",
+    "Red wine is rich in phenolic substances from the grape skins.",
+    "The lab tested the river for chemical pollutants after the spill.",
+    "Proteins fold because of ionic attractions inside the chain.",
+    "Muscles are built from amino acids found in meat and beans.",
+    "The factory stores chemical waste in sealed steel drums.",
+    "Olive oil contains phenolic antioxidants that protect the heart."
+   ],
+   "quiet": [
+    "Rust forms more slowly on iron that is kept dry indoors.",
+    "Table salt is made of small white crystals that dissolve quickly.",
+    "Red wine gets its colour from the dark grape skins.",
+    "The lab tested the river for plastic litter after the spill.",
+    "Proteins fold quickly once the chain leaves the ribosome.",
+    "Muscles grow when you eat meat and beans after training.",
+    "The factory stores spare parts in sealed steel drums.",
+    "Olive oil is pressed from ripe olives in the autumn."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0 on the adjective; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "chemical-nature classifier adjective",
+ "unit_kind": "meaning/context",
+ "confidence": 0.55,
+ "notes": "Card: - pole peaks ' chemical' x7, 'ionic' x4, ' amino' x4, 'olic' x2, ' organic' x2, also 'conditional', 'Propositional'. Probe: 'ionic groups' 1.016, 'chemical reactions' 0.772, 'phenolic compounds' 0.552, 'chemical weapons' 0.449, 'amino acids' 0.396, 'propositional logic' 0.381; 'nuclear weapons' 0.005, 'friction' 0.015."
+}

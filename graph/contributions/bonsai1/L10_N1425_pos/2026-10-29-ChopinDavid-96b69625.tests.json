@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-96b69625",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N1425+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N1425",
+   "pole": "+",
+   "label": "best guess: a noun or stem that completes a technical or descriptive compound after a modifier ('hot environment', 'lingu-ist', 'records law'); weak and broad",
+   "fire": [
+    "Hikers should drink often when working in a humid environment for long hours.",
+    "Our new hire is a trained linguist who speaks four languages.",
+    "Plants grown in a dry environment develop deeper roots.",
+    "The book was reviewed by a linguist from a small college in Ohio.",
+    "Fish kept in a cold environment eat less food each day.",
+    "Children learn best in a calm environment with few distractions.",
+    "The court called a forensic linguist to study the ransom note.",
+    "The reporter used the public records law to obtain the emails."
+   ],
+   "quiet": [
+    "Hikers should drink often when working outside for long hours.",
+    "Our new hire is a trained nurse who speaks four languages.",
+    "Plants grown in sandy soil develop deeper roots.",
+    "The book was reviewed by a teacher from a small college in Ohio.",
+    "Fish kept in a small tank eat less food each day.",
+    "Children learn best when they are calm and rested.",
+    "The court called a handwriting expert to study the ransom note.",
+    "The reporter asked the city clerk to share the emails."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.45; near misses below 0.1; median near 0.20, so a fail is likely",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; head of descriptive compound",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: broad (1.7% of tokens), mixed peaks on word pieces (' lingu', 'ства', 'itude', 'ernen') and ' environment', ' law'. Probe: 'hot environment' 0.451, 'linguist' 0.261, 'records law' 0.140; 'historian' 0.076, 'high altitude' 0.043, Russian 0.027, filler 0.047. A weak best guess built on the two strongest probe configurations."
+}

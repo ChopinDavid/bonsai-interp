@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-07b1a6a5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N1598-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T06:19:35+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N1598",
+   "pole": "-",
+   "label": "best guess: the word ' debt' (owed money or owed gratitude), strongest when followed by 'of'; weak and gate-closed",
+   "fire": [
+    "The whole village felt a debt of gratitude to the old doctor.",
+    "Every generation owes a debt of thanks to those who came before.",
+    "The firm sold its warehouse to pay off its debt to the bank.",
+    "She said she owed a great debt of loyalty to her first teacher.",
+    "We will never repay the debt of honour we owe these soldiers.",
+    "The city refinanced its debt at a lower interest rate.",
+    "The author admits a debt of inspiration to the poet Keats.",
+    "Rising debt forced the family to sell their summer cottage."
+   ],
+   "quiet": [
+    "The whole village felt grateful to the old doctor.",
+    "Every generation should thank those who came before.",
+    "The firm sold its warehouse to buy a larger office.",
+    "She said she felt loyal to her first teacher for years.",
+    "We will always honour the soldiers who served here.",
+    "The city rebuilt its harbour with a federal grant.",
+    "The author admits that the poet Keats inspired him.",
+    "Rising rents forced the family to sell their summer cottage."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.3; near misses near 0.05; median below 0.20 is likely, so expect a fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess; the word 'debt'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.15,
+ "notes": "Card: max 5.5, gate-closed regime 96%, peaks ' debt' x10, ' interest' x4, 'bt' x3, ' indebted' x2. Probe: 'a debt of gratitude' 0.269 (peak on ' of'), 'pay down its debt' 0.125, 'amounts of debt' 0.047, 'bonds' 0.054, controls/governance 0.060, filler 0.044."
+}
