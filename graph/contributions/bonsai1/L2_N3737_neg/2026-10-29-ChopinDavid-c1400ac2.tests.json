@@ -1,0 +1,59 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c1400ac2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N3737-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N3737",
+   "pole": "-",
+   "label": "a dense unit (40% of tokens above 0.1 of max) that is strongest on the words cartridge(s), seize(d) and setback(s); their synonyms (drum, capture, blow, confiscate) sit on the dense floor of 0.2-0.5",
+   "fire": [
+    "He replaced the toner cartridge before the big print run.",
+    "The army moved to seize the bridge at dawn.",
+    "Losing the contract was a serious setback for the firm.",
+    "Old ink cartridges can be recycled at the counter.",
+    "Police seized forty kilograms of cocaine at the port.",
+    "The injury was a setback, but she returned within a month.",
+    "The vacuum uses a filter cartridge that lasts a year.",
+    "Rebels tried to seize control of the radio station."
+   ],
+   "quiet": [
+    "He replaced the toner drum before the big print run.",
+    "The army moved to capture the bridge at dawn.",
+    "Losing the contract was a serious blow for the firm.",
+    "Old ink bottles can be recycled at the counter.",
+    "Police confiscated forty kilograms of cocaine at the port.",
+    "The injury was a disappointment, but she returned within a month.",
+    "The vacuum uses a filter bag that lasts a year.",
+    "Rebels tried to take control of the radio station."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.7-0.95 on the trigger word; near misses 0.2-0.5 because the unit is dense, so several will exceed 0.3 and the 8 + 8 may not hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; peaks on cartridge / seize / setback",
+ "unit_kind": "dense / positional",
+ "confidence": 0.4,
+ "notes": "Card: max 0.44, dense flag 39.9% of tokens above 0.1 of max, gate-closed regime 100%; peaks ' cartridges' x7, ' seize' x4, ' setback' x4, ' بشكل' x3, cart|ouch|es. Probe: seize 0.931, cartridges 0.870, setback 0.859, cartridge 0.839; the synonym controls 0.210-0.443 and the unrelated floor sentence 0.489 (peak ' market'). The three words are real peaks on a dense background; the test records that, and the unit_kind is set to dense / positional as the card advises.",
+ "trigger": {
+  "words": [
+   "cartridge",
+   "cartridges",
+   "seize",
+   "seized",
+   "seizing",
+   "setback",
+   "setbacks"
+  ]
+ }
+}

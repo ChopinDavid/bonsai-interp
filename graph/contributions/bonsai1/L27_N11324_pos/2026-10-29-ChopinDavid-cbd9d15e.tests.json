@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-cbd9d15e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N11324+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N11324",
+   "pole": "+",
+   "label": "the word lock/locked/locks, strongest as the verb of confinement or binding (locked in a dispute, locked up, locks him in, locks out moisture) and weaker for the literal door or the noun; synonyms in the same frames (stuck, detained, binds, keeps out, tied up) are silent",
+   "fire": [
+    "The talks have been locked in stalemate for a decade.",
+    "Protesters were locked up overnight and released without charge.",
+    "The deal locks the club into a ten-year stadium lease.",
+    "A good gasket locks out water and grit.",
+    "The rivals were locked in a struggle for the last playoff spot.",
+    "Her savings are locked away in a pension she cannot touch.",
+    "The two wrestlers locked arms at the centre of the ring.",
+    "Once the price is locked in, it cannot be changed."
+   ],
+   "quiet": [
+    "The talks have been stuck in stalemate for a decade.",
+    "Protesters were detained overnight and released without charge.",
+    "The deal binds the club to a ten-year stadium lease.",
+    "A good gasket keeps out water and grit.",
+    "The rivals were caught in a struggle for the last playoff spot.",
+    "Her savings are tied up in a pension she cannot touch.",
+    "The two wrestlers gripped each other at the centre of the ring.",
+    "Once the price is fixed, it cannot be changed."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.95 on locked/locks/lock; near misses below 0.25",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the verb lock (confine, bind)",
+ "unit_kind": "token",
+ "confidence": 0.75,
+ "notes": "Card: max 366, density 0.035%, ' locked' x11, ' lock' x5, ' Lock' x2, '锁', plus ' you'/' him' right after lock (lock you in, locks him up). Probe: locked in a dispute 0.931, locks him in 0.947 (peak ' him'), locked up 0.793, locks out moisture 0.470, the door was locked 0.311; nouns: the lock on the gate 0.458, a lock of hair 0.474, canal lock 0.133; synonyms trapped 0.231, confined 0.113, bolted 0.217. Lexical with a sense gradient: confinement and binding senses strongest. Trigger declared as the word family.",
+ "trigger": {
+  "words": [
+   "lock",
+   "locked",
+   "locks",
+   "locking",
+   "Lock",
+   "Locked"
+  ]
+ }
+}

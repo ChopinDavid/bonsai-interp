@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c05e9c21",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N4246-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N4246",
+   "pole": "-",
+   "label": "the French/Spanish noun raison/razón/motivo and the explanatory verbs 'tient à' and 'reside en' that locate a reason (la raison pour laquelle, la razón por la cual, tient en partie à); the idiom avoir/tener razón, 'reside' meaning to live, 'partie' meaning part, and English 'reason' are silent",
+   "fire": [
+    "Voilà la raison pour laquelle le projet a pris du retard cet hiver.",
+    "Esa fue la razón por la que decidimos vender la casa.",
+    "El motivo por el cual renunció sigue siendo un misterio.",
+    "La principale raison de son départ reste inconnue.",
+    "La fuerza del equipo reside en su defensa.",
+    "Sa popularité tient en grande partie à son humour.",
+    "Una de las razones de la crisis fue la sequía.",
+    "Hay varias razones para dudar de esa cifra."
+   ],
+   "quiet": [
+    "Tu avais raison de partir avant la tempête.",
+    "Ellos tienen razón al quejarse del ruido.",
+    "Es por eso que decidimos vender la casa.",
+    "C'est pour cela que le projet a pris du retard cet hiver.",
+    "Il est parti à cause de la pluie.",
+    "That is the main reason for his departure.",
+    "Mi abuela reside en un pueblo cerca de Sevilla.",
+    "La deuxième partie du concert a commencé à neuf heures."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on raison/razón/razones/motivo or on tient/reside; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Romance reason-noun / 'the explanation lies in'",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 218, density 0.123%, peaks ' raison' x3 (C'est la raison pour laquelle), ' razón' x3, ' motivo' x2, ' partie' (tient en partie à), 'side' (réside dans), ' reside' (reside en), raz|ones. Probe: la raison pour laquelle 0.604, tient en partie à 0.650 (peak 'ient'), la razón por la cual 0.475, la razón entre (the ratio sense) 0.632, reside en la falta 0.292, el motivo por el cual 0.222; 'Tu as raison' 0.058, English 'the reason why' 0.061, 'Ella reside en Madrid' 0.032, 'la première partie du match' 0.012. The noun fires in either sense (reason or ratio), so this is lexical for raison/razón with the verbs tient/reside added when they introduce an explanation; the idiom avoir raison and the English cognate do not fire."
+}

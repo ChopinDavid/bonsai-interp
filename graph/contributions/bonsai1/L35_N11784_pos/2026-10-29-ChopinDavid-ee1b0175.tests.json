@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ee1b0175",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N11784+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N11784",
+   "pole": "+",
+   "label": "a non-Latin word piece that spells a 'd' onset and is continued by the next token: katakana 'ド' (ド|ア, ド|リンク, ヘアド|ライヤー), Cyrillic 'род' (аэрод|ром, род|ина) and Arabic ' الد' (الد|واء); fused words containing the same sound (ドレス, ドイツ, الكتاب) and Latin d-fragments in prose (d|how, d|old|rums) are weak",
+   "fire": [
+    "部屋のドアを開けると海が見えた。",
+    "空港で冷たいドリンクを買った。",
+    "週末に山までドライブした。",
+    "彼はドバイで三年間働いた。",
+    "Мы ездили на родину бабушки каждое лето.",
+    "Наши родители ждали нас у входа.",
+    "تلقى المريض الدواء في الصباح.",
+    "بدأت الدورة التدريبية يوم الأحد."
+   ],
+   "quiet": [
+    "古いハードディスクが壊れた。",
+    "駅前のバスに乗った。",
+    "新しいドレスを買った。",
+    "彼女はドイツに住んでいる。",
+    "Мы купили билеты у кассы.",
+    "قرأت الكتاب في المكتبة.",
+    "The dhow sailed out of the harbour at dawn.",
+    "The ship sat in the doldrums for a week."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on ド/род/الد; near misses below 0.2 (ディ in ハードディスク may leak)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "non-Latin 'd' piece continued by the next token",
+ "unit_kind": "token",
+ "confidence": 0.45,
+ "notes": "Card: max 191, density 0.111%, peaks 'ド' x3 (ヘアド|ライヤー), 'род' (аэрод|ром), ' الد' x3 (مجلس الد|وما), ' d' x4, ' D' x3, '.d' x3, '-d' x5 in code (D|ASHBOARD, .d|jango) and prose (oil d|erricks). Probe: ヘアドライヤー 0.723 (peak ド), аэродром 0.696 (peak род); the Latin prose fragments did not transfer: d|aff|od|ils 0.143, d|hal 0.081, d|err|icks 0.079, d|uros 0.031; single-token dog 0.001, other-onset fragments 0.018-0.080. The - pole peaks on space-initial ' д'/' د'. The label is restricted to the non-Latin pieces the probe confirmed, with Arabic ' الد' from the card untested; Latin prose fragments are near misses.",
+ "trigger": {
+  "pieces": [
+   "ド",
+   "род",
+   " الد"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-98ff22ea",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N11174+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N11174",
+   "pole": "+",
+   "label": "a word inside the name of a governing rule, standard or law that a sentence invokes as binding (the Medical Device Directive, the General Data Protection Regulation, the Highway Code, imaginary laws, unwritten rules); the same frames naming a place, paper, product or practice instead of a rule are silent",
+   "fire": [
+    "Every new boiler must meet the requirements of the Building Regulations and the Gas Safety rules.",
+    "The hospital processes patient records in line with the General Data Protection Regulation.",
+    "Prisoners of war are protected under the Geneva Conventions.",
+    "The factory was fined for breaching the Clean Air Act.",
+    "Learner drivers are tested on the Highway Code.",
+    "Our lab follows the ISO 9001 quality standard for every batch.",
+    "The club has its own unwritten rules about who sits where.",
+    "Fishing here is governed by the regional quota regulations."
+   ],
+   "quiet": [
+    "Every new boiler must be installed by a registered plumber within the month.",
+    "The hospital stores patient records in a building across the road.",
+    "Prisoners of war were held near the Geneva lakeside.",
+    "The factory was praised for cutting its energy bills.",
+    "Learner drivers practise on the quiet roads behind the station.",
+    "Our lab publishes its results in a quarterly newsletter.",
+    "The club has its own kitchen where members cook on Fridays.",
+    "Fishing here is best in the early morning after rain."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.6 on a word of the rule's name; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "name of an invoked rule or standard",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: max 38.0, density 0.144%, no shared token: rfc261|6, POSIX.1-200|1, 'break imaginary laws', 'adopted under the UNFCCC process', 依照 国家规定, 《组织法》, خرق القانون (breach of the law), ISO 14971 and Health Technical Memorandums; the - pole suppresses guidelines/criteria/standards, so this pole promotes them. Probe: 'ISO 14971 and the Medical Device Directive' 0.444 (peak ' Medical'), 'breaking imaginary laws' 0.393, 'under the UNFCCC process' 0.343, 'RFC 2616 section 14' 0.136, 'Section 12 of the Act' 0.047, 依照国家规定 0.088; Python 3.11 documentation 0.030, Nature 2016 0.034, plain controls 0.010-0.030. Named regulations in English carry it; bare section numbers do not."
+}

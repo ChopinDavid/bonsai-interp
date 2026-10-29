@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ed38312a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N426-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N426",
+   "pole": "-",
+   "label": "the word piece 'غي' where the Arabic root of change (تغيير, تغيّر, متغيّر) is split as ت/الت/مت + غي + ير/ّ, and the piece 'am' closing a split surname (Brautig|am, Grish|am); the fused token 'غير' (تغير, صغير, غير), lone 'غ' and the surname piece 'ham' are silent",
+   "fire": [
+    "وافق البرلمان على التغيير المقترح في القانون.",
+    "في الخريف يتغيّر لون الأوراق ببطء.",
+    "قدمت الشركة تغييرات كبيرة على خدماتها.",
+    "تمسك الرجل برأيه ولم يتغيّر موقفه.",
+    "تعتمد النتيجة على عامل متغيّر واحد.",
+    "طالب العمال بتغيير ساعات العمل.",
+    "The novel by John Grisham sold a million copies in a month.",
+    "The paper was co-written by Higham and Taylor in 1994."
+   ],
+   "quiet": [
+    "درس الباحث المتغيرات الاقتصادية في الدراسة.",
+    "اشترى الولد كتابا صغيرا من المكتبة.",
+    "هذا الطريق غير آمن في الليل.",
+    "ظهرت غيمة بيضاء في السماء.",
+    "تسبب الغياب المتكرر في فصله من العمل.",
+    "اشتهر الفريق بالدفاع القوي هذا الموسم.",
+    "The striker joined Oldham Athletic in 1994.",
+    "The paper was co-written by Graham and Taylor in 1994."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on 'غي' (or the shadda right after it) and on 'am'; near misses with the fused token غير, lone غ or the piece ham below 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the piece 'غي' of the change root; 'am' surname piece",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: max 5.59, density 0.101%, peaks 'غي' x15 (التغي|ير, مت|غي|روا, تغي|ّ|ر), 'ّ' x3 after تغي, 'am' x3 (Brautig|am). Probe: التغيير 0.808, التغيّرات 0.816, تغيّر 0.760 (peak on the shadda), Brautigam 0.791 (peak 'am'); the fused token تغير 0.231, بتغذية 0.334 (lone غ), غياب 0.243, غير 0.172, صغير 0.039, plain Arabic 0.035. A spelling unit for the piece 'غي' plus the English piece 'am'; the tokenizer splits the change root only in some forms (تغيير, تغيّر, متغيّر) and fuses it in others (تغير, متغيرات), which the near misses use.",
+ "trigger": {
+  "pieces": [
+   "غي",
+   "am"
+  ]
+ }
+}

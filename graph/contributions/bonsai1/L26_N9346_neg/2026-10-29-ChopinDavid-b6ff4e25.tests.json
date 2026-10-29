@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b6ff4e25",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N9346-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N9346",
+   "pole": "-",
+   "label": "the word that closes two conjoined predicates as holding together: 'at' in 'X and Y at the same time' / 'all at once', and the second member of French 'tant ... que'; the conjoined pair without the closer, 'simultaneously', the temporal 'at the same time as', and 'all at once' meaning suddenly are silent",
+   "fire": [
+    "The speech was funny and deeply sad at the same time.",
+    "The new phone feels cheap and expensive all at once.",
+    "She managed to be strict and kind at the same time.",
+    "The city is ancient and startlingly modern at once.",
+    "He was laughing and crying at the same time.",
+    "The soup tastes sweet and smoky at the same time.",
+    "Le projet est ambitieux tant par sa taille que par son calendrier.",
+    "Cette loi protège tant les locataires que les propriétaires."
+   ],
+   "quiet": [
+    "The speech was funny and deeply sad in places.",
+    "The new phone feels cheap despite its price.",
+    "She managed to be strict and kind to the students.",
+    "The city is ancient and startlingly modern.",
+    "He was laughing and crying simultaneously.",
+    "All at once the lights in the hall went out.",
+    "Le projet est ambitieux par sa taille et par son calendrier.",
+    "We left the house at the same time as the neighbours."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on ' at' (or the French word after tant/que); near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'at' closing 'X and Y at the same time'",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: max 57.75, density 0.085%, ' at' x10 (familiar at the same time, calm and dramatic all at once), ',' (не столько вверх, сколько вширь), ' nu' (tant à l'oeil nu qu'à), mach|o (tanto el macho como), ' has' (no political symbolism has the power), Python else:/except: indentation, 既...也. Probe: 'audacious and tediously familiar at the same time' 0.609, 'so calm and so dramatic all at once' 0.642, 'tant à l'oeil nu qu'aux caméras' 0.572 (peak ' nu'), tanto ... como 0.290, 'not so much upward as outward' 0.020, Python else 0.085, 'Both the male and the female' 0.004; 'familiar at the start' 0.013, 'at the same time as the mayor' 0.017, single predicates 0.005-0.018. The English simultaneity closer and French tant...que carry it."
+}

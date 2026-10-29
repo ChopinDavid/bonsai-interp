@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-96dc07b1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N2883+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N2883",
+   "pole": "+",
+   "label": "guess for an unclear pole: the second element of a paired specification that completes a named value (white and [blue], 28 [June] 1914, the north of Newport); the same sentence without the pair is silent; weak",
+   "fire": [
+    "The flag is a field of red and gold with a black stripe.",
+    "The armistice was signed on 11 November 1918 in a railway carriage.",
+    "The kitchen is painted in cream and sage green.",
+    "She was born on 3 March 1952 in a village to the south of Lyon.",
+    "The uniform comes in navy and grey for the winter term.",
+    "The bridge opened on 15 August 1932 after four years of work.",
+    "The vase is glazed in turquoise and white with a thin gold rim.",
+    "The storm made landfall on 29 September 1989 to the east of Charleston."
+   ],
+   "quiet": [
+    "The flag is a plain field with a black stripe.",
+    "The armistice was signed that November in a railway carriage.",
+    "The kitchen was repainted last spring.",
+    "She was born in 1952 in a village near Lyon.",
+    "The uniform is the same for the winter term.",
+    "The bridge opened in 1932 after four years of work.",
+    "The vase is glazed with a thin gold rim.",
+    "The storm made landfall in 1989 near Charleston."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.5 on the completing element; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second element of a paired value (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 8.12 (weak), density 0.379%, no shared token: 'flowers of white' (peak ' white'), ピン|ク ゴールド, South Burn|aby, Boston|, MA, Gettys|burg College, 28 June| 1914, the north| of Newport. Probe: '28 June 1914' 0.473 (peak ' June'), 'white and blue' 0.347 (peak ' and'), 'the north of Newport' 0.177, 'pink gold, white gold' 0.139, Gettysburg 0.120, Boston 0.110; the same sentences with the pair removed 0.023-0.061. Direction consistent, magnitude small; registered as a guess built on the two strongest configurations (colour pairs, full dates)."
+}

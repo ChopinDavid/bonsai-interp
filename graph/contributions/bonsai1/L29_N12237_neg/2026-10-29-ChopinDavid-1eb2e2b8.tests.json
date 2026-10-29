@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1eb2e2b8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N12237-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:19:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N12237",
+   "pole": "-",
+   "label": "the copula after a subject that a reviewer is about to rate (the view from the terrace is, the scenery along the ridge is, the sourdough is), where an evaluative predicate is predicted; the copula after a factual or locational subject in the same review (checkout is at, the shop is closed, the nearest supermarket is) is weak",
+   "fire": [
+    "We spent a week on the island in May. The beaches on the north coast are glorious and never crowded.",
+    "Our room faced the harbour. The sunsets over the bay are something you have to see for yourself.",
+    "We booked the two-day trek with a local guide. The walk along the cliffs is unforgettable.",
+    "I have used this bakery for years. The sourdough is the best in the city.",
+    "The cabin is simple but comfortable. The silence at night is wonderful after the city.",
+    "We did the boat tour on the second day. The water in the lagoon is so clear you can count the fish.",
+    "Dinner is included with the room. The food from the kitchen is superb and generous.",
+    "We hired bikes for the afternoon. The trail through the vineyards is a pleasure from start to finish."
+   ],
+   "quiet": [
+    "We spent a week on the island in May. The ferry timetable is posted at the pier each morning.",
+    "Our room faced the harbour. Checkout is at eleven and the luggage room is downstairs.",
+    "We booked the two-day trek with a local guide. The meeting point is a car park near the church.",
+    "I have used this bakery for years. The shop is closed on Mondays and public holidays.",
+    "The cabin is simple but comfortable. The nearest supermarket is about ten minutes away by car.",
+    "We did the boat tour on the second day. The boat's capacity is thirty passengers plus crew.",
+    "Dinner is included with the room. The dining room is on the ground floor next to the bar.",
+    "We hired bikes for the afternoon. The rental shop is open from nine until six."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on is/are; near misses 0.05-0.3, with some leakage because the subject alone sets the expectation",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "review copula before a predicted rating",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 199, density 0.183%, peaks ' is' x12, ' are' x4, ' was' x4 in travel and product reviews (The seaview from the balconies is, The scenery is, the view is, The support from the site is). Probe: 'The view from the terrace is' 0.891, 'The scenery along the ridge is' 0.662, 'the whole experience is' 0.423; but also 'Breakfast is served' 0.409, 'The view ... was blocked' 0.446, 'The scenery is defined as' 0.369, so the pole fires at the copula on the strength of the subject, before the predicate; 'The customer support is' only 0.201, 'The hotel is located' 0.146, 'The support team is' 0.049, 'The soup is made' 0.038. The + pole suppresses breathtaking/exceptional, so this pole promotes the praise adjective. Near misses keep the review voice and put a factual subject before the copula."
+}
