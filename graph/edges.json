@@ -1435,6 +1435,14 @@
    "contribution": "2026-10-28-moridinamael-2f73"
   },
   {
+   "from": "bonsai1/L20/N808-",
+   "to": "bonsai1/L22/N5799+",
+   "kind": "feeds",
+   "weight": 0.01,
+   "method": "single-unit zero ablation, downstream (play step --down)",
+   "contribution": "2026-10-28-moridinamael-4a5f46fc"
+  },
+  {
    "from": "bonsai1/L20/N9190+",
    "to": "bonsai1/L26/N8942-",
    "kind": "feeds",
