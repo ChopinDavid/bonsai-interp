@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N8228+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 8228,
+ "pole": "+",
+ "label": "the French suffix piece 'ante' completing a split feminine present-participle adjective (charm|ante, cour|ante, viv|ante, él|ég|ante); the masculine pieces 'ant'/'issant' in the same frames, single-token adjectives (importante, produit) and Spanish endings (-aste, -ieron, -uye) are weak or silent",
+ "short": "French piece 'ante' (charm|ante)",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N8228_pos/2026-10-29-ChopinDavid-b3089b35.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.12,
+     "peak": " charm"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.073,
+     "peak": " discussion"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.394,
+     "peak": "ante"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.385,
+     "peak": "ante"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.042,
+     "peak": " même"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.121,
+     "peak": " command"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.171,
+     "peak": "ir"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.123,
+     "peak": " am"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.118,
+     "peak": " charm"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.041,
+     "peak": "bat"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " trou"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.031,
+     "peak": "app"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.097,
+     "peak": " attach"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.117,
+     "peak": " conse"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.16,
+     "peak": "ir"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.127,
+     "peak": " ple"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.734,
+    "median_fire": 0.122,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-b3089b35"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-b3089b35",
+   "the French suffix piece 'ante' completing a split feminine present-participle adjective (charm|ante, cour|ante, viv|ante, él|ég|ante); the masculine pieces 'ant'/'issant' in the same frames, single-token adjectives (importante, produit) and Spanish endings (-aste, -ieron, -uye) are weak or silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-b3089b35"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

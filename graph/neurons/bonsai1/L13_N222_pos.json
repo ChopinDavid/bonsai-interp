@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N222+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 222,
+ "pole": "+",
+ "label": "a single letter used as the name of a scientific quantity or constant (R-value, U-value, g factor, G-forces, Q factor, Pi, k, p-value), peak on the letter or the word it modifies; the same letters as initials, labels or list markers (Mr. R. Smith, Plan B, Vitamin C, grade A, room C) are silent",
+ "short": "letter as a named quantity (R-value, g factor)",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N222_pos/2026-10-29-ChopinDavid-5a398801.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.913,
+     "peak": " G"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.107,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.08,
+     "peak": " k"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.209,
+     "peak": "-factor"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.674,
+     "peak": " G"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.515,
+     "peak": " Pi"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.262,
+     "peak": "-value"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.023,
+     "peak": " many"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": " turn"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": " older"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": " Q"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": "Newton"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.209,
+     "peak": " P"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " A"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": " D"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.93,
+    "median_fire": 0.235,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-5a398801"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-5a398801",
+   "a single letter used as the name of a scientific quantity or constant (R-value, U-value, g factor, G-forces, Q factor, Pi, k, p-value), peak on the letter or the word it modifies; the same letters as initials, labels or list markers (Mr. R. Smith, Plan B, Vitamin C, grade A, room C) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-5a398801"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

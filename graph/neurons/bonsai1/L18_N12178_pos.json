@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N12178+",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 12178,
+ "pole": "+",
+ "label": "guess: a middle piece of a multi-piece code identifier (Test|Metadata|BlockRules, update|_fixed|_asset, is|_assoc|iate, '__|is|null'), peak on that piece; the same words in prose are silent",
+ "short": "mid-identifier piece in code names",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N12178_pos/2026-10-29-ChopinDavid-832b62a9.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.008,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.303,
+     "peak": "_fixed"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.056,
+     "peak": "_editor"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.117,
+     "peak": "_header"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.07,
+     "peak": " '__"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.067,
+     "peak": " r"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.055,
+     "peak": "Depth"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.003,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": " rules"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " rate"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": " tries"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " checks"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.145,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.028,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " space"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": " allow"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.672,
+    "median_fire": 0.061,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-832b62a9"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-832b62a9",
+   "guess: a middle piece of a multi-piece code identifier (Test|Metadata|BlockRules, update|_fixed|_asset, is|_assoc|iate, '__|is|null'), peak on that piece; the same words in prose are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-832b62a9"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

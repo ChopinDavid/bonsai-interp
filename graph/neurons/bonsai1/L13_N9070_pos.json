@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N9070+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 9070,
+ "pole": "+",
+ "label": "the piece 'init' of a Python `def __init__(self, ...)` method inside a widget or form class body, after imports, a class line and a docstring; other method names in the same bodies (build, refresh, clean, __call__, __repr__, __str__, configure) are silent",
+ "short": "'init' of def __init__ in a class body",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N9070_pos/2026-10-29-ChopinDavid-a27ae8c3.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.855,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.831,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.656,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.574,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.787,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.464,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.628,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.745,
+     "peak": "init"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.271,
+     "peak": " build"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.314,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.21,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.435,
+     "peak": " clean"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.305,
+     "peak": " parent"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.252,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.244,
+     "peak": "(self"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.324,
+     "peak": " Child"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.701,
+    "near_misses_at_0.3": 4
+   },
+   "contribution": "2026-10-29-ChopinDavid-a27ae8c3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a27ae8c3",
+   "the piece 'init' of a Python `def __init__(self, ...)` method inside a widget or form class body, after imports, a class line and a docstring; other method names in the same bodies (build, refresh, clean, __call__, __repr__, __str__, configure) are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a27ae8c3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

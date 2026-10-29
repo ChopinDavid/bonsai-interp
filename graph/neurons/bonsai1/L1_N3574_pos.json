@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N3574+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 3574,
+ "pole": "+",
+ "label": "dense layer-1 unit (41% of tokens reach 0.1 of max, gate-closed echo regime): strongest on the Russian reflexive ending '-ется' (рекомендуется), Chinese 特别是, Arabic verbs and English surnames after a title; most tokens of any text fire weakly",
+ "short": "dense: -ется / 特别是 strongest",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N3574_pos/2026-10-29-ChopinDavid-751adfb5.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.878,
+     "peak": "ется"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.904,
+     "peak": "ется"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.898,
+     "peak": "ется"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.804,
+     "peak": "特别是"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.692,
+     "peak": "特别是"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.641,
+     "peak": "هدف"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.256,
+     "peak": " delivered"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.214,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.259,
+     "peak": "езд"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.371,
+     "peak": "ра"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.34,
+     "peak": "ом"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.424,
+     "peak": "这座城市"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.181,
+     "peak": "他"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.403,
+     "peak": "ورة"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.166,
+     "peak": " lecture"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.184,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.844,
+    "median_fire": 0.748,
+    "near_misses_at_0.3": 4
+   },
+   "contribution": "2026-10-29-ChopinDavid-751adfb5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-751adfb5",
+   "dense layer-1 unit (41% of tokens reach 0.1 of max, gate-closed echo regime): strongest on the Russian reflexive ending '-ется' (рекомендуется), Chinese 特别是, Arabic verbs and English surnames after a title; most tokens of any text fire weakly",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-751adfb5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
