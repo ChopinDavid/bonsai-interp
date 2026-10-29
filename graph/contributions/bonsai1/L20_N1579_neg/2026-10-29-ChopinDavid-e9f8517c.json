@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-e9f8517c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N1579-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T21:33:53+00:00",
+ "recipe": {
+  "toolchain_commit": "2b4e09b3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N1579_neg/2026-10-29-ChopinDavid-e9f8517c.tests.json"
+ },
+ "label": "guess for a broad pole: the colon, exclamation or question mark closing a short bullet or FAQ line (- Pro: ..., - Con: ..., '...!', '...?') and the possessive after 'to' in advice prose ('to their meals'); the same content in running prose is weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N1579_neg/2026-10-29-ChopinDavid-e9f8517c.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.387,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.295,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.469,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.041,
+     "peak": "?"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.33,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.235,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.282,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.389,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.298,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.083,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.222,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.035,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.136,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.113,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.207,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.081,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.844,
+    "median_fire": 0.312,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2b4e09b3",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "bullet-line punctuation (Pro:/Con:)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: ' in' x2, ' it' x2, 'ه' x2, ',' x2, 'ها' x2, ' their'; top examples 'abortion in Europe', 'to their diets', Chinese 了, 'Pokemon across all five generations!\\n', 'have different types', 'presidential candidate', '- Con:', '- Is a Netherlands based company'; max 20.62, density 1.058%, FLAG broad. Probe: '- Pro: ... - Con:' 0.317 (peak ':'), 'to their meals' 0.296, 'regions!\\nIs there a level cap?' 0.206 (peak '?'), 'She bought' 0.122, 'lowest unemployment rates in Europe' 0.049, 'different kinds of support' 0.027, 'presidential candidate' 0.001, floor 0.005. No single configuration explains the card; registered as a guess.",
+ "selection": "random draw"
+}

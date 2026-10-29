@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-29-ChopinDavid-a27ae8c3",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N9070+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T21:34:00+00:00",
+ "recipe": {
+  "toolchain_commit": "2b4e09b3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L13_N9070_pos/2026-10-29-ChopinDavid-a27ae8c3.tests.json"
+ },
+ "label": "the piece 'init' of a Python `def __init__(self, ...)` method inside a widget or form class body, after imports, a class line and a docstring; other method names in the same bodies (build, refresh, clean, __call__, __repr__, __str__, configure) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N9070_pos/2026-10-29-ChopinDavid-a27ae8c3.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.855,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.831,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.656,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.574,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.787,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.464,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.628,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.745,
+     "peak": "init"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.271,
+     "peak": " build"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.314,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.21,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.435,
+     "peak": " clean"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.305,
+     "peak": " parent"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.252,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.244,
+     "peak": "(self"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.324,
+     "peak": " Child"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.701,
+    "near_misses_at_0.3": 4
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2b4e09b3",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'init' of def __init__ in a class body",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Card: 'init' x32 (one token dominates), all inside `def __init__(self, master/parent/settings ...)` of Tk, Tix, wx, Gtk, Qt and Django-form classes, max 29.88, density 0.076%. Probe: short snippets scored low: 'class Counter:\\n    def __init__(self, start=0)' 0.006, Node(Base) with docstring and **kwargs 0.146 (peak 'kwargs'), '    def __init__(self, master, cnf={}):\\n        Frame.__init__' 0.147 (peak ','), __str__ 0.003, __repr__ 0.003, 'git init' 0.003, '__init__.py' 0.010, floor 0.013. The card peaks sit deep in GUI files, so the test items carry imports, class line and docstring context; if they still score low, the pole needs a longer file prefix than a test item can hold.",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   "init"
+  ]
+ }
+}
