@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-29-moridinamael-7300949b",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L26/N338-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T19:20:12+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The word 'nervous' in its anatomical sense ('nervous system', 'nervous tissue'), in a sentence whose body or biology context comes before the word; quiet for 'nervous' meaning anxious or a nervous feeling"
+ },
+ "neighbours": [
+  {
+   "unit": "L26/N338",
+   "pole": "-",
+   "label": "A finite verb (or 'sich') placed right after a fronted adverbial phrase so its subject is still to come, mainly German verb-second ('Bei Regen kann das Fest...', 'Auf dem Markt findet sich ein...'); quiet for the same sentence in subject-first order and for the word 'nervous'",
+   "fire": [
+    "Bei Regen kann das Fest leider nicht im Garten stattfinden.",
+    "Auf dem Markt findet sich ein kleiner Stand mit frischem Honig.",
+    "Am Montag beginnt der neue Kurs für Anfänger.",
+    "Nach dem Essen gingen die Kinder noch einmal hinaus zum Spielen.",
+    "Im Winter friert der See fast jedes Jahr komplett zu.",
+    "Seit drei Wochen wartet meine Schwester auf das Paket.",
+    "In der Bibliothek befindet sich eine alte Sammlung von Landkarten.",
+    "Trotz der Kälte liefen die Läufer den ganzen Marathon."
+   ],
+   "quiet": [
+    "Das Fest kann bei Regen leider nicht im Garten stattfinden.",
+    "Ein kleiner Stand mit frischem Honig ist auf dem Markt.",
+    "Der neue Kurs für Anfänger beginnt am Montag.",
+    "Die Kinder gingen nach dem Essen noch einmal hinaus zum Spielen.",
+    "Der See friert im Winter fast jedes Jahr komplett zu.",
+    "Meine Schwester wartet seit drei Wochen auf das Paket.",
+    "Eine alte Sammlung von Landkarten befindet sich in der Bibliothek.",
+    "Die Läufer liefen trotz der Kälte den ganzen Marathon."
+   ]
+  }
+ ],
+ "predictions": "Partial: I expect about 4-5/8 fire sentences to score, mostly the kann/findet sich/befindet sich ones, and 0-1 near misses above 0.30. Plain verbs like gingen/liefen may be weak.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
