@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-28-moridinamael-f3522adc",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N11125+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T00:46:08+00:00",
+ "recipe": {
+  "toolchain_commit": "e304f8a1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L0_N11125_pos/2026-10-28-moridinamael-f3522adc.tests.json"
+ },
+ "label": "Arabic word-completing fragments after a short stem piece: 'در' (الصدر, الغدر, البدر), 'ط' in الرابط, 'فل' in الغفلة; not the same letters in other words (الحفلة, الضابط, المدير)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N11125_pos/2026-10-28-moridinamael-f3522adc.tests.json",
+   "prereg_commit": "e304f8a1",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.888,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.15,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.428,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.672,
+     "peak": "ط"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.581,
+     "peak": "فل"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.601,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.631,
+     "peak": "ط"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.201,
+     "peak": "در"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.221,
+     "peak": "ك"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.045,
+     "peak": " الم"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.24,
+     "peak": "دي"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.155,
+     "peak": "ط"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.042,
+     "peak": " من"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.107,
+     "peak": "عم"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.16,
+     "peak": "ط"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": " ي"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.591,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "e304f8a1",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The Arabic piece 'در' closing the word الصدر (chest / al-Sadr) after ' الص', not 'در' in other words"
+ }
+}
