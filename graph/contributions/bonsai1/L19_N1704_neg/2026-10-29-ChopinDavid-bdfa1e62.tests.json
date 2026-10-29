@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bdfa1e62",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N1704-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N1704",
+   "pole": "-",
+   "label": "a noun of violence, conflict or injury (victim, weapon, battle, fought, injured, crime); related words in peaceful contexts stay low",
+   "fire": [
+    "The soldiers fought through the night and by dawn the hill was littered with the dead.",
+    "Police recovered the weapon the attacker had dropped as he fled the scene.",
+    "The victim was unable to identify the man who had assaulted her in the dark.",
+    "Historians still argue about which side struck the first blow in that bloody battle.",
+    "The surgeon worked for hours to repair the wounds the shrapnel had torn open.",
+    "He was convicted of the brutal crime and sentenced to life behind bars.",
+    "Two rival gangs clashed with knives and bats outside the shuttered warehouse.",
+    "The injured man lay bleeding in the gutter until an ambulance finally arrived."
+   ],
+   "quiet": [
+    "The dancers moved through the night and by dawn the hall was littered with streamers.",
+    "Staff recovered the umbrella a guest had dropped as she hurried to the train.",
+    "The winner was unable to name the judge who had awarded her the first prize.",
+    "Historians still argue about which chef invented that famous regional dish.",
+    "The gardener worked for hours to repair the trellis the storm had torn down.",
+    "He was praised for the generous gift and honoured at the annual dinner.",
+    "Two rival choirs met for a friendly sing-off outside the restored town hall.",
+    "The sleepy man lay dozing in the hammock until the dinner bell finally rang."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.25 on weapon/victim/crime/fought in violent context; picnicked/suitcase/memory below 0.08",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun of violence/conflict/injury",
+ "unit_kind": "concept",
+ "confidence": 0.4,
+ "notes": "Card: max 13, broad, peaks ' victim', ' weapon', ' Battle', ' fought', ' injured', CJK '罪' (crime). Probe weakish: 'guilt of his crime' 0.176, 'weapon beside him' 0.126, 'armies fought' 0.104; picnicked 0.235 leaked (shares 'icked'), suitcase 0.073. Weak and broad, so a modest hold at best; probe maxima were low."
+}

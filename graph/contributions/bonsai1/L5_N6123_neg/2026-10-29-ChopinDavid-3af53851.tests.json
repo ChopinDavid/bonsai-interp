@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3af53851",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N6123-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N6123",
+   "pole": "-",
+   "label": "the 'u'/'uant'/'uj' word pieces after Spanish 'ag' in words like aguas, aguantar, aguinaldo, agujero; the whole-token 'agua' and 'agosto' and English words stay low",
+   "fire": [
+    "Los perros aguantaron el frío del río toda la mañana sin quejarse.",
+    "Hay varios agujeros en el tejado de la vieja casa del pueblo.",
+    "En diciembre toda la plantilla recibe su aguinaldo de fin de año.",
+    "Las aguas del lago estaban heladas cuando llegaron al amanecer.",
+    "No pude aguantar más el ruido y cerré la ventana.",
+    "El sastre perdió la aguja entre los pliegues de la tela.",
+    "Cayó un aguacero tremendo justo cuando salíamos del cine.",
+    "Los niños cavaron agujeros en la arena para esconder las conchas."
+   ],
+   "quiet": [
+    "El perro bebió agua fría del río toda la mañana sin quejarse.",
+    "Hay varias goteras en el tejado de la vieja casa del pueblo.",
+    "En agosto toda la plantilla se va de vacaciones a la costa.",
+    "El agua del lago estaba helada cuando llegaron al amanecer.",
+    "No pude soportar más el ruido y cerré la ventana.",
+    "El sastre perdió el hilo entre los pliegues de la tela.",
+    "Cayó una tormenta tremenda justo cuando salíamos del cine.",
+    "The children dug holes in the sand to hide the seashells they had found."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.74 on the u-piece after 'ag'; single-token 'agua', 'agosto', soportar below 0.17",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ag'+u... pieces in Spanish (aguas/aguantar/agujero)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 16.25, peaks 'u' x10, 'uant' x8 (aguantar), 'uj'. Probe: aguas 0.738, aguantar 0.633, aguinaldo 0.694, agujero 0.671; 'agua' 0.169 (single token ' agua'), 'soportar' 0.128, 'agosto' 0.003. English 'aphid' also fires (' aph' 0.573) — a spelling unit, not a meaning. Tokcheck: ' agua' is one token so it cannot carry the trigger; fire items use multi-piece forms."
+}

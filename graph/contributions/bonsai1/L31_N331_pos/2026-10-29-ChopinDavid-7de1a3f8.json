@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-7de1a3f8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N331+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T08:32:31+00:00",
+ "recipe": {
+  "toolchain_commit": "0cb06b68",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L31_N331_pos/2026-10-29-ChopinDavid-7de1a3f8.tests.json"
+ },
+ "label": "the word pieces ' ep' (epic/episode), ' V'/'HF', ' can' (cannery) and nearby tokens in enthusiast/hobby text about radio, fishing and old industry; whole-token synonyms stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N331_pos/2026-10-29-ChopinDavid-7de1a3f8.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.59,
+     "peak": " ep"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.588,
+     "peak": "HF"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.057,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.61,
+     "peak": " ep"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.114,
+     "peak": " fishing"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.947,
+     "peak": " V"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.291,
+     "peak": " can"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.312,
+     "peak": " ep"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.083,
+     "peak": " set"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.027,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": " years"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.137,
+     "peak": " fishing"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.099,
+     "peak": " band"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.034,
+     "peak": " hired"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " step"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.45,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "0cb06b68",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "' ep'/' V'HF'/' can' pieces in hobby text",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: max 91.5, peaks ' ep' (epics/Ep), ' can' (canneries), ' V' (VHF), '2' in fishing speeds. Probe: 'epics about gods' 0.539, '2.5 mph' 0.498, 'VHF repeater' 0.352; 'radio station' 0.156, 'warehouses' (synonym of canneries) low, 'long stories' 0.007, 'variegated...ated' 0.013. A spelling/piece unit across hobby topics; synonyms that drop the piece stay low.",
+ "selection": "random draw"
+}

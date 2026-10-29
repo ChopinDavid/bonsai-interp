@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-90efb036",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N6221-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N6221",
+   "pole": "-",
+   "label": "the token right after a verb of explaining or commenting that opens the reported content (explained/described 'what', commented '“' or 'upon'); the same 'what' after a perception verb (saw, heard) stays lower",
+   "fire": [
+    "The teacher explained what the strange symbols in the margin actually meant.",
+    "In his memoir the general comments upon the chaos of the first morning.",
+    "The report described what had gone wrong in the moments before the alarm.",
+    "At the press conference the mayor commented “We will rebuild every bridge” to loud applause.",
+    "The guide explained what each of the carvings on the temple wall represented.",
+    "The critic comments upon the thin plot but praises the acting.",
+    "She described what the room had looked like before the fire reached it.",
+    "The witness explained what she had noticed just before the car swerved."
+   ],
+   "quiet": [
+    "The teacher saw what the strange symbols in the margin actually meant.",
+    "In his memoir the general recalls the chaos of the first morning.",
+    "The report listed everything that had gone wrong before the alarm.",
+    "At the press conference the mayor smiled and left without taking questions.",
+    "The guide pointed at each of the carvings on the temple wall in turn.",
+    "The critic enjoys the acting but finds the plot rather thin.",
+    "She remembered the room as it had looked before the fire reached it.",
+    "The witness noticed the car swerve just before it hit the barrier."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.85 on the word after explain/comment/describe; 'saw what', non-reporting rewrites below 0.2",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token opening reported speech after explain/comment",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: max 4.31, peaks ' what' (explained what), ' upon' (comments upon), ' “' (commented “). Probe: explained what 0.853, comments upon 0.803, commented “ 0.554, described what 0.331; saw what 0.125, 'smiled after' 0.147, 'studies a feature' 0.061. Weak unit (max ~4), so holds will be modest."
+}

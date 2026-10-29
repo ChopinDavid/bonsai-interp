@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7de1a3f8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N331+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N331",
+   "pole": "+",
+   "label": "the word pieces ' ep' (epic/episode), ' V'/'HF', ' can' (cannery) and nearby tokens in enthusiast/hobby text about radio, fishing and old industry; whole-token synonyms stay low",
+   "fire": [
+    "The medieval epics were recited from memory by travelling bards at the winter feasts.",
+    "He finally raised the distant club on VHF after moving his handheld to the ridge.",
+    "The old salmon canneries on the inlet closed one by one after the run collapsed.",
+    "Homer's epics still shape how we imagine heroes thousands of years later.",
+    "A new episode of the fishing podcast drops every Thursday before the weekend.",
+    "The coast guard monitors channel 16 on VHF for any distress call from small boats.",
+    "The crab canneries up the coast hired extra hands for the short autumn season.",
+    "The poet modelled her long epic on the great oral epics of the steppe."
+   ],
+   "quiet": [
+    "The medieval stories were recited from memory by travelling bards at the winter feasts.",
+    "He finally raised the distant club on the radio after moving his set to the ridge.",
+    "The old salmon warehouses on the inlet closed one by one after the run collapsed.",
+    "Homer's poems still shape how we imagine heroes thousands of years later.",
+    "A new instalment of the fishing podcast drops every Thursday before the weekend.",
+    "The coast guard monitors the emergency band for any distress call from small boats.",
+    "The crab packing plants up the coast hired extra hands for the short autumn season.",
+    "The poet modelled her long saga on the great oral tales of the steppe."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.54 on ' ep' (epics), VHF, cannery; whole-token 'stories', 'warehouses', 'radio station' below 0.16",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' ep'/' V'HF'/' can' pieces in hobby text",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: max 91.5, peaks ' ep' (epics/Ep), ' can' (canneries), ' V' (VHF), '2' in fishing speeds. Probe: 'epics about gods' 0.539, '2.5 mph' 0.498, 'VHF repeater' 0.352; 'radio station' 0.156, 'warehouses' (synonym of canneries) low, 'long stories' 0.007, 'variegated...ated' 0.013. A spelling/piece unit across hobby topics; synonyms that drop the piece stay low."
+}

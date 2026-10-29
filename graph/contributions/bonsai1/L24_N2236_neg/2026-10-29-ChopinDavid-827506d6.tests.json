@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-827506d6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N2236-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N2236",
+   "pole": "-",
+   "label": "the word ' one' used as a pronoun or selector ('one of', 'one another', 'one signal', 'one day'); the digit '1' and rewrites that drop 'one' stay low",
+   "fire": [
+    "He is widely regarded as one of the finest violinists of his generation.",
+    "The twins always looked out for one another when they started at the new school.",
+    "You will hear one long beep when the test has finished running.",
+    "Perhaps one day the two countries will finally sign a lasting peace.",
+    "She picked one apple from the top of the basket and left the rest.",
+    "The committee could not agree, so they postponed the vote to one later meeting.",
+    "Only one of the five proposals made it past the first round of review.",
+    "They promised to help one another move house over the long weekend."
+   ],
+   "quiet": [
+    "He is widely regarded as among the finest violinists of his generation.",
+    "The twins always looked out for each other when they started at the new school.",
+    "You will hear 1 long beep when the test has finished running.",
+    "Perhaps someday the two countries will finally sign a lasting peace.",
+    "She picked an apple from the top of the basket and left the rest.",
+    "The committee could not agree, so they postponed the vote to a later meeting.",
+    "Only two of the five proposals made it past the first round of review.",
+    "They promised to help each other move house over the long weekend."
+   ]
+  }
+ ],
+ "predictions": "fire 0.17-0.57 on ' one'; '1' as a digit and 'among'/'each other'/'two of us' rewrites below 0.08",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the pronoun/selector word ' one'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.75,
+ "notes": "Card: max 31.75, ' one' x31 dominates. Probe: 'hear one signal' 0.571, 'one of the best' 0.381, 'one another' 0.191, 'one day' 0.173; digit '1 signal' 0.079, 'among the best' 0.016, 'each other' 0.016, 'two of us' 0.012. Clean single-token unit; fire items keep the word ' one', near misses replace it."
+}

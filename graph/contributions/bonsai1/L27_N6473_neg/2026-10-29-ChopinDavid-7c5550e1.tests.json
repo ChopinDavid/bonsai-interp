@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7c5550e1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N6473-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N6473",
+   "pole": "-",
+   "label": "the word ' how' introducing an embedded clause after a verb of measuring/determining ('determine how', 'measure how', 'predict how'); 'how' in direct questions and 'whether'/noun rewrites stay low",
+   "fire": [
+    "Regulators must determine how effective the recall was at removing the faulty parts.",
+    "Engineers need to measure how much the bridge deck flexes under a full load.",
+    "The study set out to determine how quickly the drug clears from the bloodstream.",
+    "Auditors will assess how thoroughly the bank checked each loan application.",
+    "The trial was designed to determine how safe the vaccine is in older adults.",
+    "We still cannot predict how far the wildfire will spread if the wind shifts.",
+    "The panel had to judge how convincing each candidate's argument really was.",
+    "Inspectors will determine how well the new brakes perform in freezing rain."
+   ],
+   "quiet": [
+    "Regulators must confirm whether the recall removed all of the faulty parts.",
+    "Engineers need to record the amount the bridge deck flexes under a full load.",
+    "The study set out to measure the clearance rate of the drug from the bloodstream.",
+    "Auditors will review the thoroughness of the bank's checks on each loan.",
+    "How safe is the vaccine when it is given to much older adults?",
+    "We still cannot predict the distance the wildfire will spread if the wind shifts.",
+    "The panel had to rank each candidate's argument from most to least convincing.",
+    "Inspectors will test the new brakes for performance in freezing rain."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2+ on ' how' after determine/measure/predict; direct-question 'How', 'whether', noun rewrites below 0.03",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' how' opening an embedded degree clause",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: max 38.5, ' how' x27 dominates; '+' pole promotes ' make', ' find'. Probe weak: 'determine how effective' 0.226 only; 'how long the download' 0.024, 'predict how body size' 0.006, direct 'How fast' 0.016, 'whether' 0.015, 'the length of' 0.024. Only the determine-how item cleared 0.1, so this is a guess; most ' how' contexts scored near zero."
+}

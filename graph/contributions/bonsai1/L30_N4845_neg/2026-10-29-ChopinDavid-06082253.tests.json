@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-06082253",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N4845-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N4845",
+   "pole": "-",
+   "label": "tokens inside computer-networking technical text (IP addresses, DNS resolvers, DSCP fields, routing, command-line flags, config families); the same tokens in everyday prose stay low",
+   "fire": [
+    "After the outage we pointed every client at the public resolver on 1.1.1.1 instead of the local one.",
+    "Mark voice traffic with DSCP value 46 so the switches put it in the priority queue.",
+    "Start the scanner with the -sV option to see which version of the daemon answers on port 22.",
+    "Our firewall drops every packet from the 10.0.0.0/8 block that arrives on the public interface.",
+    "Add a static route to 192.168.4.0 through the gateway and then flush the ARP cache.",
+    "The address family table maps ipv4 to 0x01 and ipv6 to 0x02 in the config file.",
+    "Set the second-generation services router to advertise its loopback over OSPF area 0.",
+    "Run the backup script with the --update flag so it only copies files that changed."
+   ],
+   "quiet": [
+    "After the storm we pointed every guest at the backup generator in the shed instead of the main one.",
+    "Mark the voice parts with colour 46 so the singers put them in the right order.",
+    "Start the oven at 220 degrees to see whether the bread rises before noon.",
+    "Our garden fence keeps out every rabbit that arrives from the field behind the house.",
+    "Add a short walk to the park after dinner and clear the table before bed.",
+    "The seating chart maps the bride's family to table one and the groom's to table two.",
+    "Tell the second-year student to present her loopback recording to the music class.",
+    "Water the roses in the morning so the soil only stays damp until noon."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 in networking/config passages; everyday uses of '8', 'hidden', 'service' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "computer-networking technical text",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: max 97.5, peaks on '8' (8.8.8.8), ' Service' (Differentiated Service / Cisco services router), ' --' (command flag), ipv4 Family config. Probe: 8.8.8.8 0.911, DSCP 0.738, --update flag 0.836, Tor hidden service 0.648; '8 apples' 0.020, 'hidden treasure' 0.006, 'customer service' 0.008."
+}

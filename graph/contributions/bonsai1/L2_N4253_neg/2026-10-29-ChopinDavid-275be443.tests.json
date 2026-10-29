@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-275be443",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N4253-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T08:19:50+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N4253",
+   "pole": "-",
+   "label": "the leading space/indent token at the start of a continuation line inside code docstrings and comments (wrapped Args/Returns blocks); normal prose and single-line code stay low",
+   "fire": [
+    "def pad(x):\n  \"\"\"Pad the tensor `x` on each side.\n  If `mode` is 'reflect', the border\n  values are mirrored.\n  \"\"\"\n  return x",
+    "  Args:\n    axis: an int giving the\n    dimension to reduce over.\n  Returns:\n    A scalar tensor.",
+    "# This helper loads the records\n#   and writes them back to the\n#   cache directory on disk.",
+    "def merge(a, b):\n  \"\"\"Merge two configs.\n  Keys present in both are taken\n  from the second argument.\n  \"\"\"\n  return b",
+    "  Raises:\n    ValueError: if the shape is\n    not a two-dimensional list\n    of positive integers.",
+    "class Timeline:\n  \"\"\"The timeline model for a program.\n  It stores every event in the\n  order it occurred.\n  \"\"\"",
+    "# The following block computes\n#   the running average and then\n#   clears the buffer each step.",
+    "def scale(x):\n  \"\"\"Scale `x` by a factor.\n  The factor is read from the\n  environment at import time.\n  \"\"\"\n  return x"
+   ],
+   "quiet": [
+    "Pad the tensor on each side; if mode is 'reflect', the border values are mirrored.",
+    "The axis argument is an int giving the dimension to reduce over, and the result is a scalar tensor.",
+    "This helper loads the records and writes them back to the cache directory on disk.",
+    "Merge two configs so that keys present in both are taken from the second argument.",
+    "It raises a ValueError if the shape is not a two-dimensional list of positive integers.",
+    "The timeline model for a program stores every event in the order it occurred.",
+    "The following block computes the running average and then clears the buffer each step.",
+    "The gardener watered the roses every morning before the sun grew too hot."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.6 on the leading whitespace token of a wrapped docstring/comment line; flattened one-line versions below 0.1",
+ "methods": {
+  "agent": "claude-code opus-4.8",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "indent token at start of a docstring continuation line",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: max 2.52, FLAG broad and gate-closed. Peaks on a leading ' ' token at the start of continuation lines in TF-style docstrings/comments. Probe: docstring 'def resize' 0.607, 'Args:' block 0.601, '#' comment 0.251; same text as one line 0.048-0.074. Broad weak unit, so near misses fire a little."
+}
