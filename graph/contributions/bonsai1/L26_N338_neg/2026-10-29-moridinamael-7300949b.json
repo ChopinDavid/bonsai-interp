@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-29-moridinamael-7300949b",
+ "kind": "qc",
+ "neuron": "bonsai1/L26/N338-",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T19:20:45+00:00",
+ "recipe": {
+  "toolchain_commit": "33c54d2b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N338_neg/2026-10-29-moridinamael-7300949b.tests.json"
+ },
+ "label": "A finite verb (or 'sich') placed right after a fronted adverbial phrase so its subject is still to come, mainly German verb-second ('Bei Regen kann das Fest...', 'Auf dem Markt findet sich ein...'); quiet for the same sentence in subject-first order and for the word 'nervous'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N338_neg/2026-10-29-moridinamael-7300949b.tests.json",
+   "prereg_commit": "33c54d2b",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.437,
+     "peak": " kann"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.205,
+     "peak": " sich"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.426,
+     "peak": "nt"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.016,
+     "peak": "Nach"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.056,
+     "peak": " zu"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.077,
+     "peak": "et"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.2,
+     "peak": " sich"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.005,
+     "peak": "fer"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": " bei"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": "is"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.057,
+     "peak": " neue"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": "Die"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": " Jahr"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.037,
+     "peak": " auf"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.045,
+     "peak": "ung"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": "äu"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.139,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "inverse-gmoo",
+   "look",
+   "neighbors",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "33c54d2b",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The word 'nervous' in its anatomical sense ('nervous system', 'nervous tissue'), in a sentence whose body or biology context comes before the word; quiet for 'nervous' meaning anxious or a nervous feeling"
+ }
+}
