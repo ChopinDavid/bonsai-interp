@@ -4,7 +4,7 @@
  "layer": 22,
  "index": 8234,
  "pole": "+",
- "label": "news-style reported speech after a '..., X said' attribution, quoted or paraphrased, as against the same topics written with no speaker attribution",
+ "label": "the opening quote mark that resumes a named source's words in news or interview text (not fiction dialogue, not paraphrase)",
  "short": "news reported speech (broad guess)",
  "kind": "context",
  "status": "failed",
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-27-ChopinDavid-c4cc902f"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N8234_pos/2026-10-29-moridinamael-f40b75e4.tests.json",
+   "prereg_commit": "05693f84",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.129,
+     "peak": "\"We"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.088,
+     "peak": "\""
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.331,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.166,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.182,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.152,
+     "peak": " did"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.377,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.111,
+     "peak": " showed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.245,
+     "peak": " working"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.052,
+     "peak": " prices"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.11,
+     "peak": "\"I"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.131,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.221,
+     "peak": " pushing"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.116,
+     "peak": " internal"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.043,
+     "peak": "\""
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.213,
+     "peak": " never"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.625,
+    "median_fire": 0.159,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-f40b75e4"
   }
  ],
  "label_history": [
@@ -138,30 +260,37 @@
    "2026-10-27-ChopinDavid-c4cc902f",
    "news-style reported speech after a '..., X said' attribution, quoted or paraphrased, as against the same topics written with no speaker attribution",
    "failed"
+  ],
+  [
+   "2026-10-29-moridinamael-f40b75e4",
+   "the opening quote mark that resumes a named source's words in news or interview text (not fiction dialogue, not paraphrase)",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-27-ChopinDavid-c4cc902f"
+  "2026-10-27-ChopinDavid-c4cc902f",
+  "2026-10-29-moridinamael-f40b75e4"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
