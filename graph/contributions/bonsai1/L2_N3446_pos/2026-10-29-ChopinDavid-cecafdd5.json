@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-cecafdd5",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N3446+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T20:35:15+00:00",
+ "recipe": {
+  "toolchain_commit": "5ed32d63",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N3446_pos/2026-10-29-ChopinDavid-cecafdd5.tests.json"
+ },
+ "label": "a dense, early unit on the subject that opens a new clause after a sentence or clause boundary: subject pronouns (we, It, they, I, He, you) strongest, noun-phrase subjects ('The authors', 'the members') also fire; sentence-initial subjects with no preceding clause and verbs/objects stay lower",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N3446_pos/2026-10-29-ChopinDavid-cecafdd5.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.465,
+     "peak": " we"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.54,
+     "peak": " It"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.671,
+     "peak": " they"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.61,
+     "peak": " I"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.397,
+     "peak": " We"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.647,
+     "peak": " you"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.385,
+     "peak": " He"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.419,
+     "peak": " she"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.032,
+     "peak": "Snow"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.098,
+     "peak": " bridge"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.237,
+     "peak": " manager"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": "Posting"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.056,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": "Lock"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.036,
+     "peak": "B"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " next"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.503,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5ed32d63",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "clause-opening subject after a boundary",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: ' you' x6, ' It' x6, ' we' x4, ' they' x3, ' I' x3, ' They' x3, ' He', ' WHO'; max 2.62, density 5.6% (broad flag), gate-closed echo regime 100%; layer 2. Probe: 'Once they decide, they' 0.701, '. It describes' 0.576, 'When I paint, I' 0.580, ', we walked' 0.534; '. The authors describe' 0.515, 'the members will' 0.472 (peak will), ', the villagers' 0.129, 'Rain fell' 0.037, floor 0.111. Registered as dense / positional.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-0dd10e4e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N10262-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T20:36:02+00:00",
+ "recipe": {
+  "toolchain_commit": "5ed32d63",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N10262_neg/2026-10-29-ChopinDavid-0dd10e4e.tests.json"
+ },
+ "label": "inside a code comment, the 'to' or 'and' that introduces the next processing verb ('used to convert', 'Parse and write', 'abspath to make', 'Combine the output, and return'), peak on that 'to'/'and'; the same phrases in prose and comments without a verb to introduce stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N10262_neg/2026-10-29-ChopinDavid-0dd10e4e.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.174,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.084,
+     "peak": " sh"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.085,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.032,
+     "peak": "#"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.181,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.063,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.269,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.162,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.045,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.033,
+     "peak": "#"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.069,
+     "peak": " no"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.028,
+     "peak": "#"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.054,
+     "peak": "#"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.164,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " editor"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.043,
+     "peak": ":"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.828,
+    "median_fire": 0.123,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5ed32d63",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "'to'/'and' before a verb in a code comment",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' to' x10, ' and' x4, ' m'(unge), ' Name', ' after', ' be'; all inside Python/Sphinx comments ('to make it possible to resolve relative paths', '# Parse and write Markdown pages', 'will be used to convert quotes'); the + pole suppresses ' resolve/expand/emit/dis', so this - pole promotes those verbs; max 168, density 0.14%. Probe: '# Parse and write the pages' 0.424 (peak and), '# Use os.path.abspath to make' 0.358 (peak to), '# Combine the output, and return it' 0.214, '# If true ... used to convert' 0.150 (peak on ' ='), '# Relative to the documentation root' 0.037, '# TODO' 0.112; prose 'used to convert' 0.049, 'absolute path to make sure' 0.108, bare def 0.025, floor 0.019.",
+ "selection": "random draw"
+}
