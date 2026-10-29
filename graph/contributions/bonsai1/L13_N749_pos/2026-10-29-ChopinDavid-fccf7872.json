@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-fccf7872",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N749+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T10:29:48+00:00",
+ "recipe": {
+  "toolchain_commit": "e6e7551e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L13_N749_pos/2026-10-29-ChopinDavid-fccf7872.tests.json"
+ },
+ "label": "a short prefix glued onto the identifier or number that follows it: the leading underscore of a private Python name (self._x, class _X) and a letter page prefix in a citation (pp. P266, S213); the same names and page ranges without the prefix stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N749_pos/2026-10-29-ChopinDavid-fccf7872.tests.json",
+   "prereg_commit": "e6e7551e",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.515,
+     "peak": "._"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.24,
+     "peak": "._"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.375,
+     "peak": " _"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.849,
+     "peak": " P"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.626,
+     "peak": "._"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.475,
+     "peak": " S"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.534,
+     "peak": "._"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.934,
+     "peak": " P"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.017,
+     "peak": " self"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.037,
+     "peak": " get"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " pass"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.031,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " self"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.082,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.045,
+     "peak": " Pool"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.021,
+     "peak": " pp"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.524,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e6e7551e",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "underscore / page-letter prefix",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 19.4, peaks on '._' x4 (self._texmanager), ' _' (class _dummy...), ':S' / ' P' / ' S' page prefixes in journal citations, ' than' (more than 20). Probe: 'pp. P266' 0.914, 'self._cache' 0.805, 'class _InternalHelper' 0.374, 'more than 20' 0.401; 'self.cache' 0.039, 'class InternalHelper' 0.024, 'about 20' 0.141.",
+ "selection": "random draw"
+}
