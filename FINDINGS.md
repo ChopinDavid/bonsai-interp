@@ -1107,3 +1107,17 @@ replicated (89%);** 0 of 7,810 placebo tests held.
 - **Most failures are near misses that fire,** not a silent cover: the same token in another context also fires.
 - **With compose@13:** 4,101 of the 26,967 automatic assignments that were re-tested (15%) failed a fresh test. If an
   assignment had to replicate, the assignment-grade total would be about 33,500 (3.8% of poles) instead of 37,629.
+
+## 2026-10-29: Screen labels replicate when they name a word, less when they name a context (compose@15)
+
+compose@15 drew the auto test of the 7,960 screen-assigned poles again, with a new seed and none of the original
+windows. 7,552 were testable; **6,704 replicated (89%);** 2 of 6,881 placebo tests held.
+
+- **Lexical labels replicate (1.3% fail, 4,269 poles).** Rule labels fail more: context 18%, predictive 31%, format
+  35%, collocation 39%.
+- **The failures are rules that are too narrow.** In 755 of 848 the pole still fires on its trigger, and the near
+  misses (the trigger where the rule fails) fire too. For these poles "the token X" is the better label.
+- **Replication falls with trigger precision** (2.3% fail at ≥ 0.7, 35% at 0.3–0.5) **and past layer 5** (7.1% in L0–5,
+  19–24% later).
+- **With compose@13 and @14:** 4,949 of 34,519 re-tested automatic assignments (14%) failed a fresh test. If an
+  assignment had to replicate, the assignment-grade total would be about 32,700 (3.7% of poles) instead of 37,629.
