@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-e7c63507",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N6064-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T03:29:20+00:00",
+ "recipe": {
+  "toolchain_commit": "2dd5e7f9",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N6064_neg/2026-10-28-ChopinDavid-e7c63507.tests.json"
+ },
+ "label": "text about people's identifying or demographic attributes as data to protect or compare (personally identifiable information, personal details, without regard to race): the pole marks privacy and demographic-attribute language; the same sentence frames about non-personal data stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N6064_neg/2026-10-28-ChopinDavid-e7c63507.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.431,
+     "peak": " identifiable"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.284,
+     "peak": " personal"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.427,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.182,
+     "peak": " factors"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.258,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.763,
+     "peak": " identified"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.129,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.159,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " store"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.106,
+     "peak": " your"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.087,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " quarter"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.058,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": " working"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.075,
+     "peak": " for"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.271,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2dd5e7f9",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "personal / demographic attribute data",
+ "unit_kind": "topic/meaning",
+ "confidence": 0.35,
+ "notes": "Card: ' identifiable' x3, ' details' x2, 'E-Mail-Adresse', 'Date of Birth', ' demographic', 'without regard to race'. Probe: 'without regard to race' 0.601, 'personally identifiable information' 0.429, 'personal details will not be shared' 0.376, 'demographic variables' 0.342, CSV header id,name,email 0.167, 'email address required' 0.100; seashells 0.015, bridge details 0.008.",
+ "selection": "random draw"
+}

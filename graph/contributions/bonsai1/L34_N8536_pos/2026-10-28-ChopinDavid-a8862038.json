@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-a8862038",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N8536+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T03:29:12+00:00",
+ "recipe": {
+  "toolchain_commit": "2dd5e7f9",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N8536_pos/2026-10-28-ChopinDavid-a8862038.tests.json"
+ },
+ "label": "the interior or final piece of an acronym spelled as several tokens, especially one in parentheses after its spelled-out name (P|ACT, CAL|M, UN|IOS|IL): the pole marks a capitalized abbreviation being assembled piece by piece; acronyms that are a single token, and the same sentences without the acronym, stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N8536_pos/2026-10-28-ChopinDavid-a8862038.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.48,
+     "peak": "IER"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.551,
+     "peak": "ROM"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.265,
+     "peak": "IDENT"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.193,
+     "peak": "ISK"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.599,
+     "peak": "UM"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.179,
+     "peak": "LE"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.584,
+     "peak": "SG"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.291,
+     "peak": "M"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.037,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.026,
+     "peak": " health"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.05,
+     "peak": " radar"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.084,
+     "peak": " rural"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.074,
+     "peak": " Organization"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.045,
+     "peak": " cancer"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.155,
+     "peak": " coastal"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.385,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2dd5e7f9",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "multi-token acronym pieces",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: top examples are all mid-acronym pieces (PACT, CALM, PATROLS, UNIOSIL, EAGMST). Probe: (PACT) 0.627, (UNIOSIL) 0.638, (CALM) 0.444, (EAGMST) 0.397, FAST 0.294; NASA 0.048; same sentence without (PACT) 0.247 (the 'cost tool' wording leaked, so near misses here use single-token acronyms or plain wording). Acronym splits checked with the tokenizer.",
+ "selection": "random draw"
+}

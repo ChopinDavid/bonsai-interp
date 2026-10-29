@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-14013bb9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N10681-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T03:28:45+00:00",
+ "recipe": {
+  "toolchain_commit": "2dd5e7f9",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N10681_neg/2026-10-28-ChopinDavid-14013bb9.tests.json"
+ },
+ "label": "' the' as the article right after a preposition or particle (to the, behind the, over to the): the pole reads 'the' that opens a prepositional object; other determiners in the same slot, and 'the' after 'because', stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N10681_neg/2026-10-28-ChopinDavid-14013bb9.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.187,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.342,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.175,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.293,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.31,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.303,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.288,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.419,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.126,
+     "peak": " out"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.105,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " carried"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.26,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.053,
+     "peak": " shelter"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.009,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.034,
+     "peak": " grew"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.298,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2dd5e7f9",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "' the' after a preposition",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: broad, weak (max 0.29), ' the' x25 of the top 32, mostly after to/of/behind. Probe: 'moving to the coast' 0.373, 'behind the curtain' 0.306, 'over to the city' 0.292; 'because the price' 0.031, 'sent to a regional office' 0.097, code 0.041.",
+ "selection": "random draw"
+}

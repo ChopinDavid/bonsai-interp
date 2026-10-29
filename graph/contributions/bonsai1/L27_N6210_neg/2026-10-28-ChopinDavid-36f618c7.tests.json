@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-36f618c7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N6210-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N6210",
+   "pole": "-",
+   "label": "a verb of getting or acquiring something as the goal of a demand, deal or purchase (pay $500 to get it back, trade a pick to acquire him, you might be getting fake crab): the pole marks the acquisition the exchange is for; the same scenes without an acquisition verb stay low",
+   "fire": [
+    "The club sent two young players to Denver to acquire a veteran goalie.",
+    "Hackers asked for $2,000 in bitcoin to get the files unlocked.",
+    "You have to pay an extra fee to get a seat by the window.",
+    "When you order cheap saffron online, you may be getting dyed corn silk.",
+    "The startup sold its patents last year to obtain fresh funding.",
+    "He offered the guard a carton of cigarettes to get a phone call.",
+    "Collectors paid double the price to acquire the rare first edition.",
+    "The kidnappers wanted a large sum to get the boy home safely."
+   ],
+   "quiet": [
+    "The club sent two young players to Denver for a training camp.",
+    "Hackers were arrested after a long investigation in Ohio.",
+    "The window seats on that plane are narrow and cold.",
+    "Cheap saffron online often arrives in tiny plastic boxes.",
+    "The startup moved its offices last year to a bigger building.",
+    "He chatted with the guard about the weather for an hour.",
+    "Collectors gathered in the hall to admire the rare first edition.",
+    "The boy came home safely after a long night in the woods."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.50 on get/acquire/obtain; near misses below 0.10",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "acquisition verb in an exchange",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: ' to' x6, ' get' x2, ' begin', ' group' ('ransom of $550 to get his phone back', 'draft choice to acquire Roby', 'in-app purchase to download'). Probe: 'traded a draft pick to acquire' 0.475, 'ransom of $500 to get his phone back' 0.409, 'didn't get money' 0.273, 'the rest got stale popcorn' 0.264, 'might be getting imitation crab' 0.189; 'phone was returned' 0.009, 'child is usually walking' 0.004. The card's 'begin offering' did not reproduce (0.126)."
+}

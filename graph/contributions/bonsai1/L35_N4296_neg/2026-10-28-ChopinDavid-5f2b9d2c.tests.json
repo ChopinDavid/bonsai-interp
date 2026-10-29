@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-5f2b9d2c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N4296-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N4296",
+   "pole": "-",
+   "label": "a bare word-initial ' F'/' f' piece that starts a split German word (F|ähigkeit, F|ische, f|ahren, F|ett): the pole marks the F-onset spelling unit; German words where F is part of a whole-word token (Fehler, Feld, Frage) stay low",
+   "fire": [
+    "Im Sommer wollen wir mit den Kindern an den See fahren.",
+    "Der Junge hat die Fähigkeit, schnell neue Sprachen zu lernen.",
+    "Auf dem Markt kaufte sie frische Fische für das Abendessen.",
+    "Die Fähre nach Helgoland fährt jeden Morgen um acht Uhr.",
+    "Der Koch schneidet das Fett vom Braten ab.",
+    "Mein Vater fährt jeden Tag mit dem Bus ins Büro.",
+    "Diese Fähigkeiten braucht man für den neuen Beruf.",
+    "Am Wochenende fahre ich mit meiner Schwester nach Hamburg."
+   ],
+   "quiet": [
+    "Im Sommer wollen wir mit den Kindern auf das Feld gehen.",
+    "Der Junge hat einen Fehler in seiner Rechnung gemacht.",
+    "Auf dem Markt kaufte sie fünf Äpfel für das Abendessen.",
+    "Die Frage nach dem Weg war gar nicht so leicht.",
+    "Der Koch legt den Braten auf einen großen Teller.",
+    "Mein Vater nimmt jeden Tag den Bus ins Büro.",
+    "Im Herbst fallen die Blätter von den Bäumen im Garten.",
+    "Am Wochenende besuche ich meine Schwester in Hamburg."
+   ]
+  }
+ ],
+ "predictions": "fire 0.55-0.90 on ' F'/' f'; German near misses with whole-token F words below 0.30",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German split-off ' F' onset",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: ' F' x8, ' f' x3, 'f' x3, '-F', 'lf', 'multif' in German compounds (Fähigkeit, Kunstrad fahren, Fische). Probe: 'tropische Fische' 0.890, 'Rad fahren' 0.818, 'Fähigkeit' 0.686, 'Fleece-Futter' 0.641; but 'Eigenschaft … aufzunehmen' also 0.640 (peak 'z'), 'wandern' 0.172, English fish 0.053. Near misses therefore keep German and F-words, but use F-words the tokenizer keeps whole, and avoid zu-infinitives. Splits checked with the tokenizer."
+}

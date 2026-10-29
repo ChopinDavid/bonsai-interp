@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-3ecf3cc1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N980-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N980",
+   "pole": "-",
+   "label": "the first word of a parenthetical or self-interrupting aside (after '(' or ', or,' or a name followed by an exclamation: '(there is…', 'or, what I thought…', 'Blotts, what an awful name'): the pole marks the switch into an aside; the same words opening a plain sentence stay low",
+   "fire": [
+    "The second album (there were only two) sold poorly at first.",
+    "He came from Leeds; or, what everyone assumed was Leeds.",
+    "Our new neighbor (it turns out) used to sing in an opera chorus.",
+    "Gertrude, what a lovely old-fashioned name, I said to her.",
+    "The recipe calls for saffron (there is really no substitute) and rice.",
+    "The meeting is on Thursday, or is it Wednesday, at the library.",
+    "These old maps (there are about forty of them) were found in an attic.",
+    "She called it a disaster; or, what she later called a lesson."
+   ],
+   "quiet": [
+    "There were only two albums, and the second one sold poorly at first.",
+    "Everyone assumed that he came from Leeds.",
+    "It turns out our new neighbor used to sing in an opera chorus.",
+    "Her name was Gertrude, and I said hello to her.",
+    "The recipe calls for saffron and rice and a little butter.",
+    "The meeting is on Thursday at the library.",
+    "There are about forty old maps, and they were found in an attic.",
+    "She called it a disaster, and later she called it a lesson."
+   ]
+  }
+ ],
+ "predictions": "fire 0.50-1.10 on the aside's first word; same words in plain clauses below 0.20",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first word of an aside",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: 'there' x6, ' what' x5, ' it' x3, 'There' x2, all right after '(' or ', or,'. Probe: 'or, what I thought' 1.138, '(there is also a solo version)' 1.033, '(there's no better word for it)' 0.960, 'Blotts, what an awful name' 0.848, 'or is that' 0.513; 'There is no better word' 0.093, 'What I thought was' 0.154, no aside 0.057."
+}

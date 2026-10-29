@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-54e65a2f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N9439+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N9439",
+   "pole": "+",
+   "label": "a noun or 'what' that names content about to be examined or read out ('the details of', 'see what it says'): the pole marks the object of an information-seeking move; the same nouns used as plain subjects or for facts already stated stay low",
+   "fire": [
+    "Before we go into the details of the contract, let me say why it matters.",
+    "Let's look at what the label says before we take any pills.",
+    "Okay, now for the details of how the vote will work tomorrow.",
+    "Hang on, I'll read you what the letter says about the rent.",
+    "We can skip the details of the setup and jump straight to results.",
+    "Can you find out what the forecast says for the weekend?",
+    "In this post I dig into the details of how the engine was rebuilt.",
+    "First, check what the receipt says about returns and refunds."
+   ],
+   "quiet": [
+    "The contract was signed in a hurry, and nobody liked it much.",
+    "The label on the pill bottle was peeling off in the heat.",
+    "The vote tomorrow will be held in the school gym at noon.",
+    "The letter about the rent arrived in a blue envelope.",
+    "The setup took two hours, and then we saw strong results.",
+    "The forecast turned out to be wrong for the whole weekend.",
+    "In this post I show the engine running after it was rebuilt.",
+    "The receipt was crumpled at the bottom of my shopping bag."
+   ]
+  }
+ ],
+ "predictions": "fire 0.20-0.40 on details/what; near misses below 0.12",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "content about to be examined",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card: ' what' x6, ' details' x4, ' case' x3, ' example' x2 ('stay up to date with what is happening', 'before diving into the details'). Probe: 'getting into the details of the plan' 0.381, 'check what it says in the manual' 0.259; 'the effects of caffeine' 0.047, 'strange reports came' 0.036, 'the details were printed' 0.124, 'keep up with what is going on' 0.069 (weak). Guess level: the reading-ahead frame is the best handle."
+}

@@ -1,0 +1,163 @@
+{
+ "id": "2026-10-28-ChopinDavid-4f2bf67d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N314-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T03:29:31+00:00",
+ "recipe": {
+  "toolchain_commit": "2dd5e7f9",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N314_neg/2026-10-28-ChopinDavid-4f2bf67d.tests.json"
+ },
+ "label": "the tokens ' benchmark(s)', ' personal' and reflexive pronouns (himself, herself, themselves): an early lexical pole on a small set of words; synonyms in the same slot (milestone, private) stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N314_neg/2026-10-28-ChopinDavid-4f2bf67d.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.324,
+     "peak": " benchmark"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.049,
+     "peak": " benchmarks"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.379,
+     "peak": " personal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.388,
+     "peak": " personal"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.394,
+     "peak": " himself"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.21,
+     "peak": " themselves"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.322,
+     "peak": " benchmark"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.315,
+     "peak": " personal"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.034,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.046,
+     "peak": " team"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.053,
+     "peak": " her"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.045,
+     "peak": " voy"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.139,
+     "peak": " together"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.049,
+     "peak": " memory"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.352,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2dd5e7f9",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "' benchmark' / ' personal' / reflexives",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: broad weak pole (max 1.16), ' benchmarks' x8, ' benchmark' x5, ' personal' x4, ' himself' x2, ' personally' x2, ' themselves'. Probe: 'standard benchmarks' 0.815, 'symbolic benchmark' 0.550, 'personal values' 0.465, 'devoted herself' 0.457, 'personal injury' 0.285; 'milestone' 0.057, 'private values' 0.099. A word list; no shared meaning found, so the label stays lexical.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   " benchmark",
+   " benchmarks",
+   " personal",
+   " personally",
+   " himself",
+   " herself",
+   " themselves"
+  ]
+ }
+}

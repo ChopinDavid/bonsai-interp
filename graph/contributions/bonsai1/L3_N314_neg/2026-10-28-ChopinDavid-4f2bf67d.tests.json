@@ -1,0 +1,59 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-4f2bf67d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N314-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N314",
+   "pole": "-",
+   "label": "the tokens ' benchmark(s)', ' personal' and reflexive pronouns (himself, herself, themselves): an early lexical pole on a small set of words; synonyms in the same slot (milestone, private) stay low",
+   "fire": [
+    "The new chip set records on every major industry benchmark this spring.",
+    "Our team compared both models against public benchmarks for accuracy.",
+    "She keeps a small diary of personal goals on her desk.",
+    "After the accident he hired a lawyer for personal injury claims.",
+    "The old sailor taught himself to read during long voyages.",
+    "The twins built the treehouse themselves over one summer.",
+    "Sales of ten million units became a benchmark for the whole industry.",
+    "My grandmother always made her personal recipes from memory."
+   ],
+   "quiet": [
+    "The new chip set records on every major industry test this spring.",
+    "Our team compared both models against public datasets for accuracy.",
+    "She keeps a small diary of daily goals on her desk.",
+    "After the accident he hired a lawyer for insurance claims.",
+    "The old sailor learned to read during long voyages.",
+    "The twins built the treehouse together over one summer.",
+    "Sales of ten million units became a milestone for the whole industry.",
+    "My grandmother always made her family recipes from memory."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.80 on the listed words; synonyms below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' benchmark' / ' personal' / reflexives",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: broad weak pole (max 1.16), ' benchmarks' x8, ' benchmark' x5, ' personal' x4, ' himself' x2, ' personally' x2, ' themselves'. Probe: 'standard benchmarks' 0.815, 'symbolic benchmark' 0.550, 'personal values' 0.465, 'devoted herself' 0.457, 'personal injury' 0.285; 'milestone' 0.057, 'private values' 0.099. A word list; no shared meaning found, so the label stays lexical.",
+ "trigger": {
+  "words": [
+   " benchmark",
+   " benchmarks",
+   " personal",
+   " personally",
+   " himself",
+   " herself",
+   " themselves"
+  ]
+ }
+}

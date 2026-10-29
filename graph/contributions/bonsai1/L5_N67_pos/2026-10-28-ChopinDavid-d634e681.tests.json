@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d634e681",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N67+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:21:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N67",
+   "pole": "+",
+   "label": "a '/' or '-' that joins two words or names with no space, as in menus, headings and place names (News/Updates, Challenges/ What's Next, St-Etienne-Loire): the pole marks the unspaced separator; the same items joined by 'and' or spaces stay low",
+   "fire": [
+    "Site map: Home Shop Events/News Blog Contact",
+    "Section 4: Risks/ Open Questions for the board",
+    "Footer: Privacy Terms Press/Video Sitemap Jobs",
+    "Categories: Recipes Desserts/Updates Drinks Seasonal",
+    "Top links: About Careers Press/News Help",
+    "Sidebar: Archive Events/Updates Links Search",
+    "Chapter 7 - Problems/ Next Steps for the project",
+    "Menu bar: Start Gallery Photos/Video Archive Login"
+   ],
+   "quiet": [
+    "Site map: Home Shop Events and News Blog Contact",
+    "Section 4 covers the risks and open questions for the board",
+    "Footer: Privacy Terms Press and Video Sitemap Jobs",
+    "Categories: Recipes Desserts and Updates Drinks Seasonal",
+    "Top links: About Careers Press and News Help",
+    "Sidebar: Archive Events and Updates Links Search",
+    "Chapter 7 covers problems and next steps for the project",
+    "Menu bar: Start Gallery Photos and Video Archive Login"
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.85 on '/' or '-'; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unspaced '/' or '-' separator",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: '/' x6, '-' x5 in menus, page headings and race results (News/Updates, St-Etienne-Loire, PRESS- N.A.P.). Probe: 'News/Updates' 0.830, 'Challenges/ What's Next?' 0.829, 'St-Etienne-Loire' 0.619, 'PRESS- N.A.P.' 0.450; 'News and Updates' 0.016, plain prose 0.039-0.047. The '....a REALLY' item (0.275) shows other punctuation joins also fire weakly. The test uses '/' only, because the tokenizer merges '-' with the next letter in most names ('-M', '-E')."
+}
