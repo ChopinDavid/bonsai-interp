@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-29-moridinamael-0511b3f7",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N10144+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:45:11+00:00",
+ "roles": ["feeds bonsai1/L22/N8234+"],
+ "neighbours": [
+  {
+   "unit": "L17/N10144",
+   "pole": "+",
+   "label": "the second go at a phrase: a speaker repeating or restating a word or structure just used (to help X, to help Y; ten years ago, twelve years ago)",
+   "fire": [
+    "We came here to help the farmers, to help the families who depend on this river.",
+    "It happened ten years ago, maybe twelve years ago, I can't remember exactly.",
+    "She wanted to win, she wanted to prove everyone wrong.",
+    "I'm not asking for much, I'm asking for a little respect.",
+    "He was tired, so tired that he fell asleep on the bus.",
+    "We will fight for our schools, fight for our hospitals, and fight for our jobs.",
+    "The meeting is on Tuesday, I mean Wednesday, at three o'clock.",
+    "It was a long road, a very long road, but we finally got there."
+   ],
+   "quiet": [
+    "We came here to support the farmers and the families who depend on this river.",
+    "It happened about a decade ago, though I can't remember exactly.",
+    "She wanted to win and prove everyone wrong.",
+    "I'm not asking for much, only a little respect from you.",
+    "He was exhausted and fell asleep on the bus home.",
+    "We will fight for better schools, hospitals and jobs in this region.",
+    "The meeting is on Wednesday afternoon at three o'clock.",
+    "It was a difficult journey, but we finally got there."
+   ]
+  }
+ ],
+ "predictions": "Expect most repeat sentences to fire, with a possible miss on 'so tired' and the Tuesday/Wednesday self-correction; near misses quiet.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-out"
+  ]
+ }
+}
