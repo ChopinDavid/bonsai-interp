@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-22-ChopinDavid-5544e51b"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N6360_pos/2026-10-29-moridinamael-8b0489d4.tests.json",
+   "prereg_commit": "e79a7154",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.644,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.212,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.588,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.0,
+     "peak": " names"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.428,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.379,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.572,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.0,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.293,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.211,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.0,
+     "peak": " letters"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": " formulas"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": " sound"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " words"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.0,
+     "peak": " read"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": " accent"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.403,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-8b0489d4"
   }
  ],
  "label_history": [
@@ -138,21 +260,28 @@
    "2026-10-22-ChopinDavid-5544e51b",
    "A space-initial byte-fallback token: a space followed by a non-ASCII character such as '÷', a CJK character or an accented capital ('Ú'); quiet when the same content is written in ASCII.",
    "held"
+  ],
+  [
+   "2026-10-29-moridinamael-8b0489d4",
+   "A space-led split-byte token: a space merged with the lead byte of a character the tokenizer breaks into bytes. Fires for Latin-1 symbols and letters after a space (÷ × ß ø Þ ð ú Ú) and for CJK characters in the U+6000-6FFF block (源 慈 欧 洗); quiet for emoji, Cyrillic, Greek, Korean, other CJK blocks (e.g. 鬱 蠡), accented letters inside words, and ASCII twins.",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-22-ChopinDavid-5544e51b"
+  "2026-10-22-ChopinDavid-5544e51b",
+  "2026-10-29-moridinamael-8b0489d4"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": {
@@ -161,11 +290,11 @@
   "strong": 4102
  },
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
