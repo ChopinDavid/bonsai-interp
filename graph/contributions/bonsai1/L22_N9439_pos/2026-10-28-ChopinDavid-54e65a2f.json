@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-54e65a2f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N9439+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T03:28:56+00:00",
+ "recipe": {
+  "toolchain_commit": "2dd5e7f9",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N9439_pos/2026-10-28-ChopinDavid-54e65a2f.tests.json"
+ },
+ "label": "a noun or 'what' that names content about to be examined or read out ('the details of', 'see what it says'): the pole marks the object of an information-seeking move; the same nouns used as plain subjects or for facts already stated stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N9439_pos/2026-10-28-ChopinDavid-54e65a2f.tests.json",
+   "prereg_commit": "2dd5e7f9",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.477,
+     "peak": " details"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.077,
+     "peak": " says"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.33,
+     "peak": " details"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.169,
+     "peak": " about"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.122,
+     "peak": " details"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.091,
+     "peak": " says"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.315,
+     "peak": " details"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.096,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.019,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.026,
+     "peak": " school"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.041,
+     "peak": " results"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " post"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.021,
+     "peak": " bottom"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.146,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2dd5e7f9",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "content about to be examined",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card: ' what' x6, ' details' x4, ' case' x3, ' example' x2 ('stay up to date with what is happening', 'before diving into the details'). Probe: 'getting into the details of the plan' 0.381, 'check what it says in the manual' 0.259; 'the effects of caffeine' 0.047, 'strange reports came' 0.036, 'the details were printed' 0.124, 'keep up with what is going on' 0.069 (weak). Guess level: the reading-ahead frame is the best handle.",
+ "selection": "random draw"
+}
