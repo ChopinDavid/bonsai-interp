@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L2/N2413+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 2413,
+ "pole": "+",
+ "label": "the words 'evade', 'evasion' and 'evasive' (and 'antiproliferative'), not synonyms like avoid or escape",
+ "short": null,
+ "kind": null,
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N2413_pos/2026-10-28-moridinamael-dabfe9e1.tests.json",
+   "prereg_commit": "90e14647",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.149,
+     "peak": " driving"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.595,
+     "peak": " evasion"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.33,
+     "peak": "asive"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.171,
+     "peak": " hiding"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.457,
+     "peak": "asive"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.831,
+     "peak": " evasion"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.088,
+     "peak": "ative"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.209,
+     "peak": " viruses"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": " escape"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.063,
+     "peak": " hidden"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": " vague"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.117,
+     "peak": " masking"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.028,
+     "peak": " avoid"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.057,
+     "peak": " interviewer"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " escape"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.27,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-moridinamael-dabfe9e1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-28-moridinamael-dabfe9e1",
+   "the words 'evade', 'evasion' and 'evasive' (and 'antiproliferative'), not synonyms like avoid or escape",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "feeds bonsai1/L16/N12088+"
+ ],
+ "contributors": [
+  "moridinamael"
+ ],
+ "contributions": [
+  "2026-10-28-moridinamael-dabfe9e1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
