@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-edf5f811",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N10123+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N10123",
+   "pole": "+",
+   "label": "'illegal' or 'illicit' as an attribute of a trade or harvesting activity (illegal fishing, illicit trade), the contrast being lawful or regulated activity; predicative 'it is illegal to' stays low",
+   "fire": [
+    "Rangers in the reserve are trying to end the illegal hunting of elephants.",
+    "The report links organized crime to the illegal timber trade across the border.",
+    "Satellite images helped the navy spot illegal fishing boats near the islands.",
+    "Mercury from illegal gold mining has poisoned several rivers in the region.",
+    "Customs officers broke up an illicit tobacco trade run from a warehouse.",
+    "The new law raises the fines for the illegal sale of protected birds.",
+    "Investigators say the illicit trade in antiquities funds armed groups.",
+    "Villagers reported illegal sand mining along the banks of the river."
+   ],
+   "quiet": [
+    "Rangers in the reserve are trying to manage the licensed hunting of deer.",
+    "The report links rising prices to the legal timber trade across the border.",
+    "Satellite images helped the navy track commercial fishing boats near the islands.",
+    "Mercury from small gold mines has been banned in several countries.",
+    "Customs officers inspected a tobacco warehouse run by a licensed importer.",
+    "Under the new law it is illegal to keep protected birds in a cage.",
+    "Investigators say the museum's antiquities were all bought at public auctions.",
+    "Villagers say that swimming in the river is illegal during the flood season."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on ' illegal'/' illicit' before an activity noun; legal versions below 0.05; predicative 'illegal' below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "illegal/illicit modifying a trade or harvest",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: max 15.06, peaks ' illegal' x6 before timber trading, fishing, hunting, wildlife trade, plus '-market', 'achers'. Probe: 'illegal fishing' 0.838, 'illegal logging' 0.466, 'illicit trade' 0.340, 'Poachers' 0.533, 'black market' 0.427; 'legal fishing' 0.008; predicative 'It is illegal to park' 0.091."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-362c9a51",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N5956-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N5956",
+   "pole": "-",
+   "label": "the channel through which a citizen deals with a government office ('in person', 'online', 'early voting', a service window): how you renew, apply or vote; 'person' and 'online' outside dealings with an office stay low",
+   "fire": [
+    "To get a replacement birth certificate, residents must apply in person at the county clerk's office.",
+    "Voters who cannot vote in person on election day may request a mail ballot.",
+    "Most permits can now be renewed online through the city's website.",
+    "If your passport has been stolen, you have to report it in person at the consulate.",
+    "The state lets drivers pay parking tickets online or by mail.",
+    "Early voting begins two weeks before the election at the public library.",
+    "Tax forms may also be dropped off in person at the revenue office.",
+    "Citizens can now register a business online instead of visiting the ministry."
+   ],
+   "quiet": [
+    "My cousin is a very shy person, but she loves to sing at parties.",
+    "Every person in the photograph is wearing a red hat.",
+    "Most of my friends now buy their clothes online.",
+    "If your phone has been stolen, you should tell your bank right away.",
+    "The band streams its concerts online for fans who cannot travel.",
+    "The library begins its summer reading program two weeks after school ends.",
+    "Fresh bread may also be picked up at the bakery on Main Street.",
+    "Students can now watch the lectures online instead of going to class."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0 on ' person' in 'in person', ' online', ' voting'; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "channel for government services (in person/online)",
+ "unit_kind": "meaning",
+ "confidence": 0.5,
+ "notes": "Card: max 25.62, peaks ' person' x5 (submitted/cast in person), '窗口' (service window), ' Vehicles' (Motor Vehicles), ' voting' (early voting). Probe: 'renew ... in person' 1.130, 'submitted in person' 1.041, 'cast in person' 0.706, 'renew ... online' 0.565, 'Early voting' 0.532, 'service window' 0.372; 'The person sitting next to me' 0.009, 'The vehicles were parked' 0.014."
+}

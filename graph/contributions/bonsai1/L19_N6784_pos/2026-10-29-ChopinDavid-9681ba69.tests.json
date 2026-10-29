@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9681ba69",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N6784+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N6784",
+   "pole": "+",
+   "label": "the copula or comparison that links a subject to a property being stated or checked ('the digits are odd', 'aren't', `obj.attr) ==`): the hinge between subject and predicate in descriptive or test statements; action verbs stay low",
+   "fire": [
+    "In a healthy adult, the valves of the heart are flexible and close tightly.",
+    "Suppose the first three digits of the number are equal to each other.",
+    "    if self.board.cell_at(pos) == player:\n        return pos",
+    "This winter the nights aren't cold enough to keep the ice on the pond.",
+    "When the input value is negative, the function returns zero.",
+    "    if response.status_code == 200:\n        return response.json()",
+    "In older houses the walls of the kitchen are usually quite thin.",
+    "The prices at the market weren't as high as we had feared."
+   ],
+   "quiet": [
+    "In a healthy adult, the valves of the heart open and close many times a minute.",
+    "Suppose we write the first three digits of the number on the board.",
+    "    self.board.place(pos, player)\n    self.turn += 1",
+    "This winter the children skated on the pond almost every day.",
+    "When the user clicks the button, the function returns zero.",
+    "    response = session.get(url)\n    log.info(url)",
+    "In older houses the owners usually painted the kitchen white.",
+    "The farmers at the market sold all their tomatoes before noon."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on ' are'/' is'/\"'t\"/')' before a property; near misses with action verbs below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "copula/comparison linking subject to property",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: max 20.62, broad (0.45% of tokens >= 0.1 of max), peaks ' is' x4, ' are' x2, ')' before ' ==', '.text' before ' ==', \"'t\" in 'aren't'. Probe: \"aren't dropping\" 0.578, 'piece_at(loc) ==' 0.385, 'digits are odd' 0.360, 'rhythms of the heart are irregular' 0.181, 'type is a string' 0.143; 'the guests arrived late' 0.017, 'may feel tired' 0.012."
+}

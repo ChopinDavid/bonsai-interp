@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-8d079561",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N9131-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N9131",
+   "pole": "-",
+   "label": "byte-fallback tokens of Arabic-Indic digits (٠-٩) inside Arabic text; the same numbers in Western digits stay low",
+   "fire": [
+    "افتتحت البلدية حديقة جديدة تضم ٣٥٠ شجرة في وسط المدينة.",
+    "بلغ عدد الطلاب المسجلين في الجامعة هذا العام ١٢٠٠ طالب.",
+    "وصل الوفد إلى القاهرة في الخامس من مايو عام ٢٠١٩ لحضور المؤتمر.",
+    "قامت الجمعية بتوزيع ٤٥٠ سلة غذائية على الأسر المحتاجة.",
+    "يبلغ طول الجسر الجديد حوالي ٨٠٠ متر فوق النهر.",
+    "شارك في السباق أكثر من ٦٠ عداء من مختلف الدول.",
+    "تم تأسيس المكتبة العامة في المدينة سنة ١٩٨٥ بدعم من الحكومة.",
+    "ارتفعت نسبة المشاركة في الانتخابات إلى ٧٢ بالمئة هذا العام."
+   ],
+   "quiet": [
+    "افتتحت البلدية حديقة جديدة تضم 350 شجرة في وسط المدينة.",
+    "بلغ عدد الطلاب المسجلين في الجامعة هذا العام 1200 طالب.",
+    "وصل الوفد إلى القاهرة في الخامس من مايو عام 2019 لحضور المؤتمر.",
+    "قامت الجمعية بتوزيع 450 سلة غذائية على الأسر المحتاجة.",
+    "يبلغ طول الجسر الجديد حوالي 800 متر فوق النهر.",
+    "شارك في السباق أكثر من 60 عداء من مختلف الدول.",
+    "تم تأسيس المكتبة العامة في المدينة سنة 1985 بدعم من الحكومة.",
+    "ارتفعت نسبة المشاركة في الانتخابات إلى 72 بالمئة هذا العام."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.6 on the digit byte tokens; Western-digit versions below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Arabic-Indic digit bytes",
+ "unit_kind": "token/lexical",
+ "confidence": 0.65,
+ "notes": "Card: max 89.5, peaks '�' x16 and ' �' x12 on Arabic-Indic digits (٧٥٠, ٢٠١١, ٢٠/٨٠) and Korean 꾸준. Probe: '٧٥٠ متطوعا' 0.478, '٢٠١١' 0.584, Korean 꾸준히 0.163, 꾸준한 0.252; the same Arabic sentence with '750' 0.009. Every digit splits into byte tokens."
+}

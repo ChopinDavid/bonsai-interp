@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5beaf868",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N9770-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N9770",
+   "pole": "-",
+   "label": "building a collection of distinct items: 'list'/'sorted' wrapped around set(...) to deduplicate in Python, and 'infinitely many' in math prose; plain list()/sorted() without set stays low",
+   "fire": [
+    "def dedupe(tags):\n    cleaned = list(set(tags))\n    return cleaned",
+    "    emails = [row['email'] for row in rows]\n    emails = list(set(emails))",
+    "def unique_words(text):\n    return sorted(set(text.split()))",
+    "    seen_ids = sorted(set(order_ids))\n    print(seen_ids)",
+    "def keys_of(records):\n    return list(set(r.key for r in records))",
+    "Show that the curve has infinitely many rational points on it.",
+    "A line and a plane can meet in one point, in no point, or in infinitely many points.",
+    "There are infinitely many primes, as Euclid proved long ago."
+   ],
+   "quiet": [
+    "def dedupe(tags):\n    cleaned = list(tags)\n    return cleaned",
+    "    emails = [row['email'] for row in rows]\n    emails = list(emails)",
+    "def unique_words(text):\n    return sorted(text.split())",
+    "    seen_ids = sorted(order_ids)\n    print(seen_ids)",
+    "def keys_of(records):\n    return list(r.key for r in records)",
+    "Show that the curve has exactly two rational points on it.",
+    "A line and a plane can meet in one point, in no point, or along a whole line.",
+    "There are only four primes below ten, as every student knows."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.5 on ' list'/' sorted' before (set( and on ' many' after 'infinitely'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "deduplicating list(set(...)) / 'many' distinct items",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: max 48.50, peaks '(len' (len(set(names))), ' sorted'/' list' before (set(, ' many' after 'infinitely', ' of' in 'lots of different'. Probe: 'list(set(names))' 0.467, 'infinitely many solutions' 0.333; but 'len(ids), len(set(ids))' 0.014, 'all permutations' 0.058, 'lots of different ways' 0.008. A guess: only two configurations fired."
+}

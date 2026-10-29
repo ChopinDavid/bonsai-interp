@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-490e64da",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N2195-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T07:27:56+00:00",
+ "recipe": {
+  "toolchain_commit": "d8dd857f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N2195_neg/2026-10-29-ChopinDavid-490e64da.tests.json"
+ },
+ "label": "the '=' (or 'by' in 'defined by') that introduces the definition of a symbol in mathematical prose ('where k = ...', 'defined by g(x) = ...'); code assignments and verbal definitions stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N2195_neg/2026-10-29-ChopinDavid-490e64da.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.036,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.113,
+     "peak": " defined"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.757,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.743,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.166,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.695,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.106,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.975,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.205,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.323,
+     "peak": " map"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": " r"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.105,
+     "peak": " sequence"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.071,
+     "peak": " C"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": " sites"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.451,
+     "peak": " function"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " part"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 1.006,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d8dd857f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "'=' defining a symbol in math prose",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: max 13.31, peaks ' =' x16, mostly 'where c =', 'where N =', 'Where A =', and ' by' in 'defined by'. Probe: 'where c = 10/9' 0.703, 'defined by f(x)' 1.100, 't_i = sum_j' 0.287; code 'scale = c * I' 0.028; 'where c is ten over nine' 0.151, 'equals four' 0.018.",
+ "selection": "random draw"
+}

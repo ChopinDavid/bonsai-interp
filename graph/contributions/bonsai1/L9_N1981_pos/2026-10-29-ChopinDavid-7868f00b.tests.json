@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7868f00b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1981+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1981",
+   "pole": "+",
+   "label": "the inner piece of a long negated word split across tokens (in|extr|icably, un|erre|icht, insol|ent) and 'touch' after 'cannot': something that cannot be reached, separated or touched; the plain positive wording stays low",
+   "fire": [
+    "Her memories of that summer are inextricably bound up with the old farmhouse.",
+    "For the town, tourism and fishing have become inextricably intertwined.",
+    "Diese Leistung des Teams blieb lange Zeit unerreicht.",
+    "Der Rekord des Läufers ist bis heute unerreicht geblieben.",
+    "The waiter was so insolent that the guests left without paying.",
+    "Grief is a strange thing; you cannot touch it, yet it weighs on you.",
+    "A reputation is like air: you cannot touch it, but you notice when it is gone.",
+    "Der Dieb verschwand unauffällig in der Menge am Bahnhof."
+   ],
+   "quiet": [
+    "Her memories of that summer are closely tied to the old farmhouse.",
+    "For the town, tourism and fishing have become closely linked.",
+    "Diese Leistung des Teams wurde schnell übertroffen.",
+    "Der Rekord des Läufers wurde im Jahr darauf gebrochen.",
+    "The waiter was so friendly that the guests left a large tip.",
+    "Grief is a strange thing; it comes and goes, and it weighs on you.",
+    "A reputation is like a garden: it grows slowly, and you notice when it is gone.",
+    "Der Dieb verschwand schnell in der Menge am Bahnhof."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on the inner word piece; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner piece of in-/un- words (cannot be reached)",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: max 4.12, broad, mixed languages: 'حي' in مستحيل (impossible), 'lic' in nonreplicability, ' insol', 'icht' in unerreicht, 'uff' in unauffällig, ' touch' after 'cannot'. Probe: 'inextricably' 0.788, 'unerreicht' 0.587, 'cannot touch it' 0.566, 'insolent' 0.307, 'nonreplicability' 0.146; 'impossible' 0.036, 'easy to accept' 0.024. A guess at the common thread."
+}

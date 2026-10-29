@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4d388bae",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N981-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N981",
+   "pole": "-",
+   "label": "the words ' optional' and ' commissioned' and the 'itten' piece of 'smitten': an early spelling-level pole for a small set of word forms; the antonyms 'required', 'mandatory' and other verbs of ordering stay low",
+   "fire": [
+    "Wearing a tie to the dinner is optional, so many of the guests came in jeans.",
+    "In this course the final essay is optional and counts only as extra credit.",
+    "The sauce on the side is optional if you prefer the dish plain.",
+    "Joining the union is optional for part-time staff at the factory.",
+    "Last year the city commissioned a mural for the wall of the train station.",
+    "The orchestra commissioned a short piece from a young composer in Lisbon.",
+    "From the first dance, the young farmer was smitten with the baker's daughter.",
+    "My grandfather was smitten the moment he saw the old red tractor."
+   ],
+   "quiet": [
+    "Wearing a tie to the dinner is required, so none of the guests came in jeans.",
+    "In this course the final essay is mandatory and counts as half the grade.",
+    "The sauce on the side is included if you prefer the dish plain.",
+    "Joining the union is automatic for part-time staff at the factory.",
+    "Last year the city painted a mural on the wall of the train station.",
+    "The orchestra performed a short piece by a young composer in Lisbon.",
+    "From the first dance, the young farmer was nervous around the baker's daughter.",
+    "My grandfather was delighted the moment he saw the old red tractor."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.7 on the trigger tokens; near misses mostly below 0.2 (the pole is broad, so some weak firing)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' optional', ' commissioned', sm-'itten'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: max 1.66, broad (1.7% of tokens >= 0.1 of max), gate-closed regime, peaks ' commissioned' x6, ' optional' x5, 'itten' and 'mit' pieces. Probe: ' optional' 0.705 and 0.624, ' commissioned' 0.612, 'smitten' 0.711; 'commitment' 0.182, 'submit' 0.175, 'required' 0.031. A list label, because no shared meaning is visible across the three forms."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2248f346",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N5868+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N5868",
+   "pole": "+",
+   "label": "the word right after 'worst' or 'worse' (worst of, worst part, worse than): the negative-superlative side of the distinction, where 'best'/'better' stay low",
+   "fire": [
+    "Everyone agreed that the third winter was the worst of the whole decade.",
+    "For the players, the worst moment came in the final minute of the match.",
+    "Being ignored by your friends is worse than being criticized by them.",
+    "The flight was delayed, the hotel was dirty, and worst of all, it rained.",
+    "My grandmother says the worst thing about getting old is the loneliness.",
+    "The traffic on Friday was even worse than the radio had warned us.",
+    "He lost his keys on the worst day possible, right before the interview.",
+    "Of all the storms that hit the coast, that one was the worst by far."
+   ],
+   "quiet": [
+    "Everyone agreed that the third winter was the mildest of the whole decade.",
+    "For the players, the best moment came in the final minute of the match.",
+    "Being praised by your friends is nicer than being praised by strangers.",
+    "The flight was on time, the hotel was clean, and best of all, it was sunny.",
+    "My grandmother says the best thing about getting old is the free time.",
+    "The traffic on Friday was much lighter than the radio had warned us.",
+    "He found his keys on the best day possible, right before the interview.",
+    "Of all the storms that hit the coast, that one was the longest by far."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.9 on the token after 'worst'/'worse'; best/better versions below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token after worst/worse",
+ "unit_kind": "context",
+ "confidence": 0.7,
+ "notes": "Card: max 20.12, peaks ' worst' x9, ' of' x8, ' worse' x3, ' than'. Probe: 'worst of times' 0.876, 'worst part' 0.748, 'Worse than' 0.919, 'worst of all' 0.829; 'best of times' 0.197, 'best part' 0.020, 'Better than' 0.118."
+}

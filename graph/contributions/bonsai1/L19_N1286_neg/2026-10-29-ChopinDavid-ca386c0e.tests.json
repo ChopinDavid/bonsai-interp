@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ca386c0e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N1286-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N1286",
+   "pole": "-",
+   "label": "a word praising how appealing an idea, theory or plan seems ('intuitively attractive', 'an appealing theory', 'seductive in its simplicity'), usually before a 'but'; the same adjectives for physical things stay low",
+   "fire": [
+    "Many economists find the proposal intuitively appealing, though the data do not support it.",
+    "The theory that diet alone explains the trend is attractive, but it is almost certainly wrong.",
+    "Her explanation is elegant and appealing, which is exactly why we should test it carefully.",
+    "The notion that one gene controls intelligence is seductive in its simplicity.",
+    "To voters the promise of lower taxes and better services was an attractive idea.",
+    "It is a very appealing hypothesis, and I would like it to be correct.",
+    "The plan to rebuild the city in five years had an obvious emotional appeal.",
+    "At first glance the argument for a single global currency looks attractive."
+   ],
+   "quiet": [
+    "Many economists find the proposal intuitively confusing, and the data do not support it.",
+    "The house that we visited on Sunday is attractive, but it is far too expensive.",
+    "Her new coat is warm and appealing, and it was cheap at the winter sale.",
+    "The notion that one gene controls intelligence was rejected by most biologists.",
+    "To tourists the old harbor with its painted boats was an attractive place.",
+    "It is a very attractive garden, and the roses bloom twice a year.",
+    "The plan to rebuild the city in five years was approved by the council.",
+    "At first glance the young actor in the photograph looks attractive."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 on 'attractive'/'appealing'/'simplicity' describing an idea; physical attractiveness below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "appeal of an idea (attractive theory)",
+ "unit_kind": "meaning",
+ "confidence": 0.55,
+ "notes": "Card: max 56.75, peaks ' attractive' x3, ' appealing' x2, ' appeal', ' simplicity', ' sense', ' plausible', all about ideas or arguments. Probe: idea 'intuitively attractive' 0.521, 'appealing theory' 0.413, 'seductive in its simplicity' 0.529, 'plausible mechanism' 0.171; 'attractive view' 0.057, 'attractive blue dress' 0.025; 'make sense' 0.082."
+}

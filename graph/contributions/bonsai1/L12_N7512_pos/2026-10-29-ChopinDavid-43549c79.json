@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-43549c79",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N7512+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T07:27:30+00:00",
+ "recipe": {
+  "toolchain_commit": "d8dd857f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N7512_pos/2026-10-29-ChopinDavid-43549c79.tests.json"
+ },
+ "label": "the line break that opens a multi-line list literal in Python (`NAME = [` then a newline), together with comment-block and docstring line breaks; inline lists and ordinary statements stay lower",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N7512_pos/2026-10-29-ChopinDavid-43549c79.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.541,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.594,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.802,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.99,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.949,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.58,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.759,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.388,
+     "peak": " [\n"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.347,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.112,
+     "peak": "='"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": "import"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.126,
+     "peak": " text"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.226,
+     "peak": "data"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.026,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.172,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " cher"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.676,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d8dd857f",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "newline opening a multi-line Python list",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 8.31, peaks '\\n' x11, '#', ' [\\n' x3 (ERROR_STATES = [, MYSQL_CHARACTER_SETS = [), '.\\n\\n' and '\"\"\"\\n' in docstrings. Probe: 'ALLOWED_HOSTS = [\\n' 0.604, 'COLORS = [\\n' 0.479, comment block 0.338, docstring 0.226; the inline list scored 0.270 on ' =', 'x = compute(a, b)' 0.111, prose 0.002-0.018.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-16a69429",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N389-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N389",
+   "pole": "-",
+   "label": "a comma or operator ending a line inside an open bracket deep in a long Python call, where the next line will be a hanging-indent continuation; the same call written on one line stays low",
+   "fire": [
+    "class TestBoard(unittest.TestCase):\n    def test_move(self):\n        for move in self.game.legal_moves(self.board):\n            self.assertEqual(self.board.piece_at(move.start_square),\n                             move.piece)",
+    "class Client(object):\n    def fetch(self, path):\n        with mock.patch.object(self.session, \"request\",\n                               return_value=self.fake_response):\n            return self.get(path)",
+    "def build(self):\n    for item in self.items:\n        self.widgets.append(Label(text=item.title,\n                                  color=item.color,\n                                  size=item.size))",
+    "class Report(object):\n    def summary(self):\n        return {'cpu_details': [{'time': self.cpu_time},\n                                {'time': self.wall_time}]}",
+    "def warn(self, value):\n    if not self.validate(value):\n        raise ValueError(\"invalid value for \" + type(value).__name__ +\n                         \": \" + str(value))",
+    "class Loader(object):\n    def load(self, project_id):\n        return self.client.get_observations(project_id=project_id,\n                                            include_deleted=False)",
+    "def render(self):\n    for row in self.rows:\n        self.table.add_row(row.name,\n                           row.value,\n                           row.unit)",
+    "class Shop(object):\n    def order(self, customer):\n        return self.api.create_order(customer_id=customer.id,\n                                     items=customer.cart)"
+   ],
+   "quiet": [
+    "class TestBoard(unittest.TestCase):\n    def test_move(self):\n        for move in self.game.legal_moves(self.board):\n            self.assertEqual(self.board.piece_at(move.end_square), move.piece)",
+    "class Client(object):\n    def fetch(self, path):\n        with mock.patch.object(self.session, \"get\", return_value=self.fake_response):\n            return self.get(path)",
+    "def build(self):\n    for item in self.items:\n        self.widgets.append(Label(text=item.name, color=item.color, size=item.size))",
+    "class Report(object):\n    def summary(self):\n        return {'cpu_details': [{'time': self.cpu_time}, {'time': self.idle_time}]}",
+    "def warn(self, value):\n    if not self.validate(value):\n        raise ValueError(\"invalid value: \" + str(value))",
+    "class Loader(object):\n    def load(self, project_id):\n        return self.client.get_observations(project_id=project_id, include_deleted=True)",
+    "def render(self):\n    for row in self.rows:\n        self.table.add_row(row.label, row.value, row.unit)",
+    "class Shop(object):\n    def order(self, customer):\n        return self.api.create_order(customer_id=customer.id, items=customer.basket)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on the ',\\n' token of deep continuation lines; one-line calls below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "line break inside an open call (hanging indent)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 342, peaks ',\\n' x11, '\",\\n', ' +\\n', ')\\n', all followed by 30+ columns of alignment indentation in nested Python code. Probe: short continuation lines did not fire (parser.add_argument 0.061, compute_score 0.002, dict 0.003); the context that drives the top examples (deep nesting, long lines, test code) was not reproduced. Registered as a guess with deeper, longer lines."
+}

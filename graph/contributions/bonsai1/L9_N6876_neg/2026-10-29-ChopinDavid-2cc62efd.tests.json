@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2cc62efd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N6876-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T07:19:40+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N6876",
+   "pole": "-",
+   "label": "neuroimaging vocabulary: mapping brains in MRI (cortical thickness, stereotactic atlas, white matter, voxel, fractional anisotropy); the same words outside brain imaging ('atlas' of countries, 'subject' of a meeting) stay low",
+   "fire": [
+    "The T1-weighted scans of each participant were aligned to a standard brain atlas.",
+    "Patients with the disorder showed reduced cortical thickness in the frontal lobe.",
+    "Diffusion imaging revealed lower fractional anisotropy in the white matter tracts.",
+    "Gray matter volume was estimated for every voxel of the segmented MRI scans.",
+    "The electrodes were placed using stereotactic coordinates from the MRI.",
+    "Each subject's cortical surface was reconstructed from the structural scan.",
+    "Functional MRI showed stronger activation in the hippocampus during recall.",
+    "The white matter hyperintensities were counted on the FLAIR images by two raters."
+   ],
+   "quiet": [
+    "The old maps of each province were bound together into a large atlas.",
+    "Patients with the disorder reported feeling tired in the morning.",
+    "The new bridge revealed weak points in the steel cables during the storm.",
+    "Rainfall was estimated for every district of the country last year.",
+    "The tents were placed using coordinates from the hiking map.",
+    "Each student's essay was graded by the teacher over the weekend.",
+    "The survey showed stronger support for the plan among older voters.",
+    "The coins in the jar were counted by two volunteers after the fair."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.5 on imaging terms in MRI brain contexts; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "neuroimaging (MRI brain mapping)",
+ "unit_kind": "meaning",
+ "confidence": 0.45,
+ "notes": "Card: max 19.62, peaks on ' mm', ' subject' (MRI subject), ' mesh', ' atlas' (stereotactic), 'urface' (cortical surface), 'anis|ot|ropy', 'spacing' in MNE code. Probe: 'stereotactic atlas' 0.507, 'cortical thickness' 0.355, CT 'image analysis' 0.132, 'moving mesh' 0.075; world 'atlas' 0.031, meeting 'subject' 0.015, medical checkup 0.021."
+}
