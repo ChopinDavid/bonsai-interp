@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-49b76995",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2457+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N2457",
+   "pole": "+",
+   "label": "narration of a two-sided contest (a match, a bout, a lawsuit) at the token where the result is still pending: inside a conditional about the contest (pleads not guilty; if Jones had a full camp) or the adverb before the decisive act (Boston finally put it away); the same syntax in a non-contest domain is silent",
+   "fire": [
+    "If the accused pleads not guilty, the trial begins in September.",
+    "I would back Ortega to win if Diaz had a shorter camp this time.",
+    "After a tense fourth quarter, Toronto finally pulled away.",
+    "Arsenal had Xhaka sent off ten minutes from time.",
+    "If the plaintiff cannot prove damages, the jury must find for the defendant.",
+    "Nadal to win in straight sets at odds of 2/1.",
+    "The home side recovered from two goals down to snatch a late winner.",
+    "If the champion had a full training camp, I would not bet against him."
+   ],
+   "quiet": [
+    "If the tenant pays late, the landlord may charge a fee in September.",
+    "I would back the plan to succeed if the budget had a smaller shortfall.",
+    "After a slow fourth quarter, the company finally posted a profit.",
+    "The council had the old oak cut down ten minutes from the station.",
+    "If the applicant cannot prove residence, the clerk must refuse the permit.",
+    "Rain to clear by noon with highs of 21 degrees.",
+    "The bakery recovered from two bad years to open a second shop.",
+    "If the orchestra had a full rehearsal, the concert would sound better."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on ' not', ' had', ' finally' or the token before the outcome; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pending outcome of a two-sided contest",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: max 65.5, density 0.015%, peaks ' to' x10 (United to win, Spivak (-120) to get a stoppage, recovered ... to run out victors), ' they' (when they took a 14-point lead), ' finally' (Nashville finally pulled it out), ' had' (QPR had Barton sent off; if Holloway had a full camp), ' party' (if the party who filed), ' defendant' (If the defendant pleads guilty). Probe: 'pleads not guilty' 0.589 (peak ' not'), 'if Jones had a full camp' 0.406 (' had'), 'Boston finally put it away' 0.261, 'sent off before half time' 0.179, 'Chelsea to win 2-0' 0.139, 'run out comfortable winners' 0.109; non-contest controls 0.004-0.017. Direction clean, magnitude moderate."
+}

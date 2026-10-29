@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1f7a5d50",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N8645+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N8645",
+   "pole": "+",
+   "label": "guess: the subject of an English gerund or absolute clause after 'despite' or 'with' (Despite it raining; the best known case being), where a participle is about to follow; the same clause with a plain noun or a finite verb is silent",
+   "fire": [
+    "Despite them arriving an hour late, the hosts served dinner.",
+    "Despite him having no map, the group reached the summit.",
+    "Despite us losing the first set, the match turned around.",
+    "With her being away all week, the office was quiet.",
+    "Despite the road flooding every winter, nobody moved.",
+    "The oldest bridges were timber, the best known case being the one at Lucerne.",
+    "Despite it snowing heavily, the school stayed open.",
+    "With the river rising fast, the farmers moved their cattle."
+   ],
+   "quiet": [
+    "Despite their late arrival, the hosts served dinner.",
+    "Despite his lack of a map, the group reached the summit.",
+    "Despite our loss of the first set, the match turned around.",
+    "With her absence all week, the office was quiet.",
+    "Despite the winter floods on the road, nobody moved.",
+    "The oldest bridges were timber; the best known case is the one at Lucerne.",
+    "Despite the heavy snow, the school stayed open.",
+    "With the river already high, the farmers moved their cattle."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.3 on the subject pronoun or noun before the participle; near misses below 0.1; the Russian and Spanish half of the card did not transfer, so this is a guess",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "subject before a gerund in an absolute clause (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 118, density 0.001%, peaks on Russian adverbial-participle stems (пренеб|рег|ши, расстав|ля|я, загляд|ыв|ая, изуч|ив|шие), Spanish intent|ando, English 'the most famous example| being', 'Despite| it| growing'; the - pole suppresses -ing forms (requiring, having, needing). Probe: 'Despite it raining' 0.246 (peak ' it'), 'the most famous example being' 0.096; fresh Russian participles 0.005-0.009, Spanish gerund 0.003; 'Despite the rain' 0.063, finite controls 0.007-0.013. Only the English absolute clause showed anything, weakly."
+}

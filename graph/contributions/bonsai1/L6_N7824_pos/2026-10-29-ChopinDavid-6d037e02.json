@@ -1,0 +1,169 @@
+{
+ "id": "2026-10-29-ChopinDavid-6d037e02",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N7824+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T22:36:02+00:00",
+ "recipe": {
+  "toolchain_commit": "d84ec3d5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N7824_pos/2026-10-29-ChopinDavid-6d037e02.tests.json"
+ },
+ "label": "the German negative prefix un-/Un- opening an adjective or noun as its own token (un|ruhig, Un|fall, un|erwartet), also when the tokenizer fuses it with the next letters (ung|erecht); the Romance article un and German words that merely begin with un (unter, unsere) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N7824_pos/2026-10-29-ChopinDavid-6d037e02.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.677,
+     "peak": " un"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.467,
+     "peak": " Un"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.468,
+     "peak": "er"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.491,
+     "peak": " un"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.657,
+     "peak": "w"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.729,
+     "peak": " un"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.568,
+     "peak": " un"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.564,
+     "peak": " ung"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.119,
+     "peak": " Um"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": "Der"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " er"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " und"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " j"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " compr"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": "are"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " unter"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.566,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d84ec3d5",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "German negative prefix ' un'/' Un'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 30.88, density 0.013%, peaks ' un' x19, ' Un' x2, ' una' x2 (una|uffällig), ' on' (Dutch on|misbaar), all German/Dutch negative prefixes. Probe: unverändert 0.756, Unannehmlichkeiten 0.609, unklar 0.595, ungenau 0.518 (all peak ' un'/' Un'); fused ' ung|laublich' 0.520, ' unm|öglich' 0.374; Dutch onmisbaar only 0.147 (peak 'mis'); Spanish 'un libro' 0.004, French 'un livre' 0.066, English 'unclear' 0.012, floor 0.008. The same token ' un' as the Romance article is silent, so the pole reads the German prefix, not the string.",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   " un",
+   " Un",
+   " ung",
+   " unm",
+   " unb",
+   " uns",
+   " unf",
+   " unw",
+   " une",
+   " unbe",
+   " unre",
+   " unh",
+   " una"
+  ]
+ }
+}

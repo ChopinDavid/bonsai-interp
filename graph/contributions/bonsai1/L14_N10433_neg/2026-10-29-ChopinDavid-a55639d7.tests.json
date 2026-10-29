@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a55639d7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N10433-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N10433",
+   "pole": "-",
+   "label": "a plural noun counted by a numeral in a tally or survivors list (seven grandchildren, several stab wounds, four penalties), peak on the counted noun and strongest on grandchildren in obituaries; the same noun without a count is silent",
+   "fire": [
+    "He is survived by his wife of fifty years, two daughters and nine grandchildren.",
+    "Mrs Hale leaves four children, eleven grandchildren and a great-grandson.",
+    "The officer received three stab wounds during the arrest.",
+    "The home side gave away six penalties in the second half.",
+    "She was predeceased by her parents and is survived by five grandchildren.",
+    "The corps was made up of three infantry divisions and a cavalry brigade.",
+    "The referee called seven penalties against the visitors.",
+    "Grandpa Joe is survived by eight grandchildren and twelve great-grandchildren."
+   ],
+   "quiet": [
+    "He is survived by his wife of fifty years, who nursed him at home.",
+    "Mrs Hale leaves a garden that her grandchildren still tend.",
+    "The officer recovered from the stab wound within a month.",
+    "The home side protested the penalty in the second half.",
+    "She was predeceased by her parents and loved by her grandchildren.",
+    "The corps was reinforced by the infantry before the battle.",
+    "The referee explained the penalty to the visiting captain.",
+    "Grandpa Joe taught his grandchildren to fish on the lake."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.45 on the counted noun; near misses below 0.15; a weak pole (max 5.69), so some fire items will fall under 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "counted plural noun in a tally (grandchildren)",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: max 5.69 (weak), density 0.015%, leak 58%; peaks ' grandchildren' x4 (his/four/10/seven grandchildren in obituaries), ' stab' (several stab wounds), ' penalty'/' penalties' (five of the first seven penalties), ' Sisters', ' infantry' (two infantry brigades), ' dioxide'. Probe: 'seven grandchildren' 0.424, 'several stab wounds' 0.366, 'his grandchildren Tyler' 0.294, 'four penalties' 0.293, 'two infantry brigades' 0.145 (peak 'The'); 'three sons and many friends' 0.222 (peak ' sons'), 'several bruises' 0.259, 'four goals' 0.061, 'doted on her grandchildren' 0.062, floor 0.055. Other counted nouns leak (sons, bruises), the uncounted noun is silent."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9a5bf19c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N8565-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N8565",
+   "pole": "-",
+   "label": "guess for a weak context pole: the comma or preposition that opens a restrictive qualifier after a complete noun phrase ($10 per person, for a one-hour class; persons of good character; adults ages 19-50); the same phrase without the qualifier is silent",
+   "fire": [
+    "Tickets cost eight dollars per person, for the afternoon session only.",
+    "The grant is open to residents of good standing in the parish.",
+    "The vaccine is recommended for adults ages 65 and older.",
+    "Entries are accepted from amateurs of any age living in the county.",
+    "Lunch is six euros per child, for groups of ten or more.",
+    "Coach Lee took first place in the over-50 division at the regional meet.",
+    "The pool is reserved for members (swimming lessons excepted) after six.",
+    "Loans are available to farmers of limited means in the valley."
+   ],
+   "quiet": [
+    "Tickets cost eight dollars and the afternoon session sold out.",
+    "The grant is open to residents and parish staff.",
+    "The vaccine is recommended for adults and teenagers.",
+    "Entries are accepted from amateurs until the end of May.",
+    "Lunch is six euros and groups should book ahead.",
+    "Coach Lee took first place and thanked the regional organisers.",
+    "The pool is reserved for members after six.",
+    "Loans are available to farmers through the valley bank."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.3 on the comma or preposition; near misses below 0.1; the probe reached only 0.233, so the test will probably not hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "opener of a restrictive qualifier (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 37, density 0.017%, peaks ' in' x10 ('2nd place in the 30-39 division', 'runs in terms of inertia'), ',' ('$10 per person, for a one-hour'), ' of' ('persons of good character'), ' adults' ('for adults ages 19-50'), ' (' ('anything (plumbing related'), plus code accessors. Probe: 'per person, for the whole evening' 0.233 (peak ','), 'persons of good character' 0.232, 'for adults ages 18 and over' 0.162, 'under-12 category' 0.073, '(car related' 0.029; controls 0.017-0.162 ('for adults and 5 mg for children' 0.162). Direction right, magnitude too small; registered as a guess."
+}

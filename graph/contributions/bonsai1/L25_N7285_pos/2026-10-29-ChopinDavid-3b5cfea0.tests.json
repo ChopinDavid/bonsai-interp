@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3b5cfea0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N7285+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N7285",
+   "pole": "+",
+   "label": "guess for an unexplained pole: the connective (and, with, of, from, because) that introduces the second member of a pair of named siblings in encyclopedic prose (the X-1C ... the X-1D; FTSE 100 ... FTSE 250; amylases from B. licheniformis ... from B. subtilis), weak",
+   "fire": [
+    "The B-47 entered service in 1951. It was replaced within a decade by the B-52, which remained in use far longer.",
+    "The Nikkei 225 closed higher on Tuesday, and the Topix index gained almost as much.",
+    "The Northern raven is larger than the Common raven and ranges further into the Arctic.",
+    "The church was rebuilt in 1740 on the site of an earlier chapel, whose bell was kept.",
+    "Lactase from Kluyveromyces lactis works at lower temperatures than lactase from Aspergillus oryzae.",
+    "The first volume appeared in 1851 and the second followed only in 1863.",
+    "The Mark I was never sold to the public. The Mark II made its debut at the 1962 show.",
+    "The upper curve shows the loaded case, because it alone includes the extra weight."
+   ],
+   "quiet": [
+    "The B-47 entered service in 1951. It was praised by its crews for its speed.",
+    "The Nikkei 225 closed higher on Tuesday, and traders went home early.",
+    "The Northern raven is larger than most crows and ranges far into the Arctic.",
+    "The church was rebuilt in 1740 after a fire destroyed the roof.",
+    "Lactase from Kluyveromyces lactis works at lower temperatures than most people expect.",
+    "The first volume appeared in 1851 and sold out within a month.",
+    "The Mark I was never sold to the public. Only three were ever built.",
+    "The upper curve shows the loaded case, because the test was run at full weight."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.05-0.2; near misses below 0.1; the probe did not transfer (max 0.106 on both sides), so this test is expected to fail",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "connective before the sibling of a named item (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: max 41.5, density 0.020%, peaks ' and', ' of', ' from', ' with', ' to', ' in' in encyclopedic text where a named item has a sibling nearby: 'amylases from Bacillus subtilis' after B. licheniformis, 'never constructed. The X-1D' after X-1C, 'FTSE 100 ... 5,000 and the FTSE 250', 'super species with the Common flameback', 'too long with the Looking Glass' after Wonderland, 'primary curves, because they alone'. Probe: every sibling sentence scored 0.006-0.106 and the controls the same (0.011-0.106), so the sibling reading did not transfer; registered as a guess with longer two-sentence passages."
+}

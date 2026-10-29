@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7a673ab1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N446-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N446",
+   "pole": "-",
+   "label": "the head of a multi-word technical or institutional compound noun (Science Fair Project Encyclopedia, real estate drones, sperm proteomics, fleet software, knowledge network), peak on the head word; the same head word with a plain determiner instead of the compound modifier is silent",
+   "fire": [
+    "Volunteers update the Marine Species Identification Portal every winter.",
+    "The lab specialises in cancer genomics and tumour sequencing.",
+    "Farmers in the valley now rely on precision agriculture drones.",
+    "Shoppers compared supply chain software from three vendors.",
+    "The grant funds a citizen science weather network across the islands.",
+    "She wrote a thesis on soil microbiome sequencing.",
+    "The Rural Water Quality Database lists every well in the county.",
+    "The city buys renewable energy certificates to offset its power use."
+   ],
+   "quiet": [
+    "Volunteers update the portal every winter.",
+    "The lab specialises in sequencing of all kinds.",
+    "Farmers in the valley now rely on the drones.",
+    "Shoppers compared the software from three vendors.",
+    "The grant funds a network across the islands.",
+    "She wrote a thesis on the sequencing.",
+    "The database lists every well in the county.",
+    "The city buys the certificates to offset its power use."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on the head word; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "head of a technical compound noun",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: max 10.88, density 0.012%, peaks ' Encyclopedia' x5 (Science Fair Project Encyclopedia), ' network' (learning knowledge network), Korean 네트워크, 'D' (3D 프린팅), 'istrict' (redistricting), ' Software' (Fleet Software), ' prote|omics', ' drones' (real estate drones). Probe: proteomics 0.713 (peak 'omics'), Project Encyclopedia 0.655, real estate drones 0.625, fleet software 0.293, knowledge network 0.282, redistricting 0.282 (peak 'ing'); 'the magazine' 0.019, 'a small group' 0.097, 'a car' 0.045, floor 0.031."
+}

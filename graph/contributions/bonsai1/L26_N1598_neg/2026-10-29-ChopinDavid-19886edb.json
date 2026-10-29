@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-19886edb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N1598-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T22:35:43+00:00",
+ "recipe": {
+  "toolchain_commit": "d84ec3d5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N1598_neg/2026-10-29-ChopinDavid-19886edb.tests.json"
+ },
+ "label": "the join inside a well-known multi-part brand or franchise title: the colon before a subtitle (Star Trek: Discovery, Halo: Reach) or the hyphen or second word of a compound brand (Pepsi-Cola, Angry Birds, Pac-Man); a colon that introduces a list or explanation in prose is silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N1598_neg/2026-10-29-ChopinDavid-19886edb.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.613,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.725,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.646,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.659,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.68,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.206,
+     "peak": "-Man"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.034,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.1,
+     "peak": "-Benz"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.064,
+     "peak": "-ray"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.047,
+     "peak": " games"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " arcade"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.041,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": ":"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.653,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d84ec3d5",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "colon/joiner inside a franchise or brand title",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: max 136, density 0.016%, peaks ':' x12 in 'Law & Order: SVU', 'Stargate: Universe', 'Lego Star Wars: Force Awakens', 'STAR TREK: The Neverending', 'Wall Street: Money Never Sleeps'; also '—' in 'Petroleum Reserve—Alaska', ' Birds' in Angry Birds, '-Cola', ' Qaeda', ' (' in 'UCPN (M)'. Probe: 'Star Trek: Discovery' 0.924 (peak ':'), 'Halo: Reach' 0.471, 'Mission: Impossible' 0.425 (peak ' Impossible'), Pepsi-Cola 0.310, Angry Birds 0.216; list colon 0.008, 'Note:' 0.029, the same sentences without the franchise 0.003-0.035.",
+ "selection": "random draw"
+}

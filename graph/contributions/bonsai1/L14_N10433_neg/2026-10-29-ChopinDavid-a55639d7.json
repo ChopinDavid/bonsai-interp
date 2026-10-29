@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-a55639d7",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N10433-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T22:36:22+00:00",
+ "recipe": {
+  "toolchain_commit": "d84ec3d5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N10433_neg/2026-10-29-ChopinDavid-a55639d7.tests.json"
+ },
+ "label": "a plural noun counted by a numeral in a tally or survivors list (seven grandchildren, several stab wounds, four penalties), peak on the counted noun and strongest on grandchildren in obituaries; the same noun without a count is silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N10433_neg/2026-10-29-ChopinDavid-a55639d7.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.383,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.226,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.25,
+     "peak": " stab"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.317,
+     "peak": " penalties"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.352,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.143,
+     "peak": " infantry"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.07,
+     "peak": " penalties"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.246,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.087,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.273,
+     "peak": " stab"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.21,
+     "peak": " grandchildren"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.181,
+     "peak": " infantry"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.051,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.066,
+     "peak": " Joe"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.844,
+    "median_fire": 0.248,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d84ec3d5",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "counted plural noun in a tally (grandchildren)",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: max 5.69 (weak), density 0.015%, leak 58%; peaks ' grandchildren' x4 (his/four/10/seven grandchildren in obituaries), ' stab' (several stab wounds), ' penalty'/' penalties' (five of the first seven penalties), ' Sisters', ' infantry' (two infantry brigades), ' dioxide'. Probe: 'seven grandchildren' 0.424, 'several stab wounds' 0.366, 'his grandchildren Tyler' 0.294, 'four penalties' 0.293, 'two infantry brigades' 0.145 (peak 'The'); 'three sons and many friends' 0.222 (peak ' sons'), 'several bruises' 0.259, 'four goals' 0.061, 'doted on her grandchildren' 0.062, floor 0.055. Other counted nouns leak (sons, bruises), the uncounted noun is silent.",
+ "selection": "random draw"
+}

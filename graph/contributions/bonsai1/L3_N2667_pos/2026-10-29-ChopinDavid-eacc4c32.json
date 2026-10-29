@@ -1,0 +1,164 @@
+{
+ "id": "2026-10-29-ChopinDavid-eacc4c32",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N2667+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T22:37:15+00:00",
+ "recipe": {
+  "toolchain_commit": "d84ec3d5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N2667_pos/2026-10-29-ChopinDavid-eacc4c32.tests.json"
+ },
+ "label": "the piece that completes a Latinate word the tokenizer splits after a -ment stem (ornament|ation, sediment|ation, regiment|al, Fragment|ation, ferment|ación), and the stem Increment itself; the same words when they are a single token (fragmentation, incremental, documentation) and bare stems are weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N2667_pos/2026-10-29-ChopinDavid-eacc4c32.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.046,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.831,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.584,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.42,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.942,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.288,
+     "peak": "al"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.544,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.145,
+     "peak": "o"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.083,
+     "peak": " decoration"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.22,
+     "peak": " fragmentation"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.333,
+     "peak": " documentation"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.229,
+     "peak": " experimentation"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.193,
+     "peak": " implementation"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.76,
+     "peak": " incremental"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.105,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": " semanas"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.734,
+    "median_fire": 0.482,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d84ec3d5",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "suffix piece after a split -ment stem",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: max 1.12, density >0.1·max 7.7%, FLAG broad, FLAG gate-closed (-x- echo 100%); peaks 'ation' x5 (Segment|ation, regiment|ation), 'al' x4 (segment|al, Increment|al), 'Increment' x2, ' increment' x2, 'ente' (íntegram|ente), 'iation' (Instant|iation), Japanese 性, Arabic مر. The - pole is ' instrument'/' instrumentation'. Probe: Incremental 0.881 (peak 'Increment'), regimentation 0.830, Instantiation 0.824, Segmentation 0.710 (all on the suffix piece), 'incremento' 0.670 (peak ' increment'); controls 'Sorting the data' 0.062, 'Small changes' 0.089, 'created at import time' 0.099, floor 0.137 (peak 'ill'). Despite the dense flag the probe separates cleanly, so this is registered as a lexical label with the flag noted.",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   "ation",
+   "al",
+   "iation",
+   "ación",
+   "mentation",
+   " increment",
+   "Increment",
+   "ente"
+  ]
+ }
+}

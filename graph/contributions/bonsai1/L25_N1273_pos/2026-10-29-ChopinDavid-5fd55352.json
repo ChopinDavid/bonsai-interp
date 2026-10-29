@@ -1,0 +1,170 @@
+{
+ "id": "2026-10-29-ChopinDavid-5fd55352",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N1273+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T22:35:56+00:00",
+ "recipe": {
+  "toolchain_commit": "d84ec3d5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N1273_pos/2026-10-29-ChopinDavid-5fd55352.tests.json"
+ },
+ "label": "the piece after ' St' in a surname that the tokenizer splits as St + an o-piece (St|ol|z, St|oll|man, St|ok|owski, St|oss|el), peak on that piece; St- surnames split with another vowel (St|al|berg, St|el|zer) and the same pieces after other onsets (Vol|z, Hol|zer) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N1273_pos/2026-10-29-ChopinDavid-5fd55352.tests.json",
+   "prereg_commit": "d84ec3d5",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.781,
+     "peak": "ok"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.097,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.222,
+     "peak": "olle"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.119,
+     "peak": "olar"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.06,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.971,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.301,
+     "peak": "oll"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.731,
+     "peak": "ob"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.305,
+     "peak": "al"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": "z"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.349,
+     "peak": "el"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " young"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " Sol"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.646,
+     "peak": "ul"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.325,
+     "peak": "al"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": "olt"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.756,
+    "near_misses_at_0.3": 4
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d84ec3d5",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "o-piece after ' St' in a split surname",
+ "unit_kind": "token/lexical",
+ "confidence": 0.7,
+ "notes": "Card: max 344, density 0.004%, peaks 'ol' x10 (St|ol|nitz, St|ol|hanske, St|ol|te, St|ol|tenberg), ' Sto' x3 (Sto|iber), 'or' x3, 'opp' x2 (St|opp|ard), 'os' (St|os|z), 'p' (Stö|p|pler). Probe: Stolberg 1.043, Stolper 1.006, Stoltenberg 0.998 (all peak 'ol'), Stossel 0.750 ('oss'), Stoltzfus 0.717 ('olt'); Steiner 0.014, Stirling 0.140, Holtz 0.007, Kolnitz 0.002, floor 0.001. The onset ' St' plus an o-initial piece carries it; the piece alone (Kol|nitz) and the onset alone (Ste|iner) do not.",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   "ol",
+   "olt",
+   "oss",
+   "opp",
+   "os",
+   "or",
+   "ob",
+   "ok",
+   "oll",
+   "off",
+   "olar",
+   "olle",
+   "ober",
+   " Sto"
+  ]
+ }
+}

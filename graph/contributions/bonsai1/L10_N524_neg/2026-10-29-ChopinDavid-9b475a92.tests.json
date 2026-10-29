@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9b475a92",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N524-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N524",
+   "pole": "-",
+   "label": "a later word of a multi-word organisation or institution name (Medical College of Georgia, Real Estate Partners, Northwest Allen County Schools), peak on the word that completes the name; a generic noun phrase in the same slot is silent",
+   "fire": [
+    "She completed her residency at the University of Southern Mississippi's medical center.",
+    "Oak Hill Capital Partners bought the chain of pharmacies last year.",
+    "The Fort Wayne Community Schools board approved the new calendar.",
+    "He teaches chemistry at Eastern Kentucky Regional Medical Center's nursing school.",
+    "Lakeview Dental Associates opened a second clinic on Main Street.",
+    "The grant went to the Great Lakes Regional Library System in March.",
+    "After graduating she joined Riverside Community Health Partners as a nurse.",
+    "The engineering faculty at Sheffield Hallam University hosted the fair."
+   ],
+   "quiet": [
+    "She completed her residency at a large hospital in the south.",
+    "A private investment group bought the chain of pharmacies last year.",
+    "The local school board approved the new calendar.",
+    "He teaches chemistry at a nursing school in the hills.",
+    "A small dental practice opened a second clinic on Main Street.",
+    "The grant went to the county library in March.",
+    "After graduating she joined a community clinic as a nurse.",
+    "The engineering faculty at a northern university hosted the fair."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on the second or later word of the name; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "later word of a multi-word institution name",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: max 6.38 (weak), density 0.031%, peaks ' of' (Medical College of Virginia), ' liberal' (our liberal arts college), ' Partners' (Real Estate Partners), ' Allen' (Northwest Allen County Schools), '’s' (Children's Village), address digits. Probe: 'Medical College of Georgia' 0.766 (peak ' Georgia'), 'Real Estate Partners' 0.783, 'Northwest Allen County Schools' 0.725, '1779 Kirby Parkway' 0.251, 'liberal arts college' 0.189; 'Boys Town' 0.022 and 'severance agreement' 0.031 did not fire; generic controls 0.006-0.179. Long compositional names carry it, short two-word names do not."
+}

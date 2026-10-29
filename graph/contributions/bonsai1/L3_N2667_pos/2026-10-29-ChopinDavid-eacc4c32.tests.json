@@ -1,0 +1,60 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-eacc4c32",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N2667+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N2667",
+   "pole": "+",
+   "label": "the piece that completes a Latinate word the tokenizer splits after a -ment stem (ornament|ation, sediment|ation, regiment|al, Fragment|ation, ferment|ación), and the stem Increment itself; the same words when they are a single token (fragmentation, incremental, documentation) and bare stems are weak",
+   "fire": [
+    "Baroque churches are famous for their lavish ornamentation.",
+    "Heavy sedimentation has narrowed the harbour channel.",
+    "The cementation of sand grains turns loose dunes into rock.",
+    "Mendel's complementation tests sorted the mutants into groups.",
+    "The lawyer's argumentation rested on a single precedent.",
+    "The regimental band played at the ceremony.",
+    "Fragmentation of the forest threatens the owls.",
+    "La fermentación del mosto dura unas dos semanas."
+   ],
+   "quiet": [
+    "Baroque churches are famous for their lavish decoration.",
+    "Heavy fragmentation has split the harbour committee.",
+    "The documentation of the dunes turned up old maps.",
+    "Mendel's experimentation sorted the plants into groups.",
+    "The lawyer's implementation of the plan rested on one clerk.",
+    "The incremental changes pleased the band.",
+    "A fragment of the forest survives near the owls' nest.",
+    "El vino del valle se vende en unas dos semanas."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on 'ation'/'al'/'ación'; near misses below 0.15; the card flags the unit as broad (7.7% of tokens reach 0.1 of max), so the floor is not zero",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "suffix piece after a split -ment stem",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: max 1.12, density >0.1·max 7.7%, FLAG broad, FLAG gate-closed (-x- echo 100%); peaks 'ation' x5 (Segment|ation, regiment|ation), 'al' x4 (segment|al, Increment|al), 'Increment' x2, ' increment' x2, 'ente' (íntegram|ente), 'iation' (Instant|iation), Japanese 性, Arabic مر. The - pole is ' instrument'/' instrumentation'. Probe: Incremental 0.881 (peak 'Increment'), regimentation 0.830, Instantiation 0.824, Segmentation 0.710 (all on the suffix piece), 'incremento' 0.670 (peak ' increment'); controls 'Sorting the data' 0.062, 'Small changes' 0.089, 'created at import time' 0.099, floor 0.137 (peak 'ill'). Despite the dense flag the probe separates cleanly, so this is registered as a lexical label with the flag noted.",
+ "trigger": {
+  "pieces": [
+   "ation",
+   "al",
+   "iation",
+   "ación",
+   "mentation",
+   " increment",
+   "Increment",
+   "ente"
+  ]
+ }
+}
