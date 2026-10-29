@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N10876-",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 10876,
+ "pole": "-",
+ "label": "a singular count noun whose article has been dropped after an adjective ('releases precise amount of', 'serve as good source of'); the same phrase with 'a' or 'the' stays low",
+ "short": "noun missing its article",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N10876_neg/2026-10-29-ChopinDavid-b05a2aa1.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.536,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.68,
+     "peak": " source"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.354,
+     "peak": " part"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.341,
+     "peak": " replacement"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.543,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.512,
+     "peak": " spot"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.753,
+     "peak": " factor"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.753,
+     "peak": " overview"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.105,
+     "peak": " dose"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.031,
+     "peak": " village"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " cheap"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " winter"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " tax"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.54,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-b05a2aa1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-b05a2aa1",
+   "a singular count noun whose article has been dropped after an adjective ('releases precise amount of', 'serve as good source of'); the same phrase with 'a' or 'the' stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-b05a2aa1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

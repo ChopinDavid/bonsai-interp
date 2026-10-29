@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N11137+",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 11137,
+ "pole": "+",
+ "label": "a noun naming the kind or amount of something before 'of' ('the type of injury', 'the nature or severity of', 'the number of observations'): the dimension along which a thing varies; part or location nouns before 'of' stay low",
+ "short": "kind/amount noun before 'of'",
+ "kind": "meaning/context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N11137_pos/2026-10-29-ChopinDavid-62d2a450.tests.json",
+   "prereg_commit": "d81c928d",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.274,
+     "peak": " type"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.244,
+     "peak": " amount"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.105,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.531,
+     "peak": " nature"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.134,
+     "peak": " quantity"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.178,
+     "peak": " kind"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.191,
+     "peak": " number"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.103,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.201,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " letter"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": "Teachers"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " hands"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": " clerk"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " corner"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": " each"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": "ages"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.184,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-62d2a450"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-62d2a450",
+   "a noun naming the kind or amount of something before 'of' ('the type of injury', 'the nature or severity of', 'the number of observations'): the dimension along which a thing varies; part or location nouns before 'of' stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-62d2a450"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
