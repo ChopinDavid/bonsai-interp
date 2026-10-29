@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-c846751e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N5258+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N5258",
+   "pole": "+",
+   "label": "the end of the first term in 'between X and Y', on the token just before 'and': the pole marks the first member of a two-sided relation; the same nouns joined by 'and' without 'between' stay near zero",
+   "fire": [
+    "Engineers measured the gap between the wheel and the frame.",
+    "The novel describes the friendship between a fisherman and a priest.",
+    "Talks between the workers and the owners lasted all night.",
+    "The map shows the border between the farmers and the herders.",
+    "There is a long rivalry between the miners and the mill hands.",
+    "She studied the balance between predators and prey on the island.",
+    "The treaty fixed the boundary between the kingdom and the duchy.",
+    "Doctors noticed a link between the medicine and the rash."
+   ],
+   "quiet": [
+    "Engineers measured the wheel and the frame separately.",
+    "The novel describes a fisherman and a priest who become friends.",
+    "The workers and the owners talked all night.",
+    "The map shows where the farmers and the herders live.",
+    "The miners and the mill hands have long been rivals.",
+    "She counted predators and prey on the island.",
+    "The kingdom and the duchy signed the treaty.",
+    "Doctors noticed the medicine and the rash appeared together."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on the last token of X; no-'between' versions below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first term of 'between X and Y'",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: last token of X in 'between X and Y' (federations, object, concessionarias, nomads, cultures). Probe: between the object and 0.363, nomads 0.293, contractors 0.266; the same nouns without 'between' 0.000-0.001; 'Between meetings' 0.031. One probe item ('the dispute between the federations and the central government') stayed at 0.007, so this may be narrower than it looks."
+}

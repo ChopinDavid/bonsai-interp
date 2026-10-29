@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-34fa7838",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N330-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N330",
+   "pole": "-",
+   "label": "the United States (American) as a political actor: 'American' or 'United States' naming a state, its officials or its rivalry with another power; ordinary sentences with no country stay low",
+   "fire": [
+    "The American ambassador met the foreign minister on Tuesday.",
+    "The United States and China traded accusations at the summit.",
+    "An American congressman demanded new sanctions.",
+    "Talks between the United States and Iran stalled again.",
+    "The American president signed the arms agreement.",
+    "Relations between the United States and Russia cooled after the vote.",
+    "The American delegation left the conference early.",
+    "An American senator questioned the general about the war."
+   ],
+   "quiet": [
+    "The new ambassador met the foreign minister on Tuesday.",
+    "The two companies traded accusations at the meeting.",
+    "A local councillor demanded new parking rules.",
+    "Talks between the two neighbours stalled again.",
+    "The club president signed the new player.",
+    "Relations between the two brothers cooled after the wedding.",
+    "The school delegation left the science fair early.",
+    "A curious student questioned the teacher about the test."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.55 on 'American'/'Russia'/the official noun; country-free versions below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the US as a political actor",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: weak, scattered (max 3.78): 美國, Russia after 'United States and', American senator, REPUBLICAN, usa. Probe: American senator 0.548, United States and Russia 0.463, € 0.208; 'South America' 0.003, Britain 0.003, Republican from Massachusetts 0.094. Low confidence: the US-political reading is the best fit to two strong probes."
+}

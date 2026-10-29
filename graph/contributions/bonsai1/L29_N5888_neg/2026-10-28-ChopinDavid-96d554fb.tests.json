@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-96d554fb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N5888-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N5888",
+   "pole": "-",
+   "label": "'time' (or clock/timer) as a measured physical or system quantity (GPS time, time dilation, the device's clock): the pole marks the quantity word; 'time' as an occasion or duration in everyday speech stays low",
+   "fire": [
+    "The receiver corrects its internal time using the satellite signal.",
+    "Near a black hole, gravitational time dilation becomes extreme.",
+    "The logger records the board time with every sensor reading.",
+    "Each node syncs its time with the server over NTP.",
+    "Relativity predicts that moving clocks show less elapsed time.",
+    "The firmware reads the RTC time before writing the file.",
+    "Atomic clocks keep time to within a billionth of a second.",
+    "The script compares the local time with the GPS time stamp."
+   ],
+   "quiet": [
+    "We spent a lovely time with our cousins in the country.",
+    "Near the old harbour, we had a great time eating fish.",
+    "The children asked if it was time for a story.",
+    "Each summer we find time to visit the lake.",
+    "My grandmother says that time with family matters most.",
+    "The guests arrived just in time for the toast.",
+    "It took a long time to bake the bread.",
+    "She asked whether this was a good time to call."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on 'time'/'clock' in technical contexts; everyday 'time' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "time as a measured quantity",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' time' x5, 'Time' x3, ' clock' x2 in system/physics text (TIME formats, GPS time, cpu_time, time dilation). Probe: time dilation 0.704, adjust its time 0.544, GPS time 0.438, timer 0.330, battery 0.328; 'system clock to UTC' only 0.102; 'a wonderful time' 0.002, 'time for dinner' 0.007."
+}

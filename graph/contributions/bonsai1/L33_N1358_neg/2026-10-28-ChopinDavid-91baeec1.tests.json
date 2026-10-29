@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-91baeec1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N1358-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N1358",
+   "pole": "-",
+   "label": "a bare 'D' token that opens a proper name split into pieces (D|alian, D|reyfus, D|vorak): the pole marks the word-initial D piece; names split from other letters stay low",
+   "fire": [
+    "The ferry left the harbour of Dalian shortly after sunrise.",
+    "Every schoolchild in France learns about the Dreyfus case.",
+    "The orchestra closed the concert with a symphony by Dvorak.",
+    "Their flight to Dushanbe was delayed by a dust storm.",
+    "Mountain villages in Dagestan cling to the steep slopes.",
+    "The newspaper published new letters from the Dreyfus trial.",
+    "Steel exports from Dalian rose sharply last year.",
+    "She practised a slow piece by Dvorak on the violin."
+   ],
+   "quiet": [
+    "The ferry left the harbour of Kobe shortly after sunrise.",
+    "Every schoolchild in France learns about the Panama case.",
+    "The orchestra closed the concert with a symphony by Brahms.",
+    "Their flight to Tashkent was delayed by a dust storm.",
+    "Mountain villages in Tyrol cling to the steep slopes.",
+    "The newspaper published new letters from the Nuremberg trial.",
+    "Steel exports from Busan rose sharply last year.",
+    "She practised a slow piece by Elgar on the violin."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45 on ' D'; other split names below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-initial 'D' piece of a split name",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Card: ' D' x4, '-d' x3, 'd' x2 (one-drawer, Dalian, Dreyfus, dressed). Probe: Dalian 0.421, Dreyfus 0.270, dressed 0.246; 'Panama scandal' 0.004, pine tree 0.008. The one-drawer item peaked on ' of' (0.366) and its wooden-table control too (0.210), so near misses avoid 'made of'."
+}

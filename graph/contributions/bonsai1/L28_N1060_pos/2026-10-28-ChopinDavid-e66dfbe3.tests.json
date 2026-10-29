@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e66dfbe3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N1060+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N1060",
+   "pole": "+",
+   "label": "the preposition that completes the idiom 'put an end to' / 'put a stop to', where the next word names the thing to be ended: literal uses of 'end' and 'stop' stay low",
+   "fire": [
+    "Teachers are trying to put an end to cheating on exams.",
+    "The new law should put a stop to illegal dumping.",
+    "Neighbours worked together to put an end to the noise.",
+    "The coach wants to put an end to the losing streak.",
+    "Voters hope the treaty will put an end to the fighting.",
+    "A simple fence put a stop to the deer eating our roses.",
+    "The mayor promised to bring an end to the long strike.",
+    "Only a change of diet put an end to his headaches."
+   ],
+   "quiet": [
+    "Teachers waited at the end of the hall after the exams.",
+    "The new bus will stop at the old dumping ground.",
+    "Neighbours met at the end of the street to talk.",
+    "The coach walked to the end of the bench and sat.",
+    "Voters lined up until the end of the afternoon.",
+    "A simple fence stood at the end of our rose garden.",
+    "The mayor reached the end of his long speech.",
+    "His headaches came back at the end of every week."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.35 on ' to'; literal 'end of' and 'stop at' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'to' completing 'put an end to'",
+ "unit_kind": "context",
+ "confidence": 0.2,
+ "notes": "Card: ' of' x5, ' to' x3 completing verb phrases (put an end to, get rid of, claim that). Probe: 'put an end to' 0.284; 'get rid of' 0.134, 'claim that' 0.088, 'to find' 0.061, 'to cause' 0.058; literal 'end of the road' 0.018. Only the 'end to' idiom approached threshold, so the test bets on it."
+}

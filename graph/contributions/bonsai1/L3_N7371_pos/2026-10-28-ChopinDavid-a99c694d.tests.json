@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a99c694d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N7371+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N7371",
+   "pole": "+",
+   "label": "the piece 'сп' after the prefix в- in Russian verbs and nouns (вспомнить, вспыхнуть, вспышка): the pole fires on that spelling unit; the same meanings with other verbs stay low",
+   "fire": [
+    "Когда мы сели ужинать, бабушка вспомнила свою молодость.",
+    "Ночью над лесом вспыхнула яркая молния.",
+    "Утром старик вспахал огород за домом.",
+    "После долгого подъёма туристы сильно вспотели.",
+    "На горизонте мелькнула короткая вспышка света.",
+    "Мой сосед очень вспыльчивый, но быстро успокаивается.",
+    "Сидя у окна, она вспоминала летние каникулы.",
+    "Внезапно в темноте вспыхнул фонарик."
+   ],
+   "quiet": [
+    "Когда мы сели ужинать, бабушка рассказала про свою молодость.",
+    "Ночью над лесом сверкнула яркая молния.",
+    "Утром старик перекопал огород за домом.",
+    "После долгого подъёма туристы сильно устали.",
+    "На горизонте мелькнул короткий отблеск света.",
+    "Мой сосед очень нервный, но быстро успокаивается.",
+    "Сидя у окна, она думала о летних каникулах.",
+    "Внезапно в темноте загорелся фонарик."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45 on 'сп'; synonyms without вс- below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Russian 'сп' after prefix в-",
+ "unit_kind": "token/lexical",
+ "confidence": 0.3,
+ "notes": "Card: broad, weak (max 0.81), mixed Russian pieces with 'сп' x3 (вспыльчивый, вспоминая). Probe: вспыхнул 0.417, вспомнил 0.359, валяние 0.315, врач 0.205; 'обратил внимание' 0.109, neutral Russian 0.069, English 0.08-0.19. Coverage of the broad pole is low; this is the best token-level handle."
+}

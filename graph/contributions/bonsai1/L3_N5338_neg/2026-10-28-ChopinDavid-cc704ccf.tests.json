@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-cc704ccf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N5338-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T02:19:46+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N5338",
+   "pole": "-",
+   "label": "a single letter written straight after a digit (7q31, 5l, 3h, 12v), as a unit or locus code: the pole marks the letter piece; the same quantities with the unit spelled out stay low",
+   "fire": [
+    "The mutation maps to chromosome 11p15 in most patients.",
+    "Fill a 5l bucket with warm water and add the soap.",
+    "The marathon leaders passed the 2h mark together.",
+    "Connect the lamp to a 12v battery before testing.",
+    "A deletion at 22q11 causes several heart defects.",
+    "The recipe needs a 2l pot and a wooden spoon.",
+    "Our flight was delayed by 4h because of the storm.",
+    "The variant sits near band 9q34 on the long arm."
+   ],
+   "quiet": [
+    "The mutation maps to the short arm of chromosome eleven in most patients.",
+    "Fill a five litre bucket with warm water and add the soap.",
+    "The marathon leaders passed the two hour mark together.",
+    "Connect the lamp to a twelve volt battery before testing.",
+    "A deletion on the long arm of chromosome twenty-two causes several heart defects.",
+    "The recipe needs a two litre pot and a wooden spoon.",
+    "Our flight was delayed by four hours because of the storm.",
+    "The variant sits near the end of the long arm."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on the letter after the digit; spelled-out units below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "letter right after a digit (7q31, 3l)",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: broad weak pole (max 1.80); peaks include 7q31, '3l' centrifuge, '2ј', '3h' trap alongside endorse/well. Probe: chromosome 7q31 'q' 0.375; endorse/endorsement/endorsing 0.019-0.065, well-boiled -0.007. Tokenizer splits '7q31' into '7','q','3','1' and '5l' into '5','l'."
+}
