@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N7512+",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 7512,
+ "pole": "+",
+ "label": "the line break that opens a multi-line list literal in Python (`NAME = [` then a newline), together with comment-block and docstring line breaks; inline lists and ordinary statements stay lower",
+ "short": "newline opening a multi-line Python list",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N7512_pos/2026-10-29-ChopinDavid-43549c79.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.541,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.594,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.802,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.99,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.949,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.58,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.759,
+     "peak": " [\n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.388,
+     "peak": " [\n"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.347,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.112,
+     "peak": "='"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": "import"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.126,
+     "peak": " text"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.226,
+     "peak": "data"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.026,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.172,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " cher"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.676,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-43549c79"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-43549c79",
+   "the line break that opens a multi-line list literal in Python (`NAME = [` then a newline), together with comment-block and docstring line breaks; inline lists and ordinary statements stay lower",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-43549c79"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

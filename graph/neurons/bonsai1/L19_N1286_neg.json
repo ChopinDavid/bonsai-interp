@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N1286-",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 1286,
+ "pole": "-",
+ "label": "a word praising how appealing an idea, theory or plan seems ('intuitively attractive', 'an appealing theory', 'seductive in its simplicity'), usually before a 'but'; the same adjectives for physical things stay low",
+ "short": "appeal of an idea (attractive theory)",
+ "kind": "meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N1286_neg/2026-10-29-ChopinDavid-ca386c0e.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.673,
+     "peak": " appealing"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.189,
+     "peak": " attractive"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.318,
+     "peak": " elegant"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.239,
+     "peak": " simplicity"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.334,
+     "peak": " idea"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.369,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.601,
+     "peak": " appeal"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.413,
+     "peak": " attractive"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.271,
+     "peak": "ively"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.073,
+     "peak": " attractive"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.072,
+     "peak": " appealing"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.11,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.247,
+     "peak": " attractive"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.116,
+     "peak": " attractive"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.05,
+     "peak": " glance"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.507,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-ca386c0e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-ca386c0e",
+   "a word praising how appealing an idea, theory or plan seems ('intuitively attractive', 'an appealing theory', 'seductive in its simplicity'), usually before a 'but'; the same adjectives for physical things stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-ca386c0e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

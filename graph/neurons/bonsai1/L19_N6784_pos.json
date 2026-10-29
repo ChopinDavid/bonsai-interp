@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N6784+",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 6784,
+ "pole": "+",
+ "label": "the copula or comparison that links a subject to a property being stated or checked ('the digits are odd', 'aren't', `obj.attr) ==`): the hinge between subject and predicate in descriptive or test statements; action verbs stay low",
+ "short": "copula/comparison linking subject to property",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N6784_pos/2026-10-29-ChopinDavid-9681ba69.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.065,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.392,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.578,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.285,
+     "peak": "'t"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.123,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.271,
+     "peak": ".status"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.151,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.306,
+     "peak": "'t"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.034,
+     "peak": " valves"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.054,
+     "peak": " digits"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.049,
+     "peak": ".place"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": "This"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.029,
+     "peak": " returns"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.02,
+     "peak": ")\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.057,
+     "peak": " kitchen"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.278,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-9681ba69"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-9681ba69",
+   "the copula or comparison that links a subject to a property being stated or checked ('the digits are odd', 'aren't', `obj.attr) ==`): the hinge between subject and predicate in descriptive or test statements; action verbs stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-9681ba69"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

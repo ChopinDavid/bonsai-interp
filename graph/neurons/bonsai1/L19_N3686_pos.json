@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N3686+",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 3686,
+ "pole": "+",
+ "label": "the closing word of a short qualifying aside that restates how something holds: 'too' in 'so, too,' and 'nature' in 'X in nature'; the bare 'so' and 'nature' as a topic stay low",
+ "short": "'too' in 'so, too', 'nature' in 'in nature'",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N3686_pos/2026-10-29-ChopinDavid-e94a29a3.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.276,
+     "peak": " too"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.064,
+     "peak": " too"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.037,
+     "peak": " above"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.421,
+     "peak": " too"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.054,
+     "peak": " nature"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.055,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.065,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.03,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.043,
+     "peak": " cities"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " feared"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.028,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.084,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.018,
+     "peak": " did"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.035,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " hills"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.059,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-e94a29a3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-e94a29a3",
+   "the closing word of a short qualifying aside that restates how something holds: 'too' in 'so, too,' and 'nature' in 'X in nature'; the bare 'so' and 'nature' as a topic stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-e94a29a3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N981-",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 981,
+ "pole": "-",
+ "label": "the words ' optional' and ' commissioned' and the 'itten' piece of 'smitten': an early spelling-level pole for a small set of word forms; the antonyms 'required', 'mandatory' and other verbs of ordering stay low",
+ "short": "' optional', ' commissioned', sm-'itten'",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N981_neg/2026-10-29-ChopinDavid-4d388bae.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.304,
+     "peak": " optional"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.604,
+     "peak": " optional"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.474,
+     "peak": " optional"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.401,
+     "peak": " optional"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.646,
+     "peak": " commissioned"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.614,
+     "peak": " commissioned"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.781,
+     "peak": "itten"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.737,
+     "peak": "itten"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": " jeans"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " if"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.046,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.035,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.228,
+     "peak": " orchestra"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.118,
+     "peak": " delighted"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.609,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-4d388bae"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-4d388bae",
+   "the words ' optional' and ' commissioned' and the 'itten' piece of 'smitten': an early spelling-level pole for a small set of word forms; the antonyms 'required', 'mandatory' and other verbs of ordering stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-4d388bae"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

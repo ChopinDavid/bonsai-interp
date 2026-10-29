@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N6876-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 6876,
+ "pole": "-",
+ "label": "neuroimaging vocabulary: mapping brains in MRI (cortical thickness, stereotactic atlas, white matter, voxel, fractional anisotropy); the same words outside brain imaging ('atlas' of countries, 'subject' of a meeting) stay low",
+ "short": "neuroimaging (MRI brain mapping)",
+ "kind": "meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N6876_neg/2026-10-29-ChopinDavid-2cc62efd.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.779,
+     "peak": " atlas"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.118,
+     "peak": " thickness"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.609,
+     "peak": "ot"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.821,
+     "peak": " segmented"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.025,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.481,
+     "peak": " surface"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.139,
+     "peak": " activation"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.46,
+     "peak": " FL"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " old"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " morning"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " steel"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": " placed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " weekend"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.023,
+     "peak": " older"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " after"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.471,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-2cc62efd"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-2cc62efd",
+   "neuroimaging vocabulary: mapping brains in MRI (cortical thickness, stereotactic atlas, white matter, voxel, fractional anisotropy); the same words outside brain imaging ('atlas' of countries, 'subject' of a meeting) stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-2cc62efd"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
