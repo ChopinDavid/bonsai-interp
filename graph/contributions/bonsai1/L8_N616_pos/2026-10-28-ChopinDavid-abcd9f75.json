@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-abcd9f75",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N616+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T04:30:40+00:00",
+ "recipe": {
+  "toolchain_commit": "1e68a567",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N616_pos/2026-10-28-ChopinDavid-abcd9f75.tests.json"
+ },
+ "label": "a single capital letter used as a variable or label in a formal description (let X be, nodes A and D, point C): the pole marks a placeholder symbol; the same sentences with ordinary words in that slot stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N616_pos/2026-10-28-ChopinDavid-abcd9f75.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.87,
+     "peak": " Q"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.271,
+     "peak": " S"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.099,
+     "peak": " M"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.121,
+     "peak": " f"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.167,
+     "peak": " parent"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.46,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.48,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.161,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.192,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.083,
+     "peak": " contains"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.12,
+     "peak": " function"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.079,
+     "peak": " green"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.131,
+     "peak": " equation"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.125,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.219,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1e68a567",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "capital letter as a variable",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: broad (1.2%), peaks on ' D' (interior node and D), ' C', '-A', 'Let X represent', ' a' in definitions. Probe: 'let Y be its negation' 0.764, 'B, another interior node, and D' 0.628, 'connected to both A and E' 0.531; 'a sandwich and a coffee' 0.045, 'the mailman' 0.040. 'Its symbol is a' 0.687 and 'introduction of a' 0.309 show 'a' in definitions also fires; not used here.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-fedd19c9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N3823-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N3823",
+   "pole": "-",
+   "label": "'either' (or German entw|eder) opening an either...or choice between two options: the pole marks the start of a correlative disjunction; 'either' at the end of a negative clause, and the same choices written with plain 'or', stay low",
+   "fire": [
+    "To renew the permit, you must either visit the office or apply online.",
+    "On Sundays we usually eat either pasta or soup with fresh bread.",
+    "The committee will either approve the plan or send it back for changes.",
+    "Am Wochenende fahren wir entweder ans Meer oder in die Berge.",
+    "Students can either take the final exam or write a long essay.",
+    "The stray cat will either sleep on the porch or hide in the shed.",
+    "Für das Projekt brauchen wir entweder mehr Geld oder mehr Zeit.",
+    "In the end the company had to either cut prices or lose customers."
+   ],
+   "quiet": [
+    "To renew the permit, you must visit the office and bring your ID.",
+    "On Sundays we usually eat pasta with fresh bread and salad.",
+    "The committee will approve the plan or send it back for changes.",
+    "Am Wochenende fahren wir ans Meer und besuchen meine Tante.",
+    "Students can take the final exam or write a long essay.",
+    "My brother didn't call last night, and my sister didn't either.",
+    "Für das Projekt brauchen wir mehr Geld und viel mehr Zeit.",
+    "The waiter never smiled, and the cook didn't seem happy either."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0 on either/eder; final 'either' and plain-or versions below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "either opening an either...or",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' either' x10 of the top 32, also 'entw|eder', Arabic 'إما', ' both'. Probe: 'have to either burn' 1.060, 'entweder' 0.804, 'can now either customize' 0.776, 'with either an Android' 0.566; 'doesn't either' 0.017, same sentence with plain 'or' 0.012. 'both' 0.327 and sentence-initial 'Either way' 0.506 not used."
+}

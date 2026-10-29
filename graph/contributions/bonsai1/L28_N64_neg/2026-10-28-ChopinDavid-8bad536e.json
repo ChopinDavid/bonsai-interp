@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-8bad536e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N64-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T04:30:36+00:00",
+ "recipe": {
+  "toolchain_commit": "1e68a567",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N64_neg/2026-10-28-ChopinDavid-8bad536e.tests.json"
+ },
+ "label": "the preposition in a slot where a year is expected next (founded in, established in, since, on this day in, fundada en): the pole predicts a date; 'in' in spatial or other slots stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N64_neg/2026-10-28-ChopinDavid-8bad536e.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.706,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.62,
+     "peak": " since"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.788,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.461,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.534,
+     "peak": " en"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.61,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.315,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.73,
+     "peak": " since"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.03,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.236,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " univers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": " two"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.615,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1e68a567",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "preposition expecting a year",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' in' x15 and ' ' (space before digits) x8 right before a year (founded in 1887, On this day in 1917, established in 1811, since 1790, Fondée en 1833). Probe: 'every decade since 1790' 0.841, 'established in 1811' 0.750, 'established in Boston' 0.750 (the pole fires before it sees the year, so it predicts one), 'On this day in 1917' 0.612, 'founded in 1887' 0.515, 'fundada en 1833' 0.415; 'put the books in the box' 0.028, 'paid ... for a product in 1903' 0.129.",
+ "selection": "random draw"
+}

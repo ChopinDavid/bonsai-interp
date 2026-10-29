@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-0f237d14",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N5052+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N5052",
+   "pole": "+",
+   "label": "the comma, 'and' or 'is' right after a verb used without its object, where the clause stays open (not just to teach, but; took over and administered; the way to learn is): the pole marks an object-less verb at a clause seam; the same verbs followed by their objects stay low",
+   "fire": [
+    "Our goal was not only to inform, but to inspire people to act.",
+    "The rebels moved in and governed the province for two years.",
+    "The fastest way to improve is to practice a little every day.",
+    "She came not just to watch, but to take part in the race.",
+    "The new owners stepped in and managed the hotel themselves.",
+    "The simplest way to understand is to try it with your own hands.",
+    "The aim is not merely to entertain, but to make people think.",
+    "Volunteers took charge and organized the shelter overnight."
+   ],
+   "quiet": [
+    "Our goal was to inform people about the new bus routes.",
+    "The rebels seized the capital and held it for two years.",
+    "The fastest runner won the race by a few seconds.",
+    "She came to watch the race with her father and brother.",
+    "The new owners painted the hotel and fixed the old roof.",
+    "The simplest tool is a hammer with a wooden handle.",
+    "The show entertained the crowd for more than two hours.",
+    "Volunteers cleaned the shelter and cooked a warm meal."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.45 on the seam token; verbs with objects below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "seam after an object-less verb",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card: peaks on ',', ' and', ' or', ' is' just after a verb or phrase (the junction, teach, took over and, learn is). Probe: 'above the junction,' 0.437, 'not just to teach, but' 0.303, 'the way to learn is' 0.277, 'took over and administered' 0.231; 'took the building and ran it' 0.036, 'opened the door and walked' 0.017, 'move closer or farther' 0.075 (not used)."
+}

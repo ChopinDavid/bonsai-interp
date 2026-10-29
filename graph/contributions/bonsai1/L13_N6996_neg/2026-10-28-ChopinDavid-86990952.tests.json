@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-86990952",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N6996-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N6996",
+   "pole": "-",
+   "label": "the lack or presence of heirs in an account of a death and succession (died childless, left no heir, left five children, had no male issue): the pole tracks who will inherit; children and sons in everyday contexts stay low",
+   "fire": [
+    "The old earl died childless in 1702, so the estate went to his nephew.",
+    "When the queen died without an heir, a long civil war began.",
+    "At his death in 1580 the duke left three children and a large debt.",
+    "The baron had no male heirs, and his lands passed to the crown.",
+    "Since the prince died childless, the throne passed to his younger brother.",
+    "The merchant died in 1744, leaving four children and a widow.",
+    "With no surviving sons, the king named his cousin as successor.",
+    "She outlived her husband, who died leaving no heir to the title."
+   ],
+   "quiet": [
+    "The old earl planted an orchard in 1702 behind the manor house.",
+    "When the queen visited the town, a long parade filled the streets.",
+    "In the summer of 1580 the duke built a new bridge over the river.",
+    "The baron had a large library, and his guests often read there.",
+    "Since the prince loved music, the palace hired twelve violinists.",
+    "The merchant sailed to Lisbon in 1744 with a cargo of wool.",
+    "The three children ran across the field to see the new foal.",
+    "She reads to her two sons every night before they go to sleep."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-1.2 on childless/heir/children/issue in succession contexts; everyday children below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "heirs at a death and succession",
+ "unit_kind": "meaning",
+ "confidence": 0.55,
+ "notes": "Card: ' children' x7, ' male', ' young', ' heirs', ' surviving', ' son' in royal and noble succession passages (died childless, left no heir, left five children). Probe: 'died childless' 1.186, 'left no heir' 0.727, 'left five children' 0.602, 'left his eight-year-old son under a regency' 0.393, 'had male issue' 0.330; 'took five children to the museum' 0.001, 'my young son loves football' 0.011. 'The company was childless of new ideas' 0.319, so the word alone carries some activation."
+}

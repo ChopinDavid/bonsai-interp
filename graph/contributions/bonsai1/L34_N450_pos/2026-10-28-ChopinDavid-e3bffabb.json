@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-e3bffabb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N450+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T04:29:06+00:00",
+ "recipe": {
+  "toolchain_commit": "1e68a567",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N450_pos/2026-10-28-ChopinDavid-e3bffabb.tests.json"
+ },
+ "label": "the split-off piece ' St' / '-st' / ' st' / '/st' that begins a stab-/stead-/stable word the tokenizer breaks up (Image St|abilization, rock-st|eady, st|ables, /st|able): the pole predicts the stability word family; ' St' for Saint and stable or steady as whole single tokens stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N450_pos/2026-10-28-ChopinDavid-e3bffabb.tests.json",
+   "prereg_commit": "1e68a567",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.908,
+     "peak": " St"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.477,
+     "peak": "-st"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.328,
+     "peak": " st"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.453,
+     "peak": "/st"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.456,
+     "peak": " St"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.34,
+     "peak": " riding"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.47,
+     "peak": "-st"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.1,
+     "peak": "/st"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.024,
+     "peak": "'s"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " income"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.033,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.0,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.0,
+     "peak": " seal"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.368,
+     "peak": " riding"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.048,
+     "peak": " hands"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.455,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1e68a567",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "st- piece predicting stable/steady",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: peaks on ' St', '-st', ' ст', '/st' in Image Stabilization, rock-steady, livery stables, /stable/ URLs; logit effect promotes stable/stability/steady. Probe: 'Image Stabilization' 0.864, '/stable/' URL 0.636, 'rock-steady' 0.545, 'livery stables' 0.463; 'St. Louis' 0.000, 'St Mary' 0.007, ' stable condition' (single token) 0.037. Splits checked with the tokenizer.",
+ "selection": "random draw"
+}

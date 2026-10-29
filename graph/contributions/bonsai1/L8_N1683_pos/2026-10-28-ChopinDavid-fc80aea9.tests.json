@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-fc80aea9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N1683+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N1683",
+   "pole": "+",
+   "label": "a preposition that a preceding verb governs, above all Spanish 'a' after verbs such as sumarse, añadir, unirse, ayudar (se suma a, se le añade a): the pole marks the verb's required preposition; 'a' in time or manner phrases (a las cinco, a veces) stays low",
+   "fire": [
+    "El club anunció ayer que se une a la campaña contra el racismo.",
+    "Después de hervir la pasta, se le agrega a la salsa un poco de queso.",
+    "Con esta victoria, el equipo se suma a los candidatos al título.",
+    "Muchos vecinos se oponen a la construcción del nuevo puente.",
+    "La alcaldesa invitó a los jóvenes a participar en el concurso.",
+    "Tras la reunión, el sindicato se sumó a la huelga nacional.",
+    "Para terminar, se le añade a la mezcla una taza de harina.",
+    "El ministro se negó a responder las preguntas de la prensa."
+   ],
+   "quiet": [
+    "El club anunció ayer la campaña contra el racismo a las ocho.",
+    "Después de hervir la pasta, la salsa a veces lleva un poco de queso.",
+    "Con esta victoria, el equipo sube poco a poco en la tabla.",
+    "Muchos vecinos pasean por la tarde para ver el nuevo puente.",
+    "La alcaldesa habló con los jóvenes durante el concurso.",
+    "Tras la reunión, el sindicato votó la huelga nacional.",
+    "Para terminar, la mezcla se bate paso a paso con harina.",
+    "El ministro respondió las preguntas de la prensa al mediodía."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on ' a' after a governing verb; time and manner 'a' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "verb-governed preposition 'a'",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' a' x8, ' to' x7, ' в' x4, ' à' x4, all right after a verb that takes them (se suma a, añade a, increased to, added to, opposition à, ponerse a). Probe: 'se le añade a estos' 0.819, 'se suma a la lista' 0.476, 'increased to include' 0.275, 'opposition à' 0.196; 'Nos vemos a las cinco' 0.044, unrelated English 0.016. Spanish only in this test."
+}

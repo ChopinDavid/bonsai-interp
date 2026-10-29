@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-8bad536e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N64-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N64",
+   "pole": "-",
+   "label": "the preposition in a slot where a year is expected next (founded in, established in, since, on this day in, fundada en): the pole predicts a date; 'in' in spatial or other slots stays low",
+   "fire": [
+    "The small library on Main Street was founded in 1902 by local teachers.",
+    "This bakery has been run by the same family since 1931.",
+    "The museum, established in 1870, holds over a million objects.",
+    "Our town's first school opened its doors in 1854, according to records.",
+    "La universidad fue fundada en 1551 por orden del rey.",
+    "On this day in 1969, two astronauts walked on the moon.",
+    "The company was incorporated in 1898 and still makes pianos.",
+    "The festival has been held every summer since 1947."
+   ],
+   "quiet": [
+    "The small library on Main Street keeps its old books in the basement.",
+    "This bakery has been run by the same family for many generations.",
+    "The museum, located in the old harbor, holds over a million objects.",
+    "Our town's first school stood in a field near the church.",
+    "La universidad tiene muchos estudiantes en la facultad de derecho.",
+    "On this street, two old trees grow in front of every house.",
+    "The company keeps its pianos in a warehouse near the river.",
+    "The festival is held every summer in the main square."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.85 on in/since/en after founding or dating verbs; spatial 'in' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "preposition expecting a year",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' in' x15 and ' ' (space before digits) x8 right before a year (founded in 1887, On this day in 1917, established in 1811, since 1790, Fondée en 1833). Probe: 'every decade since 1790' 0.841, 'established in 1811' 0.750, 'established in Boston' 0.750 (the pole fires before it sees the year, so it predicts one), 'On this day in 1917' 0.612, 'founded in 1887' 0.515, 'fundada en 1833' 0.415; 'put the books in the box' 0.028, 'paid ... for a product in 1903' 0.129."
+}

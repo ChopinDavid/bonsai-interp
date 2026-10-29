@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-08f48c99",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N9830-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N9830",
+   "pole": "-",
+   "label": "an interrogative particle that opens a yes/no or rhetorical question (Arabic هل, often after و/ف; Russian Разве, Неужели): the pole marks the question opener; the same sentences as statements stay low",
+   "fire": [
+    "قرأت المقال كله أمس. فهل تعتقد أن الكاتب كان محقا؟",
+    "سمعنا هذا الخبر من صديق. وهل هذا الخبر صحيح فعلا؟",
+    "Мы ждали его весь вечер. Разве он не обещал прийти?",
+    "انتهى الاجتماع متأخرا. فهل وصلت إلى البيت بسلام؟",
+    "Она работает здесь десять лет. Разве ты её не знаешь?",
+    "قال الطبيب إن الدواء جديد. وهل جربه أحد من قبل؟",
+    "Поезд опять опоздал. Разве так можно работать?",
+    "كتب الطالب الواجب بسرعة. فهل راجعه قبل أن يسلمه؟"
+   ],
+   "quiet": [
+    "قرأت المقال كله أمس. أعتقد أن الكاتب كان محقا.",
+    "سمعنا هذا الخبر من صديق. هذا الخبر صحيح فعلا.",
+    "Мы ждали его весь вечер. Он обещал прийти в семь.",
+    "انتهى الاجتماع متأخرا. وصلت إلى البيت بسلام.",
+    "Она работает здесь десять лет. Ты её хорошо знаешь.",
+    "قال الطبيب إن الدواء جديد. جربه بعض المرضى من قبل.",
+    "Поезд опять опоздал. Так работать очень трудно.",
+    "كتب الطالب الواجب بسرعة. راجعه قبل أن يسلمه."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.75 on هل or the final piece of Разве; statement versions below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "yes/no question particle",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: 'هل' x10, 'е' (Разв|е) x6, 'ل' (وه|ل) x5. Probe: 'Разве это не' 0.758, 'وهل يصح' 0.726, 'فهل ترى' 0.386, bare 'هل ذهبت' 0.254, 'Неужели' 0.213; Arabic and Russian statements 0.012 and 0.001, English rhetorical question 0.136. Each fire item puts the particle after an earlier sentence."
+}
