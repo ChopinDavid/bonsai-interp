@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N7255+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 7255,
+ "pole": "+",
+ "label": "the word 'refrigerator' in any form, including its pieces (refriger|ators, refriger|ated, refriger|ation); other kitchen appliances (freezer, oven, dishwasher, microwave, kettle) stay low",
+ "short": "'refrigerator' and its pieces",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N7255_pos/2026-10-29-ChopinDavid-ddaa5a7b.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.627,
+     "peak": "ators"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.465,
+     "peak": " refriger"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.671,
+     "peak": "ation"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.583,
+     "peak": " refrigerator"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.42,
+     "peak": " refriger"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.667,
+     "peak": " refriger"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.704,
+     "peak": "ators"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.545,
+     "peak": "ation"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.164,
+     "peak": "zers"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.175,
+     "peak": "ning"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.067,
+     "peak": " flat"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.023,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.057,
+     "peak": "ers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.041,
+     "peak": "Steel"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.095,
+     "peak": "Without"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.605,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-ddaa5a7b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-ddaa5a7b",
+   "the word 'refrigerator' in any form, including its pieces (refriger|ators, refriger|ated, refriger|ation); other kitchen appliances (freezer, oven, dishwasher, microwave, kettle) stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-ddaa5a7b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

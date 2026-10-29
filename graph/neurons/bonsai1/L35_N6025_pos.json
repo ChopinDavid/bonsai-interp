@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N6025+",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 6025,
+ "pole": "+",
+ "label": "the word-initial pieces ' ré', ' rés', ' aff' and ' tor' when the word is split after them (ré|union, ré|duire, rés|idents, aff|iché, tor|o, tor|re): a last-layer unit predicting the rest of the word; whole-token words and words split after other pieces (garant|issons, off|res, habit|ants, sé|ance) stay low",
+ "short": "word-initial ' ré' / ' rés' / ' aff' / ' tor'",
+ "kind": "token",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N6025_pos/2026-10-29-ChopinDavid-ed59a156.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.046,
+     "peak": " mat"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.085,
+     "peak": "én"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.041,
+     "peak": " du"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.001,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.047,
+     "peak": " est"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.041,
+     "peak": " hor"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.129,
+     "peak": " tor"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.138,
+     "peak": " tor"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.043,
+     "peak": " mat"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.081,
+     "peak": "én"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.035,
+     "peak": " du"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": "é"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.047,
+     "peak": " est"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.047,
+     "peak": " hor"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": "ro"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": " pueblo"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.68,
+    "median_fire": 0.046,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-ed59a156"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-ed59a156",
+   "the word-initial pieces ' ré', ' rés', ' aff' and ' tor' when the word is split after them (ré|union, ré|duire, rés|idents, aff|iché, tor|o, tor|re): a last-layer unit predicting the rest of the word; whole-token words and words split after other pieces (garant|issons, off|res, habit|ants, sé|ance) stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-ed59a156"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

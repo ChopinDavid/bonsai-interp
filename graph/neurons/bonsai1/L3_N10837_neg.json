@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N10837-",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 10837,
+ "pole": "-",
+ "label": "a short list of words rather than one meaning: ' sparse', ' jealous', ' discouraged', ' Table' in 'Periodic Table' and Russian ' стра' (страшного); their near neighbours ('dense', 'envious', 'defeated', 'dining table') stay low",
+ "short": "sparse / jealous / discouraged / Periodic Table",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N10837_neg/2026-10-29-ChopinDavid-084c75b8.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.713,
+     "peak": " sparse"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.831,
+     "peak": " Table"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.447,
+     "peak": " jealous"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.662,
+     "peak": " discouraged"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.608,
+     "peak": " sparse"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.569,
+     "peak": " стра"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.735,
+     "peak": " Table"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.399,
+     "peak": " discouraged"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.116,
+     "peak": " dense"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.129,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.469,
+     "peak": "vious"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.166,
+     "peak": " defeated"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": "y"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": "енного"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": " table"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.064,
+     "peak": " interview"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.635,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-084c75b8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-084c75b8",
+   "a short list of words rather than one meaning: ' sparse', ' jealous', ' discouraged', ' Table' in 'Periodic Table' and Russian ' стра' (страшного); their near neighbours ('dense', 'envious', 'defeated', 'dining table') stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-084c75b8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

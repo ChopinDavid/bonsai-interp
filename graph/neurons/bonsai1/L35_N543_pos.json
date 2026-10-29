@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N543+",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 543,
+ "pole": "+",
+ "label": "the token before the name of an academic discipline or technical field, predicting it ('Department of', 'Faculty of', 'Journal of Applied', 'Professor of', 'Introduction to'); 'of' before ordinary nouns ('a bunch of keys', 'captain of the team') stays low",
+ "short": "predicts an academic field name",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N543_pos/2026-10-29-ChopinDavid-a9afe1f9.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.356,
+     "peak": " Chemical"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.357,
+     "peak": " Veterinary"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.522,
+     "peak": " Applied"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.404,
+     "peak": " Marine"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.7,
+     "peak": " Computational"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.417,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.35,
+     "peak": "oretical"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.49,
+     "peak": " Organic"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.101,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " left"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.044,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": " owners"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.41,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-a9afe1f9"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a9afe1f9",
+   "the token before the name of an academic discipline or technical field, predicting it ('Department of', 'Faculty of', 'Journal of Applied', 'Professor of', 'Introduction to'); 'of' before ordinary nouns ('a bunch of keys', 'captain of the team') stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a9afe1f9"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

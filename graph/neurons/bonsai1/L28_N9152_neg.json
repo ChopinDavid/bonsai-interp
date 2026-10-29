@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N9152-",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 9152,
+ "pole": "-",
+ "label": "the verb of giving up or going along a life course in first-person talk about work and school ('quit my job', 'quit smoking', 'go to work', 'go to college'); keeping or continuing ('stayed in school', 'kept my job') and everyday errands ('go to the bakery') stay low",
+ "short": "'quit' / 'go to work' as life-course verbs",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N9152_neg/2026-10-29-ChopinDavid-48999b5c.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.526,
+     "peak": " quit"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.369,
+     "peak": " quit"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.139,
+     "peak": " go"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.426,
+     "peak": " quit"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.263,
+     "peak": " because"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.441,
+     "peak": " quit"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.46,
+     "peak": " stop"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.513,
+     "peak": " quit"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.128,
+     "peak": " while"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.204,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.138,
+     "peak": " go"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.19,
+     "peak": " started"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.117,
+     "peak": " my"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.167,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.37,
+     "peak": " stop"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.05,
+     "peak": " my"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.433,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-48999b5c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-48999b5c",
+   "the verb of giving up or going along a life course in first-person talk about work and school ('quit my job', 'quit smoking', 'go to work', 'go to college'); keeping or continuing ('stayed in school', 'kept my job') and everyday errands ('go to the bakery') stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-48999b5c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

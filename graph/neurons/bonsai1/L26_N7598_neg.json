@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N7598-",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 7598,
+ "pole": "-",
+ "label": "a passive participle predicated of or modifying a noun: Arabic اسم مفعول (مصممة، مدعومة، مهددة، مكتوبة، مطلوبة), Spanish 'diseñadas para', English 'is meant to'; the active verb of the same root ('صممت الشركة', 'diseñaron', 'means to') stays low",
+ "short": "passive participle (Arabic اسم مفعول and kin)",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N7598_neg/2026-10-29-ChopinDavid-d1b561ac.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.44,
+     "peak": "مة"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.418,
+     "peak": "دون"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.68,
+     "peak": "ومة"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.271,
+     "peak": "وبة"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.292,
+     "peak": "طل"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.276,
+     "peak": "خدم"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.187,
+     "peak": "adas"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.437,
+     "peak": " meant"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.194,
+     "peak": "ريف"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": "هم"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.101,
+     "peak": "وب"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.027,
+     "peak": " التعليم"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": "بت"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.007,
+     "peak": " هذا"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.062,
+     "peak": " princip"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " before"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.355,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d1b561ac"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d1b561ac",
+   "a passive participle predicated of or modifying a noun: Arabic اسم مفعول (مصممة، مدعومة، مهددة، مكتوبة، مطلوبة), Spanish 'diseñadas para', English 'is meant to'; the active verb of the same root ('صممت الشركة', 'diseñaron', 'means to') stays low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d1b561ac"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

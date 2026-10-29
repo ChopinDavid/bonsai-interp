@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N3842-",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 3842,
+ "pole": "-",
+ "label": "the Spanish token pieces 'iere' (requ|iere, sug|iere, ref|iere, conf|iere) and ' vi' (vi|enen, vi|ernes) when not sentence-initial; whole-token verbs (necesita, quiere, indica) and other pieces (lleg|an, jue|ves) stay low",
+ "short": "Spanish pieces 'iere' and ' vi'",
+ "kind": "token",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N3842_neg/2026-10-29-ChopinDavid-2fc705d4.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.344,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.357,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.458,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.393,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.04,
+     "peak": " vi"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.51,
+     "peak": " vi"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.671,
+     "peak": "iere"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.673,
+     "peak": " vi"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.086,
+     "peak": "ina"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.209,
+     "peak": "ima"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.374,
+     "peak": " firm"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.129,
+     "peak": "ivos"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.038,
+     "peak": "ing"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.099,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.162,
+     "peak": " quiere"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.069,
+     "peak": " lleg"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.425,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-2fc705d4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-2fc705d4",
+   "the Spanish token pieces 'iere' (requ|iere, sug|iere, ref|iere, conf|iere) and ' vi' (vi|enen, vi|ernes) when not sentence-initial; whole-token verbs (necesita, quiere, indica) and other pieces (lleg|an, jue|ves) stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-2fc705d4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
