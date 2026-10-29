@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N7685-",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 7685,
+ "pole": "-",
+ "label": "the '.\\n' token that ends a prose paragraph in running web text (a full stop followed directly by a line break); a full stop followed by a space inside the paragraph stays low",
+ "short": "paragraph-ending '.\\n'",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N7685_neg/2026-10-29-ChopinDavid-86c0edeb.tests.json",
+   "prereg_commit": "ae7d07ff",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.125,
+     "peak": ".\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.214,
+     "peak": "She"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.084,
+     "peak": ".\n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.081,
+     "peak": ".\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.154,
+     "peak": ".\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.136,
+     "peak": "He"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.147,
+     "peak": ".\n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.12,
+     "peak": "It"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": " Monday"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " home"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " small"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.027,
+     "peak": "oby"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " twice"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " trail"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " settled"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " nearly"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.131,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-86c0edeb"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-86c0edeb",
+   "the '.\\n' token that ends a prose paragraph in running web text (a full stop followed directly by a line break); a full stop followed by a space inside the paragraph stays low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-86c0edeb"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N4249+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 4249,
+ "pole": "+",
+ "label": "the word piece ' Inf' that begins a split capitalised name (Inf|owars, Inf|ineon, Inf|ographic, Inf|ante, Inf|initi); whole-word tokens that start with the same letters (Info, Inform, Infant, infection, Infos|ys) stay low",
+ "short": "' Inf' word piece",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N4249_pos/2026-10-29-ChopinDavid-ff854c23.tests.json",
+   "prereg_commit": "ae7d07ff",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.914,
+     "peak": " Inf"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.877,
+     "peak": " Inf"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.769,
+     "peak": " Inf"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.868,
+     "peak": " Inf"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.623,
+     "peak": " Inf"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.055,
+     "peak": " Inf"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.963,
+     "peak": " Inf"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.859,
+     "peak": " Inf"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.128,
+     "peak": " Infos"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.14,
+     "peak": " Info"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.073,
+     "peak": " Infant"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " infection"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.158,
+     "peak": " Inform"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.044,
+     "peak": " infrared"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " electric"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.873,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-ff854c23"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-ff854c23",
+   "the word piece ' Inf' that begins a split capitalised name (Inf|owars, Inf|ineon, Inf|ographic, Inf|ante, Inf|initi); whole-word tokens that start with the same letters (Info, Inform, Infant, infection, Infos|ys) stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-ff854c23"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

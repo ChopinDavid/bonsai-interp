@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N11097+",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 11097,
+ "pole": "+",
+ "label": "a space-prefixed opening bracket that starts a literal value in code: ' (' / \" ('\" / ' (\"' / ' (\\n' opening a tuple or string literal after '=' or ':', and the space between numbers in a bracketed numeric literal; call parentheses with no space, list brackets and prose parentheses stay low",
+ "short": "' (' opening a code literal",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N11097_pos/2026-10-29-ChopinDavid-94517072.tests.json",
+   "prereg_commit": "ae7d07ff",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.799,
+     "peak": " (\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.544,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.56,
+     "peak": " (\""
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.738,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.599,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.422,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.633,
+     "peak": " ('"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.317,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.071,
+     "peak": " ['"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.088,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "_g"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.043,
+     "peak": " ['"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " refused"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.227,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.58,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-94517072"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-94517072",
+   "a space-prefixed opening bracket that starts a literal value in code: ' (' / \" ('\" / ' (\"' / ' (\\n' opening a tuple or string literal after '=' or ':', and the space between numbers in a bracketed numeric literal; call parentheses with no space, list brackets and prose parentheses stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-94517072"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
