@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b3019240",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5275+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N5275",
+   "pole": "+",
+   "label": "the locator inside a parenthetical cross-reference or citation ('see Figure', 'see Table', 'para.') and the opening of a regex character class; 'figure'/'table' as ordinary nouns stay low",
+   "fire": [
+    "The pump has three valves arranged in a ring (see Figure 4).",
+    "Average yields rose sharply after 1990 (see Table 2).",
+    "The author calls this a turning point (Jones 2018, para. 12).",
+    "The layout of the old harbour is sketched below (see Figure 1).",
+    "Survey responses were grouped by age (see Table 5).",
+    "Critics described the policy as reckless (Lee 2015, para. 3).",
+    "The cell divides twice before the final stage (see Figure 7).",
+    "Costs differed little between the regions (see Table 1)."
+   ],
+   "quiet": [
+    "The pump has three valves arranged in a ring around the shaft.",
+    "Average yields rose sharply after 1990 across the whole region.",
+    "The author calls this a turning point in the history of the town.",
+    "The layout of the old harbour includes a tall stone figure of a sailor.",
+    "Survey responses were grouped by age at a long wooden table.",
+    "Critics described the policy as reckless in several newspapers.",
+    "The cell divides twice before the final stage of growth.",
+    "Costs differed little between the regions, said the minister."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.6 on Figure/Table/para in '(see Figure 2)', '(Smith 2010, para. 4)'; ordinary 'figure'/'table' nouns below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "citation locator / regex [",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Probe: 'para' in a citation 0.582, '-z' in r'^[a-z]' 0.378, '(see Table 3)' 0.342, '(see Figure 2)' 0.270, '[^' 0.254; Python list '[' 0.026, ordinary prose 0.003. A list rather than a clear distinction; testing the citation side."
+}

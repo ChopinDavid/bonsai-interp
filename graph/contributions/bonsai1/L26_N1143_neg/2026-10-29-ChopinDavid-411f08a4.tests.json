@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-411f08a4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N1143-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N1143",
+   "pole": "-",
+   "label": "being enclosed between or by other things: the participle of an enclosure verb ('sandwiched', 'wedged', 'nestled', 'surrounded') that sets up 'between'/'by'",
+   "fire": [
+    "Our tiny flat is sandwiched between a noisy bar and a laundromat.",
+    "A small chapel sits wedged between two tall office towers.",
+    "The farmhouse lay nestled between rolling hills and a quiet lake.",
+    "In the photo, the baby is sandwiched between her two older brothers.",
+    "The old fort was completely surrounded by a deep, muddy moat.",
+    "A narrow garden is squeezed between the railway and the river.",
+    "His speech was sandwiched between two long musical performances.",
+    "The island town is ringed by steep cliffs on every side."
+   ],
+   "quiet": [
+    "Our tiny flat is located across from a noisy bar on the corner.",
+    "A small chapel sits at the end of the street near the station.",
+    "The farmhouse lay at the foot of the hills beside a quiet lake.",
+    "In the photo, the baby is smiling at her two older brothers.",
+    "The old fort was built on a rocky hill above the harbour.",
+    "A narrow garden runs along the river behind the old mill.",
+    "His speech came after two long musical performances.",
+    "The island town has steep streets and a small harbour."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on the enclosure participle; plain location ('next to', 'across from', 'on') below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "enclosed between",
+ "unit_kind": "meaning",
+ "confidence": 0.6,
+ "notes": "Probe: 'sandwiched between' 0.865 (peak 'ed'), 'wedged between' 0.613, 'surrounded by' 0.340, 'box it in' 0.177, 'surround it' 0.142; 'next to a bank' 0.024. Output promotes between/among/by (card)."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a83a0525",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N3272-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N3272",
+   "pole": "-",
+   "label": "' this'/'This' opening a clause as the subject or determiner that points at the present instance ('and this time', 'This mask shows'); the same clauses opened with 'the' or 'it' stay low",
+   "fire": [
+    "We usually camp by the lake, and this year we went to the mountains.",
+    "The shop sells many old clocks. This clock was made in Vienna.",
+    "Most of his films are slow, but this one moves at a fast pace.",
+    "The race was long and hard, and this was the toughest climb.",
+    "She has baked many cakes, and this cake is her favourite so far.",
+    "The garden has several ponds. This pond is home to rare frogs.",
+    "Storms hit the coast every autumn, and this storm caused real damage.",
+    "I have read all her novels, and this book is easily the best."
+   ],
+   "quiet": [
+    "We usually camp by the lake, and we went to the mountains in May.",
+    "The shop sells many old clocks. The oldest was made in Vienna.",
+    "Most of his films are slow, but it moves at a fast pace overall.",
+    "The race was long and hard, and the final climb was the toughest.",
+    "She has baked many cakes, and the chocolate cake is her favourite.",
+    "The garden has several ponds. The largest is home to rare frogs.",
+    "Storms hit the coast every autumn, and it caused real damage again.",
+    "I have read all her novels, and the latest is easily the best."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on clause-opening this/This (or the verb after it); 'the'/'it'-opened rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "clause-initial 'this'",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Probe: 'and this was' 0.766, 'and this time' 0.630, '. This mask' 0.564, 'and this one' 0.457; 'and that time' 0.306 (leak), 'The mask' 0.014, object 'this song' 0.146. Near misses use 'the'/'it', not 'that', since 'that' leaks."
+}

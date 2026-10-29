@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-db5ee6d4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N481-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N481",
+   "pole": "-",
+   "label": "broadcast-medium words naming how media is delivered (' radio', ' TV', ' online') in station/channel contexts",
+   "fire": [
+    "Most people in the valley still get their news from local radio stations.",
+    "The concert will be carried live on national radio tomorrow night.",
+    "After the storm, residents tuned their radio sets to the emergency channel.",
+    "Her talk show moved from radio to TV after its third season.",
+    "Fans can stream every match online or follow it on community radio.",
+    "The election debate aired on public TV and was replayed on radio.",
+    "In the 1950s the family gathered around the radio every evening.",
+    "The league sold rights to the games to three regional radio networks."
+   ],
+   "quiet": [
+    "Most people in the valley still get their news from the weekly newspaper.",
+    "The concert will be held in the town square tomorrow night.",
+    "After the storm, residents gathered at the church to hear announcements.",
+    "Her advice column moved from the magazine to a book after its third year.",
+    "Fans can buy tickets at the gate or follow the match in the paper.",
+    "The election debate took place in the town hall and drew a big crowd.",
+    "In the 1950s the family gathered around the table every evening.",
+    "The league sold rights to the games to three regional newspapers."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on ' radio'/' TV'/' online' as delivery medium; near misses naming other outlets (newspaper, magazine, theatre) below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "radio/TV/online medium",
+ "unit_kind": "lexical",
+ "confidence": 0.45,
+ "notes": "Probe: ' radio' in 'independent radio stations' 0.395, ' online' after 'FM radio and' 0.228, ' TV' devices 0.190, ' radio' as a bought object 0.134, digital platforms 0.060, museum floor 0.003. Weak pole overall; the medium word, not the topic, carries it."
+}

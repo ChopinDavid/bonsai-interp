@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4b687a16",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N298+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T13:22:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N298",
+   "pole": "+",
+   "label": "the preposition that links a stance or feeling noun/adjective to its object ('respect to', 'devotion to', 'satisfaction with', 'saddened by'); the same prepositions in spatial or agentive use stay low",
+   "fire": [
+    "The flags were lowered as a sign of respect to the former mayor.",
+    "Fans showed great loyalty to the club during its worst seasons.",
+    "The monks lived in complete devotion to their daily prayers.",
+    "Customers reported high satisfaction with the faster service.",
+    "Many readers were deeply moved by the letters in the final chapter.",
+    "Parents voiced their frustration with the new school schedule.",
+    "The soldiers swore allegiance to the young queen at her coronation.",
+    "Critics were disappointed by the ending of the long-awaited sequel."
+   ],
+   "quiet": [
+    "The flags were carried up to the hill by the former mayor.",
+    "Fans travelled by train to the stadium during the winter season.",
+    "The monks walked in single file to the chapel every morning.",
+    "Customers waited in line with their bags outside the store.",
+    "Many readers borrowed the letters from the library in the city centre.",
+    "Parents drove their children to the new school each day.",
+    "The soldiers rode with the young queen to the coastal fortress.",
+    "The long-awaited sequel was directed by a first-time filmmaker."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on the preposition after a stance/feeling word; spatial 'to'/'with' and passive-agent 'by' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "stance-noun preposition",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Probe: 'respect to' 0.891, 'satisfaction with' 0.335, 'saddened by' 0.316, 'acceptance of' 0.165; 'walked to' 0.030, 'sat with' 0.059, 'written by' 0.015. 'to' after deference nouns is strongest."
+}
