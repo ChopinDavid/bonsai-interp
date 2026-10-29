@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-1b35eb9d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N2402+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T01:29:08+00:00",
+ "recipe": {
+  "toolchain_commit": "70b82816",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N2402_pos/2026-10-28-ChopinDavid-1b35eb9d.tests.json"
+ },
+ "label": "a word inside a multi-word proper name of an institution, award, bridge or package (National Science Foundation, Naval Research Laboratory, Edmund Pettus Bridge, from sklearn import): the pole fires on name-internal tokens; the same common words used generically stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N2402_pos/2026-10-28-ChopinDavid-1b35eb9d.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.281,
+     "peak": " Institutes"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.119,
+     "peak": "ographic"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.785,
+     "peak": " import"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.083,
+     "peak": " crossed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.092,
+     "peak": " Silver"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.063,
+     "peak": " American"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.134,
+     "peak": " North"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.137,
+     "peak": " State"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.102,
+     "peak": " study"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.043,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " fitted"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.097,
+     "peak": " crossed"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.024,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " clinic"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.066,
+     "peak": " research"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.11,
+     "peak": " for"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.844,
+    "median_fire": 0.127,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "70b82816",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "token inside a multi-word institutional proper name",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card peaks: ' import' (from sklearn import), ' Science' (National Science Foundation), ' Education', ' Research' (Naval Research Laboratory), ' Pett'(us Bridge), 'istinguished' Service Cross. Probe: Educational Testing Service 0.764, sklearn import 0.753, Naval Research Laboratory 0.717, Pettus Bridge 0.545, National Science Foundation 0.533, Distinguished Service Cross 0.341; 'The science teacher' 0.061, beach 0.016. But 'a research lab near the naval base' reached 0.466, so near misses avoid 'naval'.",
+ "selection": "random draw"
+}

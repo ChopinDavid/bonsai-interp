@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-4d29ac7c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N7239-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N7239",
+   "pole": "-",
+   "label": "first-person past narration (memoir or letter voice: I had, our army, my cousin): the pole marks a narrator telling their own past; the same sentences retold in the third person stay low",
+   "fire": [
+    "I had the privilege to lead the second company of our regiment that winter.",
+    "I was fishing on the river with my brother at the time. His dog was called Rex.",
+    "I had the good luck to serve under our finest general during the siege.",
+    "That spring I was working in my father's shop. The owner next door was kind to us.",
+    "I had the duty to guard the eastern gate of our fort for two years.",
+    "I was reading in my room when the news came. My mother began to cry.",
+    "I had the pleasure to meet our new governor at the harbour that summer.",
+    "I was sitting by the window with my sister at the time. Her name was Lena."
+   ],
+   "quiet": [
+    "He had the privilege to lead the second company of the regiment that winter.",
+    "He was fishing on the river with his brother at the time. His dog was called Rex.",
+    "She had the good luck to serve under the finest general during the siege.",
+    "That spring he was working in his father's shop. The owner next door was kind to them.",
+    "He had the duty to guard the eastern gate of the fort for two years.",
+    "She was reading in her room when the news came. Her mother began to cry.",
+    "He had the pleasure to meet the new governor at the harbour that summer.",
+    "She was sitting by the window with her sister at the time. Her name was Lena."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.75 at the end of first-person narrated clauses; third-person rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first-person past narration (vs third person)",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' our' x5, ' I' x4, ' my' x2 in memoir/letter narration ('I had the good fortune to command the left wing of our army'). Probe: 'I had the honour to command the right flank of our army' 0.750, 'I was playing in the yard with my cousin at the time' 0.345, letter 0.198; third-person versions 0.074 and 0.079, report prose 0.044."
+}

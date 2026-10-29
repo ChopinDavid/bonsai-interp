@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-2e952c46",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N10673-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T01:30:17+00:00",
+ "recipe": {
+  "toolchain_commit": "70b82816",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N10673_neg/2026-10-28-ChopinDavid-2e952c46.tests.json"
+ },
+ "label": "'not' inside a status or eligibility condition (if they have not been used, while still healthy and not showing symptoms): the pole marks negated states that a rule depends on; 'not' in plain personal statements of preference or action stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N10673_neg/2026-10-28-ChopinDavid-2e952c46.tests.json",
+   "prereg_commit": "70b82816",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.501,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.667,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.376,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.565,
+     "peak": " yet"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.284,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.734,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.29,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.379,
+     "peak": " not"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": " did"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " do"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " called"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " do"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " did"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " like"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " did"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.44,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "70b82816",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "'not' in a status/eligibility condition",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: ' not' x8, '’t' x3 ('have not been washed', 'and not showing any symptoms'). Probe: 'still healthy and not showing any symptoms' 0.847, 'have not been washed or worn' 0.845, 'have not yet exited' 0.416; 'I do not like spinach' 0.011, code 'and not node.is_locked' 0.037. The un-negated 'if they have been washed' reached 0.392 on ' have', so near misses keep 'not' and drop the condition rather than drop 'not'.",
+ "selection": "random draw"
+}

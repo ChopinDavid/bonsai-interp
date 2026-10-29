@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-1b35eb9d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N2402+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N2402",
+   "pole": "+",
+   "label": "a word inside a multi-word proper name of an institution, award, bridge or package (National Science Foundation, Naval Research Laboratory, Edmund Pettus Bridge, from sklearn import): the pole fires on name-internal tokens; the same common words used generically stay low",
+   "fire": [
+    "The study was funded by the National Institutes of Health in Bethesda.",
+    "She spent two summers at the Woods Hole Oceanographic Institution.",
+    "from sklearn import preprocessing\nfrom sklearn import linear_model",
+    "The convoy crossed the George Washington Bridge before dawn.",
+    "He received the Purple Heart and the Silver Star for his service.",
+    "Results were reported to the American Heart Association last spring.",
+    "The paper came out of the Army Research Office in North Carolina.",
+    "Teachers follow the Common Core State Standards in most districts."
+   ],
+   "quiet": [
+    "The study was funded by a small health charity in her town.",
+    "She spent two summers studying the ocean on a fishing boat.",
+    "We cleaned the data and fitted a simple linear model by hand.",
+    "The convoy crossed an old wooden bridge before dawn.",
+    "He received a medal and a letter of thanks for his help.",
+    "Results were reported to the heart doctors at the clinic last spring.",
+    "The paper came out of a research group in North Carolina.",
+    "Teachers follow common standards for reading in most districts."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.75 on the inner name word; generic lowercase uses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token inside a multi-word institutional proper name",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card peaks: ' import' (from sklearn import), ' Science' (National Science Foundation), ' Education', ' Research' (Naval Research Laboratory), ' Pett'(us Bridge), 'istinguished' Service Cross. Probe: Educational Testing Service 0.764, sklearn import 0.753, Naval Research Laboratory 0.717, Pettus Bridge 0.545, National Science Foundation 0.533, Distinguished Service Cross 0.341; 'The science teacher' 0.061, beach 0.016. But 'a research lab near the naval base' reached 0.466, so near misses avoid 'naval'."
+}

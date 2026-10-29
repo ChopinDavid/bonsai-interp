@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-1709c353",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N11430-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N11430",
+   "pole": "-",
+   "label": "the token just before a 'print' identifier in code (self.|printText, score|_print): the pole predicts the word 'print'; the same code calling draw/show/log methods stays low",
+   "fire": [
+    "class Report:\n    def header(self):\n        self.printLine('-----')\n        self.printLine('Report')",
+    "    if opts['debug_print']:\n        debug_print()",
+    "def summary(self):\n    self.printTable(self.rows)\n    self.printTable(self.totals)",
+    "    elif log.opts['tree_print']:\n        tree_print()",
+    "class Logger:\n    def show(self, msg):\n        self.printMsg(msg)\n        self.printMsg('---')",
+    "    if args.pretty:\n        pretty_print(data)\n        pretty_print(meta)",
+    "def dump(self):\n    self.printHeader()\n    self.printBody()",
+    "    for row in rows:\n        self.app.printflush(str(row))"
+   ],
+   "quiet": [
+    "class Report:\n    def header(self):\n        self.drawLine('-----')\n        self.drawLine('Report')",
+    "    if opts['debug_log']:\n        debug_log()",
+    "def summary(self):\n    self.saveTable(self.rows)\n    self.saveTable(self.totals)",
+    "    elif log.opts['tree_walk']:\n        tree_walk()",
+    "class Logger:\n    def show(self, msg):\n        self.sendMsg(msg)\n        self.sendMsg('---')",
+    "    if args.pretty:\n        pretty_format(data)\n        pretty_format(meta)",
+    "def dump(self):\n    self.writeHeader()\n    self.writeBody()",
+    "    for row in rows:\n        self.app.flush(str(row))"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on the token before print; draw/log rewrites below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "code token predicting a 'print' identifier",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: '\\tself' x2, ' df', ' args' before .print..., promotes ' print', ' prints', ' printed'. Probe: 'self.printText' 0.704 (peak ' self'), 'score_print' 0.529, plain print(args.name) 0.226; self.drawText 0.116, 'handprints' prose 0.168, fingerprints 0.005, blueprint 0.008."
+}

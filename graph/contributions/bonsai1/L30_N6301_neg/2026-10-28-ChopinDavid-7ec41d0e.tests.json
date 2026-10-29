@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-7ec41d0e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N6301-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N6301",
+   "pole": "-",
+   "label": "a sub-token of a camelCase or snake_case identifier that re-uses a name defined earlier in tab-indented Python code (knownVal1, storageElementName, found_flag); plain prose naming the same values stays low",
+   "fire": [
+    "def update(self):\n\t\tfor i in range(len(newVals)):\n\t\t\tdiffList.append(newVals[i] - oldVal2[i])\n\t\treturn diffList",
+    "def load(path):\n\tresult = {}\n\twith open(path) as f:\n\t\tfor line in f:\n\t\t\tresult[line] = parseLine(line)\n\treturn resultDict",
+    "class Store(object):\n\tdef put(self, key):\n\t\tif key not in self:\n\t\t\tself[key] = self.default_factory(key)\n\t\treturn self[key]",
+    "\tif not matched_flag:\n\t\tpending_items.append(old_item)\n\t\tmatched_flag = True",
+    "\tok = QtWidgets.QDialogButtonBox.Ok\n\tself.buttonBox = QtWidgets.QDialogButtonBox(ok)",
+    "def read_truth(truthFile):\n\tlabels = {}\n\twith open(truthFile) as f:\n\t\tfor row in f:\n\t\t\tlabels[row] = 1",
+    "\texcept OSError:\n\t\tlogger.info(\"could not remove %s\", cache_file)\n\t\tcache_file = None",
+    "\tif period_id and isinstance(period_id, int):\n\t\tperiod_id = [period_id]"
+   ],
+   "quiet": [
+    "We updated the list by subtracting the old values from the new ones each round.",
+    "The loader reads each line of the file and stores the parsed result in a dictionary.",
+    "The store creates a default entry the first time a key is requested.",
+    "If no match is found, the old item is added to the pending list.",
+    "The dialog shows an OK button at the bottom right.",
+    "The script reads the truth file and marks every row as a label.",
+    "If the cache file cannot be removed, the program logs a message.",
+    "If the period is a single number, it is wrapped in a list."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on identifier pieces in longer code; prose below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner piece of a reused code identifier",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: 'Val', 'Element', '.default', 'Button', 'Truth', '_values' inside identifiers (max 172). Probe did not reproduce: every item 0.003-0.009, including 'knownVal1[i]' 0.009 and 'mentionStr = mentionStr + ...' 0.005. Best guess with longer, tab-indented code."
+}

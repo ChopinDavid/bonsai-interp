@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-41bffe06",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N9096+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N9096",
+   "pole": "+",
+   "label": "the head word of a fixed technical or cultural compound term (Gregorian chant, inferior vena cava, olfactory nerve): the pole fires on the term's distinctive word; plain synonyms in the same sentences stay low",
+   "fire": [
+    "Every evening the nuns gathered to sing Gregorian chant in Latin.",
+    "The tumor pressed on the superior vena cava and caused swelling.",
+    "Recordings of Gregorian chant became a surprise hit in the 1990s.",
+    "Damage to the olfactory bulb can leave a patient unable to smell.",
+    "The catheter was threaded up through the inferior vena cava.",
+    "Students compared Byzantine chant with the older Gregorian chant.",
+    "The surgeon clamped the vena cava before removing the kidney.",
+    "Loss of the olfactory sense is an early sign of some diseases."
+   ],
+   "quiet": [
+    "Every evening the nuns gathered to sing simple hymns in Latin.",
+    "The tumor pressed on a large vein and caused swelling.",
+    "Recordings of church music became a surprise hit in the 1990s.",
+    "Damage to the front of the brain can leave a patient unable to smell.",
+    "The catheter was threaded up through a large vein in the groin.",
+    "Students compared Byzantine hymns with older church songs.",
+    "The surgeon clamped the main vein before removing the kidney.",
+    "Loss of the sense of smell is an early sign of some diseases."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.6 on chant / vena / olfactory-type words; plain rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "head word of a fixed technical/cultural term",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card is diffuse (max 7.12): ' chant' (Gregorian chant), 'ena' (vena cava), ' tornado', 'factory' (olfactory), ' compass', ' lightning'. Probe: Gregorian chant 0.661, vena cava 0.378, olfactory nerve 0.221 (peak ' smell'), compass 0.150, tornadoes 0.124; 'The choir sang a new song' 0.030, 'large veins' 0.068. Weak beyond chant and vena cava."
+}

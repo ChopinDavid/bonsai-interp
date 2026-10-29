@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-7ad40577",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N5028+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N5028",
+   "pole": "+",
+   "label": "a path or domain piece inside a web address (www.amazon, /Pages/ in .aspx URLs): the pole fires inside URLs; the same names mentioned in prose stay low",
+   "fire": [
+    "The paperback is listed at https://www.amazon.com/dp/0451524934 for under ten dollars.",
+    "Read the full guidance at www.cdc.gov/flu/Pages/vaccine.aspx before you travel.",
+    "My new novel is available here: http://www.amazon.co.uk/dp/B07XYZ1234",
+    "The council posted the notice at www.leeds.gov.uk/residents/Pages/bins.aspx last week.",
+    "Grab a copy at www.amazon.ca/dp/1250301696 or ask your library.",
+    "Forms are at https://www.irs.gov/help/Pages/forms.aspx for anyone filing late.",
+    "Signed copies: https://www.amazon.de/dp/3453319990 while they last.",
+    "See http://www.ucsf.edu/clinics/Pages/sleep.aspx for clinic hours."
+   ],
+   "quiet": [
+    "The paperback is sold on Amazon for under ten dollars.",
+    "Read the full guidance on the agency's flu vaccine page before you travel.",
+    "My new novel is available on Amazon in the UK.",
+    "The council posted the notice about bins on its website last week.",
+    "Grab a copy from Amazon Canada or ask your library.",
+    "The forms are on the tax agency's help pages for anyone filing late.",
+    "Signed copies are on Amazon Germany while they last.",
+    "The clinic's web pages list its sleep clinic hours."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on '.amazon' or 'ages' inside a URL; prose mentions of Amazon or pages below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece of a web URL (amazon domain, /Pages/ path)",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: 'ages' x4 (/Pages/ in .aspx URLs), '.amazon' x4 (www.amazon.com/dp/...). Probe: www.who.int/.../Pages/default.aspx 0.885, http://www.amazon.com/dp 0.668, nhs.uk/.../Pages/flu.aspx 0.558; 'buy the book on Amazon' 0.002, 'three hundred pages' 0.006, ebay.com/itm 0.061. 'post-punk' 0.435 (card ' post' x2) is a second trigger, kept out of the test."
+}

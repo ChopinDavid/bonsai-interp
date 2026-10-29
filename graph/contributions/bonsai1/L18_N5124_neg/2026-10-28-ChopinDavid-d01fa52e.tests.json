@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d01fa52e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N5124-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N5124",
+   "pole": "-",
+   "label": "the content word that ends a compact summary statement (a fanfic AU blurb, an accounting rule, a genealogy list); everyday narrative about the same subjects stays low",
+   "fire": [
+    "AU. Hermione is sorted into Slytherin and must find new friends.",
+    "FIFO accounting raises reported income when prices are rising.",
+    "The chronicle names the daughters as Miriam, Leah and Dinah.",
+    "AU. Time Travel. Draco wakes up in his first year with all his memories.",
+    "Higher depreciation lowers taxable income and therefore the tax bill.",
+    "The census records the children as Thomas, Mary and little Ann.",
+    "AU: After the war, Ron becomes an Auror and moves to America.",
+    "Straight-line depreciation spreads the cost evenly over the asset's life."
+   ],
+   "quiet": [
+    "Hermione walked to the library and found her friends at a table.",
+    "The accountant drank her coffee and looked out the window.",
+    "Miriam, Leah and Dinah walked to the well in the morning.",
+    "Draco wakes up late on Saturday and has breakfast in bed.",
+    "The bookkeeper locked the office and drove home for dinner.",
+    "Thomas, Mary and little Ann played in the garden all day.",
+    "After lunch, Ron takes a nap on the sofa by the fire.",
+    "The old machine sat in the corner of the workshop all year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.7 on the clause-final content word of the summary; everyday rewrites below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "end of a compact summary statement",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card is diffuse (max 15.8): ' configuration', ' goes' (fanfic AU blurbs), ' as' (sons listed as), ' profit' (LIFO), ' million'. Probe: 'LIFO accounting decreases net profit' 0.769 on ' profit', 'AU. Time Travel. Harry goes back in time to save his parents' 0.693, 'lists the sons as' 0.389, 'simpler configuration' 0.318; 'Harry wakes up early and goes to school' 0.033, 'Next, Pierre...' 0.041, mailman 0.006. No clear unifying trigger."
+}

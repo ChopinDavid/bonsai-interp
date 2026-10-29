@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-33a14e5c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N6745+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N6745",
+   "pole": "+",
+   "label": "the passive verb after a negated modal (cannot be executed, could not be reached): the pole marks what is reported impossible; the same sentences with a positive modal stay low",
+   "fire": [
+    "The script cannot be run inside a sandboxed browser tab.",
+    "About a fifth of the patients could not be reached by phone.",
+    "This setting cannot be changed once the account is created.",
+    "Several of the witnesses could not be located after the trial.",
+    "The file cannot be opened because it is locked by another user.",
+    "Many of the old records could not be recovered after the flood.",
+    "These tickets cannot be transferred to another passenger.",
+    "Two of the hikers could not be found until the next morning."
+   ],
+   "quiet": [
+    "The script can be run inside any browser tab.",
+    "About a fifth of the patients were reached by phone.",
+    "This setting can be changed at any time after the account is created.",
+    "Several of the witnesses were located soon after the trial.",
+    "The file can be opened by anyone with the link.",
+    "Many of the old records were recovered after the flood.",
+    "These tickets can be transferred to another passenger.",
+    "Two of the hikers were found early the next morning."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on the participle or 'be' after the negated modal; positive-modal rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "passive verb after 'cannot be' / 'could not be'",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: ' cannot' x7, '’t' x3, ' nicht' x2, ' been' x2 ('cannot be executed', 'could not be contacted', 'could be recruited'). Probe: 'cannot be executed in a scratch cell' 0.337, 'could not be contacted' 0.207, 'cannot get around' 0.144, \"can't make causal claims\" 0.118; 'can be executed in any cell' 0.028, 'were contacted' 0.018. The card's top item ('feeding solids earlier') did not reproduce (0.015). Weak, may miss the 0.20 median."
+}
