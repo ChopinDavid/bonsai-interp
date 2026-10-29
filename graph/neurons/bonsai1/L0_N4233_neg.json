@@ -4,10 +4,10 @@
  "layer": 0,
  "index": 4233,
  "pole": "-",
- "label": "the token ' magnitude' (and similar abstract measurement nouns) mid-sentence after 'and' or 'of'; an early-layer token unit with a tiny range",
+ "label": "a bare 'magnitude' (or duration, size, amplitude) with no 'the' before it, right after another abstract noun in a list ('likelihood and magnitude'); quiet after 'the' or a verb",
  "short": "' magnitude' mid-sentence",
  "kind": "lexical",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-22-ChopinDavid-7463ac59"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N4233_neg/2026-10-28-moridinamael-0398a5d1.tests.json",
+   "prereg_commit": "fdf728fb",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.364,
+     "peak": " magnitude"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.394,
+     "peak": " magnitude"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.263,
+     "peak": " duration"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.061,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.342,
+     "peak": " size"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.271,
+     "peak": " symptoms"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.437,
+     "peak": " magnitude"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.283,
+     "peak": " duration"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.047,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.09,
+     "peak": " severe"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.057,
+     "peak": "Researchers"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.06,
+     "peak": "'s"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.026,
+     "peak": " acting"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.252,
+     "peak": " duration"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.078,
+     "peak": " loss"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.088,
+     "peak": "Doctors"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.312,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-moridinamael-0398a5d1"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-22-ChopinDavid-7463ac59",
    "the token ' magnitude' (and similar abstract measurement nouns) mid-sentence after 'and' or 'of'; an early-layer token unit with a tiny range",
    "held"
+  ],
+  [
+   "2026-10-28-moridinamael-0398a5d1",
+   "a bare 'magnitude' (or duration, size, amplitude) with no 'the' before it, right after another abstract noun in a list ('likelihood and magnitude'); quiet after 'the' or a verb",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-22-ChopinDavid-7463ac59"
+  "2026-10-22-ChopinDavid-7463ac59",
+  "2026-10-28-moridinamael-0398a5d1"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.0103,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 3694
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
