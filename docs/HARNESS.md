@@ -163,6 +163,7 @@ placebos, a held-out 8 + 8, and the 50% coverage rule.
 | compose@10 (docs/COMPOSE.md) | pair covers: (previous token, token) pairs against the same token after another token and the same previous token before another | 7,023 of 9,588 assigned (73%); multi-token words, L6–11 strongest after L0–5; 92 in L12–17 |
 | compose@11 (docs/COMPOSE.md) | triple covers: (token two back, previous token, token) | 640 of 1,609 assigned (40%); fixed phrases ("insofar as", "above all"); the n-gram covers end here |
 | compose@12 (docs/COMPOSE.md) | wider covers: 9–16 read tokens or pairs, each seen twice | 672 of 1,195 assigned (56%); rhymes, fields, first names; the end of the cover line |
+| compose@13 (docs/COMPOSE.md) | label precision: each assigned word cover against its nearest embedding tokens, with a fresh-pairs control | 19,149 poles: 14,829 sharp, 1,096 broad (categories), 3,224 unreplicated; replication falls with selection precision (4.9% fail at ≥ 0.5, 61% under 0.2) |
 
 All of it is in the atlas: lib_* columns (the best test per pole across passes, its coverage, every condition held) and
 census_flags. It shows on `play card`, `play search --kind …` and the map.

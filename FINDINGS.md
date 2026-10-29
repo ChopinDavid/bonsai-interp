@@ -1078,3 +1078,21 @@ assigned** (0 of 1,195 placebo tests held). The assignment-grade total is now ab
   under 200 across them. A pole there has no small set of tokens, pairs or triples that covers half of it with
   precision.
 
+## 2026-10-29: Label precision; most word covers are sharp, and low-precision ones don't replicate (compose@13)
+
+compose@13 re-tested the 19,149 poles assigned by a word cover. Each cover was tested against the tokens nearest to it
+in the model's input embedding (inflections left out), and again against the frequency-matched null on fresh pairs. 2 of
+19,116 placebo tests held.
+
+- **Sharp: 14,829. Broad: 1,096. Unreplicated: 3,224.** Of the 15,925 covers that replicated, 93% fire on their tokens and
+  not on the nearest ones.
+  - The broad share rises with how close the neighbours are: 3.9% at cosine under 0.10, 40% at 0.16 or more.
+  - Broad covers sample a category: pronouns (L24), hedges such as " likely", " probably", " usually" (L6), the nervous
+    system and body (L22), US states (L6), number words (L1).
+- **Replication falls with selection precision:** 4.9% of covers fail it at precision ≥ 0.5, 27% at 0.3–0.5, 46% at
+  0.2–0.3 and 61% under 0.2.
+  - compose@9 (the low-precision tail of the queue) did not replicate for 32% of its assignments; compose@7 for 0.7%.
+  - One held 8 + 8 test is not enough at low precision: most occurrences of the tokens leave the pole quiet, and the
+    test holds when its draw catches the ones that fire.
+- **Consequence:** about 3,200 of the 37,629 assignment-grade poles rest on a cover that failed a fresh test. The pair and
+  triple covers (compose@10–12) need the same replication before the count is quoted without that caveat.
