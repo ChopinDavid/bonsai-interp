@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N12276+",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 12276,
+ "pole": "+",
+ "label": "a byte-fallback token: the first byte piece of a character that is not in the vocabulary (rare kanji 鬱 薔薇 檸檬 籠, the symbols Ω and ≈ after a space, Arabic-Indic digits, Cyrillic щ after a space), peak on the byte; the same sentences with in-vocabulary characters stay low; Korean hangul bytes carried it inconsistently in the probe (센 0.13, 꾸 0.00)",
+ "short": "byte-fallback character piece",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N12276_pos/2026-10-29-ChopinDavid-5a6f6597.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.0,
+     "peak": "が"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.026,
+     "peak": "庭"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.166,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": -0.001,
+     "peak": "眠"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.697,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.346,
+     "peak": " �"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.486,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.234,
+     "peak": " �"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "が"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": "庭"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "市"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.001,
+     "peak": "の"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.09,
+     "peak": " oh"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.141,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.066,
+     "peak": " الدراسي"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.183,
+     "peak": " м"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.695,
+    "median_fire": 0.2,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-5a6f6597"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-5a6f6597",
+   "a byte-fallback token: the first byte piece of a character that is not in the vocabulary (rare kanji 鬱 薔薇 檸檬 籠, the symbols Ω and ≈ after a space, Arabic-Indic digits, Cyrillic щ after a space), peak on the byte; the same sentences with in-vocabulary characters stay low; Korean hangul bytes carried it inconsistently in the probe (센 0.13, 꾸 0.00)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-5a6f6597"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

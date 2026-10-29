@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N5106+",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 5106,
+ "pole": "+",
+ "label": "the punctuation that closes one citation and separates it from the next in a legal string cite ('(1973); Doe v. Bolton', 'supra;'), and the ' (' that opens a parenthetical cross-reference ('(see Figure 2)', '(or subclass)'); parentheticals with other content ('(born 1950)', '(roughly 48 percent)') and prose without citations stay low",
+ "short": "legal string-cite separators and '(see' cross-references",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N5106_pos/2026-10-29-ChopinDavid-e40f1f56.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.497,
+     "peak": ");"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.425,
+     "peak": ");"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.598,
+     "peak": ");"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.102,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.009,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.294,
+     "peak": ");"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.108,
+     "peak": ");"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.486,
+     "peak": ";"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " exceptions"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": " temperatures"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " case"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " author"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.961,
+    "median_fire": 0.359,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-e40f1f56"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-e40f1f56",
+   "the punctuation that closes one citation and separates it from the next in a legal string cite ('(1973); Doe v. Bolton', 'supra;'), and the ' (' that opens a parenthetical cross-reference ('(see Figure 2)', '(or subclass)'); parentheticals with other content ('(born 1950)', '(roughly 48 percent)') and prose without citations stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-e40f1f56"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

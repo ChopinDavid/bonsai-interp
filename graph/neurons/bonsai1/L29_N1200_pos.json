@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N1200+",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 1200,
+ "pole": "+",
+ "label": "a next-token predictor for a business-entity noun (company, firm, maker, manufacturer, conglomerate): the modifier or determiner right before it ('his own construction _', 'a private _', 'the Japanese _', 'mining _'), peak on that word; the same determiners before non-business nouns stay low, but a modifier that itself predicts a firm ('a private detective') fires",
+ "short": "predicts 'company/firm'",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N1200_pos/2026-10-29-ChopinDavid-fb226a74.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.125,
+     "peak": " software"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.78,
+     "peak": " shipping"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.426,
+     "peak": " Japanese"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.625,
+     "peak": " consulting"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.222,
+     "peak": " pharmaceutical"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.186,
+     "peak": " construction"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.932,
+     "peak": "-owned"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.075,
+     "peak": " electronics"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.162,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.127,
+     "peak": " own"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.081,
+     "peak": " retired"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " parts"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.324,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-fb226a74"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-fb226a74",
+   "a next-token predictor for a business-entity noun (company, firm, maker, manufacturer, conglomerate): the modifier or determiner right before it ('his own construction _', 'a private _', 'the Japanese _', 'mining _'), peak on that word; the same determiners before non-business nouns stay low, but a modifier that itself predicts a firm ('a private detective') fires",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-fb226a74"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

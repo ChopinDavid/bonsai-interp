@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N9932-",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 9932,
+ "pole": "-",
+ "label": "the distributive 'a' of a rate expression ('a pack a day', 'twice a week', 'once a month'), peak on that 'a'; Spanish 'dos veces a la' and German 'einmal im' carry it too, 'per' only weakly (0.16-0.28) and 'every N hours' not at all; the plain article 'a' is silent",
+ "short": "rate 'a' (twice a week)",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N9932_neg/2026-10-29-ChopinDavid-092401b5.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.434,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.383,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.584,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.287,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.481,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.419,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.314,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.288,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": " brother"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.114,
+     "peak": " hours"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.199,
+     "peak": " times"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.103,
+     "peak": " patients"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.252,
+     "peak": " books"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.401,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-092401b5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-092401b5",
+   "the distributive 'a' of a rate expression ('a pack a day', 'twice a week', 'once a month'), peak on that 'a'; Spanish 'dos veces a la' and German 'einmal im' carry it too, 'per' only weakly (0.16-0.28) and 'every N hours' not at all; the plain article 'a' is silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-092401b5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

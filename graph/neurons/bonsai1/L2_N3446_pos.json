@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N3446+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 3446,
+ "pole": "+",
+ "label": "a dense, early unit on the subject that opens a new clause after a sentence or clause boundary: subject pronouns (we, It, they, I, He, you) strongest, noun-phrase subjects ('The authors', 'the members') also fire; sentence-initial subjects with no preceding clause and verbs/objects stay lower",
+ "short": "clause-opening subject after a boundary",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N3446_pos/2026-10-29-ChopinDavid-cecafdd5.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.465,
+     "peak": " we"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.54,
+     "peak": " It"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.671,
+     "peak": " they"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.61,
+     "peak": " I"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.397,
+     "peak": " We"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.647,
+     "peak": " you"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.385,
+     "peak": " He"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.419,
+     "peak": " she"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.032,
+     "peak": "Snow"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.098,
+     "peak": " bridge"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.237,
+     "peak": " manager"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": "Posting"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.056,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": "Lock"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.036,
+     "peak": "B"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " next"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.503,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-cecafdd5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-cecafdd5",
+   "a dense, early unit on the subject that opens a new clause after a sentence or clause boundary: subject pronouns (we, It, they, I, He, you) strongest, noun-phrase subjects ('The authors', 'the members') also fire; sentence-initial subjects with no preceding clause and verbs/objects stay lower",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-cecafdd5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

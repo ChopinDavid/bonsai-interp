@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N1761-",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 1761,
+ "pole": "-",
+ "label": "the function word that opens a locative or circumstantial complement of a narrative predicate of being, living or suffering ('lived in a hut by', 'was in danger', 'anyone in there', 'had been arrested', 'hunted for their pelts', 'in my street'); temporal 'in 1848', 'interested in' and 'had been to Paris' stay low",
+ "short": "narrative locative/circumstantial complement opener",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N1761_neg/2026-10-29-ChopinDavid-7e3a2e2a.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.474,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.387,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.254,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.639,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.192,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.349,
+     "peak": " my"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.125,
+     "peak": " been"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.467,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.366,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.124,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.085,
+     "peak": " anybody"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.548,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.059,
+     "peak": " every"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.235,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.125,
+     "peak": " been"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.201,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.758,
+    "median_fire": 0.368,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-29-ChopinDavid-7e3a2e2a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-7e3a2e2a",
+   "the function word that opens a locative or circumstantial complement of a narrative predicate of being, living or suffering ('lived in a hut by', 'was in danger', 'anyone in there', 'had been arrested', 'hunted for their pelts', 'in my street'); temporal 'in 1848', 'interested in' and 'had been to Paris' stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-7e3a2e2a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L21/N4248+",
+ "model": "bonsai1",
+ "layer": 21,
+ "index": 4248,
+ "pole": "+",
+ "label": "a weak, broad unit on the boundaries of listing and citation lines: the separator or first word before a date, heading or item in schedule lines, reference lists and '|'-separated news indexes ('Retrieved 2011-04-02', 'news | 16 May', 'Confidential to My'); ordinary prose stays near zero",
+ "short": "listing/citation line boundaries",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N4248_pos/2026-10-29-ChopinDavid-2f97ba39.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.273,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.21,
+     "peak": "8"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.187,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.359,
+     "peak": " My"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.383,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.224,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.161,
+     "peak": " our"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.239,
+     "peak": "(self"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.037,
+     "peak": " rec"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": " seven"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.037,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.002,
+     "peak": " faithful"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.026,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " early"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.059,
+     "peak": "Past"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.231,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-2f97ba39"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-2f97ba39",
+   "a weak, broad unit on the boundaries of listing and citation lines: the separator or first word before a date, heading or item in schedule lines, reference lists and '|'-separated news indexes ('Retrieved 2011-04-02', 'news | 16 May', 'Confidential to My'); ordinary prose stays near zero",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-2f97ba39"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

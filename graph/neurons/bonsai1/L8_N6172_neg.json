@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N6172-",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 6172,
+ "pole": "-",
+ "label": "the word 'peak' (noun or verb, maximum or mountain sense: peak, peaks, peaked), with French 'pic' and Spanish 'pico' as weaker cognates; synonyms without the word (maximum, summit, spike, climax, highest) and the homophone 'peek' stay low, summit leaking weakly",
+ "short": "the word peak",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N6172_neg/2026-10-29-ChopinDavid-11b4bed5.tests.json",
+   "prereg_commit": "5ed32d63",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.443,
+     "peak": " peak"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.725,
+     "peak": " peak"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.714,
+     "peak": " peak"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.513,
+     "peak": " peak"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.502,
+     "peak": " peaked"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.831,
+     "peak": " peaks"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.492,
+     "peak": " peak"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.805,
+     "peak": " peak"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "aviest"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.032,
+     "peak": " chart"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.163,
+     "peak": " rise"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.365,
+     "peak": " summit"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.135,
+     "peak": "axed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.243,
+     "peak": " rises"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.077,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.356,
+     "peak": " spike"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.613,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-29-ChopinDavid-11b4bed5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-11b4bed5",
+   "the word 'peak' (noun or verb, maximum or mountain sense: peak, peaks, peaked), with French 'pic' and Spanish 'pico' as weaker cognates; synonyms without the word (maximum, summit, spike, climax, highest) and the homophone 'peek' stay low, summit leaking weakly",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-11b4bed5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
