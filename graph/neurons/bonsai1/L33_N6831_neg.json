@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N6831-",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 6831,
+ "pole": "-",
+ "label": "the enclitic '-n'/'arn'/'ndon' pieces of French inverted 'nous' and Spanish reflexive -nos verb forms (Pouvons-nous, juntarnos, sirviéndonos); analytic rewrites and English stay low",
+ "short": "French -nous / Spanish -nos enclitic pieces",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N6831_neg/2026-10-29-ChopinDavid-dd3c9930.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.117,
+     "peak": " vraiment"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.158,
+     "peak": " el"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.46,
+     "peak": "-n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.411,
+     "peak": "arn"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.469,
+     "peak": "-n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.234,
+     "peak": "arn"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.524,
+     "peak": "-n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.301,
+     "peak": "arn"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.241,
+     "peak": "-ce"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.192,
+     "peak": " de"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.319,
+     "peak": "vez"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.116,
+     "peak": " com"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.164,
+     "peak": "emos"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.241,
+     "peak": "-ce"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " together"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.356,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-dd3c9930"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-dd3c9930",
+   "the enclitic '-n'/'arn'/'ndon' pieces of French inverted 'nous' and Spanish reflexive -nos verb forms (Pouvons-nous, juntarnos, sirviéndonos); analytic rewrites and English stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-dd3c9930"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

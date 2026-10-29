@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N2366-",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 2366,
+ "pole": "-",
+ "label": "a legal/technical head noun in set phrases (legal 'advice', U.S. 'territory', genetic 'carriers', principal 'investigator'); the same words in everyday senses stay low",
+ "short": "head noun of legal/technical set phrases",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N2366_neg/2026-10-29-ChopinDavid-95cb4a87.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.717,
+     "peak": " advice"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.548,
+     "peak": " territory"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.127,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.598,
+     "peak": " advice"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.6,
+     "peak": " territory"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.163,
+     "peak": " carriers"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.017,
+     "peak": " legal"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.907,
+     "peak": " territory"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " thanked"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": " territory"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " across"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": " golf"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " hunting"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.028,
+     "peak": "Several"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.039,
+     "peak": " let"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.032,
+     "peak": " warm"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.573,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-95cb4a87"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-95cb4a87",
+   "a legal/technical head noun in set phrases (legal 'advice', U.S. 'territory', genetic 'carriers', principal 'investigator'); the same words in everyday senses stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-95cb4a87"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

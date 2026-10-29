@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N6486+",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 6486,
+ "pole": "+",
+ "label": "a word-internal piece immediately after a prefix boundary in long/technical words (' var'ieg, non-'acc'us, ar'ith, non-'com'ed, ' ca'str), often near the start of a window; whole-token synonyms stay low",
+ "short": "piece after a prefix/stem boundary in long words",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N6486_pos/2026-10-29-ChopinDavid-d4150ae7.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.692,
+     "peak": " var"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.136,
+     "peak": "acc"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.647,
+     "peak": " ar"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.57,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.724,
+     "peak": " ca"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.326,
+     "peak": " pers"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.124,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.633,
+     "peak": " ca"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": " male"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " blame"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " only"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.086,
+     "peak": "D"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.063,
+     "peak": " we"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " brown"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " them"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.601,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d4150ae7"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d4150ae7",
+   "a word-internal piece immediately after a prefix boundary in long/technical words (' var'ieg, non-'acc'us, ar'ith, non-'com'ed, ' ca'str), often near the start of a window; whole-token synonyms stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d4150ae7"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

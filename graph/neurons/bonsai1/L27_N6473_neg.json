@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L27/N6473-",
+ "model": "bonsai1",
+ "layer": 27,
+ "index": 6473,
+ "pole": "-",
+ "label": "the word ' how' introducing an embedded clause after a verb of measuring/determining ('determine how', 'measure how', 'predict how'); 'how' in direct questions and 'whether'/noun rewrites stay low",
+ "short": "' how' opening an embedded degree clause",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N6473_neg/2026-10-29-ChopinDavid-7c5550e1.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.056,
+     "peak": " how"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.131,
+     "peak": " how"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.006,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.002,
+     "peak": "Aud"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.015,
+     "peak": " adults"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.004,
+     "peak": " cannot"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.174,
+     "peak": " how"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.198,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " recall"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.039,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": "Aud"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": "How"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " cannot"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " argument"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": " rain"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.703,
+    "median_fire": 0.036,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-7c5550e1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-7c5550e1",
+   "the word ' how' introducing an embedded clause after a verb of measuring/determining ('determine how', 'measure how', 'predict how'); 'how' in direct questions and 'whether'/noun rewrites stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-7c5550e1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

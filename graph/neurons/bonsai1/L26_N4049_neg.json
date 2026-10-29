@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N4049-",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 4049,
+ "pole": "-",
+ "label": "a token in a how-to / self-help instruction list giving behaviour tips (bulleted 'Turn off', 'Keep ... at a reasonable level', 'ask them to'); the same tokens in a non-instruction list or factual sentence stay low",
+ "short": "token inside a behaviour-tip instruction list",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N4049_neg/2026-10-29-ChopinDavid-bd37020e.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.121,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.245,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.262,
+     "peak": " take"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.269,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.41,
+     "peak": " step"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.026,
+     "peak": "Set"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.107,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.052,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": "-"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.04,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.024,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.087,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": " overnight"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.183,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-bd37020e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-bd37020e",
+   "a token in a how-to / self-help instruction list giving behaviour tips (bulleted 'Turn off', 'Keep ... at a reasonable level', 'ask them to'); the same tokens in a non-instruction list or factual sentence stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-bd37020e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

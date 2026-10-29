@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N9141+",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 9141,
+ "pole": "+",
+ "label": "a token inside King James / scriptural narrative prose (archaic 'unto', 'ye', 'shall', gospel cadence); the same events told in plain modern English stay lower",
+ "short": "token in KJV/scriptural narrative cadence",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N9141_pos/2026-10-29-ChopinDavid-c3839b38.tests.json",
+   "prereg_commit": "0cb06b68",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.108,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.223,
+     "peak": " himself"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.422,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.756,
+     "peak": " him"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.418,
+     "peak": " given"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.147,
+     "peak": " servants"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.114,
+     "peak": "ek"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.125,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.169,
+     "peak": " crowd"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.073,
+     "peak": " anyone"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.089,
+     "peak": " blanket"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.068,
+     "peak": " story"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.068,
+     "peak": " find"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.036,
+     "peak": " staff"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.042,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.054,
+     "peak": " noon"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.185,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-c3839b38"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-c3839b38",
+   "a token inside King James / scriptural narrative prose (archaic 'unto', 'ye', 'shall', gospel cadence); the same events told in plain modern English stay lower",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-c3839b38"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
