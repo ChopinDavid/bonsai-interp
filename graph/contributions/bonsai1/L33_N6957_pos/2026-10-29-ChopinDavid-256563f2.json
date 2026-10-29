@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-256563f2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N6957+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T21:34:27+00:00",
+ "recipe": {
+  "toolchain_commit": "2b4e09b3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N6957_pos/2026-10-29-ChopinDavid-256563f2.tests.json"
+ },
+ "label": "academic discourse of identity-based critical theory (queer, feminist, Black, Indigenous, postcolonial, trans studies): the pole fires on the function words and verbs inside such sentences; the same scholarly sentence shapes in physics, economics, engineering, musicology or philology are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N6957_pos/2026-10-29-ChopinDavid-256563f2.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.805,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.544,
+     "peak": " including"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.46,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.342,
+     "peak": " re"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.293,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.426,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.464,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.697,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " such"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.042,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": " inflammation"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.035,
+     "peak": " conc"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " retreat"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.462,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2b4e09b3",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "identity-based critical theory discourse",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: ' of' x6, ' and' x3, ' by' x3, ',' x2, ' refuses', ' contemporary'; all examples are queer theory, African-American literary criticism, Métis identity, disability representation, Gates/Lorde/Daly/Morrison; max 212, density 0.086%. Probe: Black feminist thought (Lorde, hooks) 0.835 (peak ' and'), queer theory 0.568 (peak ' rejects'), postcolonial development critique 0.267, Barnard/Boas biography 0.120, disability studies 0.073, relativity 0.006, Keynesian 0.004, railway citation 0.005, literary praise 0.051, floor 0.021. Disability studies was weak, so the label names the identity-politics strand.",
+ "selection": "random draw"
+}

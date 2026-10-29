@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-27bed377",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N129+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N129",
+   "pole": "+",
+   "label": "the word piece that follows a capital-D onset token (' Dou', ' D') in a split proper name (Dou|gie, Dou|gal, D|omb|rowski, Dou|ala, D|vor|ak), peak on that piece; the same pieces after other onsets (Bou|gie, Mou|gal, Tom|bs) and single-token D-words (Doug, dough, Dodgers) are silent",
+   "fire": [
+    "The cathedral at Douala overlooks the harbour.",
+    "Vineyards line the Douro valley for a hundred miles.",
+    "The deputy Dougan voted against the bill.",
+    "Actor Dougray starred in the remake.",
+    "Striker Doumbia scored twice in the final.",
+    "The composer Dvorak wrote his ninth symphony in New York.",
+    "President Dlamini addressed the assembly on Monday.",
+    "Barges still carry grain down the Dnieper every autumn."
+   ],
+   "quiet": [
+    "The trader Bougal owns a warehouse by the harbour.",
+    "Vineyards line the Rhone valley for a hundred miles.",
+    "The deputy Mougal voted against the bill.",
+    "Actor Rougie starred in the remake.",
+    "Striker Tombs scored twice in the final.",
+    "The composer Dmitri wrote his ninth symphony in New York.",
+    "Coach Doug addressed the assembly on Monday.",
+    "Barges still carry grain down the Rhine every autumn."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.5 on the piece after ' Dou' or ' D'; near misses below 0.1; the ' D' onset items may be weaker than the ' Dou' ones (Dz|ong 0.121, Do|ogie 0.075 in the probe)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece after a ' Dou'/' D' onset",
+ "unit_kind": "token/lexical",
+ "confidence": 0.45,
+ "notes": "Card: 'oug' x4, 'gie' x3, 'ough' x3, 'omb' x2, 'ña' x2, ' dope'; examples Dou|gie, Dou|gs, D|ogg|ystyle, Dz|og|chen, Dou|gl|awi, McD|oug|all, D|omb|ey; max 12.5, density 0.005%. Probe: Dou|gie 0.482, D|omb|rowski 0.452 (peak 'omb'), Dou|gal 0.397, Dz|ong 0.121, Bog|gs 0.081, Do|ogie 0.075, McD|ou|gal 0.047 (peak 'gal'), Bou|gie 0.020, Dog|gett 0.013, dough 0.004, floor 0.007. The piece 'gie' fires after ' Dou' (0.482) but not after ' Bou' (0.020), so the onset carries the trigger, not the piece."
+}

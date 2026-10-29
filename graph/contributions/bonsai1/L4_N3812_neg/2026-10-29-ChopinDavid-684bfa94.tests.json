@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-684bfa94",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3812-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3812",
+   "pole": "-",
+   "label": "the piece 'bar' as overbar notation (LaTeX \\bar{x}, \\bar\\lambda) and the combining-macron bytes of x̄/ȳ/μ̄, plus 'bar' as a non-initial piece inside a longer word or name (O|bar|zanek, Dun|bar, Ak|bar); the standalone word ' bar' (pub, bar chart, raise the bar), single-token names (Barbara, sidebar) and macron letters ā/ō are silent or weak",
+   "fire": [
+    "The estimator \\bar{y} converges to the population mean as n grows.",
+    "Let \\bar{\\mu} denote the average of the group means.",
+    "We write the sample average as ȳ and its variance as s².",
+    "The notation μ̄ stands for the mean over all trials.",
+    "The constraint is \\bar{z} = \\bar{x} + \\bar{w} for every block.",
+    "The poet Dunbar published his first collection in 1893.",
+    "The emperor Akbar ruled the Mughal empire for fifty years.",
+    "In the appendix \\bar{\\lambda} is the mean arrival rate."
+   ],
+   "quiet": [
+    "The estimator converges to the population mean as the bar graph shows.",
+    "Let the group meet at the bar after the lecture.",
+    "We raised the bar for every later cohort.",
+    "The Māori notation for long vowels uses a macron.",
+    "The constraint is that no bar may serve after midnight.",
+    "The poet Barbara published her first collection in 1893.",
+    "The emperor's gold bars filled the treasury for fifty years.",
+    "In the appendix the sidebar lists the mean arrival rate."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on 'bar' or the macron byte; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'bar' as overbar / macron",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: 'bar' x7, '�' x6, 'Bar' x3, 'ā' x3, '¯' x2, 'Ō' x2; examples ' ¯x(λ)', '¯0.5', '\\bar\\lambda', 'NPG¯P', 'LeftArrowBar', 'O|bar|zanek', 'sŤāÇkeð', 'gĪˈsərĭk'; max 21.5, density 0.002%. Probe: x̄ 1.068 (peak byte), '\\bar{x}' 0.770, '\\bar\\lambda' 0.665, 'Obarzanek' 0.261, 'LeftArrowBar' 0.178, Māori 'ā' 0.063, shōgun 0.004, ' bar' pub 0.029, bar chart 0.060, raised the bar 0.021, floor 0.008. Overbar notation is the core; the mid-word 'bar' piece is weaker and may give the two name items 0.2-0.4.",
+ "trigger": {
+  "pieces": [
+   "bar"
+  ]
+ }
+}

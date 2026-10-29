@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ecdff3c5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5194+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N5194",
+   "pole": "+",
+   "label": "the preposition that attaches a specifying complement or example to the preceding noun (Spanish 'convenio de trabajo', 'uso del agua', French 'préparation du repas', English 'a contractor like the one', 'blessings of which'); 'like' as a verb or as a simile after a verb, 'of course' and 'de/du' after a verb are weak",
+   "fire": [
+    "El contrato colectivo de la empresa se renueva cada año.",
+    "Los conflictos de uso del agua dividen a la región.",
+    "La reforma del sistema de pensiones fue aprobada ayer.",
+    "Les étapes de fabrication du fromage sont expliquées sur place.",
+    "Le plan de rénovation du théâtre a été adopté.",
+    "A trusted mechanic like the one on Elm Street is hard to find.",
+    "Save shortcuts like home or office in the app.",
+    "Remember your advantages of which a young person has many."
+   ],
+   "quiet": [
+    "El contrato se renueva de nuevo cada año.",
+    "Los vecinos vienen de la región cada verano.",
+    "La reforma fue aprobada ayer por la tarde.",
+    "Les enfants viennent du village chaque matin.",
+    "Le théâtre a été rénové l'an dernier.",
+    "A trusted mechanic works like a surgeon under the hood.",
+    "I like the home screen more than the office one.",
+    "Remember that of course a young person has many advantages."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.7 on de/del/du/like/of; near misses below 0.15; the FLAG broad pole has a floor near 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun-complement preposition (de/du/like/of)",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' of' x8, ' like' x4, ' del' x3, ' de' x3, ' كال' x3, ' du' x2; examples 'conflictos de uso del suelo', 'Convenio colectivo de trabajo', 'contractor like Costanzo', 'dépeçage du chat', 'favorite locations like home', 'blessings of which', 'keywords like geo'; max 6.97, density 1.337%, FLAG broad. Probe: 'convenio colectivo de trabajo' 0.665, 'contractor like the one' 0.316, 'préparation du repas' 0.277 (peak ' du'), 'blessings of which' 0.266, 'tools like Slack' 0.095, 'ran out of the house like a madman' 0.059, 'I like strawberries' 0.048, 'results of the study' 0.068, 'Of course' 0.015, floor 0.114 (peak ' all'). The noun-attached preposition fires; 'like' before a list of examples (Slack) was weak."
+}

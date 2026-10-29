@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-df3e6cd6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N10106-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T21:35:10+00:00",
+ "recipe": {
+  "toolchain_commit": "2b4e09b3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N10106_neg/2026-10-29-ChopinDavid-df3e6cd6.tests.json"
+ },
+ "label": "guess: the final piece of a split surname of a cited thinker in a 'the <discipline> <Name> wrote/argued' frame (Krug|man, Fre|ire, Bour|d|ieu, Fou|ca|ult); single-token surnames in the same frames (Marx, Freud, Keynes, Darwin) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N10106_neg/2026-10-29-ChopinDavid-df3e6cd6.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.198,
+     "peak": "ologist"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.101,
+     "peak": " prisons"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.126,
+     "peak": "ü"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.074,
+     "peak": " Pik"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.234,
+     "peak": "eman"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.226,
+     "peak": "ida"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.318,
+     "peak": " whether"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.257,
+     "peak": "well"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.246,
+     "peak": " hide"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.103,
+     "peak": " S"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.046,
+     "peak": " Keynes"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": "ist"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": "ic"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.17,
+     "peak": " order"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.107,
+     "peak": " whether"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.119,
+     "peak": " cold"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.212,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2b4e09b3",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "last piece of a cited thinker's split surname",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: ',' x2, ' colleagues' x2, 'man', ' I', ' Know', 'ell'; examples 'economist Paul Krug|man wrote', 'By a Sign, I mean', 'Christopher Moore (Fluke: Or, I Know Why', 'Dr. Cann|ell makes', '(A)', 'such as Hotel World', 'Paulo Fre|ire', 'The Pige|on Wars'; max 7.41, density 0.819%. Probe: Paulo Fre|ire 0.579 (peak 'ire'), Paul Krug|man wrote 0.287 (peak 'man'), '(A) A tall pine' 0.178, 'By a sign, I mean' 0.122, Dr. Cann|ell 0.084, Zadie Smith (White Teeth) 0.082, 'The economist bought a house' 0.023, 'Paul went to the shop' 0.002, floor 0.027. Weak and mixed; the surname-piece reading is the best single thread and is registered as a guess.",
+ "selection": "random draw"
+}

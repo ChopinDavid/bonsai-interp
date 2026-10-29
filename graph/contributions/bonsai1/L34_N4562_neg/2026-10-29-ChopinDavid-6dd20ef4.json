@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-6dd20ef4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N4562-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T21:34:59+00:00",
+ "recipe": {
+  "toolchain_commit": "2b4e09b3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N4562_neg/2026-10-29-ChopinDavid-6dd20ef4.tests.json"
+ },
+ "label": "the newline that ends a line of program code (')\\n', '}\\n', '):\\n', a bare '\\n' after a statement or import), in Python, JavaScript, C-like and Rust snippets; newlines in prose, letters, bullet lists, Q&A and verse are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N4562_neg/2026-10-29-ChopinDavid-6dd20ef4.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.529,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.412,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.625,
+     "peak": " }\n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.354,
+     "peak": ")\n\n\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.356,
+     "peak": " []\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.319,
+     "peak": "\n"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.824,
+     "peak": "();\n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.58,
+     "peak": " {\n"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.116,
+     "peak": ".\n"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": "-"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": "-"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " snow"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.035,
+     "peak": "?\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " are"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.471,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2b4e09b3",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "newline ending a code line",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: ')\\n' x4, ')\\n\\n\\n' x4, '()\\n' x3, '\\n' x3, ')\\n\\n' x3, ' }\\n'; FLAG broad (1.8% of tokens) and positional (peaks cluster early in the window); max 328, density 1.755%. Probe: 'doc = self.find_document(name)\\nif doc: return doc' 0.724 (peak '\\n'), JS '{ tag = false; }\\n' 0.706, 'def helper(a, b):\\n' 0.410, 'import os\\nimport sys' 0.367, 'x = compute(a, b)\\n\\n\\ndef helper():' 0.350, assert lines 0.343, prose newline 0.001, '- Pro:/- Con:' bullets 0.002, floor 0.000. Code newlines fire and non-code newlines do not; the pole is broad within code, so it is a code-line-end unit rather than a token.",
+ "selection": "random draw"
+}

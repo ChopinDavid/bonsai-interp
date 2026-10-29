@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-0766a54e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N4572+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T21:34:40+00:00",
+ "recipe": {
+  "toolchain_commit": "2b4e09b3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N4572_pos/2026-10-29-ChopinDavid-0766a54e.tests.json"
+ },
+ "label": "guess: the recitation of a well-known memorised sequence (the three pigs' straw, sticks and bricks; the seven dwarfs; earth, air, fire and water; the plagues; Snap, Crackle and Pop; a divmod chain), peak on an item that completes the familiar pattern; a novel list of the same shape is silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N4572_pos/2026-10-29-ChopinDavid-0766a54e.tests.json",
+   "prereg_commit": "2b4e09b3",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.947,
+     "peak": " straw"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.181,
+     "peak": " baker"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.072,
+     "peak": "nee"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.235,
+     "peak": " air"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.437,
+     "peak": " frogs"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.029,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.56,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.263,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.14,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " names"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " Simon"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " survey"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.255,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.06,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.249,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2b4e09b3",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "recited famous sequence",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: '.' x5, ',' x4, ';' x3, ' heart' x2, ' the', ' frogs'; examples Tin Woodman in search of a heart (x2), the ten plagues 'blood, frogs, lice', divmod(processing_time, 60) then days, hours, 'the cat turned blue. A sour lime', 'Robin ... divided it in half; half he gave'; max 20.25, density 0.081%. Probe: 'Tin Man wanted a heart, the Lion wanted courage, and the Scarecrow wanted a brain' 0.792 (peak ' brain'), divmod chain 0.517 (peak ','), fox-and-fish tale 0.405 (peak ' the'), duck story 0.137, Halloween house 0.073, 'dog turned green' 0.044, committee 0.009, chemistry 0.001, floor 0.016. The strongest responses were a memorised enumeration and a formulaic code idiom; the simple-narrative reading got 0.405 on one item only, so the sequence reading is registered as a guess.",
+ "selection": "random draw"
+}

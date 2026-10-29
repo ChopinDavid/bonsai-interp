@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6dd20ef4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N4562-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N4562",
+   "pole": "-",
+   "label": "the newline that ends a line of program code (')\\n', '}\\n', '):\\n', a bare '\\n' after a statement or import), in Python, JavaScript, C-like and Rust snippets; newlines in prose, letters, bullet lists, Q&A and verse are silent",
+   "fire": [
+    "result = parser.parse(args)\nif result.verbose: print(result)\npath = os.path.join(base, name)",
+    "        self.assertEqual(resp.status_code, 200)\n        self.assertIn('ok', resp.json())",
+    "while (i < n) { total += arr[i]; i++; }\nif (total > limit) { flush(total); }",
+    "data = load(path)\n\n\ndef transform(rows):\n    return [r.strip() for r in rows]",
+    "    buf = []\n    for line in handle:\n        buf.append(line.rstrip())\n    return buf",
+    "import json\nimport re\nfrom collections import defaultdict",
+    "const client = createClient(config);\nawait client.connect();\nconst rows = await client.query(sql);",
+    "fn main() {\n    let args: Vec<String> = env::args().collect();\n    println!(\"{:?}\", args);\n}"
+   ],
+   "quiet": [
+    "The parser accepted the arguments.\nIf verbose output was requested, the result was printed.\nThe path was joined to the base folder.",
+    "The response status was two hundred.\nThe body contained the word ok.",
+    "- Pro: adds the totals quickly\n- Con: flushes only when the limit is passed",
+    "Dear Ms. Alvarez,\n\nThank you for sending the data file.\nWe will transform the rows next week.",
+    "Shopping list:\n- bread\n- milk\n- two lemons",
+    "Chapter One\n\nThe village lay quiet under the snow.\nNobody had seen the stranger arrive.",
+    "Q: How do I connect the client?\nA: Open the settings page and enter the address.",
+    "Roses are red,\nviolets are blue,\nthe compiler is angry,\nand so are you."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.75 on a line-ending newline token; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "newline ending a code line",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: ')\\n' x4, ')\\n\\n\\n' x4, '()\\n' x3, '\\n' x3, ')\\n\\n' x3, ' }\\n'; FLAG broad (1.8% of tokens) and positional (peaks cluster early in the window); max 328, density 1.755%. Probe: 'doc = self.find_document(name)\\nif doc: return doc' 0.724 (peak '\\n'), JS '{ tag = false; }\\n' 0.706, 'def helper(a, b):\\n' 0.410, 'import os\\nimport sys' 0.367, 'x = compute(a, b)\\n\\n\\ndef helper():' 0.350, assert lines 0.343, prose newline 0.001, '- Pro:/- Con:' bullets 0.002, floor 0.000. Code newlines fire and non-code newlines do not; the pole is broad within code, so it is a code-line-end unit rather than a token."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5a398801",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N222+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N222",
+   "pole": "+",
+   "label": "a single letter used as the name of a scientific quantity or constant (R-value, U-value, g factor, G-forces, Q factor, Pi, k, p-value), peak on the letter or the word it modifies; the same letters as initials, labels or list markers (Mr. R. Smith, Plan B, Vitamin C, grade A, room C) are silent",
+   "fire": [
+    "A fighter pilot pulling nine G in a tight turn will black out within seconds.",
+    "Statisticians reject the null hypothesis when the p-value drops below 0.05.",
+    "The spring constant k determines how stiff the suspension feels.",
+    "Engineers quote the Q-factor of a filter to describe how sharp its resonance is.",
+    "Newton's constant G is one of the hardest numbers in physics to measure.",
+    "Every March the maths club bakes a cake for Pi Day.",
+    "The K-value of the foam tells you how well it conducts heat.",
+    "A Z-score tells you how many standard deviations a result sits from the mean."
+   ],
+   "quiet": [
+    "A fighter pilot from squadron B will black out within seconds of a tight turn.",
+    "Statisticians in room C reject the proposal when the data are weak.",
+    "The suspension on model K feels stiffer than on the older cars.",
+    "Engineers in building Q describe the filter's resonance as sharp.",
+    "Newton's laws are among the first things physics students memorise.",
+    "Every March the maths club bakes a cake shaped like the letter P.",
+    "A good double-glazed window from grade A stock keeps the heat in.",
+    "The exhibit marked D tells you how many visitors came that year."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.5 on the letter or the word after it; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "letter as a named quantity (R-value, g factor)",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' Pi' x2, ' g' x2, ' R' x2, ' F' x2, ' Q' x2, 'gee'; examples gee's, Pi Day, U-value, g factor, G-forces, R-values, Ets; max 24.25, density 0.039%. Probe: Pi Day 0.503, Q factor 0.405, G-forces 0.399 (peak '-for'), g factor 0.394 (peak ' factor'), R-value 0.346, U-value 0.326, 'zero g' 0.098, Vitamin C 0.009, 'Mr. R. Smith' 0.053, 'Plan B' 0.014, floor 0.013. The letter must name a measured quantity; 'zero g' as a value was weak."
+}

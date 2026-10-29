@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-8e0f5d0c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N2577+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N2577",
+   "pole": "+",
+   "label": "a token inside a heading or label line that precedes its body text (all-caps headings, title-case article titles, 'Habitat and Diet:' field labels, upper-case code constants), peak mid-heading; the same words in running prose are weak",
+   "fire": [
+    "GUIDE TO WINTER TYRES\nMost drivers change tyres too late.",
+    "Tips for New Vegetable Gardeners\nStart with a small bed.",
+    "The Best Headphones for Running\nWe tested fifteen pairs.",
+    "ABOUT OUR RETURNS POLICY\nItems may be returned within thirty days.",
+    "A Closer Look at Comma Splices\nMany writers join clauses with a comma.",
+    "What Do Credit Unions Offer?\nCredit unions are owned by their members.",
+    "Distribution and Habitat:\nIt is found in lowland forest.",
+    "DEFAULT_TIMEOUT = 30\nLOG_DIR = BASE + '/logs'"
+   ],
+   "quiet": [
+    "Our guide to winter tyres explains that most drivers change tyres too late.",
+    "She shared some tips for new vegetable gardeners, starting with a small bed.",
+    "They tested fifteen pairs to find the best headphones for running.",
+    "Our returns policy says items may be returned within thirty days.",
+    "The article takes a closer look at comma splices, which many writers use.",
+    "Members often ask what credit unions offer, since they own them.",
+    "Its distribution and habitat are limited to lowland forest.",
+    "The default timeout is thirty seconds and the logs go in the base folder."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.5 on a word inside the heading; near misses below 0.12 (prose scored 0.08-0.11 in the probe, so the margin is narrow)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inside a heading line",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: '\\n' x3, ' Ecology' x2, ' Look', 'BSITE', ' OF', 'ers'; examples 'A Fresh Look at Sentence Fragments', 'ABOUT WEBSITE REFERRAL', 'HISTORY OF JAINS', 'Tips for Online Retailers', 'The Best DSLR for Video', 'Habitat and Ecology:', 'CONTROL_PANEL_URL', 'What Do ETFs Provide?', '12 CLINICAL PHARMACOLOGY'; max 5.69, density 0.557%. Probe: 'HISTORY OF THE CLUB' 0.510 (peak ' OF'), 'CONTROL_URL' 0.411, 'Tips for First-Time Home Buyers' 0.355, 'What Do Index Funds Offer?' 0.268, 'The Best Laptops for Students' 0.158, 'Habitat and Diet:' 0.106, 'A Fresh Approach' 0.106, prose 'tips for first-time home buyers' 0.112, prose 'history of the club' 0.078, floor 0.088. Headings fire at 0.15-0.5; title-case with short words sits near the prose floor."
+}

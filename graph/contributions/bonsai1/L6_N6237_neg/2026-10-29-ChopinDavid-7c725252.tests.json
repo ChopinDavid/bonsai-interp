@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7c725252",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N6237-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N6237",
+   "pole": "-",
+   "label": "a non-initial piece of a rare transliterated or Nordic name split after a short onset such as Bj, Pak, bh, Nib, Hj (Bj|ell|and, Pak|an|ahats, bha|av|am, Nibir|u), peak on the second piece; single-token names and common split names with other onsets (Ramanujan, Pakistani, Dodgers) are silent",
+   "fire": [
+    "The Norwegian skier Bjornstad won the relay for his club.",
+    "The singer Bjork recorded her first album in London.",
+    "Many Pakhtun families moved to the city during the drought.",
+    "The director Pakula shot the film in a single apartment.",
+    "The poem describes bhakti as devotion that dissolves the self.",
+    "In the Nibelung legend a cursed ring brings ruin to its owner.",
+    "Her grandfather Hjalmar fished the fjord every summer.",
+    "Teachers of meditation describe bhavana as the cultivation of the mind."
+   ],
+   "quiet": [
+    "The Norwegian skier Petersen won the relay for his club.",
+    "The singer Madonna recorded her first album in New York.",
+    "Many Pakistani families moved to the city during the drought.",
+    "The director Spielberg shot the film in a single apartment.",
+    "The poem describes devotion as a love that dissolves the self.",
+    "In the Arthurian legend a cursed sword brings ruin to its owner.",
+    "Her grandfather Olsen fished the fjord every summer.",
+    "Teachers of meditation describe practice as the cultivation of the mind."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on the piece after the onset; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second piece after a Bj/Pak/bh/Nib onset",
+ "unit_kind": "token/lexical",
+ "confidence": 0.3,
+ "notes": "Card: 'خار' x4, ' Gold' x3, 'av' x2, 'I' x2, 'u' x2, 'aka' x2; examples bha|av|am, Pak|i, Bj|ell|and, Pak|an|ahats, PK|I, k-d|ram|as, Black Gold, Nibir|u; max 6.84, density 0.093%. Probe: Bj|ell|and 1.342 (peak 'ell'), 'black gold' 0.935 (peak ' gold'), Pak|an|ahats 0.915 (peak 'an'), bha|av|am 0.893 (peak 'av'), Nibir|u 0.782, kd|ram|as 0.261, Pakistani 0.025, R|aman|uj|an 0.021, Dodgers 0.041, Arabic خارج 0.018, floor 0.012. Ramanujan's silence shows that a rare split alone is not enough; the test keeps the card's onsets (Bj, Pak, bh, Nib, Hj) on new names. 'black gold' is a separate trigger not tested here."
+}

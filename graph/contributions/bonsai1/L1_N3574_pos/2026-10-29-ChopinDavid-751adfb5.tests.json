@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-751adfb5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N3574+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N3574",
+   "pole": "+",
+   "label": "dense layer-1 unit (41% of tokens reach 0.1 of max, gate-closed echo regime): strongest on the Russian reflexive ending '-ется' (рекомендуется), Chinese 特别是, Arabic verbs and English surnames after a title; most tokens of any text fire weakly",
+   "fire": [
+    "Перед поездкой рекомендуется проверить давление в шинах.",
+    "Для детей младше трёх лет препарат не рекомендуется.",
+    "При высокой температуре рекомендуется обильное питьё.",
+    "这座城市四季都很美，特别是春天的樱花。",
+    "他喜欢古典音乐，特别是肖邦的夜曲。",
+    "تهدف الدورة إلى تطوير مهارات القراءة.",
+    "The lecture was delivered by Dr. Anne Keller of the forestry institute.",
+    "Comments were presented by Prof. Tom Haskins of the river authority."
+   ],
+   "quiet": [
+    "Он проверил давление в шинах перед поездкой.",
+    "Дети младше трёх лет играли во дворе.",
+    "Она пила много воды летом.",
+    "这座城市四季都很美。",
+    "他喜欢古典音乐。",
+    "الدورة تبدأ في الصباح.",
+    "The lecture started late because of the rain.",
+    "Comments were short and the meeting ended early."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.6-0.9; near misses 0.15-0.35 because the floor is about 0.3; the test cannot hold cleanly for a dense unit",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: -ется / 特别是 strongest",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: max 0.23, density >0.1·max 41.0%, FLAG dense, FLAG gate-closed (-x- echo 100%); peaks '特别是' x5, 'ется' x4, ' إلى', ' Weaver', '的巨大', 'عة'. Probe: 'рекомендуется' 0.895/0.834, 'Dr. Bill Weaver of' 0.828, 特别是 0.739, Arabic يهدف إلى 0.651, Chinese 北京 0.242, Russian 'в школе' 0.177, floor 0.304. Registered as dense / positional with a best-guess test."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e9f8517c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N1579-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N1579",
+   "pole": "-",
+   "label": "guess for a broad pole: the colon, exclamation or question mark closing a short bullet or FAQ line (- Pro: ..., - Con: ..., '...!', '...?') and the possessive after 'to' in advice prose ('to their meals'); the same content in running prose is weak",
+   "fire": [
+    "- Pro: excellent battery life\n- Con: the screen is dim outdoors",
+    "Features:\n- Uses local search results\n- Is a Canada based company\n- No ads",
+    "Advantages\n- Low cost per unit\n- Quick setup and teardown\n- Fits any bench",
+    "Can trade any item across all four servers!\nIs there a limit on daily trades?",
+    "- Pro: quiet motor\n- Con: heavy base, and it may need a longer cord",
+    "Pros: sturdy frame\nCons: the paint chips easily",
+    "Benefits:\n- Includes free shipping\n- Has a two year warranty\n- Works offline",
+    "- Pro: sharp lens\n- Con: autofocus hunts in low light"
+   ],
+   "quiet": [
+    "The battery life is excellent, but the screen is dim outdoors.",
+    "The company uses local search results, is based in Canada and shows no ads.",
+    "The cost per unit is low, the setup and teardown are quick and it fits any bench.",
+    "You can trade any item across all four servers, though daily trades are limited.",
+    "The motor is quiet, but the base is heavy and may need a longer cord.",
+    "The frame is sturdy, although the paint chips easily.",
+    "It includes free shipping, has a two year warranty and works offline.",
+    "The lens is sharp, but the autofocus hunts in low light."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.35 on the line-closing punctuation; near misses 0.0-0.15; the FLAG broad pole will leak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "bullet-line punctuation (Pro:/Con:)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: ' in' x2, ' it' x2, 'ه' x2, ',' x2, 'ها' x2, ' their'; top examples 'abortion in Europe', 'to their diets', Chinese 了, 'Pokemon across all five generations!\\n', 'have different types', 'presidential candidate', '- Con:', '- Is a Netherlands based company'; max 20.62, density 1.058%, FLAG broad. Probe: '- Pro: ... - Con:' 0.317 (peak ':'), 'to their meals' 0.296, 'regions!\\nIs there a level cap?' 0.206 (peak '?'), 'She bought' 0.122, 'lowest unemployment rates in Europe' 0.049, 'different kinds of support' 0.027, 'presidential candidate' 0.001, floor 0.005. No single configuration explains the card; registered as a guess."
+}
