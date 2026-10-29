@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bc5ea2d0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N9745+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N9745",
+   "pole": "+",
+   "label": "a trailing zero after the decimal point in a reported statistic ('averaged 18.0 points', '30.0%'); other decimal digits, and version numbers like 2.0, stay low",
+   "fire": [
+    "Over the season she averaged 22.0 points and 5.1 assists a game.",
+    "A cup of oats provides 11.0 g of protein and 8.2 g of fibre.",
+    "Turnout rose to 61.0% from 54.7% in the previous election.",
+    "The rookie shot 45.0 percent from the field in his first year.",
+    "Mean systolic pressure fell from 142.0 to 131.6 mmHg after treatment.",
+    "In the final round he posted 9.0 rebounds and 3.4 blocks per game.",
+    "Unemployment in the region stood at 7.0% in the third quarter.",
+    "The sample had a mean age of 38.0 years and a median of 36.5."
+   ],
+   "quiet": [
+    "Over the season she averaged 22.4 points and 5.1 assists a game.",
+    "A cup of oats provides 11.3 g of protein and 8.2 g of fibre.",
+    "Turnout rose to 61.9% from 54.7% in the previous election.",
+    "The rookie shot 45.2 percent from the field in his first year.",
+    "Mean systolic pressure fell from 142.7 to 131.6 mmHg after treatment.",
+    "In the final round he posted 9.6 rebounds and 3.4 blocks per game.",
+    "Unemployment in the region stood at 7.3% in the third quarter.",
+    "The sample had a mean age of 38.4 years and a median of 36.5."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.75 on the '0' after the point; X.6-style decimals below 0.06",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'.0' in a statistic",
+ "unit_kind": "context",
+ "confidence": 0.7,
+ "notes": "Probe: 'averaged 18.0 points' 0.741, '74.0 g' 0.394, '30.0%' 0.388; '18.6' 0.053, '74.3' 0.015, '30.8%' 0.035; 'Version 2.0' 0.047; initials 'Anna K.' 0.193."
+}

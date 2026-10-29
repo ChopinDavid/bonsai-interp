@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2c5206d8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N3942-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N3942",
+   "pole": "-",
+   "label": "word pieces of a church jurisdiction term (' di'+'ocese', 'oc' in 'dioceses'/'diocesan', 'pres'+'by'+'tery'); secular districts and 'parish' stay low",
+   "fire": [
+    "The new bishop will lead a diocese of nearly two hundred churches.",
+    "Records from three rural dioceses were moved to the cathedral library.",
+    "The minister was called before the presbytery to explain his sermon.",
+    "Each year the diocesan choir sings at the Easter vigil.",
+    "Priests from across the diocese gathered for the ordination.",
+    "Two northern dioceses agreed to share a single seminary.",
+    "The presbytery approved the sale of the old manse.",
+    "A diocesan report found the roof repairs were overdue."
+   ],
+   "quiet": [
+    "The new mayor will lead a county of nearly two hundred villages.",
+    "Records from three rural districts were moved to the city library.",
+    "The minister was called before the committee to explain his speech.",
+    "Each year the school choir sings at the spring concert.",
+    "Teachers from across the region gathered for the graduation.",
+    "Two northern counties agreed to share a single hospital.",
+    "The parish approved the sale of the old schoolhouse.",
+    "A council report found the roof repairs were overdue."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.95 on the diocese/presbytery pieces; district, county, parish below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "diocese / presbytery pieces",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Probe: 'dioceses' 'oc' 0.956, 'diocese' ' di' 0.700, 'diocesan' 'oc' 0.669, 'presbytery' 'tery' 0.661; also 'Clinical Commissioning' 'ing' 0.873 (NHS body, not in this test); 'district' 0.051, 'legislatures' 0.006, 'parish ... region' 0.177.",
+ "trigger": {
+  "words": [
+   "diocese",
+   "dioceses",
+   "diocesan",
+   "presbytery"
+  ]
+ }
+}

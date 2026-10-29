@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e77f6f8f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N1256-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N1256",
+   "pole": "-",
+   "label": "the first word of a multi-word place name when the rest of the name must follow ('Santa [Cruz]', 'St[.] Regis', 'Mount [Rainier]'); single-word places and 'Santa' as Santa Claus stay lower",
+   "fire": [
+    "Next spring the students will be touring Santa Catalina Island.",
+    "We spent two nights at the St. Charles Inn downtown.",
+    "Our flight was diverted to Santa Monica because of fog.",
+    "The ranger led a group up Mount Hood at sunrise.",
+    "The conference will be held in Santa Clara in October.",
+    "He grew up near St. Augustine on the Florida coast.",
+    "The family moved to Santa Rosa after the wedding.",
+    "Snow closed the road to Mount Baker for a week."
+   ],
+   "quiet": [
+    "Next spring the students will be touring Catalina by boat.",
+    "We spent two nights at the inn downtown near the river.",
+    "Our flight was diverted to Oakland because of fog.",
+    "The ranger led a group up the ridge at sunrise.",
+    "The conference will be held in Denver in October.",
+    "He grew up near Jacksonville on the Florida coast.",
+    "The family moved to Sacramento after the wedding.",
+    "Snow closed the road to the pass for a week."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.45 on Santa/Mount/St.; single-word places below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first word of a place name",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Probe: 'visiting Santa Cruz' 0.465, 'St. Regis' '.' 0.331, 'to Santa Barbara' 0.214, 'climb Mount Rainier' 0.194, 'letters to Santa' 0.120, 'Mississippi River' 0.019, 'mount the shelf' 0.006. Weakish; median may land near 0.2."
+}

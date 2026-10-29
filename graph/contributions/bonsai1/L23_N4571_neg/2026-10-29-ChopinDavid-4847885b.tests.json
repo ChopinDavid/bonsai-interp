@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-4847885b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N4571-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N4571",
+   "pole": "-",
+   "label": "the bare verb after a negated or hedging modal in legal/academic prose ('need not have', 'is considered'); the plain affirmative rewrite stays low",
+   "fire": [
+    "Under the rules, a witness need not have seen the crime to testify about it.",
+    "A contract need not be written down to be binding in most states.",
+    "The applicant need not have lived in the country for the full period.",
+    "Proof of intent need not be direct; it may be inferred from conduct.",
+    "A trademark need not have been registered to receive some protection.",
+    "The defendant need not be present at the preliminary hearing.",
+    "An heir need not have known of the will for it to take effect.",
+    "The design need not be novel in every detail to qualify."
+   ],
+   "quiet": [
+    "Under the rules, a witness must have seen the crime to testify about it.",
+    "A contract must be written down to be binding in most states.",
+    "The applicant must have lived in the country for the full period.",
+    "Proof of intent must be direct; it cannot be inferred from conduct.",
+    "A trademark must have been registered to receive full protection.",
+    "The defendant must be present at the preliminary hearing.",
+    "An heir must have known of the will for it to take effect.",
+    "The design must be novel in every detail to qualify."
+   ]
+  }
+ ],
+ "predictions": "weak: fire 0.1-0.2 on 'have'/'be' after 'need not'; affirmative rewrites below 0.08",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "verb after 'need not'",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Guess. Card is broad (至于, 'need not have', 'it too', 'is considered', '== '). Probe: 'need not have commercial success' 0.181 vs 'must show' 0.079; 'is considered a reliable marker' 0.099; 'it too was' 0.032; Chinese 却被 0.025. Expected to fail."
+}

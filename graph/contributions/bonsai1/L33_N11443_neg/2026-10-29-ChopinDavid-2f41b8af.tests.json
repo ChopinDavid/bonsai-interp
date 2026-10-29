@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2f41b8af",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N11443-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T14:22:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N11443",
+   "pole": "-",
+   "label": "a connective (of / 's / and) joining an organization to one of its offices or staff roles ('Office of Public Affairs', 'Ford's chief spokesperson', 'Kommunikation und Medien'); the same connectives outside organizational titles stay low",
+   "fire": [
+    "For details, contact the Department of Public Health at the number below.",
+    "said a statement from Boeing's head of media relations on Monday.",
+    "The Bureau of Labor Statistics released new figures this morning.",
+    "Questions go to Maria Lopez, the university's press officer.",
+    "Die Abteilung Presse und Öffentlichkeitsarbeit beantwortet Anfragen.",
+    "He now works in the Ministry of Foreign Affairs in Rome.",
+    "according to Siemens's director of corporate communications.",
+    "The office handles marketing and public relations for the zoo."
+   ],
+   "quiet": [
+    "For dinner, she made a pot of lentil soup with bread.",
+    "said a neighbour who saw the storm damage on Monday.",
+    "The children counted the number of birds on the fence.",
+    "Questions went unanswered as the dog's barking grew louder.",
+    "Der Hund und die Katze schlafen zusammen im Korb.",
+    "He now lives in a small flat near the station in Rome.",
+    "according to my sister, who loves the smell of fresh bread.",
+    "The garden grows tomatoes and beans for the kitchen."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.45 on of/'s/and in office or role names; everyday of/'s/and below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "connective in an org title",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Probe: 'Office of Public Affairs' 0.429, 'Ford's chief spokesperson' 0.439, 'Kommunikation und Medien' 0.436, 'communications and the other' 0.421, 'Director of Communications' 0.283, 'Vice President of Engineering' 0.198, 'director of the film' 0.088; but 'the museum's archive' 0.408 also fired, so institutional possessives in general may fire."
+}
