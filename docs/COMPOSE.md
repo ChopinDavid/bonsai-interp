@@ -546,3 +546,33 @@ back, previous token, token) triples, at most 8 covering half of its sampled str
 The token two back adds little: 1,837 candidate poles against compose@10's 13,128, and a lower hold rate. The n-gram
 covers have reached their limit at three tokens. Most of what they find in layers 6–11 are fixed phrases.
 
+## Round 12 (compose@12): wider covers
+
+Covers of 9–16 items (`bonsai_interp/compose/round12.py`), for poles that have no cover of 8 or fewer: read tokens
+first (compose@7's word test), else (previous token, token) pairs (compose@10's pair test).
+- **Overfitting guard:** every item must be seen at least twice in the pole's sample.
+- **Selection:** precision of at least 0.3.
+
+| | |
+|---|---|
+| Protocol | 18309234 |
+| Pre-registration | 0ad280a6 |
+| Summary | ebc000db |
+
+- **Assigned: 672 of 1,195 poles (56%)**, against **0 of 1,195** placebo tests. Token sets held 469 of 844, pair
+  sets 203 of 351.
+- **By depth:** L0–11 556, L12–17 4, L18–35 112.
+- **Some lists have a plain common thread:**
+  - words ending in "ake" (" lake", " stake", " cake", " intake", L0);
+  - economics terms (" capital", " demand", " supply", " exports", L0);
+  - a string literal opening on a symbol (" '/", " '<", L22);
+  - male first names (" Frank", " Stephen", " Leonard", L22);
+  - "a" before an adjective (" a| good", " a| real", " a| strong", L0).
+- **Others are lists only.**
+
+### Reading
+
+A wider cover finds a few hundred more poles, mostly in layers 0–11. Several lists name a distinction the survey can
+sharpen (a rhyme, a field, first names). With compose@11 this ends the n-gram cover line. compose@7–12 assigned 27,309
+poles, almost none of them in layers 12–17.
+

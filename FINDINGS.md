@@ -1067,3 +1067,14 @@ compose@11 added the token two back to compose@10's pair covers. Only 1,837 pole
 - **The n-gram covers end here.** The read token gave about 19,000 poles (compose@7–9), the previous token another
   7,000 (compose@10), and the token two back 640.
 
+## 2026-10-28: Wider covers, and the end of the cover line (compose@12)
+
+compose@12 allowed covers of 9–16 tokens or pairs, for poles with no smaller cover. **672 of 1,195 tested poles were
+assigned** (0 of 1,195 placebo tests held). The assignment-grade total is now about 37,630 (4.3% of 884,736 poles).
+
+- **Some lists name a distinction:** words ending in "ake" and economics terms (L0); male first names, and string
+  literals opening on a symbol (L22).
+- **The cover rounds compose@7–12 assigned 27,309 poles,** almost all in layers 0–11 and 18–29. Layers 12–17 gave
+  under 200 across them. A pole there has no small set of tokens, pairs or triples that covers half of it with
+  precision.
+
