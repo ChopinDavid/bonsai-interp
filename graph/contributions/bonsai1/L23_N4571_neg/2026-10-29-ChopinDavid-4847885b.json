@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-4847885b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N4571-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T14:30:21+00:00",
+ "recipe": {
+  "toolchain_commit": "d7384432",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N4571_neg/2026-10-29-ChopinDavid-4847885b.tests.json"
+ },
+ "label": "the bare verb after a negated or hedging modal in legal/academic prose ('need not have', 'is considered'); the plain affirmative rewrite stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N4571_neg/2026-10-29-ChopinDavid-4847885b.tests.json",
+   "prereg_commit": "d7384432",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.066,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.049,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.151,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.08,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.092,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.054,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.089,
+     "peak": " take"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.064,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.053,
+     "peak": " must"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.107,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.046,
+     "peak": " receive"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.061,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.069,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.035,
+     "peak": " be"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.073,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d7384432",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "verb after 'need not'",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Guess. Card is broad (至于, 'need not have', 'it too', 'is considered', '== '). Probe: 'need not have commercial success' 0.181 vs 'must show' 0.079; 'is considered a reliable marker' 0.099; 'it too was' 0.032; Chinese 却被 0.025. Expected to fail.",
+ "selection": "random draw"
+}

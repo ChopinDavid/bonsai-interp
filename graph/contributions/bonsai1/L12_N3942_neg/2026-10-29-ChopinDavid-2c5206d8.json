@@ -1,0 +1,160 @@
+{
+ "id": "2026-10-29-ChopinDavid-2c5206d8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N3942-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T14:30:59+00:00",
+ "recipe": {
+  "toolchain_commit": "d7384432",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N3942_neg/2026-10-29-ChopinDavid-2c5206d8.tests.json"
+ },
+ "label": "word pieces of a church jurisdiction term (' di'+'ocese', 'oc' in 'dioceses'/'diocesan', 'pres'+'by'+'tery'); secular districts and 'parish' stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N3942_neg/2026-10-29-ChopinDavid-2c5206d8.tests.json",
+   "prereg_commit": "d7384432",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.461,
+     "peak": " di"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.011,
+     "peak": "oc"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.625,
+     "peak": "tery"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.868,
+     "peak": "oc"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.508,
+     "peak": " di"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.787,
+     "peak": "oc"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.703,
+     "peak": "tery"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.598,
+     "peak": "oc"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.077,
+     "peak": " county"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.12,
+     "peak": " districts"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " called"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": " choir"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.066,
+     "peak": " region"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.175,
+     "peak": " hospital"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": " parish"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.034,
+     "peak": " council"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.664,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d7384432",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "diocese / presbytery pieces",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Probe: 'dioceses' 'oc' 0.956, 'diocese' ' di' 0.700, 'diocesan' 'oc' 0.669, 'presbytery' 'tery' 0.661; also 'Clinical Commissioning' 'ing' 0.873 (NHS body, not in this test); 'district' 0.051, 'legislatures' 0.006, 'parish ... region' 0.177.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "diocese",
+   "dioceses",
+   "diocesan",
+   "presbytery"
+  ]
+ }
+}
