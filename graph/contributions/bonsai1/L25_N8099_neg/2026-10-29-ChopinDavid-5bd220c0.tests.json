@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5bd220c0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N8099-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N8099",
+   "pole": "-",
+   "label": "the verb linking early or initial evidence ('early signs', 'initial results', 'so far things') to a coming verdict about how a venture is going; the same verbs after results or signs with a factual predicate stay low",
+   "fire": [
+    "Two months into the pilot scheme, the early signs are positive for the town.",
+    "Doctors say the initial results look hopeful for the new therapy.",
+    "So far the early indications are good for this year's grape crop.",
+    "Three weeks after launch, the first numbers are encouraging for the app.",
+    "Officials admitted that early returns look worrying for the ruling party.",
+    "In the lab, preliminary findings are promising for the cheaper battery.",
+    "A month in, the early reviews are strong for the new restaurant.",
+    "Investors noted that initial sales figures look healthy for the brand."
+   ],
+   "quiet": [
+    "Two months into the pilot scheme, the street signs are painted blue in the town.",
+    "Doctors say the blood test results take three days to arrive.",
+    "The indications on the label are printed in four languages.",
+    "Three weeks after launch, the numbers are stored on a central server.",
+    "Officials admitted that the tax returns are filed every April.",
+    "In the lab, the findings are recorded in a shared notebook.",
+    "A month in, the reviews are posted on the restaurant's website.",
+    "Investors noted that sales figures are reported in euros."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on 'are'/'look' after early/initial evidence; factual 'results are published' below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "early-evidence verdict setup",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 106.5, peaks on ' are' (The early signs are promising), ' results' (early results indeed suggest), ' looked' (things looked promising), ' encouraging'; logits suppress ' promising', ' signs', ' reassuring'. Probe: 'early signs are promising' 0.809, 'Initial results are encouraging' 0.640, 'things look good' 0.547, 'early results are disappointing' 0.633; 'signs on the road were' 0.187, 'results are published' 0.087, 'Early studies suggest' 0.197."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ac660de1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N10045+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N10045",
+   "pole": "+",
+   "label": "a sameness or likeness marker ('the same', 'similarly') saying two things match; 'different', 'other' and 'another' stay low (a dense, low-amplitude unit)",
+   "fire": [
+    "Both sisters ordered the same dessert at the restaurant.",
+    "Every year the village holds the festival on the same weekend.",
+    "My brother and I went to the same school in the city.",
+    "The new model behaves similarly under heavy load.",
+    "The two printers produce the same error on startup.",
+    "Each patient received the same dose of the medicine.",
+    "Young birds respond similarly when a hawk flies over.",
+    "Our neighbours painted their fence the same colour as ours."
+   ],
+   "quiet": [
+    "Both sisters ordered a different dessert at the restaurant.",
+    "Every year the village holds the festival on another weekend.",
+    "My brother and I went to separate schools in the city.",
+    "The new model behaves badly under heavy load.",
+    "The two printers produce a new error on startup.",
+    "Each patient received a larger dose of the medicine.",
+    "Young birds respond quickly when a hawk flies over.",
+    "Our neighbours painted their fence a brighter colour than ours."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on ' same'/' similarly'; difference words below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sameness marker",
+ "unit_kind": "dense / positional",
+ "confidence": 0.35,
+ "notes": "Card: max 0.18, FLAG dense (18.7% of tokens over 0.1 max), gate-closed regime; peaks on ' same' x6, ' of' (all of), Arabic ' نفس' (same), ' similarly'. Probe: 'the same jacket' 0.448, 'the same result' 0.494, 'the same path' 0.575, 'similarly hard' 0.811, 'all of the' 0.602, 'a different jacket' 0.026, 'most of the' 0.128."
+}

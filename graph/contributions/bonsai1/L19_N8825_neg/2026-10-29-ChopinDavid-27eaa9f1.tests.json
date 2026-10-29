@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-27eaa9f1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N8825-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N8825",
+   "pole": "-",
+   "label": "guess: the first named product or component in a chemistry or genetics enumeration ('into oxygen and water', '47, XXY'); everyday lists of goods stay low",
+   "fire": [
+    "Heating the limestone breaks it down into calcium oxide and carbon dioxide.",
+    "During electrolysis, water splits into hydrogen and oxygen gas.",
+    "Girls with Turner syndrome usually have the karyotype 45, X instead of two X chromosomes.",
+    "The catalyst converts the exhaust gases into nitrogen and water vapour.",
+    "Burning methane in air yields carbon dioxide and water as products.",
+    "The reaction of zinc with acid releases hydrogen and leaves zinc chloride.",
+    "Photosynthesis turns carbon dioxide and water into glucose and oxygen.",
+    "Yeast ferments the sugar into ethanol and carbon dioxide."
+   ],
+   "quiet": [
+    "Heating the oven first breaks the bread dough into a softer loaf.",
+    "During the holidays, the family splits into two groups for dinner.",
+    "Girls in the choir usually wear a blue skirt instead of grey trousers.",
+    "The workshop converts old barrels into tables and chairs.",
+    "Burning the leaves in autumn leaves ash and smoke in the garden.",
+    "The visit of the mayor brought flowers and left a good impression.",
+    "The bakery turns flour and water into bread and rolls.",
+    "The tailor turns old curtains into dresses and bags."
+   ]
+  }
+ ],
+ "predictions": "weak: fire 0.1-0.25 at best; likely fails on median",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first item of a scientific pair (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 11.9, mixed peaks (' point' in 'a point and a slope', 'ft' in '6 * 4ft and 5ft', ' normal' copy, ' oxygen' and water, ' X'XY, ':\\n'). Probe mostly weak: 'into oxygen and water' 0.235, '47, XXY' 0.193, 'one normal copy' 0.081, 'point and a slope' 0.010, 'apples and pears' 0.017."
+}

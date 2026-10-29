@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d6d16b0f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N3576+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N3576",
+   "pole": "+",
+   "label": "the possessive or noun inside the wholehearted-effort idiom 'with all my heart / with all his might / with my whole being'; 'with all her friends / luggage' in a literal sense stays low",
+   "fire": [
+    "The old man prayed with all his heart for his son to come home.",
+    "She pushed against the stuck door with all her might.",
+    "I hope with all my heart that you find peace in the new city.",
+    "The boy kicked the ball with all his strength toward the goal.",
+    "They cheered for the runners with all their hearts.",
+    "He wanted with his whole being to win her forgiveness.",
+    "The sailors heaved on the anchor chain with all their might.",
+    "She loved that small garden with all her soul."
+   ],
+   "quiet": [
+    "The old man travelled with all his grandchildren to the coast.",
+    "She moved into the new flat with all her furniture.",
+    "I arrived at the station with all my bags and a coffee.",
+    "The boy came home with all his schoolbooks in a sack.",
+    "They left the party with all their coats still on.",
+    "He filled the shelf with his whole collection of records.",
+    "The sailors returned to port with all their nets full.",
+    "She flew to Rome with all her paperwork in order."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0 in the idiom; literal 'with all X' (accompaniment, contents) below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'with all my heart' idiom",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Card: max 49.3, peaks on ' being' (with my whole being), ' our' (love God with all of our heart), ' all', ' my', ' his' (with all his might), French 'avec toute la ferveur'. Probe: 'with all her heart' 0.853, 'with all his might' 0.544, 'with my whole heart' 0.687, 'every ounce of their strength' 0.509, 'with all my soul' 1.049; literal 'packed the car with all his books' 0.132, 'arrived with all her friends' 0.136."
+}

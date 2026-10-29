@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1b0fff6e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N5559-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N5559",
+   "pole": "-",
+   "label": "a word that points the reader to a displayed image (the following screenshot, map or diagram; '(photo above)'; 'is shown here'); a textual reference ('the following paragraph') or an image mentioned as an object stays low",
+   "fire": [
+    "To install the add-on, click the button highlighted in the screenshot below.",
+    "The route we took through the valley is marked on the map below.",
+    "Our new kitchen cabinets (photo above) were built by a local carpenter.",
+    "Have a look at the following diagram of the cooling system.",
+    "The wiring for the second switch is shown in the figure here.",
+    "Please refer to the attached screenshot for the exact error.",
+    "The bridge (pictured above) was finished in 1932.",
+    "Study the chart below to see how sales changed over time."
+   ],
+   "quiet": [
+    "To install the add-on, follow the steps listed in the paragraph below.",
+    "The route we took through the valley is described in the next section.",
+    "Our new kitchen cabinets were built last spring by a local carpenter.",
+    "Have a look at the following explanation of the cooling system.",
+    "The wiring for the second switch is explained in the manual's text.",
+    "Please refer to the attached email for the exact error.",
+    "The bridge was finished in 1932 after years of delays.",
+    "Read the summary below to learn how sales changed over time."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 on displayed-figure pointers; textual references and narrated images below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pointer to a displayed figure",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 18.3, peaks on '||' after 'Range Map:', 地図の, ' map' (examine the following map), Screens'hots', 'picture' (picture above), ' screenshot' (look into the following screenshot), ' Diagram', ' is' (is shown here). Probe: 'the following screenshot' 0.610, '(picture above)' 0.474, 'is shown here' 0.362, 'the following map' 0.362, '(see rear shot)' 0.253; 'the following paragraph' 0.022, 'drew a map on a napkin' 0.127."
+}

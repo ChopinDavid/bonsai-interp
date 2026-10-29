@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-a7b73512",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N10920+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T09:27:01+00:00",
+ "recipe": {
+  "toolchain_commit": "f7bd5fcf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L0_N10920_pos/2026-10-29-ChopinDavid-a7b73512.tests.json"
+ },
+ "label": "the token for compulsion: English ' forced' and Chinese/Japanese 逼 / 迫; 'force' as a noun, 'compelled' and 'chose' stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N10920_pos/2026-10-29-ChopinDavid-a7b73512.tests.json",
+   "prereg_commit": "f7bd5fcf",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.237,
+     "peak": " forced"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.321,
+     "peak": " forced"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.824,
+     "peak": "逼"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.28,
+     "peak": " forced"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.78,
+     "peak": "逼"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.238,
+     "peak": " forced"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.824,
+     "peak": "逼"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.737,
+     "peak": "逼"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " chose"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " debts"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": "加班"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " rebels"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": "他"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " retire"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": "要"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": "他们"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.529,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f7bd5fcf",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "token 'forced' / 逼 / 迫",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 9.3, peak tokens ' forced' x20, 迫 x7, 逼 x3, 强迫 x2 (layer 0, so a token unit). Probe: 'were forced to leave' 0.239, 'Prices forced' 0.273, 'a forced smile' 0.276, 被迫 0.293, 警察逼他 0.846; 'compelled' 0.098, 'The force of the wind' 0.054, 'chose' 0.008.",
+ "selection": "random draw"
+}

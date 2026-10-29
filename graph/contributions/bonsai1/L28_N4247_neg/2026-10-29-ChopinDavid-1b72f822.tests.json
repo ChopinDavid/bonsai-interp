@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1b72f822",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N4247-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T09:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N4247",
+   "pole": "-",
+   "label": "the adjective in 'in a [adjective] mood / frame of mind / shape' describing a person's mental state; the same 'in a good / strong [noun]' frame for objects or situations (condition, position, place) stays low",
+   "fire": [
+    "The sunshine put the whole office in a cheerful mood this morning.",
+    "Before the exam she tried to get into a relaxed frame of mind.",
+    "Grandpa woke up in a grumpy mood and refused his breakfast.",
+    "A hot bath leaves me in a peaceful state of mind before bed.",
+    "After a week of rest he felt he was in a much better place emotionally.",
+    "The kids came home from camp in a happy mood and sang all evening.",
+    "Music can put a nervous patient in a calmer frame of mind.",
+    "My boss returned from lunch in a terrible mood again."
+   ],
+   "quiet": [
+    "The new paint put the whole office in a cleaner condition this morning.",
+    "Before the storm she moved the boat into a sheltered spot in the harbour.",
+    "Grandpa found the old bicycle in a rusty condition in the shed.",
+    "A heavy lock keeps the documents in a secure box under the bed.",
+    "After the first half the team was in a much stronger position to win.",
+    "The kids left the kitchen in a messy state and ran outside.",
+    "Engineers placed the sensor in a higher location near the roof.",
+    "My boss parked the van in a narrow alley behind the shop."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 for mental-state frames; object condition/position frames below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'in a good mood' mental-state frame",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 202, peaks on ' better' (in a better shape), ' frame' (positive frame of mind), ' state' (right state of mind), ' good' (in a good mood); logits suppress ' mental', ' mindset', ' mind', ' state'. Probe: 'in a good mood' 0.922, 'calm frame of mind' 0.876, 'better shape after holiday' 0.865, 'bad mood' 0.413, 'positive outlook' 0.114, car 'good condition' 0.036, 'safe place' 0.011, team 'strong position' 0.119."
+}
