@@ -1,0 +1,59 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-76e9b01d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11126+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N11126",
+   "pole": "+",
+   "label": "Spanish ' ser' as its own token: the infinitive (puede ser, debe ser) and the stem of split future forms (ser|án, ser|emos); other Spanish verbs in the same frames stay low (the pole is broad, and English ' the' after a sentence-initial 'The' also fired 0.3-0.4, so the test is in Spanish)",
+   "fire": [
+    "La nueva sede debe ser inaugurada antes del verano.",
+    "Mis primos quieren ser médicos como su madre.",
+    "Las entradas serán más baratas para los estudiantes.",
+    "El informe puede ser revisado por cualquier socio.",
+    "Dentro de un año seremos vecinos de la plaza mayor.",
+    "Ese cuadro llegó a ser el más famoso del museo.",
+    "Tú serás el encargado de cerrar la tienda.",
+    "La reunión tiene que ser el jueves por la tarde."
+   ],
+   "quiet": [
+    "La nueva sede debe estar lista antes del verano.",
+    "Mis primos quieren estudiar medicina como su madre.",
+    "Las entradas costarán menos para los estudiantes.",
+    "El informe puede leerse por cualquier socio.",
+    "Dentro de un año viviremos junto a la plaza mayor.",
+    "Ese cuadro se volvió el más famoso del museo.",
+    "Tú tendrás que cerrar la tienda.",
+    "La reunión tiene que celebrarse el jueves por la tarde."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on ' ser'; near misses 0.05-0.2 (broad pole, 3.6% of tokens reach 0.1 of a tiny max 0.55)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Spanish ' ser' token",
+ "unit_kind": "token",
+ "confidence": 0.5,
+ "notes": "Card: ' ser' x14 of the top 32 in Spanish, max 0.55, density 3.6% (FLAG broad). Probe: 'no podrá ser mayor' 0.639, 'serán exactamente' 0.902, 'llegue a ser presidente' 0.429, 'queremos ser delegados' 0.187; 'podrá estar' 0.070, 'hacer de delegados' 0.124, 'quedarán' 0.154, English sermon 0.023; English floor sentences 0.300 and 0.386 on ' the'. tok.py: será and sería are single tokens, so fire items use ser, serán, seremos, serás.",
+ "trigger": {
+  "words": [
+   "ser",
+   "serán",
+   "seremos",
+   "serás",
+   "seré",
+   "serían",
+   "seres"
+  ]
+ }
+}

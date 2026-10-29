@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3190261c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N5280+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N5280",
+   "pole": "+",
+   "label": "the six-space whitespace token: a line indented by exactly seven spaces before a word or symbol (the tokenizer gives a six-space token plus a space-initial token); lines indented by four, six, eight or more spaces produce other whitespace tokens and stay low",
+   "fire": [
+    "#\n#       * Alvarez Maria;\n#       * Okafor Daniel;",
+    "SELECT B.NAME AS NAME\n       ,B.CITY AS CITY\n       ,B.ZIP AS ZIP",
+    "config = {\n       'host': 'localhost',\n       'port': 5432\n}",
+    "for item in items:\n       try:\n           value = lookup[item]",
+    "@given(mass=reals(min_value=0),\n       tau=reals(min_value=0))\ndef test_decay(mass, tau):",
+    "result = compute(alpha,\n       beta,\n       gamma)",
+    "WHERE {\n       GRAPH <data> {\n           ?s ?p ?o\n       }\n}",
+    "rows = [\n       (1, 'a'),\n       (2, 'b'),\n]"
+   ],
+   "quiet": [
+    "#\n#     * Novak Petra;\n#     * Adeyemi Tunde;",
+    "SELECT C.TITLE AS TITLE\n         ,C.TOWN AS TOWN\n         ,C.CODE AS CODE",
+    "settings = {\n    'host': 'db.local',\n    'port': 3306\n}",
+    "for key in keys:\n        try:\n            entry = table[key]",
+    "@given(width=reals(min_value=0),\n      height=reals(min_value=0))\ndef test_area(width, height):",
+    "output = combine(first,\n                 second,\n                 third)",
+    "WHERE {\n    GRAPH <facts> {\n        ?a ?b ?c\n    }\n}",
+    "pairs = [\n    (3, 'x'),\n    (4, 'y'),\n]"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.7-0.9 on the six-space token; near misses below 0.25 (the five-space and twenty-nine-space tokens fired 0.12 and 0.23 in the probe, so a weak leak is possible)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the six-space indent token",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: '      ' (six spaces) x27 of the top 32 in code and SQL, max 4.4, density 0.095%; a layer-0 token detector. Probe: '#       * name' 0.740 and SQL ',A.CUSTOMERID' after seven spaces 0.851 (both the six-space token); five-space token 0.122, three-space 0.040, seven-space 0.059, twenty-nine-space 0.225, prose 0.005. tok.py confirms '\\n' + seven spaces + word = ['\\n', '      ', ' word']."
+}

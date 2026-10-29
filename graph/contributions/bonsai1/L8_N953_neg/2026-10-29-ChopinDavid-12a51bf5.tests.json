@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-12a51bf5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N953-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N953",
+   "pole": "-",
+   "label": "a surname split into several tokens: fires on a piece of the name (Brun|ner, Tier|ney, High|more, Dur|den, C|umber|batch); single-token surnames (Smith, Jones, Weaver) and split place or common names stay low",
+   "fire": [
+    "The lead role went to Benedict Cumberbatch after a long search.",
+    "Our new physics teacher, Mrs Whittaker, used to work at the observatory.",
+    "The documentary was produced by Morgan Spurlock in 2004.",
+    "At the gala, Tilda Swinton wore a suit of pale grey silk.",
+    "The letter was signed by Dr. Helmcken of the provincial hospital.",
+    "Carey Mulligan plays the daughter in the second act.",
+    "The firm was founded by Peter Warman and two partners.",
+    "Keira Knightley arrived late to the premiere in Leicester Square."
+   ],
+   "quiet": [
+    "The lead role went to Benedict Young after a long search.",
+    "Our new physics teacher, Mrs Walker, used to work at the observatory.",
+    "The documentary was produced by Morgan Scott in 2004.",
+    "At the gala, Tilda Moore wore a suit of pale grey silk.",
+    "The letter was signed by Dr. Harris of the provincial hospital.",
+    "Carey Turner plays the daughter in the second act.",
+    "The firm was founded by Peter Clark and two partners.",
+    "Keira Baker arrived late to the premiere in Leicester Square."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on a surname piece; near misses below 0.1 (the single-token ' Fletcher' fired 0.22 in the probe, so a well-known surname may leak)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece of a multi-token surname",
+ "unit_kind": "token",
+ "confidence": 0.5,
+ "notes": "Card: ' Dur'(den), 'ner' (Brun|ner), 'LET' (F|LET|CHER), ' High'(more), ' Helm'(cken), 'man' (War|man), 'ur' (Sp|ur|lock), ' Tier'(ney); max 6.2, density 0.33%. Probe: Gene Tierney 0.806 (' Tier'), Chelsea Brunner 0.715 ('ner'), Freddie Highmore 0.405, Tyler Durden 0.356, Bill Fletcher 0.223 (single token); Tyler Smith 0.063, Bill Jones 0.078, Flagstaff 0.020, glycerol 0.039. tok.py checked every test surname: fire names split, near-miss names are one token."
+}

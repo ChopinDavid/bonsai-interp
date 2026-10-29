@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-286cc324",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N2397-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N2397",
+   "pole": "-",
+   "label": "a text or speech referred to as continuing or by its parts: the article goes on, the commentary continues with, the final two paragraphs, keep reading, the rest of the essay; physical continuation (the road goes on) fires weakly and other continuations (the rain continues, the rest of the cake) stay low",
+   "fire": [
+    "In the same speech he went on to list every promise the council had broken.",
+    "The next chapter continues the story from the night of the fire.",
+    "Her letter's closing lines thank the nurses by name.",
+    "The author then goes on to argue that the treaty was never ratified.",
+    "The opening sentences of the memo set out the three new rules.",
+    "The report continues with a breakdown of costs by region.",
+    "If you want the full argument, read on to the second section.",
+    "The judge's ruling runs to forty pages and ends with a warning."
+   ],
+   "quiet": [
+    "In the same week he went on to visit every village the council had funded.",
+    "The next bus continues the route from the night depot.",
+    "Her garden's closing gate squeaks whenever the wind picks up.",
+    "The author then goes on holiday to the coast every August.",
+    "The opening hours of the museum set out the three new tours.",
+    "The storm continues with heavy rain across the region.",
+    "If you want the full view, walk on to the second ridge.",
+    "The judge's house stands on forty acres and ends at a stone wall."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on 'on', 'continues', 'paragraphs', 'reading'; near misses below 0.1, except a physical 'goes on' that may reach 0.25",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "discourse continues / text parts",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' paragraphs', ' sentences', 'goes on', 'continues', 'went on to', 'keep reading', 'the rest of the article', ' lengthy'; max 12.8, density 0.215%. Probe: 'The commentary continues with' 0.607, 'The article goes on to' 0.599, 'final two paragraphs' 0.525, 'keep reading' 0.462, 'rest of the essay' 0.298; 'road goes on for another forty miles' 0.258, 'rain continues' 0.022, 'final two players' 0.034, 'rest of the cake' 0.044."
+}

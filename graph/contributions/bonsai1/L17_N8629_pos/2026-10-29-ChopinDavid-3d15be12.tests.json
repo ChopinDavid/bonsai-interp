@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3d15be12",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N8629+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N8629",
+   "pole": "+",
+   "label": "the word 'tentative' in the sense of a provisional, not-yet-final arrangement (a tentative agreement, date, title); the same arrangement called final, firm or confirmed stays low. 'Preliminary' and 'in press' fired only weakly, so the label is lexical",
+   "fire": [
+    "Both sides announced a tentative deal late on Thursday night.",
+    "The publisher has given the novel a tentative title of Winter Road.",
+    "We pencilled in a tentative date of 14 March for the wedding.",
+    "The union reached a tentative contract with the hospital group.",
+    "Our tentative plan is to leave at dawn and camp by the lake.",
+    "The committee gave tentative approval to the new bypass.",
+    "Early data led the team to a tentative conclusion about the cause.",
+    "The airline released a tentative schedule for the summer routes."
+   ],
+   "quiet": [
+    "Both sides announced a final deal late on Thursday night.",
+    "The publisher has given the novel the title of Winter Road.",
+    "We confirmed the date of 14 March for the wedding.",
+    "The union signed a firm contract with the hospital group.",
+    "Our plan is to leave at dawn and camp by the lake.",
+    "The committee gave full approval to the new bypass.",
+    "Early data led the team to a clear conclusion about the cause.",
+    "The airline released the official schedule for the summer routes."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.5 on ' tentative'; near misses below 0.05; a weak hold at best, since the probe's best case was 0.376",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'tentative' (provisional status)",
+ "unit_kind": "lexical",
+ "confidence": 0.35,
+ "notes": "Card: ' tentative' x2, 'iminary' x2, ' edition', ' Press', ' part', 'cript', ' being' (draft/provisional status), Chinese 草案 (draft) at the top; max 10.6, density 0.145%. Probe: 'tentative agreement' 0.376, 'in press' 0.168, 'preliminary report' 0.137 (peak ' report'), 'only a draft' 0.035, 'provisional' 0.025; final agreement 0.024, published 0.027, audited 0.046. Only 'tentative' cleared 0.3, so the meaning label is not supported yet.",
+ "trigger": {
+  "words": [
+   "tentative"
+  ]
+ }
+}

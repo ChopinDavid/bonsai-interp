@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-991200c4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N12243+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N12243",
+   "pole": "+",
+   "label": "onomatopoeia: a noise spelled out as a word or letters (thwack, kaboom, beep beep, kerplunk, Achoo), including quoted sound effects; describing the same noise with ordinary words (a loud bang, the phone beeped) stays low",
+   "fire": [
+    "The bat met the ball with a sharp thwack that echoed round the park.",
+    "Somewhere behind the hill came a muffled kaboom, then silence.",
+    "The microwave went beep beep beep until someone opened the door.",
+    "A stone dropped into the well with a hollow kerplunk.",
+    "Halfway through the sermon my uncle let out an enormous Achoo!",
+    "The old clock on the landing goes tick-tock, tick-tock all night.",
+    "She crept down the hall, but the floorboard gave a loud creeeak.",
+    "The frog on the lily pad answered with a deep ribbit."
+   ],
+   "quiet": [
+    "The bat met the ball with a sharp crack that echoed round the park.",
+    "Somewhere behind the hill came a muffled explosion, then silence.",
+    "The microwave kept beeping until someone opened the door.",
+    "A stone dropped into the well with a hollow splash.",
+    "Halfway through the sermon my uncle let out an enormous sneeze.",
+    "The old clock on the landing ticks loudly all night.",
+    "She crept down the hall, but the floorboard gave a loud creak.",
+    "The frog on the lily pad answered with a deep croak."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.75 on the sound word; near misses below 0.12",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "spelled-out sound effects",
+ "unit_kind": "meaning",
+ "confidence": 0.7,
+ "notes": "Card: Ker (after exclamations), 'wh|uppa', quoted 'Tweet' sound, Pbb|bbb|ttttt, Cha|-ch|ing, Splish, k|err|ak, БУ|У|М, R|rr|aarrrgg, *ding*; max 100, density 0.016%. Probe: kerrak/korr 0.737, 'ding' sound 0.657, splish splash splosh 0.606, Cha-ching 0.462, Rrraarrrgg 0.302; phone rang 0.004, splashed 0.083, loud and raucous 0.107, groaned 0.006."
+}

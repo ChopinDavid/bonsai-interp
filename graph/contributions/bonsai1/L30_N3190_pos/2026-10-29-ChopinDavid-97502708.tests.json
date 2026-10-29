@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-97502708",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N3190+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N3190",
+   "pole": "+",
+   "label": "a number in an astronomical measurement, peaking on its last digit or the unit's first piece just before the unit (1,500 light-years, 0.14 AU, 0.2 angstroms, 50,000 times brighter than the sun); the same numbers in everyday measurements (160,000 people, 50,000 times cheaper, 1,500 kilometres of river) stay low",
+   "fire": [
+    "Proxima Centauri lies about 4.2 light-years from the Sun.",
+    "The Milky Way's disc spans roughly 100,000 light-years.",
+    "Jupiter orbits the Sun at an average distance of 5.2 AU.",
+    "Deneb shines some 200,000 times more brightly than the Sun.",
+    "The comet will pass within 0.05 AU of Earth next March.",
+    "The globular cluster sits about 7,000 parsecs from us.",
+    "The hydrogen-alpha line falls at 6563 angstroms.",
+    "The Moon orbits at a mean distance of 384,000 kilometres."
+   ],
+   "quiet": [
+    "The nearest bakery lies about 4.2 miles from the farm.",
+    "The new stadium seats roughly 100,000 spectators.",
+    "The shares closed at an average price of 5.2 dollars.",
+    "The plant produces some 200,000 units a month.",
+    "The loan carries an interest rate of 0.05 percent.",
+    "The county has about 7,000 registered voters.",
+    "The invoice total came to 6563 euros.",
+    "The pipeline carries 384,000 barrels a day."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.85 on the last digit; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "number in an astronomical quantity",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: '0' x14, ' hundred' x2, ' billion' x2, 'k'(pc), ' ang'(stroms) in light-year, AU and kiloparsec distances; max 446, density 0.026%; the - pole promotes ' pc', ' AU', ' astronomical'. Probe: 'some 1,500 light-years distant' 0.840, '160,000 light years from Earth' 0.795, '0.2 angstroms' 0.714 (' ang'), '0.14 AU' 0.686, '50,000 times brighter than our sun' 0.441; '1,500 residents' 0.188, '160,000 people' 0.001, '50,000 times cheaper' 0.076, '1,500 kilometres' of river 0.134."
+}

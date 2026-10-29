@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-c2aee211",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5855-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T18:31:08+00:00",
+ "recipe": {
+  "toolchain_commit": "7e0fcc8b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N5855_neg/2026-10-29-ChopinDavid-c2aee211.tests.json"
+ },
+ "label": "the colon inside a clock time (9:30, 7:00am); colons in ratios, scores and labels stay silent. Time-of-day in words (half past nine) and heat or hot-weather text are weaker secondary triggers (0.3-0.45 in the probe), so this label is partial",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N5855_neg/2026-10-29-ChopinDavid-c2aee211.tests.json",
+   "prereg_commit": "7e0fcc8b",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.255,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.154,
+     "peak": "8"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.485,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.301,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.485,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.019,
+     "peak": "-off"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.044,
+     "peak": "5"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.05,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.044,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " has"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": "-off"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": "3"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.205,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7e0fcc8b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "colon in a clock time",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: ':' x22 of the top 32 (all hh:mm times), plus ' heat' x2, ' September' x2, ' leave', ' cool' (hot-weather safety text); max 14.6, density 0.055%; the + pole peaks on ' summer'. Probe: '9:30 to 10:30' 0.816, '9:00am to 4pm' 0.682, '7:30 a.m.' 0.369; ratio 3:2 0.020, score 3:1 0.010, 'Note:' 0.003; 'half past nine' 0.315 (' nine'), 'heat illness' 0.449, 'closed vehicle on a hot day' 0.397. The colon is the main trigger; the heat theme is a second one that this test does not cover.",
+ "selection": "random draw"
+}

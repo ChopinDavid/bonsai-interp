@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b16e924a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N11391+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N11391",
+   "pole": "+",
+   "label": "unclear; best guess: the next event in a chronological narrative after a move, return or death (Returning to Virginia, he married; shortly before his death. He was succeeded by), rather than a static description of the same people and places",
+   "fire": [
+    "After the war he settled in Ohio. Returning to Boston in 1871, he opened a law office and married Clara.",
+    "The bishop fell ill in the autumn. He died in December and was succeeded by his nephew.",
+    "She finished her studies in Leipzig. The following year she moved to Vienna and joined the orchestra.",
+    "The general lost the election of 1840. Two years later he returned to the Senate.",
+    "He left the monastery at twenty. Settling in Rome, he took up painting and found a patron.",
+    "The firm collapsed in 1893. Its founder then emigrated to Argentina and started again.",
+    "After his father's death he inherited the estate. He sold it the next spring and sailed for India.",
+    "The couple married in June. By the following winter they had moved to a farm near Kent."
+   ],
+   "quiet": [
+    "Ohio is a state in the Midwest. Boston, by contrast, is a port city with a famous law school.",
+    "The bishop's palace stands on a hill. His nephew now runs a bakery beside the cathedral.",
+    "Leipzig has a long musical tradition. Vienna's orchestra is among the best known in Europe.",
+    "The election of 1840 was closely fought. The Senate chamber is still used today.",
+    "The monastery sits above the river. Rome's painters have always depended on patrons.",
+    "The firm's offices were on the main square. Argentina was a popular destination for emigrants.",
+    "The estate covers two hundred acres. India was the richest colony in the empire.",
+    "June is the usual month for weddings. Farms near Kent grow hops and apples."
+   ]
+  }
+ ],
+ "predictions": "probably fails or holds weakly: the probe's best sentences reached 0.27 and static controls 0.03-0.05, so fire items may range 0.05-0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "next event in a chronology (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: no single token ('.', ',', digits, ' Brussels', 'Returning', ' remaining', ' June'); top examples are biographical chronology (From Brussels in the spring; reelected in 1886; Returning to Virginia; shortly before Jovian's death. He was succeeded) and 'second stage' / conv2 sequences; max 13.9, density 0.375%. Probe: 'Returning to Virginia, he married Eliza and began practising law' 0.273 (' law'), 'shortly before Jovian's death. He was succeeded by Valens' 0.268 ('.'), 'reelected in 1886' 0.063, 'From Brussels in the spring of 1667' 0.023, 'second stage, the remaining' 0.048, conv2 0.052; static controls 0.027-0.038. Weak transfer; a best-guess test."
+}

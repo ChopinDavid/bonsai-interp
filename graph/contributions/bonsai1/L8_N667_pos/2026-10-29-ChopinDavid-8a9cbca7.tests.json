@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-8a9cbca7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N667+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N667",
+   "pole": "+",
+   "label": "a set-inclusion or generality relation between two things: X is a superset / subset / special case of Y, a sub-group of the broader family, the more general predicate; other relations in the same frame (a rival of, a translation of, neighbours of, far larger than) stay low",
+   "fire": [
+    "Every square is a special case of the more general rectangle.",
+    "The even numbers form a proper subset of the integers.",
+    "TypeScript is a strict superset of JavaScript.",
+    "Jazz-funk is a sub-genre of the broader jazz tradition.",
+    "assert required.issubset(provided)",
+    "Pythagoras' theorem falls out of the more general law of cosines.",
+    "The Picts were one group within the wider Celtic family.",
+    "A linked list is one instance of the more general sequence type."
+   ],
+   "quiet": [
+    "Every square is a near cousin of the humble rectangle.",
+    "The even numbers are the oldest puzzle about the integers.",
+    "TypeScript is a popular alternative to JavaScript.",
+    "Jazz-funk is a reaction against the older jazz tradition.",
+    "assert required == provided",
+    "Pythagoras' theorem predates the law of cosines by centuries.",
+    "The Picts were fierce rivals of the neighbouring Celtic family.",
+    "A linked list is a slower replacement for the array type."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.2 on 'subset', 'superset', 'general', 'broader', 'special case'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "superset / subset / more general",
+ "unit_kind": "meaning",
+ "confidence": 0.7,
+ "notes": "Card: 'erset' (sup|erset) x4, ' general' x3, 'set' (issub|set) x2, ' subset' x2, ' Subset' x2, ' broader'; max 28.4, density 0.024%. Probe: 'a superset of the Buddhist paths' 1.186, set(a).issubset(set(b)) 0.921, 'a subset of the real numbers' 0.561, 'a special case of the more general predicate' 0.556, 'a sub-group of the broader Scythian peoples' 0.492; 'a rival of' 0.047, 'a translation of' 0.019, 'neighbours of' 0.090, 'far larger than' 0.051."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c9595ad4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3306-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T18:19:41+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3306",
+   "pole": "-",
+   "label": "the token ' men' in the generic sense of humankind (all men are created equal, the hearts of men, the sons of men); ' men' for a specific group (three men were arrested, the men on the night shift) and generic 'people', 'women' or 'creatures' stay low",
+   "fire": [
+    "We hold it self-evident that all men are created equal.",
+    "The fear of the Lord is the beginning of wisdom for all men.",
+    "No law can bind the hearts of men against their will.",
+    "The laws of nature govern all men alike, prince and peasant.",
+    "What is man, that the sons of men should trust in him?",
+    "Fortune favours the bold, or so men have always believed.",
+    "The judgments of men are fallible, but the truth endures.",
+    "Reason was given to all men so that they might know the good."
+   ],
+   "quiet": [
+    "We hold it self-evident that all people are created equal.",
+    "The fear of the Lord is the beginning of wisdom for all souls.",
+    "No law can bind the hearts of nations against their will.",
+    "The laws of nature govern all creatures alike, lion and lamb.",
+    "The two men in the back of the van refused to give their names.",
+    "Several men from the night shift were waiting by the gate.",
+    "The judgments of courts are fallible, but the truth endures.",
+    "A few men crowded the bar while the match was on."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on ' men'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' men' as humankind",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' men' x22, ' man' x4 of the top 32, almost all in scripture, philosophy and eighteenth-century political prose after 'all' or 'of'; max 11.6, density 0.045%; the + pole peaks on ' all'. Probe: 'giveth to all men liberally' 0.616, 'consciences of men' 0.470, 'all men are equal in rights' 0.285, 'every man continued at his post' 0.094; 'Three men were arrested' 0.082, 'The men loaded the truck' 0.035, 'all people' 0.022, 'all women' 0.024, 'all creatures' 0.029."
+}
