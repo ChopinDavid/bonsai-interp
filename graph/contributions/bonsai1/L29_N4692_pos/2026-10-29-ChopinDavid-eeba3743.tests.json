@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-eeba3743",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N4692+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N4692",
+   "pole": "+",
+   "label": "the '(self' token that opens the parameter list of a Python method definition inside a class (def name(self, ...)), with the surrounding class code as context; plain functions without self, self used only as an attribute in a body, and prose stay low (but prose adjuncts after a predicate such as 'settled their dispute outside the courtroom' leaked 0.48 in the probe)",
+   "fire": [
+    "class Stack:\n    def push(self, item):\n        self.items.append(item)\n\n    def pop(self):\n        return self.items.pop()",
+    "    def reset(self):\n        self.total = 0\n        self.count = 0\n\n    def average(self):\n        return self.total / max(self.count, 1)",
+    "class Parser:\n    \"\"\"Reads config lines.\"\"\"\n\n    def parse_line(self, line):\n        key, _, value = line.partition('=')\n        return key.strip(), value.strip()",
+    "    @property\n    def width(self):\n        return self._width\n\n    def resize(self, width, height):\n        self._width = width\n        self._height = height",
+    "class Cache:\n    def get(self, key, default=None):\n        return self.store.get(key, default)\n\n    def clear(self):\n        self.store = {}",
+    "    def handle_message(self, msg):\n        \"\"\"Dispatch a message to its handler.\"\"\"\n        handler = self.handlers[msg.kind]\n        return handler(msg)",
+    "class Timer:\n    def start(self):\n        self.t0 = time.time()\n\n    def elapsed(self):\n        return time.time() - self.t0",
+    "    def to_dict(self):\n        return {'name': self.name, 'size': self.size}\n\n    def from_dict(self, data):\n        self.name = data['name']"
+   ],
+   "quiet": [
+    "def push(stack, item):\n    stack.append(item)\n\ndef pop(stack):\n    return stack.pop()",
+    "def reset(state):\n    state['total'] = 0\n    state['count'] = 0\n\ndef average(state):\n    return state['total'] / max(state['count'], 1)",
+    "def parse_line(line):\n    \"\"\"Reads one config line.\"\"\"\n    key, _, value = line.partition('=')\n    return key.strip(), value.strip()",
+    "        self._width = width\n        self._height = height\n        self.dirty = True\n        self.redraw()",
+    "cache = {}\n\ndef get(key, default=None):\n    return cache.get(key, default)\n\ndef clear():\n    cache.clear()",
+    "    handler = handlers[msg.kind]\n    result = handler(msg)\n    log.debug('handled %s', msg.kind)\n    return result",
+    "import time\n\nt0 = time.time()\nrun_job()\nprint('elapsed', time.time() - t0)",
+    "He kept the secret to himself for nearly twenty years."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.5 on '(self'; near misses below 0.15; '__init__(self' scored only 0.09 in the probe, so fire items use ordinary method names",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'(self' in a method def",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: '(self' x18, 'self' x3, ' them' x2, ' outside' x2, ' death', ' planning'; max 67, density 1.3% (broad flag). Probe: 'def can_handle(self, msg)' 0.416, 'class Board ... def find_piece(self, piece)' 0.345, 'class Logger ... __init__(self)' 0.266 (peak self), 'class Counter ... __init__(self, start=0)' 0.091, 'def add(a, b)' 0.018; prose: 'settled their dispute outside the courtroom' 0.484, 'presented them a bowl' 0.312, 'after his death' 0.121, 'wait outside' 0.062, floor 0.152 (peak windows). The code reading is the card's dominant one; the prose leaks suggest a second, object/adjunct-slot reading that this test does not cover."
+}

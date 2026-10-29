@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e36685b3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N10240+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N10240",
+   "pole": "+",
+   "label": "a non-initial word piece inside a proper name that the tokenizer splits (Temp|ur, Ober|oi, Farr|ar, Purit|ans, Sm|iros: brands, surnames, institutions), peak on the continuation piece; whole-token names (Jefferson, Android, Stanford) and split common words stay low",
+   "fire": [
+    "The concert was conducted by Gustavo Dudamel in Caracas.",
+    "A poem by Wisława Szymborska opened the ceremony.",
+    "The chairs were designed by George Nakashima in the fifties.",
+    "The role was played by Jake Gyllenhaal in the remake.",
+    "The bottle of Tanqueray stood unopened on the shelf.",
+    "She bought a Moleskine notebook at the airport.",
+    "The jacket was made by Patagonia from recycled bottles.",
+    "The suit was tailored by Zegna in Milan."
+   ],
+   "quiet": [
+    "The concert was conducted by a young Venezuelan in Caracas.",
+    "A poem by a Polish laureate opened the ceremony.",
+    "The chairs were designed by a Japanese-American craftsman in the fifties.",
+    "The role was played by a popular actor in the remake.",
+    "The bottle of gin stood unopened on the shelf.",
+    "She bought a hardcover notebook at the airport.",
+    "The jacket was made in Vietnam from recycled bottles.",
+    "The suit was tailored in Milan over a long weekend."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.2 on a continuation piece of the name; near misses below 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "continuation piece of a split proper name",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: 'ans' (Purit|ans), ' Android', 'UR' (TEMP|UR), ' Jefferson', 'oi' (Ober|oi), 'iros' (Sm|iros), ' Stanford', ' Guru', 'ar' (Farr|ar); max 4.75, density 2.6% (broad flag). Probe: Farr|ar 1.167, Temp|ur 1.002, Ober|oi 0.654; whole-token Jefferson 0.126, Android 0.120; controls 'a large university' 0.075, 'a small press' 0.150, 'a small hotel' 0.260 (peak at), floor 0.087. The split pieces carry it, not the name as such. Test names were split-checked (Dud|amel, Sz|ymb|ors|ka, Nak|ash|ima, G|yll|enha|al, Tan|quer|ay, Mo|les|k|ine, Pat|agon|ia, Z|eg|na)."
+}

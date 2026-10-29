@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e40f1f56",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N5106+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N5106",
+   "pole": "+",
+   "label": "the punctuation that closes one citation and separates it from the next in a legal string cite ('(1973); Doe v. Bolton', 'supra;'), and the ' (' that opens a parenthetical cross-reference ('(see Figure 2)', '(or subclass)'); parentheticals with other content ('(born 1950)', '(roughly 48 percent)') and prose without citations stay low",
+   "fire": [
+    "Miranda v. Arizona, 384 U.S. 436 (1966); Escobedo v. Illinois, 378 U.S. 478 (1964).",
+    "See Brown v. Board of Education, 347 U.S. 483 (1954); Plessy v. Ferguson, 163 U.S. 537 (1896).",
+    "Smith v. Jones, 12 F.3d 100, 105 (2d Cir. 1993); accord Doe v. Roe, 45 F.3d 200 (1995).",
+    "The rule has several exceptions (see sections 4 and 7 below), most of them narrow.",
+    "Lower temperatures slow the reaction (see Figure 2) without stopping it.",
+    "Marbury v. Madison, 5 U.S. 137 (1803); McCulloch v. Maryland, 17 U.S. 316 (1819).",
+    "The argument fails for a second reason (see Part III, supra); the statute is clear.",
+    "Jones v. Smith, 100 Ga. App. 216, 225, supra; Stamps v. Hartford, 120 Ga. App. 300."
+   ],
+   "quiet": [
+    "Miranda was arrested in Arizona in 1963 and questioned for two hours.",
+    "The Brown decision of 1954 overturned the earlier doctrine of separate but equal.",
+    "The appeals court in New York agreed with the lower court in 1993.",
+    "The rule has several exceptions, most of them narrow and rarely invoked.",
+    "Lower temperatures slow the reaction without stopping it entirely.",
+    "The 1803 case established judicial review, and the 1819 case confirmed federal supremacy.",
+    "The argument fails for a second reason, and the statute is clear.",
+    "The author (born 1950) still lives in Georgia with his family."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.5, legal string cites strongest on ');' or ';'; near misses below 0.05; the probe's '(see Figure 1' items reached only 0.09-0.10, so a partial result is likely",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "legal string-cite separators and '(see' cross-references",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: ' (' x15, '.' x4, ';' x3, ',' x3, ');' x2, ').' x2; examples '(see Figure 1 on page C1', '1972); Waldron v. McAtee', '(see agent-based modeling)', 'supra; Stamps Tire Co.', 'DocTestParser (or subclass)'; the - pole promotes ' see/See/cf/voir', so this + pole suppresses them at the '('; max 195, density 0.14%. Probe: 'Roe v. Wade, 410 U.S. 113 (1973); Doe v. Bolton' 0.474 (peak ');'), '(or subclass)' 0.261, '(see Figure 1 on page 12)' 0.100, '(see agent-based modelling)' 0.093, '(see Table 3)' 0.016, '(roughly 48 percent)' 0.006, '(born 1950)' 0.002, '(hereafter the Company)' 0.029, 'before draining; then' 0.089, floor 0.002. The card's 150-190 '(see' peaks sit deep in long documents; short sentences carry them weakly."
+}

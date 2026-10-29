@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5a6f6597",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N12276+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N12276",
+   "pole": "+",
+   "label": "a byte-fallback token: the first byte piece of a character that is not in the vocabulary (rare kanji 鬱 薔薇 檸檬 籠, the symbols Ω and ≈ after a space, Arabic-Indic digits, Cyrillic щ after a space), peak on the byte; the same sentences with in-vocabulary characters stay low; Korean hangul bytes carried it inconsistently in the probe (센 0.13, 꾸 0.00)",
+   "fire": [
+    "最近は鬱な気分が続いている。",
+    "庭の薔薇がとてもきれいだ。",
+    "朝市で檸檬を一つ買った。",
+    "鳥は竹の籠の中で眠っている。",
+    "The coil has a resistance of about 47 Ω at 20 degrees.",
+    "The two values agree, 3.14 ≈ 22/7, to three places.",
+    "سيبدأ العام الدراسي في ١٢ سبتمبر.",
+    "Солдат поднял щит и шагнул вперёд."
+   ],
+   "quiet": [
+    "最近は暗い気分が続いている。",
+    "庭の花がとてもきれいだ。",
+    "朝市で桃を一つ買った。",
+    "鳥は竹の箱の中で眠っている。",
+    "The coil has a resistance of about 47 ohms at 20 degrees.",
+    "The two values agree, 3.14 and 22/7, to three places.",
+    "سيبدأ العام الدراسي في سبتمبر القادم.",
+    "Солдат поднял меч и шагнул вперёд."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on the first byte of the rare character; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "byte-fallback character piece",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: ' �' x15, '�' x13 (Korean 꾸준/센, kanji 攪, ō, Arabic-Indic ٠, Cyrillic щ, Ω, Cyrillic lookalike ѕ); max 71.5, density 0.52%; last layer. Probe: Ω 0.563, 攪 0.557, ٣٠ 0.488, ' щ' 0.436, 센 0.130, 꾸 0.000; in-vocab controls: 機械 0.006, хорошо 0.061, ohm-cm 0.131, الاثنين 0.028, floor 0.032. Every test sentence was split-checked: fire items contain byte pieces, near misses none (咲 also falls to bytes and was kept out)."
+}

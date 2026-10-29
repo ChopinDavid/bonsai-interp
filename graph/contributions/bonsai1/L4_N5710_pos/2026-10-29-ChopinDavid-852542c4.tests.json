@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-852542c4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N5710+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N5710",
+   "pole": "+",
+   "label": "the word 'cholesterol' in any split and language (' cholesterol', 'Ch|olesterol', Arabic كوليستر|ول, Spanish cole|sterol): peak on the token that completes the word; other blood lipids and related terms (triglycerides, lipids, statins, saturated fat, blood sugar) stay low, the piece 'sterol(s)' carries part of it",
+   "fire": [
+    "Her cholesterol levels dropped after six months of exercise.",
+    "Oats are said to help bring cholesterol down.",
+    "The nurse explained the difference between good and bad cholesterol.",
+    "Shrimp is high in cholesterol but low in fat.",
+    "Most of the cholesterol in your body is made by the liver.",
+    "Many patients worry about their cholesterol after turning fifty.",
+    "Un nivel alto de colesterol aumenta el riesgo cardíaco.",
+    "Doctors recommend checking cholesterol every five years."
+   ],
+   "quiet": [
+    "Her blood sugar levels dropped after six months of exercise.",
+    "Oats are said to help bring blood pressure down.",
+    "The nurse explained the difference between saturated and unsaturated fat.",
+    "Shrimp is high in protein but low in calories.",
+    "Most of the insulin in your body is made by the pancreas.",
+    "Many patients worry about their triglycerides after turning fifty.",
+    "Un nivel alto de glucosa aumenta el riesgo cardíaco.",
+    "Doctors recommend checking blood pressure every five years."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.7 on the cholesterol token; near misses below 0.05 (plant sterols leaked 0.326 in the probe, so near misses avoid 'sterol')",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the word cholesterol",
+ "unit_kind": "token/lexical",
+ "confidence": 0.85,
+ "notes": "Card: ' cholesterol' x21, 'olesterol' x5, 'ول' x3 (Arabic كوليسترول), 'sterol' x2; max 38.75, density 0.006%. Probe: ' cholesterol' 0.648/0.626/0.475, 'Ch|olesterol' 0.605, Arabic الكوليسترول 0.690 (peak 'ول'), 'sterols' 0.326 (peak 'ols'), triglycerides 0.027, statins 0.002, butter and cream 0.002, floor 0.002. Spanish 'colesterol' splits cole|sterol and is untested before registration.",
+ "trigger": {
+  "words": [
+   "cholesterol",
+   "Cholesterol",
+   "colesterol",
+   "الكوليسترول",
+   "كوليسترول"
+  ]
+ }
+}

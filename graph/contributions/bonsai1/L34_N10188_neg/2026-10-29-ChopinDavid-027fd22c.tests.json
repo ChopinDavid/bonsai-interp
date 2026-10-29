@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-027fd22c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N10188-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N10188",
+   "pole": "-",
+   "label": "'at' opening the figurative position of a research field or activity: 'at the interface/intersection/forefront/periphery of', peak on ' at' (or the following 'the'); literal 'at the border/door' is weaker, and temporal 'at seven', 'good at', 'looked at', 'at least' and 'on the surface' are silent",
+   "fire": [
+    "His research lies at the interface of biology and computing.",
+    "The institute has long been at the forefront of climate modelling.",
+    "Her thesis sits at the intersection of law and economics.",
+    "Our group works at the interface between chemistry and materials science.",
+    "For a decade the lab stood at the forefront of vaccine design.",
+    "Many of the best ideas emerge at the periphery of a field.",
+    "The new centre operates at the intersection of art and engineering.",
+    "Much of the innovation now happens at the interface of hardware and software."
+   ],
+   "quiet": [
+    "His research began at seven each morning in the basement lab.",
+    "The institute has long been good at attracting young scientists.",
+    "Her thesis looks at the economics of water law.",
+    "Our group works on the chemistry of new materials.",
+    "For a decade the lab aimed at a vaccine for malaria.",
+    "Many of the best ideas emerge from the margins of a field.",
+    "The new centre opens at nine and closes at five.",
+    "Much of the innovation now happens in the overlap of hardware and software."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on ' at'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'at the intersection/forefront of'",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: ' at' x19, ' the' x8 (after at), ' per'(iphery); examples: 'working at the multidisciplinary interface' 340, 'lie at the intersection' 262, 'at the forefront' 231, 'floats at the surface' 229, 'rejected at the border' 216, 'at the periphery' 206, 'at the door' 196, 'at the controls' 195, 'at once' 189; the + pole suppresses ' at'; max 340, density 0.039%. Probe: 'sits at the intersection of chemistry and art' 0.719, 'at the surface' 0.278, 'at the forefront' 0.202, 'at the door' 0.146, 'at least' 0.100, 'at the border' 0.085, 'at the controls' 0.032, 'at seven' 0.001, 'good at' 0.002, 'looked at' 0.001, 'on the surface' 0.016, floor 0.044. The research-field framing carried it most, so fire items use that frame."
+}

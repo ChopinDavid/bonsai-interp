@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-11b4bed5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N6172-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N6172",
+   "pole": "-",
+   "label": "the word 'peak' (noun or verb, maximum or mountain sense: peak, peaks, peaked), with French 'pic' and Spanish 'pico' as weaker cognates; synonyms without the word (maximum, summit, spike, climax, highest) and the homophone 'peek' stay low, summit leaking weakly",
+   "fire": [
+    "Traffic on the bridge hits its peak around five in the afternoon.",
+    "The second peak in the chart marks the holiday sales.",
+    "Flu cases typically peak in late January.",
+    "From the hut you can see the highest peak in the range.",
+    "Her career peaked with the album she released in 1998.",
+    "The amplifier clips when the signal peaks above two volts.",
+    "Pollen counts reach their peak on dry, windy days.",
+    "The detector records a sharp peak at 520 nanometres."
+   ],
+   "quiet": [
+    "Traffic on the bridge is heaviest around five in the afternoon.",
+    "The second bar in the chart marks the holiday sales.",
+    "Flu cases typically rise in late January.",
+    "From the hut you can see the highest summit in the range.",
+    "Her career climaxed with the album she released in 1998.",
+    "The amplifier clips when the signal rises above two volts.",
+    "Pollen counts reach their maximum on dry, windy days.",
+    "The detector records a sharp spike at 520 nanometres."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.8 on the peak token; near misses below 0.15, with 'summit' possibly near 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the word peak",
+ "unit_kind": "token/lexical",
+ "confidence": 0.75,
+ "notes": "Card: ' peak' x16, ' peaks' x3, 'aking' x2, 'aks', Japanese ピーク/峰, Korean 피크, French ' pic'; max 23.9, density 0.052%. Probe: 'peak pressure' 0.808, 'peaks between' 0.613, 'snowy peak' 0.497, 'its peak' 0.450, 'peaked' 0.441; 'summit' 0.304, 'pico' 0.269, 'pic' 0.221 (peak on atte|int), 'maximum' 0.108, 'peek' 0.020, floor 0.011.",
+ "trigger": {
+  "words": [
+   "peak",
+   "peaks",
+   "peaked",
+   "Peak",
+   "Peaks"
+  ]
+ }
+}

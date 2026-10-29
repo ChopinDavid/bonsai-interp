@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5748d87a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N3837-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N3837",
+   "pole": "-",
+   "label": "a space-initial content word beginning with the vowel letters i, u, e or o (unbiased, inch, evaluation, indirect, usher, Ink, enrich), peak on that word; the same sentences with consonant-initial words stay low, and common function words (or, any, a) carry it only weakly; a-initial words are untested",
+   "fire": [
+    "The report praised the unusual design of the new bridge.",
+    "Each bottle holds roughly an ounce of the extract.",
+    "The council approved an urgent repair to the sea wall.",
+    "Her lawyer called the ruling an obvious mistake.",
+    "The farm grows oats and barley on the upper field.",
+    "The dentist noticed the uneven wear on his molars.",
+    "The sauce needs more oregano and a pinch of salt.",
+    "Please keep the invoice until the goods arrive."
+   ],
+   "quiet": [
+    "The report praised the clever design of the new bridge.",
+    "Each bottle holds roughly a cup of the syrup.",
+    "The council backed a quick repair to the sea wall.",
+    "Her lawyer called the ruling a plain mistake.",
+    "The farm grows wheat and barley on the lower field.",
+    "The dentist noticed the heavy wear on his molars.",
+    "The sauce needs more basil and a pinch of salt.",
+    "Please keep the receipt until the goods come."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the vowel-initial word; near misses below 0.2 (the probe's 'dots per centimetre' reached 0.252 on ' per')",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "vowel-initial (i/u/e/o) content word",
+ "unit_kind": "token/lexical",
+ "confidence": 0.55,
+ "notes": "Card: ' Ink' x2, ' evangel' x2, ' infra' x2, ' unbiased', ' usher', ' Inch', ' obl', ' evaluation', ' enrich', ' indirect', E|no: every peak token is a word starting with i/u/e/o; max 7.59, density 2.6% (broad flag). Probe: unbiased 0.938, inch 0.697, evaluation 0.597, indirect 0.521, usher 0.490, Ink 0.396, enrich 0.252; consonant swaps: Sapphire 0.089, parking 0.054, 'special or consequential' 0.199 (peak or), 'dots per centimetre' 0.252 (peak per), floor 0.033. The pole looks like a vowel-initial-word feature (perhaps for a/an agreement); 'a'-initial words were not probed."
+}
