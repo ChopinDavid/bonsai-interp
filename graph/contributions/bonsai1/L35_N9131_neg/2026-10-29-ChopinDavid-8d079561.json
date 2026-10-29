@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-8d079561",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N9131-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T07:27:52+00:00",
+ "recipe": {
+  "toolchain_commit": "d8dd857f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N9131_neg/2026-10-29-ChopinDavid-8d079561.tests.json"
+ },
+ "label": "byte-fallback tokens of Arabic-Indic digits (٠-٩) inside Arabic text; the same numbers in Western digits stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N9131_neg/2026-10-29-ChopinDavid-8d079561.tests.json",
+   "prereg_commit": "d8dd857f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.739,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.69,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.86,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.76,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.739,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.495,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.603,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.496,
+     "peak": "�"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": " المدينة"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " الطلاب"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": " الخامس"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": "لة"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": "تر"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "اق"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": "أ"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": " العام"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.714,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d8dd857f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Arabic-Indic digit bytes",
+ "unit_kind": "token/lexical",
+ "confidence": 0.65,
+ "notes": "Card: max 89.5, peaks '�' x16 and ' �' x12 on Arabic-Indic digits (٧٥٠, ٢٠١١, ٢٠/٨٠) and Korean 꾸준. Probe: '٧٥٠ متطوعا' 0.478, '٢٠١١' 0.584, Korean 꾸준히 0.163, 꾸준한 0.252; the same Arabic sentence with '750' 0.009. Every digit splits into byte tokens.",
+ "selection": "random draw"
+}
