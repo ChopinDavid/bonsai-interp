@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-4267e2e4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N9364-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:26+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L30_N9364_neg/2026-10-30-lm1909-4267e2e4.tests.json"
+ },
+ "label": "The subject or modal right after 'how far' ('how far she has come', 'how far you can stretch', 'how far we could go'), where 'come/reach/go' is expected next; 'how much / how long / how often' stay lower.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N9364_neg/2026-10-30-lm1909-4267e2e4.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.295,
+     "peak": " we"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.236,
+     "peak": " can"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.012,
+     "peak": " inland"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.392,
+     "peak": " has"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.118,
+     "peak": " could"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.104,
+     "peak": " player"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.279,
+     "peak": " would"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.055,
+     "peak": " can"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": "'t"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " inland"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": "'s"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": "Co"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.122,
+     "peak": " can"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.177,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "after 'how far' (extent of progress)",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.6,
+ "notes": "Card: ' to' x17 (never able to; been able to), ' can', ' she' (how far she's come), ' is'; output (+ pole) promotes 'reach'. Exploratory probe: 'how far she has come' 0.52, 'how far you can stretch' 0.69, 'how much you can save' 0.24; 'able to' only 0.05-0.09, so the label keeps to 'how far'.",
+ "selection": "random draw"
+}

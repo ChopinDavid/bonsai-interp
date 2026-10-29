@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-17f3cd2d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N1028-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:40+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N1028_neg/2026-10-30-lm1909-17f3cd2d.tests.json"
+ },
+ "label": "The punctuation that closes a press-release dateline ('DUBLIN, Ohio, 10 October 2012—', 'CHAMPAIGN, Ill. -', 'SAN DIEGO, Dec. 27, 2016 –', '(BUSINESS WIRE)--') before the story starts; the same places and dates in ordinary prose stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N1028_neg/2026-10-30-lm1909-17f3cd2d.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.566,
+     "peak": "—"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.504,
+     "peak": " –"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.22,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.392,
+     "peak": " June"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.485,
+     "peak": "("
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.527,
+     "peak": " --"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.19,
+     "peak": " Ontario"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.257,
+     "peak": " study"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.094,
+     "peak": " hospital"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.08,
+     "peak": " company"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.043,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.107,
+     "peak": " said"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.053,
+     "peak": " Friday"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.19,
+     "peak": " from"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.992,
+    "median_fire": 0.439,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "end of a press-release dateline",
+ "unit_kind": "format / contextual",
+ "confidence": 0.7,
+ "notes": "Card: peaks on '.\\n', '.', ' -', ')—', '—', '.--' right after news datelines (DUBLIN, Ohio, ... 2012—; CHAMPAIGN, Ill. -; FOSTER CITY, Calif.--(BUSINESS WIRE)--) and after 'For more information, visit www...'. Exploratory probe: datelines 0.35-0.63; the same facts in prose 0.005-0.055.",
+ "selection": "random draw"
+}

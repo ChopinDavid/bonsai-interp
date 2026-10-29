@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-9d2d9f78",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N10101-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:51+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N10101_neg/2026-10-30-lm1909-9d2d9f78.tests.json"
+ },
+ "label": "A verb or preposition whose object has been moved earlier in the sentence (a filler-gap site: 'what X and Y have _ in common', 'a list to explore _', 'a goal to aim for _', 'all you want to use _ is'); the same verbs with their object in place stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N10101_neg/2026-10-30-lm1909-9d2d9f78.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.478,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.116,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.053,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.134,
+     "peak": " bring"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.033,
+     "peak": " you"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.285,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.067,
+     "peak": " visit"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.007,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "ions"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.0,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.0,
+     "peak": "Last"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": "?"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.0,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.091,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "verb/preposition with a moved object (gap)",
+ "unit_kind": "syntactic / prediction",
+ "confidence": 0.75,
+ "notes": "Card: peaks on ' had', ' use', ' have', ' explore', ' do', ' for' where the object sits earlier (the first indication that many couples had; all you need want to use; a reading list to explore; a good thing to aim for; what ... ozone have in common). Exploratory probe: gap versions 0.46-0.88; object in place 0.001-0.008.",
+ "selection": "random draw"
+}

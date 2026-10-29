@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-3f6c8729",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N4586-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:39:00+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N4586_neg/2026-10-30-lm1909-3f6c8729.tests.json"
+ },
+ "label": "Living or staying somewhere: ' live', ' lived', ' living (space)', ' stay', and Chinese/Korean 住/居住/숙박 'reside, lodge'; the same subjects with other verbs (work, study) stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N4586_neg/2026-10-30-lm1909-3f6c8729.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.956,
+     "peak": " live"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.452,
+     "peak": " lived"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.184,
+     "peak": " living"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.487,
+     "peak": " stayed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.451,
+     "peak": " live"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.935,
+     "peak": " living"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.225,
+     "peak": "宿舍"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.329,
+     "peak": " lived"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.17,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " worked"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.026,
+     "peak": " balcony"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.078,
+     "peak": " lunch"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.029,
+     "peak": " still"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.098,
+     "peak": "食堂"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.055,
+     "peak": " workshop"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.452,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "living / staying somewhere",
+ "unit_kind": "semantic",
+ "confidence": 0.75,
+ "notes": "Card: peaks on ' living' x4, ' live' x3, ' lod' x3, ' lived' x2, ' sleeping' x2, 住, 숙박, 临时(居住); output (reversed) favours ' quarters', ' temporary', ' elsewhere'. Exploratory probe: living space 1.02, lived 0.74, live in tents 0.81, 住处 0.69, stay 0.28; worked/lecture notes 0.01-0.02.",
+ "selection": "random draw"
+}

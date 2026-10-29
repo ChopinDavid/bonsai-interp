@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-9adb4369",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N4299+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:53+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N4299_pos/2026-10-30-lm1909-9adb4369.tests.json"
+ },
+ "label": "The set-up of a ranking or superlative: ' of' in 'one/three of the …' and ' first' in 'the/your first …'; the same nouns without a ranking (a/the + noun) stay lower. Plain prenominal adjectives also fire moderately.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N4299_pos/2026-10-30-lm1909-9adb4369.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.029,
+     "peak": " oldest"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.02,
+     "peak": "She"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.03,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.604,
+     "peak": " first"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.015,
+     "peak": " merg"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.442,
+     "peak": " first"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.01,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.033,
+     "peak": " anniversary"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": " universities"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " ocean"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.042,
+     "peak": " busy"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.128,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " merg"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " river"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " anniversary"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.57,
+    "median_fire": 0.029,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'one of the' / 'the first' ranking set-up",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: ' of' x7 (one of the UK's most..., three of the numerous...), ' first' x7, ' famous' x3, ' several', ' three', ' largest'. Exploratory probe: 'one of the best' 0.78, 'the first coffee house' 0.68, 'your first office' 0.69, 'three of the largest' 0.39; but 'a large' 0.38 and 'a small' 0.44 also fire, so the near misses avoid prenominal adjectives.",
+ "selection": "random draw"
+}

@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-a60c2be2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N8347-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:37+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N8347_neg/2026-10-30-lm1909-a60c2be2.tests.json"
+ },
+ "label": "Digits that continue a number whose first digit is 3 (the second 3 of 3T3, the 3306 port, localhost:3000, section 333): the pole reacts to a preceding '3' inside the same number; the same numbers starting with another digit stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N8347_neg/2026-10-30-lm1909-a60c2be2.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.392,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.397,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.834,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.191,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.012,
+     "peak": " records"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.028,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.1,
+     "peak": "7"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.029,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.043,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": "La"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " cites"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " records"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " seats"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " desk"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " printer"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.146,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "digits after a leading 3 in a number",
+ "unit_kind": "token / contextual",
+ "confidence": 0.6,
+ "notes": "Card: '3' x18 of the top 32, mostly a digit after an earlier 3 in the same number (3T⟦3⟧, 310⟦3⟧848, 315⟦3⟧6000, 330⟦6⟧, 300⟦0⟧, 33⟦3⟧). Exploratory probe: 3T3 0.85, 3306 0.40, 3000 0.42, 3103848 0.26; 5432 0.06, 8080 0.01, 7103848 0.03.",
+ "selection": "random draw"
+}

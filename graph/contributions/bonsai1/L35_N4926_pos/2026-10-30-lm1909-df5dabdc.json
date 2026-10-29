@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-df5dabdc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N4926+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:47+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N4926_pos/2026-10-30-lm1909-df5dabdc.tests.json"
+ },
+ "label": "A trailing ellipsis or emoticon that closes an informal line or a status string ('Terminating...', 'doing that :3', 'go down earlier…', 'images :D'), firing on the '...', '…' or ' :'; the same lines closed with a period stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N4926_pos/2026-10-30-lm1909-df5dabdc.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.776,
+     "peak": "..."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.685,
+     "peak": "..."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.212,
+     "peak": "..."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.007,
+     "peak": " :)"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.283,
+     "peak": "…"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.734,
+     "peak": " :"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.548,
+     "peak": "..."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.436,
+     "peak": " :"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": "(\""
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.046,
+     "peak": "\")"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.024,
+     "peak": " didn"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": "\")"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.914,
+    "median_fire": 0.492,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "trailing ellipsis / emoticon",
+ "unit_kind": "format / punctuation",
+ "confidence": 0.6,
+ "notes": "Card: peaks on ' :' x10, '…' x8, '...' x7, '!' x6 at the end of informal lines and log strings; auto test held (AUROC 0.91) for '...' inside a quotation or string. Output promotes '\\r\\n'. Exploratory probe: 'Terminating...' 0.69, ':3' 0.71, '…' 0.32, ':D' 0.13; period versions 0.001-0.02.",
+ "selection": "random draw"
+}
