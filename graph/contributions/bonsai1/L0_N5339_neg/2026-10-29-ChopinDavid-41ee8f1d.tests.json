@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-41ee8f1d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N5339-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N5339",
+   "pole": "-",
+   "label": "the word 'disease' in any form (disease, Disease, diseases, dise|ased); synonyms such as illness, disorder, infection and condition are silent",
+   "fire": [
+    "Farmers lost half the herd to a disease carried by ticks.",
+    "The town's Disease Prevention Unit opened in 1998.",
+    "Chronic diseases account for most of the hospital's budget.",
+    "A rare genetic disease runs in the family.",
+    "The elm trees were diseased and had to be felled.",
+    "Vaccination halted the spread of the disease within a year.",
+    "The new wheat strain is disease-resistant and grows fast.",
+    "Lyme disease is spread by the bite of an infected tick."
+   ],
+   "quiet": [
+    "Farmers lost half the herd to an infection carried by ticks.",
+    "The town's Health Prevention Unit opened in 1998.",
+    "Chronic conditions account for most of the hospital's budget.",
+    "A rare genetic disorder runs in the family.",
+    "The elm trees were rotten and had to be felled.",
+    "Vaccination halted the spread of the illness within a year.",
+    "The new wheat strain is drought-resistant and grows fast.",
+    "Malaria is spread by the bite of an infected mosquito."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on the disease token (diseased 0.4-0.6 on 'ased'); near misses below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the word 'disease'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.85,
+ "notes": "Card: max 7.78, density 0.026%, peaks ' disease' x30, ' Disease' x2 (one token dominates), layer 0. Probe: 'Heart disease' 0.853, 'disease- and drought-resistant' 0.873, 'a disease caused by' 0.786, 'the rare disease' 0.624, ' Disease' (Centers for Disease Control) 0.696, ' diseases' 0.649, 'dise|ased' 0.508 (peak 'ased'); 'illness' 0.151, 'disorder' 0.173, 'pest-' 0.032, floor 0.005.",
+ "trigger": {
+  "words": [
+   "disease",
+   "diseases",
+   "diseased"
+  ]
+ }
+}

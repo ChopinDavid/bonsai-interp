@@ -1,0 +1,66 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5fd55352",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N1273+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N1273",
+   "pole": "+",
+   "label": "the piece after ' St' in a surname that the tokenizer splits as St + an o-piece (St|ol|z, St|oll|man, St|ok|owski, St|oss|el), peak on that piece; St- surnames split with another vowel (St|al|berg, St|el|zer) and the same pieces after other onsets (Vol|z, Hol|zer) are silent",
+   "fire": [
+    "The composer Stokowski rearranged the score for a larger orchestra.",
+    "Our neighbour Mrs Stolz keeps bees behind the garage.",
+    "The historian Stolle traced the family back to Silesia.",
+    "A young engineer named Stolar fixed the pump in an hour.",
+    "The novelist Stoloff read from his new book on Thursday.",
+    "Councillor Stolzenberg voted against the bypass.",
+    "The pianist Stollman cancelled her recital in Vienna.",
+    "The explorer Stobart left the base camp before dawn."
+   ],
+   "quiet": [
+    "The composer Stalberg rearranged the score for a larger orchestra.",
+    "Our neighbour Mrs Volz keeps bees behind the garage.",
+    "The historian Stelzer traced the family back to Silesia.",
+    "A young engineer named Holzer fixed the pump in an hour.",
+    "The novelist Solberg read from his new book on Thursday.",
+    "Councillor Stulberg voted against the bypass.",
+    "The pianist Stalder cancelled her recital in Vienna.",
+    "The explorer Zoltan left the base camp before dawn."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.6-1.0 on the piece after ' St'; near misses below 0.2 (Stirling leaked 0.14 in the probe)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "o-piece after ' St' in a split surname",
+ "unit_kind": "token/lexical",
+ "confidence": 0.7,
+ "notes": "Card: max 344, density 0.004%, peaks 'ol' x10 (St|ol|nitz, St|ol|hanske, St|ol|te, St|ol|tenberg), ' Sto' x3 (Sto|iber), 'or' x3, 'opp' x2 (St|opp|ard), 'os' (St|os|z), 'p' (Stö|p|pler). Probe: Stolberg 1.043, Stolper 1.006, Stoltenberg 0.998 (all peak 'ol'), Stossel 0.750 ('oss'), Stoltzfus 0.717 ('olt'); Steiner 0.014, Stirling 0.140, Holtz 0.007, Kolnitz 0.002, floor 0.001. The onset ' St' plus an o-initial piece carries it; the piece alone (Kol|nitz) and the onset alone (Ste|iner) do not.",
+ "trigger": {
+  "pieces": [
+   "ol",
+   "olt",
+   "oss",
+   "opp",
+   "os",
+   "or",
+   "ob",
+   "ok",
+   "oll",
+   "off",
+   "olar",
+   "olle",
+   "ober",
+   " Sto"
+  ]
+ }
+}

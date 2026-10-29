@@ -1,0 +1,65 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6d037e02",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N7824+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N7824",
+   "pole": "+",
+   "label": "the German negative prefix un-/Un- opening an adjective or noun as its own token (un|ruhig, Un|fall, un|erwartet), also when the tokenizer fuses it with the next letters (ung|erecht); the Romance article un and German words that merely begin with un (unter, unsere) are silent",
+   "fire": [
+    "Nach dem Umzug fühlte sie sich wochenlang unruhig.",
+    "Der Unfall auf der Autobahn verursachte einen langen Stau.",
+    "Sein Besuch kam völlig unerwartet.",
+    "Die Antwort des Ministers war unehrlich und ausweichend.",
+    "Das Unwetter zog am Abend über die Stadt.",
+    "Eine so unpraktische Lösung hätte niemand gewählt.",
+    "Die Verteilung der Mittel bleibt ungleich.",
+    "Das Urteil empfanden viele als ungerecht."
+   ],
+   "quiet": [
+    "Nach dem Umzug fühlte sie sich wochenlang ruhig und zufrieden.",
+    "Der Stau auf der Autobahn dauerte bis zum Abend.",
+    "Sein Besuch war schon lange erwartet worden.",
+    "Die Antwort des Ministers war ehrlich und direkt.",
+    "Vimos un pájaro azul en el jardín.",
+    "Ha comprato un gatto nero al mercato.",
+    "Nous avons rencontré un ami à la gare.",
+    "Wir sind seit dem Morgen unterwegs zu unserer Tante."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.8 on ' un'/' Un' (fused ' ung' 0.3-0.5); near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German negative prefix ' un'/' Un'",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 30.88, density 0.013%, peaks ' un' x19, ' Un' x2, ' una' x2 (una|uffällig), ' on' (Dutch on|misbaar), all German/Dutch negative prefixes. Probe: unverändert 0.756, Unannehmlichkeiten 0.609, unklar 0.595, ungenau 0.518 (all peak ' un'/' Un'); fused ' ung|laublich' 0.520, ' unm|öglich' 0.374; Dutch onmisbaar only 0.147 (peak 'mis'); Spanish 'un libro' 0.004, French 'un livre' 0.066, English 'unclear' 0.012, floor 0.008. The same token ' un' as the Romance article is silent, so the pole reads the German prefix, not the string.",
+ "trigger": {
+  "pieces": [
+   " un",
+   " Un",
+   " ung",
+   " unm",
+   " unb",
+   " uns",
+   " unf",
+   " unw",
+   " une",
+   " unbe",
+   " unre",
+   " unh",
+   " una"
+  ]
+ }
+}

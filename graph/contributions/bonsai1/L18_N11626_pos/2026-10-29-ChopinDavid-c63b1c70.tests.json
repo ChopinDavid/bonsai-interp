@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c63b1c70",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N11626+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N11626",
+   "pole": "+",
+   "label": "the second half of a mirrored (chiastic) construction, at the word that comes back with its role swapped (do what it says and say what it does; the village in the city; the fight in the dog); a parallel second half that brings in new items instead of swapping them is silent",
+   "fire": [
+    "It is not the size of the dog in the fight but the size of the fight in the dog.",
+    "You can take the boy out of the farm, but you cannot take the farm out of the boy.",
+    "The teacher learns from the students as much as the students learn from the teacher.",
+    "People do not care how much you know until they know how much you care.",
+    "The town depends on the mill, and the mill depends on the town.",
+    "We should eat to live, not live to eat.",
+    "The map changed the territory as much as the territory changed the map.",
+    "In peace the sons bury their fathers; in war the fathers bury their sons."
+   ],
+   "quiet": [
+    "It is not the size of the dog in the fight but the courage of the man beside it.",
+    "You can take the boy out of the farm, but you cannot make him enjoy the city.",
+    "The teacher learns from the students as much as from the textbooks she assigns.",
+    "People do not care how much you know until they have seen how you work.",
+    "The town depends on the mill, and the mill depends on the river.",
+    "We should eat to live, not merely to pass the time.",
+    "The map changed the territory as much as the railway changed the economy.",
+    "In peace the sons bury their fathers; in war the villages bury their harvests."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on the swapped word; near misses below 0.1, though one probe control leaked 0.279 before the swap point, so a predictive leak is possible",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "swapped word in the second half of a chiasmus",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: max 66.5, density 0.004%, peaks ' can' (chronic conditions can increase the risk for mental illness, after the reverse), ' decir' (hacer lo que dice y decir lo que hará), Japanese を (プロバイダーのネットワークを企業内に after 企業のネットワークをプロバイダー内に), Korean 세속적인 (세속적으로 현명한 / 현명하게 세속적인), ' water' (Likewise, the water cycle cannot exist without plants), ' American' (Inversely, how did American citizens), ' in' (an element of state in the tribe). Probe: 'inversely how did American citizens see the immigrants' 0.521, 'say what it does' 0.446 (peak ' does'), 'the village in the city' 0.430, 'the water cycle cannot exist without plants' 0.264, 'our tools shape us' 0.178; non-mirrored controls 0.000, 0.016, 0.021 and one 0.279 ('an element of the city in the village and a touch of', peak ' of')."
+}

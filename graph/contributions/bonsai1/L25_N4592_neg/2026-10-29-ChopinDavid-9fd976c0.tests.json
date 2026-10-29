@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9fd976c0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N4592-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N4592",
+   "pole": "-",
+   "label": "guess for an unexplained pole: a digit or separator deep inside a long machine-formatted record (SQL coordinate literals, DLL version strings, pipe-delimited database rows, quoted argument lists), weak; ordinary prose containing numbers is silent",
+   "fire": [
+    "insert into gis.parcels values (7,-8123456.75,-8101234.0,1412987.625,3);",
+    "update scratch.idx_test set x = -7801122.5, y = 1393401.875 where id = 12;",
+    "|RESEARCHER:||Dupont L.|\n|OCCURRENCE:||318842 accredited|\n|CONTEXT:||Lyon",
+    "msvcrt.dll 12-Jun-2007 09:41 7.0.6001.18000 626,688 bytes",
+    "Weekly downloads 4 ( #58,112 of 549,870 )\nMonthly downloads 19",
+    "subprocess.check_call([binary, '-q', target, '-o', '-', 'down',\n                       '-x', '-y'])",
+    "select st_x(geom), st_y(geom) from scratch.pts where id in (1393264, 1393265);",
+    "|CHERCHEUR/E:||Martin A.|\n|OCCURRENCE:||412006 accreditee|\n|CONTEXTE:||Rouen"
+   ],
+   "quiet": [
+    "The parcel at number 7 sold for eight hundred thousand dollars last spring.",
+    "Twelve students updated their records before the deadline on Friday.",
+    "The researcher from Lyon presented her findings to the committee.",
+    "The library replaced its oldest computer in June 2007.",
+    "Downloads of the free guide rose to nineteen a month by autumn.",
+    "He pressed the down arrow twice and the cursor jumped to the end.",
+    "Both points lie on the same side of the river near the old bridge.",
+    "The accredited researcher from Rouen joined the project in 2016."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.05-0.2 on a digit or separator; near misses below 0.05; the label is a guess and the test will probably not hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digit inside a machine-formatted record (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: max 69.0, density 0.040%, no shared token: Arabic and Chinese religious prose, a Japanese payment table, an SQL insert with long decimals, a pipe-delimited catalogue row, a DLL version string, a check_call argument list. Probe: every sentence type scored 0.008-0.132; the only value above 0.1 was the SQL insert (0.132, peak '7'), the pipe row 0.074. Nothing explains the card, so this is registered as a guess at the data-record half of it."
+}

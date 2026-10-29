@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c0dce490",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N466+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N466",
+   "pole": "+",
+   "label": "Italian-language prose: the conjunction e, the preposition di and other mid-sentence Italian words (peak on e, di, storia); the same sentences in Spanish, French, Portuguese or English are silent, including Portuguese e",
+   "fire": [
+    "La nonna prepara il pane e la pasta ogni domenica.",
+    "Il museo racconta la storia di una famiglia di pescatori.",
+    "Abbiamo visitato Firenze e Siena in tre giorni.",
+    "Il prezzo del biglietto dipende dall'età e dalla stagione.",
+    "Questo libro parla di un ragazzo e del suo cane.",
+    "La riunione è stata lunga e poco utile.",
+    "Il treno per Bologna parte alle otto e arriva a mezzogiorno.",
+    "Mio fratello studia medicina e lavora di notte in ospedale."
+   ],
+   "quiet": [
+    "La abuela prepara el pan y la pasta cada domingo.",
+    "Le musée raconte l'histoire d'une famille de pêcheurs.",
+    "Visitamos Florencia y Siena en tres días.",
+    "Le prix du billet dépend de l'âge et de la saison.",
+    "Este livro fala de um menino e do seu cão.",
+    "La reunión fue larga y poco útil.",
+    "Le train pour Bologne part à huit heures et arrive à midi.",
+    "My brother studies medicine and works nights at the hospital."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on ' e', ' di' or a content word; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Italian prose (e, di)",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: max 99.5, density 0.002%, peaks ' e' (aggregare e disgregare, simpatico e goloso), ' storia', ' di', ' continua' in Italian, plus ' S' x6 as the onset of a split name (S|atchel, S|ibley, S|GT) and Arabic ' س'. Probe: 'unire e separare' 0.884 (peak ' e'), 'la storia di un paese' 0.843 (peak ' storia'), 'in fase di revisione' 0.581 (' di'), 'piccolo e molto goloso' 0.325 (peak ' molto'); Spanish 0.037, French 0.009, English 0.008-0.013; the ' S' onset only 0.201. The Italian half is the pole's main trigger; the S-onset half is left out of this label."
+}

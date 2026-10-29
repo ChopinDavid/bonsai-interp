@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2eda1179",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N5899+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N5899",
+   "pole": "+",
+   "label": "dense layer-4 unit (5.3% of tokens reach 0.1 of max, gate-closed echo regime): strongest inside biology and materials-science prose on words such as digested, equilibrium, chemical, bulk, material, stress; the same words in everyday prose fire weakly",
+   "fire": [
+    "The yolk proteins are digested within hours of fertilisation.",
+    "Soil organic material decomposes faster under warm, moist conditions.",
+    "The membrane reaches osmotic equilibrium with the surrounding medium.",
+    "Resistance to chemical fungicides has spread through the orchard population.",
+    "Cell walls prevent the bulkier molecules from entering the cytoplasm.",
+    "Stress proteins accumulate in seedlings exposed to drought.",
+    "The bulk density of the sediment increases with depth.",
+    "Enzyme activity falls once the substrate is fully digested."
+   ],
+   "quiet": [
+    "The leftovers were eaten within hours of the party.",
+    "The old barn collapsed faster than anyone expected.",
+    "The committee reached an agreement with the neighbouring town.",
+    "Resistance to the new timetable has spread through the office.",
+    "Narrow doors prevent the bulkier furniture from entering the hall.",
+    "Stress levels rise in students before the exams.",
+    "The price of the land increases with every sale.",
+    "The meeting ended once the agenda was fully covered."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on the technical word or the token after it; near misses 0.05-0.15; a dense unit, so the 8+8 may not hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: biology/materials prose (digested, equilibrium)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.25,
+ "notes": "Card: max 2.75, density >0.1·max 5.3%, FLAG broad, FLAG gate-closed (-x- echo 100%); peaks ' bulk' x6, ' stress' x6, ' material' x5, ' equilibrium' x3, 'ested', ' chemical' in biology papers. Probe: 'digested' 0.581 (peak 'ested'), 'equilibrium within a few minutes' 0.345 (peak ' minutes'), 'chemical insecticides' 0.309, 'plant health' 0.221, 'bulk of the polypeptide' 0.128; everyday 'bulk of the audience' 0.074, 'material for a dress' 0.047, 'square within a few minutes' 0.113, floor 0.096. Registered as dense / positional with a best-guess test."
+}

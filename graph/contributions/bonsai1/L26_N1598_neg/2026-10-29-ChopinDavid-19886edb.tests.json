@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-19886edb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N1598-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T22:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N1598",
+   "pole": "-",
+   "label": "the join inside a well-known multi-part brand or franchise title: the colon before a subtitle (Star Trek: Discovery, Halo: Reach) or the hyphen or second word of a compound brand (Pepsi-Cola, Angry Birds, Pac-Man); a colon that introduces a list or explanation in prose is silent",
+   "fire": [
+    "My brother still owns a copy of Transformers: Dark of the Moon on Blu-ray.",
+    "The cast of CSI: Miami reunited for a charity dinner.",
+    "She spent the summer playing Assassin's Creed: Odyssey with her cousins.",
+    "Reruns of Batman: The Animated Series still draw an audience.",
+    "The studio delayed Call of Duty: Modern Warfare by a month.",
+    "A vintage Pac-Man cabinet stood in the corner of the diner.",
+    "The soundtrack to The Lord of the Rings: The Two Towers won several awards.",
+    "He collects Mercedes-Benz badges from the 1960s."
+   ],
+   "quiet": [
+    "My brother still owns a copy of the film on Blu-ray: he never sold it.",
+    "The cast reunited for one reason: a charity dinner.",
+    "She spent the summer on two things: video games and her cousins.",
+    "Reruns of the cartoon still draw an audience: mostly nostalgic adults.",
+    "The studio delayed the shooter by a month: the servers were not ready.",
+    "A vintage arcade cabinet stood in the corner: nobody played it.",
+    "The soundtrack won several awards: two of them for the main theme.",
+    "He collects car badges from one decade: the 1960s."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on ':' or the joining piece; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "colon/joiner inside a franchise or brand title",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: max 136, density 0.016%, peaks ':' x12 in 'Law & Order: SVU', 'Stargate: Universe', 'Lego Star Wars: Force Awakens', 'STAR TREK: The Neverending', 'Wall Street: Money Never Sleeps'; also '—' in 'Petroleum Reserve—Alaska', ' Birds' in Angry Birds, '-Cola', ' Qaeda', ' (' in 'UCPN (M)'. Probe: 'Star Trek: Discovery' 0.924 (peak ':'), 'Halo: Reach' 0.471, 'Mission: Impossible' 0.425 (peak ' Impossible'), Pepsi-Cola 0.310, Angry Birds 0.216; list colon 0.008, 'Note:' 0.029, the same sentences without the franchise 0.003-0.035."
+}
