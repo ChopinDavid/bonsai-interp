@@ -4,10 +4,10 @@
  "layer": 0,
  "index": 11125,
  "pole": "+",
- "label": "The Arabic piece 'در' closing the word الصدر (chest / al-Sadr) after ' الص', not 'در' in other words",
+ "label": "Arabic word-completing fragments after a short stem piece: 'در' (الصدر, الغدر, البدر), 'ط' in الرابط, 'فل' in الغفلة; not the same letters in other words (الحفلة, الضابط, المدير)",
  "short": "'در' in الصدر",
  "kind": "token",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-22-ChopinDavid-63b7c775"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N11125_pos/2026-10-28-moridinamael-f3522adc.tests.json",
+   "prereg_commit": "e304f8a1",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.888,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.15,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.428,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.672,
+     "peak": "ط"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.581,
+     "peak": "فل"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.601,
+     "peak": "در"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.631,
+     "peak": "ط"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.201,
+     "peak": "در"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.221,
+     "peak": "ك"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.045,
+     "peak": " الم"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.24,
+     "peak": "دي"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.155,
+     "peak": "ط"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.042,
+     "peak": " من"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.107,
+     "peak": "عم"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.16,
+     "peak": "ط"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": " ي"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.591,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-moridinamael-f3522adc"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-22-ChopinDavid-63b7c775",
    "The Arabic piece 'در' closing the word الصدر (chest / al-Sadr) after ' الص', not 'در' in other words",
    "held"
+  ],
+  [
+   "2026-10-28-moridinamael-f3522adc",
+   "Arabic word-completing fragments after a short stem piece: 'در' (الصدر, الغدر, البدر), 'ط' in الرابط, 'فل' in الغفلة; not the same letters in other words (الحفلة, الضابط, المدير)",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-22-ChopinDavid-63b7c775"
+  "2026-10-22-ChopinDavid-63b7c775",
+  "2026-10-28-moridinamael-f3522adc"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.0092,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 3904
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
