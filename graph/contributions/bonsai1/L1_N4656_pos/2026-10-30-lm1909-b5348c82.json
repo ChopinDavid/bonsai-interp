@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-b5348c82",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N4656+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:21:30+00:00",
+ "recipe": {
+  "toolchain_commit": "486f6f4e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N4656_pos/2026-10-30-lm1909-b5348c82.tests.json"
+ },
+ "label": "Dense unit with no specific trigger: on for most tokens (78% of corpus tokens reach 0.1 of max), strongest on ' the' and other function words; best guess tested here: ' the' in ordinary prose versus the same prose without 'the'.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N4656_pos/2026-10-30-lm1909-b5348c82.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 8,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.688,
+     "peak": " sunset"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.446,
+     "peak": "My"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.664,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.696,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.462,
+     "peak": " project"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.487,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.747,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.745,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.684,
+     "peak": " sunset"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.39,
+     "peak": "My"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.592,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.558,
+     "peak": " door"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.457,
+     "peak": " team"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.511,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.346,
+     "peak": " our"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.677,
+     "peak": " my"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.719,
+    "median_fire": 0.676,
+    "near_misses_at_0.3": 8
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "486f6f4e",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "dense (function words, ' the')",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card flags dense (78% of tokens reach 0.1 of max, 32% reach 0.3) and a gate-closed regime (-x- echo 100%); top peaks ' the' x13, '?\\n' x6, ' его' x3. Exploratory probe: every sentence 0.33-0.77, including code. An 8 + 8 test is expected to fail; recorded as dense / positional.",
+ "selection": "random draw"
+}

@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-ed65cc5d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N12149-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:21:34+00:00",
+ "recipe": {
+  "toolchain_commit": "486f6f4e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N12149_neg/2026-10-30-lm1909-ed65cc5d.tests.json"
+ },
+ "label": "The opening of an aside that interrupts a clause mid-phrase: the ' (' or comma-phrase that starts a parenthetical such as '(to us)', '(issued in 2015)' or ', after the war,', before the sentence resumes; the same content placed outside the clause stays quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N12149_neg/2026-10-30-lm1909-ed65cc5d.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.263,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.453,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.642,
+     "peak": " after"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.201,
+     "peak": "issued"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.494,
+     "peak": "to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.158,
+     "peak": "which"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.61,
+     "peak": " during"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.11,
+     "peak": " ("
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " humming"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": " use"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.055,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.052,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": "Nobody"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " spread"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": "Her"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.358,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "486f6f4e",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "start of a mid-clause parenthetical aside",
+ "unit_kind": "contextual / syntactic",
+ "confidence": 0.65,
+ "notes": "Card: peaks on ' (' x10 and commas that open an interruption (habit (undoubtedly annoying...) of; adoption, after 1900, of; new (to us) house). Exploratory probe: asides 0.47-0.95, same sentences without the aside 0.004-0.07.",
+ "selection": "random draw"
+}

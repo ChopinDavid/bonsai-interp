@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-c2a3db9b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N2959-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:22:02+00:00",
+ "recipe": {
+  "toolchain_commit": "486f6f4e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N2959_neg/2026-10-30-lm1909-c2a3db9b.tests.json"
+ },
+ "label": "' et' of 'et al.' closing a punctuated author list (after a comma, semicolon or list dash: 'Lee, K.; et al.', '- et al.'); author lists that close with 'and Name', 'and colleagues' or 'and others' stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N2959_neg/2026-10-30-lm1909-c2a3db9b.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.776,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.334,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.986,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.477,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.441,
+     "peak": " E"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.036,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.609,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.812,
+     "peak": " et"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.342,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.266,
+     "peak": " L"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.202,
+     "peak": " F"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.278,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.441,
+     "peak": " E"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.376,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.242,
+     "peak": " J"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.243,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.693,
+    "near_misses_at_0.3": 3
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "486f6f4e",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'et al.' after a comma/semicolon in an author list",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.7,
+ "notes": "Weak pole (corpus max 1.20; the + pole is the strong 'et al.' unit, max 29.9). Card: peaks on ' et' x27, almost all after a comma or semicolon in reference lists; auto screen held for ' al' after 'et'. Exploratory probe: ', et al.' / '; et al.' / '- et al.' 0.55-0.86; 'Hayes et al.' (directly after a surname) 0.32; author lists ending 'and others' 0.15.",
+ "selection": "random draw"
+}
