@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c047fe9d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N4411-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N4411",
+   "pole": "-",
+   "label": "an 'oo'-spelled piece ('oo', 'ool', 'Roo') inside a rare proper name that the tokenizer splits (V|ool|stra, K|oo|zai, D|ool|ittle); everyday words with 'oo' (school, book) and similar names without 'oo' stay low",
+   "fire": [
+    "The survey was led by the Dutch historian Jan Kooistra in 1998.",
+    "Our new office is next to the Hoolmark building on Main Street.",
+    "The essay was written by Pieter Boolsma for a local journal.",
+    "Her favourite brand of tea is called Koolfa and comes from Kenya.",
+    "The coach signed a young striker named Tim Roozendaal this summer.",
+    "The report credits the engineer Lars Voolman with the original design.",
+    "General Doolittle trained his pilots on a small Florida airfield.",
+    "The start-up Koolbit raised money for its smart thermostat."
+   ],
+   "quiet": [
+    "The survey was led by the Dutch historian Jan de Vries in 1998.",
+    "Our new office is next to the Hartmark building on Main Street.",
+    "The essay was written by Pieter Bakker for a local journal.",
+    "Her favourite brand of tea is called Kenfa and comes from Kenya.",
+    "The coach signed a young striker named Tim Janssen this summer.",
+    "The report credits the engineer Lars Vermeer with the original design.",
+    "General Patton trained his soldiers in the California desert.",
+    "The children walked to school and took a good book along."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-1.0 on the 'oo'/'ool'/'Roo' piece; common oo-words and other names below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'oo' piece inside a split proper name",
+ "unit_kind": "token/lexical",
+ "confidence": 0.75,
+ "notes": "Card: 'V|ool|stra' 148, 'Mo|ob|erry' 148, 'K|oo|zai' 147, 'H|ool|ux' 139, 'C|oo|lessay', ' Roo|zenburg', 'P|oot|s', 'Lo|og'. Probe: Koozai 1.027, Hoolux 1.025, Roozenburg 0.925, Voolstra 0.910, Doolittle 0.757; 'school'/'woods' 0.005, 'cook book' 0.054, 'Sjouke Visser' 0.048. Fire names checked with tokcheck for a separate oo piece."
+}

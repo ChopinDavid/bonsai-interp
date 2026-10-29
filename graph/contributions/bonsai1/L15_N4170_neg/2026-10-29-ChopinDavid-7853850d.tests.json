@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7853850d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N4170-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N4170",
+   "pole": "-",
+   "label": "the leftover or spent object that is discarded, removed or left behind after a task (discard the leaves, remove the hook, peel off the tape, get off the ship); the same objects when they are added, used or attached stay low",
+   "fire": [
+    "Pour the coffee through a filter and throw away the grounds.",
+    "Squeeze the lemons, then discard the seeds and the rind.",
+    "Boil the chicken for an hour, then strain the broth and discard the bones.",
+    "Steep the herbs for ten minutes and strain out the leaves before drinking.",
+    "Pull out the old nails and throw them in the bin.",
+    "When the glue has set, remove the clamps and sand the edges.",
+    "Crack the eggs into a bowl and throw away the shells.",
+    "Simmer the stock, then lift out the bay leaves and discard them."
+   ],
+   "quiet": [
+    "Put a filter in the machine and spoon in the grounds.",
+    "Slice the lemons, then add the seeds and the rind to the jar.",
+    "Roast the chicken for an hour, then serve it with the bones in.",
+    "Pick fresh herbs from the garden and wash the leaves before cooking.",
+    "Hammer the new nails into the board along the edge.",
+    "Before the glue sets, attach the clamps and tighten them.",
+    "Paint the eggs in bright colours and let the shells dry.",
+    "Simmer the stock and add a few bay leaves for flavour."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.9 on the noun being discarded or left; the same nouns when added or used below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "object discarded or left behind",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: 'straining out the tea leaves' 26.25, 'remove the hook' 24.75, 'discard the pods' 19.5, 'remaining water was drained off', 'leapt clear of the plane', 'discard the painter's tape'. Probe: 'discard the leaves' 0.903, 'leapt clear of the plane' 0.202, 'remove the hook' 0.181, 'peel off the tape' 0.147, 'get off the ship' 0.131; 'add the tea leaves' 0.020, 'tie the hook' 0.022, 'apply the tape' 0.011. Only discard-style items are strong."
+}

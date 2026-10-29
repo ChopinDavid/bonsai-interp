@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7944a1b7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N2756+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N2756",
+   "pole": "+",
+   "label": "dense: weakly on for most text (55% of tokens reach 0.1 of a tiny 0.29 max); best guess at its strongest pieces, a split word piece like 'pong' or 'onds' after a single letter",
+   "fire": [
+    "The theologian John Spong gave a lecture in the chapel.",
+    "Professor Spong argued that the old creeds should change.",
+    "Dr. Spong signed copies of his new book after the talk.",
+    "Many readers wrote angry letters to Bishop Spong last year.",
+    "A review of Spong's latest work appeared in the paper.",
+    "The church invited Spong to speak at the spring meeting.",
+    "Critics of Spong said his ideas went too far.",
+    "Students crowded into the hall to hear Spong speak."
+   ],
+   "quiet": [
+    "The theologian John Stott gave a lecture in the chapel.",
+    "Professor Brown argued that the old creeds should change.",
+    "Dr. Wright signed copies of his new book after the talk.",
+    "Many readers wrote angry letters to Bishop Hall last year.",
+    "A review of Barth's latest work appeared in the paper.",
+    "The church invited Lewis to speak at the spring meeting.",
+    "Critics of Knox said his ideas went too far.",
+    "Students crowded into the hall to hear Moore speak."
+   ]
+  }
+ ],
+ "predictions": "an 8 + 8 test can hardly pass; maybe 0.3-0.8 on split 'pong'/'onds' pieces, near misses not much lower",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card: max 0.29, dense 55%, gate-closed regime 100%; peaks 'b|onds', 'S|pong', 'люд', 'ilk'. Probe: 'Bishop Spong' 0.806, 'cold and grey all week' 0.332 (a far-domain floor), 'sea sponge' 0.358, 'silk' 0.308, 'bonds the material' 0.215. Dense; near misses fire too."
+}

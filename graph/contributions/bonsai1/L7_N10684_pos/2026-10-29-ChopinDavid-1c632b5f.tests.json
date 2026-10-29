@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1c632b5f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N10684+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N10684",
+   "pole": "+",
+   "label": "the last piece of a capitalised name that is split into word pieces and names a programme, law, diet or work (Homestead Act, JOBS Act, DASH diet, Thriller); the same topics without the split name stay low",
+   "fire": [
+    "Settlers moved west after Congress approved the Homestead Act of 1862.",
+    "Startups gained new ways to raise money once the JOBS Act became law.",
+    "Her cardiologist suggested she try the DASH diet to lower her blood pressure.",
+    "At the party they danced to Thriller until midnight.",
+    "Several schools signed up for the GLOBE science programme this spring.",
+    "Families could claim the Homestead tax exemption on their main residence.",
+    "Low-income families can get help from the WIC nutrition programme for children.",
+    "The band played Thriller as the final song of the night."
+   ],
+   "quiet": [
+    "Settlers moved west after Congress gave away free land to farmers in 1862.",
+    "Startups gained new ways to raise money once the new rules became law.",
+    "Her cardiologist suggested she eat less salt to lower her blood pressure.",
+    "At the party they danced to old disco records until midnight.",
+    "Several schools signed up for the national science programme this spring.",
+    "Families could claim a property tax break on their main residence.",
+    "Low-income families can get help from the state nutrition programme for children.",
+    "The band played a slow ballad as the final song of the night."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on the final piece of the split name; plain descriptions of the same topic below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "end of a split programme/act/title name",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: 'Thr|iller' 7.88, 'Hom|estead' exemption 5.75 and Act 4.00, 'JO|BS' Act 5.66, 'D|ASH' diet 4.59, 'N|ATA', 'GLOB|E' Program. Probe: JOBS Act 0.697, Thriller 0.659, Homestead Act 0.620, DASH diet 0.601, GLOBE program 0.456, Homestead exemption 0.382; lowercase 'homestead' 0.196; river/mill 0.032. Fire items use names checked with tokcheck to split."
+}

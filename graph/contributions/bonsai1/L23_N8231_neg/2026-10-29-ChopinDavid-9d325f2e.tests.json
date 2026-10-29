@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9d325f2e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N8231-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N8231",
+   "pole": "-",
+   "label": "building a dictionary by keyed assignment in code: the container name and subscript in 'name[key] = value' inside a loop; plain assignments, reads and arithmetic on the same names stay low",
+   "fire": [
+    "for host in hosts:\n    host_dict[host.name] = host.address",
+    "for user in users:\n    user_map[user.id] = user.email",
+    "for line in lines:\n    key, val = line.split('=')\n    settings_dict[key] = val",
+    "for vm in machines:\n    vm_dict[vm.uuid] = dict()",
+    "for record in records:\n    cache_dict[record['id']] = record",
+    "for node in nodes:\n    node_lookup[node.label] = node.weight",
+    "for f in files:\n    size_dict[f.path] = f.size",
+    "for book in books:\n    title_index[book.isbn] = book.title"
+   ],
+   "quiet": [
+    "for host in hosts:\n    total = total + host.load",
+    "for user in users:\n    print(user.email)",
+    "for line in lines:\n    key, val = line.split('=')\n    print(key, val)",
+    "for vm in machines:\n    vm.start()",
+    "for record in records:\n    count = count + 1",
+    "for node in nodes:\n    weight = node.weight * 2",
+    "for f in files:\n    size = size + f.size",
+    "for book in books:\n    shelf.append(book)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.3 on the subscript/']' or name of a keyed store; plain assignments and reads below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dict[key] = value assignment",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: 'net_dict'[mac] = dict() 44.25, 'sensor_data_dict' =, 'fields'[a] = b 35.0, 'changedict'[...] =, 'smooth_vars'[v.name] =, 'db_instances'[uuid] =. Probe: 'net_dict[device.mac] = dict()' 0.260, 'lookup_dict[row[0]] = row[1]' 0.190, 'results[k] = v' 0.099, 'lookup_dict = {}' 0.093, counts[w] += 1 0.068, 'total = total + item.price' 0.009, 'y = my_list[4]' 0.009. Weak."
+}

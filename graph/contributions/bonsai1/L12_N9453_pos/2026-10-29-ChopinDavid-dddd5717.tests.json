@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-dddd5717",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N9453+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N9453",
+   "pole": "+",
+   "label": "a desktop computer as a stationary machine (the best desktop I've used, desktop space, a tower PC); the - pole is the portable side (mobile, notebook, portable); laptops, phones and 'desktop' meaning the screen background stay low",
+   "fire": [
+    "For video editing, nothing beats a powerful desktop with plenty of memory.",
+    "My old desktop still runs fine after eight years under the desk.",
+    "He upgraded the graphics card in his desktop before the new game came out.",
+    "The office replaced every desktop with a newer model last summer.",
+    "A big desktop sits on her desk next to two wide monitors.",
+    "She prefers working on her desktop because the screen is so large.",
+    "Gamers often build their own desktop to get the best performance.",
+    "The library has ten public desktop computers near the entrance."
+   ],
+   "quiet": [
+    "For video editing on the road, he carries a light laptop with plenty of memory.",
+    "My old phone still runs fine after eight years in my pocket.",
+    "He upgraded the screen on his tablet before the new game came out.",
+    "The office gave every employee a newer laptop last summer.",
+    "A small tablet sits on her lap while she watches the news.",
+    "She changed her desktop background to a photo of the sea.",
+    "Gamers often buy a handheld console to play on the train.",
+    "The library lends laptops and e-readers to members at the entrance."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on ' desktop' as a computer or on desktop-PC words; laptop/phone and desktop-wallpaper below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "stationary desktop computer (vs mobile)",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' desktop' x15 (desktop machines 16.0, desktop motherboards, best desktop), Mac Pro, игровой компьютер, monitors; - pole ' mobile', ' notebook', ' portable'. Probe: 'the best desktop I have ever used' 0.832, 'desktop space' 0.457, 'tower PC ... at home' 0.348, 'workstation under his desk' 0.219, 'Most desktop motherboards' 0.110; laptop 0.038, phone 0.014, 'desktop wallpaper' 0.025."
+}

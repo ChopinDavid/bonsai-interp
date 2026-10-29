@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-096cfa3e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N7299-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N7299",
+   "pole": "-",
+   "label": "selecting HTML/DOM elements in code: CSS child selectors ('>'), find/find_all and similar calls on a parsed page, and the element variables they return; code that does arithmetic or list handling without a document stays low",
+   "fire": [
+    "links = soup.find_all('a')\nfor a in links:\n    print(a['href'])",
+    "name = response.css('.product-title>h1::text').extract_first()",
+    "header = page.find('.//h1').text",
+    "nav.menu > li > a { color: white; }",
+    "rows = table.find_all('tr')\nfor row in rows:\n    cells = row.find_all('td')",
+    "price = tree.xpath('//span[@class=\"price\"]/text()')[0]",
+    "items = document.querySelectorAll('ul.list > li');",
+    "author = response.css('div.meta>span.author::text').get()"
+   ],
+   "quiet": [
+    "total = sum(prices)\naverage = total / len(prices)",
+    "name = user_input.strip().title()",
+    "header = 'Monthly Report ' + str(year)",
+    "result = max(scores) - min(scores)",
+    "rows = list(range(10))\nfor row in rows:\n    print(row * 2)",
+    "price = round(cost * 1.2, 2)",
+    "items = numbers.filter(n => n > 10);",
+    "author = config.get('author', 'unknown')"
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.2 on the selector or find call; non-DOM code below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "DOM element selection in code",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: CSS ' >' 10.75, response.css('.availability>span') 10.62, ' widget' arg 10.44, html_doc'.find' 10.19, 'for p in getp:' 10.0. Probe: soup.find_all('p') loop 1.264, response.css('.price>span') 1.140, CSS '.article-body > p' 0.726, html_doc.find 0.497, widget handler 0.276; sum/len arithmetic 0.010, kitten 0.005."
+}
