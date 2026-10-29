@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-28-moridinamael-a2c31426",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N8175+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T03:26:38+00:00",
+ "roles": ["feeds bonsai1/L20/N808-"],
+ "neighbours": [
+  {
+   "unit": "L16/N8175",
+   "pole": "+",
+   "label": "In test code, the name piece that configures a mock or fake object (mock.x.return_value, def fake_get_*, mockReturnValue); not plain code or prose about mocks",
+   "fire": [
+    "mock_client.get_user.return_value = {\"id\": 42, \"name\": \"alice\"}",
+    "def fake_get_weather(city):\n    return {\"temp\": 21, \"city\": city}",
+    "fetchUser.mockReturnValue(Promise.resolve({ id: 1 }));",
+    "mock_session.post.side_effect = TimeoutError(\"slow\")",
+    "jest.spyOn(api, 'load').mockResolvedValue({ items: [] });",
+    "monkeypatch.setattr(service, \"get_rate\", fake_get_rate)",
+    "mock_db.query.return_value.filter.return_value.first.return_value = None",
+    "def fake_get_config(key):\n    return {\"debug\": True}[key]"
+   ],
+   "quiet": [
+    "client.get_user(42) returns a dict with the user's id and name.",
+    "def get_weather(city):\n    return requests.get(URL, params={\"q\": city}).json()",
+    "const user = await fetchUser(1);",
+    "In unit tests, we usually mock the HTTP session so that tests stay fast.",
+    "const items = await api.load();",
+    "rate = service.get_rate(\"USD\", \"EUR\")",
+    "result = db.query(User).filter(User.id == 5).first()",
+    "def get_config(key):\n    return settings[key]"
+   ]
+  }
+ ],
+ "predictions": "Expect most mock/fake fire items to pass 0.2 of max; quiet items near zero. Risk: the JS and monkeypatch items may be weaker than Python mock.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-out"
+  ]
+ }
+}
