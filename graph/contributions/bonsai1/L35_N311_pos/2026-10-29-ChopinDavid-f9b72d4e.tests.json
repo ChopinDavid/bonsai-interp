@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f9b72d4e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N311+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N311",
+   "pole": "+",
+   "label": "a byte-fallback piece of a CJK character that the tokenizer splits into bytes (反|対, 対応, 鍵, 傘, 鞄, 鮭, Korean 커피); the same sentences with whole-token characters stay low",
+   "fire": [
+    "多くの住民はその計画に反対している。",
+    "会社は顧客の要望に迅速に対応した。",
+    "彼は絶対にその店に行かないと言った。",
+    "私は家の鍵をどこかに落としてしまった。",
+    "雨が降りそうなので傘を持って出かけた。",
+    "彼女は新しい鞄を買ってとても喜んだ。",
+    "그는 아침마다 커피를 마신다.",
+    "夕食に焼いた鮭を食べた。"
+   ],
+   "quiet": [
+    "多くの住民はその計画を支持している。",
+    "会社は顧客の要望に迅速に答えた。",
+    "彼は決してその店に行かないと言った。",
+    "私は家の靴をどこかに忘れてしまった。",
+    "雨が降りそうなので車で出かけた。",
+    "彼女は新しい服を買ってとても喜んだ。",
+    "그는 아침마다 우유를 마신다.",
+    "夕食に焼いた魚を食べた。"
+   ]
+  }
+ ],
+ "predictions": "uneven: 対 items 0.4-0.9, rare kanji 0.1-0.5, so perhaps 5 of 8 above 0.3; near misses below 0.03",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "byte piece of a split CJK character",
+ "unit_kind": "token",
+ "confidence": 0.35,
+ "notes": "Card: '�' x19 and ' �' x8 of the top 32, in Japanese, Korean and Chinese text (max 54). Probe: 反対 0.874 (peak '�'), 커프스링크 0.429 (' �'), 薔薇 0.275, 憂鬱 0.102, French ' qu' 0.195; whole-token Japanese 0.010-0.018, Korean 닭 0.014. Splits checked: 対, 応, 鍵, 傘, 鞄, 鮭 and 커피 are byte sequences; 支持, 答, 決, 靴, 車, 服, 魚, 우유 are whole tokens (賛成 and ' 잔' were dropped from the near misses because they split into bytes)."
+}

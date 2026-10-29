@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7fcd0e53",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N5845-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N5845",
+   "pole": "-",
+   "label": "the word that opens a postmodifier right after a bare head noun ('cost to the consumer', 'cost per share', 'comments powered by', 'time to get', 'access to'); the same noun followed by its verb ('the cost was') stays low",
+   "fire": [
+    "The cost to taxpayers has tripled since the project began.",
+    "Revenue per user is the figure investors watch most closely.",
+    "Time to put the kettle on and sit down.",
+    "Comments powered by WordPress appear below each post.",
+    "The price per litre dropped again this week.",
+    "The damage to the reef was visible from the boat.",
+    "Access to clean water remains the main challenge.",
+    "The route to the summit follows the eastern ridge."
+   ],
+   "quiet": [
+    "The cost has tripled since the project began.",
+    "Revenue is the figure investors watch most closely.",
+    "Time passed slowly while the kettle boiled.",
+    "Comments appeared below each post within minutes.",
+    "The price dropped again this week.",
+    "The damage was visible from the boat.",
+    "Access remains the main challenge in the villages.",
+    "The route follows the eastern ridge to the summit."
+   ]
+  }
+ ],
+ "predictions": "'cost to/per', 'price per' and 'powered by' 0.4-0.6; 'damage to', 'access to', 'route to' uncertain (0.1-0.4); near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "postmodifier opener after a bare noun",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: ' to' x5, ' per' x4, ' powered' x4, ' in' x2 after 'cost', 'Cost', 'Time', 'comments', 'power', 'law of the' (max 3.98). Probe: 'Cost per share' 0.586, 'comments powered by' 0.559, 'cost to the consumer' 0.522, 'law of the land' 0.345, 'Time to get' 0.289; 'cost was' 0.085, 'time for dinner' 0.024, 'comments were' 0.015, floor 0.002. Half the fire items extend from 'cost to' to other nouns with a 'to' complement."
+}

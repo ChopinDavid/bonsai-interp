@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-48999b5c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N9152-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N9152",
+   "pole": "-",
+   "label": "the verb of giving up or going along a life course in first-person talk about work and school ('quit my job', 'quit smoking', 'go to work', 'go to college'); keeping or continuing ('stayed in school', 'kept my job') and everyday errands ('go to the bakery') stay low",
+   "fire": [
+    "Last spring I finally quit my job at the warehouse to study full time.",
+    "My sister quit school at sixteen and never looked back.",
+    "Every morning I go to work, sit at a desk and count the hours.",
+    "At thirty he quit drinking and started running marathons.",
+    "Most of my friends just go to college because their parents expect it.",
+    "I quit the band when the touring got too much.",
+    "She told me to go to law school and stop wasting my talent.",
+    "After the diagnosis my father quit his accounting practice."
+   ],
+   "quiet": [
+    "Last spring I finally kept my job at the warehouse while studying part time.",
+    "My sister stayed in school until eighteen and never looked back.",
+    "Every morning I go to the bakery, buy a loaf and count my change.",
+    "At thirty he drank less and started running marathons.",
+    "Most of my friends just finished college because their parents expected it.",
+    "I joined the band when the touring sounded fun.",
+    "She told me to apply to law school and stop wasting my talent.",
+    "After the diagnosis my father expanded his accounting practice."
+   ]
+  }
+ ],
+ "predictions": "'quit' items 0.4-0.7, 'go to work/college' items 0.25-0.45, so perhaps 5-6 of 8 above 0.3; near misses 0.05-0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'quit' / 'go to work' as life-course verbs",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: ' go' x5, ' to' x3, ' quit' x2, ' Go' x2, 'Look' x2 in informal first-person talk about jobs, school and what one does for a living (max 94.5); the + pole is service/volunteer/missionary vocabulary. Probe: 'quit my job' 0.638, 'quit smoking' 0.441 (so 'quit' fires for habits too), 'happy to go to every day' 0.439, 'go to work,' 0.279, 'go to school ... and' 0.249; 'go to the store' 0.189, 'volunteering' 0.163, 'never done anything special' 0.106, floor 0.024.",
+ "trigger": {
+  "tokens": [
+   " quit",
+   " go",
+   " Go",
+   " going"
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-084c75b8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N10837-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N10837",
+   "pole": "-",
+   "label": "a short list of words rather than one meaning: ' sparse', ' jealous', ' discouraged', ' Table' in 'Periodic Table' and Russian ' стра' (страшного); their near neighbours ('dense', 'envious', 'defeated', 'dining table') stay low",
+   "fire": [
+    "The survey data are sparse in the northern districts.",
+    "Each pupil kept a copy of the Periodic Table inside the textbook.",
+    "Her colleagues grew jealous when she won the award.",
+    "The team was tired but not discouraged by the setback.",
+    "Rural coverage remains sparse outside the main towns.",
+    "Он сказал, что в этом нет ничего страшного.",
+    "The lab poster showed the Periodic Table in bright colours.",
+    "He felt discouraged after the third rejection letter."
+   ],
+   "quiet": [
+    "The survey data are dense in the northern districts.",
+    "Each pupil kept a copy of the multiplication chart inside the textbook.",
+    "Her colleagues grew envious when she won the award.",
+    "The team was tired but not defeated by the setback.",
+    "Rural coverage remains patchy outside the main towns.",
+    "Он сказал, что в этом нет ничего особенного.",
+    "The dining table was covered with brightly coloured posters.",
+    "He felt hopeful after the third interview."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.8; near misses below 0.15 unless the meaning carries ('patchy' for 'sparse')",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sparse / jealous / discouraged / Periodic Table",
+ "unit_kind": "lexical",
+ "confidence": 0.4,
+ "notes": "Card: ' sparse' x3, ' Table' x2, ' jealous' x2, ' encouraging' x2, 'ла', ' стра' in a broad pole (3.7% of tokens at 0.1 of max 0.62). Probe: sparse 0.830, Periodic Table 0.755, discouraged 0.735, страшного 0.524, jealous 0.390, Trace|back 0.303; encouraging only 0.108, kitchen table 0.042, была 0.072. No shared meaning found (lack? negative affect? 'Table' does not fit), so the list is tested as a list.",
+ "trigger": {
+  "words": [
+   "sparse",
+   "jealous",
+   "discouraged",
+   "encouraging",
+   "Table"
+  ]
+ }
+}

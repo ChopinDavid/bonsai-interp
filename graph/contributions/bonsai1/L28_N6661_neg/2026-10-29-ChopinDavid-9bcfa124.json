@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-29-ChopinDavid-9bcfa124",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N6661-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T17:36:14+00:00",
+ "recipe": {
+  "toolchain_commit": "d5cdb31f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N6661_neg/2026-10-29-ChopinDavid-9bcfa124.tests.json"
+ },
+ "label": "'never' in the idiom 'you never know' (the pole predicts 'know'); 'never' with other verbs ('you never listen') and 'you know' without 'never' stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N6661_neg/2026-10-29-ChopinDavid-9bcfa124.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 5,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.749,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.904,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.312,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.838,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.66,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.818,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.84,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.912,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.749,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.904,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.312,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.103,
+     "peak": " you"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.657,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.069,
+     "peak": " know"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.836,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.144,
+     "peak": " you"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.773,
+    "median_fire": 0.828,
+    "near_misses_at_0.3": 5
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d5cdb31f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "'never' in 'you never know'",
+ "unit_kind": "context",
+ "confidence": 0.7,
+ "notes": "Card: ' never' x14 of the top 32, almost all in 'you never know', plus ' you'/' You' x7, 'Never say never', French ' jamais' (max 480); the + pole suppresses ' unpredictable', ' predict'. Probe: 'you never know when' 0.822, 'You just never know' 0.413, 'We never know' 0.202, 'on ne sait jamais' 0.176, 'Never say never' 0.140; 'I never liked' 0.012, 'never been' 0.003, 'You know, it might rain' 0.034.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   " never"
+  ]
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2fc705d4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N3842-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N3842",
+   "pole": "-",
+   "label": "the Spanish token pieces 'iere' (requ|iere, sug|iere, ref|iere, conf|iere) and ' vi' (vi|enen, vi|ernes) when not sentence-initial; whole-token verbs (necesita, quiere, indica) and other pieces (lleg|an, jue|ves) stay low",
+   "fire": [
+    "La receta requiere dos huevos y un poco de harina.",
+    "El estudio sugiere que el clima está cambiando.",
+    "La cláusula se refiere a los contratos firmados en 2020.",
+    "El título confiere derechos exclusivos al autor.",
+    "Mis primos vienen a comer todos los domingos.",
+    "La reunión será el viernes a las diez.",
+    "Este trabajo requiere paciencia y buena vista.",
+    "Los barcos vienen cargados de naranjas."
+   ],
+   "quiet": [
+    "La receta necesita dos huevos y un poco de harina.",
+    "El estudio indica que el clima está cambiando.",
+    "La cláusula habla de los contratos firmados en 2020.",
+    "El título otorga derechos exclusivos al autor.",
+    "Mis primos llegan a comer todos los domingos.",
+    "La reunión será el jueves a las diez.",
+    "Este trabajo quiere paciencia y buena vista.",
+    "Los barcos llegan cargados de naranjas."
+   ]
+  }
+ ],
+ "predictions": "'iere' items 0.3-0.6, ' vi' items 0.4-0.55; near misses below 0.25 (whole-token 'vista' appears in both halves as a control)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Spanish pieces 'iere' and ' vi'",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: 'iere' x11 (requiere), ' vi' x10 (vienen, viuda), 'into' x3, ' util' x2 (max 2.41, layer 0). Probe: requiere 0.611 ('iere'), vienen 0.548 (' vi'), viernes 0.442 (' vi'), sugiere 0.268; but 'La viuda' only 0.100 (the piece is the second token of the sentence), necesita 0.092, quiere 0.094 (one token), llegan 0.204 ('istas'), floor 0.010. Splits checked with the tokenizer; every trigger sits mid-sentence.",
+ "trigger": {
+  "tokens": [
+   "iere",
+   " vi"
+  ]
+ }
+}

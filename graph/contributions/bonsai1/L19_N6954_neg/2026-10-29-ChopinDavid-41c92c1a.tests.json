@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-41c92c1a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N6954-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N6954",
+   "pole": "-",
+   "label": "a hyphenated or prefixed descriptor of a drug's action ('anti-seizure', 'cholesterol-lowering', 'glucose-lowering', 'anti-inflammatory'); the plain drug and condition names in the same sentences stay low. A low-confidence guess: the card is scattered and the probe reproduced little of it",
+   "fire": [
+    "Doctors prescribed an anti-inflammatory drug for the swollen knee.",
+    "Metformin is a glucose-lowering medicine used in type 2 diabetes.",
+    "She was given anti-nausea tablets before the chemotherapy.",
+    "Beta blockers are blood-pressure-lowering drugs taken daily.",
+    "The clinic trialled a new anti-epileptic compound last year.",
+    "Ibuprofen works as a fever-reducing agent in children.",
+    "He stopped taking the anti-anxiety medication after six months.",
+    "Lithium remains the classic mood-stabilising drug."
+   ],
+   "quiet": [
+    "Doctors prescribed rest and ice for the swollen knee.",
+    "Metformin is a common medicine used in type 2 diabetes.",
+    "She was given water and biscuits before the chemotherapy.",
+    "Beta blockers are heart drugs taken daily.",
+    "The clinic trialled a new compound last year.",
+    "Ibuprofen is sold in most pharmacies for children.",
+    "He stopped taking the medication after six months.",
+    "Lithium remains the classic drug for the condition."
+   ]
+  }
+ ],
+ "predictions": "probably fails: fire items 0.05-0.3 with a median near 0.15; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "drug-action descriptor (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: ' cholesterol' (cholesterol-lowering), 'v' (anticonvulsants), 'iz' (anti-seizure), 'ence' (continence), 'les' (beetles), ' out' (block out cold), ' bed' (sea bed), ' students', Russian 'у' (max 29.9, 0.19% of tokens at 0.1 of max). Probe: 'anti-seizure' 0.260, 'block out the cold' 0.230, 'cholesterol-lowering' 0.141; anticonvulsants 0.047, continence 0.008, beetles 0.032, sea bed 0.012, floor 0.012. Nothing coheres; the drug-descriptor reading is the only one with two hits, so it is tested at low confidence."
+}

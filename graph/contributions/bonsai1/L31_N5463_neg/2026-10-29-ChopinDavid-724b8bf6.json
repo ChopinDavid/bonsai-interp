@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-724b8bf6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N5463-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T17:36:00+00:00",
+ "recipe": {
+  "toolchain_commit": "d5cdb31f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L31_N5463_neg/2026-10-29-ChopinDavid-724b8bf6.tests.json"
+ },
+ "label": "water condensing out of the air: dew, mist, fog, condensation, drizzle and droplets (fires on the word or on the word just before it); flowing or drinking water, smoke and the metaphorical 'driving' stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N5463_neg/2026-10-29-ChopinDavid-724b8bf6.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.915,
+     "peak": " cond"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.758,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.14,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.395,
+     "peak": " breath"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.447,
+     "peak": " dro"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.21,
+     "peak": " fog"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.459,
+     "peak": " condensed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.578,
+     "peak": " dr"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.039,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.758,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.079,
+     "peak": "ick"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.032,
+     "peak": " frozen"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " gathered"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.058,
+     "peak": " shower"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.053,
+     "peak": " bottle"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.134,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.453,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d5cdb31f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "dew, mist and condensation",
+ "unit_kind": "meaning",
+ "confidence": 0.6,
+ "notes": "Card: ' cond' x7 (condensation), ' dro' x4 (droplets), ' acid', ' water', ' driving' (rain), 'coldest dew', 'morning dew', 'wreathed in clouds' (max 336); the + pole suppresses ' mist', ' dew', ' fog', ' dro', ' cond'. Probe: 'into tiny droplets' 0.897 (peak ' tiny'), 'morning dew' 0.406, 'fine mist' 0.279, 'Condensation formed' 0.256, 'driving rain' 0.139; river flood 0.002, glass of water 0.004, 'driving ambition' 0.001. Rain itself is left out of both halves.",
+ "selection": "random draw"
+}

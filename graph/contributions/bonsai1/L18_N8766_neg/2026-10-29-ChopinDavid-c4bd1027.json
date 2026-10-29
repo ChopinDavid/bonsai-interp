@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-c4bd1027",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N8766-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T17:34:42+00:00",
+ "recipe": {
+  "toolchain_commit": "d5cdb31f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N8766_neg/2026-10-29-ChopinDavid-c4bd1027.tests.json"
+ },
+ "label": "a single letter of the alphabet named as a letter, in quotes or brackets ('the letter \"M\"', 'avec un grand V', '[Dd]efault'), and more weakly the first character of an opaque URL slug; a quoted whole word in the same frame stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N8766_neg/2026-10-29-ChopinDavid-c4bd1027.tests.json",
+   "prereg_commit": "d5cdb31f",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.273,
+     "peak": "S"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.193,
+     "peak": "T"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.172,
+     "peak": " L"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.106,
+     "peak": "Cc"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.365,
+     "peak": "P"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.121,
+     "peak": "K"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.212,
+     "peak": "e"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.294,
+     "peak": "Q"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " three"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": "\""
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": "\""
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " toys"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " nobody"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " \""
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "\""
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.203,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d5cdb31f",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "a letter named as a letter",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: '/A', 'A', '/b', '/r', 'D', 'O', '7', ' V', 'B', 'g' in URL slugs, quoted letters, a regex class and 'avec un grand V' (max 42). Probe: 'letter of the week will be \"M\"' 0.772, '[Dd]efault' 0.398, 'like \"A\" or \"B\"' 0.392, 'avec un grand V' 0.233, slug /qbx12 0.225; readable slug 0.006, quoted word \"maple\" 0.008, floor 0.006. The slug reading is weaker and is not in the fire items.",
+ "selection": "random draw"
+}
