@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e7e1a698",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N3552-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N3552",
+   "pole": "-",
+   "label": "a product or substance described by its physical appearance in a specification or label (a white crystalline powder, pale yellow solid, what's in the box); colour words describing ordinary objects in narrative stay low",
+   "fire": [
+    "Description: the tablet contains a white to off-white granular powder.",
+    "Physical form: odorless, light brown crystalline solid at room temperature.",
+    "Inside the package you will find a remote, two batteries and a manual.",
+    "The extract is supplied as a fine greenish powder in sealed pouches.",
+    "Caffeine is a bitter white solid that dissolves readily in hot water.",
+    "Appearance: off-white powder. Odor: characteristic. Solubility: slightly soluble.",
+    "The resin is a clear, colorless liquid that hardens within an hour.",
+    "Each kit includes a pale blue gel, a brush and a mixing cup."
+   ],
+   "quiet": [
+    "Description: the farmhouse has a white door and a red roof.",
+    "My grandfather wore a light brown coat to church every Sunday.",
+    "Inside the house you will find a fireplace, two sofas and a piano.",
+    "In spring the hills turn a soft green after the first rains.",
+    "The bride wore a long white dress and carried roses.",
+    "The cat had white paws and a brown spot on her nose.",
+    "The lake was clear and calm on the morning we arrived.",
+    "Each child drew a pale blue sky above a small village."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.75 in substance/product appearance descriptions; narrative colour uses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "physical-appearance spec of a substance/product",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' white' (to off-white solid), ' brown' (brownish drug), ' Box' (What's in the Box), ' Powder' (Appearance: Red Brown Powder), 'less' (Colourless). Probe: 'pale yellow solid' 0.762, 'white crystalline powder' 0.706, 'bitter brownish' 0.665, 'What's in the box' 0.466, 'yellow brown powder' 0.448; 'painted the fence white' 0.011, 'white house' 0.048."
+}

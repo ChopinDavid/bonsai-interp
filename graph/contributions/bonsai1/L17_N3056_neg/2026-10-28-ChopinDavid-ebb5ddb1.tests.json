@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-ebb5ddb1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N3056-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N3056",
+   "pole": "-",
+   "label": "nouns inside legal, regulatory or patent boilerplate definitions (any class of securities, third parties, end user devices, any foreign country); the same nouns in casual narrative stay low",
+   "fire": [
+    "Licensee shall not disclose the Software to any third party without prior written consent.",
+    "As used herein, a subsidiary means any entity controlled by the issuer.",
+    "In a further embodiment, the client device transmits packets to a remote server.",
+    "The term covered person includes any officer or director of the registrant.",
+    "Provider makes no warranty regarding the accuracy of content posted by Users.",
+    "Such coverage shall terminate upon the date the participant ceases employment.",
+    "For purposes of this section, a foreign entity means any entity organized outside the United States.",
+    "The method further comprises storing the user preferences in a first memory module."
+   ],
+   "quiet": [
+    "My cousin told a third friend about the party without asking me first.",
+    "At the reunion, a subsidiary topic was how much everyone had changed.",
+    "Later that evening, my phone sent a message to my brother by mistake.",
+    "The person at the door was an officer from the local fire station.",
+    "My neighbor posted a funny photo of her dog on the website.",
+    "The swimming lessons ended when my daughter started a new school.",
+    "On our holiday, a foreign tourist asked us for directions to the beach.",
+    "I keep my favorite recipes in a small notebook in the kitchen."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.75 on nouns in definitional legal text; casual rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "nouns in legal/patent boilerplate",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' first', ' any', ' country', ' coverage', ' Users', ' third' in patent claims, SEC rules, EULAs. Probe: 'any foreign country' 0.724, 'data traffic from end user devices' 0.566, 'Users of the Website' 0.498, 'third parties' 0.464, 'issuer' 0.350; 'traveled to a foreign country' 0.038, 'website where users share' 0.003."
+}

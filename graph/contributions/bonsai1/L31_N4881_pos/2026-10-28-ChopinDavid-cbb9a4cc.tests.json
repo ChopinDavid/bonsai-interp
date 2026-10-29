@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-cbb9a4cc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N4881+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N4881",
+   "pole": "+",
+   "label": "' on' opening a manner or schedule idiom ('on a regular basis', 'on a flexible basis', 'on demand'); spatial and day-of-week 'on' fire weakly, and adverb rewrites without 'on' stay low",
+   "fire": [
+    "Safety equipment must be inspected on a monthly basis by staff.",
+    "Temporary workers are hired on a seasonal basis during harvest.",
+    "Films can now be streamed on demand from almost any device.",
+    "The data are backed up on a nightly basis to a remote server.",
+    "Interpreters are provided on a case-by-case basis at the clinic.",
+    "Parts are manufactured on an as-needed basis to reduce stock.",
+    "These logs should be audited on a quarterly basis by the board.",
+    "Volunteers are scheduled on a rotating basis throughout the year."
+   ],
+   "quiet": [
+    "Safety equipment must be inspected monthly by staff.",
+    "Temporary workers are hired seasonally during harvest.",
+    "Films can now be streamed instantly from almost any device.",
+    "The data are backed up nightly to a remote server.",
+    "Interpreters are provided case by case at the clinic.",
+    "Parts are manufactured only when needed to reduce stock.",
+    "These logs should be audited quarterly by the board.",
+    "Volunteers are scheduled in rotation throughout the year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.9 on ' on' in the basis/demand idiom; adverb rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' on' in 'on a ___ basis' / 'on demand'",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' on' x23 in 'done on a regular basis', 'produced on a flexible basis', 'produced on-demand', 'reviewed on a continual basis'; Korean 온라(인). Probe: 'reviewed on a regular basis' 0.909, 'produced on a flexible basis' 0.745, 'printed on demand' 0.360, 'on a daily basis' 0.227; 'on the table' 0.195, 'on Tuesday' 0.255, 'reviewed regularly' 0.001."
+}

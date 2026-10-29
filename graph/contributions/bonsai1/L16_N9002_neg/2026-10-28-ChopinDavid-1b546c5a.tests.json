@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-1b546c5a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N9002-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N9002",
+   "pole": "-",
+   "label": "a word-piece that completes a technical term split across tokens (decolor|ized, dile|mmas); everyday words and whole-token terms in the same sentences stay low",
+   "fire": [
+    "In the lab, the stained smear was then decolorized with acetone.",
+    "Nurses often face moral dilemmas when patients refuse treatment.",
+    "After rinsing, the slide is decolorized and counterstained with safranin.",
+    "These dilemmas arise when two duties cannot both be met.",
+    "In the second step, the sample is quickly decolorized by ethanol.",
+    "Doctors described the case as one of the classic ethical dilemmas.",
+    "Once the dye is fixed, the cells are decolorized for ten seconds.",
+    "Students discussed several dilemmas from the business ethics textbook."
+   ],
+   "quiet": [
+    "In the lab, the stained smear was then rinsed with water.",
+    "Nurses often face hard choices when patients refuse treatment.",
+    "After rinsing, the slide is dried and placed under the lens.",
+    "These problems arise when two duties cannot both be met.",
+    "In the second step, the sample is quickly heated by a flame.",
+    "Doctors described the case as one of the classic hard cases.",
+    "Once the dye is fixed, the cells are washed for ten seconds.",
+    "Students discussed several cases from the business ethics textbook."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.65 on the inner piece of the technical word; plain-word rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner word-piece of a split technical term",
+ "unit_kind": "token",
+ "confidence": 0.25,
+ "notes": "Card is diffuse (max 14.69): 'olor' (decolorized) top, ' asserts', 'ist' (theorist), 'arring' (scarring), 'mmas' (dilemmas). Probe: 'decolorized' 0.641, 'dilemmas' 0.421, 'programming' 0.256; 'fiber' 0.015, 'asserts' 0.027, 'scarring' 0.020, picnic 0.022. Weak and uncertain."
+}

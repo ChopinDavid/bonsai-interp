@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d368540b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N7004-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N7004",
+   "pole": "-",
+   "label": "unclear: the card mixes Python method/keyword tokens (=self, .cancel, int32, True) with scattered prose words; best guess is attribute and argument tokens inside Python method calls",
+   "fire": [
+    "        self.session = Session(owner=self, timeout=timeout)\n        self.session.start()",
+    "    def stop(self):\n        self.download_task.cancel()\n        self.window.hide()",
+    "  Args:\n    x: A `Tensor` of type `float32`.\n  Returns:\n    A `Tensor` of type `int64`.",
+    "        params = {\"verbose\": True, \"retry\": False}\n        result = run(params)",
+    "        self._build_layers(n)\n        self.wx = ops.linear(n_in, n_out)",
+    "        assert device.reset_firmware()\n        assert device.set_ch2_current(0.2)",
+    "        manager = Manager(parent=self, port_range=ports)\n        manager.connect()",
+    "    def __cancel_cb(self, item):\n        self.file_upload.cancel()"
+   ],
+   "quiet": [
+    "The new session started late because the owner forgot the keys.",
+    "When we stopped for lunch, the download finished on my phone.",
+    "The arguments in the essay were clear, and the conclusion was short.",
+    "The parameters of the deal were fair, and the result pleased everyone.",
+    "The builders added a second layer of bricks to the wall.",
+    "The engineer reset the device and checked the current again.",
+    "The manager connected the new printer to the office network.",
+    "She cancelled the order because the item was out of stock."
+   ]
+  }
+ ],
+ "predictions": "guess: fire 0.1-0.3 on argument tokens in Python calls; prose below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear (best guess: Python call arguments)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: '=self', ' mobile', '2' (int32), 'irmware', '國', '(t', ' True', '.cancel', ' distant' (max 33.5, diffuse). Probe did not reproduce: every probe scored 0.006-0.020, including near-copies of the top code examples. Registered as a guess."
+}

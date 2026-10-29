@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-996f4bc2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N10080+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N10080",
+   "pole": "+",
+   "label": "earth-science technical prose (plate tectonics, seismology, rock formation, hydrogeology): the pole fires on connective tokens inside geoscience descriptions; the same sentence frames about biology, finance or daily life stay low",
+   "fire": [
+    "Along the ridge, magma rises and pushes the two plates apart.",
+    "Most of the region's sandstone was deposited by rivers during the Jurassic.",
+    "The aftershocks were located by a dense array of seismometers.",
+    "Over millions of years, the shale was buried and turned into slate.",
+    "Geologists mapped the fault zone using satellite radar and field surveys.",
+    "Groundwater flows slowly through the fractured basalt of the aquifer.",
+    "In subduction zones, the oceanic plate sinks beneath the continent.",
+    "The granite formed as a large body of magma cooled deep underground."
+   ],
+   "quiet": [
+    "Along the street, vendors set up stalls and push their carts apart.",
+    "Most of the region's wealth was earned by traders during the last century.",
+    "The lost hikers were located by a team of volunteers with dogs.",
+    "Over many years, the small shop was sold and turned into a cafe.",
+    "Biologists mapped the bird colony using drones and field notes.",
+    "Customers move slowly through the crowded aisles of the market.",
+    "In large companies, the junior staff sit beneath the managers.",
+    "The muffins formed a golden crust as they cooled on the counter."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 inside geology/seismology sentences; non-geoscience frames below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "geoscience technical prose",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: ' of', ' and', ' by' in theory of plate tectonics, Modified Mercalli, Neuman's method, oceanic crust/lithosphere. Probe: method of analysis (aquifer) 0.671, marble begins as 0.661, theory of plate tectonics 0.620, crust denser than lithosphere 0.524, Mercalli 0.489; theory of evolution 0.034, method of payment 0.019, cake 0.003."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a242f76d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N1003+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N1003",
+   "pole": "+",
+   "label": "a pronoun that opens the content clause after a speech or knowledge verb (announced it would, told me he was, let them know you care); the same pronouns as plain main-clause subjects stay low",
+   "fire": [
+    "On Friday the airline announced it would cut ten routes.",
+    "Last night the coach told reporters he had no plans to leave.",
+    "The university announced its decision to drop the entrance exam.",
+    "After the storm, the town council announced they would rebuild the pier.",
+    "My sister texted me that she was running late.",
+    "In a short statement, the band announced it was splitting up.",
+    "Write to your grandparents and let them know you miss them.",
+    "During the meeting the manager told staff she would retire in June."
+   ],
+   "quiet": [
+    "On Friday the airline cut ten routes and laid off staff.",
+    "Last night the coach stayed late and had no plans to leave.",
+    "The university dropped the entrance exam after years of debate.",
+    "After the storm, the town council rebuilt the pier within a month.",
+    "My sister was running late because the train was delayed.",
+    "In a short statement, the band thanked fans for twenty years.",
+    "Write to your grandparents about your new school and your friends.",
+    "During the meeting the manager handed out the new schedule."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on the pronoun after announce/tell/know; main-clause pronouns below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pronoun subject of a reported clause",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: ' he' x7, ' it' x6, ' its' x3 right after 'announced (that)', 'let them know', 'told you'. Probe: 'announced its plan' 0.898, 'let them know you care' 0.754, 'announced he would' 0.640, 'announced that it would' 0.560, 'told me he was' 0.411, 'said that she would' 0.449; rewrites without the reporting verb 0.002-0.019."
+}

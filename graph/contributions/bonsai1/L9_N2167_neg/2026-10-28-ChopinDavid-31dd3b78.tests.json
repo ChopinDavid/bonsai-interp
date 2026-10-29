@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-31dd3b78",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N2167-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N2167",
+   "pole": "-",
+   "label": "signal-processing and electronics-design vocabulary (Bode magnitude, sidelobe, equiripple filter, logic synthesis, least significant bit); the same words used outside engineering stay low",
+   "fire": [
+    "On the Bode magnitude plot, the gain falls by 20 dB per decade.",
+    "A Kaiser window reduces the sidelobe energy of the filter response.",
+    "The team built an equiripple bandpass filter with 64 taps.",
+    "After RTL coding, the design goes through logic synthesis and place-and-route.",
+    "The converter resolves one least significant bit at 2 mV.",
+    "The phase margin is read from the Bode plot at the crossover frequency.",
+    "With a Hamming window, the first sidelobe drops to about 43 dB below the peak.",
+    "Their FPGA flow uses Vivado for synthesis and timing closure."
+   ],
+   "quiet": [
+    "On the Richter scale, the quake had a magnitude of about 5.",
+    "A large window lets more sunlight into the kitchen in winter.",
+    "The team built a wooden bench with four sturdy legs.",
+    "After the interview, the design of the new logo went to the client.",
+    "The survey showed one significant change in voter opinion.",
+    "The garden appears in many books on English landscape history.",
+    "With a cheap curtain, the bedroom stays dark until the morning.",
+    "Their school uses chemistry kits for the synthesis of simple soap."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.95 on the engineering term; non-engineering uses of the same words below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "signal-processing / circuit-design terms",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: ' magnitude' (Bode), 'obe' (sidelobe), 'ez' (remez), ' synthesis' (EDA), ' significant' (LSB), ' design' of filters. Probe: Bode magnitude 0.957, sidelobe 0.760, equiripple 0.740, LSB 0.547, logic synthesis 0.457; earthquake magnitude 0.035, room design 0.025, photosynthesis/synthesis of sugar 0.019."
+}

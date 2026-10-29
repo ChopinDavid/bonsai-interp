@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-28b7d196",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N6278+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N6278",
+   "pole": "+",
+   "label": "the Spanish plural demonstratives 'estos' / 'estas' (including the 'Est|os' split); articles and the singular 'este' in the same sentences stay low",
+   "fire": [
+    "Según el informe, estos resultados confirman la hipótesis inicial.",
+    "Mi abuela siempre preparaba estas galletas en Navidad.",
+    "En la clase de hoy, estos ejercicios son obligatorios.",
+    "Para el viaje compramos estas mochilas tan ligeras.",
+    "El médico dijo que estos síntomas son normales.",
+    "Ayer encontré estas fotos en un cajón del armario.",
+    "Los vecinos opinan que estos cambios llegan tarde.",
+    "Durante el verano, estas playas se llenan de turistas."
+   ],
+   "quiet": [
+    "Según el informe, los resultados confirman la hipótesis inicial.",
+    "Mi abuela siempre preparaba unas galletas en Navidad.",
+    "En la clase de hoy, los ejercicios son obligatorios.",
+    "Para el viaje compramos unas mochilas tan ligeras.",
+    "El médico dijo que el síntoma es normal.",
+    "Ayer encontré unas fotos en un cajón del armario.",
+    "Los vecinos opinan que el cambio llega tarde.",
+    "Durante el verano, las playas se llenan de turistas."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.65 on estos/estas; los/las/unos/este rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Spanish 'estos/estas'",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: ' estas' x14, 'os'/'as' after 'Est' x11, ' este' x4. Probe: 'Estos criterios' 0.655, 'estas canciones' 0.504, 'estas alturas' 0.291, 'estos términos' 0.237, 'Estos are' (English frame) 0.655; 'Este libro' 0.071, 'Los criterios' 0.001. 'Esta casa' 0.300 (singular feminine leaks), so near misses avoid 'esta'."
+}
