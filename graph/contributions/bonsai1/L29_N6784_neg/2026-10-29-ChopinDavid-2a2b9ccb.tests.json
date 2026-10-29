@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2a2b9ccb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N6784-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N6784",
+   "pole": "-",
+   "label": "answering a summons to duty or service ('answered the call to serve'), with ' call' as the predicted next word; answering a phone, a question or a door, or serving without the call framing, stays low",
+   "fire": [
+    "When the nation went to war in 1917, farm boys across the state answered the call to serve.",
+    "In the darkest days of the war, ordinary citizens answered the call and volunteered for the front.",
+    "Generations of nurses have answered the call to care for soldiers far from home.",
+    "Thousands of young volunteers answered the call to defend the republic.",
+    "When the king summoned his knights, every lord in the realm answered the call to arms.",
+    "During the epidemic, retired doctors answered the call to return to the wards.",
+    "As the empire crumbled, few of the old families answered the call to defend it.",
+    "Like his father before him, he answered the call of duty without hesitation."
+   ],
+   "quiet": [
+    "When the nation went to war in 1917, farm boys across the state enlisted in large numbers.",
+    "In the darkest days of the war, the clerk answered the phone at the ministry every hour.",
+    "Generations of nurses have answered the same exam questions about anatomy.",
+    "Thousands of young volunteers signed up to defend the republic.",
+    "When the king entered the hall, every lord in the realm stood and bowed.",
+    "During the epidemic, the receptionist answered the door for each patient.",
+    "As the empire crumbled, few of the old families answered the letters from the capital.",
+    "Like his father before him, he answered the teacher politely and sat down."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 on ' the' after 'answered' when the call to serve follows; phone/question/door answers and plain 'joined the army' below 0.12",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "answering the call of duty",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' the' after 'answered'/'answer'/'answering' before 'call' (Greatest Generation answered the call -422, the country's call -231), plus ' voices', ' God', 's|iren' calling. Probe: 'answered the call to serve their country' 0.883, 'answered the call for help after the flood' 0.180, 'heard the call of the sea' 0.256, 'felt God calling her' 0.194; 'answered the phone' 0.117, 'answered the question' 0.049, 'joined the army to serve' 0.038, 'responded to the alarm' 0.070."
+}

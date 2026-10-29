@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ab12be52",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N11751-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N11751",
+   "pole": "-",
+   "label": "a parenthetical discourse phrase set off inside a non-English sentence ('как правило', 'comme on le sait', 'es decir', '言うまでもなく'), as opposed to the same languages without such an aside; broad pole, weak margins expected",
+   "fire": [
+    "Такие ремонты, как правило, проводятся летом.",
+    "Ce genre de projet, comme on le sait, coûte très cher.",
+    "El problema, es decir, la falta de agua, afecta a todo el pueblo.",
+    "この方法は、言うまでもなく、時間がかかる。",
+    "Les enfants, bien entendu, adorent ce parc.",
+    "Эта проблема, по сути дела, касается всех жителей.",
+    "La reunión, por supuesto, empezó tarde otra vez.",
+    "東京の家賃は、言うまでもなく、とても高い。"
+   ],
+   "quiet": [
+    "Такие ремонты проводятся летом.",
+    "Ce genre de projet coûte très cher.",
+    "El problema de la falta de agua afecta a todo el pueblo.",
+    "この方法は時間がかかる。",
+    "Les enfants adorent ce parc.",
+    "Эта проблема касается всех жителей.",
+    "La reunión empezó tarde otra vez.",
+    "東京の家賃はとても高い。"
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.5 inside the aside phrase; same-language sentences without an aside below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "parenthetical aside in non-English text",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: broad (4.2% of tokens), peaks on discourse words across Arabic, Korean, Japanese, Russian, German, French ('فلا', 'как правило', 'bietet'). Probe: Russian 'как правило' 0.480, French 'comme on le sait' 0.352, Spanish 'es decir' 0.287, Japanese '言うまでもなく' 0.254; English translations 0.146 and 0.068, German 'Ab Montag bietet' 0.129, 'The cat sat on the mat.' 0.036. Best guess on a broad pole."
+}

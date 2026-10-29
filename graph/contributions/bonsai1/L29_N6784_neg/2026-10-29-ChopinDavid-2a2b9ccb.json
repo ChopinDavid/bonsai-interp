@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-2a2b9ccb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N6784-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T11:30:19+00:00",
+ "recipe": {
+  "toolchain_commit": "41bd6c10",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N6784_neg/2026-10-29-ChopinDavid-2a2b9ccb.tests.json"
+ },
+ "label": "answering a summons to duty or service ('answered the call to serve'), with ' call' as the predicted next word; answering a phone, a question or a door, or serving without the call framing, stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N6784_neg/2026-10-29-ChopinDavid-2a2b9ccb.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.929,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.877,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.885,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.788,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.611,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.427,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.671,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.515,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " nation"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.226,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.885,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": " entered"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.126,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.675,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.515,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.73,
+    "near_misses_at_0.3": 3
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "41bd6c10",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "answering the call of duty",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' the' after 'answered'/'answer'/'answering' before 'call' (Greatest Generation answered the call -422, the country's call -231), plus ' voices', ' God', 's|iren' calling. Probe: 'answered the call to serve their country' 0.883, 'answered the call for help after the flood' 0.180, 'heard the call of the sea' 0.256, 'felt God calling her' 0.194; 'answered the phone' 0.117, 'answered the question' 0.049, 'joined the army to serve' 0.038, 'responded to the alarm' 0.070.",
+ "selection": "random draw"
+}

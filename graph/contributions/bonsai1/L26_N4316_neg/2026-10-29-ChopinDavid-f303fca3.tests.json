@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f303fca3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N4316-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N4316",
+   "pole": "-",
+   "label": "hands-on assembly of small parts into a shape (the 'to make'/'arranged in' step where pieces are put together to form something), as opposed to handling the same materials without assembling them",
+   "fire": [
+    "For the project, tape the straws together to make a tall triangle.",
+    "Have the children thread the beads onto string to make a bracelet.",
+    "Next, twist the two wires together to form a small loop.",
+    "Stack the sugar cubes carefully to build a little tower.",
+    "Fold the paper strips and staple them together to make a crown.",
+    "Line up six matches on the table to form a hexagon.",
+    "Press the clay balls together to make the body of the snowman.",
+    "Lay the tiles side by side to form a simple chequered pattern."
+   ],
+   "quiet": [
+    "For the project, paint the straws bright red and leave them to dry.",
+    "Have the children count the beads and sort them by colour.",
+    "Next, measure the two wires and write down their lengths.",
+    "Buy a box of sugar cubes from the shop on the corner.",
+    "Cut the paper strips and throw away the scraps afterwards.",
+    "Keep six matches in a dry tin in case the power fails.",
+    "Wrap the clay balls in damp cloth so they do not crack.",
+    "Clean the tiles with warm soapy water before you put them away."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on ' to'/' in' in 'glue X together to make Y', 'arranged in'; same craft materials not assembled below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "assembling small parts into a shape",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: scattered peaks: 'Arrange 5 toothp|icks into the numeral 5', 'poke pipe cleaners through egg cups to make spider legs', 'between the workpieces to form a bond', 'consists of', 'made up of'. Probe: 'Glue the popsicle sticks together to make a small square frame' 0.483 (peak ' to'), '27 bones arranged in three groups' 0.255, 'flag ... five red stars' 0.115; 'consists of two hydrogen atoms' 0.086, 'made up of seven members' 0.016, 'composed of twelve citizens' 0.051. Weak and scattered; best guess."
+}

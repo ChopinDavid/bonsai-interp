@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-96a7288b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N4457-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T11:30:57+00:00",
+ "recipe": {
+  "toolchain_commit": "41bd6c10",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N4457_neg/2026-10-29-ChopinDavid-96a7288b.tests.json"
+ },
+ "label": "a group of people defined by when they were born (baby boomers, a birth cohort, the Class of a year, people born in a decade); the same words in other senses (sonic or economic boom, a class of drugs, a single person's birthplace) stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N4457_neg/2026-10-29-ChopinDavid-96a7288b.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.709,
+     "peak": " boom"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.726,
+     "peak": " born"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.628,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.424,
+     "peak": "s"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.66,
+     "peak": "ers"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.018,
+     "peak": " cohort"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.686,
+     "peak": " Class"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.705,
+     "peak": " boom"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " valley"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.133,
+     "peak": " born"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " only"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.696,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "41bd6c10",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "birth generation or cohort",
+ "unit_kind": "meaning",
+ "confidence": 0.65,
+ "notes": "Card: ' boom' x5 ('Baby Boomers'), ' cohort' x4 ('the 1946 cohort'), ' born' x3 ('people born in different generations'), ' of' in 'Class of'. Probe: 'baby boomers' 0.570, 'cohort of 2,000 children born in 1958' 0.574, 'The Class of 2015' 0.555, 'People born in the 1980s' 0.373, 'Millennials and Gen Z' 0.254; 'sonic boom' 0.007, 'oil boom' 0.011, 'a class of drugs' 0.014.",
+ "selection": "random draw"
+}

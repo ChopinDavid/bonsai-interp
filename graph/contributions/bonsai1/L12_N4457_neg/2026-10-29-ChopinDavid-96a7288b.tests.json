@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-96a7288b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N4457-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N4457",
+   "pole": "-",
+   "label": "a group of people defined by when they were born (baby boomers, a birth cohort, the Class of a year, people born in a decade); the same words in other senses (sonic or economic boom, a class of drugs, a single person's birthplace) stay low",
+   "fire": [
+    "Health spending will rise as the baby boomers move into their eighties.",
+    "Researchers tracked a cohort of 5,000 adults born in 1970 for forty years.",
+    "Members of the Class of 1998 returned to campus for their reunion.",
+    "Surveys suggest that people born in the 1990s change jobs more often.",
+    "Unlike their parents, many late boomers never owned a house.",
+    "The census shows the 1960 birth cohort was the largest in the country's history.",
+    "Teachers who graduated with the Class of 2008 entered a weak job market.",
+    "Economists compared the savings of Gen X with those of the baby boom generation."
+   ],
+   "quiet": [
+    "The windows rattled as a sonic boom rolled across the valley.",
+    "Researchers tracked the river level every day for forty years.",
+    "Antibiotics are a class of medicines that kill bacteria.",
+    "My grandmother was born in a farmhouse near the river.",
+    "During the housing boom, prices doubled in only five years.",
+    "The census shows the coastal region gained the most new roads.",
+    "The yoga class on Tuesday evening is always full.",
+    "Economists compared the savings rates of Germany and Italy."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.6 on ' boom'/' cohort'/' born'/' of' in generational groupings; non-generational boom/class/born below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "birth generation or cohort",
+ "unit_kind": "meaning",
+ "confidence": 0.65,
+ "notes": "Card: ' boom' x5 ('Baby Boomers'), ' cohort' x4 ('the 1946 cohort'), ' born' x3 ('people born in different generations'), ' of' in 'Class of'. Probe: 'baby boomers' 0.570, 'cohort of 2,000 children born in 1958' 0.574, 'The Class of 2015' 0.555, 'People born in the 1980s' 0.373, 'Millennials and Gen Z' 0.254; 'sonic boom' 0.007, 'oil boom' 0.011, 'a class of drugs' 0.014."
+}

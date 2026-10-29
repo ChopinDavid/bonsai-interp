@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-b1fe4fcb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N9379-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T11:30:24+00:00",
+ "recipe": {
+  "toolchain_commit": "41bd6c10",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N9379_neg/2026-10-29-ChopinDavid-b1fe4fcb.tests.json"
+ },
+ "label": "bodily illness named as a co-occurring condition alongside a mental disorder ('other medical conditions', 'chronic physical illnesses' in a mental-health context); mental conditions in the same slot, and medical/physical in other senses, stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N9379_neg/2026-10-29-ChopinDavid-b1fe4fcb.tests.json",
+   "prereg_commit": "41bd6c10",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.65,
+     "peak": " heart"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.695,
+     "peak": " illnesses"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.427,
+     "peak": " medical"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.432,
+     "peak": " physical"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.828,
+     "peak": " medical"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.654,
+     "peak": " medical"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.654,
+     "peak": " medical"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.661,
+     "peak": " illnesses"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.045,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": "s"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.053,
+     "peak": " serious"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.229,
+     "peak": " medical"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.109,
+     "peak": " conditions"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " substance"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.654,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "41bd6c10",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "bodily illness beside mental disorder",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' medical' x12, ' physical' x5, ' health' x5 in 'general medical conditions', 'serious physical problems', 'chronic medical conditions like diabetes' in psychiatric texts. Probe: 'depression ... other medical conditions such as diabetes' 0.561, 'Anxiety disorders ... chronic physical illnesses' 0.608; same sentence with 'psychiatric conditions such as anxiety' 0.082, 'medical school' 0.026, 'physical constant' 0.013, 'physical and mental health' 0.056, 'sought medical attention' 0.043.",
+ "selection": "random draw"
+}

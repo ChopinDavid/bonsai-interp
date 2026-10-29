@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f8488faf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N5580+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N5580",
+   "pole": "+",
+   "label": "the reflexive pronoun of a French pronominal verb in a compound tense ('s'est', 'nous nous', 'se sont', 'vous vous'), as opposed to the same verbs conjugated with 'avoir' and no reflexive pronoun",
+   "fire": [
+    "Après la réunion, il s'est rendu directement à la gare.",
+    "L'an dernier, nous nous sommes installés près de la mer.",
+    "Pendant les vacances, elles se sont baignées tous les jours.",
+    "Hier soir, vous vous êtes couchés très tard.",
+    "Après le match, le capitaine s'est excusé auprès des supporters.",
+    "Au printemps, nous nous sommes inscrits à un cours de danse.",
+    "Avant le départ, les deux frères se sont disputés dans la cuisine.",
+    "Ce matin, elle s'est levée avant le lever du soleil."
+   ],
+   "quiet": [
+    "Après la réunion, il a rendu les documents à la secrétaire.",
+    "L'an dernier, nous avons installé des panneaux près de la mer.",
+    "Pendant les vacances, elles ont baigné le chien tous les jours.",
+    "Hier soir, vous avez couché les enfants très tard.",
+    "Après le match, le capitaine a remercié les supporters.",
+    "Au printemps, nous avons inscrit notre fils à un cours de danse.",
+    "Avant le départ, les deux frères ont rangé la cuisine.",
+    "Ce matin, elle a levé les yeux avant le lever du soleil."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9 on 's'est'/' nous'/' se'/' vous' before the auxiliary; the same sentences with 'a'/'avons' and no reflexive below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "French reflexive pronoun (s'est, nous nous)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: \"'est\" x2, ' nos', ' se', ' nous' in 'Nous nous sommes engagés', 'celles-ci se ont', Spanish 'a mí nos complace', plus English ' give'/' giving' a welcome; - pole suppresses ' give'. Probe: \"elle s'est trouvé un partenaire\" 0.908, 'Nous nous sommes engagés' 0.694, 'give a warm welcome' 0.556; same sentence with 'elle a trouvé' 0.017, 'Merci à vous' 0.042, 'please welcome our new teacher' 0.000. Tested on the French reflexive only."
+}

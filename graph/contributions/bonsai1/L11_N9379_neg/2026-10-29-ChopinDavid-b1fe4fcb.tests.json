@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b1fe4fcb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N9379-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T11:22:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N9379",
+   "pole": "-",
+   "label": "bodily illness named as a co-occurring condition alongside a mental disorder ('other medical conditions', 'chronic physical illnesses' in a mental-health context); mental conditions in the same slot, and medical/physical in other senses, stay low",
+   "fire": [
+    "People living with schizophrenia frequently have serious medical conditions such as heart disease.",
+    "Bipolar disorder often occurs together with chronic physical illnesses like asthma.",
+    "Adults with PTSD report more general medical problems than the wider population.",
+    "Eating disorders can lead to serious physical complications, including bone loss.",
+    "Patients with severe depression are more likely to develop chronic medical illnesses.",
+    "In people with autism, co-occurring medical conditions such as epilepsy are common.",
+    "Psychiatrists should screen anxious patients for underlying medical disorders like thyroid disease.",
+    "Substance use disorders are linked to many physical illnesses, from liver disease to infections."
+   ],
+   "quiet": [
+    "People living with schizophrenia frequently have other mental disorders such as depression.",
+    "Bipolar disorder often occurs together with anxiety and attention problems.",
+    "Adults with PTSD report more nightmares than the wider population.",
+    "Eating disorders can lead to serious emotional difficulties, including isolation.",
+    "Patients with severe depression are more likely to attend a medical clinic in winter.",
+    "In people with autism, co-occurring psychiatric conditions such as ADHD are common.",
+    "Psychiatrists should ask anxious patients about their sleep and their work.",
+    "Students at the medical faculty learn about substance use disorders in their third year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.6 on ' medical'/' physical'/illness noun in comorbidity sentences; 'psychiatric conditions', 'medical school', 'medical attention' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "bodily illness beside mental disorder",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' medical' x12, ' physical' x5, ' health' x5 in 'general medical conditions', 'serious physical problems', 'chronic medical conditions like diabetes' in psychiatric texts. Probe: 'depression ... other medical conditions such as diabetes' 0.561, 'Anxiety disorders ... chronic physical illnesses' 0.608; same sentence with 'psychiatric conditions such as anxiety' 0.082, 'medical school' 0.026, 'physical constant' 0.013, 'physical and mental health' 0.056, 'sought medical attention' 0.043."
+}
