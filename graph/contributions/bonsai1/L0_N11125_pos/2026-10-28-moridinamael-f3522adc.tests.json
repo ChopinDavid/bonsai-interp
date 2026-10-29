@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-28-moridinamael-f3522adc",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N11125+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:45:57+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The Arabic piece 'در' closing the word الصدر (chest / al-Sadr) after ' الص', not 'در' in other words"
+ },
+ "neighbours": [
+  {
+   "unit": "L0/N11125",
+   "pole": "+",
+   "label": "Arabic word-completing fragments after a short stem piece: 'در' (الصدر, الغدر, البدر), 'ط' in الرابط, 'فل' in الغفلة; not the same letters in other words (الحفلة, الضابط, المدير)",
+   "fire": [
+    "شعرت بألم خفيف في الصدر بعد الركض.",
+    "ظهر البدر كاملاً فوق التلال الليلة.",
+    "لا أحد يتوقع الغدر من صديق قديم.",
+    "اضغط على الرابط لتحميل الملف.",
+    "استيقظ القوم من الغفلة بعد فوات الأوان.",
+    "وضعت يدها على الصدر وتنفست بعمق.",
+    "أرسل لي الرابط عبر البريد من فضلك.",
+    "نور البدر يملأ الساحة الهادئة."
+   ],
+   "quiet": [
+    "شعرت بألم خفيف في الظهر بعد الركض.",
+    "ظهر المدير مبتسماً في الاجتماع الليلة.",
+    "حضرنا الحفلة مع صديق قديم.",
+    "تحدث الضابط مع الجنود عن الملف.",
+    "استيقظ القوم من النوم بعد فوات الأوان.",
+    "وضعت يدها على الطاولة وتنفست بعمق.",
+    "أرسل لي الضابط الملف عبر البريد من فضلك.",
+    "نور الشمس يملأ الساحة الهادئة."
+   ]
+  }
+ ],
+ "predictions": "I expect most fire sentences to hold; sentence-initial-ish short sentences and البدر (0.35 earlier) may be weak, near misses near zero.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "bank-solo",
+   "inverse-gmoo",
+   "quick-test"
+  ]
+ }
+}
