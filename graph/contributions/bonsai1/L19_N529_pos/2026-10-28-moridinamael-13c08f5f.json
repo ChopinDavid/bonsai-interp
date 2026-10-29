@@ -1,0 +1,162 @@
+{
+ "id": "2026-10-28-moridinamael-13c08f5f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N529+",
+ "contributor": "moridinamael",
+ "created": "2026-10-29T00:01:30+00:00",
+ "recipe": {
+  "toolchain_commit": "474980ae",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N529_pos/2026-10-28-moridinamael-13c08f5f.tests.json"
+ },
+ "label": "the end of a party-state tag after a politician's name, like D-Calif. or (Mass.)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N529_pos/2026-10-28-moridinamael-13c08f5f.tests.json",
+   "prereg_commit": "474980ae",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.111,
+     "peak": ".)"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.082,
+     "peak": " Montgomery"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.211,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.124,
+     "peak": "ponsors"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.123,
+     "peak": "ney"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.065,
+     "peak": " has"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.276,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.137,
+     "peak": ".)"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.189,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.14,
+     "peak": " cut"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.11,
+     "peak": "ner"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.067,
+     "peak": " Montgomery"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.138,
+     "peak": " Rep"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.13,
+     "peak": "ponsors"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.165,
+     "peak": "ney"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.082,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.477,
+    "median_fire": 0.123,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "step-down"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "474980ae",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "short": "party-state tag end after politician",
+ "roles": [
+  "reads bonsai1/L18/N10678+"
+ ],
+ "selection": "step-in from bonsai1/L18/N10678+",
+ "edges": [
+  {"from": "bonsai1/L18/N10678+", "to": "bonsai1/L19/N529+", "kind": "feeds", "weight": 0.05, "method": "single-unit zero ablation, downstream (play step --down)"}
+ ],
+ "notes": "Failed blind test. Pre-test probes with real politicians (Pelosi D-Calif. 0.70-0.87 of max, McConnell R-Ky. 0.59) did not transfer to invented names (fire median 0.12; peaks mostly not on the tag). Quiet sentences also sat at 0.07-0.19, so the pole is broad and low-level; the tag claim over-reaches. Reader drop from the L18 feeder is small (0.05) and its label has little to do with a name-piece feeder."
+}
