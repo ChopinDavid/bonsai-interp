@@ -634,3 +634,31 @@ nearest neighbours. The broad covers are where a category label ("first- and sec
 an assignment from one 8 + 8 test at selection precision under 0.5 is fragile. About a third of compose@9's
 assignments did not replicate on fresh pairs. The automatic tier's assignment-grade count should carry that, and the
 pair and triple covers need the same check.
+
+## Round 14 (compose@14): replication of the pair and triple covers
+
+compose@13's fresh-pairs control, for every pole assigned by a pair or triple cover (compose@10, compose@11, and
+compose@12's pair sets; `bonsai_interp/compose/round14.py`). Each cover is tested again with its own round's test and
+strata, on pairs drawn with a new seed, with a placebo.
+- **Verdicts:** replicated (held) or unreplicated (failed).
+- **Assignment does not change.**
+
+| | |
+|---|---|
+| Protocol | 6baa3211 |
+| Pre-registration | 2fcd8eb1 |
+| Summary | ed1e4661 |
+
+- **6,941 of 7,818 covers replicated (89%);** 0 of 7,810 placebo tests held.
+- **By kind:** pair covers 9.8% unreplicated, triple covers 27%.
+- **By selection precision:** 7.6% unreplicated at ≥ 0.7, 15% at 0.5–0.7, 25% at 0.3–0.5.
+- **By depth:** L0–5 8.5%, L6–11 12%, L12–35 24–31%.
+- **How they fail:** in 617 of the 877 failures the pole still fires (median fire ≥ 0.20). A near miss fires too: the
+  same token after another previous token, or the same previous token before another. The cover names the
+  pole's commonest contexts but not a boundary the pole keeps.
+
+### Reading
+
+The pair covers mostly replicate, better than compose@9's word covers did, since a pair cover's selection precision is
+higher (≥ 0.3 by rule, ≥ 0.7 for most). Together compose@13 and @14 re-tested 26,967 automatic assignments; 4,101
+(15%) failed a fresh test. Low precision predicts it in both rounds, and so does depth.
