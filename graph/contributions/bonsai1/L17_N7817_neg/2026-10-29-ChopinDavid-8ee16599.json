@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-8ee16599",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N7817-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T13:29:46+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a8c6a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N7817_neg/2026-10-29-ChopinDavid-8ee16599.tests.json"
+ },
+ "label": "stating a methodological gap in research writing: a needed method was lacking, hard, or challenging ('a reliable technique ... was lacking', 'difficult to test', 'a challenging task')",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N7817_neg/2026-10-29-ChopinDavid-8ee16599.tests.json",
+   "prereg_commit": "ec3a8c6a",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.204,
+     "peak": " lacking"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.452,
+     "peak": " task"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.06,
+     "peak": " test"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.374,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.288,
+     "peak": " problem"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.257,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.436,
+     "peak": " task"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.166,
+     "peak": " missing"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": "For"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": " lab"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " group"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.272,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a8c6a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "research method gap",
+ "unit_kind": "meaning",
+ "confidence": 0.3,
+ "notes": "Probe (weak): 'technique ... was lacking' 0.287, 'challenging task' 0.139, 'difficult to test' 0.107, 'lack of efficient protocols' 0.085; routine-method rewrites 0.007-0.014. Best guess; the pole is weak on probes.",
+ "selection": "random draw"
+}

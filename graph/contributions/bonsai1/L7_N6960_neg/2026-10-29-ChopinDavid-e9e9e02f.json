@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-e9e9e02f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6960-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T13:29:20+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a8c6a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N6960_neg/2026-10-29-ChopinDavid-e9e9e02f.tests.json"
+ },
+ "label": "a few unrelated rare names: the 'og' of 'Azog', 'Library' in the brand 'Open Library', and the chapter number in 'Exodus 6'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N6960_neg/2026-10-29-ChopinDavid-e9e9e02f.tests.json",
+   "prereg_commit": "ec3a8c6a",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.861,
+     "peak": "og"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.898,
+     "peak": "og"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.545,
+     "peak": " Library"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.567,
+     "peak": " Library"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.635,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.596,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.814,
+     "peak": "og"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.524,
+     "peak": " Library"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.021,
+     "peak": " attack"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": " battle"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " find"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " borrow"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": "al"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": "olkien"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " books"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.615,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a8c6a",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Azog / Open Library / Exodus 6",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Probe: Azog 'og' 0.847, 'Exodus 6:3' 0.673, 'Open Library' 0.637, 'openlibrary' 0.238; 'public library' 0.014, 'door was open' 0.022, 'Open Education' 0.111. No shared pattern found; a list, kept as a list.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-411f08a4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N1143-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T13:29:06+00:00",
+ "recipe": {
+  "toolchain_commit": "ec3a8c6a",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N1143_neg/2026-10-29-ChopinDavid-411f08a4.tests.json"
+ },
+ "label": "being enclosed between or by other things: the participle of an enclosure verb ('sandwiched', 'wedged', 'nestled', 'surrounded') that sets up 'between'/'by'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N1143_neg/2026-10-29-ChopinDavid-411f08a4.tests.json",
+   "prereg_commit": "ec3a8c6a",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.942,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.47,
+     "peak": "ged"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.298,
+     "peak": " nestled"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.112,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.2,
+     "peak": " surrounded"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.494,
+     "peak": " squeezed"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.907,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.225,
+     "peak": "ed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.056,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.071,
+     "peak": " sits"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.116,
+     "peak": " lake"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.127,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " hill"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.06,
+     "peak": " garden"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " came"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.037,
+     "peak": " town"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.482,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ec3a8c6a",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "enclosed between",
+ "unit_kind": "meaning",
+ "confidence": 0.6,
+ "notes": "Probe: 'sandwiched between' 0.865 (peak 'ed'), 'wedged between' 0.613, 'surrounded by' 0.340, 'box it in' 0.177, 'surround it' 0.142; 'next to a bank' 0.024. Output promotes between/among/by (card).",
+ "selection": "random draw"
+}
