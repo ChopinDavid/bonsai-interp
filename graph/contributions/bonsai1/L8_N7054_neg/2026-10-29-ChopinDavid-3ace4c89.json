@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-3ace4c89",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N7054-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T16:34:10+00:00",
+ "recipe": {
+  "toolchain_commit": "223d54c6",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N7054_neg/2026-10-29-ChopinDavid-3ace4c89.tests.json"
+ },
+ "label": "taxonomic rank and clade names in biological classification (kingdom, phylum, order, Chordata, Arachnida, monophyletic); 'kingdom', 'order', 'family' and 'class' in their everyday senses stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N7054_neg/2026-10-29-ChopinDavid-3ace4c89.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.31,
+     "peak": "ida"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.578,
+     "peak": "ata"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.43,
+     "peak": " group"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.62,
+     "peak": " domain"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.156,
+     "peak": "e"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.719,
+     "peak": "ade"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.614,
+     "peak": " kingdoms"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.958,
+     "peak": "yle"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": "Sp"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": "burst"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.054,
+     "peak": " kingdom"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " picnic"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.596,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "223d54c6",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "taxonomic rank/clade names",
+ "unit_kind": "context",
+ "confidence": 0.7,
+ "notes": "Card: superking|dom, kingdoms, Plant|ae, Metaz|oa, monoph|yle|tic, bilater|ian, Cl|ad|ocerans (max 21). Probe: Dinosauria 0.875, monophyletic 0.716, kingdom (fungi) 0.534, phylum 0.499, Rotifera 0.262; 'United Kingdom' 0.006, a king's kingdom 0.022, enzyme biology 0.011. The meaning test passed: the word without the taxonomy is silent.",
+ "selection": "random draw"
+}

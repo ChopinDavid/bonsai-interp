@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-f6f1c41a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N2695-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T16:33:52+00:00",
+ "recipe": {
+  "toolchain_commit": "223d54c6",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L21_N2695_neg/2026-10-29-ChopinDavid-f6f1c41a.tests.json"
+ },
+ "label": "the end of a fronted day or title phrase that opens a sentence, just before its comma ('On Monday, ...', 'In The Long Goodbye, Chandler ...'); the same phrase at the end of the sentence and other fronted adjuncts ('After the storm,') stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N2695_neg/2026-10-29-ChopinDavid-f6f1c41a.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.202,
+     "peak": " Thursday"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.461,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.217,
+     "peak": " Saturday"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.256,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.324,
+     "peak": " Monday"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.451,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.183,
+     "peak": " Sunday"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.123,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.067,
+     "peak": " Thursday"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": "low"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " week"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": "ak"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " shares"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.029,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " town"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.236,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "223d54c6",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "fronted date/title before comma",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: 'On Monday,' -13.19, 'On Tuesday,' -12.31, 'In A Virtuous Education,' -14.38, code loop headers before ':' (-14). Probe: 'On Wednesday,' 0.318 at Wednesday, 'In Her Final Diary,' 0.231 at the comma; 'After the storm,' 0.014, for-loop header 0.066, the same day at sentence end 0.133, controls 0.02. The code side did not reproduce in short snippets, so the prose side is tested.",
+ "selection": "random draw"
+}

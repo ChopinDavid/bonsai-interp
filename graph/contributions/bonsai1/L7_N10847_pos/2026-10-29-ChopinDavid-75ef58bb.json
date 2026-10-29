@@ -1,0 +1,161 @@
+{
+ "id": "2026-10-29-ChopinDavid-75ef58bb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N10847+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T16:34:26+00:00",
+ "recipe": {
+  "toolchain_commit": "223d54c6",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N10847_pos/2026-10-29-ChopinDavid-75ef58bb.tests.json"
+ },
+ "label": "the 'preced-' word family: 'preceded', 'precede(s)', 'preceding' and the 'ced' piece after 'Pre' (Pre|ced|ed); 'proceed' and 'precedent' fire weakly, and 'concede', 'recede' and other pre- words stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N10847_pos/2026-10-29-ChopinDavid-75ef58bb.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.454,
+     "peak": " preceded"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.384,
+     "peak": " preced"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.51,
+     "peak": " preced"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.309,
+     "peak": " preceding"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.595,
+     "peak": " preceded"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.606,
+     "peak": " preced"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.413,
+     "peak": " preceded"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.136,
+     "peak": " preceding"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": " drought"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " chairman"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "n"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.054,
+     "peak": " previous"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.084,
+     "peak": " survived"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.171,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.116,
+     "peak": " ahead"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " before"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.433,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "223d54c6",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'preced-' family",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: Pre|ced|ing 21.0, Pre|ced|ed 20.62, PRE|CED|ENTS, pré|ced|entes, Pre|cedes, ' preced'e, беспрец|ед|ентного, Pre|decess|or. Probe: preceded 0.541 and 0.450, predecessor 0.261, proceed 0.249, precedent 0.137, preface 0.126, concede 0.032, recede 0.028. proceed leaks, so it is kept out of the near misses; the meaning without the word ('comes before') is tested as a near miss.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "preceded",
+   "precede",
+   "precedes",
+   "preceding",
+   "preced"
+  ]
+ }
+}

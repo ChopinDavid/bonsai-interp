@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-2d66d976",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N6283+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T16:34:45+00:00",
+ "recipe": {
+  "toolchain_commit": "223d54c6",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N6283_pos/2026-10-29-ChopinDavid-2d66d976.tests.json"
+ },
+ "label": "a word piece completing a journal name inside a bibliographic reference ('BMC Micro|biology', 'Curr Pharm Des', 'Educational Psych|ologist'); the same words in prose and in book references stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N6283_pos/2026-10-29-ChopinDavid-2d66d976.tests.json",
+   "prereg_commit": "223d54c6",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.931,
+     "peak": "biology"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.314,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.474,
+     "peak": "ologist"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.223,
+     "peak": "chem"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.281,
+     "peak": " Earth"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.217,
+     "peak": " Neuroscience"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.19,
+     "peak": "biology"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.088,
+     "peak": " Neuroscience"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.026,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.054,
+     "peak": " engineering"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": " institute"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.038,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.04,
+     "peak": " channels"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.252,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "223d54c6",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "journal name in a reference",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: weak (max 5.88): EMBO Rep, BMC Micro|biology, Current Opinion in Micro|biology, CrystEng|Comm, Planetary and Space Science, Journal of Feminist Studies, Educational Psych|ologist, Curr Pharm Des, all in reference lists. Probe: Nature Immun|ology 0.163, Marine Ecology Progress Series 0.064, J Exp Biol 0.046; microbiology in prose 0.017, book reference 0.017, journal name in prose 0.017, reference without a journal 0.059. The direction is right but the level is far below 0.3, so the test is expected to fail.",
+ "selection": "random draw"
+}
