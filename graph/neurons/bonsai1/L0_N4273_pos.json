@@ -4,10 +4,10 @@
  "layer": 0,
  "index": 4273,
  "pole": "+",
- "label": "a handful of specific tokens: ' Yellowstone', the Arabic piece 'سبة' (as in بالنسبة/نسبة), the drug-name piece 'oxetine', and Japanese '出会い系', as against sibling tokens of the same kind",
+ "label": "a lookup of specific rare tokens, not a shared meaning: ' Yellowstone', '金陵', '出会い系', '_ylim', the drug piece 'oxetine', and the Arabic pieces 'سبة', 'يسر', 'ليم'; sibling tokens of the same kind (Yosemite, 南京, _xlim, sertraline) stay quiet",
  "short": "Yellowstone / سبة / oxetine / 出会い系 tokens",
  "kind": "token",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 1
    },
    "contribution": "2026-10-23-ChopinDavid-582647e4"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N4273_pos/2026-10-28-moridinamael-94d9592d.tests.json",
+   "prereg_commit": "4f96763c",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.472,
+     "peak": " Yellowstone"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.837,
+     "peak": " Yellowstone"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.882,
+     "peak": "金陵"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.623,
+     "peak": "出会い系"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.62,
+     "peak": "_ylim"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.748,
+     "peak": "oxetine"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.706,
+     "peak": "oxetine"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.133,
+     "peak": "عت"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.161,
+     "peak": " Yosemite"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.141,
+     "peak": " Idaho"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "历"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": "に"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.069,
+     "peak": "_xlim"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.026,
+     "peak": " prescribed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.036,
+     "peak": "ital"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.06,
+     "peak": " معدل"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.664,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-28-moridinamael-94d9592d"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-23-ChopinDavid-582647e4",
    "a handful of specific tokens: ' Yellowstone', the Arabic piece 'سبة' (as in بالنسبة/نسبة), the drug-name piece 'oxetine', and Japanese '出会い系', as against sibling tokens of the same kind",
    "held"
+  ],
+  [
+   "2026-10-28-moridinamael-94d9592d",
+   "a lookup of specific rare tokens, not a shared meaning: ' Yellowstone', '金陵', '出会い系', '_ylim', the drug piece 'oxetine', and the Arabic pieces 'سبة', 'يسر', 'ليم'; sibling tokens of the same kind (Yosemite, 南京, _xlim, sertraline) stay quiet",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-23-ChopinDavid-582647e4"
+  "2026-10-23-ChopinDavid-582647e4",
+  "2026-10-28-moridinamael-94d9592d"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.0151,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 4033
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
