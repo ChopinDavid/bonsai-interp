@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-62740b16",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N7065-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N7065",
+   "pole": "-",
+   "label": "the digit '7' inside a hex or unicode escape (\\x7e, \\u227a) or a reference-year code ('1976a'); the same escapes with 6, 4 or 0 in that position, and a 7 counting things in prose, stay low",
+   "fire": [
+    "The byte sequence \\x74\\x65\\x73\\x74 spells the word test.",
+    "'prnsim;': '\\u22e8', 'ltri;': '\\u25c3', 'nprec;': '\\u2280', 'supe;': '\\u2287',",
+    "Use \\x7f for the delete character in the terminal driver.",
+    "'leq;': '\\u2264', 'lesssim;': '\\u2272', 'gtrsim;': '\\u2273',",
+    "Hamilton and Reed (1977b) measured the growth of the colony.",
+    "The emoji is stored as the surrogate pair \\ud83d\\ude07 in UTF-16.",
+    "Replace every \\x27 in the string with a doubled quote.",
+    "The entry 'ap;': '\\u2248' is followed by 'apid;': '\\u224b' and 'star;': '\\u2217'."
+   ],
+   "quiet": [
+    "The byte sequence \\x64\\x61\\x6e\\x63\\x65 spells the word dance.",
+    "'prnsim;': '\\u22e8', 'ltri;': '\\u25c3', 'nprec;': '\\u2280', 'sube;': '\\u2286',",
+    "Use \\x08 for the backspace character in the terminal driver.",
+    "'leq;': '\\u2264', 'geq;': '\\u2265', 'ne;': '\\u2260',",
+    "Hamilton and Reed (1984b) measured the growth of the colony.",
+    "The emoji is stored as the surrogate pair \\ud83d\\ude00 in UTF-16.",
+    "Replace every \\x22 in the string with a single quote.",
+    "The entry 'ap;': '\\u2248' is followed by 'apid;': '\\u224b' and 'ne;': '\\u2260'."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on the 7; near misses mostly below 0.1, though another digit in a long escape can leak (a 2 gave 0.246 in the probe)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digit 7 in escape codes",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: '7' x27 of the top 32, inside \\x7_ and \\u22_7 escapes, checkbox_77, (1976a); the + pole peaks on 6, 4 and 0. Probe: \\u227a 0.502, \\x7e 0.321, 1976a 0.185; \\x6e 0.009, 1986a 0.013, '7 apples' 0.003, checkbox_72 0.029; \\u222a leaked 0.246 on its '2'. Trigger declared as the token '7'.",
+ "trigger": {
+  "words": [
+   "7"
+  ]
+ }
+}

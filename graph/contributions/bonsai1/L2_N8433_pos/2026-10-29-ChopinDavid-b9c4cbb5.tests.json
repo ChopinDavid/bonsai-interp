@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b9c4cbb5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N8433+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N8433",
+   "pole": "+",
+   "label": "the CJK token '장' / '場' standing as its own token inside a word (Korean 매장, 회장, 극장; Chinese and Japanese 商場, 職場, 劇場); single-token words that contain the syllable (市場, 場合, 現場) and sentences without it stay low",
+   "fire": [
+    "그는 지난달에 회장으로 선출되었다.",
+    "우리는 주말에 극장에서 영화를 봤다.",
+    "학생들이 점심시간에 운동장에서 뛰었다.",
+    "오늘 아침 교장 선생님이 연설을 했다.",
+    "他們昨天在劇場看了一齣戲。",
+    "工人們每天在工場裡工作。",
+    "下午三點，會場裡已經坐滿了人。",
+    "週末的時候，球場上有很多觀眾。"
+   ],
+   "quiet": [
+    "그는 지난달에 서점에서 책을 샀다.",
+    "우리는 주말에 바다에서 수영을 했다.",
+    "학생들이 점심시간에 도서관에서 책을 읽었다.",
+    "오늘 아침 담임 선생님이 연설을 했다.",
+    "他們昨天在市場買了一些水果。",
+    "這種場合很少見到他。",
+    "下午三點，記者趕到了現場。",
+    "週末的時候，公園裡有很多人。"
+   ]
+  }
+ ],
+ "predictions": "Chinese 場 items 0.3-0.4; Korean items uncertain (the probe fired on 매장을 but not on 시+장), maybe 5-6 of 8 above 0.3; single-token 市場/場合/現場 and no-장 sentences below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'장'/'場' as its own token",
+ "unit_kind": "lexical",
+ "confidence": 0.4,
+ "notes": "Card: '장' x20 and '場' x11 of the top 32 (당장, 매장, 이사장, 商場, 職場). Probe: 매장을 0.344 (token '장을'), 職場 0.355; 시장 (one token) 0.035, 場合 0.013, 市场 -0.003, no-장 Korean 0.027; sentence-initial 공장 only 0.014, so every fire item keeps the word mid-sentence; 시장 split as 시+장 scored only 0.035, so the preceding syllable may matter (a layer-2 bigram?). Layer 2: a token pole.",
+ "trigger": {
+  "words": [
+   "장",
+   "場"
+  ]
+ }
+}

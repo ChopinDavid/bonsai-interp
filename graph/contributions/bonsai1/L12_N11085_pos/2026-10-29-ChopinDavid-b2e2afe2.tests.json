@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b2e2afe2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N11085+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N11085",
+   "pole": "+",
+   "label": "the first piece of a new name being defined: the identifier right after Python's `class` (and more weakly `def`) keyword, and the first word of a recipe-style title line; the same names used in imports or calls, and 'class' in prose, stay low",
+   "fire": [
+    "import json\n\n\nclass ReportBuilder:\n    def __init__(self, rows):\n        self.rows = rows\n",
+    "from flask import Flask\n\n\nclass AuthMiddleware:\n    def __call__(self, env, start):\n        return self.app(env, start)\n",
+    "import unittest\n\n\nclass CacheTests(unittest.TestCase):\n    def test_empty(self):\n        self.assertEqual(len(Cache()), 0)\n",
+    "import logging\n\n\nclass RetryPolicy(object):\n    max_attempts = 3\n",
+    "from sqlalchemy import Column\n\n\nclass Invoice(Base):\n    __tablename__ = 'invoices'\n",
+    "import socket\n\n\nclass PortScanner:\n    \"\"\"Scan a host for open ports.\"\"\"\n",
+    "import csv\n\n\ndef export_rows(path, rows):\n    with open(path, 'w') as f:\n        csv.writer(f).writerows(rows)\n",
+    "Lemon Drizzle Cake\nButter for the tin\nThree eggs\n"
+   ],
+   "quiet": [
+    "import json\n\n\nbuilder = ReportBuilder(rows)\nbuilder.render()\n",
+    "from flask import Flask\n\napp = Flask(__name__)\napp.wsgi_app = AuthMiddleware(app.wsgi_app)\n",
+    "import unittest\n\nsuite = unittest.TestLoader().loadTestsFromName('tests.CacheTests')\n",
+    "from policies import RetryPolicy\n\npolicy = RetryPolicy()\npolicy.max_attempts = 3\n",
+    "from models import Invoice\n\ninvoice = Invoice(total=120)\nsession.add(invoice)\n",
+    "The whole class went to the museum on Tuesday.",
+    "Put the butter in the tin and crack three eggs into the bowl.",
+    "import csv\n\nrows = list(csv.reader(open('data.csv')))\nprint(len(rows))\n"
+   ]
+  }
+ ],
+ "predictions": "class items 0.4-0.5, the def item about 0.2, the title item 0.3-0.4; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "name after class/def",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: class| File, class| Exception, class| Email, class| Graph, def _|Where, Breakfast Scram|ble (max 6.66, 0.8% density). Probe: class FileWatcher 0.407, class ErrorMiddleware 0.501, 'Breakfast Scramble Burrito' 0.429, def send_report 0.209; FileWatcher instantiated 0.099, imported 0.106, 'class' in prose 0.010, plain code 0.011."
+}

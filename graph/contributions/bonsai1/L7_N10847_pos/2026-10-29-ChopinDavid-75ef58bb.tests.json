@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-75ef58bb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N10847+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N10847",
+   "pole": "+",
+   "label": "the 'preced-' word family: 'preceded', 'precede(s)', 'preceding' and the 'ced' piece after 'Pre' (Pre|ced|ed); 'proceed' and 'precedent' fire weakly, and 'concede', 'recede' and other pre- words stay low",
+   "fire": [
+    "A long drought preceded the famine of 1846.",
+    "The quarterly figures precede the chairman's statement in the report.",
+    "In the liturgy a hymn precedes each reading.",
+    "The preceding chapter dealt with the causes of the revolt.",
+    "She was preceded in death by her husband and a brother.",
+    "Thunder usually precedes the first drops of rain here.",
+    "Light snow preceded the blizzard by a few hours.",
+    "The years preceding the war saw a boom in shipbuilding."
+   ],
+   "quiet": [
+    "A long drought followed the famine of 1846.",
+    "The quarterly figures accompany the chairman's statement in the report.",
+    "In the liturgy a hymn follows each reading.",
+    "The previous chapter dealt with the causes of the revolt.",
+    "She was survived by her husband and a brother.",
+    "Thunder usually comes before the first drops of rain here.",
+    "Light snow fell ahead of the blizzard by a few hours.",
+    "The years before the war saw a boom in shipbuilding."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.6; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'preced-' family",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: Pre|ced|ing 21.0, Pre|ced|ed 20.62, PRE|CED|ENTS, pré|ced|entes, Pre|cedes, ' preced'e, беспрец|ед|ентного, Pre|decess|or. Probe: preceded 0.541 and 0.450, predecessor 0.261, proceed 0.249, precedent 0.137, preface 0.126, concede 0.032, recede 0.028. proceed leaks, so it is kept out of the near misses; the meaning without the word ('comes before') is tested as a near miss.",
+ "trigger": {
+  "words": [
+   "preceded",
+   "precede",
+   "precedes",
+   "preceding",
+   "preced"
+  ]
+ }
+}

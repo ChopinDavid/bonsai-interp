@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3ace4c89",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N7054-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N7054",
+   "pole": "-",
+   "label": "taxonomic rank and clade names in biological classification (kingdom, phylum, order, Chordata, Arachnida, monophyletic); 'kingdom', 'order', 'family' and 'class' in their everyday senses stay low",
+   "fire": [
+    "Spiders are placed in the class Arachnida rather than with the insects.",
+    "All vertebrates belong to the phylum Chordata because they have a notochord.",
+    "Beetles make up the order Coleoptera, the largest group of animals.",
+    "Archaea were recognised as a separate domain only in the 1970s.",
+    "The cat family, Felidae, includes lions, tigers and the domestic cat.",
+    "Whether whales form a clade with hippos was settled by DNA evidence.",
+    "Linnaeus divided living things into the plant and animal kingdoms.",
+    "Modern cladistics rejects paraphyletic groups such as the reptiles."
+   ],
+   "quiet": [
+    "Spiders spin their webs in the corners of the barn every summer.",
+    "All passengers belong in their seats because the train is about to leave.",
+    "The judge restored order in the court after the outburst.",
+    "The castle was the seat of a small kingdom in the ninth century.",
+    "The whole family, including the dog, came to the picnic.",
+    "Whether the bridge could carry trucks was settled by an engineer.",
+    "The teacher divided the class into four reading groups.",
+    "The waiter took our order and brought bread to the table."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; everyday senses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "taxonomic rank/clade names",
+ "unit_kind": "context",
+ "confidence": 0.7,
+ "notes": "Card: superking|dom, kingdoms, Plant|ae, Metaz|oa, monoph|yle|tic, bilater|ian, Cl|ad|ocerans (max 21). Probe: Dinosauria 0.875, monophyletic 0.716, kingdom (fungi) 0.534, phylum 0.499, Rotifera 0.262; 'United Kingdom' 0.006, a king's kingdom 0.022, enzyme biology 0.011. The meaning test passed: the word without the taxonomy is silent."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-582e19ad",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N9405+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T16:19:52+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N9405",
+   "pole": "+",
+   "label": "the token that completes a fixed multi-word term or proper name set up by the previous word ('transition states', 'flux-cored', 'Kurt Russell', 'Operations Management', 'storm-petrel'); the same frames with a generic word in that slot stay low",
+   "fire": [
+    "The reaction passes through a high-energy transition state before the products form.",
+    "The yard switched to flux-cored wire for welding the hull plates.",
+    "Singer Rod Stewart opened the festival with an old hit.",
+    "Her review appeared in Molecular Ecology in the spring issue.",
+    "The degree in Supply Chain Management takes two years.",
+    "A Leach's storm-petrel was blown inland by the gale.",
+    "The lab measured the activation energy of the reaction.",
+    "The bird on the fence post was a Fox Sparrow."
+   ],
+   "quiet": [
+    "The reaction passes through a high-energy middle stage before the products form.",
+    "The yard switched to thinner wire for welding the hull plates.",
+    "A singer from Glasgow opened the festival with an old hit.",
+    "Her review appeared in a small journal in the spring issue.",
+    "The degree in logistics takes two years.",
+    "A small seabird was blown inland by the gale.",
+    "The lab measured the heat given off by the reaction.",
+    "The bird on the fence post was a brown sparrow."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.4; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "completion of a fixed collocation",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: no single token (max 12): transition| states, flux-c|ored, Kurt| Russell, Sturlus|on, Curr| Biol, Trends in| Ecology, Storm-P|et|rel, Operations| Management, transit| stage. Probe (new instances): transition states 1.389, flux-cored 0.856, Kurt Russell 0.556, Trends in Ecology 0.507, Operations Management 0.367, storm-petrel 0.321; the same frames with generic words 0.006 and 0.024. Tested as a collocation-completion pole."
+}
