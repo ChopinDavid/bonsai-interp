@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-29-moridinamael-190f0b94",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L1/N5539+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T20:33:26+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the word piece 'aste'/'aster'/'asted' when it is split off a short prefix (t|aster, ro|aster, -w|aste, dism|asted), as against the same or similar words that are a single token (toaster, master, waste)"
+ },
+ "neighbours": [
+  {
+   "unit": "L1/N5539",
+   "pole": "+",
+   "label": "the word piece 'aste'/'aster'/'asted' split off a prefix (t|aster, e-w|aste, dist|aste, dism|asted), strong; the same sounds as one whole token (waste, master, board, toaster) are weaker or silent",
+   "fire": [
+    "The wine taster swirled the glass and frowned at the sour finish.",
+    "She looked at the greasy plate with obvious distaste.",
+    "The town set up a drop-off point for e-waste such as old phones and laptops.",
+    "After the storm, the dismasted schooner drifted for three days before rescue.",
+    "Critics dismissed him as a poetaster who rhymed without saying anything.",
+    "A carved pilaster framed each side of the old bank's doorway.",
+    "The garden path was lined with silver-leaved oleaster shrubs.",
+    "I was flabbergasted when the tiny dog chased off the bear."
+   ],
+   "quiet": [
+    "The wine expert swirled the glass and frowned at the sour finish.",
+    "She looked at the greasy plate with obvious disgust.",
+    "The town set up a drop-off point for old electronics such as phones and laptops.",
+    "After the storm, the broken schooner drifted for three days before rescue.",
+    "Critics dismissed him as a hack who rhymed without saying anything.",
+    "A carved column framed each side of the old bank's doorway.",
+    "The garden path was lined with silver-leaved willow shrubs.",
+    "I was amazed when the tiny dog chased off the bear."
+   ]
+  }
+ ],
+ "predictions": "Expect most split-piece fire sentences at 0.5-0.8 of max; rarer words like pilaster/oleaster/flabbergasted may be whole tokens or split differently and could miss. Near misses should stay below 0.3.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "bank-solo",
+   "inverse-gmoo"
+  ]
+ }
+}
