@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a27ae8c3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N9070+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N9070",
+   "pole": "+",
+   "label": "the piece 'init' of a Python `def __init__(self, ...)` method inside a widget or form class body, after imports, a class line and a docstring; other method names in the same bodies (build, refresh, clean, __call__, __repr__, __str__, configure) are silent",
+   "fire": [
+    "import tkinter as tk\n\n\nclass ScrollBox(tk.Frame):\n    \"\"\"A listbox with a vertical scrollbar.\"\"\"\n\n    def __init__(self, master=None, cnf={}, **kw):\n        tk.Frame.__init__(self, master, cnf, **kw)",
+    "import wx\n\nID_QUIT = 1041\n\n\nclass SettingsFrame(wx.Frame):\n    def __init__(self, options):\n        wx.Frame.__init__(self, None, -1, 'Settings')",
+    "from gi.repository import Gtk\n\n\nclass SidePanel(Gtk.VBox):\n    \"\"\"Panel of tool buttons.\n\n    Children - None\"\"\"\n\n    def __init__(self, controller):\n        Gtk.VBox.__init__(self)",
+    "class EditForm(forms.ModelForm):\n    class Meta:\n        model = Profile\n\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)",
+    "from PyQt5 import QtWidgets\n\n\nclass MainView(QtWidgets.QMainWindow, Ui_MainView):\n\tdef __init__(self, parent=None, **kwargs):\n\t\tsuper().__init__(parent)",
+    "class TableView(ttk.Treeview):\n    \"\"\"Grid of cells with editable rows\n    and columns.\n\n    \"\"\"\n    def __init__(self, parent=None, rows=0):\n        ttk.Treeview.__init__(self, parent)",
+    "    # FIXME: should inherit from ScrolledWidget\n    def __init__(self, master=None, cnf={}, **kw):\n        TixWidget.__init__(self, master, 'tixScrolledText', ['options'], cnf, kw)",
+    "class PopupMenu(Toplevel):\n    \"\"\"Floating menu window.\n\n    Child widgets - None\"\"\"\n\n    def __init__ (self, master=None, cnf={}, **kw):\n        Toplevel.__init__(self, master, cnf, **kw)"
+   ],
+   "quiet": [
+    "import tkinter as tk\n\n\nclass ScrollBox(tk.Frame):\n    \"\"\"A listbox with a vertical scrollbar.\"\"\"\n\n    def build(self, master=None, cnf={}, **kw):\n        tk.Frame.config(self, cnf, **kw)",
+    "import wx\n\nID_QUIT = 1041\n\n\nclass SettingsFrame(wx.Frame):\n    def on_close(self, event):\n        wx.Frame.Destroy(self)",
+    "from gi.repository import Gtk\n\n\nclass SidePanel(Gtk.VBox):\n    \"\"\"Panel of tool buttons.\n\n    Children - None\"\"\"\n\n    def refresh(self, controller):\n        Gtk.VBox.show_all(self)",
+    "class EditForm(forms.ModelForm):\n    class Meta:\n        model = Profile\n\n    def clean(self, *args, **kwargs):\n        return super().clean(*args, **kwargs)",
+    "from PyQt5 import QtWidgets\n\n\nclass MainView(QtWidgets.QMainWindow, Ui_MainView):\n\tdef __call__(self, parent=None, **kwargs):\n\t\tsuper().show()",
+    "class TableView(ttk.Treeview):\n    \"\"\"Grid of cells with editable rows\n    and columns.\n\n    \"\"\"\n    def __repr__(self):\n        return 'TableView(%d rows)' % self.rows",
+    "    # FIXME: should inherit from ScrolledWidget\n    def configure(self, cnf={}, **kw):\n        TixWidget.configure(self, cnf, kw)",
+    "class PopupMenu(Toplevel):\n    \"\"\"Floating menu window.\n\n    Child widgets - None\"\"\"\n\n    def __str__ (self):\n        return 'PopupMenu'"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.4 on 'init' or the tokens just after it; near misses below 0.05; short one-line snippets scored near zero in the probe, so the magnitude is uncertain",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'init' of def __init__ in a class body",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Card: 'init' x32 (one token dominates), all inside `def __init__(self, master/parent/settings ...)` of Tk, Tix, wx, Gtk, Qt and Django-form classes, max 29.88, density 0.076%. Probe: short snippets scored low: 'class Counter:\\n    def __init__(self, start=0)' 0.006, Node(Base) with docstring and **kwargs 0.146 (peak 'kwargs'), '    def __init__(self, master, cnf={}):\\n        Frame.__init__' 0.147 (peak ','), __str__ 0.003, __repr__ 0.003, 'git init' 0.003, '__init__.py' 0.010, floor 0.013. The card peaks sit deep in GUI files, so the test items carry imports, class line and docstring context; if they still score low, the pole needs a longer file prefix than a test item can hold.",
+ "trigger": {
+  "pieces": [
+   "init"
+  ]
+ }
+}

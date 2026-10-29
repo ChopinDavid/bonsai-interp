@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-256563f2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N6957+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N6957",
+   "pole": "+",
+   "label": "academic discourse of identity-based critical theory (queer, feminist, Black, Indigenous, postcolonial, trans studies): the pole fires on the function words and verbs inside such sentences; the same scholarly sentence shapes in physics, economics, engineering, musicology or philology are silent",
+   "fire": [
+    "Feminist theorists such as Judith Butler and Sara Ahmed argue that gender is performed rather than possessed.",
+    "Critical race scholars, including Kimberlé Crenshaw and Patricia Hill Collins, developed intersectionality to analyze overlapping oppressions.",
+    "Queer of color critique refuses the assumption that sexuality can be studied apart from race and class.",
+    "Indigenous studies challenges the settler framing of sovereignty and reclaims relational understandings of land.",
+    "Trans studies interrogates the medical categories that have been used to regulate gendered bodies.",
+    "Postcolonial feminists criticized Western scholarship for homogenizing the experiences of Third World women.",
+    "Black lesbian writers such as Cheryl Clarke and Barbara Smith insisted that the politics of identity were inseparable from literary form.",
+    "Chicana theorists reframed the borderlands as a site of hybrid identity and resistance to assimilation."
+   ],
+   "quiet": [
+    "Monetary theorists such as Milton Friedman and Anna Schwartz argue that inflation is always a monetary phenomenon.",
+    "Structural engineers, including Fazlur Khan and Leslie Robertson, developed the tubular frame to resist wind loads.",
+    "Plate tectonics refuses the assumption that continents are fixed and explains earthquakes as boundary slip.",
+    "Agronomy studies challenge the assumption that higher nitrogen always raises yields.",
+    "Immunology interrogates the molecular signals that regulate inflammation.",
+    "Classical philologists criticized the new edition for homogenizing the manuscript variants.",
+    "Baroque composers such as Corelli and Vivaldi insisted that the concerto's form followed from its ritornello.",
+    "Glaciologists reframed the ice shelf as a site of rapid melting and retreat."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.8 on a function word or verb mid-sentence; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "identity-based critical theory discourse",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: ' of' x6, ' and' x3, ' by' x3, ',' x2, ' refuses', ' contemporary'; all examples are queer theory, African-American literary criticism, Métis identity, disability representation, Gates/Lorde/Daly/Morrison; max 212, density 0.086%. Probe: Black feminist thought (Lorde, hooks) 0.835 (peak ' and'), queer theory 0.568 (peak ' rejects'), postcolonial development critique 0.267, Barnard/Boas biography 0.120, disability studies 0.073, relativity 0.006, Keynesian 0.004, railway citation 0.005, literary praise 0.051, floor 0.021. Disability studies was weak, so the label names the identity-politics strand."
+}

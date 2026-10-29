@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-832b62a9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N12178+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N12178",
+   "pole": "+",
+   "label": "guess: a middle piece of a multi-piece code identifier (Test|Metadata|BlockRules, update|_fixed|_asset, is|_assoc|iate, '__|is|null'), peak on that piece; the same words in prose are silent",
+   "fire": [
+    "class TestHeaderBlockRules(TestRulesBase):\n\n    negative = False",
+    "    self.update_project()\n    self.update_fixed_rate()\n\n    def update_fixed_rate(self):\n        for d in self.rates:",
+    "        if is_assoc_editor_changed:\n            try:\n                notify()",
+    "class TestMboxMessage(_TestMboxBase):\n    def test_header(self):\n        pass",
+    "    # When the name ends with '__isnull' handle it here\n    modeladmin = None",
+    "        elif side == 'right':\n            if rsize < 10:\n                rsize = 0",
+    "def _SpaceToDepthShape(op):\n    return [op.inputs[0].get_shape()]",
+    "class TestPayloadFilterRules(RulesTestCase):\n\n    allow_empty = True"
+   ],
+   "quiet": [
+    "The header block rules are tested against the base rules.",
+    "The project is updated first and then the fixed rate is updated for each entry.",
+    "If the associate editor has changed, the system tries to notify them.",
+    "The mailbox message test checks the header.",
+    "When the name ends with is null, handle it here.",
+    "On the right side, if the size is below ten, it is reset to zero.",
+    "The space-to-depth shape function returns the shape of the first input.",
+    "The payload filter rules allow empty inputs."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.25 on the middle piece; near misses below 0.05; a weak pole, likely partial",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "mid-identifier piece in code names",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: '1' x2, 'Metadata', ' Indonesia', '6', ' l', '_fixed', ' Somalia', 'is', '_associ', 'MM'; examples TestMetadataBlockRules, '2. Indonesia Women vs', '(2006)', 'if lsize < 10', 'def update_fixed_asset', 'Save 15% Off', '__isnull', 'is_associate_editor_changed', TestMMDFMessage; max 17.12, density 0.62%. Probe: TestMetadataBlockRules 0.223 (peak 'Metadata'), 'def update_fixed_asset' 0.185 and its call 0.145 (peak '_fixed', first occurrence higher so not induction), 'Indonesia Women vs' 0.044, '(2006)' 0.061, 'Save 15%' 0.063, 'lsize < 10' 0.016, prose 0.010, floor 0.022. Only the identifier pieces responded, weakly."
+}

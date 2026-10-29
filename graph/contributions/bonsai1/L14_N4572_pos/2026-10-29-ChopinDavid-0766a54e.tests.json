@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0766a54e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N4572+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N4572",
+   "pole": "+",
+   "label": "guess: the recitation of a well-known memorised sequence (the three pigs' straw, sticks and bricks; the seven dwarfs; earth, air, fire and water; the plagues; Snap, Crackle and Pop; a divmod chain), peak on an item that completes the familiar pattern; a novel list of the same shape is silent",
+   "fire": [
+    "The three little pigs built their houses of straw, of sticks and of bricks.",
+    "The nursery rhyme names the butcher, the baker and the candlestick maker.",
+    "Snow White kept house for Doc, Grumpy, Happy, Sleepy, Bashful, Sneezy and Dopey.",
+    "The ancients counted four elements: earth, air, fire and water.",
+    "Moses warned Pharaoh of blood, frogs, gnats, flies and boils.",
+    "The cereal mascots are Snap, Crackle and Pop.",
+    "hours, minutes = divmod(total_minutes, 60)\ndays, hours = divmod(hours, 24)\nweeks, days = divmod(days, 7)",
+    "Goldilocks tried the porridge, then the chairs, then the beds."
+   ],
+   "quiet": [
+    "The three new neighbours built their sheds of tin, of plywood and of glass.",
+    "The newsletter names the plumber, the florist and the piano tuner.",
+    "Aunt Rose kept house for Walter, Gerald, Nancy, Lionel, Edith, Simon and Clara.",
+    "The survey counted four problems: noise, litter, parking and traffic.",
+    "The mayor warned residents of floods, mould, rust, rot and damp.",
+    "The company mascots are Benny, Olive and Tuck.",
+    "hours = total_minutes // 60\nremaining = total_minutes % 60\nlabel = f'{hours}h {remaining}m'",
+    "Marta tried the soup, then the salad, then the bread."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8 on a list item or the punctuation after it; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "recited famous sequence",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: '.' x5, ',' x4, ';' x3, ' heart' x2, ' the', ' frogs'; examples Tin Woodman in search of a heart (x2), the ten plagues 'blood, frogs, lice', divmod(processing_time, 60) then days, hours, 'the cat turned blue. A sour lime', 'Robin ... divided it in half; half he gave'; max 20.25, density 0.081%. Probe: 'Tin Man wanted a heart, the Lion wanted courage, and the Scarecrow wanted a brain' 0.792 (peak ' brain'), divmod chain 0.517 (peak ','), fox-and-fish tale 0.405 (peak ' the'), duck story 0.137, Halloween house 0.073, 'dog turned green' 0.044, committee 0.009, chemistry 0.001, floor 0.016. The strongest responses were a memorised enumeration and a formulaic code idiom; the simple-narrative reading got 0.405 on one item only, so the sequence reading is registered as a guess."
+}

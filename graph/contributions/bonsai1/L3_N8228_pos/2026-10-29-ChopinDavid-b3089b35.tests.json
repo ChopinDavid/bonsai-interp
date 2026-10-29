@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b3089b35",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N8228+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T21:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N8228",
+   "pole": "+",
+   "label": "the French suffix piece 'ante' completing a split feminine present-participle adjective (charm|ante, cour|ante, viv|ante, él|ég|ante); the masculine pieces 'ant'/'issant' in the same frames, single-token adjectives (importante, produit) and Spanish endings (-aste, -ieron, -uye) are weak or silent",
+   "fire": [
+    "Elle a trouvé la conférence vraiment charmante malgré la pluie.",
+    "La discussion fut intéressante du début jusqu'à la fin.",
+    "Une preuve suffisante manquait au dossier.",
+    "Cette expression est courante dans le sud du pays.",
+    "La ville reste vivante même après minuit.",
+    "L'armée était puissante mais mal commandée.",
+    "Sa robe élégante attirait tous les regards.",
+    "La pièce était amusante et le public riait beaucoup."
+   ],
+   "quiet": [
+    "Il a trouvé le conférencier vraiment charmant malgré la pluie.",
+    "Le débat fut brillant du début jusqu'à la fin.",
+    "Un silence troublant régnait dans le dossier.",
+    "Ce contraste est frappant dans le sud du pays.",
+    "Le quartier reste attachant même après minuit.",
+    "Le roi était puissant mais mal conseillé.",
+    "Son costume envoûtant attirait tous les regards.",
+    "Le film était émouvant et le public pleurait beaucoup."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.55 on 'ante'; near misses below 0.12 (persiste gave 0.144 on 'ment' in the probe, so a masculine item may reach 0.15)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "French piece 'ante' (charm|ante)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: 'ante' x4, 'ite' x3, 'èrent' x2, 'e' x2, 'ca' x2, 'ites' x2; examples pren|ante, envenim|èrent, Subscri|bite, rougeoy|ante, caress|ante, persist|e, rad|ica, Introdu|ite, incl|uye, predic|aste; max 6.28, density 0.092%, gate-closed echo 92%. Probe: 'brillante et prenante' 0.507 (peak 'ante'), 'chantèrent ... étonnante' 0.306 (peak 'ante', not 'èrent'), 'persiste' 0.144 (peak 'ment'), 'predicaste' 0.142, 'comieron' 0.086, 'incluye' 0.061, 'produit' 0.049, Italian 0.090, English 0.013, floor 0.004. Only the French 'ante' piece carried a clear signal.",
+ "trigger": {
+  "pieces": [
+   "ante"
+  ]
+ }
+}
