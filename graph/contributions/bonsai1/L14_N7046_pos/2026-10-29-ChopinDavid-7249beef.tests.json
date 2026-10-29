@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7249beef",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N7046+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N7046",
+   "pole": "+",
+   "label": "a quantity rising or receding as a wave: a surge, increase or recession of cases, floodwater, demand or an error curve; the same objects at a fixed level, and 'surge protector', stay low",
+   "fire": [
+    "Hospital admissions began to surge again in the second week of January.",
+    "Over the past month the number of infections has started to increase steadily.",
+    "By Thursday the floodwaters had receded enough for the roads to reopen.",
+    "A six-foot storm surge swept across the barrier islands overnight.",
+    "The validation loss kept falling until the twentieth epoch.",
+    "Demand for generators surged after the blackout.",
+    "The tide receded, leaving the boats stranded on the mud.",
+    "Case numbers climbed sharply as the new variant spread."
+   ],
+   "quiet": [
+    "Hospital admissions are recorded on a paper form in January.",
+    "Over the past month the staff have discussed the infection policy.",
+    "By Thursday the roads were open and the shops were busy.",
+    "A six-foot fence runs along the barrier islands.",
+    "The validation script checks the format of each input file.",
+    "The surge protector sat under the desk beside the generator.",
+    "The boats were tied to the pier below the mud flats.",
+    "Case files are stored in the cabinet behind the desk."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.4, so a median near 0.3 and perhaps 4 of 8 above it; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "levels surging and receding",
+ "unit_kind": "meaning",
+ "confidence": 0.35,
+ "notes": "Card: ' validation' x3, ' surge' x3, ' days', ' increase', 'eded' in epidemic counts, storm surge, floodwater receding and ML validation error (max 7.47). Probe: 'beginning to increase' 0.393, 'storm surge' 0.382, 'validation error' 0.307, 'floodwater receded' 0.196, 'last ten days ... has doubled' 0.174; fixed count 0.041, 'surge protector' 0.016, floor 0.041. Direction is clear but the magnitudes are modest."
+}

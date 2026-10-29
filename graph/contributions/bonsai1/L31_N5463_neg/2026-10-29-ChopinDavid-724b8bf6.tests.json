@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-724b8bf6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N5463-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N5463",
+   "pole": "-",
+   "label": "water condensing out of the air: dew, mist, fog, condensation, drizzle and droplets (fires on the word or on the word just before it); flowing or drinking water, smoke and the metaphorical 'driving' stay low",
+   "fire": [
+    "Beads of condensation ran down the inside of the tent.",
+    "By sunrise the grass was heavy with dew.",
+    "Thick fog rolled in from the bay and swallowed the bridge.",
+    "Her breath turned to mist in the frozen air.",
+    "Tiny droplets gathered on the cold pipe and dripped onto the floor.",
+    "The bathroom mirror fogged up as soon as the shower ran.",
+    "Humid air condensed on the chilled bottle within minutes.",
+    "A light drizzle hung over the harbour all morning."
+   ],
+   "quiet": [
+    "Streaks of paint ran down the inside of the tent.",
+    "By sunrise the grass was heavy with fallen leaves.",
+    "Thick smoke rolled in from the bay and swallowed the bridge.",
+    "Her voice turned to a whisper in the frozen air.",
+    "Tiny pebbles gathered on the old pipe and rattled onto the floor.",
+    "The bathroom mirror cracked as soon as the shower ran.",
+    "Warm air circulated around the chilled bottle within minutes.",
+    "A light breeze blew over the harbour all morning."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.9; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dew, mist and condensation",
+ "unit_kind": "meaning",
+ "confidence": 0.6,
+ "notes": "Card: ' cond' x7 (condensation), ' dro' x4 (droplets), ' acid', ' water', ' driving' (rain), 'coldest dew', 'morning dew', 'wreathed in clouds' (max 336); the + pole suppresses ' mist', ' dew', ' fog', ' dro', ' cond'. Probe: 'into tiny droplets' 0.897 (peak ' tiny'), 'morning dew' 0.406, 'fine mist' 0.279, 'Condensation formed' 0.256, 'driving rain' 0.139; river flood 0.002, glass of water 0.004, 'driving ambition' 0.001. Rain itself is left out of both halves."
+}

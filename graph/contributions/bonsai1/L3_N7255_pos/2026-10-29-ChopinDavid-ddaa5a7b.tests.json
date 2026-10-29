@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ddaa5a7b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N7255+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N7255",
+   "pole": "+",
+   "label": "the word 'refrigerator' in any form, including its pieces (refriger|ators, refriger|ated, refriger|ation); other kitchen appliances (freezer, oven, dishwasher, microwave, kettle) stay low",
+   "fire": [
+    "Commercial refrigerators run around the clock in every supermarket.",
+    "The samples must stay refrigerated until the lab opens on Monday.",
+    "Modern refrigeration changed how cities were fed.",
+    "A second-hand refrigerator hummed in the corner of the flat.",
+    "Please refrigerate the sauce after opening the jar.",
+    "The warehouse keeps the vaccines in refrigerated lockers.",
+    "Walk-in refrigerators line the back wall of the restaurant kitchen.",
+    "Without refrigeration, the milk would spoil by evening."
+   ],
+   "quiet": [
+    "Commercial freezers run around the clock in every supermarket.",
+    "The samples must stay frozen until the lab opens on Monday.",
+    "Modern canning changed how cities were fed.",
+    "A second-hand oven hummed in the corner of the flat.",
+    "Please reheat the sauce after opening the jar.",
+    "The warehouse keeps the vaccines in insulated lockers.",
+    "Steel ovens line the back wall of the restaurant kitchen.",
+    "Without a pantry, the milk would spoil by evening."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 (the split forms higher than the whole-token 'refrigerator'); near misses mostly below 0.15, with weak leaks because the pole is broad (5.3% of tokens reach 0.1 of a tiny max 0.22)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'refrigerator' and its pieces",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: ' refriger' x4, 'ators' x2, 'ator' x1 of the top 32, plus 'زان' x4 and ' tablets' x2; max only 0.22, gate-closed echo regime 100%. Probe: refrigerators 0.753 (peak 'ators'), refrigerated 0.592 (' refriger'), refrigerator 0.402 (one token), tablets 0.342, overexc|ited 0.355, carrots 0.184, dishwasher 0.092, microwave 0.016, floor 0.151. A weak layer-3 lexical unit; 'tablets' is a second trigger not in this test.",
+ "trigger": {
+  "words": [
+   "refrigerator",
+   "refrigerators",
+   "refrigerated",
+   "refrigeration",
+   "refrigerate"
+  ]
+ }
+}

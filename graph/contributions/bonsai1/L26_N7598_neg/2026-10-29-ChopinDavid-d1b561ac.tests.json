@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d1b561ac",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N7598-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N7598",
+   "pole": "-",
+   "label": "a passive participle predicated of or modifying a noun: Arabic اسم مفعول (مصممة، مدعومة، مهددة، مكتوبة، مطلوبة), Spanish 'diseñadas para', English 'is meant to'; the active verb of the same root ('صممت الشركة', 'diseñaron', 'means to') stays low",
+   "fire": [
+    "هذه الدورة مصممة للمعلمين الجدد في المدارس الريفية.",
+    "الصيادون في القرية مهددون بفقدان أعمالهم.",
+    "المبادرة مدعومة من ثلاث جامعات أوروبية.",
+    "التعليمات مكتوبة بلغتين على ظهر العلبة.",
+    "الوثائق المطلوبة متاحة على الموقع الرسمي.",
+    "هذا الجهاز مستخدم في معظم المستشفيات الحكومية.",
+    "Las guías están diseñadas para maestros principiantes.",
+    "The second chapter is meant to be read before the lab session."
+   ],
+   "quiet": [
+    "صممت الشركة هذه الدورة للمعلمين الجدد في المدارس الريفية.",
+    "يخشى الصيادون في القرية فقدان أعمالهم.",
+    "تدعم ثلاث جامعات أوروبية هذه المبادرة.",
+    "كتب العمال التعليمات بلغتين على ظهر العلبة.",
+    "طلبت الوزارة الوثائق على الموقع الرسمي.",
+    "تستخدم معظم المستشفيات الحكومية هذا الجهاز.",
+    "Los autores diseñaron las guías para maestros principiantes.",
+    "The teacher means to read the second chapter before the lab session."
+   ]
+  }
+ ],
+ "predictions": "Arabic items 0.3-0.6, Spanish 0.2-0.3, English 'is meant to' 0.3; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "passive participle (Arabic اسم مفعول and kin)",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: Arabic passive participles المصممة, المدعومة, مهددة, مضرة, المنتخبة, مشكوك, مصمم, المكون plus 'is meant to be used' and Spanish 'diseñada' (max 57). Probe: مصمم 0.593, مهددة 0.592, مضر 0.513, المنتخبة 0.293, 'is meant to' 0.327, 'diseñado para' 0.236; active صمم 0.084, ذهب -0.003, English active 'designed the course' 0.002. The participle, not the root, carries it."
+}

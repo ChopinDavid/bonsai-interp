@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d9024931",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5693-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N5693",
+   "pole": "-",
+   "label": "' at' that does not open a place or time phrase: the idioms 'at least', 'at all', 'at once', 'at odds', 'at first' and ' at' as the first piece of a word (at|rocity, at|one, at|ypical); 'at the door', 'at six', 'at the coast' stay low",
+   "fire": [
+    "You could at least have phoned to say you were late.",
+    "The plan was not at all what the committee expected.",
+    "When the alarm sounded they left at once.",
+    "His account is at odds with the police report.",
+    "The film was at first dismissed as a curiosity.",
+    "She never managed to atone for the broken promise.",
+    "The result was atypical for a cold season.",
+    "We should at least try the cheaper option before giving up."
+   ],
+   "quiet": [
+    "You could have phoned at six to say you were late.",
+    "The plan was presented at the committee meeting.",
+    "When the alarm sounded they were still at the table.",
+    "His account was filed at the police station.",
+    "The film was first shown at a small festival.",
+    "She left the broken vase at the door.",
+    "The season was cold at the coast and mild inland.",
+    "We should try the cheaper option at the shop before giving up."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.55 at ' at'; near misses below 0.02",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "non-locative ' at'",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: ' at' x32 of the top 32, every one in 'at least', 'at all', 'at once', 'at odds' or at|rocity, at|one after to/not/them/from/by (max 398); the + pole peaks on 'ات', ' AT', ' At'. Probe: 'not at all' 0.536, 'to atone' 0.393, 'at once' 0.387, 'from atrocity' 0.363, 'to at least' 0.357, 'at odds' 0.239; 'at the station at noon' 0.006, 'at home' 0.002, 'looked at' 0.001. 'at first' and at|ypical extend the probed set.",
+ "trigger": {
+  "tokens": [
+   " at"
+  ]
+ }
+}

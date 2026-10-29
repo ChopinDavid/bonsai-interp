@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9bcfa124",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N6661-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N6661",
+   "pole": "-",
+   "label": "'never' in the idiom 'you never know' (the pole predicts 'know'); 'never' with other verbs ('you never listen') and 'you know' without 'never' stay low",
+   "fire": [
+    "Pack a torch as well, because you never know when the power will go.",
+    "Keep your old notes; you never know when a question will come back.",
+    "With a toddler in the house you never know what the day will bring.",
+    "Say hello to the neighbours, you never know who might help you later.",
+    "I always carry cash, since you never know if the card machine works.",
+    "Learn a few words of the language, as you never know who you will meet.",
+    "Hold on to the spare key because you never know.",
+    "Dress warmly, you never know how cold the hall will be."
+   ],
+   "quiet": [
+    "Pack a torch as well, because you never listen when I warn you.",
+    "Keep your old notes; you never read them anyway.",
+    "With a toddler in the house you never sit down for long.",
+    "Say hello to the neighbours, you know they like a chat.",
+    "I always carry cash, since you never told me the machine was fixed.",
+    "Learn a few words of the language, as you know they will appreciate it.",
+    "Hold on to the spare key because you never remember the code.",
+    "Dress warmly, you know how cold the hall gets."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 at ' never'; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'never' in 'you never know'",
+ "unit_kind": "context",
+ "confidence": 0.7,
+ "notes": "Card: ' never' x14 of the top 32, almost all in 'you never know', plus ' you'/' You' x7, 'Never say never', French ' jamais' (max 480); the + pole suppresses ' unpredictable', ' predict'. Probe: 'you never know when' 0.822, 'You just never know' 0.413, 'We never know' 0.202, 'on ne sait jamais' 0.176, 'Never say never' 0.140; 'I never liked' 0.012, 'never been' 0.003, 'You know, it might rain' 0.034.",
+ "trigger": {
+  "tokens": [
+   " never"
+  ]
+ }
+}

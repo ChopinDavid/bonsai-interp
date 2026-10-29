@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a9afe1f9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N543+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N543",
+   "pole": "+",
+   "label": "the token before the name of an academic discipline or technical field, predicting it ('Department of', 'Faculty of', 'Journal of Applied', 'Professor of', 'Introduction to'); 'of' before ordinary nouns ('a bunch of keys', 'captain of the team') stays low",
+   "fire": [
+    "She chairs the Department of Chemical Engineering at the university.",
+    "He studied at the Faculty of Veterinary Medicine in Vienna.",
+    "The results were published in the Journal of Applied Physics.",
+    "She holds a Master of Science in Marine Biology.",
+    "The course is listed as Introduction to Computational Linguistics.",
+    "He was appointed Professor of Ancient History in 1998.",
+    "The Institute of Theoretical Physics hosted the workshop.",
+    "Her textbook, Principles of Organic Chemistry, is still in print."
+   ],
+   "quiet": [
+    "She chairs the meeting of the parents' committee at the school.",
+    "He studied the paintings in the gallery of the old palace.",
+    "The results were published in the newsletter of the village club.",
+    "She holds a bunch of keys in her left hand.",
+    "The course is listed as a walk through the old town.",
+    "He was appointed captain of the team in 1998.",
+    "The owners of the building hosted the party.",
+    "Her novel, the story of a lighthouse keeper, is still in print."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.55 at the 'of'/'Applied'/'to' token; near misses below 0.05, except titles that may leak around 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts an academic field name",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' of' x6, 'Application' x3, ' Applied' x2, ' Clinical', ' Generation' before Electrocardiography, Microbiology, Mathematics, Capitalism, Quantity Surveying, Multimedia (max 298, last layer); the - pole suppresses ' math', ' physical', ' literary'. Probe: 'Industrial and Applied' 0.536, 'Department of' 0.423, 'Introduction to' 0.378, 'Journal of Clinical' 0.361, 'Bachelor of' 0.343; 'Birth of a Nation' 0.199, 'head of' 0.002, 'cup of' 0.002."
+}

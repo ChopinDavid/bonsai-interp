@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f0e275c7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N1598+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N1598",
+   "pole": "+",
+   "label": "'possible' completing the adverbial 'whenever / wherever / where / if possible'; 'possible' as a predicate ('it is possible that') and the same advice with 'when you can' stay low",
+   "fire": [
+    "Take the stairs whenever possible and skip the lift.",
+    "The forms should be filed electronically wherever possible.",
+    "Use recycled paper where possible for internal memos.",
+    "Patients should walk daily whenever possible after surgery.",
+    "Keep receipts for every purchase if possible.",
+    "Translate the labels into both languages wherever possible.",
+    "We source our vegetables locally whenever possible.",
+    "Avoid peak-hour trains where possible to save money."
+   ],
+   "quiet": [
+    "Take the stairs when you can and skip the lift.",
+    "The forms should be filed electronically from now on.",
+    "Use recycled paper as a rule for internal memos.",
+    "Patients should walk daily as soon as they are able after surgery.",
+    "Keep receipts for every purchase you make.",
+    "It is possible that the labels will need both languages.",
+    "We source our vegetables locally whenever we can.",
+    "Avoid peak-hour trains if you want to save money."
+   ]
+  }
+ ],
+ "predictions": "'whenever/wherever possible' 0.6-0.9, 'where possible' and 'if possible' 0.3-0.6; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'possible' in 'whenever possible'",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: ' [' x6, ' possible' x3 ('whenever possible'), ' word', ' to', 'am' in a broad weak pole (max 2.16, echo regime 75%). Probe: 'whenever possible' 0.958 and 0.778, 'relatively [low]' 0.621, 'as specified' 0.229, '500 word' 0.221; 'when you can' 0.149, 'according to' 0.035, 'possible that' 0.050. The bracket trigger (' [' of an inline insertion) is real but not tested here; 'where/if possible' extend the probed frame.",
+ "trigger": {
+  "tokens": [
+   " possible",
+   " ["
+  ]
+ }
+}

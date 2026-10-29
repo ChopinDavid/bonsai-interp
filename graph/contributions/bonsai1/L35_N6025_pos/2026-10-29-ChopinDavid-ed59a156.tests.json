@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ed59a156",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N6025+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N6025",
+   "pole": "+",
+   "label": "the word-initial pieces ' ré', ' rés', ' aff' and ' tor' when the word is split after them (ré|union, ré|duire, rés|idents, aff|iché, tor|o, tor|re): a last-layer unit predicting the rest of the word; whole-token words and words split after other pieces (garant|issons, off|res, habit|ants, sé|ance) stay low",
+   "fire": [
+    "Le conseil tiendra une réunion lundi matin.",
+    "Il faut réduire les dépenses du ménage.",
+    "Les résidents du quartier ont signé la pétition.",
+    "Elle a envoyé son résumé à trois entreprises.",
+    "Le plombier est venu réparer la fuite.",
+    "Ils ont affiché les horaires devant la gare.",
+    "El toro embistió contra la barrera.",
+    "La torre del castillo domina el valle."
+   ],
+   "quiet": [
+    "Le conseil tiendra une séance lundi matin.",
+    "Il faut baisser les dépenses du ménage.",
+    "Les habitants du quartier ont signé la pétition.",
+    "Elle a envoyé son dossier à trois entreprises.",
+    "Le plombier est venu voir la fuite.",
+    "Ils ont montré les horaires devant la gare.",
+    "El perro corrió hacia la barrera.",
+    "La casa del pueblo domina el valle."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6, uneven (the probe's 'off|res' scored only 0.080); near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-initial ' ré' / ' rés' / ' aff' / ' tor'",
+ "unit_kind": "token",
+ "confidence": 0.4,
+ "notes": "Card: ' ré' x5 (réductions), ' tor' x3 (torneos), 'RI' x3, 'se' x2 (renseignements), '(re', 'its' (Zeitschriften), ' aff' (affaires), ' rés' (réservations) (max 150, last layer). Probe: torneos 0.569 (' tor'), affaires 0.488 (' aff'), réductions 0.430 (' ré'), réservations 0.321 (' rés'), Zeitschriften 0.216 ('its'); whole-token résultats 0.064, réponse 0.015, and the two-piece ' off|res' only 0.080, so not every split word fires. The probe's 'garantissons' (split) sentences scored 0.064-0.080, so splitting as such does not fire; the test keeps to the probed pieces ' ré', ' rés', ' aff', ' tor', and the near misses use other split and whole words.",
+ "trigger": {
+  "tokens": [
+   " ré",
+   " rés",
+   " aff",
+   " tor"
+  ]
+ }
+}

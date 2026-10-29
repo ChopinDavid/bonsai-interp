@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c4bd1027",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N8766-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T17:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N8766",
+   "pole": "-",
+   "label": "a single letter of the alphabet named as a letter, in quotes or brackets ('the letter \"M\"', 'avec un grand V', '[Dd]efault'), and more weakly the first character of an opaque URL slug; a quoted whole word in the same frame stays low",
+   "fire": [
+    "Today's sound is the letter \"S\", so find three things that start with it.",
+    "Everything in the box must begin with \"T\" this week.",
+    "Il écrit toujours Liberté avec un grand L.",
+    "The regex r\"[Cc]olou?r\" accepts both spellings.",
+    "The children sorted their toys by the letter \"P\" on the label.",
+    "Her middle initial is \"K\", but nobody knows what it stands for.",
+    "Cross out every \"e\" in the paragraph before you hand it in.",
+    "In this cipher the letter \"Q\" is replaced by a number."
+   ],
+   "quiet": [
+    "Today's sound is the word \"sun\", so find three things like it.",
+    "Everything in the box must begin with \"the\" this week.",
+    "Il écrit toujours Liberté avec une majuscule.",
+    "The regex r\"colou?r\" accepts both spellings.",
+    "The children sorted their toys by the colour on the label.",
+    "Her middle name is \"Kate\", but nobody uses it.",
+    "Cross out every \"very\" in the paragraph before you hand it in.",
+    "In this cipher the word \"queen\" is replaced by a number."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 at the quoted letter; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "a letter named as a letter",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: '/A', 'A', '/b', '/r', 'D', 'O', '7', ' V', 'B', 'g' in URL slugs, quoted letters, a regex class and 'avec un grand V' (max 42). Probe: 'letter of the week will be \"M\"' 0.772, '[Dd]efault' 0.398, 'like \"A\" or \"B\"' 0.392, 'avec un grand V' 0.233, slug /qbx12 0.225; readable slug 0.006, quoted word \"maple\" 0.008, floor 0.006. The slug reading is weaker and is not in the fire items."
+}
