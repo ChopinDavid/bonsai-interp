@@ -1035,11 +1035,23 @@ compose@8 tested the next 8,000 one-part covers of compose@7's queue. **6,353 of
 ## 2026-10-28: The end of the one-part queue, and precision predicts a hold (compose@9)
 
 compose@9 tested every one-part cover left in the queue. **8,958 of 29,044 poles were assigned** (1 of 29,031 placebo
-tests held), which brings the assignment-grade total to about 29,360 (3.3% of 884,736 poles).
+tests held), which brings the assignment-grade total to 29,334 (3.3% of 884,736 poles).
 
 - **The hold rate falls down the ranking,** from 67% in the first 5,000 to 7% in the last 5,000.
 - **Selection precision predicts it:** 11% held at a precision of 0.1–0.2, 29% at 0.2–0.3, 51% at 0.3–0.5 and 70% at
   0.5 or more.
 - **compose@7–9 assigned 18,974 poles, 18,718 of them by a single word set,** most of which no earlier pass had tested.
 - **Layers 12–17:** 61 assigned of 490 tested. They remain the dark band.
+
+## 2026-10-28: The previous token completes the cover (compose@10)
+
+compose@10 tested pair covers: the pole fires on a few (previous token, token) pairs, against the same token after
+another token and the same previous token before another. **7,023 of 9,588 poles were assigned** (0 of 9,586 placebo
+tests held), which brings the assignment-grade total to about 36,360 (4.1% of 884,736 poles).
+
+- **2,505 of them had failed an earlier cover round:** adding the previous token rescued them.
+- **Words split across tokens make up much of the gain.** Where the read token is a word-internal piece, 1,844 of
+  2,226 held (" sne|aky", " mon|ologue").
+- **Layers 6–11 gave 2,679 poles** and layers 12–17 gave 92, the most any round has found there.
+- **Precision predicts the hold again:** 46% at 0.3–0.5, 88% above 1.
 

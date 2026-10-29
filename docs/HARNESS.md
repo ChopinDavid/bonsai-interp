@@ -160,6 +160,7 @@ placebos, a held-out 8 + 8, and the 50% coverage rule.
 | compose@7 (docs/COMPOSE.md) | union covers: one part, or two parts with distinct triggers, each part tested | 3,663 of 5,518 poles assigned; 3,616 are one-part word sets, mostly L0–5 token detectors no pass had tested |
 | compose@8 (docs/COMPOSE.md) | compose@7's covers, one-part only, on the next 8,000 poles of the queue | 6,353 of 7,215 assigned; word sets in L0–5 and word-initial pieces in L21–29 |
 | compose@9 (docs/COMPOSE.md) | compose@8 on every remaining one-part cover | 8,958 of 29,044 assigned; the hold rate tracks selection precision (11% at 0.1–0.2, 70% at ≥ 0.5) |
+| compose@10 (docs/COMPOSE.md) | pair covers: (previous token, token) pairs against the same token after another token and the same previous token before another | 7,023 of 9,588 assigned (73%); multi-token words, L6–11 strongest after L0–5; 92 in L12–17 |
 
 All of it is in the atlas: lib_* columns (the best test per pole across passes, its coverage, every condition held) and
 census_flags. It shows on `play card`, `play search --kind …` and the map.
