@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bf3b244c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N10173-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N10173",
+   "pole": "-",
+   "label": "the line break that ends one declaration line in a Python list of declarations (a Django/SQLAlchemy model field, a numpy-docstring parameter), just before the next aligned entry; line breaks inside ordinary function bodies and prose stay low",
+   "fire": [
+    "class Order(models.Model):\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    created = models.DateTimeField(auto_now_add=True)\n    total = models.DecimalField(max_digits=8, decimal_places=2)",
+    "class User(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    email = db.Column(db.String(120), unique=True)\n    name = db.Column(db.String(80))",
+    "def fit(X, y):\n    \"\"\"\n    Parameters\n    ----------\n    X : ndarray\n        Training samples.\n    y : ndarray\n        Target labels.\n    \"\"\"",
+    "class Song(models.Model):\n    title = models.CharField(max_length=150)\n    artist = models.CharField(max_length=100)\n    length = models.IntegerField(default=0)",
+    "class Post(Base):\n    __tablename__ = 'posts'\n    id = Column(Integer, primary_key=True)\n    body = Column(Text, nullable=False)\n    author_id = Column(Integer, ForeignKey('users.id'))",
+    "def resample(signal, rate):\n    \"\"\"\n    Parameters\n    ----------\n    signal : array\n        The input signal.\n    rate : int\n        The new sample rate.\n    \"\"\"",
+    "class Invoice(models.Model):\n    number = models.CharField(max_length=20, unique=True)\n    issued = models.DateField()\n    paid = models.BooleanField(default=False)",
+    "class Event(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    title = db.Column(db.String(200))\n    date = db.Column(db.DateTime)"
+   ],
+   "quiet": [
+    "def order_total(items):\n    subtotal = sum(i.price for i in items)\n    tax = subtotal * 0.2\n    return subtotal + tax",
+    "def greet(name):\n    message = 'Hello, ' + name\n    print(message)\n    return message",
+    "values = load_data()\nvalues.sort()\nmid = len(values) // 2\nprint(values[mid])",
+    "for song in playlist:\n    print(song.title)\n    count += 1\nprint(count)",
+    "while queue:\n    node = queue.pop(0)\n    seen.add(node)\n    queue.extend(graph[node])",
+    "The invoice was sent on Monday.\nThe client paid on Friday.\nWe closed the account at the end of the month.",
+    "if total > limit:\n    warn('over budget')\n    total = limit\nreport(total)",
+    "x = 0\nfor n in range(5):\n    x = x + n\nprint(x)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on ')\\n' or '\\n   ' between model fields or docstring parameters; procedural code and prose below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "line end inside a field/parameter declaration list",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ')\\n' after model fields (CASCADE) 19.88, docstring parameter lines 12.25, 11.94, db.Column lines 10.69. Probe: Django model 0.316, numpy docstring parameters 0.241; function body 0.047, for loop 0.071, dict() keyword lines 0.090, prose recipe 0.019."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ab7f0bee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N502-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N502",
+   "pole": "-",
+   "label": "how living things grow and reproduce in natural-history prose: the verbs and linkers describing plants or microbes forming clumps, dividing, sprouting, dispersing seed, or being pruned while dormant; the same sentence frames about offices, meetings and machines stay low",
+   "fire": [
+    "The willow spreads along the stream by sending up suckers and forms dense thickets.",
+    "Thrushes swallow the fruit and scatter the seeds far from the parent tree.",
+    "Cut the roses back in late winter when the plants are still dormant.",
+    "Yeast cells reproduce by budding and soon form a thick layer in the jar.",
+    "The fern forms new plants from runners that root wherever they touch the soil.",
+    "In spring, fresh shoots emerge from the base of last year's stems.",
+    "The algae divide rapidly into new cells when the water warms up.",
+    "Oaks are usually grown from acorns gathered in the autumn."
+   ],
+   "quiet": [
+    "The committee meets in late winter when the office is still quiet.",
+    "Volunteers hand out the leaflets far from the town hall every Saturday.",
+    "The printer jams whenever the paper tray is filled too high.",
+    "The bakery opens early and soon has a long queue at the door.",
+    "The bus leaves from the station and stops wherever passengers ask.",
+    "In spring, the shop puts new bicycles in the front window.",
+    "The orchestra rehearses twice a week when the hall is free.",
+    "Our chairs are usually made from pine bought in the autumn."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0 on the process verb or linker (forms, into, when, the); office/machine frames below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "growth/propagation of organisms",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: 'when the bush is dormant' 27.88, 'disperse the seeds' 25.88, 'forms large clumps' 25.38, 'dividing into newer generations' 23.62, 'grown from seeds'. Broad (1.2%). Probe: 'when the bush is dormant' 0.975 vs 'when the office is quiet' 0.189; 'forms large clumps' 0.949; 'divide into newer generations' 0.749; 'disperse the seeds' 0.603; but 'company ... forms large networks of stores' 0.584, so business frames that borrow growth verbs leak; near misses avoid growth verbs."
+}

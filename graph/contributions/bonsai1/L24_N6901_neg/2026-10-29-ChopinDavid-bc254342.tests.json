@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bc254342",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N6901-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N6901",
+   "pole": "-",
+   "label": "a digit token continuing a multi-digit number or alphanumeric designation (model codes like '6ET40', amounts like '4500'); the same sentences with the quantity written in words or without the code stay low",
+   "fire": [
+    "The regiment's tanks were fitted with a 2A70 cannon and a 9M117 missile launcher.",
+    "Last year the charity raised 3800 pounds from the bake sale alone.",
+    "The engine bay holds a turbocharged 4G63 unit from the late nineties.",
+    "My grandfather bought the farm in 1954 for a few thousand dollars.",
+    "Replace the filter with part 7700 from the service kit.",
+    "The stadium seats about 62000 fans on match days.",
+    "The aircraft used a pair of RD-33 engines and an N019 radar.",
+    "She ordered 2400 bricks to finish the garden wall."
+   ],
+   "quiet": [
+    "The regiment's tanks were fitted with a large cannon and a guided missile launcher.",
+    "Last year the charity raised a lot of money from the bake sale alone.",
+    "The engine bay holds a turbocharged unit from the late nineties.",
+    "My grandfather bought the farm after the war for very little money.",
+    "Replace the filter with the spare one from the service kit.",
+    "The stadium is packed with thousands of fans on match days.",
+    "The aircraft used a pair of powerful engines and a modern radar.",
+    "She ordered a pallet of bricks to finish the garden wall."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.4 on a later digit of a code or multi-digit number; word-only rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digit inside a multi-digit code or number",
+ "unit_kind": "token/lexical",
+ "confidence": 0.3,
+ "notes": "Card: '4' in '6ETs40' 26.25, '0' in '000000000' and '1/1000', '0' in 'master-1970'; broad (1.3% of tokens). Probe: '6ET40 autoloader' 0.419, 'paid 4500 dollars' 0.210, 'room forty' 0.153 (a number word still fires a little), '1/1000' 0.070, '88A4F0C2' 0.089, 'at 10' 0.014, salad 0.006. Weak and broad; a guess at the level of digits in long numbers."
+}

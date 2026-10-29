@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-30bb4393",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N6329-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N6329",
+   "pole": "-",
+   "label": "the position just before a term for part of the self in psychological or spiritual discussion (' the' before ego / body / mind / super-ego), where the model expects 'ego'-like words; the same 'between X and the Y' frames about everyday objects stay low",
+   "fire": [
+    "Psychoanalysts speak of a struggle between the id and the ego in every person.",
+    "The yogi teaches that we must stop identifying with the body to find freedom.",
+    "In Freud's model, guilt comes from the superego judging the ego.",
+    "Meditation slowly loosens our attachment to the mind and its stories.",
+    "The therapist explained how the ego defends itself against anxiety.",
+    "Buddhist teachers say suffering comes from clinging to the self.",
+    "According to the Upanishads, the true self is not the body but pure awareness.",
+    "Freud believed the conscious mind is only a small part of the psyche."
+   ],
+   "quiet": [
+    "The children ran back and forth between the house and the barn all day.",
+    "The mechanic teaches that we must stop ignoring the brakes to stay safe.",
+    "In the old model, the gears turn the shaft and the shaft turns the wheel.",
+    "Rust slowly loosens the grip of the bolts on the old engine.",
+    "The guide explained how the castle defended itself against attack.",
+    "Climbing teachers say falls come from clinging to the rock too tightly.",
+    "According to the manual, the main switch is not on the box but on the wall.",
+    "The engineer believed the cooling fan was only a small part of the problem."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0 on ' the' (or the word) before a self/psyche term; everyday object frames below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot before an ego/self term",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' the' before super-ego 442, 'Super'conscious 420, 'identification with the body' 366, 'eg'ocentric, Russian 'эго'; + pole suppresses ' ego',' alter',' conscious', so the - pole predicts them. Probe: 'between the id and the super-ego' 1.021, 'identification with the body and the mind' 0.538, 'inflated ego' 0.216, 'identical with Brahman' 0.204; 'collective unconscious' 0.029, 'between the house and the garage' 0.002."
+}

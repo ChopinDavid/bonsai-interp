@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-ab7f0bee",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N502-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T15:27:41+00:00",
+ "recipe": {
+  "toolchain_commit": "e5909ca6",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N502_neg/2026-10-29-ChopinDavid-ab7f0bee.tests.json"
+ },
+ "label": "how living things grow and reproduce in natural-history prose: the verbs and linkers describing plants or microbes forming clumps, dividing, sprouting, dispersing seed, or being pruned while dormant; the same sentence frames about offices, meetings and machines stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N502_neg/2026-10-29-ChopinDavid-ab7f0bee.tests.json",
+   "prereg_commit": "e5909ca6",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.855,
+     "peak": " forms"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.635,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.61,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.695,
+     "peak": " form"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.474,
+     "peak": " new"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.187,
+     "peak": " fresh"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.729,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.909,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.331,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.147,
+     "peak": "Vol"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " high"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.121,
+     "peak": " early"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.128,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.059,
+     "peak": " free"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.091,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.665,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e5909ca6",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "growth/propagation of organisms",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: 'when the bush is dormant' 27.88, 'disperse the seeds' 25.88, 'forms large clumps' 25.38, 'dividing into newer generations' 23.62, 'grown from seeds'. Broad (1.2%). Probe: 'when the bush is dormant' 0.975 vs 'when the office is quiet' 0.189; 'forms large clumps' 0.949; 'divide into newer generations' 0.749; 'disperse the seeds' 0.603; but 'company ... forms large networks of stores' 0.584, so business frames that borrow growth verbs leak; near misses avoid growth verbs.",
+ "selection": "random draw"
+}

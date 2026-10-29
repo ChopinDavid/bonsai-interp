@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-bf3b244c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N10173-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T15:27:04+00:00",
+ "recipe": {
+  "toolchain_commit": "e5909ca6",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L10_N10173_neg/2026-10-29-ChopinDavid-bf3b244c.tests.json"
+ },
+ "label": "the line break that ends one declaration line in a Python list of declarations (a Django/SQLAlchemy model field, a numpy-docstring parameter), just before the next aligned entry; line breaks inside ordinary function bodies and prose stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N10173_neg/2026-10-29-ChopinDavid-bf3b244c.tests.json",
+   "prereg_commit": "e5909ca6",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.347,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.322,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.362,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.291,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.306,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.342,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.332,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.35,
+     "peak": ")\n"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.059,
+     "peak": "(name"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.063,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " count"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.211,
+     "peak": ")\n"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.018,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": "over"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.091,
+     "peak": "):\n"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.337,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e5909ca6",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "line end inside a field/parameter declaration list",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ')\\n' after model fields (CASCADE) 19.88, docstring parameter lines 12.25, 11.94, db.Column lines 10.69. Probe: Django model 0.316, numpy docstring parameters 0.241; function body 0.047, for loop 0.071, dict() keyword lines 0.090, prose recipe 0.019.",
+ "selection": "random draw"
+}

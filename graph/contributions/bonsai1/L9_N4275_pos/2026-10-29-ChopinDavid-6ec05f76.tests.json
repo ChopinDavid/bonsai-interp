@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6ec05f76",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N4275+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N4275",
+   "pole": "+",
+   "label": "the (last piece of an) old-fashioned American male first name (Clyde, El|mer, Mill|ard, Will|ard, Wil|bur, Ot|is) used as a given name; modern first names in the same frame and the same pieces in ordinary words or street names stay low",
+   "fire": [
+    "The farm was run for forty years by my great-uncle Elmer and his wife.",
+    "Our town's first sheriff was a tall man called Clyde Mercer.",
+    "Grandpa Willard kept bees behind the barn until he was ninety.",
+    "The general store was owned by Otis Hale and his two sons.",
+    "In 1923 Wilbur Grant opened the first garage in the county.",
+    "The old photograph shows Delbert and his brothers on the porch.",
+    "A quiet carpenter named Elmer built most of the houses on our street.",
+    "The church records list Millard Pike as the first pastor."
+   ],
+   "quiet": [
+    "The farm was run for forty years by my great-uncle Kevin and his wife.",
+    "Our town's first sheriff was a tall man called Jason Mercer.",
+    "Grandpa kept bees behind the barn until he was ninety.",
+    "The general store was owned by a local family and their two sons.",
+    "In 1923 the Grant family opened the first garage in the county.",
+    "The old photograph shows Brandon and his brothers on the porch.",
+    "A quiet carpenter named Tyler built most of the houses on our street.",
+    "The church records list a standard fee for weddings and funerals."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on the name or its final piece; modern names and non-name uses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "old-fashioned American male first name",
+ "unit_kind": "token/lexical",
+ "confidence": 0.65,
+ "notes": "Card: W. ' Clyde' Lockhart 31.12, 'El|mer' Doeing 26.38, 'Mill|ard' Fillmore 22.12, 'Will|ard' 19.38, 'Ot|is' Armstrong 18.62. Probe: Clyde 0.946, Elmer 0.699, Willard 0.579, Wilbur 0.416, Millard 0.408; 'named Kevin' 0.013, 'The standard toll' 0.007, 'Fillmore Street' 0.007."
+}

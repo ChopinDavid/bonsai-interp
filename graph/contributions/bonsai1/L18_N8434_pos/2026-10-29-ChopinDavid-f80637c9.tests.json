@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f80637c9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N8434+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N8434",
+   "pole": "+",
+   "label": "guess: the break between a web page's metadata or header line (poster, date, site name, signature) and the start of its content; ordinary narrative sentences stay low",
+   "fire": [
+    "Re: garden fence question\nPosted by: oldgardener on 03-12-2009, 09:15 AM\nI used cedar posts and they lasted twenty years.",
+    "Home | Products | Contact\nWelcome to our online shop for handmade candles.",
+    "Best regards,\nTom Becker\nSales Manager\n\nHi Tom,\nThanks for the quick reply.",
+    "Archive for June 2012\nThe summer fair was the biggest we have ever had.",
+    "Fishing Gear | Shop Online\nBrowse our wide range of rods and reels.",
+    "Submitted by kate_r on Fri, 11/02/2012 - 14:33\nDoes anyone know a good plumber in town?",
+    "<< April 2014 >>\nNo events are planned for this month.",
+    "Reply #4 on: May 02, 2011, 10:21:45 PM\nI had the same problem with my printer."
+   ],
+   "quiet": [
+    "The old gardener told us that he used cedar posts and they lasted twenty years.",
+    "We walked into a small shop in town that sells handmade candles.",
+    "Tom wrote back within an hour, and I thanked him for the quick reply.",
+    "Last summer the village fair was the biggest we have ever had.",
+    "My uncle keeps his fishing rods and reels in the garden shed.",
+    "Kate asked her neighbours whether anyone knew a good plumber in town.",
+    "Nothing much happened in April, so we stayed home and read.",
+    "My brother said he had the same problem with his printer last week."
+   ]
+  }
+ ],
+ "predictions": "weak; maybe 0.05-0.2 on the line break or separator after a header; narrative below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess: web header/content boundary",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: scattered peaks: '\\015\\012' after an email signature 14.38, '<< March 2011 >>' 11.94, newline after a forum timestamp 10.25, '| eBay' 9.31, 'Posted by: scupperfrank'. Probe: nothing fired, all eight under 0.011 (forum post line 0.009, eBay header 0.000, signature 0.008). The trigger is not found; this test is a low-confidence guess."
+}

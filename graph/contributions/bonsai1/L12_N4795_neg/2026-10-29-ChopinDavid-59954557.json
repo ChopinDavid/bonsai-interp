@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-59954557",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N4795-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T15:26:42+00:00",
+ "recipe": {
+  "toolchain_commit": "e5909ca6",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N4795_neg/2026-10-29-ChopinDavid-59954557.tests.json"
+ },
+ "label": "infectious disease as a cause or threat in health text: 'viral', 'disease(s)', 'fungal' and the 'to'/'by'/'from' linking a harm to a pathogen; the same cause/protect frames with non-biological causes (corrosion, snow) stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N4795_neg/2026-10-29-ChopinDavid-59954557.tests.json",
+   "prereg_commit": "e5909ca6",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.609,
+     "peak": " bacterial"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.547,
+     "peak": " diseases"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.635,
+     "peak": " fungal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.196,
+     "peak": " disease"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.378,
+     "peak": " viral"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.778,
+     "peak": " disease"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.337,
+     "peak": " viral"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.284,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.096,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.069,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.249,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.139,
+     "peak": "otes"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": "itory"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.116,
+     "peak": " herd"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": " swept"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.07,
+     "peak": "attle"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.463,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e5909ca6",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "disease/pathogen as cause",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: 'due to' (respiratory infection) 7.28, 'diseases' in lawn health 6.09, 'viral' 5.84, 'control disease outbreaks' 5.78, 'caused by' a fungus 5.72. Probe: 'due to a viral infection' 0.827, 'insects, diseases and compacted soil' 0.677, 'sign of fungal disease' 0.534, 'protect them from disease' 0.426, 'caused by viruses' 0.243; 'caused by corrosion' 0.034, 'due to heavy snow' 0.007.",
+ "selection": "random draw"
+}

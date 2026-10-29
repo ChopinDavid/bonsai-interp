@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1755f91c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N10688-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N10688",
+   "pole": "-",
+   "label": "freeing someone so they can devote their effort or attention to a goal: the 'on' after focus/concentrate and the 'can'/'to' that hands the freed effort over ('so you can concentrate on', 'focus your efforts on'); 'focus' as a camera term or topic and plain spending stay low",
+   "fire": [
+    "Our accountants handle the taxes so you can concentrate on running your shop.",
+    "The new software frees nurses to focus on caring for their patients.",
+    "Hiring a cleaner lets you focus your energy on your family.",
+    "We take care of the travel details so the team can focus on the conference.",
+    "Outsourcing the deliveries allowed the bakers to concentrate on baking.",
+    "With the chores done, she could finally focus on her thesis.",
+    "Let us manage your website so you can focus on your customers.",
+    "Automatic billing leaves our staff free to concentrate on the members."
+   ],
+   "quiet": [
+    "The camera struggled to focus in the dim light of the restaurant.",
+    "The main focus of the article is the history of the town.",
+    "He spent his savings on a used car and a new guitar.",
+    "The nurse adjusted the microscope until the cells were in focus.",
+    "Our accountants sent the tax forms to the shop on Monday.",
+    "The new software was installed on every computer in the ward.",
+    "She bought a cleaner for the kitchen floor last week.",
+    "The bakers delivered the bread to three cafes before dawn."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9 on 'on'/'can'/'to' in a freeing-to-focus clause; optical or topic 'focus' and money spending below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "freed to focus effort on a goal",
+ "unit_kind": "context",
+ "confidence": 0.65,
+ "notes": "Card: 'focus your efforts on' 67, 'able to focus', 'use your energy to focus', 'se concentrer sur' 54, 'spend your time building', 'leaves you to grow your business'. Probe: 'so you can concentrate on the event' 0.903, 'focus your efforts on growing' 0.780, 'focus more on creativity' 0.728, 'spend your time building' 0.201; camera 'came into focus' 0.007, 'focus of the report' 0.008, 'spent the money on a bicycle' 0.004."
+}

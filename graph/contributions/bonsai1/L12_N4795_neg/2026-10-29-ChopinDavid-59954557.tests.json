@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-59954557",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N4795-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N4795",
+   "pole": "-",
+   "label": "infectious disease as a cause or threat in health text: 'viral', 'disease(s)', 'fungal' and the 'to'/'by'/'from' linking a harm to a pathogen; the same cause/protect frames with non-biological causes (corrosion, snow) stay low",
+   "fire": [
+    "The sudden die-off of the oak trees was due to a bacterial infection in the roots.",
+    "Gardeners should watch their roses for pests, diseases and poor drainage.",
+    "Brown patches on the cucumber vines are usually a symptom of fungal disease.",
+    "Ranchers vaccinate their calves each spring to shield them from disease.",
+    "The cough that spread through the dormitory was probably viral.",
+    "Wildlife officers culled the herd to stop the disease outbreak from spreading.",
+    "Many of the chickens died after a viral illness swept through the barn.",
+    "The doctor said her fever was caused by an infection in the lungs."
+   ],
+   "quiet": [
+    "The sudden fall of the old oak trees was due to strong winds in the night.",
+    "Gardeners should watch their roses for frost, drought and poor drainage.",
+    "Brown patches on the cucumber vines are usually a symptom of too much sun.",
+    "Ranchers fence in their calves each spring to shield them from coyotes.",
+    "The noise that spread through the dormitory was probably the fire alarm.",
+    "Wildlife officers moved the herd to stop the river flooding from trapping it.",
+    "Many of the chickens died after a heat wave swept through the barn.",
+    "The mechanic said the rattle was caused by a loose bolt in the exhaust."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on the disease word or the linker before it; non-biological causes below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "disease/pathogen as cause",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: 'due to' (respiratory infection) 7.28, 'diseases' in lawn health 6.09, 'viral' 5.84, 'control disease outbreaks' 5.78, 'caused by' a fungus 5.72. Probe: 'due to a viral infection' 0.827, 'insects, diseases and compacted soil' 0.677, 'sign of fungal disease' 0.534, 'protect them from disease' 0.426, 'caused by viruses' 0.243; 'caused by corrosion' 0.034, 'due to heavy snow' 0.007."
+}

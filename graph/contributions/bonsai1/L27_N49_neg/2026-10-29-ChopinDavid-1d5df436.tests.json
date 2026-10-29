@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1d5df436",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N49-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T15:19:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N49",
+   "pole": "-",
+   "label": "the word-start piece ' conv'/' Conv' that opens a split word (conv|icts, conv|ulsions, conv|oluted, conv|alescent); con- words that are single tokens (convoy, convinced, convention) and the same meanings in other words stay low",
+   "fire": [
+    "The old fort once housed hundreds of convicts sent from England.",
+    "After the fever broke, the child had no more convulsions.",
+    "The instructions for the printer are long and convoluted.",
+    "The hospital collected blood from convalescent volunteers.",
+    "The dinner was meant to create conviviality among the new staff.",
+    "Graduates gathered in the hall for the spring Convocation ceremony.",
+    "Two escaped convicts were caught near the river by morning.",
+    "The rules of the card game are so convoluted that we gave up."
+   ],
+   "quiet": [
+    "The old fort once housed hundreds of prisoners sent from England.",
+    "After the fever broke, the child had no more seizures.",
+    "The instructions for the printer are long and confusing.",
+    "The hospital collected blood from recovering volunteers.",
+    "The dinner was meant to create friendship among the new staff.",
+    "Graduates gathered in the hall for the annual convention dinner.",
+    "Two escaped prisoners were caught near the river by morning.",
+    "The rules of the card game are so complicated that we gave up."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0 on ' conv'; whole-token con- words and synonyms below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' conv' word piece",
+ "unit_kind": "token/lexical",
+ "confidence": 0.85,
+ "notes": "Card: ' conv' x20, ' Conv' x6 (convicts 314, Convoy 278, convalescent 264, Convoker, Convocation, convulsions, Conv2DSpace, conviviality, convoluted). Probe: convicts 0.951, convalescent 0.837, convoluted 0.720, convulsions 0.583; single-token 'convoy' 0.103, 'convinced' 0.033, 'convention' 0.036, 'prisoners' 0.001."
+}
