@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f59ef8b5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N3506-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N3506",
+   "pole": "-",
+   "label": "the prefix piece ' sub' split off an earth-science term (sub|angular, sub|rounded, sub|aerial, sub|glacial, subs|urface); the same ' sub' piece in finance, administration and computing words (sub|prime, sub|committee, sub|folder) stays lower",
+   "fire": [
+    "The gravel consists of subrounded clasts of quartz and granite.",
+    "Fossil soils record long periods of subaerial exposure on the shelf.",
+    "Meltwater flows through subglacial channels beneath the ice sheet.",
+    "Radar revealed a liquid lake in the subsurface of the moon's crust.",
+    "The breccia contains subangular fragments of basalt up to a metre across.",
+    "Groundwater in the subsurface aquifer moves only a few metres per year.",
+    "The sandstone grains are mostly subrounded, suggesting long transport.",
+    "Coastal cliffs show evidence of subaerial weathering during the last ice age."
+   ],
+   "quiet": [
+    "The bank's subprime mortgages lost most of their value within a year.",
+    "A senate subcommittee will hold hearings on the proposal next month.",
+    "Move the images into a subfolder named archive before uploading.",
+    "The gravel consists of rounded clasts of quartz and granite.",
+    "Investors fled the subprime lending market after the scandal.",
+    "The parliamentary subcommittee voted against the new budget.",
+    "Each project has a subfolder for drafts and another for final files.",
+    "The breccia contains angular fragments of basalt up to a metre across."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 on ' sub'/' subs' in geology and earth-science words; ' sub' in subprime/subcommittee/subfolder below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' sub' prefix in geoscience terms",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' sub' x12, ' subs' x6, all geology/oceanography: subangular -158, subaerial -157, sub-ridge subduction, subarctic zooplankton, subsurface ocean, subsurface permafrost. Probe: 'subangular' 0.564, 'subsurface' 0.551, 'subduction' 0.286, 'subarctic' 0.192; 'subprime' 0.170, 'subcommittee' 0.192, 'subfolder' 0.041, 'angular pebbles' without sub 0.089. Geoscience items lead but the gap to other domains is modest."
+}

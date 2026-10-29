@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-83470db5",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N9084+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T12:28:06+00:00",
+ "recipe": {
+  "toolchain_commit": "ae7d07ff",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N9084_pos/2026-10-29-ChopinDavid-83470db5.tests.json"
+ },
+ "label": "the digits of a measured quantity with a unit or rate (1.2 mi/s, 0.5 calories per gram, 1/4 cup, 10 cents a pound); numbers that are years, phone numbers, chapter or page numbers stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N9084_pos/2026-10-29-ChopinDavid-83470db5.tests.json",
+   "prereg_commit": "ae7d07ff",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.341,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.47,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.353,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.369,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.507,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.676,
+     "peak": "5"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.281,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.237,
+     "peak": " per"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.078,
+     "peak": " every"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " how"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.361,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "ae7d07ff",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "digits of a measured quantity",
+ "unit_kind": "context",
+ "confidence": 0.6,
+ "notes": "Card: dense for a late layer (0.95% of tokens), top examples all quantities with units: '0.5 calories per gram', '(1.2 mi/s)', '1/4 cup', '11 inches per year', '0.6 mile', '10 cents a pound', '(1,000 mL)'. Probe: '(1.2 mi/s)' 0.955, '10 cents a pound' 0.475, '1/4 cup' 0.469, '11 inches per year' 0.410 (peak ' per'), '0.5 calories per gram' 0.292; 'born in 1987' 0.000, 'Call 555 1234' 0.000, 'chapter 12' 0.031.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-954c5595",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N11924+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N11924",
+   "pole": "+",
+   "label": "license and attribution boilerplate: the tokens of a copyright/licence notice (Mozilla, 'under' a licence, 'published under license', Author Contributions); the words license, published and under in everyday senses stay low",
+   "fire": [
+    "# Copyright 2019 The Chromium Authors\n# Use of this source code is governed by a BSD-style license found in the LICENSE file.",
+    "This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.",
+    "# This program is free software distributed under the GNU General Public License version 3.",
+    "The full text of this paper is published under license to Elsevier B.V. All rights reserved.",
+    "/* Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance. */",
+    "Funding: none declared.\nAuthor Contributions: All authors drafted and revised the manuscript.",
+    "The photographs are reproduced under a Creative Commons Attribution-ShareAlike license.",
+    "setup(name='tinyhttp', version='0.3', license='MIT', author='J. Doe')"
+   ],
+   "quiet": [
+    "After months of practice, my sister finally earned her driving license last week.",
+    "The bar lost its liquor license after repeated complaints from neighbours.",
+    "Her short stories were published in a local magazine when she was in college.",
+    "The kids hid under the kitchen table during the thunderstorm.",
+    "He wrote three detective novels under a different name before he became famous.",
+    "The team worked under a lot of pressure to finish the bridge on time.",
+    "Each author signed copies of the book at the festival on Saturday.",
+    "The fishing permit costs twenty dollars and is valid for a full year."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 on the licence name or 'under' inside a copyright or licence notice; everyday licence, publishing and 'under' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "licence/attribution boilerplate",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' Mozilla' Public License 7.47, 'Gentoo Foundation ... Distributed under' 7.03, 'published under license to BioMed Central' 6.53, 'Author Contributions' 5.97. Probe: MPL header 0.563, Apache header 0.578 (' under'), 'published under license to Springer' 0.375, MIT 0.342, 'Author Contributions' 0.466; 'published her first novel under a pen name' 0.048, 'got a license after the road test' 0.064. Bare 'Mozilla' in a browser sentence 0.364, so the name itself carries part of it."
+}

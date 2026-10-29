@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-703a5e03",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N9980-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N9980",
+   "pole": "-",
+   "label": "the word pieces 'ake' completing ' names'|'ake' (namesake) and '-old' completing ' age'|'-old' (age-old); the same pieces in mistake/intake/forsake and '-old' after decade/week/year stay low",
+   "fire": [
+    "The ship was renamed in honor of its famous namesake, a polar explorer.",
+    "Like his namesake, the young prince was fond of horses and poetry.",
+    "Few visitors know much about the city's namesake, a little-known general.",
+    "The new bakery fails to live up to its namesake in the old quarter.",
+    "Farmers have always faced the age-old problem of too little rain.",
+    "This is an age-old dispute between the two neighbouring villages.",
+    "Grandmother taught us an age-old method for curing olives.",
+    "The film revisits the age-old rivalry between cats and dogs."
+   ],
+   "quiet": [
+    "The ship was renamed after a storm damaged its old hull.",
+    "Like his father, the young prince made a costly mistake in the war.",
+    "Few visitors know about the city's daily water intake limits.",
+    "The new bakery uses a decade-old oven that still works well.",
+    "Farmers have always relied on week-old forecasts with little success.",
+    "This is a centuries-old dispute between the two neighbouring villages.",
+    "Grandmother taught us never to forsake our cousins in hard times.",
+    "The film follows a two-year-old cat and its owner across the country."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9 on 'ake' after ' names' and '-old' after ' age'; 'ake' after Int/fors and '-old' after decade/week below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ake' in namesake / '-old' in age-old",
+ "unit_kind": "token/lexical",
+ "confidence": 0.6,
+ "notes": "Card: names|ake x6 (-2.08 max) and age|-old x13. Probe: 'its namesake' 0.816, 'the age-old question' 0.617; 'decade-old dam' 0.034, 'year-old puppy' 0.138, 'big mistake' (single token) 0.052, 'water intake' 0.043, 'forsake' 0.026. Layer-0 spelling unit bound to the two compounds."
+}

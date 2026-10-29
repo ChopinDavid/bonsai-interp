@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-56a4254d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N8639-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N8639",
+   "pole": "-",
+   "label": "the possessive pronoun after 'hold' in body idioms (hold your breath, hold my hand, holding her tongue); possessives after other verbs (lose, wash, find) stay low",
+   "fire": [
+    "They say the bridge will reopen soon, but I wouldn't hold my breath.",
+    "The children were told to hold their tongues during the ceremony.",
+    "Nobody believes the promise, so don't hold your breath waiting for it.",
+    "She had to hold her nose as she walked past the old fish market.",
+    "The diver held his breath for almost three minutes.",
+    "During the storm he kept holding my arm so I wouldn't slip.",
+    "We are still holding our breath for the final results.",
+    "The nurse asked the boy to hold his arm still for the injection."
+   ],
+   "quiet": [
+    "They say the bridge will reopen soon, but I lost my map of the city.",
+    "The children were told to wash their hands before the ceremony.",
+    "Nobody believes the promise, so she wrote her complaint to the mayor.",
+    "She had to blow her nose as she walked past the old fish market.",
+    "The diver found his mask lying on the bottom of the pool.",
+    "During the storm he kept checking my phone for weather alerts.",
+    "We are still painting our kitchen after three long weekends.",
+    "The nurse asked the boy to roll up his sleeve before the injection."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0 on the possessive after hold/held/holding; the same possessives after other verbs below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "possessive after 'hold'",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: 'dont hold your breath' -90.5, 'not holding my breath' -88.5, 'hold my son's hand', 'hold our debate', 'hold their hand out', 'HOLDING YOUR ALCOHOL', plus 'take sides'. Probe: 'don't hold your breath' 1.072, 'not holding my breath' 0.989, 'held his breath and dove' 0.488, 'hold my hand' 0.290; 'Take your time' 0.377 and 'hold the door' 0.248 (so some 'take' and article leak), 'lost her keys' 0.037."
+}

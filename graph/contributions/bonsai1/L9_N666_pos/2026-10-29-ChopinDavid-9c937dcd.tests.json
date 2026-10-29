@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9c937dcd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N666+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N666",
+   "pole": "+",
+   "label": "web/software security filtering: sanitizing, escaping or whitelisting untrusted input, hosts or content in code and web text; the same verbs in everyday senses (hand sanitizer, escaping prison, a guest list) stay low",
+   "fire": [
+    "Make sure every form field is sanitized before the value reaches the SQL query.",
+    "import bleach\nclean_html = bleach.clean(raw_html, tags=ALLOWED_TAGS)",
+    "The plugin lets administrators whitelist trusted IP addresses for the dashboard.",
+    "Use htmlspecialchars() to escape any user-supplied text before echoing it into the page.",
+    "SECURE_BROWSER_XSS_FILTER = True\nCSRF_COOKIE_SECURE = True",
+    "If you use an ad blocker, please whitelist this website so we can keep it free.",
+    "The template engine automatically escapes variables unless you mark them as safe.",
+    "Our mail server only accepts messages from domains on the sender whitelist."
+   ],
+   "quiet": [
+    "Nurses sanitize their hands before and after visiting each patient.",
+    "Two inmates managed to escape from the county jail on Sunday night.",
+    "The cleaning crew sanitized the gym equipment after every class.",
+    "The cat tried to escape through the open window during the storm.",
+    "The wedding planner kept a list of guests who needed vegetarian meals.",
+    "Security guards checked our bags at the entrance of the stadium.",
+    "He pressed the escape key on the old piano by mistake, and nothing happened.",
+    "Restaurants must sanitize cutting boards that touched raw chicken."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on sanitize/escape/whitelist/security tokens in code or web-admin text; everyday senses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sanitize/escape/whitelist (web security)",
+ "unit_kind": "meaning",
+ "confidence": 0.55,
+ "notes": "Card: Content-Security-Policy 37.5, whitelist=[] 21.0, 'description sanitizing', 'django.middleware.security', 'white-list or disable AboveTopSecret', escapejs, ALLOWED_HOSTS. Probe: 'from django.utils.html import escape' 0.736, 'Please whitelist our site' 0.464, 'add the domain to your whitelist' 0.383, '.security' 0.354, 'sanitize user input' 0.337; 'sanitize them before handling food' 0.023, 'prisoner tried to escape' 0.005, 'guest list' 0.002."
+}

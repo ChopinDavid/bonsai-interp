@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b2ab97e7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N4665-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N4665",
+   "pole": "-",
+   "label": "' in' opening an abstract circumstantial phrase in expository prose (in the face of, in the pursuit of, in this context, in a given year); ' in' for a concrete physical place and the fixed idioms 'in vain'/'in return' stay low",
+   "fire": [
+    "Many species are struggling to adapt in the face of rapid climate change.",
+    "Teachers must rethink assessment practices in an era of generative software.",
+    "Civil liberties are often curtailed by governments in the pursuit of security.",
+    "The study examines how identity is negotiated in online communities.",
+    "Firms tend to cut research budgets in periods of economic uncertainty.",
+    "Older adults can remain cognitively active in the absence of formal schooling.",
+    "Doctors face difficult ethical choices in situations of extreme scarcity.",
+    "Such reforms have rarely succeeded in the context of weak institutions."
+   ],
+   "quiet": [
+    "My grandparents have lived in a small cottage near the coast for decades.",
+    "She left her umbrella in the back seat of the taxi.",
+    "The children were playing in the garden when it started to rain.",
+    "He keeps his passport in a drawer next to the bed.",
+    "We spent two weeks in Lisbon last summer and loved it.",
+    "The keys are in the blue bowl by the front door.",
+    "They searched for the missing dog, but it was all in vain.",
+    "The students sat quietly in the library until closing time."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on ' in' that introduces an abstract setting or circumstance in essay prose; ' in' before a room, city or container below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "abstract circumstantial 'in'",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' in' x29 of the top 32, all in essay prose: 'shifting in the digital environment' -180, 'moral choices in real time', 'managing costs in 2019', 'in the face of', 'in the service of'. The + pole is also ' in' but promotes return/vain/total, the idiom completions. Probe: 'resilient in the face of rising sea levels' 0.714, 'shifting in the digital environment' 0.707, 'in the service of' 0.321, 'in 2024' 0.309; 'live in Chicago' 0.009, 'in the fridge' 0.003, 'in vain' 0.006, 'in return' 0.015."
+}

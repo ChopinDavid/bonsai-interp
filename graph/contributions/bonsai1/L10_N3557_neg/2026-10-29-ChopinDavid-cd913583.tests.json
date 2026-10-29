@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-cd913583",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N3557-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N3557",
+   "pole": "-",
+   "label": "a noun for an outer protective covering or shell (cover, casing, husk, shell, coating, covering) of an object, seed or body; the verb 'cover' (cover costs, cover a story) and other object parts stay low",
+   "fire": [
+    "Walnuts grow inside a thick green husk that splits open in autumn.",
+    "The old atlas had a cracked leather cover and gold lettering.",
+    "Insects are protected by a tough outer cuticle made of chitin.",
+    "Remove the plastic casing before you replace the battery.",
+    "The pool was hidden under a heavy vinyl cover all winter.",
+    "Each grain is wrapped in a papery outer hull that is removed during milling.",
+    "Turtles retreat into their hard shell when they sense danger.",
+    "The cable has a rubber sheath that protects the copper wires inside."
+   ],
+   "quiet": [
+    "The insurance will cover most of the repair costs after the flood.",
+    "Walnuts are rich in healthy fats and make a good snack in autumn.",
+    "The old atlas had detailed maps of every province in the empire.",
+    "Insects use their antennae to smell food from far away.",
+    "Our newspaper sent two journalists to cover the trial in Denver.",
+    "Replace the battery when the screen begins to flicker.",
+    "Turtles lay their eggs in the sand at night and then return to sea.",
+    "The cable carries data between the two buildings at high speed."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on the covering noun; verb 'cover' and non-covering parts below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "outer protective covering",
+ "unit_kind": "meaning",
+ "confidence": 0.6,
+ "notes": "Card: hard-sh|elled seeds -27.25, invol|uc|ral bracts, buying a cover for a phone, outer covering of the egg, fabric cover, green cover of a book, outer casing, husks. Probe: 'green cover' 0.827, 'outer casing' 0.621, 'hard outer shell' 0.582 (peak ' outer'), 'protective covering' 0.496, 'corn husks' 0.492, 'sturdy cover' 0.382; verb 'cover the costs' 0.011, 'cover the election' 0.005, 'bright screen' 0.010."
+}

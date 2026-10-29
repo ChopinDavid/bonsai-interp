@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-948e3765",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6231-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T12:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N6231",
+   "pole": "-",
+   "label": "a standalone capital letter from the end of the alphabet (W, X) used as a symbol, initial or variable name; standalone early-alphabet letters (A, B, C, D) in the same frames and ordinary W-words stay low",
+   "fire": [
+    "The boson is called W because it mediates the weak interaction.",
+    "In the diagram, point X marks the location of the buried treasure.",
+    "The memo was signed by W. H. Carter on behalf of the board.",
+    "Let X be a random variable with mean zero and unit variance.",
+    "The weight matrix W is initialized with small random values.",
+    "Generation X grew up before the internet became common.",
+    "Reference: Thompson, W. (1998). Rivers of the North. Oxford.",
+    "Plot the curve and label the axis X and the other axis Y."
+   ],
+   "quiet": [
+    "The boson is called the Higgs because of the physicist who proposed it.",
+    "In the diagram, point A marks the location of the buried treasure.",
+    "The memo was signed by Henry Carter on behalf of the board.",
+    "Let the random variable have mean zero and unit variance.",
+    "The weight matrix is initialized with small random values.",
+    "Children born in that decade grew up before the internet became common.",
+    "Reference: Thompson, Brian (1998). Rivers of the North. Oxford.",
+    "Plot the curve and label the axis time and the other axis distance."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9 around standalone W or X used as a symbol; the same frames with A-D and words starting with W below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "standalone symbol letter W/X",
+ "unit_kind": "token/lexical",
+ "confidence": 0.35,
+ "notes": "Card: ' W' x9 and '.' x11 after initials: 'W+, W- and Z bosons', 'WE (write enable)', 'W_T_list', 'W. Leszl', 'W. D. Phillips', '\"X\"' in a list. Probe: 'W and Z bosons' 0.874 (peak ' bos'), 'letters W, X, Y and Z' 0.697 (peak ' X'), 'WE' 0.567, 'W_vP' 0.531, 'W. D. Phillips' 0.433; 'J. A., K. L., P. R.' initials 0.034, 'We went to the beach' 0.011, 'west wing' 0.037. Unsure whether the pole is W/X-specific or the peak on ' bos' points to particle names; registered as a guess."
+}
