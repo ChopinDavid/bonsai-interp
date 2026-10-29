@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-f771843d",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N2956+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N2956",
+   "pole": "+",
+   "label": "Positional: fires (at its corpus max) only on the very first token of a scan window that starts mid-sentence (' information', ' indicate', ' just'); in sentences scored with a beginning-of-text token the same words stay near zero. Best guess tested: window-like fragments versus full sentences.",
+   "fire": [
+    " information about the opening hours and prices",
+    " indicate your seat number on the form",
+    " just before the bridge, turn left",
+    " information on how to apply for a permit",
+    " – the museum is closed on Mondays",
+    " indicate which items you want to return",
+    " just after sunset the birds came back",
+    " information is posted on the board each week"
+   ],
+   "quiet": [
+    "The website has the opening hours and prices.",
+    "Write your seat number on the form.",
+    "Turn left before the bridge.",
+    "Here is how to apply for a permit.",
+    "The museum is closed on Mondays.",
+    "Mark which items you want to return.",
+    "The birds came back after sunset.",
+    "News is posted on the board each week."
+   ]
+  }
+ ],
+ "predictions": "everything below 0.05; fails (positional)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "first token of a mid-sentence window (positional)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card flags positional: 100% of top peaks at window position 0, all reaching the same 752.0 (' information', ' indicate', ' just', ' –'). Exploratory probe: such fragments scored with play probe 0.016-0.019, the same as full sentences. Expected to fail; recorded as dense / positional."
+}

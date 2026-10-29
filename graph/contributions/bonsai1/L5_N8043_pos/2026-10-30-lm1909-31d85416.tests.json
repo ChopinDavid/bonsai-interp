@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-31d85416",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N8043+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N8043",
+   "pole": "+",
+   "label": "The second piece of a keyword-argument name in a Python call (share|x=True, keep|dims=True, ignore|_index=True, tick|_params), firing on that piece; the same calls without keyword arguments stay quiet.",
+   "fire": [
+    "fig, ax = plt.subplots(3, 1, sharex=True)",
+    "totals = arr.sum(axis=1, keepdims=True)",
+    "merged = pd.concat([a, b], ignore_index=True)",
+    "ax.tick_params(axis='x', labelsize=8)",
+    "df = df.sort_values('date', ascending=False)",
+    "out = pd.merge(left, right, left_on='id', right_on='key')",
+    "loader = DataLoader(ds, batch_size=32, shuffle=True)",
+    "df.drop_duplicates(subset=['name'], keep='last', inplace=True)"
+   ],
+   "quiet": [
+    "fig, ax = plt.subplots(3, 1)",
+    "totals = arr.sum(1)",
+    "merged = pd.concat([a, b])",
+    "ax.set_title('Results')",
+    "df = df.sort_values('date')",
+    "out = pd.merge(left, right)",
+    "loader = DataLoader(ds)",
+    "df.drop_duplicates()"
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "second piece of a Python keyword-argument name",
+ "unit_kind": "code / token piece",
+ "confidence": 0.75,
+ "notes": "Card: peaks on 'x' (sharex=), 'dims' (keepdims=), '_index' (ignore_index=), '_keys', '_ascii', '_params'. Exploratory probe: sharex/sharey 1.01, keepdims 0.54, ignore_index 0.81; the same calls without keywords 0.007-0.03."
+}

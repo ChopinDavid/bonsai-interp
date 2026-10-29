@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-d1a26f72",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N10573+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N10573",
+   "pole": "+",
+   "label": "' know' in the idiom 'you never know' (also 'one never knows'); 'know' without 'never' and 'never' with other verbs stay quiet.",
+   "fire": [
+    "Keep the receipt, because you never know.",
+    "Buy a lottery ticket now and then; you never know.",
+    "Bring a spare tyre on long trips, you never know when you'll need it.",
+    "Talk to the stranger at the bus stop, you never know who they are.",
+    "Save some money each month, since you never know what will happen.",
+    "Send in the application anyway, you never know.",
+    "Keep the old cables in a drawer, you never know.",
+    "Ask the shop if they have it in the back, you never know."
+   ],
+   "quiet": [
+    "Keep the receipt, because I know you might return it.",
+    "Buy a lottery ticket now and then; it's only a dollar.",
+    "Bring a spare tyre on long trips, you never see a garage out there.",
+    "Talk to the stranger at the bus stop, they might know the way.",
+    "Save some money each month, since prices keep rising.",
+    "Send in the application anyway, you never lose anything by trying.",
+    "Keep the old cables in a drawer, you might need them.",
+    "Ask the shop if they have it in the back, they usually know."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.9; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'you never know'",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.85,
+ "notes": "Card: ' know' x20, ' knows' x12; deterministic pair cover held (AUROC 1.00, covers 50%) for ' never| know'. Exploratory probe: 'you never know' 0.82; 'You know what I mean' 0.001; 'You never see' 0.001; 'Nobody knows' 0.000."
+}

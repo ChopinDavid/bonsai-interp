@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-59e61e59",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N9140-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N9140",
+   "pole": "-",
+   "label": "' large' describing broad scale or extent ('compare large brain regions', 'large areas', 'large-scale'), where a size adjective is expected; the same phrases with 'small/tiny' or no size word stay quiet.",
+   "fire": [
+    "Early scans could only map large areas of the cortex.",
+    "The survey covered large parts of the northern coast.",
+    "Satellites track large regions of ocean at once.",
+    "Farmers cleared large tracts of forest for cattle.",
+    "The storm cut power to large sections of the city.",
+    "Older telescopes could only resolve large features on Mars.",
+    "The model works well for large populations.",
+    "Floods covered large swathes of farmland."
+   ],
+   "quiet": [
+    "Early scans could only map tiny areas of the cortex.",
+    "The survey covered the northern coast in detail.",
+    "Satellites track small regions of ocean at once.",
+    "Farmers cleared the forest for cattle.",
+    "The storm cut power to parts of the city.",
+    "Older telescopes could only resolve bright features on Mars.",
+    "The model works well for small populations.",
+    "Floods covered the farmland."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5; near misses below 0.1; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'large' for broad scale",
+ "unit_kind": "lexical / prediction",
+ "confidence": 0.35,
+ "notes": "Card: ' large' x7, ' big' x3, ' huge' (compare⟦ large⟧ brain regions; one⟦ big⟧ image); output promotes ' large', ' overall', ' bulk' and suppresses ' small', ' local', ' finer'. Exploratory probe: 'compare large brain regions' 0.48, 'one big loaf' 0.16, 'huge knife' 0.02; 'tiny' 0.02. The test keeps to 'large' for scale."
+}

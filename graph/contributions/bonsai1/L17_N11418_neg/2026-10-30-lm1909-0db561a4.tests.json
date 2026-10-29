@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-0db561a4",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N11418-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N11418",
+   "pole": "-",
+   "label": "Low-confidence guess: a modal or 'to' right after a tool or device noun that is the subject or instrument ('the undergravel filter can be a nuisance', 'your can of air to blow'); the same nouns without the modal/infinitive stay quiet.",
+   "fire": [
+    "The old water filter can be hard to clean.",
+    "Use a soft brush to sweep the dust off the board.",
+    "A cheap drill can easily strip the screws.",
+    "Take the pliers to bend the wire into shape.",
+    "The heat gun can scorch the paint if you are careless.",
+    "Grab a cloth to wipe the lens.",
+    "The air pump can be noisy at night.",
+    "Use a needle to pop the blister."
+   ],
+   "quiet": [
+    "The old water filter is hard to clean.",
+    "A soft brush sweeps the dust off the board.",
+    "Cheap drills often strip the screws.",
+    "Bend the wire into shape with the pliers.",
+    "Careless use of the heat gun scorches the paint.",
+    "Wipe the lens with a cloth.",
+    "The air pump is noisy at night.",
+    "Pop the blister with a needle."
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.2; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "modal/'to' after a tool noun (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Broad pole (1.1% of tokens above 0.1). Card: no single token (' can' after 'undergravel filter', ' is', ' Barrel', ',', ' to' after 'can of air'). Exploratory probe: 'can of air to blow' 0.16, 'filter can be a nuisance' 0.06. Expected to fail."
+}

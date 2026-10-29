@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-37cb8b86",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N3782-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N3782",
+   "pole": "-",
+   "label": "Low-confidence guess: a capitalised word that starts a new clause or title with no punctuation before it (run-on headings: 'MORE Is an effective…', 'article What is the difference…'); the same text with normal punctuation stays quiet.",
+   "fire": [
+    "Jane Doe - SMITH Is a strong voice for nurses.",
+    "Read the help page How to reset your password today.",
+    "Tom Lee - JONES Has worked here for ten years.",
+    "Open the guide Why the sky is blue for kids.",
+    "Sara Kim - PARK Is the best choice for mayor.",
+    "See the FAQ What happens if I miss a payment.",
+    "Ann Roe - WEST Was a teacher before politics.",
+    "Visit the page Where to buy tickets online."
+   ],
+   "quiet": [
+    "Jane Doe is a strong voice for nurses.",
+    "Read the help page to reset your password today.",
+    "Tom Lee has worked here for ten years.",
+    "Open the guide to learn why the sky is blue.",
+    "Sara Kim is the best choice for mayor.",
+    "See the FAQ about missed payments.",
+    "Ann Roe was a teacher before politics.",
+    "Visit the page to buy tickets online."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.35; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "capitalised run-on clause start (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Weak pole (corpus max 8.3). Card: ' What' x3, 'Ha' x2, ' Is', ' that', ' people' (Kit Wainer - MORE⟦ Is⟧ an effective advocate; article⟦ What⟧ is the difference). Exploratory probe: 'MORE Is an effective advocate' 0.34, 'article What is the difference' 0.08. Expected to fail."
+}

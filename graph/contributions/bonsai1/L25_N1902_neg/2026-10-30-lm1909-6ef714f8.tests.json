@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-6ef714f8",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N1902-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N1902",
+   "pole": "-",
+   "label": "'once' as a conjunction for the moment after arriving or a condition is met ('Once there, …', 'once they arrive', 'Once inside, …'); 'once' meaning 'one time' or 'formerly' stays quiet.",
+   "fire": [
+    "The bus took us to the coast. Once there, we hired bikes.",
+    "Hikers climb for three hours. Once at the top, they rest.",
+    "The parcel goes to the depot, and once it arrives we email you.",
+    "Fill in the form online. Once approved, your card is posted.",
+    "The eggs drift downstream. Once inside the lake, they hatch.",
+    "The pills dissolve slowly; once absorbed, they act within minutes.",
+    "We drove to the hotel. Once inside, we collapsed on the beds.",
+    "Mix the dough well. Once it rises, shape it into loaves."
+   ],
+   "quiet": [
+    "The bus took us to the coast, where we hired bikes.",
+    "Hikers climb for three hours and rest at the top.",
+    "I have only visited the depot once, years ago.",
+    "Fill in the form online and your card is posted.",
+    "The lake was once full of fish.",
+    "Take the pills once a day with water.",
+    "We drove to the hotel and collapsed on the beds.",
+    "Mix the dough well and let it rise."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.85; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "conjunction 'once' (after arriving)",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.6,
+ "notes": "Card: ' Once' x14, ' once' x5, ' got' x4 (once they arrived in South Africa; Once there, they activate...; once they arrive there); output suppresses ' once', ' inside', ' indoors', ' home'. Exploratory probe: 'Once there,' 0.85, 'Once they arrived' 0.28, 'When I got home' 0.19; 'met him once' 0.04."
+}

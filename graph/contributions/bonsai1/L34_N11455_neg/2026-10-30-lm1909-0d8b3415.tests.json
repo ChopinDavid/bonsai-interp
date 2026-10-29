@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-0d8b3415",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N11455-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N11455",
+   "pole": "-",
+   "label": "Low-confidence guess: Chinese 子 'child / sub-' as its own token in spaced or glossed text (孫 子 'grandson', 子行列式 'minor'); the same texts without 子 stay quiet. The - pole's output favours 'sub-' words.",
+   "fire": [
+    "约 哈 斯 的 孙 子 名 叫 约 坦 。",
+    "minor : 子行列式 , cofactor : 余因子",
+    "他 的 儿 子 在 北 京 工 作 。",
+    "这 个 集 合 的 子 集 有 八 个 。",
+    "subgroup : 子群 , subset : 子集",
+    "王 家 的 孙 子 今 年 上 大 学 。",
+    "Komori Myōjin 子守明神 is a guardian deity.",
+    "老 人 的 两 个 儿 子 都 当 了 医 生 。"
+   ],
+   "quiet": [
+    "约 哈 斯 的 朋 友 名 叫 约 坦 。",
+    "minor : 余式 , cofactor : 余数",
+    "他 的 哥 哥 在 北 京 工 作 。",
+    "这 个 集 合 的 元 素 有 八 个 。",
+    "group : 群 , set : 集合",
+    "王 家 的 女 儿 今 年 上 大 学 。",
+    "Komori Myōjin is a guardian deity of children.",
+    "老 人 的 两 个 女 儿 都 当 了 医 生 。"
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.5; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Chinese 子 token (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: top examples are Chinese 子 tokens in spaced or glossed text (亞哈謝 的⟦ 孫⟧ 子; minor :⟦ 子⟧行列式; ⟦ 子⟧守明神), plus ' a' / ' any' before 'sub-'; output suppresses ' sub', ' subset', ' subsystem'. Exploratory probe on English 'a sub-account' / 'any subset': 0.04-0.06, no better than near misses. Expected to fail; the 子 sentences were not probed."
+}

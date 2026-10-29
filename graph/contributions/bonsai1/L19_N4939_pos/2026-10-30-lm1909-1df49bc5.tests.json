@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-1df49bc5",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N4939+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N4939",
+   "pole": "+",
+   "label": "Low-confidence guess: the lone space token that begins a method line in Python code indented with 2 spaces (after a blank line, before 'def'); the same class indented with 4 spaces stays quiet.",
+   "fire": [
+    "class Cart:\n  def total(self):\n    return sum(self.items)\n\n  def count(self):\n    return len(self.items)\n",
+    "class Timer:\n  def start(self):\n    self.t0 = time.time()\n\n  def stop(self):\n    return time.time() - self.t0\n",
+    "class Node:\n  def __init__(self, val):\n    self.val = val\n\n  def __repr__(self):\n    return str(self.val)\n",
+    "class Repo:\n  def get(self, key):\n    return self.db[key]\n\n  def put(self, key, val):\n    self.db[key] = val\n",
+    "class Queue:\n  def push(self, x):\n    self.q.append(x)\n\n  def pop(self):\n    return self.q.pop(0)\n",
+    "class Point:\n  def norm(self):\n    return (self.x**2 + self.y**2) ** 0.5\n\n  def flip(self):\n    return Point(self.y, self.x)\n",
+    "class Store:\n  def load(self):\n    return json.load(open(self.path))\n\n  def save(self, data):\n    json.dump(data, open(self.path, 'w'))\n",
+    "class Clock:\n  def tick(self):\n    self.n += 1\n\n  def reset(self):\n    self.n = 0\n"
+   ],
+   "quiet": [
+    "class Cart:\n    def total(self):\n        return sum(self.items)\n\n    def count(self):\n        return len(self.items)\n",
+    "class Timer:\n    def start(self):\n        self.t0 = time.time()\n\n    def stop(self):\n        return time.time() - self.t0\n",
+    "class Node:\n    def __init__(self, val):\n        self.val = val\n\n    def __repr__(self):\n        return str(self.val)\n",
+    "class Repo:\n    def get(self, key):\n        return self.db[key]\n\n    def put(self, key, val):\n        self.db[key] = val\n",
+    "class Queue:\n    def push(self, x):\n        self.q.append(x)\n\n    def pop(self):\n        return self.q.pop(0)\n",
+    "class Point:\n    def norm(self):\n        return (self.x**2 + self.y**2) ** 0.5\n\n    def flip(self):\n        return Point(self.y, self.x)\n",
+    "class Store:\n    def load(self):\n        return json.load(open(self.path))\n\n    def save(self, data):\n        json.dump(data, open(self.path, 'w'))\n",
+    "class Clock:\n    def tick(self):\n        self.n += 1\n\n    def reset(self):\n        self.n = 0\n"
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.3; likely fails on the median",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "space token before 'def' in 2-space Python (guess)",
+ "unit_kind": "code / format",
+ "confidence": 0.2,
+ "notes": "Card: ' ' x22 of the top 32, mostly the single-space token before ' def' after a blank line in 2-space-indented Python; also a space inside spaced-out URLs. Exploratory probe: 2-space class 0.13, 4-space class 0.05. Expected to fail on the median."
+}
