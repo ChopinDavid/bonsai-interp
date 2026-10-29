@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-658a9340",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N1283+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N1283",
+   "pole": "+",
+   "label": "a preposition that links a person or journey to a named realm, ruler or place in fantasy or medieval narrative (from exile in the Iron Islands, set sail for Westeros, cousin of King Louis); the same prepositions before common nouns stay low",
+   "fire": [
+    "After the siege, the young knight fled to Dorne with his sister.",
+    "The old wizard spent ten years in exile in Valyria before returning.",
+    "Rumour said the princess was a niece of King Baldwin of Jerusalem.",
+    "When spring came, the fleet set sail for Lothric under a black banner.",
+    "The bard claimed he had once served as a squire in Rivendell.",
+    "Her mother was a daughter of Emperor Frederick and a cousin of Queen Isabella.",
+    "The exiled lord rode north from Highgarden with three hundred men.",
+    "Years later the dwarves marched home to Erebor to reclaim their hall."
+   ],
+   "quiet": [
+    "After the siege, the young knight fled to the forest with his sister.",
+    "The old wizard spent ten years in a cave before returning.",
+    "Rumour said the princess was a niece of the old baker in town.",
+    "When spring came, the fleet set sail for the open sea under a black banner.",
+    "The bard claimed he had once served as a squire in a tavern.",
+    "Her mother was a daughter of a farmer and a cousin of the miller.",
+    "The exiled lord rode north from the river with three hundred men.",
+    "Years later the dwarves marched home to the mountain to reclaim their hall."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.9 on the preposition before the proper name; common-noun rewrites below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "preposition before a named realm/ruler in saga narrative",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: ' of' x9, ' in' x5, ' to' x4, ' from' x2 before King's Landing, Skyrim, King Henry II, Louis XII. Probe: 'exile in the Iron Islands' 0.966, 'cousin of King Louis' 0.357, 'sail for Westeros' 0.298; 'half-brother of the king' 0.143, 'marched to the coast' 0.122, 'box of nails in the hardware store' 0.006."
+}

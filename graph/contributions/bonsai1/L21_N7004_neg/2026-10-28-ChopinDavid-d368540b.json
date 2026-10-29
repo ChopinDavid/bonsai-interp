@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-d368540b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N7004-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T00:27:10+00:00",
+ "recipe": {
+  "toolchain_commit": "855ed148",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L21_N7004_neg/2026-10-28-ChopinDavid-d368540b.tests.json"
+ },
+ "label": "unclear: the card mixes Python method/keyword tokens (=self, .cancel, int32, True) with scattered prose words; best guess is attribute and argument tokens inside Python method calls",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N7004_neg/2026-10-28-ChopinDavid-d368540b.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.005,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.004,
+     "peak": "       "
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.019,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.008,
+     "peak": "       "
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.014,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.017,
+     "peak": " assert"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.004,
+     "peak": "="
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.009,
+     "peak": ".cancel"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " late"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " phone"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " everyone"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " wall"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " again"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " manager"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " because"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.445,
+    "median_fire": 0.009,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "855ed148",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "unclear (best guess: Python call arguments)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: '=self', ' mobile', '2' (int32), 'irmware', '國', '(t', ' True', '.cancel', ' distant' (max 33.5, diffuse). Probe did not reproduce: every probe scored 0.006-0.020, including near-copies of the top code examples. Registered as a guess.",
+ "selection": "random draw"
+}

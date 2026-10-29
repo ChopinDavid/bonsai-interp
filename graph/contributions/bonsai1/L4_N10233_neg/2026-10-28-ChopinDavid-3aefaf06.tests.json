@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-3aefaf06",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N10233-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N10233",
+   "pole": "-",
+   "label": "the token ' Beck' (surname, given name or the dialect word beck), whatever the meaning; names that split differently (Beckett, Becker) and look-alike words (back, deck) stay low",
+   "fire": [
+    "The depression inventory was designed by Beck and his students.",
+    "Fans cheered when Beck walked onto the stage in Glastonbury.",
+    "The diagnostic company merged with Beckman in the early 1990s.",
+    "According to Beck, negative thoughts keep depression going.",
+    "Tickets for the Jeff Beck tribute concert sold out quickly.",
+    "The ballad was collected by Martha Beckwith on a trip to Hawaii.",
+    "In the second half, Beck scored twice for the visiting side.",
+    "My aunt took the footpath along the beck to the old mill."
+   ],
+   "quiet": [
+    "The depression inventory was designed by Becker and his students.",
+    "Fans cheered when Beckett's play opened in the small theatre.",
+    "The diagnostic company merged with Bayer in the early 1990s.",
+    "According to Peck, negative thoughts keep depression going.",
+    "Tickets for the Jeff Lynne tribute concert sold out quickly.",
+    "The ballad was collected by Martha Graham on a trip to Hawaii.",
+    "In the second half, Black scored twice for the visiting side.",
+    "My aunt took the footpath along the deck to the old mill."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-0.85 on ' Beck'; other splits and look-alikes below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the token ' Beck'",
+ "unit_kind": "token",
+ "confidence": 0.8,
+ "notes": "Card: ' Beck' x19 (Aaron Beck, Beckman, Beckwith, Beckford). Probe: ' Beck' 0.69-0.85 across psychologist, guitarist, singer, publisher, Beckman; dialect ' beck' 0.606; Samuel Beckett (' Be'+'ckett') 0.002, ' back' 0.003."
+}

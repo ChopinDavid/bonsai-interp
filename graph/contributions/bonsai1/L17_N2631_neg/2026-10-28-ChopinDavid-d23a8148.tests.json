@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d23a8148",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N2631-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N2631",
+   "pole": "-",
+   "label": "a ruler, regime or government as the holder of political power in a historical or political account (forced the president to dismiss his government, attempts to increase the power of the monarchy); the same words in everyday non-political settings stay low",
+   "fire": [
+    "Mass strikes eventually forced the general to hand over power to civilians.",
+    "Peasants rose in revolt against the tsarist government in 1905.",
+    "The king dissolved Parliament twice in an effort to rule alone.",
+    "After the coup, the junta banned all opposition parties.",
+    "Napoleon crowned himself emperor and expanded his authority across Europe.",
+    "Critics accused the regime of rigging the election to stay in power.",
+    "The communist government collapsed after months of street protests.",
+    "Louis XIV centralized power in Versailles and weakened the nobles."
+   ],
+   "quiet": [
+    "Heavy snow eventually forced the general store to close early.",
+    "Farmers rose early to harvest the apples before the rain.",
+    "The chef dissolved the sugar in warm water before baking.",
+    "After the game, the coach banned phones from the locker room.",
+    "Grandpa crowned the cake with strawberries and served it.",
+    "Critics praised the film for its music and its funny dialogue.",
+    "The old wooden bridge collapsed after months of heavy rain.",
+    "Louis moved to Versailles and opened a small bakery near the station."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.75 on ruler/government/power tokens in political-history sentences; everyday rewrites below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "rulers/governments holding power in political history",
+ "unit_kind": "topic",
+ "confidence": 0.55,
+ "notes": "Card: ' government' x4, ' his' x3 (the ruler's), ' Bolshevik' x2, ' Lincoln' x2, Shevardnadze, Charles, Pandu, Lon Nol. Probe: 'power of the monarchy' 0.770, 'socialist government' 0.578, 'dismiss his entire government' 0.568, 'seizing power' 0.516, 'Divine Right of Kings' 0.335; 'government website' 0.031, 'neighbor Charles' 0.005."
+}

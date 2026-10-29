@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-3a73bd69",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3074-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3074",
+   "pole": "-",
+   "label": "the uppercase acronym pieces 'HA', 'FA', 'HOA' and 'HOS' (hyaluronic acid, HAART, Football Association, homeowners association); other uppercase acronyms stay low",
+   "fire": [
+    "Many serums contain hyaluronic acid (HA) to keep skin moist.",
+    "Our HOA voted to repaint every fence in the neighborhood.",
+    "Since the 1990s, HAART has turned HIV into a chronic illness.",
+    "The FA confirmed that the match will be replayed next week.",
+    "Injections of HA can ease knee pain in older patients.",
+    "The new fees were set by the HOA board in January.",
+    "The club appealed against the FA decision on Monday.",
+    "The cell line was transformed with the MNNG HOS gene."
+   ],
+   "quiet": [
+    "Many serums contain vitamin C (VC) to keep skin bright.",
+    "Our PTA voted to repaint every classroom in the school.",
+    "Since the 1990s, PrEP has helped prevent new HIV infections.",
+    "The NFL confirmed that the game will be replayed next week.",
+    "Injections of PRP can ease knee pain in older patients.",
+    "The new fees were set by the IRS in January.",
+    "The club appealed against the UEFA decision on Monday.",
+    "The cell line was transformed with the KRAS gene."
+   ]
+  }
+ ],
+ "predictions": "fire 0.35-0.9 on HA/FA/HOA/HOS; other acronyms below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "acronym pieces HA / FA / HOA / HOS",
+ "unit_kind": "token",
+ "confidence": 0.55,
+ "notes": "Card: ' FA' x9, 'HA' x5, 'OS' x3 (HOS), ' HA' x3, 'A' (HOA). Probe: HOS 0.890, (HA) 0.802, (HAART) 0.775, HOA 0.758, FA Cup 0.513, English FA 0.341; NBA 0.004, USA 0.005, 'Ha ha' 0.100."
+}

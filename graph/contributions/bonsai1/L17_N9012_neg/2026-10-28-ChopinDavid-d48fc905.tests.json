@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-d48fc905",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N9012-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N9012",
+   "pole": "-",
+   "label": "a comparative degree word ('more', 'less') heading a predicate adjective after a copula (is more difficult to, was less blunt); quantity 'more' (more chairs, more coffee) stays low",
+   "fire": [
+    "In practice, this kind of damage is more difficult to detect early.",
+    "Compared with her brother, she was more cautious about money.",
+    "The second exam was less difficult than the first one.",
+    "For older patients, recovery is often more complicated than expected.",
+    "My new job is more demanding, but the pay is better.",
+    "The coach was more direct with the players after the loss.",
+    "In winter the mountain road is more dangerous to drive at night.",
+    "Her latest novel is less ambitious than her earlier work."
+   ],
+   "quiet": [
+    "In practice, we need more workers to finish the job in time.",
+    "Compared with her brother, she earned more money last year.",
+    "The second exam had more questions than the first one.",
+    "For older patients, the clinic ordered more beds and blankets.",
+    "My new job gives me more holidays, and the pay is better.",
+    "The coach asked for more water bottles after the loss.",
+    "In winter the mountain town gets more snow than the valley.",
+    "Her latest novel sold more copies than her earlier work."
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.35 on 'more/less' after the copula; quantity 'more' below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicative comparative 'more/less + adjective'",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: ' more' x14 (more modern, more difficult, more serious, more blunt), ' rather', ' clearly', ' often'. Probe: 'is more difficult to assess' 0.334, 'More often' 0.191, 'was less blunt' 0.161; attributive 'a more modern design' 0.034, 'more serious injuries' 0.069, 'more chairs' 0.020, 'more coffee' 0.029. Weak pole."
+}

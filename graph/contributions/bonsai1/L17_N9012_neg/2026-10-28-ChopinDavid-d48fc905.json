@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-d48fc905",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N9012-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T00:26:59+00:00",
+ "recipe": {
+  "toolchain_commit": "855ed148",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N9012_neg/2026-10-28-ChopinDavid-d48fc905.tests.json"
+ },
+ "label": "a comparative degree word ('more', 'less') heading a predicate adjective after a copula (is more difficult to, was less blunt); quantity 'more' (more chairs, more coffee) stays low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N9012_neg/2026-10-28-ChopinDavid-d48fc905.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.178,
+     "peak": " difficult"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.01,
+     "peak": " more"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.142,
+     "peak": " less"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.055,
+     "peak": " more"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.147,
+     "peak": " more"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.189,
+     "peak": " direct"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.036,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.297,
+     "peak": " less"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.126,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.296,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " older"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.128,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.734,
+    "median_fire": 0.144,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "855ed148",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "predicative comparative 'more/less + adjective'",
+ "unit_kind": "context",
+ "confidence": 0.3,
+ "notes": "Card: ' more' x14 (more modern, more difficult, more serious, more blunt), ' rather', ' clearly', ' often'. Probe: 'is more difficult to assess' 0.334, 'More often' 0.191, 'was less blunt' 0.161; attributive 'a more modern design' 0.034, 'more serious injuries' 0.069, 'more chairs' 0.020, 'more coffee' 0.029. Weak pole.",
+ "selection": "random draw"
+}

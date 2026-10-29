@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-054c27b3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N7958-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T00:19:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N7958",
+   "pole": "-",
+   "label": "Python plotting code that reads or sets axis limits and image extents (set_xlim(data[...]), get_ylim(), extent = [...]); other Python list and indexing code stays low",
+   "fire": [
+    "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.set_xlim(limits[\"left\"], limits[\"right\"])\nax.set_ylim(limits[\"low\"], limits[\"high\"])",
+    "counts, xe, ye = np.histogram2d(a, b, bins=40)\nextent = [xe[0], xe[-1], ye[0], ye[-1]]\nplt.imshow(counts.T, extent=extent, origin=\"lower\")",
+    "x0, x1 = self.axes.get_xlim()\ny0, y1 = self.axes.get_ylim()\nself.axes.set_aspect(abs((x1 - x0) / (y1 - y0)))",
+    "def zoom(ax, cfg):\n    ax.set_xlim(cfg[\"xmin\"], cfg[\"xmax\"])\n    ax.set_ylim(cfg[\"ymin\"], cfg[\"ymax\"])",
+    "plot.ax.set_xlim(bounds[\"x0\"], bounds[\"x1\"])\nplot.ax.set_ylim(bounds[\"y0\"], bounds[\"y1\"])\nplot.canvas.draw()",
+    "H, xb, yb = np.histogram2d(lon, lat, bins=80, weights=w)\nextent = [xb[0], xb[-1], yb[0], yb[-1]]",
+    "fig, ax = plt.subplots()\nlo, hi = ax.get_ylim()\nax.set_ylim(lo, hi * 1.1)",
+    "import matplotlib.pyplot as plt\nax = plt.gca()\nax.set_xlim(opts[\"start\"], opts[\"stop\"])"
+   ],
+   "quiet": [
+    "import json\nwith open(\"cfg.json\") as f:\n    cfg = json.load(f)\nprint(cfg[\"name\"], cfg[\"version\"])",
+    "counts = {}\nfor word in text.split():\n    counts[word] = counts.get(word, 0) + 1",
+    "x0, x1 = self.name.split()\ny0 = len(x0)\nself.label = x0.upper()",
+    "def greet(user, cfg):\n    print(cfg[\"greeting\"], user)\n    return cfg[\"greeting\"]",
+    "plot.title = settings[\"title\"]\nplot.author = settings[\"author\"]\nplot.save()",
+    "rows = [line.strip() for line in open(\"data.txt\")]\nfirst, last = rows[0], rows[-1]",
+    "items = [3, 1, 2]\nlo, hi = min(items), max(items)\nprint(lo, hi)",
+    "import random\nnums = [random.random() for _ in range(5)]\nprint(sorted(nums)[0])"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8 on the bracket or call in axis-limit code; plain list/loop code below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "axis-limit / extent code in matplotlib",
+ "unit_kind": "context",
+ "confidence": 0.4,
+ "notes": "Card: '[\"' in set_ylim(data[\"ymin\"]), ' [' in extent = [xedges...], indentation before ymin, ymax = get_ylim. Probe: set_xlim(data[\"xmin\"]) 0.833, get_xlim() 0.557, extent = [xedges...] 0.452; 'rect = [left, bottom...]' 0.016, names list 0.006, def add 0.003. Prose 'second floor' 0.144 suggests a weak spatial-position side."
+}

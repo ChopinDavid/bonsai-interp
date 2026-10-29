@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-28-ChopinDavid-28b7d196",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N6278+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-29T00:27:34+00:00",
+ "recipe": {
+  "toolchain_commit": "855ed148",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N6278_pos/2026-10-28-ChopinDavid-28b7d196.tests.json"
+ },
+ "label": "the Spanish plural demonstratives 'estos' / 'estas' (including the 'Est|os' split); articles and the singular 'este' in the same sentences stay low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N6278_pos/2026-10-28-ChopinDavid-28b7d196.tests.json",
+   "prereg_commit": "855ed148",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.467,
+     "peak": " estos"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.457,
+     "peak": " estas"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.417,
+     "peak": " estos"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.562,
+     "peak": " estas"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.587,
+     "peak": " estos"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.308,
+     "peak": " estas"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.43,
+     "peak": " estos"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.554,
+     "peak": " estas"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " la"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": "Mi"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " hoy"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": "iger"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " el"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": "yer"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " el"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " el"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.462,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "855ed148",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Spanish 'estos/estas'",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: ' estas' x14, 'os'/'as' after 'Est' x11, ' este' x4. Probe: 'Estos criterios' 0.655, 'estas canciones' 0.504, 'estas alturas' 0.291, 'estos términos' 0.237, 'Estos are' (English frame) 0.655; 'Este libro' 0.071, 'Los criterios' 0.001. 'Esta casa' 0.300 (singular feminine leaks), so near misses avoid 'esta'.",
+ "selection": "random draw"
+}
