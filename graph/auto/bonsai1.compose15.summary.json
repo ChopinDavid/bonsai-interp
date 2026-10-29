@@ -1,0 +1,156 @@
+{
+ "protocol": "compose@15",
+ "kind": "cover",
+ "scored": "2026-10-29T22:10:30+00:00",
+ "toolchain_commit": "293ff983",
+ "prereg_commit": "293ff983a720",
+ "poles_tested": 7552,
+ "replicated": 6704,
+ "unreplicated": 848,
+ "placebo_tests": 6881,
+ "placebo_held": 2,
+ "breakdown": {
+  "all": {
+   "poles": 7552,
+   "replicated": 6704,
+   "unreplicated": 848
+  },
+  "band 0-5": {
+   "poles": 5256,
+   "replicated": 4881,
+   "unreplicated": 375
+  },
+  "bin context": {
+   "poles": 1970,
+   "replicated": 1611,
+   "unreplicated": 359
+  },
+  "precision <0.3": {
+   "poles": 2140,
+   "replicated": 1769,
+   "unreplicated": 371
+  },
+  "coverage 0.5-0.7": {
+   "poles": 5170,
+   "replicated": 4548,
+   "unreplicated": 622
+  },
+  "bin lexical": {
+   "poles": 4269,
+   "replicated": 4215,
+   "unreplicated": 54
+  },
+  "precision >=0.7": {
+   "poles": 3914,
+   "replicated": 3823,
+   "unreplicated": 91
+  },
+  "coverage >=0.9": {
+   "poles": 615,
+   "replicated": 554,
+   "unreplicated": 61
+  },
+  "coverage 0.7-0.9": {
+   "poles": 1767,
+   "replicated": 1602,
+   "unreplicated": 165
+  },
+  "precision 0.3-0.5": {
+   "poles": 647,
+   "replicated": 422,
+   "unreplicated": 225
+  },
+  "bin collocation": {
+   "poles": 271,
+   "replicated": 165,
+   "unreplicated": 106
+  },
+  "bin format": {
+   "poles": 240,
+   "replicated": 157,
+   "unreplicated": 83
+  },
+  "precision 0.5-0.7": {
+   "poles": 851,
+   "replicated": 690,
+   "unreplicated": 161
+  },
+  "bin predictive": {
+   "poles": 750,
+   "replicated": 517,
+   "unreplicated": 233
+  },
+  "bin copy": {
+   "poles": 52,
+   "replicated": 39,
+   "unreplicated": 13
+  },
+  "band 6-11": {
+   "poles": 605,
+   "replicated": 490,
+   "unreplicated": 115
+  },
+  "band 12-17": {
+   "poles": 48,
+   "replicated": 37,
+   "unreplicated": 11
+  },
+  "band 18-23": {
+   "poles": 552,
+   "replicated": 436,
+   "unreplicated": 116
+  },
+  "band 24-29": {
+   "poles": 757,
+   "replicated": 606,
+   "unreplicated": 151
+  },
+  "band 30-35": {
+   "poles": 334,
+   "replicated": 254,
+   "unreplicated": 80
+  }
+ },
+ "unreplicated_by_layer": [
+  105,
+  85,
+  21,
+  63,
+  58,
+  43,
+  42,
+  29,
+  20,
+  9,
+  8,
+  7,
+  0,
+  2,
+  2,
+  1,
+  3,
+  3,
+  5,
+  7,
+  11,
+  22,
+  31,
+  40,
+  22,
+  28,
+  26,
+  24,
+  25,
+  26,
+  15,
+  5,
+  5,
+  8,
+  18,
+  29
+ ],
+ "results_file": "bonsai1.compose15.results.jsonl.gz",
+ "results_sha256": "8690ed4de97dbae781f018a10cc29b5862010c213f8038d0666380c6324ef184",
+ "coverage_file": "bonsai1.compose15.coverage.jsonl.gz",
+ "tests_sha256": "5674829f64ae75c46db03a4db2b202998aad8ca61d631de7bc53adccb53513fc"
+}
