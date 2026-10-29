@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a9e8bbb8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N9184-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N9184",
+   "pole": "-",
+   "label": "the clause introduced by 'unless' (an exception condition): the pole fires on 'unless' and the start of its clause; the same sentences with 'if', 'when' or 'because' stay low",
+   "fire": [
+    "Please do not open the attachment unless you know the sender.",
+    "The pool stays closed on Mondays unless the weather is very hot.",
+    "You will not be charged unless the package arrives damaged.",
+    "Most trains run on time unless snow blocks the tracks.",
+    "The court will not hear the case unless new evidence appears.",
+    "Never mix these two cleaners unless the label says it is safe.",
+    "We cannot accept returns unless the receipt is attached.",
+    "The museum is free for children unless a special show is on."
+   ],
+   "quiet": [
+    "Please do not open the attachment because you know the sender.",
+    "The pool stays closed on Mondays when the weather is very hot.",
+    "You will not be charged if the package arrives on time.",
+    "Most trains run on time when the tracks are clear.",
+    "The court will hear the case once new evidence appears.",
+    "Never mix these two cleaners, as the label says it is unsafe.",
+    "We can accept returns if the receipt is attached.",
+    "The museum is free for children on most days of the week."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.99 on 'unless' or the next token; if/when/because rewrites below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'unless' exception clause",
+ "unit_kind": "word",
+ "confidence": 0.5,
+ "notes": "Card: ' unless' is the top example (max 18), with ' should', ' supposed', ' deserves', ' justification' (normative words). Probe: 'with anyone unless they are verified' 0.990 (peak on ' they'), 'deserves great things' 0.339; 'should think' 0.103, 'supposed to' 0.088, 'In truth' 0.057, 'with anyone at all' 0.026."
+}

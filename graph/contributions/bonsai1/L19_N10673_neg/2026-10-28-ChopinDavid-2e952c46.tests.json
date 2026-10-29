@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-2e952c46",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N10673-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N10673",
+   "pole": "-",
+   "label": "'not' inside a status or eligibility condition (if they have not been used, while still healthy and not showing symptoms): the pole marks negated states that a rule depends on; 'not' in plain personal statements of preference or action stays low",
+   "fire": [
+    "Tickets can be refunded if they have not been scanned at the gate.",
+    "As long as you are still young and not taking other drugs, the risk is low.",
+    "Seeds may be stored for years if they have not been exposed to damp.",
+    "Applicants qualify if they have not yet received a grant this year.",
+    "While the patient is stable and not running a fever, she can go home.",
+    "Books can be exchanged if they have not been opened or marked.",
+    "Workers are covered if they have not already claimed this benefit.",
+    "Provided the engine is cold and not leaking oil, the car may be shipped."
+   ],
+   "quiet": [
+    "I do not want to go to the party tonight.",
+    "She did not enjoy the long drive to the coast.",
+    "We do not eat meat on Fridays.",
+    "He did not answer when I called him yesterday.",
+    "They do not like the new paint in the kitchen.",
+    "I did not see the film, but my brother did.",
+    "My cat does not like loud music.",
+    "She did not finish her homework before dinner."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.85 on ' not' in conditions; personal-statement 'not' below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'not' in a status/eligibility condition",
+ "unit_kind": "context",
+ "confidence": 0.45,
+ "notes": "Card: ' not' x8, '’t' x3 ('have not been washed', 'and not showing any symptoms'). Probe: 'still healthy and not showing any symptoms' 0.847, 'have not been washed or worn' 0.845, 'have not yet exited' 0.416; 'I do not like spinach' 0.011, code 'and not node.is_locked' 0.037. The un-negated 'if they have been washed' reached 0.392 on ' have', so near misses keep 'not' and drop the condition rather than drop 'not'."
+}

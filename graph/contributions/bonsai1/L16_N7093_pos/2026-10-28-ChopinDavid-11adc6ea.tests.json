@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-11adc6ea",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N7093+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N7093",
+   "pole": "+",
+   "label": "the name and signature of a unit-test method (def test_<condition>(self):) and its 'Test a ...' docstring: the pole marks code that states a tested condition; the same names as ordinary methods outside a test stay low",
+   "fire": [
+    "class TestQueue(unittest.TestCase):\n\n    def test_pop_from_empty_queue_raises(self):\n        q = Queue()",
+    "class TestOrders(TestCase):\n    def test_cancel_after_shipping_fails(self):\n        order = make_order()",
+    "    def test_refund_with_expired_card(self, mock_gateway):\n        mock_gateway.charge.return_value = None",
+    "class TestConfig(unittest.TestCase):\n    def test_load_missing_section(self):\n        cfg = Config()",
+    "    def test_resize(self):\n        \"\"\"Test a valid resize of the image.\"\"\"\n        img = load('a.png')",
+    "class TestAuth(TestCase):\n\n    def test_token_refresh_unavailable(self):\n        client = Client()",
+    "    def test_delete_without_permission(self, mock_user):\n        mock_user.is_staff = False",
+    "class TestRouter(unittest.TestCase):\n    def test_route_with_trailing_slash(self):\n        r = Router()"
+   ],
+   "quiet": [
+    "class Queue:\n\n    def pop_from_front(self):\n        return self.items.pop(0)",
+    "class Orders:\n    def cancel_shipping(self):\n        self.status = 'cancelled'",
+    "def refund_card(gateway, amount):\n    gateway.charge(-amount)",
+    "class Config:\n    def load_section(self):\n        self.data = {}",
+    "def resize(img, w, h):\n    \"\"\"Resize the image to w by h.\"\"\"\n    return img.scale(w, h)",
+    "class Client:\n\n    def refresh_token(self):\n        self.token = fetch()",
+    "def delete_record(user, record):\n    record.remove()",
+    "class Router:\n    def add_route(self, path):\n        self.routes.append(path)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6 on the condition words or '):\\n' of def test_...(self); ordinary function definitions below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unit-test method signature naming a tested condition",
+ "unit_kind": "context",
+ "confidence": 0.55,
+ "notes": "Card: '):\\n' x9 and ' test' x7 in def test_...(self) lines. Probe: test_upload docstring 'Test a valid upload' 0.590, test_parse_empty_string 0.586, test_login_with_invalid_password 0.491, test_get_missing_key 0.463; class Parser handle_missing_file 0.139, def parse_empty_string 0.019, prose 'We ran a test' 0.050."
+}

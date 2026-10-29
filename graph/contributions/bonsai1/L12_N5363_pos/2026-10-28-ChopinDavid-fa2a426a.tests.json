@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-fa2a426a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5363+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N5363",
+   "pole": "+",
+   "label": "destruction or damage of a built structure or body part (destroyed, torn down, damaged): the pole marks the harm word; the same sentences with repair or healthy states stay low",
+   "fire": [
+    "During the war, the old bridge was completely destroyed by shelling.",
+    "The doctors had to remove the damaged tissue from her lung.",
+    "In 1970 the city began tearing down the historic train station.",
+    "When the earthquake hit, the cathedral was destroyed within minutes.",
+    "The athlete needed surgery to repair a damaged tendon in his ankle.",
+    "Rebels demolished the fort and burned its gates to the ground.",
+    "The storm destroyed most of the houses along the shore.",
+    "His kidneys were badly damaged after years of untreated diabetes."
+   ],
+   "quiet": [
+    "During the war, the old bridge was carefully guarded by soldiers.",
+    "The doctors had to examine the healthy tissue from her lung.",
+    "In 1970 the city began restoring the historic train station.",
+    "When the earthquake hit, the cathedral stood firm within minutes.",
+    "The athlete needed rest to strengthen a healthy tendon in his ankle.",
+    "Rebels occupied the fort and painted its gates bright red.",
+    "The storm spared most of the houses along the shore.",
+    "His kidneys were working well after years of careful diet."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on the destruction or damage word; repair/intact rewrites below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "destruction / damage (vs repair, intact)",
+ "unit_kind": "meaning",
+ "confidence": 0.5,
+ "notes": "Card: ' destruction' x4, ' damaged' x2, ' tearing' (down mills), ' Temple' (Destroy this Temple), ' destroyed'. Probe: 'the church was completely destroyed' 0.679, 'replaced the damaged cartilage' 0.553, 'torn down' 0.350, 'destruction' 0.228; 'quickly rebuilt' 0.109, 'healthy cartilage' 0.165, 'painted white' 0.008."
+}

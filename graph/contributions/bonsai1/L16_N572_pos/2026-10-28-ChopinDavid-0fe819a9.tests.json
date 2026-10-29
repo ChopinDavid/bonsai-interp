@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-0fe819a9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N572+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N572",
+   "pole": "+",
+   "label": "the closing quotation mark of a short phrase quoted from a source and set inside a sentence (called it “a ... ”, as X put it); the same sentences without quotation marks stay low",
+   "fire": [
+    "Reviewers called the sequel “a tired copy of the original,” according to one magazine.",
+    "The senator described the bill as “a gift to the banks” during the debate.",
+    "Doctors warned of a “perfect storm of infections” this winter.",
+    "One historian called the treaty “a peace to end all peace,” and many agreed.",
+    "The mayor promised “a new era of openness” at city hall.",
+    "Fans hailed the album as “the best thing she has ever made,” the paper said.",
+    "The report spoke of “a lost decade for growth” in the region.",
+    "The coach called the loss “a wake-up call for the whole team,” as one player put it."
+   ],
+   "quiet": [
+    "Reviewers called the sequel a tired copy of the original, according to one magazine.",
+    "The senator described the bill as a gift to the banks during the debate.",
+    "Doctors warned of a perfect storm of infections this winter.",
+    "One historian called the treaty a peace to end all peace, and many agreed.",
+    "The mayor promised a new era of openness at city hall.",
+    "Fans hailed the album as the best thing she has ever made, the paper said.",
+    "The report spoke of a lost decade for growth in the region.",
+    "The coach called the loss a wake-up call for the whole team, as one player put it."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4 on the closing quote; unquoted rewrites below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "closing quote of an in-sentence quoted phrase",
+ "unit_kind": "context",
+ "confidence": 0.25,
+ "notes": "Card: ',”' x7, '”' x6, '\"' x5, ' »' x2 closing quoted phrases inside sentences (max 44). Probe was weak: 'one-stop shop for gossip,”' 0.160 on ',”', '“attempt to find the gene”' 0.205, French « » 0.125; unquoted rewrite 0.011. Likely fails the 0.20 median."
+}

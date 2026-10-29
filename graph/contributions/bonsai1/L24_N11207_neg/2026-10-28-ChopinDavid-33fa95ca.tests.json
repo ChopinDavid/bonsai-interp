@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-33fa95ca",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N11207-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N11207",
+   "pole": "-",
+   "label": "a spoken discourse marker (So, Well, actually) that opens an answer after a speaker label in an interview transcript; the same answers without the marker stay low",
+   "fire": [
+    "MOYERS: Why did the vote take so long?\nKESSLER: So, the board had to wait for the audit, and the audit was late.",
+    "HOST: What makes this strain of flu different?\nDR. OKAFOR: Well, this strain actually jumps between birds and pigs.",
+    "ROBERTS: Is cheap steak worth buying?\nMILLER: Well, cheap cuts actually need a long, slow braise.",
+    "Q: How did the strike end?\nVANCE: So, the two sides finally met in a hotel in Detroit.",
+    "HOST: Why do crashes happen on dry roads?\nPATEL: Well, most of them really come down to distraction.",
+    "SIMON: How did you become a teacher?\nREYES: So, I started as a volunteer, and in terms of training I had none.",
+    "INTERVIEWER: Should we worry about the dam?\nKLEIN: Well, the engineers actually checked it twice this spring.",
+    "HOST: What did the union gain?\nBROOKS: So, they got a pension plan, which they had wanted for years."
+   ],
+   "quiet": [
+    "MOYERS: Why did the vote take so long?\nKESSLER: The board had to wait for the audit, and the audit was late.",
+    "HOST: What makes this strain of flu different?\nDR. OKAFOR: This strain jumps between birds and pigs.",
+    "ROBERTS: Is cheap steak worth buying?\nMILLER: Cheap cuts need a long, slow braise.",
+    "Q: How did the strike end?\nVANCE: The two sides finally met in a hotel in Detroit.",
+    "HOST: Why do crashes happen on dry roads?\nPATEL: Most of them come down to distraction.",
+    "SIMON: How did you become a teacher?\nREYES: I started as a volunteer and had no training.",
+    "INTERVIEWER: Should we worry about the dam?\nKLEIN: The engineers checked it twice this spring.",
+    "HOST: What did the union gain?\nBROOKS: They got a pension plan, which they had wanted for years."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5 on the marker or the comma after it; marker-free answers below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "discourse marker opening a transcript answer",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: ' So', ' Well', ' actually' after BOUVIER:/LANCASTER: in transcripts (max 65). Probe did not reproduce: every item 0.012-0.020, including 'HARTLEY: So, the main power line actually failed' 0.017 and 'GARCIA: Well, the first thing' 0.016. Best guess with longer two-turn transcripts."
+}

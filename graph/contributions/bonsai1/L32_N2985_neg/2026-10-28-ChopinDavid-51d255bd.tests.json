@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-51d255bd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N2985-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T01:21:58+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N2985",
+   "pole": "-",
+   "label": "determiners and possessives (son, ses, des, chaque) inside French prose, and similar function words in other non-English Romance and Slavic text: the pole tracks non-English running text; English translations of the same sentences stay low",
+   "fire": [
+    "Marie a laissé ses clés chez son frère avant de partir en vacances.",
+    "Le directeur a présenté ses excuses à tous les clients de sa banque.",
+    "Chaque année, la ville organise une fête pour ses habitants.",
+    "Paul a vendu sa voiture et ses outils pour payer ses dettes.",
+    "L’entreprise publie sur son site les résultats de chaque trimestre.",
+    "Elle a passé son enfance près de la mer avec ses grands-parents.",
+    "Le roi a confié son trésor à un de ses conseillers les plus fidèles.",
+    "Après la réunion, chaque membre a donné son avis sur des projets."
+   ],
+   "quiet": [
+    "Marie left her keys at her brother's house before going on holiday.",
+    "The director offered his apologies to all the customers of his bank.",
+    "Every year, the town holds a festival for its residents.",
+    "Paul sold his car and his tools to pay his debts.",
+    "The company publishes the results of each quarter on its website.",
+    "She spent her childhood by the sea with her grandparents.",
+    "The king entrusted his treasure to one of his most loyal advisers.",
+    "After the meeting, each member gave an opinion on some projects."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.7 on French possessives and determiners; English translations below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "function words in French/non-English prose (vs English)",
+ "unit_kind": "context",
+ "confidence": 0.5,
+ "notes": "Card: ' son' x4, ' pour' x4, ' en' x3, ' un' x3, ' ses' x2 in French, plus Spanish and Russian. Probe: 'ses filiales' 0.671, 'près de son père' 0.350, 'les pages de chaque' 0.282, 'des liens très' 0.257, Russian 0.255, Spanish 'tercer' 0.199, 'Le chat dort' 0.139; English translations 0.001 and 0.008."
+}
