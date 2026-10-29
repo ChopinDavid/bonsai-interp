@@ -4,10 +4,10 @@
  "layer": 0,
  "index": 5319,
  "pole": "-",
- "label": "The word-start tokens ' tantr', ' smallest', ' stre', ' unn' and ' frequ' (tantrums, smallest, streptomycin, unnerving, frequented); quiet on synonyms that use other tokens.",
+ "label": "Specific word-start tokens, not a meaning: ' tantr', ' unn', ' stre', ' frequ', ' smallest', ' mankind', ' strict', ' closely', ' optimum' (tantrums, unnerving, streptomycin, frequented); quiet on their synonyms and look-alikes (largest, eerie, penicillin, humanity).",
  "short": "tokens ' tantr', ' smallest', ' stre', ' unn'",
  "kind": "token",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-22-ChopinDavid-fd60d8a7"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N5319_neg/2026-10-29-moridinamael-c026a829.tests.json",
+   "prereg_commit": "15b009d8",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.229,
+     "peak": " strict"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.288,
+     "peak": " closely"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.364,
+     "peak": " tantr"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.331,
+     "peak": " unn"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.442,
+     "peak": " stre"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.263,
+     "peak": " frequ"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.198,
+     "peak": " smallest"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.404,
+     "peak": " mankind"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.079,
+     "peak": " screamed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": " eerie"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " visited"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.06,
+     "peak": " largest"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " course"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " homework"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.063,
+     "peak": " chem"
+    }
+   ],
+   "probed_before": {
+    "fire": 1,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.309,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-c026a829"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-22-ChopinDavid-fd60d8a7",
    "The word-start tokens ' tantr', ' smallest', ' stre', ' unn' and ' frequ' (tantrums, smallest, streptomycin, unnerving, frequented); quiet on synonyms that use other tokens.",
    "held"
+  ],
+  [
+   "2026-10-29-moridinamael-c026a829",
+   "Specific word-start tokens, not a meaning: ' tantr', ' unn', ' stre', ' frequ', ' smallest', ' mankind', ' strict', ' closely', ' optimum' (tantrums, unnerving, streptomycin, frequented); quiet on their synonyms and look-alikes (largest, eerie, penicillin, humanity).",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-22-ChopinDavid-fd60d8a7"
+  "2026-10-22-ChopinDavid-fd60d8a7",
+  "2026-10-29-moridinamael-c026a829"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.0277,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 3612
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
