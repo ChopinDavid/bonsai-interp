@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N5275+",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 5275,
+ "pole": "+",
+ "label": "the locator inside a parenthetical cross-reference or citation ('see Figure', 'see Table', 'para.') and the opening of a regex character class; 'figure'/'table' as ordinary nouns stay low",
+ "short": "citation locator / regex [",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N5275_pos/2026-10-29-ChopinDavid-b3019240.tests.json",
+   "prereg_commit": "ec3a8c6a",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.249,
+     "peak": " Figure"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.205,
+     "peak": " Table"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.699,
+     "peak": " para"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.332,
+     "peak": " Figure"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.338,
+     "peak": " Table"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.607,
+     "peak": " para"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.197,
+     "peak": " Figure"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.246,
+     "peak": " Table"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " shaft"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.001,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " author"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " layout"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.0,
+     "peak": " twice"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.29,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-b3019240"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-b3019240",
+   "the locator inside a parenthetical cross-reference or citation ('see Figure', 'see Table', 'para.') and the opening of a regex character class; 'figure'/'table' as ordinary nouns stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-b3019240"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

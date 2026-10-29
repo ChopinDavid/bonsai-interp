@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N7183-",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 7183,
+ "pole": "-",
+ "label": "the head noun after 'International' (or 'League of') in the name of a body ('International Development', 'International Organization', 'League of Nations'); the same nouns without that modifier stay low",
+ "short": "noun after 'International'",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N7183_neg/2026-10-29-ChopinDavid-0a9c7b1b.tests.json",
+   "prereg_commit": "ec3a8c6a",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.062,
+     "peak": " Agency"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.48,
+     "peak": " Court"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.55,
+     "peak": " Monetary"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.229,
+     "peak": " Labour"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.611,
+     "peak": " Nations"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.013,
+     "peak": " International"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.058,
+     "peak": " Olympic"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.024,
+     "peak": " hosted"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " funds"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": "legates"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " committee"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " committee"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": " hosted"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.82,
+    "median_fire": 0.146,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-0a9c7b1b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-0a9c7b1b",
+   "the head noun after 'International' (or 'League of') in the name of a body ('International Development', 'International Organization', 'League of Nations'); the same nouns without that modifier stay low",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-0a9c7b1b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
