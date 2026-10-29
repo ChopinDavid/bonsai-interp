@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a5f197f5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N6603+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N6603",
+   "pole": "+",
+   "label": "unclear; guess: an everyday health or household noun named as a cause or remedy (gum disease, motion sickness, shampoo, a can of tuna)",
+   "fire": [
+    "My dentist warned me that gum disease can start without any pain.",
+    "On the ferry, half the children suffered from motion sickness.",
+    "She washed the dog with a gentle oatmeal shampoo after the walk.",
+    "For dinner he opened a can of beans and toasted some bread.",
+    "Every winter the Salvation Army hands out coats at the station.",
+    "The vet said tooth decay is common in older cats and dogs.",
+    "Long car trips often bring on travel sickness in young puppies.",
+    "Grandma rinsed her hair with a herbal shampoo made from nettles."
+   ],
+   "quiet": [
+    "My dentist told me that the clinic will open late on Monday.",
+    "On the ferry, half the children waved at the passing boats.",
+    "She walked the dog along the river after the morning rain.",
+    "For dinner he opened the window and toasted some bread.",
+    "Every winter the city council hands out maps at the station.",
+    "The vet said older cats and dogs sleep for most of the day.",
+    "Long car trips often bring out the best stories from my father.",
+    "Grandma combed her hair by the window every evening."
+   ]
+  }
+ ],
+ "predictions": "guess only: fire 0.1-0.3 at best; probe did not reproduce the card",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: health and household nouns",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Card: broad (1.6% of tokens reach 0.1 of max), gate-closed regime 90%, no single token in the top 32 (dishes, paid, motion, Salvation, Gum, shampoo, can). Probe: none of 9 sentences reproduced it; every peak was 0.098 or less ('Salvation Army' 0.098, 'motion sickness' -0.020, 'Gum disease' -0.041). This test is a registered guess and is expected to fail."
+}

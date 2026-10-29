@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-abcd9f75",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N616+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N616",
+   "pole": "+",
+   "label": "a single capital letter used as a variable or label in a formal description (let X be, nodes A and D, point C): the pole marks a placeholder symbol; the same sentences with ordinary words in that slot stay low",
+   "fire": [
+    "In the diagram, the root has two children, labeled P and Q.",
+    "Suppose that the set S contains every even number below twenty.",
+    "Draw a line from point M to the midpoint of the opposite side.",
+    "Assume the function f maps every element of the set to Z.",
+    "The tree has three leaves, called K, L and N, under one parent.",
+    "If we let T stand for the total cost, the equation becomes simple.",
+    "Vertex G is joined to H by a single edge in this graph.",
+    "Consider two events, call them U and V, that cannot both happen."
+   ],
+   "quiet": [
+    "In the diagram, the root has two children, labeled left and right.",
+    "Suppose that the box contains every even number below twenty.",
+    "Draw a line from the corner to the midpoint of the opposite side.",
+    "Assume the function maps every element of the set to zero.",
+    "The tree has three leaves, all small and green, under one branch.",
+    "If we write the total cost first, the equation becomes simple.",
+    "The station is joined to the airport by a single train line.",
+    "Consider two events, a wedding and a funeral, on the same day."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8 on the letter; word versions below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "capital letter as a variable",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: broad (1.2%), peaks on ' D' (interior node and D), ' C', '-A', 'Let X represent', ' a' in definitions. Probe: 'let Y be its negation' 0.764, 'B, another interior node, and D' 0.628, 'connected to both A and E' 0.531; 'a sandwich and a coffee' 0.045, 'the mailman' 0.040. 'Its symbol is a' 0.687 and 'introduction of a' 0.309 show 'a' in definitions also fires; not used here."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-f7b3c3d7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N6034-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N6034",
+   "pole": "-",
+   "label": "broad, weak; guess: a concrete noun naming a physical surface, landform or object in a descriptive scene (sandy banks, mountain peaks, the lawn, a probe): the pole leans toward tangible places and things; abstract nouns in similar sentences stay lower",
+   "fire": [
+    "Swallows dig their nests into the steep muddy banks of the river.",
+    "Snow still covered the rocky peaks long after the valley turned green.",
+    "The children spent the afternoon lying on the grass in the park.",
+    "A narrow trail winds between the dunes toward the beach.",
+    "The old fisherman pulled his boat onto the pebbly shore.",
+    "Moss grows thickly on the north side of the boulders.",
+    "The crater floor is littered with chunks of dark basalt.",
+    "Wild goats climb along the cliffs above the harbor."
+   ],
+   "quiet": [
+    "Swallows return every spring, and people are always happy to see them.",
+    "Hope still remained long after the long winter had ended.",
+    "The children spent the afternoon thinking about their summer plans.",
+    "A strange idea slowly took shape in her mind that evening.",
+    "The old fisherman told us his opinion about the new law.",
+    "Patience grows slowly when you practice it every day.",
+    "The debate was full of arguments about fairness and duty.",
+    "Rumors spread quickly among the students before the exam."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.45 on the concrete noun; abstract versions below 0.1; near misses may still reach 0.3",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "broad: concrete place and object nouns",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: FLAG broad (4.8% of tokens reach 0.1 of max), max 4.38, no single token (octah|ed|rons, sandy banks, césp|ed, cacer|ola, city center, rh|inoceros, botm_points, probe, peaks). Probe: 'en el césped' 0.473, 'sandy banks' 0.368, 'city center' 0.289, 'octahedrons' 0.280, 'mountain peaks' 0.247, 'calf' 0.232, 'a probe' 0.136; abstract sentences 0.039 and 0.053."
+}

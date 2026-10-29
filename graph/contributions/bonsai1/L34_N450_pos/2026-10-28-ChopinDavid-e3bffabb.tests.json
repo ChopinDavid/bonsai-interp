@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e3bffabb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N450+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N450",
+   "pole": "+",
+   "label": "the split-off piece ' St' / '-st' / ' st' / '/st' that begins a stab-/stead-/stable word the tokenizer breaks up (Image St|abilization, rock-st|eady, st|ables, /st|able): the pole predicts the stability word family; ' St' for Saint and stable or steady as whole single tokens stay low",
+   "fire": [
+    "The review praised the camera's Image Stabilizer for low-light shots.",
+    "Even during the recession, his income stayed rock-steady for years.",
+    "The groom led the mare back into the stables before the storm.",
+    "Install it from https://pip.readthedocs.io/en/stable/ before you begin.",
+    "This lens adds Optical Stabilization so handheld video looks smooth.",
+    "The old barn was converted into stables for the riding school.",
+    "Her hands remained rock-steady as she threaded the tiny needle.",
+    "Check the notes at https://docs.example.org/stable/changes.html first."
+   ],
+   "quiet": [
+    "The review praised the camera's battery life for long trips.",
+    "Even during the recession, his income stayed steady for years.",
+    "The groom led the mare back into the barn before the storm.",
+    "We drove down from St. Paul to visit the old cathedral.",
+    "This lens adds a weather seal so it survives the rain.",
+    "The old barn was converted into a garage for the riding school.",
+    "Her hands remained calm as she threaded the tiny needle.",
+    "The patient is stable now and will be moved out of intensive care."
+   ]
+  }
+ ],
+ "predictions": "fire 0.45-0.85 on the st- piece; Saint ' St' and whole-word stable/steady below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "st- piece predicting stable/steady",
+ "unit_kind": "token/lexical",
+ "confidence": 0.5,
+ "notes": "Card: peaks on ' St', '-st', ' ст', '/st' in Image Stabilization, rock-steady, livery stables, /stable/ URLs; logit effect promotes stable/stability/steady. Probe: 'Image Stabilization' 0.864, '/stable/' URL 0.636, 'rock-steady' 0.545, 'livery stables' 0.463; 'St. Louis' 0.000, 'St Mary' 0.007, ' stable condition' (single token) 0.037. Splits checked with the tokenizer."
+}

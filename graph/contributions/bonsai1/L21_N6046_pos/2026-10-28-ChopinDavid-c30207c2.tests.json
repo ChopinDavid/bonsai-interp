@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-c30207c2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N6046+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N6046",
+   "pole": "+",
+   "label": "guess: in multi-line Python code, the end of a function name at a call site, or its first argument token, inside a longer script or doctest (create_annotated_heatmap(z, assert_roundtrip(value, next_meetings): the pole marks a call being opened",
+   "fire": [
+    "import sys\nimport json\n\n\ndef main():\n    conf = read_config(sys.argv[1])\n    rows = fetch_rows(conf['db'])\n    for row in rows:\n        print(format_row(row))\n",
+    "class TestCodec(unittest.TestCase):\n\n    def test_small(self):\n        for value in range(100):\n            self.assert_encodes(value)\n\n    def test_large(self):\n        self.assert_encodes(10 ** 12)\n",
+    "    Examples\n    --------\n    >>> import plotting as pl\n    >>> grid = [[1, 2], [3, 4]]\n    >>> fig = pl.make_contour_plot(grid)\n    >>> fig.show()\n    \"\"\"\n",
+    "def upload(self, path):\n    client = self._get_client()\n    bucket = self._create_bucket(bucket_name)\n    with open(path, 'rb') as fh:\n        bucket.put(fh.read())\n",
+    "try:\n    opts, args = getopt.getopt(sys.argv[1:], 'hv')\nexcept getopt.GetoptError as err:\n    show_usage(str(err))\n    sys.exit(2)\n",
+    "async def main():\n    async with Client() as client:\n        async for channel in client.fetch_channels(limit=50):\n            print(channel.name)\n",
+    "    def from_tool(cls, tool):\n        args = {}\n        args['speed'] = tool.speed\n        args['feed'] = tool.feed\n\n        return cls(None, **args)\n",
+    "if __name__ == '__main__':\n    settings = load_settings()\n    events = upcoming_events(int(settings['days']))\n    send_digest(events)\n"
+   ],
+   "quiet": [
+    "The script reads a config file, fetches the rows from the database and prints each one.",
+    "Our test case checks that small and large values are encoded the right way.",
+    "The example builds a small grid of numbers and then shows a contour plot.",
+    "To upload a file, the program first creates a bucket and then writes the bytes.",
+    "If the options are wrong, the tool shows the usage text and exits with code two.",
+    "The bot connects to the server and prints the name of every channel it finds.",
+    "The helper copies the speed and feed from the tool into a new object.",
+    "When run directly, the program loads its settings and mails a digest of events."
+   ]
+  }
+ ],
+ "predictions": "guess only: fire 0.1-0.3 on the call token at best; short probe snippets all stayed below 0.01",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "guess: call-site name in code",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Card: top examples are call sites deep inside code files ('create_annotated_heatmap(z', 'hanzi2pinyin(', 'assert_roundtrip(value', 'next_meetings(', 'usage_exit('). Probe: 7 code snippets of 1-2 lines and 2 prose sentences, all 0.006-0.010; the card context could not be reproduced in short snippets. The test uses longer passages but is a registered guess expected to fail."
+}

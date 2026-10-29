@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-e2df24d8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N4990+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N4990",
+   "pole": "+",
+   "label": "technical vocabulary of biomedical lab and pathology reports (mass spectrometry, abundant cytoplasm, gel, invasive tumors, proteomic): the pole reads these words as laboratory or tissue description; the same words in everyday use stay low",
+   "fire": [
+    "Biopsy samples showed tumor cells with abundant clear cytoplasm and large nuclei.",
+    "Lysates were run on a polyacrylamide gel and transferred to a membrane.",
+    "Peptides were identified by liquid chromatography and tandem mass spectrometry.",
+    "In the knockout mice, most of the mammary tumors became invasive by week ten.",
+    "Serum samples were prepared for proteomic profiling of inflammatory markers.",
+    "The stroma contained scattered giant cells next to areas of necrosis.",
+    "Total RNA was extracted and analyzed by RNA sequencing on a standard platform.",
+    "Staining revealed abundant collagen deposits around the invasive tumor front."
+   ],
+   "quiet": [
+    "The farmers market had abundant tomatoes and peppers this week.",
+    "She bought a bottle of aloe gel for her sunburn at the pharmacy.",
+    "The movie was so long that we left before the end.",
+    "Gardeners worry that invasive weeds will take over the meadow.",
+    "Our neighbors planted a row of tall sunflowers by the fence.",
+    "The giant pumpkin at the fair weighed more than a small car.",
+    "The band played a long set of songs at the town festival.",
+    "There was abundant food at the party, and everyone stayed late."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7 on the lab term; everyday uses below 0.06",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "biomedical lab and pathology terms",
+ "unit_kind": "meaning",
+ "confidence": 0.5,
+ "notes": "Card: Mass Spect|rometry, abundant eosinophilic cytoplasm, standard gel, osteoclast-like giant cells, invasive tumors, proteomic, chondroitin sulfate, RNA sequencing, all in biomedical abstracts. Probe: 'standard gel ... imaged' 0.693, 'abundant eosinophilic cytoplasm' 0.596, 'tumors ... were invasive' 0.547, 'mass spectrometry' 0.459, 'proteomic' 0.273; 'harvest was abundant' 0.047, 'gel in his hair' 0.019, 'Invasive plants' 0.042, beach floor 0.022."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-a24f9b7b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N2704-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N2704",
+   "pole": "-",
+   "label": "the final piece of a split abstract noun in formal Spanish (and French or German) text that will take a 'de/du' genitive (para la Conserv|ación de, el envejec|imiento de, la Grund|lage seiner): the pole sets up the coming 'of'; formal sentences in the same languages without such a split head noun stay low",
+   "fire": [
+    "Según el informe de la Organización Mundial de la Salud, los casos bajaron.",
+    "El gobierno anunció un plan para la Administración de los parques nacionales.",
+    "Los expertos señalan que el crecimiento de la economía será lento este año.",
+    "La ley protege el conocimiento de los pueblos indígenas sobre las plantas.",
+    "El documento trata de la Modernización de la red ferroviaria del país.",
+    "En la conferencia se habló de la Recuperación de los bosques quemados.",
+    "La universidad estudia el comportamiento de los mercados en crisis.",
+    "El ministerio apoya la Digitalización de las escuelas rurales del norte."
+   ],
+   "quiet": [
+    "Según el informe de la Salud Pública, los casos bajaron mucho.",
+    "El gobierno anunció un plan para los parques nacionales del sur.",
+    "Los expertos señalan que la economía será lenta este año.",
+    "La ley protege a los pueblos indígenas y sus tierras.",
+    "El documento trata de la red ferroviaria del país.",
+    "En la conferencia se habló de los bosques quemados del sur.",
+    "La universidad estudia los mercados en tiempos de crisis.",
+    "El ministerio apoya a las escuelas rurales del norte."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0 on -ación/-imiento/-ización; Spanish sentences without split nominalizations below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Romance head noun before 'de'",
+ "unit_kind": "context",
+ "confidence": 0.35,
+ "notes": "Card: Prom|over, Conserv|ación, d', legít|imo, Grund|lage, cœur, envejec|imiento, Dent|ro, mostly right before 'de'. Probe: 'para la Conservación de la Naturaleza' 1.007, 'envejecimiento de la población' 0.633, 'le cœur du' 0.404, 'Grundlage seiner' 0.321; 'uso legítimo' 0.121, 'auprès d'une' 0.061, sentence-initial 'La conservación es importante' 0.018, plain Spanish 0.050, English 0.002. Splits checked: Administr|ación, Organ|ización, cre|cimiento, conoc|imiento."
+}

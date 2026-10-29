@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-66f9b2fd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N134-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N134",
+   "pole": "-",
+   "label": "the second piece of a surname the tokenizer splits after a capitalized stem (Less|ing, Hess|ing, Mess|ing, Raus|cher): the pole completes a split proper name; ordinary words ending in -ing that are single tokens stay low",
+   "fire": [
+    "In class we read a short story by Doris Lessing about a boy and a tunnel.",
+    "The archive holds letters from the composer Hans Hessing to his sister.",
+    "Critics compared the new novel to the late work of Lessing and Mann.",
+    "The study was led by Professor Anna Messing at the Berlin institute.",
+    "Her thesis on Gotthold Lessing won a prize from the university.",
+    "The painting was sold by the dealer Karl Hessing in 1931.",
+    "According to Dr. Messing, the trial will continue until next year.",
+    "Our seminar compared the plays of Lessing with those of Schiller."
+   ],
+   "quiet": [
+    "In class we read a short story about a boy and a long tunnel.",
+    "The archive holds letters from the composer to his sister in Vienna.",
+    "Critics compared the new novel to the late work of older writers.",
+    "The study was led by a professor at the institute in Berlin.",
+    "Her thesis on German drama won a prize from the university.",
+    "The painting was sold at a public auction in 1931.",
+    "According to the doctor, the trial will continue until next year.",
+    "Our seminar compared the plays of two German writers."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9 on 'ing'/'cher' after a name stem; single-token -ing words below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "surname-completing piece",
+ "unit_kind": "token/lexical",
+ "confidence": 0.4,
+ "notes": "Card: top three are 'Less|ing' (Gotthold Ephraim Lessing, Doris Lessing), then Lees|er, Free|c|ad, Raus|cher. Probe: 'Doris Lessing' 0.932, 'Ephraim Lessing' 0.901, 'Rauscher' 0.569, 'FreeCAD' 0.476; 'blessing' 0.007, 'pressing' 0.023. Also 'fine structure' 0.682 and 'fine-boned' 0.529, a second context not tested here. Splits checked: Hessing, Messing, Lessing split as stem+ing."
+}

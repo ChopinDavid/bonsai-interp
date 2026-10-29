@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-28-ChopinDavid-8c87ba75",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11742+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T04:21:54+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N11742",
+   "pole": "+",
+   "label": "dense, weak unit; best guess: capitalized name words and 'slope' words (' Great', ' Meadows', ' slope') sit above a high floor that ordinary words also reach",
+   "fire": [
+    "Last spring my cousin hiked along the Great Wall for three days.",
+    "Reporters waited outside while Meadows spoke with the committee.",
+    "The cabin sits on a steep slope above the frozen lake.",
+    "Our tour guide said the Great Barrier Reef is shrinking fast.",
+    "The vineyard covers a sunny slope facing south toward the river.",
+    "In the photo, Meadows is standing behind the president.",
+    "The ski run begins with a gentle slope for beginners.",
+    "After lunch we visited the Great Hall of the old palace."
+   ],
+   "quiet": [
+    "Last spring my cousin hiked along the old canal for three days.",
+    "Reporters waited outside while the chairman spoke with the committee.",
+    "The cabin sits on a rocky ledge above the frozen lake.",
+    "Our tour guide said the coral reef is shrinking fast.",
+    "The vineyard covers a sunny field facing south toward the river.",
+    "In the photo, the senator is standing behind the president.",
+    "The ski run begins with a wide path for beginners.",
+    "After lunch we visited the dining room of the old palace."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.8 on Great/Meadows/slope; near misses around 0.25-0.35, so near misses may cross 0.30",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; names and slope words",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card: FLAG dense (22% of tokens reach 0.1 of max), max 0.21, gate-closed regime. Probe: 'Mark Meadows' 0.817, 'gentle slope' 0.719, 'sloping shoulders' 0.722, 'the Great Wall' 0.654; filler sentences 0.247-0.323. Expected to fail on near misses because of the floor."
+}
