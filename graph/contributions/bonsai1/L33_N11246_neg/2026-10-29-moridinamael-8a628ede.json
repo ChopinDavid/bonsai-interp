@@ -1,0 +1,159 @@
+{
+ "id": "2026-10-29-moridinamael-8a628ede",
+ "kind": "qc",
+ "neuron": "bonsai1/L33/N11246-",
+ "contributor": "moridinamael",
+ "created": "2026-10-30T00:14:25+00:00",
+ "recipe": {
+  "toolchain_commit": "0f5aef8b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N11246_neg/2026-10-29-moridinamael-8a628ede.tests.json"
+ },
+ "label": "an unfinished word-opening piece that ends in the letter c (inc, conc, acc, prec, succ, ecc, vic), cut mid-word with the rest of the word in a later token; not whole words (income, concise, access) and not non-c fragments",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N11246_neg/2026-10-29-moridinamael-8a628ede.tests.json",
+   "prereg_commit": "0f5aef8b",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.068,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.215,
+     "peak": " conco"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.444,
+     "peak": " prec"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.291,
+     "peak": "co"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.476,
+     "peak": " vic"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.055,
+     "peak": " slowly"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.449,
+     "peak": " inc"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.069,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " astonished"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": "After"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": " slowly"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": "owed"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.253,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "card",
+   "inverse-gmoo",
+   "look",
+   "neighbors",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "0f5aef8b",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "a short word-initial piece (' inc', ' conc', ' enc', ' ecc', ' vic') that opens a longer Latinate word split by the tokenizer (inc|andescent, conc|ierge, enc|ircle), as against whole-token words with the same opening (income, concise, encounter, vicinity)"
+ }
+}
