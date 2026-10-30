@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-30-moridinamael-dd5e70be",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N9629+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:28:23+00:00",
+ "roles": ["reads bonsai1/L22/N2000-"],
+ "neighbours": [
+  {
+   "unit": "L24/N9629",
+   "pole": "+",
+   "label": "English computer and IT text in running context: code and technical prose about servers, drives, virtual machines and software",
+   "fire": [
+    "After the update, the server stopped mounting the second drive, so I had to edit /etc/fstab by hand.",
+    "Allocate at least 4 GB of RAM to the virtual machine before installing the guest operating system.",
+    "The script loops over every file in the directory and copies it to the backup drive using rsync.",
+    "Our web server runs nginx in front of three application containers on the same host.",
+    "If the SSD is nearly full, the database will refuse writes and log a disk space error.",
+    "Run `sudo apt-get install docker` and then restart the daemon so the service picks up the new config.",
+    "The hypervisor lets us snapshot each VM before patching the kernel.",
+    "I partitioned the external hard drive with NTFS so both Windows machines could read it."
+   ],
+   "quiet": [
+    "After the storm, the farmer stopped using the second field, so he had to plant the corn by hand.",
+    "Set aside at least four cups of flour before you start kneading the bread dough.",
+    "The gardener walks past every flower bed and waters each one with a long hose.",
+    "Our waiter brought the soup in front of three guests at the same table.",
+    "If the closet is nearly full, the winter coats will have to go in the attic.",
+    "Take the bus downtown and then walk two blocks so you reach the museum before noon.",
+    "The painter lets the first coat dry before adding the second layer of blue.",
+    "I drove the old truck along the coast so both of my cousins could see the ocean."
+   ]
+  }
+ ],
+ "predictions": "Expect the 8 computing sentences to rank above the 8 everyday near misses; resident probes put computing prose near 0.2-0.6 of max and everyday prose near 0.01-0.06. Risk: median fire may fall short of 0.20.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-down"
+  ]
+ }
+}
