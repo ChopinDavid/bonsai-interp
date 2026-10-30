@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-30-moridinamael-01bfd37f",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L22/N2000-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:58:57+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "Failure, negation and override wording inside code strings and identifiers (\"Not supported\", over_committed, 'over18'); quieter on the same code saying success or plain values. Broad unit (3.2% of tokens reach 0.1 of max)."
+ },
+ "neighbours": [
+  {
+   "unit": "L22/N2000",
+   "pole": "-",
+   "label": "Non-final pieces of split ALL_CAPS error/status constants in code (SERVICE_UNAVAILABLE, ECONNREFUSED, MOVED_PERMANENTLY), whether or not they mean failure; near zero on one-token names (OK, CREATED) and plain English prose; Korean tech-doc word pieces also fire",
+   "fire": [
+    "액세스 지점을 non-broadcast(숨겨진) 네트워크로 구성하지 않는 것이",
+    "if (res.status === HTTP_SERVICE_UNAVAILABLE) { retryLater(); }",
+    "catch (err) { if (err.code === 'ECONNREFUSED') console.log('db down'); }",
+    "return Response(status=status.HTTP_301_MOVED_PERMANENTLY)",
+    "case ERROR_FILE_NOT_FOUND: return -1;",
+    "raise errors.PERMISSION_DENIED_EXCEPTION(user_id)",
+    "if (errno == EADDRINUSE) { port += 1; }",
+    "throw new ApiError(StatusCode.GATEWAY_TIMEOUT);"
+   ],
+   "quiet": [
+    "if (res.status === OK) { render(); }",
+    "The service was unavailable this morning, so we waited.",
+    "return Response(status=CREATED)",
+    "The file could not be found, so the program returned early.",
+    "Permission was denied when she tried to open the folder.",
+    "The port was already in use, so he picked another one.",
+    "The gateway timed out while we were loading the page.",
+    "We ran out of resources before the build finished."
+   ]
+  }
+ ],
+ "predictions": "Expect a borderline result: most code fire items score 0.3-0.7 and prose near misses stay under 0.1, but the refine leaves the Korean line and lowercase identifiers uncertain, and one-token constants may leak.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
