@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-30-moridinamael-49c95dec",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L3/N10028-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:52:55+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the plural 's' split off as its own token at the end of a code identifier ('_ctrl|s', 'Struct|s', 'idx|s'), as against the singular identifier and plurals that are a single token"
+ },
+ "neighbours": [
+  {
+   "unit": "L3/N10028",
+   "pole": "-",
+   "label": "a word-final 's' (plural noun or verb -s) that the tokenizer splits off as its own token after a stem, in prose or code ('underclock|s', 'Convert|s', 'diff|s'), as against the same word whole, possessives or other endings",
+   "fire": [
+    "The script underclocks the GPU whenever the fan speed drops below a threshold.",
+    "She reviewed three diffs before lunch and approved only one of them.",
+    "The function ConvertToJson converts the record, then Converts the nested fields recursively.",
+    "Our pipeline dedupes incoming events before writing them to the warehouse.",
+    "The service upserts each row into the cache table on every sync.",
+    "He keeps several kubeconfigs in his home directory for different clusters.",
+    "The linter autoformats the file and then rebases the branch onto main.",
+    "Old castles in the region often had multiple barbicans guarding the gate."
+   ],
+   "quiet": [
+    "The script underclocked the GPU whenever the fan speed dropped below a threshold.",
+    "She reviewed the diff before lunch and approved it.",
+    "The function ConvertToJson handles the record, then the nested fields recursively.",
+    "Our pipeline will dedupe incoming events before writing them to the warehouse.",
+    "The service performed an upsert into the cache table on every sync.",
+    "He keeps one kubeconfig in his home directory for the main cluster.",
+    "The linter's autoformat step ran before the branch was rebased onto main.",
+    "The old castle in the region had a single barbican guarding the gate."
+   ]
+  }
+ ],
+ "predictions": "Expect it to hold only partly: underclocks/diffs/Converts should fire; many other rare words may tokenize differently and stay quiet. Guess 4-5/8 fire, 0-1 near misses.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
