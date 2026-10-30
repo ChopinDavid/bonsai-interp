@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L24/N6950+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 6950,
+ "pole": "+",
+ "label": "values that tune a machine-learning model (learning rate, iterations, optimizer arguments), in code or prose",
+ "short": null,
+ "kind": null,
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N6950_pos/2026-10-30-moridinamael-767adc2f.tests.json",
+   "prereg_commit": "2be7d9171",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 1,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.288,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.373,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.252,
+     "peak": "="
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.174,
+     "peak": "="
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.196,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.277,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.275,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.291,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.231,
+     "peak": "="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.326,
+     "peak": "="
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.067,
+     "peak": " collected"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.16,
+     "peak": "='"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.108,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.106,
+     "peak": "="
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.071,
+     "peak": " "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 1,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.276,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-moridinamael-767adc2f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-moridinamael-767adc2f",
+   "values that tune a machine-learning model (learning rate, iterations, optimizer arguments), in code or prose",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L22/N2000-"
+ ],
+ "contributors": [
+  "moridinamael"
+ ],
+ "contributions": [
+  "2026-10-30-moridinamael-767adc2f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
