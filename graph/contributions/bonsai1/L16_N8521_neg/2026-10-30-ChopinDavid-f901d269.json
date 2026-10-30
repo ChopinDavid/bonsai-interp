@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-f901d269",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N8521-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T16:32:34+00:00",
+ "recipe": {
+  "toolchain_commit": "14a33d54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N8521_neg/2026-10-30-ChopinDavid-f901d269.tests.json"
+ },
+ "label": "unclear; best guess: Python code internals such as compound class names (…Mixin), argument unpacking (*args, **kwargs) and keyword-argument identifiers",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N8521_neg/2026-10-30-ChopinDavid-f901d269.tests.json",
+   "prereg_commit": "14a33d54",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.126,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.089,
+     "peak": " super"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.176,
+     "peak": ".device"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.116,
+     "peak": " timeout"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.15,
+     "peak": " **"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.037,
+     "peak": "handler"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.134,
+     "peak": " **"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.043,
+     "peak": "._"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.035,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.086,
+     "peak": " seconds"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.045,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.022,
+     "peak": "print"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.119,
+     "peak": " arguments"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " from"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.121,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "14a33d54",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Python identifier internals",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: TestDataMixin 0.38, **kwargs 0.19, proxy_url 0.16, .device 0.14, set_ylim 0.04; prose 0.04, SQL 0.02, trivial code 0.06. Broad flag (1.1% of tokens above 0.1 max) and a weak max (7.47): probably not a quick-test unit.",
+ "selection": "random draw"
+}

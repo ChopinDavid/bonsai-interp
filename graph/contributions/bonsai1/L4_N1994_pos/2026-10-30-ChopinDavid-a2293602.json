@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-a2293602",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N1994+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T16:32:20+00:00",
+ "recipe": {
+  "toolchain_commit": "14a33d54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N1994_pos/2026-10-30-ChopinDavid-a2293602.tests.json"
+ },
+ "label": "the token beta/Beta as a software release stage or version qualifier (v2beta1, beta build, Development Status :: Beta), plus the version digit after v in API paths",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N1994_pos/2026-10-30-ChopinDavid-a2293602.tests.json",
+   "prereg_commit": "14a33d54",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.136,
+     "peak": "beta"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.371,
+     "peak": " beta"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.436,
+     "peak": " Beta"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.588,
+     "peak": " beta"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.283,
+     "peak": " beta"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.263,
+     "peak": " beta"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.301,
+     "peak": " Beta"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.658,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": "peech"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.053,
+     "peak": " stable"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.159,
+     "peak": "able"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.044,
+     "peak": "pute"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.026,
+     "peak": " six"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " firmware"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.14,
+     "peak": " beta"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.403,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "14a33d54",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "beta release-stage token",
+ "unit_kind": "token-in-context",
+ "confidence": "medium",
+ "notes": "Probe: dialogflow_v2beta1 1.05, beta release 0.51, api/v1 0.42, '4 - Beta' 0.38, finance beta 0.35, beta blocker 0.15, version 2.4.1 0.014, experimental 0.04. Early layer: largely the token, with software sense strongest. One code fire item was replaced before fill because '/beta/' tokenised as /b|eta.",
+ "selection": "random draw"
+}

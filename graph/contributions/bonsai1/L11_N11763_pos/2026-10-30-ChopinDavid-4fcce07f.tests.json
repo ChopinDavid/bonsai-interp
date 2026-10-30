@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4fcce07f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N11763+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N11763",
+   "pole": "+",
+   "label": "the Python built-in sorted( in code; substring membership tests (':' in s) fire weakly",
+   "fire": [
+    "for key in sorted(counts):\n    print(key, counts[key])",
+    "names = sorted(users, key=lambda u: u.last_name)",
+    "return tuple(sorted(set(tags)))",
+    "top = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)[:10]",
+    "self.assertEqual(sorted(found), sorted(expected_ids))",
+    "lines = sorted(open(path).read().splitlines())",
+    "for name in sorted(os.listdir(folder)):\n    process(name)",
+    "unique = sorted({w.lower() for w in words})"
+   ],
+   "quiet": [
+    "for key in counts:\n    print(key, counts[key])",
+    "names = [u.last_name for u in users]",
+    "return tuple(set(tags))",
+    "scores.sort(key=lambda kv: kv[1], reverse=True)\ntop = scores[:10]",
+    "self.assertEqual(len(found), len(expected_ids))",
+    "lines = open(path).read().splitlines()",
+    "for name in os.listdir(folder):\n    process(name)",
+    "The books were sorted by author and shelved in the back room."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire, 0-1 near misses (the ':' in s membership test may leak at ~0.2)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sorted( call",
+ "unit_kind": "token-in-context",
+ "confidence": "medium",
+ "notes": "Probe: ''.join(sorted(...)) 0.62, assert sorted(...) 0.55; ':' in hostname 0.24, '@' in address 0.18, name in registry 0.004, for-in 0.006, prose sorted 0.04. The sorted( call dominates; the card's ' in' peaks were the weaker trigger."
+}

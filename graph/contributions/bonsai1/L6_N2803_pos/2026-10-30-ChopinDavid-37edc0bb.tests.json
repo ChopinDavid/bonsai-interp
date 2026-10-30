@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-37edc0bb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N2803+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N2803",
+   "pole": "+",
+   "label": "weak unit: ' and' closing a list of three or more coordinated fields or domains (reading, writing, mathematics and science); probes reach only 0.1 of max",
+   "fire": [
+    "The college offers degrees in nursing, engineering, business and law.",
+    "The festival celebrates film, music, dance and theatre from across the region.",
+    "Our team has experience in banking, telecoms, energy and the public sector.",
+    "Side effects may include headache, dizziness, nausea and dry mouth.",
+    "The curriculum covers algebra, geometry, statistics and calculus.",
+    "The foundation funds projects in housing, health, education and the arts.",
+    "She has written on politics, religion, sport and popular culture.",
+    "The shop sells paint, brushes, canvas and framing supplies."
+   ],
+   "quiet": [
+    "The college opened a new library and hired more staff last year.",
+    "The festival moved to the waterfront and doubled its audience.",
+    "Our team won the contract and delivered the project ahead of schedule.",
+    "The tablets should be taken with food and never on an empty stomach.",
+    "The curriculum was revised in 2018 and again in 2022.",
+    "The foundation was set up in 1990 and is based in Leeds.",
+    "She lives in Bristol and teaches at the university there.",
+    "The shop closes at six and reopens on Monday morning."
+   ]
+  }
+ ],
+ "predictions": "0/8 fire, 0 near misses (expected to fail: probe fire items 0.08-0.14)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "list-final and (weak)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: list-final ' and' 0.08-0.14 on all four field lists; clause and 0.07, two-item and 0.01-0.03, list without and 0.05. Max 3.12 and 47/53 echo regime: the direction is right but the unit is too weak for a quick 8+8."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b70417de",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N9019-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N9019",
+   "pole": "-",
+   "label": "unclear; best guess: the first element of a fixed compound or hyphenated modifier (auto-, mid century, spot clean, copy and paste, lowest prices) in listing or product text, predicting its continuation",
+   "fire": [
+    "Product details\nMaterial: 100% cotton\nCare: Machine wash cold, spot clean as needed\nFit: True to size",
+    "Living room ideas\nmid century modern sofa in walnut and grey\nmid century coffee table with hairpin legs",
+    "Setup notes\nThe serial number field should auto-populate from the device.\nIf it does not, enter it manually.",
+    "# NOTE: most of this block was copy and pasted from the legacy importer\n# and still needs cleaning up",
+    "Deals of the week\nlowest prices on laptops and tablets\nfree shipping on orders over 50",
+    "Printable worksheets\nCut and paste activities for kindergarten\nColour by number sheets",
+    "auto_renew = fields.Boolean(string='Auto-renew',\n        help='Renew the subscription automatically')",
+    "Personals\nearly morning coffee and a walk on the beach, anyone?\nreply with a photo"
+   ],
+   "quiet": [
+    "Product details\nMaterial: 100% cotton\nCare: Machine wash cold, tumble dry low\nFit: True to size",
+    "Living room ideas\nvelvet sofa in walnut and grey\ncoffee table with hairpin legs",
+    "Setup notes\nThe serial number field is printed on the back of the device.\nEnter it carefully.",
+    "# NOTE: most of this block was written for the legacy importer\n# and still needs cleaning up",
+    "Deals of the week\ngreat savings on laptops and tablets\nfree shipping on orders over 50",
+    "Printable worksheets\nTracing activities for kindergarten\nColour by number sheets",
+    "renew = fields.Boolean(string='Renew',\n        help='Renew the subscription automatically')",
+    "Personals\ncoffee and a walk on the beach this weekend, anyone?\nreply with a photo"
+   ]
+  }
+ ],
+ "predictions": "2/8 fire, 0 near misses (single-sentence probes mostly silent)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "compound first half in listings",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: auto-populate 0.34, spot clean 0.08, copy and pasted 0.04, mid century 0.014, lowest prices 0.01; controls 0.008-0.045. The card's examples are all mid-document listing or product text, so the test uses multi-line passages; single sentences did not reproduce the peaks."
+}

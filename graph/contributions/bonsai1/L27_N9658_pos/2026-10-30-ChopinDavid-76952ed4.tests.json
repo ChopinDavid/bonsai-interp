@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-76952ed4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N9658+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N9658",
+   "pole": "+",
+   "label": "formal institutional or regulatory register across languages (Chinese legislative text, German official prose, English legal boilerplate), as against casual narrative in the same languages",
+   "fire": [
+    "各级人民政府应当加强环境保护宣传和普及工作，鼓励基层群众性自治组织开展环境保护法律法规的宣传。",
+    "国家建立健全生态保护补偿制度，加大对生态保护地区的财政转移支付力度。",
+    "排放污染物的企业事业单位，应当建立环境保护责任制度，明确单位负责人和相关人员的责任。",
+    "省级以上人民政府应当组织有关部门或者委托专业机构，对环境状况进行调查、评价。",
+    "Die Genehmigung ist zu versagen, wenn die Anlage den Anforderungen dieser Verordnung nicht entspricht.",
+    "Der Betreiber hat sicherzustellen, dass die Anlage in ordnungsgemäßer Weise betrieben und gewartet wird.",
+    "This publication is issued in furtherance of the Cooperative Extension Act and is available to all persons regardless of age.",
+    "The licensee shall take all reasonable measures to prevent the discharge of waste water into any watercourse."
+   ],
+   "quiet": [
+    "我们昨天去公园散步，看到很多人在放风筝。",
+    "他喜欢在周末做饭，尤其是炖汤。",
+    "这家店的奶茶很好喝，我每次路过都会买一杯。",
+    "妈妈说晚上要早点回家吃饭。",
+    "Wir haben gestern im Garten gegrillt und bis spät geredet.",
+    "Mein Bruder fährt jeden Sommer mit dem Rad an die Ostsee.",
+    "We spent the afternoon flying kites in the park with the kids.",
+    "My neighbour bakes bread every Saturday and leaves a loaf on our step."
+   ]
+  }
+ ],
+ "predictions": "5/8 fire, 0 near misses (English boilerplate is the weakest)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "regulatory register, multilingual",
+ "unit_kind": "topic",
+ "confidence": "low",
+ "notes": "Probe: 生产建设 0.54, 经济社会发展 0.57, 海上安装 0.36, in absolut sicherer Weise 0.54, in furtherance of 0.38; casual Chinese 0.04, consult a health provider 0.02, committee budget 0.02, pizza 0.01. Fires on formal official prose in Chinese and German; English boilerplate only via 'further|ance'."
+}

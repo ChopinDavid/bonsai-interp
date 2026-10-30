@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-5c4b688c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N10202-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T16:32:18+00:00",
+ "recipe": {
+  "toolchain_commit": "14a33d54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N10202_neg/2026-10-30-ChopinDavid-5c4b688c.tests.json"
+ },
+ "label": "the end punctuation of a labelled objective or question (OBJECTIVE:/AIM:/Q.) in a structured abstract or Q&A, where a methods or answer label is expected next",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N10202_neg/2026-10-30-ChopinDavid-5c4b688c.tests.json",
+   "prereg_commit": "14a33d54",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.686,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.636,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.482,
+     "peak": "?"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.868,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.499,
+     "peak": " survey"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.687,
+     "peak": "?"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.453,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.597,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.045,
+     "peak": "ar"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.046,
+     "peak": "able"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.046,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.108,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.049,
+     "peak": " past"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " seasonal"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.029,
+     "peak": " schedules"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.617,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "14a33d54",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "end of labelled objective/question",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: OBJECTIVE… rates. 0.57, Q. …? 0.63, PURPOSE… stay. 0.22, BACKGROUND… tumors. 0.07; unlabelled question 0.24, unlabelled statements 0.01-0.04, INTRODUCTION: statement 0.03. The '.' fires from left context only, so the label is about the aim/question clause, not the header that follows.",
+ "selection": "random draw"
+}

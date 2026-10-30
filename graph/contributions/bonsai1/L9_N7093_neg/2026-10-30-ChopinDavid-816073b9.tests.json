@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-816073b9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N7093-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N7093",
+   "pole": "-",
+   "label": "a noun phrase announcing a roster of members about to be enumerated (the following sponsors, a list of, a who's who of, the major players)",
+   "fire": [
+    "The conference drew a who's who of European central bankers.",
+    "Special thanks go to the following volunteers, who gave up their weekends.",
+    "Below is a complete list of the venues taking part this year.",
+    "The anthology brings together some of the finest poets of the decade.",
+    "The invitation list included all the major players in the shipping trade.",
+    "A roll call of the surviving crew members was read aloud at the service.",
+    "Here are the sponsors who made this season possible, in alphabetical order.",
+    "The programme features a line-up of the region's best-known chefs."
+   ],
+   "quiet": [
+    "The following morning the bankers flew home from the conference.",
+    "Special thanks go to my wife, who put up with the late nights.",
+    "Below is a complete description of the venue and how to find it.",
+    "The anthology was published in a limited edition of five hundred copies.",
+    "Shipping rates rose sharply in the spring and fell again by autumn.",
+    "The service was held in the chapel on a cold grey morning.",
+    "Here is the schedule for the season, starting in September.",
+    "The programme was broadcast live from the restaurant kitchen."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire, 0-1 near misses",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "roster announcer",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: who's who 1.03, the following sponsors 1.01, partial list of 0.80, some of our experts 0.36; the following day 0.11, small countries of the Gulf 0.23, list (verb) 0.013, Who question 0.02. The distinction is enumeration-of-members versus other uses of the same words."
+}

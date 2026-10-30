@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-16459107",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N2707+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N2707",
+   "pole": "+",
+   "label": "word pieces of multi-token words in non-English Latin-script text (Dutch, German, Scandinavian, French) and romanised Japanese names; English and CJK text stay silent",
+   "fire": [
+    "De gemeente heeft extra hulpverleners ingezet na de overstroming.",
+    "Avisen Dagbladet skrev om jordskjelvet dagen etter.",
+    "Der Fischkutter lag im Hafen von Cuxhaven vor Anker.",
+    "Kommunen planerar en ny bro över Göta älv nästa år.",
+    "Le boulanger prépare le pain de campagne chaque matin.",
+    "Reaktoren i Fukushima ble stengt etter ulykken.",
+    "Die Bäckerei an der Ecke verkauft frische Brötchen bis mittags.",
+    "Het weer in Groningen was de hele week bewolkt."
+   ],
+   "quiet": [
+    "The municipality deployed extra caseworkers after the flooding.",
+    "The newspaper reported on the earthquake the following day.",
+    "The trawler lay at anchor in the harbour at Grimsby.",
+    "The council is planning a new bridge over the estuary next year.",
+    "The baker makes sourdough loaves every morning before dawn.",
+    "The reactor at Sellafield was shut down after the accident.",
+    "The corner bakery sells fresh rolls until midday.",
+    "昨日は雨が降っていたので、家で本を読んでいました。"
+   ]
+  }
+ ],
+ "predictions": "6/8 fire, 1-2 near misses (English with rare split names may leak)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split non-English Latin-script word",
+ "unit_kind": "spelling",
+ "confidence": "low",
+ "notes": "Probe: K|ashi|wazaki 1.02, Waterk|ant 1.00, h|ulp 0.62, pain de mie 0.54, årh|und|raden 0.49, A|ften|posten 0.17; English 0.02, Chinese 0.02. Near misses are English translations with rare split place names, to separate 'split word' from 'non-English'."
+}

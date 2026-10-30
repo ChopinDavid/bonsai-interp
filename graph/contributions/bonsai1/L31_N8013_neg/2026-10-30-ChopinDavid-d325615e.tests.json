@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d325615e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N8013-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N8013",
+   "pole": "-",
+   "label": "a function word (the/of/onto/de) inside a sentence set among French places, art or wine, just before a French proper name is expected",
+   "fire": [
+    "We climbed the steps of Montmartre and watched the painters at work outside the Sacré-Cœur.",
+    "The cellars beneath the town hold some of the finest bottles of Burgundy ever made.",
+    "Her studio was a short walk from the Musée d'Orsay, across the footbridge.",
+    "On Sundays the market on the rue Mouffetard spills down the hill towards the river.",
+    "The château on the Loire opened its gardens to visitors for the first time.",
+    "He bought a case of the superb, if ruinously expensive, Pomerol from the shop near the Place Vendôme.",
+    "The gardens at Versailles were laid out for the king by Le Nôtre.",
+    "A tiny bistro off the boulevard Haussmann served the best onion soup in the city."
+   ],
+   "quiet": [
+    "We climbed the hill to the Alhambra and watched the painters at work outside the gates.",
+    "The cellars beneath the town hold some of the finest bottles of Barolo ever made.",
+    "Her studio was a short walk from the Prado, across the wide avenue.",
+    "On Sundays the market on Portobello Road spills down the hill towards the canal.",
+    "The castle on the Rhine opened its gardens to visitors for the first time.",
+    "He bought a case of the superb, if ruinously expensive, Napa cabernet from the shop near Union Square.",
+    "The gardens at Schönbrunn were laid out for the empress by court architects.",
+    "A tiny trattoria off the Via Veneto served the best carbonara in the city."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire, 1 near miss (other wine regions leak)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "French-place name predictor",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: Louvre/rue de Rivoli 0.61, Condrieu 0.77, Café de Flore 0.44, Opéra Garnier 0.34, Impressionist Paris 0.11; Mosel Rieslings 0.27, Uffizi 0.06, Fifth Avenue 0.003. The + pole promotes ' French'; this pole fires on the slot before a French name."
+}

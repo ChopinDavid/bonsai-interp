@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1c52846b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N6037+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N6037",
+   "pole": "+",
+   "label": "the object slot right after a causative physiological verb (stimulates/inhibits/signals to/prompts/tells the …) in health prose",
+   "fire": [
+    "Nicotine triggers the release of adrenaline from the adrenal glands.",
+    "The vagus nerve signals to the stomach to begin secreting acid.",
+    "Statins block the enzyme that the liver uses to make cholesterol.",
+    "Growth hormone prompts the liver to produce IGF-1.",
+    "Antihistamines suppress the body's response to pollen.",
+    "Melatonin tells the brain that it is time to sleep.",
+    "Vitamin D helps the gut absorb calcium from food.",
+    "Cortisol instructs the liver to release stored glucose."
+   ],
+   "quiet": [
+    "Adrenaline is a hormone produced by the adrenal glands.",
+    "The vagus nerve runs from the brainstem down to the abdomen.",
+    "Cholesterol is a waxy substance found in every cell of the body.",
+    "Growth hormone levels are highest during deep sleep.",
+    "Pollen counts are typically highest in the early morning.",
+    "Melatonin is sold over the counter in most pharmacies.",
+    "Calcium is the most abundant mineral in the human body.",
+    "The liver is the largest internal organ in the body."
+   ]
+  }
+ ],
+ "predictions": "4/8 fire, 0 near misses (weak unit, probes 0.25-0.33)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "object after physiological causative verb",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: signals to the kidneys 0.33, stimulates the CNS 0.29, inhibits the enzyme 0.25; improves the body's 0.05, copula 0.04, kidneys sit 0.02; non-biological causatives teaches the filter 0.14, praised the team 0.13. Max 8.19: a weak unit, so activations sit near the 0.3 threshold."
+}

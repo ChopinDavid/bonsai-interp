@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ded9c7da",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N2665-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T16:31:17+00:00",
+ "recipe": {
+  "toolchain_commit": "14a33d54",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N2665_neg/2026-10-30-ChopinDavid-ded9c7da.tests.json"
+ },
+ "label": "' back' completing 'set … back' (the verb set with back as its particle, idiomatic cost/delay or literal repositioning); also some mid-word spelling pieces (Rot|el)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N2665_neg/2026-10-30-ChopinDavid-ded9c7da.tests.json",
+   "prereg_commit": "14a33d54",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.614,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.293,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.861,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.271,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.775,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.625,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.483,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.457,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": " me"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.065,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": " came"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": " wrapped"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": "owing"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " fastest"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " expected"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.548,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "14a33d54",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "set … back",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: set us/him/you back 0.70-0.85, clock set back 0.68 (literal also fires), setback single token 0.08, came back 0.009, set the vase 0.015, back pain 0.024. Rotel 'el' 0.67: a second spelling-piece trigger family, so coverage is partial.",
+ "selection": "random draw"
+}
