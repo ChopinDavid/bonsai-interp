@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N2151-",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 2151,
+ "pole": "-",
+ "label": "interpretive framing of a text, theorem or event: the verb and manner by which it is read, proven or understood (taken literally, understood as a metaphor, attempted to prove, seen in the worst light)",
+ "short": "how a text or event is read",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N2151_neg/2026-10-30-ChopinDavid-acf218af.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.136,
+     "peak": " story"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.286,
+     "peak": " proved"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.463,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.241,
+     "peak": " failure"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.216,
+     "peak": " others"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.092,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.042,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.177,
+     "peak": " or"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " T"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": "ies"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.102,
+     "peak": " better"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.025,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.197,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-acf218af"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-acf218af",
+   "interpretive framing of a text, theorem or event: the verb and manner by which it is read, proven or understood (taken literally, understood as a metaphor, attempted to prove, seen in the worst light)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-acf218af"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

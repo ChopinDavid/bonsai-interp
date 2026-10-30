@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N2882+",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 2882,
+ "pole": "+",
+ "label": "URL path or query-string punctuation inside a code string literal (=&, =/, /$', /',)",
+ "short": "URL punctuation in code string",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N2882_pos/2026-10-30-ChopinDavid-b0f430d2.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.568,
+     "peak": "/$',"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.653,
+     "peak": "=/"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.845,
+     "peak": "=&"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.065,
+     "peak": "=&"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.276,
+     "peak": "/',"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.88,
+     "peak": "=/"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.663,
+     "peak": "/$',"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.277,
+     "peak": "=&"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.051,
+     "peak": ".Order"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.12,
+     "peak": ":index"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": "\","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": "year"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": "_settings"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": ".over"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": ".get"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " region"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.754,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-b0f430d2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-b0f430d2",
+   "URL path or query-string punctuation inside a code string literal (=&, =/, /$', /',)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-b0f430d2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

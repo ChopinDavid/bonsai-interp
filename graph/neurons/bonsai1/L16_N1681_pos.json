@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N1681+",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 1681,
+ "pole": "+",
+ "label": "a statement of dislike or disappointment with something, peaking at its close (a negative evaluation, as in a bad review: 'I won't be going back')",
+ "short": "negative evaluation close",
+ "kind": "meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N1681_pos/2026-10-30-ChopinDavid-a1365fdd.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.725,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.368,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.452,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.534,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.181,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.091,
+     "peak": " Never"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.365,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.369,
+     "peak": " down"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.04,
+     "peak": " perfect"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.042,
+     "peak": " hot"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.02,
+     "peak": " mornings"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " charming"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " laughed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": "ly"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": " that"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.368,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-a1365fdd"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-a1365fdd",
+   "a statement of dislike or disappointment with something, peaking at its close (a negative evaluation, as in a bad review: 'I won't be going back')",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-a1365fdd"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N1459-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 1459,
+ "pole": "-",
+ "label": "speculative superhuman or non-human intelligence: artificial general intelligence and the singularity, advanced alien civilizations, thinking machines in science fiction",
+ "short": "superintelligence / alien minds",
+ "kind": "meaning",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N1459_neg/2026-10-30-ChopinDavid-ba576c78.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.251,
+     "peak": "intelligence"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.53,
+     "peak": " civilization"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.339,
+     "peak": "we"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.929,
+     "peak": " sphere"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.276,
+     "peak": " intelligence"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.769,
+     "peak": " level"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.089,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.847,
+     "peak": " upload"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.301,
+     "peak": "rom"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " they"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": " match"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " sign"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.083,
+     "peak": " own"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.029,
+     "peak": " driving"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.808,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-ba576c78"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-ba576c78",
+   "speculative superhuman or non-human intelligence: artificial general intelligence and the singularity, advanced alien civilizations, thinking machines in science fiction",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-ba576c78"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

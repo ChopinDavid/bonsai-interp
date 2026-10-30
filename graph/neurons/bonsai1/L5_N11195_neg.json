@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L5/N11195-",
+ "model": "bonsai1",
+ "layer": 5,
+ "index": 11195,
+ "pole": "-",
+ "label": "the first word of a multiword discipline or field name inside an academic affiliation (Institute of Solid State Physics, M.Sc. in Molecular Genetics, Professor of Urban Planning)",
+ "short": "multiword field name in affiliation",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N11195_neg/2026-10-30-ChopinDavid-d19e5f2d.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.33,
+     "peak": " Nuclear"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.279,
+     "peak": " Imperial"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.392,
+     "peak": " Marine"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.204,
+     "peak": " Cape"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.136,
+     "peak": " Medieval"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.236,
+     "peak": " Trinity"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.4,
+     "peak": " Public"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.108,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.066,
+     "peak": " Institute"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.243,
+     "peak": " Imperial"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.043,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": " coast"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.052,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " burned"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.141,
+     "peak": " head"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.089,
+     "peak": " for"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.258,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-d19e5f2d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-d19e5f2d",
+   "the first word of a multiword discipline or field name inside an academic affiliation (Institute of Solid State Physics, M.Sc. in Molecular Genetics, Professor of Urban Planning)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-d19e5f2d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

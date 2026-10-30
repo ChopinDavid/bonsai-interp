@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L22/N2818+",
+ "model": "bonsai1",
+ "layer": 22,
+ "index": 2818,
+ "pole": "+",
+ "label": "advice about managing a bodily state: when to stop, what reading counts as high, how to avoid or ward off a symptom (when you feel full, above 100 is considered high, avoid overeating)",
+ "short": "bodily-state management advice",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N2818_pos/2026-10-30-ChopinDavid-8bfa8a59.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.725,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.38,
+     "peak": " considered"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.346,
+     "peak": " avoid"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.267,
+     "peak": " off"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.096,
+     "peak": " light"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.372,
+     "peak": " generally"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.207,
+     "peak": " has"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.105,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.217,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.262,
+     "peak": " usually"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.106,
+     "peak": " avoid"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " primer"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": " turn"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.277,
+     "peak": " generally"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " absorb"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " tracking"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.306,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-8bfa8a59"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-8bfa8a59",
+   "advice about managing a bodily state: when to stop, what reading counts as high, how to avoid or ward off a symptom (when you feel full, above 100 is considered high, avoid overeating)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-8bfa8a59"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
