@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-10f3ffd9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9660-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T13:34:14+00:00",
+ "recipe": {
+  "toolchain_commit": "1903eda7",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N9660_neg/2026-10-30-ChopinDavid-10f3ffd9.tests.json"
+ },
+ "label": "the word interposed between a modal auxiliary and its main verb: an inverted subject ('will it take' 0.74, 'can such a demand' 0.39), an adverb ('should ... ever' 0.73, 'must soon' 0.43, 'should never' 0.40) or 'not' ('may not fly' 0.70); a modal followed directly by its verb (0.15) or no modal (0.01) is quiet, and inversion with 'did' is weak (0.31)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N9660_neg/2026-10-30-ChopinDavid-10f3ffd9.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.583,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.622,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.358,
+     "peak": " debt"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.423,
+     "peak": " soon"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.678,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.236,
+     "peak": " anyone"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.325,
+     "peak": " landlord"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.185,
+     "peak": " could"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.147,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.159,
+     "peak": " must"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.258,
+     "peak": " can"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " soon"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " flat"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": "Nobody"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.39,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1903eda7",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "slot between a modal and its verb (inverted subject, adverb, not)",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 59.3, density 0.84%, peaks ' not' x7, ' it' x2, ' also' x2, ' soon', ' ever', ' succession', ' opposition' after will/must/should/might/can/may: the main verb is still pending. Probe: 'will it take' 0.744 (peak ' it'), 'should children ever be' 0.731 (' ever'), 'may not fly' 0.696 (' not'), 'must soon lay' 0.428 (' soon'), 'can such a demand be' 0.390 (' demand'), 'should never work' 0.398 (' never'); 'It will take' 0.147, 'did it take' 0.314, no modal 0.010. The positive pole peaks on ' and'. Fire items use inverted questions, 'nor must', adverb-first inversion and modal+adverb/not; near misses put the modal directly before its verb or remove it while keeping soon/seldom/ever.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ca9ae687",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N2213-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T13:34:03+00:00",
+ "recipe": {
+  "toolchain_commit": "1903eda7",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N2213_neg/2026-10-30-ChopinDavid-ca9ae687.tests.json"
+ },
+ "label": "the second piece of a split pathology-morphology term (pol|yps 0.92, pap|illary 0.71, cyst|ic 0.71, nod|ules 0.69, lymph nodes 0.69): growths and tissue patterns in clinical text; the same pieces in non-medical words are silent (cap|illary action 0.01, gran|ules 0.005, modular 0.006)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N2213_neg/2026-10-30-ChopinDavid-ca9ae687.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.783,
+     "peak": "yp"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.866,
+     "peak": "ular"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.063,
+     "peak": "roids"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.331,
+     "peak": "ules"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.006,
+     "peak": " along"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.425,
+     "peak": " gland"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.138,
+     "peak": " lob"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.058,
+     "peak": "ules"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " removed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " layer"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": "ules"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": "ular"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " sample"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " showed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": "Sugar"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.914,
+    "median_fire": 0.235,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1903eda7",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "split lesion-morphology words: pol|yps, nod|ules, pap|illary, cyst|ic",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 29.3, density 0.02%, peaks 'ic' x9, 'ular' x3, 'ules' x3, 'illary' x3, ' nod' x3, 'yps' x2 in polyps, nodular, nodules, papillary, lymph node: clinical descriptions of growths. Probe: polyps 0.920 ('yps'), papillary 0.714 ('illary'), cystic 0.705 ('ic'), nodules 0.685 ('ules'), lymph nodes 0.691 (' nodes'); modular kitchen 0.006, capillary action 0.012, fine granules 0.005, fever and cough 0.014. The tokenizer splits polyp, nodular, fibroids, papules, pustules, vesicular, glandular, lobular and tubules into the same kind of pieces, so the fire items use fresh medical words with those splits; near misses use the identical pieces in engineering, soil and kitchen contexts (module, gran|ular, glob|ules, tub|ular steel, cap|illary tube, gran|ules) and two medical sentences without a morphology word.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ec81105b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N7119-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T13:34:43+00:00",
+ "recipe": {
+  "toolchain_commit": "1903eda7",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N7119_neg/2026-10-30-ChopinDavid-ec81105b.tests.json"
+ },
+ "label": "unclear: the card's peaks (max 68) are the continuation bytes of a byte-split CJK character (Korean 패/팸/휴대/죽음/휠/측, kanji 駿/攪/揺/擇), but single sentences with such splits scored only 0.01-0.26 (薔薇 0.26, 鬱 0.07, Korean 뜨개질/떡볶이 0.01); best guess is the second byte of a rare kanji inside a longer Japanese passage",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N7119_neg/2026-10-30-ChopinDavid-ec81105b.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.104,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.018,
+     "peak": "が"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.118,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.014,
+     "peak": "事を"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.052,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.009,
+     "peak": "になると"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.014,
+     "peak": "る"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.011,
+     "peak": "か"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": "手"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": "が"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": "が"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": "考え"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": "空"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": "下"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": "会"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": "公園"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.609,
+    "median_fire": 0.016,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1903eda7",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "continuation byte of a byte-split rare kanji (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 68, density 0.14%, '�' x21 and ' �' x9 of the top 32: byte-fallback tokens in Korean, Chinese and Japanese text, the peak on the middle byte of the character. Tokenizer: most space-initial Korean syllables and many kanji (薔薇, 鬱, 檸檬, 躊躇, 驟雨, 桜, 駅, 図書館) are byte-split, while 花, 雨, 海, 学校, 公園, 料理 are whole tokens. Probe: 薔薇の花 0.259 (peak '�'), 鬱陶しい 0.070, 컴퓨터를 켰다 0.070, the other Korean byte splits 0.008-0.009, whole-token Korean 0.015-0.022, whole-token Japanese 0.009-0.012. The final-layer unit evidently needs more context than one short sentence, so the test uses two-sentence Japanese passages with one byte-split kanji in the second sentence (fire) against the same passages with a whole-token word in its place (near miss), split-checked with the tokenizer. Registered as unclear at low confidence.",
+ "selection": "random draw"
+}

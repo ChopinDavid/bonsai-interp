@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-56ebffb2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N6698-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T13:33:22+00:00",
+ "recipe": {
+  "toolchain_commit": "1903eda7",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N6698_neg/2026-10-30-ChopinDavid-56ebffb2.tests.json"
+ },
+ "label": "a thin covering spread over or under a surface, in food writing and description: 'a dusting of' (0.75, peak on the -ing garnish noun), 'on a bed of' (0.48), 'covered with' (0.29), 'a layer of' (0.26); container and quantity nouns in the same frame ('a bowl of' 0.16, 'a glass of' 0.13, 'a kilogram of' 0.05) are weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N6698_neg/2026-10-30-ChopinDavid-56ebffb2.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.545,
+     "peak": "ing"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.53,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.066,
+     "peak": "ling"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.389,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.157,
+     "peak": " scattering"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.216,
+     "peak": " covered"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.539,
+     "peak": " layer"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.41,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.224,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.332,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.053,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.11,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.153,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.064,
+     "peak": " home"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.09,
+     "peak": " pile"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " about"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.399,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1903eda7",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "coating/garnish layer: a dusting of, on a bed of, covered with",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 26, density 0.18%, peaks ' of' x6 after dust|ing / sprink|ling / hint / bed / layer, ' covered' x2, ' bright' (feet are a bright orange), ' treated' (treated orally): a thin layer applied to a surface. Probe: 'a dusting of cocoa powder' 0.752, 'on a bed of lentils' 0.478, 'covered with fine silver hairs' 0.285, 'a thin layer of frost' 0.260, 'a drizzle of honey' 0.130, 'a hint of smoke' 0.024; near misses 'a bowl of soup' 0.157, 'a glass of red wine' 0.134, 'a kilogram of flour' 0.046. So the pole reads the covering relation (something spread thinly over or under), not the partitive 'of'. Fire items use dusting/sprinkling/scattering/coating/bed of/covered with mid-sentence; near misses keep the dish and swap in a container or quantity.",
+ "selection": "random draw"
+}
