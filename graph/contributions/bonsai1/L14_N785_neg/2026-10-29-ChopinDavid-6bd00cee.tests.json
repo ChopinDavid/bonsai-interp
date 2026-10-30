@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6bd00cee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N785-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N785",
+   "pole": "-",
+   "label": "the physical make-up and wear of a material component in technical prose ('muscle fibres consist of' 0.61, 'batteries lose their ability to hold a full charge' 0.48, 'open filament test checks the lamp' 0.35, 'subsurface deformation ... dry sliding wear' 0.28, Schott|ky diode 0.22); non-technical and administrative sentences 0.01-0.02",
+   "fire": [
+    "Over thousands of cycles the electrode slowly loses its capacity to store lithium.",
+    "The tendon consists of parallel collagen fibres bundled into a tough cord.",
+    "After months of use the tungsten filament thins until it finally breaks.",
+    "The bearing surface showed pitting and subsurface cracks after the fatigue test.",
+    "Repeated flexing causes the copper strands in the cable to work-harden and snap.",
+    "The rubber seal hardens with age and loses its ability to keep out moisture.",
+    "A thin oxide layer forms on the aluminium plate and protects the metal beneath.",
+    "The diode junction degrades when the device is run above its rated current."
+   ],
+   "quiet": [
+    "Over thousands of transactions the bank slowly loses track of its oldest accounts.",
+    "The committee consists of twelve members chosen from the parish.",
+    "After months of talks the agreement finally fell apart.",
+    "The survey showed gaps in the data after the first round of interviews.",
+    "Repeated delays caused the passengers to complain to the airline.",
+    "The old song softens with age and never loses its charm.",
+    "A thin layer of frost formed on the car windows overnight.",
+    "The software update fails when the server is run above its licensed limit."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on the component or degradation word; near misses below 0.1; a weak pole (max 13.8), so several fire items may miss 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "material component wear",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 13.8, density 0.18%, no single token (' of', ' darken', 'ott', 'surface', ' filament', ' technologies', 'res', ' their', ' Changes', ' lead'): Schott|ky diode, Sub|surface deformation, open filament test, muscles consist of, muscle fib|res, batteries lose their ability, soft lead sulphate. Probe: 'Muscle fib|res consist of' 0.605, 'batteries lose their ability' 0.477, 'open filament test checks the lamp' 0.353 (peak ' lamp'), 'subsurface deformation ... sliding wear' 0.280, Schott|ky 0.223, 'lead sulphate crystallises' 0.106; committee 0.016, roses 0.008, novel 0.014."
+}

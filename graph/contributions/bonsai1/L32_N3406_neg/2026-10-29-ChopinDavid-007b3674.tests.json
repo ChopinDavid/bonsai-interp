@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-007b3674",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N3406-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N3406",
+   "pole": "-",
+   "label": "'the' inside a prepositional phrase that places something in a stretch of time or a region ('towards the end of the year' 0.99, 'in the northeastern corner of Africa' 0.87, 'in the process of' 0.50, 'in the last fourteen days' 0.45); 'the' as subject or object ('the dog chased the cat' 0.04, 'The end of the year is' 0.08) and after a concrete-place preposition ('under the sofa' 0.04, 'from the northern platform' 0.12) is quiet",
+   "fire": [
+    "Prices usually fall towards the middle of the summer, when the harvest comes in.",
+    "The company was founded in the early years of the twentieth century.",
+    "Most of the rain falls in the southern half of the island.",
+    "The painting was finished towards the close of the artist's life.",
+    "The reservoir is in the western foothills of the mountains.",
+    "The museum will stay closed until the end of the month.",
+    "We are still in the early stages of planning the new line.",
+    "Over the past few weeks the river has risen by nearly a metre."
+   ],
+   "quiet": [
+    "The farmer sold the harvest and repaired the barn.",
+    "The founder left the company to his daughter.",
+    "The island has a lighthouse and a small harbour.",
+    "The artist signed the painting and wrapped it in cloth.",
+    "The water in the reservoir supplies the town.",
+    "He put the tickets on the table by the door.",
+    "The planners showed the map to the council.",
+    "She found the river had carried the boat downstream."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on ' the'; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'the' in a time or region phrase",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 118.5, density 0.55%, ' the' x32 of the top 32, after 'in', 'towards', 'till', 'from' in 'in the northeastern fringes', 'towards the end of', 'in the process of', 'in the last 14 days', 'till the second quarter'; the + pole is also ' the' x31 (another context). Probe: 'towards the end of the year' 0.986, 'in the northeastern corner of Africa' 0.866, 'in the process of moving' 0.504, 'in the last fourteen days' 0.448; 'The dog chased the cat' 0.039, 'approved the budget' 0.083, 'The end of the year is' 0.077, 'under the sofa cushion' 0.042, 'from the northern platform' 0.124."
+}

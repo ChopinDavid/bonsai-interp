@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-f89c409f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N7766-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N7766",
+   "pole": "-",
+   "label": "a source attribution in religious scholarship: the hadith collector after رواه (رواه البخاري 0.69, رواه مسلم 0.67), a bracketed collector after an English hadith ('(Ibn Majah)' 0.38, '(Tirmidhi)' 0.25), a rabbinic name or code (Rav Yeh|uda 0.50, 'Mishneh Torah (Hilchot' 0.30); an academic citation '(Walker, 2017)' 0.01 and Arabic prose without a citation 0.01 are quiet",
+   "fire": [
+    "قال النبي صلى الله عليه وسلم: الدين النصيحة. رواه مسلم في صحيحه.",
+    "المسلم من سلم المسلمون من لسانه ويده. رواه البخاري.",
+    "لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه. أخرجه البخاري ومسلم.",
+    "The Messenger of Allah said: \"The strong man is not the one who wrestles well.\" (Bukhari and Muslim)",
+    "He said: \"Cleanliness is half of faith.\" (Sahih Muslim)",
+    "\"The best of you are those who are best to their families.\" Reported by al-Tirmidhi in his Sunan.",
+    "The obligation to return a lost object is codified by Maimonides in the Mishneh Torah (Hilchot Gezeilah 11:1).",
+    "Rav Moshe Feinstein ruled in the Igrot Moshe that the custom may be kept."
+   ],
+   "quiet": [
+    "Sleep loss impairs working memory in young adults (Smith and Jones, 2019).",
+    "The author argues that trade shaped the medieval economy (see chapter 4).",
+    "ذهبت العائلة إلى السوق في الصباح واشترت الخضار والفواكه.",
+    "قال المدير إن الاجتماع سيعقد يوم الخميس في الساعة العاشرة.",
+    "The coach said: \"The strong team is not the one that scores most.\" (Press conference, May 2021)",
+    "Mr. Amital taught mathematics at the village school for thirty years.",
+    "The rule about returning lost property is found in the civil code (Article 11).",
+    "Moshe parked the car outside the bakery and went in for bread."
+   ]
+  }
+ ],
+ "predictions": "Arabic رواه/أخرجه items 0.5-0.7, English bracketed collectors 0.2-0.5, rabbinic items 0.2-0.5; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "hadith/Torah source attribution",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 57.5, density 0.29%, peaks ' (' x5, 'ه' x5 (روا|ه البخاري, (Tirmidhi), (Mishne Torah, Reported by Abu Nu'aym in, Rav Yeh|uda, ابن تيمية-). Probe: رواه البخاري ومسلم 0.687, رواه مسلم 0.665 (peak 'ه'), Rav Yehuda Amital 0.495 (peak 'uda'), '(Ibn Majah)' 0.383 (peak 'bn'), 'Mishneh Torah (Hilchot Teshuvah 2:1)' 0.304 (peak ':'), '(Tirmidhi)' 0.253; '(Walker, 2017)' 0.007, Arabic prose 0.005, bakery filler 0.010. Note ' رواه' splits as ' ر','وا','ه'."
+}

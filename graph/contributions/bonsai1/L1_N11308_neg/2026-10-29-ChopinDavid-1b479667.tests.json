@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1b479667",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11308-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N11308",
+   "pole": "-",
+   "label": "dense / positional: 86.6% of tokens reach 0.1 of max (max 0.25) in the gate-closed regime; every probe sentence scored 0.38-0.88 (Arabic ث/ضع pieces 0.78-0.87, 'solstice' 0.88, 'Easter' 0.79, 'Radio' 0.80, plain English 0.38, a code line 0.45, digits 0.50), so no 8 + 8 test can separate it; the test below uses the card's pieces as fire items only to record the failure",
+   "fire": [
+    "رأى موسى العصا وقد تحولت إلى ثعبان كبير.",
+    "يرجى أن تضعوا الكتب على الرف قبل المغادرة.",
+    "The summer solstice falls on the longest day of the year.",
+    "The children painted eggs for Easter and hid them in the garden.",
+    "The college radio station broadcasts jazz every Friday night.",
+    "The emerald necklace was far more realistic than the plastic one.",
+    "The Ralph Waldo Emerson essay was assigned for Monday.",
+    "ثم وضعوا الأمتعة في السيارة وانطلقوا."
+   ],
+   "quiet": [
+    "The cat slept on the warm windowsill all afternoon.",
+    "We need two more chairs for the meeting.",
+    "7 14 21 28 35",
+    "for i in range(10):\n    total += i",
+    "She parked the car and walked to the office.",
+    "The soup needs a little more salt.",
+    "It rained all day on Tuesday.",
+    "Please close the door when you leave."
+   ]
+  }
+ ],
+ "predictions": "both halves 0.3-0.9; the near misses will fire and the test will fail, as a dense unit should",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense layer-1 unit",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card: max 0.25, density 86.6% at 0.1 of max and 24.5% at 0.3 (flagged dense), gate-closed regime 100%, peaks ' ث', 'ضع', ' realistic', ' Easter', ' dign', 'ist', ' Ralph', ' Radio', 'stice'. Probe: ثعبانا 0.783, تضعوا 0.868, Easter 0.793, Radio 0.802, solstice 0.884, 'loaf of bread' 0.382, 'def add(a, b)' 0.449, digits 0.501. Nothing separates the halves by more than a factor of two."
+}

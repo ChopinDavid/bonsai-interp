@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e3c0e1b2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N7941-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N7941",
+   "pole": "-",
+   "label": "the verb 'stand' in its forms plus 'steady' (' stood' 0.50, un|steady 0.52, ' stand' 0.41, ' stands' 0.38, steady-state 0.29); 'standard' 0.02 and the same sentences with 'speak up' (0.04) or 'emerges' (0.09) in place of the verb are quiet",
+   "fire": [
+    "The villagers refused to stand aside while the river was dammed.",
+    "Of all the entries, her design stands out for its simple lines.",
+    "Thousands of investors stood to lose everything when the fund collapsed.",
+    "Hold the camera steady while the shutter is open.",
+    "After three days at sea he still felt unsteady on the quay.",
+    "The ladder must stand on firm ground before anyone climbs it.",
+    "The bank is one of the few that stood firm during the crisis.",
+    "He was standing at the back of the hall when the lights went out."
+   ],
+   "quiet": [
+    "The villagers refused to step aside while the river was dammed.",
+    "Of all the entries, her design shines for its simple lines.",
+    "Thousands of investors were set to lose everything when the fund collapsed.",
+    "Hold the camera still while the shutter is open.",
+    "After three days at sea he still felt dizzy on the quay.",
+    "The ladder must rest on firm ground before anyone climbs it.",
+    "The new standard requires every bank to hold more capital.",
+    "The company took a firm stance on the issue of overtime pay."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.55 on the stand/steady token; near misses below 0.1, 'stance' and 'standard' included",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "stand/stood/steady",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Card: max 3.9, density 0.29%, peaks ' stand' x11, 'steady' x3, 'stands', ' steady', ' stood' ('stands the test of time', 'stand up against', 'steady-state', 'stood to be', 'stands out', 'un|steady'). Probe: 'stood to lose' 0.503, 'felt un|steady' 0.517, 'to stand up against' 0.411, 'stands out' 0.379, 'steady-state concentration' 0.290; 'standard requires' 0.021, 'speak up against' 0.042, 'emerges as' 0.092, cake filler 0.029. Splits: ' stand', ' stands', ' stood', ' steady', ' standing', ' standard', ' stance' are single tokens; ' unsteady' -> ' un','steady'.",
+ "trigger": {
+  "words": [
+   "stand",
+   "stands",
+   "stood",
+   "steady",
+   "standing"
+  ]
+ }
+}

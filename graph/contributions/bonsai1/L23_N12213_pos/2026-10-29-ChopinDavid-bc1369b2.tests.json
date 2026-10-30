@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bc1369b2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N12213+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N12213",
+   "pole": "+",
+   "label": "a Chinese pause mark (、 or ，) after a descriptive predicate phrase in a run of parallel descriptions (景色光彩耀眼、美不胜收 0.56, 浓眉大眼，身材高大 0.46, 紧张有序、精彩纷呈 0.37, 内容丰富、讲解透彻 0.33); the comma of a narrative or reporting clause is weaker (去了北京，然后 0.23, 成立于1998年，总部 0.16, 老师说， 0.06) and an English semicolon list is 0.04",
+   "fire": [
+    "这座古城历史悠久、风景秀丽，每年吸引大量游客。",
+    "她性格开朗，待人热情，同事们都很喜欢她。",
+    "新款手机外观时尚、性能强劲，上市第一周就销售一空。",
+    "会场布置庄重大方、气氛热烈，来宾们纷纷合影留念。",
+    "这篇文章结构清晰，语言生动，是一篇难得的佳作。",
+    "山间的空气清新宜人、鸟语花香，令人心旷神怡。",
+    "他做事认真负责、一丝不苟，深受领导信任。",
+    "展览的作品题材广泛、风格多样，展现了青年画家的才华。"
+   ],
+   "quiet": [
+    "他上个月去了一趟上海，顺便看望了几位老朋友。",
+    "公司成立于2005年，目前在全国设有十家分公司。",
+    "经理说，下周的会议改在星期三上午举行。",
+    "如果明天下雨，我们就把活动推迟到下周。",
+    "我先把行李放在酒店，然后去火车站买票。",
+    "据报道，这条公路将于年底前全线通车。",
+    "她打开窗户，看见院子里的树已经发芽了。",
+    "会议结束后，大家一起去食堂吃了午饭。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on 、 or ，; narrative near misses 0.05-0.25, so one leak near 0.3 is possible",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Chinese pause after descriptive phrase",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 45.8, density 0.11%, '，' x20, '、' x5 of the top 32, after four-character descriptive phrases (浓眉大眼，/ 紧张有序、/ 主题丰富、/ 光彩耀眼、/ 突出重点、). Probe: 光彩耀眼、美不胜收 0.563, 浓眉大眼，身材高大 0.461 (peak 就), 紧张有序、精彩纷呈 0.373, 内容丰富、讲解透彻 0.325; narrative 去了北京，然后 0.228, 成立于1998年， 0.155, 老师说， 0.063, English proverb semicolons 0.036, English filler 0.008."
+}

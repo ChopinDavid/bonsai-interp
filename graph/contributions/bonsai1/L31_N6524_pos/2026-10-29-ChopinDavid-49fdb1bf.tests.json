@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-49fdb1bf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N6524+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N6524",
+   "pole": "+",
+   "label": "'full' as the first half of the hyphenated compound 'full-text' in a library or database setting ('a searchable full-text collection' 0.92); 'full' before a separate 'text' ('the full text of the ruling' 0.01, sentence-initial 'Full text not available' 0.09), 'full access' 0.09, Voll|text 0.12, 'full moon' 0.05 and 'full name' 0.01 are quiet",
+   "fire": [
+    "The archive now supports full-text search across every issue since 1890.",
+    "Researchers can download the full-text PDF of any article in the collection.",
+    "The database indexes abstracts and full-text articles from over two thousand journals.",
+    "Our catalogue offers full-text retrieval for digitised manuscripts.",
+    "SQL Server builds a full-text index on the column before queries can run.",
+    "The library subscribes to a full-text database of nineteenth-century newspapers.",
+    "Click the link to open the full-text version in the publisher's repository.",
+    "PubMed Central hosts free full-text copies of funded research papers."
+   ],
+   "quiet": [
+    "The archive now supports keyword search across every issue since 1890.",
+    "Researchers can download the full PDF of any article in the collection.",
+    "The database indexes abstracts and metadata from over two thousand journals.",
+    "Our catalogue offers full access to digitised manuscripts for members.",
+    "The court published the full text of the ruling on its website in May.",
+    "The library subscribes to a full-colour magazine about nineteenth-century art.",
+    "He works full-time at the publisher's repository.",
+    "The full moon lit the path to the library door."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on ' full'; near misses below 0.15, 'full PDF' and 'full text' (unhyphenated) the likeliest leaks",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'full' of full-text",
+ "unit_kind": "lexical",
+ "confidence": 0.4,
+ "notes": "Card: max 238, density 0.011%, peaks ' full' x7, 'Full' x6, ' Full' x4, ' Voll' x2 before '-text'/' text'/' access' in library records (searchable full-text collection 238, full-text information 214, full-text catalog 181, Full text not available 142, Free Full Text 136). Probe: 'searchable full-text collection' 0.924; 'Full text not available' 0.088 (sentence-initial), 'full access to the magazine archive' 0.092, 'the full text of the ruling' 0.008, Voll|text 0.117, 'full moon' 0.045, 'full name' 0.008, 'full of old coins' 0.002, filler 0.004. Only the hyphenated compound reproduced the card, so the label is kept at that level. ' full-text' splits as ' full','-text'; ' full-time' as ' full','-time'."
+}

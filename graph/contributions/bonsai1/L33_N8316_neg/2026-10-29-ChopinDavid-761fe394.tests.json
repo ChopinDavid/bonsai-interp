@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-761fe394",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N8316-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N8316",
+   "pole": "-",
+   "label": "predicting 'exponential': the word-initial piece ' ex'/'_ex' where 'ponencial/ponential' is expected (de forma ex|ponencial 1.02, wait_ex|ponential 0.46, эксп|оненциальный 0.23) and, more weakly, the word before an expected 'exponential' ('de forma' in 'de forma constante' 0.44, 'will grow' 0.35); ' ex' before another tail is weak (ex|orbitant 0.21) and 'exponential' as a single English token is not a trigger",
+   "fire": [
+    "A população da cidade cresceu de maneira exponencial depois da chegada da ferrovia.",
+    "Il numero di contagi è aumentato in modo esponenziale nelle prime settimane.",
+    "Los costes de almacenamiento se redujeron de manera exponencial entre 1990 y 2010.",
+    "    @retry(wait=wait_exponential(multiplier=2, min=1, max=30))\n    def fetch(url):",
+    "O consumo de energia no país teve um crescimento exponencial nos últimos anos.",
+    "Según los economistas, la deuda pública está creciendo a un ritmo exponencial.",
+    "В последние годы наблюдается экспоненциальный рост объёма данных в интернете.",
+    "El interés compuesto hace que el capital crezca de forma exponencial con el tiempo."
+   ],
+   "quiet": [
+    "Mi ex-marido vive ahora en una pequeña ciudad cerca de Valencia.",
+    "The lawyer warned that the fees could be exorbitant for a case this small.",
+    "La exposición de fotografía abre sus puertas el próximo sábado.",
+    "    @retry(stop=stop_after_attempt(5))\n    def fetch(url):",
+    "Los costes de almacenamiento se mantuvieron estables entre 1990 y 2010.",
+    "В последние годы наблюдается заметный рост интереса к электромобилям.",
+    "O ex-presidente visitou a cidade para a inauguração da ponte.",
+    "The coach said the team needed extra practice before the final."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on ' ex'/'_ex'/' es'/' эксп'; near misses below 0.25, with the growth-context Russian sentence and ex|orbitant the likeliest leaks",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts 'exponential'",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 804, density 0.007%, peaks ' ex' x3, '_ex' x2, ' эксп', ' rises', ' grown', ' for', ' of', ' at' (ex|ponencial, wait_ex|ponential, 'for exponential smoothing', 'inverses of exponential'); the + pole suppresses ' exponential', ' Ex', 'ex'. Probe: 'de forma ex|ponencial' 1.023, 'en forma ex|ponencial' 0.995, wait_ex|ponential 0.460, эксп|оненциальный 0.227, 'will grow very rapidly' 0.352 (peak ' grow'), 'de forma constante' 0.444 (peak ' forma': the prediction fires at the setup), 'inverse of the exponential' 0.214 (peak ' the'), ex|orbitant 0.214, filler 0.000. Splits: ' exponencial' -> ' ex','pon','encial'; ' esponenziale' -> ' es','pon','enz','iale'; ' crescimento exponencial' -> ' cresc','imento',' ex','pon','encial'; ' ex-marido'/' ex-presidente' keep the ' ex' piece without the tail."
+}
