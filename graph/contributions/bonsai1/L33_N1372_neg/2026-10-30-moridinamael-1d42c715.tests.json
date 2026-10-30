@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-30-moridinamael-1d42c715",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L33/N1372-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:03:02+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the token ' community' (as a modifier or a subject; lower in 'in the community')"
+ },
+ "neighbours": [
+  {
+   "unit": "L33/N1372",
+   "pole": "-",
+   "label": "English ' community' / ' neighborhood' as a modifier before a local service or place (community center, neighborhood clinic), and the comma/'and' in lists of local public services (schools, clinics, food banks, and)",
+   "fire": [
+    "The new community center opens on Saturday with free yoga classes for seniors.",
+    "She volunteers twice a week at the neighborhood clinic on Elm Street.",
+    "Budget cuts threatened schools, clinics, food banks, and libraries across the county.",
+    "Our community garden produced more tomatoes than anyone could eat.",
+    "Families rely on the neighborhood library for internet access after school.",
+    "The grant will fund shelters, food pantries, health clinics, and after-school programs.",
+    "Residents packed the community health center to get their flu shots.",
+    "A neighborhood food bank now serves over three hundred households each month."
+   ],
+   "quiet": [
+    "The new convention center opens on Saturday with free yoga classes for seniors.",
+    "She volunteers twice a week at the veterinary office on Elm Street.",
+    "Budget cuts threatened bonuses, travel perks, and stock options across the company.",
+    "Our backyard garden produced more tomatoes than anyone could eat.",
+    "Families rely on their phones for internet access after school.",
+    "The grant will fund telescopes, lab equipment, and research assistants.",
+    "Fans packed the stadium to watch the championship game.",
+    "A popular bakery now serves over three hundred customers each morning."
+   ]
+  }
+ ],
+ "predictions": "Expect 6/8 fire; community-modifier items strongest, list items weaker (0.2-0.4); near misses mostly quiet, maybe 1 leak.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
