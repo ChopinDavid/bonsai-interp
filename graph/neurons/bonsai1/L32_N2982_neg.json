@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L32/N2982-",
+ "model": "bonsai1",
+ "layer": 32,
+ "index": 2982,
+ "pole": "-",
+ "label": "the modifier in the slot immediately before a nominalization like formation, construct, construction or invention (rock formations, social construct, Hollywood invention): the pole predicts that nominalization",
+ "short": "modifier before formation / construct / invention",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N2982_neg/2026-10-30-ChopinDavid-e3327357.tests.json",
+   "prereg_commit": "7cc1ed63",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.254,
+     "peak": "stone"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.345,
+     "peak": " political"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.56,
+     "peak": " literary"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.04,
+     "peak": " coral"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.485,
+     "peak": " cultural"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.689,
+     "peak": " cinematic"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.12,
+     "peak": " limestone"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.281,
+     "peak": " social"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.279,
+     "peak": " political"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.04,
+     "peak": " coral"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.022,
+     "peak": " cinematic"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.12,
+     "peak": " limestone"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.283,
+     "peak": " social"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.313,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-e3327357"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-e3327357",
+   "the modifier in the slot immediately before a nominalization like formation, construct, construction or invention (rock formations, social construct, Hollywood invention): the pole predicts that nominalization",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-e3327357"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

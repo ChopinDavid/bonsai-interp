@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N4410+",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 4410,
+ "pole": "+",
+ "label": "the abstract noun inside a formal purpose or ground adjunct of the shape 'as a mark/sign/token of N' or 'as punishment/compensation for N', not the same ground expressed as a clause",
+ "short": "noun in an 'as a mark of N' adjunct",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N4410_pos/2026-10-30-ChopinDavid-aaf4294e.tests.json",
+   "prereg_commit": "7cc1ed63",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.087,
+     "peak": " were"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.018,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.209,
+     "peak": " tribute"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.081,
+     "peak": " compensation"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.159,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.55,
+     "peak": " punishment"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.038,
+     "peak": " token"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.028,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.124,
+     "peak": " mourning"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " coach"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.102,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": " walked"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " suspended"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": " offered"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": " were"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.734,
+    "median_fire": 0.084,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-aaf4294e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-aaf4294e",
+   "the abstract noun inside a formal purpose or ground adjunct of the shape 'as a mark/sign/token of N' or 'as punishment/compensation for N', not the same ground expressed as a clause",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-aaf4294e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

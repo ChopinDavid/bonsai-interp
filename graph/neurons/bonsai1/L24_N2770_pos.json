@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N2770+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 2770,
+ "pole": "+",
+ "label": "the tokens 'file'/'File'/'files'/'upload' naming stored digital data, not the other senses of 'file' (nail file, single file, to file a claim)",
+ "short": "digital-file noun (file / upload)",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N2770_pos/2026-10-30-ChopinDavid-35dbd572.tests.json",
+   "prereg_commit": "7cc1ed63",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.418,
+     "peak": " file"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.413,
+     "peak": " file"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.691,
+     "peak": " upload"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.322,
+     "peak": " file"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.384,
+     "peak": " file"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.463,
+     "peak": " upload"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.399,
+     "peak": " files"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.458,
+     "peak": " file"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.205,
+     "peak": " archive"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.031,
+     "peak": " directory"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.097,
+     "peak": " submission"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.088,
+     "peak": " folder"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.029,
+     "peak": " writing"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.045,
+     "peak": " file"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.159,
+     "peak": " file"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.181,
+     "peak": " file"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.415,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-35dbd572"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-35dbd572",
+   "the tokens 'file'/'File'/'files'/'upload' naming stored digital data, not the other senses of 'file' (nail file, single file, to file a claim)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-35dbd572"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

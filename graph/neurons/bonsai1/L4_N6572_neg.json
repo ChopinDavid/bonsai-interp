@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N6572-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 6572,
+ "pole": "-",
+ "label": "the token ' Jewish' (and ' Judaism') used as an ethno-religious modifier, not another ethno-religious modifier in the same frame",
+ "short": "the token ' Jewish'",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N6572_neg/2026-10-30-ChopinDavid-93990fd3.tests.json",
+   "prereg_commit": "7cc1ed63",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.278,
+     "peak": " Jewish"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.309,
+     "peak": " Jewish"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.222,
+     "peak": " Jewish"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.103,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.33,
+     "peak": " Jewish"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.307,
+     "peak": " Jewish"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.193,
+     "peak": " Jewish"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.14,
+     "peak": " within"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.067,
+     "peak": " holds"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.05,
+     "peak": " Hindu"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.117,
+     "peak": " Vienna"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.038,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.04,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.103,
+     "peak": " household"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.062,
+     "peak": " day"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.977,
+    "median_fire": 0.25,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-93990fd3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-93990fd3",
+   "the token ' Jewish' (and ' Judaism') used as an ethno-religious modifier, not another ethno-religious modifier in the same frame",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-93990fd3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
