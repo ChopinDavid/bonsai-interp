@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-6d83e90f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9269+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T07:33:24+00:00",
+ "recipe": {
+  "toolchain_commit": "e1c598ed",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N9269_pos/2026-10-30-ChopinDavid-6d83e90f.tests.json"
+ },
+ "label": "the determiner or conjunction slot right before the name of a people, ethnic group, language family or biological taxon ('those of the Bambara or the Fulani' 0.86, 'branch of the Indo-European family' 0.55, '(Toubou, Tuareg, and Songhai)' 0.55, 'conquered by the French' 0.48, 'genus Mesoplodon' 0.46); the same frames with cities, brands or institutions are silent (0.002-0.004)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N9269_pos/2026-10-30-ChopinDavid-6d83e90f.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.137,
+     "peak": "ulu"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.498,
+     "peak": "-European"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.366,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.014,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.086,
+     "peak": " large"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.154,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.047,
+     "peak": " moving"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.314,
+     "peak": " Tu"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " Budapest"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " European"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": " flor"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " ele"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " Blues"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " county"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " planted"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.146,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e1c598ed",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "slot predicting an ethnonym / language-family / taxon name",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 276, density 0.04%, peaks ' the' x7, '-European' x2, ',' x2, ' sister' x2, ' a', ' and' before Marka/Peul, Indo-European lineages, Iranian languages, Tuareg/Kanouri/Arabs, Tifinagh, Toubou/Fulani, the French, genus Mesoplodon, Bantu peoples. Probe: 'those of the Bambara or the Fulani' 0.860 (' the'), 'branch of the Indo-European family' 0.554, '(Toubou, Tuareg, and Songhai)' 0.553 (' and'), 'conquered by the French' 0.483, 'the Hausa, the Yoruba and the Igbo' 0.446, 'genus Mesoplodon' 0.455; 'those of Marseille or Nice' 0.004, '(Tesco, Aldi, and Lidl)' 0.002, 'built by the council' 0.002. The unit fires on the slot that predicts a group/lineage name, not on the name itself.",
+ "selection": "random draw"
+}

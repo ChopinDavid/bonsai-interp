@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-9ba4348c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N1712-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T07:34:14+00:00",
+ "recipe": {
+  "toolchain_commit": "e1c598ed",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L10_N1712_neg/2026-10-30-ChopinDavid-9ba4348c.tests.json"
+ },
+ "label": "broad (4.4% of tokens, gate-closed leak 99%, max 3.6): the hedge or quantifier of a generalising claim about people in expository web prose ('as just the pill' 0.88, 'a very common complaint' 0.73, 'all of us experience' 0.62, 'platforms allow for' 0.54, 'most of us were' 0.44); specific first-person narrative and directions are quiet (0.06-0.12)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N1712_neg/2026-10-30-ChopinDavid-9ba4348c.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.436,
+     "peak": " us"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.73,
+     "peak": " very"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.107,
+     "peak": " more"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.879,
+     "peak": " just"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.112,
+     "peak": " us"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.51,
+     "peak": " very"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.119,
+     "peak": " allows"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.151,
+     "peak": " accept"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.1,
+     "peak": " missed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.09,
+     "peak": " move"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.061,
+     "peak": " office"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.057,
+     "peak": " Saturday"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.047,
+     "peak": " funeral"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.076,
+     "peak": " street"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.072,
+     "peak": " cake"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.103,
+     "peak": " accept"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.293,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e1c598ed",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "quantifier/hedge of a generic claim (broad)",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 3.56, FLAG broad 4.4%, FLAG gate-closed -g +u leak 99%, peaks ' us' x4, ' is' x4, ' very' x3, ' of' x3, ' people' x2, ' allow' in 'most of us', 'all of us', 'platforms allow for', 'discussion shows', 'a very common', 'All of the', 'as just the pill'. Probe: 'as just the pill' 0.877 (' just'), 'a very common complaint' 0.728, 'all of us experience' 0.619, 'platforms allow for' 0.537, 'Most of us were raised' 0.436, 'All of the email addresses' 0.252; 'I lost my keys' 0.118, train times 0.104, directions 0.063. The unit is broad and the near misses may leak; the test contrasts generic claims with specific first-person events.",
+ "selection": "random draw"
+}

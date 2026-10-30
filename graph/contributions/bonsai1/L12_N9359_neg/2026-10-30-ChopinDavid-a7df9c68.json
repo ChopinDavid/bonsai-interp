@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-a7df9c68",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N9359-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T07:34:49+00:00",
+ "recipe": {
+  "toolchain_commit": "e1c598ed",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N9359_neg/2026-10-30-ChopinDavid-a7df9c68.tests.json"
+ },
+ "label": "a style or ingredient descriptor in lifestyle copy about decor, hair, food or scent ('industrial farmhouse vibe, with exposed brick' 1.06, 'glass and brass' 1.06, 'arugula' 0.68, 'relaxed summer locks ... wavy hair' 0.43, 'spinach and Cheddar' 0.42, 'a spicy twist' 0.43); the same nouns in news, science or forensic prose are quiet (industrial output 0.09, hair sample 0.14, spinach is rich in iron 0.28)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N9359_neg/2026-10-30-ChopinDavid-a7df9c68.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.338,
+     "peak": " industrial"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.447,
+     "peak": " marble"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.631,
+     "peak": " hair"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.33,
+     "peak": "el"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.242,
+     "peak": "ata"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.739,
+     "peak": "ody"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.497,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.622,
+     "peak": "led"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.198,
+     "peak": " barn"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.09,
+     "peak": " production"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " heights"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.06,
+     "peak": "ale"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.119,
+     "peak": "ata"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.049,
+     "peak": "ot"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.15,
+     "peak": "an"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.043,
+     "peak": " been"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.559,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e1c598ed",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "style/ingredient descriptor in lifestyle copy",
+ "unit_kind": "semantic",
+ "confidence": 0.4,
+ "notes": "Card: max 18.3, density 0.14%, peaks ' hair' x4, ' industrial' x3, ' Summer' x2, ' spinach' x2, 'ula' (arugula), ' brass', ' spicy' in decor, hairstyle listicle and recipe copy; the + pole is ' page'. Probe: 'mixes industrial and mid-century styling with a lot of glass' 1.062 (' glass'), 'industrial farmhouse vibe, with exposed brick' 1.057 (' exposed'), arugula 0.680 ('ula'), 'relaxed summer locks ... wavy hair' 0.428, 'spicy twist' 0.425, 'spinach and Cheddar' 0.417; 'Industrial output fell' 0.087, 'hair sample ... DNA' 0.144, 'Spinach is rich in iron' 0.283 ('ach'). The register carries it more than the noun: decor material lists are strongest.",
+ "selection": "random draw"
+}

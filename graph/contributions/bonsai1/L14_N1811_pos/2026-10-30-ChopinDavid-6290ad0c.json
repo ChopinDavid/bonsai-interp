@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-6290ad0c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N1811+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T07:32:57+00:00",
+ "recipe": {
+  "toolchain_commit": "e1c598ed",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N1811_pos/2026-10-30-ChopinDavid-6290ad0c.tests.json"
+ },
+ "label": "dense (20.8% of tokens at 0.1 of max, max 1.41, gate-closed echo 100%): best guess a mild preference for technical, legal or biomedical register (erythropoietin 0.59, JSON Web Token 0.37, insulin 0.34) over casual conversation (0.17-0.18); an 8 + 8 test is not expected to pass",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N1811_pos/2026-10-30-ChopinDavid-6290ad0c.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.313,
+     "peak": "em"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.19,
+     "peak": " appellate"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.288,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.173,
+     "peak": " x"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.289,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.191,
+     "peak": " Article"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.221,
+     "peak": " catal"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.247,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.248,
+     "peak": " milk"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.089,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.24,
+     "peak": " me"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.155,
+     "peak": " station"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.188,
+     "peak": " post"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.288,
+     "peak": " r"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.267,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.172,
+     "peak": " soaked"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.68,
+    "median_fire": 0.234,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e1c598ed",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "dense; technical register (guess)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: max 1.41, FLAG dense 20.8%, FLAG gate-closed regime -x- echo 100%; peaks scattered: ' key', ' Unity', ' Hann', 'iet' (erythropoietin), '8', 'ar', ' Web', ' inheritance'. Probe: erythropoietin 0.588, JSON Web Token 0.368, insulin molecule 0.336, '1989' 0.312, sharpshooter 0.261, Daubert 0.232; pizza 0.172, pick up the kids 0.180, birthday card 0.175. The contrast is real but small and the unit is on for a fifth of all tokens, so it is recorded as dense with a register guess.",
+ "selection": "random draw"
+}
