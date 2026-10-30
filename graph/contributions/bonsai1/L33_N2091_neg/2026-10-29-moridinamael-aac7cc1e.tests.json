@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-29-moridinamael-aac7cc1e",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L33/N2091-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:53:30+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "Fires on the bare word-initial piece ' m' that opens a German word the tokenizer splits (m+ächtig, m+itten, m+ässig); quiet on the same German sentences with an unsplit synonym."
+ },
+ "neighbours": [
+  {
+   "unit": "L33/N2091",
+   "pole": "-",
+   "label": "Fires on the bare opening piece of a word the tokenizer splits, strongest for ' m'/' M' (German, English), Arabic ' الم' and Spanish/French ' cong'; quiet on the same sentence with an unsplit whole-word synonym.",
+   "fire": [
+    "She played a soft tune on her mbira by the campfire.",
+    "The museum displayed a replica of Mjölnir behind thick glass.",
+    "Der Maschinenbauingenieur prüfte die Pläne noch einmal.",
+    "We ordered mffins and mochaccinos for the whole office.",
+    "Mxyzptlk is a mischievous imp from the old comic books.",
+    "Er kaufte sich eine neue Mundharmonika auf dem Markt.",
+    "ذهب الولد إلى المستشفى مساء أمس.",
+    "وضعت الكتب على المكتبة في الغرفة."
+   ],
+   "quiet": [
+    "She played a soft tune on her guitar by the campfire.",
+    "The museum displayed a replica of the hammer behind thick glass.",
+    "Der Ingenieur prüfte die Pläne noch einmal.",
+    "We ordered cakes and coffees for the whole office.",
+    "The imp is a mischievous figure from the old comic books.",
+    "Er kaufte sich eine neue Gitarre auf dem Platz.",
+    "ذهب الولد إلى البيت مساء أمس.",
+    "وضعت الكتب على الرف في الغرفة."
+   ]
+  }
+ ],
+ "predictions": "Expect a fail or weak pass: several fire words (Mundharmonika, Maschinenbau, المستشفى) may start with a whole first token, so the bare ' m' piece may not occur; English mbira/mffins may fire.",
+ "trigger": {
+  "words": [
+   " m",
+   " M",
+   " الم",
+   " cong"
+  ]
+ },
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "card",
+   "neighbors",
+   "inverse-gmoo"
+  ]
+ }
+}
