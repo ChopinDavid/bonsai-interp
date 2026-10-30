@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-63ac57c6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10109+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T12:34:19+00:00",
+ "recipe": {
+  "toolchain_commit": "f68f4858",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N10109_pos/2026-10-30-ChopinDavid-63ac57c6.tests.json"
+ },
+ "label": "formal procedural or technical register in Chinese: words such as 有关/相关 ('concerning'), 进行 ('carry out'), 科学 ('scientific'), 专业 ('professional'), 专题 and the medical 科 suffix (科学论证 0.68, 有关这些事 0.55, 来进行检测 0.36); everyday narrative Chinese (0.03) and English (0.09) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10109_pos/2026-10-30-ChopinDavid-63ac57c6.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.304,
+     "peak": "进行"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.044,
+     "peak": "技术"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.55,
+     "peak": "科学"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.036,
+     "peak": "专题"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.448,
+     "peak": "专业"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.367,
+     "peak": "专业"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.48,
+     "peak": "有关"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.082,
+     "peak": "已于"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.201,
+     "peak": "热"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.029,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": "足球"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": "只好"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.147,
+     "peak": "喜欢"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": "晚饭"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.336,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f68f4858",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "formal procedural Chinese register",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 5.59, density 0.13%, peaks 有关 x4, 专题 x2, 关于 x2, 科 (皮膚科), 專業, 進行, 經過, 科学: every Chinese example is administrative, medical or technical prose. Probe: 科学论证 0.681, 有关这些事 0.552, 来进行检测 0.356, 皮肤科医师的 0.285 (peak 的), 专业的培训 0.254, 相关专题 0.217; 去公园散步 0.036, 建了一座新房子 0.032, English 'spiritual world' 0.088. Fire items are fresh formal sentences using those words mid-sentence; near misses are everyday narrative sentences of the same length.",
+ "selection": "random draw"
+}

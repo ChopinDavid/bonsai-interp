@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-2f3b7cde",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N1196+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T12:34:14+00:00",
+ "recipe": {
+  "toolchain_commit": "f68f4858",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N1196_pos/2026-10-30-ChopinDavid-2f3b7cde.tests.json"
+ },
+ "label": "unclear: the card's top examples end a renaming or comparison phrase that closes a sentence ('monster, of sorts.', 'canary in the coalmine.', 'a critical choice.', 'called Reykholtsdalur.'), but single sentences built on that pattern scored 0.005-0.146; best guess is a closing appositive restatement after a longer lead",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N1196_pos/2026-10-30-ChopinDavid-2f3b7cde.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.037,
+     "peak": " sorts"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.147,
+     "peak": " mine"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.361,
+     "peak": " point"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.199,
+     "peak": "ur"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.013,
+     "peak": " pairs"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.025,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.061,
+     "peak": " fortress"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": " absorb"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " pairs"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " plotting"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " bridge"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.031,
+     "peak": " city"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.844,
+    "median_fire": 0.049,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f68f4858",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "closing appositive restatement (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 48, density 0.25%, no dominant token: ' sorts', 'ur' (Reykholtsdal|ur), 'mine' (coal|mine), ' duo', ' choice', '0' (2100), ' sandwich', ' incident', '一樣', ' War'; every example is the last token of a noun phrase that renames or compares something, right before a period. Probe: 'of a project, of sorts' 0.146 (peak ' sorts'), everything else 0.005-0.016 including 'canary in the coal mine' 0.005 and 'a crucial decision; a critical choice' 0.009. The pole needs more context than one sentence gives, so the test uses two-sentence passages with the restatement closing the second sentence; near misses keep the opener and replace the restatement with a plain continuation. Registered as unclear at low confidence.",
+ "selection": "random draw"
+}

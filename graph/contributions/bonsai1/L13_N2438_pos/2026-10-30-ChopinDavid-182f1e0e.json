@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-182f1e0e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N2438+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T12:34:59+00:00",
+ "recipe": {
+  "toolchain_commit": "f68f4858",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L13_N2438_pos/2026-10-30-ChopinDavid-182f1e0e.tests.json"
+ },
+ "label": "a short-vowel mark on a geminated consonant: the fatha/damma/kasra token that precedes a shadda in fully vocalized Arabic (0.26-0.60) or the vowel before a dagesh in pointed Hebrew (0.99); vocalized words without gemination (0.03-0.06) and unvocalized text (0.015) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N2438_pos/2026-10-30-ChopinDavid-182f1e0e.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.155,
+     "peak": "َ"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.096,
+     "peak": "ِ"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.209,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.126,
+     "peak": "َ"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.054,
+     "peak": "َ"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.189,
+     "peak": "َ"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.665,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.556,
+     "peak": "�"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": "ِ"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.062,
+     "peak": "َ"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.06,
+     "peak": "ِ"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": "ُ"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.034,
+     "peak": "ب"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": "ِ"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.126,
+     "peak": "�"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.836,
+     "peak": "�"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.805,
+    "median_fire": 0.172,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f68f4858",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "vowel before shadda / dagesh",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 91.5, density 0.005%, peaks 'َ' x12, 'ِ' x11, 'ُ' x6 and the Hebrew qamats before a dagesh: every example is the vowel immediately before ّ (يُحِلُّ, يُقَوِّيهِ, المُقَدَّسَةِ, يَتَجَنَّبُهَا, تتكوَّن, التحدُّث) or ּ (הַמָּקוֹם). The tokenizer normalizes diacritic order so the vowel always precedes the shadda, and each mark is its own token, so the pole reads the vowel and predicts the shadda. Probe: يُحِلُّ 0.596, التَّحَدُّث 0.306, المُقَدَّسَةِ 0.305, يَتَجَنَّبُهَا 0.279, مُحَمَّدٌ 0.257, Hebrew הַמָּקוֹם 0.987; vocalized without shadda 0.025 and 0.062, unvocalized 0.015. Fire items are fresh vocalized phrases with a geminated consonant (two Hebrew with dagesh); near misses are vocalized phrases with moon-letter articles and no shadda, plus pointed Hebrew without dagesh.",
+ "selection": "random draw"
+}

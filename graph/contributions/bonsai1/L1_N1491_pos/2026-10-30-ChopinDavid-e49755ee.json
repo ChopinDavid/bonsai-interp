@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-e49755ee",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N1491+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T12:35:21+00:00",
+ "recipe": {
+  "toolchain_commit": "f68f4858",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N1491_pos/2026-10-30-ChopinDavid-e49755ee.tests.json"
+ },
+ "label": "the word piece that follows a bare ' sal'/' scal' token (scal|lo|ped 0.77, sal|vo|es 0.85, sal|ami 0.39, Sal|zburg 0.30, scal|pel 0.14), a layer-1 spelling unit; words where sal- is part of one token (salmon 0.21, Salisbury 0.08) and other spellings (0.02-0.05) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N1491_pos/2026-10-30-ChopinDavid-e49755ee.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.178,
+     "peak": "lops"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.296,
+     "peak": "am"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.196,
+     "peak": " sal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.196,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.179,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.371,
+     "peak": "ient"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.226,
+     "peak": " sal"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.234,
+     "peak": " Sal"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.2,
+     "peak": " salmon"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.059,
+     "peak": " log"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.175,
+     "peak": " salute"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.224,
+     "peak": " Salem"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.14,
+     "peak": " Sally"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.308,
+     "peak": " salon"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.251,
+     "peak": " Salvador"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.672,
+    "median_fire": 0.211,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f68f4858",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "piece after a bare ' sal'/' scal' token",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 0.93, density 1.6% (FLAG broad), echo regime 100%; peaks 'lo' x7 (scal|lo|ped), 'о' after Сол/сл, 'vo' (sal|vo|es), 'mo' (Sal|mo), 'alo' (des|alo|jó), 'mon' (sal|mon after a slash), 'z' (Sal|z|burger). Probe: salvoes 0.852 ('vo'), scalloped 0.774 ('lo'), salami 0.394 ('ami'), Salzburg 0.295 (peak ' Sal' itself), scalpel 0.139; salmon 0.210, Salisbury 0.079, wavy/rounds 0.021-0.052. Tokenizer: scallops = scal|lops, salamander = sal|am|ander, salutation = sal|utation, Salinas = Sal|inas, Salieri = Sal|ieri, salient = sal|ient, saloon = sal|oon, Salazar = Sal|azar; the near-miss words salmon, salute, Salem, Sally, salon, Salvador are single tokens. The - pole is ' Also'.",
+ "selection": "random draw"
+}

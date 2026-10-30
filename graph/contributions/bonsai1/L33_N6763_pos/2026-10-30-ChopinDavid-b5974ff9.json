@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-b5974ff9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N6763+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T12:36:09+00:00",
+ "recipe": {
+  "toolchain_commit": "f68f4858",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N6763_pos/2026-10-30-ChopinDavid-b5974ff9.tests.json"
+ },
+ "label": "unclear: the card's peaks are nouns about to take a partitive or locative marker in head-final languages (病例|中有, 10U|中, その|うち, 작가|들|이다, Таллин|не, веществ|е), but probes reached only 0.37 (そのうち) and 0.33 (Budapest) with English partitives silent (0.002); best guess is the set noun before a partitive 'of which' in CJK or Russian",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N6763_pos/2026-10-30-ChopinDavid-b5974ff9.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.025,
+     "peak": "三人"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.007,
+     "peak": "。"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.007,
+     "peak": "有一"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.291,
+     "peak": "方案"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.006,
+     "peak": " 상"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.188,
+     "peak": " веществ"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.087,
+     "peak": "ал"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.035,
+     "peak": "회"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": "した"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.075,
+     "peak": "方案"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " 상"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "то"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": "фер"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": "품"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.789,
+    "median_fire": 0.03,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f68f4858",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "noun before partitive/locative marker (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 225, density 0.04%, no dominant token: 'U' (10U中), '病例' (病例中有), '들' (작가들이다), ' 其中的', ' Budapest', 'лин' (Таллинне), 'その' (そのうちの), ' веществ' (веществе), '分析', '言'. Probe: そのうちの 0.371, Budapest 0.331, 病例中有 0.186, 들 0.098, 其中的 0.024, English 'Of the three hundred applicants' 0.002, 'Among the forty crew' 0.002. The partitive reading is weakly supported in Japanese only; registered as unclear with a multilingual test of nouns before 中/うち/중/locative -е against the same nouns as plain subjects.",
+ "selection": "random draw"
+}
