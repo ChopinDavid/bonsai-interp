@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-moridinamael-3d13eabf",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L22/N2000-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:24:49+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "Mid-phrase tokens inside stock technical or error phrases and code identifiers, just before the phrase finishes (timed|out, reset by|peer, out of|date, SERVICE_UN|AVAILABLE); also non-final pieces of Korean words; near zero on ordinary prose"
+ },
+ "neighbours": [
+  {
+   "unit": "L22/N2000",
+   "pole": "-",
+   "label": "Interior words and word-pieces of hands-on software/system text (error and log messages, code identifiers, IT-support and config instructions, even casual troubleshooting talk, in any language); near zero in ordinary prose and in abstract computing explainers",
+   "fire": [
+    "액세스 지점을 non-broadcast(숨겨진) 네트워크로 구성하지 않는 것이",
+    "ERROR: Failed to bind socket on port 8080: address already in use (errno 98).",
+    "Run `sudo systemctl restart nginx` and then check /var/log/nginx/error.log for the upstream timeout.",
+    "The function getUserProfileById() throws a NullPointerException when sessionToken is undefined.",
+    "Open Settings > Network > Advanced and set the DNS server to 8.8.8.8, then click Apply.",
+    "ugh my laptop keeps saying 'driver IRQL_NOT_LESS_OR_EQUAL' after the update, already tried rolling back the wifi driver",
+    "2024-03-12 14:02:11 WARN [db-pool] Connection refused, retrying in 5000ms (attempt 3/10)",
+    "Set max_connections = 200 in postgresql.conf and reload the service."
+   ],
+   "quiet": [
+    "The old harbor was quiet that morning, and the fishing boats rocked gently against the pier.",
+    "She spent the afternoon reading in the garden while the bees drifted between the roses.",
+    "In computer science, an algorithm is a finite sequence of well-defined steps for solving a problem.",
+    "The history of computing stretches from mechanical calculators to modern networked machines.",
+    "My grandmother keeps every letter she ever received in a wooden box under her bed.",
+    "Abstraction lets programmers reason about complex systems without tracking every detail at once.",
+    "We walked along the river until the sun went down behind the hills.",
+    "La abuela preparó una sopa caliente mientras los niños jugaban en el patio."
+   ]
+  }
+ ],
+ "predictions": "Expect 7/8 fire; the Korean leak and the casual laptop sentence are the riskiest. Near misses likely quiet, though the CS-definition sentences may creep up.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo"
+  ]
+ }
+}
