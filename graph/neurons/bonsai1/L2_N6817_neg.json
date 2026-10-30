@@ -4,10 +4,10 @@
  "layer": 2,
  "index": 6817,
  "pole": "-",
- "label": "a token-level list: the split pieces 'unt'/'unts' (Blunt, blunts) and the whole token ' interpretation'",
+ "label": "a token list, not a meaning: the words ' Plains', ' interpretation', ' Firewall', ' charged', ' blunt'/'unts' and ' full' (strongest right after 'in'); synonyms and look-alikes stay quiet",
  "short": "'unt' piece / interpretation",
  "kind": "token",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-23-ChopinDavid-c9043f44"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N6817_neg/2026-10-30-moridinamael-ba753267.tests.json",
+   "prereg_commit": "3754c4279",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.214,
+     "peak": " Plains"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.183,
+     "peak": " interpretation"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.465,
+     "peak": " Firewall"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.254,
+     "peak": " charged"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.199,
+     "peak": " blunt"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.341,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.187,
+     "peak": " fully"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.343,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.106,
+     "peak": " once"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " reading"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.224,
+     "peak": " software"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.113,
+     "peak": " fined"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.044,
+     "peak": " doubt"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.033,
+     "peak": " first"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": " powered"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.038,
+     "peak": "Please"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.234,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-ba753267"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-23-ChopinDavid-c9043f44",
    "a token-level list: the split pieces 'unt'/'unts' (Blunt, blunts) and the whole token ' interpretation'",
    "held"
+  ],
+  [
+   "2026-10-30-moridinamael-ba753267",
+   "a token list, not a meaning: the words ' Plains', ' interpretation', ' Firewall', ' charged', ' blunt'/'unts' and ' full' (strongest right after 'in'); synonyms and look-alikes stay quiet",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-23-ChopinDavid-c9043f44"
+  "2026-10-23-ChopinDavid-c9043f44",
+  "2026-10-30-moridinamael-ba753267"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.0298,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 2145
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
