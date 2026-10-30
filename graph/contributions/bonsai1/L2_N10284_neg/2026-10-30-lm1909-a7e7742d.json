@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-a7e7742d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N10284-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:27:20+00:00",
+ "recipe": {
+  "toolchain_commit": "8d6500cb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N10284_neg/2026-10-30-lm1909-a7e7742d.tests.json"
+ },
+ "label": "Low-confidence guess: a possessive or pronoun inside a code comment that refers to a code object ('# Add the example's source code', '# normalize these later'); the same comments without it stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N10284_neg/2026-10-30-lm1909-a7e7742d.tests.json",
+   "prereg_commit": "8d6500cb",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.03,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.089,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.192,
+     "peak": " these"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.051,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.095,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.113,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.02,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": -0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.09,
+     "peak": " trailing"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " later"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.06,
+     "peak": " buffer"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " children"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.002,
+     "peak": " convert"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.002,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.07,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "8d6500cb",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "possessive/pronoun in code comments (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Weak, broad pole (corpus max 2.36, 2.2% of tokens above 0.1). Card: 'ies' x3, ' later' x2, ' brains', ' sociology', \"'s\" (# Add the example⟦'s⟧ source code; # these⟦ later⟧). Exploratory probe: \"example's source code\" 0.49, 'normalize these later' 0.21.",
+ "selection": "random draw"
+}

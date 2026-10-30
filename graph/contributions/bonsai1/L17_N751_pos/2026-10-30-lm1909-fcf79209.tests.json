@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-fcf79209",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N751+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N751",
+   "pole": "+",
+   "label": "Low-confidence guess: a piece inside a gene or protein name written as letters and digits (CIN85-C|bl, p53, BRCA1), firing on the piece; ordinary words in the same biology sentences stay quiet.",
+   "fire": [
+    "The CIN85-Cbl complex controls receptor turnover.",
+    "Loss of Cbl-b increases T cell activity.",
+    "The Grb2-Sos1 complex activates Ras.",
+    "Mutations in BRCA1 raise cancer risk.",
+    "The p53 protein halts the cell cycle.",
+    "Binding of Shc to EGFR was measured.",
+    "The Nck-WASP pathway drives actin growth.",
+    "Knockout of Ptpn11 caused heart defects."
+   ],
+   "quiet": [
+    "The protein complex controls receptor turnover.",
+    "Loss of this gene increases T cell activity.",
+    "A small protein complex activates the pathway.",
+    "Mutations in this gene raise cancer risk.",
+    "A tumour protein halts the cell cycle.",
+    "Binding of the adaptor to the receptor was measured.",
+    "This pathway drives actin growth.",
+    "Knockout of the gene caused heart defects."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.8; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "piece of a gene/protein name (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Broad pole (1.8% of tokens above 0.1). Card: '0' x3, '1' x3, 'bl' (CIN85-C⟦bl⟧), ',' and digits in addresses and short links. Exploratory probe: 'CIN85-Cbl complex' 0.79, 'Box 19,000-A, Honolulu' 0.05. Guess from one probe."
+}

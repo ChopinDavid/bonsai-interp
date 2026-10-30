@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a9880b44",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N8255+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N8255",
+   "pole": "+",
+   "label": "Black American history and culture (the Black Panther Party, Malcolm X, the Harlem Renaissance, Black Power, Toni Morrison), firing on dates and names in such text; other American history in the same style stays quiet.",
+   "fire": [
+    "Rosa Parks refused to give up her seat in Montgomery in 1955.",
+    "Langston Hughes was a leading poet of the Harlem Renaissance.",
+    "The Black Power salute at the 1968 Olympics shocked many viewers.",
+    "Huey Newton and Bobby Seale started the Panthers in 1966.",
+    "Toni Morrison won the Nobel Prize in Literature in 1993.",
+    "Marcus Garvey founded his association in Harlem in 1914.",
+    "The Freedom Riders rode buses into the South in 1961.",
+    "James Baldwin wrote about race in America in the 1960s."
+   ],
+   "quiet": [
+    "The Wright brothers flew their first plane at Kitty Hawk in 1903.",
+    "Mark Twain was a leading writer of the Gilded Age.",
+    "The Moon landing in 1969 amazed many viewers.",
+    "Lewis and Clark set out on their expedition in 1804.",
+    "John Steinbeck won the Nobel Prize in Literature in 1962.",
+    "Henry Ford founded his company in Detroit in 1903.",
+    "The pioneers rode wagons into the West in 1849.",
+    "Rachel Carson wrote about pesticides in the 1960s."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Black American history and culture",
+ "unit_kind": "semantic / topic",
+ "confidence": 0.7,
+ "notes": "Card: '9' x8 in dates (Founded in Oakland in 1⟦9⟧66 by Huey P. Newton; Malcolm X was born ... 1⟦9⟧25), ' Harlem' x5, ' Black' (word hit lift 988), Toni Morrison and Alice Walker, 'From Black Power to Hip Hop'. Exploratory probe: Black Panther Party 1.06, Malcolm X 0.77, Harlem Renaissance 0.45; Gold Rush and Lincoln 0.001."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3ac056bf",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N9420+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N9420",
+   "pole": "+",
+   "label": "Precious metals (gold, silver, platinum 'Pt', palladium) named as materials, especially in chemistry or materials text; base metals in the same frames (copper, iron, steel, zinc) stay quiet.",
+   "fire": [
+    "The electrodes were coated with a thin layer of gold.",
+    "Nanoparticles of silver kill many bacteria.",
+    "The catalyst contains platinum and palladium.",
+    "The contacts are plated with gold to resist corrosion.",
+    "The sample was sputtered onto a silver film.",
+    "Thin Pt wires were used as counter electrodes.",
+    "The crown was decorated with gold and silver leaf.",
+    "Jewellers often mix gold with other metals."
+   ],
+   "quiet": [
+    "The electrodes were coated with a thin layer of copper.",
+    "Nanoparticles of iron oxide kill many bacteria.",
+    "The catalyst contains nickel and cobalt.",
+    "The contacts are plated with tin to resist corrosion.",
+    "The sample was sputtered onto an aluminium film.",
+    "Thin steel wires were used as counter electrodes.",
+    "The crown was decorated with bronze and brass.",
+    "Builders often mix cement with other materials."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.6; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "precious metals (gold, silver, platinum)",
+ "unit_kind": "semantic / lexical",
+ "confidence": 0.6,
+ "notes": "Card: ' gold' x8, ' violet' x3, ' silver' x2, ' white' x2, ' light' x2, 'Pt' (monolayers on⟦ gold⟧; 196Pt; FEBID of⟦ Pt⟧–Si). Exploratory probe: 'deposited on gold electrodes' 0.32, 'silver and platinum' 0.35; copper 0.03, steel and brass 0.008."
+}

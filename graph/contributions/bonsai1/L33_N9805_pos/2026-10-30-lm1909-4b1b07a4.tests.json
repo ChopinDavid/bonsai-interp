@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-4b1b07a4",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N9805+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N9805",
+   "pole": "+",
+   "label": "Low-confidence guess: the nouns popcorn, balloon and compost (and similar household or party items) used before another noun ('a popcorn party', 'balloon releases', 'the compost bin'); other food or household nouns in the same frames stay lower.",
+   "fire": [
+    "The school held a popcorn sale for charity.",
+    "Kids watched a film with a popcorn machine in the hall.",
+    "The council banned balloon launches at weddings.",
+    "Tie the balloon strings to the chairs.",
+    "Empty the kitchen scraps into the compost heap.",
+    "Our garden has a big compost bin by the shed.",
+    "We bought popcorn kernels and butter.",
+    "The party had a balloon arch at the door."
+   ],
+   "quiet": [
+    "The school held a cake sale for charity.",
+    "Kids watched a film with a projector in the hall.",
+    "The council banned firework displays at weddings.",
+    "Tie the ribbons to the chairs.",
+    "Empty the kitchen scraps into the green bin.",
+    "Our garden has a big shed by the fence.",
+    "We bought rice and butter.",
+    "The party had a flower arch at the door."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.2; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "popcorn / balloon / compost (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: ' compost' x4, ' popcorn', ' balloon', ' tape' (a⟦ popcorn⟧, ice cream, donut; Avoid⟦ balloon⟧ releases; Ferguson⟦ tape⟧ recorder); output promotes ' machine', ' system'. Exploratory probe: 'popcorn party' 0.64, 'balloon releases' 0.36, 'compost bin' 0.35; 'pizza party' 0.17. A list label."
+}

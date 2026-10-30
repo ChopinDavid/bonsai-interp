@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-lm1909-88f96175",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N7488-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N7488",
+   "pole": "-",
+   "label": "The word-initial piece ' res' of a word the tokenizer splits (res|pite, res|ins, res|pl|endent, res|usc|itate, res|olute); words that start with 'res' but are one token (result, resin, residue, reservoir) stay quiet.",
+   "fire": [
+    "The paramedics tried to resuscitate the swimmer.",
+    "She remained resolute despite the criticism.",
+    "The peacock spread its resplendent tail.",
+    "Families were forced to resettle in the hills.",
+    "Rain brought a short respite from the heat.",
+    "Bone resorption increases with age.",
+    "Pine resins are used to make varnish.",
+    "He stood resplendently in his new uniform."
+   ],
+   "quiet": [
+    "The paramedics tried to revive the swimmer.",
+    "She remained resilient despite the criticism.",
+    "The peacock spread its colourful tail.",
+    "Families were forced to move to the hills.",
+    "Rain brought a short break from the heat.",
+    "Bone density falls with age.",
+    "Pine resin is used to make varnish.",
+    "He stood proudly in his new uniform."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-1.0; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "word-initial piece ' res' of a split word",
+ "unit_kind": "token piece",
+ "confidence": 0.8,
+ "notes": "Card: ' res' x30 of the top 32 (a⟦ res⟧plendent moustache; varnishes,⟦ res⟧ins; a⟦ res⟧pite), word hits ' res' cov 24%, ' str' 10%; auto test held for ' str' before a word fragment. Tokenizer checked: res|usc|itate, res|olute, res|pl|endent, res|ettle, res|pite, res|orption, res|ins split; revive, resilient, resin, residue, result are one token. Exploratory probe: resplendent 1.00, resins 0.87, respite 0.85; 'long moustache' 0.03.",
+ "trigger": {
+  "tokens": [
+   " res",
+   " Res"
+  ]
+ }
+}

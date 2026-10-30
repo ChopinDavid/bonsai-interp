@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a7e7742d",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N10284-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N10284",
+   "pole": "-",
+   "label": "Low-confidence guess: a possessive or pronoun inside a code comment that refers to a code object ('# Add the example's source code', '# normalize these later'); the same comments without it stay quiet.",
+   "fire": [
+    "    # Strip the record's trailing newline",
+    "    # Store the user's id for later",
+    "    # we fix these later in the parser",
+    "    # Copy the file's header into the buffer",
+    "    # Check the node's children first",
+    "    # convert them later, after loading",
+    "    # Save the widget's size before resizing",
+    "    # Reset the queue's counter"
+   ],
+   "quiet": [
+    "    # Strip the trailing newline",
+    "    # Store the id for later",
+    "    # fix the parser",
+    "    # Copy the header into the buffer",
+    "    # Check children first",
+    "    # convert after loading",
+    "    # Save the size before resizing",
+    "    # Reset the counter"
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.5; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "possessive/pronoun in code comments (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Weak, broad pole (corpus max 2.36, 2.2% of tokens above 0.1). Card: 'ies' x3, ' later' x2, ' brains', ' sociology', \"'s\" (# Add the example⟦'s⟧ source code; # these⟦ later⟧). Exploratory probe: \"example's source code\" 0.49, 'normalize these later' 0.21."
+}

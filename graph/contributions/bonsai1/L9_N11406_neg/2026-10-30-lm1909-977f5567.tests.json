@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-977f5567",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N11406-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N11406",
+   "pole": "-",
+   "label": "Low-confidence guess: networking or security terms for where a system runs or what it protects ('host IPS', 'l3 overlay', 'CRL Distribution Point', 'Intellectual Property Office'); the same sentences in plain words stay quiet.",
+   "fire": [
+    "Host-based firewalls protect each server separately.",
+    "The IPS runs on the host and inspects traffic.",
+    "Set up an l3 overlay between the two sites.",
+    "The certificate lists a CRL distribution point.",
+    "Register the patent with the Intellectual Property Office.",
+    "Each host keeps its own audit log.",
+    "Layer 3 routing connects the two subnets.",
+    "Host intrusion prevention blocks the exploit."
+   ],
+   "quiet": [
+    "Separate walls protect each building on the site.",
+    "The guard sits at the gate and checks visitors.",
+    "Build a footpath between the two sites.",
+    "The certificate lists the owner's name.",
+    "Register the car with the local office.",
+    "Each shop keeps its own sales book.",
+    "A new road connects the two villages.",
+    "A strong lock blocks the thief."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "network/security terms (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: no single token ('3' x4 (l⟦3⟧overlay), 'DP' (C⟦DP⟧), ' Property' (Intellectual⟦ Property⟧ Office), ' host' / 'Host'). Exploratory probe weak: 'host IPS' 0.21, CRL distribution point 0.03. Expected to fail."
+}

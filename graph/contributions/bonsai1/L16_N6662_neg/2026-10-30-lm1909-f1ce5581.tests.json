@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-f1ce5581",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N6662-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N6662",
+   "pole": "-",
+   "label": "Climate-history terms for eras of warming or glaciation (global warming, interglacial, ice age, glacial period), firing on the term; other catastrophes and eras in the same frames stay quiet.",
+   "fire": [
+    "The last interglacial was warmer than today.",
+    "Global warming is melting the Arctic ice.",
+    "During the ice age, sea levels were much lower.",
+    "A glacial period began about 115,000 years ago.",
+    "Rapid warming ended the last glaciation.",
+    "Scientists study past interglacials to predict the future.",
+    "The ice age left boulders across the plain.",
+    "Global warming threatens coral reefs."
+   ],
+   "quiet": [
+    "The last dynasty was richer than today's rulers.",
+    "Heavy shipping is crowding the Arctic routes.",
+    "During the war, food supplies were much lower.",
+    "A long drought began about ten years ago.",
+    "Rapid trade ended the old guild system.",
+    "Scientists study past epidemics to predict the future.",
+    "The flood left boulders across the plain.",
+    "Overfishing threatens coral reefs."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4; near misses below 0.1; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "climate eras (global warming, interglacial)",
+ "unit_kind": "semantic",
+ "confidence": 0.35,
+ "notes": "Card: no single token ('ions' (social depress⟦ions⟧), ' warming' (global⟦ warming⟧), 'acial' (intergl⟦acial⟧), ' environment', ' assurances'). Exploratory probe: 'global warming' 0.28, 'interglacial' 0.34; 'a catastrophic flood' 0.09."
+}

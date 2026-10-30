@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-3ac056bf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N9420+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:27:55+00:00",
+ "recipe": {
+  "toolchain_commit": "8d6500cb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N9420_pos/2026-10-30-lm1909-3ac056bf.tests.json"
+ },
+ "label": "Precious metals (gold, silver, platinum 'Pt', palladium) named as materials, especially in chemistry or materials text; base metals in the same frames (copper, iron, steel, zinc) stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N9420_pos/2026-10-30-lm1909-3ac056bf.tests.json",
+   "prereg_commit": "8d6500cb",
+   "author": "lm1909",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.611,
+     "peak": " gold"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.679,
+     "peak": " silver"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.516,
+     "peak": "adium"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.278,
+     "peak": " gold"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.229,
+     "peak": " silver"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.162,
+     "peak": " Pt"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.279,
+     "peak": " gold"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.31,
+     "peak": " gold"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.203,
+     "peak": " copper"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.241,
+     "peak": " kill"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.232,
+     "peak": "alt"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": "put"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.032,
+     "peak": "Thin"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " decorated"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " mix"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.294,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "8d6500cb",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "precious metals (gold, silver, platinum)",
+ "unit_kind": "semantic / lexical",
+ "confidence": 0.6,
+ "notes": "Card: ' gold' x8, ' violet' x3, ' silver' x2, ' white' x2, ' light' x2, 'Pt' (monolayers on⟦ gold⟧; 196Pt; FEBID of⟦ Pt⟧–Si). Exploratory probe: 'deposited on gold electrodes' 0.32, 'silver and platinum' 0.35; copper 0.03, steel and brass 0.008.",
+ "selection": "random draw"
+}

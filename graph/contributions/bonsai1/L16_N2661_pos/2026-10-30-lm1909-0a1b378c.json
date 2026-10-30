@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-0a1b378c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N2661+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:27:30+00:00",
+ "recipe": {
+  "toolchain_commit": "8d6500cb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N2661_pos/2026-10-30-lm1909-0a1b378c.tests.json"
+ },
+ "label": "Low-confidence guess: the '||' cell separator in wiki-style price or results tables ('40 Euro||45 Euro||60 Euro'); the same values written as prose stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N2661_pos/2026-10-30-lm1909-0a1b378c.tests.json",
+   "prereg_commit": "8d6500cb",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.054,
+     "peak": "Studio"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.092,
+     "peak": "Double"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.117,
+     "peak": "0"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.051,
+     "peak": "Team"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.072,
+     "peak": "Ap"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.063,
+     "peak": "Adult"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.129,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.13,
+     "peak": "Single"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.12,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.123,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.092,
+     "peak": "On"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.092,
+     "peak": "Team"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.119,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.12,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.125,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.125,
+     "peak": " "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.297,
+    "median_fire": 0.082,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "8d6500cb",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'||' separators in wiki tables (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Broad pole (1.2% of tokens above 0.1) with a gate-closed regime (95%). Card: ' ' x5, ',' x4, '||' x2, ' only', ' not' (Apartment (2 beds)||40 Euro||45 Euro⟦||⟧60 Euro). Exploratory probe: a one-line price table 0.03, a sports record 0.14. Expected to fail.",
+ "selection": "random draw"
+}
