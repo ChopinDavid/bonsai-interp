@@ -4,7 +4,7 @@
  "layer": 22,
  "index": 2000,
  "pole": "-",
- "label": "Failure, negation and override wording inside code strings and identifiers (\"Not supported\", over_committed, 'over18'); quieter on the same code saying success or plain values. Broad unit (3.2% of tokens reach 0.1 of max).",
+ "label": "Non-final pieces of split ALL_CAPS error/status constants in code (SERVICE_UNAVAILABLE, ECONNREFUSED, MOVED_PERMANENTLY), whether or not they mean failure; near zero on one-token names (OK, CREATED) and plain English prose; Korean tech-doc word pieces also fire",
  "short": "code error/override words",
  "kind": "unclear",
  "status": "failed",
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 6
    },
    "contribution": "2026-10-22-ChopinDavid-5b2c3705"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N2000_neg/2026-10-30-moridinamael-01bfd37f.tests.json",
+   "prereg_commit": "2a10f75dc",
+   "author": "blind:claude-sonnet-5-5 (label-only)",
+   "n_fire": 8,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.548,
+     "peak": "겨"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.52,
+     "peak": "_UN"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.93,
+     "peak": "REF"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.743,
+     "peak": "_MO"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.749,
+     "peak": "_NOT"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.314,
+     "peak": ".PERMISSION"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.656,
+     "peak": "IN"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.577,
+     "peak": "ATE"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.109,
+     "peak": " OK"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.174,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.353,
+     "peak": "CRE"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.446,
+     "peak": " program"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.301,
+     "peak": " folder"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.143,
+     "peak": " use"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.382,
+     "peak": " out"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.133,
+     "peak": " resources"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.617,
+    "near_misses_at_0.3": 4
+   },
+   "contribution": "2026-10-30-moridinamael-01bfd37f"
   }
  ],
  "label_history": [
@@ -138,30 +260,37 @@
    "2026-10-22-ChopinDavid-5b2c3705",
    "Failure, negation and override wording inside code strings and identifiers (\"Not supported\", over_committed, 'over18'); quieter on the same code saying success or plain values. Broad unit (3.2% of tokens reach 0.1 of max).",
    "failed"
+  ],
+  [
+   "2026-10-30-moridinamael-01bfd37f",
+   "Non-final pieces of split ALL_CAPS error/status constants in code (SERVICE_UNAVAILABLE, ECONNREFUSED, MOVED_PERMANENTLY), whether or not they mean failure; near zero on one-token names (OK, CREATED) and plain English prose; Korean tech-doc word pieces also fire",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-22-ChopinDavid-5b2c3705"
+  "2026-10-22-ChopinDavid-5b2c3705",
+  "2026-10-30-moridinamael-01bfd37f"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
