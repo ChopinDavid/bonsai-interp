@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N7017+",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 7017,
+ "pole": "+",
+ "label": "The start of a relative clause that says how things are or ought to be ('the way things are going', 'all the things we have to do', 'what he should be doing'), firing on 'things' or the clause subject; the same nouns as plain objects stay quiet.",
+ "short": "how things are / ought to be (relative clause)",
+ "kind": "contextual / prediction",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N7017_pos/2026-10-30-lm1909-1d0dc60e.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.235,
+     "peak": " things"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.061,
+     "peak": " we"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.354,
+     "peak": " he"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.099,
+     "peak": " things"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.101,
+     "peak": " things"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.163,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.1,
+     "peak": " things"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.085,
+     "peak": " things"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": "There"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": "Crit"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " her"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": " groceries"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " over"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.101,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-1d0dc60e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-1d0dc60e",
+   "The start of a relative clause that says how things are or ought to be ('the way things are going', 'all the things we have to do', 'what he should be doing'), firing on 'things' or the clause subject; the same nouns as plain objects stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-1d0dc60e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

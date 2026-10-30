@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L20/N1028-",
+ "model": "bonsai1",
+ "layer": 20,
+ "index": 1028,
+ "pole": "-",
+ "label": "The punctuation that closes a press-release dateline ('DUBLIN, Ohio, 10 October 2012—', 'CHAMPAIGN, Ill. -', 'SAN DIEGO, Dec. 27, 2016 –', '(BUSINESS WIRE)--') before the story starts; the same places and dates in ordinary prose stay quiet.",
+ "short": "end of a press-release dateline",
+ "kind": "format / contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N1028_neg/2026-10-30-lm1909-17f3cd2d.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.566,
+     "peak": "—"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.504,
+     "peak": " –"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.22,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.392,
+     "peak": " June"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.485,
+     "peak": "("
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.527,
+     "peak": " --"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.19,
+     "peak": " Ontario"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.257,
+     "peak": " study"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.094,
+     "peak": " hospital"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.08,
+     "peak": " company"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.043,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.107,
+     "peak": " said"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.053,
+     "peak": " Friday"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.19,
+     "peak": " from"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.992,
+    "median_fire": 0.439,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-17f3cd2d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-17f3cd2d",
+   "The punctuation that closes a press-release dateline ('DUBLIN, Ohio, 10 October 2012—', 'CHAMPAIGN, Ill. -', 'SAN DIEGO, Dec. 27, 2016 –', '(BUSINESS WIRE)--') before the story starts; the same places and dates in ordinary prose stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-17f3cd2d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

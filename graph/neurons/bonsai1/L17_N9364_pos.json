@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L17/N9364+",
+ "model": "bonsai1",
+ "layer": 17,
+ "index": 9364,
+ "pole": "+",
+ "label": "Low-confidence guess: the name of a technical concept in study-notes or textbook prose about psychology and medicine (Gestalt Psychology, ankylosing spondylitis, relative species abundance), firing on the term itself; the same sentences with a plain description stay quiet.",
+ "short": "technical term in study notes (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N9364_pos/2026-10-30-lm1909-fdf77e3b.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.109,
+     "peak": " Psychology"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.088,
+     "peak": "umat"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.085,
+     "peak": "ance"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.041,
+     "peak": " can"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.058,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.072,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.053,
+     "peak": "ias"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.048,
+     "peak": " plot"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": "5"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.095,
+     "peak": " stiffness"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.055,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.036,
+     "peak": " can"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.041,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.07,
+     "peak": "ptoms"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": " ph"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.773,
+    "median_fire": 0.065,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-fdf77e3b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-fdf77e3b",
+   "Low-confidence guess: the name of a technical concept in study-notes or textbook prose about psychology and medicine (Gestalt Psychology, ankylosing spondylitis, relative species abundance), firing on the term itself; the same sentences with a plain description stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-fdf77e3b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
