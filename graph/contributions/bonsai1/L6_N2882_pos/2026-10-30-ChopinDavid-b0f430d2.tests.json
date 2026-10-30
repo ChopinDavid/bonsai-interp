@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b0f430d2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N2882+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N2882",
+   "pole": "+",
+   "label": "URL path or query-string punctuation inside a code string literal (=&, =/, /$', /',)",
+   "fire": [
+    "    url(r'^orders/$', views.order_list, name=\"order-list\"),",
+    "    next_url = reverse('blog:index') + '?page=/latest/'",
+    "\"/api/users?role=&active=1\", \"/api/users?role=admin\",",
+    "    resp = client.get(\"/export?format=&year=2020\")",
+    "    path('settings/', include('settings.urls')),",
+    "    redirect_to = '?next=/dashboard/overview/'",
+    "    url(r'^authors/$', views.author_list, name=\"author-list\"),",
+    "    query = base + \"?lang=&region=eu&sort=name\""
+   ],
+   "quiet": [
+    "    order_list = views.OrderList.as_view()",
+    "    next_url = reverse('blog:index')",
+    "    roles = [\"admin\", \"editor\", \"viewer\"]",
+    "    resp = client.get(url, params={\"year\": 2020})",
+    "    settings = load_settings(path)",
+    "    redirect_to = dashboard.overview",
+    "    tag = Tag.objects.get(slug=slug)",
+    "    query = base.format(lang=lang, region=\"eu\")"
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire; probe '=&' 0.79 and 0.72, '=/' 0.78, \"/$',\" 0.45, \"/',\" 0.31; code without URL punctuation 0.01-0.09; prose 0.03",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "URL punctuation in code string",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Card peaks '=&', '=/', \"/',\", '//', \"='\" inside Django url() patterns, ?next= strings and query strings, max 4.8. Near misses are the same code lines rewritten without a URL (plain calls, lists, attribute access).",
+ "trigger": {
+  "words": [
+   "=&",
+   "=/",
+   "/$',",
+   "/',"
+  ]
+ }
+}

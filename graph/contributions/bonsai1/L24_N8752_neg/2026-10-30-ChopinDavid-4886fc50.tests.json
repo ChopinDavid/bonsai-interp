@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4886fc50",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N8752-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N8752",
+   "pole": "-",
+   "label": "the comma after a stranded preposition whose object is deferred to the end of a coordination (responsible for, and must report on, all repairs; attracted to, but wary of, the technology)",
+   "fire": [
+    "The agency will monitor, and where necessary intervene in, the sale of farmland to foreign buyers.",
+    "Teachers should be aware of, and sensitive to, the pressures their pupils face at home.",
+    "The new rules apply to, but were not drafted for, small family businesses.",
+    "Residents have long complained about, and petitioned against, the night flights over the estuary.",
+    "The museum cares for, and regularly lends from, a collection of some forty thousand prints.",
+    "Doctors must listen to, and act on, concerns raised by nursing staff.",
+    "The fund invests in, and occasionally takes control of, struggling regional airlines.",
+    "Every applicant is interviewed by, and must be approved by, two members of the board."
+   ],
+   "quiet": [
+    "The agency will monitor the sale of farmland to foreign buyers and intervene where necessary.",
+    "Teachers should be sensitive to the pressures their pupils face at home.",
+    "The new rules apply to small family businesses, although they were not drafted for them.",
+    "Residents have long complained about the night flights over the estuary and petitioned against them.",
+    "The museum cares for a collection of some forty thousand prints and regularly lends from it.",
+    "Doctors must act on concerns raised by nursing staff.",
+    "The fund invests in struggling regional airlines and occasionally takes control of them.",
+    "Every applicant is interviewed by two members of the board, who must then approve the appointment."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire; probe 'attracted to, but wary of,' 0.59, 'advice to, and campaigns on behalf of,' 0.45, 'responsible for, and must report on,' 0.35; the same construction without the comma ('production of and trade in') only 0.09; unstranded twins 0.02-0.08",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "stranded-preposition comma",
+ "unit_kind": "context",
+ "confidence": "medium-high",
+ "notes": "Card: max 155, peaks ',' x14 and ' for' x8 in right-node-raising coordinations (prevent, prepare for, and respond to; benefit from, if not require; designed for, and used, by). The + pole suppresses 'and'/'or'. Probe showed the comma carries most of the activation. Near misses rewrite each item with the object in place and no stranding."
+}

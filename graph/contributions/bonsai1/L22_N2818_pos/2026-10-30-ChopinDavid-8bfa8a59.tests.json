@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-8bfa8a59",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N2818+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N2818",
+   "pole": "+",
+   "label": "advice about managing a bodily state: when to stop, what reading counts as high, how to avoid or ward off a symptom (when you feel full, above 100 is considered high, avoid overeating)",
+   "fire": [
+    "Put the fork down when you feel pleasantly full rather than when the plate is empty.",
+    "A fasting glucose above 126 is usually considered high enough to confirm diabetes.",
+    "Try to stand up every half hour to avoid stiffness in your lower back.",
+    "Warm salt water gargles can help ward off a sore throat before it takes hold.",
+    "If you feel light-headed after standing, sit back down and drink some water.",
+    "Pain that lasts more than a few days is generally worth having looked at by a doctor.",
+    "Eating slowly gives your stomach time to signal that it has had enough.",
+    "Many people find a warm bath helpful for easing tired muscles after a run."
+   ],
+   "quiet": [
+    "Put the pen down when the form is complete rather than when the page is full.",
+    "A mortgage rate above six percent is usually considered high enough to deter buyers.",
+    "Try to back up your files every half hour to avoid losing work.",
+    "A coat of primer can help the paint hold before the first frost arrives.",
+    "If the engine stalls after starting, wait a minute and turn the key again.",
+    "A leak that lasts more than a few days is generally worth having looked at by a plumber.",
+    "Watering slowly gives the soil time to absorb what it has been given.",
+    "Many people find a spreadsheet helpful for tracking expenses after a move."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire; probe 'stop eating ... when you feel stuffed' 0.83, 'heart rate above 100 is generally considered' 0.55, 'avoid overeating' 0.41, 'ward off colds' 0.27, 'helpful for stiff shoulders' 0.17; a finance twin 'when your account feels empty' leaked 0.78, so the 'feel + state' frame carries much of the pole whatever the topic; credit-score threshold 0.26, sanding 0.14",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "bodily-state management advice",
+ "unit_kind": "context",
+ "confidence": "medium-low",
+ "notes": "Card peaks ' feel', ' is', ' usually', ' avoid', ' off' in health-advice prose (feel full, 140 or above is considered high, too hot or too cold is usually uncomfortable, ward off disease). The - pole suppresses 'severe'/'urgent'/'emergencies'. The finance leak means the label may be partial: a 'felt state judged against a threshold' reading would also fit. Near misses here keep the advice frames on money, paperwork, machines and plants and avoid the verb 'feel'."
+}

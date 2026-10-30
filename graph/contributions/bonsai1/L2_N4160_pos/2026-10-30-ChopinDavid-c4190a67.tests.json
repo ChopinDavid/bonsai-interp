@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c4190a67",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N4160+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N4160",
+   "pole": "+",
+   "label": "dense / positional best guess: a non-initial piece of a rare word that the tokenizer splits into several tokens (splittail, maltreating, rarefaction, cobblestone)",
+   "fire": [
+    "A pair of pintail ducks landed on the far side of the reservoir.",
+    "The guards were later charged with mistreating the detainees.",
+    "Soil liquefaction toppled several apartment blocks during the earthquake.",
+    "The script handles bootstrapping the cluster before any jobs are submitted.",
+    "Horses struggled on the wet cobblestone streets of the old town.",
+    "A lone sandpiper picked its way along the tide line.",
+    "Thick condensation formed on the inside of the tent by morning.",
+    "Vertical stratification of the lake prevents oxygen reaching the bottom."
+   ],
+   "quiet": [
+    "A pair of teal ducks landed on the far side of the reservoir.",
+    "The guards were later charged with beating the detainees.",
+    "Soil erosion toppled several apartment blocks during the earthquake.",
+    "The script handles starting the cluster before any jobs are submitted.",
+    "Horses struggled on the wet stone streets of the old town.",
+    "A lone crane picked its way along the tide line.",
+    "Thick frost formed on the inside of the tent by morning.",
+    "Vertical mixing of the lake brings oxygen to the bottom."
+   ]
+  }
+ ],
+ "predictions": "3-5/8 fire; probe splittail 'ail' 1.06, maltreating 'reating' 0.30, patronidiomas 'idi' 0.22, rarefaction 0.14; single-token twins 0.01-0.03; the pole is broad (1.8% of tokens reach a tenth of max 2.0) and 100% gate-closed, so scores sit near the noise",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner piece of split word (dense)",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Layer-2 spelling unit with a tiny max. Every card example is a word-inner piece ('aily', 'ersion', 'fac', 'idi', 'ail', 'reat', 'anceled'). Fire items use words checked to split (pintail, mistreating, liquefaction, bootstrapping, cobblestone, sandpiper, condensation, stratification); near misses swap in a single-token word of the same meaning. Near-miss words were checked to be single tokens (teal, beating, erosion, starting, stone, crane, frost, mixing)."
+}

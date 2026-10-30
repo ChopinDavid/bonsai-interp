@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4b0307c9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N7099-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N7099",
+   "pole": "-",
+   "label": "competitive application or selection: the link from a candidate to the post, place or prize sought (applied to, shortlisted for, admitted into, tenders for)",
+   "fire": [
+    "More than two hundred candidates applied for the three vacancies in the fire service.",
+    "Her nephew was accepted into the conservatoire on his second attempt.",
+    "The novel was nominated for the Prix Goncourt but lost to a debut from Marseille.",
+    "Each spring thousands of teenagers compete for a handful of places at the academy.",
+    "He put himself forward for the vacant seat on the parish council.",
+    "Only one in twelve applicants is admitted to the veterinary school in Utrecht.",
+    "She interviewed for a junior post at the embassy and heard nothing for weeks.",
+    "Three firms submitted tenders for the contract to rebuild the harbour wall."
+   ],
+   "quiet": [
+    "More than two hundred firefighters responded to the blaze at the warehouse.",
+    "Her nephew walked into the conservatoire to collect his lost umbrella.",
+    "The novel was translated into French by a teacher from Marseille.",
+    "Each spring thousands of teenagers travel to the coast for the holidays.",
+    "He sat down in the vacant seat at the back of the parish hall.",
+    "Only one in twelve dogs treated at the veterinary school in Utrecht needs surgery.",
+    "She wrote to the embassy about her lost passport and heard nothing for weeks.",
+    "Three firms delivered stone for the rebuilding of the harbour wall."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire; probe 'applied to the nursing program' 0.68, 'shortlisted for' 0.46, 'bid for the chairmanship' 0.38, 'got into medical school' 0.34, 'enrolment in' 0.28; 'applied, and only forty were admitted' 0.68, so the candidacy context fires even without the preposition; 'drove to', 'applied the paint to' 0.01-0.02",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "candidacy target link",
+ "unit_kind": "context",
+ "confidence": "medium-high",
+ "notes": "Card peaks are ' to'/' for'/' into' after applying, selection, admission, hopeful, application. The + pole peaks on 'candidates'/'applicant'. Near misses keep the verbs and the institutions but remove the candidacy (walked into the conservatoire, responded to the blaze, delivered stone for the rebuilding)."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-acf218af",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2151-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N2151",
+   "pole": "-",
+   "label": "interpretive framing of a text, theorem or event: the verb and manner by which it is read, proven or understood (taken literally, understood as a metaphor, attempted to prove, seen in the worst light)",
+   "fire": [
+    "Many rabbis understood the flood story as an allegory of moral collapse rather than a chronicle.",
+    "Fermat claimed to have proved the theorem but never wrote the argument down.",
+    "The prophecy should be read in its historical setting, not as a forecast of modern wars.",
+    "Optimists tend to explain a failure as bad luck and a success as talent.",
+    "Some readers take the ending as a dream, others as a literal return home.",
+    "The clause has been construed narrowly by the courts for over a century.",
+    "Hegel saw in the French Revolution the unfolding of reason itself.",
+    "You can view the quarrel as a tragedy or as a farce, depending on your mood."
+   ],
+   "quiet": [
+    "Many rabbis lived in the town until the community dispersed in the 1920s.",
+    "Fermat worked as a magistrate in Toulouse for most of his adult life.",
+    "The prophecy appears in the second book, between two genealogies.",
+    "Optimists tend to sleep better and exercise more than pessimists.",
+    "Some readers finished the book in a weekend, others took a month.",
+    "The clause was added to the contract in the final round of negotiations.",
+    "Hegel lectured in Berlin from 1818 until his death in 1831.",
+    "The quarrel began over a parking space and ended in court."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire; probe 'never attempted to prove' 0.51, 'understood as a metaphor' 0.44, 'see every setback in the worst possible light' 0.37, 'read the parable as a warning' 0.36; 'Critics interpret' only 0.06 near the sentence start; dating and printing facts about the same texts 0.01-0.11",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "how a text or event is read",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Card peaks: attempted to prove this theorem, scripture) figurative or metaphorical rather than literal, can be read past their face value, is seen in Genesis, read this passage as, can be explained, interpret events with a pessimistic twist, think of government in an idyllic way. The + pole promotes 'concept'/'reasoning'. Near misses keep the same texts and people with factual, non-interpretive predicates."
+}

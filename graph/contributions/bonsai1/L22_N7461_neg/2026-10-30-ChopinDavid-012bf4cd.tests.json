@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-012bf4cd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N7461-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N7461",
+   "pole": "-",
+   "label": "unclear; best guess: a word-final piece or an arithmetic minus in technical text (alkaline, Luftlinie, (2**exp) - 2, current.total - prior.total)",
+   "fire": [
+    "delta = (end.timestamp - start.timestamp) / 60",
+    "The sample was strongly saline, with a conductivity above four millisiemens.",
+    "offset = (len(buffer) - 1) * stride",
+    "Photos courtesy of Pixabay and Pexels.",
+    "Die Entfernung zum Flughafen beträgt Luftlinie etwa zwölf Kilometer.",
+    "remaining = total_bytes - bytes_written",
+    "The soil pH indicated that the plots were slightly acidic.",
+    "midpoint = (a + b) / 2 - margin"
+   ],
+   "quiet": [
+    "delta = end.timestamp + start.timestamp",
+    "The sample was clear and had a neutral taste.",
+    "offset = len(buffer) * stride",
+    "Photos were taken by the author.",
+    "Der Flughafen ist mit dem Bus in zwanzig Minuten erreichbar.",
+    "remaining = total_bytes",
+    "The soil in the plots was dark and well drained.",
+    "midpoint = (a + b) / 2"
+   ]
+  }
+ ],
+ "predictions": "0-2/8 fire; probe peaks were 'ine' in alkaline 0.24, ' -' in a generator expression 0.23, 'splash' in Unsplash 0.19, 'flies' in 'as the crow flies' 0.19; straight-line distance and intersection prose 0.03-0.09",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear (technical piece / minus)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card top examples mix a subtraction in a test generator, a sentence-final period after 'film', a dict key quote, 'Luftlinie', 'indicated that', 'inter_point', Japanese 直線距離, 'Pixabay' and 'yoy_change': no shared token or meaning. The probe found nothing above 0.25. Recorded as unclear with the probe's highest configurations as the best guess."
+}

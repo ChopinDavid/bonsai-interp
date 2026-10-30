@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0f3f2526",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N7852+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N7852",
+   "pole": "+",
+   "label": "the purpose link 'to'/'for' after a described room, spot or amenity, stating what the space is good for (a lovely place to read, a snug for curling up, room to eat together)",
+   "fire": [
+    "Out back there is a shaded veranda, just right for long lunches in summer.",
+    "The attic has been converted into a bright studio where there is plenty of space to paint.",
+    "A deep window seat on the landing makes a quiet corner to read in.",
+    "The hotel's library bar is a wonderful spot for a nightcap by the fire.",
+    "The island in the kitchen is big enough for the children to do their homework at.",
+    "Below the house a small jetty gives you somewhere to launch a kayak at dawn.",
+    "The garden room doubles as an ideal space to host a dinner for twelve.",
+    "Guests love the heated pool, perfect for an early swim before breakfast."
+   ],
+   "quiet": [
+    "Late August is just right for long lunches in summer.",
+    "The grant has been converted into a stipend, so there is plenty of money to paint.",
+    "A short walk in the evening makes a quiet moment to think in.",
+    "A hot toddy is a wonderful remedy for a cold by the fire.",
+    "The island in the kitchen has a granite top and two deep drawers.",
+    "Below the house a small jetty juts out into the lake.",
+    "The garden room has French doors and a slate floor.",
+    "Guests love the heated pool, which stays at twenty-eight degrees all year."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire; probe 'nook perfect for reading' 0.61, 'ideal spot to watch' 0.65, 'snug ... for curling up' 0.61, 'room to eat together' 0.46, 'place to work' 0.41; 'perfect time to' 0.14, 'best way to' 0.06; an amenity list without a purpose 0.25",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "what the space is for",
+ "unit_kind": "context",
+ "confidence": "medium-high",
+ "notes": "Card: ' to' x16, ' get', ' for' after desk, place, space, fireplace, lounge, den in property and hotel prose; max 103. Near misses are of two kinds: the same purpose frame on a non-place (a season, a stipend, a walk, a remedy) and the same space described without a purpose."
+}

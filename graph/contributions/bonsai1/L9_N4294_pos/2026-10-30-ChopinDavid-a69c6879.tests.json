@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a69c6879",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N4294+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N4294",
+   "pole": "+",
+   "label": "a later piece of a Norwegian proper name that the tokenizer splits into several tokens (Bondevik, Gudbrandsdal, Tromsø, Stavanger), not split names from other languages",
+   "fire": [
+    "The expedition was led by Roald Amundsen, who reached the pole in December 1911.",
+    "Prime Minister Jens Stoltenberg visited the flood-damaged villages near Lillehammer.",
+    "Striker Erling Haaland grew up in Bryne, a small town south of Stavanger.",
+    "The chess champion Magnus Carlsen learned the game in Lørenskog.",
+    "Painter Edvard Munch kept a studio at Ekely, on the edge of Oslo.",
+    "The ski jumper Johann André Forfang comes from Tromsø, far above the Arctic Circle.",
+    "Erna Solberg led the coalition until the election of 2021.",
+    "The sculptor Gustav Vigeland filled a park in Oslo with bronze figures."
+   ],
+   "quiet": [
+    "The expedition was led by Umberto Nobile, who flew over the pole in 1926.",
+    "Prime Minister Mateusz Morawiecki visited the flood-damaged villages near Opole.",
+    "Striker Robert Lewandowski grew up in Leszno, a small town west of Warsaw.",
+    "The chess champion Garry Kasparov learned the game in Baku.",
+    "Painter Amedeo Modigliani kept a studio in Montparnasse, on the edge of Paris.",
+    "The ski jumper Kamil Stoch comes from Zakopane, high in the Tatra mountains.",
+    "Viktor Orbán led the coalition until the election of 2022.",
+    "The sculptor Constantin Brâncuși filled a park in Târgu Jiu with stone figures."
+   ]
+  }
+ ],
+ "predictions": "4-6/8 fire; probe Kjell Magne Bondevik 0.42, Tromsø 0.29, Gudbrandsdal 0.24, Ørjan Nyland 0.16, Hjalmar Johansen 0.07; Polish and Italian split names 0.003-0.007; 'fjord' 0.07",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Norwegian name piece",
+ "unit_kind": "lexical",
+ "confidence": "medium-low",
+ "notes": "Card peaks ('nes' in Aksnes, 'ud' in Sonerud, 'kon' in Håkon, 'dal', 'stad', 'land') are all inner or final pieces of Norwegian names, density 0.008%. Fresh names in the probe fired at 0.16-0.42 of max, so the pole generalises beyond the card strings but weakly; the test packs two names per fire item. Near misses are split names from Polish, Italian, Russian, Romanian and Hungarian in the same frames."
+}
