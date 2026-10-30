@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L32/N9369-",
+ "model": "bonsai1",
+ "layer": 32,
+ "index": 9369,
+ "pole": "-",
+ "label": "Soviet or Russian-state institutional context, at the slot right before an institution or place name is given (called the Cheka, Sukhoi Design Bureau, District Administrative Center, the Volga city of Gorky)",
+ "short": "Soviet institution about to be named",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N9369_neg/2026-10-30-ChopinDavid-ec715e6d.tests.json",
+   "prereg_commit": "f5dddbcd",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.988,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.319,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.344,
+     "peak": " Administrative"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.608,
+     "peak": " Design"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.434,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.462,
+     "peak": "GB"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.18,
+     "peak": " Aviation"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.229,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.085,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.101,
+     "peak": " Sherman"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.194,
+     "peak": " county"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.094,
+     "peak": "ne"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " Dayton"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.1,
+     "peak": " Yard"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.108,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.389,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-ec715e6d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-ec715e6d",
+   "Soviet or Russian-state institutional context, at the slot right before an institution or place name is given (called the Cheka, Sukhoi Design Bureau, District Administrative Center, the Volga city of Gorky)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-ec715e6d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

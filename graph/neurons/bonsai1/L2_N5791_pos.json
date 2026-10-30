@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N5791+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 5791,
+ "pole": "+",
+ "label": "' well' as an epistemic hedge after a modal (might well, may well, could well), as opposed to manner 'well'",
+ "short": "modal + well (might well)",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N5791_pos/2026-10-30-ChopinDavid-c7978ef4.tests.json",
+   "prereg_commit": "f5dddbcd",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.119,
+     "peak": " well"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.071,
+     "peak": " well"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.088,
+     "peak": " first"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.186,
+     "peak": " well"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.069,
+     "peak": " council"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.126,
+     "peak": " well"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.046,
+     "peak": "R"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.064,
+     "peak": " bridge"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " county"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " well"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " room"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " council"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": "His"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.027,
+     "peak": " bakery"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " bridge"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.079,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-c7978ef4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-c7978ef4",
+   "' well' as an epistemic hedge after a modal (might well, may well, could well), as opposed to manner 'well'",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-c7978ef4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
