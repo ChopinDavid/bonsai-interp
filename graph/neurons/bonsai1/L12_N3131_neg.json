@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N3131-",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 3131,
+ "pole": "-",
+ "label": "flavour/aroma nouns describing food quality (flavours 0.55, flavor 0.45, aromas 0.26; 'taste' only 0.11), with a second cluster on formal titles such as 'Journal of Food Science' 0.61 and 'Annual Meeting of the' 0.30; other quality nouns (texture, colour, crust, price) are weak, though the frame 'qualities such as' itself reached 0.34",
+ "short": "flavour/aroma of food",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N3131_neg/2026-10-29-ChopinDavid-08a2eed8.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.131,
+     "peak": " flavour"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.117,
+     "peak": " aroma"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.128,
+     "peak": " flavor"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.223,
+     "peak": " arom"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.068,
+     "peak": " flavours"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.265,
+     "peak": " flavour"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.026,
+     "peak": " sharp"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.08,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.022,
+     "peak": " vegetables"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": " cheese"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.083,
+     "peak": " colour"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": "ages"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.02,
+     "peak": " yield"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " salt"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.122,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-08a2eed8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-08a2eed8",
+   "flavour/aroma nouns describing food quality (flavours 0.55, flavor 0.45, aromas 0.26; 'taste' only 0.11), with a second cluster on formal titles such as 'Journal of Food Science' 0.61 and 'Annual Meeting of the' 0.30; other quality nouns (texture, colour, crust, price) are weak, though the frame 'qualities such as' itself reached 0.34",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-08a2eed8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

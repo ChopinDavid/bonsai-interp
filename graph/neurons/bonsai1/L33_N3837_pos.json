@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N3837+",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 3837,
+ "pole": "+",
+ "label": "the first piece of an obscure multi-token proper name in a name slot (from Ra|oul Island 0.66, ibn B|ati 0.57, at Ban|ani Field 0.27): the short onset piece whose continuation is unpredictable; single-token familiar names in the same slots (Hawaii, Wembley, Ali) and well-known split names (Tu|valu, Kir|ib|ati) are silent",
+ "short": "onset piece of an obscure name",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N3837_pos/2026-10-29-ChopinDavid-95179bcd.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.017,
+     "peak": " caravan"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.407,
+     "peak": " Pr"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.076,
+     "peak": " B"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.004,
+     "peak": " County"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.04,
+     "peak": " cent"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.549,
+     "peak": " Ra"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.25,
+     "peak": " Pr"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.451,
+     "peak": " Pr"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.037,
+     "peak": " caravan"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.051,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " Clark"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " cent"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.231,
+     "peak": " Kir"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.163,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-95179bcd"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-95179bcd",
+   "the first piece of an obscure multi-token proper name in a name slot (from Ra|oul Island 0.66, ibn B|ati 0.57, at Ban|ani Field 0.27): the short onset piece whose continuation is unpredictable; single-token familiar names in the same slots (Hawaii, Wembley, Ali) and well-known split names (Tu|valu, Kir|ib|ati) are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-95179bcd"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

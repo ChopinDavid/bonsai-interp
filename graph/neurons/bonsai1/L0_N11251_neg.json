@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N11251-",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 11251,
+ "pole": "-",
+ "label": "a layer-0 attachment unit for 'to' after 'not' ('not to think' 0.64, 'Not to mention' 0.50), 'during' after a verb ('do during' 0.89, 'learn during' 0.56) and 'of' after a plural agent noun ('smokers of' 0.76); 'to' after 'decided' and the same sentences without the function word are low (≤0.09); broad (8% of tokens at 0.1 of max), so near misses may fire weakly",
+ "short": "'not to' / verb + 'during' / agent + 'of'",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N11251_neg/2026-10-29-ChopinDavid-dc89057c.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.203,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.433,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.199,
+     "peak": " during"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.232,
+     "peak": " during"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.397,
+     "peak": " rarely"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.09,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.5,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.292,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.121,
+     "peak": " sauce"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " are"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.116,
+     "peak": " col"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.192,
+     "peak": " rehears"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.442,
+     "peak": " rarely"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.1,
+     "peak": " already"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.309,
+     "peak": " spare"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.089,
+     "peak": " wanted"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.75,
+    "median_fire": 0.262,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-29-ChopinDavid-dc89057c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-dc89057c",
+   "a layer-0 attachment unit for 'to' after 'not' ('not to think' 0.64, 'Not to mention' 0.50), 'during' after a verb ('do during' 0.89, 'learn during' 0.56) and 'of' after a plural agent noun ('smokers of' 0.76); 'to' after 'decided' and the same sentences without the function word are low (≤0.09); broad (8% of tokens at 0.1 of max), so near misses may fire weakly",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-dc89057c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

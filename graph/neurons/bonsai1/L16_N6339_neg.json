@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N6339-",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 6339,
+ "pole": "-",
+ "label": "output and termination side-effects in code and its documentation: stdout/stderr, print(s), raise, exit and quit (Gtk.main_quit 0.81, the stdout parameter 0.71, 'prints to sys.stderr' 0.68, bare raise 0.32); input-side and return-value code is weaker (config/cache parameters 0.16, prose 'returns a dictionary' 0.04), though a 'By default this returns…' docstring reached 0.44",
+ "short": "stdout/print/raise/quit in code",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N6339_neg/2026-10-29-ChopinDavid-ea2fdad3.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.31,
+     "peak": "')\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.309,
+     "peak": " set"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.274,
+     "peak": " raise"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.699,
+     "peak": "_quit"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.791,
+     "peak": ".stdout"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.177,
+     "peak": " unless"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.41,
+     "peak": " stdout"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.451,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.105,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " memory"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.167,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.616,
+     "peak": "()"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.048,
+     "peak": "(line"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.03,
+     "peak": " given"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.121,
+     "peak": ".load"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.36,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-ea2fdad3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-ea2fdad3",
+   "output and termination side-effects in code and its documentation: stdout/stderr, print(s), raise, exit and quit (Gtk.main_quit 0.81, the stdout parameter 0.71, 'prints to sys.stderr' 0.68, bare raise 0.32); input-side and return-value code is weaker (config/cache parameters 0.16, prose 'returns a dictionary' 0.04), though a 'By default this returns…' docstring reached 0.44",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-ea2fdad3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

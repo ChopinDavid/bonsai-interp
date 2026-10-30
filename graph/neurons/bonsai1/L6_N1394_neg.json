@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N1394-",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 1394,
+ "pole": "-",
+ "label": "a non-initial piece of a romanized Japanese or Iroquoian word that the tokenizer splits into short pieces (kama-|iri 0.89, I|ro|quois 0.48, Gok|ur|aku 0.28, D|ian 0.24, terrac|otta 0.23); single-token or familiar exotic words (Hokkaido, Mohawk, Lipton, sushi) are silent (≤0.04)",
+ "short": "inner piece of a romanized Japanese word",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N1394_neg/2026-10-29-ChopinDavid-d44bf8cf.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.047,
+     "peak": " farmhouse"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.562,
+     "peak": "ro"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.147,
+     "peak": "ok"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.363,
+     "peak": "ri"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": " wrapped"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.273,
+     "peak": "iro"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.463,
+     "peak": "uka"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.086,
+     "peak": "aga"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " farmhouse"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": "Children"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.1,
+     "peak": " Kyoto"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": " cats"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.034,
+     "peak": " wrapped"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " castle"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " songs"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " fire"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.21,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d44bf8cf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d44bf8cf",
+   "a non-initial piece of a romanized Japanese or Iroquoian word that the tokenizer splits into short pieces (kama-|iri 0.89, I|ro|quois 0.48, Gok|ur|aku 0.28, D|ian 0.24, terrac|otta 0.23); single-token or familiar exotic words (Hokkaido, Mohawk, Lipton, sushi) are silent (≤0.04)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d44bf8cf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
