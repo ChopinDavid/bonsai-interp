@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5809c73a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N5700+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N5700",
+   "pole": "+",
+   "label": "'coaster' as the second half of 'roller coaster', including split spellings (RollerCo|aster, roller|co|aster, roller-co|astered)",
+   "fire": [
+    "The park's newest roller coaster climbs sixty metres before the first drop.",
+    "Dating him was an emotional roller coaster from the start.",
+    "Her nephew spent the weekend building a rollercoaster in a video game.",
+    "The team's season roller-coastered between brilliance and collapse.",
+    "Visitors queue for an hour to ride the wooden roller coaster by the pier.",
+    "The stock market has been a roller coaster since the election.",
+    "Engineers test every roller coaster with water-filled dummies before opening day.",
+    "Our savings went on a rollercoaster when the rate changed twice in a month."
+   ],
+   "quiet": [
+    "She slid a cork coaster under the sweating glass.",
+    "The kids laced up their roller skates at the rink.",
+    "He bought a paint roller for the ceiling.",
+    "The coast road winds through three fishing villages.",
+    "A set of slate coasters makes an easy housewarming gift.",
+    "Sales have had plenty of ups and downs this year.",
+    "The old bike has a coaster brake instead of hand brakes.",
+    "The ship coasted into harbour with its engines off."
+   ]
+  }
+ ],
+ "predictions": "Every roller-coaster item reaches 0.5-1.0 on ' coaster' or the 'aster'/'-co' piece; 'coaster' alone (drink coaster, coaster brake), 'roller' alone (skates, paint roller), 'coast' words and 'ups and downs' without the word stay under 0.25. Coverage will be partial because the card's second cluster is the digit '8' in '1828'.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "coaster of 'roller coaster'",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: RollerCoaster Tycoon 1.068 (peak 'aster'), roller coaster at the park 0.728, roller-coastered 0.674 ('-co'), emotional roller coaster 0.552; 1828 0.271 ('8'), roller skates 0.241, Coaster brake 0.126, drink coaster 0.064, coastal 0.012. Card: ' coaster' x4, 'aster' x1, '8' x9 (years 182x), density 0.005%. The plural 'roller coasters' splits as ' coast'+'ers', so no plural is used in the fire items.",
+ "trigger": {
+  "words": [
+   "coaster"
+  ]
+ }
+}

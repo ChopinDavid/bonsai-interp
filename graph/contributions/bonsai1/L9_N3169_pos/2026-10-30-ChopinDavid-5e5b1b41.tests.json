@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5e5b1b41",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N3169+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N3169",
+   "pole": "+",
+   "label": "An identifier piece inside a Python or JavaScript event-handler or callback definition (def on_..., onJoin, connection_made, import patcher) in multi-line code",
+   "fire": [
+    "class Window(Gtk.Window):\n    def on_button_clicked(self, button):\n        self.label.set_text('clicked')",
+    "class Bot(discord.Client):\n    async def on_message(self, message):\n        if message.author == self.user:\n            return",
+    "class Handler(FileSystemEventHandler):\n    def on_modified(self, event):\n        reload_config(event.src_path)",
+    "def on_connect(client, userdata, flags, rc):\n    client.subscribe('sensors/#')\n\nclient.on_connect = on_connect",
+    "class Protocol(asyncio.Protocol):\n    def connection_made(self, transport):\n        self.transport = transport",
+    "from twisted.internet import reactor\nfrom twisted.web import server\n\nclass Root(server.Site):\n    pass",
+    "button.addEventListener('click', function onPress(event) {\n  event.stopPropagation();\n  toggle();\n});",
+    "class MyListener(Listener):\n    def on_data(self, raw_data):\n        self.buffer.append(raw_data)"
+   ],
+   "quiet": [
+    "numbers = [3, 1, 2]\nnumbers.sort()\nprint(numbers[0])",
+    "with open('data.csv') as f:\n    rows = list(csv.reader(f))\nprint(len(rows))",
+    "CREATE TABLE users (\n  id INTEGER PRIMARY KEY,\n  name TEXT NOT NULL\n);",
+    "const total = prices.reduce((a, b) => a + b, 0);\nconsole.log(total);",
+    "#include <stdio.h>\nint main(void) {\n  printf(\"hello\\n\");\n  return 0;\n}",
+    "df = pd.read_csv('sales.csv')\nsummary = df.groupby('region').sum()\nprint(summary)",
+    "The handler of the estate answered every letter within a week.",
+    "When the bell rings, the students go out to the yard for a break."
+   ]
+  }
+ ],
+ "predictions": "Handler-definition blocks reach 0.2-0.8 on the identifier piece; Python and JavaScript without handler definitions (list sorting, CSV reading, reduce), SQL, C and prose stay under 0.1. A weak unit (card max 4.28, 38% echo regime), so medians may land near 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "handler/callback identifier in code",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: 'def on_key_press_event' 0.800 (peak '_event'), 'from eventlet import patcher' 0.515 ('er'), 'def onJoin' 0.484, JS 'function onClick(event)' 0.398, 'def connection_process_message_reader' 0.226, 'async def walletpassphrase' 0.216; list/sum 0.041, SQL 0.026, prose 'do its best to process' 0.030. Card: Python method and module names in event-driven code (onJoin, .send, on_key_press_event, patcher, _process, async def)."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5a2fc9b5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N9435-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N9435",
+   "pole": "-",
+   "label": "Microsoft developer-platform prose (.NET, XAML, WPF, Silverlight): the function word before the next platform term",
+   "fire": [
+    "Most of our back end is written in C# and runs on the .NET runtime under IIS.",
+    "The team builds desktop tools with WinForms and WPF and ships them through ClickOnce.",
+    "She has five years of experience with ASP.NET and Entity Framework.",
+    "The build pipeline runs in Azure DevOps and publishes NuGet packages to the internal feed.",
+    "Xamarin and later Blazor let us reuse the same C# models on every platform.",
+    "The scripts use PowerShell and the Windows registry to configure each workstation.",
+    "The reporting layer sits on SQL Server and SSIS packages that run every night.",
+    "Early Windows games talked to the hardware through DirectX and the Win32 API."
+   ],
+   "quiet": [
+    "Most of our back end is written in Go and runs behind nginx on Ubuntu.",
+    "The team builds desktop tools with Qt and GTK and ships them as Flatpaks.",
+    "She has five years of experience with Django and SQLAlchemy.",
+    "The build pipeline runs in GitHub Actions and publishes wheels to the internal PyPI mirror.",
+    "Flutter and later Compose Multiplatform let us reuse the same Kotlin models on every platform.",
+    "The scripts use Bash and systemd units to configure each workstation.",
+    "The reporting layer sits on PostgreSQL and Airflow jobs that run every night.",
+    "Early Mac games talked to the hardware through QuickDraw and the Carbon API."
+   ]
+  }
+ ],
+ "predictions": "Fire items dense with Microsoft developer terms reach 0.2-0.6; the same sentence shapes about Linux, Apple, Python or Java ecosystems stay under 0.2. Borderline: probe medians were near 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Microsoft dev-platform prose",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: Silverlight and XAML 0.579 (peak ' and'), .NET Framework 0.333, WPF 0.204, Java garbage collection 0.184, compiler/destructor 0.012, EDLIN/Vista 0.006, iOS/SwiftUI 0.003, apt/Debian 0.004. Card: 7 of 10 top examples are Microsoft technology text peaking on ' the'/' and' before the platform noun. Weak and uneven in the probe; expected to be close to the pass line."
+}

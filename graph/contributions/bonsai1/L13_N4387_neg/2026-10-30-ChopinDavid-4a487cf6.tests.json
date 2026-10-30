@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4a487cf6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N4387-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N4387",
+   "pole": "-",
+   "label": "The completion piece of 'placenta' (plac|enta) and of 'chitin'/'chitosan' (ch|itin, ch|itos)",
+   "fire": [
+    "Hormones secreted by the placenta keep the uterine lining intact.",
+    "After delivery, the placenta is examined for signs of infection.",
+    "In many mammals the placenta is disc-shaped and attaches to one wall of the uterus.",
+    "Blood vessels inside the placenta bring nutrients to the growing embryo.",
+    "Beetle wings are stiffened by chitin arranged in layered sheets.",
+    "The cell walls of fungi contain chitin rather than cellulose.",
+    "Researchers extract chitosan from crab shells for use in wound dressings.",
+    "A film made of chitosan can keep sliced fruit fresh for several days."
+   ],
+   "quiet": [
+    "Hormones produced by the corpus luteum keep the uterine lining intact.",
+    "After delivery, the amniotic sac is examined for signs of infection.",
+    "In many mammals the gestation period is shorter than nine months.",
+    "Blood vessels inside the endometrium bring nutrients to the growing embryo.",
+    "Beetle wings are stiffened by keratin-like proteins arranged in layered sheets.",
+    "The cell walls of plants contain cellulose rather than lignin.",
+    "Researchers extract gelatin from pig skin for use in capsules.",
+    "A film made of collagen can keep a wound moist for several days."
+   ]
+  }
+ ],
+ "predictions": "Placenta and chitin/chitosan items reach 0.3-0.7; other split biological terms (am|ni|otic, ker|atin, gel|atin, cellul|ose) stay under 0.15. A word-list label; the probe did not support a wider perinatal reading.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "plac|enta and ch|itin pieces",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: placenta 0.693 and 0.370 (peak 'enta'), chitin 0.436 ('itin'), chitosan 0.435 (peak ' shells'), preeclampsia 0.251 ('cl'), allantois 0.081, implantation 0.042, keratin 0.023, timing belt 0.101. Card max only 9.5 with density 0.08%: a weak unit whose top examples mix fetal anatomy with the chitin polymer; no shared meaning found, so labelled at the word level."
+}

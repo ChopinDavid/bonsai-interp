@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a1228301",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N3923-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N3923",
+   "pole": "-",
+   "label": "The French piece ' imm' when it opens immédiat/immédiate/immédiatement (immediacy): the model predicts 'édiat' from it",
+   "fire": [
+    "Après l'annonce, la réaction des marchés a été immédiate.",
+    "Le médecin a demandé une hospitalisation immédiate du patient.",
+    "Les effets de la nouvelle taxe se sont fait sentir immédiatement.",
+    "Elle a immédiatement compris que quelque chose n'allait pas.",
+    "Le gouvernement exige un cessez-le-feu immédiat dans la région.",
+    "Les résultats immédiats de la réforme ont surpris tout le monde.",
+    "Les joueurs reçoivent des bonus immédiats dès leur inscription.",
+    "Il faut une réponse immédiate à cette crise humanitaire."
+   ],
+   "quiet": [
+    "Le vaccin renforce l'immunité des enfants contre la rougeole.",
+    "Les dieux grecs étaient immortels et capricieux.",
+    "La préfecture délivre les cartes d'immatriculation en une semaine.",
+    "Le prix de l'immobilier a doublé à Bordeaux en dix ans.",
+    "La statue est restée immobile sous la pluie.",
+    "Sa fortune immense ne l'a pas rendu heureux.",
+    "The manager demanded an immediate answer from the supplier.",
+    "La respuesta del gobierno fue inmediata y contundente."
+   ]
+  }
+ ],
+ "predictions": "Every immédiat/immédiatement item reaches 0.4-1.0. Other French imm- words stay under 0.3 even when they tokenize with the same ' imm' piece (imm|unité, imm|ortel, imm|atriculation, imm|obile); English 'immediate' and Spanish 'inmediata' are at the floor.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' imm' of French immédiat",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: immédiatement 1.070, immédiat 0.520 (both peak ' imm'); imminence 0.177, immeuble 0.171, imposibilidad 0.083, inmediato 0.084, immense 0.000, English immediate 0.005, Japanese あっという間 0.258 (peak 'っ'). The + pole's logit effect suppresses ' immediately'/' immediate'/' instantly', so this pole promotes the immediacy completion. The hard near misses here share the ' imm' token (tokenizer-checked), so the test separates the token from the predicted word."
+}

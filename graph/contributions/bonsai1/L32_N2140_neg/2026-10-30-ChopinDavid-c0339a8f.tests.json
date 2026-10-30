@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c0339a8f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N2140-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N2140",
+   "pole": "-",
+   "label": "The smallest scale of matter: particle-physics and quantum-level prose (subatomic particles, accelerators, antimatter, the Planck scale), predicting 'subatomic'/'particle'",
+   "fire": [
+    "Every electron is a fundamental particle carrying one unit of negative charge.",
+    "Three quarks bind together to make each proton and neutron.",
+    "Inside the Large Hadron Collider, protons collide at nearly the speed of light.",
+    "In quantum field theory, each particle is an excitation of an underlying field.",
+    "Billions of neutrinos pass through your body every second without interacting.",
+    "The Higgs boson is what gives the other particles their mass.",
+    "Hadrons are built from quarks held together by the strong force.",
+    "Down at the Planck scale, space itself may turn out to be grainy."
+   ],
+   "quiet": [
+    "Every red dwarf is a small star burning its hydrogen very slowly.",
+    "Three tectonic plates meet beneath the island, which explains the earthquakes.",
+    "Inside the reactor vessel, water is heated to produce steam for the turbines.",
+    "In plate tectonics, each continent rides on a slab of rigid lithosphere.",
+    "Billions of bacteria live in your gut and help digest fibre.",
+    "The mitochondrion is what gives the cell most of its energy.",
+    "Proteins are built from amino acids joined by peptide bonds.",
+    "Out at the edge of the solar system, the Sun's influence finally fades."
+   ]
+  }
+ ],
+ "predictions": "Particle-physics items reach 0.3-0.7 on the function word before the particle term; astronomy, geology, cell biology and classical mechanics in the same sentence shapes stay under 0.15. The reactor-vessel item is the hardest near miss.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "particle-physics / subatomic-scale prose",
+ "unit_kind": "meaning",
+ "confidence": "medium",
+ "notes": "Probe: neutrino is a subatomic particle 0.695 (peak ' a'), Standard Model at the subatomic level 0.623 (' how'), Dirac predicted antimatter 0.390, particle accelerator 0.310, quantum level vacuum 0.274; Cepheid astronomy 0.068, chemistry pH 0.053, inclined plane 0.038, orchestra 0.050. The + pole's logit effect suppresses ' sub'/' particles'/' matter', so this pole promotes the subatomic vocabulary: it fires on the function word before it."
+}

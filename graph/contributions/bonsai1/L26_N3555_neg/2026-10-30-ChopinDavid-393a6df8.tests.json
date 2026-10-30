@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-393a6df8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N3555-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N3555",
+   "pole": "-",
+   "label": "Pressure-driven flow: a force pushing a fluid or electric current through a conduit (blood through vessels, water through pipes, current through a circuit)",
+   "fire": [
+    "A booster pump raises the pressure so water can flow uphill to the storage tank.",
+    "As blood flows into the capillaries, the arterial pressure drops sharply.",
+    "When a voltage is applied across the wire, current flows through it.",
+    "The sump pump pushes groundwater out through a discharge pipe.",
+    "With each contraction the heart drives blood into the aorta.",
+    "The fire hose needs enough pressure to send water to the top floor.",
+    "Hydraulic fluid is forced through the lines to move the piston.",
+    "Root pressure pushes sap up through the trunk to the leaves."
+   ],
+   "quiet": [
+    "The blood on the floor had dried to a dark brown stain.",
+    "Her blood type is O negative, which the clinic always needs.",
+    "The water in the glass had gone warm by the afternoon.",
+    "He felt under pressure to finish the report before Friday.",
+    "Current events are discussed in the first hour of the class.",
+    "The electricity bill was higher than usual in January.",
+    "A hose lay coiled on the lawn next to the shed.",
+    "The pump at the gas station was out of order all weekend."
+   ]
+  }
+ ],
+ "predictions": "Flow-through items reach 0.35-0.9; blood, water, pressure, current and pump used without a driven flow (blood type, warm water in a glass, under pressure to finish, current events, pump out of order) stay under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pressure pushing flow through a conduit",
+ "unit_kind": "meaning",
+ "confidence": "medium",
+ "notes": "Probe: voltage drives current through a circuit 0.906, blood pressure / pump blood through the body 0.710, heart pumps more blood 0.480, pressure pushes water through pipes 0.361; blood test 0.095, reservoir gates 0.109, cabin air pressure 0.062, peer pressure 0.008, museum hours 0.029. The + pole's logit effect suppresses ' pressure', ' flow', ' pump', ' drop', so this pole promotes pressure-and-flow vocabulary: a predictor of the hydraulic frame rather than a response to one word."
+}

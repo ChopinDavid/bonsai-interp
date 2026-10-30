@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-ChopinDavid-5809c73a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N5700+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T17:38:52+00:00",
+ "recipe": {
+  "toolchain_commit": "a6bf7034",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N5700_pos/2026-10-30-ChopinDavid-5809c73a.tests.json"
+ },
+ "label": "'coaster' as the second half of 'roller coaster', including split spellings (RollerCo|aster, roller|co|aster, roller-co|astered)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N5700_pos/2026-10-30-ChopinDavid-5809c73a.tests.json",
+   "prereg_commit": "a6bf7034",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.872,
+     "peak": " coaster"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.487,
+     "peak": " coaster"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.892,
+     "peak": "co"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.749,
+     "peak": "-co"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.715,
+     "peak": " coaster"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.497,
+     "peak": " coaster"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.728,
+     "peak": " coaster"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.74,
+     "peak": "co"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.253,
+     "peak": " coaster"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.233,
+     "peak": " sk"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " bought"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": " coast"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.049,
+     "peak": "ers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " ups"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.089,
+     "peak": " coaster"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": "ed"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.734,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "a6bf7034",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "coaster of 'roller coaster'",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: RollerCoaster Tycoon 1.068 (peak 'aster'), roller coaster at the park 0.728, roller-coastered 0.674 ('-co'), emotional roller coaster 0.552; 1828 0.271 ('8'), roller skates 0.241, Coaster brake 0.126, drink coaster 0.064, coastal 0.012. Card: ' coaster' x4, 'aster' x1, '8' x9 (years 182x), density 0.005%. The plural 'roller coasters' splits as ' coast'+'ers', so no plural is used in the fire items.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "coaster"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b236a041",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N9587+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N9587",
+   "pole": "+",
+   "label": "Broad multilingual unit: runs of Chinese, Korean or Arabic text (1.8% of all tokens reach 0.1 of max); far too weak on sentence-length input to pass an 8+8",
+   "fire": [
+    "根据委员会的意见，缔约国应当为提交人提供有效的补救，包括适当的赔偿。缔约国还有义务防止今后发生类似的违约情况。",
+    "这次旅行我们先去了北海道，然后坐火车南下到东京。每到一个城市，我都会尝试当地的小吃，拍很多照片。",
+    "우리는 어려움 속에서도 희망을 잃지 말아야 합니다. 함께 기도하며 서로를 격려하는 공동체가 되기를 바랍니다.",
+    "وأشار المرصد إلى أن الاشتباكات استمرت حتى ساعات الصباح الأولى، مما أدى إلى نزوح عدد كبير من السكان نحو المناطق المجاورة.",
+    "香港公共圖書館每年四月舉辦閱讀節，邀請作家與學生交流，並在各區分館設置主題書展。",
+    "この問題を解決するためには、まず原因を明らかにしなければならない。次に、関係者全員で対策を話し合う必要がある。",
+    "وقال الوزير إن الحكومة ستعمل على تحسين الخدمات الصحية في المناطق الريفية خلال العام المقبل.",
+    "教育部建议学校采用鼓励学生运用所学知识的教学方法，以确保学习经验的可持续发展。"
+   ],
+   "quiet": [
+    "According to the Committee's views, the State party should provide the author with an effective remedy, including adequate compensation, and prevent similar violations in the future.",
+    "On this trip we went first to Hokkaido and then took the train south to Tokyo, trying the local snacks and taking far too many photographs in every city.",
+    "Wir dürfen auch in schwierigen Zeiten die Hoffnung nicht verlieren und sollten eine Gemeinschaft sein, die gemeinsam betet und einander ermutigt.",
+    "Наблюдатели отметили, что столкновения продолжались до раннего утра, в результате чего многие жители бежали в соседние районы.",
+    "La biblioteca pública organiza cada abril un festival de lectura, invita a escritores a dialogar con los estudiantes y monta exposiciones temáticas en las sucursales.",
+    "Pour résoudre ce problème, il faut d'abord en identifier la cause, puis discuter des mesures à prendre avec toutes les parties concernées.",
+    "The minister said the government would work to improve health services in rural areas during the coming year.",
+    "Il ministero raccomanda alle scuole metodi di insegnamento che incoraggino gli studenti ad applicare quanto hanno imparato."
+   ]
+  }
+ ],
+ "predictions": "Expected to fail on magnitude: CJK/Arabic items may rank above Latin-script items (AUROC possibly high) but the median will stay near 0.1, below the 0.20 line.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "broad CJK/Korean/Arabic text unit",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: Chinese 0.098-0.126, Arabic 0.089, Korean 0.062, Japanese 0.027; English 0.026, German 0.018, Russian 0.042. Card FLAG broad (1.8% of tokens >= 0.1·max), top examples are long Chinese, Korean and Arabic passages with no single token. The test uses longer two-sentence passages to give the unit room, against Latin-script and Cyrillic passages of the same length."
+}

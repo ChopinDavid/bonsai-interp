@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4c129db7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N985+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N985",
+   "pole": "+",
+   "label": "A split V-/Va-/Vy- opening piece of a transliterated Sanskrit or Indic name (V|idyapeeth, Vy|asa, Va|ishakha)",
+   "fire": [
+    "Pilgrims hope to reach Vaikuntha, the heavenly abode, after death.",
+    "The thunderbolt weapon known as the Vajra belongs to Indra.",
+    "Winds are governed by Vayu in the oldest hymns.",
+    "In the village, a traditional Vaidya treated fevers with herbs.",
+    "The engineer Vyomesh Joshi grew up in Ahmedabad.",
+    "The Kama Sutra is attributed to Vatsyayana, a scholar of the third century.",
+    "Devotees gathered for the Vardhanthi celebrations at the ashram.",
+    "The actress Vyjayanthi Mala starred in dozens of Tamil films."
+   ],
+   "quiet": [
+    "The poet Kalidasa wrote his plays in classical Sanskrit.",
+    "Stories of Krishna's childhood fill the Bhagavata Purana.",
+    "The physicist Jagadish Bose demonstrated radio waves in Calcutta.",
+    "Boats crowd the ghats of Varanasi at dawn.",
+    "The astronomer Vikram Sarabhai founded the space programme.",
+    "The surname Vasquez is common in northern Mexico.",
+    "Her vivid description of the market stayed with me.",
+    "The couple flew to Valencia for a long weekend of paella."
+   ]
+  }
+ ],
+ "predictions": "Fire items with ' V'/' Va'/' Vy' pieces opening Indic names reach 0.3-0.5; Indic names split on other pieces (Kal|idasa, Vik|ram, Var|anasi) and English V-splits stay under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split V- piece of an Indic name",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: Vidyapeeth (' V') 0.503, Vyasa (' Vy') 0.465, Vaishakha (' Va') 0.314, Korean ' 바' 0.289; Vamana (peak 'am', not the V piece) 0.169; Vybe (' Vy', English) 0.127; Kauravas/Pandavas 0.020; Valencia/vivid 0.002. Card peaks ' 바' x8, ' Vy' x4, ' V' x3, 'av' x2, ' Va' x2, 'バ' x2: a /va/-/ba/ sound piece in transliterated names."
+}
