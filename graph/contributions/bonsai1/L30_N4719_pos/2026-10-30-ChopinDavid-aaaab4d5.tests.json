@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-aaaab4d5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N4719+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N4719",
+   "pole": "+",
+   "label": "the continuation after a verb of physical arrival or movement in past-tense story prose ('Mail arrived by an expressman' 0.64, 'swung off her and came up' 0.40, 'arrived in port he was so ill' 0.33); expository sentences (0.01), dialogue (0.01) and 'the report arrived by email' (0.16) are quiet; the card's 'He carefully set' only reached 0.17 in isolation",
+   "fire": [
+    "The letter arrived by a rider who had crossed the pass in a single night.",
+    "She climbed down from the cart and came over to where we stood.",
+    "When the ship reached harbour he was too weak to walk ashore.",
+    "They set out before dawn and reached the mill by noon, soaked through.",
+    "He crossed the yard and went in by the kitchen door.",
+    "The old woman came up the lane slowly, leaning on a stick.",
+    "By the time the coach arrived at the inn, the horses were steaming.",
+    "I slid off the wall and walked over to the gate to wait for her."
+   ],
+   "quiet": [
+    "The letter lay unopened on the table for a week before anyone noticed.",
+    "She sat on the cart and watched us without a word.",
+    "He stayed in the harbour town all winter and was never well again.",
+    "They owned the mill for thirty years and sold it at a loss.",
+    "He knew the kitchen door was unlocked and said nothing.",
+    "The old woman lived at the end of the lane and kept bees.",
+    "The inn was quiet that night and the horses slept.",
+    "I waited on the wall for an hour, but she did not appear."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on the preposition, pronoun or verb after the movement verb; near misses (static narrative sentences) below 0.15; a weak hold or a fail",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "narrative movement continuation",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 76, density 0.35%, peaks ' came' x3, ' to' x2, ' he' x2, ' He', ' by', ' kept', ' letters', 'She' in story prose ('He carefully set Ereinion down', 'arrived by an expressman', 'kept passing by', 'came up and held her head'); the - pole suppresses show/tell. Probe: 'Mail in the 1850s arrived by an expressman' 0.644 (' by'), 'swung off the horse and came up' 0.403 (' came'), 'arrived in port he was so ill' 0.334 (' he'), 'kept passing by the hot tea stall, refusing to' 0.195, 'He carefully set her down' 0.174, 'report arrived by email' 0.156, 'She pulled out a small cauldron' 0.019, function/photosynthesis/dialogue 0.005-0.006. The near misses keep past-tense narrative with the same nouns but static verbs (lay, sat, stayed, owned, knew, lived, waited)."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7adc7974",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N8648+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N8648",
+   "pole": "+",
+   "label": "endurance-race names and their pieces (tri|ath|letes 1.06, 5|K 0.75, iron|man 0.72, 'the Paris marathon' 0.60, a triathlon team's ' finish' 0.52); 'marathon' as a metaphor for a long session (0.02), 'tri' in tricycle (0.03) and a chess tournament (0.01) are quiet, while a generic 'cycling race' fires at half strength (0.44)",
+   "fire": [
+    "After two years of training she finally completed her first half-marathon.",
+    "The duathlon pairs a 10K run with a long bike leg.",
+    "Most triathletes dread the open-water swim more than the bike.",
+    "He signed up for the Ironman in Kona after watching it on television.",
+    "The Boston Marathon starts in Hopkinton and ends on Boylston Street.",
+    "Runners in the 10K were given a medal and a banana at the finish.",
+    "Nuestro club organiza un triatlón sprint cada junio.",
+    "She paced the lead group through the final mile of the marathon."
+   ],
+   "quiet": [
+    "After two years of training she finally earned her black belt in judo.",
+    "The gym class pairs a warm-up with a long stretching session.",
+    "Most swimmers dread the butterfly drills more than the kick sets.",
+    "He signed up for the surfing camp in Kona after watching it on television.",
+    "The Boston Celtics play at the Garden and finish the season in April.",
+    "Players in the tennis final were given a trophy and a bouquet at the net.",
+    "Nuestro club organiza un torneo de ajedrez cada junio.",
+    "She coached the team through the final minutes of the basketball game."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-1.1 on the race piece or its finish; near misses (non-race sports) below 0.2; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "endurance race (marathon, triathlon, 5K)",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 49.8, density 0.023%, peaks ' marathon' x4, 'ath' x2 (Tri|ath|letes), ' finish' x2, ' runs', ' Race', ' Marathon', 'man' (iron|man), 'K' (5K), ' Paris' (Marathon de Paris), 'ón' (Triatl|ón). Probe: 'Triathletes who are new to swimming' 1.057 ('ath'), 'Epsom 5K' 0.747 ('K'), 'run an ironman' 0.720 ('man'), 'finish the Paris marathon' 0.596, 'triathlon team at the finish line' 0.515 (' finish'), 'cycling race each August' 0.437, 'marathon session' 0.021, 'tripod and a tricycle' 0.025, chess tournament 0.009. The near misses keep sport and competition but drop the endurance race (judo, swimming drills, surfing, basketball, tennis, chess)."
+}

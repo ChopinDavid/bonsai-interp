@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-23e92599",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N2165+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N2165",
+   "pole": "+",
+   "label": "dense (50.6% of tokens reach 0.1 of max, gate-closed regime 100%): CJK text (Japanese, Korean, Chinese) fires at 0.56-0.82 on most tokens; English and German prose 0.24-0.31 and a code identifier 0.48, so an 8 + 8 test can hardly separate",
+   "fire": [
+    "この製品は日本国内でのみ販売されています。",
+    "設定画面から言語を選択して保存してください。",
+    "회원 가입 후 로그인하면 추가 기능을 이용할 수 있습니다.",
+    "本公司产品已通过国家质量认证。",
+    "新しいバージョンでは検索機能が大幅に改善されました。",
+    "이 문서는 자동 번역 시스템으로 작성되었습니다.",
+    "請在登入後更新您的個人資料。",
+    "来週の会議の資料を準備しておいてください。"
+   ],
+   "quiet": [
+    "This product is sold only within Japan.",
+    "Choose a language in the settings screen and save it.",
+    "After registering and logging in you can use the extra features.",
+    "Our products have passed the national quality certification.",
+    "The new version greatly improves the search function.",
+    "This document was produced by a machine translation system.",
+    "Please update your profile after logging in.",
+    "Please prepare the materials for next week's meeting."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.85; near misses 0.2-0.35 with several at or above 0.3, as a dense unit; the test records the language contrast rather than a trigger",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: CJK text",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: max 0.94, density 50.6%, flagged dense and gate-closed; peaks '�' x12 (byte pieces of CJK), '索', 'オ', '習', 'F'. Probe: 'Japanese car choice' 0.822, Korean 0.800, Japanese learners 0.802, Japanese search options 0.701, Japanese developer info 0.563, 'DST.CONFIRMORNOT -- 是否生效' 0.477 ('F'), German 0.312, English 'check your browser settings' 0.287, English finger command 0.235. The test pairs eight CJK sentences with their English translations."
+}

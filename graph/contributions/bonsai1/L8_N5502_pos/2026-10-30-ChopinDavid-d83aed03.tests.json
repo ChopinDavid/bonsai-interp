@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d83aed03",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N5502+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N5502",
+   "pole": "+",
+   "label": "the year of a bibliographic reference after the publisher ('Press, 1|9|93.', the second digit 0.83-1.14); the same year in running prose is quiet (0.06-0.16) and a bare number such as an invoice is 0.01; a citation that ends without a year fires at half strength on its final stop (0.52), so the unit predicts the year slot",
+   "fire": [
+    "Smith, John. The Art of Fishing. London: Routledge, 1988.",
+    "Garcia, M. Birds of the Andes. Lima: Editorial Peisa, 2012, pp. 45-60.",
+    "See Brown, T. Medieval Trade (Oxford: Clarendon Press, 1976), 102.",
+    "Nakamura, H. Zen and the Tea Ceremony. Tokyo: Kodansha, 2001.",
+    "Patel, R., and S. Lee. Soil Chemistry. Cambridge: Cambridge University Press, 1999.",
+    "Schmidt, K. Die Stadt am Fluss. Berlin: Aufbau-Verlag, 1954.",
+    "Harrison's Principles of Internal Medicine, 14th ed. New York: McGraw-Hill, 1998.",
+    "North, D. The F-4 Phantom. Oxford: Osprey Publishing, 1991. ISBN 1-85532-158-6."
+   ],
+   "quiet": [
+    "Routledge brought out Smith's The Art of Fishing in London in 1988.",
+    "Garcia counted 2012 nesting pairs across the Andes, 45 of them condors.",
+    "Brown's lecture on medieval trade drew 102 people to the Clarendon building in 1976.",
+    "Kodansha moved its Tokyo headquarters in 2001 after the merger.",
+    "The university press printed 1999 copies before the plates wore out.",
+    "Der Aufbau-Verlag feierte 1954 sein zehnjähriges Bestehen in Berlin.",
+    "The 14th edition of Harrison's appeared in New York in 1998 to good reviews.",
+    "Osprey sold 1991 copies of the Phantom title in its first month."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.6-1.2 on the second digit of the year; near misses below 0.2; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "year in a bibliographic citation",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Card: max 21.9, density 0.05%, '9' x20, ' ' x5, '0' x4 all in reference-list years after 'Publisher, '. Probe: 'Chicago: Aldine Publishing, 1964, pp.' 1.139 ('9'), 'London: Penguin, 2009.' 1.080 ('0'), 'New York: Harper Collins, 1993.' 0.863, '(Dulles, VA: Potomac Books, 2005), 44.' 0.825, citation without a year 0.519 (peak '.'), 'MI5 in London in 2009' prose 0.156, 'founded in New York in 1993' 0.056, 'paid 1993 dollars' 0.009, 'Invoice no. 1987' 0.007. The near misses put the same publishers and years into prose so that no reference-list frame remains."
+}

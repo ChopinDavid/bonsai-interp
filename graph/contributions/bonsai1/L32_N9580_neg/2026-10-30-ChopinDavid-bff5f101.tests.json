@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bff5f101",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9580-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N9580",
+   "pole": "-",
+   "label": "the auxiliary, adverb or conjunction right before a hands-on action with a small portable object in advice prose ('put it in the CD-ROM drive and' 0.52, 'having to lug around' 0.46, \"I'll just look for\" 0.42, 'designed to be toted' 0.30, 'can be dropped into your bag' 0.28); the same slots before abstract verbs are quiet ('having to wait' 0.06, 'designed to be applied' 0.00, 'can be crossed' 0.22 partial)",
+   "fire": [
+    "Fold the map in half and slip it into your back pocket before you set off.",
+    "The charger is small enough to be tossed into a handbag without a second thought.",
+    "Why carry a heavy tripod when you can just prop the camera on a wall?",
+    "Once the paint is dry, hang the frame on the hook and step back to check it.",
+    "The speaker weighs 200 grams and can be clipped to a rucksack strap.",
+    "Before you even unpack the tent, lay the groundsheet flat and peg the corners.",
+    "I'll just grab the keys from the hook and lock the back door.",
+    "There is no need to haul a laptop around; the notes fit on a single card."
+   ],
+   "quiet": [
+    "Read the map carefully and plan your route before you set off.",
+    "The fee is small enough to be ignored without a second thought.",
+    "Why worry about the forecast when you can just check it in the morning?",
+    "Once the vote is counted, announce the result and wait for questions.",
+    "The licence costs 200 dollars and can be renewed online each year.",
+    "Before you even consider the offer, read the contract and ask about fees.",
+    "I'll just think about it tonight and decide in the morning.",
+    "There is no need to memorise the formula; the notes explain it in a single page."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.55 on ' and', ' to', ' just', ' be' or ' even'; near misses below 0.15; a weak hold or a near miss at the 0.3 line",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot before a hands-on action with a portable object",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 157, density 0.23%, peaks ' to' x7, ' be' x3, ' I' x3, ' just' x2, ' even' x2 in 'I'll just look for that little blue bowl', 'put it in the CD-ROM drive', 'can be dropped into your bag', 'without having to lug around', 'designed to be toted around in your parka', 'Before you even venture out'. Probe: 'put it in the CD-ROM drive and restart' 0.516 (' and'), 'without having to lug around heavy camera gear' 0.459 (' to'), \"I'll just look for that blue bowl\" 0.415 (' just'), 'designed to be toted around' 0.298, 'Before you even venture out' 0.286, 'can be dropped into your bag' 0.277, 'bridge can be crossed on foot' 0.218, 'without having to wait for the board' 0.056, 'theorem is designed to be applied' 0.004. The activation is modest, so the test uses the strongest frames (imperative sequences with 'and', 'having to haul/carry', 'just grab', 'to be tossed/clipped') and near misses with the same frames before mental or administrative verbs."
+}

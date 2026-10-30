@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ac0ec2c4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N11742-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N11742",
+   "pole": "-",
+   "label": "broad (9.2% of tokens, max 0.29, gate-closed 96%): a non-initial piece of a word the tokenizer splits into several pieces (Gigg|les 0.83, نعن|اع 0.82, co|oking 0.79, Octop|uses 0.73, исп|уг|анного 0.64); sentences of whole-word tokens still reach 0.25-0.34, so near misses will leak",
+   "fire": [
+    "The platypuses were released near the creek at dusk.",
+    "Her cat Snuggles slept on the warm radiator all day.",
+    "The kookaburra laughed from the gum tree at dawn.",
+    "Он испугался громкого звука и убежал в сад.",
+    "تناول النعناع مع الشاي بعد العشاء.",
+    "The walruses hauled themselves onto the ice floe.",
+    "A bowl of ratatouille waited on the kitchen table.",
+    "The hedgehogs rustled under the compost heap."
+   ],
+   "quiet": [
+    "The cats were released near the river at dusk.",
+    "Her dog slept on the warm floor all day.",
+    "The bird sang from the tall tree at dawn.",
+    "The boy heard a loud noise and ran into the garden.",
+    "Have some tea with milk after dinner.",
+    "The seals pulled themselves onto the ice.",
+    "A bowl of soup waited on the kitchen table.",
+    "The mice moved under the pile of leaves."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on the inner piece; near misses 0.15-0.35, several above 0.3; a partial or failed test is likely for this broad unit",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "non-initial word piece (broad)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 0.29, density 9.2%, flagged broad and gate-closed; peaks 'اع', ' Так', 'уг', ' gamble', 'isions', ' representation', 'oking', 'les', 'uses', 'ع'. Probe: 'Giggles' 0.834 ('les'), 'النعناع' 0.824 ('اع'), 'penetrationInductioncooking' 0.791 ('oking'), 'Octopuses' 0.725 ('uses'), 'испуганного' 0.641 ('уг'), 'representation' 0.525, 'gamble' 0.338, 'train leaves at nine' 0.254, 'Такой дневник' 0.151 ('ник'). The test uses rare split words (platyp|uses, Sn|ugg|les, k|ook|ab|ur|ra, wal|r|uses, rat|at|ou|ille, hedge|h|ogs) against the same sentences with common whole-word nouns; a Russian or Arabic near miss would itself split, so the near misses are English only."
+}
