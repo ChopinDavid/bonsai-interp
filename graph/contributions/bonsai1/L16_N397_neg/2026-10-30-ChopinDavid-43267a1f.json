@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-43267a1f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N397-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:40:20+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N397_neg/2026-10-30-ChopinDavid-43267a1f.tests.json"
+ },
+ "label": "a face or side of a physical object (patterned side down 1.06, cut sides facing you 1.31, inner surface 0.71, inside dimensions 0.65, interior of a vessel 0.46, façades 0.29); 'side', 'surface', 'face', 'inside' in abstract, bodily or prepositional use are silent (other side in the argument 0.003, his face 0.002, on the surface 0.002, inside the garage 0.03)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N397_neg/2026-10-30-ChopinDavid-43267a1f.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.741,
+     "peak": " side"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.62,
+     "peak": " surface"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.335,
+     "peak": " interior"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.266,
+     "peak": " inside"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.277,
+     "peak": " edges"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.182,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.423,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.426,
+     "peak": " side"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": " pattern"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.1,
+     "peak": " inner"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " plus"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.035,
+     "peak": " length"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.262,
+     "peak": " edges"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": " front"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " came"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " twenty"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.379,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "a face or side of a physical object (side down, inner surface, inside diameter)",
+ "unit_kind": "meaning",
+ "confidence": 0.85,
+ "notes": "Card: max 36, density 0.078%, peaks ' inside' x5, ' back' x3, ' side' x2, ' interior' x2, ' surface' x2, ' inner', ' face' (hypotenuse face), ' facing', ' revealed' (corners revealed), 'она' (открытая сторона), 'ades' (façades); the positive pole suppresses ' side', ' sides', ' surfaces', ' faces', '-facing'. Probe: 'patterned side down' 1.060, 'cut sides are facing you' 1.310, 'inner surface of the shell' 0.711, 'inside dimensions' 0.654, 'interior of every blood vessel' 0.457, 'three façades' 0.288; 'other side in the argument' 0.003, 'sweat from his face' 0.002, 'On the surface the plan' 0.002, 'parked inside the garage' 0.029. Fire items name a face of a thing (printed side up, inner surface of the pot, interior of the chest cavity, inside diameter, underside of the shelf, front façade, back of the mirror, skin side down); near misses reuse the words in other senses (inner circle, plus side, front runner, came back) or drop the face.",
+ "selection": "random draw"
+}

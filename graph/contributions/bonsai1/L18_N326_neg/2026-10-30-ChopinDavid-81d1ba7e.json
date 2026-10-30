@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-81d1ba7e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N326-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:40:29+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N326_neg/2026-10-30-ChopinDavid-81d1ba7e.tests.json"
+ },
+ "label": "a substance or particle passing into another state or form of itself: decays into more stable elements (0.66), returns to its stable state (0.54), becomes U-239 (0.74), splice isoforms (0.36), peaking on the token that leads into the new form (' more', ' to', '-'); the same science prose without the change of form is silent (0.005-0.02); 'A and B' matrices (0.08) and anomers interconvert (0.08) are weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N326_neg/2026-10-30-ChopinDavid-81d1ba7e.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.084,
+     "peak": " yellow"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.507,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.046,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.024,
+     "peak": " diamond"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.285,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.338,
+     "peak": " iso"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.769,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.005,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.044,
+     "peak": " powder"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.181,
+     "peak": " produced"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " negative"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": "Hel"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.018,
+     "peak": " expressed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.032,
+     "peak": " uranium"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": " through"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.805,
+    "median_fire": 0.184,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "entity passing into another state/form of itself (decays into, returns to its ground state, becomes X-239)",
+ "unit_kind": "meaning",
+ "confidence": 0.45,
+ "notes": "Card: max 19, density 0.17%, peaks ' B' (Let A and B be square matrices), 'forms' (splice isoforms), ' more' (decay into more stable elements), ' to' (returns boron to this stable state), ' state' (stripped down state), '链' (直链 forms interconvert), '3' (U-239), code 'old_content = content'. Probe: 'decay into more stable elements' 0.659, 'returns the atom to its stable state' 0.544, 'U-238 absorbs a neutron and becomes U-239' 0.738 (peak '-'), 'splice isoforms are expressed' 0.356, 'A and B be square matrices' 0.077, 'anomers interconvert' 0.082; 'Let the matrix be square' 0.008, rain 0.005, 'protein is expressed in the liver' 0.019. The strong probes share a thing turning into another version of itself, so the test uses that, not the list of variants. Fire items: turns into its yellow form, decays into nitrogen-14, falls back to its ground state, converts to diamond, becomes helium-3, two isoforms, becomes thorium-233, returns to its crystalline form; near misses keep each substance in a static statement.",
+ "selection": "random draw"
+}

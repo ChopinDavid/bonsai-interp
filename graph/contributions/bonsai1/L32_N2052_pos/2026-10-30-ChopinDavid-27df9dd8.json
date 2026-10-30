@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-27df9dd8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N2052+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:39:34+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N2052_pos/2026-10-30-ChopinDavid-27df9dd8.tests.json"
+ },
+ "label": "the stem piece of a split German verb immediately before its inflectional ending (sch|aff|t 0.65, gl|aub|t 0.63, beauf|trag|te 0.84, w|ähl|te 0.82, vers|uch|te 0.91); the same piece in a noun (Ver|trag 0.03, Vers|uch 0.11) and unsplit verbs (macht 0.10, zeigt 0.02) are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N2052_pos/2026-10-30-ChopinDavid-27df9dd8.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.475,
+     "peak": "uch"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.75,
+     "peak": "klär"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.634,
+     "peak": "ell"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.06,
+     "peak": " beh"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.615,
+     "peak": "lang"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.708,
+     "peak": "leg"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.603,
+     "peak": "ahl"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.616,
+     "peak": "ör"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.049,
+     "peak": " war"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.039,
+     "peak": "klär"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.0,
+     "peak": " Best"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.027,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": " der"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " Jahre"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.165,
+     "peak": "zahl"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.151,
+     "peak": " groß"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.615,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "German verb stem piece before the -t/-te/-et ending",
+ "unit_kind": "token-in-context",
+ "confidence": 0.75,
+ "notes": "Card: max 512, density 0.033%, peaks 'aff' (schafft), 'trag' (beauftragte), 'aub' (glaubt), 'uch' (beanspruchter, versuchte), ' wag' (wagte), 'ähl' (wählte), 'deck' (entdecken), ' leg' (legt): the piece whose next token is a German verb ending; the negative pole promotes 't', 'te', 'ten'. Probe: schafft 0.654, glaubt 0.628, beauftragte 0.840, wählte 0.815, versuchte 0.911; Vertrag 0.029, Versuch 0.112, macht 0.101 (peak ' lang'), zeigt 0.019. Tokenizer: besuchte = bes|uch|te, erklärte = er|klär|te, bestellte = best|ell|te, behauptet = beh|aupt|et, verlangt = ver|lang|t, überlegte = über|leg|te, bezahlte = bez|ahl|te, zerstörte = zer|st|ör|te; Besuch, Erklärung, Bestellung, Behauptung, Bezahlung, Zerstörung carry the same pieces before a noun suffix; hat, kam, steht, bleibt, kommt, geht are whole tokens. Fire items use the eight split verbs mid-sentence; near misses use the cognate nouns and whole-token verbs.",
+ "selection": "random draw"
+}
