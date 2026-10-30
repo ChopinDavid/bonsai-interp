@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-caee3b1f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N932-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:56:19+00:00",
+ "recipe": {
+  "toolchain_commit": "86670ebf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L13_N932_neg/2026-10-30-lm1909-caee3b1f.tests.json"
+ },
+ "label": "Competing with or overtaking a rival ('compete with', 'have overtaken', 'outpaced', 'pull ahead of'), firing on the preposition or the verb's last piece; neutral relations between the same things stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N932_neg/2026-10-30-lm1909-caee3b1f.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.199,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.696,
+     "peak": "aken"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.458,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.438,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.856,
+     "peak": "aken"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.433,
+     "peak": " rivals"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.444,
+     "peak": "paced"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.562,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " goods"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.1,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " trained"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " among"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.17,
+     "peak": " alongside"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " host"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.451,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "86670ebf",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "competing with / overtaking a rival",
+ "unit_kind": "semantic",
+ "confidence": 0.6,
+ "notes": "Card: ' with' x9, ' over' x4, ' above' x2, ' behind' x2 (Labradoodles have actually overt⟦aken⟧ Poodles; metals may compete⟦ with⟧ ionized species). Exploratory probe: 'compete with calcium' 0.79, 'have overtaken Poodles' 0.74; 'bind calcium' 0.01.",
+ "selection": "random draw"
+}

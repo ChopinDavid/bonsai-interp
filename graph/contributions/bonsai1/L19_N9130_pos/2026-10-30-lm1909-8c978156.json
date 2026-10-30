@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-8c978156",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N9130+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:56:00+00:00",
+ "recipe": {
+  "toolchain_commit": "86670ebf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N9130_pos/2026-10-30-lm1909-8c978156.tests.json"
+ },
+ "label": "Low-confidence guess: ' accessed' in 'last accessed on <date>' in a web source list; the same lists without 'accessed' stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N9130_pos/2026-10-30-lm1909-8c978156.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.261,
+     "peak": " accessed"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.025,
+     "peak": " museum"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.09,
+     "peak": " accessed"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.023,
+     "peak": "City"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.016,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.02,
+     "peak": "Data"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.041,
+     "peak": " accessed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.051,
+     "peak": " accessed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " museum"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.053,
+     "peak": " checked"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": "City"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.029,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.045,
+     "peak": " written"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " dated"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.633,
+    "median_fire": 0.033,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "86670ebf",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'last accessed on' in citations (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: no single token ('()\\n' x3, '\")\\n' x2, ' accessed': SOURCES (all last⟦ accessed⟧ on Dec. 2, ...). Exploratory probe: 'all last accessed on 2 December 2011' 0.26, 'last accessed March 2015' 0.04. Weak.",
+ "selection": "random draw"
+}

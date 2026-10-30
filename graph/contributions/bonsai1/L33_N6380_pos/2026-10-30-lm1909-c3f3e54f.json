@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-c3f3e54f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N6380+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:55:46+00:00",
+ "recipe": {
+  "toolchain_commit": "86670ebf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N6380_pos/2026-10-30-lm1909-c3f3e54f.tests.json"
+ },
+ "label": "' post' as a bicycle seat post in a list of bike components ('Magura brakes, a Thomson post and a WTB saddle'); 'post' in other senses (fence post, blog post, mail) and component lists without it stay low.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N6380_pos/2026-10-30-lm1909-c3f3e54f.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.584,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.136,
+     "peak": " dro"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.166,
+     "peak": " Brooks"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.154,
+     "peak": " post"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.786,
+     "peak": " post"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.056,
+     "peak": " post"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.044,
+     "peak": "Up"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.514,
+     "peak": " DT"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.584,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.498,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.685,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " post"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": "Up"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.364,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.633,
+    "median_fire": 0.16,
+    "near_misses_at_0.3": 4
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "86670ebf",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "' post' = bike seat post in a parts list",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.45,
+ "notes": "Card: ' S' x4, ' the' x2, 'mm' x2, ' post' (Magura Louise disc brakes, Thomson⟦ post⟧ WTB saddle), ' digital', ' the' (called⟦ the⟧ tyre). Exploratory probe: 'a Thomson post and a WTB saddle' 0.84; 'called the tyre' 0.03. Near misses include other senses of 'post'.",
+ "selection": "random draw"
+}
