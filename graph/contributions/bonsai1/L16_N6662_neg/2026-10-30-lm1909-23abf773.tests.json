@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-23abf773",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N6662-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:31:08+00:00",
+ "selection": "picked",
+ "neighbours": [
+  {
+   "unit": "L16/N6662",
+   "pole": "-",
+   "label": "The final piece of a split plural noun for recurring crises or periods (recess|ions, depress|ions, pand|emics, epid|emics, fam|ines, pl|agues, intergl|acial, glac|iations); the same kinds of event as single tokens (crises, wars, floods, outbreaks, recession, pandemic) stay quiet.",
+   "fire": [
+    "Economists compared the two recessions in detail.",
+    "Farmers survived several depressions in the 1800s.",
+    "Doctors study how pandemics spread between cities.",
+    "Cholera epidemics struck the port every few years.",
+    "Repeated famines drove families to the coast.",
+    "Medieval plagues emptied whole villages.",
+    "Several glaciations shaped the valley floor.",
+    "Market slumps hurt small shops the most."
+   ],
+   "quiet": [
+    "Economists compared the two crises in detail.",
+    "Farmers survived several wars in the 1800s.",
+    "Doctors study how a pandemic spreads between cities.",
+    "Cholera outbreaks struck the port every few years.",
+    "Repeated floods drove families to the coast.",
+    "Medieval invasions emptied whole villages, the chroniclers wrote.",
+    "Several rivers shaped the valley floor.",
+    "Market crashes hurt small shops the most."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.2; near misses below 0.2 (invasions may fire)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "second-round"
+  ]
+ },
+ "short": "final piece of split crisis/period plurals",
+ "unit_kind": "token piece / semantic",
+ "confidence": 0.5,
+ "notes": "Round 2 for this pole (round 1 in sweep 5: 'climate eras' failed; 'interglacial' fired 0.55-0.70 but 'global warming' and 'ice age' did not, and 'past epidemics' 0.30 fired as a near miss). Card: 'ions' (social depress|ions, top example), 'acial' (intergl|acial). Refinement probe: 'past recess|ions' 1.22, 'pand|emics' 0.69, 'intergl|acial' 0.60; 'the last dynasty' 0.04, 'ice age' 0.06. Tokenizer checked: recess|ions, depress|ions, pand|emics, epid|emics, fam|ines, pl|agues, glac|iations, sl|umps split; crises, wars, pandemic, outbreaks, floods, recession are one token; invasions (inv|asions) is split, so that near miss also tests whether the meaning matters."
+}
