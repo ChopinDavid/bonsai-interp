@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9cb06fd5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N9944+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N9944",
+   "pole": "+",
+   "label": "the continuation of a patterned series: the second term of a paired or enumerated schedule ('before 7am and after 7pm' 0.37, 'Monday through Friday' 0.27, '[[1 4]' 0.23, year lists 0.17); the same facts stated as a single term are silent (0.01)",
+   "fire": [
+    "The clinic is open before 9am and after 6pm.",
+    "Deliveries run Tuesday through Saturday.",
+    "The festival was held in 2004, 2008 and 2012.",
+    "El mercado abre los martes, jueves y sábados.",
+    "np.array([[1, 4], [2, 5], [3, 6]])",
+    "Trains leave at 7:15, 7:45 and 8:15.",
+    "Enrolment is open from March through June.",
+    "Walk-in hours are from 10 to 12 and from 2 to 4."
+   ],
+   "quiet": [
+    "The clinic is open after 6pm for urgent cases only.",
+    "Deliveries run on Saturday to the villages.",
+    "The festival was held in 2012 after a long break.",
+    "El mercado abre los sábados por la mañana.",
+    "np.array([4, 5, 6], dtype=int)",
+    "Trains leave at 8:15 from the lower platform.",
+    "Enrolment is open in June for new students.",
+    "Walk-in hours are from 2 to 4 on weekdays."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.4, so the median may fall under 0.3; near misses under 0.05 except the single 'from 2 to 4' range",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second term of a patterned series",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 52 (one outlier, the rest 17-25), density 0.011%; peaks sit inside series: '[[1 4]', '1|9|64' in a year list, 'after 7pm' after 'Before 7am', '2|0|04' in a year list, 'Tuesday, January' after other Tuesdays, 'miér|coles| y viernes', 'Monday through Friday'. The - pole peaks on ' again'/' return' and suppresses 'again', 'revisit', 'periodically', so the + side is progression through a series against return. Probe: 'before 7am and after 7pm' 0.370, 'Monday through Friday' 0.274, matrix row 0.233, '1960, 1964, 1968' 0.173, 'lunes, miércoles y viernes' 0.113, 'at 6 and 12 months' 0.049; single-term twins 0.011-0.012, unrelated list 0.007. The ordering holds but the activations are small, so this is registered at 0.3."
+}

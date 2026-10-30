@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-97eeb0bd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N8996-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N8996",
+   "pole": "-",
+   "label": "a dense layer-12 unit (12.1% of tokens reach 0.1 of a 2.25 max, gate-closed leak 100%) with no reproducible trigger: the card's verbs of acting on a body or substance (target, cause, attack, caused by) scored 0.05-0.17 in probes, no higher than plain prose (0.16-0.21)",
+   "fire": [
+    "Statins lower cholesterol by blocking an enzyme in the liver.",
+    "Planks target the deep core muscles better than crunches.",
+    "Free radicals attack the lipids in cell membranes.",
+    "Chronic stress causes the adrenal glands to overwork.",
+    "The vaccine triggers antibodies that neutralize the virus.",
+    "Caffeine stimulates the central nervous system within minutes.",
+    "Antibiotics kill bacteria by rupturing their cell walls.",
+    "Insulin regulates the uptake of glucose into muscle."
+   ],
+   "quiet": [
+    "The pharmacy closes at six on weekdays and noon on Saturdays.",
+    "Our gym has a new row of treadmills by the window.",
+    "The lab moved to the third floor of the science building.",
+    "The clinic's waiting room has fresh paint and new chairs.",
+    "The nurse wrote the appointment time on a yellow card.",
+    "The coffee shop next to the hospital opens at seven.",
+    "The textbook has a chapter on the history of penicillin.",
+    "The dietitian's office is at the end of the corridor."
+   ]
+  }
+ ],
+ "predictions": "fire and near-miss items both 0.05-0.3 with no separation; the test is expected to fail",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: no trigger found (health verbs guess)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: max 2.25, density 12.1% (FLAG dense), peaks ' by' (covered by), ' target', ' cause', ' attack', ' muscles', ' major', ' caused': health and science prose where a verb acts on a body or substance. Probe: 'covered by U.S. Pat.' 0.165, 'Major depressive disorder' 0.101, 'Tighten your stomach muscles' 0.084, 'caused by' 0.068, 'attack the catalyst' 0.055, 'target the same muscles' 0.050; plain prose 0.160-0.212. Registered as dense / positional with the best-guess test (verbs acting on a body or substance against neutral health-setting sentences) so the failure is on record."
+}

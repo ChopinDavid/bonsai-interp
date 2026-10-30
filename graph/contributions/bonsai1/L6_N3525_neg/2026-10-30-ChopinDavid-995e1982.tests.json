@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-995e1982",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3525-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N3525",
+   "pole": "-",
+   "label": "a small set of nouns, strongest ' season' as a period of the year (rainy season 0.80), ' reasoning' (0.74-1.03) and ' prison' (0.81), with ' field', ' court' and ' meeting' from the card; near-synonyms in the same slot (months 0.17, logic 0.13, reason 0.002) are silent, and 'Season' as a verb (0.01) and 'football season' (0.08) were weak",
+   "fire": [
+    "Farmers wait for the dry season before harvesting the cane.",
+    "The monsoon season brought floods to the delta.",
+    "Good deductive reasoning starts from clear premises.",
+    "He spent four years in prison for fraud.",
+    "She is a leading expert in the field of robotics.",
+    "The court ruled in favour of the tenants.",
+    "Our weekly meeting was moved to Thursday.",
+    "Lawyers praised the judge's careful reasoning."
+   ],
+   "quiet": [
+    "Farmers wait for the dry spell before harvesting the cane.",
+    "The monsoon rains brought floods to the delta.",
+    "Good deductive thinking starts from clear premises.",
+    "He spent four years in jail for fraud.",
+    "She is a leading expert in the area of robotics.",
+    "The judge ruled in favour of the tenants.",
+    "Our weekly gathering was moved to Thursday.",
+    "Lawyers praised the judge's careful argument."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on the declared word; 'court' and 'meeting' may be weak; near misses under 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "season / reasoning / prison token set",
+ "unit_kind": "lexical",
+ "confidence": 0.45,
+ "notes": "Card: max 3.33, density 0.79%, peaks ' season' x10, ' reasoning' x3, '겁' x3, ' field' x2, ' court' x2, 'رب', ' prison', ' meeting'. Probe: reasoning 1.031 and 0.739, prison 0.811, rainy season 0.800; football season 0.078, 'Season the soup' 0.010; synonyms months 0.167, logic 0.125, reason 0.002. No shared meaning beyond the tokens, so the trigger is declared as the word set and coverage is measured exactly; the near misses swap each word for a synonym.",
+ "trigger": {
+  "words": [
+   "season",
+   "reasoning",
+   "prison",
+   "field",
+   "court",
+   "meeting"
+  ]
+ }
+}

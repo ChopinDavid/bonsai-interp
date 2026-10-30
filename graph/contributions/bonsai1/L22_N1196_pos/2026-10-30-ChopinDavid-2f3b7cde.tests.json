@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-2f3b7cde",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N1196+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N1196",
+   "pole": "+",
+   "label": "unclear: the card's top examples end a renaming or comparison phrase that closes a sentence ('monster, of sorts.', 'canary in the coalmine.', 'a critical choice.', 'called Reykholtsdalur.'), but single sentences built on that pattern scored 0.005-0.146; best guess is a closing appositive restatement after a longer lead",
+   "fire": [
+    "The new stadium drew crowds from every town in the county. It became, in the words of one columnist, a cathedral of sorts.",
+    "Frogs vanish long before the rest of a wetland shows any stress. They are the proverbial canary in the coal mine.",
+    "Every candidate faces a moment when the campaign could go either way. Call it the turning point; the crucial test.",
+    "Beyond the lava fields lies a quiet farming valley, known locally as Hvítárdalur.",
+    "The tasting menu pairs a sharp cheese with a dark ale. The ale is the other half of the pair.",
+    "His first novel was praised for its invented language, a dialect of the imagination.",
+    "The council spent a decade arguing over the bridge, a saga by any measure.",
+    "She called the cottage her refuge, a kind of fortress against the city."
+   ],
+   "quiet": [
+    "The new stadium drew crowds from every town in the county. It opened on a wet Saturday in April to a full house.",
+    "Frogs vanish long before the rest of a wetland shows any stress. They breathe through their skin and absorb pollutants quickly.",
+    "Every candidate faces a moment when the campaign could go either way. Most of them remember exactly where they were.",
+    "Beyond the lava fields lies a quiet farming valley where sheep graze all summer.",
+    "The tasting menu pairs a sharp cheese with a dark ale. The ale is brewed in the village.",
+    "His first novel was praised for its invented language and its careful plotting.",
+    "The council spent a decade arguing over the bridge before any money was found.",
+    "She spent her weekends at the cottage, far from the noise of the city."
+   ]
+  }
+ ],
+ "predictions": "most fire items under 0.3; if the pattern is right the two-sentence items with 'of sorts' / 'canary in the coal mine' score highest; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "closing appositive restatement (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 48, density 0.25%, no dominant token: ' sorts', 'ur' (Reykholtsdal|ur), 'mine' (coal|mine), ' duo', ' choice', '0' (2100), ' sandwich', ' incident', '一樣', ' War'; every example is the last token of a noun phrase that renames or compares something, right before a period. Probe: 'of a project, of sorts' 0.146 (peak ' sorts'), everything else 0.005-0.016 including 'canary in the coal mine' 0.005 and 'a crucial decision; a critical choice' 0.009. The pole needs more context than one sentence gives, so the test uses two-sentence passages with the restatement closing the second sentence; near misses keep the opener and replace the restatement with a plain continuation. Registered as unclear at low confidence."
+}

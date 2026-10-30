@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0a39c4a6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N4553+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N4553",
+   "pole": "+",
+   "label": "the lexeme 'believe' attributing a conviction to someone (believed 0.30-0.56, believer 0.55); other verbs of cognition and speech in the same frame are weak (knew 0.15, convinced 0.12, think 0.08, said 0.06)",
+   "fire": [
+    "Her grandmother believed that hard work cured most ills.",
+    "The engineers believed the dam would hold through spring.",
+    "By the end of the war he was a firm believer in air power.",
+    "Most villagers believe the well was dug by monks.",
+    "The coach believes patience wins more games than talent.",
+    "Darwin came to believe that species change over time.",
+    "The jury evidently believed the second witness.",
+    "Many investors still believe in the company's recovery."
+   ],
+   "quiet": [
+    "Her grandmother said that hard work cured most ills.",
+    "The engineers calculated the dam would hold through spring.",
+    "By the end of the war he was a strong advocate of air power.",
+    "Most villagers say the well was dug by monks.",
+    "The coach insists patience wins more games than talent.",
+    "Darwin came to argue that species change over time.",
+    "The jury evidently trusted the second witness.",
+    "Many investors still hope for the company's recovery."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.6 on believe/believed/believes/believer; near misses under 0.2, 'trusted' possibly the highest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'believe' as attributed conviction",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 12.25, density 0.84%, peaks ' believed' x5, ' believes' x2, ' knew' x2, ' recognized' x2, ' thought', ' think', ' believer': attributions of belief in biographical prose. Probe: 'believed slavery to be an evil' 0.557, 'a great believer in' 0.547, 'has always believed that' 0.297; 'knew that' 0.153, 'was convinced' 0.115, 'started to think' 0.080, 'said that' 0.062, action sentence 0.016. The word carries most of it, so the label is the lexeme; near misses keep the attribution frame and swap in say/insist/argue/trust/hope."
+}

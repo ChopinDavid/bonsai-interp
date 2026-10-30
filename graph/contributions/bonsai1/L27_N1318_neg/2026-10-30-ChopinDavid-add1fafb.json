@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-add1fafb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N1318-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T12:34:32+00:00",
+ "recipe": {
+  "toolchain_commit": "f68f4858",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N1318_neg/2026-10-30-ChopinDavid-add1fafb.tests.json"
+ },
+ "label": "the word piece that follows a bare ' St'/' st' token when a St- word is split (St|uy|vesant 0.85, St|ude|baker 0.85, St|up|ak 0.77, St|ou|ffville 0.82, st|od|gy 0.54, St|ok|owski 0.37); St- words that are one token (Stuart, Stuttgart 0.002-0.009) or split after a longer prefix (Stein|berg 0.009) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N1318_neg/2026-10-30-ChopinDavid-add1fafb.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.248,
+     "peak": "ought"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.589,
+     "peak": "odd"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.409,
+     "peak": "ump"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.254,
+     "peak": "oy"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.512,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.345,
+     "peak": "opp"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.011,
+     "peak": "irling"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.776,
+     "peak": "uke"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": "Joseph"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " Stokes"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.122,
+     "peak": "oud"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " Stock"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.377,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f68f4858",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "piece after a bare ' St' token",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Card: max 137, density 0.05%, peaks ' stu', 'ou', 'od', 'ude', 'utt', 'ud' after St (Stutje, Stoutheartedness, Stuky, Stuyvesant, Studebaker, Stupak, Stouville) plus Korean 스|투. Probe: uy 0.850, ude 0.848, ou 0.816, up 0.766, od 0.538, ok 0.374; Stuart 0.002, Stuttgart 0.009, Stein|berg 0.009. Tokenizer: Stoughton = St|ought|on, Stoddard = St|odd|ard, Stumpf = St|ump|f, Stoyanov = St|oy|an|ov, Stolberg = St|ol|berg, Stoppard = St|opp|ard, Stirling = St|irling, Stukeley = St|uke|ley; near misses Stockholm, Stalin, Stephen, Stokes, Stanley are single tokens and Stroud = Str|oud, Stonehenge = Stone|h|enge, Stockton = Stock|ton. The + pole is ' bare'.",
+ "selection": "random draw"
+}
