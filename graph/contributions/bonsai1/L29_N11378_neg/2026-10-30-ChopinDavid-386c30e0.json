@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-30-ChopinDavid-386c30e0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N11378-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T21:35:31+00:00",
+ "recipe": {
+  "toolchain_commit": "536af6ce",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N11378_neg/2026-10-30-ChopinDavid-386c30e0.tests.json"
+ },
+ "label": "The Arabic word pieces ' ك' and ' الك' (kaf-initial words the tokenizer splits: كاميرا, الكهرباء, الكنيسة); partial, since Spanish 'su continu|o apoyo' and Japanese ご fired as strongly",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N11378_neg/2026-10-30-ChopinDavid-386c30e0.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.196,
+     "peak": " ك"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.249,
+     "peak": " الك"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.338,
+     "peak": " ك"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.212,
+     "peak": " الك"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.269,
+     "peak": " الك"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.328,
+     "peak": " ك"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.114,
+     "peak": " ك"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.084,
+     "peak": "ب"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.075,
+     "peak": " غ"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.056,
+     "peak": " كرة"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": "باح"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": " إلى"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " الطعام"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": "اش"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.066,
+     "peak": " خط"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.049,
+     "peak": " عن"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.23,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "536af6ce",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Arabic split pieces ' ك' / ' الك'",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: الكوادر 0.481, الكبار 0.429, كتير 0.409, كاميرا 0.312 (peaks ' الك' / ' ك'); كتاب (whole token) 0.041, المدرسة/الطالب 0.006; but Spanish 'su continuo apoyo' 0.661 (peak 'o'), Japanese ご参加 0.347 (のご), English 'continued support' 0.180. Card: ' الك' x9, ' ك' x6, 'ك' x2 of the top 32 peaks, with ' su', 'ご', '과' and あなたの also present (max 97.5, layer 29, density 0.83%, a broad pole). The Arabic token is the largest single trigger and is tested here; the Spanish/Japanese honorific-possessive cases are a second trigger this test does not cover.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   " ك",
+   " الك"
+  ]
+ }
+}

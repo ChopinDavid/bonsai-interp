@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d4433b90",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N3634+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N3634",
+   "pole": "+",
+   "label": "Variety or spread within a group: diversity, variation, range, span, assortment, разно- (multicoloured, diverse)",
+   "fire": [
+    "The region is known for the sheer variety of its dialects.",
+    "Researchers measured the heterogeneity of the patient sample.",
+    "The shop offers a wide assortment of cheeses from every province.",
+    "Opinions in the village range from enthusiasm to outright hostility.",
+    "The exhibition spans three centuries of portrait painting.",
+    "Ответы участников были очень разнообразными.",
+    "The class is a mix of ages, from teenagers to retirees.",
+    "Bird plumage varies widely between the two islands."
+   ],
+   "quiet": [
+    "The region is known for the sheer size of its forests.",
+    "Researchers measured the weight of each patient sample.",
+    "The shop offers the same cheese it has sold for fifty years.",
+    "Opinions in the village are unanimous in favour of the plan.",
+    "The exhibition opened three weeks ago in the main hall.",
+    "Ответы участников были очень короткими.",
+    "The class is made up entirely of teenagers.",
+    "Bird plumage is identical on the two islands."
+   ]
+  }
+ ],
+ "predictions": "Sentences asserting variety, range or spread within a set reach 0.35-0.8, peaking on the variety noun or verb (variety, heterogeneity, assortment, range, spans, разнообразными, mix, varies). Twins asserting size, weight, sameness, unanimity or a single kind stay under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "variety within a group",
+ "unit_kind": "topical",
+ "confidence": "medium",
+ "notes": "Probe: разноцветных 0.807 (peak 'но'), genetic diversity 0.644, span of eighty years 0.514, variety within Buddhism 0.412, natural variations 0.388; 'genetic makeup' 0.142, uniform marble 0.021, single decade 0.013, population size 0.016, floor 0.017. Card: ' diversity' x7, 'но' x7 (раз|но|образная), ' variation', ' span', ' around' (max 43.5, layer 26); the - pole's output suppresses vary/varies/variation/fluct, so the pair is a variety-versus-constancy axis."
+}

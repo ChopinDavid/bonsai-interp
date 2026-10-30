@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-eb356297",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3810-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N3810",
+   "pole": "-",
+   "label": "The ':' that introduces a parameter's type annotation inside a function signature (def get(self, key: str), function add(a: number))",
+   "fire": [
+    "import json\n\n\ndef load_config(path: str) -> dict:\n    with open(path) as f:\n        return json.load(f)\n",
+    "class Cache:\n    def __init__(self):\n        self.data = {}\n\n    def get(self, key: str, default=None):\n        return self.data.get(key, default)\n",
+    "from typing import List\n\n\ndef total(values: List[float]) -> float:\n    return sum(values)\n",
+    "class Bot:\n    async def send(self, channel: discord.TextChannel, text: str):\n        await channel.send(text)\n",
+    "def resize(image, width: int, height: int):\n    return image.resize((width, height))\n",
+    "class Repo:\n    def find(self, name: str, *, limit: int = 50):\n        return self.query(name)[:limit]\n",
+    "function greet(name: string, times: number): void {\n  for (let i = 0; i < times; i++) console.log(name);\n}\n",
+    "import numpy as np\n\n\ndef normalize(vec: np.ndarray, eps: float = 1e-8) -> np.ndarray:\n    return vec / (np.linalg.norm(vec) + eps)\n"
+   ],
+   "quiet": [
+    "import json\n\n\ndef load_config(path):\n    with open(path) as f:\n        return json.load(f)\n",
+    "class Cache:\n    def __init__(self):\n        self.data = {}\n\n    def get(self, key, default=None):\n        return self.data.get(key, default)\n",
+    "settings = {\n    'width': 640,\n    'height': 480,\n    'title': 'demo',\n}\n",
+    "width: int = 640\nheight: int = 480\nprint(width * height)\n",
+    "values = [3, 1, 2]\nfirst = values[0:2]\nif first:\n    print(first)\n",
+    "for name in names:\n    try:\n        send(name)\n    except ValueError:\n        continue\n",
+    "const greet = (name, times) => {\n  for (let i = 0; i < times; i++) console.log(name);\n};\n",
+    "SELECT name, total\nFROM orders\nWHERE total > 100\nORDER BY total DESC;\n"
+   ]
+  }
+ ],
+ "predictions": "Multi-line code with annotated parameters reaches 0.5-1.0 on the ':' after the parameter name (Python strongest, TypeScript around 0.5). The same functions without annotations, dict-literal colons, slice colons, block colons after if/for/try and a module-level variable annotation stay under 0.2.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "parameter annotation colon in a signature",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'def forward(self, features: list)' 0.960, 'def connect(host: str, port: int = 8080)' 0.715, 'def add(self, item: dict)' 0.652, TypeScript 'function add(a: number, b: number)' 0.477 (all peak ':'); variable annotation 'count: int = 0' 0.138 (peak ' int'), dict literal 0.012, un-annotated def 0.080, 'if i % 2:' 0.018, prose 0.022. Card: 27 of 32 peaks are ':' inside def signatures (max 12.6, layer 8); the + pole peaks on ':' and ' *' in other code. Fire items are multi-line so the def has context."
+}

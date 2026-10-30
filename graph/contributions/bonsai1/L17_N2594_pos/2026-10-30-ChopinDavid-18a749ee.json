@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-18a749ee",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N2594+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T21:36:45+00:00",
+ "recipe": {
+  "toolchain_commit": "536af6ce",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N2594_pos/2026-10-30-ChopinDavid-18a749ee.tests.json"
+ },
+ "label": "Attaching a label, tag or mark to an item: label/tag/mark/stamp/designate X with Y, annotate, barcode, assign a class to X",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N2594_pos/2026-10-30-ChopinDavid-18a749ee.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.71,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.468,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.126,
+     "peak": " marked"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.143,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.38,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.308,
+     "peak": " lid"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.378,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.201,
+     "peak": " marked"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.349,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.272,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": "legates"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.039,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.12,
+     "peak": " with"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.343,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "536af6ce",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "labeling an item with a tag",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'designated each seat with a letter' 0.633 (peak ' with'), 'marks every mention of a drug with a category code' 0.607 (' a'), 'labeled each jar with the name' 0.412 (' with'), 'apply as many tags as they like to each bookmark' 0.387 (' each'), 'assigned a class index' 0.382 (' assigned'); 'filled each jar with' 0.011, 'save bookmarks' 0.012, 'counted each seat' 0.014, 'described the side effects' 0.033, floor 0.015. Card: ' labelled', ' with' x3 after labeled/designated, 'quer' (marquer), '_event', ' semantics', ' to' (apply tags to), '_class', ',' before 'with the name', An|not|ate (max 20.4, layer 17); the - pole's output promotes ' assign', ' assignment'. The act of labeling, not the 'with' preposition, is what the near misses remove.",
+ "selection": "random draw"
+}

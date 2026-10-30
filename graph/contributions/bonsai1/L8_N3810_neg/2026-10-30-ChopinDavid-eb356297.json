@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-eb356297",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3810-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T21:34:50+00:00",
+ "recipe": {
+  "toolchain_commit": "536af6ce",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N3810_neg/2026-10-30-ChopinDavid-eb356297.tests.json"
+ },
+ "label": "The ':' that introduces a parameter's type annotation inside a function signature (def get(self, key: str), function add(a: number))",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N3810_neg/2026-10-30-ChopinDavid-eb356297.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.81,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.814,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.596,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.759,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.799,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.87,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.573,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.491,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.032,
+     "peak": "(path"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.091,
+     "peak": " def"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.045,
+     "peak": "':"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.105,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.037,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.032,
+     "peak": ":\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.141,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " >"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.779,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "536af6ce",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "parameter annotation colon in a signature",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'def forward(self, features: list)' 0.960, 'def connect(host: str, port: int = 8080)' 0.715, 'def add(self, item: dict)' 0.652, TypeScript 'function add(a: number, b: number)' 0.477 (all peak ':'); variable annotation 'count: int = 0' 0.138 (peak ' int'), dict literal 0.012, un-annotated def 0.080, 'if i % 2:' 0.018, prose 0.022. Card: 27 of 32 peaks are ':' inside def signatures (max 12.6, layer 8); the + pole peaks on ':' and ' *' in other code. Fire items are multi-line so the def has context.",
+ "selection": "random draw"
+}

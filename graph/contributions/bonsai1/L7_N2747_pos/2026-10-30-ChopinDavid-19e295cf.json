@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-19e295cf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N2747+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T21:34:54+00:00",
+ "recipe": {
+  "toolchain_commit": "536af6ce",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N2747_pos/2026-10-30-ChopinDavid-19e295cf.tests.json"
+ },
+ "label": "The closing piece of a multi-token proper name (Kilimanj|aro, Okav|ango, Thessalon|iki) or the final word of a multi-word proper name (Secret Service, Supreme Court, Salvation Army)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N2747_pos/2026-10-30-ChopinDavid-19e295cf.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.035,
+     "peak": "iman"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.048,
+     "peak": "ango"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.031,
+     "peak": " port"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.031,
+     "peak": " hall"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.017,
+     "peak": " way"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.046,
+     "peak": " Army"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.011,
+     "peak": " grandmother"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.158,
+     "peak": "ib"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " patient"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": "Doctors"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.02,
+     "peak": " plan"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": " Berlin"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " Chicago"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " requirements"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " trees"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.033,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "536af6ce",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "last piece of a proper name",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: National Citizen Service 0.864 (' Service'), Grand Cayman 0.763 ('man'), Democratic Republic 0.613 (' Republic'), Candomblé 0.574 ('é'), Ngorongoro 0.481 ('oro'), Korsakoff 0.310 (peak 'ak', not the last piece); rhabdomyolysis 0.020, saguaro 0.024, London 0.014, settlements 0.012. Card: ' Republic' x6, 'oro', 'man', 'ina', 'ia', ' Service', ' Force' among the top peaks (max 7.75, layer 7). The distinction tested is name versus common word, both split; the - pole peaks on 'field', 'more', ' Monroe', 'ham'.",
+ "selection": "random draw"
+}

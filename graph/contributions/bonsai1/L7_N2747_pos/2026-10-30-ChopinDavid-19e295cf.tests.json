@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-19e295cf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N2747+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N2747",
+   "pole": "+",
+   "label": "The closing piece of a multi-token proper name (Kilimanj|aro, Okav|ango, Thessalon|iki) or the final word of a multi-word proper name (Secret Service, Supreme Court, Salvation Army)",
+   "fire": [
+    "Climbers often take a week to reach the top of Kilimanjaro.",
+    "Hippos gather in the channels of the Okavango Delta each dry season.",
+    "The port of Thessaloniki handles most of the region's trade.",
+    "Agents from the Secret Service cleared the hall before the speech.",
+    "The case went all the way to the Supreme Court last spring.",
+    "Volunteers from the Salvation Army served soup to the crowd.",
+    "Her grandmother was born in Bratislava before the war.",
+    "The ferry from Dar es Salaam reaches Zanzibar in two hours."
+   ],
+   "quiet": [
+    "The patient was treated for thrombocytopenia after the transfusion.",
+    "Doctors found hepatosplenomegaly on the scan.",
+    "The plan was counterproductive from the start.",
+    "Her reaction was unenthusiastic at best.",
+    "He moved to Berlin and then to Madrid for work.",
+    "The shop in Chicago closed after thirty years.",
+    "The committee issued a statement about the new requirements.",
+    "The trees turn yellow in the park every October."
+   ]
+  }
+ ],
+ "predictions": "Names split into several tokens reach 0.3-0.9 on their last piece and institution names on their last word. Rare common words split the same way (thrombocytopenia, hepatosplenomegaly, counterproductive) and single-token place names (Berlin, Madrid, Chicago) stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "last piece of a proper name",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: National Citizen Service 0.864 (' Service'), Grand Cayman 0.763 ('man'), Democratic Republic 0.613 (' Republic'), Candomblé 0.574 ('é'), Ngorongoro 0.481 ('oro'), Korsakoff 0.310 (peak 'ak', not the last piece); rhabdomyolysis 0.020, saguaro 0.024, London 0.014, settlements 0.012. Card: ' Republic' x6, 'oro', 'man', 'ina', 'ia', ' Service', ' Force' among the top peaks (max 7.75, layer 7). The distinction tested is name versus common word, both split; the - pole peaks on 'field', 'more', ' Monroe', 'ham'."
+}
