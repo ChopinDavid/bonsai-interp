@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6d83e90f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9269+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N9269",
+   "pole": "+",
+   "label": "the determiner or conjunction slot right before the name of a people, ethnic group, language family or biological taxon ('those of the Bambara or the Fulani' 0.86, 'branch of the Indo-European family' 0.55, '(Toubou, Tuareg, and Songhai)' 0.55, 'conquered by the French' 0.48, 'genus Mesoplodon' 0.46); the same frames with cities, brands or institutions are silent (0.002-0.004)",
+   "fire": [
+    "The pottery of the Zulu is quite unlike that of the Xhosa or the Sotho.",
+    "Germanic languages are another major branch of the Indo-European family.",
+    "Reserved seats go to smaller communities (Ashanti, Ewe, and Fante) in each region.",
+    "Sicily was settled by the Normans in the eleventh century.",
+    "The Maasai, the Kikuyu and the Luo make up a large share of Kenya's population.",
+    "Snow leopards belong to the genus Panthera along with lions and tigers.",
+    "Much of the plateau was later occupied by Slavic tribes moving in from the north.",
+    "The Berbers and the Tuareg have traded across the Sahara for centuries."
+   ],
+   "quiet": [
+    "The pastries of Vienna are quite unlike those of Paris or Budapest.",
+    "Compact cars are another major segment of the European market.",
+    "Reserved spaces go to smaller vendors (bakers, florists, and grocers) in each hall.",
+    "The castle was rebuilt by the council in the eleventh century.",
+    "The Reds, the Blues and the Greens make up the three divisions of the league.",
+    "The bridge belongs to the county along with the road on either side.",
+    "Much of the plateau was later planted with olive groves watered from the north.",
+    "The bakers and the butchers have traded on the square for centuries."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on ' the', ' and' or ',' before the group name; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot predicting an ethnonym / language-family / taxon name",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 276, density 0.04%, peaks ' the' x7, '-European' x2, ',' x2, ' sister' x2, ' a', ' and' before Marka/Peul, Indo-European lineages, Iranian languages, Tuareg/Kanouri/Arabs, Tifinagh, Toubou/Fulani, the French, genus Mesoplodon, Bantu peoples. Probe: 'those of the Bambara or the Fulani' 0.860 (' the'), 'branch of the Indo-European family' 0.554, '(Toubou, Tuareg, and Songhai)' 0.553 (' and'), 'conquered by the French' 0.483, 'the Hausa, the Yoruba and the Igbo' 0.446, 'genus Mesoplodon' 0.455; 'those of Marseille or Nice' 0.004, '(Tesco, Aldi, and Lidl)' 0.002, 'built by the council' 0.002. The unit fires on the slot that predicts a group/lineage name, not on the name itself."
+}

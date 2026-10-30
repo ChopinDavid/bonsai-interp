@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b527b1f7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N5146+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N5146",
+   "pole": "+",
+   "label": "a country, region or nationality name used as the second element of a proper-name compound after a company or institution (Bell Canada 0.93, Columbia Earth Institute 0.73, Bugaboo USA 0.73, Collins English Dictionary 0.63, Toyota Australia 0.38); the same place names as destinations or plain nouns (emigrated to Canada 0.01) and place-first compounds (Canada Post 0.05) are quiet",
+   "fire": [
+    "The contract was awarded to Honda Canada for the next three model years.",
+    "Her first academic post was in the Yale English department.",
+    "The entry was removed from the Oxford English Dictionary after a long debate.",
+    "Repairs are handled by Samsung Australia through its Sydney service centre.",
+    "He opened a hardware store in Hamilton Ontario in the spring of 1962.",
+    "The scanner is distributed in North America by Epson USA.",
+    "A spokesperson for Shell Canada declined to comment on the spill.",
+    "The dataset is maintained by the NASA Earth Observatory team."
+   ],
+   "quiet": [
+    "The contract was awarded to a supplier in Canada for the next three model years.",
+    "Her first academic post was in a small college in England.",
+    "The entry was removed from the dictionary after a long debate in Oxford.",
+    "Repairs are handled through its Sydney service centre in Australia.",
+    "He opened a hardware store in Ontario in the spring of 1962.",
+    "The scanner is distributed across the USA by a network of dealers.",
+    "Australia Post declined to comment on the delayed parcels.",
+    "Volunteers organised Earth Day events in parks across the county."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.35-0.9 on the place token; near misses below 0.1; the Ontario/Australia-style items the weakest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "place name as 2nd element of a brand/institution name",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 11.1, density 0.056%, peaks ' Earth' x7, ' English' x4, ' USA' x4, ' Canada' x2, ' Ontario', ' US' in Bell Canada, Columbia Earth Institute, Collins English Dictionary, Zooper USA, Grimsby Ontario, Campbellsville US Bank, Vassar English professor, Dawson's Australia. Probe: Bell Canada 0.925, Columbia Earth 0.728, Bugaboo USA 0.725, Collins English 0.634, Toyota Australia 0.382, Kingston Ontario 0.360; 'emigrated to Canada' 0.011, 'Canada Post delivers' 0.051, soup 0.013. The place must follow another proper noun as its qualifier; place-first compounds and places as objects are silent."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9ba4348c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N1712-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N1712",
+   "pole": "-",
+   "label": "broad (4.4% of tokens, gate-closed leak 99%, max 3.6): the hedge or quantifier of a generalising claim about people in expository web prose ('as just the pill' 0.88, 'a very common complaint' 0.73, 'all of us experience' 0.62, 'platforms allow for' 0.54, 'most of us were' 0.44); specific first-person narrative and directions are quiet (0.06-0.12)",
+   "fire": [
+    "Most of us check our phones within minutes of waking up.",
+    "Back pain is a very common complaint among office workers.",
+    "Remote work allows for a far more flexible daily schedule.",
+    "Many people think of yoga as just stretching, but it builds real strength.",
+    "At some point all of us have to deal with the loss of a parent.",
+    "Allergies are very common in spring, especially in cities with many birch trees.",
+    "A good diet allows for the occasional treat without any guilt.",
+    "Few of us read the terms and conditions before clicking accept."
+   ],
+   "quiet": [
+    "I checked my phone at seven and saw three missed calls from Mum.",
+    "My back hurt after the move, so I took Tuesday off work.",
+    "Our office switched to remote work on the first Monday in March.",
+    "I did yoga on Saturday morning and then met Sam for brunch.",
+    "Last May I flew to Dublin for my aunt's funeral.",
+    "The birch trees in our street dropped their pollen in late April.",
+    "I had a slice of cake after dinner and went to bed early.",
+    "I clicked accept and the download started straight away."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on ' us', ' very', ' just' or ' allow'; near misses 0.05-0.2 with weak leaks possible on any function word",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "quantifier/hedge of a generic claim (broad)",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 3.56, FLAG broad 4.4%, FLAG gate-closed -g +u leak 99%, peaks ' us' x4, ' is' x4, ' very' x3, ' of' x3, ' people' x2, ' allow' in 'most of us', 'all of us', 'platforms allow for', 'discussion shows', 'a very common', 'All of the', 'as just the pill'. Probe: 'as just the pill' 0.877 (' just'), 'a very common complaint' 0.728, 'all of us experience' 0.619, 'platforms allow for' 0.537, 'Most of us were raised' 0.436, 'All of the email addresses' 0.252; 'I lost my keys' 0.118, train times 0.104, directions 0.063. The unit is broad and the near misses may leak; the test contrasts generic claims with specific first-person events."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6e7de9d6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1297+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1297",
+   "pole": "+",
+   "label": "identifier pieces of parallel-computing and neural-network framework code: MPI communicators ('COMM' 0.86, 'comm'), torch 'nn.Module'/'ModuleList' ('List' 0.48), convolution and pooling arguments ('kernel_size' 0.27, 'pool_size' 0.18); ordinary web, SQL and utility code is quiet (0.02-0.03)",
+   "fire": [
+    "from mpi4py import MPI\n\ncomm = MPI.COMM_WORLD\nsize = comm.Get_size()\nrank = comm.Get_rank()",
+    "class Encoder(nn.Module):\n    def __init__(self, dim):\n        super().__init__()\n        self.blocks = nn.ModuleList([nn.Linear(dim, dim) for _ in range(4)])",
+    "self.conv1 = nn.Conv2d(1, 32, kernel_size=5, stride=1, padding=2)\nself.pool = nn.MaxPool2d(kernel_size=2)",
+    "    pool_size: Integer, size of the max pooling window.\n    strides: Integer, or None. Defaults to pool_size.",
+    "def pdot(self, x, y, comm):\n    local = np.dot(x, y)\n    return comm.allreduce(local, op=MPI.SUM)",
+    "model = tf.keras.Sequential([\n    layers.Conv2D(32, kernel_size=(3, 3), activation='relu'),\n    layers.MaxPooling2D(pool_size=(2, 2)),\n])",
+    "import torch.nn as nn\n\nclass Head(nn.Module):\n    def forward(self, x):\n        return self.proj(x.mean(dim=1))",
+    "with mp.Pool(processes=8) as pool:\n    results = pool.map(score, chunks)"
+   ],
+   "quiet": [
+    "import csv\n\nwith open('rows.csv') as f:\n    for row in csv.reader(f):\n        print(row[0])",
+    "class Invoice:\n    def __init__(self, items):\n        self.items = items\n        self.total = sum(i.price for i in items)",
+    "def slugify(title):\n    return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')",
+    "    timeout: Integer, seconds to wait before the request is abandoned.\n    retries: Integer, or None. Defaults to 3.",
+    "def send(self, to, subject, body):\n    msg = EmailMessage()\n    msg['To'] = to\n    return self.smtp.send_message(msg)",
+    "app.get('/users/:id', async (req, res) => {\n  const user = await db.find(req.params.id);\n  res.json(user);\n});",
+    "import datetime\n\nclass Entry:\n    def age(self):\n        return datetime.date.today() - self.created",
+    "with open('log.txt', 'a') as log:\n    for line in lines:\n        log.write(line)"
+   ]
+  }
+ ],
+ "predictions": "the MPI and nn.Module items 0.4-0.9, the kernel_size/pool items 0.15-0.35, so one to three fire items may miss; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "MPI comm / nn.Module / kernel_size pieces in ML code",
+ "unit_kind": "lexical",
+ "confidence": 0.35,
+ "notes": "Card: max 6.9 (weak), density 0.07%, peaks ' comm' (pdot(self, x, y, comm)), 'M' in MPI.COMM_WORLD, '.Module' x2 (mx.mod.Module, nn.ModuleList), 'command', ' pool'_initial, ' p', 'kernel_size' x2, 'ип' (чипы). Probe: MPI.COMM_WORLD 0.857 ('M'), nn.ModuleList 0.479 ('List'), kernel_size docstring 0.272, pool_size 0.176, op 0.096, mx.mod.Module 0.049; express 0.030, SQL 0.032, sum() 0.023. The fire items are multi-line passages built around comm/Module/kernel_size/pool; the near misses are multi-line passages of non-ML Python and JavaScript with the same shape."
+}

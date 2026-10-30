@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-37945115",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N9107-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N9107",
+   "pole": "-",
+   "label": "a messaging-medium word (email, mail, IM, e-mail, RSS) used as the modifier of a software noun such as client, application, program or reader ('default email application' 0.84, 'graphical IM client' 0.61, 'e-mail programs' 0.37, 'mail client' 0.33); the same words as the message itself (sent an email 0.02) and 'client' in the business sense (0.003) are quiet",
+   "fire": [
+    "Thunderbird is a free desktop email client with a built-in calendar.",
+    "Your default mail client should open when you tap the address.",
+    "Pidgin is a multi-protocol IM client that supports XMPP and IRC.",
+    "Most desktop mail applications let you set up filters and folders.",
+    "Configure the mail application to use TLS on port 587.",
+    "The IM application shows a green dot when a contact is online.",
+    "Older e-mail programs cannot display HTML messages correctly.",
+    "Any decent chat client will reconnect automatically after a dropout."
+   ],
+   "quiet": [
+    "She sent a short email to the whole department about the new rota.",
+    "The mail arrived late because of the strike at the sorting office.",
+    "He sent me an IM during the meeting asking about lunch.",
+    "Most web applications let you set up filters and folders.",
+    "Configure the backup application to run every night at two.",
+    "The law firm's biggest client cancelled the contract in March.",
+    "Older printers cannot handle thick card correctly.",
+    "Any decent consultant will call the client back within a day."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the medium word (or the following noun); near misses below 0.1, 'mobile applications' style items the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "email/IM/mail as modifier of client/application",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 460, density 0.05%, peaks ' email' x5, ' IM' x3, ' mail' x3, ' RSS' x3, ' Mail' x2, '邮件' before application/client/services/programs/spam filter; the + pole peaks on ' client' x15 and suppresses client/clients, so the - pole predicts the software-client noun. Probe: 'default email application' 0.838 (' email'), 'graphical IM client' 0.605, 'e-mail programs come with a built-in calendar' 0.371 (' calendar'), 'receiver's mail client' 0.332, 'any RSS reader' 0.299, 'Many email services block' 0.250; 'mobile applications' 0.068, 'sent an email to the team' 0.018, 'law firm lost its biggest client' 0.003. The test keeps the medium word next to a software noun and drops it (or the software noun) in the near misses."
+}
