@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N4902-",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 4902,
+ "pole": "-",
+ "label": "the first word of a fixed multi-word name or term, where the continuation is strongly predictable (giant -> sequoia 0.65, Athletic -> Hall of Fame 0.76, Rick -> Pitino 0.50, Equity Income -> fund 0.41, specialise in -> shorting 0.47); the same word used as a free modifier is silent (giant pot 0.045)",
+ "short": "first word of a fixed multi-word name (giant sequoia, Athletic Hall of Fame)",
+ "kind": "contextual / prediction",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N4902_neg/2026-10-30-ChopinDavid-f98401f9.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.04,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.155,
+     "peak": " Roll"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.062,
+     "peak": " diver"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.495,
+     "peak": " Rick"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.436,
+     "peak": " asset"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.23,
+     "peak": " Japanese"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.373,
+     "peak": " Athletic"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.324,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.052,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.161,
+     "peak": "oulder"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.047,
+     "peak": " afternoon"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " she"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.102,
+     "peak": " Japanese"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.414,
+     "peak": " athletic"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " advising"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.797,
+    "median_fire": 0.277,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-f98401f9"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-f98401f9",
+   "the first word of a fixed multi-word name or term, where the continuation is strongly predictable (giant -> sequoia 0.65, Athletic -> Hall of Fame 0.76, Rick -> Pitino 0.50, Equity Income -> fund 0.41, specialise in -> shorting 0.47); the same word used as a free modifier is silent (giant pot 0.045)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-f98401f9"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N174+",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 174,
+ "pole": "+",
+ "label": "the word 'example' with its complement: 'one last example before' (0.79, peak on the word after), 'another example of' (0.66); the card's 'expecting' and 'suppose' items did not reproduce (0.05-0.08) and the unit is broad (2.6% of tokens reach a tenth of max), so near misses with instance/case/reason in the same frames may fire weakly",
+ "short": "'example' plus its complement (another example of, one more example before)",
+ "kind": "token-in-context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N174_pos/2026-10-30-ChopinDavid-f420a63a.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.37,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.228,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.225,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.121,
+     "peak": " this"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.151,
+     "peak": " how"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.102,
+     "peak": " tackling"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.619,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.193,
+     "peak": " lecture"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.153,
+     "peak": " reason"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.226,
+     "peak": " early"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.2,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.086,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.124,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.064,
+     "peak": " simple"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.682,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.217,
+     "peak": " lecture"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.594,
+    "median_fire": 0.209,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-f420a63a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-f420a63a",
+   "the word 'example' with its complement: 'one last example before' (0.79, peak on the word after), 'another example of' (0.66); the card's 'expecting' and 'suppose' items did not reproduce (0.05-0.08) and the unit is broad (2.6% of tokens reach a tenth of max), so near misses with instance/case/reason in the same frames may fire weakly",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-f420a63a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

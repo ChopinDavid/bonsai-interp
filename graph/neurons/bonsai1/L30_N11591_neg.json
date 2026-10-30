@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N11591-",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 11591,
+ "pole": "-",
+ "label": "the first token of a multi-token proper name or fixed compound in historical or biographical prose, where the continuation is predictable (Samuel -> Taylor Coleridge 0.74, Catherine -> McAuley 0.36, Young -> Ladies 0.30, Half -> way Covenant 0.30, middle -> class 0.29, Compulsory schooling 0.26); the surname alone is weak (Coleridge 0.11) and the same sentence without the compound is silent (0.06)",
+ "short": "first token of a multi-token name or compound in historical prose (Samuel Taylor Coleridge, middle class)",
+ "kind": "contextual / prediction",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N11591_neg/2026-10-30-ChopinDavid-9f20bdf0.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.55,
+     "peak": " Samuel"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.458,
+     "peak": " Catherine"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.11,
+     "peak": " middle"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.321,
+     "peak": " Christian"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.343,
+     "peak": " Samuel"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.296,
+     "peak": " Half"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.052,
+     "peak": " My"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.062,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.054,
+     "peak": " Covent"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.09,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.076,
+     "peak": " Barber"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " travellers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": "8"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.308,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-9f20bdf0"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-9f20bdf0",
+   "the first token of a multi-token proper name or fixed compound in historical or biographical prose, where the continuation is predictable (Samuel -> Taylor Coleridge 0.74, Catherine -> McAuley 0.36, Young -> Ladies 0.30, Half -> way Covenant 0.30, middle -> class 0.29, Compulsory schooling 0.26); the surname alone is weak (Coleridge 0.11) and the same sentence without the compound is silent (0.06)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-9f20bdf0"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N3890+",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 3890,
+ "pole": "+",
+ "label": "unclear: the card's top examples are mid-name and mid-word tokens in 19th-century biographical prose (George W., Persian Gulf, Nancy Elizabeth, Lindsey Carson, Picton, Ontario, def|ibr|inated, benz|ene, diagnostic|ian), but only the chemistry item reproduced in probes (isolated benz|ene 0.84); the biographical name items scored 0.02-0.17; best guess is a 19th-century chemistry/medicine discovery narrative",
+ "short": "19th-century chemistry/medicine discovery narrative (unclear)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N3890_pos/2026-10-30-ChopinDavid-063ed008.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.327,
+     "peak": " cyan"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.077,
+     "peak": " b"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.203,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.289,
+     "peak": " chlor"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.442,
+     "peak": "ibr"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.149,
+     "peak": " lith"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.108,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.056,
+     "peak": " diagnostic"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.259,
+     "peak": " Mary"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.026,
+     "peak": "Two"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": " Edinburgh"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.383,
+     "peak": " university"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " horse"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.035,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.082,
+     "peak": " hills"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " remembered"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.176,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-063ed008"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-063ed008",
+   "unclear: the card's top examples are mid-name and mid-word tokens in 19th-century biographical prose (George W., Persian Gulf, Nancy Elizabeth, Lindsey Carson, Picton, Ontario, def|ibr|inated, benz|ene, diagnostic|ian), but only the chemistry item reproduced in probes (isolated benz|ene 0.84); the biographical name items scored 0.02-0.17; best guess is a 19th-century chemistry/medicine discovery narrative",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-063ed008"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
