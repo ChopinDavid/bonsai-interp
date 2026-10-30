@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N7345-",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 7345,
+ "pole": "-",
+ "label": "the spelling of 'mug' in any sense and form: ' mug' (0.79-0.89), 'm|ugs' 0.90, 'm|ugged' 0.79, 'm|uggy' 0.35, mugshot 0.81, and 'gob|let' 0.85; synonyms without the spelling ('cup' 0.14, 'jar' 0.003) are silent",
+ "short": "mug / goblet spelling",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N7345_neg/2026-10-30-ChopinDavid-613edc23.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.859,
+     "peak": " mug"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.833,
+     "peak": "ugs"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.793,
+     "peak": "ugged"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.804,
+     "peak": "let"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.415,
+     "peak": "uggy"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.765,
+     "peak": " Mug"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.956,
+     "peak": " mug"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.844,
+     "peak": " mug"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.163,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " prints"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " station"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": "alice"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": " evening"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " beer"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": " cafe"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " morning"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.819,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-613edc23"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-613edc23",
+   "the spelling of 'mug' in any sense and form: ' mug' (0.79-0.89), 'm|ugs' 0.90, 'm|ugged' 0.79, 'm|uggy' 0.35, mugshot 0.81, and 'gob|let' 0.85; synonyms without the spelling ('cup' 0.14, 'jar' 0.003) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-613edc23"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

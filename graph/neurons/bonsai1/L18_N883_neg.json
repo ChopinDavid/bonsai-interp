@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N883-",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 883,
+ "pole": "-",
+ "label": "unclear: a post-nominal modifier that spells out a relation in expository prose ('King Fernando of Spain, who sponsored' 0.55, 'the degree of relatedness between' 0.34, 'how badly people were treated in' 0.33, 'unhappiness caused by' 0.29); the card's own top example ('rotation of a vector') reproduced at only 0.11, and plain sentences are 0.01-0.05",
+ "short": "relational post-modifier (unclear)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N883_neg/2026-10-30-ChopinDavid-bc58d321.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.332,
+     "peak": " who"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.347,
+     "peak": " between"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.07,
+     "peak": "ly"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.27,
+     "peak": " stress"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": " who"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.015,
+     "peak": " level"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.092,
+     "peak": " were"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.221,
+     "peak": " caused"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.193,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.027,
+     "peak": " fortress"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.077,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "ers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " servants"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.167,
+     "peak": " allergic"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.797,
+    "median_fire": 0.157,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-bc58d321"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-bc58d321",
+   "unclear: a post-nominal modifier that spells out a relation in expository prose ('King Fernando of Spain, who sponsored' 0.55, 'the degree of relatedness between' 0.34, 'how badly people were treated in' 0.33, 'unhappiness caused by' 0.29); the card's own top example ('rotation of a vector') reproduced at only 0.11, and plain sentences are 0.01-0.05",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-bc58d321"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

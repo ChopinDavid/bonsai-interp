@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N6068+",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 6068,
+ "pole": "+",
+ "label": "a negated limit: the privative in-/im- adjective whose prefix is its own token ('indiv|isible' 0.53, 'ineff|able' 0.30, 'imm|aterial' 0.26), ' indefinite' (0.28) and the 'never ... ever again' closure (0.83); the positive counterparts ('divisible' 0.11, 'definite' 0.02), 'number|less' (0.02) and ' infinite' (0.09, the - pole's token) are silent",
+ "short": "in-/im- privative, indefinite, never again",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N6068_pos/2026-10-30-ChopinDavid-12af11d4.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.241,
+     "peak": " indefinite"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.549,
+     "peak": " again"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.158,
+     "peak": "parable"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.265,
+     "peak": " immutable"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.262,
+     "peak": " again"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.025,
+     "peak": " proved"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.13,
+     "peak": "iol"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.02,
+     "peak": " strike"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.043,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " summer"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " problem"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.028,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": " strike"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.2,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-12af11d4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-12af11d4",
+   "a negated limit: the privative in-/im- adjective whose prefix is its own token ('indiv|isible' 0.53, 'ineff|able' 0.30, 'imm|aterial' 0.26), ' indefinite' (0.28) and the 'never ... ever again' closure (0.83); the positive counterparts ('divisible' 0.11, 'definite' 0.02), 'number|less' (0.02) and ' infinite' (0.09, the - pole's token) are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-12af11d4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
