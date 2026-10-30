@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-431eaaf4",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N3750-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N3750",
+   "pole": "-",
+   "label": "The first part of a compound that names an urban area (inner| city, meg|acity, In|nen|stadt, Peri|-Urban, down|town), where 'city/town' is the expected continuation; plain 'the city' or rural places stay quiet.",
+   "fire": [
+    "Many inner-city schools lack playgrounds.",
+    "Lagos is one of Africa's fastest-growing megacities.",
+    "Wir haben einen Spaziergang in die Innenstadt gemacht.",
+    "Peri-urban farms supply most of the vegetables.",
+    "The new tram line runs through the inner city.",
+    "Planners fear the rise of sprawling megacities.",
+    "Die Geschäfte in der Innenstadt schließen um acht.",
+    "Crime fell sharply in the inner suburbs."
+   ],
+   "quiet": [
+    "Many rural schools lack playgrounds.",
+    "Lagos is one of Africa's fastest-growing ports.",
+    "Wir haben einen Spaziergang in den Wald gemacht.",
+    "Small family farms supply most of the vegetables.",
+    "The new tram line runs through the old valley.",
+    "Planners fear the rise of sprawling farmland.",
+    "Die Geschäfte im Dorf schließen um acht.",
+    "Crime fell sharply in the countryside."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "first part of an urban-area compound",
+ "unit_kind": "token / prediction",
+ "confidence": 0.45,
+ "notes": "Card: ' la' (au-dessus de la ville), 'i' (Per⟦i⟧-Urban), 'nen' (In⟦nen⟧stadt), ' meg' (megacity), ' inner'; output (+ pole) suppresses ' town', ' camp', ' settlement', so the - pole favours them. Exploratory probe: megacity 0.67, inner city 0.35; 'over the city' 0.04, 'city centre' 0.03."
+}

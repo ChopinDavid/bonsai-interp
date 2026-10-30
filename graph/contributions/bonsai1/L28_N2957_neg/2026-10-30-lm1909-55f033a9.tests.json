@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-55f033a9",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2957-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N2957",
+   "pole": "-",
+   "label": "A design change described as improving a vehicle's or craft's stability, control or clearance ('to improve yaw control', 'more stable', 'for improved ground clearance'), firing on 'improve(d)' or 'more'; design changes with other effects (weight, colour, cost) stay lower.",
+   "fire": [
+    "Engineers lengthened the keel to improve the boat's stability.",
+    "The wider wheelbase makes the truck more stable in corners.",
+    "A rear spoiler was added for improved grip at high speed.",
+    "Lowering the seat makes the scooter easier to control.",
+    "Twin rudders improve steering in rough water.",
+    "The new suspension gives improved ground clearance on trails.",
+    "Winglets were fitted to improve roll control.",
+    "Heavier tyres keep the tractor more stable on slopes."
+   ],
+   "quiet": [
+    "Engineers lengthened the keel to fit a larger cabin.",
+    "The wider wheelbase makes the truck harder to park.",
+    "A rear spoiler was added in a bright red finish.",
+    "Lowering the seat makes the scooter cheaper to build.",
+    "Twin rudders add weight to the stern.",
+    "The new suspension costs more than the old one.",
+    "Winglets were fitted during the last overhaul.",
+    "Heavier tyres make the tractor slower on roads."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.75; near misses below 0.3; risky",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "improving a vehicle's stability / handling",
+ "unit_kind": "semantic",
+ "confidence": 0.5,
+ "notes": "Card: peaks on ' improve' (fin ... to improve yaw control), ' more' (more stable), ' improved' (improved ground clearance), ' for' (important for aero); output suppresses ' stability', ' stable', ' aer', ' airflow'. Exploratory probe: 0.48-0.74 on those; 'painted bright red' 0.01; 'heavier on gravel' 0.27."
+}

@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-d1a26f72",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N10573+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:54:42+00:00",
+ "recipe": {
+  "toolchain_commit": "c4d33712",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N10573_pos/2026-10-30-lm1909-d1a26f72.tests.json"
+ },
+ "label": "' know' in the idiom 'you never know' (also 'one never knows'); 'know' without 'never' and 'never' with other verbs stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N10573_pos/2026-10-30-lm1909-d1a26f72.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.719,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.721,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.854,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.806,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.639,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.656,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.726,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.679,
+     "peak": " know"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": "Keep"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.0,
+     "peak": "Buy"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.0,
+     "peak": " you"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": " stranger"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": "Save"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " application"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": "Keep"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " if"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.72,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c4d33712",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'you never know'",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.85,
+ "notes": "Card: ' know' x20, ' knows' x12; deterministic pair cover held (AUROC 1.00, covers 50%) for ' never| know'. Exploratory probe: 'you never know' 0.82; 'You know what I mean' 0.001; 'You never see' 0.001; 'Nobody knows' 0.000.",
+ "selection": "random draw"
+}

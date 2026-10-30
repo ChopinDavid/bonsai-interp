@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-b3b46935",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N9679+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N9679",
+   "pole": "+",
+   "label": "Comparing an object's size to a familiar thing: Russian 'размером с …' ('the size of a …') and 'big/large enough to fit …', firing on ' с' or ' fit'; the same objects described without a size comparison stay quiet.",
+   "fire": [
+    "С неба падал град размером с куриное яйцо.",
+    "Рыбак поймал щуку размером с крокодила.",
+    "В саду вырос кабачок размером с подушку.",
+    "На рынке продавали яблоки размером с кулак.",
+    "The hole in the fence was big enough to fit a dog.",
+    "Her handbag is large enough to fit a laptop.",
+    "The cave was wide enough to fit three tents.",
+    "The pocket is deep enough to fit a phone."
+   ],
+   "quiet": [
+    "С неба падал сильный град весь вечер.",
+    "Рыбак поймал большую щуку в озере.",
+    "В саду вырос зелёный кабачок.",
+    "На рынке продавали красные яблоки.",
+    "The hole in the fence was repaired last week.",
+    "Her handbag is made of brown leather.",
+    "The cave was dark and damp inside.",
+    "The pocket has a zip and a small button."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "size comparison ('размером с', 'big enough to fit')",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.5,
+ "notes": "Card: ' like' x6, ' a' x5, Russian ' с' x2 (размером с воздушные шарики), ' two', ' of' (the size of houses), ' fit' (big enough to fit a Skoal can); output promotes ' size', ' small', ' larger'. Exploratory probe: 'размером с' 0.82, 'big enough to fit' 0.57, but English 'the size of golf balls' only 0.08, so the label keeps to the two working forms."
+}

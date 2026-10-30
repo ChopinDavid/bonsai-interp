@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-55cdb93c",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N296+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N296",
+   "pole": "+",
+   "label": "' specially' (and Russian специальн-) for something made, chosen or prepared for a particular purpose ('specially designed', 'specially selected', 'specially trained'); the same sentences with 'carefully', 'well' or 'ordinary' stay quiet.",
+   "fire": [
+    "The seeds are coated with a specially formulated gel.",
+    "Guests stayed in a specially built cabin by the lake.",
+    "The astronauts used specially designed gloves.",
+    "Our bakers use specially milled flour for this bread.",
+    "The paintings are stored in specially sealed cases.",
+    "Rescue teams brought specially trained dogs.",
+    "The menu was specially prepared for the wedding.",
+    "Для анализа использовали специальные приборы."
+   ],
+   "quiet": [
+    "The seeds are coated with a thin layer of gel.",
+    "Guests stayed in a small cabin by the lake.",
+    "The astronauts used thick white gloves.",
+    "Our bakers use stone-ground flour for this bread.",
+    "The paintings are stored in large wooden cases.",
+    "Rescue teams brought their dogs.",
+    "The menu was printed for the wedding.",
+    "Для анализа использовали новые приборы."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.85; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'specially' (made for a purpose)",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.6,
+ "notes": "Card: ' specially' x8, ' special' x6, ' right' x4, Russian -альные/-альной (специальных) x5, ' certain' x3. Exploratory probe: 'specially selected steel' 0.85, 'specially trained' 0.36, 'specific credentials' 0.15; 'well trained' 0.04, 'ordinary steel' 0.02."
+}

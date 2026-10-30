@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-31d85416",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N8043+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:54:26+00:00",
+ "recipe": {
+  "toolchain_commit": "c4d33712",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N8043_pos/2026-10-30-lm1909-31d85416.tests.json"
+ },
+ "label": "The second piece of a keyword-argument name in a Python call (share|x=True, keep|dims=True, ignore|_index=True, tick|_params), firing on that piece; the same calls without keyword arguments stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N8043_pos/2026-10-30-lm1909-31d85416.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.984,
+     "peak": "x"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.764,
+     "peak": "dims"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.742,
+     "peak": "_index"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.598,
+     "peak": "_params"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.305,
+     "peak": "_values"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.555,
+     "peak": "_on"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.019,
+     "peak": " DataLoader"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.427,
+     "peak": "_duplicates"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.021,
+     "peak": ".subplots"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": " arr"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.025,
+     "peak": ".concat"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.111,
+     "peak": "_title"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.305,
+     "peak": "_values"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.049,
+     "peak": ".merge"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " DataLoader"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.427,
+     "peak": "_duplicates"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.867,
+    "median_fire": 0.577,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c4d33712",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "second piece of a Python keyword-argument name",
+ "unit_kind": "code / token piece",
+ "confidence": 0.75,
+ "notes": "Card: peaks on 'x' (sharex=), 'dims' (keepdims=), '_index' (ignore_index=), '_keys', '_ascii', '_params'. Exploratory probe: sharex/sharey 1.01, keepdims 0.54, ignore_index 0.81; the same calls without keywords 0.007-0.03.",
+ "selection": "random draw"
+}

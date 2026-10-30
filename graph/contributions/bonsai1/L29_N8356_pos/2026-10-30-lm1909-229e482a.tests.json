@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-229e482a",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N8356+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:40:49+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N8356",
+   "pole": "+",
+   "label": "A number that counts units in a quantity, strongest as a compound modifier ('a 200 word essay', 'a five question quiz', 'six 20-minute episodes'); the same tasks described without a number stay quiet.",
+   "fire": [
+    "Each student writes a 500 word report on the trip.",
+    "The app offers a quick ten question test.",
+    "The course has eight 45-minute lessons.",
+    "Applicants give a three minute speech.",
+    "We ran a 5 kilometre race on Sunday.",
+    "The kit includes a 12 page booklet.",
+    "There is a thirty second pause between rounds.",
+    "She recorded a two hour podcast."
+   ],
+   "quiet": [
+    "Each student writes a short report on the trip.",
+    "The app offers a quick test at the end.",
+    "The course has several online lessons.",
+    "Applicants give a short speech.",
+    "We ran a charity race on Sunday.",
+    "The kit includes an illustrated booklet.",
+    "There is a brief pause between rounds.",
+    "She recorded a long podcast."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.75; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "number counting units ('200 word essay')",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: '0' x9 (a 2⟦0⟧0 word essay; six 2⟦0⟧-minute episodes), ' five' x5 (five question quiz), ' eight', ' many' (how many words); output suppresses counted plurals (' wins', ' awards'). Exploratory probe: compound modifiers 0.41-0.73; plain counts 'under 200 words' 0.37 and 'five questions' 0.23 also fire, so near misses drop the number."
+}
