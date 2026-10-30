@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-30-moridinamael-8c71f77d",
+ "kind": "qc",
+ "neuron": "bonsai1/L22/N2000-",
+ "contributor": "moridinamael",
+ "created": "2026-10-30T19:13:03+00:00",
+ "recipe": {
+  "toolchain_commit": "382cb7be8",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N2000_neg/2026-10-30-moridinamael-8c71f77d.tests.json"
+ },
+ "label": "Mid-phrase tokens inside stock technical or error phrases and code identifiers, just before the phrase finishes (timed|out, reset by|peer, out of|date, SERVICE_UN|AVAILABLE); also non-final pieces of Korean words; near zero on ordinary prose",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N2000_neg/2026-10-30-moridinamael-8c71f77d.tests.json",
+   "prereg_commit": "382cb7be8",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.548,
+     "peak": "겨"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.719,
+     "peak": " timed"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.768,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.519,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.781,
+     "peak": "_UN"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.293,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.31,
+     "peak": " merge"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.576,
+     "peak": "O"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.11,
+     "peak": " up"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.144,
+     "peak": " up"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.134,
+     "peak": " fridge"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.063,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.073,
+     "peak": " missing"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " holiday"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.101,
+     "peak": " drawer"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.156,
+     "peak": " stopped"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.562,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "inverse-gmoo",
+   "look",
+   "neighbors",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "382cb7be8",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "Non-final pieces of split ALL_CAPS error/status constants in code (SERVICE_UNAVAILABLE, ECONNREFUSED, MOVED_PERMANENTLY), whether or not they mean failure; near zero on one-token names (OK, CREATED) and plain English prose; Korean tech-doc word pieces also fire"
+ }
+}
