@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3da8886f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N3046+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N3046",
+   "pole": "+",
+   "label": "function word inside a copyright or data-protection notice: the prohibition on reproducing material (may not be copied, reproduced or distributed) or the promise to protect it (from loss, misuse or alteration)",
+   "fire": [
+    "All text and images on these pages are protected by copyright and may not be copied, reproduced or republished without prior consent.",
+    "We take appropriate measures to safeguard the information you provide against unauthorized disclosure, alteration or destruction.",
+    "The material in this newsletter is for the subscriber's personal use and may not be forwarded, posted or sold.",
+    "Photographs appearing on this site may not be downloaded, printed or distributed in any form.",
+    "Our servers are designed to protect customer records from loss, theft and accidental deletion.",
+    "No portion of this report may be reprinted or transmitted by any means without the written permission of the publisher.",
+    "The software and its documentation may not be modified, decompiled or redistributed under any circumstances.",
+    "We employ industry-standard encryption to shield your payment details from interception or misuse."
+   ],
+   "quiet": [
+    "The paintings in the hallway were copied by students and hung in the cafeteria.",
+    "The report was forwarded to the committee and posted on the noticeboard.",
+    "The photographs were printed on glossy paper and handed out at the reunion.",
+    "The barn roof protects the hay from rain and keeps the mice out.",
+    "The old recipe was modified by my aunt and passed down to her nieces.",
+    "The parcel may not be delivered until Thursday because of the strike.",
+    "The newsletter can be read online or picked up at the library desk.",
+    "She shielded her eyes from the sun and watched the kites."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire (probe: may not be reproduced or distributed 0.632, protect data from loss 0.603, may not be copied 0.540; weaker 'may not be used for commercial purpose' 0.139); ordinary prose with the same words 0.005-0.054",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "copyright/privacy notice",
+ "unit_kind": "contextual",
+ "confidence": "medium-high",
+ "notes": "Peaks on ' be', ' or', ' from', ' against' and commas inside legal boilerplate, not on content words. The eligibility sentence 'eligible to sit for' fired 0.208, so formal-notice register alone is not enough."
+}

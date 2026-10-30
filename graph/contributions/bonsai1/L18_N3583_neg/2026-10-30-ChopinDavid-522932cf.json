@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-522932cf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N3583-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T22:35:26+00:00",
+ "recipe": {
+  "toolchain_commit": "a9c659db",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N3583_neg/2026-10-30-ChopinDavid-522932cf.tests.json"
+ },
+ "label": "taking a side in a dispute between parties: side with, take sides between, declare for, hand over to or pass on to the other party",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N3583_neg/2026-10-30-ChopinDavid-522932cf.tests.json",
+   "prereg_commit": "a9c659db",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.116,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.199,
+     "peak": " between"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.432,
+     "peak": "ors"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.298,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.043,
+     "peak": " support"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.172,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.184,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.095,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.02,
+     "peak": " hear"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " rivers"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.02,
+     "peak": " timber"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.102,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.037,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.03,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.178,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "a9c659db",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "siding between parties",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "The + pole is friendly communication (talk to, chat, converse, relationship). Only 'take sides between' cleared 0.30 in the probe; hand-over and pass-on frames were 0.22-0.25, so this is a weak pole and the label is a best guess at the allegiance theme in the card (support of Beijing's actions, took China's side, handed you over, choose sides).",
+ "selection": "random draw"
+}

@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-09354e1c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N1749+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N1749",
+   "pole": "+",
+   "label": "the words value/values/quantity naming a measured amount, strongest as a code property or variable name (setProperty(\"value\"), yield values) and present in prose (a predetermined quantity of water)",
+   "fire": [
+    "        self.dial.setProperty(\"value\", 50)\n",
+    "    for key, value in settings.items():\n        print(key, value)\n",
+    "The pump delivers a fixed quantity of fuel on each stroke.",
+    "    values = [row[2] for row in table]\n    return max(values)\n",
+    "The sensor returns a raw value between 0 and 1023.",
+    "Farmers sold large quantities of grain to the mills that autumn.",
+    "        self.assertValueEqual(result, expected)\n",
+    "The tax depends on the assessed value of the property."
+   ],
+   "quiet": [
+    "        self.dial.setObjectName(\"speedDial\")\n",
+    "    for key in settings.keys():\n        print(key)\n",
+    "The pump delivers fuel to the engine on each stroke.",
+    "    names = [row[0] for row in table]\n    return sorted(names)\n",
+    "The sensor returns a timestamp with every reading.",
+    "Farmers sold their grain to the mills that autumn.",
+    "        self.assertTrue(result.ok)\n",
+    "The tax depends on the location of the property."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire (probe: setProperty(\"value\") 0.875, 'predetermined quantity of water' 0.581; code without the word 0.26-0.38: StringVar 0.260, hidden_layer_sizes 0.285, setProperty(\"name\", 'volume') 0.382), so code near misses may leak; prose near misses 0.06-0.08",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "value/quantity word",
+ "unit_kind": "lexical",
+ "confidence": "medium-low",
+ "notes": "Card peaks are 'value', ' values', 'Value', '_layer', ' String', ' quantity', ' current' (electric). The setProperty frame fired 0.382 even with 'volume' in place of 'value', so the near misses avoid quantity-like string values. Probably a partial label for a value/measurement pole.",
+ "trigger": {
+  "words": [
+   "value",
+   "values",
+   "quantity",
+   "quantities"
+  ]
+ }
+}

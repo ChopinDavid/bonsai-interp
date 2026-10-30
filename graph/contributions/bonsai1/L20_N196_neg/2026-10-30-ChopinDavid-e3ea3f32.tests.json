@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e3ea3f32",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N196-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N196",
+   "pole": "-",
+   "label": "open choice: a decision or selection predicate followed by its undetermined alternative (decide whether, determine which, decision about what, choose which)",
+   "fire": [
+    "The surgeon still had to determine whether the tumour could be removed safely.",
+    "Voters will decide which of the three candidates advances to the runoff.",
+    "The committee faces a difficult choice about where to build the new depot.",
+    "Use the dropdown to select which columns should appear in the export.",
+    "Before the trip, we need to figure out whether to rent a car or take the train.",
+    "The referee had to judge which player had touched the ball last.",
+    "Investigators are trying to establish what caused the generator to fail.",
+    "The script asks the user to pick which backup to restore."
+   ],
+   "quiet": [
+    "Whether or not the tumour was benign, the surgeon ordered another scan.",
+    "The three candidates which advanced to the runoff all live in the capital.",
+    "After months of debate, the committee decided to build the depot by the river.",
+    "The export includes the date, amount and account columns by default.",
+    "Before the trip, we rented a car and bought a road atlas.",
+    "The referee blew the whistle and awarded the throw-in.",
+    "Investigators confirmed that a faulty valve caused the generator to fail.",
+    "The script restores the most recent backup automatically."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire (probe: decision about what 0.714, decide whether 0.607, determine which 0.551, choose which 0.407); 'whether' and 'which' outside a decision frame 0.003-0.048, decision verbs with a definite complement 0.020-0.032",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "decision + open alternative",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Peaks on the alternative-introducing word (whether, which, about) or on the verb inside the embedded question. The + pole is a code/definition pole ('(', ':', '=')."
+}

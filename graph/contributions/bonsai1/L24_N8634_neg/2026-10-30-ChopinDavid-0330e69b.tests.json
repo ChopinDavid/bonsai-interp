@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0330e69b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N8634-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N8634",
+   "pole": "-",
+   "label": "unclear; best guess: scraped web-page chrome (JavaScript-disabled notices, price-per-person lines, URL slugs and config keys quoted in running text)",
+   "fire": [
+    "It looks like your browser has JavaScript disabled!\nTo use the photo editor, please enable JavaScript and reload the page.",
+    "Hotel Mar Azul, Lagos, Portugal\nPrice per night 2 adults, 0 children\nPrice per person: € 85",
+    "Source: Shenandoah Valley Herald, March 3, 2014, http://www.svherald.com/news/2014/03/strasburg-council-approves-new-water-tower/",
+    "See also: www.harborlight.org/history/the-wreck-of-the-eastland for the full account.",
+    "Config key: 'allowTrailingWhitespaceAndEmptyLines' (default: false)",
+    "Bring this coupon with you when shopping for garden furniture or other outdoor supplies obtained from: Greenway Depot.",
+    "The pamphlet The Sufferings of the Faithful Baptized upon Confession was reprinted in 1748.",
+    "This design-led collage was exhibited in the main hall. It also presents itself to the wider community as an open studio."
+   ],
+   "quiet": [
+    "Your browser is up to date and the photo editor loaded without any trouble.",
+    "The hotel in Lagos charges eighty-five euros a night for two adults.",
+    "The Shenandoah Valley Herald reported that the council approved a new water tower in March 2014.",
+    "The wreck of the Eastland is described in full in the harbour museum's guidebook.",
+    "The parser ignores trailing whitespace and empty lines by default.",
+    "We bought garden furniture and a few outdoor supplies at the depot on Saturday.",
+    "The pamphlet about the sufferings of the faithful was reprinted in 1748.",
+    "The collage was exhibited in the main hall and attracted many visitors."
+   ]
+  }
+ ],
+ "predictions": "likely to fail: 1-2/8 fire. The probe of URL slugs, camelCase keys and the Defense|less title all scored 0.006-0.027.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear (web-page chrome)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card peaks are continuation pieces in odd splits (Defense|less, ear|ls, stand|ards in a URL, allow|Leading) plus a JavaScript notice and a price line, with no shared token. Nine probe sentences rebuilding those contexts stayed under 0.03, so this test is a second guess at the page-chrome reading, expected to fail."
+}

@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e3e33d9a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N8906+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N8906",
+   "pole": "+",
+   "label": "pest or disease name opened by the split piece ' sc'/' st' in biology or agriculture prose (sc|ab, sc|orch, sc|abies, st|ink bug), plus 'various' before environmental stresses",
+   "fire": [
+    "Wet springs leave the potatoes covered in scab by harvest time.",
+    "Outbreaks of scabies are common in nursing homes where residents share bedding.",
+    "Bacterial leaf scorch has killed hundreds of oaks along the avenue.",
+    "Soybean growers lose part of every crop to the brown marmorated stink bug.",
+    "The orchard inspector found scab lesions on nearly every pear.",
+    "Sailors on the long voyage developed scurvy when the lime ration ran out.",
+    "Sheep with scab must be dipped twice a year under the regulations.",
+    "The scabby patches on the dog's belly were caused by mites."
+   ],
+   "quiet": [
+    "Wet springs leave the potatoes small and watery by harvest time.",
+    "Outbreaks of flu are common in nursing homes where residents share rooms.",
+    "Powdery mildew has weakened hundreds of oaks along the avenue.",
+    "Soybean growers lose part of every crop to aphids and rust.",
+    "The foreman would scold anyone who left a scuff on the polished deck.",
+    "The captain discovered a stowaway behind the crates in the hold.",
+    "The union called the replacement workers scabs and blocked the gate.",
+    "Fire blight blackened the pear blossoms within a week."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire (probe: scab 0.957, leaf scorch 0.641, various stimuli 0.601, stink bug 0.501, scabies 0.356); the same pieces outside biology 0.12-0.28 (scold 0.129, stowaway 0.116, labour scabs 0.283) and disease words without the piece near zero",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sc/st pest-disease piece",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "The - pole fires on the same word-initial cluster pieces in Russian and German (' ск', ' Sk', ' sch'), so the neuron splits consonant-cluster openers by language and the + pole adds a pest/disease context. ' bi' (biophysical) scored only 0.077 and was dropped from the label. Near misses test the piece without the disease sense and the disease sense without the piece.",
+ "trigger": {
+  "pieces": [
+   " sc",
+   " st"
+  ]
+ }
+}

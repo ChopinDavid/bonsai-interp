@@ -1,0 +1,160 @@
+{
+ "id": "2026-10-30-ChopinDavid-09354e1c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N1749+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T22:37:37+00:00",
+ "recipe": {
+  "toolchain_commit": "a9c659db",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N1749_pos/2026-10-30-ChopinDavid-09354e1c.tests.json"
+ },
+ "label": "the words value/values/quantity naming a measured amount, strongest as a code property or variable name (setProperty(\"value\"), yield values) and present in prose (a predetermined quantity of water)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N1749_pos/2026-10-30-ChopinDavid-09354e1c.tests.json",
+   "prereg_commit": "a9c659db",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.745,
+     "peak": "value"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.06,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.248,
+     "peak": " quantity"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.072,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.235,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.043,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.301,
+     "peak": "Value"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.014,
+     "peak": " tax"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.194,
+     "peak": "speed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.041,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.105,
+     "peak": " each"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.038,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.283,
+     "peak": " reading"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": ".ok"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " tax"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.719,
+    "median_fire": 0.153,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "a9c659db",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "value/quantity word",
+ "unit_kind": "lexical",
+ "confidence": "medium-low",
+ "notes": "Card peaks are 'value', ' values', 'Value', '_layer', ' String', ' quantity', ' current' (electric). The setProperty frame fired 0.382 even with 'volume' in place of 'value', so the near misses avoid quantity-like string values. Probably a partial label for a value/measurement pole.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "value",
+   "values",
+   "quantity",
+   "quantities"
+  ]
+ }
+}

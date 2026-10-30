@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3e9580c4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N3571+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N3571",
+   "pole": "+",
+   "label": "dense / positional; best guess: assignment '=' lines in configuration-style Python (constants, self.attribute = value)",
+   "fire": [
+    "MAX_CONNECTIONS = 20\nIDLE_TIMEOUT = 300\nLOG_PATH = '/var/log/app.log'\n",
+    "        self.index = 0\n        self.buffer = []\n        self.ready = False\n",
+    "dir_data = os.path.join(BASE, 'data')\ndir_out = os.path.join(BASE, 'out')\n",
+    "        message.code = parts[0]\n        message.body = parts[1]\n",
+    "DEFAULT_WIDTH = 640\nDEFAULT_HEIGHT = 480\n",
+    "    total = 0\n    count = len(items)\n    mean = total / count\n",
+    "headers = ['Name', 'Email', 'JoinedCount', 'LastSeen']\n",
+    "CONFIG_DB_HOST = 'localhost'\nCONFIG_DB_PORT = 5432\n"
+   ],
+   "quiet": [
+    "The server allows twenty connections and closes idle ones after five minutes.",
+    "The buffer starts empty and the index starts at zero.",
+    "The data folder and the output folder sit next to each other under the base directory.",
+    "The first part of the message is the code and the second is the body.",
+    "The default window is 640 pixels wide and 480 pixels tall.",
+    "The mean is the total divided by the number of items.",
+    "The table has columns for name, email, join count and last seen.",
+    "The database runs on localhost at port 5432."
+   ]
+  }
+ ],
+ "predictions": "likely to fail: the probe was flat at 0.015-0.142 for code and prose alike (self.count = 0 at 0.128, 'The bakery sells rye bread' at 0.117).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense (code assignment)",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Broad pole (1.9% of tokens at 0.1 max) with max 6.5 and card peaks spread over ' =', identifier pieces, Korean and punctuation. Nine probe sentences all landed in a 0.02-0.14 band, so no configuration separates from the floor; recorded as dense with the assignment guess as the test."
+}

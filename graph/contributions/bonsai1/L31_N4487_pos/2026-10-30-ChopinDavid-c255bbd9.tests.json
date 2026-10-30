@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c255bbd9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N4487+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N4487",
+   "pole": "+",
+   "label": "'classic/classical' (style sense) as the predicted continuation: the first piece ' cl'/'oc' of clásica, clássica, neoclassical, or the word just before it (musique -> classique)",
+   "fire": [
+    "Mi abuelo escuchaba música clásica todas las noches antes de dormir.",
+    "Il a étudié la musique classique au conservatoire de Lyon pendant six ans.",
+    "El restaurante sirve platos clásicos de la cocina andaluza con un toque moderno.",
+    "The new courthouse was designed in the neoclassical manner, with a portico and six columns.",
+    "Ella baila ballet clásico desde los cinco años.",
+    "La banda mezcla rock clásico con ritmos caribeños en su nuevo disco.",
+    "A orquestra toca música clássica no teatro municipal aos domingos.",
+    "Es un ejemplo clásico de arquitectura colonial del siglo XVIII."
+   ],
+   "quiet": [
+    "Mi abuelo escuchaba música moderna todas las noches antes de dormir.",
+    "Il a étudié la musique électronique au conservatoire de Lyon pendant six ans.",
+    "La clínica del barrio atiende a los pacientes sin cita previa.",
+    "El clima de la costa es húmedo durante casi todo el año.",
+    "The children filed into the classroom and opened their notebooks.",
+    "Los alumnos de la clase de matemáticas presentaron el examen el viernes.",
+    "El restaurante sirve platos típicos de la cocina andaluza con un toque moderno.",
+    "A orquestra toca música popular no teatro municipal aos domingos."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire (probe: receta clásica 0.772, música clásica 0.692, musique classique 0.606 peaking on 'musique', neoclassical 0.511); near misses 0.00-0.02 (clínica 0.017, clima 0.008, classroom 0.004). 'música moderna' may leak if ' música' alone predicts clásica.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicting 'classic(al)'",
+ "unit_kind": "contextual",
+ "confidence": "medium-high",
+ "notes": "The - pole fires on the ' class'/'класс' token itself once it has arrived, so the + pole is the prediction and the - pole the realisation. Japanese クラ scored only 0.157 and the English quote-before-classic 0.116, so both were left out of the fire set."
+}

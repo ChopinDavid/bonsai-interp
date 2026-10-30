@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6a22af7c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N8163+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N8163",
+   "pole": "+",
+   "label": "newline ending a Python comment-banner line (# ====, # ----, #) or an aligned continuation line, where the next line is expected to repeat the previous line's shape",
+   "fire": [
+    "# ==================================================================\n# Configuration\n# ==================================================================\n",
+    "#\n# Copyright 2019 The Authors\n#\n# Licensed under the Apache License, Version 2.0\n#\n",
+    "    # ----------------------------------------------------------------\n    # helpers\n    # ----------------------------------------------------------------\n    def _reset(self):\n",
+    "# ******************************************************************\n#  END OF SETTINGS\n# ******************************************************************\n",
+    "subnets = [{'cidr': '10.0.%s.0/24' % i,\n            'gateway': '10.0.%s.1' % i,\n            'name': 'net%s' % i}\n           for i in range(4)]\n",
+    "########################################################\n# MODULE CONSTANTS\n########################################################\n\nMAX_RETRIES = 3\n",
+    "parser.add_argument('--input',\n                    required=True,\n                    help='input file')\n",
+    "# ------------------------------------------------------------------\n\n\ndef test_parse_dates():\n    assert parse('2019-01-01')\n"
+   ],
+   "quiet": [
+    "Configuration\n\nThe settings below control the server.\n\nMost can be left at their defaults.\n",
+    "Copyright 2019 The Authors.\nLicensed under the Apache License, Version 2.0.\nYou may not use this file except in compliance with the License.\n",
+    "Helpers\n\nThe reset method clears the cache.\nThe reload method reads the file again.\n",
+    "END OF SETTINGS\n\nThank you for reading the manual.\n",
+    "{\n  \"subnets\": [\"10.0.0.0/24\", \"10.0.1.0/24\"],\n  \"gateway\": \"10.0.0.1\"\n}\n",
+    "MODULE CONSTANTS\n\nThe maximum number of retries is three.\n",
+    "## Options\n\n- `--input`: the input file (required)\n- `--output`: the output file\n",
+    "Test: parse dates\n\nThe parser accepts ISO dates such as 2019-01-01.\n"
+   ]
+  }
+ ],
+ "predictions": "5/8 fire (probe: '# ----' banner newline 0.717, if/else block 0.214, aligned call continuation 0.085, dict continuation 0.022); prose, markdown and JSON newlines 0.001-0.044. Banner items should hold and aligned-continuation items may not.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "code banner / aligned newline",
+ "unit_kind": "contextual",
+ "confidence": "medium-low",
+ "notes": "Card peaks are '\\n', ',\\n', '#\\n' before deep alignment whitespace or another banner line. Only the comment banner cleared 0.30 in the probe; the two aligned-continuation fire items (subnets dict, add_argument) test whether alignment alone carries it. The - pole is a 'license' pole."
+}

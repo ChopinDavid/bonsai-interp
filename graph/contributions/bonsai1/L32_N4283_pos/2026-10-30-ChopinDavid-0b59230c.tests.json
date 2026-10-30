@@ -1,0 +1,60 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0b59230c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N4283+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N4283",
+   "pole": "+",
+   "label": "Spanish word-initial piece ' de'/' Rev'/' prom'/' aprove' opening a longer word (de|jo, Rev|ista, prom|over, aprove|char), where the rest of the word is still to come",
+   "fire": [
+    "Hoy les dejo unas fotos del paseo por la montaña.",
+    "La Revista de Historia Naval publicó el artículo en marzo.",
+    "El ayuntamiento quiere promover el uso de la bicicleta en el centro.",
+    "Hay que aprovechar el buen tiempo para pintar la fachada.",
+    "Después de la Revolución, el palacio se convirtió en museo.",
+    "El promedio de lluvia en abril supera los cien milímetros.",
+    "Te dejo las llaves encima de la mesa de la cocina.",
+    "El Comité Revolucionario se reunió en la vieja fábrica."
+   ],
+   "quiet": [
+    "La casa de mis abuelos tiene un patio lleno de naranjos.",
+    "El fin del verano trae las primeras lluvias al valle.",
+    "Ella deja siempre las llaves encima de la mesa de la cocina.",
+    "Quiero dejar el coche en el taller esta tarde.",
+    "The magazine published a long article on the revolution in March.",
+    "The council wants to promote cycling in the city centre.",
+    "La reparación del motor costó más de lo previsto.",
+    "Everyone said the dinner was delicious and the speech was revolutionary."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire (probe: dejo 0.817, promover 0.537, Revista 0.458, Revolución 0.389, 'Rev.' abbreviation 0.353, aprovechar 0.316); whole-token Spanish words and English whole words under 0.05, preposition 'de' 0.194 peaking elsewhere, 'del' 0.036",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Spanish word-opening piece",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "The piece fires whether or not a continuation follows ('Rev.' 0.353), so it is the token in a Spanish-looking context rather than the prediction. Near misses use single-token forms (deja, dejar) and the free preposition de/del.",
+ "trigger": {
+  "pieces": [
+   " de",
+   " Rev",
+   "Rev",
+   " prom",
+   " aprove",
+   " apro",
+   "Del",
+   "del"
+  ]
+ }
+}
