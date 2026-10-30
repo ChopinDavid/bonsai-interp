@@ -4,10 +4,10 @@
  "layer": 34,
  "index": 4551,
  "pole": "-",
- "label": "the French word-opening prefix piece ' dé' (dé|rangé, dé|licieux, dé|modée; not the whole tokens ' dém', ' dés', ' décidé'), as against French sentences on the same topics whose words do not start with a split dé-",
+ "label": "The bare token ' dé' opening a French word (dé|rangé, dé|licieux), and ' de' right after an adverb or degree word (complètement de, much more de|formed), where a dé-/de- adjective could start; weak for ' de' meaning 'of' after a noun or quantity (livre de, beaucoup de), silent on whole tokens like déjà or deliberate",
  "short": "French prefix piece ' dé'",
  "kind": "token",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-23-ChopinDavid-349b548f"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N4551_neg/2026-10-30-moridinamael-23e51d39.tests.json",
+   "prereg_commit": "09e123a5c",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.638,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.549,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.626,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.205,
+     "peak": " dés"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.413,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.638,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.336,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.596,
+     "peak": " dé"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.148,
+     "peak": " en"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.263,
+     "peak": " au"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.164,
+     "peak": " en"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.138,
+     "peak": " de"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.235,
+     "peak": "El"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.135,
+     "peak": " de"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.212,
+     "peak": " de"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.135,
+     "peak": "La"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.573,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-23e51d39"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-23-ChopinDavid-349b548f",
    "the French word-opening prefix piece ' dé' (dé|rangé, dé|licieux, dé|modée; not the whole tokens ' dém', ' dés', ' décidé'), as against French sentences on the same topics whose words do not start with a split dé-",
    "held"
+  ],
+  [
+   "2026-10-30-moridinamael-23e51d39",
+   "The bare token ' dé' opening a French word (dé|rangé, dé|licieux), and ' de' right after an adverb or degree word (complètement de, much more de|formed), where a dé-/de- adjective could start; weak for ' de' meaning 'of' after a noun or quantity (livre de, beaucoup de), silent on whole tokens like déjà or deliberate",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-23-ChopinDavid-349b548f"
+  "2026-10-23-ChopinDavid-349b548f",
+  "2026-10-30-moridinamael-23e51d39"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.0751,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 2265
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
