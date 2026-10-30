@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-1b800fe1",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N8916+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T00:33:13+00:00",
+ "recipe": {
+  "toolchain_commit": "d2768a86",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N8916_pos/2026-10-29-ChopinDavid-1b800fe1.tests.json"
+ },
+ "label": "the number of a referenced enumerated item: 'point 2 of Rule 8D' 0.57, 'Step 1' 0.40, 'Q1' 0.31, 'number 3' 0.23, 'paragraph 2' 0.16; numbers as quantities, years and 'the first time' are silent (0.01)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N8916_pos/2026-10-29-ChopinDavid-1b800fe1.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.649,
+     "peak": "3"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.258,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.251,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.578,
+     "peak": " step"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.216,
+     "peak": "5"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.292,
+     "peak": "7"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.322,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.477,
+     "peak": "6"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " tenant"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": " attach"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": "For"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " wait"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " solved"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " paper"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": "Notice"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.307,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d2768a86",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "number of a referenced step/question/point",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 33, density 0.094%, peaks '1' x5, '5' x3, ' second' x3, ' step' x3, '2' x2, ':\\n' x3 in references to numbered items (paragraph 2 above, go to number 3, Q1, Step 1, point 2 of Rule 8D, Exercício 5.27). Probe: point 2 0.570, Step 1 0.402, Q1 0.314, number 3 0.226, paragraph 2 0.163, lessons list 0.116; 30 students 0.011, 2015 0.011, the first time 0.010. Direction clear, magnitude moderate: half the probe items cleared 0.3, so the fire items favour point/step/Q/item/clause references.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-14c221a2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N6789+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T00:33:25+00:00",
+ "recipe": {
+  "toolchain_commit": "d2768a86",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N6789_pos/2026-10-29-ChopinDavid-14c221a2.tests.json"
+ },
+ "label": "a plural agent noun inside a situation-framing phrase: 'stories about hikers' 0.91, 'a case of a few people' 0.73, 'stories of husbands and wives' 0.50, 'cases of captives' 0.45, 'with mining companies still' 0.36; the activation sits on the noun and does not need the following participle (hikers 0.91 with and without 'getting into trouble'), while the same noun as a clause subject ('Hikers often get into trouble') is silent (0.04)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N6789_pos/2026-10-29-ChopinDavid-14c221a2.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.497,
+     "peak": " neighbours"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.531,
+     "peak": " tourists"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.51,
+     "peak": " landlords"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.561,
+     "peak": " fishermen"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.531,
+     "peak": " nurses"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.579,
+     "peak": " drivers"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.671,
+     "peak": " students"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.525,
+     "peak": " farmers"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " bears"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.021,
+     "peak": " identity"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.236,
+     "peak": " fog"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " shifts"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.234,
+     "peak": " poor"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.351,
+     "peak": " still"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.531,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d2768a86",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "plural agent noun in 'stories about / a case of'",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 86.5, density 0.171%, peaks ' people', 'congreg|ations', ' drinkers', 'capt|ives', ' alone', 'h|ikers', ' posts', ' wives', ' companies', each a plural noun inside 'a case of…', 'stories about…', 'with … still', before a participle. Probe: hikers 0.913 both with and without 'getting into trouble', people 0.729, wives 0.498, captives 0.445 both ways, companies 0.358; 'Hikers often get into trouble' 0.037, filler 0.002. The frame plus the plural agent noun is the trigger; the participle is predicted, not required.",
+ "selection": "random draw"
+}

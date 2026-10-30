@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-2a9acc63",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N3963+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T00:32:03+00:00",
+ "recipe": {
+  "toolchain_commit": "d2768a86",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N3963_pos/2026-10-29-ChopinDavid-2a9acc63.tests.json"
+ },
+ "label": "transcribed spoken-lecture discourse: a sentence-opening 'And'/'So' or the filler 'you know' inside a talk or interview transcript ('And you know, I wouldn't dream' 1.01, 'And the ratio here does' 0.73, 'So what I want to do' 0.58, 'you know, you add' 0.53); the same content as written exposition and 'know' as a verb are silent (≤0.007)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N3963_pos/2026-10-29-ChopinDavid-2a9acc63.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.532,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.424,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.401,
+     "peak": " me"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.651,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.194,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.349,
+     "peak": " here"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.304,
+     "peak": " know"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.386,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " law"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.062,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.035,
+     "peak": " hosts"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " ratio"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": "We"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " is"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.394,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d2768a86",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "spoken-transcript And/So/you know",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 39, density 0.048%, peaks ' know' x10 (all 'you know,'), ' And' x5, ' I' x3 ('So I say to myself', 'what I want to do'), in lecture and podcast transcripts. Probe: 1.009, 0.732, 0.579, 0.532 for the transcript items; 'you know, prevent a dog' only 0.183 (mid-sentence filler in a conditional); written versions 0.003-0.007, 'If you know the answer' 0.003. Register is the trigger, not the words: 'know' as a verb in written prose is silent.",
+ "selection": "random draw"
+}
