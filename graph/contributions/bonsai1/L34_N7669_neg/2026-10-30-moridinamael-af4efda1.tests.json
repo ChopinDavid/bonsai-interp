@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-30-moridinamael-af4efda1",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L34/N7669-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:08:40+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the word piece ' unw' (unworthy, unwarranted, unwelcome, unwavering)"
+ },
+ "neighbours": [
+  {
+   "unit": "L34/N7669",
+   "pole": "-",
+   "label": "the word piece ' unw' (unworthy, unwarranted, unwavering), and ' of' in the idiom 'out of' (out of touch, out of bounds), not literal 'out of the room'",
+   "fire": [
+    "The committee rejected the claim as completely unwarranted.",
+    "She felt unworthy of the award they had given her.",
+    "His unwavering support carried the team through the season.",
+    "The old senator seemed hopelessly out of touch with young voters.",
+    "The referee ruled that the ball had gone out of bounds.",
+    "Please don't leave the dishes unwashed overnight.",
+    "We ran out of time before the last question.",
+    "The singer was clearly out of tune during the second verse."
+   ],
+   "quiet": [
+    "The committee rejected the claim as completely unjustified.",
+    "She felt undeserving of the award they had given her.",
+    "His steady support carried the team through the season.",
+    "The old senator seemed hopelessly disconnected from young voters.",
+    "The referee ruled that the ball had crossed the sideline.",
+    "Please don't leave the dishes dirty overnight.",
+    "She walked out of the kitchen with a plate of cookies.",
+    "The cat jumped out of the box and ran away."
+   ]
+  }
+ ],
+ "predictions": "Expect ' unw' sentences to fire strongly and idiomatic 'out of' moderately (0.2-0.5); literal out of should stay quiet. Risk: 'unwashed' may tokenize differently, and 'ran out of time' may be weak.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo",
+   "neighbors"
+  ]
+ }
+}
