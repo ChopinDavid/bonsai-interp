@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N8316-",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 8316,
+ "pole": "-",
+ "label": "predicting 'exponential': the word-initial piece ' ex'/'_ex' where 'ponencial/ponential' is expected (de forma ex|ponencial 1.02, wait_ex|ponential 0.46, эксп|оненциальный 0.23) and, more weakly, the word before an expected 'exponential' ('de forma' in 'de forma constante' 0.44, 'will grow' 0.35); ' ex' before another tail is weak (ex|orbitant 0.21) and 'exponential' as a single English token is not a trigger",
+ "short": "predicts 'exponential'",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N8316_neg/2026-10-29-ChopinDavid-761fe394.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.791,
+     "peak": " ex"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.587,
+     "peak": " es"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.537,
+     "peak": " ex"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.393,
+     "peak": "_ex"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.619,
+     "peak": " ex"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.423,
+     "peak": " ex"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.43,
+     "peak": " эксп"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.214,
+     "peak": " ex"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": "-mar"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.331,
+     "peak": " ex"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": " sábado"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.15,
+     "peak": "="
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.029,
+     "peak": "ается"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.0,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.562,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-761fe394"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-761fe394",
+   "predicting 'exponential': the word-initial piece ' ex'/'_ex' where 'ponencial/ponential' is expected (de forma ex|ponencial 1.02, wait_ex|ponential 0.46, эксп|оненциальный 0.23) and, more weakly, the word before an expected 'exponential' ('de forma' in 'de forma constante' 0.44, 'will grow' 0.35); ' ex' before another tail is weak (ex|orbitant 0.21) and 'exponential' as a single English token is not a trigger",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-761fe394"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N4977-",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 4977,
+ "pole": "-",
+ "label": "'list' completing the compound 'bucket list' ('a sure bucket list trip' 1.02, 'The Bucket List' 0.96, 'on my bucket list' 0.82); weaker on other fixed two-word compounds ('quantum leap' 0.38, 'Battle Creek' 0.31); 'shopping list' 0.04, 'reading list' 0.01 and 'bucket' alone 0.01 are quiet",
+ "short": "bucket list",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N4977_neg/2026-10-29-ChopinDavid-e953388e.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.827,
+     "peak": " list"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.813,
+     "peak": " list"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.907,
+     "peak": " lists"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.946,
+     "peak": " List"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.887,
+     "peak": " list"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.081,
+     "peak": " list"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.923,
+     "peak": " list"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.758,
+     "peak": " list"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.134,
+     "peak": " list"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " off"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": "ian"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": " watched"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " your"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " divers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " task"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": " horses"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.897,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-e953388e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-e953388e",
+   "'list' completing the compound 'bucket list' ('a sure bucket list trip' 1.02, 'The Bucket List' 0.96, 'on my bucket list' 0.82); weaker on other fixed two-word compounds ('quantum leap' 0.38, 'Battle Creek' 0.31); 'shopping list' 0.04, 'reading list' 0.01 and 'bucket' alone 0.01 are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-e953388e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

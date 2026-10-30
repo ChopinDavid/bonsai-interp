@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N7766-",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 7766,
+ "pole": "-",
+ "label": "a source attribution in religious scholarship: the hadith collector after رواه (رواه البخاري 0.69, رواه مسلم 0.67), a bracketed collector after an English hadith ('(Ibn Majah)' 0.38, '(Tirmidhi)' 0.25), a rabbinic name or code (Rav Yeh|uda 0.50, 'Mishneh Torah (Hilchot' 0.30); an academic citation '(Walker, 2017)' 0.01 and Arabic prose without a citation 0.01 are quiet",
+ "short": "hadith/Torah source attribution",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N7766_neg/2026-10-29-ChopinDavid-f89c409f.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.672,
+     "peak": "ه"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.714,
+     "peak": " الب"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.247,
+     "peak": " وم"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.491,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.07,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.624,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.204,
+     "peak": " Mish"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.365,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": " working"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " trade"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.027,
+     "peak": "كه"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": "شر"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " thirty"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.055,
+     "peak": "he"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.428,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-f89c409f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-f89c409f",
+   "a source attribution in religious scholarship: the hadith collector after رواه (رواه البخاري 0.69, رواه مسلم 0.67), a bracketed collector after an English hadith ('(Ibn Majah)' 0.38, '(Tirmidhi)' 0.25), a rabbinic name or code (Rav Yeh|uda 0.50, 'Mishneh Torah (Hilchot' 0.30); an academic citation '(Walker, 2017)' 0.01 and Arabic prose without a citation 0.01 are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-f89c409f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

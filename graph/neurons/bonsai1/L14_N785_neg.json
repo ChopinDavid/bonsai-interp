@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L14/N785-",
+ "model": "bonsai1",
+ "layer": 14,
+ "index": 785,
+ "pole": "-",
+ "label": "the physical make-up and wear of a material component in technical prose ('muscle fibres consist of' 0.61, 'batteries lose their ability to hold a full charge' 0.48, 'open filament test checks the lamp' 0.35, 'subsurface deformation ... dry sliding wear' 0.28, Schott|ky diode 0.22); non-technical and administrative sentences 0.01-0.02",
+ "short": "material component wear",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N785_neg/2026-10-29-ChopinDavid-6bd00cee.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.604,
+     "peak": " capacity"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.381,
+     "peak": " collagen"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.558,
+     "peak": "ins"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.247,
+     "peak": "urface"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.466,
+     "peak": "arden"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.221,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.114,
+     "peak": " oxide"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.44,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": "Over"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": " committee"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " agreement"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.024,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " is"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.41,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-6bd00cee"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-6bd00cee",
+   "the physical make-up and wear of a material component in technical prose ('muscle fibres consist of' 0.61, 'batteries lose their ability to hold a full charge' 0.48, 'open filament test checks the lamp' 0.35, 'subsurface deformation ... dry sliding wear' 0.28, Schott|ky diode 0.22); non-technical and administrative sentences 0.01-0.02",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-6bd00cee"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L5/N7941-",
+ "model": "bonsai1",
+ "layer": 5,
+ "index": 7941,
+ "pole": "-",
+ "label": "the verb 'stand' in its forms plus 'steady' (' stood' 0.50, un|steady 0.52, ' stand' 0.41, ' stands' 0.38, steady-state 0.29); 'standard' 0.02 and the same sentences with 'speak up' (0.04) or 'emerges' (0.09) in place of the verb are quiet",
+ "short": "stand/stood/steady",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N7941_neg/2026-10-29-ChopinDavid-e3c0e1b2.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.391,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.021,
+     "peak": "Of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.286,
+     "peak": " stood"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.024,
+     "peak": " while"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.589,
+     "peak": "steady"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.077,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.223,
+     "peak": " stood"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.203,
+     "peak": " standing"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.083,
+     "peak": " step"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": "Of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": " while"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.044,
+     "peak": " dizzy"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.022,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " requires"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " took"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.867,
+    "median_fire": 0.213,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-e3c0e1b2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-e3c0e1b2",
+   "the verb 'stand' in its forms plus 'steady' (' stood' 0.50, un|steady 0.52, ' stand' 0.41, ' stands' 0.38, steady-state 0.29); 'standard' 0.02 and the same sentences with 'speak up' (0.04) or 'emerges' (0.09) in place of the verb are quiet",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-e3c0e1b2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

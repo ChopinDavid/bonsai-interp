@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L17/N9363+",
+ "model": "bonsai1",
+ "layer": 17,
+ "index": 9363,
+ "pole": "+",
+ "label": "the comparison class in a lagging-behind comparison: the others who already have what the subject lacks ('the kind the NFL and the NBA already have' 1.27, 'that all the other major appliances have' 0.83, 'as other countries surge ahead' 0.64, 'lags far behind semiconductor development' 0.61, 'in all other fields' 0.57); the same entities without the lag comparison are at 0.06 or less",
+ "short": "what others have already achieved",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N9363_pos/2026-10-29-ChopinDavid-93365185.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.914,
+     "peak": " enjoyed"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.753,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.511,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.568,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.634,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.333,
+     "peak": " sport"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.613,
+     "peak": " already"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.39,
+     "peak": " sector"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " carries"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.031,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " departments"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " states"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " clubs"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.028,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.062,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.591,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-93365185"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-93365185",
+   "the comparison class in a lagging-behind comparison: the others who already have what the subject lacks ('the kind the NFL and the NBA already have' 1.27, 'that all the other major appliances have' 0.83, 'as other countries surge ahead' 0.64, 'lags far behind semiconductor development' 0.61, 'in all other fields' 0.57); the same entities without the lag comparison are at 0.06 or less",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-93365185"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

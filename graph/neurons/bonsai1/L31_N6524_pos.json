@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L31/N6524+",
+ "model": "bonsai1",
+ "layer": 31,
+ "index": 6524,
+ "pole": "+",
+ "label": "'full' as the first half of the hyphenated compound 'full-text' in a library or database setting ('a searchable full-text collection' 0.92); 'full' before a separate 'text' ('the full text of the ruling' 0.01, sentence-initial 'Full text not available' 0.09), 'full access' 0.09, Voll|text 0.12, 'full moon' 0.05 and 'full name' 0.01 are quiet",
+ "short": "'full' of full-text",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N6524_pos/2026-10-29-ChopinDavid-49fdb1bf.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.405,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.095,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.647,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.294,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.403,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.551,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.026,
+     "peak": " full"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.71,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " every"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.095,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.293,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.034,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.553,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.046,
+     "peak": " full"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.805,
+    "median_fire": 0.404,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-49fdb1bf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-49fdb1bf",
+   "'full' as the first half of the hyphenated compound 'full-text' in a library or database setting ('a searchable full-text collection' 0.92); 'full' before a separate 'text' ('the full text of the ruling' 0.01, sentence-initial 'Full text not available' 0.09), 'full access' 0.09, Voll|text 0.12, 'full moon' 0.05 and 'full name' 0.01 are quiet",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-49fdb1bf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N9730+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 9730,
+ "pole": "+",
+ "label": "unclear: the probe found no trigger above 0.32. Best guess from the probe: the verb of a temporal or conditional subordinate clause ('until she reaches for the toy' 0.32, 'as soon as Emma begins to reach' 0.30, 'it did not burn up' 0.25, 안오면 0.11); plain main-clause sentences are 0.00-0.02; a broad pole (1.1% of tokens reach 0.1 of max)",
+ "short": "subordinate-clause verb (unclear)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N9730_pos/2026-10-29-ChopinDavid-6afbff35.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.332,
+     "peak": " settles"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.376,
+     "peak": " starts"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.148,
+     "peak": " dry"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.208,
+     "peak": " drift"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.222,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.134,
+     "peak": " glue"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.126,
+     "peak": "�"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.162,
+     "peak": " bottle"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.054,
+     "peak": "med"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.154,
+     "peak": "ist"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.097,
+     "peak": " dried"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.176,
+     "peak": " during"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.287,
+     "peak": "arked"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.138,
+     "peak": " overnight"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.103,
+     "peak": "일"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.122,
+     "peak": " quietly"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.185,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-6afbff35"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-6afbff35",
+   "unclear: the probe found no trigger above 0.32. Best guess from the probe: the verb of a temporal or conditional subordinate clause ('until she reaches for the toy' 0.32, 'as soon as Emma begins to reach' 0.30, 'it did not burn up' 0.25, 안오면 0.11); plain main-clause sentences are 0.00-0.02; a broad pole (1.1% of tokens reach 0.1 of max)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-6afbff35"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

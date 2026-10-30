@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N12213+",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 12213,
+ "pole": "+",
+ "label": "a Chinese pause mark (、 or ，) after a descriptive predicate phrase in a run of parallel descriptions (景色光彩耀眼、美不胜收 0.56, 浓眉大眼，身材高大 0.46, 紧张有序、精彩纷呈 0.37, 内容丰富、讲解透彻 0.33); the comma of a narrative or reporting clause is weaker (去了北京，然后 0.23, 成立于1998年，总部 0.16, 老师说， 0.06) and an English semicolon list is 0.04",
+ "short": "Chinese pause after descriptive phrase",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N12213_pos/2026-10-29-ChopinDavid-bc1369b2.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.487,
+     "peak": "、"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.546,
+     "peak": "，"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.553,
+     "peak": "就"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.357,
+     "peak": "，"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.381,
+     "peak": "，"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.476,
+     "peak": "，"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.486,
+     "peak": "、"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.34,
+     "peak": "、"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.261,
+     "peak": "，"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.378,
+     "peak": "目前"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": "下周"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.168,
+     "peak": "，"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.051,
+     "peak": "然后"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": "年底前"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.202,
+     "peak": "已经"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.146,
+     "peak": "大家"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.481,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-bc1369b2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-bc1369b2",
+   "a Chinese pause mark (、 or ，) after a descriptive predicate phrase in a run of parallel descriptions (景色光彩耀眼、美不胜收 0.56, 浓眉大眼，身材高大 0.46, 紧张有序、精彩纷呈 0.37, 内容丰富、讲解透彻 0.33); the comma of a narrative or reporting clause is weaker (去了北京，然后 0.23, 成立于1998年，总部 0.16, 老师说， 0.06) and an English semicolon list is 0.04",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-bc1369b2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
