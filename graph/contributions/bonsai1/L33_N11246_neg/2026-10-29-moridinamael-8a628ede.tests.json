@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-29-moridinamael-8a628ede",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L33/N11246-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:14:07+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "a short word-initial piece (' inc', ' conc', ' enc', ' ecc', ' vic') that opens a longer Latinate word split by the tokenizer (inc|andescent, conc|ierge, enc|ircle), as against whole-token words with the same opening (income, concise, encounter, vicinity)"
+ },
+ "neighbours": [
+  {
+   "unit": "L33/N11246",
+   "pole": "-",
+   "label": "an unfinished word-opening piece that ends in the letter c (inc, conc, acc, prec, succ, ecc, vic), cut mid-word with the rest of the word in a later token; not whole words (income, concise, access) and not non-c fragments",
+   "fire": [
+    "Her eccentricities made her the most memorable professor in the department.",
+    "The lawyer gave a succinctly worded summary of the case.",
+    "He tried to concoct a believable excuse for missing the meeting.",
+    "The precociousness of the young violinist astonished the judges.",
+    "After the fever, his speech became incoherently rambling.",
+    "The vicissitudes of farming life taught them patience.",
+    "Interest will slowly accrete in the dormant account over the decades.",
+    "The old lamp glowed with an incandescently bright filament."
+   ],
+   "quiet": [
+    "Her strange habits made her the most memorable professor in the department.",
+    "The lawyer gave a brief summary of the case.",
+    "He tried to invent a believable excuse for missing the meeting.",
+    "The talent of the young violinist astonished the judges.",
+    "After the fever, his speech became slurred and rambling.",
+    "The ups and downs of farming life taught them patience.",
+    "Interest will slowly build in the dormant account over the decades.",
+    "The old lamp glowed with a bright filament."
+   ]
+  }
+ ],
+ "predictions": "Expect most fire sentences to hold (inc, succ, conc, vic, ecc pieces); risk: accrete / precocious may be whole tokens or split elsewhere. About 6/8 fire, 0 near misses.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "neighbors",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
