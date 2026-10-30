@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-813ea33a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N3718-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:12:14+00:00",
+ "recipe": {
+  "toolchain_commit": "2a0da68b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N3718_neg/2026-10-30-lm1909-813ea33a.tests.json"
+ },
+ "label": "Glossary or dictionary-style definitions: a term, a colon, then its definition ('Watershed: a chiefly British term that means…', 'Multimeter: What is it?', 'Volcano: a burning mountain.'), firing on 'term', 'that', 'it' or the final period; ordinary sentences about the same things stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N3718_neg/2026-10-30-lm1909-813ea33a.tests.json",
+   "prereg_commit": "2a0da68b",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.116,
+     "peak": " word"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.61,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.027,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.225,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.455,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.742,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.554,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.538,
+     "peak": " term"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " ships"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " morning"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.026,
+     "peak": " falling"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " near"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.582,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2a0da68b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "glossary-style 'Term: definition'",
+ "unit_kind": "format / contextual",
+ "confidence": 0.7,
+ "notes": "Card: peaks on \"'s\", ' they', '.', ' term' x3, ' It', ' it' in glossary or Q&A definitions (Watershed: a chiefly British term that means; DMM: What is it?; Volcano: a burning mountain.). Exploratory probe: definitions 0.57-0.96; plain sentences 0.004-0.006.",
+ "selection": "random draw"
+}
