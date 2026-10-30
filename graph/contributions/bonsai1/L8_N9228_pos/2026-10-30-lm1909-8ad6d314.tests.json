@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8ad6d314",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N9228+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N9228",
+   "pole": "+",
+   "label": "The first piece of a split word whose ending is predictable from context: ' arch' of 'archipelago' and ' horn' of 'horned (owl)'; the same places and animals described without those words stay quiet.",
+   "fire": [
+    "Indonesia is the largest archipelago on Earth.",
+    "A great horned owl nested in the barn.",
+    "The ferry crosses the archipelago twice a week.",
+    "The horned lizard squirts blood from its eyes.",
+    "Stockholm sits at the edge of an archipelago.",
+    "We heard a great horned owl calling at dusk.",
+    "The archipelago has over a thousand islands.",
+    "Horned vipers hide in the desert sand."
+   ],
+   "quiet": [
+    "Indonesia is the largest island nation on Earth.",
+    "A barn owl nested in the barn.",
+    "The ferry crosses the bay twice a week.",
+    "The spiny lizard hides under rocks.",
+    "Stockholm sits at the edge of the sea.",
+    "We heard a tawny owl calling at dusk.",
+    "The country has over a thousand islands.",
+    "Desert vipers hide in the sand."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' arch'(ipelago) / ' horn'(ed owl)",
+ "unit_kind": "token piece / prediction",
+ "confidence": 0.55,
+ "notes": "Card: ' arch' x9, ' horn' x2 (great⟦ horn⟧ed owl), ' Arch' x2, '-cl' (bush-clad); auto test held (AUROC 1.00) for ' arch' right before 'ipel'. Tokenizer: arch|ipel|ago, horn|ed. Exploratory probe: 'a large archipelago' 0.75, 'great horned owl' 0.80; 'thousands of islands' 0.02, 'great grey owl' 0.05."
+}

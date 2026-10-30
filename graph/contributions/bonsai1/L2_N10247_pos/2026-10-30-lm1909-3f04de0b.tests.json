@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3f04de0b",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N10247+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N10247",
+   "pole": "+",
+   "label": "The piece 'كت' in Arabic شراكته / بشراكتها / شراكتنا ('its/her/our partnership'), where 'partnership' takes a possessive suffix; شراكة without a suffix and other Arabic words stay low.",
+   "fire": [
+    "تفخر الشركة بشراكتها مع البنك الوطني.",
+    "أعلن النادي عن شراكته مع شركة الطيران.",
+    "نحن سعداء بشراكتنا مع الجامعة.",
+    "تحدث المدير عن شراكتهم الطويلة مع المصنع.",
+    "يفخر الفندق بشراكته مع وكالات السفر.",
+    "أنهت الشركة شراكتها مع المورد.",
+    "عززت البلدية شراكتها مع المدارس.",
+    "يواصل المتحف شراكته مع الجامعات."
+   ],
+   "quiet": [
+    "تفخر الشركة بعملها مع البنك الوطني.",
+    "أعلن النادي عن اتفاق مع شركة الطيران.",
+    "نحن سعداء بالعمل مع الجامعة.",
+    "تحدث المدير عن علاقتهم الطويلة مع المصنع.",
+    "يفخر الفندق بخدماته لوكالات السفر.",
+    "أنهت الشركة عقدها مع المورد.",
+    "عززت البلدية دعمها للمدارس.",
+    "يواصل المتحف تعاونه مع الجامعات."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Arabic 'كت' in شراكته (partnership + suffix)",
+ "unit_kind": "token piece",
+ "confidence": 0.55,
+ "notes": "Weak pole (corpus max 3.83), gate-closed regime. Card: 'كت' x17, almost all in TripAdvisor's Arabic boilerplate 'يفخر TripAdvisor بشراكته مع Booking.com'; auto test held (AUROC 1.00) for 'كت' right after 'را'. Tokenizer: بش|را|كت|ها, ش|را|كت|ه, بش|را|كت|نا, ش|را|كت|هم; شراكة is ش|را|كة. Exploratory probe: بشراكته 0.71, شراكة 0.15, بعمله 0.14."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8313e3f6",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N1445+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N1445",
+   "pole": "+",
+   "label": "Low-confidence guess: a word that adds a second category or label inside a description of who is covered ('grants or scholarships', 'held by independent X', 'voters … who can't vote'); no clear trigger.",
+   "fire": [
+    "Aid comes as loans or bursaries for each student.",
+    "The seat is held by independent candidate Jane Roe.",
+    "The plan covers renters or homeowners in the county.",
+    "Benefits go to veterans or their widows.",
+    "The district includes towns and unincorporated areas who vote separately.",
+    "Funding is available as grants or prizes.",
+    "The ward is held by independent councillor Tom Lee.",
+    "Support is offered to carers or family members."
+   ],
+   "quiet": [
+    "Aid comes as loans for each student.",
+    "The seat is held by Jane Roe.",
+    "The plan covers renters in the county.",
+    "Benefits go to veterans.",
+    "The district includes three towns.",
+    "Funding is available as grants.",
+    "The ward is held by Tom Lee.",
+    "Support is offered to carers."
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.15; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "second category in a description (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: no single token (' and' x5, ',' x5, ' or', ' independent', ' who'). Exploratory probe: 'grants or scholarships' 0.03, 'independent Justin Amash' 0.13. Expected to fail."
+}

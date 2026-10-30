@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3a2f0407",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N7699+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N7699",
+   "pole": "+",
+   "label": "' family' right after a possessive ('his family', 'Alana's family', 'her husband's family'); sentences about the same people without 'family' stay quiet.",
+   "fire": [
+    "She spent Christmas with her husband's family.",
+    "Tom moved in with his girlfriend's family.",
+    "The boy hid the letter from his family.",
+    "We stayed with Maria's family in Lisbon.",
+    "He never told his family about the debt.",
+    "Anna went on holiday with her friend's family.",
+    "The coach phoned the player's family.",
+    "Their family runs a bakery in town."
+   ],
+   "quiet": [
+    "She spent Christmas with her husband.",
+    "Tom moved in with his girlfriend.",
+    "The boy hid the letter from his teacher.",
+    "We stayed with Maria in Lisbon.",
+    "He never told his boss about the debt.",
+    "Anna went on holiday with her friend.",
+    "The coach phoned the player.",
+    "Their uncle runs a bakery in town."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4; near misses below 0.05; median at risk",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' family' after a possessive",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.4,
+ "notes": "Card: ' father' x3, ' family' x2, ' +' x2, ' players' x2, ' diagnosed' (Bethany goes with Alana’s⟦ family⟧; from her husband and his⟦ family⟧). Exploratory probe: 'his family' 0.29, \"Alana's family\" 0.26; without 'family' 0.01. The median may fall below 0.20."
+}

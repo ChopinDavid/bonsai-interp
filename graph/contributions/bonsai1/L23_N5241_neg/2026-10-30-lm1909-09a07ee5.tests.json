@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-09a07ee5",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N5241-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N5241",
+   "pole": "-",
+   "label": "\"='\" that opens a quoted string value for a keyword argument in Python model or config code (related_name='posts', backref='owner', on_delete=…, verbose_name='…'); keyword arguments with numbers or names stay low.",
+   "fire": [
+    "    author = models.ForeignKey(User, related_name='articles', on_delete=models.CASCADE)",
+    "    orders = db.relationship('Order', backref='customer')",
+    "    title = models.CharField(max_length=200, verbose_name='Title')",
+    "    parser.add_argument('--out', default='result.txt')",
+    "    groups = models.ManyToManyField(Group, related_name='members')",
+    "    logger = logging.getLogger(name='app')",
+    "    plt.plot(x, y, color='red', label='data')",
+    "    df.to_csv(path, sep=';', encoding='utf-8')"
+   ],
+   "quiet": [
+    "    author = models.ForeignKey(User, on_delete=models.CASCADE)",
+    "    orders = db.relationship(Order, lazy=True)",
+    "    title = models.CharField(max_length=200, blank=True)",
+    "    parser.add_argument('--out', default=None)",
+    "    groups = models.ManyToManyField(Group, blank=True)",
+    "    logger = logging.getLogger(__name__)",
+    "    plt.plot(x, y, linewidth=2, alpha=0.5)",
+    "    df.to_csv(path, index=False)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.2 (broad pole)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "\"='\" opening a keyword string argument",
+ "unit_kind": "code / token",
+ "confidence": 0.6,
+ "notes": "Broad pole (5.8% of tokens above 0.1). Card: \"='\" x3, '-' x2, Arabic ' في' x2 (related_name⟦='⟧homunculus_prereq; backref⟦='⟧user). Exploratory probe: related_name='posts' 0.47, backref='owner' 0.53; max_length=100 0.09."
+}

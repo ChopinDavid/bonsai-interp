@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a77baab8",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N3403+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N3403",
+   "pole": "+",
+   "label": "Low-confidence guess: a weak, broad unit; best guess tested: the final piece of a split proper name in fantasy or foreign text (Minas Morg|ul).",
+   "fire": [
+    "The orcs marched out of Minas Morgul.",
+    "Frodo rested in Rivendell for weeks.",
+    "The riders came from Isengard.",
+    "Gandalf rode to Minas Tirith.",
+    "The army gathered near Barad-dûr.",
+    "Elves lived in Lothlórien.",
+    "The road led to Dol Guldur.",
+    "Ships sailed from the Grey Havens."
+   ],
+   "quiet": [
+    "The orcs marched out of the fortress.",
+    "Frodo rested in the valley for weeks.",
+    "The riders came from the west.",
+    "Gandalf rode to the city.",
+    "The army gathered near the tower.",
+    "Elves lived in the forest.",
+    "The road led to the hill.",
+    "Ships sailed from the harbour."
+   ]
+  }
+ ],
+ "predictions": "fire 0.0-0.2; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "final piece of a split name (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Weak, broad pole (3.2% of tokens above 0.1). Card: no single token (Korean '가', 'ul' (Minas Morg⟦ul⟧), ' Harvey', ' Cloud'). Not probed. Expected to fail."
+}

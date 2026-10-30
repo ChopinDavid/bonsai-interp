@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-c6855738",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N9843+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N9843",
+   "pole": "+",
+   "label": "Low-confidence guess: a weak, broad layer-0 unit; best guess tested: the adjective suffix piece 'ic' in a split word ('formula|ic', 'mus|ic' style splits) in scholarly text.",
+   "fire": [
+    "Cædmon is often read as a formulaic poet.",
+    "The epic uses many formulaic phrases.",
+    "Scholars study the formulaic style of oral verse.",
+    "The ballad has a formulaic refrain.",
+    "Homer's formulaic epithets repeat often.",
+    "The sermon follows a formulaic pattern.",
+    "Folk tales open with formulaic lines.",
+    "Her essay treats formulaic language in Beowulf."
+   ],
+   "quiet": [
+    "Cædmon is often read as a gifted poet.",
+    "The epic uses many long phrases.",
+    "Scholars study the style of oral verse.",
+    "The ballad has a simple refrain.",
+    "Homer's epithets repeat often.",
+    "The sermon follows a clear pattern.",
+    "Folk tales open with familiar lines.",
+    "Her essay treats language in Beowulf."
+   ]
+  }
+ ],
+ "predictions": "fire 0.0-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "weak broad unit (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Weak, broad pole (corpus max 0.27, 5.6% of tokens above 0.1), gate-closed regime. Card: ' �' x7, 'и' x4, ' of' x3 (\"Cædmon as formula⟦ic⟧ poet\"). Not probed. Expected to fail."
+}
