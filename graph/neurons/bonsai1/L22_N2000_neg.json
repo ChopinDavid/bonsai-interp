@@ -4,7 +4,7 @@
  "layer": 22,
  "index": 2000,
  "pole": "-",
- "label": "Mid-phrase tokens inside stock technical or error phrases and code identifiers, just before the phrase finishes (timed|out, reset by|peer, out of|date, SERVICE_UN|AVAILABLE); also non-final pieces of Korean words; near zero on ordinary prose",
+ "label": "Interior words and word-pieces of hands-on software/system text (error and log messages, code identifiers, IT-support and config instructions, even casual troubleshooting talk, in any language); near zero in ordinary prose and in abstract computing explainers",
  "short": "code error/override words",
  "kind": "unclear",
  "status": "held",
@@ -375,6 +375,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-30-moridinamael-8c71f77d"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N2000_neg/2026-10-30-moridinamael-3d13eabf.tests.json",
+   "prereg_commit": "58a87a0e7",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.544,
+     "peak": "겨"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.702,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.562,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.249,
+     "peak": " throws"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.364,
+     "peak": " server"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.754,
+     "peak": "_NOT"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.413,
+     "peak": "-p"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.227,
+     "peak": " postgres"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.057,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.051,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.055,
+     "peak": " computing"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.066,
+     "peak": " under"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.1,
+     "peak": " programmers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " river"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.04,
+     "peak": "uela"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.479,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-3d13eabf"
   }
  ],
  "label_history": [
@@ -392,6 +514,11 @@
    "2026-10-30-moridinamael-8c71f77d",
    "Mid-phrase tokens inside stock technical or error phrases and code identifiers, just before the phrase finishes (timed|out, reset by|peer, out of|date, SERVICE_UN|AVAILABLE); also non-final pieces of Korean words; near zero on ordinary prose",
    "held"
+  ],
+  [
+   "2026-10-30-moridinamael-3d13eabf",
+   "Interior words and word-pieces of hands-on software/system text (error and log messages, code identifiers, IT-support and config instructions, even casual troubleshooting talk, in any language); near zero in ordinary prose and in abstract computing explainers",
+   "held"
   ]
  ],
  "examples": [],
@@ -404,21 +531,22 @@
  "contributions": [
   "2026-10-22-ChopinDavid-5b2c3705",
   "2026-10-30-moridinamael-01bfd37f",
-  "2026-10-30-moridinamael-8c71f77d"
+  "2026-10-30-moridinamael-8c71f77d",
+  "2026-10-30-moridinamael-3d13eabf"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 2
+  "refine": 3
  },
  "replications": [],
  "coverage": null,
  "scrutiny": {
   "level": 3,
   "name": "checked",
-  "test_rounds": 3,
-  "sentences": 48,
+  "test_rounds": 4,
+  "sentences": 64,
   "contributors": 2,
-  "qc": 2
+  "qc": 3
  }
 }
