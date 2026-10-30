@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-0a1b378c",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N2661+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N2661",
+   "pole": "+",
+   "label": "Low-confidence guess: the '||' cell separator in wiki-style price or results tables ('40 Euro||45 Euro||60 Euro'); the same values written as prose stay quiet.",
+   "fire": [
+    "|Studio||35 Euro||40 Euro||55 Euro|",
+    "|Double room||60 Euro||70 Euro||80 Euro|",
+    "|Monday||9:00||17:00||closed|",
+    "|Team A||3||1||2|",
+    "|Apartment||45 Euro||50 Euro||65 Euro|",
+    "|Adult||12 USD||15 USD||18 USD|",
+    "|Bus 4||7:10||7:40||8:10|",
+    "|Single room||30 Euro||35 Euro||45 Euro|"
+   ],
+   "quiet": [
+    "The studio costs 35, 40 or 55 Euro.",
+    "A double room costs 60, 70 or 80 Euro.",
+    "On Monday we open at nine and close at five.",
+    "Team A won three games and lost one.",
+    "The apartment costs 45 to 65 Euro.",
+    "Adult tickets cost 12 to 18 dollars.",
+    "Bus 4 leaves at 7:10, 7:40 and 8:10.",
+    "A single room costs 30 to 45 Euro."
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.2; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'||' separators in wiki tables (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Broad pole (1.2% of tokens above 0.1) with a gate-closed regime (95%). Card: ' ' x5, ',' x4, '||' x2, ' only', ' not' (Apartment (2 beds)||40 Euro||45 Euro⟦||⟧60 Euro). Exploratory probe: a one-line price table 0.03, a sports record 0.14. Expected to fail."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8d27410c",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N7911+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N7911",
+   "pole": "+",
+   "label": "Dense unit (25% of tokens above 0.1 of max). Best guess tested: the ';' in the GPL boilerplate 'is free software; you can redistribute it', against the same licence lines without the semicolon.",
+   "fire": [
+    "# Foobar is free software; you can redistribute it and/or modify",
+    "# This library is free software; you can redistribute it",
+    "#   MyTool is free software; you can redistribute it and/or",
+    "# The program is free software; you can redistribute it under the GPL",
+    "# Gizmo is free software; you can redistribute it freely",
+    "# This file is free software; you can redistribute it and/or modify it",
+    "# Widget is free software; you may redistribute it",
+    "# This package is free software; you can redistribute it"
+   ],
+   "quiet": [
+    "# Foobar is open source and you can redistribute it and/or modify",
+    "# This library is released under the MIT license",
+    "#   MyTool is distributed in the hope that it will be useful",
+    "# The program is licensed under the GPL",
+    "# Gizmo can be redistributed freely",
+    "# This file is part of the Foobar project",
+    "# Widget comes with no warranty",
+    "# This package is maintained by volunteers"
+   ]
+  }
+ ],
+ "predictions": "everything 0.1-0.3; expected to fail (dense)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "dense (GPL 'free software;')",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card flags dense (24.9% of tokens reach 0.1 of max) and a gate-closed regime (-x- echo 100%); top peaks ';' x14, nearly all in 'is free software⟦;⟧ you can redistribute'. Exploratory probe: the GPL line with ';' 0.15, without it 0.16. Expected to fail; recorded as dense."
+}

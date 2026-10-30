@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-lm1909-479dff27",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2814+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N2814",
+   "pole": "+",
+   "label": "The word-initial piece ' hyp' / ' Hyp' of a word the tokenizer splits (hyp|othermia, hyp|oxia, hyp|nosis, Hyp|atia, hyp|otenuse); 'hy-' words that are one token (hypothesis, hypothetical, hydrogen, hysteria) stay low.",
+   "fire": [
+    "The climbers were treated for hypothermia.",
+    "Low oxygen at altitude causes hypoxia.",
+    "He was put under hypnosis by a stage performer.",
+    "Hypatia taught mathematics in Alexandria.",
+    "Find the length of the hypotenuse.",
+    "The nurse used a hypodermic needle.",
+    "Diabetics can suffer from hypoglycemia.",
+    "Some patients hyperventilate when anxious."
+   ],
+   "quiet": [
+    "The climbers were treated for frostbite.",
+    "Low oxygen at altitude causes headaches.",
+    "He was put under a spell by a stage performer.",
+    "Euclid taught mathematics in Alexandria.",
+    "Find the length of the longest side.",
+    "The nurse tested a hypothesis about the needle.",
+    "Diabetics can suffer from hysteria, the old texts claimed.",
+    "Some patients breathe fast when anxious."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "word-initial piece ' hyp'",
+ "unit_kind": "token piece",
+ "confidence": 0.75,
+ "notes": "Card: ' hyp' x9, ' Hyp' x8, 'yp' x7, Russian 'ип' x5; lexical auto test held (AUROC 1.00) for ' hyp'; cover test held for ' ep', ' hyp', ' Ep' (covers 56%). Tokenizer checked: hyp|other|mia, hyp|ox|ia, hyp|nosis, Hyp|at|ia, hyp|oten|use, hyp|od|erm|ic, hyp|og|ly|c|emia, hyp|erv|ent|ilate; hypothesis, hysteria, hypothetical, hydrogen are one token. Exploratory probe: 'hypnot|ic' 0.27, 'hypothesis' 0.14, 'theory' 0.007.",
+ "trigger": {
+  "tokens": [
+   " hyp",
+   " Hyp"
+  ]
+ }
+}

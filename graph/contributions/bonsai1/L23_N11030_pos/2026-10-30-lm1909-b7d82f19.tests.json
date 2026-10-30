@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-b7d82f19",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N11030+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:13:59+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N11030",
+   "pole": "+",
+   "label": "' from' (and the first number) opening a time span closed by 'until/to' ('closed from Monday until Friday', 'chairman from 1991 until 2009'); 'from' of a source or origin stays quiet.",
+   "fire": [
+    "The museum is closed from Tuesday until Thursday.",
+    "She served as mayor from 2004 until 2012.",
+    "The road will be shut from 8 June until 20 June.",
+    "He lived in Paris from 1920 to 1935.",
+    "The shop opens from nine until five.",
+    "Roadworks will run from March until May.",
+    "The festival lasts from Friday to Sunday.",
+    "He coached the team from 1988 until 1996."
+   ],
+   "quiet": [
+    "The museum got a painting from a collector in Rome.",
+    "She received a letter from the mayor in 2004.",
+    "The road leads away from the village towards the coast.",
+    "He moved to Paris from a small town in Brittany.",
+    "The shop buys bread from a local bakery.",
+    "The workers came from all over the country.",
+    "The festival draws visitors from abroad.",
+    "He got advice from his old coach."
+   ]
+  }
+ ],
+ "predictions": "fire 0.15-0.45; near misses below 0.05; the median is at risk",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' from' opening a time span",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: ' ' x8 and ' from' x7 (was from⟦ ⟧40 to 59 years; closed for an event⟦ from⟧ Thursday 6 June until 12; chairman⟦ from⟧ 1991 until 2...). Exploratory probe: 'from Monday until Friday' 0.41, 'from 1991 until 2009' 0.20, but 'ranged from 18 to 71 years' 0.01; 'a letter from her sister' 0.009."
+}
