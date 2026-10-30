@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N3169+",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 3169,
+ "pole": "+",
+ "label": "An identifier piece inside a Python or JavaScript event-handler or callback definition (def on_..., onJoin, connection_made, import patcher) in multi-line code",
+ "short": "handler/callback identifier in code",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N3169_pos/2026-10-30-ChopinDavid-5e5b1b41.tests.json",
+   "prereg_commit": "a6bf7034",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.787,
+     "peak": "_button"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.427,
+     "peak": "_message"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.092,
+     "peak": "_modified"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.717,
+     "peak": "_connect"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.853,
+     "peak": " connection"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.201,
+     "peak": "(server"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.602,
+     "peak": "click"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.73,
+     "peak": "_data"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.048,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.074,
+     "peak": "(f"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.28,
+     "peak": ".reduce"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.072,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.066,
+     "peak": "summary"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.092,
+     "peak": " week"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": " out"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.961,
+    "median_fire": 0.659,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-5e5b1b41"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-5e5b1b41",
+   "An identifier piece inside a Python or JavaScript event-handler or callback definition (def on_..., onJoin, connection_made, import patcher) in multi-line code",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-5e5b1b41"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

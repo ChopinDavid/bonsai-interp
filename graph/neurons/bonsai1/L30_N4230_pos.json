@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N4230+",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 4230,
+ "pole": "+",
+ "label": "The slot before the verb in a description of a trained or habitual bodily skill: what a child, pet or exerciser is learning to do (able to sound out, slowly lower, sit and stay, always keeps its head low)",
+ "short": "pre-verb slot of a trained bodily skill",
+ "kind": "context",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N4230_pos/2026-10-30-ChopinDavid-92b73f89.tests.json",
+   "prereg_commit": "a6bf7034",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.226,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.632,
+     "peak": " already"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.476,
+     "peak": " gently"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.228,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.365,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.282,
+     "peak": "ently"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.482,
+     "peak": " slowly"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.256,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": " able"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.249,
+     "peak": " slowly"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.097,
+     "peak": " able"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " midnight"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.212,
+     "peak": " slowly"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.126,
+     "peak": " usually"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.021,
+     "peak": " gently"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.324,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-92b73f89"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-92b73f89",
+   "The slot before the verb in a description of a trained or habitual bodily skill: what a child, pet or exerciser is learning to do (able to sound out, slowly lower, sit and stay, always keeps its head low)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-92b73f89"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
