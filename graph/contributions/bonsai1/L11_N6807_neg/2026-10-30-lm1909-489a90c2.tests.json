@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-489a90c2",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N6807-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N6807",
+   "pole": "-",
+   "label": "Low-confidence guess: a weak, broad unit; best guess tested: body words (body, skin, muscles, bones) in health text, from the word-hit list.",
+   "fire": [
+    "Stretching keeps your muscles flexible.",
+    "Calcium helps build strong bones.",
+    "Sunscreen protects your skin.",
+    "Exercise is good for the whole body.",
+    "Massage relaxes tight muscles.",
+    "Vitamin D supports healthy bones.",
+    "Moisturiser keeps skin soft.",
+    "Water makes up most of the body."
+   ],
+   "quiet": [
+    "Stretching keeps you calm.",
+    "Calcium is found in milk.",
+    "Sunscreen should be applied often.",
+    "Exercise is good for you.",
+    "Massage is relaxing.",
+    "Vitamin D comes from sunlight.",
+    "Moisturiser smells nice.",
+    "Water is cheap."
+   ]
+  }
+ ],
+ "predictions": "fire 0.0-0.2; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "body words in health text (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Weak, broad pole (corpus max 2.20, 7.5% of tokens above 0.1), gate-closed regime. Card: no single token (Russian 'ив', Chinese 推); word hits ' body', ' skin', ' muscles', ' bones'. Not probed. Expected to fail."
+}

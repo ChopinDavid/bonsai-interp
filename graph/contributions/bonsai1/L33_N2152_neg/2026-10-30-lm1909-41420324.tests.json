@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-41420324",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N2152-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N2152",
+   "pole": "-",
+   "label": "' in' after a superlative or record that is measured against a span of time ('the coldest temperatures in decades', 'the highest level in years', 'the worst drought in a century'); the same sentences without a superlative stay quiet.",
+   "fire": [
+    "The storm brought the heaviest snowfall in forty years.",
+    "Inflation hit its highest level in a decade.",
+    "The river fell to its lowest point in a century.",
+    "It was the worst harvest in living memory.",
+    "Stocks posted their biggest gain in months.",
+    "The town saw its warmest winter in years.",
+    "Unemployment fell to its lowest rate in decades.",
+    "It was the club's best season in a generation."
+   ],
+   "quiet": [
+    "The storm brought heavy snowfall to the hills.",
+    "Inflation hit the shops hard this winter.",
+    "The river fell after the dry spell.",
+    "It was a poor harvest after the rain.",
+    "Stocks posted a gain on Monday.",
+    "The town saw a mild winter.",
+    "Unemployment fell slowly last year.",
+    "It was a good season for the club."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' in' after a record ('coldest in decades')",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.55,
+ "notes": "Broad pole (3.8% of tokens above 0.1). Card: ' all' x7, ' in' x6, ' on' x5 ('Polar Vortex' Brings Coldest Temperatures⟦ in⟧ Decades). Exploratory probe: 'the coldest temperatures in decades' 0.57; 'brought cold weather' 0.06."
+}

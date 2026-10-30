@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-c3f3e54f",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N6380+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N6380",
+   "pole": "+",
+   "label": "' post' as a bicycle seat post in a list of bike components ('Magura brakes, a Thomson post and a WTB saddle'); 'post' in other senses (fence post, blog post, mail) and component lists without it stay low.",
+   "fire": [
+    "The build has Shimano brakes, an Easton post and a Fizik saddle.",
+    "I swapped the stock post for a dropper.",
+    "Specs: carbon bar, alloy post, Brooks saddle.",
+    "The frame takes a 27.2 mm post.",
+    "It came with SRAM shifters, a Race Face post and Maxxis tyres.",
+    "Raise the post two centimetres for a better fit.",
+    "Upgrades include a titanium post and new pedals.",
+    "The bike ships with a Thomson post and DT Swiss wheels."
+   ],
+   "quiet": [
+    "The build has Shimano brakes, an Easton bar and a Fizik saddle.",
+    "I nailed the sign to a fence post.",
+    "Specs: carbon bar, alloy stem, Brooks saddle.",
+    "She wrote a blog post about the race.",
+    "It came with SRAM shifters, a Race Face crank and Maxxis tyres.",
+    "The post arrived late this morning.",
+    "Upgrades include titanium bolts and new pedals.",
+    "The bike ships with DT Swiss wheels and a bell."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8; near misses below 0.2; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' post' = bike seat post in a parts list",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.45,
+ "notes": "Card: ' S' x4, ' the' x2, 'mm' x2, ' post' (Magura Louise disc brakes, Thomson⟦ post⟧ WTB saddle), ' digital', ' the' (called⟦ the⟧ tyre). Exploratory probe: 'a Thomson post and a WTB saddle' 0.84; 'called the tyre' 0.03. Near misses include other senses of 'post'."
+}

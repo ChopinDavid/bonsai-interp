@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a9456043",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N2600+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N2600",
+   "pole": "+",
+   "label": "The start of the main clause after 'If there is any(one/thing) X …,' that names the one case ('…, it is Florida', '…, it would be his brother'), firing on the comma or 'it'; ordinary conditionals stay quiet.",
+   "fire": [
+    "If there is one city that never sleeps, it is New York.",
+    "If there is anyone who deserves a rest, it is my mother.",
+    "If there was ever a perfect day for a picnic, it was today.",
+    "If there is any player who can save the match, it is Smith.",
+    "If anything could make him smile, it would be a puppy.",
+    "If there is a team that wants it more, it is ours.",
+    "If there is one book I would save, it is this one.",
+    "If anyone knows the answer, it will be the librarian."
+   ],
+   "quiet": [
+    "If the city is busy, we will take the train.",
+    "If my mother is tired, she rests after lunch.",
+    "If the day is sunny, we will have a picnic.",
+    "If the player is fit, he will start the match.",
+    "If he gets a puppy, he will be happy.",
+    "If the team trains hard, it may win.",
+    "If I save a book, I will keep this one.",
+    "If you ask the librarian, she will help."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'If there is anyone who…, it is X'",
+ "unit_kind": "syntactic / contextual",
+ "confidence": 0.6,
+ "notes": "Card: ',' x7, ' not' x5, ' that' x3, ' it' x2 (If there is any country ... that stands in need of preaching⟦,⟧ it is Florida; If there is anyone who could impart good advice ...,⟦ it⟧ would be the elder Browne). Exploratory probe: 'If there is any country that needs preaching, it is Florida' 0.86, 'If there is anyone who can help, it would be his brother' 0.34; 'If it rains, we will stay inside' 0.03."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-4fac91ab",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N10999-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N10999",
+   "pole": "-",
+   "label": "Low-confidence guess: ' so' introducing a consequence after a comma ('Most polymers are incompatible, so they separate'); the same sentences without the consequence clause stay quiet.",
+   "fire": [
+    "Oil and water do not mix, so they form layers.",
+    "The bridge was closed, so we took the ferry.",
+    "The paint was still wet, so nobody sat down.",
+    "The metal expands when hot, so the rails have gaps.",
+    "The shop was out of bread, so we baked our own.",
+    "The soil is acidic, so blueberries grow well.",
+    "The battery was flat, so the car would not start.",
+    "The ice was thin, so skating was banned."
+   ],
+   "quiet": [
+    "Oil and water have different densities.",
+    "The bridge was closed for repairs.",
+    "The paint was still wet this morning.",
+    "The metal expands when it gets hot.",
+    "The shop was out of bread by noon.",
+    "The soil here is acidic and dark.",
+    "The battery was flat after the winter.",
+    "The ice on the pond was thin."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.3; may fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "consequence ', so …' (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: ' if' x6, ' so' x4, ' when' x3, ' onset' x2 (incompatible with one another,⟦ so⟧ tend to produce separate phases). Exploratory probe weak: ', so they separate' 0.24, 'onset of symptoms' 0.12."
+}

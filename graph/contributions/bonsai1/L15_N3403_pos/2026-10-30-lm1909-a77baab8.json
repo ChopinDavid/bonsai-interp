@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-a77baab8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N3403+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:56:10+00:00",
+ "recipe": {
+  "toolchain_commit": "86670ebf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N3403_pos/2026-10-30-lm1909-a77baab8.tests.json"
+ },
+ "label": "Low-confidence guess: a weak, broad unit; best guess tested: the final piece of a split proper name in fantasy or foreign text (Minas Morg|ul).",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N3403_pos/2026-10-30-lm1909-a77baab8.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.876,
+     "peak": "ul"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.069,
+     "peak": " rested"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.079,
+     "peak": "ard"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.095,
+     "peak": "ith"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.158,
+     "peak": "r"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.11,
+     "peak": "rien"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.242,
+     "peak": "ur"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.12,
+     "peak": "ens"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.106,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.061,
+     "peak": " rested"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.031,
+     "peak": " came"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.117,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.121,
+     "peak": " tower"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": "El"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.041,
+     "peak": "Sh"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.115,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "86670ebf",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "final piece of a split name (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Weak, broad pole (3.2% of tokens above 0.1). Card: no single token (Korean '가', 'ul' (Minas Morg⟦ul⟧), ' Harvey', ' Cloud'). Not probed. Expected to fail.",
+ "selection": "random draw"
+}

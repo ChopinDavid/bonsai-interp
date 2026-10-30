@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-caee3b1f",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N932-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N932",
+   "pole": "-",
+   "label": "Competing with or overtaking a rival ('compete with', 'have overtaken', 'outpaced', 'pull ahead of'), firing on the preposition or the verb's last piece; neutral relations between the same things stay quiet.",
+   "fire": [
+    "Small shops cannot compete with the big chains.",
+    "Electric cars have overtaken diesel models in sales.",
+    "The young runner pulled ahead of the champion.",
+    "Weeds compete with crops for water.",
+    "Streaming has overtaken cable television.",
+    "Our city now rivals the capital for tourists.",
+    "The startup outpaced its older competitors.",
+    "Cuckoo chicks compete with the host's own chicks for food."
+   ],
+   "quiet": [
+    "Small shops sell goods from the big chains.",
+    "Electric cars are parked next to diesel models.",
+    "The young runner trained with the champion.",
+    "Weeds grow among the crops near the water.",
+    "Streaming is offered alongside cable television.",
+    "Our city sits near the capital.",
+    "The startup hired its older staff.",
+    "Cuckoo chicks are fed by the host birds."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "competing with / overtaking a rival",
+ "unit_kind": "semantic",
+ "confidence": 0.6,
+ "notes": "Card: ' with' x9, ' over' x4, ' above' x2, ' behind' x2 (Labradoodles have actually overt⟦aken⟧ Poodles; metals may compete⟦ with⟧ ionized species). Exploratory probe: 'compete with calcium' 0.79, 'have overtaken Poodles' 0.74; 'bind calcium' 0.01."
+}

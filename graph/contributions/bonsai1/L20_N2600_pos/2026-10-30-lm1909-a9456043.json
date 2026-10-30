@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-a9456043",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N2600+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:56:16+00:00",
+ "recipe": {
+  "toolchain_commit": "86670ebf",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N2600_pos/2026-10-30-lm1909-a9456043.tests.json"
+ },
+ "label": "The start of the main clause after 'If there is any(one/thing) X …,' that names the one case ('…, it is Florida', '…, it would be his brother'), firing on the comma or 'it'; ordinary conditionals stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N2600_pos/2026-10-30-lm1909-a9456043.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.479,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.711,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.129,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.648,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.848,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.307,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.55,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.435,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.034,
+     "peak": " we"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.075,
+     "peak": " she"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " he"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.054,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.083,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.04,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.599,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "86670ebf",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'If there is anyone who…, it is X'",
+ "unit_kind": "syntactic / contextual",
+ "confidence": 0.6,
+ "notes": "Card: ',' x7, ' not' x5, ' that' x3, ' it' x2 (If there is any country ... that stands in need of preaching⟦,⟧ it is Florida; If there is anyone who could impart good advice ...,⟦ it⟧ would be the elder Browne). Exploratory probe: 'If there is any country that needs preaching, it is Florida' 0.86, 'If there is anyone who can help, it would be his brother' 0.34; 'If it rains, we will stay inside' 0.03.",
+ "selection": "random draw"
+}

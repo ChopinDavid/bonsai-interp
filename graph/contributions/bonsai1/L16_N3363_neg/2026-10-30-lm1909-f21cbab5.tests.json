@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-f21cbab5",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N3363-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N3363",
+   "pole": "-",
+   "label": "Low-confidence guess: the line end that closes the last statement of a top-level Python block right before two blank lines and a new class or function; no clear trigger in short snippets.",
+   "fire": [
+    "    def handle(self, request):\n        return self.get_response(request)\n\n\nclass Logger:\n    pass\n",
+    "def main():\n    run()\n\n\nif __name__ == '__main__':\n    main()\n",
+    "class A:\n    x = 1\n\n\nclass B:\n    y = 2\n",
+    "def f():\n    return 1\n\n\ndef g():\n    return 2\n",
+    "    def close(self):\n        self.conn.close()\n\n\nclass Pool:\n    pass\n",
+    "def load():\n    return json.load(fp)\n\n\ndef save(d):\n    json.dump(d, fp)\n",
+    "class Config:\n    debug = False\n\n\nclass Prod(Config):\n    pass\n",
+    "def area(r):\n    return 3.14 * r * r\n\n\nprint(area(2))\n"
+   ],
+   "quiet": [
+    "    def handle(self, request):\n        response = self.get_response(request)\n        return response\n",
+    "def main():\n    run()\n    stop()\n",
+    "class A:\n    x = 1\n    y = 2\n",
+    "def f():\n    a = 1\n    return a\n",
+    "    def close(self):\n        self.conn.close()\n        self.open = False\n",
+    "def load():\n    data = json.load(fp)\n    return data\n",
+    "class Config:\n    debug = False\n    port = 80\n",
+    "def area(r):\n    s = r * r\n    return 3.14 * s\n"
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.15; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "end of a top-level Python block (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: '.\\n' x8, ')\\n\\n\\n' x7, '\\n\\n\\n' x6 (return self.get_response(request⟦)⏎⏎⏎⟧class ...; unittest.main⟦()⏎⟧<|endoftext|>). Exploratory probe on short snippets: 0.03-0.06. Expected to fail."
+}

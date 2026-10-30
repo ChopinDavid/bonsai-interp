@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-2c4da1a9",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N7422+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:45:31+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N7422",
+   "pole": "+",
+   "label": "Dense unit (65% of tokens above 0.1 of max). Best guess tested: ' [' or ')[' that opens a bracketed note right after a closing parenthesis ('(Linnaeus, 1758)[Synonyms…', '(help)[dead link]').",
+   "fire": [
+    "(Smith, 1901)[Synonyms: Aus bus]",
+    "Retrieved 2010 (help)[dead link]",
+    "(Fabricius, 1787)[1]",
+    "(see below)[citation needed]",
+    "(Walker, 1863)[Synonym: X. y]",
+    "(archived)[permanent dead link]",
+    "(Linnaeus, 1767)[2]",
+    "(in French)[clarification needed]"
+   ],
+   "quiet": [
+    "(Smith, 1901). Synonyms: Aus bus.",
+    "Retrieved 2010. The link is dead.",
+    "(Fabricius, 1787).",
+    "(see below). A citation is needed.",
+    "(Walker, 1863). Synonym: X. y.",
+    "(archived). The link is dead.",
+    "(Linnaeus, 1767).",
+    "(in French). Clarification is needed."
+   ]
+  }
+ ],
+ "predictions": "everything 0.2-0.8; expected to fail (dense)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "dense (')[' bracket after parenthesis)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card flags dense (65.4% of tokens reach 0.1 of max) and a gate-closed regime; top peaks ' [' x16 and ')[' x6. Exploratory probe: '(Linnaeus, 1758)[Synonyms' 0.83, but plain prose about Linnaeus 0.36. Recorded as dense; expected to fail."
+}
