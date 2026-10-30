@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 1
    },
    "contribution": "2026-10-22-ChopinDavid-85148bfe"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N2091_neg/2026-10-29-moridinamael-aac7cc1e.tests.json",
+   "prereg_commit": "a6adee12",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": -0.0,
+     "peak": "fire"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.004,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.083,
+     "peak": " einmal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.04,
+     "peak": " m"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.139,
+     "peak": "M"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.101,
+     "peak": "ika"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.001,
+     "peak": " ال"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.069,
+     "peak": " الم"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.0,
+     "peak": " camp"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " einmal"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " coff"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.191,
+     "peak": " Platz"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " ال"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " الغ"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.648,
+    "median_fire": 0.055,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-aac7cc1e"
   }
  ],
  "label_history": [
@@ -138,21 +260,28 @@
    "2026-10-22-ChopinDavid-85148bfe",
    "Fires on the bare word-initial piece ' m' that opens a German word the tokenizer splits (m+ächtig, m+itten, m+ässig); quiet on the same German sentences with an unsplit synonym.",
    "held"
+  ],
+  [
+   "2026-10-29-moridinamael-aac7cc1e",
+   "Fires on the bare opening piece of a word the tokenizer splits, strongest for ' m'/' M' (German, English), Arabic ' الم' and Spanish/French ' cong'; quiet on the same sentence with an unsplit whole-word synonym.",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-22-ChopinDavid-85148bfe"
+  "2026-10-22-ChopinDavid-85148bfe",
+  "2026-10-29-moridinamael-aac7cc1e"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": {
@@ -161,11 +290,11 @@
   "strong": 3004
  },
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
