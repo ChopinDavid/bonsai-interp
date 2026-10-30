@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-d8946495",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2957-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:57:58+00:00",
+ "selection": "picked",
+ "neighbours": [
+  {
+   "unit": "L28/N2957",
+   "pole": "-",
+   "label": "A comparative claim about how a vehicle or vessel behaves after a change ('makes the boat more stable', 'harder to park', 'to improve yaw control', 'improved grip'), firing on the comparative or 'improve(d)' or the 'to' after it; the same vehicles described without a comparison, and comparative claims about non-vehicles (doors, phones, houses), stay low.",
+   "fire": [
+    "A longer hull makes the canoe faster in open water.",
+    "The extra weight makes the van slower to accelerate.",
+    "Fitting a stabiliser keeps the yacht steadier in waves.",
+    "Low-profile tyres make the car noisier on motorways.",
+    "A bigger rudder was fitted to improve the ship's turning.",
+    "The narrow frame makes the bicycle easier to carry.",
+    "Raising the wing gives the glider improved lift at low speed.",
+    "The heavy trailer makes the pickup harder to stop."
+   ],
+   "quiet": [
+    "The canoe has a long hull and two seats.",
+    "The van carries extra weight in the back.",
+    "The yacht has a stabiliser and a blue sail.",
+    "The car came with low-profile tyres.",
+    "The ship has a large rudder at the stern.",
+    "A larger lock makes the gate harder to open.",
+    "Thicker glass makes the phone screen safer to drop.",
+    "Double glazing keeps the flat quieter at night."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8; near misses below 0.25",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "second-round"
+  ]
+ },
+ "short": "comparative claim about a vehicle's behaviour",
+ "unit_kind": "semantic",
+ "confidence": 0.45,
+ "notes": "Round 2 for this pole (round 1, sweep 3: 'improving a vehicle's stability / handling' failed with 2 near misses: 'makes the truck harder to park' 0.67, 'makes the scooter cheaper to build' 0.35). Refinement probe: 'makes the boat more stable' 0.63; non-vehicle comparatives lower ('door easier to open' 0.18, 'house warmer' 0.13, 'phone heavier' 0.05); vehicles without comparison 0.01-0.03. New label: any comparative claim about a vehicle, better or worse."
+}

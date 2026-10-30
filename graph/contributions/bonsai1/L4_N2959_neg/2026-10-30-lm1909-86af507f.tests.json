@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-86af507f",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N2959-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:57:58+00:00",
+ "selection": "picked",
+ "neighbours": [
+  {
+   "unit": "L4/N2959",
+   "pole": "-",
+   "label": "A multi-author list in a citation (surnames and initials separated by commas or semicolons), strongest on ', et al.' or '; et al.'; citations with a single author in the same style stay lower.",
+   "fire": [
+    "Ortiz, R.; Kahn, B.; et al. (2013). Wetland birds.",
+    "Lindgren P, Abe K, Mensah J, et al. Gut flora. 2018.",
+    "Haas, T., Rocha, M., & Ito, Y. (2009). Glacier melt.",
+    "Duval C, Okeke N, Sato R. Sleep and memory. 2021.",
+    "Brennan, S.; Iqbal, F.; Moretti, L.; et al. (2015). River silt.",
+    "Kowal J, Reyes D, et al. Bone density in runners. 2012.",
+    "Fontaine, A., Wright, G., and Zhou, L. (2004). Coral bleaching.",
+    "Nilsen K, Park S, Adeyemi T. Air quality. 2019."
+   ],
+   "quiet": [
+    "Ortiz, R. (2013). Wetland birds.",
+    "Lindgren P. Gut flora. 2018.",
+    "Haas, T. (2009). Glacier melt.",
+    "Duval C. Sleep and memory. 2021.",
+    "Brennan, S. (2015). River silt.",
+    "Kowal J. Bone density in runners. 2012.",
+    "Fontaine, A. (2004). Coral bleaching.",
+    "Nilsen K. Air quality. 2019."
+   ]
+  }
+ ],
+ "predictions": "fire 0.25-0.9 (et al. strongest); near misses below 0.2; AUROC may be marginal",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "second-round"
+  ]
+ },
+ "short": "multi-author citation list (', et al.' strongest)",
+ "unit_kind": "contextual / format",
+ "confidence": 0.45,
+ "notes": "Round 2 for this pole (round 1, sweep 1: \"' et' of 'et al.' closing a punctuated author list\" failed on near misses: author lists closing 'and Grant, H.' 0.34, 'and colleagues' 0.44, 'and others' 0.38, while ', et al.' fired 0.33-1.04). Refinement probe: three-author lists without et al. 0.25-0.27; single author 0.07-0.19. New label: the multi-author list itself. Weak pole (corpus max 1.20)."
+}
