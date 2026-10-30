@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-acf218af",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2151-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T23:36:45+00:00",
+ "recipe": {
+  "toolchain_commit": "f14db2c12",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N2151_neg/2026-10-30-ChopinDavid-acf218af.tests.json"
+ },
+ "label": "interpretive framing of a text, theorem or event: the verb and manner by which it is read, proven or understood (taken literally, understood as a metaphor, attempted to prove, seen in the worst light)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N2151_neg/2026-10-30-ChopinDavid-acf218af.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.136,
+     "peak": " story"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.286,
+     "peak": " proved"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.463,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.241,
+     "peak": " failure"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.216,
+     "peak": " others"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.092,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.042,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.177,
+     "peak": " or"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " T"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": "ies"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.102,
+     "peak": " better"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.025,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.197,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f14db2c12",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "how a text or event is read",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Card peaks: attempted to prove this theorem, scripture) figurative or metaphorical rather than literal, can be read past their face value, is seen in Genesis, read this passage as, can be explained, interpret events with a pessimistic twist, think of government in an idyllic way. The + pole promotes 'concept'/'reasoning'. Near misses keep the same texts and people with factual, non-interpretive predicates.",
+ "selection": "random draw"
+}
