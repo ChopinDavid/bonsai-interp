@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-29-moridinamael-6ab0a35a",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L2/N8346-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:26:24+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the token ' sheet' / ' sheets', in any sense"
+ },
+ "neighbours": [
+  {
+   "unit": "L2/N8346",
+   "pole": "-",
+   "label": "the word 'sheet' in any sense, plus weaker on 'she-' look-alikes (sheen, sheaf, Sheila)",
+   "fire": [
+    "He pulled a clean sheet of paper from the printer tray and began to sketch.",
+    "The rain came down in sheets as we ran for the bus.",
+    "I changed the bed sheets this morning, so the room smells of lavender.",
+    "Please fill in the time sheet before you leave on Friday.",
+    "A thin sheet of ice covered the pond by dawn.",
+    "The accountant reviewed the balance sheet line by line.",
+    "Can you share the spreadsheet with the rest of the team?",
+    "The roofer nailed down a sheet of corrugated metal."
+   ],
+   "quiet": [
+    "He pulled a clean page from the printer tray and began to sketch.",
+    "The rain came down hard as we ran for the bus.",
+    "I washed the pillowcases this morning, so the room smells of lavender.",
+    "Please log your hours before you leave on Friday.",
+    "A thin layer of ice covered the pond by dawn.",
+    "The accountant reviewed the annual report line by line.",
+    "Can you send the budget table to the rest of the team?",
+    "The roofer nailed down a panel of corrugated metal."
+   ]
+  }
+ ],
+ "predictions": "Expect 8/8 fire (sheet, sheets, spreadsheet fire at 0.3-0.9) and 0 near misses; the look-alike clause is not tested by this set.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo",
+   "quick-test"
+  ]
+ }
+}
