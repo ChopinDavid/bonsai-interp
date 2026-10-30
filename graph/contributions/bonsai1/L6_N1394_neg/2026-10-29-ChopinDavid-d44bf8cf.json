@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-d44bf8cf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N1394-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T00:32:22+00:00",
+ "recipe": {
+  "toolchain_commit": "d2768a86",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N1394_neg/2026-10-29-ChopinDavid-d44bf8cf.tests.json"
+ },
+ "label": "a non-initial piece of a romanized Japanese or Iroquoian word that the tokenizer splits into short pieces (kama-|iri 0.89, I|ro|quois 0.48, Gok|ur|aku 0.28, D|ian 0.24, terrac|otta 0.23); single-token or familiar exotic words (Hokkaido, Mohawk, Lipton, sushi) are silent (≤0.04)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N1394_neg/2026-10-29-ChopinDavid-d44bf8cf.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.047,
+     "peak": " farmhouse"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.562,
+     "peak": "ro"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.147,
+     "peak": "ok"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.363,
+     "peak": "ri"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": " wrapped"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.273,
+     "peak": "iro"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.463,
+     "peak": "uka"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.086,
+     "peak": "aga"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " farmhouse"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": "Children"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.1,
+     "peak": " Kyoto"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": " cats"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.034,
+     "peak": " wrapped"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " castle"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " songs"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " fire"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.21,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d2768a86",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "inner piece of a romanized Japanese word",
+ "unit_kind": "lexical",
+ "confidence": 0.35,
+ "notes": "Card: max 4.66, density 0.165%, peaks 'ro' x6 (I|ro|quois), 'ok' x2 (G|ok|uraku), 'k', 'en', 'iri' (kama-iri), 'u' (Sar|u), 'ian', 'otta', 'atak' (W|atak|ushi): inner pieces of transliterated words. Probe: kama-iri 0.890, Iroquois 0.481, Gokuraku 0.277 (peak 'aku'), Dian 0.237, terracotta 0.227, Watakushi 0.225, Saru 0.098; Hokkaido 0.042, Mohawk 0.012, Lipton 0.033. Fire items use words whose splits were checked: ir|ori, I|ro|ha, gy|ok|uro, I|ri|om|ote, f|uro|sh|iki, sh|iro, i|ru|ka, On|ond|aga.",
+ "selection": "random draw"
+}

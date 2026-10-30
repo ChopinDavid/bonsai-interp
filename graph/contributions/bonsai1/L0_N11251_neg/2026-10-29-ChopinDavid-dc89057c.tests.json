@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-dc89057c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N11251-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N11251",
+   "pole": "-",
+   "label": "a layer-0 attachment unit for 'to' after 'not' ('not to think' 0.64, 'Not to mention' 0.50), 'during' after a verb ('do during' 0.89, 'learn during' 0.56) and 'of' after a plural agent noun ('smokers of' 0.76); 'to' after 'decided' and the same sentences without the function word are low (≤0.09); broad (8% of tokens at 0.1 of max), so near misses may fire weakly",
+   "fire": [
+    "Be careful not to spill the sauce on the cloth.",
+    "Visitors are asked not to feed the swans.",
+    "The pipes often freeze during the coldest week of January.",
+    "The choir rehearses during the lunch break.",
+    "Regular drinkers of strong coffee rarely notice the bitterness.",
+    "Readers of the morning paper will know the story already.",
+    "Not to worry, the spare key is under the mat.",
+    "Try not to laugh when he tells the joke."
+   ],
+   "quiet": [
+    "Be careful to keep the sauce off the cloth.",
+    "Visitors are asked to stay on the path.",
+    "The coldest week of January often freezes the pipes.",
+    "The choir rehearses at lunchtime.",
+    "Strong coffee rarely tastes bitter to regulars.",
+    "The morning paper carried the story already.",
+    "The spare key is under the mat, so relax.",
+    "He wanted to laugh when the joke was told."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on to/during/of; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'not to' / verb + 'during' / agent + 'of'",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 0.28, broad (8.4% at 0.1 of max, gate-closed leak 75%), peaks ' to' x5 (three after Not/not), '되' x5, ' during' x3 (learn during, do during), ' of' x3 (smokers of), ' decipher' x3. Probe: 'not to think' 0.637, 'Not to mention' 0.500, 'Not to fret' 0.500, 'do during' 0.893, 'learn during' 0.560, 'smokers of' 0.761; 'decided to think' 0.082, controls without the function word 0.077-0.085. A layer-0 bigram-style unit on three attachments; the Korean 되 is not tested."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ad309b55",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N4832-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N4832",
+   "pole": "-",
+   "label": "charitable or reform work on behalf of the poor and marginalised: a settlement house that 'opened a home for the indigent' 0.64, the Harlem YMCA 0.44, 'social worker Jane Addams' 0.27; the same syntax with commercial or scientific objects is silent (0.01-0.13)",
+   "fire": [
+    "The mission ran a soup kitchen and found beds for the homeless.",
+    "She trained as a social worker and spent her life among the tenements.",
+    "The order opened an orphanage and a night school for immigrant children.",
+    "Volunteers at the settlement house taught English to the newly arrived.",
+    "The fund built clinics for the rural poor and trained local midwives.",
+    "He left his fortune to a home for destitute widows.",
+    "The church in Harlem fed hundreds of families during the Depression.",
+    "Reformers campaigned for housing for the slum dwellers of the East End."
+   ],
+   "quiet": [
+    "The firm ran a cafeteria and found parking for the executives.",
+    "She trained as an accountant and spent her life among the ledgers.",
+    "The company opened a showroom and a training centre for new staff.",
+    "Instructors at the academy taught English to the diplomats.",
+    "The fund built laboratories for the university and trained technicians.",
+    "He left his fortune to a museum of medieval armour.",
+    "The theatre on Broadway sold out every night during the summer.",
+    "Developers campaigned for permits for the office towers of the East End."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.65 on the beneficiary or institution; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "service to the poor and marginalised",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 132, density 0.631%, peaks on function words and names inside passages about social work, settlement houses, the Harlem YMCA, Coxey's Army, ghettos, recicladores and development aid. Probe: opened a home for the indigent 0.635 (peak ' a'), Harlem YMCA 0.443, social worker/muckraker 0.265, Millennium Development Goals 0.131, Coxey's Industrial Army 0.020; Curie/Planck 0.125, drove the boys to the lake 0.016, corporate clients 0.008. The topic of helping the disadvantaged carries it, with the strongest scores on concrete service to the poor."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-dae31ef8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N11849-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T00:31:56+00:00",
+ "recipe": {
+  "toolchain_commit": "d2768a86",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N11849_neg/2026-10-29-ChopinDavid-dae31ef8.tests.json"
+ },
+ "label": "unclear: a proper name or technical term that opens a new paragraph (⏎L-arginine, ⏎Ella Baker, In addition, Nolen and Draper, ⏎P.S. Answer to CI); the probe's re-mentions inside one paragraph all stayed below 0.08, so this is a low-confidence guess at the paragraph-opening position",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N11849_neg/2026-10-29-ChopinDavid-dae31ef8.tests.json",
+   "prereg_commit": "d2768a86",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.05,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.048,
+     "peak": " surrounding"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.035,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.057,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.04,
+     "peak": " twice"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.041,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.051,
+     "peak": " continued"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.052,
+     "peak": " fore"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.042,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.038,
+     "peak": "In"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.049,
+     "peak": " called"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.037,
+     "peak": " twice"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.037,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.051,
+     "peak": " continued"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.068,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.617,
+    "median_fire": 0.049,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d2768a86",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "name opening a paragraph (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 7.47, density 0.138%, no repeated token (' Iraq', ' N'olen, ' CI', L'-'arginine, 'ник', E'lla', ' calculated', ' Portuguese'); most card hits sit just after a ⏎ paragraph break. Probe (one paragraph, '. ' breaks): every item 0.022-0.078, including exact re-mentions of Iraq, Nolen and Draper, CI, L-arginine and Ella Baker. The test keeps the names but moves them to the opening of a second paragraph after a newline, which the probe did not try.",
+ "selection": "random draw"
+}

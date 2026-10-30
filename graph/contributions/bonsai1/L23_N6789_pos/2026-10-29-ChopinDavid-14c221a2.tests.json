@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-14c221a2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N6789+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N6789",
+   "pole": "+",
+   "label": "a plural agent noun inside a situation-framing phrase: 'stories about hikers' 0.91, 'a case of a few people' 0.73, 'stories of husbands and wives' 0.50, 'cases of captives' 0.45, 'with mining companies still' 0.36; the activation sits on the noun and does not need the following participle (hikers 0.91 with and without 'getting into trouble'), while the same noun as a clause subject ('Hikers often get into trouble') is silent (0.04)",
+   "fire": [
+    "There were complaints about neighbours playing music late at night.",
+    "The paper carried reports of tourists feeding the bears.",
+    "Was this really a case of a few landlords exploiting the rules?",
+    "Old sailors tell tales of fishermen lost in the fog.",
+    "The inquiry heard of nurses working double shifts without pay.",
+    "This looks like a case of drivers ignoring the new signs.",
+    "We keep hearing stories about students cheating on the entrance exam.",
+    "The season went on with farmers still waiting for the rain."
+   ],
+   "quiet": [
+    "Neighbours played music late at night and nobody complained.",
+    "Tourists fed the bears despite the warnings in the paper.",
+    "Was this really a case of mistaken identity by the clerk?",
+    "Old sailors tell tales of fog that swallowed whole boats.",
+    "Nurses worked double shifts without pay, the inquiry heard.",
+    "This looks like a case of poor signage on the new road.",
+    "Students cheated on the entrance exam, according to the stories.",
+    "The season went on with the rain still refusing to come."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the plural noun; near misses below 0.1, with the framed abstract nouns (fog, signage) the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "plural agent noun in 'stories about / a case of'",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 86.5, density 0.171%, peaks ' people', 'congreg|ations', ' drinkers', 'capt|ives', ' alone', 'h|ikers', ' posts', ' wives', ' companies', each a plural noun inside 'a case of…', 'stories about…', 'with … still', before a participle. Probe: hikers 0.913 both with and without 'getting into trouble', people 0.729, wives 0.498, captives 0.445 both ways, companies 0.358; 'Hikers often get into trouble' 0.037, filler 0.002. The frame plus the plural agent noun is the trigger; the participle is predicted, not required."
+}
