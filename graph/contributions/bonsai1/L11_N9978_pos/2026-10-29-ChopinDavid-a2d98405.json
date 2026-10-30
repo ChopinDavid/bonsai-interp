@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-a2d98405",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N9978+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T02:34:09+00:00",
+ "recipe": {
+  "toolchain_commit": "786f4811",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N9978_pos/2026-10-29-ChopinDavid-a2d98405.tests.json"
+ },
+ "label": "a physical load bearing down on whatever carries it (crushed beneath a fallen beam 1.16, heavy backpacks 0.92, shelf collapsed under the weight 0.86, bridge sagged under the weight 0.35); 'the weight of the evidence' leaks 0.49; losing body weight (0.01), a grade's weighting (0.14) and 'heavy rain' (0.06) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N9978_pos/2026-10-29-ChopinDavid-a2d98405.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.914,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.478,
+     "peak": " backs"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.782,
+     "peak": " beneath"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.44,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.629,
+     "peak": " carried"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.323,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.601,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.506,
+     "peak": " bricks"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.049,
+     "peak": " roof"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": " weighed"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": " silver"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.377,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " diet"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.047,
+     "peak": "ys"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.039,
+     "peak": "Heavy"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": " for"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.615,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "786f4811",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "load bearing down on a carrier",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 32.5, density 0.051%, peaks ' weight' x11, ' heavy' x3, ' backpack', ' under', ' crushed', all physical loads (weight of the building, roof crumbled under them, crushed to death, bears the weight of all the others). Logit effect promotes heavy/heavier/burden/weighed. Probe: 'crushed beneath the fallen beam' 1.159, 'heavy backpacks' 0.919, 'collapsed under the weight of the books' 0.864, 'weight of the evidence' 0.486 (abstract leak), 'bridge sagged under the weight' 0.351; 'lose weight' 0.008, grade weight 0.143, 'Heavy rain' 0.064, filler 0.010.",
+ "selection": "random draw"
+}

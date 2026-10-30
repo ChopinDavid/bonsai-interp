@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-aef1c408",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N784+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T02:35:59+00:00",
+ "recipe": {
+  "toolchain_commit": "786f4811",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N784_pos/2026-10-29-ChopinDavid-aef1c408.tests.json"
+ },
+ "label": "unclear: weak and broad (max 9.1, 0.8% of tokens at 0.1 of max). Probes of historical and bibliographic prose scored 0.07-0.36, highest on the final piece of a split proper name (Stratford-upon-A|von 0.36, penic|illin 0.23, ابن تيم|ية 0.22) and on a year in a citation (1902 0.23); everyday prose 0.07",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N784_pos/2026-10-29-ChopinDavid-aef1c408.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.219,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.282,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.11,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.086,
+     "peak": " death"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.068,
+     "peak": " cathedral"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.054,
+     "peak": " university"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.123,
+     "peak": " soil"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.097,
+     "peak": "-"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.124,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.099,
+     "peak": " attacked"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.07,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.109,
+     "peak": " death"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.068,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.076,
+     "peak": " university"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.147,
+     "peak": " patients"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.08,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.57,
+    "median_fire": 0.104,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "786f4811",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "name-final piece in historical prose (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 9.1, density 0.78%, no single token ('7' x3, 'burger', 'ية', ' Bowen', '2', '8'); top examples are bibliographic entries (Stras|burger), Arabic ابن تيم|ية, Catherine Drinker Bowen, year digits 19|2|9 and 19|8|2, Black Power, penic|illin, A|von, Riccard|i. Probe: Stratford-upon-Avon 0.363 ('von'), 'Translated by J. S. Kingsley. 1902' 0.228 ('0'), penicillin 0.227, ابن تيمية 0.223, 'Miracle at Philadelphia' 0.146, 1982 0.116, Darwin citation 0.093, Palazzo Pitti 0.080, filler 0.065. Nothing reached 0.4; the test records the best guess with names split W|itten|berg, Mag|de|burg, N|ure|m|berg, Med|ici, Str|asbourg, He|idelberg, stre|ptom|ycin and a citation line.",
+ "selection": "random draw"
+}

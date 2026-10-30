@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-b09caa03",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N4809-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T02:35:51+00:00",
+ "recipe": {
+  "toolchain_commit": "786f4811",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N4809_neg/2026-10-29-ChopinDavid-b09caa03.tests.json"
+ },
+ "label": "Gospel narrative about Jesus and his disciples (Jesus washed the feet of his disciples 1.01, the Gospel of Mark says that Peter 0.64, Thomas refused to believe (John 20:25) 0.63); the Pauline epistles (0.08), the Old Testament (Moses 0.01), the Buddha (0.16), Roman history (0.00) and present-day church life (0.00) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N4809_neg/2026-10-29-ChopinDavid-b09caa03.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.487,
+     "peak": " risen"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.508,
+     "peak": " twelve"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.317,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.422,
+     "peak": " betrayed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.656,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.661,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.585,
+     "peak": "John"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.456,
+     "peak": " follow"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.081,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.034,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.067,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.19,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " revelation"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " rehears"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.497,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "786f4811",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Gospel narrative (Jesus and the disciples)",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 344, density 0.063%, peaks ' (', ' of', ',', ' in', ' the', ' as', ' his', ' other', all inside sentences about Jesus, Peter, John, Thomas, the Gospel of John/Phillip, Last Supper, Mt 26, Luke 22; Russian 'посланий апостола Павла' also fires. Logit effect suppresses Christ/Jesus/Thomas/Peter/Philip/John/disciple. Probe: Last Supper and disciples 1.010, Gospel of Mark / Peter 0.636, Thomas (John 20:25) 0.625; Paul to the Corinthians 0.078, Moses 0.006, the Buddha 0.164, Caesar 0.002, parish church 0.003, filler 0.002. The epistle probe suggests the pole wants the narrative about Jesus and the disciples rather than the New Testament as a whole; one near miss (Romans) keeps that boundary under test.",
+ "selection": "random draw"
+}
