@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-f0d5c093",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N11314+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:33:29+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N11314_pos/2026-10-30-ChopinDavid-f0d5c093.tests.json"
+ },
+ "label": "' for' introducing a ground or reason: 'for one thing' 0.75, 'for standing reasons' 0.35, 'make up for having less oil' 0.29; beneficiary 'for her mother' (-0.01), duration 'for three hours' 0.04 and purpose 'for' are silent; 'for two reasons:' scored only 0.08 and 'Being able to' 0.11, so the reading is inconsistent and the label is low-confidence",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N11314_pos/2026-10-30-ChopinDavid-f0d5c093.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.313,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.279,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.002,
+     "peak": " reasons"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.017,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.025,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.535,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.16,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.136,
+     "peak": " another"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.037,
+     "peak": " which"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.008,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " money"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.047,
+     "peak": " main"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.022,
+     "peak": " evidence"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.041,
+     "peak": " smaller"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.797,
+    "median_fire": 0.148,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "reason-giving 'for' (for one thing)",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 16.6, density 0.47%, peaks ' for' x11, ' individual' x2, ' being' x2, 联通, 在一起, ' having' in 'actions for standing reasons', 'make up for having less oil', 'Well, for one thing director', 'Being able to step', 'for two reasons:', 'writing for the website for academics'. - pole is quantity nouns (number, speed, extent). Probe: 'Well, for one thing, the director' 0.752, 'for standing reasons' 0.350, 'make up for having less oil' 0.288, 'Being able to walk' 0.109, 'for two reasons:' 0.078 (':'), 'writing for it' 0.057; 'on Monday morning' 0.112, 'a present for her mother' -0.008, 'for three hours' 0.041. Near misses keep 'for' in its beneficiary, duration, purpose or phrasal-verb use.",
+ "selection": "random draw"
+}

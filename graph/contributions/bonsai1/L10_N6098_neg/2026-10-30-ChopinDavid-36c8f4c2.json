@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-36c8f4c2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N6098-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:32:54+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L10_N6098_neg/2026-10-30-ChopinDavid-36c8f4c2.tests.json"
+ },
+ "label": "the opening of an explanation clause: the token after because / reasoned that / find it strange that (0.24-0.31), the comma that closes a fronted 'Because ...,' clause (0.52) and the German 'Aus ... Gründen' (0.57); the same content joined with 'and' or stated plainly is silent (0.03-0.09)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N6098_neg/2026-10-30-ChopinDavid-36c8f4c2.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.215,
+     "peak": " we"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.322,
+     "peak": " unsafe"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.625,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.291,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.27,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.307,
+     "peak": "en"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.211,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.156,
+     "peak": " because"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.021,
+     "peak": " market"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": " we"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": "Nobody"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.025,
+     "peak": "ob"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": " farmers"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.28,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "start of an explanation after because/that",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 7.8, density 0.57%, peaks ',' x5, ' we' x2, ' because' x2, ' that' x2 in '# we should check', 'because we patched out', 'rate because with the current peg', 'reasoned that', 'bait, we get', 'Aus zeitlichen Gründen', 'strange that'. Probe: 'Aus zeitlichen Gründen' 0.570 (en), 'Because we use corn for bait, we' 0.522 (','), 'reasoned that' 0.308, 'strange that' 0.261, 'because with' 0.251, '# ... because we' 0.237; 'and Brace sent' 0.085, 'bait, and we' 0.026, plain 0.028. The + pole peaks on because/so/therefore and promotes ' because', so the pair reads cause-marking words (+) against the clause that follows them (-).",
+ "selection": "random draw"
+}

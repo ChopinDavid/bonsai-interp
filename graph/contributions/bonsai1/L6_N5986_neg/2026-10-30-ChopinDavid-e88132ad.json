@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-e88132ad",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N5986-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:33:18+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N5986_neg/2026-10-30-ChopinDavid-e88132ad.tests.json"
+ },
+ "label": "polysemantic, weak unit (max 3.5, leak 33%): (a) ' not' right after can/can't/could in a rhetorical double negative ('I can't not talk about it' 0.75, 'how could you not be' 0.66, 'you can't not click' 0.60, 'how can you not like' 0.37) and (b) the fruit pieces ol|ives (0.84) and ' grapes' (0.63) in food lists; the same sentences without 'not' (0.06-0.10) or with cheese instead of olives (0.04) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N5986_neg/2026-10-30-ChopinDavid-e88132ad.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.899,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.367,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.576,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.878,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.807,
+     "peak": "ives"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.047,
+     "peak": "ives"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.525,
+     "peak": " grapes"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.367,
+     "peak": " not"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.078,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " b"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.086,
+     "peak": "Seriously"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.058,
+     "peak": " handful"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.224,
+     "peak": "ums"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.086,
+     "peak": " that"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.692,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "can('t) not + olives/grapes",
+ "unit_kind": "sparse feature",
+ "confidence": 0.45,
+ "notes": "Card: max 3.45, density 0.62%, leak 33%, peaks ' not' x6, 'ives' x4, ' coma' x4, ' grapes' x2, 'apes' in 'can't not talk', 'how can you not like Python', 'how could you not be', 'can't not click', 'ol|ives' in snack lists, 'Gr|apes', 'apples, peaches, grapes'. Probe: olives 0.843/0.842 (ives), 'can't not talk' 0.754, 'how could you not be' 0.661, 'grapes' 0.627, 'can't not click' 0.602, 'how can you not like' 0.367; 'I have to talk' 0.097, 'how can you like' 0.056, 'cheese and cured meats' 0.041. Tokenizer: ' olives' = ' ol'+'ives', ' grapes' is one token; 'coma' was not probed and is not in the test.",
+ "selection": "random draw"
+}

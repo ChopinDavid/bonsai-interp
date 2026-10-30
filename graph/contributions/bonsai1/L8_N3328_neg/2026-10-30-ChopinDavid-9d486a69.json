@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-9d486a69",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3328-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:32:49+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N3328_neg/2026-10-30-ChopinDavid-9d486a69.tests.json"
+ },
+ "label": "a preposition stranded by a missing object in a reduced relative or passive ('the person spoken about' 0.66, 'the poet referred to is' 0.73, 'the user we are interested in' 0.70, 'not asked for' 0.52), peaking on the preposition or the word after it; the same verb + preposition followed by its object is silent (0.03-0.05)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N3328_neg/2026-10-30-ChopinDavid-9d486a69.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.412,
+     "peak": " about"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.127,
+     "peak": " they"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.415,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.039,
+     "peak": " upon"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.622,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.474,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.189,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.051,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": " book"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": " experience"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.028,
+     "peak": " she"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.044,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " garden"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.043,
+     "peak": " spoke"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " paid"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.034,
+     "peak": " junior"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.3,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "stranded preposition, object missing",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 7.4, density 0.12%, peaks ' for' x8, ' take' x3, ' about' x2, ' in' x2 in 'the person spoken about,', 'The place to talk about the Texas Longhorns', 'The user we are interested in.', 'to be taken not asked for', 'the poet referred to is Coleridge', 'not inquired into'. Probe: 'the poet referred to is' 0.732, 'the user we are interested in is' 0.702, 'the person spoken about' 0.664, 'not asked for' 0.522, 'the place to talk about' 0.386, 'never properly inquired into' 0.107; 'referred to Coleridge' 0.049, 'talked about the Longhorns' 0.029, 'inquired into the matter' 0.041. Near misses keep each verb and preposition and put the object after it.",
+ "selection": "random draw"
+}
