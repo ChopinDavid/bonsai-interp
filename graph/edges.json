@@ -1515,6 +1515,14 @@
    "contribution": "2026-10-18-cleanroom-codex-5a7e"
   },
   {
+   "from": "bonsai1/L22/N2000-",
+   "to": "bonsai1/L24/N9629+",
+   "kind": "feeds",
+   "weight": 0.32,
+   "method": "single-unit zero ablation, downstream (play step --down)",
+   "contribution": "2026-10-30-moridinamael-dd5e70be"
+  },
+  {
    "from": "bonsai1/L22/N2221+",
    "to": "bonsai1/L23/N11602+",
    "kind": "feeds",
