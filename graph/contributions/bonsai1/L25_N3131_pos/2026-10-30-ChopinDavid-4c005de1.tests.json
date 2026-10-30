@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4c005de1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N3131+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N3131",
+   "pole": "+",
+   "label": "A third party's reported statement or stance in news prose: the hearsay marker という, the reporting verb 表示, and the 'initially agreed but later declined' turn; the perfect auxiliary 'has' fires weakly on its own",
+   "fire": [
+    "市によると、閉館中の図書館は来年春に再開する予定だという。",
+    "関係者によれば、監督は今季限りで退任する意向を固めたという。",
+    "住民の一人は「夜中に大きな音がして目が覚めた」と話したという。",
+    "公司发言人同时表示，受影响的用户将获得全额退款。",
+    "外交部同时表示，中方对有关决定表示强烈不满。",
+    "The club's owner initially denied the reports but later confirmed the sale.",
+    "The minister at first refused to comment but later issued a statement.",
+    "The witness initially agreed to testify but later changed her mind."
+   ],
+   "quiet": [
+    "市は閉館中の図書館を来年春に再開し、新しい閲覧室を設ける。",
+    "監督は今季最終戦の後、選手たちと記念写真を撮った。",
+    "住民の一人は夜中に大きな音を聞いて外に出た。",
+    "公司向受影响的用户发放了全额退款。",
+    "外交部召见了该国大使。",
+    "The club's owner completed the sale on Friday afternoon.",
+    "The minister opened the new bridge on Monday.",
+    "The witness arrived at the courthouse shortly after nine."
+   ]
+  }
+ ],
+ "predictions": "Japanese sentences ending in という, Chinese 同时表示 and English 'initially ... but later ...' stance reports reach 0.4-0.7. News sentences about actions in the simple past stay under 0.12. A near miss built on 'has' would leak at about 0.3, so the near misses here use the simple past; that leak is recorded in the notes.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "reported stance in news prose",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'initially agreed to comment but later declined' 0.693 (peak ' later'), 外交部发言人同时表示 0.634 (peak 同时), 頭を強く打ったという 0.555 (peak という); 'The mayor has said' 0.287 but 'has opened' 0.303 and 'has been fined' 0.296 (all peak ' has'), 'Officials said' 0.100, 'Officials closed' 0.105, Japanese action sentence 0.072, recipe 0.029. Card peaks ' has' x6, という x5, ' is' x2, 同时; the - pole peaks on ' not', 'I', \"'t\" and the + pole's output suppresses 'recommend*'. English 'said' alone did not fire, so the label names the reported-stance frames that did and flags 'has' as a separate weak trigger."
+}

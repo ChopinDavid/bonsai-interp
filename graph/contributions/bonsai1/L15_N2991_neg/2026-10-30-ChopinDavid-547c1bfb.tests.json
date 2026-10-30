@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-547c1bfb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N2991-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N2991",
+   "pole": "-",
+   "label": "The first word of the main clause after a fronted adverbial or subordinate clause when the comma is omitted (In addition the council has..., Before the guards could react the prisoners...)",
+   "fire": [
+    "After the storm had passed the villagers returned to assess the damage.",
+    "In spite of the delay the shipment arrived in good condition.",
+    "If the weather holds we will plant the beans on Saturday.",
+    "As a result the company lost two of its largest clients.",
+    "When the whistle blew the players walked slowly off the pitch.",
+    "Without any warning the lights in the hall went out.",
+    "On the other hand the cheaper model lacks a backup camera.",
+    "Although he was tired he finished the report before midnight."
+   ],
+   "quiet": [
+    "After the storm had passed, the villagers returned to assess the damage.",
+    "In spite of the delay, the shipment arrived in good condition.",
+    "If the weather holds, we will plant the beans on Saturday.",
+    "As a result, the company lost two of its largest clients.",
+    "When the whistle blew, the players walked slowly off the pitch.",
+    "Without any warning, the lights in the hall went out.",
+    "On the other hand, the cheaper model lacks a backup camera.",
+    "Although he was tired, he finished the report before midnight."
+   ]
+  }
+ ],
+ "predictions": "English sentences with a fronted adverbial or subordinate clause and no comma reach 0.35-0.65 at the first word of the main clause. The same sentences with the comma stay under 0.05. (The probe's French item did not fire, so the test is English only.)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "main clause after a fronted phrase, no comma",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'In addition the council has' 0.597 (peak ' has'), 'Before the guards could react the prisoners' 0.621 (peak ' the'), 'In conclusion Churchill said' 0.497 (peak ' said'), 'For more information please visit' 0.382 (peak ' please'); with commas 0.018, 0.011, 0.008, 0.038; 'has in addition approved' (not fronted) 0.121; French 'Pour rappel ce modèle' 0.068. Card: Spanish, Arabic, French, English and Russian examples all peak on the word that opens the main clause after a fronted phrase with no comma (Villegas dijo, In conclusion Stalin, In addition it, Malgré cela nous, Before Frodo could react the)."
+}

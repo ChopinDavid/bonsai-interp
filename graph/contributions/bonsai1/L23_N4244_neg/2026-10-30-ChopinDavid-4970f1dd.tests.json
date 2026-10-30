@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4970f1dd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N4244-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N4244",
+   "pole": "-",
+   "label": "Unclear: best guess is the preposition that links a relational noun or verb to its complement (results of, responses to, prepare X for, record their next album)",
+   "fire": [
+    "The findings of the parliamentary inquiry were published in full.",
+    "Her reaction to the verdict surprised even her lawyers.",
+    "The orchestra returned to the hall to rehearse the second symphony.",
+    "Volunteers spent the morning preparing the hall for the wedding reception.",
+    "The outcome of the vote was closer than anyone predicted.",
+    "The response to the appeal exceeded all expectations.",
+    "The club that runs the summer regatta has fifty members.",
+    "The hardest part of the exam was the oral section."
+   ],
+   "quiet": [
+    "The parliamentary inquiry published its findings in full.",
+    "Even her lawyers were surprised when she reacted.",
+    "The orchestra returned to the hall and rehearsed again.",
+    "Volunteers spent the morning in the wedding hall.",
+    "Nobody predicted such a close vote.",
+    "The appeal exceeded all expectations.",
+    "The club has fifty members and a summer regatta.",
+    "The oral section was the hardest."
+   ]
+  }
+ ],
+ "predictions": "Weak: the probe frames reached only 0.10-0.26 at the preposition and the complement's type did not matter (chess tournament and blood test both 0.187), so fire items will mostly land under 0.3 and the test probably fails on strength. Restructured twins without the link stay under 0.03.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "complement-linking preposition",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: 'responses to our survey' 0.257 (peak ' to'), 'results of the chess tournament' 0.187 and 'results of the blood test' 0.187 (peak ' of'), 'preparing the team for' 0.175, 'organizes the annual' 0.175, 'to record a follow-up album' 0.103; twins without the link 0.014-0.026. The event-noun hypothesis (competition, survey, album, festival) is refuted by the blood-test twin. Card peaks ' of' x11, ' for' x5, ' to' x2 with max 22 and density 0.53%; the top examples are prep the general for, record their next album, responses to, results of, hat auf, overwhelm yourself with."
+}

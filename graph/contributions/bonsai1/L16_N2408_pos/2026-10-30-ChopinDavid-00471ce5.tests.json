@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-00471ce5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N2408+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N2408",
+   "pole": "+",
+   "label": "Unclear: best guess is the noun of a computed quantity presented as the result of an operation (gives you the elapsed time, add up to form the given vector, Computes Y = A * X)",
+   "fire": [
+    "Subtracting the start reading from the end reading gives you the distance travelled.",
+    "Adding the three components together yields the resultant vector.",
+    "    \"\"\"\n    Computes Z[:] = alpha * X + Y.\n    \"\"\"\n    raise NotImplementedError()",
+    "The timer records the elapsed time between the two clicks.",
+    "Dividing the total by the count gives the mean of the sample.",
+    "The counter holds the number of packets received since start-up.",
+    "    Parameters\n    ----------\n    input_vector : ndarray\n        Coefficients in the chosen basis.",
+    "Multiplying the two matrices gives the combined transformation."
+   ],
+   "quiet": [
+    "Subtracting the sugar from the recipe gives you a lighter cake.",
+    "Adding the three colours together yields a muddy brown.",
+    "    \"\"\"\n    Opens the log file for appending.\n    \"\"\"\n    raise NotImplementedError()",
+    "The diary records the conversations between the two friends.",
+    "Dividing the garden by a hedge gives the children a play area.",
+    "The box holds the letters received since the move.",
+    "    Parameters\n    ----------\n    input_path : str\n        Location of the configuration file.",
+    "Mixing the two paints gives a warmer shade."
+   ]
+  }
+ ],
+ "predictions": "Weak at best: 'the elapsed time' as a result reached 0.537 in the probe but vector/number/matrix nouns in other frames stayed at 0.015-0.195, so most fire items will land under 0.3 and the test probably fails on strength. Non-quantity twins should stay under 0.13.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "computed-quantity noun as a result",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: 'the elapsed time of each lap' 0.537 (peak ' time'); 'Multiply the matrix by' 0.195 (peak ' by'); 'number of bytes' 0.050; 'length of the vector' 0.015; input_array docstring 0.043; non-math twins 0.018-0.126. Card peaks ' size', ' *', ' vector', '_array', ' vectors', '(address', ' number', ' timestamp', ' time' in code and maths prose with max 11.2 and 0.26% density; no single token. The result-of-an-operation frame is the only configuration that fired, so it is tested here as a best guess."
+}

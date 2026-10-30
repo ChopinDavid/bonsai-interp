@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ec715e6d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9369-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T20:34:40+00:00",
+ "recipe": {
+  "toolchain_commit": "f5dddbcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N9369_neg/2026-10-30-ChopinDavid-ec715e6d.tests.json"
+ },
+ "label": "Soviet or Russian-state institutional context, at the slot right before an institution or place name is given (called the Cheka, Sukhoi Design Bureau, District Administrative Center, the Volga city of Gorky)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N9369_neg/2026-10-30-ChopinDavid-ec715e6d.tests.json",
+   "prereg_commit": "f5dddbcd",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.988,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.319,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.344,
+     "peak": " Administrative"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.608,
+     "peak": " Design"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.434,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.462,
+     "peak": "GB"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.18,
+     "peak": " Aviation"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.229,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.085,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.101,
+     "peak": " Sherman"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.194,
+     "peak": " county"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.094,
+     "peak": "ne"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " Dayton"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.1,
+     "peak": " Yard"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.108,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.389,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f5dddbcd",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Soviet institution about to be named",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'police force called the Cheka' 0.795 (peak ' the'), 'Sukhoi Design Bureau' 0.529 (peak ' Design'), 'Volga city of Gorky' 0.422 (peak 'ork'), 'District Administrative Center of Rokiskis' 0.351, 'local Evenki hunters' 0.267; controls 'agency called the CIA' 0.136, 'Lockheed Skunk Works design team' 0.166, 'county seat of Burlington' 0.183, Russian NKVD sentence only 0.181, bakery 0.010. Card: top examples are Cheka, Soviet tank design team, Mikoyan-Gurevich Design Bureau, Stalinist execution lists, Lviv SSU, with max 226 at layer 32. Near misses keep the frame and swap the state.",
+ "selection": "random draw"
+}

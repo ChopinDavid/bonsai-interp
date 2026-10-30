@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ef43fa21",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N1959-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N1959",
+   "pole": "-",
+   "label": "The completing word of two fixed pairs: 'class' after 'middle' (middle class, middle-class) and 'out' after 'close' (close out, closed out); other X class and close X / X out combinations are silent",
+   "fire": [
+    "The new tax credit mainly benefits middle-class households in the suburbs.",
+    "The choir will close out the festival with a Bach cantata.",
+    "Few middle class families could afford a second car in the 1950s.",
+    "A double from the veteran batsman closed out the innings.",
+    "Suburban middle-class voters decided the election.",
+    "The fireworks closed out the celebrations just after midnight.",
+    "Rising rents are squeezing the middle class out of the city.",
+    "The band likes to close out every set with the same ballad."
+   ],
+   "quiet": [
+    "The new tax credit mainly benefits working-class households in the suburbs.",
+    "The choir will open the festival with a Bach cantata.",
+    "Few upper class families kept a second car in the 1950s.",
+    "A double from the veteran batsman closed the gap in the innings.",
+    "Suburban lower-class voters decided the election.",
+    "The fireworks went out just after midnight.",
+    "Rising rents are pushing the ruling class out of the city.",
+    "The band likes to close every set with the same ballad."
+   ]
+  }
+ ],
+ "predictions": "middle class / middle-class and close(d) out reach 0.4-0.75 on ' class', '-class' or ' out'. working-class, upper/lower class, first class, 'close the gap', 'went out' stay under 0.15 (upper-class reached 0.144 in the probe, the only near miss above 0.04).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "class after middle, out after close",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: 'close out the show' 0.736, 'middle-class families' 0.619, 'closed out the season' 0.572, 'middle class' 0.432; 'working class' 0.014, 'first class' 0.008, 'upper-class' 0.144, 'close the window' 0.035, 'ran out' 0.017, bakery 0.013. Card peaks '-class' x14, ' out' x8, ' class' x7 with max 15.9 and 0.019% density; the working-class base in one card context did not peak while middle-class did. No shared pattern beyond 'second word of a fixed pair' was found, so the two collocations are listed and said to be a list."
+}

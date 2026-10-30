@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6ee9aa49",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N3518+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N3518",
+   "pole": "+",
+   "label": "A new first-person clause ('I', 'Im') opening right after a run-on juncture in informal conversational writing, typically after a clause addressed to the reader (maybe you are right...Im not sure; let me know, I would like to)",
+   "fire": [
+    "thanks for checking the draft, I would appreciate any corrections you spot",
+    "ok you may have a point there...Im still not convinced though",
+    "if u have the older version please tell me, I can send the patch tonight",
+    "glad you liked the photos, I took most of them with my phone",
+    "yeah you are probably right...I just dont see it happening soon",
+    "hope this helps anyone else with the same card, I spent two days on it",
+    "sorry if this is a dumb question, I am new to all this",
+    "well maybe its just me...Im not seeing any difference after the update"
+   ],
+   "quiet": [
+    "thanks for checking the draft, we would appreciate any corrections you spot",
+    "ok you may have a point there...she is still not convinced though",
+    "if u have the older version please tell me and the patch will go out tonight",
+    "glad you liked the photos, most of them were taken with a phone",
+    "yeah you are probably right...it just doesnt seem likely soon",
+    "hope this helps anyone else with the same card, it took two days to sort",
+    "sorry if this is a dumb question, this forum is new to me",
+    "well maybe its just the lighting...theres no difference after the update"
+   ]
+  }
+ ],
+ "predictions": "Forum-style sentences where 'I'/'Im' starts a new clause after a comma or ellipsis reach 0.15-0.4 on that token. The same sentences with 'we', 'she' or 'it' as the new subject, or with 'I' inside a clause, stay under 0.06. Lower-case 'i' after '..' did not fire in the probe.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'I' opening a run-on clause in chat prose",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'maybe you are right...Im not sure' 0.380 (peak 'Im'), 'please let me know, I would like' 0.230 (peak ' I'), 'he blamed me. I was furious' 0.178 (peak '.'); 'late reply..i was away' 0.025, 'food bank I often collect' 0.049, 'she often collects' 0.049, 'What I do know' 0.028, 'we were away' 0.027, report floor 0.037. Card peaks ' I' x11, 'I' x3, ' i' x3, '.', ',', ' me' in forum posts and dialogue with max 25 and 0.02% density; the - pole peaks on ' I' before am/'m and the + pole's output promotes 'm/am/myself."
+}
