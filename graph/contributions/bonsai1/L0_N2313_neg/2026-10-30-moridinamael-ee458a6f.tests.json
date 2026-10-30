@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-30-moridinamael-ee458a6f",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N2313-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:33:55+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the bare tokens ' indiscrim', ' Yosemite', ' selfish' and ' erratic' (an embedding-level token set), as against neighbouring words that are other tokens"
+ },
+ "neighbours": [
+  {
+   "unit": "L0/N2313",
+   "pole": "-",
+   "label": "A fixed list of exact whole tokens, not a theme: mid-sentence ' indiscrim' (indiscriminate), ' Yosemite', ' selfish', ' erratic', plus Russian ' ребен' (ребенок), Japanese 'とにかく' and Arabic ' جدا'; silent on synonyms, other forms (erratically, selfishness) and sentence-initial splits",
+   "fire": [
+    "The bombing was indiscriminate and hit several villages.",
+    "We spent a week hiking in Yosemite last summer.",
+    "My brother can be selfish about sharing snacks.",
+    "The old clock has become erratic lately.",
+    "Вчера наш ребенок впервые пошёл сам.",
+    "今日はとにかく暑いので、水をたくさん飲んでください。",
+    "هذا الكتاب مفيد جدا للطلاب.",
+    "The pilot reported erratic readings from the altimeter."
+   ],
+   "quiet": [
+    "The bombing was widespread and hit several villages.",
+    "We spent a week hiking in Yellowstone last summer.",
+    "My brother can be stingy about sharing snacks.",
+    "The old clock has become unreliable lately.",
+    "Вчера наш малыш впервые пошёл сам.",
+    "今日はとても暑いので、水をたくさん飲んでください。",
+    "هذا الكتاب مفيد كثيرا للطلاب.",
+    "The pilot reported inconsistent readings from the altimeter."
+   ]
+  }
+ ],
+ "predictions": "Expect 8/8 fire and 0 near misses; token-exact neuron. Risk: the Arabic and Russian items depend on exact tokenization.",
+ "trigger": {"words": [" indiscrim", " Yosemite", " selfish", " erratic", " ребен", "とにかく", " جدا"]},
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
