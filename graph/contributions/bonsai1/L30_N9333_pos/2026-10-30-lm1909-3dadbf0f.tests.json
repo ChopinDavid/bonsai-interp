@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3dadbf0f",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N9333+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N9333",
+   "pole": "+",
+   "label": "A minus sign that opens a negative exponent or a negative index, where '1' is the usual next token (g^{-1}, mol-1, cm^-1, m s^-2, range(n, -1, -1)); the same quantities written with positive exponents or in words stay quiet.",
+   "fire": [
+    "The rate constant is given in units of M^-1 s^-1.",
+    "Taking the inverse gives A^{-1} = adj(A) / det(A).",
+    "Peak absorption occurs near 1650 cm-1 in the infrared spectrum.",
+    "The standard enthalpy of formation is 285.8 kJ mol-1 in magnitude.",
+    "Thermal conductivity is about 0.6 W m-1 K-1 at room temperature.",
+    "for j in range(len(arr) - 1, -1, -1):\n    total += arr[j]",
+    "The prior on the precision is proportional to sigma^{-2} in this model.",
+    "Acceleration due to gravity is 9.81 m s^-2 at sea level."
+   ],
+   "quiet": [
+    "The rate constant is given in units of litres per mole per second.",
+    "Taking the transpose gives A^{T}, the rows written as columns.",
+    "Peak absorption occurs near 1650 wavenumbers in the infrared spectrum.",
+    "The standard enthalpy of formation is 285.8 kilojoules per mole in magnitude.",
+    "Thermal conductivity is about 0.6 watts per metre per kelvin at room temperature.",
+    "for j in range(len(arr)):\n    total += arr[j]",
+    "The prior on the variance is proportional to sigma^{2} in this model.",
+    "Acceleration due to gravity is 9.81 metres per second squared at sea level."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "minus sign of a negative exponent (-1)",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.7,
+ "notes": "Card: top examples peak on '^{-', '^-', ' -' and '-' just before '1' (inverse g^{-1}(Y), cm^-1, kJ mol-1, range(end, -1, -1)); output promotes '1', '¹', '₁'. Exploratory probe: 0.41-0.74 on those, 0.45 on 'm s-2', positive exponent 0.04, words 0.001."
+}

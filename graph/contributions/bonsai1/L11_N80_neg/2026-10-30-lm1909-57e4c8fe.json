@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-57e4c8fe",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N80-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:22:01+00:00",
+ "recipe": {
+  "toolchain_commit": "486f6f4e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N80_neg/2026-10-30-lm1909-57e4c8fe.tests.json"
+ },
+ "label": "Pairing for family or offspring: being married (' married', German 'verheiratet') and animal breeding (' breeding'); the same people and animals described without marriage or breeding stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N80_neg/2026-10-30-lm1909-57e4c8fe.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.401,
+     "peak": " married"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.059,
+     "peak": " pilot"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.742,
+     "peak": "ir"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.848,
+     "peak": "at"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.231,
+     "peak": " breeding"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.435,
+     "peak": " breeding"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.386,
+     "peak": " breeding"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.068,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.038,
+     "peak": " three"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.033,
+     "peak": " neighbour"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.036,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.056,
+     "peak": "nt"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": " ranch"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " years"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": " kenn"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.065,
+     "peak": " puppies"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.394,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "486f6f4e",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "being married / animal breeding",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.4,
+ "notes": "Card: peaks on ' married' x6, ' family' x3, 'eding' (breeding), German 'verheir|at|et', Arabic 'تزوّج'. Exploratory probe: verheiratet 0.50-0.58, breeding 0.33-0.38, 'is married with' 0.29, 'married to' 0.19, 'married his partner' 0.07, 'large family' 0.22. Weak and uneven; the test may fail on the median.",
+ "selection": "random draw"
+}

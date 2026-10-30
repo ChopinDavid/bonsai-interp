@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-c2a3db9b",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N2959-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N2959",
+   "pole": "-",
+   "label": "' et' of 'et al.' closing a punctuated author list (after a comma, semicolon or list dash: 'Lee, K.; et al.', '- et al.'); author lists that close with 'and Name', 'and colleagues' or 'and others' stay quiet.",
+   "fire": [
+    "Further work by Okafor, N.; Lindqvist, P.; et al. confirmed the result.",
+    "Authors: Chen Y, Patel R, Moreau L, et al. Journal of Hydrology, 2016.",
+    "- Nakamura T,\n- Osei K,\n- et al.",
+    "See: Duarte, M., Fischer, H., et al. (2003). Coastal erosion.",
+    "References\n1. Ivanova E, Brooks D, et al. Lancet. 2011.",
+    "The survey (Romero, A.; Haddad, S.; et al., 2018) covered six countries.",
+    "Contributors include Webb J., Sato M., et al.",
+    "Cited as: Kowalski, B.; et al. (2007), Ecology Letters."
+   ],
+   "quiet": [
+    "Further work by Okafor, N.; Lindqvist, P.; and Grant, H. confirmed the result.",
+    "Authors: Chen Y, Patel R, Moreau L. Journal of Hydrology, 2016.",
+    "- Nakamura T,\n- Osei K,\n- Brandt F.",
+    "See: Duarte, M., Fischer, H., and Klein, R. (2003). Coastal erosion.",
+    "References\n1. Ivanova E, Brooks D, and colleagues. Lancet. 2011.",
+    "The survey (Romero, A.; Haddad, S.; and others, 2018) covered six countries.",
+    "Contributors include Webb J., Sato M., and many more.",
+    "Cited as: Kowalski, B.; Ng, W. (2007), Ecology Letters."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-0.9; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'et al.' after a comma/semicolon in an author list",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.7,
+ "notes": "Weak pole (corpus max 1.20; the + pole is the strong 'et al.' unit, max 29.9). Card: peaks on ' et' x27, almost all after a comma or semicolon in reference lists; auto screen held for ' al' after 'et'. Exploratory probe: ', et al.' / '; et al.' / '- et al.' 0.55-0.86; 'Hayes et al.' (directly after a surname) 0.32; author lists ending 'and others' 0.15."
+}

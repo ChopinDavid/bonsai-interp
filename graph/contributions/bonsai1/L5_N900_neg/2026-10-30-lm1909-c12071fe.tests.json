@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-c12071fe",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N900-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N900",
+   "pole": "-",
+   "label": "The word-final piece (-ner, -ler, -er, -ainer) that completes a surname the tokenizer splits (Ray|ner, Find|ler, Wall|er); surnames that are a single token (Miller, Turner, Wagner) and ordinary -er words stay quiet.",
+   "fire": [
+    "The second symphony by Gustav Mahler was performed last night.",
+    "Our new cardiology chief, Dr. Anna Brenner, starts on Monday.",
+    "A study by Fiedler and two colleagues found no effect.",
+    "The motion was filed on Friday by attorney Sam Wexler.",
+    "In 1918 Oswald Spengler wrote about the decline of the West.",
+    "The Swiss naturalist Conrad Gessner catalogued the animals of Europe.",
+    "For four decades the Hausler family ran the village bakery.",
+    "After the war Erich Kahler taught at Princeton."
+   ],
+   "quiet": [
+    "The famous overture by Richard Wagner was performed last night.",
+    "Our new oncology chief, Dr. Anna Turner, starts on Monday.",
+    "A survey by Walker and two colleagues found no effect.",
+    "On Friday attorney Sam Parker filed the motion.",
+    "In 1918 a German historian wrote about the decline of the West.",
+    "The Swiss naturalist catalogued the animals of Europe in five volumes.",
+    "For four decades the Butler family ran the village bakery.",
+    "After the war the professor taught at Princeton."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "final piece of a split surname (-ner/-ler)",
+ "unit_kind": "spelling / token piece",
+ "confidence": 0.75,
+ "notes": "Card: peaks on 'ler' x11, 'er' x5, 'aler', 'ner', 'ainer' completing names (Ray|ner, Find|ler, Wall|er, R|ainer). Tokenizer checked: Mah|ler, Bren|ner, F|ied|ler, W|ex|ler, Sp|eng|ler, G|ess|ner, Haus|ler, Kah|ler are split; Wagner, Turner, Walker, Parker, Butler are single tokens. Exploratory probe: split surnames 0.56-1.06; Miller 0.002; 'bowler' 0.014."
+}

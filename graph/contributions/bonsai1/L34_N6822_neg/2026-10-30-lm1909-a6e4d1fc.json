@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-a6e4d1fc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N6822-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:21:40+00:00",
+ "recipe": {
+  "toolchain_commit": "486f6f4e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N6822_neg/2026-10-30-lm1909-a6e4d1fc.tests.json"
+ },
+ "label": "The first piece of a verb of handing out or gathering that the tokenizer splits: ' coll' (collate), ' disp' (dispense), Chinese '分' of 分发 'distribute', Japanese '配' of 配信; the same sentences with an unsplit verb stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N6822_neg/2026-10-30-lm1909-a6e4d1fc.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.18,
+     "peak": "分"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.542,
+     "peak": "分"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.763,
+     "peak": "分"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.565,
+     "peak": " coll"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.35,
+     "peak": " coll"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.262,
+     "peak": " disp"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.397,
+     "peak": " disp"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.19,
+     "peak": "配"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": "救援"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": "学生"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.068,
+     "peak": "传"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": " forms"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": "'"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " prints"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " trust"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "作"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.47,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "486f6f4e",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "first piece of split distribute/collate verbs",
+ "unit_kind": "spelling / token piece",
+ "confidence": 0.45,
+ "notes": "Card: peaks on '分' (分发), ' coll' (collate), ' disp' (dispense), '配' (配信), ' rel', Korean ' 분' (분산); the + pole is a broad word-onset unit (' dis', ' cr', ' pre'). Tokenizer checked: 分|发, 配|信, coll|ate(d), disp|ense(s) split; 分配 and distribute are one token. Exploratory probe: 分发 1.03, collate 0.56, dispense 0.21, distribute 0.07.",
+ "selection": "random draw"
+}

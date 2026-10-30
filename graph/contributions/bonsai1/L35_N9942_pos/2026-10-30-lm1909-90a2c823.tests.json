@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-90a2c823",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N9942+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N9942",
+   "pole": "+",
+   "label": "' د', the first piece of the Arabic name of the Tigris (دجلة), especially after نهر 'river'; the same sentences about other rivers stay quiet.",
+   "fire": [
+    "يمر نهر دجلة في وسط مدينة الموصل.",
+    "تقع مدينة سامراء على الضفة الشرقية لنهر دجلة.",
+    "يصطاد الصيادون السمك في نهر دجلة كل صباح.",
+    "بنيت جسور حديثة فوق نهر دجلة في بغداد.",
+    "ينبع نهر دجلة من جبال طوروس في تركيا.",
+    "شرب الجنود من مياه نهر دجلة بعد المسير.",
+    "يلتقي نهر دجلة بنهر الفرات قرب البصرة.",
+    "ارتفع منسوب نهر دجلة بعد الأمطار الغزيرة."
+   ],
+   "quiet": [
+    "يمر نهر النيل في وسط مدينة القاهرة.",
+    "تقع مدينة الرقة على الضفة الشمالية لنهر الفرات.",
+    "يصطاد الصيادون السمك في نهر الأردن كل صباح.",
+    "بنيت جسور حديثة فوق نهر النيل في الخرطوم.",
+    "ينبع نهر الفرات من جبال الأناضول في تركيا.",
+    "شرب الجنود من مياه نهر العاصي بعد المسير.",
+    "يلتقي النهران قرب البصرة في جنوب العراق.",
+    "ارتفع منسوب نهر النيل بعد الأمطار الغزيرة."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.9; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' د' starting دجلة (Tigris)",
+ "unit_kind": "token / name onset (prediction)",
+ "confidence": 0.55,
+ "notes": "Card: 3 of the top 6 examples are ' د' after نهر (river) beginning دجلة (Tigris); others: ' (' before TSH, Japanese 戦, ' الص'. Output promotes ' T'/'T'. Tokenizer: نهر دجلة -> ن|هر| د|جل|ة. Exploratory probe: نهر دجلة 0.22-0.94; ' (' before TSH 0.79 but TNF 0.005, TFT 0.11, T4 0.14, English 'Tigris' 0.14. This is a sub-trigger of a mixed pole; coverage will be partial."
+}

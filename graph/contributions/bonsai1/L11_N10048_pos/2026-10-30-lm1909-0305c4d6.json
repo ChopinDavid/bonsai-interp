@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-0305c4d6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10048+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:21:48+00:00",
+ "recipe": {
+  "toolchain_commit": "486f6f4e",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N10048_pos/2026-10-30-lm1909-0305c4d6.tests.json"
+ },
+ "label": "Releasing captured or captive animals into the wild or into water ('release(d) ... into the river/wild'), firing on 'release(d)' and the following 'into'; other kinds of release (films, prisoners, earnings) and other handling of animals stay low.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10048_pos/2026-10-30-lm1909-0305c4d6.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.338,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.668,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.875,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.037,
+     "peak": " released"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.625,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.549,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.764,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.737,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.41,
+     "peak": " turtles"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " feed"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.332,
+     "peak": "ery"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.08,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " release"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " river"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": "ized"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.065,
+     "peak": " released"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.75,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "486f6f4e",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "releasing animals into the wild",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.75,
+ "notes": "Card: ' release' x7 in wildlife contexts (catch-and-release, never release a captive turtle into the wild, release of fish into public waters), word hits ' stocking', ' fish'. Exploratory probe: animal releases 0.66-1.25 (peak often on ' into'), album release 0.01, prisoner released 0.24, capture 0.12.",
+ "selection": "random draw"
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a6e4d1fc",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N6822-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N6822",
+   "pole": "-",
+   "label": "The first piece of a verb of handing out or gathering that the tokenizer splits: ' coll' (collate), ' disp' (dispense), Chinese '分' of 分发 'distribute', Japanese '配' of 配信; the same sentences with an unsplit verb stay quiet.",
+   "fire": [
+    "救援人员在灾区向居民分发饮用水。",
+    "学校每天早上给学生分发牛奶。",
+    "志愿者在车站门口分发传单。",
+    "The clerk will collate the survey forms before the meeting.",
+    "Editors collated the readers' letters into a single issue.",
+    "The machine dispenses tickets after you pay.",
+    "A trust was created to dispense grants to local artists.",
+    "新しい動画を毎週配信しています。"
+   ],
+   "quiet": [
+    "救援人员在灾区为居民提供饮用水。",
+    "学校每天早上给学生准备牛奶。",
+    "志愿者在车站门口张贴传单。",
+    "The clerk will check the survey forms before the meeting.",
+    "Editors printed the readers' letters in a single issue.",
+    "The machine prints tickets after you pay.",
+    "A trust was created to award grants to local artists.",
+    "新しい動画を毎週作っています。"
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-1.0; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "first piece of split distribute/collate verbs",
+ "unit_kind": "spelling / token piece",
+ "confidence": 0.45,
+ "notes": "Card: peaks on '分' (分发), ' coll' (collate), ' disp' (dispense), '配' (配信), ' rel', Korean ' 분' (분산); the + pole is a broad word-onset unit (' dis', ' cr', ' pre'). Tokenizer checked: 分|发, 配|信, coll|ate(d), disp|ense(s) split; 分配 and distribute are one token. Exploratory probe: 分发 1.03, collate 0.56, dispense 0.21, distribute 0.07."
+}

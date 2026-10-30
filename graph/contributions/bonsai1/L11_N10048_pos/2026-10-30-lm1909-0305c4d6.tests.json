@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-0305c4d6",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10048+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N10048",
+   "pole": "+",
+   "label": "Releasing captured or captive animals into the wild or into water ('release(d) ... into the river/wild'), firing on 'release(d)' and the following 'into'; other kinds of release (films, prisoners, earnings) and other handling of animals stay low.",
+   "fire": [
+    "Biologists tagged the young sea turtles and released them into the ocean.",
+    "Keepers plan to release the captive-bred wolves into the national park.",
+    "Each spring the hatchery releases thousands of trout fry into local lakes.",
+    "After treatment the injured owl was released back into the woods.",
+    "It is illegal to release pet goldfish into ponds or streams.",
+    "The project will release beavers into the river valley next year.",
+    "Fishermen are asked to release undersized cod back into the sea.",
+    "The sanctuary released three rehabilitated otters into the estuary."
+   ],
+   "quiet": [
+    "Biologists tagged the young sea turtles and measured their shells.",
+    "Keepers plan to feed the captive-bred wolves twice a day.",
+    "Each spring the hatchery counts thousands of trout fry in its tanks.",
+    "After treatment the injured owl stayed at the clinic for a week.",
+    "The studio will release the film in cinemas next year.",
+    "The project will study beavers in the river valley next year.",
+    "Fishermen are asked to report undersized cod to the harbour office.",
+    "The company released its quarterly earnings on Tuesday."
+   ]
+  }
+ ],
+ "predictions": "fire 0.6-1.2; near misses below 0.25",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "releasing animals into the wild",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.75,
+ "notes": "Card: ' release' x7 in wildlife contexts (catch-and-release, never release a captive turtle into the wild, release of fish into public waters), word hits ' stocking', ' fish'. Exploratory probe: animal releases 0.66-1.25 (peak often on ' into'), album release 0.01, prisoner released 0.24, capture 0.12."
+}

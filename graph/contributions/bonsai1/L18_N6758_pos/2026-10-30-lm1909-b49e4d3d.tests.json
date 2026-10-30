@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-b49e4d3d",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N6758+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:02:24+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N6758",
+   "pole": "+",
+   "label": "Reporting back findings after going out to observe or inspect ('visit the colony and report his observations', 'reported back their findings', 'wrote up a report'), firing on the reporting verb; the same trips without a report stay quiet.",
+   "fire": [
+    "The envoy toured the northern provinces and reported to the emperor what he had seen.",
+    "Inspectors visited every school in the district and reported their findings to the minister.",
+    "She spent a month in the camps and wrote a report on the conditions there.",
+    "The scouts crossed the ridge and came back to report the enemy's position.",
+    "Volunteers walked the coastline and reported the numbers of nesting birds.",
+    "A commission travelled to the colony to investigate and report its observations.",
+    "The journalist lived among the miners and wrote about their working lives.",
+    "Field teams sampled the wells and reported the results back to the agency."
+   ],
+   "quiet": [
+    "The envoy toured the northern provinces and rested at a monastery.",
+    "Inspectors visited every school in the district during the spring term.",
+    "She spent a month in the camps and helped in the kitchens there.",
+    "The scouts crossed the ridge and set up camp near the stream.",
+    "Volunteers walked the coastline and picked up plastic litter.",
+    "A commission travelled to the colony by ship in the autumn.",
+    "The journalist lived among the miners for most of a year.",
+    "Field teams drilled the wells and installed new pumps for the agency."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "reporting back findings after a visit",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.6,
+ "notes": "Card: peaks on ' report' x5, ' data' x4, ' back', ' wrote' (we had to report to him; visit the colony and report his observations; wrote sympathetically about); output promotes ' results', ' obtained', ' estimates', ' outputs'. Exploratory probe: report/wrote after a visit 0.26-0.94, the same trips without a report 0.01; code 'value' 0.04."
+}
