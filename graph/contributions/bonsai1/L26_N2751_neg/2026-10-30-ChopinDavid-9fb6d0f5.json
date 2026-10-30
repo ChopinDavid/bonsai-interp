@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-9fb6d0f5",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2751-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T18:35:19+00:00",
+ "recipe": {
+  "toolchain_commit": "7cc1ed63",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N2751_neg/2026-10-30-ChopinDavid-9fb6d0f5.tests.json"
+ },
+ "label": "the connective (and / then / please / simply / comma) that pivots into the next imperative step of a software or navigation instruction, not the same subject matter reported as narrative",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N2751_neg/2026-10-30-ChopinDavid-9fb6d0f5.tests.json",
+   "prereg_commit": "7cc1ed63",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.625,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.552,
+     "peak": " then"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.706,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.406,
+     "peak": " please"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.656,
+     "peak": " then"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.418,
+     "peak": " simply"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.448,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.905,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.022,
+     "peak": " subscription"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.081,
+     "peak": " but"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " ninety"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.192,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.168,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": " report"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.12,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.589,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7cc1ed63",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "pivot into the next step of a UI instruction",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Card: ' and' x9, ',' x5, ' can' x5, ' please' x2, ' then' x2; top examples are all click/go instructions. Probe: 'then select Share' 0.711, 'and click Security' 0.642, 'simply click Checkout' 0.642, 'please click the link' 0.439; narrative 'shared and smiled' 0.315 and physical instructions 0.210 are the closest misses, so near misses are descriptive rather than physical-imperative.",
+ "selection": "random draw"
+}
