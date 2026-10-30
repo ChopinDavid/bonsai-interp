@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N3478-",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 3478,
+ "pole": "-",
+ "label": "unclear: the probe found no trigger. Best guess from the card (the audience comes out of this sequence, It truly is, art can actually make people, works beautifully to pull you in): the verb or adverb slot of a critic's sentence about a work's effect on its audience; probes of that form scored 0.01-0.17 (the film leaves the audience 0.17, pulls you in 0.03, truly is a marvel 0.01)",
+ "short": "critic's effect-on-audience sentence (unclear)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N3478_neg/2026-10-29-ChopinDavid-89045d9b.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.024,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.007,
+     "peak": " triumph"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.234,
+     "peak": " actually"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.041,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.01,
+     "peak": " out"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.057,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.177,
+     "peak": " actually"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.027,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " reader"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " phones"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " was"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.914,
+    "median_fire": 0.034,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-89045d9b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-89045d9b",
+   "unclear: the probe found no trigger. Best guess from the card (the audience comes out of this sequence, It truly is, art can actually make people, works beautifully to pull you in): the verb or adverb slot of a critic's sentence about a work's effect on its audience; probes of that form scored 0.01-0.17 (the film leaves the audience 0.17, pulls you in 0.03, truly is a marvel 0.01)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-89045d9b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

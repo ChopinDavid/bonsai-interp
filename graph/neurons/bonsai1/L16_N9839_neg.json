@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N9839-",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 9839,
+ "pole": "-",
+ "label": "the subject or condition phrase of a generic rule or conversion statement, at the token just before its predicate (producing a kilogram of beef requires 1.15, to lose one pound of fat, you 0.96, continuing to browse this site means 0.87, by using this service, you 0.70, recycling one can saves 0.57, one acre absorbs 0.38); the same topics as plain descriptions (the forest covers 0.02, this site uses cookies 0.09) are silent",
+ "short": "subject of a generic rule statement",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N9839_neg/2026-10-29-ChopinDavid-d7915d1b.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.152,
+     "peak": " car"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.503,
+     "peak": " walking"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.413,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.419,
+     "peak": " yields"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.469,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.254,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.689,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.028,
+     "peak": " during"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.058,
+     "peak": " along"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.041,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " tomato"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.05,
+     "peak": " below"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.04,
+     "peak": "rol"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.026,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.416,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d7915d1b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d7915d1b",
+   "the subject or condition phrase of a generic rule or conversion statement, at the token just before its predicate (producing a kilogram of beef requires 1.15, to lose one pound of fat, you 0.96, continuing to browse this site means 0.87, by using this service, you 0.70, recycling one can saves 0.57, one acre absorbs 0.38); the same topics as plain descriptions (the forest covers 0.02, this site uses cookies 0.09) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d7915d1b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

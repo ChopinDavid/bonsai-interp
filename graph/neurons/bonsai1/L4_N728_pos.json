@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N728+",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 728,
+ "pole": "+",
+ "label": "the piece that follows a bare 'p'/'pa'/'P' opener in a word the tokenizer splits there (P|ail|in 0.77, pa|ella 0.67, P|ali 0.64, p|ail|lettes 0.51, p|ail 0.43); 'pall|iative' with a longer opener fires weakly (0.28), and single-token palace, pallet, pale and the pieces without the opener (ail|ment, umbr|ella) are silent (≤0.01)",
+ "short": "piece after a bare p/pa opener",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N728_pos/2026-10-29-ChopinDavid-a291d22d.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.457,
+     "peak": "ails"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.341,
+     "peak": "ellas"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.092,
+     "peak": "ahl"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.008,
+     "peak": " east"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.819,
+     "peak": "aille"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.021,
+     "peak": " P"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.01,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.309,
+     "peak": "illard"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " side"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.153,
+     "peak": "io"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.222,
+     "peak": "one"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.032,
+     "peak": " Taiwan"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": "My"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.201,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-a291d22d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a291d22d",
+   "the piece that follows a bare 'p'/'pa'/'P' opener in a word the tokenizer splits there (P|ail|in 0.77, pa|ella 0.67, P|ali 0.64, p|ail|lettes 0.51, p|ail 0.43); 'pall|iative' with a longer opener fires weakly (0.28), and single-token palace, pallet, pale and the pieces without the opener (ail|ment, umbr|ella) are silent (≤0.01)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a291d22d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

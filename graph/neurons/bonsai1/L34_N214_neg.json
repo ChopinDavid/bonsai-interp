@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N214-",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 214,
+ "pole": "-",
+ "label": "a word-opening piece whose continuation is a fixed word tail (cr|um|ple 0.88 on 'um', quadr|uple 0.55; card: equ|ilib|rate, som|ersault, sup|port, .i|pl); 'to' or 'can' before a verb fires weakly (caused prices to climb 0.27, allowed the players to rest 0.00) and prepositional 'to' is silent",
+ "short": "word piece before a fixed tail",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N214_neg/2026-10-29-ChopinDavid-bc583740.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.388,
+     "peak": "um"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.326,
+     "peak": " quadr"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.395,
+     "peak": " som"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.497,
+     "peak": " quint"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.482,
+     "peak": "ilib"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.282,
+     "peak": " rum"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.218,
+     "peak": "um"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.092,
+     "peak": " sext"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.071,
+     "peak": " fire"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": " doubled"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.048,
+     "peak": " perfect"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.061,
+     "peak": " could"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.043,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.426,
+     "peak": " wr"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " bumper"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " not"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.357,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-bc583740"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-bc583740",
+   "a word-opening piece whose continuation is a fixed word tail (cr|um|ple 0.88 on 'um', quadr|uple 0.55; card: equ|ilib|rate, som|ersault, sup|port, .i|pl); 'to' or 'can' before a verb fires weakly (caused prices to climb 0.27, allowed the players to rest 0.00) and prepositional 'to' is silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-bc583740"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

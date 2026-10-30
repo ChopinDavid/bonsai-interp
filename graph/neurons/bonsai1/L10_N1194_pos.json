@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L10/N1194+",
+ "model": "bonsai1",
+ "layer": 10,
+ "index": 1194,
+ "pole": "+",
+ "label": "'barrel' as the barrel of a firearm (the rifle's barrel 0.80, the pistol's barrel length 0.77); other components of hand-held gear fire weakly (knife scales 0.30, rod taper 0.29, pine planks 0.23, folded steel 0.23, piece of gear 0.22); a barrel of crude oil (0.03) and fish scales (0.02) are silent",
+ "short": "firearm barrel",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N1194_pos/2026-10-29-ChopinDavid-20a3068e.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.717,
+     "peak": " barrel"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.421,
+     "peak": " barrel"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.709,
+     "peak": " barrel"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.35,
+     "peak": " barrel"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.136,
+     "peak": " barrel"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.136,
+     "peak": " barrels"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.694,
+     "peak": " barrel"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.114,
+     "peak": " barrel"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.065,
+     "peak": " barrel"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": " barrels"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " below"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.052,
+     "peak": " barrel"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.249,
+     "peak": "aves"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " new"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.385,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-20a3068e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-20a3068e",
+   "'barrel' as the barrel of a firearm (the rifle's barrel 0.80, the pistol's barrel length 0.77); other components of hand-held gear fire weakly (knife scales 0.30, rod taper 0.29, pine planks 0.23, folded steel 0.23, piece of gear 0.22); a barrel of crude oil (0.03) and fish scales (0.02) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-20a3068e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

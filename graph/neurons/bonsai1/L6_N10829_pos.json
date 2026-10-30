@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N10829+",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 10829,
+ "pole": "+",
+ "label": "a word-internal piece (neither first nor last) of a word the tokenizer splits into three or more pieces, strongest after a short vowel-initial opener (Ol|ber|mann 0.84, en|lo|que|cen 0.70, in|bre|eding 0.70, enc|og|ió 0.70, Out|ub|ro 0.65, inter|bred 0.35, en|ve|jecen 0.33); the same words as single tokens (breeding 0.03, October 0.02) are silent",
+ "short": "mid-word piece after a short opener",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N10829_pos/2026-10-29-ChopinDavid-de487f0c.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.174,
+     "peak": "uds"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.164,
+     "peak": "ro"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.07,
+     "peak": "berger"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.03,
+     "peak": " decade"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.034,
+     "peak": " its"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.048,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.327,
+     "peak": "mer"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.021,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " last"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": "icia"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " died"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " decade"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.025,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": "s"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.029,
+     "peak": " centuries"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.93,
+    "median_fire": 0.059,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-de487f0c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-de487f0c",
+   "a word-internal piece (neither first nor last) of a word the tokenizer splits into three or more pieces, strongest after a short vowel-initial opener (Ol|ber|mann 0.84, en|lo|que|cen 0.70, in|bre|eding 0.70, enc|og|ió 0.70, Out|ub|ro 0.65, inter|bred 0.35, en|ve|jecen 0.33); the same words as single tokens (breeding 0.03, October 0.02) are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-de487f0c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

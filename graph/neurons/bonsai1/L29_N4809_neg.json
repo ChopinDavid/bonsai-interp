@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N4809-",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 4809,
+ "pole": "-",
+ "label": "Gospel narrative about Jesus and his disciples (Jesus washed the feet of his disciples 1.01, the Gospel of Mark says that Peter 0.64, Thomas refused to believe (John 20:25) 0.63); the Pauline epistles (0.08), the Old Testament (Moses 0.01), the Buddha (0.16), Roman history (0.00) and present-day church life (0.00) are silent",
+ "short": "Gospel narrative (Jesus and the disciples)",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N4809_neg/2026-10-29-ChopinDavid-b09caa03.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.487,
+     "peak": " risen"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.508,
+     "peak": " twelve"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.317,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.422,
+     "peak": " betrayed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.656,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.661,
+     "peak": " his"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.585,
+     "peak": "John"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.456,
+     "peak": " follow"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.081,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.034,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.067,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.19,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " revelation"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " rehears"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.497,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-b09caa03"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-b09caa03",
+   "Gospel narrative about Jesus and his disciples (Jesus washed the feet of his disciples 1.01, the Gospel of Mark says that Peter 0.64, Thomas refused to believe (John 20:25) 0.63); the Pauline epistles (0.08), the Old Testament (Moses 0.01), the Buddha (0.16), Roman history (0.00) and present-day church life (0.00) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-b09caa03"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

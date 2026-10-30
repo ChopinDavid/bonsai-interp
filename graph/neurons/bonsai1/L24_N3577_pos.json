@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N3577+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 3577,
+ "pole": "+",
+ "label": "the character 入 as its own token opening a word (入会 0.81, 入賞 0.77, 入力 0.68, 入り口 0.66) and Korean 입 (입법 0.75); word-final 入 (購入 0.01), single-token 入学 (0.18) and 出口 (0.07) are silent; English 'entered' leaks 0.46",
+ "short": "word-initial 入 / 입",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N3577_pos/2026-10-29-ChopinDavid-2c147dd4.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.931,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.894,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.739,
+     "peak": "に入"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.816,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.886,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.846,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.58,
+     "peak": " 입"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.614,
+     "peak": " 입"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.06,
+     "peak": "出口"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": "院"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": "入"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.156,
+     "peak": "入"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": "少ない"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": "工"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.093,
+     "peak": " 입장"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.242,
+     "peak": "入学"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.831,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-2c147dd4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-2c147dd4",
+   "the character 入 as its own token opening a word (入会 0.81, 入賞 0.77, 入力 0.68, 入り口 0.66) and Korean 입 (입법 0.75); word-final 入 (購入 0.01), single-token 入学 (0.18) and 出口 (0.07) are silent; English 'entered' leaks 0.46",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-2c147dd4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

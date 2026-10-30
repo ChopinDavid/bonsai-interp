@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N9978+",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 9978,
+ "pole": "+",
+ "label": "a physical load bearing down on whatever carries it (crushed beneath a fallen beam 1.16, heavy backpacks 0.92, shelf collapsed under the weight 0.86, bridge sagged under the weight 0.35); 'the weight of the evidence' leaks 0.49; losing body weight (0.01), a grade's weighting (0.14) and 'heavy rain' (0.06) are silent",
+ "short": "load bearing down on a carrier",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N9978_pos/2026-10-29-ChopinDavid-a2d98405.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.914,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.478,
+     "peak": " backs"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.782,
+     "peak": " beneath"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.44,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.629,
+     "peak": " carried"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.323,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.601,
+     "peak": " weight"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.506,
+     "peak": " bricks"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.049,
+     "peak": " roof"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": " weighed"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": " silver"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.377,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " diet"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.047,
+     "peak": "ys"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.039,
+     "peak": "Heavy"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": " for"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.615,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-a2d98405"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-a2d98405",
+   "a physical load bearing down on whatever carries it (crushed beneath a fallen beam 1.16, heavy backpacks 0.92, shelf collapsed under the weight 0.86, bridge sagged under the weight 0.35); 'the weight of the evidence' leaks 0.49; losing body weight (0.01), a grade's weighting (0.14) and 'heavy rain' (0.06) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-a2d98405"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

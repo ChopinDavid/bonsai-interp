@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L5/N9388-",
+ "model": "bonsai1",
+ "layer": 5,
+ "index": 9388,
+ "pole": "-",
+ "label": "the word-internal piece right after a capital 'Mc'/'McA'/'Mac'/'M' opener in a split surname or acronym (Mc|El|roy 0.87, Mc|In|erney 0.71, Mc|I|vor 0.69, M|CI 0.61, Mac|I|vor 0.40, Mc|All|ister 0.34, Mc|Ad|ams 0.33); surnames that are a single token (McCarthy 0.03, McDonald 0.00) and the same pieces without the opener (Elroy, Ivor 0.00) are silent",
+ "short": "piece after a Mc/Mac surname opener",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N9388_neg/2026-10-29-ChopinDavid-fa45770d.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.955,
+     "peak": "El"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.89,
+     "peak": "E"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.831,
+     "peak": "Ge"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.563,
+     "peak": "Il"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.326,
+     "peak": "En"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.22,
+     "peak": "Av"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.465,
+     "peak": "Each"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.147,
+     "peak": "Ev"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": " spring"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": " O"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " Jimmy"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " MacDonald"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " boat"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": "Our"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.514,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-fa45770d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-fa45770d",
+   "the word-internal piece right after a capital 'Mc'/'McA'/'Mac'/'M' opener in a split surname or acronym (Mc|El|roy 0.87, Mc|In|erney 0.71, Mc|I|vor 0.69, M|CI 0.61, Mac|I|vor 0.40, Mc|All|ister 0.34, Mc|Ad|ams 0.33); surnames that are a single token (McCarthy 0.03, McDonald 0.00) and the same pieces without the opener (Elroy, Ivor 0.00) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-fa45770d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

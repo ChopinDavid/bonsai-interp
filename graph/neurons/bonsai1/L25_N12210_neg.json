@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N12210-",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 12210,
+ "pole": "-",
+ "label": "the opening quote or angle bracket that begins an HTML-tag or CSS-selector string in code (response.css('tr.item') 0.76, assertContains '<th class=…' 0.50, raw '<table' 0.42, Html(\"table\" 0.29, re.findall('<a href' 0.14); a regex string (0.02), a JSON key (0.11), a comparison '<' (0.01) and an ordinary message string (0.02) are silent",
+ "short": "opening quote of an HTML/selector string",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N12210_neg/2026-10-29-ChopinDavid-b042d90d.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.014,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.426,
+     "peak": "('"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.432,
+     "peak": " '<"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.319,
+     "peak": "('<"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.01,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.452,
+     "peak": "('"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.168,
+     "peak": " '<"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.246,
+     "peak": "('<"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": "(row"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.062,
+     "peak": "['"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " test"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.047,
+     "peak": "'"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": "',"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": ".path"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.836,
+    "median_fire": 0.282,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-b042d90d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-b042d90d",
+   "the opening quote or angle bracket that begins an HTML-tag or CSS-selector string in code (response.css('tr.item') 0.76, assertContains '<th class=…' 0.50, raw '<table' 0.42, Html(\"table\" 0.29, re.findall('<a href' 0.14); a regex string (0.02), a JSON key (0.11), a comparison '<' (0.01) and an ordinary message string (0.02) are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-b042d90d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
