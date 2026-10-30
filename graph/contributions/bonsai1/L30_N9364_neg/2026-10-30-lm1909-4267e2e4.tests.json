@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-4267e2e4",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N9364-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N9364",
+   "pole": "-",
+   "label": "The subject or modal right after 'how far' ('how far she has come', 'how far you can stretch', 'how far we could go'), where 'come/reach/go' is expected next; 'how much / how long / how often' stay lower.",
+   "fire": [
+    "Looking back, I can't believe how far we have come.",
+    "The test shows how far the car can travel on one charge.",
+    "Nobody knows how far the storm will move inland.",
+    "It's inspiring to see how far he has progressed this year.",
+    "They wondered how far the river could rise.",
+    "Coaches measure how far each player can throw.",
+    "She asked how far they would walk before dark.",
+    "You never know how far a small kindness can go."
+   ],
+   "quiet": [
+    "Looking back, I can't believe how much we have spent.",
+    "The test shows how long the car can run on one charge.",
+    "Nobody knows when the storm will move inland.",
+    "It's inspiring to see how hard he has worked this year.",
+    "They wondered why the river was rising.",
+    "Coaches measure how often each player can score.",
+    "She asked whether they would walk before dark.",
+    "You never know how much a small kindness can mean."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.7; near misses below 0.3 ('how much' is the riskiest)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "after 'how far' (extent of progress)",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.6,
+ "notes": "Card: ' to' x17 (never able to; been able to), ' can', ' she' (how far she's come), ' is'; output (+ pole) promotes 'reach'. Exploratory probe: 'how far she has come' 0.52, 'how far you can stretch' 0.69, 'how much you can save' 0.24; 'able to' only 0.05-0.09, so the label keeps to 'how far'."
+}

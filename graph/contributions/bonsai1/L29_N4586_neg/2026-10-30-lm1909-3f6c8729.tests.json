@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3f6c8729",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N4586-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N4586",
+   "pole": "-",
+   "label": "Living or staying somewhere: ' live', ' lived', ' living (space)', ' stay', and Chinese/Korean 住/居住/숙박 'reside, lodge'; the same subjects with other verbs (work, study) stay quiet.",
+   "fire": [
+    "After the flood the family had to live with relatives.",
+    "Most of the miners lived in small huts near the pit.",
+    "The flat has a bright living area and two bedrooms.",
+    "We stayed in a guesthouse near the harbour.",
+    "Her grandparents still live on the farm.",
+    "Students in the program share living quarters.",
+    "很多工人住在工厂附近的宿舍里。",
+    "He lived alone in a cabin for ten years."
+   ],
+   "quiet": [
+    "After the flood the family had to borrow money from relatives.",
+    "Most of the miners worked in the deep pit near the river.",
+    "The flat has a bright kitchen and a small balcony.",
+    "We ate lunch in a café near the harbour.",
+    "Her grandparents still farm the land.",
+    "Students in the program share lecture notes.",
+    "很多工人在工厂附近的食堂吃饭。",
+    "He worked alone in a workshop for ten years."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "living / staying somewhere",
+ "unit_kind": "semantic",
+ "confidence": 0.75,
+ "notes": "Card: peaks on ' living' x4, ' live' x3, ' lod' x3, ' lived' x2, ' sleeping' x2, 住, 숙박, 临时(居住); output (reversed) favours ' quarters', ' temporary', ' elsewhere'. Exploratory probe: living space 1.02, lived 0.74, live in tents 0.81, 住处 0.69, stay 0.28; worked/lecture notes 0.01-0.02."
+}

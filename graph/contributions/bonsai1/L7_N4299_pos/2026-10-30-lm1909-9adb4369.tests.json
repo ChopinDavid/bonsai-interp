@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-9adb4369",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N4299+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N4299",
+   "pole": "+",
+   "label": "The set-up of a ranking or superlative: ' of' in 'one/three of the …' and ' first' in 'the/your first …'; the same nouns without a ranking (a/the + noun) stay lower. Plain prenominal adjectives also fire moderately.",
+   "fire": [
+    "Oxford is one of the oldest universities in Europe.",
+    "She became the first woman to fly across the ocean.",
+    "This is one of the busiest stations in the city.",
+    "They signed their first contract with a record label.",
+    "Two of the biggest banks announced mergers today.",
+    "He won the first prize at the county fair.",
+    "The bridge is one of the longest in the world.",
+    "We celebrated our first anniversary in Rome."
+   ],
+   "quiet": [
+    "Oxford has universities and colleges across the town.",
+    "She became a pilot and flew across the ocean.",
+    "This station is busy at rush hour in the city.",
+    "They signed a contract with a record label.",
+    "Banks announced mergers today after long talks.",
+    "He won a prize at the county fair.",
+    "The bridge crosses the river near the old mill.",
+    "We celebrated an anniversary in Rome."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8; near misses below 0.3; risky",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'one of the' / 'the first' ranking set-up",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: ' of' x7 (one of the UK's most..., three of the numerous...), ' first' x7, ' famous' x3, ' several', ' three', ' largest'. Exploratory probe: 'one of the best' 0.78, 'the first coffee house' 0.68, 'your first office' 0.69, 'three of the largest' 0.39; but 'a large' 0.38 and 'a small' 0.44 also fire, so the near misses avoid prenominal adjectives."
+}

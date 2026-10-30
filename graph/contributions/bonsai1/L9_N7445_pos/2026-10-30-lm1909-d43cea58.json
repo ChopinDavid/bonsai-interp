@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-d43cea58",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N7445+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:55+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N7445_pos/2026-10-30-lm1909-d43cea58.tests.json"
+ },
+ "label": "Low-confidence guess: a bare noun naming a group of people or a food at the start of a noun phrase after a verb or 'only' ('only people with money', 'avoid fish', 'helped teachers'); the same frames with a pronoun or a determiner phrase stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N7445_pos/2026-10-30-lm1909-d43cea58.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.094,
+     "peak": " meat"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.028,
+     "peak": " who"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.171,
+     "peak": " farmers"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.019,
+     "peak": " told"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.012,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.044,
+     "peak": " sell"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.026,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.03,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.049,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": " cannot"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.028,
+     "peak": " afford"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": " told"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.038,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.036,
+     "peak": " sell"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.03,
+     "peak": " their"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.562,
+    "median_fire": 0.029,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "bare people/food noun after a verb (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: no single token; peaks on ' fish' (avoid fish), ' L' (LMS), ' swimming', ' meat', ' people' (only people with money), ' teachers'. Exploratory probe weak: 'only people with money' 0.30, 'avoid fish' 0.15, 'helped teachers' 0.13, 'feeling of swimming' 0.03, pronoun object 0.03. Expected to fail; recorded as a guess.",
+ "selection": "random draw"
+}

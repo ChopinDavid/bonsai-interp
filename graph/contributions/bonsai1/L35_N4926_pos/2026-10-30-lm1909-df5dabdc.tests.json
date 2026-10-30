@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-df5dabdc",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N4926+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N4926",
+   "pole": "+",
+   "label": "A trailing ellipsis or emoticon that closes an informal line or a status string ('Terminating...', 'doing that :3', 'go down earlier…', 'images :D'), firing on the '...', '…' or ' :'; the same lines closed with a period stay quiet.",
+   "fire": [
+    "print(\"Loading data...\")",
+    "logger.info(\"Connecting to server...\")",
+    "I can't believe it's Monday again...",
+    "Finally finished my thesis :)",
+    "well, that didn't go as planned…",
+    "Thanks for the birthday wishes everyone :D",
+    "sys.stdout.write(\"Downloading files...\")",
+    "Guess who forgot their keys again :P"
+   ],
+   "quiet": [
+    "print(\"Loading data\")",
+    "logger.info(\"Connected to server\")",
+    "I can't believe it's Monday again.",
+    "Finally finished my thesis.",
+    "Well, that didn't go as planned.",
+    "Thanks for the birthday wishes, everyone.",
+    "sys.stdout.write(\"Downloaded files\")",
+    "Guess who forgot their keys again."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.7; near misses below 0.05; ':D' may be weak",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "trailing ellipsis / emoticon",
+ "unit_kind": "format / punctuation",
+ "confidence": 0.6,
+ "notes": "Card: peaks on ' :' x10, '…' x8, '...' x7, '!' x6 at the end of informal lines and log strings; auto test held (AUROC 0.91) for '...' inside a quotation or string. Output promotes '\\r\\n'. Exploratory probe: 'Terminating...' 0.69, ':3' 0.71, '…' 0.32, ':D' 0.13; period versions 0.001-0.02."
+}

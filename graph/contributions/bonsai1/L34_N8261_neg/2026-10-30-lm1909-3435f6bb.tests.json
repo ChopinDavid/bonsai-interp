@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3435f6bb",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N8261-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N8261",
+   "pole": "-",
+   "label": "Low-confidence guess: a word that opens a manner or comparison phrase after a verb ('look like tissue paper', 'writes simply and without pretension', 'not by defeatists'); the same verbs with a plain adverb or adjective stay quiet.",
+   "fire": [
+    "The new glass makes ordinary windows look like cardboard.",
+    "She spoke calmly and without notes for an hour.",
+    "The town was rebuilt by volunteers, not by the state.",
+    "The puppy sleeps like a log after a walk.",
+    "He paints quickly and without hesitation.",
+    "The decision was made by the board, not by the staff.",
+    "Their old car runs like a dream.",
+    "She sang softly and without accompaniment."
+   ],
+   "quiet": [
+    "The new glass makes ordinary windows look dull.",
+    "She spoke calmly for an hour.",
+    "The town was rebuilt quickly after the fire.",
+    "The puppy sleeps soundly after a walk.",
+    "He paints quickly and well.",
+    "The decision was made last week.",
+    "Their old car runs well.",
+    "She sang softly to the baby."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "manner/comparison phrase onset (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token (' like', ' but', ' without', ' by', Russian ' с'). Exploratory probe weak: 'without pretension' 0.29, 'look like tissue paper' 0.17, 'little but scorn' 0.06. Expected to fail."
+}

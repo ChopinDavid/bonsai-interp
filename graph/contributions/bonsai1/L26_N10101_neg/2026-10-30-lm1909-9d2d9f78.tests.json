@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-9d2d9f78",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N10101-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N10101",
+   "pole": "-",
+   "label": "A verb or preposition whose object has been moved earlier in the sentence (a filler-gap site: 'what X and Y have _ in common', 'a list to explore _', 'a goal to aim for _', 'all you want to use _ is'); the same verbs with their object in place stay quiet.",
+   "fire": [
+    "What do lions and house cats have in common?",
+    "She left me a stack of novels to read on the train.",
+    "Here is the address you asked for last week.",
+    "The only tool you need to bring is a hammer.",
+    "Which of these colours do you prefer for the kitchen?",
+    "That is the record I have been looking for all year.",
+    "He made a list of museums to visit in Paris.",
+    "Everything we discussed in the meeting is in the notes."
+   ],
+   "quiet": [
+    "Lions and house cats have many traits in common.",
+    "She told me to read a stack of novels on the train.",
+    "Last week you asked for the address of the hotel.",
+    "You need to bring a hammer and some nails.",
+    "Do you prefer blue or green for the kitchen?",
+    "I have been looking for that record all year.",
+    "He planned to visit three museums in Paris.",
+    "We discussed the budget in the meeting this morning."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "verb/preposition with a moved object (gap)",
+ "unit_kind": "syntactic / prediction",
+ "confidence": 0.75,
+ "notes": "Card: peaks on ' had', ' use', ' have', ' explore', ' do', ' for' where the object sits earlier (the first indication that many couples had; all you need want to use; a reading list to explore; a good thing to aim for; what ... ozone have in common). Exploratory probe: gap versions 0.46-0.88; object in place 0.001-0.008."
+}

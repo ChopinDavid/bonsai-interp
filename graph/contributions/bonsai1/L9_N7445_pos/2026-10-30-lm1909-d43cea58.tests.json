@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-d43cea58",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N7445+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N7445",
+   "pole": "+",
+   "label": "Low-confidence guess: a bare noun naming a group of people or a food at the start of a noun phrase after a verb or 'only' ('only people with money', 'avoid fish', 'helped teachers'); the same frames with a pronoun or a determiner phrase stay quiet.",
+   "fire": [
+    "Many restaurants now refuse to serve meat from factory farms.",
+    "The scheme helps students who cannot pay rent.",
+    "Only farmers with large herds could afford the new tax.",
+    "Doctors told her to avoid shellfish for a month.",
+    "The charity trains nurses in rural clinics.",
+    "Some shops still sell eggs from caged hens.",
+    "The law protects workers who report fraud.",
+    "Parents should limit sugar in their children's diet."
+   ],
+   "quiet": [
+    "Many restaurants now refuse to serve it after midnight.",
+    "The scheme helps them when they cannot pay rent.",
+    "Only those with large herds could afford the new tax.",
+    "Doctors told her to avoid it for a month.",
+    "The charity trains them in rural clinics.",
+    "Some shops still sell those from caged hens.",
+    "The law protects anyone who reports fraud.",
+    "Parents should limit it in their children's diet."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.3; likely fails on the median",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "bare people/food noun after a verb (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: no single token; peaks on ' fish' (avoid fish), ' L' (LMS), ' swimming', ' meat', ' people' (only people with money), ' teachers'. Exploratory probe weak: 'only people with money' 0.30, 'avoid fish' 0.15, 'helped teachers' 0.13, 'feeling of swimming' 0.03, pronoun object 0.03. Expected to fail; recorded as a guess."
+}

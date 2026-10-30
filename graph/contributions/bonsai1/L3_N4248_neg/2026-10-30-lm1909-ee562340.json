@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-ee562340",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N4248-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:39:12+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N4248_neg/2026-10-30-lm1909-ee562340.tests.json"
+ },
+ "label": "The word-final piece 'ina' of a name or adjective that the tokenizer splits (Cort|ina, Kraj|ina, rionegr|ina, Mess|ina, Paul|ina); names that are one token (Argentina, Carolina, Marina) stay quiet. (Also fires on '.args' in code, not tested here.)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N4248_neg/2026-10-30-lm1909-ee562340.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.184,
+     "peak": "ina"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.125,
+     "peak": " grandmother"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.48,
+     "peak": "ina"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.502,
+     "peak": "ina"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.259,
+     "peak": "ina"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.167,
+     "peak": "ina"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.121,
+     "peak": " carne"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.594,
+     "peak": "ina"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.026,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.125,
+     "peak": " grandmother"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.048,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.2,
+     "peak": " Geneva"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.32,
+     "peak": " Marina"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.113,
+     "peak": " Diana"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.369,
+     "peak": "ena"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.18,
+     "peak": " Christina"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.711,
+    "median_fire": 0.222,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "final piece 'ina' of a split name",
+ "unit_kind": "spelling / token piece",
+ "confidence": 0.6,
+ "notes": "Weak, broad pole (corpus max 1.30, 3.4% of tokens above 0.1). Card: 'ina' x9, 'in' x6, Arabic 'ين' x4, 'ente' x3, '.args' x2; the + pole is the strong Argentina unit. Tokenizer checked: Mess|ina, Paul|ina, Pr|ist|ina, Herz|egov|ina, Kath|ar|ina, Luc|ina, Josef|ina split; Carolina, Marina, Christina, Argentina are single tokens; 'argentina' lower-case not checked. Exploratory probe: Cortina 0.77, Krajina 0.84, rionegrina 0.89, request.args 0.94; Ford Escort 0.19; Argentina 0.03.",
+ "selection": "random draw"
+}

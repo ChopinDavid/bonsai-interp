@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-ee562340",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N4248-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-29T23:24:33+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N4248",
+   "pole": "-",
+   "label": "The word-final piece 'ina' of a name or adjective that the tokenizer splits (Cort|ina, Kraj|ina, rionegr|ina, Mess|ina, Paul|ina); names that are one token (Argentina, Carolina, Marina) stay quiet. (Also fires on '.args' in code, not tested here.)",
+   "fire": [
+    "The ferry from Messina crosses the strait every hour.",
+    "Her grandmother Paulina still bakes bread every Sunday.",
+    "The UN office in Pristina opened in 1999.",
+    "Bosnia and Herzegovina joined the talks in Geneva.",
+    "My aunt Katharina moved to Vienna last spring.",
+    "A cult of the goddess Lucina flourished in Rome.",
+    "La cocina argentina tiene mucha carne asada.",
+    "Our neighbour Josefina grows tomatoes on the roof."
+   ],
+   "quiet": [
+    "The ferry from Naples crosses the bay every hour.",
+    "Her grandmother Carolina still bakes bread every Sunday.",
+    "The UN office in Belgrade opened in 1999.",
+    "Croatia and Serbia joined the talks in Geneva.",
+    "My aunt Marina moved to Vienna last spring.",
+    "A cult of the goddess Diana flourished in Rome.",
+    "La comida chilena tiene mucha carne asada.",
+    "Our neighbour Christina grows tomatoes on the roof."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9; near misses below 0.25 (pole is broad)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "final piece 'ina' of a split name",
+ "unit_kind": "spelling / token piece",
+ "confidence": 0.6,
+ "notes": "Weak, broad pole (corpus max 1.30, 3.4% of tokens above 0.1). Card: 'ina' x9, 'in' x6, Arabic 'ين' x4, 'ente' x3, '.args' x2; the + pole is the strong Argentina unit. Tokenizer checked: Mess|ina, Paul|ina, Pr|ist|ina, Herz|egov|ina, Kath|ar|ina, Luc|ina, Josef|ina split; Carolina, Marina, Christina, Argentina are single tokens; 'argentina' lower-case not checked. Exploratory probe: Cortina 0.77, Krajina 0.84, rionegrina 0.89, request.args 0.94; Ford Escort 0.19; Argentina 0.03."
+}

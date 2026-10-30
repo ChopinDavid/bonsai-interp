@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-3c778f35",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5858+",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:38:32+00:00",
+ "recipe": {
+  "toolchain_commit": "f984b804",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N5858_pos/2026-10-30-lm1909-3c778f35.tests.json"
+ },
+ "label": "A verb of wanting, liking or willingness under negation ('don't want to', 'not someone I'd like to have', 'wouldn't push', 'don't feel like'), firing on the verb or the word after it; the same sentences without the negation stay low.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N5858_pos/2026-10-30-lm1909-3c778f35.tests.json",
+   "prereg_commit": "f984b804",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.319,
+     "peak": " want"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.054,
+     "peak": " like"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.446,
+     "peak": " recommend"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.341,
+     "peak": " feel"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.132,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.972,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.348,
+     "peak": " when"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.448,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " want"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.048,
+     "peak": " I"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.024,
+     "peak": " hotel"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " dinner"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " he"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.397,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f984b804",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "negated want / like / willingness",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.65,
+ "notes": "Card: peaks on ' want' x5, ' good' x5, ' have', ' not', ' fun' (not someone I'd like to have a beer with; I really don't like that; I wouldn't push the point; didn't want to biff; don't feel like deleting). Exploratory probe: negated versions 0.27-0.93; un-negated 'I'd like to have dinner' 0.21, 'I really want to go back' 0.10, 'would push' 0.04. Near misses here drop both the negation and the desire verb.",
+ "selection": "random draw"
+}
