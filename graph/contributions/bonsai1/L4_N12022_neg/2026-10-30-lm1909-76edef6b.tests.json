@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-76edef6b",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N12022-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N12022",
+   "pole": "-",
+   "label": "Dense unit (37% of tokens above 0.1 of max). Best guess tested: upper-case constant names in code lists (INPUT_OBJECT, ENUM, NET, MOD, ATTR).",
+   "fire": [
+    "from graphql import (\n    ENUM,\n    INPUT_OBJECT,\n    INTERFACE,\n)",
+    "FLAGS = [MOD_SHIFT, MOD_CTRL, MOD_ALT]",
+    "if kind == ATTR_NAME:\n    pass",
+    "NET_TIMEOUT = 30",
+    "TYPES = (INPUT_FILE, OUTPUT_FILE)",
+    "RE_EMAIL = re.compile(PATTERN)",
+    "mode = MODE_READ | MODE_WRITE",
+    "HOOK_PRE = 'pre'"
+   ],
+   "quiet": [
+    "from graphql import (\n    build_schema,\n    parse,\n)",
+    "flags = [shift, ctrl, alt]",
+    "if kind == name:\n    pass",
+    "timeout = 30",
+    "types = (infile, outfile)",
+    "email_re = re.compile(pattern)",
+    "mode = 'rw'",
+    "hook = 'pre'"
+   ]
+  }
+ ],
+ "predictions": "everything 0.1-0.5; expected to fail (dense)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "dense (upper-case code constants)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.05,
+ "notes": "Card flags dense (36.6% of tokens reach 0.1 of max) and a gate-closed regime; peaks 'ATTR' x2, 'MOD' x2, 'RE' x2, ' NET' x2, ' INPUT'. Not probed. Recorded as dense; expected to fail."
+}

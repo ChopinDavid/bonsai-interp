@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-6f259cf4",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N597+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N597",
+   "pole": "+",
+   "label": "Low-confidence guess: 'the' or 'of' in 'at the (mere) press / touch / push of a button', where 'press/push' is expected; the same devices described without that phrase stay quiet.",
+   "fire": [
+    "The blinds close at the touch of a button.",
+    "Coffee is ready at the push of a button.",
+    "The roof opens at the press of a button.",
+    "Music plays at the mere tap of a button.",
+    "The seat heats up at the flick of a switch.",
+    "Lights dim at the press of a button.",
+    "The car starts at the push of a button.",
+    "Doors unlock at the touch of a button."
+   ],
+   "quiet": [
+    "The blinds close every evening.",
+    "Coffee is ready in two minutes.",
+    "The roof opens in summer.",
+    "Music plays all day.",
+    "The seat heats up in winter.",
+    "Lights dim at night.",
+    "The car starts in the cold.",
+    "Doors unlock at dawn."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.3; may fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'at the press of a button' (guess)",
+ "unit_kind": "unclear / prediction",
+ "confidence": 0.2,
+ "notes": "Card: ' and' x7, ' the' x4 (dispense ... outfits at⟦ the⟧ mere press of a button); output promotes ' press', ' push', ' hit'. Exploratory probe weak: 'at the mere press of a button' 0.12, 'at the touch of a button' 0.18."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-f41b519c",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N8326-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N8326",
+   "pole": "-",
+   "label": "Low-confidence guess: 'combinations' (comb|inations) and similar search/optimisation words in code identifiers ('all_param_combinations = itertools.product(…)'); the same code with other names stays quiet.",
+   "fire": [
+    "all_combinations = itertools.product(xs, ys)",
+    "param_combinations = list(product(lrs, depths))",
+    "for combo in itertools.combinations(items, 2):\n    print(combo)",
+    "grid_combinations = [(a, b) for a in A for b in B]",
+    "n_combinations = len(all_combinations)",
+    "valid_combinations = filter(check, pairs)",
+    "color_combinations = product(colors, sizes)",
+    "best = max(combinations(scores, 3), key=sum)"
+   ],
+   "quiet": [
+    "all_values = list(xs) + list(ys)",
+    "params = dict(lr=0.1, depth=3)",
+    "for item in items:\n    print(item)",
+    "grid = [[0] * 3 for _ in range(3)]",
+    "n_values = len(all_values)",
+    "valid_pairs = filter(check, pairs)",
+    "colors = ['red', 'blue']",
+    "best = max(scores)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.7; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'combinations' in code identifiers (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: ',' x4, ' parameters' x2, ':\\n' x2, '_comb' (all_param⟦_comb⟧inations = itertools.product), ' satisfy'. Exploratory probe: 'all_param_combinations = itertools.product' 0.68 (peak 'inations'), 'satisfy the constraint' 0.07."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8c3d8510",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N4331-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N4331",
+   "pole": "-",
+   "label": "Low-confidence guess: a business-service noun that can head 'X requirements/needs/capabilities' ('outsourced billing', 'energy', 'security'); everyday nouns in the same frames stay lower.",
+   "fire": [
+    "The firm handles payroll for small clinics.",
+    "We offer outsourced billing to dentists.",
+    "The company manages security for the stadium.",
+    "They provide IT support for schools.",
+    "The agency covers recruitment for hospitals.",
+    "We supply energy to local factories.",
+    "The bank provides treasury services to councils.",
+    "The startup handles logistics for farms."
+   ],
+   "quiet": [
+    "The firm sends flowers to small clinics.",
+    "We offer free coffee to dentists.",
+    "The company sells tickets for the stadium.",
+    "They provide lunches for schools.",
+    "The agency paints murals in hospitals.",
+    "We deliver bread to local cafés.",
+    "The bank hosts parties for councils.",
+    "The startup grows apples on farms."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.7; near misses up to 0.25; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "service noun before 'requirements' (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: ' is' x4, ' energy' x2, ' tenure' x2, ' material', ' billing' (Interbill provides total outsourced⟦ billing⟧); output promotes ' requirements', ' needs', ' capabilities'. Exploratory probe: 'outsourced billing' 0.70, 'provides lunch' 0.25, 'material support' 0.15."
+}
