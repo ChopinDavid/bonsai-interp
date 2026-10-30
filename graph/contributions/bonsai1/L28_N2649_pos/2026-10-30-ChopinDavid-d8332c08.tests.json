@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d8332c08",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2649+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N2649",
+   "pole": "+",
+   "label": "predicts 'distance' as the next token: fires on the word before it (straight|-line distance 0.94, covering the| distance 0.75, ب|مس|افة 0.72, までの|直線距離 0.65, measure the| 0.32); the prediction, not the word, carries it, so 'covering the costs' also scores 0.75, while frames that do not set up 'distance' (a straight line was drawn 0.09, der Entfernung 0.09) are quiet",
+   "fire": [
+    "The restaurant is within walking distance of the hotel.",
+    "Keep a safe following distance on wet roads.",
+    "The map shows the driving distance between the two cities.",
+    "The sensor reports the stopping distance at each speed.",
+    "駅から会場までの距離は徒歩で5分です。",
+    "تبعد القرية عن المدينة بمسافة 20 كم.",
+    "Between any two points, the shortest distance is a straight line.",
+    "The pilot computed the great-circle distance to the diversion airport."
+   ],
+   "quiet": [
+    "The restaurant is next to the hotel on the main square.",
+    "Keep a spare tyre in the boot on long trips.",
+    "The map shows the main roads between the two cities.",
+    "The sensor reports the engine temperature at each speed.",
+    "駅の近くに大きな会場があります。",
+    "تقع القرية بالقرب من المدينة الكبيرة.",
+    "Between any two points on the chart, draw a straight line with a ruler.",
+    "The pilot computed the fuel reserve for the diversion airport."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on the token before 'distance'; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts 'distance' next",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 155, density 0.07%, peaks ' the' x5, 'س' x2, ' المس' x2, ' рас' x2, ' of' x2, '線' before 距離, ' line' before distance, ' Ent' before fernung, 'clidean' before .isLineIntersecting, 'مس' in بمسافة, ' measure' before the distance, ' the' in covering the distance; promotes ' distance', ' distances', 'Distance', ' dist'. Probe: 'straight-line distance' 0.942 (peak '-line'), 'covering the distance' 0.748 (' the') and 'covering the costs' 0.748 (same), 'بمسافة' 0.724, 'までの直線距離' 0.647, 'straight line distance' 0.490, 'measure the distance' 0.320 and 'measure the temperature' 0.320, 'straight line was drawn' 0.092, 'der Entfernung' 0.089. Fire items use frames that predict 'distance' (within walking, safe following, driving, stopping, great-circle, shortest, までの, بمسافة); near misses keep the topic and lead-in but end the setup with something else."
+}

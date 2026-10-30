@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3458dffc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N1564-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N1564",
+   "pole": "-",
+   "label": "the manner-or-condition detail of taking part or complying: 'wearing purple| on June 15th' 1.35, 'must be| in the original packaging' 0.87, 'no need to have| any special skills' 0.39; it fires whether the sentence instructs or reports ('He showed his support by wearing purple on' 0.67, 'She returned the item in its original packaging' 0.49), so the trigger is the participation detail rather than the imperative; descriptions without such a detail (0.004-0.13) are quiet",
+   "fire": [
+    "Join the campaign by wearing red on the first Friday of February.",
+    "Entries must be submitted in a sealed envelope with the form attached.",
+    "Guests are asked to come dressed in black tie for the gala.",
+    "To take part, simply arrive at the hall with your own mug.",
+    "All returns must be accompanied by the original receipt.",
+    "You don't need any experience, just a willingness to learn.",
+    "Riders are required to wear a helmet at all times on the course.",
+    "Donate by dropping unwanted books in the box at the entrance."
+   ],
+   "quiet": [
+    "She was wearing red when the photo was taken in February.",
+    "The envelope was sealed and the form was attached by the clerk.",
+    "The gala raised twice as much as last year's dinner.",
+    "The hall has its own kitchen and a small stage.",
+    "The receipt showed the price and the date of purchase.",
+    "His experience in the trade spans thirty years.",
+    "Her helmet was scratched in the fall but held together.",
+    "Unwanted books were piled in the box by the entrance."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-1.0 and uneven, with the 'wearing X on <date>' and 'must be in/with' items highest; near misses mostly under 0.2, the 'wearing red' report the likeliest leak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "how-to-take-part / compliance detail",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 14, density 0.34%, peaks ' should' x4, ' be' x2, ' on' (wearing purple on June 15th), 'ines' (dressed to the nines), ' any' (no need to have any special skills), ' packaging' (original packaging), ' Be' (Be specific), ' sending' (donate by sending), ' acquire' (acquire your own ISBN), ' include' (must include), ' up' (dial up). Probe: 'wearing purple on June 15th' 1.345 (' on'), 'must be in the original packaging' 0.871 (' in'), 'He showed his support by wearing purple on' 0.673, 'She returned the item in its original packaging' 0.485, 'No need to have any special skills' 0.390, 'acquire your own ISBN' 0.162, 'dial up the intensity' 0.133, descriptive 'Authors who self-publish usually acquire' 0.045, workout control 0.004. The narrative twins fired too, so the label is the participation/compliance detail; near misses keep the nouns (wearing, envelope, receipt, helmet, box) in plain descriptions."
+}

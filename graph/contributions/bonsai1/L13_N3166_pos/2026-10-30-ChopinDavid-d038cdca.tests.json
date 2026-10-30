@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d038cdca",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N3166+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N3166",
+   "pole": "+",
+   "label": "inter-individual variation: a statement that people, cases or platforms differ from one another (some people may not carry the gene 0.83, everyone is different 0.55, which individuals are more likely 0.52, each patient is affected differently 0.49, platform specific 0.47); universal claims (everyone needs water 0.07) and general facts about the topic (0.003-0.007) are quiet, though 'all patients received the same dose' leaks 0.32",
+   "fire": [
+    "Not every child responds to the same teaching method.",
+    "Reactions to the vaccine vary widely from one person to another.",
+    "Some runners recover within a day while others need a week.",
+    "The right dose depends on the individual and should be adjusted.",
+    "Certain users may never see the bug, depending on their hardware.",
+    "No two gardens are alike, so the advice must be tailored.",
+    "Tolerance to caffeine differs greatly between individuals.",
+    "Each dog has its own temperament and learns at its own pace."
+   ],
+   "quiet": [
+    "Every child in the class learned the alphabet song.",
+    "The vaccine is given in two doses, four weeks apart.",
+    "Runners should drink water before and after a race.",
+    "The dose is printed on the label of the bottle.",
+    "Users must log in before they can see the dashboard.",
+    "Gardens need regular watering during the summer months.",
+    "Caffeine is found in coffee, tea and many soft drinks.",
+    "Dogs need daily walks and a balanced diet."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "people/cases differ from one another",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 14.6, density 0.57%, peaks ' individuals' x3, ' people' x3, ' but' x2, 'There', ' specific', ' different', ' differently', ' unique' in 'everyone is different and so is their hearing', 'some people may not have this gene', 'each person is affected differently', 'every home and homemaker is unique', 'platform specific', 'which individuals might be more likely'. Probe: 'Some people may not carry this gene at all' 0.828, 'Everyone is different' 0.553, 'every homemaker is unique' 0.548, 'which individuals are more likely' 0.515, 'affected differently' 0.489, 'platform specific' 0.466; 'All patients received the same dose' 0.317, 'Everyone needs water' 0.065, connective tissue fact 0.007, library 0.003. Fire items state variation between individuals without reusing the probe wording; near misses are uniform facts or rules about the same topics."
+}

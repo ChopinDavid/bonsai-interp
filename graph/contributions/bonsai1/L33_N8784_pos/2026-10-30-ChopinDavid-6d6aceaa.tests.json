@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6d6aceaa",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N8784+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N8784",
+   "pole": "+",
+   "label": "online advertising and digital marketing discourse: display ads, affiliate links, AdWords, SEO and social media optimisation (0.46-0.82 on the connectives inside such lists); offline advertising (billboards 0.27, print subscriptions 0.29) is weak and other business services (tax preparation 0.02, an orchard's income 0.004) are quiet",
+   "fire": [
+    "Most of the blog's income comes from affiliate links and sponsored posts.",
+    "We offer pay-per-click campaigns, retargeting and conversion tracking for online stores.",
+    "The network pays publishers for every thousand ad impressions served on their pages.",
+    "A good SEO strategy combines link building, keyword research and content marketing.",
+    "Facebook Ads and Google Ads let small businesses target customers by interest.",
+    "Programmatic buying now accounts for most display inventory sold in the region.",
+    "The newsletter is monetised through native ads and affiliate product reviews.",
+    "Agencies measure click-through rates and cost per acquisition for each banner."
+   ],
+   "quiet": [
+    "Most of the farm's income comes from dairy cattle and winter wheat.",
+    "We offer plumbing repairs, boiler servicing and drain cleaning for local homes.",
+    "The council pays contractors for every kilometre of road resurfaced each year.",
+    "A good fitness plan combines strength training, stretching and rest days.",
+    "The library and the museum let residents borrow tools and instruments.",
+    "Wind power now accounts for most electricity generated in the region.",
+    "The magazine is funded through newsstand sales and reader subscriptions.",
+    "The station sells thirty-second radio spots and sponsors the morning show."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9; near misses 0.0-0.3 with the two offline-advertising items the highest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "online advertising / digital marketing",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Card: max 247, density 0.077%, peaks ',' x5, ' and' x3, ' from' x2, ' Google' x2, ' showing' in 'earn ... by showing ads', 'display advertising, affiliate marketing', 'SEM and Display', 'revenue from affiliate links', 'Google Adwords, Bing & Facebook', 'blocks all sort of ads'; promotes ' online', ' digital', ' display', ' publisher'. Probe: 'search engine marketing, display ads and social media' 0.821, 'showing banner ads' 0.713, 'affiliate links and display advertising' 0.700, 'Google AdWords and Bing Ads' 0.457; 'print subscriptions' 0.288, 'television commercials and billboard' 0.274, ad blocker 0.173, tax preparation 0.018, orchard 0.004. Near misses keep the list/revenue frames and swap in non-advertising services, with two offline-advertising items as the hard cases."
+}

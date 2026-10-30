@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-37308c17",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N6081-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N6081",
+   "pole": "-",
+   "label": "test-double scaffolding in Python unit tests: mock.patch(...).start() 0.62, @patch(..., fake_x) 0.57, fake_/Fake objects 0.25, with patch(return_value=...) 0.20, plus the functools.partial idiom 0.82; the same code with real objects (0.006), production code (0.008), tests without mocks (0.007) and 'fake' in prose (0.08) are quiet",
+   "fire": [
+    "    mock_db = mock.patch('app.storage.Database').start()\n    mock_db.return_value.query.return_value = []",
+    "    @patch('billing.gateway.charge', fake_charge)\n    def test_refund(self, mocked):\n        self.assertTrue(mocked.called)",
+    "    fake_conn = FakeConnection()\n    driver = Driver(fake_conn)\n    driver.execute('SELECT 1')",
+    "    with patch('shutil.rmtree', side_effect=OSError):\n        cleaner.run(tmpdir)\n    assert cleaner.failed",
+    "    with patch.object(Session, 'get', return_value=resp):\n        data = fetch(url)\n    assert data == {}",
+    "    func = layer.func if isinstance(layer, functools.partial) else layer\n    name = func.__name__",
+    "    self.mox.StubOutWithMock(fakevirt, 'lookup')\n    fakevirt.lookup('vm1').AndReturn(dom)\n    self.mox.ReplayAll()",
+    "    mocker.patch('os.remove', return_value=None)\n    cleaner.delete(path)\n    os.remove.assert_called_once()"
+   ],
+   "quiet": [
+    "    db = Database(config.url)\n    rows = db.query('SELECT 1')\n    return rows",
+    "    def test_refund(self):\n        self.assertEqual(refund(10), 10)",
+    "    conn = Connection(host, port)\n    driver = Driver(conn)\n    driver.execute('SELECT 1')",
+    "    try:\n        shutil.rmtree(tmpdir)\n    except OSError:\n        cleaner.failed = True",
+    "    resp = session.get(url)\n    data = resp.json()\n    return data",
+    "    func = layer.func\n    name = func.__name__\n    return name",
+    "    dom = conn.lookupByName('vm1')\n    dom.create()\n    return dom.ID()",
+    "    os.remove(path)\n    log.info('deleted %s', path)"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8 with the with-patch items weakest and one or two possible misses; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "mock/fake test doubles in Python tests",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 69.5, density 0.14%, peaks 'ak' x9 (f|ak|elibvirt), ' def' x3, 'leg' x2, '\",' x2, ' functools' x2 in @patch(..., fake_tqdm), mock continuation lines with return_value=, faked_utcnow.return_value, patch('os.path.isfile', return_value=True), functools.partial, self.mox.CreateMock(fakelibvirt...), mock.patch('oauth2client.file.Storage').start(). Probe: functools.partial comment 0.818, mock.patch(...).start() 0.621, @patch(..., fake_tqdm) 0.565, fake_client = FakeClient() 0.251, with patch(..., return_value=True) 0.201; real Client 0.006, production isfile 0.008, assertEqual test 0.007, fake diamond 0.081. Fire items are three-line test snippets using patch/mock/fake/mox/functools.partial; near misses are the same operations written against real objects."
+}

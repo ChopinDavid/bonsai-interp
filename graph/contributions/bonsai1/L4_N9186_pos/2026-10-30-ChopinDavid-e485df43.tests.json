@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e485df43",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N9186+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N9186",
+   "pole": "+",
+   "label": "unclear (max 1.1, gate-closed echo 99%): best guess a letter piece inside a numbered-tone pinyin syllable in a vocabulary list (ma|o|4|yi|4 0.71 on 'o'); the Chinese and Japanese line starts from the card (0.03-0.11) and plain CJK prose (0.002-0.04) do not reproduce",
+   "fire": [
+    "词汇：学习\nxue2xi2\npeng2you3\nlao3shi1",
+    "生词：工作\ngong1zuo4\nxue2sheng1\nmei3guo2",
+    "어휘: 가족\njia1ting2\nfu4mu3\nhai2zi5",
+    "Vocabulary: travel\nlv3you2\nfei1ji1\nhuo3che1",
+    "词汇：天气\ntian1qi4\nxia4yu3\ngua1feng1",
+    "单词：电脑\ndian4nao3\nshou3ji1\nwang3luo4",
+    "Pinyin: shopping\nmai3dong1xi5\nshang1dian4\npian2yi5",
+    "생어: 음식\nchi1fan4\nmi3fan4\njiao3zi5"
+   ],
+   "quiet": [
+    "词汇：学习\nxuéxí\npéngyou\nlǎoshī",
+    "生词：工作\ngongzuo\nxuesheng\nmeiguo",
+    "어휘: 가족\n가정\n부모\n아이",
+    "Vocabulary: travel\nholiday\naeroplane\ntrain",
+    "词汇：天气\n天气\n下雨\n刮风",
+    "单词：电脑\ndiànnǎo\nshǒujī\nwǎngluò",
+    "Pinyin: shopping\nmai dongxi\nshangdian\npianyi",
+    "생어: 음식\n밥\n쌀밥\n만두"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 if the pinyin reading holds, otherwise a fail; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "numbered-tone pinyin in word lists (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 1.10, FLAG gate-closed regime -x- echo 99%, peaks '“' x4, '欲' x3, ' portal' x3, '＊' x2, 'o' in mao4yi4 (a Korean-headed pinyin vocabulary list), 'il' in buildd, '典' in 出典, line-initial '“' and '＊' in Chinese. Probe: pinyin list 'he2zuo4 / dui4fang1 / mao4yi4' 0.710 (peak 'o'); 出典 0.110, 报名 line 0.082, 欲知 0.064, '“' line 0.057, Japanese prose 0.042, English twins 0.029-0.040, Chinese prose 0.002. Only the pinyin list reproduced, so the test is eight numbered-tone pinyin lists against the same lists written with tone marks, without tones, in characters, in hangul or in English. Tokenizer: xue2xi2 'x|ue|2|xi|2', lao3shi1 'l|ao|3|shi|1', gong1zuo4 'g|ong|1|z|uo|4'."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c0cff7d7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N4013-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N4013",
+   "pole": "-",
+   "label": "academic research and scholarly publishing discourse (peer reviewed 0.83, postdoctoral researcher 0.76, scholarly communication 0.67, highly cited within its academic discipline 0.61); non-academic research and publishing (market research 0.01, magazine publishing 0.03, a detective's research 0.03), corporate careers (0.16) and school teaching (0.01) are quiet",
+   "fire": [
+    "Her dissertation was later published as a monograph by a university press.",
+    "The journal's impact factor rose after it moved to open access.",
+    "He holds a research fellowship in the department of sociology.",
+    "The study appeared in a peer-reviewed journal last spring.",
+    "Doctoral students present their findings at the annual conference.",
+    "The citation index tracks how often each article is referenced.",
+    "A principal investigator must report grant spending to the funder.",
+    "The faculty encourages preprints before formal submission."
+   ],
+   "quiet": [
+    "Her novel was later adapted as a film by a Hollywood studio.",
+    "The magazine's circulation rose after it moved to a glossy format.",
+    "He holds a sales position in the department of menswear.",
+    "The recipe appeared in a weekend supplement last spring.",
+    "Apprentice chefs present their dishes at the annual fair.",
+    "The loyalty card tracks how often each customer visits.",
+    "A project manager must report budget spending to the client.",
+    "The coach encourages warm-ups before formal matches."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "academic research / scholarly publishing",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Card: max 72.5, density 0.44%, peaks 'al' x6 (post-doctor|al), ' scholarly' x3, ' Research' x3, '.D' x2, ' publication' x2 in postdoctoral researcher/fellowship, scholarly communication, highly cited, Conseil de recherches, 'Contribution to journal > Article > Academic', 'same academic discipline', scholarly publishing; the + pole suppresses ' researcher', ' scholarly', ' academic'. Probe: 'peer reviewed' 0.830, postdoctoral researcher 0.757, scholarly communication 0.669, academic discipline 0.607; marketing manager 0.163, detective's research 0.034, magazine publishing 0.028, market research 0.009, fourth grade 0.013. Near misses keep each fire frame and move it to fiction, magazines, retail, cooking, project management or sport."
+}
