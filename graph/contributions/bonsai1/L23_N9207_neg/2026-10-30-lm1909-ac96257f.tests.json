@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-ac96257f",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9207-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N9207",
+   "pole": "-",
+   "label": "Low-confidence guess: 'every' / the variable in a 'for every x there is/exists' statement in math or logic; the same statements phrased without a quantifier stay quiet.",
+   "fire": [
+    "For every real number x there exists a larger integer.",
+    "For every epsilon there is a delta that works.",
+    "For every prime p there is a larger prime.",
+    "For every y in the range there is an x.",
+    "For every point on the curve there is a tangent.",
+    "For every n there exists a solution.",
+    "For every set there is a power set.",
+    "For every input there is exactly one output."
+   ],
+   "quiet": [
+    "Some real numbers are larger than every integer.",
+    "Epsilon and delta are small numbers.",
+    "Primes can be very large.",
+    "The range contains y.",
+    "The curve has a tangent at the origin.",
+    "The equation has a solution.",
+    "Sets can be large.",
+    "Each input gives an output."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.2; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'for every x there exists' (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: ' to' x3, ',' x3, ' for' x3, ' elements' x2 (because for⟦ every⟧ y there is one x); output promotes ' exist', ' exists'. Exploratory probe weak: 'For every x there exists' 0.20, 'For every y there is' 0.07."
+}

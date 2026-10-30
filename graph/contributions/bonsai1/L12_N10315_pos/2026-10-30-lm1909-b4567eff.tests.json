@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-b4567eff",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N10315+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N10315",
+   "pole": "+",
+   "label": "A fractional or multiple comparison of size or amount ('three-quarters of the sun', 'a tenth as heavy as Earth', 'twice the risk', '220% of the risk', '4倍'), firing on 'of', 'as' or 'the' after the fraction or multiple; plain comparisons without a ratio stay quiet.",
+   "fire": [
+    "The moon is about a quarter the width of Earth.",
+    "Jupiter is eleven times as wide as Earth.",
+    "Smokers face three times the risk of heart disease.",
+    "The new tank holds half as much water as the old one.",
+    "The house sold for twice its asking price.",
+    "Venus is about nine-tenths the size of Earth.",
+    "Prices are now 150% of what they were in 2010.",
+    "The bridge is one third as long as the tunnel."
+   ],
+   "quiet": [
+    "The moon is smaller than Earth.",
+    "Jupiter is much wider than Earth.",
+    "Smokers face a higher risk of heart disease.",
+    "The new tank holds less water than the old one.",
+    "The house sold above its asking price.",
+    "Venus is similar in size to Earth.",
+    "Prices are now higher than they were in 2010.",
+    "The bridge is shorter than the tunnel."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.3; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "fraction/multiple comparisons ('a tenth as heavy as')",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.7,
+ "notes": "Card: ' times' x8, ' half' x4, ' of' x3, ' as' x2, Chinese 倍 (three-quarters⟦ of⟧ the sun; 220%⟦ of⟧ the risk; a tenth as heavy⟦ as⟧ the Earth; 欧美国家的4⟦倍⟧). Exploratory probe: 'a tenth as heavy as' 1.35, 'three-quarters of the size' 0.60, 'twice the risk' 0.58; 'close to Earth' 0.004."
+}

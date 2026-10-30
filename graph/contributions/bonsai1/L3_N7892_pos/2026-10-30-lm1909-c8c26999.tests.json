@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-c8c26999",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N7892+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N7892",
+   "pole": "+",
+   "label": "The fuels diesel and petrol / gasoline (also 'diesels' for diesel engines), firing on the fuel word or its last piece; other ways of powering the same vehicles stay quiet.",
+   "fire": [
+    "The van runs on diesel and needs a new filter.",
+    "Petrol prices rose again this week.",
+    "The boat is powered by twin diesels.",
+    "Gasoline engines are quieter than diesel ones.",
+    "Fill the tank with unleaded petrol.",
+    "The generator burns diesel day and night.",
+    "The truck switched from diesel to gas.",
+    "Drivers queued for petrol after the strike."
+   ],
+   "quiet": [
+    "The van runs on batteries and needs a new charger.",
+    "Bread prices rose again this week.",
+    "The boat is powered by sails.",
+    "Electric motors are quieter than old ones.",
+    "Fill the kettle with fresh water.",
+    "The generator hums day and night.",
+    "The truck switched to new tyres.",
+    "Drivers queued for tickets after the strike."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "diesel / petrol (fuel)",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.65,
+ "notes": "Weak pole (corpus max 1.15). Card: ' division' x13, ' Diesel' x4, ' diesel' x4, ' petrol' x3 (1150 hp MTU dies⟦els⟧); word hits ' diesel', ' gasoline'. Exploratory probe: 'MTU diesels' 0.90, 'diesel, not petrol' 0.62; 'runs on electricity' 0.05. The ' division' part is not tested."
+}

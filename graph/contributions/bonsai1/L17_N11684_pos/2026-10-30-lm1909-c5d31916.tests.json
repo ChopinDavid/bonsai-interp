@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-c5d31916",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N11684+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N11684",
+   "pole": "+",
+   "label": "'.ArgumentParser' in Python argparse code (argparse.ArgumentParser(...)); other argparse or sys.argv lines stay low.",
+   "fire": [
+    "import argparse\nparser = argparse.ArgumentParser()",
+    "ap = argparse.ArgumentParser(description='Train a model')",
+    "p = argparse.ArgumentParser(prog='tool')",
+    "def main():\n    parser = argparse.ArgumentParser()",
+    "cli = argparse.ArgumentParser(add_help=False)",
+    "parser = argparse.ArgumentParser(epilog='Done')",
+    "import argparse\nap = argparse.ArgumentParser(usage='%(prog)s')",
+    "args = argparse.ArgumentParser().parse_args()"
+   ],
+   "quiet": [
+    "import argparse\nargs = parser.parse_args()",
+    "parser.add_argument('--epochs', type=int)",
+    "p.add_argument('name')",
+    "def main():\n    args = sys.argv[1:]",
+    "cli.add_argument('-v', action='store_true')",
+    "parser.print_help()",
+    "import sys\nargs = sys.argv",
+    "args = vars(parser.parse_args())"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.5; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'.ArgumentParser' (argparse)",
+ "unit_kind": "token / code",
+ "confidence": 0.55,
+ "notes": "Weak pole (corpus max 3.91), gate-closed regime. Card: 'Parser' x10, '.ArgumentParser' x7, 'Writer', 'Subscriber', ' Serializer'; lexical auto screen: '.ArgumentParser' in any context (strong on 92%). Exploratory probe: argparse.ArgumentParser 0.39; class MyParser(HTMLParser) 0.06; sys.argv 0.14."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-05759765",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N3018+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N3018",
+   "pole": "+",
+   "label": "Low-confidence guess: the last syllable of Korean/Japanese words for activity or learning (활|동, 학|습, 学|び), where 'results' is a likely continuation; no clear trigger.",
+   "fire": [
+    "운동 중에 활동량을 측정합니다.",
+    "학생들의 학습 결과를 분석했다.",
+    "動画で学びたい部分を検索できる.",
+    "봉사 활동에 참여했다.",
+    "온라인 학습 플랫폼을 사용한다.",
+    "子どもの学習記録を見る.",
+    "야외 활동이 늘었다.",
+    "学習の成果を発表した."
+   ],
+   "quiet": [
+    "운동 중에 물을 마십니다.",
+    "학생들의 이름을 적었다.",
+    "動画を検索できる.",
+    "봉사에 참여했다.",
+    "온라인 플랫폼을 사용한다.",
+    "子どもの写真を見る.",
+    "야외가 추웠다.",
+    "成果を発表した."
+   ]
+  }
+ ],
+ "predictions": "fire 0.0-0.5; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Korean/Japanese activity/learning words (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Card: '동' x6, ' 실행' x4, 'ング' x3, '習' x2, '습' x2 (学⟦び⟧たい; 활⟦동⟧ 중에); output promotes ' results', ' counts'. Not probed. Expected to fail."
+}

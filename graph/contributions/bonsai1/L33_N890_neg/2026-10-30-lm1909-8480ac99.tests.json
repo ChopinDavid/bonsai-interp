@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8480ac99",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N890-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N890",
+   "pole": "-",
+   "label": "Low-confidence guess: Ukrainian/Russian text inside a bilingual UI or brand context (Т|вор|чість, 'Mode – Режим'), firing on a mid-word piece; no clear trigger.",
+   "fire": [
+    "Компанія «Краса і Творчість» виробляє набори.",
+    "Object Mode – Режим Об’єкта",
+    "Reference – Довідка",
+    "Edit Mode – Режим Редагування",
+    "Компанія «Світ Творчості» відкрила магазин.",
+    "Settings – Налаштування",
+    "File – Файл",
+    "View – Вигляд"
+   ],
+   "quiet": [
+    "The company «Beauty and Craft» makes kits.",
+    "Object Mode – Object",
+    "Reference – Help",
+    "Edit Mode – Editing",
+    "The company «World of Craft» opened a shop.",
+    "Settings – Options",
+    "File – Document",
+    "View – Display"
+   ]
+  }
+ ],
+ "predictions": "fire 0.0-0.5; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Ukrainian/Russian in bilingual labels (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Card: ' Lake' x3, ' of' x3, 'вор' (Т⟦вор⟧чість), ' –' (Object Mode⟦ –⟧ Режим Об’єкта); output promotes ' P', ' images', ' faces'. Not probed. Expected to fail."
+}

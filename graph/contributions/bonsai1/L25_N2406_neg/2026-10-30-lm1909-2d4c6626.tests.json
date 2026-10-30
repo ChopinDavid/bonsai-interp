@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-2d4c6626",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N2406-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N2406",
+   "pole": "-",
+   "label": "' changing' in 'a changing climate / world / environment' (a world in flux), firing on ' changing'; 'changing' as an action on an object (changing a tyre) stays lower.",
+   "fire": [
+    "Farmers must adapt to a changing climate.",
+    "Schools prepare pupils for a changing world.",
+    "Species struggle in a rapidly changing environment.",
+    "Coastal towns face a changing coastline.",
+    "Companies must survive in a changing market.",
+    "Birds are shifting their range in a changing climate.",
+    "Libraries find new roles in a changing society.",
+    "The report looks at health in a changing world."
+   ],
+   "quiet": [
+    "Farmers must adapt to new rules.",
+    "Schools prepare pupils for exams.",
+    "Species struggle in a polluted environment.",
+    "Coastal towns face rising rents.",
+    "He spent the morning changing a tyre.",
+    "Birds are building nests in the hedge.",
+    "She is changing the baby's nappy.",
+    "The report looks at health in old age."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'a changing climate/world'",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.55,
+ "notes": "Card: ' in' x3, ' changing' x2, ' is', ' the', ' World' x2 (food security, especially in a⟦ changing⟧ climate; a land war⟦ in⟧ Asia); output promotes ' where', ' society', ' culture', ' environments'. Exploratory probe: 'in a changing climate' 0.69; 'land war in Asia' 0.29."
+}

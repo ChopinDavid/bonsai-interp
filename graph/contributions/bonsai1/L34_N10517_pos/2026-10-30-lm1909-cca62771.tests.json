@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-cca62771",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N10517+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N10517",
+   "pole": "+",
+   "label": "' Sal' as the first piece of a split place name, mainly Salzburg (Sal|zburg, Sal|aman|ca); places that are one token (Salvador, Salisbury, Vienna) stay quiet.",
+   "fire": [
+    "Mozart was born in Salzburg in 1756.",
+    "The Salzburg Festival runs every summer.",
+    "We took the train from Munich to Salzburg.",
+    "She studied music in Salzburg.",
+    "The old university of Salamanca is famous.",
+    "Salzburg sits on the Salzach river.",
+    "The cathedral in Salzburg was rebuilt.",
+    "He lectured at Salamanca for a decade."
+   ],
+   "quiet": [
+    "Mozart moved to Vienna in 1781.",
+    "The Vienna Festival runs every summer.",
+    "We took the train from Munich to Innsbruck.",
+    "She studied music in Salisbury.",
+    "The old university of Bologna is famous.",
+    "Vienna sits on the Danube.",
+    "The cathedral in Salvador was rebuilt.",
+    "He lectured at Oxford for a decade."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.35; near misses below 0.05; median at risk",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' Sal' of Salzburg",
+ "unit_kind": "token piece",
+ "confidence": 0.4,
+ "notes": "Card: ' Sal' x6 (⟦ Sal⟧zburg), ' In' x3, ' Reg', ' Roch'; word hits ' Sal' lift 1,333. Tokenizer: Sal|zburg, Sal|aman|ca; Salvador, Salisbury, Salem are one token. Exploratory probe: 'near Salzburg' 0.20, 'festival in Salzburg' 0.32; Vienna 0.04."
+}
