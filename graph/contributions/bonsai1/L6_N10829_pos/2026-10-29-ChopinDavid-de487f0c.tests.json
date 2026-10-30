@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-de487f0c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N10829+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N10829",
+   "pole": "+",
+   "label": "a word-internal piece (neither first nor last) of a word the tokenizer splits into three or more pieces, strongest after a short vowel-initial opener (Ol|ber|mann 0.84, en|lo|que|cen 0.70, in|bre|eding 0.70, enc|og|ió 0.70, Out|ub|ro 0.65, inter|bred 0.35, en|ve|jecen 0.33); the same words as single tokens (breeding 0.03, October 0.02) are silent",
+   "fire": [
+    "In the epic, Enkidu is created to rival the king.",
+    "A complaint was filed with the ombudsman last week.",
+    "La noticia hizo enrojecer a toda la familia.",
+    "The poet Hans Magnus Enzensberger died in 2022.",
+    "The village of Oberammergau stages a passion play every decade.",
+    "Audi builds many of its cars in Ingolstadt.",
+    "The castle at Inverness overlooks the river.",
+    "Crusader states in Outremer survived for two centuries."
+   ],
+   "quiet": [
+    "In the epic, a wild man is created to rival the king.",
+    "A complaint was filed with the manager last week.",
+    "La noticia hizo feliz a toda la familia.",
+    "The poet Thomas Hardy died in 1928.",
+    "The village of Oxford stages a passion play every decade.",
+    "Audi builds many of its cars in Germany.",
+    "The castle at Windsor overlooks the river.",
+    "Crusader states in Palestine survived for two centuries."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on a middle piece; near misses with single-token or two-piece names in the same frames below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "mid-word piece after a short opener",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 9.1, density 0.058%, peaks 'bred', 'que', 'ub', 'bre', 'oc', 'ros', all middle pieces of split words (enlo|que|cen, Ol|ber|mann, Out|ub|ro, In|bre|eding, enc|og|ió, in|key, In-g|ear, En|el|amah). Probe: Ol|ber|mann 0.844, in|bre|eding 0.703, enlo|que|ce 0.701, enc|og|ió 0.695, Out|ub|ro 0.647, inter|bred 0.345, en|ve|jecen 0.325; single-token breeding 0.033, October 0.022, filler 0.004. Test words split En|kid|u, O|mb|uds|man, en|ro|jec|er, En|zens|berger, Ober|ammer|g|au, Ing|ol|stadt, In|ver|ness, Out|re|mer; near-miss substitutes are single tokens (manager, feliz, Germany, Windsor, Palestine) or short names."
+}

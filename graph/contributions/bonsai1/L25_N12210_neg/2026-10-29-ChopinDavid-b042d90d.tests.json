@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b042d90d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N12210-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N12210",
+   "pole": "-",
+   "label": "the opening quote or angle bracket that begins an HTML-tag or CSS-selector string in code (response.css('tr.item') 0.76, assertContains '<th class=…' 0.50, raw '<table' 0.42, Html(\"table\" 0.29, re.findall('<a href' 0.14); a regex string (0.02), a JSON key (0.11), a comparison '<' (0.01) and an ordinary message string (0.02) are silent",
+   "fire": [
+    "from bs4 import BeautifulSoup\n\nsoup = BeautifulSoup(page, 'html.parser')\nfor cell in soup.select('td.price'):\n    print(cell.text)",
+    "def parse_item(self, response):\n    title = response.css('h1.title::text').get()\n    price = response.xpath('//span[@class=\"price\"]/text()').get()\n    yield {'title': title, 'price': price}",
+    "def test_detail(self):\n    response = self.client.get('/admin/authors/1/')\n    self.assertContains(response, '<label for=\"id_name\">')",
+    "rows = re.findall('<tr class=\"odd\">(.*?)</tr>', page, re.DOTALL)\nfor row in rows:\n    cells = re.findall('<td>(.*?)</td>', row)\n    print(cells)",
+    "div = Html(\"div\", class_=\"gallery\")\nfor path in images:\n    div += Html(\"img\", src=path)\nbody += div",
+    "links = driver.find_elements_by_css_selector('a.nav-link')\nfor link in links:\n    print(link.get_attribute('href'))",
+    "import scrapertools\n\nmatch = scrapertools.find_single_match(data, '<div class=\"video\">(.*?)</div>')\nprint(match)",
+    "self.response.write('<ul>')\nfor name in names:\n    self.response.write('<li>%s</li>' % name)\nself.response.write('</ul>')"
+   ],
+   "quiet": [
+    "import csv\n\nwith open(path) as f:\n    for row in csv.reader(f):\n        print(row[2])",
+    "def parse_item(self, response):\n    data = response.json()\n    yield {'title': data['title'], 'price': data['price']}",
+    "def test_detail(self):\n    response = self.client.get('/admin/authors/1/')\n    self.assertEqual(response.status_code, 200)",
+    "rows = re.findall(r'(\\d{4})-(\\d{2})-(\\d{2})', text)\nfor y, m, d in rows:\n    print(y, m, d)",
+    "total = 0\nfor price in prices:\n    if price < 100:\n        total += price\nprint(total)",
+    "cursor.execute('SELECT name, price FROM items WHERE price > %s', (limit,))\nfor name, price in cursor.fetchall():\n    print(name, price)",
+    "logger.info('Processing %d items', len(items))\nfor item in items:\n    process(item)",
+    "path = os.path.join(base, 'output', 'report.txt')\nwith open(path, 'w') as f:\n    f.write(text)"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8 on the quote or '<' that opens the tag or selector string; near-miss code with non-HTML strings below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "opening quote of an HTML/selector string",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 57.8, density 0.042%, peaks \"('\", '(\"', '<', \"('<\", \" '<\", each the opening of an HTML tag or selector string inside Python (css(\"::text\"), re.findall('<option', find_single_match(tr,'<i class=', assertContains(response, '<th class=', Html(\"th\"). Probe: response.css('tr.item') 0.759, assertContains '<th class=' 0.504, raw HTML '<table' 0.424 (markup outside Python also fires), Html(\"table\" 0.294, re.findall('<a href' 0.139; regex r'\\d+' 0.016, JSON data['items'] 0.112, 'if x < 5' 0.007, Message('Hello' 0.017. Fire items are multi-line Python passages with selector or tag strings; near misses keep the code shape with CSV, JSON, regex, SQL, logging and path strings."
+}

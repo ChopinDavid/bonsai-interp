@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a291d22d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N728+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N728",
+   "pole": "+",
+   "label": "the piece that follows a bare 'p'/'pa'/'P' opener in a word the tokenizer splits there (P|ail|in 0.77, pa|ella 0.67, P|ali 0.64, p|ail|lettes 0.51, p|ail 0.43); 'pall|iative' with a longer opener fires weakly (0.28), and single-token palace, pallet, pale and the pieces without the opener (ail|ment, umbr|ella) are silent (≤0.01)",
+   "fire": [
+    "The farmer carried two pails of milk across the yard.",
+    "The restaurant serves three different paellas on Sundays.",
+    "The Pahlavi dynasty ruled Iran until 1979.",
+    "The state of Pahang lies on the east coast of Malaysia.",
+    "The roof was thatched with paille from the last harvest.",
+    "In the legend, Pallas was a companion of Athena.",
+    "The child was treated for cerebral palsy at the clinic.",
+    "The chef pounded the chicken paillard until it was thin."
+   ],
+   "quiet": [
+    "The farmer carried two buckets of milk across the yard.",
+    "The island of Palawan lies on the west side of the Philippines.",
+    "The city of Padang lies on the west coast of Sumatra.",
+    "Every summer Siena holds the Palio in its main square.",
+    "The Palisades rise above the river north of the city.",
+    "The young Pallone played football for a local team.",
+    "The Paiwan people live in the south of Taiwan.",
+    "My cousin Pablo stacked the pallet against the wall."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.8 on the piece after ' p'/' pa'/' P'; near misses with longer openers (Pal|, Pad|, Pai|, Pall|, pais|) or single tokens below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece after a bare p/pa opener",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 11.3, density 0.002%, peaks 'ail' x4, 'ali' x4, ' pall' x3, 'ella' x2, each the continuation of a bare p/pa opener (P|ail|in, Pa|ill|iet, pa|ella, p|ail|leté, P|ali, Pall|io, neopall|ium). Probe: P|ail|in 0.765, pa|ella 0.670, P|ali 0.635, p|ail|lettes 0.514, p|ail 0.428, pall|iative 0.283 (peak on ' pall'); palace 0.006, pallet 0.005, ailment 0.003, Stella/umbrella 0.003, palisade 0.006. Test words split p|ails, pa|ellas, P|ahl|avi, P|ah|ang, p|aille, P|allas, p|alsy, pa|illard; near misses split with a longer opener (Pal|awan, Pal|io, Pal|is|ades, Pall|one, Pad|ang, Pai|wan, pais|ano) or are single tokens (Pablo, pallet)."
+}

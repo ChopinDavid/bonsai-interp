@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c1d8bef3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N11934-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N11934",
+   "pole": "-",
+   "label": "unclear: weak firing (max 2.3, gate-closed regime 90%) on identifier pieces inside Python literal and argument lists ('op_' + inverse 0.56, 'Equ' in an HTML-entity dict 0.36, 'tr' in a dict key 0.26); prose on the same topics, dates and Japanese text are at or below 0.10",
+   "fire": [
+    "            'op_' + transpose_name, typename_dict[r],",
+    "'Omega;': '\\u03a9', 'Psi;': '\\u03a8', 'Reversible;': '\\u21cb',",
+    "         'trailing_at_zero': [1, 0],\n         'leading_at_inf': [0, 1]})",
+    "    kwargs = {'inverse_fn': inverse_fn, 'order': order}",
+    "        self.ops.append(('op_' + name, derivative_dict[name]))",
+    "    'Equilibrium': 0x21cc, 'Integral': 0x222b, 'Scaron': 0x160,",
+    "    config['leading_zero'] = True\n    config['inverse_mode'] = False",
+    "    return {'transpose': inverse_matrix, 'rank': rank_value}"
+   ],
+   "quiet": [
+    "The inverse of the matrix was computed by hand in the lecture.",
+    "The omega symbol marks the end of the Greek alphabet.",
+    "Leading zeros are dropped when the number is printed.",
+    "She ordered the derivatives of each function on the board.",
+    "The reaction reached equilibrium after two hours.",
+    "The integral of the curve gave the total area.",
+    "The configuration was set to inverse mode for the test.",
+    "The rank of the matrix equals the number of pivots."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on an identifier piece inside the literal; near misses below 0.15; the test is likely to fail or be partial",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "identifier pieces in Python literals (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 2.27, density 0.90% at 0.1 of max, gate-closed regime 90% (flagged), no single token (' its', ' inverse', 'ertz', 'Equ'). Top examples are a Python dict of HTML entity names, a Python kwargs list, 'leading_at_inf', a Russian word piece, a date. Probe: 'op_' + inverse_name 0.562, entity dict 0.363 (peak 'Equ'), 'trailing_at_inf' dict 0.257; prose 'found its fulfilment' 0.031, date line 0.102, Japanese DOHC 0.056, filler 0.093. Best guess is code-literal identifier pieces; low confidence."
+}
