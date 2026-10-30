@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N2882+",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 2882,
+ "pole": "+",
+ "label": "a short fragment token that continues a compressed-file extension or abbreviation in code ('.xz' 0.82, '.bz|2' 0.84, '.p|ck' 0.71, ' np'/' tab' 0.34) and the 'z' piece of free|z|able (0.67); common whole-token extensions (.txt, .csv, .json) and the same words in prose (xz 0.19) are weak or silent",
+ "short": "compressed-extension fragment in code",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N2882_pos/2026-10-30-ChopinDavid-65319bc2.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.031,
+     "peak": ".n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.911,
+     "peak": ".x"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.665,
+     "peak": "ck"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.496,
+     "peak": ".x"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.495,
+     "peak": "gz"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.35,
+     "peak": "bz"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.178,
+     "peak": ".z"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.552,
+     "peak": "z"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.258,
+     "peak": ".json"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.339,
+     "peak": ".txt"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.342,
+     "peak": ".csv"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.068,
+     "peak": ".py"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.099,
+     "peak": ".png"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.307,
+     "peak": "txt"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.328,
+     "peak": ".csv"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.282,
+     "peak": " sealed"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.524,
+    "near_misses_at_0.3": 4
+   },
+   "contribution": "2026-10-30-ChopinDavid-65319bc2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-65319bc2",
+   "a short fragment token that continues a compressed-file extension or abbreviation in code ('.xz' 0.82, '.bz|2' 0.84, '.p|ck' 0.71, ' np'/' tab' 0.34) and the 'z' piece of free|z|able (0.67); common whole-token extensions (.txt, .csv, .json) and the same words in prose (xz 0.19) are weak or silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-65319bc2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

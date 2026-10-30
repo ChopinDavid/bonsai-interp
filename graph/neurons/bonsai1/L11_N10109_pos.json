@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N10109+",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 10109,
+ "pole": "+",
+ "label": "formal procedural or technical register in Chinese: words such as 有关/相关 ('concerning'), 进行 ('carry out'), 科学 ('scientific'), 专业 ('professional'), 专题 and the medical 科 suffix (科学论证 0.68, 有关这些事 0.55, 来进行检测 0.36); everyday narrative Chinese (0.03) and English (0.09) are silent",
+ "short": "formal procedural Chinese register",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10109_pos/2026-10-30-ChopinDavid-63ac57c6.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.304,
+     "peak": "进行"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.044,
+     "peak": "技术"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.55,
+     "peak": "科学"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.036,
+     "peak": "专题"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.448,
+     "peak": "专业"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.367,
+     "peak": "专业"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.48,
+     "peak": "有关"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.082,
+     "peak": "已于"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.201,
+     "peak": "热"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.029,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": "足球"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": "只好"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.147,
+     "peak": "喜欢"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": "晚饭"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.336,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-63ac57c6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-63ac57c6",
+   "formal procedural or technical register in Chinese: words such as 有关/相关 ('concerning'), 进行 ('carry out'), 科学 ('scientific'), 专业 ('professional'), 专题 and the medical 科 suffix (科学论证 0.68, 有关这些事 0.55, 来进行检测 0.36); everyday narrative Chinese (0.03) and English (0.09) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-63ac57c6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

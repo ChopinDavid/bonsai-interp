@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N8996-",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 8996,
+ "pole": "-",
+ "label": "a dense layer-12 unit (12.1% of tokens reach 0.1 of a 2.25 max, gate-closed leak 100%) with no reproducible trigger: the card's verbs of acting on a body or substance (target, cause, attack, caused by) scored 0.05-0.17 in probes, no higher than plain prose (0.16-0.21)",
+ "short": "dense: no trigger found (health verbs guess)",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N8996_neg/2026-10-30-ChopinDavid-97eeb0bd.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.046,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.095,
+     "peak": " than"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.126,
+     "peak": "ids"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.124,
+     "peak": "work"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.115,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.055,
+     "peak": " within"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.148,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.186,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.123,
+     "peak": " pharmacy"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.192,
+     "peak": " tread"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.102,
+     "peak": " third"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.161,
+     "peak": " fresh"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.103,
+     "peak": " nurse"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.089,
+     "peak": " shop"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.108,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.215,
+     "peak": " office"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.406,
+    "median_fire": 0.119,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-97eeb0bd"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-97eeb0bd",
+   "a dense layer-12 unit (12.1% of tokens reach 0.1 of a 2.25 max, gate-closed leak 100%) with no reproducible trigger: the card's verbs of acting on a body or substance (target, cause, attack, caused by) scored 0.05-0.17 in probes, no higher than plain prose (0.16-0.21)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-97eeb0bd"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

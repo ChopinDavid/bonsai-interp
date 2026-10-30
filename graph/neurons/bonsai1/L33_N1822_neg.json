@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N1822-",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 1822,
+ "pole": "-",
+ "label": "a Spanish word-initial fragment that leaves the word open: ' esc' (escucha 0.81, escuchar 0.73), ' reco' (recolectaron 0.73), 'eme' in s|eme|janzas (0.45), ' Co' (Coahuila 0.42), ' perc' (percibe 0.40); whole-word Spanish and ordinary splits such as o|ye, al|cal|de, tom|aremos score 0.17-0.21 and English 0.003",
+ "short": "open Spanish word-initial fragment",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N1822_neg/2026-10-30-ChopinDavid-32d92085.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.808,
+     "peak": " esc"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.257,
+     "peak": "ena"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.453,
+     "peak": " esc"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.319,
+     "peak": " az"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.212,
+     "peak": " los"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.267,
+     "peak": " reco"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.541,
+     "peak": " perc"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.389,
+     "peak": "eme"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.223,
+     "peak": " eleg"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.239,
+     "peak": " parte"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.176,
+     "peak": " sur"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.113,
+     "peak": "elo"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.124,
+     "peak": " los"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.038,
+     "peak": "amos"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.32,
+     "peak": " not"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.315,
+     "peak": " her"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.354,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-32d92085"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-32d92085",
+   "a Spanish word-initial fragment that leaves the word open: ' esc' (escucha 0.81, escuchar 0.73), ' reco' (recolectaron 0.73), 'eme' in s|eme|janzas (0.45), ' Co' (Coahuila 0.42), ' perc' (percibe 0.40); whole-word Spanish and ordinary splits such as o|ye, al|cal|de, tom|aremos score 0.17-0.21 and English 0.003",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-32d92085"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

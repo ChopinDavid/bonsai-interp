@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N3525-",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 3525,
+ "pole": "-",
+ "label": "a small set of nouns, strongest ' season' as a period of the year (rainy season 0.80), ' reasoning' (0.74-1.03) and ' prison' (0.81), with ' field', ' court' and ' meeting' from the card; near-synonyms in the same slot (months 0.17, logic 0.13, reason 0.002) are silent, and 'Season' as a verb (0.01) and 'football season' (0.08) were weak",
+ "short": "season / reasoning / prison token set",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N3525_neg/2026-10-30-ChopinDavid-995e1982.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.372,
+     "peak": " season"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.394,
+     "peak": " season"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.083,
+     "peak": "ive"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.059,
+     "peak": " prison"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.203,
+     "peak": " field"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.538,
+     "peak": " court"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.461,
+     "peak": " meeting"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.094,
+     "peak": "Law"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.194,
+     "peak": " spell"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.158,
+     "peak": "soon"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.076,
+     "peak": "ive"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.662,
+     "peak": " jail"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.111,
+     "peak": " area"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.036,
+     "peak": " judge"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.447,
+     "peak": " gathering"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.094,
+     "peak": "Law"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.695,
+    "median_fire": 0.383,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-995e1982"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-995e1982",
+   "a small set of nouns, strongest ' season' as a period of the year (rainy season 0.80), ' reasoning' (0.74-1.03) and ' prison' (0.81), with ' field', ' court' and ' meeting' from the card; near-synonyms in the same slot (months 0.17, logic 0.13, reason 0.002) are silent, and 'Season' as a verb (0.01) and 'football season' (0.08) were weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-995e1982"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

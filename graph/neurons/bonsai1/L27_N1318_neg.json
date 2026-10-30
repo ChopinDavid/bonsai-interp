@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L27/N1318-",
+ "model": "bonsai1",
+ "layer": 27,
+ "index": 1318,
+ "pole": "-",
+ "label": "the word piece that follows a bare ' St'/' st' token when a St- word is split (St|uy|vesant 0.85, St|ude|baker 0.85, St|up|ak 0.77, St|ou|ffville 0.82, st|od|gy 0.54, St|ok|owski 0.37); St- words that are one token (Stuart, Stuttgart 0.002-0.009) or split after a longer prefix (Stein|berg 0.009) are silent",
+ "short": "piece after a bare ' St' token",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N1318_neg/2026-10-30-ChopinDavid-add1fafb.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.248,
+     "peak": "ought"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.589,
+     "peak": "odd"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.409,
+     "peak": "ump"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.254,
+     "peak": "oy"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.512,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.345,
+     "peak": "opp"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.011,
+     "peak": "irling"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.776,
+     "peak": "uke"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": "Joseph"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " Stokes"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.122,
+     "peak": "oud"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " Stock"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.377,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-add1fafb"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-add1fafb",
+   "the word piece that follows a bare ' St'/' st' token when a St- word is split (St|uy|vesant 0.85, St|ude|baker 0.85, St|up|ak 0.77, St|ou|ffville 0.82, st|od|gy 0.54, St|ok|owski 0.37); St- words that are one token (Stuart, Stuttgart 0.002-0.009) or split after a longer prefix (Stein|berg 0.009) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-add1fafb"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N4855+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 4855,
+ "pole": "+",
+ "label": "a broad layer-2 unit (9.6% of tokens reach 0.1 of a 1.02 max) whose strongest tokens are the Arabic piece 'اع' (إرجاع 0.70), 'rant' in 'fragrant' (0.46) and the Spanish clitic ' se' (0.21-0.38); the same sentences without those tokens sit at 0.06-0.15",
+ "short": "dense: Arabic اع / frag|rant / Spanish se",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N4855_pos/2026-10-30-ChopinDavid-cce32ab5.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.147,
+     "peak": "antan"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.208,
+     "peak": " ci"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.33,
+     "peak": "rant"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.441,
+     "peak": "اع"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.173,
+     "peak": "ط"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.15,
+     "peak": "في"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.149,
+     "peak": " central"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.148,
+     "peak": "بد"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.131,
+     "peak": " dom"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.089,
+     "peak": "re"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.264,
+     "peak": "mary"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.228,
+     "peak": "بيل"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.062,
+     "peak": " في"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.15,
+     "peak": "في"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.134,
+     "peak": " central"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.103,
+     "peak": " في"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.758,
+    "median_fire": 0.161,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-cce32ab5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-cce32ab5",
+   "a broad layer-2 unit (9.6% of tokens reach 0.1 of a 1.02 max) whose strongest tokens are the Arabic piece 'اع' (إرجاع 0.70), 'rant' in 'fragrant' (0.46) and the Spanish clitic ' se' (0.21-0.38); the same sentences without those tokens sit at 0.06-0.15",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-cce32ab5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

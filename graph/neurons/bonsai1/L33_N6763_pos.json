@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N6763+",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 6763,
+ "pole": "+",
+ "label": "unclear: the card's peaks are nouns about to take a partitive or locative marker in head-final languages (病例|中有, 10U|中, その|うち, 작가|들|이다, Таллин|не, веществ|е), but probes reached only 0.37 (そのうち) and 0.33 (Budapest) with English partitives silent (0.002); best guess is the set noun before a partitive 'of which' in CJK or Russian",
+ "short": "noun before partitive/locative marker (unclear)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N6763_pos/2026-10-30-ChopinDavid-b5974ff9.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.025,
+     "peak": "三人"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.007,
+     "peak": "。"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.007,
+     "peak": "有一"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.291,
+     "peak": "方案"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.006,
+     "peak": " 상"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.188,
+     "peak": " веществ"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.087,
+     "peak": "ал"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.035,
+     "peak": "회"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": "した"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.075,
+     "peak": "方案"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " 상"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "то"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": "фер"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": "품"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.789,
+    "median_fire": 0.03,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-b5974ff9"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-b5974ff9",
+   "unclear: the card's peaks are nouns about to take a partitive or locative marker in head-final languages (病例|中有, 10U|中, その|うち, 작가|들|이다, Таллин|не, веществ|е), but probes reached only 0.37 (そのうち) and 0.33 (Budapest) with English partitives silent (0.002); best guess is the set noun before a partitive 'of which' in CJK or Russian",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-b5974ff9"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

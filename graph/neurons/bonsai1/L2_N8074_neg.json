@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N8074-",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 8074,
+ "pole": "-",
+ "label": "a dense layer-2 unit (13.4% of tokens reach 0.1 of a 0.41 max) whose strongest tokens are the 'if' piece of 'ant|if-' words (antifungal 0.88, antifreeze 0.99), '服务器' (1.19), ' domain' in 'public domain' (0.79), ' rates' in 'exchange rates' (0.72) and ' server' (0.30-0.59); plain prose floors at 0.17-0.30",
+ "short": "dense: ant|if / 服务器 / exchange rates / server",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N8074_neg/2026-10-30-ChopinDavid-8c7a226f.tests.json",
+   "prereg_commit": "f68f4858",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.986,
+     "peak": "if"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.856,
+     "peak": "if"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.899,
+     "peak": "if"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.842,
+     "peak": "if"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.274,
+     "peak": " server"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.801,
+     "peak": " rates"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.852,
+     "peak": " domain"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.932,
+     "peak": "服务器"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.171,
+     "peak": " vis"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.122,
+     "peak": " software"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.097,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.194,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.143,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.114,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.117,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.072,
+     "peak": "系统"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.854,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-8c7a226f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-8c7a226f",
+   "a dense layer-2 unit (13.4% of tokens reach 0.1 of a 0.41 max) whose strongest tokens are the 'if' piece of 'ant|if-' words (antifungal 0.88, antifreeze 0.99), '服务器' (1.19), ' domain' in 'public domain' (0.79), ' rates' in 'exchange rates' (0.72) and ' server' (0.30-0.59); plain prose floors at 0.17-0.30",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-8c7a226f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
