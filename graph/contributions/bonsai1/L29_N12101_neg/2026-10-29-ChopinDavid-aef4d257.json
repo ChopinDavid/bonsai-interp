@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-aef4d257",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N12101-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:35:24+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N12101_neg/2026-10-29-ChopinDavid-aef4d257.tests.json"
+ },
+ "label": "a distributive or enumerated reference to one unit of a partitioned space ('Lot 13, Concession 6' 0.89 on the comma, 'two rows per locule' 0.76, 'hall 9, stands D06' 0.53, 'each land' 0.49, 'each of the classrooms' 0.45, 'each parking space' 0.36, 'one side wall' 0.36); 'each' over people or time ('Each student', 'Each year' 0.10) is silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N12101_neg/2026-10-29-ChopinDavid-aef4d257.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.345,
+     "peak": " each"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.121,
+     "peak": " per"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.983,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.718,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.425,
+     "peak": " each"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.544,
+     "peak": " per"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.51,
+     "peak": " each"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.415,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.08,
+     "peak": " market"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " hall"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": " farm"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.146,
+     "peak": " each"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.077,
+     "peak": " four"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.146,
+     "peak": " each"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.072,
+     "peak": " cemetery"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.631,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "unit of a partitioned space",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 196, density 0.133%, peaks ' each' x13, ',' x4, ' one' x4, ' per' x3, ' every': Lot 11, Concession 4; above each parking space; hall 9, stands D06; 2 rows per locule; sweep each of the classrooms; half of one side wall. The unit's logit effect suppresses sector/section/row/aisle/lane in the + direction, i.e. this pole predicts a subdivision noun. Probe: 'Lot 13, Concession 6' 0.894, 'two rows per locule' 0.759, 'hall 9, stands D06' 0.532, 'centre of each land' 0.488, 'sweep each of the classrooms' 0.446, 'above each parking space' 0.364, 'one side wall' 0.364; 'Each student' 0.095, 'Each year' 0.095, 'The hall was decorated' 0.045.",
+ "selection": "random draw"
+}

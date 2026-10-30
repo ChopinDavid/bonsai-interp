@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-d73b98ec",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N171+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:33:56+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N171_pos/2026-10-29-ChopinDavid-d73b98ec.tests.json"
+ },
+ "label": "a bare polar answer word opening a reply turn or filling a form field (Yes/No, Да, 对, 네: 'Do you accept returns?\\nNo.' 0.72, 'Requires pre-payment in full: No' 0.83, '对，我一直' 1.31); 'no' as a determiner (0.06), 'said yes' mid-sentence (0.16) and a reply without the polar word (0.15) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N171_pos/2026-10-29-ChopinDavid-d73b98ec.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.412,
+     "peak": "Yes"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.645,
+     "peak": "No"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.625,
+     "peak": " No"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.732,
+     "peak": " Да"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.402,
+     "peak": "是"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.689,
+     "peak": "네"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.514,
+     "peak": " Yes"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.608,
+     "peak": "No"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.086,
+     "peak": "?\n"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.058,
+     "peak": " no"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.12,
+     "peak": " yes"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.226,
+     "peak": "?\n"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.278,
+     "peak": "过"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.416,
+     "peak": "No"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.291,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.032,
+     "peak": " not"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.635,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "polar answer opening a reply",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 185, density 0.050%, peaks ' Да' x8, ' No' x7, 'No' x4, '是' x2, '对', '네', each the first token of an answer to a question or of a form value (Requires Pre-payment in Full: No; — Да, мне еще раз повезло; 对，我一直兼职做这个). Logit effect promotes sure/certainly/definitely/indeed. Probe: '对' 1.312, form-field ' No' 0.832, 'No. But under the right circumstances' 0.724, '— Да' 0.616, 'Yes, I did' 0.475; 'There is no recycling bin' 0.058, 'said yes to the proposal' 0.160, the same question answered without a polar word 0.152, filler 0.010. The word must open the reply; the question alone does not fire it.",
+ "selection": "random draw"
+}

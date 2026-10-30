@@ -1,0 +1,167 @@
+{
+ "id": "2026-10-29-ChopinDavid-84289423",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N5382-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:34:20+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N5382_neg/2026-10-29-ChopinDavid-84289423.tests.json"
+ },
+ "label": "mold/mould and casting vocabulary in the sense of shaping material (injection mould|ing 1.05, poured into molds 0.94, a sand mold 0.79, die-c|ast 0.78, Type Found|ry 0.72); the fungus sense is weaker (black mold 0.18, cheese mould 0.44) and the theatrical cast (0.14) and other machining (0.13) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N5382_neg/2026-10-29-ChopinDavid-84289423.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.955,
+     "peak": " molds"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.529,
+     "peak": "ry"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.735,
+     "peak": " mould"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.743,
+     "peak": "ast"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.14,
+     "peak": " mold"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.798,
+     "peak": " mould"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.647,
+     "peak": " mould"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.429,
+     "peak": "ry"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.195,
+     "peak": " onto"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.198,
+     "peak": " statue"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.154,
+     "peak": " gob"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.146,
+     "peak": " stamped"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.427,
+     "peak": " die"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.247,
+     "peak": " out"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.209,
+     "peak": " machine"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.14,
+     "peak": " cast"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.739,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "casting and moulding",
+ "unit_kind": "topic",
+ "confidence": 0.6,
+ "notes": "Card: max 26.9, density 0.043%, peaks ' mold' x7, ' mould' x6, 'ry' x4 (Found|ry), ' molds' x4, 'ast' x2 (die-c|ast), ' molding', all in manufacturing (injection moulding machine, cast into moulds, mold coating, Haas Type Foundry). Probe: 'injection moulding machine' 1.051, 'poured into molds' 0.935, 'sand mold' 0.792, 'die-cast from zinc alloy' 0.780, 'Haas Type Foundry' 0.722; 'Black mold had spread' 0.180, 'soft white mould' on cheese 0.442, 'the cast of the new play' 0.143, 'machined on a lathe' 0.132, filler 0.032. The shaping sense is the strong one; the fungus sense half-fires, so no fungus item is used as a near miss.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "mold",
+   "mould",
+   "molds",
+   "moulds",
+   "molding",
+   "moulding",
+   "moldings",
+   "mouldings",
+   "foundry",
+   "diecast",
+   "cast"
+  ]
+ }
+}
