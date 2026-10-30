@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-30-moridinamael-966c3ab6",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N6033-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:27:57+00:00",
+ "neighbours": [
+  {
+   "unit": "L23/N6033",
+   "pole": "-",
+   "label": "programmer-style variable and argument names (timeout, debug, results2, file=) in code or in text about code; not plain code punctuation or ordinary prose",
+   "fire": [
+    "Call fetch(url, timeout=30) so the request doesn't hang forever.",
+    "Set debug = True at the top of the script to see the extra logging.",
+    "for row in results2: print(row)",
+    "with open(path) as f: print(line, file=out_stream)",
+    "If max_retries is zero, the client gives up after the first failed attempt.",
+    "The function takes user_id and an optional verbose flag.",
+    "df_clean = df_raw.dropna(subset=['price'])",
+    "Pass batch_size=64 and num_workers=4 to the DataLoader."
+   ],
+   "quiet": [
+    "Wait thirty seconds before trying again so the page doesn't hang forever.",
+    "Turn on the extra logging at the top of the script to see more details.",
+    "We printed each line of the second set of answers on the screen.",
+    "She opened the old notebook and copied each line onto a fresh page.",
+    "If nobody answers the door, the courier gives up after the first attempt.",
+    "The form asks for your name and whether you'd like long replies.",
+    "We removed the rows with missing prices from the spreadsheet by hand.",
+    "Load sixty-four photos at a time and ask four friends to help sort them."
+   ]
+  }
+ ],
+ "predictions": "Fire sentences mostly clear 0.2; a few prose-like near misses may leak. Weak confidence: the neuron is dense in code.",
+ "roles": ["reads bonsai1/L22/N6735+"],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-down",
+   "blind-room"
+  ]
+ }
+}
