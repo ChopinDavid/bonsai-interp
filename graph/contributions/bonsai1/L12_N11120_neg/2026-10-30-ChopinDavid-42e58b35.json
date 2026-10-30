@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-42e58b35",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N11120-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T06:36:30+00:00",
+ "recipe": {
+  "toolchain_commit": "30018502",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N11120_neg/2026-10-30-ChopinDavid-42e58b35.tests.json"
+ },
+ "label": "a plural or cataphoric pointer to an enumeration that follows ('for a few reasons:' 0.50, 'drills used which include' 0.33, 'as detailed below' 0.26); the singular 'for a good reason' (0.18), 'as mentioned above' (0.04) and 'the following day' (0.01) are quiet; 'as follows:' (0.07) and 'the following form' (0.14) did not reproduce in short sentences",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N11120_neg/2026-10-30-ChopinDavid-42e58b35.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.078,
+     "peak": " reasons"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.267,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.083,
+     "peak": " which"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.199,
+     "peak": " each"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.183,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.259,
+     "peak": " include"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.147,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.261,
+     "peak": " first"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.08,
+     "peak": " reason"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.031,
+     "peak": " kit"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " keeps"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.037,
+     "peak": " why"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.047,
+     "peak": " step"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.085,
+     "peak": " about"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.191,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "30018502",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "cataphoric 'for several reasons' / 'which include' / 'below'",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 9.4, density 1.1% (flagged broad), peaks '.' x5, ' reasons' x3, ' following' x2, ' that' x2, ' below', ' I', ' which', ' follows'. Probe: 'a mistake for a few reasons:' 0.498, 'many drills used which include' 0.328, 'As detailed below' 0.256, 'for a good reason' 0.180, 'the following online form' 0.136, 'summarized as follows:' 0.073, 'As mentioned above' 0.041, plain result sentence 0.032, 'the following day' 0.010. Only the plural 'reasons' and 'which include' crossed 0.3, so the test leans on those two frames plus 'below', and the near misses use the singular, the anaphoric 'above' or no pointer.",
+ "selection": "random draw"
+}

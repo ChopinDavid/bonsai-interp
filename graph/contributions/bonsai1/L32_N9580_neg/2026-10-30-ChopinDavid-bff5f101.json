@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-bff5f101",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9580-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T06:36:21+00:00",
+ "recipe": {
+  "toolchain_commit": "30018502",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N9580_neg/2026-10-30-ChopinDavid-bff5f101.tests.json"
+ },
+ "label": "the auxiliary, adverb or conjunction right before a hands-on action with a small portable object in advice prose ('put it in the CD-ROM drive and' 0.52, 'having to lug around' 0.46, \"I'll just look for\" 0.42, 'designed to be toted' 0.30, 'can be dropped into your bag' 0.28); the same slots before abstract verbs are quiet ('having to wait' 0.06, 'designed to be applied' 0.00, 'can be crossed' 0.22 partial)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N9580_neg/2026-10-30-ChopinDavid-bff5f101.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.382,
+     "peak": " before"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.496,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.426,
+     "peak": " just"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.347,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.103,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.277,
+     "peak": " even"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.156,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.163,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.24,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.037,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.255,
+     "peak": " just"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": "Once"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.131,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.277,
+     "peak": " even"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": "I"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.132,
+     "peak": " to"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.82,
+    "median_fire": 0.312,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "30018502",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "slot before a hands-on action with a portable object",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 157, density 0.23%, peaks ' to' x7, ' be' x3, ' I' x3, ' just' x2, ' even' x2 in 'I'll just look for that little blue bowl', 'put it in the CD-ROM drive', 'can be dropped into your bag', 'without having to lug around', 'designed to be toted around in your parka', 'Before you even venture out'. Probe: 'put it in the CD-ROM drive and restart' 0.516 (' and'), 'without having to lug around heavy camera gear' 0.459 (' to'), \"I'll just look for that blue bowl\" 0.415 (' just'), 'designed to be toted around' 0.298, 'Before you even venture out' 0.286, 'can be dropped into your bag' 0.277, 'bridge can be crossed on foot' 0.218, 'without having to wait for the board' 0.056, 'theorem is designed to be applied' 0.004. The activation is modest, so the test uses the strongest frames (imperative sequences with 'and', 'having to haul/carry', 'just grab', 'to be tossed/clipped') and near misses with the same frames before mental or administrative verbs.",
+ "selection": "random draw"
+}

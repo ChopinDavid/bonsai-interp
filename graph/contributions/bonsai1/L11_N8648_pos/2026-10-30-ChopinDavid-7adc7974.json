@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-7adc7974",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N8648+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T06:36:05+00:00",
+ "recipe": {
+  "toolchain_commit": "30018502",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N8648_pos/2026-10-30-ChopinDavid-7adc7974.tests.json"
+ },
+ "label": "endurance-race names and their pieces (tri|ath|letes 1.06, 5|K 0.75, iron|man 0.72, 'the Paris marathon' 0.60, a triathlon team's ' finish' 0.52); 'marathon' as a metaphor for a long session (0.02), 'tri' in tricycle (0.03) and a chess tournament (0.01) are quiet, while a generic 'cycling race' fires at half strength (0.44)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N8648_pos/2026-10-30-ChopinDavid-7adc7974.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.606,
+     "peak": "athon"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.655,
+     "peak": " bike"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.057,
+     "peak": " swim"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.864,
+     "peak": "man"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.594,
+     "peak": " Marathon"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.616,
+     "peak": " finish"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.796,
+     "peak": "atl"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.497,
+     "peak": " marathon"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.087,
+     "peak": " dread"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.055,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " season"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " cada"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " final"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.635,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "30018502",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "endurance race (marathon, triathlon, 5K)",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 49.8, density 0.023%, peaks ' marathon' x4, 'ath' x2 (Tri|ath|letes), ' finish' x2, ' runs', ' Race', ' Marathon', 'man' (iron|man), 'K' (5K), ' Paris' (Marathon de Paris), 'ón' (Triatl|ón). Probe: 'Triathletes who are new to swimming' 1.057 ('ath'), 'Epsom 5K' 0.747 ('K'), 'run an ironman' 0.720 ('man'), 'finish the Paris marathon' 0.596, 'triathlon team at the finish line' 0.515 (' finish'), 'cycling race each August' 0.437, 'marathon session' 0.021, 'tripod and a tricycle' 0.025, chess tournament 0.009. The near misses keep sport and competition but drop the endurance race (judo, swimming drills, surfing, basketball, tennis, chess).",
+ "selection": "random draw"
+}
