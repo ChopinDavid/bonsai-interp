@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d19e5f2d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N11195-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N11195",
+   "pole": "-",
+   "label": "the first word of a multiword discipline or field name inside an academic affiliation (Institute of Solid State Physics, M.Sc. in Molecular Genetics, Professor of Urban Planning)",
+   "fire": [
+    "After a postdoc at the Institute of Nuclear Physics in Kraków, she returned to Warsaw.",
+    "He joined the Department of Applied Mathematics at Imperial College in 1998.",
+    "Her doctorate in Marine Biology was completed at the University of Aberdeen.",
+    "He is now a lecturer in Electrical Engineering at the University of Cape Town.",
+    "She holds an M.A. in Medieval History from the University of St Andrews.",
+    "He was appointed Professor of Civil Engineering at Trinity College Dublin in 2015.",
+    "Dr. Patel trained at the School of Public Health at Johns Hopkins before moving to Geneva.",
+    "A graduate in Mechanical Engineering from Chalmers, he worked for Volvo for a decade."
+   ],
+   "quiet": [
+    "After a postdoc at the Institute of Physics in Kraków, she returned to Warsaw.",
+    "He joined the Department of Mathematics at Imperial College in 1998.",
+    "Her doctorate in Biology was completed at the University of Aberdeen.",
+    "The nuclear plant on the coast was shut down after forty years of service.",
+    "She applied the varnish in thin coats and let each one dry overnight.",
+    "The marine layer burned off by noon and the beach filled up.",
+    "He was appointed head of the engineering department at Trinity College Dublin in 2015.",
+    "A graduate of Chalmers, he worked for Volvo for a decade."
+   ]
+  }
+ ],
+ "predictions": "5/8 fire; probe Solid State 1.04, Molecular Genetics 0.73, Urban Planning 0.47, Comparative Literature 0.24; single-word field (Ph.D. in Chemistry) 0.04, ordinary 'solid rock'/'molecular motion' 0.08-0.09",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "multiword field name in affiliation",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Card peaks are the first word of two-word fields after 'of'/'in' in credential prose (Bowling Green, Solid State, Molecular Medical, Urban and Regional). A university's own name (graduate of Kent State) scored only 0.12, so the test keeps to field names. The + pole is the single-word field (Physics, Chemistry)."
+}

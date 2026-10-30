@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-a69c6879",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N4294+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T23:35:26+00:00",
+ "recipe": {
+  "toolchain_commit": "f14db2c12",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N4294_pos/2026-10-30-ChopinDavid-a69c6879.tests.json"
+ },
+ "label": "a later piece of a Norwegian proper name that the tokenizer splits into several tokens (Bondevik, Gudbrandsdal, Tromsø, Stavanger), not split names from other languages",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N4294_pos/2026-10-30-ChopinDavid-a69c6879.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.207,
+     "peak": "ald"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.33,
+     "peak": "hammer"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.545,
+     "peak": "anger"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.232,
+     "peak": "og"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.211,
+     "peak": " Oslo"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.396,
+     "peak": "ø"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.163,
+     "peak": "berg"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.221,
+     "peak": " Oslo"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": "Prime"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": "and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": "ov"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": "med"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "ane"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.06,
+     "peak": "ik"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "â"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.227,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f14db2c12",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Norwegian name piece",
+ "unit_kind": "lexical",
+ "confidence": "medium-low",
+ "notes": "Card peaks ('nes' in Aksnes, 'ud' in Sonerud, 'kon' in Håkon, 'dal', 'stad', 'land') are all inner or final pieces of Norwegian names, density 0.008%. Fresh names in the probe fired at 0.16-0.42 of max, so the pole generalises beyond the card strings but weakly; the test packs two names per fire item. Near misses are split names from Polish, Italian, Russian, Romanian and Hungarian in the same frames.",
+ "selection": "random draw"
+}

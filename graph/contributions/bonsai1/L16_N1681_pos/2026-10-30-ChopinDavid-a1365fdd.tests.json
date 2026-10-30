@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a1365fdd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N1681+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N1681",
+   "pole": "+",
+   "label": "a statement of dislike or disappointment with something, peaking at its close (a negative evaluation, as in a bad review: 'I won't be going back')",
+   "fire": [
+    "We waited forty minutes for a table and the steak was grey. I won't be going back.",
+    "The hotel room smelled of damp and the shower never got warm. A real disappointment.",
+    "My daughter loathes the new maths teacher and dreads Tuesday mornings.",
+    "The sequel is loud, bloated and utterly forgettable. I regret paying for it.",
+    "He could not stand the way his brother chewed with his mouth open.",
+    "The customer service line kept me on hold for an hour. Never again.",
+    "Frankly, the new logo is ugly and the redesign is a mess.",
+    "I was so let down by the ending that I nearly threw the book across the room."
+   ],
+   "quiet": [
+    "We were seated within minutes and the steak was perfect. I will definitely be going back.",
+    "The hotel room smelled of fresh linen and the shower was wonderfully hot. A real treat.",
+    "My daughter adores the new maths teacher and looks forward to Tuesday mornings.",
+    "The sequel is tight, witty and utterly charming. I am glad I paid for it.",
+    "He loved the way his brother laughed at his own jokes.",
+    "The customer service line answered within a minute. Well done.",
+    "Frankly, the new logo is elegant and the redesign is a triumph.",
+    "I was so moved by the ending that I read the last chapter twice."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire; probe 'I won't be eating there again.' 0.54, 'despised the way' 0.26, 'tedious and badly paced' 0.25, 'thoroughly fed up' 0.17, 'tiny portions, enormous bill' 0.09; positive twins 0.02-0.03",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "negative evaluation close",
+ "unit_kind": "meaning",
+ "confidence": "medium",
+ "notes": "Card peaks are the sentence-final period of negative verdicts (never go back to Nobu, был разочарован, don't find this particularly good, hated being around his father) plus 'hatred', 'can't stand', 不抱太大希望. Broad flag (1% of tokens). The strongest probe was the review-style resolution never to return, so fire items pair a complaint with a verdict; near misses are the positive twins with the same structure."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-c51eaa26",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N10863-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T23:36:33+00:00",
+ "recipe": {
+  "toolchain_commit": "f14db2c12",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N10863_neg/2026-10-30-ChopinDavid-c51eaa26.tests.json"
+ },
+ "label": "unclear; best guess: statistical testing and error-detection vocabulary (test statistic, rejection region, errors can be detected)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N10863_neg/2026-10-30-ChopinDavid-c51eaa26.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.207,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.178,
+     "peak": " computed"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.142,
+     "peak": " caught"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.034,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.492,
+     "peak": " detect"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.223,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.034,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.015,
+     "peak": "Smoke"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.121,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.234,
+     "peak": " distribution"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.034,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.045,
+     "peak": " which"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.029,
+     "peak": " overnight"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": " lit"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.688,
+    "median_fire": 0.16,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f14db2c12",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "detection / test statistic (unclear)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card examples: l2_weight, 'test the tests', error-detection, style checker, testing H0, check_captcha, data integrity, standard of review, approximated. The checking theme held only for detection and hypothesis-test statistics in the probe; code names (validate_token) and unit tests did not fire. Fire items follow the two configurations that fired.",
+ "selection": "random draw"
+}

@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-17762beb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N4228+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N4228",
+   "pole": "+",
+   "label": "the token '/' standing alone between two words (June/July, black/white, landlord/tenant)",
+   "fire": [
+    "The June/July issue arrives in subscribers' mailboxes next week.",
+    "Every landlord/tenant dispute goes first to the housing tribunal.",
+    "She works as an author/illustrator of picture books in Bristol.",
+    "Each King/Queen pair in the deck is worth ten points.",
+    "The printer has a black/white mode that saves ink.",
+    "The owner/manager greets every guest personally.",
+    "Our Spring/Summer catalogue is out now.",
+    "The team's win/loss record improved sharply after March."
+   ],
+   "quiet": [
+    "The June-July issue arrives in subscribers' mailboxes next week.",
+    "Every landlord and tenant dispute goes first to the housing tribunal.",
+    "She works as an author and illustrator of picture books in Bristol.",
+    "Each King or Queen in the deck is worth ten points.",
+    "The printer has a black-and-white mode that saves ink.",
+    "The owner-manager greets every guest personally.",
+    "Our Spring-Summer catalogue is out now.",
+    "The team's record of wins and losses improved sharply after March."
+   ]
+  }
+ ],
+ "predictions": "4-6/8 fire; probe May/June 0.39, heat/cool 0.32, Tuesday/Thursday 0.15; ' /' opening a path 0.06, '@example' 0.14; hyphen twins 0.05-0.07; the pole's max is tiny (0.78) and 1.3% of tokens reach a tenth of it, so a weak hold or a fail by magnitude is likely",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token '/'",
+ "unit_kind": "lexical",
+ "confidence": "medium-low",
+ "notes": "Layer 0, peaks '/' x21 and '@' x8. The slash is its own token only when the following word does not merge with it (' and/or' -> '/or', ' input/output' -> '/output'); every fire item was checked to contain a bare '/' token. Near misses replace the slash with a hyphen or 'and'/'or'.",
+ "trigger": {
+  "words": [
+   "/"
+  ]
+ }
+}

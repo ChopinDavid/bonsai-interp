@@ -1,0 +1,160 @@
+{
+ "id": "2026-10-30-ChopinDavid-b0f430d2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N2882+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T23:36:49+00:00",
+ "recipe": {
+  "toolchain_commit": "f14db2c12",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N2882_pos/2026-10-30-ChopinDavid-b0f430d2.tests.json"
+ },
+ "label": "URL path or query-string punctuation inside a code string literal (=&, =/, /$', /',)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N2882_pos/2026-10-30-ChopinDavid-b0f430d2.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.568,
+     "peak": "/$',"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.653,
+     "peak": "=/"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.845,
+     "peak": "=&"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.065,
+     "peak": "=&"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.276,
+     "peak": "/',"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.88,
+     "peak": "=/"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.663,
+     "peak": "/$',"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.277,
+     "peak": "=&"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.051,
+     "peak": ".Order"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.12,
+     "peak": ":index"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": "\","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": "year"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": "_settings"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": ".over"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": ".get"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " region"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.754,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f14db2c12",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "URL punctuation in code string",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Card peaks '=&', '=/', \"/',\", '//', \"='\" inside Django url() patterns, ?next= strings and query strings, max 4.8. Near misses are the same code lines rewritten without a URL (plain calls, lists, attribute access).",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "=&",
+   "=/",
+   "/$',",
+   "/',"
+  ]
+ }
+}

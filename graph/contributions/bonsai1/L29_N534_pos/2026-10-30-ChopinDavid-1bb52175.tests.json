@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1bb52175",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N534+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N534",
+   "pole": "+",
+   "label": "the word-opening piece ' Vis'/' vis' when the tokenizer splits the word (Visiting, Visconti, Viscount, visibilité, vis-à-vis), not whole-word tokens such as visit, visa or visibility",
+   "fire": [
+    "The young Viscount inherited the estate at nineteen.",
+    "In 410 the Visigoths sacked Rome under Alaric.",
+    "Part Two: Visiting Hours at the County Hospital",
+    "Typhoon Haiyan devastated the central Visayas in 2013.",
+    "Elle reste très méfiante vis-à-vis des promesses du ministre.",
+    "La visibilité sur l'autoroute était presque nulle à cause de la neige.",
+    "The parish records a Visitation by the bishop in 1634.",
+    "Count Visconti ruled Milan for most of the fourteenth century."
+   ],
+   "quiet": [
+    "The young duke inherited the estate at nineteen.",
+    "In 410 the Goths sacked Rome under Alaric.",
+    "Part Two: Working Hours at the County Hospital",
+    "Typhoon Haiyan devastated the central Philippines in 2013.",
+    "We are visiting the hospital on Sunday afternoon.",
+    "The visibility on the motorway was almost nil because of the snow.",
+    "The parish records a visit by the bishop in 1634.",
+    "Her visa for Milan was approved within a fortnight."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire; probe 'Visitation' 0.56, title 'Visiting' 0.62, 'Visconti' 0.36, 'visibilité' 0.64, 'vis-à-vis' 0.47; single-token 'visiting', 'visibility', 'visa' 0.002-0.01",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece ' Vis' / ' vis'",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Card peaks ' Vis' x12, ' vis' x11, 'Vis' x3 (plus 甚 and 遠 in Chinese). Tokenizer check: ' Visiting' -> ' Vis'+'iting', ' Viscount' -> ' Vis'+'count', ' Visigoths' -> ' Vis'+'igo'+'ths', ' visibilité' -> ' vis'+'ibilit'+'é', ' vis-à-vis' -> ' vis'+'-'+'à'+'-vis'; ' visiting', ' visible', ' visibility', ' visit', ' visitors', ' Visa', ' Vista', ' visual' are single tokens.",
+ "trigger": {
+  "words": [
+   "Vis"
+  ]
+ }
+}

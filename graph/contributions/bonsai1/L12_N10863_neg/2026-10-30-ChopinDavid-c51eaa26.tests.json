@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c51eaa26",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N10863-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N10863",
+   "pole": "-",
+   "label": "unclear; best guess: statistical testing and error-detection vocabulary (test statistic, rejection region, errors can be detected)",
+   "fire": [
+    "The parity bit lets the receiver detect a single flipped bit in each byte.",
+    "Reject the null hypothesis when the computed F statistic exceeds the tabulated value.",
+    "A cyclic redundancy check is appended so that transmission errors can be caught.",
+    "The p-value for the two-sample t-test was well below 0.05.",
+    "Hamming codes can both detect and correct one-bit errors.",
+    "The rejection region for a two-tailed test lies in both tails of the distribution.",
+    "Anomaly detection flagged three transactions as suspicious overnight.",
+    "Smoke detectors are tested monthly to make sure the alarm still sounds."
+   ],
+   "quiet": [
+    "The parity bit is set to one when the byte has an odd number of ones.",
+    "Compute the mean of each sample before plotting the distribution.",
+    "A header is appended so that the receiver knows the length of the message.",
+    "The two samples were drawn from different villages in the same province.",
+    "Hamming distance counts the positions in which two strings differ.",
+    "The normal distribution has two tails that extend to infinity.",
+    "Three transactions were posted to the account overnight.",
+    "Smoke rose from the chimney as the stove was lit for the evening."
+   ]
+  }
+ ],
+ "predictions": "2-4/8 fire; probe 'corruption can be detected' 0.36, 'test statistic exceeds the critical value' 0.35; unit tests 0.05, validate_token 0.02, spell checkers 0.02; non-verification twins 0.02-0.06; 68% gate-closed and max 4.6, so the pole is weak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "detection / test statistic (unclear)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card examples: l2_weight, 'test the tests', error-detection, style checker, testing H0, check_captcha, data integrity, standard of review, approximated. The checking theme held only for detection and hypothesis-test statistics in the probe; code names (validate_token) and unit tests did not fire. Fire items follow the two configurations that fired."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ba576c78",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1459-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1459",
+   "pole": "-",
+   "label": "speculative superhuman or non-human intelligence: artificial general intelligence and the singularity, advanced alien civilizations, thinking machines in science fiction",
+   "fire": [
+    "Bostrom argues that a superintelligence could pursue goals utterly alien to our own.",
+    "If an alien civilization had a million-year head start, its machines might already be among the stars.",
+    "Kurzweil predicted that machines would match the human brain by the late 2020s.",
+    "A Dyson sphere around a distant star would be the clearest signature of a very advanced species.",
+    "The Fermi paradox asks why, in a galaxy this old, no other intelligence has made contact.",
+    "An AI that can improve its own code might leap from human level to something far beyond us within days.",
+    "In the film, HAL decides that the mission matters more than the crew.",
+    "Transhumanists hope to upload their minds long before biological death."
+   ],
+   "quiet": [
+    "Bostrom argues that the university should expand its philosophy department.",
+    "If the neighbours had a million dollars, they might already have moved to the coast.",
+    "The forecaster predicted that temperatures would match last year's record by late July.",
+    "A greenhouse around the courtyard would be the clearest sign that the gardener is serious.",
+    "The survey asks why, in a town this old, no other bakery has opened.",
+    "A programmer who can improve her own code quickly moves from junior level to senior within years.",
+    "In the film, the captain decides that the mission matters more than his career.",
+    "Many retirees hope to downsize their homes long before they stop driving."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire; probe Kardashev Type II civilization 1.20, extraterrestrial intelligence 1.00, technological singularity 0.71, human-level machine 0.57, positronic brain 0.19; office AI, new laptop, IQ test 0.01-0.02",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "superintelligence / alien minds",
+ "unit_kind": "meaning",
+ "confidence": "high",
+ "notes": "Card peaks: super-intelligent, human level, singularity, general-purpose computer, Type 0 civilization, The Culture novels, artificial general intelligence, 2001, Extraterrestrial Intelligence. Density 0.028%. Near misses keep each sentence's frame and swap the futurist content for mundane human affairs, including everyday AI and ordinary intelligence."
+}

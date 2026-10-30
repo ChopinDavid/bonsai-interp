@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-aecd9b2f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9537-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T23:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N9537",
+   "pole": "-",
+   "label": "unclear; best guess: a non-final item of a coordination of three or more items sharing one head, in formal prose (human, animal and plant genes; social, ethical and religious aspects)",
+   "fire": [
+    "The directive sets out obligations for employers. It covers physical, chemical and biological hazards in the workplace, and requires regular review.",
+    "Funding was renewed for a further three years. The programme supports economic, social and cultural projects in rural districts.",
+    "The committee met for a final time in June. Its report praised the clear, thorough, balanced and timely work of the secretariat.",
+    "A second survey was completed in 2019. It recorded nesting sites of grey, harbour and hooded seals along the northern coast.",
+    "The firm has grown quickly since 2015. We now design, manufacture and install modular kitchens throughout the region.",
+    "The amendment was adopted without debate. It states that these freedoms may not be suspended, restricted or revoked by any local authority.",
+    "The alloy was developed for aircraft fittings. It combines aluminium, magnesium and silicon in a precise ratio.",
+    "Samples were collected over two seasons. Tissue from cardiac, hepatic and renal cells was examined under the microscope."
+   ],
+   "quiet": [
+    "The directive sets out obligations for employers. It covers chemical and biological hazards in the workplace, and requires regular review.",
+    "Funding was renewed for a further three years. The programme supports cultural projects in rural districts.",
+    "The committee met for a final time in June. Its report praised the thorough work of the secretariat.",
+    "A second survey was completed in 2019. It recorded nesting sites of harbour seals along the northern coast.",
+    "The firm has grown quickly since 2015. We now install modular kitchens throughout the region.",
+    "The amendment was adopted without debate. It states that these freedoms may not be revoked by any local authority.",
+    "The alloy was developed for aircraft fittings. It combines aluminium and silicon in a precise ratio.",
+    "Samples were collected over two seasons. Tissue from renal cells was examined under the microscope."
+   ]
+  }
+ ],
+ "predictions": "0-2/8 fire; the probe's three-item lists scored only 0.018-0.079 in single sentences, so the trigger as written did not transfer; fire items add a lead-in sentence in case the pole needs document context",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "mid-list item (unclear)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card: max 54.5, broad (1.1% of tokens reach a tenth of max); every top example is the second item of a three-plus list before 'and'/'or', mostly attributive items sharing a head noun. Probe lists ('wetland, grassland and coastal habitats' 0.018, 'onions, carrots, celery' 0.079, 'measure, cut and polish' 0.079) barely moved, two-item and no-list twins 0.003-0.012. The direction matches but the magnitude does not, so this is recorded as a best guess and expected to fail."
+}

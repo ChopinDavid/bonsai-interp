@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-c4190a67",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N4160+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T23:35:50+00:00",
+ "recipe": {
+  "toolchain_commit": "f14db2c12",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N4160_pos/2026-10-30-ChopinDavid-c4190a67.tests.json"
+ },
+ "label": "dense / positional best guess: a non-initial piece of a rare word that the tokenizer splits into several tokens (splittail, maltreating, rarefaction, cobblestone)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N4160_pos/2026-10-30-ChopinDavid-c4190a67.tests.json",
+   "prereg_commit": "f14db2c12",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.786,
+     "peak": "ail"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.22,
+     "peak": "reating"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.049,
+     "peak": "faction"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.395,
+     "peak": "str"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.098,
+     "peak": "stone"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.208,
+     "peak": "p"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.041,
+     "peak": " tent"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.02,
+     "peak": " bottom"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.04,
+     "peak": " detainees"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.036,
+     "peak": " earthquake"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " jobs"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": " wet"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.04,
+     "peak": " tent"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": " bottom"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.153,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f14db2c12",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "inner piece of split word (dense)",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Layer-2 spelling unit with a tiny max. Every card example is a word-inner piece ('aily', 'ersion', 'fac', 'idi', 'ail', 'reat', 'anceled'). Fire items use words checked to split (pintail, mistreating, liquefaction, bootstrapping, cobblestone, sandpiper, condensation, stratification); near misses swap in a single-token word of the same meaning. Near-miss words were checked to be single tokens (teal, beating, erosion, starting, stone, crane, frost, mixing).",
+ "selection": "random draw"
+}
