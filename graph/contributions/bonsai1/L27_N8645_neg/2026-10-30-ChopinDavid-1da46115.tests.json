@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1da46115",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N8645-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N8645",
+   "pole": "-",
+   "label": "the slot right before an expected 'not': the subject or copula after a clause-opening 'When'/'If'/'were it' ('When she is ▁', 'were it ▁', 'если бы ▁'); a next-token negation predictor that fires whether or not 'not' follows",
+   "fire": [
+    "Maria works as a nurse in Leeds. When she is not on shift, she grows tomatoes on her balcony.",
+    "Our small company would have closed years ago were it not for a loyal group of customers.",
+    "Daniel edits documentaries for a living. When he isn't in the cutting room, he coaches a youth football team.",
+    "The bridge would have collapsed in the storm if it were not for the extra cables added in 1998.",
+    "Он давно бросил бы шахматы, если бы не упрямство старого тренера.",
+    "Priya runs a bookshop in Pune. When she is not behind the counter, she writes poetry in Marathi.",
+    "The orchard would have died in the drought were it not for the spring beneath the hill.",
+    "Luis is a tax lawyer by day. When he's not reading statutes, he restores accordions."
+   ],
+   "quiet": [
+    "Maria works as a nurse in Leeds. After her shift, she grows tomatoes on her balcony.",
+    "Our small company stayed open for years thanks to a loyal group of customers.",
+    "Daniel edits documentaries for a living. Outside the cutting room, he coaches a youth football team.",
+    "The bridge survived the storm because of the extra cables added in 1998.",
+    "Он давно бросил шахматы, хотя старый тренер был против.",
+    "Priya runs a bookshop in Pune. Behind the counter she also writes poetry in Marathi.",
+    "The orchard survived the drought thanks to the spring beneath the hill.",
+    "Luis is a tax lawyer by day. In the evenings he restores accordions."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire (the 'if it were not' variant is unprobed); near misses that drop the clause-opening setup stay under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pre-'not' slot predictor",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'When she is not grading' 0.534 at ' is' and 'When she is grading' also 0.534 at ' is' (predictor, blind to what follows); 'were it not for' 0.680 at ' it'; 'если бы не' 0.591 at ' если'; 'When not kneading' only 0.149. Near misses with the setup removed ('On weekends Tom', 'flooded because') 0.001-0.006; sentence-initial 'Would it not' 0.016. The + pole suppresses ' not'/'isn'/'wasn', consistent with the - pole promoting a negation."
+}

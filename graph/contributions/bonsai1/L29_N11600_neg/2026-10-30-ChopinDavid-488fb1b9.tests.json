@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-488fb1b9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N11600-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N11600",
+   "pole": "-",
+   "label": "HIV antiretroviral treatment and prevention: ART regimens, PrEP, treatment-naive patients, drug names such as tenofovir and dolutegravir; other antiviral therapies leak at about a third of the strength",
+   "fire": [
+    "Dolutegravir-based regimens are now preferred for adults starting antiretroviral therapy in most national guidelines.",
+    "After six months on a tenofovir-lamivudine-dolutegravir combination, her HIV viral load was undetectable.",
+    "Long-acting injectable cabotegravir offers an alternative to daily oral PrEP for people at high risk of HIV.",
+    "The trial enrolled 600 treatment-naive adults with HIV-1 infection and randomised them to two integrase-inhibitor regimens.",
+    "Resistance to older non-nucleoside reverse transcriptase inhibitors has forced many clinics to switch patients to newer HIV drugs.",
+    "Expanding access to antiretroviral drugs in sub-Saharan Africa turned HIV from a death sentence into a chronic condition.",
+    "Pregnant women living with HIV who stay on antiretroviral treatment almost never pass the virus to their babies.",
+    "Pharmacies in the city will now dispense PrEP without a prescription to reduce new HIV infections."
+   ],
+   "quiet": [
+    "SGLT2-inhibitor regimens are now preferred for adults starting treatment for heart failure in most national guidelines.",
+    "After six months on a metformin-empagliflozin combination, her HbA1c was back in the normal range.",
+    "Long-acting injectable buprenorphine offers an alternative to daily oral doses for people recovering from opioid dependence.",
+    "The trial enrolled 600 newly diagnosed adults with rheumatoid arthritis and randomised them to two biologic regimens.",
+    "Resistance to older beta-lactam antibiotics has forced many hospitals to switch patients to carbapenems.",
+    "Expanding access to insulin in sub-Saharan Africa turned type 1 diabetes from a death sentence into a chronic condition.",
+    "Pregnant women with epilepsy who stay on their medication almost never have seizures during delivery.",
+    "Pharmacies in the city will now dispense statins without a prescription to reduce heart attacks."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire at 0.3-1.2; non-viral chronic-disease regimens 0.05-0.25",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "HIV antiretroviral therapy",
+ "unit_kind": "sparse feature",
+ "confidence": "medium",
+ "notes": "Probe: 'PrEP with emtricitabine and tenofovir' 1.236, 'first-line treatment for treatment-naive adults with HIV-1' 1.009, HAART/ART sentences 0.37-0.42. Insulin 0.202, metformin 0.244, chemotherapy 0.047, bakery 0.003. Direct-acting antivirals for hepatitis C 0.419: antiviral therapy in general leaks, so near misses here use non-viral conditions and the leak is noted. The + pole suppresses 'harm', 'stigma', 'needle' (drug-use harm reduction), the other side of the same clinical-HIV distinction."
+}

@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f3fa3778",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N10327+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N10327",
+   "pole": "+",
+   "label": "the Chinese conjunction 与 ('and' / 'with') joining two nouns in formal prose; 和 in the same slot is silent. The Russian prefix piece ' не' (не|сметное) is a weaker second trigger",
+   "fire": [
+    "大学图书馆将延长开放时间，以方便学生与教师使用。",
+    "本次论坛讨论了城市规划与环境保护之间的关系。",
+    "双方就贸易与投资合作签署了一系列协议。",
+    "这项研究考察了睡眠质量与学习成绩的联系。",
+    "新政策旨在促进科技创新与产业升级。",
+    "展览展示了当地的传统工艺与现代设计。",
+    "该报告分析了人口老龄化与社会保障体系面临的挑战。",
+    "教练强调团队合作与个人技术同样重要。"
+   ],
+   "quiet": [
+    "大学图书馆将延长开放时间，以方便学生和教师使用。",
+    "本次论坛讨论了城市规划和环境保护之间的关系。",
+    "双方就贸易和投资合作签署了一系列协议。",
+    "这项研究考察了睡眠质量和学习成绩的联系。",
+    "新政策旨在促进科技创新和产业升级。",
+    "展览展示了当地的传统工艺和现代设计。",
+    "该报告分析了人口老龄化和社会保障体系面临的挑战。",
+    "教练强调团队合作和个人技术同样重要。"
+   ]
+  }
+ ],
+ "predictions": "8/8 fire at 0.3-0.45; the 和 versions under 0.06",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Chinese 与 conjunction",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 与 0.390 and 0.381 in two sentences; the same sentences with 和 0.045 and 0.042. Russian ' не' as a split prefix 0.082 and 0.169, the same sentences without it 0.030-0.042; English floor 0.026. Max is 3.94, so 0.39 is about 1.5 in raw units. The near misses deliberately share the prefix up to the conjunction because the trigger is the token itself, not a prediction, and the 和 controls were silent with that prefix in the probe.",
+ "trigger": {
+  "words": [
+   "与"
+  ]
+ }
+}

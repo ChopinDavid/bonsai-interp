@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-12fc2669",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9883+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N9883",
+   "pole": "+",
+   "label": "the connector inside an explicit span of letters, numbers or dates: 'from A to E', 'from Monday 12th to Friday 16th', the Python slice '[:n]'; a single endpoint without a span is silent",
+   "fire": [
+    "Each tasting glass was marked with a letter from A to H so the judges could not see the labels.",
+    "The seminar runs from Tuesday 3rd to Thursday 5th October in the small lecture theatre.",
+    "The subjects were split into four cohorts, labelled from A to D, before any treatment began.",
+    "We only need the first three fields, so the parser returns row[:3] and ignores the rest.",
+    "Rooms on the second floor are numbered from 201 to 230, with the lift at the far end.",
+    "The bookshop is open from 9 to 6 on weekdays and closed on Sundays.",
+    "Grades on the scale run from A to F, and anything below C must be retaken.",
+    "The test keeps the first ten entries with history[:10] before comparing them to the expected list."
+   ],
+   "quiet": [
+    "Each tasting glass was marked with the letter B so the judges could not see the label.",
+    "The seminar starts on Tuesday 3rd October in the small lecture theatre.",
+    "The subjects were split into cohort A before any treatment began.",
+    "We only need one field, so the parser returns the first column and ignores the rest.",
+    "Rooms on the second floor start at 201, with the lift at the far end.",
+    "The bookshop opens at 9 on weekdays and is closed on Sundays.",
+    "A grade of C on the scale is the lowest that counts, and anything below must be retaken.",
+    "The test keeps the full history before comparing it to the expected list."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire (letter and date spans 0.7-0.9, slices 0.3-0.4); near misses under 0.02",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "from-X-to-Y span connector",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'lettered from A to E' 0.868 at ' to', 'from Monday 12th to Friday 16th' 0.731, 'args[:4]' 0.377 at '[:'. 'range(4)' 0.017 and 'pages 1-4' 0.057 did not fire, so hyphen ranges and range() calls are excluded from the label. Near misses with one endpoint ('group A', 'opens on Monday 12th') 0.005-0.012. The - pole promotes small number words (five, four, six)."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-eb4519af",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N4530+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N4530",
+   "pole": "+",
+   "label": "inconceivability of removal: imagining or conceiving of something without a part of it ('hard to imagine X without Y', 'can't conceive of', 'X without Y seems incomplete', 'what if you took Y out of X'); the plain, possible sense of imagine/conceive stays quiet",
+   "fire": [
+    "It is impossible to picture Naples without the roar of its scooters and the smell of frying dough.",
+    "Try to imagine the Beatles without Ringo; the songs would still exist, but the swing would be gone.",
+    "A Sunday roast without the crackling seems somehow unfinished to my grandmother.",
+    "Nobody at the firm can conceive of the newsroom without Helen barking from the corner desk.",
+    "What if you removed the monsoon from the story of Kerala? The whole calendar of festivals would collapse.",
+    "It is hard to imagine a Russian novel without a long scene at a railway station.",
+    "I cannot imagine our village without the Tuesday market; it is the only reason anyone meets.",
+    "The old editor said she could not conceive of a newspaper without a crossword."
+   ],
+   "quiet": [
+    "It is easy to picture Naples in summer: the roar of scooters and the smell of frying dough everywhere.",
+    "Imagine the Beatles in 1963, playing three shows a night in a sweaty club in Hamburg.",
+    "A Sunday roast with crackling is my grandmother's idea of a perfect afternoon.",
+    "Everyone at the firm can picture the newsroom at six, with Helen barking from the corner desk.",
+    "The monsoon arrives in Kerala in early June and fills the whole calendar with festivals.",
+    "I can imagine several ways to open a Russian novel, but a railway station is the classic one.",
+    "I remember our village on Tuesdays, when the market is the only reason anyone meets.",
+    "The old editor said she could easily picture a newspaper run entirely by students."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire at 0.2-0.45 of max; near misses under 0.1 except those that keep 'hard to imagine'",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "can't-imagine-X-without-Y",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'hard to imagine Vienna without its coffee houses; the city would lose' 0.418 (peak ' would'); 'took the river out of the history of Cairo? There would be' 0.330; 'without the old argument ... seems incomplete' 0.236; 'cannot conceive of a childhood summer without' 0.232. 'I can conceive of several ways' 0.031 and plain declaratives 0.004-0.005. 'hard to imagine how many tourists' 0.301 at ' imagine': the negated-possibility verb alone carries some of it, so near misses use the positive sense (easy to picture, I can imagine). The - pole promotes 'cannot'/'impossible'/'unthinkable'."
+}

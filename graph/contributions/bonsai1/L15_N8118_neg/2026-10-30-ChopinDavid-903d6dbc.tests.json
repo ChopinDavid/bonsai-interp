@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-903d6dbc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N8118-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N8118",
+   "pole": "-",
+   "label": "a concrete digital artifact named as the thing an operation acts on (the memory card, the files, the device, the link, the website); the same instructions aimed at people, organisations or abstractions stay quiet",
+   "fire": [
+    "Before you leave the office, eject the USB drive and lock the laptop in the drawer.",
+    "The new version of the app cannot open the files that were saved by the old one.",
+    "Please remove the SIM card before you send the phone back for repair.",
+    "Users who click the link will be taken straight to the download page.",
+    "We reserve the right to remove any photo from the website without notice.",
+    "The technician restarted the router and then updated the firmware on the device.",
+    "If the document does not print, check that the printer is connected to the network.",
+    "Copy the folder to an external hard drive before you reinstall the operating system."
+   ],
+   "quiet": [
+    "Before you leave the office, tell the receptionist and sign the attendance sheet.",
+    "The new version of the policy cannot cover the claims that were filed under the old one.",
+    "Please notify the carrier before you send the parcel back for a refund.",
+    "Visitors who register early will be taken straight to the main hall.",
+    "We reserve the right to refuse any applicant from the programme without notice.",
+    "The technician called the supplier and then renewed the contract for the service.",
+    "If the meeting does not start on time, check that the chair has been informed.",
+    "Write to the landlord before you move out at the end of the lease."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire at 0.1-0.35 of a small max (7.25); near misses under 0.07",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digital-artifact object noun",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'rebooted with the memory card inserted' 0.347, 'opening the device' 0.236, 'read the files' 0.211, 'открываете сообщение' 0.207, 'display it on the website' 0.117. Same sentences with the artifact replaced by a person or organisation 0.038-0.061; garden floor 0.020. Weak pole (max 7.25, 0.3% density) so activations are small but the separation was consistent."
+}

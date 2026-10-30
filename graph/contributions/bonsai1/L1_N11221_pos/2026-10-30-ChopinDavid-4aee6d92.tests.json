@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4aee6d92",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N11221+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N11221",
+   "pole": "+",
+   "label": "word-final suffix piece of a Romance adverb or a Russian adjective: 'amente' (lent|amente) and 'ий' (горяч|ий); a broad spelling pole that also fires weakly on many other non-English suffixes",
+   "fire": [
+    "El tren avanzaba lentamente entre las colinas cubiertas de niebla.",
+    "La carta llegó directamente a la oficina del alcalde sin pasar por el correo.",
+    "Queríamos solamente descansar un rato antes de seguir el viaje.",
+    "No sé exactamente cuántas personas vinieron a la fiesta.",
+    "Бабушка испекла свежий хлеб и поставила его на окно остывать.",
+    "Во дворе сидел рыжий кот и грелся на солнце.",
+    "Нам подали горячий суп и чёрный хлеб с солью.",
+    "La noticia corrió rápidamente por el pueblo en una tarde."
+   ],
+   "quiet": [
+    "El tren avanzaba despacio entre las colinas cubiertas de niebla.",
+    "La carta llegó a la oficina del alcalde sin pasar por el correo.",
+    "Queríamos descansar un rato antes de seguir el viaje.",
+    "No sé cuántas personas vinieron a la fiesta.",
+    "Бабушка испекла хлеб и поставила его на окно остывать.",
+    "Во дворе сидел кот и грелся на солнце.",
+    "Нам подали суп и хлеб с солью.",
+    "La noticia corrió por el pueblo en una tarde."
+   ]
+  }
+ ],
+ "predictions": "6/8 fire above 0.4; near misses 0.05-0.25 because the pole is broad (6% of tokens reach 0.1 of max)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "-amente / -ий suffix piece",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: rápid|amente 0.614, горяч|ий 0.691; the same sentences without the suffixed word 0.059 and 0.125. Weaker: quién 0.143, синий (с|ин|ий) 0.215 at a different token, tranquilamente 0.252 peaking elsewhere. Max is only 0.23 and the gate-closed regime dominates (91%), so this is a weak broad unit; label at the piece level.",
+ "trigger": {
+  "words": [
+   "amente",
+   "ий"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-10eae7f8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N6155+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N6155",
+   "pole": "+",
+   "label": "holistic body-and-wellness prose (stress held in the body, energy flow, inner health showing on the skin, mind-body connection), peaking at the clause boundary that follows such a claim; the same sentence shapes about machines, money or gardens stay quiet",
+   "fire": [
+    "Chronic worry settles into the shoulders and jaw. Even when we sleep, the body keeps bracing for a blow.",
+    "Breath is the bridge between mind and body, since slowing the exhale calms the nervous system within minutes.",
+    "The gut is often called the second brain. When digestion is sluggish, mood and concentration suffer too.",
+    "Massage releases the tension stored in the fascia. If that tension is left alone, it spreads to the hips and neck.",
+    "Your hair reflects what is happening inside you, because a poor diet shows up in dull, brittle strands within weeks.",
+    "Yoga teachers speak of energy moving along the spine. When the flow is blocked, fatigue and headaches follow.",
+    "Cold water immersion wakes up the whole system. Even a thirty-second plunge sharpens the mind for hours.",
+    "The lymphatic system has no pump of its own, so gentle movement is what keeps it draining properly."
+   ],
+   "quiet": [
+    "Chronic underfunding settles into every department. Even when revenue rises, the agency keeps bracing for cuts.",
+    "Cash is the bridge between orders and payroll, since slowing the invoices starves the business within months.",
+    "The warehouse is often called the second shop. When restocking is sluggish, sales and reviews suffer too.",
+    "Lubrication releases the friction stored in the bearings. If that friction is left alone, it spreads to the gears and shaft.",
+    "Your lawn reflects what is happening underneath it, because poor drainage shows up in yellow patches within weeks.",
+    "Engineers speak of current moving along the bus. When the flow is blocked, overheating and shutdowns follow.",
+    "A cold start strains the whole engine. Even a thirty-second idle warms the oil for hours.",
+    "The irrigation system has no pump of its own, so a gentle slope is what keeps it draining properly."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire at 0.6-0.9; near misses under 0.1 except lifestyle topics (gardening) around 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "holistic wellness prose",
+ "unit_kind": "sparse feature",
+ "confidence": "high",
+ "notes": "Probe: body/wellness sentences 0.720-0.853 (peaks at '.', ' feel', ' what'); the same structures about inflation 0.069, a turbine 0.014, a bridge 0.009, a garden 0.239. Peak tokens on the card are '.', ' When', 'If' at clause boundaries inside health text."
+}

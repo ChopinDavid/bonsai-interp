@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5850af67",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N11587+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N11587",
+   "pole": "+",
+   "label": "late piece of a long concatenated identifier or username in code (MakeRelativePathsInFlags|Absolute, myflashgame|base); a dense unit with a 0.2-0.4 background on ordinary prose and short code",
+   "fire": [
+    "def ConvertLegacyConfigEntriesToModernFormat(entries, strict):\n    if not entries:\n        return []",
+    "result = self._serializer.BuildOutboundMessageEnvelopeHeader(payload, routing_key)\nreturn result",
+    "- shadowwolfgamer likes this\n- pixelforgestudio likes this\n- northernlightsphoto likes this",
+    "SELECT SensorReadingTimestamp, AmbientTemperatureCelsius FROM readings WHERE DeviceSerialNumber = ?",
+    "class AsyncBatchUploadProgressReporter(ProgressReporter):\n    def on_chunk_complete(self, idx):\n        pass",
+    "username: crimsonbutterflyqueen\nfollowers: 1,204\nposts: 312",
+    "const handleSidebarNavigationToggleClick = () => setSidebarNavigationOpen(prev => !prev);",
+    "logger.info(\"RecomputeCustomerLifetimeValueSnapshot finished in %d ms\", elapsed)"
+   ],
+   "quiet": [
+    "def convert(entries, strict):\n    if not entries:\n        return []",
+    "result = self.build(payload, key)\nreturn result",
+    "- Tom likes this\n- Ana likes this\n- Raj likes this",
+    "SELECT ts, temp FROM readings WHERE id = ?",
+    "The kettle boiled while she searched the drawer for a clean spoon.",
+    "A thin layer of frost covered the windscreen this morning.",
+    "const toggle = () => setOpen(prev => !prev);",
+    "logger.info(\"done in %d ms\", elapsed)"
+   ]
+  }
+ ],
+ "predictions": "5/8 fire above 0.5; near misses 0.2-0.4, so the test probably fails on the floor",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "long-identifier tail (dense)",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: 'MakeRelativePathsInFlagsAbsolute' 0.802 at 'Absolute', 'myflashgamebase' 0.782 at 'base'; the shorter 'make_paths(flags, directory)' 0.233; plain English prose 0.324-0.330, German 0.400, SQL with medium names 0.280. The card flags 19.5% density; this is a dense unit whose peaks are the tails of very long concatenated names."
+}

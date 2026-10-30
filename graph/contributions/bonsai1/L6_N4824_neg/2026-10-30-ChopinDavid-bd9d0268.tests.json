@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bd9d0268",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N4824-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N4824",
+   "pole": "-",
+   "label": "the continuation piece of a proper name the tokenizer splits in two or more (Weg|mans, Bel|kin, Lip|kin, Daw|kins, Burk|ina, Kro|ger, Net|gear); a single-token name in the same slot is silent",
+   "fire": [
+    "Every Sunday my aunt drives to Wegmans for the rotisserie chicken.",
+    "The wireless keyboard from Belkin stopped pairing after the update.",
+    "Dr Lipkin presented the virus sequencing results on the first morning.",
+    "Richard Dawkins debated the bishop in a packed Oxford hall.",
+    "The cotton harvest in Burkina Faso was poor this year because the rains came late.",
+    "We switched to Kroger when the local shop closed.",
+    "The Hodgkin lymphoma trial recruited patients from twelve hospitals.",
+    "A Netgear switch in the basement connects the two buildings."
+   ],
+   "quiet": [
+    "Every Sunday my aunt drives to Costco for the rotisserie chicken.",
+    "The wireless keyboard from Apple stopped pairing after the update.",
+    "Dr Perkins presented the virus sequencing results on the first morning.",
+    "Richard Jenkins debated the bishop in a packed Oxford hall.",
+    "The cotton harvest in Mali was poor this year because the rains came late.",
+    "We switched to Walmart when the local shop closed.",
+    "The lymphoma trial recruited patients from twelve hospitals.",
+    "A Cisco switch in the basement connects the two buildings."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire at 0.5-1.0; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split-proper-name tail piece",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: Weg|mans 0.988, Bel|kin 0.882, G|ook|in 0.867, weak lens|ing 0.682, Burk|ina 0.490. The same sentences with Walmart, Hopkins, Smith, Ghana (single tokens) 0.015-0.040. Splits of every test name were checked with the tokenizer."
+}
