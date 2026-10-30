@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N11655-",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 11655,
+ "pole": "-",
+ "label": "the classifying stem of a mineral or chemical species name before its second part ('carbonate' crystals 0.80, 'carbon' dioxide 0.75, calc|ite 0.50) and, weaker, the adjective of a monastic order (Cisterc|ian 0.55, Benedict|ine 0.42) or 'tribes'men (0.31); the same sentences with generic words (rock, gas, monks) and 'carbonated water' (0.06) are quiet",
+ "short": "mineral-species stem / monastic-order adjective",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N11655_neg/2026-10-30-ChopinDavid-610f4f79.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.817,
+     "peak": " carbonate"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.158,
+     "peak": " carbon"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.338,
+     "peak": " calc"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.194,
+     "peak": " minerals"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.039,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.699,
+     "peak": "ian"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.131,
+     "peak": "ian"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.563,
+     "peak": "ine"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.053,
+     "peak": "itters"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.038,
+     "peak": " lake"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.059,
+     "peak": " magnesium"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.1,
+     "peak": " dark"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.056,
+     "peak": " filled"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.502,
+     "peak": " monks"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.047,
+     "peak": " church"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.056,
+     "peak": "A"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.828,
+    "median_fire": 0.266,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-610f4f79"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-610f4f79",
+   "the classifying stem of a mineral or chemical species name before its second part ('carbonate' crystals 0.80, 'carbon' dioxide 0.75, calc|ite 0.50) and, weaker, the adjective of a monastic order (Cisterc|ian 0.55, Benedict|ine 0.42) or 'tribes'men (0.31); the same sentences with generic words (rock, gas, monks) and 'carbonated water' (0.06) are quiet",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-610f4f79"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

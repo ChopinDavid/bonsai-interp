@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N10979+",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 10979,
+ "pole": "+",
+ "label": "the word that continues a physical-form description of a body part, plant or landform in a breed standard or guidebook ('curled at the ends' 1.02, 'straight or slightly convex' 0.92, 'arch outward like' 0.81, 'runs down to' 0.53, 'lying close against' 0.35); the same body parts in care instructions (0.03) and the same verbs in abstract senses ('prices sloping downward' 0.01, 'committee runs' 0.01) are quiet",
+ "short": "physical-form description continuation",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N10979_pos/2026-10-30-ChopinDavid-f5f4b269.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.974,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.326,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.617,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.305,
+     "peak": " runs"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.36,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.651,
+     "peak": " straight"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.458,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.693,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.147,
+     "peak": " brushed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " muzzle"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.068,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.062,
+     "peak": " down"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.037,
+     "peak": " hair"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " small"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " picked"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.537,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-f5f4b269"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-f5f4b269",
+   "the word that continues a physical-form description of a body part, plant or landform in a breed standard or guidebook ('curled at the ends' 1.02, 'straight or slightly convex' 0.92, 'arch outward like' 0.81, 'runs down to' 0.53, 'lying close against' 0.35); the same body parts in care instructions (0.03) and the same verbs in abstract senses ('prices sloping downward' 0.01, 'committee runs' 0.01) are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-f5f4b269"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

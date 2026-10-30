@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N11831+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 11831,
+ "pole": "+",
+ "label": "the piece ' cart'/' Cart'/'Cart' as the start of a longer word (cart|ilage 0.72, Cart|wright 0.74, Cart|agena 0.68, cart|on 0.65, Cart|oon 0.60) and the piece or word ' ad' (ad|age 0.55, 'the ad ran' 0.54); the whole word ' cart' (0.12), ' car' (0.14) and the single-token ' Cartesian' (0.40) are weaker",
+ "short": "' cart'/' ad' word-start piece",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N11831_pos/2026-10-30-ChopinDavid-027057bb.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.682,
+     "peak": " cart"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.746,
+     "peak": " cart"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.72,
+     "peak": " Cart"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.596,
+     "peak": " cart"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.539,
+     "peak": " ad"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.485,
+     "peak": " Ad"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.497,
+     "peak": " ad"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.727,
+     "peak": " Cart"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.049,
+     "peak": " carpets"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.191,
+     "peak": " cart"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": " mapping"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.146,
+     "peak": " Cats"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " bids"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.145,
+     "peak": " card"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.639,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-027057bb"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-027057bb",
+   "the piece ' cart'/' Cart'/'Cart' as the start of a longer word (cart|ilage 0.72, Cart|wright 0.74, Cart|agena 0.68, cart|on 0.65, Cart|oon 0.60) and the piece or word ' ad' (ad|age 0.55, 'the ad ran' 0.54); the whole word ' cart' (0.12), ' car' (0.14) and the single-token ' Cartesian' (0.40) are weaker",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-027057bb"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

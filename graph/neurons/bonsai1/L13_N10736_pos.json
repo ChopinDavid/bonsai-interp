@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N10736+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 10736,
+ "pole": "+",
+ "label": "the slot right before an expected medical or clinical term: ' of' in 'American Academy of' (0.85, predicting Pediatrics/Family Physicians), 'core stability' before exercise (0.56), 'any symptoms' (0.43); 'Royal Academy of' (arts, 0.08), non-medical 'developed a taste' (0.16) and 'undergo an audit' (0.16) are quiet",
+ "short": "slot before a predicted medical term",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N10736_pos/2026-10-30-ChopinDavid-95b36697.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.597,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.48,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.264,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.686,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.461,
+     "peak": "io"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.632,
+     "peak": " symptoms"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.686,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.604,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.086,
+     "peak": "-time"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.102,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.1,
+     "peak": " fellow"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.123,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.203,
+     "peak": " exercises"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.123,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.123,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.119,
+     "peak": " American"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.601,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-95b36697"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-95b36697",
+   "the slot right before an expected medical or clinical term: ' of' in 'American Academy of' (0.85, predicting Pediatrics/Family Physicians), 'core stability' before exercise (0.56), 'any symptoms' (0.43); 'Royal Academy of' (arts, 0.08), non-medical 'developed a taste' (0.16) and 'undergo an audit' (0.16) are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-95b36697"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
