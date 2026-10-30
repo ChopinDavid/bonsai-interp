@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L21/N1217-",
+ "model": "bonsai1",
+ "layer": 21,
+ "index": 1217,
+ "pole": "-",
+ "label": "unclear: of nine probes only the hyphen of a ZIP+4 code fired ('MD 20907-8250' 0.68 on '-'), and the other card contexts (My|xofibrosarcoma, 'in honor of', 'two and one-half', 'Praise to the Man') scored 0.02-0.04; best guess tested: the hyphen joining a US ZIP+4 extension, against plain ZIP codes, phone numbers, year ranges and ISBN hyphens",
+ "short": "ZIP+4 hyphen (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N1217_neg/2026-10-30-ChopinDavid-bf57878a.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.668,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.096,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.027,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.052,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.087,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.439,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.081,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.051,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.291,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.09,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.069,
+     "peak": "5"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.041,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.059,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.027,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.051,
+     "peak": "1"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.688,
+    "median_fire": 0.084,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-bf57878a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-bf57878a",
+   "unclear: of nine probes only the hyphen of a ZIP+4 code fired ('MD 20907-8250' 0.68 on '-'), and the other card contexts (My|xofibrosarcoma, 'in honor of', 'two and one-half', 'Praise to the Man') scored 0.02-0.04; best guess tested: the hyphen joining a US ZIP+4 extension, against plain ZIP codes, phone numbers, year ranges and ISBN hyphens",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-bf57878a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

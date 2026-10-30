@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N3290-",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 3290,
+ "pole": "-",
+ "label": "the word-initial piece 'Emp' when the tokenizer splits a word there (Empress, Emporia, Empa, Empfang, Empedocles, Empowerment: 0.67-0.99); the whole-word token ' Empire' also fires (0.60), while 'emperor' (0.17), 'empathy' (0.13), 'employee' (0.06) and 'empty' (0.00) are quiet",
+ "short": "the piece 'Emp'",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N3290_neg/2026-10-30-ChopinDavid-6e80b839.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.865,
+     "peak": " Emp"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.889,
+     "peak": " Emp"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.851,
+     "peak": " Emp"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.974,
+     "peak": " Emp"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.905,
+     "peak": " Emp"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.749,
+     "peak": " Emp"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.674,
+     "peak": " Emp"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.599,
+     "peak": " Emp"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.162,
+     "peak": " Emperor"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.0,
+     "peak": "ino"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " elements"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.079,
+     "peak": " employs"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": " course"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " Ents"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.121,
+     "peak": " Employment"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " viel"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.858,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-6e80b839"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-6e80b839",
+   "the word-initial piece 'Emp' when the tokenizer splits a word there (Empress, Emporia, Empa, Empfang, Empedocles, Empowerment: 0.67-0.99); the whole-word token ' Empire' also fires (0.60), while 'emperor' (0.17), 'empathy' (0.13), 'employee' (0.06) and 'empty' (0.00) are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-6e80b839"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

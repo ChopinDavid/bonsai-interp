@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L7/N6766-",
+ "model": "bonsai1",
+ "layer": 7,
+ "index": 6766,
+ "pole": "-",
+ "label": "the first word of what is done after light-verb 'do' with its object ('doing us a favor' 0.50, 'did the right thing' 0.42, 'done a number of studies' 0.77, 'do certain things' 0.51) and after 'pays X better' (0.68); the same nouns without 'do' ('asked a favor' 0.08), auxiliary 'do' (0.02) and 'do' + adverb ('did well' 0.01) are quiet",
+ "short": "object of light-verb 'do'",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N6766_neg/2026-10-30-ChopinDavid-18c5801d.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.093,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.27,
+     "peak": " great"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.22,
+     "peak": " favour"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.023,
+     "peak": " thing"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.154,
+     "peak": " several"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.41,
+     "peak": " certain"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.844,
+     "peak": " great"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.109,
+     "peak": " lot"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.083,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": " away"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " decent"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " studies"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.378,
+     "peak": " certain"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.057,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.092,
+     "peak": " lot"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.245,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-18c5801d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-18c5801d",
+   "the first word of what is done after light-verb 'do' with its object ('doing us a favor' 0.50, 'did the right thing' 0.42, 'done a number of studies' 0.77, 'do certain things' 0.51) and after 'pays X better' (0.68); the same nouns without 'do' ('asked a favor' 0.08), auxiliary 'do' (0.02) and 'do' + adverb ('did well' 0.01) are quiet",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-18c5801d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

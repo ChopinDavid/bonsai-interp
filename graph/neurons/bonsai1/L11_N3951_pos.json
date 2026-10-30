@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N3951+",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 3951,
+ "pole": "+",
+ "label": "state suppression of political expression and opposition: censorship licensing, proscription, secret police and security services, outlawed parties, bans on critical films (0.24-0.64); the same nouns in non-political use ('building permits' 0.09, 'software licensing' 0.01, 'network security' 0.01, 'banned plastic bags' 0.08) are quiet",
+ "short": "political suppression apparatus",
+ "kind": "topic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N3951_pos/2026-10-30-ChopinDavid-cbda7eb2.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.311,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.692,
+     "peak": " licensing"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.789,
+     "peak": " Security"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.615,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.277,
+     "peak": " ban"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.202,
+     "peak": " permit"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.359,
+     "peak": " police"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.343,
+     "peak": " services"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.134,
+     "peak": " licensing"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": " every"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.041,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.197,
+     "peak": " permit"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.005,
+     "peak": "unteers"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.351,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-cbda7eb2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-cbda7eb2",
+   "state suppression of political expression and opposition: censorship licensing, proscription, secret police and security services, outlawed parties, bans on critical films (0.24-0.64); the same nouns in non-political use ('building permits' 0.09, 'software licensing' 0.01, 'network security' 0.01, 'banned plastic bags' 0.08) are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-cbda7eb2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

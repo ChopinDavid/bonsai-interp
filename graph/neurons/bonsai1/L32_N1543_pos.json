@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L32/N1543+",
+ "model": "bonsai1",
+ "layer": 32,
+ "index": 1543,
+ "pole": "+",
+ "label": "inside an enumeration of retail merchandise or household goods (clothing, jewelry, handbags, cribs, toys: 0.66-0.85, Russian игрушек, бижутерии 0.61), peaking on the comma or the piece that begins the next item; lists of places (0.00), people (0.01) and ingredients (0.00) in the same frames are quiet, and a single garment ('bought a new coat' 0.18) is weak",
+ "short": "list of merchandise",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N1543_pos/2026-10-30-ChopinDavid-991648eb.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.244,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.52,
+     "peak": " night"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.2,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.782,
+     "peak": " baby"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.689,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.242,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.543,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.278,
+     "peak": " purs"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.091,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": "We"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " don"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.048,
+     "peak": "rig"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.09,
+     "peak": "Under"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": "ries"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.399,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-991648eb"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-991648eb",
+   "inside an enumeration of retail merchandise or household goods (clothing, jewelry, handbags, cribs, toys: 0.66-0.85, Russian игрушек, бижутерии 0.61), peaking on the comma or the piece that begins the next item; lists of places (0.00), people (0.01) and ingredients (0.00) in the same frames are quiet, and a single garment ('bought a new coat' 0.18) is weak",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-991648eb"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
