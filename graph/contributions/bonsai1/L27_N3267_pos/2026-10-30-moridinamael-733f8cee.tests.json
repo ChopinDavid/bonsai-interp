@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-moridinamael-733f8cee",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N3267+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:43:12+00:00",
+ "neighbours": [
+  {
+   "unit": "L27/N3267",
+   "pole": "+",
+   "label": "Source-code file text, strongest at the start of a file: the license/copyright comment header and package/import lines (Python, Java), within running code context",
+   "fire": [
+    "# Copyright (c) 2021 The Apache Software Foundation.\n# Licensed under the Apache License, Version 2.0 (the \"License\");\nimport os\nimport sys",
+    "/*\n * Copyright 2019 Google LLC\n * SPDX-License-Identifier: Apache-2.0\n */\npackage com.google.cloud.storage;\n\nimport java.util.List;",
+    "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n# MIT License, Copyright (c) 2020 Example Contributors\nfrom __future__ import annotations\nimport json",
+    "package org.example.utils;\n\nimport java.io.IOException;\nimport java.util.HashMap;\nimport java.util.Map;",
+    "# This program is free software: you can redistribute it and/or modify\n# it under the terms of the GNU General Public License as published by\n# the Free Software Foundation, either version 3 of the License.\nimport numpy as np",
+    "\"\"\"Utility helpers for parsing config files.\n\nCopyright 2018 Acme Corp. All rights reserved.\n\"\"\"\nimport logging\nfrom pathlib import Path",
+    "/*\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.\n */\npackage org.apache.kafka.clients;\n\nimport org.apache.kafka.common.KafkaException;",
+    "from typing import Dict, List, Optional\nimport re\nimport requests\nfrom .models import User"
+   ],
+   "quiet": [
+    "The Apache Software Foundation released a new version of its server last spring, and the team celebrated with a small dinner.",
+    "Google announced that its cloud storage prices would drop next quarter for most customers.",
+    "She wrote a short Python script last night and was pleased that it finally ran without errors.",
+    "The utility company sent a letter explaining the new billing schedule for the winter months.",
+    "Free software advocates argue that users should be able to study and change the programs they run.",
+    "Acme Corp. reported strong earnings and plans to hire more engineers in the coming year.",
+    "Kafka's novels often explore themes of bureaucracy, isolation, and anxiety.",
+    "Our team keeps a shared list of users and their preferred contact methods in a spreadsheet."
+   ]
+  }
+ ],
+ "roles": ["reads bonsai1/L24/N9629+"],
+ "short": "code-file license header and import preamble",
+ "selection": "step-in from bonsai1/L24/N9629+",
+ "predictions": "Expect 5-6 of 8 fire sentences above 0.20 of max, near misses (prose) near zero; risk: resident-style low reads on short snippets.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "blind-room"
+  ]
+ }
+}
