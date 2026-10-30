@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-e6e0fe18",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N3688+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T19:32:15+00:00",
+ "recipe": {
+  "toolchain_commit": "b4634ecb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L31_N3688_pos/2026-10-30-ChopinDavid-e6e0fe18.tests.json"
+ },
+ "label": "The '9' digit of a 19xx year inside a sentence narrating a mid-twentieth-century event (October 1968, in 1975)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N3688_pos/2026-10-30-ChopinDavid-e6e0fe18.tests.json",
+   "prereg_commit": "b4634ecb",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.065,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.535,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.122,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.009,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.042,
+     "peak": " arms"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.616,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.028,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.435,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.062,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.073,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.082,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.042,
+     "peak": " arms"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.281,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " nearly"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.057,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.602,
+    "median_fire": 0.093,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "b4634ecb",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'9' of a 19xx event year",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: October 1968 0.287 and in 1975 0.243 (peak '9'); 1883 0.042, 2019 0.062, 1648 0.029, the 1990s 0.012, 19 people 0.002, page 19 0.009. Card: '9' x16 of the top 32 peaks in 1968, 1965, 1975, 1952, plus mqtt_port 1883 ('8') and 'incre|ased'. The pole's corpus max is 86 but fresh sentences reach only a third of the line, so a fail on magnitude is likely.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-fc54c1fb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N707-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T19:33:08+00:00",
+ "recipe": {
+  "toolchain_commit": "b4634ecb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N707_neg/2026-10-30-ChopinDavid-fc54c1fb.tests.json"
+ },
+ "label": "Instructional prose that directs the reader to construct something (a diagram, map, formula, circuit, program): the function words inside the instruction",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N707_neg/2026-10-30-ChopinDavid-fc54c1fb.tests.json",
+   "prereg_commit": "b4634ecb",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.478,
+     "peak": " sketch"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.237,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.847,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.402,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.423,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.43,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.522,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.326,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.233,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.151,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.252,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.024,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.365,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.189,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.372,
+     "peak": " plotted"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.426,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "b4634ecb",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "build-it instructions",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'Write the formula for the illustrated function using a vertical shift' 0.647 (peak ' a'), 'When you finish creating the map, complete this work reflection' 0.371 (peak ','), 'Draw and label a systems diagram' 0.317, 'We implemented the algorithm using a block-style language' 0.299, 'schematic and details for creating one channel relay module' 0.229, 'Talk to your child' 0.122 (sentence-initial trigger); narrative twins 0.009-0.152. Card: classroom worksheets, code-generation notes, Arduino write-ups.",
+ "selection": "random draw"
+}
