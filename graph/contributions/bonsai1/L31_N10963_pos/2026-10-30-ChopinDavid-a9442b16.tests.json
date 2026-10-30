@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a9442b16",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N10963+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N10963",
+   "pole": "+",
+   "label": "a Baltic or North Sea place reference, peaking on the token that leads into the place name ('province of' Royal Prussia 0.75, 'runs through' the Suwałki gap 0.73, 'Orkney and Sh|etland' 0.63, 'sank in' the Baltic Sea 0.44); the same frames with Mediterranean places are quiet ('province of Tuscany' 0.03, 'Aegean Sea' 0.05), and the card's non-geographic items (Homo heidelbergensis 0.27, Eclipse IDE 0.26) are weaker",
+   "fire": [
+    "Her grandfather came from the Lithuanian port of Klaipėda.",
+    "The convoy sailed from Gdańsk across the Gulf of Riga in March.",
+    "Most of the amber on sale was dug up on the coast of Pomerania.",
+    "The ferry from Bergen calls at the Faroe Islands before Iceland.",
+    "Kaliningrad is cut off from the rest of Russia by Lithuania and Poland.",
+    "The lighthouse stands on the northern tip of Jutland.",
+    "Tallinn's old town looks out over the Gulf of Finland.",
+    "The oil platforms lie in the Norwegian sector of the North Sea."
+   ],
+   "quiet": [
+    "Her grandfather came from the Sicilian port of Catania.",
+    "The convoy sailed from Naples across the Gulf of Taranto in March.",
+    "Most of the marble on sale was quarried in the hills of Tuscany.",
+    "The ferry from Marseille calls at Corsica before Sardinia.",
+    "Andorra is cut off from the sea by Spain and France.",
+    "The lighthouse stands on the southern tip of Portugal.",
+    "Valletta's old town looks out over the Grand Harbour.",
+    "The oil platforms lie in the Libyan sector of the Mediterranean."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on the preposition or name-initial piece; near misses below 0.1; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Baltic / North Sea geography",
+ "unit_kind": "topic",
+ "confidence": 0.55,
+ "notes": "Card: max 127.5, density 0.38%, peaks ' of' Royal Prussia, ' through' the Baltics corridor, 'St.' Petersburg, ' Sh'etland x2, ' К'алининграду, ' between' the rivers Eider and Wiedau (North Frisia), position in the Baltic Sea at Memel, plus ' Homo' heidelbergensis and ' Eclipse' IDE. Probe: 'Polish province of Royal Prussia' 0.749, 'land route into the Baltics runs through' 0.727, 'Orkney and Shetland' 0.625, 'sank in the Baltic Sea off Memel' 0.438, 'по Калининграду' 0.288, 'species Homo heidelbergensis' 0.268, 'Eclipse IDE' 0.255, 'Aegean Sea off Crete' 0.048, 'Italian province of Tuscany' 0.027, 'into the peninsula runs through' 0.003."
+}

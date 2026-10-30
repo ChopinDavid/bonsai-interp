@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bf57878a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N1217-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N1217",
+   "pole": "-",
+   "label": "unclear: of nine probes only the hyphen of a ZIP+4 code fired ('MD 20907-8250' 0.68 on '-'), and the other card contexts (My|xofibrosarcoma, 'in honor of', 'two and one-half', 'Praise to the Man') scored 0.02-0.04; best guess tested: the hyphen joining a US ZIP+4 extension, against plain ZIP codes, phone numbers, year ranges and ISBN hyphens",
+   "fire": [
+    "Send the form to P.O. Box 1800, Rockville, MD 20849-1800 before June.",
+    "Their office is at 1600 Clifton Road, Atlanta, GA 30329-4027.",
+    "Mail your entry to 500 Fifth Street NW, Washington, DC 20001-2721.",
+    "The return address was 100 Main Street, Suite 4, Albany, NY 12207-2016.",
+    "Correspondence goes to 2101 Constitution Avenue, Washington, DC 20418-0001.",
+    "The museum's mailing address is P.O. Box 37012, Washington, DC 20013-7012.",
+    "Write to the editor at 1 Tech Way, Boulder, CO 80301-1234 with your questions.",
+    "Orders ship from 450 Harbor Drive, San Diego, CA 92101-3322 within two days."
+   ],
+   "quiet": [
+    "Send the form to P.O. Box 1800, Rockville, MD 20849 before June.",
+    "Their office is at 1600 Clifton Road, Atlanta, GA 30329, near the campus.",
+    "Call the helpline at 202-555-0143 with your questions.",
+    "The return address was 100 Main Street, Suite 4, Albany, NY 12207.",
+    "The series ran from 2001-2009 on the same network.",
+    "The book's number is ISBN 978-0-19-852663-6.",
+    "The tickets are numbered 4401-4500 for the balcony.",
+    "Orders ship from 450 Harbor Drive, San Diego, CA 92101 within two days."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on '-' if the ZIP+4 reading is right; the hyphen near misses (phone, ISBN, ranges) are the risk and may leak; low confidence",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "ZIP+4 hyphen (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 28.5, density 0.85%, no single token (' ' x2, ' My', '-', ' of', ' or', ' the'), peaks after 'subtypes. My|xofibrosarcoma', 'from the 2 percent', 'MD 20907-8250', 'in honor of King', 'playing or paused', 'played the Hallelujah'. Probe: 'MD 20907-8250' 0.681 (peak '-'); everything else 0.014-0.035 including the myxofibrosarcoma, 'in honor of King Ferdinand', 'two and one-half', 'Praise to the Man' and '2 percent reserve' reconstructions. Registered as a guess so the result is recorded."
+}

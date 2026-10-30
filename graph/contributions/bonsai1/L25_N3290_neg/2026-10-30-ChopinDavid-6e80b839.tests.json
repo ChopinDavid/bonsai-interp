@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6e80b839",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N3290-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N3290",
+   "pole": "-",
+   "label": "the word-initial piece 'Emp' when the tokenizer splits a word there (Empress, Emporia, Empa, Empfang, Empedocles, Empowerment: 0.67-0.99); the whole-word token ' Empire' also fires (0.60), while 'emperor' (0.17), 'empathy' (0.13), 'employee' (0.06) and 'empty' (0.00) are quiet",
+   "fire": [
+    "The painting shows the Empress Josephine at her coronation.",
+    "Last weekend Empoli drew with Torino in a dull match.",
+    "The philosopher Empedocles held that four elements make up the world.",
+    "The lab at Empa in Dübendorf tests building materials.",
+    "Students at Emporia State can take the course online.",
+    "Die Empfehlung des Arztes war eindeutig: mehr Bewegung.",
+    "The report, titled Empowerment of Rural Women, appeared in May.",
+    "Das Hotel liegt leider in einem Tal ohne Empfang."
+   ],
+   "quiet": [
+    "The painting shows the Emperor Napoleon at his coronation.",
+    "Last weekend Torino drew with Verona in a dull match.",
+    "The philosopher placed great emphasis on the four elements.",
+    "The lab in Dübendorf employs forty researchers.",
+    "Students at the state college can take the course online.",
+    "Die Entscheidung des Arztes war eindeutig: mehr Bewegung.",
+    "The report, titled Employment of Rural Women, appeared in May.",
+    "Das Hotel liegt leider in einem Tal mit viel Nebel."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.6-1.0 on ' Emp'; near misses below 0.2; a clear hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the piece 'Emp'",
+ "unit_kind": "token",
+ "confidence": 0.85,
+ "notes": "Card: max 330, density 0.015%, ' Emp' x18, 'Emp' x7, ' EMP' x2, ' emp' x1 of the top 32 (Empa, Emporia, Empfang, Empowerment, Empedocles, Empress). Probe: Empa 0.994, Empress 0.968, Emporia 0.949/0.907, Empfang 0.665, Empire 0.596 (single token), emperor 0.166, empathy 0.132, employee 0.058, empty 0.001. Tokenizer: Empress/Emporia/Empedocles/Empoli/Empfehlung/Empowered/Empirical split after 'Emp'; Empire/Emperor/Employee/Empty/Emblem/Ember are single tokens; Emphasis/Emphysema split after 'Em'. The near misses use those single-token and 'Em'-split words in the same frames.",
+ "trigger": {
+  "pieces": [
+   " Emp",
+   "Emp",
+   " EMP",
+   " emp"
+  ]
+ }
+}

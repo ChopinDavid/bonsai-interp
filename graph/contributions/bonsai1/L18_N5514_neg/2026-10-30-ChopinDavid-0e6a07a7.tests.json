@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0e6a07a7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N5514-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N5514",
+   "pole": "-",
+   "label": "explicit delegation to a parent class's method inside a Python method body: the token right after the receiver in 'super(Cls, self).method(...)' (0.95), 'super().method(...)' (0.53) or 'Base.method(self, ...)' (0.47-0.51); ordinary 'self.method()' and 'module.func()' calls in the same bodies are quiet (0.01-0.05)",
+   "fire": [
+    "class SaleOrder(models.Model):\n    def write(self, vals):\n        res = super(SaleOrder, self).write(vals)\n        self._update_totals()\n        return res\n",
+    "class Window(QMainWindow):\n    def __init__(self, parent=None):\n        super(Window, self).__init__(parent)\n        self.setup_ui()\n",
+    "class SocketProtocol(LineReceiver):\n    def connectionMade(self):\n        LineReceiver.connectionMade(self)\n        self.transport.write(b\"HELLO\\r\\n\")\n",
+    "class CachedDict(UserDict):\n    def __setitem__(self, key, value):\n        self.log(key)\n        UserDict.__setitem__(self, key, value)\n",
+    "class Handler(BaseHandler):\n    def process(self, request):\n        request = super().process(request)\n        request.flag = True\n        return request\n",
+    "class Board(MCU_NRF51):\n    def __init__(self):\n        MCU_NRF51.__init__(self)\n        self.extra_labels = ['BLE']\n",
+    "class ProductSearch(osv.osv):\n    def search(self, cr, uid, args, offset=0, limit=None):\n        args = self._expand(args)\n        return super(ProductSearch, self).search(cr, uid, args, offset, limit)\n",
+    "class Worker(threading.Thread):\n    def run(self):\n        threading.Thread.run(self)\n        self.finished.set()\n"
+   ],
+   "quiet": [
+    "class SaleOrder(models.Model):\n    def write(self, vals):\n        res = self.env['sale.order'].browse(vals['id'])\n        self._update_totals()\n        return res\n",
+    "class Window(QMainWindow):\n    def __init__(self, parent=None):\n        self.parent = parent\n        self.setup_ui()\n",
+    "class SocketProtocol(LineReceiver):\n    def connectionMade(self):\n        self.transport.write(b\"HELLO\\r\\n\")\n        self.connected = True\n",
+    "class CachedDict(UserDict):\n    def __setitem__(self, key, value):\n        self.log(key)\n        self.data[key] = value\n",
+    "class Handler(BaseHandler):\n    def process(self, request):\n        request = self.validate(request)\n        request.flag = True\n        return request\n",
+    "class Board(MCU_NRF51):\n    def __init__(self):\n        self.extra_labels = ['BLE']\n        self.name = 'board'\n",
+    "def search(cr, uid, args, offset=0, limit=None):\n    args = expand(args)\n    return db.query(cr, uid, args, offset, limit)\n",
+    "class Worker(threading.Thread):\n    def run(self):\n        time.sleep(1)\n        self.finished.set()\n"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.0, the super(Cls, self). form highest; near misses below 0.1; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "parent-class method delegation",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 80, density 0.05%, peaks ').' x10 after 'super(X, self', '.__' in 'CatalogBase.__init__(self)', 'Factory'/'Protocol' in 'ReconnectingClientFactory.clientConnectionLost(self, ...)'. Probe: super(TestIperf, self).clean 0.948 (peak ').'), super().get_context_data 0.525 (peak '().'), ReconnectingClientFactory.clientConnectionLost(self,...) 0.509, CatalogBase.__init__(self) 0.467 (peak 'Base'), Java super.onCreate 0.267, prose about super 0.101, self.startDrag 0.047, json.dumps(self.data) 0.007, script-level table.load 0.004. The test keeps the class headers and method bodies identical and removes only the delegation call."
+}

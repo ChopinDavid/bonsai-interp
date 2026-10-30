@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-377fa4c0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N4225+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N4225",
+   "pole": "+",
+   "label": "the piece that completes 'kilowatt(s)' (kil|ow|att, kil|ow|atts: 0.36-0.71); 'megawatts' (0.05), bare 'watts' (0.08), 'kWh' (0.03) and 'kilograms' (0.03) are quiet, and academic-abstract verbs ('examined' 0.20, 'sampling' 0.15) are a weaker secondary trigger",
+   "fire": [
+    "A typical household uses about 30 kilowatt hours a day in winter.",
+    "The inverter is sized for 5 kilowatts of peak output.",
+    "Charging the battery from empty takes roughly 60 kilowatt hours.",
+    "Each turbine on the ridge is rated at 850 kilowatts.",
+    "The tariff rises to 18 cents per kilowatt hour after six in the evening.",
+    "The generator produces 12 kilowatts, enough for the whole workshop.",
+    "Rooftop panels in the village add up to nearly 400 kilowatts.",
+    "Grid electricity costs the bakery about 2,000 kilowatt hours a month."
+   ],
+   "quiet": [
+    "A typical household uses about 30 units of electricity a day in winter.",
+    "The inverter is sized for 5 megawatts of peak output.",
+    "Charging the battery from empty takes roughly six hours.",
+    "Each heater in the shed is rated at 850 watts.",
+    "The tariff rises to 18 cents per unit after six in the evening.",
+    "The plant produces 12 megawatts, enough for the whole town.",
+    "The national wind fleet adds up to nearly 40 gigawatts.",
+    "Grid electricity costs the bakery about 2,000 kWh a month."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on 'att'/'atts', plural higher; near misses below 0.1; a hold, with the singular items the risk",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'att' of kilowatt",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: max 7.2, density 0.17%, peaks 'att' x6 in 'kilow|att', 'ow' in 'kil|ow|atts', ' Sampling', ' examined', ' ethn', '’s' in study abstracts. Probe: '7.5 kilowatts' 0.709 (peak 'atts'), '500 kilowatt hours' 0.357 (peak 'att'), 'examined whether' 0.202, 'sampling design' 0.146, '60 watts' 0.079, '20 megawatts' 0.047, 'kilograms' 0.034, 'per kWh' 0.027. Trigger declared as the kilowatt words so coverage is measured exactly.",
+ "trigger": {
+  "words": [
+   "kilowatt",
+   "kilowatts",
+   "kilowatt-hour",
+   "kilowatt-hours"
+  ]
+ }
+}
