@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e9321b53",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N4598+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N4598",
+   "pole": "+",
+   "label": "a dense unit with no separable trigger; its weak maximum falls on quantity and collective-reference tokens (many of them, each other, small amounts)",
+   "fire": [
+    "Most of the tenants are students, and many of them share a kitchen.",
+    "The two colonies exchange workers with each other during the dry season.",
+    "A sensitive gauge detects very small amounts of leakage in the pipe.",
+    "Several of the paintings were copies, and some of them very poor ones.",
+    "The birds call to each other across the valley at first light.",
+    "Inspectors found trace amounts of lead in three of the samples.",
+    "Many of the villagers left, and those of them who stayed rebuilt the mill.",
+    "The twins finish each other's sentences without noticing."
+   ],
+   "quiet": [
+    "The tenant upstairs plays the cello after midnight.",
+    "A dry wind blew across the colony for a week.",
+    "The gauge was mounted beside the boiler door.",
+    "The painting hung above the fireplace in a heavy frame.",
+    "A single bird sang from the top of the pine.",
+    "The inspector arrived late and left without a word.",
+    "The villager drove his cart to market on Tuesday.",
+    "The twin sister trained as a pharmacist in Leeds."
+   ]
+  }
+ ],
+ "predictions": "Expected to fail an 8+8: 34.7% of corpus tokens already reach a tenth of the maximum and the probe spread was 0.107-0.342 with controls inside that band.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense unit, quantity and collective reference",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Card flags dense (34.7% of tokens past 0.1 max, corpus max 2.89) and a fully gate-closed regime. Probe: ' amounts' 0.342, ' communicate' 0.311, ' island' 0.311, ' them' 0.282, but the plain controls 'Sodium chloride dissolves readily in water' 0.241 and 'He closed the book' 0.183 sit in the same band. Registered as a best guess so the dense verdict is on the record rather than left untested."
+}

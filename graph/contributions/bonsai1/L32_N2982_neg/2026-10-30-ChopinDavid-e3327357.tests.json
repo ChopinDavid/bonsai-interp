@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e3327357",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N2982-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N2982",
+   "pole": "-",
+   "label": "the modifier in the slot immediately before a nominalization like formation, construct, construction or invention (rock formations, social construct, Hollywood invention): the pole predicts that nominalization",
+   "fire": [
+    "Erosion has left a series of strange sandstone formations along the ridge.",
+    "Many historians treat the nation as a modern political construct.",
+    "The notion of the self-made man is partly a literary invention.",
+    "Divers photographed the coral formations on the outer reef.",
+    "Childhood, some argue, is a cultural construction rather than a fact of nature.",
+    "The legend of the lone sheriff is largely a cinematic invention.",
+    "Wind has carved tall limestone formations above the dry riverbed.",
+    "Gender roles here are treated as a social construction, not a given."
+   ],
+   "quiet": [
+    "Sandstone blocks were quarried along the ridge for the cathedral.",
+    "Many historians treat the nation as a political actor in its own right.",
+    "The notion of the self-made man appears in literary fiction of the period.",
+    "Divers photographed the coral reef on a calm morning.",
+    "Childhood, some argue, is shaped by cultural habits learned at home.",
+    "The legend of the lone sheriff was filmed in cinematic black and white.",
+    "Wind has carved tall limestone cliffs above the dry riverbed.",
+    "Gender roles here are treated as a social matter, not a legal one."
+   ]
+  }
+ ],
+ "predictions": "Fires on the premodifier when the next word is formation(s), construct(ion) or invention; the same modifier before any other noun stays low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "modifier before formation / construct / invention",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "The + pole suppresses ' formation', ' creation', ' construction', ' construct', ' installation', which identifies this as a left-context predictor of that nominalization. Probe: 'social construct' 0.708, 'rock formations' 0.657, 'Hollywood invention' 0.626, 'bedrock reservoir' 0.573; the same words elsewhere, 'rock music festival' 0.197, 'social media' 0.003, 'studio in Hollywood' 0.002, and 'unique phenomenon' 0.112."
+}

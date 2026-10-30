@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-8b63d8e2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N8496-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N8496",
+   "pole": "-",
+   "label": "the continuation piece that completes a split proper name or institutional compound (Fujim|ori, Fon|agy, Dream|world, Micro|biology, Design| Systems), not a name that is a single token",
+   "fire": [
+    "The rifle was designed by Mikhail Kalashnikov shortly after the war.",
+    "Her review appeared in the Annual Review of Neurobiology last autumn.",
+    "The sociologist Toshio Yamagishi studied trust in Japanese and American samples.",
+    "Fans still argue about whether Waterworld deserved its reputation.",
+    "The robot company in the film was called Cyberdyne Systems.",
+    "The course handbook lists Micropaleontology as an optional third-year unit.",
+    "He cited a long paper on Psychobiology from the nineteen seventies.",
+    "Delegates from Autodesk and Cadence Design Systems shared the panel."
+   ],
+   "quiet": [
+    "The rifle was designed by a Soviet sergeant shortly after the war.",
+    "Her review appeared in the Annual Review of Medicine last autumn.",
+    "The sociologist Max Weber studied trust in Italian and American samples.",
+    "Fans still argue about whether the sequel deserved its reputation.",
+    "The robot company in the film was never given a name in the script.",
+    "The course handbook lists Physics as an optional third-year unit.",
+    "He cited a long paper on psychology from the nineteen seventies.",
+    "Delegates from Oracle and Microsoft shared the panel."
+   ]
+  }
+ ],
+ "predictions": "Fires on the second or later piece of a multi-piece name; the same sentence with a single-token name stays near zero.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "tail piece of a split proper name",
+ "unit_kind": "token",
+ "confidence": "medium",
+ "notes": "Probe replicated the card: Fujim|ori 0.887, Fon|agy 0.783, Micro|biology 0.521, Design| Systems 0.492, Dream|world 0.416; the same sentences with one-token substitutes 0.007-0.034. Splits of every fire item checked with tok.py. One near miss first used 'Geology', which tok.py splits as Ge|ology and would have carried the trigger; replaced with the single-token 'Physics' before registration."
+}

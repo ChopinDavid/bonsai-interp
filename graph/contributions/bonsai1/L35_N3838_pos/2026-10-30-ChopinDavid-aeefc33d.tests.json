@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-aeefc33d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N3838+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N3838",
+   "pole": "+",
+   "label": "byte-fallback pieces of a Western loanword transliterated into Hangul (커피, 테니스, 콘텐츠, 스크립트, 스폰서) and the Cyrillic 'ид' piece, not Korean written with whole-word vocabulary tokens",
+   "fire": [
+    "그는 아침마다 뜨거운 커피를 마시며 신문을 읽습니다.",
+    "주말에는 동네 테니스 코트에서 운동을 합니다.",
+    "역 근처에 새로 생긴 레스토랑은 예약이 어렵습니다.",
+    "이번 전시는 다양한 콘텐츠를 한자리에 모았습니다.",
+    "관리자는 매주 스크립트를 수정해 자동화를 개선합니다.",
+    "행사에는 여러 기업이 스폰서로 이름을 올렸습니다.",
+    "Доступ к данным ограничен требованиями конфиденциальности и закона.",
+    "Комиссия проверила кандидатов и опубликовала результаты."
+   ],
+   "quiet": [
+    "그는 아침마다 사람들이 많은 지하철을 이용합니다.",
+    "주말에는 집에서 컴퓨터를 고치며 시간을 보냅니다.",
+    "역 근처 서비스를 이용하면 시간을 절약합니다.",
+    "이번 전시는 사진과 그림을 함께 전시합니다.",
+    "관리자는 매주 보고서를 작성합니다.",
+    "행사에는 여러 기업이 참여했습니다.",
+    "Комиссия опубликовала результаты в газете на прошлой неделе.",
+    "Министр выступил перед собранием в большом зале."
+   ]
+  }
+ ],
+ "predictions": "Fires on the byte pieces of Korean loanwords that split into fallback bytes and on Cyrillic words containing the 'ид' piece; Korean sentences built from single-token words stay low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "byte pieces of Hangul loanwords, and Cyrillic 'ид'",
+ "unit_kind": "token",
+ "confidence": "medium",
+ "notes": "Card: ' \\ufffd' x10, '\\ufffd' x7, 'ид' x3. Probe: Cyrillic 'конфиденциальности' 0.647, Korean byte-splitting loanwords 0.198-0.338; the same Korean sentences rewritten with vocabulary words 0.009-0.051. tok.py confirms 커피/테니스/레스토랑/콘텐츠/스크립트/스폰서 split into fallback bytes while 컴퓨터/서비스/사람들이 are whole tokens, and that 'кандидат' carries an 'ид' piece. Near misses were rewritten before registration because Korean verb endings such as 탑니다 and 줍니다 themselves byte-split, and one Russian near miss contained an 'идент' token; the label is therefore restricted to loanword byte pieces. Residual byte pieces inside native morphemes remain in some near misses and scored 0.009-0.051 at probe."
+}

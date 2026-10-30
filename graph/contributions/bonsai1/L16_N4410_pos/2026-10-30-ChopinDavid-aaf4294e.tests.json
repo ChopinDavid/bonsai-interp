@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-aaf4294e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N4410+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N4410",
+   "pole": "+",
+   "label": "the abstract noun inside a formal purpose or ground adjunct of the shape 'as a mark/sign/token of N' or 'as punishment/compensation for N', not the same ground expressed as a clause",
+   "fire": [
+    "The flags were lowered as a sign of mourning for the victims.",
+    "The medal was given as a reward for forty years of service.",
+    "Players wore black armbands as a tribute to their former coach.",
+    "The fee was withheld as compensation for the damaged crates.",
+    "Workers walked out as a gesture of solidarity with the dockers.",
+    "He was suspended as punishment for falsifying the timesheets.",
+    "The gift was offered as a token of gratitude to the host family.",
+    "The gates were closed as a precaution against further flooding."
+   ],
+   "quiet": [
+    "The flags were lowered because the whole town was mourning the victims.",
+    "The medal was given when he retired after forty years of service.",
+    "Players wore black armbands and remembered their former coach.",
+    "The fee was withheld until the damaged crates were replaced.",
+    "Workers walked out and the dockers cheered them from the gate.",
+    "He was suspended after falsifying the timesheets.",
+    "The gift was offered to the host family on the last evening.",
+    "The gates were closed before the river rose any further."
+   ]
+  }
+ ],
+ "predictions": "Fires on the noun naming the social motive inside an as-adjunct; rewriting the same ground as a because/after clause should drop it.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun in an 'as a mark of N' adjunct",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: 'as a mark of respect' 0.616, 'as punishment for' 0.560, vest|ig|ial 0.337, 'radius of curvature' 0.124, 'honoring ... with a plaque' 0.123, prisoner's dilemma 0.031, and plain twins 0.020-0.077. The frame, not the noun alone, is the claim: every near miss keeps the motive but drops the as-adjunct."
+}

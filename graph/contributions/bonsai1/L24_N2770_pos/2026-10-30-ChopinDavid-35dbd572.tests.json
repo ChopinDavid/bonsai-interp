@@ -1,0 +1,59 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-35dbd572",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N2770+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N2770",
+   "pole": "+",
+   "label": "the tokens 'file'/'File'/'files'/'upload' naming stored digital data, not the other senses of 'file' (nail file, single file, to file a claim)",
+   "fire": [
+    "The archive was corrupted, so I asked her to send the file again by email.",
+    "Each night the script copies every file in the directory to the backup drive.",
+    "The portal rejected my upload because the resolution was too low.",
+    "He renamed the file twice and still could not find it in the search results.",
+    "The error log says the file could not be opened for writing.",
+    "Before you leave, upload the finished spreadsheet to the shared drive.",
+    "Large files take longer to transfer over the hotel wifi.",
+    "The plugin scans every file for malware before the transfer completes."
+   ],
+   "quiet": [
+    "The archive was corrupted, so I asked her to send the document again by email.",
+    "Each night the script copies every photo in the directory to the backup drive.",
+    "The portal rejected my submission because the resolution was too low.",
+    "He renamed the folder twice and still could not find it in the search results.",
+    "The error log says the record could not be opened for writing.",
+    "The sergeant marched the recruits in single file across the parade ground.",
+    "She reached into her bag for a nail file and smoothed the broken edge.",
+    "Their lawyer will file the appeal at the district court on Monday."
+   ]
+  }
+ ],
+ "predictions": "Fires on file/File/files/upload used of stored data; synonyms (document, folder, attachment, record) stay low, and the non-digital senses of 'file' stay low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digital-file noun (file / upload)",
+ "unit_kind": "token",
+ "confidence": "high",
+ "notes": "Card: ' file' x5, 'File' x4, ' File' x3, ' upload' in top examples, max 186. Probe: 'upload finished' 0.905, 'File Size:' header 0.767, 'save the file' 0.441; nail file 0.095, single file 0.032, folder 0.094, attachment 0.211, PDF 0.141; 'file the complaint' 0.341 is mid, so near misses include three non-digital 'file' uses to test sense against word.",
+ "trigger": {
+  "words": [
+   " file",
+   " File",
+   "File",
+   " files",
+   " filename",
+   " upload",
+   " uploaded"
+  ]
+ }
+}

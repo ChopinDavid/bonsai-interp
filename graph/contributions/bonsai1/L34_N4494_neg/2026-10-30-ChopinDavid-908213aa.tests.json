@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-908213aa",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N4494-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N4494",
+   "pole": "-",
+   "label": "the ' j' piece that opens a split low-frequency verb (jolt, juggle, jostle, jettison), not a single-token verb of the same meaning",
+   "fire": [
+    "The alarm went off at five and the noise jolted the whole household awake.",
+    "She has learned to juggle three part-time jobs and a night class.",
+    "Commuters jostle for space on the platform every morning before seven.",
+    "The captain decided to jettison the deck cargo before the storm hit.",
+    "Someone had jumbled the index cards, so the talk made no sense.",
+    "Nerves gave him the jitters before every recital at the conservatory.",
+    "Two granite slabs jut out over the valley and make a natural platform.",
+    "She spent the year juggling a thesis and a newborn."
+   ],
+   "quiet": [
+    "The alarm went off at five and the noise woke the whole household.",
+    "She has learned to handle three part-time jobs and a night class.",
+    "Commuters push for space on the platform every morning before seven.",
+    "The captain decided to dump the deck cargo before the storm hit.",
+    "Someone had mixed up the index cards, so the talk made no sense.",
+    "Nerves gave him stage fright before every recital at the conservatory.",
+    "Two granite slabs hang over the valley and make a natural platform.",
+    "She spent the year balancing a thesis and a newborn."
+   ]
+  }
+ ],
+ "predictions": "Fires on the ' j' token when it is the first piece of a multi-piece verb; single-token verbs with the same meaning stay near zero.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' j' piece opening a split verb",
+ "unit_kind": "token",
+ "confidence": "medium",
+ "notes": "Card: ' j' x4, ' en' x3, ' se' x2, ' to' x5 among peaks. Probe: jolt 0.855, juggle 0.507, seep (' se') 0.344, but enlist (' en') 0.012 and single-token jump 0.004, so the claim is narrowed to the ' j' piece. Split confirmed with tok.py: jolt/juggle/jostle/jettison/jumble/jitters/jut all open with ' j'."
+}

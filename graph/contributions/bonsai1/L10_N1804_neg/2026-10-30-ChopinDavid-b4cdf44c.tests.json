@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b4cdf44c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N1804-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N1804",
+   "pole": "-",
+   "label": "a digit welded to letters inside an alphanumeric identifier (md|5, IP|6|5, M|3, H|264), not a letter-only name or a spelled-out quantity",
+   "fire": [
+    "The camera records in H264 so the files stay small.",
+    "Check that the cable is wired for RS232 before plugging it in.",
+    "Deficiency of vitamin B12 can cause numbness in the hands.",
+    "The printer only takes A4 paper, not the American sizes.",
+    "Older players still prefer mp3 over the newer formats.",
+    "Spray the hinge with WD40 and work it back and forth.",
+    "The router finally got an IPv6 address from the provider.",
+    "The engine in the T3 van was famously underpowered."
+   ],
+   "quiet": [
+    "The camera records in high definition so the files stay small.",
+    "Check that the cable is wired for serial before plugging it in.",
+    "Deficiency of cobalamin can cause numbness in the hands.",
+    "The printer only takes letter paper, not the European sizes.",
+    "Older players still prefer lossless audio over the newer formats.",
+    "Spray the hinge with penetrating oil and work it back and forth.",
+    "The router finally got a public address from the provider.",
+    "The engine in the camper van was famously underpowered."
+   ]
+  }
+ ],
+ "predictions": "Fires on the digit token of a model number, codec or standard name glued to letters; the same sentence with a letter-only or spelled-out name stays low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digit inside an alphanumeric identifier",
+ "unit_kind": "token",
+ "confidence": "medium",
+ "notes": "Card: '5' x10, '3' x3, '8' x2 among peaks, with copyright lines alongside. Probe: M3 0.731, IP65 0.560, md5sum 0.516, 'Copyright (c) 2003-2021' 0.521, and the bare-year variant 0.271; the de-numbered twins 0.040-0.144. The copyright-symbol reading is left out of this label and noted as a second thing the pole does."
+}
