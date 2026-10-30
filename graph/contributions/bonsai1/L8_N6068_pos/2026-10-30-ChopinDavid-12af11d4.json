@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-12af11d4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N6068+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T11:33:12+00:00",
+ "recipe": {
+  "toolchain_commit": "5e29f9fb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N6068_pos/2026-10-30-ChopinDavid-12af11d4.tests.json"
+ },
+ "label": "a negated limit: the privative in-/im- adjective whose prefix is its own token ('indiv|isible' 0.53, 'ineff|able' 0.30, 'imm|aterial' 0.26), ' indefinite' (0.28) and the 'never ... ever again' closure (0.83); the positive counterparts ('divisible' 0.11, 'definite' 0.02), 'number|less' (0.02) and ' infinite' (0.09, the - pole's token) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N6068_pos/2026-10-30-ChopinDavid-12af11d4.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.241,
+     "peak": " indefinite"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.549,
+     "peak": " again"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.158,
+     "peak": "parable"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.265,
+     "peak": " immutable"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.262,
+     "peak": " again"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.025,
+     "peak": " proved"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.13,
+     "peak": "iol"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.02,
+     "peak": " strike"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.043,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " summer"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": " problem"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.028,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": " strike"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.2,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e29f9fb",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "in-/im- privative, indefinite, never again",
+ "unit_kind": "lexical",
+ "confidence": 0.4,
+ "notes": "Card: max 5.84, density 0.11%, peaks ' indefinite' x6, ' again' x3, 'им' x2 (неповтор|им|ый), 'less' x2, 'ducible' x2, indiv|isible, ineff|able, wirkungs|los, imm|aterial, ins|ensible; the - pole peaks on ' infinite' x8, ' finite' x6. Probe: 'never ... ever again' 0.831 (' again'), indivisible 0.526 ('isible'), ineffable 0.301 ('able'), indefinite 0.282, immaterial 0.258 ('aterial'); numberless 0.018, divisible 0.114, definite 0.017, infinite 0.093. Fire items mix split privatives (inse|parable, insol|uble, inv|iol|able), the single-token 'immutable'/'indefinite(ly)' and 'never ... again'; near misses use the positive or bounded counterpart, and 'again' without 'never'.",
+ "selection": "random draw"
+}

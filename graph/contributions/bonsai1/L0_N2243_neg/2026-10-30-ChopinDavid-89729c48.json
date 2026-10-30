@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-89729c48",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N2243-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T11:33:47+00:00",
+ "recipe": {
+  "toolchain_commit": "5e29f9fb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L0_N2243_neg/2026-10-30-ChopinDavid-89729c48.tests.json"
+ },
+ "label": "dense / positional: a layer-0 unit with a 0.30 max on which 10% of tokens reach 0.1 of max; its strongest tokens are a bag of Arabic and German pieces (' المسلحة' 0.71, ' مض' 0.71, ' التش' 0.69, ' أو' 0.66, Last|s|chrift 0.83, ' Steps' 0.43) with no shared meaning, and ordinary Arabic (0.02) or English (0.08) is low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N2243_neg/2026-10-30-ChopinDavid-89729c48.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.741,
+     "peak": " المسلحة"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.635,
+     "peak": " مض"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.534,
+     "peak": " التش"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.507,
+     "peak": " أو"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.919,
+     "peak": "s"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.532,
+     "peak": " Steps"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.646,
+     "peak": " مض"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.696,
+     "peak": " المسلحة"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.375,
+     "peak": "هب"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.176,
+     "peak": " م"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.066,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.057,
+     "peak": " بال"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.109,
+     "peak": "Die"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.09,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.285,
+     "peak": "اش"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.227,
+     "peak": "تع"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.641,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e29f9fb",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "dense; Arabic/German token bag",
+ "unit_kind": "dense / positional",
+ "confidence": 0.25,
+ "notes": "Card: max 0.30, density 10.0% (FLAG broad), -g +u leak 98%, peaks ' مض' x5, ' أو' x5, ' المسلحة' x4, ' التش' x4, ' of' x3, ' Steps'. Probe: المسلحة 0.706, مض(ادة) 0.710, التش(خيصية) 0.688, أو 0.661, Lastschrift 0.834 ('s'), 'Next Steps' 0.425, 'By understanding' 0.380; Arabic school sentence 0.022, English market sentence 0.083. Registered as dense / positional with a token-bag test; fire items reuse the probed tokens in new sentences (splits checked: مضادة -> ' مض'+'ادة', التشخيصية -> ' التش'+...), near misses are the same sentences with those tokens replaced.",
+ "selection": "random draw"
+}

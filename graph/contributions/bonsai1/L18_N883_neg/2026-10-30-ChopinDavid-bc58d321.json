@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-bc58d321",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N883-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T11:32:31+00:00",
+ "recipe": {
+  "toolchain_commit": "5e29f9fb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N883_neg/2026-10-30-ChopinDavid-bc58d321.tests.json"
+ },
+ "label": "unclear: a post-nominal modifier that spells out a relation in expository prose ('King Fernando of Spain, who sponsored' 0.55, 'the degree of relatedness between' 0.34, 'how badly people were treated in' 0.33, 'unhappiness caused by' 0.29); the card's own top example ('rotation of a vector') reproduced at only 0.11, and plain sentences are 0.01-0.05",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N883_neg/2026-10-30-ChopinDavid-bc58d321.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.332,
+     "peak": " who"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.347,
+     "peak": " between"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.07,
+     "peak": "ly"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.27,
+     "peak": " stress"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": " who"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.015,
+     "peak": " level"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.092,
+     "peak": " were"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.221,
+     "peak": " caused"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.193,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.027,
+     "peak": " fortress"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.077,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.008,
+     "peak": "ers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " servants"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.167,
+     "peak": " allergic"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.797,
+    "median_fire": 0.157,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e29f9fb",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "relational post-modifier (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 11.8, density 0.86%, no single token: 'rotation' of a vector, 'diagonal matrix', 'how badly people were treated', 'unhappiness caused by', 'horizon on Saturday', 'King Fernando of Spain, who sponsored', 'the area involved', 'the island, with rations', 'river of blood', 'relatedness between pods'. Probe: ', who sponsored' 0.546, 'degree of relatedness' 0.341, 'treated in the camps' 0.334, 'caused by the noise' 0.292, 'rotation of a vector' 0.113, 'diagonal matrix' 0.050, 'island, with rations' 0.013, umbrella 0.016, 'area involved' 0.023. Four frames reproduced and four did not; the test copies the four that did with new content and removes the relational modifier in the near misses.",
+ "selection": "random draw"
+}
