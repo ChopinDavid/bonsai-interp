@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-30-moridinamael-86dc7e1f",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N9434+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:39:35+00:00",
+ "roles": ["reads bonsai1/L24/N3512-"],
+ "neighbours": [
+  {
+   "unit": "L25/N9434",
+   "pole": "+",
+   "label": "the linking token (\" (\" or \"'s\") right after a rare proper name such as a drug, agency or project, in running text",
+   "fire": [
+    "Those who take Diamox (Acetazolamide) need to be extra careful.",
+    "Patients started on Xeljanz (tofacitinib) should have their blood counts checked regularly.",
+    "The Frontex (European Border and Coast Guard Agency) report was released on Tuesday.",
+    "Project Wolfhound's budget was cut in half after the first review.",
+    "Researchers at DARPA's Information Innovation Office funded the early prototypes.",
+    "She was prescribed Lamictal (lamotrigine) after the second seizure.",
+    "The Kestrel Initiative's founders met in a borrowed garage in 2014.",
+    "Funding came through NIFA (the National Institute of Food and Agriculture) last spring."
+   ],
+   "quiet": [
+    "Patients started on Xeljanz should have their blood counts checked regularly.",
+    "The Frontex report on border crossings was released on Tuesday.",
+    "The budget for Project Wolfhound was cut in half after the first review.",
+    "Researchers at the Information Innovation Office within DARPA funded the early prototypes.",
+    "She was prescribed Lamictal after the second seizure.",
+    "The founders of the Kestrel Initiative met in a borrowed garage in 2014.",
+    "Funding came through NIFA last spring.",
+    "The popularity of Ozempic has caused shortages in several countries."
+   ]
+  }
+ ],
+ "predictions": "Probably holds: Diamox and NRCan-style connectors scored 0.67-0.78 on the full model. Risk: near misses where the name is followed by other tokens may still leak.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-down",
+   "blind-room"
+  ]
+ }
+}
