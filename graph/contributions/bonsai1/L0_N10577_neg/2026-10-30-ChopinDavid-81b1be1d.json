@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-81b1be1d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N10577-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T05:32:52+00:00",
+ "recipe": {
+  "toolchain_commit": "89cacc73",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L0_N10577_neg/2026-10-30-ChopinDavid-81b1be1d.tests.json"
+ },
+ "label": "the token ' by' after a sequence or support participle ('followed by' 0.69-0.85, 'backed by' 0.61); deadline 'by Friday' also fires (0.59), while 'by' of means, place or passing ('by train' 0.23, 'by the river' 0.26, 'walked by' 0.33) and agent 'written by' (0.31) sit around the threshold, and the participles without 'by' are quiet (0.10)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N10577_neg/2026-10-30-ChopinDavid-81b1be1d.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.732,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.593,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.599,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.331,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.323,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.607,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.733,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.724,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.263,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.333,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " comes"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " waiter"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.07,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.072,
+     "peak": " dry"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.112,
+     "peak": " by"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.603,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "89cacc73",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "' by' after 'followed/backed'",
+ "unit_kind": "token",
+ "confidence": 0.4,
+ "notes": "Card: max 0.48, density 1.6% (flagged broad), ' by' x32 of the top 32, almost all 'followed by', plus 'backed by', 'broken by'. Probe: 'followed by orange berries' 0.849, 'followed by a long silence' 0.690, 'backed by two unions' 0.607, 'finish by Friday' 0.588, 'walked by the shop' 0.328, 'written by a young teacher' 0.305, 'house by the river' 0.255, 'by train' 0.231, 'followed the suspect' (no by) 0.097. The unit is the ' by' token with a preference for the sequence/support reading; the test asks whether that preference is reliable.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-15207d11",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N3051+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N3051",
+   "pole": "+",
+   "label": "the token ' time' in the occasion sense after 'next' ('next time' 0.63-0.84, 'the next time' 0.63), with 'last time' (0.41) and 'this time' (0.35) weaker and 'every/another time' below 0.25; ' time' as duration or point ('in time', 'no time', 'a lovely time') and 'next' before other nouns ('next week' 0.000) are quiet",
+   "fire": [
+    "Remind me to bring the tent poles next time we camp.",
+    "The sauce burned, so next time I will lower the heat.",
+    "He promised that next time he would call ahead.",
+    "We lost by two goals. Next time we play them at home.",
+    "Try chickpeas instead of lentils next time you make the stew.",
+    "The next time you write to a client, read the letter aloud first.",
+    "She waved and said she would see us next time.",
+    "The lecture ran long again. Next time: the French Revolution and its critics."
+   ],
+   "quiet": [
+    "Remind me to bring the tent poles next weekend when we camp.",
+    "The sauce burned, so I had no time to make another.",
+    "He promised that he would call ahead in good time.",
+    "We lost by two goals. Next month we play them at home.",
+    "Try chickpeas instead of lentils; they take less time to cook.",
+    "The next step is to read the letter aloud before sending it.",
+    "She waved and said she had a lovely time.",
+    "The lecture ran long again. Next: the French Revolution and its critics."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on ' time'; near misses below 0.15 ('another time' probed 0.078, 'in time' 0.001); a clear hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' time' in 'next time'",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: max 28.5, density 0.012%, ' time' x30 of the top 32, all after 'next'/'Next'. Probe: 'Next time: the sequel' 0.842, 'next time we go hiking' 0.658, 'The next time I saw him' 0.626, 'the last time was' 0.405, 'This time the recipe' 0.353, 'Every time the bell' 0.247, 'another time' 0.078, 'just in time' 0.001, 'Next week' 0.000. Early-layer bare-token pole whose context is the preceding 'next'; the test puts ' time' mid-sentence and varies the lead-in."
+}

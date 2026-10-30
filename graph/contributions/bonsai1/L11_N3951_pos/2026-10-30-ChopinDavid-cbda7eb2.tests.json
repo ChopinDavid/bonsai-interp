@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-cbda7eb2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N3951+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N3951",
+   "pole": "+",
+   "label": "state suppression of political expression and opposition: censorship licensing, proscription, secret police and security services, outlawed parties, bans on critical films (0.24-0.64); the same nouns in non-political use ('building permits' 0.09, 'software licensing' 0.01, 'network security' 0.01, 'banned plastic bags' 0.08) are quiet",
+   "fire": [
+    "Under the emergency law the government proscribed every opposition newspaper.",
+    "The censors demanded the licensing of all theatres and cut scenes they disliked.",
+    "Officers of the State Security Service followed the poet to every reading.",
+    "The junta outlawed the trade unions and jailed their organisers.",
+    "The board of censors can ban any book that questions the official history.",
+    "Without a permit from the interior ministry no public meeting could be held.",
+    "The secret police kept files on every lecturer at the university.",
+    "Informers reported to the security services on anyone who read foreign papers."
+   ],
+   "quiet": [
+    "Under the new rules the council inspected every restaurant kitchen.",
+    "The agency handled the licensing of all taxi drivers and checked their cars.",
+    "Officers of the fire service followed the parade to every stop.",
+    "The league suspended the two clubs and fined their managers.",
+    "The librarian can ban any patron who returns books damaged.",
+    "Without a permit from the parks department no barbecue could be held.",
+    "The data security team kept backups of every file at the university.",
+    "Volunteers reported to the wildlife service on anyone who fed the deer."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on the suppression noun or verb; near misses below 0.15; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "political suppression apparatus",
+ "unit_kind": "topic",
+ "confidence": 0.55,
+ "notes": "Card: max 27, density 0.056%, peaks ' licensing' of books, ' permits' for demonstrations, 'pros|cribed' by fiat, ' State Security', 'outlaw|ed', ' clearance', ' ban' movies, ' plots' to murder Stalin. Probe: 'State Security Agency monitored dissidents and intercepted' 0.642, 'outlawed in 1948' 0.638 (peak 'ed'), 'licensing of every printing press' 0.516, 'secret police proscribed' 0.398, 'can ban any film that criticises' 0.236, 'security clearance' 0.153, 'building permits' 0.093, 'banned plastic bags' 0.075, 'software licensing' 0.007, 'network security team' 0.006."
+}

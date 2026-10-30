@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-18c5801d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6766-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T05:32:33+00:00",
+ "recipe": {
+  "toolchain_commit": "89cacc73",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N6766_neg/2026-10-30-ChopinDavid-18c5801d.tests.json"
+ },
+ "label": "the first word of what is done after light-verb 'do' with its object ('doing us a favor' 0.50, 'did the right thing' 0.42, 'done a number of studies' 0.77, 'do certain things' 0.51) and after 'pays X better' (0.68); the same nouns without 'do' ('asked a favor' 0.08), auxiliary 'do' (0.02) and 'do' + adverb ('did well' 0.01) are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N6766_neg/2026-10-30-ChopinDavid-18c5801d.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.093,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.27,
+     "peak": " great"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.22,
+     "peak": " favour"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.023,
+     "peak": " thing"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.154,
+     "peak": " several"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.41,
+     "peak": " certain"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.844,
+     "peak": " great"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.109,
+     "peak": " lot"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.083,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": " away"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " decent"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " studies"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.378,
+     "peak": " certain"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.057,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.092,
+     "peak": " lot"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.245,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "89cacc73",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "object of light-verb 'do'",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 6.4 (weak unit), density 0.26%, peaks ' a' x8 in 'doing them a favor', ' right' in 'doing the right thing', ' number' in 'done a number of studies', ' certain' in 'do certain things', ' better' in 'pays its managers better'. Probe: 'done a number of studies' 0.769, 'pays its drivers better' 0.677, 'doing us a favor' 0.502 (peak ' favor'), 'do certain things' 0.510, 'did the right thing' 0.415, 'owed him a favor ... the following spring' 0.241 (peak ' following'), 'asked a small favor of' 0.076, 'Do you think' 0.017, 'did well' 0.014. The pole sits on the object slot of 'do' rather than on 'favor' itself.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-15207d11",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N3051+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T05:32:29+00:00",
+ "recipe": {
+  "toolchain_commit": "89cacc73",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N3051_pos/2026-10-30-ChopinDavid-15207d11.tests.json"
+ },
+ "label": "the token ' time' in the occasion sense after 'next' ('next time' 0.63-0.84, 'the next time' 0.63), with 'last time' (0.41) and 'this time' (0.35) weaker and 'every/another time' below 0.25; ' time' as duration or point ('in time', 'no time', 'a lovely time') and 'next' before other nouns ('next week' 0.000) are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N3051_pos/2026-10-30-ChopinDavid-15207d11.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.661,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.639,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.658,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.814,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.741,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.626,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.769,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.803,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": " sauce"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": " ahead"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": "We"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": "pe"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.0,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.701,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "89cacc73",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "' time' in 'next time'",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: max 28.5, density 0.012%, ' time' x30 of the top 32, all after 'next'/'Next'. Probe: 'Next time: the sequel' 0.842, 'next time we go hiking' 0.658, 'The next time I saw him' 0.626, 'the last time was' 0.405, 'This time the recipe' 0.353, 'Every time the bell' 0.247, 'another time' 0.078, 'just in time' 0.001, 'Next week' 0.000. Early-layer bare-token pole whose context is the preceding 'next'; the test puts ' time' mid-sentence and varies the lead-in.",
+ "selection": "random draw"
+}

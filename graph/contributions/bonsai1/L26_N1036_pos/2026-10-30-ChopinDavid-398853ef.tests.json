@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-398853ef",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N1036+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N1036",
+   "pole": "+",
+   "label": "the slot that introduces a physical hazard after a resistance or susceptibility predicate in a technical description ('resistant to' corrosion 0.97, 'susceptible to' noise 0.43, 'anti-'corrosive 0.35, 'potentially explosive' 0.27, 'protects ... from' 0.17); the same predicates about people or abstractions ('resistant to any new idea' 0.01, 'similar to' 0.01) and technical sentences without a hazard are quiet",
+   "fire": [
+    "The bearing housing is resistant to abrasion and chemical attack.",
+    "Cheap capacitors are highly susceptible to heat and vibration.",
+    "Copper pipes are vulnerable to pitting in acidic water.",
+    "The gasket is immune to oil, fuel and most solvents.",
+    "Long signal cables are prone to interference from nearby motors.",
+    "The enclosure is rated anti-static and dust-tight.",
+    "Galvanised bolts are resistant to rust in coastal air.",
+    "The sensor is sensitive to moisture and must be sealed."
+   ],
+   "quiet": [
+    "The bearing housing is similar to the one in the older pump.",
+    "Cheap capacitors are available from most suppliers in bulk.",
+    "My grandmother is vulnerable to flattery from salesmen.",
+    "The committee is immune to criticism from the press.",
+    "Teenagers are prone to boredom on long car journeys.",
+    "The enclosure measures forty centimetres on each side.",
+    "The bolts are supplied in boxes of two hundred.",
+    "The manager is sensitive to any hint of criticism."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0, 'resistant to' highest; near misses below 0.1; a hold if 'vulnerable/immune/prone/sensitive to' behave like 'susceptible to'",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "hazard slot after 'resistant/susceptible to'",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 39, density 0.08%, peaks ' to' in 'resistant to corrosion', 'susceptible to noise', ' from' in 'protect the outlet from', ' anti' in 'anti-stripping', ' potential(ly)' foulants/explosive, ' electrical'/' electric' signals/hazards, ' E'MI. Probe: 'resistant to corrosion and erosion' 0.972 (peak ' to'), 'susceptible to noise' 0.430 (peak ' noise'), 'anti-corrosive' 0.345, 'potentially explosive' 0.274, 'protects the outlet from moisture' 0.166, 'pump runs at 1500 rpm' 0.014, 'similar to' 0.011, 'protects the children' 0.010, 'uncle is resistant to' 0.006."
+}

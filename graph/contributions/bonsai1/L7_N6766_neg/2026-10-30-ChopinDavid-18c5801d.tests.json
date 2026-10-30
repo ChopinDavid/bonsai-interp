@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-18c5801d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N6766-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N6766",
+   "pole": "-",
+   "label": "the first word of what is done after light-verb 'do' with its object ('doing us a favor' 0.50, 'did the right thing' 0.42, 'done a number of studies' 0.77, 'do certain things' 0.51) and after 'pays X better' (0.68); the same nouns without 'do' ('asked a favor' 0.08), auxiliary 'do' (0.02) and 'do' + adverb ('did well' 0.01) are quiet",
+   "fire": [
+    "By returning the wallet you did the owner a kindness he never forgot.",
+    "The volunteers have done a great deal of work on the trail this year.",
+    "Could you do me a favour and water the plants while I am away?",
+    "The mayor did the decent thing and resigned before the vote.",
+    "Scientists have done several studies on sleep and memory in teenagers.",
+    "The grant lets the clinic do certain tests it could not afford before.",
+    "Her parents did her a great service by teaching her to cook.",
+    "We have done a lot of thinking about the schedule since the meeting."
+   ],
+   "quiet": [
+    "By returning the wallet you showed the owner a kindness he never forgot.",
+    "The volunteers have finished the work on the trail this year.",
+    "Do you know whether the plants need water while I am away?",
+    "The decent thing was obvious, and the mayor resigned before the vote.",
+    "Several studies on sleep and memory in teenagers appeared this year.",
+    "The grant lets the clinic afford certain tests it could not before.",
+    "Her parents did badly in the survey about cooking at home.",
+    "We have thought a lot about the schedule since the meeting."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.35-0.8 on the article, adjective or quantifier that opens the object; near misses below 0.15; a hold if 'kindness/deal/service' objects behave like 'favor/thing/number'",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "object of light-verb 'do'",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 6.4 (weak unit), density 0.26%, peaks ' a' x8 in 'doing them a favor', ' right' in 'doing the right thing', ' number' in 'done a number of studies', ' certain' in 'do certain things', ' better' in 'pays its managers better'. Probe: 'done a number of studies' 0.769, 'pays its drivers better' 0.677, 'doing us a favor' 0.502 (peak ' favor'), 'do certain things' 0.510, 'did the right thing' 0.415, 'owed him a favor ... the following spring' 0.241 (peak ' following'), 'asked a small favor of' 0.076, 'Do you think' 0.017, 'did well' 0.014. The pole sits on the object slot of 'do' rather than on 'favor' itself."
+}

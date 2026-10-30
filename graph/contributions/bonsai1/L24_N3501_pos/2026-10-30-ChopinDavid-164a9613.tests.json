@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-164a9613",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N3501+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N3501",
+   "pole": "+",
+   "label": "forum-software boilerplate on its own line after a post: the comma between date and time in a post stamp ('06-12-2013, 04:09 PM' 0.60, '26.09.2007, 19:22' 0.43), the pagination line ('2 posts • Page 1 of 1' 0.83) and the vBulletin copyright footer (0.24); the same dates, times and page references inside prose are quiet (0.04)",
+   "fire": [
+    "That rifle never had a chrome-lined barrel, whatever the seller says.\n03-14-2011, 09:12 AM\n",
+    "Thanks everyone, the fix worked.\nJuly 3, 2009, 11:47 PM\n",
+    "Hobbit\n14.02.2006, 22:05\nIch habe das gleiche Problem mit dem Treiber.\n",
+    "Re: brake squeal after new pads\n11-28-2014, 07:33 PM\n",
+    "Anyone have the wiring diagram for the 1998 model?\n4 posts • Page 1 of 1\n",
+    "Thread closed.\n12 posts • Page 1 of 2\n",
+    "Best answer so far, thanks.\nphpBB v2.0.22, Copyright 2001-2007 phpBB Group\n",
+    "Posted by oldtimer\n09-30-2008, 06:58 AM\nThe gasket is the usual culprit.\n"
+   ],
+   "quiet": [
+    "That rifle never had a chrome-lined barrel, and the sale closed on March 14, 2011, at nine in the morning.\n",
+    "Thanks everyone, the fix worked on July 3, 2009, late at night.\n",
+    "Hobbit schrieb am 14. Februar 2006, dass er das gleiche Problem mit dem Treiber hatte.\n",
+    "The brake squeal started after new pads were fitted on 28 November 2014.\n",
+    "Anyone have the wiring diagram for the 1998 model? It is on page 1 of the manual.\n",
+    "The thread was closed after twelve posts on two pages.\n",
+    "The forum software was written in 2001 and updated in 2007.\n",
+    "The gasket is the usual culprit, oldtimer wrote at seven in the morning.\n"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on the stamp comma or the page number; near misses below 0.1; a hold, with the copyright-footer item the weakest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "forum post stamp / pagination line",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 14.5, density 0.16%, ',' x24 of the top 32, all between a date and a time on a forum post line ('06-12-2013, 04:09 PM', '26.09.2007, 19:22', 'April 8, 2012, 06:53 PM'), plus ' •' in '2 posts • Page 1 of 1', 'vBulletin v3.8.7,' and 'Non-subscribers will'. Probe: '2 posts • Page 1 of 1' 0.832 (peak '1'), 'he acted irresponsibly.\\n06-12-2013, 04:09 PM' 0.595, 'Йохансон\\n26.09.2007, 19:22' 0.432, 'April 8, 2012, 06:53 PM' 0.298, vBulletin footer 0.240, 'Non-subscribers will' 0.218, 'Posted on 06-12-2013' 0.197, prose 'June 12, 2013, at' 0.042, 'at 04:09 PM on Tuesday' 0.042."
+}

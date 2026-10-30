@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-991648eb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1543+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N1543",
+   "pole": "+",
+   "label": "inside an enumeration of retail merchandise or household goods (clothing, jewelry, handbags, cribs, toys: 0.66-0.85, Russian игрушек, бижутерии 0.61), peaking on the comma or the piece that begins the next item; lists of places (0.00), people (0.01) and ingredients (0.00) in the same frames are quiet, and a single garment ('bought a new coat' 0.18) is weak",
+   "fire": [
+    "The stall sold scarves, mittens, knitted hats and woollen socks.",
+    "Her suitcase held dresses, nightgowns, silk stockings and two pairs of gloves.",
+    "The catalogue lists sofas, armchairs, coffee tables and bookcases.",
+    "We donated blankets, cots, strollers and baby clothes to the shelter.",
+    "The market stalls were piled with bracelets, earrings, brooches and beaded necklaces.",
+    "The shop stocks kettles, toasters, irons and vacuum cleaners.",
+    "Under the tree were dolls, teddy bears, puzzles and a toy train.",
+    "The store on the corner sells belts, wallets, purses and umbrellas."
+   ],
+   "quiet": [
+    "The stall sold apples, pears, plums and late raspberries.",
+    "Her class covered algebra, geometry, statistics and a little calculus.",
+    "The guidebook lists Vienna, Prague, Budapest and Kraków.",
+    "We invited neighbours, cousins, colleagues and two old teachers.",
+    "The farm keeps goats, geese, rabbits and a pair of donkeys.",
+    "The choir sang hymns, carols, folk songs and a madrigal.",
+    "Under the tree were pine cones, acorns, moss and a fallen nest.",
+    "The café on the corner serves soups, salads, pastries and coffee."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on a comma or item-initial piece; near misses below 0.1; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "list of merchandise",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 162, density 0.27%, peaks ',' in 'игрушек, бижутерии', ' under' in 'frilly underclothes', ' baby' in 'ironing boards, baby cribs', ' Hand' in 'Shoes, Handbags, Wallets', 'hand' in 'dolls (handmade', ''s' in 'women's clothing'. The output suppresses ' items', ' objects', ' pieces', so the pole predicts a specific goods noun. Probe: 'television sets, ironing boards, baby cribs' 0.852 (peak ' baby'), 'frilly underclothes, lace collars' 0.726, 'toys, jewelry, scarves, handbags' 0.663 (peak ' hand'), Russian craft list 0.607, 'get jewelry and flowers' 0.240, 'bought a new coat' 0.183, cities 0.004, professions 0.005, ingredients 0.004."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-042260e8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N5286+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T05:33:05+00:00",
+ "recipe": {
+  "toolchain_commit": "89cacc73",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N5286_pos/2026-10-30-ChopinDavid-042260e8.tests.json"
+ },
+ "label": "the verb ending of a reader-directed instruction or call to action: German Sie-imperatives and infinitive CTAs ('Überprüfen Sie' 0.79, 'jetzt registrieren' 0.95, 'beachten Sie' 0.67, 'Abonnieren Sie' 0.58) and Japanese dictionary-form navigation labels ('で読む' 0.90); the same verbs in declarative sentences are quiet ('Wir überprüfen' 0.02, 'registriert' 0.08, '読んだ' 0.07), as is an English CTA (0.00)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N5286_pos/2026-10-30-ChopinDavid-042260e8.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.59,
+     "peak": "en"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.347,
+     "peak": "fen"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.637,
+     "peak": "en"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.428,
+     "peak": "licken"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.281,
+     "peak": " bleiben"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.848,
+     "peak": " bestellen"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.499,
+     "peak": "込む"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.732,
+     "peak": "む"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.035,
+     "peak": "in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": "Wir"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " Shop"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.027,
+     "peak": " ein"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": " Million"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": " ers"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.157,
+     "peak": "込んだ"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.037,
+     "peak": "いた"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.544,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "89cacc73",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "German/Japanese call-to-action verb ending",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 57.5, density 0.088%, peaks 'ten', 'する', ' 보기', 'fen', 'en', 'む' in 'Überprü|fen Sie', 'registrier|en!', 'beach|ten Sie', 'h|olen Sie', 'Jetzt bestellen!', '読|む'. Probe: 'jetzt registrieren und mitreden' 0.948, '他の言語で読む' 0.896, 'Überprüfen Sie bitte' 0.794, 'beachten Sie' 0.671, 'Abonnieren Sie' 0.576, 'registriert' 0.075, 'Wir überprüfen jeden' 0.020, '本を読んだ' 0.072, 'Die Überprüfung' 0.007, 'Click here to register' 0.003. Tokenizer: anmelden = ' anmeld'+'en', herunterladen = ' her'+'unter'+'laden', 申し込む = '申し'+'込む'.",
+ "selection": "random draw"
+}

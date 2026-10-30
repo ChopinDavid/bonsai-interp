@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-042260e8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N5286+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N5286",
+   "pole": "+",
+   "label": "the verb ending of a reader-directed instruction or call to action: German Sie-imperatives and infinitive CTAs ('Überprüfen Sie' 0.79, 'jetzt registrieren' 0.95, 'beachten Sie' 0.67, 'Abonnieren Sie' 0.58) and Japanese dictionary-form navigation labels ('で読む' 0.90); the same verbs in declarative sentences are quiet ('Wir überprüfen' 0.02, 'registriert' 0.08, '読んだ' 0.07), as is an English CTA (0.00)",
+   "fire": [
+    "Ihr Warenkorb ist noch leer. Jetzt stöbern und Lieblingsstücke entdecken!",
+    "Bitte prüfen Sie Ihre E-Mail-Adresse, bevor Sie das Formular absenden.",
+    "Neu im Shop: jetzt anmelden und zehn Prozent sparen!",
+    "Bitte geben Sie Ihr Passwort ein und klicken Sie auf Weiter.",
+    "Laden Sie die App herunter und bleiben Sie immer informiert.",
+    "Verpassen Sie keine Neuigkeiten: Newsletter bestellen!",
+    "会員登録はこちらから申し込む。",
+    "この記事の全文を読む | コメントを書く"
+   ],
+   "quiet": [
+    "Ihr Warenkorb war gestern noch leer, aber heute liegen drei Artikel darin.",
+    "Wir prüfen jede E-Mail-Adresse, bevor wir das Formular bearbeiten.",
+    "Seit gestern hat sich die Hälfte der Kunden im Shop angemeldet.",
+    "Sie gab ihr Passwort ein und klickte auf Weiter.",
+    "Die App wurde gestern über eine Million Mal heruntergeladen.",
+    "Der Newsletter erscheint jeden Freitag um acht Uhr.",
+    "先週、会員登録を申し込んだ。",
+    "昨日、この記事の全文を読んで、コメントを書いた。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.95 on the verb's final piece; near misses below 0.1; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German/Japanese call-to-action verb ending",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 57.5, density 0.088%, peaks 'ten', 'する', ' 보기', 'fen', 'en', 'む' in 'Überprü|fen Sie', 'registrier|en!', 'beach|ten Sie', 'h|olen Sie', 'Jetzt bestellen!', '読|む'. Probe: 'jetzt registrieren und mitreden' 0.948, '他の言語で読む' 0.896, 'Überprüfen Sie bitte' 0.794, 'beachten Sie' 0.671, 'Abonnieren Sie' 0.576, 'registriert' 0.075, 'Wir überprüfen jeden' 0.020, '本を読んだ' 0.072, 'Die Überprüfung' 0.007, 'Click here to register' 0.003. Tokenizer: anmelden = ' anmeld'+'en', herunterladen = ' her'+'unter'+'laden', 申し込む = '申し'+'込む'."
+}

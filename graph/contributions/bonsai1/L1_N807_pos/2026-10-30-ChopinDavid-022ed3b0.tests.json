@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-022ed3b0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N807+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T05:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N807",
+   "pole": "+",
+   "label": "unclear, broad layer-1 unit (max 0.40, 2.7% of tokens at 0.1 of max): the strongest probes were characters inside CJK proper names (石原 0.66, 經國路 0.64, 波尔布克 0.62) and the piece 'press' inside 'Letterpress' (0.74), but plain English prose also reached 0.42 on ' the'; best guess tested: name characters in Chinese/Japanese running text and 'press' as a compound piece, against the same sentences with the name or compound removed",
+   "fire": [
+    "隣の家の石川さんは毎朝六時に犬の散歩に出かける。",
+    "這條路從新竹一直通到台北，沿途有很多工廠。",
+    "本草纲目记载，丹石之毒可用此物解之。",
+    "The pamphlet was printed on a small letterpress in the basement.",
+    "大阪の布施駅から電車で三十分ほどかかる。",
+    "他每天沿着中山路走到学校。",
+    "Her studio offers letterpress printing for wedding invitations.",
+    "石田さんは去年から東京で働いている。"
+   ],
+   "quiet": [
+    "隣の家の人は毎朝六時に犬の散歩に出かける。",
+    "這條公車從市中心一直開到郊區，沿途有很多工廠。",
+    "医书记载，此毒可用此物解之。",
+    "The pamphlet was printed on a small machine in the basement.",
+    "大阪の駅から電車で三十分ほどかかる。",
+    "他每天走到学校要半个小时。",
+    "Her studio offers digital printing for wedding invitations.",
+    "彼は去年から東京で働いている。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7, but near misses will also fire weakly (0.1-0.4) because the unit is broad; probably exploratory information rather than a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "CJK name characters / 'press' piece",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 0.40, + pole 2.7% dense, flagged broad; peaks '石' x5, ' press' x3, ' c' x3, '布' x2, 'ら' x2 in Japanese/Chinese text and in 'Seal press', 'Letterpress'. Probe: 'Letterpress' 0.738, 石原 0.657, 經國路 0.643, 波尔布克奇欧 0.615, plain English 0.420 (' the'), 'press conference' 0.238, 'Seal Press' 0.196, plain Japanese 0.100, code 0.055. Registered as a low-confidence guess so the failure is recorded."
+}
