@@ -1,0 +1,161 @@
+{
+ "id": "2026-10-30-moridinamael-bf05570a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N11117+",
+ "contributor": "moridinamael",
+ "created": "2026-10-30T22:01:58+00:00",
+ "recipe": {
+  "toolchain_commit": "f1e6d0930",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N11117_pos/2026-10-30-moridinamael-bf05570a.tests.json"
+ },
+ "label": "In multi-line Python code, the indentation whitespace that begins a new statement line inside a function body (script or machine-learning code), and the '.parse' of parser.parse_args()",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N11117_pos/2026-10-30-moridinamael-bf05570a.tests.json",
+   "prereg_commit": "f1e6d0930",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.124,
+     "peak": "       "
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.438,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.041,
+     "peak": "       "
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.972,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.568,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.342,
+     "peak": "('--"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.013,
+     "peak": " text"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.565,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.471,
+     "peak": " each"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.273,
+     "peak": " command"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.05,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.261,
+     "peak": " learning"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.054,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.501,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "blind-room",
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "step-down"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "f1e6d0930",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "roles": [
+  "reads bonsai1/L24/N6950+"
+ ],
+ "edges": [
+  {"from": "bonsai1/L24/N6950+", "to": "bonsai1/L26/N11117+", "kind": "feeds", "weight": 0.01, "method": "single-unit zero ablation, downstream (play step --down)"}
+ ],
+ "notes": "Failed quick-8+8@3 (AUROC 0.781, median fire 0.50, 6/8 fire >= 0.30, 1 near miss 0.47). Indent fires in ML-training functions (train/evaluate/optimizer, 0.5-1.1) but not generic helpers (load_data, clean text ~0.01-0.04); a prose near miss about training batches fired 0.47. Topic (ML training code) matters more than indentation; the argparse .parse peak seen in short probes was weaker in the test. Reader link is very weak (drop 0.01)."
+}
