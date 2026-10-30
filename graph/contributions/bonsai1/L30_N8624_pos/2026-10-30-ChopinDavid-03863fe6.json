@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-ChopinDavid-03863fe6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N8624+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T17:38:11+00:00",
+ "recipe": {
+  "toolchain_commit": "a6bf7034",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L30_N8624_pos/2026-10-30-ChopinDavid-03863fe6.tests.json"
+ },
+ "label": "The one-letter piece ' M' opening a split word or name (M|urchison, M|olyneux, M|alt|itol)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N8624_pos/2026-10-30-ChopinDavid-03863fe6.tests.json",
+   "prereg_commit": "a6bf7034",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.648,
+     "peak": "ung"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.562,
+     "peak": " M"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.247,
+     "peak": " M"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.719,
+     "peak": " M"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.446,
+     "peak": " M"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.327,
+     "peak": " M"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.441,
+     "peak": " M"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.385,
+     "peak": " M"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.299,
+     "peak": " X"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": "og"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.021,
+     "peak": " S"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": "agn"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.246,
+     "peak": " Mug"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.048,
+     "peak": "abo"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.444,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "a6bf7034",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "the ' M' one-letter piece",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: Maltitol 0.713, Murchison 0.683, Mordy 0.575, Macclesfield 0.449, Molyneux 0.347 (all peak ' M'); Burchison 0.009, Kolyneux 0.007 (same tails with B/K pieces), Michael/Microsoft 0.126, Mort|lake 0.192. Card: ' M' x24 of the top 32 peaks. All test words tokenizer-checked: fires split as ' M' + tail, near misses as another single letter, ' Mn'/' Mb', or a whole token.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   " M"
+  ]
+ }
+}
