@@ -4,9 +4,9 @@
  "layer": 16,
  "index": 6662,
  "pole": "-",
- "label": "Climate-history terms for eras of warming or glaciation (global warming, interglacial, ice age, glacial period), firing on the term; other catastrophes and eras in the same frames stay quiet.",
- "short": "climate eras (global warming, interglacial)",
- "kind": "semantic",
+ "label": "The final piece of a split plural noun for recurring crises or periods (recess|ions, depress|ions, pand|emics, epid|emics, fam|ines, pl|agues, intergl|acial, glac|iations); the same kinds of event as single tokens (crises, wars, floods, outbreaks, recession, pandemic) stay quiet.",
+ "short": "final piece of split crisis/period plurals",
+ "kind": "token piece / semantic",
  "status": "failed",
  "depth": "quick",
  "tests": [
@@ -131,12 +131,139 @@
     "near_misses_at_0.3": 2
    },
    "contribution": "2026-10-30-lm1909-f1ce5581"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N6662_neg/2026-10-30-lm1909-23abf773.tests.json",
+   "prereg_commit": "24f7cc2d",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.494,
+     "peak": "ions"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.54,
+     "peak": "ions"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.395,
+     "peak": "emics"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.072,
+     "peak": "emics"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.093,
+     "peak": "ines"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.095,
+     "peak": "agues"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.005,
+     "peak": " floor"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.053,
+     "peak": "umps"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.197,
+     "peak": " crises"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.13,
+     "peak": " wars"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.296,
+     "peak": " pandemic"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.039,
+     "peak": " outbreaks"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " families"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.147,
+     "peak": " whole"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": " rivers"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.162,
+     "peak": " crashes"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.562,
+    "median_fire": 0.094,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-23abf773"
   }
  ],
  "label_history": [
   [
    "2026-10-30-lm1909-f1ce5581",
    "Climate-history terms for eras of warming or glaciation (global warming, interglacial, ice age, glacial period), firing on the term; other catastrophes and eras in the same frames stay quiet.",
+   "failed"
+  ],
+  [
+   "2026-10-30-lm1909-23abf773",
+   "The final piece of a split plural noun for recurring crises or periods (recess|ions, depress|ions, pand|emics, epid|emics, fam|ines, pl|agues, intergl|acial, glac|iations); the same kinds of event as single tokens (crises, wars, floods, outbreaks, recession, pandemic) stay quiet.",
    "failed"
   ]
  ],
@@ -147,7 +274,8 @@
   "lm1909"
  ],
  "contributions": [
-  "2026-10-30-lm1909-f1ce5581"
+  "2026-10-30-lm1909-f1ce5581",
+  "2026-10-30-lm1909-23abf773"
  ],
  "qc": {
   "confirm": 0,
@@ -157,10 +285,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

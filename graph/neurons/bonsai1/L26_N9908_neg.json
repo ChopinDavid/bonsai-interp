@@ -4,9 +4,9 @@
  "layer": 26,
  "index": 9908,
  "pole": "-",
- "label": "Technical-manual text that sends the reader to a numbered table or section ('obtained by referring to Table 3-9.', 'see Table 4-2', 'listed in Section 5.1'), firing at the reference; the same sentences without a table reference stay quiet.",
- "short": "manual text referring to 'Table 3-9'",
- "kind": "format / contextual",
+ "label": "Rule and requirement language in technical codes, standards and manuals: how equipment must be sized, rated or selected ('Conductors shall be sized for 125 percent of the load', 'Fuses must be rated for…', 'obtained by referring to Table 3-9'); everyday sentences about the same equipment stay quiet.",
+ "short": "requirement language in technical codes",
+ "kind": "contextual / register",
  "status": "failed",
  "depth": "quick",
  "tests": [
@@ -131,12 +131,139 @@
     "near_misses_at_0.3": 4
    },
    "contribution": "2026-10-30-lm1909-16255f90"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N9908_neg/2026-10-30-lm1909-7edabb71.tests.json",
+   "prereg_commit": "24f7cc2d",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.518,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.836,
+     "peak": " sized"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.119,
+     "peak": " spaced"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.498,
+     "peak": " set"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.01,
+     "peak": " stair"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.232,
+     "peak": " loss"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.311,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.216,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.018,
+     "peak": " our"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " talked"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " night"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": "My"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " cat"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.883,
+    "median_fire": 0.404,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-7edabb71"
   }
  ],
  "label_history": [
   [
    "2026-10-30-lm1909-16255f90",
    "Technical-manual text that sends the reader to a numbered table or section ('obtained by referring to Table 3-9.', 'see Table 4-2', 'listed in Section 5.1'), firing at the reference; the same sentences without a table reference stay quiet.",
+   "failed"
+  ],
+  [
+   "2026-10-30-lm1909-7edabb71",
+   "Rule and requirement language in technical codes, standards and manuals: how equipment must be sized, rated or selected ('Conductors shall be sized for 125 percent of the load', 'Fuses must be rated for…', 'obtained by referring to Table 3-9'); everyday sentences about the same equipment stay quiet.",
    "failed"
   ]
  ],
@@ -147,7 +274,8 @@
   "lm1909"
  ],
  "contributions": [
-  "2026-10-30-lm1909-16255f90"
+  "2026-10-30-lm1909-16255f90",
+  "2026-10-30-lm1909-7edabb71"
  ],
  "qc": {
   "confirm": 0,
@@ -157,10 +285,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }
