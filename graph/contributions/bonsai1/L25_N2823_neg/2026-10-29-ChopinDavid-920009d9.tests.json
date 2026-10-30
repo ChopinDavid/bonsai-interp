@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-920009d9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N2823-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N2823",
+   "pole": "-",
+   "label": "the slot that announces a defect or loophole about to be named: 'due to a [quirk/limitation]' 0.63-0.68, 'work around the [bug]' 0.59, 'exploiting [glitches / a loophole]' 0.89-0.91, 'is it a bug' 0.28; 'due to' an ordinary cause is quiet (0.07) and 'exploiting' a resource leaks weakly (0.32)",
+   "fire": [
+    "    # Due to a bug in older kernels, the socket has to be closed twice here.",
+    "Files larger than 4 GB fail to copy due to a limitation of the FAT32 format.",
+    "The helper exists only to work around a glitch in the vendor's driver.",
+    "Players were suspended for exploiting a duplication glitch in the trading post.",
+    "The developer kept his licence by exploiting a loophole in the county's permit rules.",
+    "Is that intended behaviour, or is it an error in how the parser handles tabs?",
+    "The patch is needed because of a quirk in how Safari reports the viewport height.",
+    "Due to a known issue with the Bluetooth stack, the headset may disconnect after sleep."
+   ],
+   "quiet": [
+    "    # Due to the holiday schedule, the nightly build runs at noon instead.",
+    "Files larger than 4 GB take several minutes to copy over the office network.",
+    "The helper exists only to format the vendor's log files for the dashboard.",
+    "Players were rewarded for completing every quest in the trading post.",
+    "The developer kept his licence by paying the county's renewal fee on time.",
+    "Is that the final version, or is it a draft the parser team is still reviewing?",
+    "The patch is needed because the design team changed the viewport height.",
+    "Due to high demand for the Bluetooth headset, shipping may take an extra week."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.0 on ' a', ' around', ' exploiting' or the defect noun; near misses below 0.15 except the 'exploiting' resource item near 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts a bug or loophole",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 144, density 0.03%, peaks ' a', ' is', ' workaround' x2, ' due' x2, ' to', ' little' in '# Due to a (mis-)feature of TkAqua', 'code to workaround the python bug', 'due to an internal working', 'is it an error with my computer', 'exploiting bugs rather than reporting them', 'exploiting legal technicalities', 'a little-used hearing process'; the + pole suppresses ' loophole', ' bugs', ' glitch', ' limitation', ' trick', ' exploit'. Probe: 'exploiting a loophole in the 2004 statute' 0.911, 'exploiting glitches' 0.894, '# Due to a quirk' 0.681, 'due to a limitation of' 0.633, 'work around the libc bug' 0.587, 'is it a bug' 0.278; 'exploiting the copper deposits' 0.319, 'due to a thunderstorm' 0.065, logging config 0.009."
+}

@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-24a95702",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N5070-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N5070",
+   "pole": "-",
+   "label": "the version digit of IPv4/ipv4, strongest in code comments and strings ('# ipv4' 0.80, 'ipv4:' 0.45) and in prose (0.32-0.35); the same digit in '(4, 6)' version checks fires (0.29), IPv6 (0.20) and md5 (0.26) fire weakly, and an ordinary 4 is quiet (0.01-0.03)",
+   "fire": [
+    "    # ipv4 only; ipv6 is handled by the other branch",
+    "The router hands out IPv4 leases from a small private pool.",
+    "    if family == 'ipv4':\n        return socket.AF_INET",
+    "Many home networks still rely on IPv4 behind a NAT gateway.",
+    "    parser.add_argument('--ipv4', action='store_true')",
+    "Each VM gets one IPv4 address and a /64 block for the newer protocol.",
+    "    addr_type = 'IPv4' if '.' in addr else 'IPv6'",
+    "The log shows the IPv4 header with a TTL of 64."
+   ],
+   "quiet": [
+    "    # ipv6 only; the other branch handles legacy addresses",
+    "The router hands out leases from a small private pool of 4 addresses.",
+    "    if family == 'inet':\n        return socket.AF_INET",
+    "Many home networks still rely on a NAT gateway with 4 ports.",
+    "    parser.add_argument('--retries', type=int, default=4)",
+    "Each VM gets one address and a /64 block for the newer protocol.",
+    "    checksum = hashlib.sha256(data).hexdigest()",
+    "The log shows chapter 4 of the manual was consulted at 10:04."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on '4'; near misses below 0.25 with IPv6 and other IP-family digits the highest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the 4 of IPv4",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 11.6, density 0.02%, peaks '4' x13 in ipv|4, IPv|4, '5' in md|5, ' private' in 'IPv4 private addresses', ' IN' in INADDR_NONE, (4, 6). Probe: '    AF_INET = 2  # ipv4' 0.803, 'Must be ipv4:' 0.452, 'Private IPv4 ranges' 0.345, 'both IPv4 and IPv6' 0.315, 'if ip_version not in (4, 6)' 0.291; 'only IPv6' 0.202, hashlib.md5 0.255 (peak '.md'), 'Chapter 4' 0.028, '4 bedrooms' 0.014. Splits: ' IPv'+'4', ' ipv'+'4', ' IPv'+'6', ' md'+'5'.",
+ "trigger": {
+  "words": [
+   "IPv4",
+   "ipv4"
+  ]
+ }
+}

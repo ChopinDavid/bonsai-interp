@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-0d819db9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N8657-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N8657",
+   "pole": "-",
+   "label": "the 'of' (or copula) after a relational noun that is about to name its possessor: 'a friend of' 0.44 whether 'mine' or 'the family' follows, 'no fault of' 0.31 for 'their own' and 'the airline' alike, 'a client of ours' 0.31, 'it's mine' 0.52 on 's; partitive 'both of his' (0.01) and the same nouns without 'of' (0.00) are quiet",
+   "fire": [
+    "A cousin of hers runs the bakery on the corner.",
+    "The accident happened through no fault of the driver.",
+    "An old colleague of mine sent me the photograph last week.",
+    "The house belonged to a neighbour of the family for forty years.",
+    "The mistake was entirely the fault of the printers.",
+    "Whatever is on that shelf is yours to keep.",
+    "A former student of his now teaches at the same school.",
+    "The land is ours, and the deeds prove it."
+   ],
+   "quiet": [
+    "Her cousin runs the bakery on the corner.",
+    "The accident happened at the corner of the two main roads.",
+    "One of the photographs was sent to me last week.",
+    "The house stood at the edge of the village for forty years.",
+    "The printers delivered a box of flyers on Monday.",
+    "Whatever is on that shelf was bought in the city of Leeds.",
+    "A former student now teaches at the same school.",
+    "The land covers an area of forty hectares."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.55 on ' of', ' fault', 'is'; near misses below 0.1, with 'one of the photographs' and 'a box of flyers' the likeliest leaks",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'of' predicting a possessor",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 308, density 0.01%, peaks ' of' x11, ' like', ' rightfully', ' culpa', ''s', ' to', ' fault' in 'no es culpa de', 'it's mine', 'his lips to mine', 'both of hers', 'no fault of their own', 'houses like us', 'a colleague of mine', 'a client of ours', 'a friend of mine'; the + pole promotes ' your', ' his', ' my', ' our', ' their'. Probe: 'An old friend of mine' 0.444 and 'An old friend of the family' 0.444 (identical, peak ' of'), 'it's mine' 0.518, 'no fault of their own' 0.307 and 'no fault of the airline' 0.307 (peak ' fault'), 'a client of ours' 0.308 vs 'a client from' 0.004, 'both of his' 0.005, hand on table 0.000. The possessor's form is irrelevant: the pole fires on the relational head's 'of' slot."
+}

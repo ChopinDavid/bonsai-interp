@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d1620d21",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N9839-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N9839",
+   "pole": "-",
+   "label": "an opening straight double quote that splices a quoted fragment into a running sentence after a comma ('the damage was severe, \"far beyond anything' 0.39); sentence-initial quotes, closing quotes, parentheses, single quotes and curly quotes in the same sentences are quiet (0.02-0.03)",
+   "fire": [
+    "The inspector wrote that the roof was unsafe, \"liable to collapse under the first heavy snow.\"",
+    "Her lawyer insisted the contract was void, \"signed under duress and never witnessed.\"",
+    "The committee found the spending justified, \"within the limits set by the original grant.\"",
+    "He described the river crossing as routine, \"something the ferrymen did twice a day.\"",
+    "The farmer called the harvest disappointing, \"the worst since the floods of 1987.\"",
+    "The doctor rated the fracture as minor, \"likely to heal in six weeks without surgery.\"",
+    "The reviewer judged the film overlong, \"padded with scenes that go nowhere.\"",
+    "The surveyor called the boundary unclear, \"marked only by a line of old hawthorns.\""
+   ],
+   "quiet": [
+    "\"The roof is liable to collapse under the first heavy snow,\" the inspector wrote.",
+    "Her lawyer insisted the contract was void because it was signed under duress and never witnessed.",
+    "The committee found the spending justified and within the limits of the original grant.",
+    "He described the river crossing as routine (the ferrymen did it twice a day).",
+    "The farmer called the harvest 'disappointing' and the worst since the floods of 1987.",
+    "The doctor said the fracture was minor; it should heal in six weeks without surgery.",
+    "\"Padded with scenes that go nowhere,\" was how the reviewer described the film.",
+    "The surveyor called the boundary unclear, marked only by a line of old hawthorns on the map."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.5 on ' \"'; near misses below 0.05; the hold is uncertain because the probe's splices ranged 0.15-0.39",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "mid-sentence spliced open quote",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 10.3, density 0.42%, peaks ' \"' x9, ' [' x6, '\\n' x4, ' “' x4 after a comma mid-sentence ('she never returned, \"her father', 'to the Crown \"to have him', 'in lieu of eighty lashes, \"because he had', 'could go, \"strike it rich\"'). Probe: 'the damage was severe, \"far beyond anything seen' 0.386, 'the policy [introduced in 2015]' 0.188, 'the town would, \"in all likelihood' 0.145; curly '“postpone the project' 0.026, newline mid-clause 0.010, sentence-initial '\"We will rebuild' 0.019, parenthesis 0.017, single quotes 0.030, no quote 0.034. The straight quote after a comma is the carrier; the test uses that form throughout."
+}

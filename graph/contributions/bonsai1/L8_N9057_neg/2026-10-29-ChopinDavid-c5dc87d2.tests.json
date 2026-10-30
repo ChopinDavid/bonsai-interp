@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c5dc87d2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N9057-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N9057",
+   "pole": "-",
+   "label": "'for' introducing a span of time or distance after a durative verb ('lasts for decades' 1.02, 'extends for nearly two miles' 0.82, 'paused for a moment' 0.82, 'ran for three months' 0.39); 'for' marking a beneficiary, purpose or employer is quiet (0.05-0.16)",
+   "fire": [
+    "The new sea wall stretches for almost a mile along the promenade.",
+    "A good cast-iron pan lasts for generations if it is kept dry.",
+    "The exhibition runs for six weeks at the county gallery.",
+    "He hesitated for a second, then signed the form.",
+    "The silence lasted for nearly a minute before anyone spoke.",
+    "The drought has persisted for three summers in the valley.",
+    "The tunnel continues for another two kilometres under the ridge.",
+    "The engine idled for ten minutes while the crew loaded the van."
+   ],
+   "quiet": [
+    "The new sea wall was built for the fishermen along the promenade.",
+    "A good cast-iron pan is a fine gift for a new cook.",
+    "The exhibition was arranged for the county's bicentenary.",
+    "He signed the form for his brother, who was abroad.",
+    "The silence was broken by a knock at the door.",
+    "The drought was blamed for the poor harvest in the valley.",
+    "The tunnel was dug for the railway company in 1890.",
+    "The engine was repaired for the crew before the trip."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.0 on ' for'; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "durative 'for'",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 9.0, density 0.14%, ' for' x32 after extends, lasts, affected, lasted, last, pauses ('extends for 17 miles', 'lasts for more than a century', 'affected for years to come', 'pauses for a moment'). Probe: 'lasts for decades' 1.016, 'extends for nearly two miles' 0.818, 'paused for a moment' 0.815, 'ran for three months' 0.389, 'will be felt for years to come' 0.253; 'saddle for her daughter's birthday' 0.047, 'built for public meetings' 0.137, 'worked for the railway company' 0.156, no 'for' 0.010."
+}

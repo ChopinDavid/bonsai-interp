@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b554ad6b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N7307-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N7307",
+   "pole": "-",
+   "label": "the verb or object that sets up a containment predicate and predicts 'in/within/into': 'must be enclosed [in]' 1.11, 'fitting them [into]' 0.70, 'wrap it [in]' 0.59, 'is enclosed [in]' 0.50, 'housed [within]' 0.23; 'enclosed' as an attachment (0.00) and the same subjects without containment are quiet, though 'must be' before an expected participle in documentation leaks (0.34)",
+   "fire": [
+    "Each key name must be enclosed in square brackets, as in the examples below.",
+    "To pass a filename with spaces, enclose it in single quotes.",
+    "The pupa is enclosed in a silken cocoon until the adult emerges.",
+    "Wrap the whole expression in parentheses so the shell does not split it.",
+    "The transmitter is sealed inside a resin block that keeps out moisture.",
+    "The fibre is enclosed within a steel tube that runs along the seabed.",
+    "You can secure the posts by setting them into concrete footings.",
+    "The nut kernel is enclosed in a hard shell that only the birds can crack."
+   ],
+   "quiet": [
+    "Each key name must be shorter than sixteen characters, as in the examples below.",
+    "To pass a filename with spaces, escape each space with a backslash.",
+    "The pupa is pale brown and rests motionless until the adult emerges.",
+    "Delete the whole expression so the shell does not evaluate it.",
+    "The transmitter is rated for ten metres and runs on a single cell.",
+    "The fibre carries forty channels and runs along the seabed.",
+    "You can paint the posts after setting the concrete footings.",
+    "Please find the enclosed invoice for the work completed in March."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.1 on ' enclosed', ' it', ' them' or the containment verb; near misses below 0.1, except a possible 'must be' leak in the documentation-style items",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "enclose/wrap predicting 'in'",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 236, density 0.05%, peaks ' enclosed' x7, 'ased', ' them', ' it', ' are', ' be', ' is' in 'unless they are made somehow special', 'enclose it in reverse quotes', 'must be enclosed in quotes', 'the seed is also enclosed in an aril', 'fitting them into a hole', 'an IPX packet enclosed within a UDP packet', 'Wrap the text with'; the + pole suppresses ' inside', ' within', ' enclosed', ' dentro'. Probe: 'must be enclosed in double quotes' 1.107, 'fitting them into holes' 0.698, 'wrap it in backticks' 0.590, 'seed is enclosed in a fleshy red aril' 0.501, 'housed within a steel casing' 0.230; 'must be listed in alphabetical order' 0.338 (peak ' be'), seed colour 0.055, calibrated 0.009, 'the enclosed cheque' 0.000."
+}

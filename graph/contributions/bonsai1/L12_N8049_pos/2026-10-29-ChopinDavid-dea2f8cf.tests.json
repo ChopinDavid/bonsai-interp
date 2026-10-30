@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-dea2f8cf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N8049+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N8049",
+   "pole": "+",
+   "label": "an intransitive or middle change-of-state verb whose subject comes into being or into use by itself: Russian participles in -шие (появив|шие|ся 1.18), 'designed to wear all day' 0.40, 'crystals form from' 0.27, 'developed into/below' 0.10-0.18; the transitive uses ('developed a vaccine' 0.01, 'formed a committee' 0.02) are quiet",
+   "fire": [
+    "Проблемы, возникшие после слияния, решались несколько месяцев.",
+    "Отношения, сложившиеся между соседями, пережили не одну зиму.",
+    "Книги, вышедшие в прошлом году, уже распроданы.",
+    "These boots are built to wear for years on rough ground.",
+    "A hard callus forms from repeated friction on the palm.",
+    "The hamlet developed from a ferry crossing into a river port.",
+    "A rash developed under the strap after two days of hiking.",
+    "The harness is meant to wear close to the body without rubbing."
+   ],
+   "quiet": [
+    "Проблемы после слияния решались несколько месяцев.",
+    "Соседи построили новый забор между участками.",
+    "Книги прошлого года уже распроданы.",
+    "The cobbler built these boots for a farmer who walks rough ground.",
+    "The potter formed a small bowl from the leftover clay.",
+    "The council developed the ferry crossing into a river port with new quays.",
+    "The nurse applied a cream under the strap after two days of hiking.",
+    "The harness fastens with two steel buckles at the back."
+   ]
+  }
+ ],
+ "predictions": "the three Russian -шие items 0.6-1.2, 'built to wear' 0.3-0.4, 'forms from' about 0.25, 'developed from/into' 0.1-0.2: likely 4-5 of 8; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "intransitive develop/form/wear",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 13.9, density 0.52%, peaks ' developed' x4 (that's developed below the radar, developed from, developed into), 'шие' (появив|шие|ся), ' wear' (designed to wear all day), ' forms' (forms from the zygote), 'عمل' (يست|عمل, be used), 'ت' (نجم|ت عن, resulted from). Probe: появившиеся 1.181 (peak 'шие'), 'designed to wear comfortably' 0.398, 'Crystals form from' 0.268, 'developed into a busy market town' 0.175, 'A cyst developed below' 0.094, 'emerged' 0.074; transitive 'developed a new vaccine' 0.012, 'formed a committee' 0.016, static 0.019. Splits: возник|шие, слож|ив|шие|ся, вы|шед|шие all carry the 'шие' piece. English intransitive 'develop' is weaker than the card suggests."
+}

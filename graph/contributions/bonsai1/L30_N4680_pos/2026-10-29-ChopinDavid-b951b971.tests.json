@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b951b971",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N4680+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N4680",
+   "pole": "+",
+   "label": "a non-English focus/restrict-to construction, firing on the object or verb piece that commits to it: German 'sich auf X orientiert' 0.80 (on the object), 'auf die Anbieter beschränken' 0.67, 'auf X verlassen' 0.30, Arabic التركيز 0.23-0.48 (' الترك' piece), Russian фокусируетесь 0.53 ('ок' piece); English 'focus on' (0.04) and French 'se concentrer sur' (0.08) are quiet, as are the same nouns without the construction (0.00)",
+   "fire": [
+    "Wer sich nur auf die Xbox orientiert, verliert die Hälfte der Kundschaft.",
+    "Wir sollten uns auf die zertifizierten Anbieter beschränken.",
+    "Das Team hat sich zu sehr auf einen einzigen Lieferanten verlassen.",
+    "يجب التركيز على جودة التعليم في المرحلة الابتدائية.",
+    "تحول التركيز من الإنتاج إلى التسويق خلال السنوات الأخيرة.",
+    "Если вы фокусируетесь на результате, процесс становится легче.",
+    "Многие компании фокусируются на одном рынке.",
+    "Die Schule konzentriert sich auf die Förderung der Naturwissenschaften."
+   ],
+   "quiet": [
+    "Wer die Xbox im Dezember gekauft hat, bekommt ein Spiel gratis.",
+    "Wir haben die zertifizierten Anbieter gestern angerufen.",
+    "Das Team wartet auf den Lieferanten seit zwei Wochen.",
+    "ذهب المعلمون إلى المدرسة في الصباح الباكر.",
+    "ارتفعت أسعار الإنتاج خلال السنوات الأخيرة.",
+    "Если вы устали, процесс становится труднее.",
+    "Многие компании работают на одном рынке.",
+    "The school concentrates on the promotion of the natural sciences."
+   ]
+  }
+ ],
+ "predictions": "German and Russian items 0.4-0.8, Arabic 0.2-0.5, 'verlassen' and 'konzentriert sich' uncertain: 5-7 of 8; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "non-English focus-on construction",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 334, density 0.10%, peaks ' الترك' x4 (الترك|يز, focus), ' se', '에', ' ha', '3' (auf die Playstation 3 orientiert), 'تم', 'uba' (auf Ar|uba verlassen), 'eter' (Anbi|eter beschränken), 'ок' (ф|ок|усируетесь); the - pole promotes ' focus', ' focused', ' concentrated'. Probe: 'auf die Playstation 4 orientiert' 0.795 (peak '4'), 'auf die gelisteten Anbieter beschränken' 0.670 (peak 'eter'), 'фокусируетесь на дыхании' 0.530, 'يجب التركيز على' 0.477, 'auf den Zulieferer verlassen' 0.304, 'انتقل التركيز من' 0.227; French 0.084, English 0.043, 'die Playstation 4 im Dezember gekauft' 0.000, Arabic floor 0.000. Splits: ' الترك'+'يз', 'ф'+'ок'+'ус', 'An'+'bi'+'eter', 'Lie'+'fer'+'anten'."
+}

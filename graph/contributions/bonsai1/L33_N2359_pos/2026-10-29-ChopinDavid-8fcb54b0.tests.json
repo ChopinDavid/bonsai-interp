@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-8fcb54b0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N2359+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N2359",
+   "pole": "+",
+   "label": "the vocalised Arabic dative preposition ' ل' after a speech verb (وَقَالَ لَهُ 0.46, where diacritics split ' ل' from the pronoun; unvocalised ' له' is one token and silent 0.00) and, from the card only, the 'init' piece of a Python 'def __init__(' header (card 'init' x9; other dunders probed at 0.07)",
+   "fire": [
+    "فَأَجَابَ الْمُعَلِّمُ وَقَالَ لَهُ: «اذْهَبْ وَلاَ تُخْطِئْ».",
+    "فَدَنَا مِنْهُ الْغُلاَمُ وَقَالَ لَهُ: «يَا سَيِّدُ، أَيْنَ الطَّرِيقُ؟»",
+    "وَلَمَّا رَآهُمْ قَالَ لَهُمْ: «اذْهَبُوا إِلَى الْمَدِينَةِ».",
+    "فَالْتَفَتَ إِلَيْهَا وَقَالَ لَهَا: «لاَ تَخَافِي».",
+    "    def __init__(self, name, size):\n        self.name = name",
+    "class Cache:\n    def __init__( self, limit ):\n        self.limit = limit",
+    "    def __init__(self):\n        super().__init__()",
+    "فَنَظَرَ إِلَيْهِ الرَّجُلُ وَقَالَ لَهُ: «مَنْ أَنْتَ؟»"
+   ],
+   "quiet": [
+    "فأجاب المعلم وقال له: اذهب ولا تخطئ.",
+    "فَدَنَا مِنْهُ الْغُلاَمُ وَسَأَلَهُ عَنِ الطَّرِيقِ.",
+    "ولما رآهم قال لهم: اذهبوا إلى المدينة.",
+    "فَالْتَفَتَ إِلَيْهَا وَابْتَسَمَ وَسَكَتَ.",
+    "    def reset(self, name, size):\n        self.name = name",
+    "class Cache:\n    def clear( self, limit ):\n        self.limit = limit",
+    "    cache = Cache(limit=10)\n    cache.clear()",
+    "فنظر إليه الرجل وقال له: من أنت؟"
+   ]
+  }
+ ],
+ "predictions": "the four vocalised قَالَ لَ items 0.2-0.5 on ' ل', the three __init__ items unknown (0.1-0.6 if the card's 'init' peak is real); near misses below 0.1; likely a partial hold or a fail",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Arabic ' ل' after قَالَ; def __init__",
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Card: max 258, density 0.24%, peaks 'init' x9, '(' x4, ' ل' x3, 'ل' x2, 'call', 'ὶ' in vocalised Biblical Arabic (وَقَالَ لَهُ, وَظَهَرَ لَهُ, عَلَيْهِمْ), 'def check_watched_items( self )', 'def __call__', Greek dative τῷ πατρὶ. Probe: 'وَقَالَ لَهُ: «يَا مُعَلِّمُ' 0.464 (peak ' ل'), 'وَظَهَرَ لَهُ مَلاَكٌ' 0.086, unvocalised 'ثم قال له' 0.004 (' له' single token), 'def __call__' 0.071, 'def __repr__' 0.072, 'def clean_directory( self, folder )' 0.005, 'def run(self)' 0.002, call 0.006, Arabic floor 0.001. __init__ was not probed; the card's 'init' x9 is the reason three fire items use it."
+}

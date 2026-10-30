@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-29-ChopinDavid-24a95702",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N5070-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T04:33:42+00:00",
+ "recipe": {
+  "toolchain_commit": "5e15bf16",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L10_N5070_neg/2026-10-29-ChopinDavid-24a95702.tests.json"
+ },
+ "label": "the version digit of IPv4/ipv4, strongest in code comments and strings ('# ipv4' 0.80, 'ipv4:' 0.45) and in prose (0.32-0.35); the same digit in '(4, 6)' version checks fires (0.29), IPv6 (0.20) and md5 (0.26) fire weakly, and an ordinary 4 is quiet (0.01-0.03)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N5070_neg/2026-10-29-ChopinDavid-24a95702.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.447,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.386,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.501,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.502,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.494,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.431,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.647,
+     "peak": "4"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.453,
+     "peak": "4"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.326,
+     "peak": " addresses"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " pool"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.096,
+     "peak": "_INET"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.052,
+     "peak": " networks"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " parser"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.018,
+     "peak": " VM"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.248,
+     "peak": "6"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.027,
+     "peak": " manual"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.474,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e15bf16",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "the 4 of IPv4",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 11.6, density 0.02%, peaks '4' x13 in ipv|4, IPv|4, '5' in md|5, ' private' in 'IPv4 private addresses', ' IN' in INADDR_NONE, (4, 6). Probe: '    AF_INET = 2  # ipv4' 0.803, 'Must be ipv4:' 0.452, 'Private IPv4 ranges' 0.345, 'both IPv4 and IPv6' 0.315, 'if ip_version not in (4, 6)' 0.291; 'only IPv6' 0.202, hashlib.md5 0.255 (peak '.md'), 'Chapter 4' 0.028, '4 bedrooms' 0.014. Splits: ' IPv'+'4', ' ipv'+'4', ' IPv'+'6', ' md'+'5'.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "IPv4",
+   "ipv4"
+  ]
+ }
+}

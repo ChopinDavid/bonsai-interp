@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c01fcc7b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N5759+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N5759",
+   "pole": "+",
+   "label": "a media or entertainment celebrity introduced by role and name ('the host of the program, Dr. Sanjay Gupta' 0.46, card: 'the host of the show, Mehmet Oz', 'a performing poet', 'the world's greatest salesman') and, weaker, that persona's own quoted 'I' in interview speech (0.26); ordinary named people in the same frames are quiet",
+   "fire": [
+    "The host of the late show, Jimmy Fallon, opened with a joke about the weather.",
+    "On Tuesday the talk-show host Ellen DeGeneres told her audience she was retiring.",
+    "The presenter of the series, Sir David Attenborough, narrated the final episode himself.",
+    "A performing poet since her teens, Amanda Gorman read at the inauguration.",
+    "The radio host Howard Stern spent an hour on the story that morning.",
+    "He was called the world's greatest escape artist, and Houdini never argued with the title.",
+    "The chef and television personality Gordon Ramsay opened a new restaurant in Boston.",
+    "The podcast's host, Joe Rogan, interviewed the physicist for three hours."
+   ],
+   "quiet": [
+    "The manager of the branch, Mr. Peter Collins, opened with a note about the weather.",
+    "On Tuesday the school principal, Mrs. Diane Okafor, told the parents she was retiring.",
+    "The author of the report, Dr. Helen Marsh, presented the final chapter herself.",
+    "A practising nurse since her teens, Maria Lopez spoke at the graduation.",
+    "The county clerk, Howard Benson, spent an hour on the paperwork that morning.",
+    "He was called the best plumber in the village, and Mr. Dawes never argued with the title.",
+    "The engineer and project lead, Gordon Baines, opened a new office in Boston.",
+    "The committee's chair, Joan Riley, questioned the physicist for three hours."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on the surname or role noun; near misses with ordinary named people below 0.15; the weakest hold of the sweep if it holds at all",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "celebrity introduced by role",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 11.3, density 0.31%, peaks ' I' x4 in interview transcripts (DW:/JC: speaker labels), ' poet', ' salesman', ' Oz', 'amer' (Tamer), ' very' in 'let me be very frank'. Probe: 'The host of the program, Dr. Sanjay Gupta' 0.460 (peak ' Gupta'), quoted 'I love this town ... she told the crowd' 0.256, interview 'DW: ... I've heard' 0.113, 'stay with me' 0.114, 'Let me be very clear' 0.050, 'world's finest violinist' 0.093, written first person 0.022-0.038, committee prose 0.026. Only the named media personality reached the threshold, so the test asks whether celebrity status (vs an ordinary named person in the same role frame) is the distinction."
+}
