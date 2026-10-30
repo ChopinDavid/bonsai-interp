@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-93365185",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N9363+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T03:34:44+00:00",
+ "recipe": {
+  "toolchain_commit": "691dfad4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N9363_pos/2026-10-29-ChopinDavid-93365185.tests.json"
+ },
+ "label": "the comparison class in a lagging-behind comparison: the others who already have what the subject lacks ('the kind the NFL and the NBA already have' 1.27, 'that all the other major appliances have' 0.83, 'as other countries surge ahead' 0.64, 'lags far behind semiconductor development' 0.61, 'in all other fields' 0.57); the same entities without the lag comparison are at 0.06 or less",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N9363_pos/2026-10-29-ChopinDavid-93365185.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.914,
+     "peak": " enjoyed"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.753,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.511,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.568,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.634,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.333,
+     "peak": " sport"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.613,
+     "peak": " already"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.39,
+     "peak": " sector"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " carries"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.031,
+     "peak": " have"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " departments"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " states"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " clubs"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.028,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.062,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.591,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "691dfad4",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "what others have already achieved",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 47.3, density 0.07%, peaks ' have' x3, ' fields', ' ahead', ' has', ' peers', ' those' ('in all other fields, educational innovations are very less', 'the gains all the other major home appliances have seen', 'the NHL, already have', 'other countries surge ahead', 'falling behind those of other countries', 'their peers literally run around them'). Probe: 'the NFL and the NBA already have' 1.270, 'all the other major appliances have' 0.825, 'other countries surge ahead' 0.643, 'lags far behind semiconductor development' 0.609, 'all other fields' 0.570; 'Refrigerators are usually white' 0.004, 'The NFL and the NBA both play' 0.041, 'Students in every country study' 0.056, recipe 0.004.",
+ "selection": "random draw"
+}

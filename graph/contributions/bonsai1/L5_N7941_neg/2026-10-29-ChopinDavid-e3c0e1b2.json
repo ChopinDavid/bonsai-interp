@@ -1,0 +1,161 @@
+{
+ "id": "2026-10-29-ChopinDavid-e3c0e1b2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N7941-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T03:34:35+00:00",
+ "recipe": {
+  "toolchain_commit": "691dfad4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N7941_neg/2026-10-29-ChopinDavid-e3c0e1b2.tests.json"
+ },
+ "label": "the verb 'stand' in its forms plus 'steady' (' stood' 0.50, un|steady 0.52, ' stand' 0.41, ' stands' 0.38, steady-state 0.29); 'standard' 0.02 and the same sentences with 'speak up' (0.04) or 'emerges' (0.09) in place of the verb are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N7941_neg/2026-10-29-ChopinDavid-e3c0e1b2.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.391,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.021,
+     "peak": "Of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.286,
+     "peak": " stood"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.024,
+     "peak": " while"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.589,
+     "peak": "steady"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.077,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.223,
+     "peak": " stood"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.203,
+     "peak": " standing"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.083,
+     "peak": " step"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": "Of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": " while"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.044,
+     "peak": " dizzy"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.022,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": " requires"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " took"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.867,
+    "median_fire": 0.213,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "691dfad4",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "stand/stood/steady",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Card: max 3.9, density 0.29%, peaks ' stand' x11, 'steady' x3, 'stands', ' steady', ' stood' ('stands the test of time', 'stand up against', 'steady-state', 'stood to be', 'stands out', 'un|steady'). Probe: 'stood to lose' 0.503, 'felt un|steady' 0.517, 'to stand up against' 0.411, 'stands out' 0.379, 'steady-state concentration' 0.290; 'standard requires' 0.021, 'speak up against' 0.042, 'emerges as' 0.092, cake filler 0.029. Splits: ' stand', ' stands', ' stood', ' steady', ' standing', ' standard', ' stance' are single tokens; ' unsteady' -> ' un','steady'.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "stand",
+   "stands",
+   "stood",
+   "steady",
+   "standing"
+  ]
+ }
+}
