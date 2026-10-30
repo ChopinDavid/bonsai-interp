@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-89729c48",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N2243-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N2243",
+   "pole": "-",
+   "label": "dense / positional: a layer-0 unit with a 0.30 max on which 10% of tokens reach 0.1 of max; its strongest tokens are a bag of Arabic and German pieces (' المسلحة' 0.71, ' مض' 0.71, ' التش' 0.69, ' أو' 0.66, Last|s|chrift 0.83, ' Steps' 0.43) with no shared meaning, and ordinary Arabic (0.02) or English (0.08) is low",
+   "fire": [
+    "أعلنت القوات المسلحة حالة التأهب على الحدود الشرقية.",
+    "تحتوي الحبوب على مواد مضادة للأكسدة.",
+    "أجرى الطبيب الفحوصات التشخيصية اللازمة.",
+    "يمكنك الدفع نقدا أو بالبطاقة عند الاستلام.",
+    "Die Gebühr wird per Lastschrift von Ihrem Konto abgebucht.",
+    "Next Steps: review the draft and schedule a meeting.",
+    "اشترى أدوية مضادة للالتهاب من الصيدلية.",
+    "أمر الرئيس بتعزيز القوات المسلحة في الجنوب."
+   ],
+   "quiet": [
+    "أعلنت الحكومة حالة التأهب على الحدود الشرقية.",
+    "تحتوي الحبوب على فيتامينات مفيدة.",
+    "أجرى الطبيب الفحوصات اللازمة.",
+    "يمكنك الدفع بالبطاقة عند الاستلام.",
+    "Die Gebühr wird von Ihrem Konto abgebucht.",
+    "Next week: review the draft and schedule a meeting.",
+    "اشترى أدوية من الصيدلية.",
+    "أمر الرئيس بتعزيز الحراسة في الجنوب."
+   ]
+  }
+ ],
+ "predictions": "best guess: fire items 0.4-0.9 on the listed tokens; near misses under 0.15, but a broad layer-0 unit may fire on other tokens in the near misses",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; Arabic/German token bag",
+ "unit_kind": "dense / positional",
+ "confidence": 0.25,
+ "notes": "Card: max 0.30, density 10.0% (FLAG broad), -g +u leak 98%, peaks ' مض' x5, ' أو' x5, ' المسلحة' x4, ' التش' x4, ' of' x3, ' Steps'. Probe: المسلحة 0.706, مض(ادة) 0.710, التش(خيصية) 0.688, أو 0.661, Lastschrift 0.834 ('s'), 'Next Steps' 0.425, 'By understanding' 0.380; Arabic school sentence 0.022, English market sentence 0.083. Registered as dense / positional with a token-bag test; fire items reuse the probed tokens in new sentences (splits checked: مضادة -> ' مض'+'ادة', التشخيصية -> ' التش'+...), near misses are the same sentences with those tokens replaced."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7273a977",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N53-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N53",
+   "pole": "-",
+   "label": "an agent's action taken to stay hidden or undetected, read from a passage that first sets up the watcher (disguising the nest 0.30 in one sentence; the card's examples are all mid-document: evade detection, not tell anybody, since he would find out, avoid detection); the + pole is visibility ('visible', 'public', 'seen')",
+   "fire": [
+    "Predators patrol the beach every night. After laying, the female covers the nest with sand to disguise it from them.",
+    "Spies in the capital had to be careful. If they revealed their true purpose, they would be arrested within days.",
+    "Your privacy matters to us. We will never disclose to anyone that you used our service.",
+    "Her family disapproved of doctors. She hid the medicine in a drawer so that nobody would find out.",
+    "The tunnels were watched by day. The soldiers moved out at dusk to slip past the sentries unseen.",
+    "He painted only for himself. He kept the canvases in the attic where no buyer would ever see them.",
+    "The chameleon sat motionless on the branch. Its colour shifted until it blended into the bark.",
+    "Nobody at the office knew about the diagnosis. She wore long sleeves to keep the marks out of sight."
+   ],
+   "quiet": [
+    "Predators patrol the beach every night. After laying, the female returns to the sea before dawn.",
+    "Diplomats in the capital had a busy schedule. They announced their plans at a press conference the next day.",
+    "Your feedback matters to us. We will send everyone a summary of the survey results.",
+    "Her family trusted doctors. She kept the medicine on the kitchen table beside the kettle.",
+    "The roads were busy by day. The soldiers moved out at dusk to reach the camp before midnight.",
+    "He painted for galleries. He hung the canvases in the hall where every buyer could see them.",
+    "The chameleon sat motionless on the branch. Its tongue shot out and caught a fly.",
+    "Everyone at the office knew about the promotion. She wore a new jacket to celebrate."
+   ]
+  }
+ ],
+ "predictions": "weak: fire items 0.1-0.5 on the concealed action; near misses under 0.1; single-sentence probes stayed under 0.3, so the two-sentence fire items may still fail on the median",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "acting to avoid detection",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 34.8, density 0.15%, peaks ' nest' (disguise the nest), ' they' (if they made their motives known), ' we' (we positively will not tell anybody), ' take' (could not take treatment since he would find out), ' avoid' (to avoid detection), ' produce' (did not produce for the market), ' child'; the + pole peaks on ' visible' x5, ' public' x5, ' seen', ' eye' and promotes 'visibility'/'perceive', so the distinction is hidden vs. seen. Probe (single sentences): 'to disguise it' 0.297, 'will not tell anybody' 0.093, 'to avoid detection' 0.046, 'would find out' 0.009, 'motives known' 0.009; controls 0.003-0.019, 'visible to everyone' 0.009. The card's contexts are long, so each fire item gets a first sentence that establishes who is watching; near misses keep the two-sentence shape and the actors and remove the concealment."
+}

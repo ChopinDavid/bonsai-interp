@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-947bb7ae",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N7085-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N7085",
+   "pole": "-",
+   "label": "an Arabic attributive adjective following its noun, strongest for 'other' (مصدر آخر 0.67, مصادر أخرى 0.45, الأبعاد الأخرى 0.43) and weaker for other adjectives (مقره الجديد 0.33, المتحف الوطني 0.29, سيارة كبيرة 0.21, الجواب الصحيح 0.18); Arabic without an adjective (0.04) and English 'other' (0.02) are silent",
+   "fire": [
+    "سأبحث عن طريقة أخرى لحل هذه المسألة.",
+    "انتقلت العائلة إلى مدينة أخرى بعد الحرب.",
+    "هل لديك سؤال آخر قبل أن ننهي الاجتماع؟",
+    "اشترت أمي الفستان الجديد للعيد.",
+    "نشر الباحث كتابه الثاني في العام الماضي.",
+    "وصل الضيوف من الدول الأخرى في المساء.",
+    "قدم المدير التقرير الكامل إلى اللجنة.",
+    "تعيش عائلتي في البيت الكبير قرب النهر."
+   ],
+   "quiet": [
+    "سأبحث عن طريقة لحل هذه المسألة.",
+    "انتقلت العائلة إلى المدينة بعد الحرب.",
+    "هل لديك سؤال قبل أن ننهي الاجتماع؟",
+    "اشترت أمي الفستان للعيد.",
+    "نشر الباحث كتابه قبل عام.",
+    "وصل الضيوف من الخارج في المساء.",
+    "قدم المدير التقرير إلى اللجنة.",
+    "تعيش عائلتي في البيت قرب النهر."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7, the 'other' items highest; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Arabic post-nominal adjective",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 21.4, density 0.37%, peaks 'خرى' x4 (أخرى), ' الصحيح' x2, ' الجديد' x2, 'خر' (آخر), 'ريح' (المريح), 'لي' (داخلي): every top example is an adjective after its noun. Probe: آخر 0.670, أخرى 0.448, الأخرى 0.433, الجديد 0.330, الوطني 0.293, كبيرة 0.213, الصحيح 0.177; no-adjective sentence 0.039, English 'no other source' 0.022. Fire items use whole-token adjectives (checked with the tokenizer); near misses are the same sentences with the adjective removed."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0b53a9b4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1745-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N1745",
+   "pole": "-",
+   "label": "the relativizer or auxiliary that introduces praise in promotional copy ('a stunning wedding that looked like' 0.80, 'a first-rate product that is cost-effective' 0.59, 'constantly seeking to deliver quality' 0.48, 'rest assured that we have' 0.25); the same frames introducing neutral facts ('a product that costs twelve dollars' 0.24) or faults ('has been recalled' 0.10) are weaker",
+   "fire": [
+    "Our team is dedicated to crafting a premium sofa that combines comfort with timeless style.",
+    "The result was a breathtaking garden that feels like a private retreat.",
+    "Every pair of our boots is designed to deliver all-day comfort and lasting durability.",
+    "This award-winning bakery has been delighting the neighbourhood for twenty years.",
+    "You can be confident that we have chosen only the finest ingredients for every dish.",
+    "Their new espresso machine makes a rich, velvety shot that rivals any cafe.",
+    "The resort offers a luxurious spa experience that leaves guests completely refreshed.",
+    "We strive to provide a seamless service that exceeds your expectations every time."
+   ],
+   "quiet": [
+    "The company makes a sofa that measures two metres and comes in three colours.",
+    "The garden that lies behind the house is about forty metres long.",
+    "The boots are made in Portugal and shipped in cardboard boxes.",
+    "The bakery has been closed since the fire in the kitchen last year.",
+    "You should know that we have changed the opening hours for the winter.",
+    "Their espresso machine broke down twice and had to be returned.",
+    "The resort has a spa that is open from nine to six on weekdays.",
+    "We failed to provide the service that was described in the contract."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on ' that'/' to'/' has'; near misses under 0.25; the neutral 'that costs' frame may leak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "praise slot in promotional copy",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 101, density 0.27%, peaks ' that' x4, ' has' x3, ' to' x2, ' who', ' we' in marketing prose ('a first-rate product that is cost-effective', 'this project incorporates sustainable design', 'constantly seeking to deliver quality', 'a stunning wedding that looks like', 'kitchenware has been revolutionising', 'rest assured that we have enlisted'); the + pole peaks on ' to'/' can' and suppresses 'incorporate(s)'. Probe: wedding that 0.802, product that 0.586, seeking to 0.476, rest assured that we have 0.246, kitchenware has 0.200; neutral product that costs 0.243, recalled 0.104, wedding on Saturday 0.132, committee seeking to fill 0.011. Near misses keep the product and the frame and make the predicate factual or negative."
+}

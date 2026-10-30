@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-48aa22af",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1579+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N1579",
+   "pole": "+",
+   "label": "whether a building or relic survives to the present: 'still survives' 0.58, 'no longer exist' 0.53, 'still exists' 0.51, 'only one is still standing' 0.37, 'still to be seen' 0.30; 'still' before another predicate ('still works at' 0.02) and the past fate of the same buildings ('was demolished' 0.17, 'were sold' 0.09) are low",
+   "fire": [
+    "The chapel founded by the abbot still stands at the end of the lane.",
+    "Of the original city walls, only a short stretch remains today.",
+    "The mill where he worked no longer exists, having burned down in 1902.",
+    "Traces of the Roman road can still be seen across the moor.",
+    "The manor house survives, though much altered, as a hotel.",
+    "The old lighthouse is still standing, but the keeper's cottage has gone.",
+    "None of the wooden houses from that period survive.",
+    "The fountain he designed still exists in the courtyard of the museum."
+   ],
+   "quiet": [
+    "The chapel founded by the abbot was consecrated in 1312.",
+    "The city walls were built of local limestone and cost a fortune.",
+    "The mill where he worked employed about forty men in 1902.",
+    "The Roman road ran from the coast to the garrison town.",
+    "The manor house was bought by a London merchant in 1780.",
+    "The old lighthouse keeper still tells stories about the storms.",
+    "The wooden houses from that period had two rooms and a loft.",
+    "The fountain he designed was carved from Carrara marble."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.6 on still/longer/remains/survive; near misses under 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "still exists / no longer exists",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 112.5, density 0.52%, peaks ' still' x4 (still exists, still survives, still serves), ' longer' (no longer exist), ' only' (one only is standing), ' to' (still to be seen), plus ' can' render, ' was' bad, ' not' be identified. Probe: still survives 0.583, no longer exist 0.529, still exists 0.513, only one standing 0.366, still to be seen 0.298; demolished 0.172, could not be identified 0.219, sold 0.089, still works 0.020. The non-survival card peaks did not reproduce, so the label is the survival predicate; near misses give the same buildings a dated fact or a non-existence 'still'."
+}

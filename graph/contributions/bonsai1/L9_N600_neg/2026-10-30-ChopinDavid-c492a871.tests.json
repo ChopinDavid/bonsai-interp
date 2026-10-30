@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c492a871",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N600-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N600",
+   "pole": "-",
+   "label": "the 'If' premise of a quantitative word problem, where the conditions are given before the question ('If the length is twice the width' 0.57, 'if the resistance is 4 ohms and' 0.61, 'If it averages 60 miles per hour' 0.56); the same givens introduced with 'Given that' still score 0.42, while everyday conditionals ('If you need anything' 0.05) and 'asked if' (0.02) are silent",
+   "fire": [
+    "A car travels 150 km in 2 hours. If it keeps the same speed, how far will it go in 5 hours?",
+    "The sum of two numbers is 45. If one of them is 17, what is the other?",
+    "A ladder leans against a wall. If the ladder is 5 m long and its foot is 3 m from the wall, how high does it reach?",
+    "A shop sells pens at 3 dollars each. If Maria buys 7 pens, how much does she pay?",
+    "A tank holds 500 litres. If it drains at 25 litres per minute, how long until it is empty?",
+    "Find the area of the triangle, if its base is 8 cm and its height is 5 cm.",
+    "A bus carries 40 passengers. If 12 get off at the first stop and 5 get on, how many remain?",
+    "Calculate the interest earned, if 2000 dollars is invested at 4 percent for three years."
+   ],
+   "quiet": [
+    "I wondered if the car would make it another 150 km without fuel.",
+    "If you see Maria at the shop, tell her I bought the pens.",
+    "The ladder is safe to climb if someone holds the bottom for you.",
+    "She asked if the tank had been emptied before the winter.",
+    "If the bus is late again, I will walk the three blocks to work.",
+    "We can measure the triangle later if you bring the ruler.",
+    "He checked if the interest had been added to the account.",
+    "If it rains on Saturday, the picnic moves to the hall."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on 'If' or the tokens of the premise; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'If' premise of a word problem",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 13.1, density 0.018%, peaks ' If' x10, ' if' x6, 'If' x3, ' How' x2, all in maths and physics problems or quiz questions ('Determine its dimensions, if the length', 'If it averages 66 miles per hour', 'Q. If you could choose'). Probe: rectangle 0.569, train 0.563, average age 0.560 (peak ' the'), resistance 0.609 (peak ' and'), quiz 'If you could have dinner' 0.288, 'Given that ... determine' 0.420, train without 'If' 0.269, 'If you need anything' 0.053, 'asked if' 0.015. The pole reads the premise clause of a problem rather than the word alone, so near misses are everyday conditionals and 'if = whether' with the same nouns and numbers."
+}
