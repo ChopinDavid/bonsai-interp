@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N11221+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 11221,
+ "pole": "+",
+ "label": "word-final suffix piece of a Romance adverb or a Russian adjective: 'amente' (lent|amente) and 'ий' (горяч|ий); a broad spelling pole that also fires weakly on many other non-English suffixes",
+ "short": "-amente / -ий suffix piece",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N11221_pos/2026-10-30-ChopinDavid-4aee6d92.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.104,
+     "peak": " las"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.194,
+     "peak": " llegó"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.131,
+     "peak": "je"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.134,
+     "peak": " personas"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.157,
+     "peak": " исп"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.389,
+     "peak": "ий"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.608,
+     "peak": "ий"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.484,
+     "peak": "amente"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.086,
+     "peak": " las"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.194,
+     "peak": " llegó"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.128,
+     "peak": "je"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.187,
+     "peak": " personas"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.151,
+     "peak": " исп"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.082,
+     "peak": " с"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.096,
+     "peak": "уп"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.094,
+     "peak": " cor"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.805,
+    "median_fire": 0.175,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-4aee6d92"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-4aee6d92",
+   "word-final suffix piece of a Romance adverb or a Russian adjective: 'amente' (lent|amente) and 'ий' (горяч|ий); a broad spelling pole that also fires weakly on many other non-English suffixes",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-4aee6d92"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N6826-",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 6826,
+ "pole": "-",
+ "label": "token bag: the word pieces 'ains' (Capt|ains, Vill|ains, Rem|ains), 'ured' (lect|ured, conj|ured, ten|ured) and the Chinese word 工作 ('work'); whole-word forms such as 'captured' or 'Mountains' are silent",
+ "short": "'ains' / 'ured' / 工作 pieces",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N6826_neg/2026-10-30-ChopinDavid-5970b752.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.092,
+     "peak": "ains"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.728,
+     "peak": "ains"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.905,
+     "peak": "ains"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.277,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.089,
+     "peak": "ured"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.101,
+     "peak": "ured"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.584,
+     "peak": "工作"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.498,
+     "peak": "工作"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.018,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.143,
+     "peak": " toss"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.088,
+     "peak": "way"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.192,
+     "peak": " dove"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.028,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.084,
+     "peak": "ill"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.13,
+     "peak": "开始"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.084,
+     "peak": "才"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.388,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-5970b752"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-5970b752",
+   "token bag: the word pieces 'ains' (Capt|ains, Vill|ains, Rem|ains), 'ured' (lect|ured, conj|ured, ten|ured) and the Chinese word 工作 ('work'); whole-word forms such as 'captured' or 'Mountains' are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-5970b752"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

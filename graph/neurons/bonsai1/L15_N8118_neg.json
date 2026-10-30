@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N8118-",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 8118,
+ "pole": "-",
+ "label": "a concrete digital artifact named as the thing an operation acts on (the memory card, the files, the device, the link, the website); the same instructions aimed at people, organisations or abstractions stay quiet",
+ "short": "digital-artifact object noun",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N8118_neg/2026-10-30-ChopinDavid-903d6dbc.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.228,
+     "peak": " drawer"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.222,
+     "peak": " files"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.254,
+     "peak": " send"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.187,
+     "peak": " link"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.048,
+     "peak": " without"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.303,
+     "peak": " firmware"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.146,
+     "peak": " network"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.094,
+     "peak": " reinstall"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": "Before"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.003,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.101,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " taken"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": " notice"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " landlord"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.205,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-903d6dbc"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-903d6dbc",
+   "a concrete digital artifact named as the thing an operation acts on (the memory card, the files, the device, the link, the website); the same instructions aimed at people, organisations or abstractions stay quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-903d6dbc"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

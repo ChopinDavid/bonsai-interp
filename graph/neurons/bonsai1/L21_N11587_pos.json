@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L21/N11587+",
+ "model": "bonsai1",
+ "layer": 21,
+ "index": 11587,
+ "pole": "+",
+ "label": "late piece of a long concatenated identifier or username in code (MakeRelativePathsInFlags|Absolute, myflashgame|base); a dense unit with a 0.2-0.4 background on ordinary prose and short code",
+ "short": "long-identifier tail (dense)",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N11587_pos/2026-10-30-ChopinDavid-5850af67.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.234,
+     "peak": "Format"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.389,
+     "peak": " routing"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.411,
+     "peak": "udio"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.277,
+     "peak": "Serial"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.14,
+     "peak": "class"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.466,
+     "peak": "queen"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.185,
+     "peak": "Toggle"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.176,
+     "peak": "logger"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.148,
+     "peak": "):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.127,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.154,
+     "peak": " Tom"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.29,
+     "peak": " readings"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.151,
+     "peak": " kettle"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.273,
+     "peak": "screen"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.152,
+     "peak": ");"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.169,
+     "peak": ")"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.256,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-5850af67"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-5850af67",
+   "late piece of a long concatenated identifier or username in code (MakeRelativePathsInFlags|Absolute, myflashgame|base); a dense unit with a 0.2-0.4 background on ordinary prose and short code",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-5850af67"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

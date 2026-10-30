@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N9528+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 9528,
+ "pole": "+",
+ "label": "word-final French/Spanish piece 'ien' or 'ens' (paris|ien, anc|ien, ch|ien, musici|ens, c|ien); a dense unit that sits at 0.2-0.5 on most French text",
+ "short": "-ien/-ens piece (dense)",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N9528_pos/2026-10-30-ChopinDavid-c0321b00.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.216,
+     "peak": "as"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.281,
+     "peak": "ien"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.684,
+     "peak": "ien"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.493,
+     "peak": " en"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.238,
+     "peak": " nouveau"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.41,
+     "peak": "ens"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.422,
+     "peak": "ens"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.68,
+     "peak": "ien"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.218,
+     "peak": "as"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.229,
+     "peak": " cour"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.297,
+     "peak": " milieu"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.477,
+     "peak": " en"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.237,
+     "peak": " nouveau"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.286,
+     "peak": " nord"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.237,
+     "peak": " budget"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.329,
+     "peak": " temple"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.719,
+    "median_fire": 0.416,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-c0321b00"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-c0321b00",
+   "word-final French/Spanish piece 'ien' or 'ens' (paris|ien, anc|ien, ch|ien, musici|ens, c|ien); a dense unit that sits at 0.2-0.5 on most French text",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-c0321b00"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
