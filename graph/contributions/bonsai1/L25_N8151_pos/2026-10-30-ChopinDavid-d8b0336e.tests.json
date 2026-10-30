@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d8b0336e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N8151+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N8151",
+   "pole": "+",
+   "label": "framing the reader or subject as a beginner: 'complete beginning guitarist' 0.51, 'first-timers who have never' 0.53, 'completely new to' 0.58, 'even for novice' 0.73, 'little or no experience' 0.26, 'your first time' 0.24; the output promotes novice/beginner/inexperienced; expert framing (0.05-0.09) and the same product without an experience level (0.12) are silent",
+   "fire": [
+    "These lessons are aimed at the complete beginner with no musical background.",
+    "The trail is ideal for first-timers who have never hiked overnight.",
+    "Whether you are totally new to sourdough or have baked for years, start with this loaf.",
+    "Most of the crew had little or no experience in open water.",
+    "The sewing machine is forgiving, even for novice stitchers.",
+    "If this is your first time at the climbing wall, book the induction session.",
+    "The course assumes no prior knowledge of statistics.",
+    "Our beginner classes welcome anyone who has never held a racket."
+   ],
+   "quiet": [
+    "These lessons are aimed at conservatory students preparing for auditions.",
+    "The trail is ideal for a long weekend in late September.",
+    "Start with this loaf, which bakes in under an hour.",
+    "Most of the crew had spent years in open water.",
+    "The sewing machine is quiet and fits in a small cupboard.",
+    "If you visit the climbing wall on Tuesday, the car park is free.",
+    "The course covers regression and time-series methods.",
+    "Our advanced classes are for players with a national ranking."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.8 on the experience-level phrase or the word before it; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "beginner / first-timer framing",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 125, density 0.077%, peaks ' first' x4, ' for' x3, ' are' x3 in 'a complete beginning guitarist', 'for first-timers', 'completely new to', 'had very little or no experience', 'even for novice videographers', 'whether you are a beginner or advanced', 'your first time visiting'. Promotes ' novice', ' inexperienced', ' beginner', ' newbie'. Probe: 'even for novice videographers' 0.728 (' for'), 'completely new to' 0.577, 'first-timers who have never' 0.534, 'complete beginning guitarist' 0.507, 'little or no experience' 0.257, 'your first time visiting' 0.237; 'professional session guitarist' 0.052, 'years of experience' 0.091, 'easy to handle and weighs' 0.117. Near misses keep the product or course and remove or invert the experience level."
+}

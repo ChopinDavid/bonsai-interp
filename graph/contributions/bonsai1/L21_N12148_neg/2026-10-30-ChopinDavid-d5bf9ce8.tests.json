@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d5bf9ce8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N12148-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N12148",
+   "pole": "-",
+   "label": "a vague placeholder noun closing a list or coordination: 'and some things' 0.77, 'and something that' 0.78, 'y algunas cosas' 0.69; a specific noun in the same slot is silent (0.02), and 'some kind of innovation' 0.04 / 'something interesting' 0.21 / 'way of life' 0.27 are weak",
+   "fire": [
+    "He packed a tent, a stove and some things for the kids.",
+    "The festival offers music, food stalls and something for everyone.",
+    "Every story needs a hero, a villain and something at stake.",
+    "She sold the car, the furniture and various things she no longer needed.",
+    "Compraron una mesa, dos sillas y algunas cosas para la cocina.",
+    "The box held old letters, photographs and other things from her childhood.",
+    "They talked about work, the weather and things like that.",
+    "We need volunteers, a venue and something to serve as a stage."
+   ],
+   "quiet": [
+    "He packed a tent, a stove and two sleeping bags for the kids.",
+    "The festival offers music, food stalls and a fireworks display.",
+    "Every story needs a hero, a villain and a setting.",
+    "She sold the car, the furniture and the piano she no longer played.",
+    "Compraron una mesa, dos sillas y una lámpara para la cocina.",
+    "The box held old letters, photographs and a silver locket from her childhood.",
+    "They talked about work, the weather and the election.",
+    "We need volunteers, a venue and a microphone for the speaker."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.8 on things/something/cosas; near misses with specific nouns under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "vague noun closing a list (things / something / cosas)",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 23.0, density 0.20%, peaks ' something' x4, ' things' x2, ' life' x2, ' various' x2, ' cosas', ' innovation' in 'buy the food and some things her children need', 'algunas cosas mas', 'a time, and something that is shown'. Probe: 'and some things the children needed' 0.774, 'a time, and something that happens' 0.779, 'algunas cosas más' 0.688; 'some kind of innovation' 0.040, 'something interesting to do' 0.211, 'a way of life' 0.274; 'three notebooks' 0.020, 'a jazz concert' 0.019, 'a profitable business' 0.033. Fire items end a list with things/something/cosas; near misses end the same lists with a concrete noun."
+}

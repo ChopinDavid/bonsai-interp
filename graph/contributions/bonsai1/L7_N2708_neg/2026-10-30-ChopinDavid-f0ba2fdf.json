@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-f0ba2fdf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N2708-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:33:10+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N2708_neg/2026-10-30-ChopinDavid-f0ba2fdf.tests.json"
+ },
+ "label": "polysemantic, weak unit (max 4.6): (a) the idiom 'the time came / its time has come' (0.59-0.92 on came/come) and (b) the ambient temperature of a season or body of water ('the heat is on' 0.83, 'hot part of the summer' 0.77, 'warmer waters' 0.61); 'the cold is on' also fires (0.61), so (b) is temperature rather than heat; 'when the letter came' 0.14 and 'quiet part of the summer' 0.29 are weaker",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N2708_neg/2026-10-30-ChopinDavid-f0ba2fdf.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.863,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.282,
+     "peak": " part"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.61,
+     "peak": " waters"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.833,
+     "peak": " came"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.553,
+     "peak": " come"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.789,
+     "peak": " water"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.36,
+     "peak": " part"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.136,
+     "peak": " fish"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.135,
+     "peak": " river"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.302,
+     "peak": " part"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " capital"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.077,
+     "peak": " her"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.683,
+     "peak": " water"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.114,
+     "peak": " part"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.582,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "time has come / seasonal and water temperature",
+ "unit_kind": "sparse feature",
+ "confidence": 0.4,
+ "notes": "Card: max 4.56, density 0.25%, leak 11%, peaks ' on' x3, ' fire' x3, ' time' x3, ' came' x2, ' come' x2, ' waters' x2 in 'The heat is on', 'As the time came', 'its time has not yet come', 'hot part of summer', 'warmer waters', 'cool water temperatures', 'keep up of fire'. Probe: 'its time has not yet come' 0.919, 'The heat is on' 0.834, 'hot part of the summer' 0.774, 'Warmer waters' 0.614, 'When the time came' 0.594; 'The cold is on' 0.613 (temperature, not heat), 'quiet part of the summer' 0.290, 'When the letter came' 0.135, 'kept up a fire' 0.088. Two readings are kept in one label because both are on the card and neither covers it alone.",
+ "selection": "random draw"
+}

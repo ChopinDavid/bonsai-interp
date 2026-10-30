@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-d8b0336e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N8151+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:33:06+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N8151_pos/2026-10-30-ChopinDavid-d8b0336e.tests.json"
+ },
+ "label": "framing the reader or subject as a beginner: 'complete beginning guitarist' 0.51, 'first-timers who have never' 0.53, 'completely new to' 0.58, 'even for novice' 0.73, 'little or no experience' 0.26, 'your first time' 0.24; the output promotes novice/beginner/inexperienced; expert framing (0.05-0.09) and the same product without an experience level (0.12) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N8151_pos/2026-10-30-ChopinDavid-d8b0336e.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.427,
+     "peak": " no"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.505,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.555,
+     "peak": " totally"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.409,
+     "peak": " no"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.603,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.247,
+     "peak": " your"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.304,
+     "peak": " no"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.669,
+     "peak": " has"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.072,
+     "peak": "atory"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.198,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.086,
+     "peak": " had"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.185,
+     "peak": " with"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.466,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "beginner / first-timer framing",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 125, density 0.077%, peaks ' first' x4, ' for' x3, ' are' x3 in 'a complete beginning guitarist', 'for first-timers', 'completely new to', 'had very little or no experience', 'even for novice videographers', 'whether you are a beginner or advanced', 'your first time visiting'. Promotes ' novice', ' inexperienced', ' beginner', ' newbie'. Probe: 'even for novice videographers' 0.728 (' for'), 'completely new to' 0.577, 'first-timers who have never' 0.534, 'complete beginning guitarist' 0.507, 'little or no experience' 0.257, 'your first time visiting' 0.237; 'professional session guitarist' 0.052, 'years of experience' 0.091, 'easy to handle and weighs' 0.117. Near misses keep the product or course and remove or invert the experience level.",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-48110b5d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N8807-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N8807",
+   "pole": "-",
+   "label": "the means-of-action slot in instructions and procedures: 'by' + gerund or means ('by sending' 0.72, 'by calling' 0.85, 'by posting' 0.40, 'by a vote of' 0.86), 'please send an email to' 0.46 and 'Please RSVP' 0.52; 'by' as passive agent (0.003), location (0.003) or deadline (0.12) is silent",
+   "fire": [
+    "Members can cancel at any time by writing to the secretary.",
+    "The landlord may change the rules by posting a notice in the lobby.",
+    "Confirm your place by calling the office before Friday.",
+    "The council approved the budget by a vote of seven to two.",
+    "To unsubscribe, send an email to the address at the bottom of this page.",
+    "Please RSVP by replying to this message.",
+    "You can reach the helpline by dialling the number on your card.",
+    "Report a fault by filling in the online form."
+   ],
+   "quiet": [
+    "The secretary was elected by the members last spring.",
+    "The notice in the lobby was written by the landlord.",
+    "The office is by the station, next to the bank.",
+    "The council will approve the budget by the end of the month.",
+    "The address at the bottom of the page belongs to the publisher.",
+    "This message was sent by an automated system.",
+    "The helpline is open by day and closed at night.",
+    "The fault was found by an engineer on Monday."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on ' by' / send / RSVP; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "by + means (by sending / by calling)",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 101, density 0.30%, peaks ' by' x13, ' send' x4, ' sending' x2, ' to' x2, ' rat', ' RSVP' in 'by sending a withdrawal of consent form', 'by posting the amended Terms', 'ratified ... by a vote of 89-2', 'by calling the number', 'by writing signed by him', 'please send an email to', 'Send your comments by e-mail', 'Please RSVP'. + pole is ' return' x31. Probe: 'ratified the charter by a vote of' 0.858, 'advise the hotel directly by calling' 0.847, 'by sending a withdrawal form' 0.717, 'Please RSVP' 0.515, 'please send an email to' 0.462, 'by posting the new version' 0.399; 'written by a retired teacher' 0.003, 'stands by the river' 0.003, 'by Friday' 0.117. Near misses reuse the same nouns with agent, locative or deadline 'by'."
+}

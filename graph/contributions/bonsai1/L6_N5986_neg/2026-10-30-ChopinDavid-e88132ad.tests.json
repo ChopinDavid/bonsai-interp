@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e88132ad",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N5986-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N5986",
+   "pole": "-",
+   "label": "polysemantic, weak unit (max 3.5, leak 33%): (a) ' not' right after can/can't/could in a rhetorical double negative ('I can't not talk about it' 0.75, 'how could you not be' 0.66, 'you can't not click' 0.60, 'how can you not like' 0.37) and (b) the fruit pieces ol|ives (0.84) and ' grapes' (0.63) in food lists; the same sentences without 'not' (0.06-0.10) or with cheese instead of olives (0.04) are silent",
+   "fire": [
+    "After a trailer like that, you can't not watch the film.",
+    "How can you not love a dog that greets you like that?",
+    "Seriously, how could you not try the dessert?",
+    "Once you've read the first chapter you can't not finish it.",
+    "The salad came with feta, olives and a handful of mint.",
+    "We bought bread, olives and a bottle of local oil at the market.",
+    "The valley grows cherries, grapes and walnuts.",
+    "How can you not be curious about what happens next?"
+   ],
+   "quiet": [
+    "After a trailer like that, you have to watch the film.",
+    "How can you love a dog that barks all night?",
+    "Seriously, you should try the dessert.",
+    "Once you've read the first chapter you will finish it.",
+    "The salad came with feta, cucumber and a handful of mint.",
+    "We bought bread, cheese and a bottle of local oil at the market.",
+    "The valley grows cherries, plums and walnuts.",
+    "I did not watch the film after that trailer."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9; near misses under 0.15; 'did not' (not after do) is included as a near miss and may leak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "can('t) not + olives/grapes",
+ "unit_kind": "sparse feature",
+ "confidence": 0.45,
+ "notes": "Card: max 3.45, density 0.62%, leak 33%, peaks ' not' x6, 'ives' x4, ' coma' x4, ' grapes' x2, 'apes' in 'can't not talk', 'how can you not like Python', 'how could you not be', 'can't not click', 'ol|ives' in snack lists, 'Gr|apes', 'apples, peaches, grapes'. Probe: olives 0.843/0.842 (ives), 'can't not talk' 0.754, 'how could you not be' 0.661, 'grapes' 0.627, 'can't not click' 0.602, 'how can you not like' 0.367; 'I have to talk' 0.097, 'how can you like' 0.056, 'cheese and cured meats' 0.041. Tokenizer: ' olives' = ' ol'+'ives', ' grapes' is one token; 'coma' was not probed and is not in the test."
+}

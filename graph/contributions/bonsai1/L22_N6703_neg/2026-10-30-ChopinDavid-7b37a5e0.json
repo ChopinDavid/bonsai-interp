@@ -1,0 +1,180 @@
+{
+ "id": "2026-10-30-ChopinDavid-7b37a5e0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N6703-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:34:02+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N6703_neg/2026-10-30-ChopinDavid-7b37a5e0.tests.json"
+ },
+ "label": "the Chinese perfective / change-of-state particle 了 after a verb or at the end of a clause (煮了 0.72, 锁了 0.78, 离了婚 0.72, 入睡了 0.58, 放弃了 0.55, 算了 0.39), as its own token or merged into a verb+了 token; the same sentences with 过, 在, 没有 or no aspect marker are silent (0.02-0.07)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N6703_neg/2026-10-30-ChopinDavid-7b37a5e0.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.607,
+     "peak": "吃了"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.304,
+     "peak": "听完"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.386,
+     "peak": "了"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.364,
+     "peak": "完了"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.489,
+     "peak": "了"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.485,
+     "peak": "走了"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.428,
+     "peak": "了一个"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.615,
+     "peak": "了"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.055,
+     "peak": "我们在"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.0,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.032,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": "紧张"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": "一个"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.102,
+     "peak": "吧"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.457,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Chinese particle 了",
+ "unit_kind": "lexical",
+ "confidence": 0.7,
+ "notes": "Card: max 126, density 0.10%, peaks '了' x25, '了一' x2, '算了', '下了', '看了' in 煮了吃, 入睡了, 锁了, 签名了, 乾了, 放弃了, 离了婚, 算了, 塞了, 下了. + pole is broad gate-closed (4.2%). Probe: 锁了 0.776, 煮了鱼 0.718, 离了婚 0.724, 入睡了 0.577, 放弃了 0.548 (merged token), 算了 0.393; 煮鱼吃 0.066, 跑步 0.017, 去过 0.061, 正在看书 0.015. Trigger declared as the exact tokens the tokenizer produces for 了 and the verb+了 merges used in the card and tests.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   "了",
+   "了一",
+   "了一个",
+   "算了",
+   "下了",
+   "看了",
+   "看了一",
+   "吃了",
+   "去了",
+   "走了",
+   "等了",
+   "完了",
+   "放弃了",
+   "哭了",
+   "买了",
+   "忘了",
+   "来了",
+   "到了",
+   "成了",
+   "有了",
+   "死了",
+   "好了",
+   "开了",
+   "过了"
+  ]
+ }
+}

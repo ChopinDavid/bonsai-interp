@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1a535ff0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N10967-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N10967",
+   "pole": "-",
+   "label": "LeetCode-style Python solution code: 'class Solution' docstrings with ':type s: str' lines (0.92), 'return \"invalid-size\"' error-string lines (0.87), '# TODO: Use ...' hint comments (0.67), a plain word_break solution (0.54 on the parameter comma) and comments naming variables (0.37); a numpy script (0.06), prose (0.03) and non-Python code are weak",
+   "fire": [
+    "class Solution(object):\n    def twoSum(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: List[int]\n        \"\"\"",
+    "    if len(digits) != 16:\n        return 'invalid-length'\n    prefix = digits[0:2]",
+    "    # keep the running maximum in the best variable\n    # and update it whenever a larger value appears\n    best = max(best, current)",
+    "    # TODO:\n    # Use 'zip(keys, values)' to build\n    # the (key, value) pairs",
+    "    if user_choice == None:\n        print \"please enter a choice\"\n        exit(1)",
+    "class Solution:\n    def isPalindrome(self, x):\n        s = str(x)\n        return s == s[::-1]",
+    "def max_profit(prices):\n    low = prices[0]\n    best = 0\n    for p in prices:\n        low = min(low, p)\n        best = max(best, p - low)\n    return best",
+    "Note: You may assume that each input has exactly one solution, and you may not use the same element twice."
+   ],
+   "quiet": [
+    "import pandas as pd\ndf = pd.read_csv('sales.csv')\nprint(df.describe())",
+    "function twoSum(nums, target) {\n  const seen = new Map();\n  for (let i = 0; i < nums.length; i++) {\n    seen.set(nums[i], i);\n  }\n}",
+    "SELECT name, total FROM orders WHERE total > 100 ORDER BY total DESC;",
+    "#!/bin/bash\nfor f in *.log; do\n  gzip \"$f\"\ndone",
+    "import matplotlib.pyplot as plt\nplt.plot(x, y)\nplt.savefig('out.png')",
+    "The interview lasted an hour and covered mostly system design.",
+    "fn is_palindrome(x: i64) -> bool {\n    let s = x.to_string();\n    s.chars().rev().collect::<String>() == s\n}",
+    "<ul>\n  <li>Home</li>\n  <li>About</li>\n</ul>"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9; near misses under 0.2; the numpy/pandas scripts are the critical near misses and the label may turn out to be 'Python functions' more broadly",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "LeetCode-style Python solution code",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 15.7, density 0.048%, peaks '.\\n' x3, 'type' x2, ' False' x2, \"'\\n\", ' \"\"\"\\n', ' variable' in ':type s: str' docstrings of class Solution, \"return 'invalid-size'\\n\", '# the next_x variable', '# TODO: Use enumerate(...) to get', 'Note: All words have been converted', 'print \"input wrong items\"\\n'. Probe: ':type s: str' docstring 0.919 (type), \"return 'invalid-size'\\n\" 0.865, '# TODO: Use ... to get' 0.672 (' to'), plain word_break function 0.535 (','), '# ... next_x variable' 0.368, print \"input wrong items\" 0.275, 'Note: All words' 0.161, numpy script 0.063, recipe prose 0.025. The plain solution firing at 0.54 means the trigger is the genre of code rather than the docstring; near misses are data-science Python, other languages and prose."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-75d8da5d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N8523+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N8523",
+   "pole": "+",
+   "label": "reader-directed expect/ask/bet frames: 'don't expect X to', 'Expect to see', 'Ask me how I know', 'you can bet', 'if you ask X, he would say' (0.29-0.76); the same content as narrative statement or past-tense 'expected/asked' is silent (0.00-0.05)",
+   "fire": [
+    "When the new tax kicks in, don't expect shops to lower their prices.",
+    "With a rookie quarterback, expect to see a lot of short passes this season.",
+    "If you ask my grandmother, she would say the soup needs more salt.",
+    "After that result, you can bet the coach noticed the defence.",
+    "Do ask the guide about the caves on the far side of the island.",
+    "Once the frost comes, don't expect the tomatoes to recover.",
+    "Lose a week of training and the gains vanish. Ask me how I know.",
+    "Expect this decision to become a sore point for years."
+   ],
+   "quiet": [
+    "When the new tax kicks in, shops will probably not lower their prices.",
+    "With a rookie quarterback, the team threw a lot of short passes this season.",
+    "My grandmother said the soup needed more salt.",
+    "After that result, the coach clearly noticed the defence.",
+    "The guide told us about the caves on the far side of the island.",
+    "Once the frost came, the tomatoes never recovered.",
+    "I lost a week of training and the gains vanished.",
+    "The decision became a sore point for years."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on expect/ask/bet or the word after; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "don't expect / ask me / you can bet",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 25.3, density 0.28%, peaks ' me' x7, ' expect' x5, ' Expect' x5, ' for' x3, ' hear' x2 in 'don't expect ballads', 'If you ask Mr. CSI,', 'Stay away from me', 'you can bet', 'Expect this to become', 'Ask me how I know'. Probe: 'don't expect airlines' 0.759, 'you can bet' 0.620, 'Expect to see' 0.528, 'Ask me how' 0.463, 'If you ask my brother' 0.352, 'Do ask the staff about' 0.292; 'will not cut fares' 0.030, 'I expected the train' 0.001, 'She asked him about' 0.051. The pole reads the writer addressing the reader's expectations, not the verbs expect/ask as such."
+}

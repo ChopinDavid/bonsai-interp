@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f0ba2fdf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N2708-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N2708",
+   "pole": "-",
+   "label": "polysemantic, weak unit (max 4.6): (a) the idiom 'the time came / its time has come' (0.59-0.92 on came/come) and (b) the ambient temperature of a season or body of water ('the heat is on' 0.83, 'hot part of the summer' 0.77, 'warmer waters' 0.61); 'the cold is on' also fires (0.61), so (b) is temperature rather than heat; 'when the letter came' 0.14 and 'quiet part of the summer' 0.29 are weaker",
+   "fire": [
+    "By July the heat is on and the river runs low.",
+    "In the warm part of the year the lake is full of swimmers.",
+    "Cooler waters move in from the north each autumn.",
+    "When her time came, she faced it calmly.",
+    "The old man said his time had come.",
+    "Spring's cold water keeps the visibility high for divers.",
+    "The hottest part of the day is best spent in the shade.",
+    "Warmer seas are pushing the fish further north."
+   ],
+   "quiet": [
+    "By July the festival is on and the river is full of boats.",
+    "In the busy part of the year the shop stays open late.",
+    "New rules move in from the capital each autumn.",
+    "When her sister came, she greeted her calmly.",
+    "The old man said his son had come.",
+    "Spring's clear water keeps the visibility high for divers.",
+    "The quietest part of the day is best spent reading.",
+    "Rough seas are pushing the boats back to port."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9; near misses mostly under 0.2, with the 'X is on' and 'part of the year' frames possibly leaking to 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "time has come / seasonal and water temperature",
+ "unit_kind": "sparse feature",
+ "confidence": 0.4,
+ "notes": "Card: max 4.56, density 0.25%, leak 11%, peaks ' on' x3, ' fire' x3, ' time' x3, ' came' x2, ' come' x2, ' waters' x2 in 'The heat is on', 'As the time came', 'its time has not yet come', 'hot part of summer', 'warmer waters', 'cool water temperatures', 'keep up of fire'. Probe: 'its time has not yet come' 0.919, 'The heat is on' 0.834, 'hot part of the summer' 0.774, 'Warmer waters' 0.614, 'When the time came' 0.594; 'The cold is on' 0.613 (temperature, not heat), 'quiet part of the summer' 0.290, 'When the letter came' 0.135, 'kept up a fire' 0.088. Two readings are kept in one label because both are on the card and neither covers it alone."
+}

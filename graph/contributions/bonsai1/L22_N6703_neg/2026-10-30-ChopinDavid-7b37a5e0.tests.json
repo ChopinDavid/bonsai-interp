@@ -1,0 +1,76 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7b37a5e0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N6703-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N6703",
+   "pole": "-",
+   "label": "the Chinese perfective / change-of-state particle 了 after a verb or at the end of a clause (煮了 0.72, 锁了 0.78, 离了婚 0.72, 入睡了 0.58, 放弃了 0.55, 算了 0.39), as its own token or merged into a verb+了 token; the same sentences with 过, 在, 没有 or no aspect marker are silent (0.02-0.07)",
+   "fire": [
+    "昨天晚上我们在饭馆吃了火锅。",
+    "她听完电话就哭了。",
+    "我们等了两个小时，车才来。",
+    "他终于把那本书看完了。",
+    "这次我把钥匙忘在家里了。",
+    "老板走了以后，大家都放松下来。",
+    "妹妹买了一个新手机。",
+    "下雨了，我们回家吧。"
+   ],
+   "quiet": [
+    "昨天晚上我们在饭馆吃火锅。",
+    "她一边听电话一边哭。",
+    "我们每次都要等两个小时。",
+    "他正在看那本书。",
+    "我的钥匙总是放在家里。",
+    "老板在的时候，大家都很紧张。",
+    "妹妹想买一个新手机。",
+    "外面在下雨，我们回家吧。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on the 了 token (or the merged verb+了 token); near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Chinese particle 了",
+ "unit_kind": "lexical",
+ "confidence": 0.7,
+ "notes": "Card: max 126, density 0.10%, peaks '了' x25, '了一' x2, '算了', '下了', '看了' in 煮了吃, 入睡了, 锁了, 签名了, 乾了, 放弃了, 离了婚, 算了, 塞了, 下了. + pole is broad gate-closed (4.2%). Probe: 锁了 0.776, 煮了鱼 0.718, 离了婚 0.724, 入睡了 0.577, 放弃了 0.548 (merged token), 算了 0.393; 煮鱼吃 0.066, 跑步 0.017, 去过 0.061, 正在看书 0.015. Trigger declared as the exact tokens the tokenizer produces for 了 and the verb+了 merges used in the card and tests.",
+ "trigger": {
+  "tokens": [
+   "了",
+   "了一",
+   "了一个",
+   "算了",
+   "下了",
+   "看了",
+   "看了一",
+   "吃了",
+   "去了",
+   "走了",
+   "等了",
+   "完了",
+   "放弃了",
+   "哭了",
+   "买了",
+   "忘了",
+   "来了",
+   "到了",
+   "成了",
+   "有了",
+   "死了",
+   "好了",
+   "开了",
+   "过了"
+  ]
+ }
+}

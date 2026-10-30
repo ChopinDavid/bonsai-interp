@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c75418e6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N8761-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N8761",
+   "pole": "-",
+   "label": "the imperial civil-service examination system of East Asia: 'imperial examination' 1.97, 科举 0.99, 'Ming examinations' 1.39 (eight-legged essay), 'jinshi degree' 1.28 (shi), and more weakly a European 'state examination' for office (0.41); modern school and driving tests (0.01-0.04), court history without examinations (0.13) and 'civil officials' alone (0.03) are silent",
+   "fire": [
+    "Candidates who passed the imperial examinations could expect a post in the bureaucracy.",
+    "科举考试在隋朝开始，延续了一千多年。",
+    "The eight-legged essay dominated the Qing examination halls.",
+    "After earning the juren degree, he taught in a provincial academy.",
+    "The civil service examinations tested knowledge of the Confucian classics.",
+    "Scholar-officials who had passed the palace examination filled the highest posts.",
+    "Korea adopted the gwageo examinations to select its officials.",
+    "In 1905 the court abolished the examination system altogether."
+   ],
+   "quiet": [
+    "Candidates who passed the interview could expect an offer within a week.",
+    "隋朝修建了大运河，连接南北。",
+    "The Qing court moved its summer residence to Chengde.",
+    "After earning his doctorate, he taught in a provincial university.",
+    "The entrance test covered algebra and reading comprehension.",
+    "Generals who had won the frontier war filled the highest posts.",
+    "Korea adopted the metric system in the twentieth century.",
+    "In 1905 the court abolished the salt tax altogether."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-2.0 on examination(s)/科举/degree names; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "imperial examination system",
+ "unit_kind": "sparse feature",
+ "confidence": 0.65,
+ "notes": "Card: max 12.8, density 0.016%, peaks ' examination' x4, ' imperial' x2, ' examinations' x2, 举, 股, man (Ten|man) in 改革科举, 'imperial competitive examination', 废八股, Tenman Tenjin, 文臣, 'state examination in 1846', 'scholar-officials'. + pole is museums/collections. Probe: 'imperial examination and entered the civil service' 1.974, 'Ming examinations' 1.389, 'jinshi degree' 1.280, 科举 0.992, 'state examination in Vienna' 0.408; 'civil officials and military officers' 0.031, 'final exams in June' 0.008, 'Ming court built a new palace' 0.130, 'driving test' 0.043. Near misses keep the dynasty, the career or the test and drop the examination system."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-c5423cb9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N1546+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T09:32:27+00:00",
+ "recipe": {
+  "toolchain_commit": "c25795b1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N1546_pos/2026-10-30-ChopinDavid-c5423cb9.tests.json"
+ },
+ "label": "the trailing piece of a word the tokenizer splits into stem + ending: Japanese okurigana after a kanji piece (曇|り 0.78, 狭|き 0.73, 頑張|り 0.49), a Korean final syllable (가까|이 0.77), a Russian suffix piece (Гвозд|ика 1.04) and the last piece of a split foreign name (Ndick|a 0.98); words that are one token or whose ending merges with the stem (落ち 0.06, 晴|れ 0.26) are weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N1546_pos/2026-10-30-ChopinDavid-c5423cb9.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.018,
+     "peak": "り"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.305,
+     "peak": "り"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.405,
+     "peak": "り"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.269,
+     "peak": "い"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.114,
+     "peak": "어"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.421,
+     "peak": "이"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.022,
+     "peak": "ика"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.011,
+     "peak": "Real"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": "を"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " summer"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": "は"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.052,
+     "peak": "帰り"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": "에"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " работает"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " John"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": " will"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.883,
+    "median_fire": 0.192,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "c25795b1",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "trailing piece of a split word (CJK/Cyrillic)",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 9.4, density 0.054%, peaks り x6, き x5, 이 x4, い x3, ika x2, ки x2 in 曇り, 狭き, 頑張り, 가까이, Гвоздика, Ndicka, zhorika. Probe: 曇り 0.776 (り), 狭き門 0.728 (き), 頑張りたい 0.494 (り), 가까이 0.765 (이), Гвоздика 1.040 (ика), Ndicka 0.976 (a); 落ちました 0.057 (落ち is one token), 晴れ 0.259, English control 0.010. Splits checked with the tokenizer: 祭|り, 走|り, 香|り, 笑|い, 멀|리 and 깊|이 (after byte pieces, like the probed 가까이), физ|ика, Tchouamen|i; ' 많이' was dropped because it is one token. Near misses use 読み, 大きい, 早く, 帰り, ' 집', ' сегодня', ' работает', ' дома' (single tokens) and English; byte-split Korean verbs end in the suffix token '어요', which fire items also contain.",
+ "selection": "random draw"
+}

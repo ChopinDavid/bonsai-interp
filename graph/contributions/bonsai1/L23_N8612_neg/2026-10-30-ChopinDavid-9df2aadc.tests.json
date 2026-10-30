@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9df2aadc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N8612-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N8612",
+   "pole": "-",
+   "label": "indoor-air safety: enclosed spaces, ventilation and air conditioning ('in an enclosed space such as a garage' 1.06, 'closed vehicles' 0.70, 'without adequate ventilation ... carbon monoxide' 0.65, 'pressurized and air conditioned' 0.79, 'well ventilated' 0.73, 'ventilating the attic' 0.56); a sealed envelope (0.01), roof repairs (0.04) and a garage described as storage (0.04) are silent",
+   "fire": [
+    "Charcoal grills must never be used inside a tent or any enclosed area.",
+    "Leaving a dog in a parked car on a hot day can be fatal within minutes.",
+    "Install a carbon monoxide alarm near every fuel-burning appliance.",
+    "The spray booth is fitted with an extractor fan to remove fumes.",
+    "Open a window when using solvent-based paint indoors.",
+    "Crawl spaces need vents so that moisture does not build up.",
+    "On long-haul aircraft the cabin air is recirculated through filters.",
+    "Running a petrol engine in a basement workshop fills it with exhaust gas."
+   ],
+   "quiet": [
+    "Charcoal grills should be cleaned with a wire brush after each use.",
+    "Leaving a dog alone all day can lead to chewed furniture.",
+    "Install a deadbolt on every exterior door.",
+    "The spray booth is painted bright yellow so it is easy to find.",
+    "Use a roller for solvent-based paint on large walls.",
+    "Crawl spaces need insulation so that pipes do not freeze.",
+    "On long-haul aircraft the meals are served twice.",
+    "Running a petrol engine at full throttle wears the bearings quickly."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.1 on enclosed/ventilat-/air words or the word after them; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "enclosed spaces and ventilation",
+ "unit_kind": "sparse feature",
+ "confidence": 0.65,
+ "notes": "Card: max 74, density 0.22%, peaks ' the', ' enclosed' x2, ' sealed' x2, ' closed', ' without' in 'ASHRAE Fundamentals', 'engines running in an enclosed space like a garage', 'alone in closed vehicles', 'semi-enclosed spaces without adequate ventilation', 'Heating, Ventilation and Air Conditioning', 'cabin is pressurized', 'ventilate their home's attic', 'carbon monoxide', 'well ventilated'. + pole suppresses ' air', ' ventilation', ' breathable'. Probe: 'generator in an enclosed space' 1.063, 'pressurized and air conditioned' 0.791, 'well ventilated' 0.726, 'closed vehicles, even' 0.700, 'without adequate ventilation' 0.652, 'Ventilating the attic' 0.559; 'sealed envelope' 0.007, 'roof shingles' 0.039, 'garage has room for two cars' 0.038. Near misses keep the appliance, vehicle, building or aircraft and drop the air or ventilation angle."
+}

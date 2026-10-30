@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-36c8f4c2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N6098-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N6098",
+   "pole": "-",
+   "label": "the opening of an explanation clause: the token after because / reasoned that / find it strange that (0.24-0.31), the comma that closes a fronted 'Because ...,' clause (0.52) and the German 'Aus ... Gründen' (0.57); the same content joined with 'and' or stated plainly is silent (0.03-0.09)",
+   "fire": [
+    "# the cache is empty because we cleared it in setUp",
+    "The bridge was closed because with the river this high the piers are unsafe.",
+    "The mayor reasoned that the market would recover by spring.",
+    "Because the tank was leaking, we moved the fish to a bucket.",
+    "I find it odd that nobody has mapped the cave yet.",
+    "Aus finanziellen Gründen wurde das Projekt verschoben.",
+    "Since the road floods every winter, the farmers keep a boat.",
+    "The sample was discarded because the label had come off."
+   ],
+   "quiet": [
+    "# the cache is empty and the test starts from scratch",
+    "The bridge was closed, and the river rose above the piers.",
+    "The mayor said the market would recover by spring.",
+    "The tank was leaking and we moved the fish to a bucket.",
+    "Nobody has mapped the cave yet.",
+    "Das Projekt wurde auf nächstes Jahr verschoben.",
+    "The road floods every winter and the farmers keep a boat.",
+    "The sample was discarded on Tuesday afternoon."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.6; near misses under 0.15; a partial or exploratory-looking result is possible because single-clause 'because X' items scored only 0.24-0.26",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "start of an explanation after because/that",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 7.8, density 0.57%, peaks ',' x5, ' we' x2, ' because' x2, ' that' x2 in '# we should check', 'because we patched out', 'rate because with the current peg', 'reasoned that', 'bait, we get', 'Aus zeitlichen Gründen', 'strange that'. Probe: 'Aus zeitlichen Gründen' 0.570 (en), 'Because we use corn for bait, we' 0.522 (','), 'reasoned that' 0.308, 'strange that' 0.261, 'because with' 0.251, '# ... because we' 0.237; 'and Brace sent' 0.085, 'bait, and we' 0.026, plain 0.028. The + pole peaks on because/so/therefore and promotes ' because', so the pair reads cause-marking words (+) against the clause that follows them (-)."
+}

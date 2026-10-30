@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c5423cb9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N1546+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N1546",
+   "pole": "+",
+   "label": "the trailing piece of a word the tokenizer splits into stem + ending: Japanese okurigana after a kanji piece (曇|り 0.78, 狭|き 0.73, 頑張|り 0.49), a Korean final syllable (가까|이 0.77), a Russian suffix piece (Гвозд|ика 1.04) and the last piece of a split foreign name (Ndick|a 0.98); words that are one token or whose ending merges with the stem (落ち 0.06, 晴|れ 0.26) are weak",
+   "fire": [
+    "今年の夏祭りは八月に行われます。",
+    "朝の走りは気持ちがいいです。",
+    "この花の香りが大好きです。",
+    "子供たちの笑いが聞こえた。",
+    "학교에서 멀리 떨어진 곳에 살아요.",
+    "그는 깊이 생각했어요.",
+    "В школе физика была её любимым предметом.",
+    "Real Madrid signed midfielder Aurélien Tchouameni from Monaco."
+   ],
+   "quiet": [
+    "今日は本を読みます。",
+    "The midfielder joined from Monaco in the summer.",
+    "この本はとても大きい。",
+    "早く家に帰りたい。",
+    "그는 어제 집에 갔어요.",
+    "Она сегодня работает дома.",
+    "The club signed defender John Stones last summer.",
+    "The forecast says it will clear up tomorrow."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.0 on the trailing piece; near misses (single-token or stem-merged words) under 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "trailing piece of a split word (CJK/Cyrillic)",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 9.4, density 0.054%, peaks り x6, き x5, 이 x4, い x3, ika x2, ки x2 in 曇り, 狭き, 頑張り, 가까이, Гвоздика, Ndicka, zhorika. Probe: 曇り 0.776 (り), 狭き門 0.728 (き), 頑張りたい 0.494 (り), 가까이 0.765 (이), Гвоздика 1.040 (ика), Ndicka 0.976 (a); 落ちました 0.057 (落ち is one token), 晴れ 0.259, English control 0.010. Splits checked with the tokenizer: 祭|り, 走|り, 香|り, 笑|い, 멀|리 and 깊|이 (after byte pieces, like the probed 가까이), физ|ика, Tchouamen|i; ' 많이' was dropped because it is one token. Near misses use 読み, 大きい, 早く, 帰り, ' 집', ' сегодня', ' работает', ' дома' (single tokens) and English; byte-split Korean verbs end in the suffix token '어요', which fire items also contain."
+}
