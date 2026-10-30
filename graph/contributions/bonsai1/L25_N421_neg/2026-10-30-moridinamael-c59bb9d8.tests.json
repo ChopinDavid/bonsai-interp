@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-moridinamael-c59bb9d8",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N421-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:58:28+00:00",
+ "neighbours": [
+  {
+   "unit": "L25/N421",
+   "pole": "-",
+   "label": "a plural or generic noun naming animals, people or machines (cats, divers, goats, tractor) as the thing being discussed; not abstract or mass nouns",
+   "fire": [
+    "Cats sleep for most of the day and wake up hungry at dawn.",
+    "Divers have to come up slowly to avoid getting sick.",
+    "Goats will climb almost anything, including steep cliff faces.",
+    "The old tractor still starts on the first try every spring.",
+    "Nurses often work twelve-hour shifts in busy hospitals.",
+    "Robots now sort most of the packages in that warehouse.",
+    "Wolves hunt in packs and share the kill with the group.",
+    "Farmers in the valley are worried about the late frost."
+   ],
+   "quiet": [
+    "Sleep takes up most of the day, and hunger arrives at dawn.",
+    "Pressure has to be released slowly to avoid getting sick.",
+    "Erosion will wear down almost anything, including steep cliff faces.",
+    "The old engine oil still smells the same every spring.",
+    "Exhaustion often comes with twelve-hour shifts in busy hospitals.",
+    "Automation now handles most of the shipping in that warehouse.",
+    "Hunger drives cooperation, and sharing keeps the group together.",
+    "Concern in the valley is growing about the late frost."
+   ]
+  }
+ ],
+ "predictions": "Unsure: sentence-initial triggers may score low. Expect 5-6/8 fire, 0-1 near misses.",
+ "roles": ["reads bonsai1/L24/N6950+"],
+ "short": "plural/generic animal, person or machine nouns",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-down",
+   "blind-room"
+  ]
+ }
+}
