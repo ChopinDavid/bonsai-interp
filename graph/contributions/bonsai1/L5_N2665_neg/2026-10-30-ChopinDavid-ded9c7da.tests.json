@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ded9c7da",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N2665-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N2665",
+   "pole": "-",
+   "label": "' back' completing 'set … back' (the verb set with back as its particle, idiomatic cost/delay or literal repositioning); also some mid-word spelling pieces (Rot|el)",
+   "fire": [
+    "Replacing the transmission set me back almost four grand.",
+    "A week of bad weather set the whole harvest back by ten days.",
+    "Those tickets will set you back a small fortune if you buy them at the gate.",
+    "The surgeon set the bone back in place and splinted the arm.",
+    "His second knee injury set him back another full season.",
+    "A proper gaming laptop sets you back well over two thousand dollars.",
+    "Losing the main investor set the company back years.",
+    "Remember to set your clocks back an hour on Sunday night."
+   ],
+   "quiet": [
+    "Replacing the transmission cost me almost four grand.",
+    "A week of bad weather pushed the whole harvest back by ten days.",
+    "She came back from the market with two bags of apples.",
+    "The surgeon set the broken arm and wrapped it in plaster.",
+    "He looked back at the house one last time before leaving.",
+    "The back garden needed mowing after the long wet spring.",
+    "They set a new record for the fastest crossing of the channel.",
+    "Back then nobody expected the shop to last a year."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire, 0-1 near misses (pushed back may leak)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "set … back",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: set us/him/you back 0.70-0.85, clock set back 0.68 (literal also fires), setback single token 0.08, came back 0.009, set the vase 0.015, back pain 0.024. Rotel 'el' 0.67: a second spelling-piece trigger family, so coverage is partial."
+}

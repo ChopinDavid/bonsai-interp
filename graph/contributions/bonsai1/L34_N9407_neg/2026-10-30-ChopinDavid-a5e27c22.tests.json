@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a5e27c22",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N9407-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N9407",
+   "pole": "-",
+   "label": "unclear; best guess: observational astronomy prose (exoplanet transits, solar wind, telescopes), peaking on word-start pieces",
+   "fire": [
+    "Each time the exoplanet transits its star, the light curve shows a tiny dip.",
+    "The probe sampled solar wind particles streaming past the magnetosphere.",
+    "A new generation of ground-based telescopes will image planets directly.",
+    "The spectrograph recorded plasma wave emissions from the outer heliosphere.",
+    "Material plowing into the accretion disk heats up and glows in X-rays.",
+    "The radio array resolved the dust ring surrounding the protostar.",
+    "Kepler monitored the brightness of thousands of stars every half hour.",
+    "Interplanetary magnetic field lines twist as the Sun rotates."
+   ],
+   "quiet": [
+    "Each time the valve opens, the pressure gauge shows a tiny dip.",
+    "The sensor sampled air particles streaming past the intake.",
+    "A new generation of lithium batteries will power trucks directly.",
+    "The oscilloscope recorded voltage spikes from the amplifier stage.",
+    "Water flowing into the reservoir heats up and evaporates in summer.",
+    "The microscope resolved the membrane surrounding the cell nucleus.",
+    "The lab monitored the temperature of dozens of samples every half hour.",
+    "Magnetic field lines in the transformer core twist as the current alternates."
+   ]
+  }
+ ],
+ "predictions": "3/8 fire, 0-1 near misses",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "astronomy prose",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: transits 0.62, solar wind 0.49, optical telescopes 0.23, plowing disk 0.13, ALMA ring 0.08; electrons tunnel 0.15, chumps 0.18, soup 0.006. Layer 34 with no single token; the top examples mix astronomy with word-start pieces (ch|umps, so|porta). Test the astronomy reading against matched non-astronomy science."
+}

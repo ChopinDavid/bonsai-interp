@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a2293602",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N1994+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N1994",
+   "pole": "+",
+   "label": "the token beta/Beta as a software release stage or version qualifier (v2beta1, beta build, Development Status :: Beta), plus the version digit after v in API paths",
+   "fire": [
+    "from google.cloud.speech_v1p1beta1 import SpeechClient",
+    "Download the beta build from the releases page and report any crashes.",
+    "    classifiers=['Development Status :: 4 - Beta', 'Programming Language :: Python'],",
+    "The feature is available in beta for a small group of testers.",
+    "The company opened the beta programme to all users last week.",
+    "After six months in beta the editor finally reached a stable release.",
+    "The firmware is labelled 2.0 Beta 3 and should not be installed on production units.",
+    "resp = requests.get('https://api.service.io/v1/orders/' + order_id)"
+   ],
+   "quiet": [
+    "from google.cloud.speech import SpeechClient",
+    "Download the stable build from the releases page and report any crashes.",
+    "    classifiers=['Development Status :: 5 - Production/Stable', 'Programming Language :: Python'],",
+    "The feature is available in preview for a small group of testers.",
+    "url = 'https://compute.googleapis.com/compute/projects/' + project",
+    "After six months of testing the editor finally reached a stable release.",
+    "The firmware is labelled 2.0 RC3 and should not be installed on production units.",
+    "The patient's beta blocker dose was halved after the dizziness started."
+   ]
+  }
+ ],
+ "predictions": "7/8 fire, 1 near miss (beta blocker or finance beta may leak)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "beta release-stage token",
+ "unit_kind": "token-in-context",
+ "confidence": "medium",
+ "notes": "Probe: dialogflow_v2beta1 1.05, beta release 0.51, api/v1 0.42, '4 - Beta' 0.38, finance beta 0.35, beta blocker 0.15, version 2.4.1 0.014, experimental 0.04. Early layer: largely the token, with software sense strongest. One code fire item was replaced before fill because '/beta/' tokenised as /b|eta."
+}

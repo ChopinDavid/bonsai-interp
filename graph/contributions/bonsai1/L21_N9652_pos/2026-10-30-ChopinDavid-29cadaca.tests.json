@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-29cadaca",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N9652+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N9652",
+   "pole": "+",
+   "label": "a placeholder inside a string-interpolation template in code (%s, %d, %(name)s, {}, {name}, ${x}), peaking on the specifier letter or closing brace",
+   "fire": [
+    "logging.info(\"Loaded %d records from %s\", count, path)",
+    "query = \"SELECT * FROM users WHERE id = %s\" % user_id",
+    "greeting = \"Hello, {name}! You have {n} new messages.\".format(name=user, n=count)",
+    "print(f\"Processed {done}/{total} files in {elapsed:.1f}s\")",
+    "printf(\"%s scored %d points\\n\", player, score);",
+    "template = \"%(host)s:%(port)d\" % config",
+    "out.write(\"Row %3d: %-20s %8.2f\\n\" % (i, label, value))",
+    "const line = `${user.name} joined at ${time}`;"
+   ],
+   "quiet": [
+    "logging.info(\"Finished loading records from disk\")",
+    "query = \"SELECT * FROM users WHERE active = 1\"",
+    "greeting = \"Hello, friend! You have new messages.\"",
+    "if count % 2 == 0:\n    print(\"even\")",
+    "puts(\"Game over. Thanks for playing.\");",
+    "path = directory + \"/\" + filename",
+    "The survey found that 62% of respondents preferred the new layout.",
+    "const line = user.name + \" joined at \" + time;"
+   ]
+  }
+ ],
+ "predictions": "7/8 fire, 0-1 near misses (string concatenation with + leaks weakly)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "format-string placeholder",
+ "unit_kind": "context",
+ "confidence": "high",
+ "notes": "Probe: %s/%d 0.63, %(first)s 0.71, %.2f 0.56, f-string 0.49, .format {} 0.58, C sprintf 0.50; concat + 0.22, modulo 0.014, prose 45% 0.004. The placeholder, not the % operator, carries it."
+}

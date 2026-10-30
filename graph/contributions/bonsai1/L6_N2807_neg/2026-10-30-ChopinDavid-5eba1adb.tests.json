@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5eba1adb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N2807-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N2807",
+   "pole": "-",
+   "label": "the token that closes a wh-question clause when it is not a question mark (comma + you ask, semicolon, dash, full stop, newline after a headline question)",
+   "fire": [
+    "Who was Ada Lovelace, you might wonder. She wrote the first published algorithm.",
+    "Which routes are safe in winter; which should be avoided altogether.",
+    "What can a small town do about an empty high street – not much, it seems.",
+    "How did the fire start. Nobody at the inquiry could say.",
+    "Why Do Cats Purr\nScientists still disagree about the answer.",
+    "Where does the money go, I wonder. Certainly not into the roads.",
+    "What is the point of a rule nobody enforces, he asked. The room went quiet.",
+    "Which of these claims is true and which is false; the reader must judge."
+   ],
+   "quiet": [
+    "Who was Ada Lovelace? She wrote the first published algorithm.",
+    "Which routes are safe in winter? Which should be avoided altogether?",
+    "What can a small town do about an empty high street? Not much, it seems.",
+    "How did the fire start? Nobody at the inquiry could say.",
+    "Why Do Cats Purr?\nScientists still disagree about the answer.",
+    "The money goes mostly to salaries, I suspect. Certainly not into the roads.",
+    "There is no point in a rule nobody enforces, he said. The room went quiet.",
+    "Some of these claims are true and some are false; the reader must judge."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire, 0 near misses",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "wh-question closed without ?",
+ "unit_kind": "context",
+ "confidence": "high",
+ "notes": "Probe: 'Who is Daniel Webster, you ask.' 1.08, headline + newline 0.98, 'Why did you choose those events.' 0.83, dash 0.78, semicolon 0.66; the same questions with ? 0.05-0.09, declarative with semicolon 0.011. The + pole is the ? token itself: this pole is the other side, a question boundary that ? did not mark."
+}

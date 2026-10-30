@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5c4b688c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N10202-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T16:20:19+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N10202",
+   "pole": "-",
+   "label": "the end punctuation of a labelled objective or question (OBJECTIVE:/AIM:/Q.) in a structured abstract or Q&A, where a methods or answer label is expected next",
+   "fire": [
+    "OBJECTIVE: To evaluate the long-term outcomes of laparoscopic repair in elderly patients. METHODS: We reviewed all cases treated between 2009 and 2019.",
+    "AIM: To identify predictors of readmission after hip fracture surgery. PATIENTS AND METHODS: Records of 412 patients were analysed.",
+    "Q. What made you decide to open a second bakery? A. Mostly the queues outside the first one.",
+    "PURPOSE: To describe the imaging features and clinical course of this rare lesion. CASE REPORT: A 54-year-old woman presented with back pain.",
+    "OBJECTIVES: To determine whether screen time is associated with sleep duration in adolescents. DESIGN: Cross-sectional survey.",
+    "Q. How many people work on the farm during harvest? A. About thirty, counting the seasonal pickers.",
+    "AIMS: To compare two dosing schedules of the vaccine in healthy adults. METHODS: Randomised open-label trial.",
+    "OBJECTIVE: To assess the diagnostic accuracy of point-of-care ultrasound for pneumothorax. RESULTS: Sensitivity was 91 percent."
+   ],
+   "quiet": [
+    "BACKGROUND: Laparoscopic repair has become the standard approach in elderly patients. It is associated with shorter hospital stays.",
+    "CONCLUSIONS: Readmission after hip fracture surgery is common and often preventable. Discharge planning should begin early.",
+    "She decided to open a second bakery mostly because of the queues outside the first one.",
+    "RESULTS: The lesion appeared as a well-circumscribed mass on imaging. Symptoms resolved after resection.",
+    "BACKGROUND: Screen time has risen sharply among adolescents over the past decade. Sleep duration has fallen.",
+    "About thirty people work on the farm during harvest, counting the seasonal pickers.",
+    "CONCLUSION: Both dosing schedules of the vaccine were well tolerated in healthy adults. Antibody titres were similar.",
+    "RESULTS: Point-of-care ultrasound detected pneumothorax in 42 of 46 cases. Specificity was high."
+   ]
+  }
+ ],
+ "predictions": "5/8 fire, 1-2 near misses",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "end of labelled objective/question",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: OBJECTIVE… rates. 0.57, Q. …? 0.63, PURPOSE… stay. 0.22, BACKGROUND… tumors. 0.07; unlabelled question 0.24, unlabelled statements 0.01-0.04, INTRODUCTION: statement 0.03. The '.' fires from left context only, so the label is about the aim/question clause, not the header that follows."
+}
