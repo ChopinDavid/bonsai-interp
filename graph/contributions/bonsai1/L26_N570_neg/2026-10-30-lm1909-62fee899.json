@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-62fee899",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N570-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:08:11+00:00",
+ "recipe": {
+  "toolchain_commit": "fdd3a7eb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N570_neg/2026-10-30-lm1909-62fee899.tests.json"
+ },
+ "label": "The French ' des' (and similar articles) inside a French title or place name quoted in English text ('the play l'Auberge des Adrets', 'the Musée des Beaux-Arts'); English text naming the same things without French stays quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N570_neg/2026-10-30-lm1909-62fee899.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.127,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.214,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.239,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.219,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.113,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.089,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.33,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.015,
+     "peak": "ques"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " art"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": " novel"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": "He"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " Paris"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": " race"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.02,
+     "peak": " new"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.17,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "fdd3a7eb",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "French ' des' in names inside English text",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.55,
+ "notes": "Card: ' of' x5, ' for' x3, \" '\" x2 (Benjamin Antier’s play, l’Auberge⟦ des⟧ Adrets (1823); NaN =⟦ \"-⟧1.#IND\"). Exploratory probe: 'l'Auberge des Adrets' 1.05; NaN string 0.06.",
+ "selection": "random draw"
+}

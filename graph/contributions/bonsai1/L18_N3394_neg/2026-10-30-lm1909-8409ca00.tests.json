@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8409ca00",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N3394-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N3394",
+   "pole": "-",
+   "label": "Low-confidence guess: a contrasting continuation (' But …' after a sentence, 'else:' in code); broad pole, no clear trigger.",
+   "fire": [
+    "The hotel was cheap. But the beds were awful.",
+    "    if ready:\n        go()\n    else:\n        wait()\n",
+    "The plan looked good. But nobody funded it.",
+    "    if x > 0:\n        return x\n    else:\n        return -x\n",
+    "The test was easy. But many students failed.",
+    "    if found:\n        print('yes')\n    else:\n        print('no')\n",
+    "The car is old. But it still runs well.",
+    "    if user:\n        greet(user)\n    else:\n        login()\n"
+   ],
+   "quiet": [
+    "The hotel was cheap and the beds were fine.",
+    "    ready = True\n    go()\n",
+    "The plan looked good and got funded.",
+    "    x = abs(x)\n    return x\n",
+    "The test was easy and most students passed.",
+    "    found = True\n    print('yes')\n",
+    "The car is old and still runs well.",
+    "    user = get_user()\n    greet(user)\n"
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.15; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "contrast 'But' / 'else:' (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Broad pole (1.9% of tokens above 0.1). Card: ' But' x4, ':\\n' x2 (else⟦:⏎⟧), ' or' x2, ' false' x2. Exploratory probe weak: '. But it broke' 0.07, 'else:' 0.11. Expected to fail."
+}

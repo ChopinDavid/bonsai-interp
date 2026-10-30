@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-7921fe88",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N2308+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N2308",
+   "pole": "+",
+   "label": "The German piece 'ver' in the middle of a compound noun, after the first noun (Brust|ver|größerung, Strom|ver|brauch, Daten|ver|arbeitung, Gewichts|ver|lust); 'Ver-' at the start of a word and compounds without 'ver' stay quiet.",
+   "fire": [
+    "Der Stromverbrauch ist im Winter höher.",
+    "Die Datenverarbeitung dauert eine Stunde.",
+    "Ein schneller Gewichtsverlust ist ungesund.",
+    "Der Kraftstoffverbrauch des Autos ist niedrig.",
+    "Eine Nasenverkleinerung kostet viel Geld.",
+    "Der Energieverbrauch der Stadt sinkt.",
+    "Sie plant eine Brustvergrößerung im Frühling.",
+    "Der Wasserverbrauch steigt im Sommer."
+   ],
+   "quiet": [
+    "Die Stromkosten sind im Winter höher.",
+    "Die Datenmenge wächst jede Stunde.",
+    "Eine schnelle Gewichtszunahme ist ungesund.",
+    "Der Kraftstoff des Autos ist teuer.",
+    "Eine Nasenoperation kostet viel Geld.",
+    "Die Energiequelle der Stadt ist Wind.",
+    "Sie plant eine Reise im Frühling.",
+    "Die Wasserqualität steigt im Sommer."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "German mid-compound 'ver' piece",
+ "unit_kind": "token piece",
+ "confidence": 0.6,
+ "notes": "Card: 'ver' x9 (Brust⟦ver⟧größerung), 'material' x2; auto test held for 'config' before '.Lib'. Tokenizer: Strom|ver|bra|uch, Daten|ver|arbeit|ung, Gew|icht|s|ver|lust, Kraft|stoff|ver|bra|uch, Nas|en|ver|kle|iner|ung, Br|ust|ver|… split with a 'ver' piece; Wasserverbrauch not checked. Exploratory probe: Brustvergrößerung 0.92; word-initial 'Vergrößerung' 0.003."
+}

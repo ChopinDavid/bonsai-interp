@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-9fd1c13f",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N417+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N417",
+   "pole": "+",
+   "label": "Fungal and mould diseases of plants and buildings (powdery mildew, downy mildew, black mold, fungal colonization), firing on 'mild|ew', 'mold' and the verb after it; other damage to the same plants and walls stays quiet.",
+   "fire": [
+    "Powdery mildew covered the squash leaves.",
+    "Downy mildew spreads fast in wet weather.",
+    "Mold grew behind the fridge.",
+    "The roses suffer from mildew every summer.",
+    "Grey mold ruined the strawberries.",
+    "Spray the vines before mildew appears.",
+    "Damp walls invite black mold.",
+    "The bread was covered in green mold."
+   ],
+   "quiet": [
+    "Aphids covered the squash leaves.",
+    "Leaf spots spread fast in wet weather.",
+    "Dust gathered behind the fridge.",
+    "The roses suffer from greenfly every summer.",
+    "Birds ruined the strawberries.",
+    "Spray the vines before the frost.",
+    "Damp walls invite peeling paint.",
+    "The bread was covered in seeds."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.1; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "mildew / mold (fungal growth)",
+ "unit_kind": "semantic / lexical",
+ "confidence": 0.65,
+ "notes": "Card: ' mild' x3 (powdery⟦ mild⟧ew), 'ew' x3, ' mold' x3, ' colonization' x2, ' opportun' x2; word hits ' mold' cov 8%. Exploratory probe: 'powdery mildew' 1.12, 'Black mold grew' 0.65 (peak on ' grew'); 'a late frost' 0.14."
+}

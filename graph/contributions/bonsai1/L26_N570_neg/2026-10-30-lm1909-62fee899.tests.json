@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-62fee899",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N570-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N570",
+   "pole": "-",
+   "label": "The French ' des' (and similar articles) inside a French title or place name quoted in English text ('the play l'Auberge des Adrets', 'the Musée des Beaux-Arts'); English text naming the same things without French stays quiet.",
+   "fire": [
+    "We visited the Musée des Beaux-Arts in Lyon.",
+    "The novel is set near the Jardin des Plantes.",
+    "He sang in the opera Les Contes des Hoffmann.",
+    "The hotel overlooks the Place des Vosges.",
+    "She studied at the École des Mines.",
+    "The film premiered at the Théâtre des Champs-Élysées.",
+    "The race passes the Allée des Cygnes.",
+    "Critics praised the play Le Jeu des Masques."
+   ],
+   "quiet": [
+    "We visited the art museum in Lyon.",
+    "The novel is set near the botanical garden.",
+    "He sang in an opera by Offenbach.",
+    "The hotel overlooks a square in the Marais.",
+    "She studied at the mining school.",
+    "The film premiered at a theatre in Paris.",
+    "The race passes the swan island.",
+    "Critics praised the new play."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "French ' des' in names inside English text",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.55,
+ "notes": "Card: ' of' x5, ' for' x3, \" '\" x2 (Benjamin Antier’s play, l’Auberge⟦ des⟧ Adrets (1823); NaN =⟦ \"-⟧1.#IND\"). Exploratory probe: 'l'Auberge des Adrets' 1.05; NaN string 0.06."
+}

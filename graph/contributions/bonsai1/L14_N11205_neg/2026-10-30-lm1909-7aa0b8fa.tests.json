@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-7aa0b8fa",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N11205-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N11205",
+   "pole": "-",
+   "label": "Low-confidence guess: the verb of apparent motion seen by an observer ('the stars would seem to wheel around', 'the ground rushes up'); plain descriptions of the same motion stay quiet.",
+   "fire": [
+    "From the train the trees seem to race past.",
+    "As the plane dives, the sea rushes up to meet it.",
+    "On the carousel the room appears to spin.",
+    "From the pole the stars would seem to circle the sky.",
+    "Looking down, the street seems to sway below.",
+    "As we sped up, the lights appeared to stream by.",
+    "From orbit the clouds seem to crawl across the ocean.",
+    "On the bridge the river seems to flow backwards."
+   ],
+   "quiet": [
+    "The trees by the track are tall.",
+    "The plane dives towards the sea.",
+    "The room has a carousel in it.",
+    "The stars are bright at the pole.",
+    "The street is narrow below.",
+    "We sped up past the lights.",
+    "The clouds cover the ocean.",
+    "The river flows under the bridge."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.35; may fail",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "apparent motion seen by an observer (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: no single token (' to' x2, ' appears' x2, ' too' x2, ' rushes': the stars would seem⟦ to⟧ wheel around; the ground⟦ rushes⟧ up at Curiosity). Exploratory probe: 'stars would seem to wheel around' 0.34, 'the ground rushes up' 0.14. Low confidence."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-2ee30610",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N2628-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N2628",
+   "pole": "-",
+   "label": "Low-confidence guess: a weak, broad layer-2 unit; best guess tested: ' Nat' starting a name (Nat King Cole, Natalie, Nathan).",
+   "fire": [
+    "Nat King Cole sang it in 1951.",
+    "We met Natalie at the station.",
+    "Nathan fixed the bike.",
+    "Natasha won the race.",
+    "Nat Turner led the revolt.",
+    "Natalia moved to Madrid.",
+    "Nathaniel wrote the letter.",
+    "Nat Geo aired the film."
+   ],
+   "quiet": [
+    "Bing Crosby sang it in 1951.",
+    "We met Laura at the station.",
+    "Peter fixed the bike.",
+    "Olga won the race.",
+    "John Brown led the raid.",
+    "Maria moved to Madrid.",
+    "Samuel wrote the letter.",
+    "The BBC aired the film."
+   ]
+  }
+ ],
+ "predictions": "fire 0.0-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "weak broad unit (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Weak, broad pole (corpus max 0.67, 3.6% of tokens above 0.1), gate-closed regime. Card: ' Nat' x4, 'Arr' x4, 'ss' x3, Russian 'ат', Arabic 'عد'. Not probed. Expected to fail."
+}

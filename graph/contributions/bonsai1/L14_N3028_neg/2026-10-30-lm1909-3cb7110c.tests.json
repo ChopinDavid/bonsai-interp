@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3cb7110c",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N3028-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N3028",
+   "pole": "-",
+   "label": "Low-confidence guess: \"',\" closing the first string argument of a Python call that takes a second argument (_table_wrapper('t1', 'foo')), and string-method pieces like '.rstrip'; calls with one argument stay quiet.",
+   "fire": [
+    "    t1 = make_table('t1', 'foo')\n    t2 = make_table('t2', 'bar')",
+    "    os.path.join('data', 'raw')",
+    "    conn.execute('DELETE FROM t', params)",
+    "    name = raw.decode('ascii').rstrip(' ')",
+    "    log.info('loaded', count)",
+    "    getattr(obj, 'name', None)",
+    "    s = s.replace('a', 'b')",
+    "    open('out.txt', 'w')"
+   ],
+   "quiet": [
+    "    t1 = make_table('t1')\n    t2 = make_table('t2')",
+    "    os.path.join(base)",
+    "    conn.execute(query)",
+    "    name = raw.decode()",
+    "    log.info(count)",
+    "    getattr(obj, attr)",
+    "    s = s.lower()",
+    "    open(path)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "\"',\" after a first string argument (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: ',' x6, \"',\" x2, 'rstrip' x2, ' +' x2 (_table_wrapper('t1⟦',⟧ 'foo'); .decode('ascii').⟦rstrip⟧(' ')). Not probed. Expected to fail."
+}

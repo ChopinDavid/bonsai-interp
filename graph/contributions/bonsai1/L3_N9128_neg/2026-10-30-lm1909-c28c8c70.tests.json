@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-c28c8c70",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N9128-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N9128",
+   "pole": "-",
+   "label": "Low-confidence guess (not probed): Russian небес- 'heaven(s)' pieces (неб|ес, неб|еса) in religious text; the same sentences with other words stay quiet.",
+   "fire": [
+    "Царство небес открыто для всех.",
+    "Ангелы спустились с небес.",
+    "Он молился Отцу небесному.",
+    "Эти люди — избранники небес.",
+    "Свет с небес осветил долину.",
+    "Голос с небес сказал ему встать.",
+    "Птицы поднялись к небесам.",
+    "Врата небес открылись."
+   ],
+   "quiet": [
+    "Царство Божье открыто для всех.",
+    "Ангелы спустились с горы.",
+    "Он молился каждый день.",
+    "Эти люди — избранники народа.",
+    "Свет фонаря осветил долину.",
+    "Голос друга сказал ему встать.",
+    "Птицы поднялись над лесом.",
+    "Ворота сада открылись."
+   ]
+  }
+ ],
+ "predictions": "fire 0.0-0.5; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Russian небес- 'heavens' (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: ' pas' x12 (French ne ... pas; auto test held for ' pas' after ' ne'), 'ес' x6 and 'сет' x6 (Russian неб⟦ес⟧), ' plus' x5. Exploratory probe: French 'ne … pas' sentences 0.004-0.008, so that part did not reproduce in short sentences; the Russian part was not probed."
+}

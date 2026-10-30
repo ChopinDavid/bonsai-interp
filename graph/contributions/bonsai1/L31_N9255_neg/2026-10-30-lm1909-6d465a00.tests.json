@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-6d465a00",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N9255-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N9255",
+   "pole": "-",
+   "label": "Digits of the year in the name of a law or act ('the Modern Slavery Act 2015', 'the Data Protection Act 1998'); years used in ordinary dates stay quiet.",
+   "fire": [
+    "The rules come from the Data Protection Act 1998.",
+    "Charities must follow the Equality Act 2010.",
+    "The case was brought under the Human Rights Act 1998.",
+    "Firms report under the Modern Slavery Act 2015.",
+    "Landlords must comply with the Housing Act 2004.",
+    "The Climate Change Act 2008 set new targets.",
+    "Schools are bound by the Children Act 1989.",
+    "Fines are set by the Bribery Act 2010."
+   ],
+   "quiet": [
+    "The rules changed in 1998 after the election.",
+    "The charity was founded in 2010.",
+    "The case was heard in 1998 in London.",
+    "The factory closed in 2015.",
+    "The landlord bought the house in 2004.",
+    "The targets were set in 2008.",
+    "The school opened in 1989.",
+    "The fine was paid in 2010."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; near misses below 0.2; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "year digits in the name of an Act",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: '3' x4, '0' x3, '.' x3, ' psychiatrist' (within the Modern Slavery Act 2⟦0⟧15); output promotes ' shift'. Exploratory probe: 'Modern Slavery Act 2015' 0.96; 'psychiatrist Hannibal Lecter' 0.36. Ordinary dates not probed."
+}

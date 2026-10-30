@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-18cc5869",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N4389+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N4389",
+   "pole": "+",
+   "label": "Chinese merged tokens that begin with 在 'in/at' (在中国, 在美国, 在这里, 在家, 在北京); the same sentences without such a token stay quiet.",
+   "fire": [
+    "在日本，人们常常吃生鱼。",
+    "她在北京工作了五年。",
+    "在学校里他是最高的学生。",
+    "我们在家吃晚饭。",
+    "在这里可以看到大海。",
+    "在中国的朋友给我寄了茶叶。",
+    "他在美国读大学。",
+    "在外面玩的孩子很开心。"
+   ],
+   "quiet": [
+    "日本人常常吃生鱼。",
+    "她工作了五年。",
+    "他是最高的学生。",
+    "我们一起吃晚饭。",
+    "从山上可以看到大海。",
+    "中国朋友给我寄了茶叶。",
+    "他读大学。",
+    "玩耍的孩子很开心。"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Chinese 在X tokens ('in China', 'in the US')",
+ "unit_kind": "token / lexical",
+ "confidence": 0.65,
+ "notes": "Card: '^\\\\' x5, '在中国' x5, '^' x4, '在外' x3, '在这' x3, '在美国' x2; word hits 在此, 在这, 在中国 at lift 53,333. Tokenizer: 在中国, 在美国, 在这里, 在日本, 在北京, 在学校, 在家, 在外面 are single tokens. Exploratory probe: 在中国 0.57, 在美国 0.51; without 在 -0.01. The '^' regex part is not tested."
+}

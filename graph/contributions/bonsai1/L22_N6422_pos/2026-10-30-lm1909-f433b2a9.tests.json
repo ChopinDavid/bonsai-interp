@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-lm1909-f433b2a9",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N6422+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N6422",
+   "pole": "+",
+   "label": "The Python web frameworks Flask and Django named in code (from flask import …, from django.http import …), firing on ' flask' / ' django'; imports of other libraries stay quiet.",
+   "fire": [
+    "from flask import render_template\nimport os",
+    "from django.db import models\nimport json",
+    "from flask import jsonify, abort",
+    "from django.urls import path",
+    "import flask\napp = flask.Flask(__name__)",
+    "from django.shortcuts import render",
+    "from flask_login import login_required",
+    "import django\ndjango.setup()"
+   ],
+   "quiet": [
+    "from jinja2 import Template\nimport os",
+    "from sqlite3 import connect\nimport json",
+    "from json import dumps, loads",
+    "from pathlib import Path",
+    "import requests\nresp = requests.get(url)",
+    "from random import choice",
+    "from functools import wraps",
+    "import numpy\nnumpy.zeros(3)"
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.8; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "Flask / Django in Python imports",
+ "unit_kind": "lexical / code",
+ "confidence": 0.75,
+ "notes": "Card: ' flask' x10, ' django' x10, '.views' x2, ' Rails' x2 (from⟦ flask⟧ import request); output promotes ' web', ' MVC', ' AJAX'; auto test for ' django' on its first appearance had AUROC 1.00 but failed another criterion. Exploratory probe: 'from flask import' 0.55, 'from django.http import' 0.54; 'from math import' 0.02.",
+ "trigger": {
+  "words": [
+   "flask",
+   "django"
+  ]
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-87cfe712",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N7277+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:57:48+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N7277",
+   "pole": "+",
+   "label": "Dense unit (13% of tokens above 0.1 of max). Best guess tested: Spanish 'mult|itud' and English ' nice' / ' time'.",
+   "fire": [
+    "Tienen multitud de agujeros de seguridad.",
+    "Una multitud de personas llenó la plaza.",
+    "What a nice time we had!",
+    "It was nice to see you.",
+    "Hay multitud de opciones.",
+    "La multitud aplaudió al final.",
+    "Have a nice time in Rome.",
+    "Such a nice day for a walk."
+   ],
+   "quiet": [
+    "Tienen muchos agujeros de seguridad.",
+    "Mucha gente llenó la plaza.",
+    "What a long day we had!",
+    "It was good to see you.",
+    "Hay muchas opciones.",
+    "El público aplaudió al final.",
+    "Have a good trip to Rome.",
+    "Such a warm day for a walk."
+   ]
+  }
+ ],
+ "predictions": "everything 0.1-0.5; expected to fail (dense)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "dense (Spanish 'multitud', 'nice')",
+ "unit_kind": "dense / positional",
+ "confidence": 0.05,
+ "notes": "Card flags dense (13.2% of tokens reach 0.1 of max) and a gate-closed regime; peaks 'itud' x4 (mult⟦itud⟧), ' time' x3, ' nice' x3. Not probed. Recorded as dense; expected to fail."
+}
