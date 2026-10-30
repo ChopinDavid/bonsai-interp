@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-7edabb71",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N9908-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:32:20+00:00",
+ "recipe": {
+  "toolchain_commit": "24f7cc2d",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N9908_neg/2026-10-30-lm1909-7edabb71.tests.json"
+ },
+ "label": "Rule and requirement language in technical codes, standards and manuals: how equipment must be sized, rated or selected ('Conductors shall be sized for 125 percent of the load', 'Fuses must be rated for…', 'obtained by referring to Table 3-9'); everyday sentences about the same equipment stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N9908_neg/2026-10-30-lm1909-7edabb71.tests.json",
+   "prereg_commit": "24f7cc2d",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.518,
+     "peak": " at"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.836,
+     "peak": " sized"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.119,
+     "peak": " spaced"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.498,
+     "peak": " set"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.01,
+     "peak": " stair"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.232,
+     "peak": " loss"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.311,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.216,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.018,
+     "peak": " our"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " talked"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " night"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": "My"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " cat"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.883,
+    "median_fire": 0.404,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [],
+  "toolchain_commit": "24f7cc2d",
+  "minutes": 1,
+  "batch_size": 2,
+  "dtype": "float16"
+ },
+ "short": "requirement language in technical codes",
+ "unit_kind": "contextual / register",
+ "confidence": 0.6,
+ "notes": "Round 2 for this pole (round 1 in sweep 4: 'manual text referring to Table 3-9' failed because technical sentences without a table reference also fired, e.g. 'The pipe size depends on the expected flow.' 0.73). Refinement probe: 'Conductors shall be sized for 125 percent…' 1.22, 'Fuses must be rated for…' 0.57; 'The minimum slope … is one quarter inch per foot' only 0.08; everyday sentences about pipes and fuses 0.01-0.02. New label: the rule/requirement register.",
+ "selection": "picked"
+}
