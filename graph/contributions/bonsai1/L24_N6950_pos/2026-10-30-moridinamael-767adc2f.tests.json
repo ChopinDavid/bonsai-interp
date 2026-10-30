@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-moridinamael-767adc2f",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N6950+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:17:09+00:00",
+ "roles": ["reads bonsai1/L22/N2000-"],
+ "neighbours": [
+  {
+   "unit": "L24/N6950",
+   "pole": "+",
+   "label": "values that tune a machine-learning model (learning rate, iterations, optimizer arguments), in code or prose",
+   "fire": [
+    "optimizer = torch.optim.Adam(model.parameters(), lr=3e-4, weight_decay=0.01)",
+    "We trained the network for 50 epochs with a learning rate of 0.001 and a batch size of 64.",
+    "clf = RandomForestClassifier(n_estimators=200, max_depth=12, min_samples_split=4)",
+    "model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)",
+    "Lowering the learning rate to 1e-5 stabilized fine-tuning on the small dataset.",
+    "sgd = SGD(lr=0.01, momentum=0.9, nesterov=True)",
+    "The gradient boosting model used 500 iterations, a shrinkage of 0.05 and a maximum tree depth of 6.",
+    "logreg = LogisticRegression(C=0.1, max_iter=1000, solver='lbfgs')"
+   ],
+   "quiet": [
+    "plt.plot(x, y, color='red', linewidth=2, linestyle='--')",
+    "server = HTTPServer(host='0.0.0.0', port=8080, timeout=30)",
+    "We collected 50 photos of birds and sorted them into folders by species.",
+    "conn = psycopg2.connect(host='localhost', port=5432, dbname='shop')",
+    "df = pd.read_csv('data.csv', sep=';', encoding='utf-8')",
+    "Lowering the oven temperature to 160 degrees kept the cake from cracking.",
+    "button = Button(text='Submit', width=120, height=40)",
+    "The marathon runner trained for 20 weeks, running about 60 kilometers per week."
+   ]
+  }
+ ],
+ "predictions": "Expect ML code to fire well; risk: the keyword-argument leak (plt.plot, HTTPServer reached ~0.3 in the solver) may put 1-2 near misses at the 0.30 bar.",
+ "notes": "Step-in reader of L22/N2000- (drop 0.11). Solver leak: plain keyword-argument options (host=, port=, color=) fire this pole weakly (~0.2-0.33) with no ML content; it is strongest on ML hyperparameters.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "card",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
