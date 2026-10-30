@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-moridinamael-ba753267",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L2/N6817-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:47:27+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "a token-level list: the split pieces 'unt'/'unts' (Blunt, blunts) and the whole token ' interpretation'"
+ },
+ "trigger": {
+  "tokens": [" Plains", " interpretation", " Firewall", " firewall", " charged", " blunt", "unt", "unts", " full"]
+ },
+ "neighbours": [
+  {
+   "unit": "L2/N6817",
+   "pole": "-",
+   "label": "a token list, not a meaning: the words ' Plains', ' interpretation', ' Firewall', ' charged', ' blunt'/'unts' and ' full' (strongest right after 'in'); synonyms and look-alikes stay quiet",
+   "fire": [
+    "The bison once roamed freely across the Great Plains of North America.",
+    "Her interpretation of the poem surprised the whole class.",
+    "The company installed a new Firewall to block suspicious traffic.",
+    "He was charged with speeding after the officer checked his radar.",
+    "She gave a blunt answer that left no room for doubt.",
+    "The orchestra played the symphony in full for the first time in decades.",
+    "The battery is fully charged and ready for the hike.",
+    "Please read the contract in full before you sign it."
+   ],
+   "quiet": [
+    "The bison once roamed freely across the great grasslands of North America.",
+    "Her reading of the poem surprised the whole class.",
+    "The company installed new security software to block suspicious traffic.",
+    "He was fined for speeding after the officer checked his radar.",
+    "She gave a frank answer that left no room for doubt.",
+    "The orchestra played the symphony from start to finish for the first time in decades.",
+    "The battery is powered up and ready for the hike.",
+    "Please read the whole contract before you sign it."
+   ]
+  }
+ ],
+ "predictions": "Probably holds: most fire items contain a listed token, scoring 0.15-0.4; near misses replace the token with synonyms and should stay near zero. Risk: ' charged' and ' full' are weaker.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo",
+   "quick-test"
+  ]
+ }
+}
