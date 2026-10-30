@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ff852b0c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N1012-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T20:36:24+00:00",
+ "recipe": {
+  "toolchain_commit": "f5dddbcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N1012_neg/2026-10-30-ChopinDavid-ff852b0c.tests.json"
+ },
+ "label": "An object pronoun clitic attached to a verb (Arabic -ها/-ه on a relative-clause verb, Russian его/её after a verb), as opposed to the same pronoun on a noun or preposition",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N1012_neg/2026-10-30-ChopinDavid-ff852b0c.tests.json",
+   "prereg_commit": "f5dddbcd",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.236,
+     "peak": "ها"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.603,
+     "peak": "ها"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.129,
+     "peak": "ها"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.467,
+     "peak": "ها"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.25,
+     "peak": " его"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.183,
+     "peak": " его"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.238,
+     "peak": "ها"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.139,
+     "peak": " её"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.046,
+     "peak": " تعمل"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": "نجح"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": " في"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " أع"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.049,
+     "peak": " была"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.048,
+     "peak": "мо"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": "تحدث"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.048,
+     "peak": "пу"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.237,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f5dddbcd",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "object clitic on a verb (Arabic -ها, Russian его)",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'التي طرحها الكاتب' 0.292 (peak 'ها'), 'التي أرسلتها الوزارة' 0.281 (peak 'تها'), 'понёс её к машине' 0.250 (peak ' её'), 'التي كتبها الشاعر' 0.109; possessive 'بيتها' 0.045, 'التنصل منها' 0.034, 'أختها' 0.043, no-clitic twin 0.011, English floor 0.047. Card peaks 'ها' x11, 'ه' x4, ' его', '친', 'ли' with max 15 and 0.21% density; every Arabic top example is التي + verb + ها with the subject following. Korean and Russian verb-ending peaks are not tested.",
+ "selection": "random draw"
+}

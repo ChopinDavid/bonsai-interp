@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-135a2d63",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N7143-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T20:35:44+00:00",
+ "recipe": {
+  "toolchain_commit": "f5dddbcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N7143_neg/2026-10-30-ChopinDavid-135a2d63.tests.json"
+ },
+ "label": "Onset of a gradual change that comes with time or practice (will begin to feel natural, starts to make sense, will get easier), not a scheduled or punctual beginning; promotes gradually/eventually",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N7143_neg/2026-10-30-ChopinDavid-135a2d63.tests.json",
+   "prereg_commit": "f5dddbcd",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.588,
+     "peak": " start"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.251,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.441,
+     "peak": " will"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.026,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.233,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.674,
+     "peak": " start"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.358,
+     "peak": " begin"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.16,
+     "peak": " start"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.039,
+     "peak": " layout"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " chapter"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " nine"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.035,
+     "peak": " finished"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": "uned"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.304,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f5dddbcd",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "onset of gradual change over time",
+ "unit_kind": "semantic",
+ "confidence": "medium",
+ "notes": "Probe: 'the stretches will begin to feel natural' 0.621 (peak ' begin'), 'the sting of the rejection will fade' 0.337 (peak ' will'), 'the neighbours became friends' 0.247, 'the jargon starts to make sense' 0.238, 'Day by day the swelling began to go down' 0.142 (peak '.'); 'will begin at eight sharp' 0.006, 'started the car' 0.049, 'began with a reading' 0.009, stative 0.006. Card peaks ' will' x4, ' begin' x3, ' start' x3, ' began' x2, 'As time', 时间一长, 渐渐; the + pole's output suppresses gradually/eventually/slowly/soon/increasingly, so this pole predicts them.",
+ "selection": "random draw"
+}
