@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7f68dd13",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N7105+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N7105",
+   "pole": "+",
+   "label": "a physical speed or velocity being quantified ('a speed of 150 meters per second' 0.65, 'speed must be 0.866c' 0.57, 'a velocity of 1,075 feet per second' 0.53, 'rotates at a speed of' 0.51), fired on speed/velocity, the 'of' or the digits; other quantified magnitudes (a mass of 150 grams 0.01, a temperature of 20 degrees 0.00) and figurative speed (0.01) are silent",
+   "fire": [
+    "The bullet leaves the barrel at a speed of 900 metres per second.",
+    "A sprinter reaches a top speed of about 12 m/s.",
+    "The probe is now travelling at a velocity of 17 kilometres per second.",
+    "To escape Earth a rocket needs a speed of 11.2 km/s.",
+    "The electron's speed was measured at 0.9c.",
+    "Wind in the jet stream can reach a speed of 250 km/h.",
+    "The disc spins at a speed of 7,200 revolutions per minute.",
+    "Seismic P-waves travel at a velocity of about 6 km/s in the crust."
+   ],
+   "quiet": [
+    "The bullet has a mass of 9 grams.",
+    "A sprinter burns about 12 calories per 100 metres.",
+    "The probe is now at a distance of 17 billion kilometres.",
+    "To escape the city a driver needs a toll pass of 11 euros.",
+    "The electron's charge was measured at 1.6e-19 coulombs.",
+    "Air in the jet stream has a temperature of minus 50 degrees.",
+    "The disc has a capacity of 7,200 megabytes.",
+    "The reforms gathered speed once the new minister took office."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.7 on speed/velocity or the value after it; near misses (mass, distance, charge, temperature, capacity with values; figurative speed) below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "quantified speed or velocity",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 136, density 0.051%, peaks ' ', ' of' x3, ' speed' x2, ' (' x2, ' horizontal' x2 in kinematics (a speed of 150 meters per second, rotates at a speed of 1.0 revolution, speed must be 0.866c, the speed of light, a velocity of 1,075 feet per second). Logit effect promotes v, a, c. Probe: 'a speed of 150 meters per second' 0.652, '0.866c' 0.568, 'a velocity of 1,075 feet' 0.532, 'rotates at a speed of' 0.510, 'a = Δv/Δt' 0.272, 'invariance of the velocity of light' 0.249; 'a mass of 150 grams' 0.014, 'a temperature of 20 degrees' 0.004, 'reforms moved forward at a speed of their own' 0.008, filler 0.011. The quantified speed is the trigger; the bare formula and the unquantified 'velocity of light' sit under threshold."
+}

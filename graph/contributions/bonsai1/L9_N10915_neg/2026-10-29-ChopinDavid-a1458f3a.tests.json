@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a1458f3a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N10915-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N10915",
+   "pole": "-",
+   "label": "names of engineering and process technologies, strongest on CNC machining ('3D printer and CNC machine' 0.83, 'control (CNC) fabrication' 0.55) and 'emulsion' (0.62), weaker on convection (0.27), distillation (0.26), Engineering Design (0.26) and CAD (0.16); the same frames with everyday nouns are silent (0.03-0.06)",
+   "fire": [
+    "The workshop bought a CNC router for cutting cabinet panels.",
+    "Most of the parts are turned on a CNC lathe overnight.",
+    "The plate is coated with a light-sensitive emulsion and dried in the dark.",
+    "Students learn to program a CNC milling machine in the second year.",
+    "Mayonnaise is an emulsion of oil in vinegar stabilised by egg yolk.",
+    "The brackets were designed in CAD and cut on a CNC plasma table.",
+    "Whisky is produced by distillation in copper pot stills.",
+    "Heat moves through the pan by conduction and through the soup by convection."
+   ],
+   "quiet": [
+    "The workshop bought a second-hand van for delivering cabinets.",
+    "Most of the parts are painted by hand overnight.",
+    "The plate is wiped with a damp cloth and dried in the sun.",
+    "Students learn to read a balance sheet in the second year.",
+    "Mayonnaise is served with the chips in most Belgian cafés.",
+    "The brackets were sketched on paper and cut with a hacksaw.",
+    "Whisky is aged in oak casks for at least three years.",
+    "Heat the pan gently and stir the soup until it thickens."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on CNC/emulsion, lower on distillation/convection; near misses below 0.1; likely a partial hold because only CNC and emulsion cleared 0.3 in the probe",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "engineering process technologies (CNC, emulsion)",
+ "unit_kind": "topic",
+ "confidence": 0.35,
+ "notes": "Card: max 6.47, density 0.103%, peaks ' CNC' x2, ' motors' x2, ' CAD', 'ulsion', ' Design', 'NC', ' Circuit', ' dist' (3D Printer and CNC machine, a CAD system, an em|ulsion, Engineering Design Process, DC Circuit, steam dist|illation, con|vection). Probe: 'CNC machine controlling firmware' 0.831, 'an emulsion on a plastic base' 0.618, '(CNC) fabrication' 0.548, 'convection driven by' 0.267, 'steam distillation' 0.263, 'Engineering Design Process' 0.258, 'a CAD system' 0.162; 'history of the village' 0.034, 'film was shown' 0.052, 'printer and a box of paper' 0.059. A weak, mixed pole; the test leans on CNC and emulsion.",
+ "trigger": {
+  "words": [
+   "CNC",
+   "emulsion",
+   "CAD",
+   "distillation",
+   "convection"
+  ]
+ }
+}

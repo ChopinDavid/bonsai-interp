@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ff876fe3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N3341-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N3341",
+   "pole": "-",
+   "label": "a positional unit: the card's top 32 all peak at window position 0 (the first token of the context window, ' –' x6, ' J' x5, ' indicate'), and every probe sentence scored at the floor (≤0.023) whatever its first token; best guess tested here: a sentence opening with an en dash or a bare lowercase word",
+   "fire": [
+    "– it was already dark when we reached the farm.",
+    "– this generation grew up without television.",
+    "– for example, the title deed and the tax record.",
+    "– you never told me about the second letter.",
+    "– 17 years is a long time to wait.",
+    "indicate below which option you prefer.",
+    "tasks of this kind take most of the morning.",
+    "j is the index of the current row."
+   ],
+   "quiet": [
+    "It was already dark when we reached the farm.",
+    "This generation grew up without television.",
+    "For example, the title deed and the tax record.",
+    "You never told me about the second letter.",
+    "Seventeen years is a long time to wait.",
+    "Please indicate below which option you prefer.",
+    "Most tasks of this kind take the whole morning.",
+    "The index of the current row is j."
+   ]
+  }
+ ],
+ "predictions": "expected to fail: fire and near-miss items alike should stay below 0.05, because the pole fires on window position rather than on any token",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "window-position-0 unit",
+ "unit_kind": "dense / positional",
+ "confidence": 0.1,
+ "notes": "Card: max 8.44, density 0.099%, FLAG positional (100% of the top peaks at window position 0; 100% within the first 16 tokens): ' indicate the name you used', 'j is not None', ' – it's normally covered', ' – Ты что', ' – 17 лет'. The + pole is dense (20.8%). Probe: every sentence 0.009-0.023 (dash-initial '– it's normally covered' 0.012, 'indicate the name' 0.013, 'tasks required' 0.023, controls 0.009-0.017), so the scorer's sentences do not reach the position the pole responds to. Registered as positional with the dash-opening guess so the failure is on record."
+}

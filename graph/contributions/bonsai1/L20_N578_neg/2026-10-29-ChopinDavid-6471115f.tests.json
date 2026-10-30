@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6471115f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N578-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N578",
+   "pole": "-",
+   "label": "the coordinator (comma, and, et, und) joining noun phrases in an enumeration of items ('a short history, some advice' 0.66, 'de conseils et' 0.58, 'Krokodil und' 0.46, 'the shipyard and the general store' 0.35); 'and' between verb phrases, adjectives or clauses is silent (0.00-0.14)",
+   "fire": [
+    "The estate included a sawmill, a brickworks and a small chapel.",
+    "Her luggage consisted of a trunk, two hatboxes and a violin case.",
+    "The kit contains a compass and a folding map of the region.",
+    "Breakfast was porridge, smoked fish and a pot of strong tea.",
+    "Le dossier comprend un rapport, des photographies et une carte.",
+    "Der Verein besitzt ein Boot und zwei alte Fischerhütten.",
+    "The museum displays the loom and the spinning wheel side by side.",
+    "They sell wool, honey and candles at the Saturday market."
+   ],
+   "quiet": [
+    "The estate was sold and the chapel was pulled down.",
+    "Her luggage was heavy and awkward to carry.",
+    "The kit folds flat and fits in a coat pocket.",
+    "Breakfast was served early and eaten in silence.",
+    "Le dossier est complet et sera envoyé demain.",
+    "Der Verein ist klein, aber sehr aktiv.",
+    "The museum opened late and closed early that winter.",
+    "They weave, spin and dye the wool themselves."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on the comma or conjunction between the listed noun phrases; near misses (verbal, adjectival and clausal coordination) below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "coordinator between noun phrases",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 23.1, broad (1.2% of tokens at 0.1 of max), peaks ' and' x14, ',' x7, ' et' x3, ' ou' x2, ' und', all between coordinated noun phrases (le chantier naval et le commerce, a head of broccoli and a few kale salads, the playhouse stage and the newssheet catastrophes). Probe: the comma in 'a short history, some advice and' 0.658, French 'historique, de conseils et' 0.577, 'Krokodil und sein Nilpferd' 0.456, 'the shipyard and the general store' 0.351, 'a jar of honey, a loaf of bread and' 0.246; verb-phrase 'locked the door and walked' 0.139, 'tired and hungry' 0.001, clausal 'stopped, and the children' 0.094, filler 0.042. The pole reads the coordination of nominals, strongest in part-lists."
+}

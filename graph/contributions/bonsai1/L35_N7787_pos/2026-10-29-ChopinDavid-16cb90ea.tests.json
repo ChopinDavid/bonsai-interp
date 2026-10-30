@@ -1,0 +1,62 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-16cb90ea",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N7787+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N7787",
+   "pole": "+",
+   "label": "the lone piece ' p' opening a split word whose completion is predictable from the collocation (through their p|aces 0.67, including p|ears 0.16); the same piece in a less predictable word (p|umice 0.03, p|imento 0.00), longer p-initial pieces (pl|ums, pen|icillin) and whole-token p words are silent",
+   "fire": [
+    "By noon the hunger pangs had become impossible to ignore.",
+    "The cat sat by the fire licking its paws.",
+    "She spat the orange pips into her hand.",
+    "We ordered hummus with warm pita bread.",
+    "Peel away the bitter white pith before you juice the fruit.",
+    "The dog shook the rain from its paws and pelt.",
+    "The hunters returned with a brace of pheasant.",
+    "Farmers carried water in a wooden pail from the well."
+   ],
+   "quiet": [
+    "By noon the hunger pang had become impossible to ignore.",
+    "The cat sat by the fire licking its fur.",
+    "She spat the orange seeds into her hand.",
+    "We ordered hummus with a pinch of paprika.",
+    "Peel away the bitter white pulp before you juice the fruit.",
+    "The dog shook the rain from its coat and ears.",
+    "The hunters returned with a brace of partridge.",
+    "Farmers carried water in wooden buckets from the well."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on ' p' of pangs/paws/pips/pita/pith/pelt/pheasant/pail; near misses below 0.1; a weak pole whose magnitude depends on how predictable the word is",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' p' piece of a predictable word",
+ "unit_kind": "token",
+ "confidence": 0.25,
+ "notes": "Card: max 141, density 0.099%, peaks '-p' x7, ' p' x4, ' P' x4, '_P' x3, '/p' x2: single-letter p pieces opening words that the context predicts (sulfadoxine-p|yrimethamine, including p|ears and hawthorn, through their p|aces, Paper mills / P|ulp mills, CELLP|ADDING, TILE_FORMAT_P|IL, сульфаниламиды и п|енициллин). Probe: 'through their paces' 0.674 on ' p', 'including pears and hawthorn' 0.158, 'with pumice' 0.027, 'chopped pimento' 0.003, 'Pulp mills' after 'Paper mills' 0.028, '-co PREDICTOR' 0.067; pl|ums 0.033, pen|icillin 0.015, whole-token pulp 0.011, apples 0.053. Only the idiom carried it, so the label is the predictable-completion reading and the confidence is low. Tokenizer: pangs, paws, pips, pita, pith, pelt, pheasant, pail all split as ' p' + rest.",
+ "trigger": {
+  "words": [
+   "pangs",
+   "paws",
+   "pips",
+   "pita",
+   "pith",
+   "pelt",
+   "pheasant",
+   "pail",
+   "paces",
+   "pears"
+  ]
+ }
+}

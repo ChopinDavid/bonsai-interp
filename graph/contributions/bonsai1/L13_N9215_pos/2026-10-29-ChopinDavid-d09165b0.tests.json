@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d09165b0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N9215+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N9215",
+   "pole": "+",
+   "label": "present-tense 'need'/'needs' as a main verb with a personal subject ('anyone who needs this kind of expertise' 0.40, 'whenever you need it' 0.40, 'people today need to' 0.38); 'need' with a quantity object (0.09), the noun 'need' (0.02) and past 'needed' (0.06) are silent",
+   "fire": [
+    "Call us any time you need a locksmith after hours.",
+    "Anyone who needs a quiet place to study can use the library.",
+    "These days you need a permit just to park on your own street.",
+    "Tell me what you need and I will bring it tomorrow.",
+    "Small firms need reliable accountants more than fancy offices.",
+    "If you ever need to replace the filter, the manual shows how.",
+    "He needs to hear that his work matters.",
+    "Most gardens need watering twice a week in July."
+   ],
+   "quiet": [
+    "Call us any time you want a locksmith after hours.",
+    "Anyone in need of a quiet place to study can use the library.",
+    "These days the need for a permit is widely resented.",
+    "Tell me what you found and I will collect it tomorrow.",
+    "Small firms require reliable accountants more than fancy offices.",
+    "If you ever needed to replace the filter, the manual showed how.",
+    "He deserves to hear that his work matters.",
+    "Most gardens are watered twice a week in July."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.5 on need/needs; near misses (in need of, the need for, needed, want, require, deserve) below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'need' as a present-tense verb",
+ "unit_kind": "token",
+ "confidence": 0.45,
+ "notes": "Card: max 6.12, density 0.321%, gate-closed 63%, peaks ' need' x11, ' mean' x3, ' means' x2, ' try' x2, ' needs': who needs this kind of expertise, when you need it, Young people today need to, which means. Probe: 'anyone who needs this kind' 0.401, 'whenever you need it' 0.403, 'Young people today need to be able' 0.384; 'Whether you need five yards of sand' 0.089, 'is to try every possible key' 0.149, 'do not know whether' 0.085, 'a growing need for' 0.017, 'They needed more time' 0.055, filler 0.028. Modest magnitude (0.4) and one need item at the floor, so the confidence is middling; 'want' and 'require' sit in the near misses to test whether the meaning fires without the word.",
+ "trigger": {
+  "words": [
+   "need",
+   "needs"
+  ]
+ }
+}

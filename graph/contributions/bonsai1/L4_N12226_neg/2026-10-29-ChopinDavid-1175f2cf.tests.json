@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1175f2cf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N12226-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N12226",
+   "pole": "-",
+   "label": "the piece 'ie' closing 'facie' in the legal phrase prima facie (prima fac|ie 0.47-0.71); 'borne in mind' (0.19) and 'Ever since' (0.15) from the card are weak, and legal prose without the phrase is at or below zero",
+   "fire": [
+    "The tribunal found that the applicant had made out a prima facie case of discrimination.",
+    "Such evidence is prima facie proof of delivery.",
+    "Before an injunction is granted, the claimant must show a prima facie case.",
+    "The contract appears prima facie valid, though the signature is disputed.",
+    "Without a prima facie showing of harm, the motion fails.",
+    "An unexplained shortfall is prima facie evidence of negligence.",
+    "The judge held that the letter raised a prima facie case of libel.",
+    "Possession of the stolen goods was treated as prima facie proof of theft."
+   ],
+   "quiet": [
+    "The tribunal found that the applicant had made out a credible case of discrimination.",
+    "Such evidence is conclusive proof of delivery.",
+    "Before an injunction is granted, the claimant must show a serious issue to be tried.",
+    "The contract appears on its face valid, though the signature is disputed.",
+    "Without a bona fide showing of harm, the motion fails.",
+    "An unexplained shortfall is strong evidence of negligence.",
+    "The judge held that the letter raised an arguable case of libel.",
+    "Possession of the stolen goods was treated as sufficient proof of theft."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.7 on 'ie' of facie; near misses (credible/conclusive/arguable/bona fide/on its face in the same legal frames) below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ie' of prima facie",
+ "unit_kind": "token",
+ "confidence": 0.55,
+ "notes": "Card: max 0.39, density 0.100%, gate-closed leak 75%, peaks 'ie' x4 (all prima fac|ie), ' borne' x2, ' Ever' x2, ' sincere' x2. The + pole is dense (93.8%). Probe: 'prima facie established' 0.707, 'a prima facie case' 0.492 and 0.467; 'borne in mind' 0.190, 'Ever since' 0.152, 'a sincere rejection' 0.033, 'The court dismissed the case' -0.130, 'The pie was left' -0.079, filler -0.178. Tokenizer: ' facie' -> ' fac' + 'ie' in every item; 'bona fide' splits ' f' + 'ide' and is used as a near miss.",
+ "trigger": {
+  "words": [
+   "facie"
+  ]
+ }
+}

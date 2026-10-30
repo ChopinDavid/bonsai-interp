@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-aef4d257",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N12101-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N12101",
+   "pole": "-",
+   "label": "a distributive or enumerated reference to one unit of a partitioned space ('Lot 13, Concession 6' 0.89 on the comma, 'two rows per locule' 0.76, 'hall 9, stands D06' 0.53, 'each land' 0.49, 'each of the classrooms' 0.45, 'each parking space' 0.36, 'one side wall' 0.36); 'each' over people or time ('Each student', 'Each year' 0.10) is silent",
+   "fire": [
+    "A numbered sign hangs above each stall in the market hall.",
+    "The seats are arranged in six rows per section of the stand.",
+    "The farm was surveyed as Lot 7, Range 2, Hampton Township.",
+    "Our booth is in hall 4, stand B22, next to the café.",
+    "Lockers line one wall of each changing room.",
+    "There are four berths per cabin on the lower deck.",
+    "Fire extinguishers are mounted at the end of each aisle.",
+    "The cemetery plot is recorded as Section 12, Row C, Grave 8."
+   ],
+   "quiet": [
+    "A numbered badge hangs around each trader's neck in the market.",
+    "The choir rehearses six times per month in the hall.",
+    "The farm was bought by the Hampton family in 1872.",
+    "Our team meets every Thursday, usually after the café closes.",
+    "Lockers are issued to each pupil at the start of term.",
+    "There are four meals per day on the lower deck.",
+    "Fire drills are held at the end of each term.",
+    "The cemetery was recorded in the parish register in 1812."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on each/per/one or the comma of a lot-and-range reference; near misses (each/per over people, time or events) below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unit of a partitioned space",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 196, density 0.133%, peaks ' each' x13, ',' x4, ' one' x4, ' per' x3, ' every': Lot 11, Concession 4; above each parking space; hall 9, stands D06; 2 rows per locule; sweep each of the classrooms; half of one side wall. The unit's logit effect suppresses sector/section/row/aisle/lane in the + direction, i.e. this pole predicts a subdivision noun. Probe: 'Lot 13, Concession 6' 0.894, 'two rows per locule' 0.759, 'hall 9, stands D06' 0.532, 'centre of each land' 0.488, 'sweep each of the classrooms' 0.446, 'above each parking space' 0.364, 'one side wall' 0.364; 'Each student' 0.095, 'Each year' 0.095, 'The hall was decorated' 0.045."
+}
