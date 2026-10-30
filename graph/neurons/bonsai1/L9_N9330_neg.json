@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N9330-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 9330,
+ "pole": "-",
+ "label": "body-conformation description of an animal's or person's frame: shoulders, withers, chest, hips, hind limbs, loin and 'broad' or 'deep' as build ('24 inches at the withers ... deep chest' 0.55, 'hind legs are well muscled' 0.52, 'hip dysplasia' 0.39, 'pecho ancho' 0.34, 'shoulders were broad' 0.32); the same words in other senses ('shouldered the bag' 0.01, 'broad agreement' 0.05, 'the lake is deep' 0.03) and breed descriptions without anatomy (0.015) are silent",
+ "short": "animal body conformation",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N9330_neg/2026-10-30-ChopinDavid-4cdec421.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.589,
+     "peak": " straight"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.421,
+     "peak": " hip"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.881,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.312,
+     "peak": " chest"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.402,
+     "peak": "led"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.281,
+     "peak": "as"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.188,
+     "peak": " ribs"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.659,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.058,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.074,
+     "peak": " line"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.115,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " hind"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " peque"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.056,
+     "peak": " steady"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": " every"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.411,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-4cdec421"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-4cdec421",
+   "body-conformation description of an animal's or person's frame: shoulders, withers, chest, hips, hind limbs, loin and 'broad' or 'deep' as build ('24 inches at the withers ... deep chest' 0.55, 'hind legs are well muscled' 0.52, 'hip dysplasia' 0.39, 'pecho ancho' 0.34, 'shoulders were broad' 0.32); the same words in other senses ('shouldered the bag' 0.01, 'broad agreement' 0.05, 'the lake is deep' 0.03) and breed descriptions without anatomy (0.015) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-4cdec421"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

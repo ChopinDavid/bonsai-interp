@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L31/N3489+",
+ "model": "bonsai1",
+ "layer": 31,
+ "index": 3489,
+ "pole": "+",
+ "label": "a victory stated from the winner's side: a win or Sieg with its score ('2:0-Sieg' 0.90, '4:1 win' 0.43), 'emerged victorious' 0.70, 'the triumph of light over darkness' 0.43, 'une victoire' 0.25; the same matches reported as defeats (0.006) or draws (0.002) are silent, and 'emerged' alone carries 0.34",
+ "short": "victory / win / Sieg",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N3489_pos/2026-10-30-ChopinDavid-22552fc6.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.453,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.467,
+     "peak": "-S"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.614,
+     "peak": " emerged"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.246,
+     "peak": " life"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.444,
+     "peak": " belle"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.302,
+     "peak": " emerged"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.346,
+     "peak": " series"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.258,
+     "peak": " vict"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.083,
+     "peak": "3"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.197,
+     "peak": "-N"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.026,
+     "peak": "ought"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.039,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.107,
+     "peak": "fa"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.05,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.029,
+     "peak": " una"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.395,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-22552fc6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-22552fc6",
+   "a victory stated from the winner's side: a win or Sieg with its score ('2:0-Sieg' 0.90, '4:1 win' 0.43), 'emerged victorious' 0.70, 'the triumph of light over darkness' 0.43, 'une victoire' 0.25; the same matches reported as defeats (0.006) or draws (0.002) are silent, and 'emerged' alone carries 0.34",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-22552fc6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

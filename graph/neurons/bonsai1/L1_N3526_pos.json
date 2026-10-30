@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N3526+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 3526,
+ "pole": "+",
+ "label": "dense unit: 92.5% of tokens reach 0.1 of its max of 0.26; slightly higher on rare mid-word pieces and code (sapi|ens 0.95, hospitality 0.88, chiropr 0.70, scipy 0.67, code 0.51) than on plain short prose (0.41), but it is on for nearly all text",
+ "short": "dense (everything)",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N3526_pos/2026-10-30-ChopinDavid-14619ebc.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 7,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.728,
+     "peak": " chiropr"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.84,
+     "peak": " hospitality"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.553,
+     "peak": " scipy"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.518,
+     "peak": " Homo"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.867,
+     "peak": "="
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.548,
+     "peak": "apist"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.91,
+     "peak": "S"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.471,
+     "peak": " pharmaceutical"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.496,
+     "peak": " went"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.503,
+     "peak": " until"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.34,
+     "peak": "It"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.526,
+     "peak": " likes"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.516,
+     "peak": " cat"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.395,
+     "peak": " station"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.261,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.44,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.641,
+    "near_misses_at_0.3": 7
+   },
+   "contribution": "2026-10-30-ChopinDavid-14619ebc"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-14619ebc",
+   "dense unit: 92.5% of tokens reach 0.1 of its max of 0.26; slightly higher on rare mid-word pieces and code (sapi|ens 0.95, hospitality 0.88, chiropr 0.70, scipy 0.67, code 0.51) than on plain short prose (0.41), but it is on for nearly all text",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-14619ebc"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

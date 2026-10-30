@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N3411-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 3411,
+ "pole": "-",
+ "label": "the double-dash token that opens a long command-line option ('--verbose' 0.82, \"'--oneline'\" 0.79, 'linestyle='--'' 0.64, 'pip install --upgrade' 0.59) in shell lines, argument lists and strings; single-dash options (0.01), '-=' (0.004) are silent and a prose dash ' -- ' is weaker (0.28)",
+ "short": "'--' long-option token",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3411_neg/2026-10-30-ChopinDavid-0b35c8f3.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.783,
+     "peak": " --"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.661,
+     "peak": "('--"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.674,
+     "peak": " '--"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.596,
+     "peak": " --"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.412,
+     "peak": " --"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.643,
+     "peak": "--"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.786,
+     "peak": " --"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.601,
+     "peak": " --"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": "docker"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": ".add"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": "av"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.023,
+     "peak": " run"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": "cmd"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " linestyle"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": "sudo"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": "python"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.652,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-0b35c8f3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-0b35c8f3",
+   "the double-dash token that opens a long command-line option ('--verbose' 0.82, \"'--oneline'\" 0.79, 'linestyle='--'' 0.64, 'pip install --upgrade' 0.59) in shell lines, argument lists and strings; single-dash options (0.01), '-=' (0.004) are silent and a prose dash ' -- ' is weaker (0.28)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-0b35c8f3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

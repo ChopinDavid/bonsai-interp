@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N8188-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 8188,
+ "pole": "-",
+ "label": "credential and identifier field names in code: api_key, host_key, 'Auth-Key', '?key=', username (the key/username piece in an authentication or identity slot, 0.14-0.24); dictionary 'key' (0.07), prose 'key' (0.04-0.10) and other code are silent",
+ "short": "api_key / username fields in code",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N8188_neg/2026-10-30-ChopinDavid-194c7fc8.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.913,
+     "peak": "-Key"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.144,
+     "peak": "?key"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.175,
+     "peak": "_key"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.141,
+     "peak": "username"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.272,
+     "peak": "_key"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.615,
+     "peak": " keys"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.517,
+     "peak": "_key"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.092,
+     "peak": "_key"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.058,
+     "peak": ".Session"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.091,
+     "peak": "article"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.111,
+     "peak": "s"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.047,
+     "peak": "self"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.061,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.065,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.046,
+     "peak": ")."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.224,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-194c7fc8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-194c7fc8",
+   "credential and identifier field names in code: api_key, host_key, 'Auth-Key', '?key=', username (the key/username piece in an authentication or identity slot, 0.14-0.24); dictionary 'key' (0.07), prose 'key' (0.04-0.10) and other code are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-194c7fc8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

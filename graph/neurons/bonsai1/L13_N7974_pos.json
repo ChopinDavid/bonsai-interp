@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N7974+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 7974,
+ "pole": "+",
+ "label": "hearsay framing of a story about a historical figure: 'the story goes that' 1.27, 'is said to have' 0.69, 'one famous anecdote tells how' 0.64, 'according to legend' 0.51, peaking inside the story that follows; documented statements about the same figures (dates, publications) are silent (0.07-0.11)",
+ "short": "legend has it / is said to have",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N7974_pos/2026-10-30-ChopinDavid-1dc0a9b9.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.302,
+     "peak": "apt"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.974,
+     "peak": " dropped"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.639,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.523,
+     "peak": " answered"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.391,
+     "peak": " while"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.659,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.729,
+     "peak": "ogen"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.681,
+     "peak": "pt"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.46,
+     "peak": " killed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.036,
+     "peak": "ileo"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.061,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": "ill"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.031,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.109,
+     "peak": " premiere"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.548,
+     "peak": "ogen"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.034,
+     "peak": "esar"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.67,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-1dc0a9b9"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-1dc0a9b9",
+   "hearsay framing of a story about a historical figure: 'the story goes that' 1.27, 'is said to have' 0.69, 'one famous anecdote tells how' 0.64, 'according to legend' 0.51, peaking inside the story that follows; documented statements about the same figures (dates, publications) are silent (0.07-0.11)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-1dc0a9b9"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

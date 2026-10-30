@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N2433+",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 2433,
+ "pole": "+",
+ "label": "a French or Portuguese article directly after a preposition: 'sur une table' 1.01, \"d'une contrepartie\" 0.53, 'das florestas' 0.66, 'sur le canapé' 0.36, 'pour les jeunes' 0.32; Spanish 'de las / a los' (0.08), English (0.004) and a French preposition followed by a possessive or pronoun ('sans son' 0.13) are weak",
+ "short": "French/Portuguese article after preposition",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N2433_pos/2026-10-30-ChopinDavid-90426e16.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.461,
+     "peak": " une"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.216,
+     "peak": " des"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.119,
+     "peak": "int"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.276,
+     "peak": " une"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.073,
+     "peak": " ball"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.183,
+     "peak": " grandes"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.357,
+     "peak": " dos"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.772,
+     "peak": " da"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.091,
+     "peak": " una"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": " ll"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": " f"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.255,
+     "peak": "ix"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.147,
+     "peak": " mon"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": "She"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": "Los"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.246,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-90426e16"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-90426e16",
+   "a French or Portuguese article directly after a preposition: 'sur une table' 1.01, \"d'une contrepartie\" 0.53, 'das florestas' 0.66, 'sur le canapé' 0.36, 'pour les jeunes' 0.32; Spanish 'de las / a los' (0.08), English (0.004) and a French preposition followed by a possessive or pronoun ('sans son' 0.13) are weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-90426e16"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

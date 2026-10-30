@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L14/N4702+",
+ "model": "bonsai1",
+ "layer": 14,
+ "index": 4702,
+ "pole": "+",
+ "label": "'free' meaning at no charge inside an offer or giveaway ('download a free guide' 0.74, 'get a free X', 'giving away free', 'provides free access'); 'free' as liberty or unoccupied (0.005-0.025), '-free' compounds (0.024) and the gratis meaning without the word ('at no cost' 0.09, 'gratuit' 0.12) are silent",
+ "short": "free (gratis) in an offer",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N4702_pos/2026-10-30-ChopinDavid-f0bac402.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.11,
+     "peak": " month"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.286,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.368,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.168,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.463,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.081,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.416,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.522,
+     "peak": " free"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": " dollars"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " prisoners"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": "any"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " allowed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.039,
+     "peak": " purchase"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " now"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.327,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-f0bac402"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-f0bac402",
+   "'free' meaning at no charge inside an offer or giveaway ('download a free guide' 0.74, 'get a free X', 'giving away free', 'provides free access'); 'free' as liberty or unoccupied (0.005-0.025), '-free' compounds (0.024) and the gratis meaning without the word ('at no cost' 0.09, 'gratuit' 0.12) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-f0bac402"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
