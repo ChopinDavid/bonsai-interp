@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L25/N1902-",
+ "model": "bonsai1",
+ "layer": 25,
+ "index": 1902,
+ "pole": "-",
+ "label": "'once' as a conjunction for the moment after arriving or a condition is met ('Once there, …', 'once they arrive', 'Once inside, …'); 'once' meaning 'one time' or 'formerly' stays quiet.",
+ "short": "conjunction 'once' (after arriving)",
+ "kind": "contextual / semantic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N1902_neg/2026-10-30-lm1909-6ef714f8.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.884,
+     "peak": " Once"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.545,
+     "peak": " Once"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.353,
+     "peak": " once"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.103,
+     "peak": " Once"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.468,
+     "peak": " inside"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.269,
+     "peak": " once"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.753,
+     "peak": " Once"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.147,
+     "peak": " Once"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.205,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.096,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": " once"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " posted"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.0,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.095,
+     "peak": " once"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.058,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " rise"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.41,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-6ef714f8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-6ef714f8",
+   "'once' as a conjunction for the moment after arriving or a condition is met ('Once there, …', 'once they arrive', 'Once inside, …'); 'once' meaning 'one time' or 'formerly' stays quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-6ef714f8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

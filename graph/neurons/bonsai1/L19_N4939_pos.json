@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N4939+",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 4939,
+ "pole": "+",
+ "label": "Low-confidence guess: the lone space token that begins a method line in Python code indented with 2 spaces (after a blank line, before 'def'); the same class indented with 4 spaces stays quiet.",
+ "short": "space token before 'def' in 2-space Python (guess)",
+ "kind": "code / format",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N4939_pos/2026-10-30-lm1909-1df49bc5.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.186,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.184,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.173,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.215,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.28,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.129,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.193,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.204,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.044,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.059,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.059,
+     "peak": ".val"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.069,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.059,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.051,
+     "peak": "class"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.059,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.067,
+     "peak": "   "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.19,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-1df49bc5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-1df49bc5",
+   "Low-confidence guess: the lone space token that begins a method line in Python code indented with 2 spaces (after a blank line, before 'def'); the same class indented with 4 spaces stays quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-1df49bc5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

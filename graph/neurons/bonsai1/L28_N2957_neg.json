@@ -12,6 +12,128 @@
  "tests": [
   {
    "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N2957_neg/2026-10-30-lm1909-55f033a9.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.732,
+     "peak": " improve"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.804,
+     "peak": " more"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.799,
+     "peak": " improved"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.426,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.545,
+     "peak": " improve"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.288,
+     "peak": " improved"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.403,
+     "peak": " improve"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.315,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.111,
+     "peak": " fit"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.672,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.025,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.348,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.271,
+     "peak": " add"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.022,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.144,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.486,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-lm1909-55f033a9"
+  },
+  {
+   "protocol": "quick-8+8@3",
    "tests_file": "graph/contributions/bonsai1/L28_N2957_neg/2026-10-30-lm1909-d8946495.tests.json",
    "prereg_commit": "eda09fda",
    "author": "lm1909",
@@ -135,6 +257,11 @@
  ],
  "label_history": [
   [
+   "2026-10-30-lm1909-55f033a9",
+   "A design change described as improving a vehicle's or craft's stability, control or clearance ('to improve yaw control', 'more stable', 'for improved ground clearance'), firing on 'improve(d)' or 'more'; design changes with other effects (weight, colour, cost) stay lower.",
+   "failed"
+  ],
+  [
    "2026-10-30-lm1909-d8946495",
    "A comparative claim about how a vehicle or vessel behaves after a change ('makes the boat more stable', 'harder to park', 'to improve yaw control', 'improved grip'), firing on the comparative or 'improve(d)' or the 'to' after it; the same vehicles described without a comparison, and comparative claims about non-vehicles (doors, phones, houses), stay low.",
    "held"
@@ -147,6 +274,7 @@
   "lm1909"
  ],
  "contributions": [
+  "2026-10-30-lm1909-55f033a9",
   "2026-10-30-lm1909-d8946495"
  ],
  "qc": {
@@ -157,10 +285,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }

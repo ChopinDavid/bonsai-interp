@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N296+",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 296,
+ "pole": "+",
+ "label": "' specially' (and Russian специальн-) for something made, chosen or prepared for a particular purpose ('specially designed', 'specially selected', 'specially trained'); the same sentences with 'carefully', 'well' or 'ordinary' stay quiet.",
+ "short": "'specially' (made for a purpose)",
+ "kind": "lexical / semantic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N296_pos/2026-10-30-lm1909-55cdb93c.tests.json",
+   "prereg_commit": "c4d33712",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.931,
+     "peak": " formulated"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.727,
+     "peak": " specially"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.722,
+     "peak": " specially"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.769,
+     "peak": " specially"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.906,
+     "peak": " specially"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.766,
+     "peak": " trained"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.27,
+     "peak": " prepared"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.707,
+     "peak": "альные"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.054,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " gloves"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " flour"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " cases"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " menu"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.131,
+     "peak": "бор"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.746,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-55cdb93c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-55cdb93c",
+   "' specially' (and Russian специальн-) for something made, chosen or prepared for a particular purpose ('specially designed', 'specially selected', 'specially trained'); the same sentences with 'carefully', 'well' or 'ordinary' stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-55cdb93c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
