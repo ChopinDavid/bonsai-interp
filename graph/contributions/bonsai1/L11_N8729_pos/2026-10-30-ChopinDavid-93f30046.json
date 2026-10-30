@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-93f30046",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N8729+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T08:34:41+00:00",
+ "recipe": {
+  "toolchain_commit": "f0d45dcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N8729_pos/2026-10-30-ChopinDavid-93f30046.tests.json"
+ },
+ "label": "unclear (max 6.2, broad 0.6%): best guess the token that continues a phrase right after a rare or technical content word (a narrow cleft| and 1.30, racial| stereotypes 0.70, whisk|ers 0.59, vertebrae|) 0.65, Social Security| number 0.40); the same frames with everyday words (identification| card 0.17, 'and bought' 0.07) are weaker",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N8729_pos/2026-10-30-ChopinDavid-93f30046.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.308,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.131,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.327,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.322,
+     "peak": " stereotypes"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.142,
+     "peak": " before"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.069,
+     "peak": " cl"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.47,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.638,
+     "peak": "ure"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.193,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.094,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.142,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.031,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.073,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.066,
+     "peak": " piece"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.171,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.366,
+     "peak": " gap"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.742,
+    "median_fire": 0.315,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f0d45dcd",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "continuation after a rare content word (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 6.2, density 0.61%, peaks ' for' x2, ' were' x2, ' is' x2, '()\\n' x2, 'key', '로' in auth_public|key, 'the same role for', 'narrow cleft and', 'Social Security number', '(vertebrae)', 'racial stereotypes', 'whisk|ers', 'land were purchased', 'when reached'. Probe: 'narrow cleft and' 1.298, 'racial stereotypes' 0.701, '(vertebrae)' 0.652, 'whiskers' 0.586, 'auth_publickey(...)' 0.500, 'Social Security number' 0.401, 'land were' 0.339; 'tax identification card' 0.173, market control 0.074. The common thread in the hits is a low-frequency noun just before the peak, so the test swaps rare nouns (gorge, oesophagus, vibrissae, clavicle, fissure) for everyday ones (field, stomach, paws, cast, gap) in the same frames.",
+ "selection": "random draw"
+}

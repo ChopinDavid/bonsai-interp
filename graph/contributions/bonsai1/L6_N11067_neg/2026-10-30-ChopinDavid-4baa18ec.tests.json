@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4baa18ec",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N11067-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N11067",
+   "pole": "-",
+   "label": "the surname token right after the first name David (David Wise 0.71, David Ridley 0.75, David Greig 0.82), with unrelated extra triggers on the pieces 'word size' 0.93 and Y|MC|As 0.84; the same surnames after other first names (Sarah Greig 0.06, Ken Ortiz 0.14) and sentences without a name (0.01-0.02) are quiet",
+   "fire": [
+    "The lead role went to David Thewlis in the end.",
+    "Our keynote speaker this year is David Attenborough.",
+    "A letter from David Hume to Adam Smith survives in the archive.",
+    "The bridge was designed by David Steel in 1934.",
+    "She married David Brennan the following spring.",
+    "The column was written by David Brooks for the Sunday edition.",
+    "The goal was scored by David Villa in the final minute.",
+    "Tickets were sold by David Marsh at the door."
+   ],
+   "quiet": [
+    "The lead role went to Emma Thewlis in the end.",
+    "Our keynote speaker this year is Richard Attenborough.",
+    "A letter from Mary Hume to Adam Smith survives in the archive.",
+    "The bridge was designed by Peter Steel in 1934.",
+    "She married Mark Brennan the following spring.",
+    "The column was written by Anna Brooks for the Sunday edition.",
+    "The goal was scored by Paco Villa in the final minute.",
+    "Tickets were sold by Laura Marsh at the door."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on the surname; near misses under 0.2, a famous full name (Richard Attenborough) the likeliest leak; coverage partial because the 'word size' and YMCA pieces are not Davids",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "surname after 'David'",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 5.9, density 0.058%, peaks 'MM' x2 (Christine Y|MM), ' Ortiz' x2, ' size' (word size), 'MC' (Y|MC|As), 'ig' (David Gre|ig), 'y' (Sheeh|y), ' Ridley', ' Lam' (David Lam|my), 'v' (Yuro|v), ' Wise' (David Wise). Probe: 'word size' 0.929, YMCAs 0.842 ('MC'), 'David Greig and reviewed by Sheehy' 0.821 (peak 'y'), David Ridley 0.754, David Wise 0.708; Ken Ortiz 0.139, Sarah Greig 0.058, no-name controls 0.012-0.017. Five of the ten card examples carry 'David', and the one surname tested after another first name dropped to 0.06, so the test pairs eight David surnames with the same surnames after other first names."
+}

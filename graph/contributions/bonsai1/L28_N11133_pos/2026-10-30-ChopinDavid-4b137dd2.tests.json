@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4b137dd2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N11133+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N11133",
+   "pole": "+",
+   "label": "plant pathology and crop genetics: diseases of crops and their vectors (bacterial diseases of tomatoes 0.78, citrus greening 0.57) and plant genetic resources or resistance genes in crops (0.47, 0.29); the same frames for animal or human disease (Lyme disease in dogs 0.24, drug resistance in patients 0.17, cat viruses 0.13) are weaker and ornamental gardening without disease (0.00) is quiet",
+   "fire": [
+    "Fungal diseases of grapevines such as powdery and downy mildew spread quickly in wet summers.",
+    "The aphid transmits a virus known as barley yellow dwarf, which stunts cereal crops.",
+    "The gene bank conserves landraces of maize and beans for future breeding.",
+    "Breeders screened the rice lines for resistance to bacterial blight.",
+    "Fire blight, a bacterial disease of apples and pears, is spread by bees and rain.",
+    "Late blight of potato is caused by an oomycete rather than a true fungus.",
+    "The centre holds germplasm of wild relatives of wheat collected in the Levant.",
+    "A quarantine was imposed after the fungus was found on banana plantations."
+   ],
+   "quiet": [
+    "Fungal infections of the skin such as ringworm spread quickly in warm gyms.",
+    "The mosquito transmits a virus known as dengue, which causes high fever.",
+    "The biobank stores blood samples from volunteers for future studies.",
+    "Doctors screened the patients for resistance to the antibiotic.",
+    "Kennel cough, a respiratory disease of dogs, is spread by close contact.",
+    "Mastitis in dairy cows is caused by bacteria rather than a virus.",
+    "The museum holds fossils of early mammals collected in the Gobi.",
+    "A quarantine was imposed after the virus was found on poultry farms."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8; near misses 0.05-0.25 with the animal-disease items highest; one or two fire items may fall under 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "crop diseases and plant genetics",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 135, density 0.057%, peaks ' genetic' x2, ' Genetic' x2, ' as' x2, ' molecular' x2, 'lla' (Xyle|lla fastidiosa), 'ight' (bl|ight-resistance) in 'genes and genetic mechanisms underlying the resistance', 'bacteria known as Citrus Greening Disease', 'Candidatus liberibacter', 'Bacterial diseases of tomatoes (Speck, Spot and Canker)', 'Plant Genetic Resources'. Probe: tomato diseases 0.784, citrus greening 0.574, plant genetic resources 0.470, wheat resistance genes 0.293; Lyme in dogs 0.239, human drug resistance 0.169, blight-resistant chestnut 0.137, cat viruses 0.129, roses 0.000, committee 0.004. Near misses keep each frame and move the disease or gene bank to humans, dogs, cows, poultry or fossils."
+}

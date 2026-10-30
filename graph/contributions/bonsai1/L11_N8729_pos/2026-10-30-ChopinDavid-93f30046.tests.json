@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-93f30046",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N8729+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N8729",
+   "pole": "+",
+   "label": "unclear (max 6.2, broad 0.6%): best guess the token that continues a phrase right after a rare or technical content word (a narrow cleft| and 1.30, racial| stereotypes 0.70, whisk|ers 0.59, vertebrae|) 0.65, Social Security| number 0.40); the same frames with everyday words (identification| card 0.17, 'and bought' 0.07) are weaker",
+   "fire": [
+    "The stream cuts through a deep gorge and over a waterfall.",
+    "The clinic treats disorders of the oesophagus (gullet) in older patients.",
+    "Cats use their vibrissae to judge the width of a gap.",
+    "The council promised to avoid ethnic stereotypes in its posters.",
+    "Applicants need a National Insurance number before they can start work.",
+    "The surgeon removed a fragment of the clavicle during the operation.",
+    "Otters use their whiskers to track fish in murky water.",
+    "The rock was forced through a narrow fissure and into the chamber below."
+   ],
+   "quiet": [
+    "The stream runs through a wide field and past a farmhouse.",
+    "The clinic treats problems of the stomach in older patients.",
+    "Cats use their paws to test the depth of the water.",
+    "The council promised to avoid long speeches at its meetings.",
+    "Applicants need a bus pass before they can start the course.",
+    "The surgeon removed a piece of the cast after the operation.",
+    "Otters use their tails to steer in fast water.",
+    "The water was forced through a wide gap and into the tank below."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8, near misses 0.1-0.3; a partial or fail is likely because the card is heterogeneous",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "continuation after a rare content word (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 6.2, density 0.61%, peaks ' for' x2, ' were' x2, ' is' x2, '()\\n' x2, 'key', '로' in auth_public|key, 'the same role for', 'narrow cleft and', 'Social Security number', '(vertebrae)', 'racial stereotypes', 'whisk|ers', 'land were purchased', 'when reached'. Probe: 'narrow cleft and' 1.298, 'racial stereotypes' 0.701, '(vertebrae)' 0.652, 'whiskers' 0.586, 'auth_publickey(...)' 0.500, 'Social Security number' 0.401, 'land were' 0.339; 'tax identification card' 0.173, market control 0.074. The common thread in the hits is a low-frequency noun just before the peak, so the test swaps rare nouns (gorge, oesophagus, vibrissae, clavicle, fissure) for everyday ones (field, stomach, paws, cast, gap) in the same frames."
+}

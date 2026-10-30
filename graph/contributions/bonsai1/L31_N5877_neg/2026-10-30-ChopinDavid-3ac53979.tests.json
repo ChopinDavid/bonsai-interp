@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3ac53979",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N5877-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N5877",
+   "pole": "-",
+   "label": "the token TCP/tcp, the transport protocol name (TCP connections 0.42, TCP_NODELAY 0.98, TCP/IP 0.94, tcp_keepalive 0.47); sibling protocol names (UDP 0.06, IP 0.003, HTTP 0.04) are quiet; a serial-port parameter block from the card also fires (0.62 on the newline before stop_bits) and is not part of the declared trigger",
+   "fire": [
+    "The firewall drops incoming TCP packets on port 23.",
+    "Most web traffic still rides on TCP rather than QUIC.",
+    "A three-way handshake opens every TCP session.",
+    "The tool prints the TCP window size for each flow.",
+    "Nagle's algorithm batches small tcp segments before sending.",
+    "The socket was opened with SOCK_STREAM, the TCP stream type.",
+    "The sysctl net.ipv4.tcp_syncookies protects against SYN floods.",
+    "The exam covers the TCP/IP model and its four layers."
+   ],
+   "quiet": [
+    "The firewall drops incoming UDP packets on port 23.",
+    "Most voice calls ride on UDP rather than a reliable transport.",
+    "A certificate exchange opens every TLS session.",
+    "The tool prints the IP header length for each flow.",
+    "The router batches small ICMP replies before sending.",
+    "The socket was opened with SOCK_DGRAM, the datagram type.",
+    "The sysctl net.ipv4.ip_forward enables routing between interfaces.",
+    "The exam covers the OSI model and its seven layers."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.0 on the TCP token; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the token TCP",
+ "unit_kind": "lexical",
+ "confidence": 0.75,
+ "notes": "Card: max 160, density 0.08%, peaks ' TCP' x8, 'TCP' x3, ' tcp' x3, '.set' x2, ' DNA' x2 in TCP/IP, TCP_NODELAY, tcp|Pkt, TCP connections, plus 'buffer or delay traffic' and a serial config block; the + pole peaks on ' IP' and promotes ' Route'/' cycle'. Probe: TCP_NODELAY 0.977, TCP/IP properties 0.942, tcp_keepalive 0.473, TCP connections 0.418; serial block 0.617 (peak '\\n' before stop_bits), 'buffer or delay traffic' 0.100, UDP 0.057, HTTP 0.036, IP address 0.003. Near misses replace TCP with UDP, TLS, IP, ICMP, SOCK_DGRAM, ip_forward and the OSI model in the same frames. Trigger declared as the word TCP (any case).",
+ "trigger": {
+  "words": [
+   "TCP"
+  ]
+ }
+}

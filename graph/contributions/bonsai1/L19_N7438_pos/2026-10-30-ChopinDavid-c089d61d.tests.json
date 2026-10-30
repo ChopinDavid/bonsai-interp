@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c089d61d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N7438+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N7438",
+   "pole": "+",
+   "label": "the line break after a code line that reassigns a variable to a slice of itself (name = name[4:] 0.52, url = url[:-1] 0.39); slicing a different variable (first = parts[0] 0.04), a non-slice reassignment (total = count * 2 0.03) and a slice of a method result (path = path.split('/')[-1] 0.11) are weak or quiet",
+   "fire": [
+    "    if key.startswith('x-'):\n        key = key[2:]\n    return key.lower()",
+    "    if line.endswith('\\n'):\n        line = line[:-1]\n    parts = line.split()",
+    "    while text.startswith(' '):\n        text = text[1:]\n    return text",
+    "    if prefix in version:\n        version = version[len(prefix):]\n    channel = detect_channel(version)",
+    "    if token.endswith(';'):\n        token = token[:-1]\n\n    tokens.append(token)",
+    "    if host.startswith('www.'):\n        host = host[4:]\n    return host",
+    "    if query[0] == '?':\n        query = query[1:]\n    params = parse_qs(query)",
+    "    if s.startswith('0x'):\n        s = s[2:]\n    return int(s, 16)"
+   ],
+   "quiet": [
+    "    if key.startswith('x-'):\n        key = key.lower()\n    return key",
+    "    if line.endswith('\\n'):\n        line = line.rstrip()\n    parts = line.split()",
+    "    while count < limit:\n        count = count + 1\n    return count",
+    "    if prefix in version:\n        channel = detect_channel(version)\n    return channel",
+    "    if token.endswith(';'):\n        last = token[-1]\n\n    tokens.append(token)",
+    "    if host.startswith('www.'):\n        host = host.replace('www.', '')\n    return host",
+    "    if query[0] == '?':\n        first = query[0]\n    params = parse_qs(query)",
+    "    if s.startswith('0x'):\n        value = int(s, 16)\n    return value"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on the newline after the slice line; near misses under 0.1; prose ' so'/' any' from the card (0.1-0.2) are not tested",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "newline after x = x[slice]",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 11.3, density 0.045%, peaks '\\n' x5, ']\\n\\n' x2, ':]\\n' x2 after new_field = new_field.split('.')[-1], isbn = isbn[4:], url_hash = url_hash[1], oldversion = oldversion[3:], plus ' so' (so long as) and ' any'. Probe: name = name[4:] 0.522 (':]\\n'), url = url[:-1] 0.385, path = path.split('/')[-1] 0.114, first = parts[0] 0.040, total = count * 2 0.034, tokens = text.split() 0.017, 'so long as' 0.108, 'but any station' 0.192, control 0.026. Fire items are three-line snippets with a direct self-slice on the middle line; near misses keep the same shape and replace the self-slice with a method call, arithmetic or an index into another variable."
+}

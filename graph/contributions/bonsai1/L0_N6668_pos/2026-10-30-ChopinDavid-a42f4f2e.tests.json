@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a42f4f2e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N6668+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N6668",
+   "pole": "+",
+   "label": "layer-0 token detector: ' await' as the first token after indentation on a Python line (0.60, 0.78), more weakly ' self' and ' #' in the same position and the closing 'html' tag name (0.40); 'await' unindented (0.05) or in prose (0.04), 'self' in prose (0.05) and other indented line-initial tokens (' raise' 0.22) are quiet or weak",
+   "fire": [
+    "    async def start(self):\n        await self.connect()\n        return True",
+    "        client = Client(url)\n        await client.login(user)\n        print('ok')",
+    "    async with session.get(url) as resp:\n        await resp.read()\n        total += 1",
+    "        hass.bus.fire(EVENT_START)\n        await hass.block_till_done()",
+    "    for job in jobs:\n        await queue.put(job)\n    await queue.join()",
+    "    def setup(self):\n        self.client = Client()\n        self.cache = {}",
+    "        entry = registry.get(key)\n        self.entries.append(entry)\n        return entry",
+    "<div>Status: OK</div>\n</body>\n</html>"
+   ],
+   "quiet": [
+    "    def start(self):\n        return self.connect()\n",
+    "        client = Client(url)\n        client.login(user)\n        print('ok')",
+    "    with open(path) as fh:\n        data = fh.read()\n        total += 1",
+    "        hass.bus.fire(EVENT_START)\n        hass.block_till_done()",
+    "    for job in jobs:\n        queue.put(job)\n    queue.join()",
+    "Guests should await further instructions in the lobby.",
+    "The author describes the self as a bundle of habits.",
+    "<div>Status: OK</div>\n<p>Done</p>"
+   ]
+  }
+ ],
+ "predictions": "await items 0.5-0.8, the two self items and the html item 0.3-0.5; near misses under 0.25 with the indented ' client'/' data' lines the highest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "indented line-initial ' await' / ' self'",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: layer 0, max 0.88, density 0.60%, peaks ' self' x8, ' await' x6, 'html' x4, \" '''\", ' #', all after indentation whitespace in Python tests or at the end of an HTML string. Probe: indented 'await flush_store' 0.782, indented 'await self.flush()' 0.603 (the self line in the same snippet did not take the peak), '</html>' 0.402, indented 'raise' 0.220; unindented 'self.process = None / await flush()' 0.048, prose await 0.039, prose himself 0.053, 'def run(self): return self.value' 0.035. Fire items put ' await' (five), ' self' (two) or 'html' first after indentation; near misses keep the same snippets with other tokens in that slot, 'await'/'self' in prose, and an HTML fragment without the html close."
+}

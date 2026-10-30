@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-80abb9ee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N10300-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N10300",
+   "pole": "-",
+   "label": "a byte-fallback piece inside a katakana or hangul transliteration of a Western loanword (オーブン 0.40, 오퍼 0.33, 뉴욕 0.28, ニューヨーク 0.25); native Japanese and Korean words (0.003-0.02) are quiet; a weak unit, and loanwords without a long-vowel or multi-byte piece (ヒルズ 0.08, オファー情報 0.007) miss",
+   "fire": [
+    "朝はハンバーガーを食べてから出かけます。",
+    "新しいサーバーを注文しました。",
+    "リビングに大きなテーブルを置きました。",
+    "来週ニューヨークへ出張します。",
+    "아침에 커피를 마시고 출근했습니다.",
+    "거실에 큰 테이블을 놓았습니다.",
+    "다음 주에 런던으로 출장을 갑니다.",
+    "ケーキを焼くためにオーブンを買いました。"
+   ],
+   "quiet": [
+    "朝はご飯を食べてから出かけます。",
+    "新しい机を注文しました。",
+    "居間に大きな棚を置きました。",
+    "来週大阪へ出張します。",
+    "아침에 차를 마시고 출근했습니다.",
+    "거실에 큰 책상을 놓았습니다.",
+    "다음 주에 부산으로 출장을 갑니다.",
+    "パンを焼くために釜を買いました。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.45 with several under 0.3, so the median is borderline; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "byte piece inside a katakana/hangul loanword",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 84, density 0.07%, peaks '�' x19, ' �' x6, 'ー�' x3 in ' 뉴욕' (New York), ' 오퍼 정보' (offer info), ' フ' of フォース, ' ヒ' of ヒルズ, 'ーブ' of オーブン, all transliterated Western words in Korean/Japanese hotel and recipe pages; the + pole (max 1440) also peaks on 'ー�'. Probe: オーブン 0.404 ('ー�'), 오퍼 정보 0.325, 뉴욕 0.282, ニューヨーク 0.247; ヒルズゴルフコース 0.078, オファー情報 0.007, native 図書館 0.003, 학교 0.020, 海 0.003. Tokenizer: ハンバーガー 'ハン|バ|ー�|�|ー', サーバー 'サー�|�|ー', テーブル 'テー�|�|ル', ニューヨーク 'ニュ|ー�|�|ー|ク' (コーヒー and ロンドン without a leading space have no byte piece and were not used), 커피 ' �|��|�|�', 테이블, 런던 ' �|�|�|던'; near misses swap each loanword for a native word in the same sentence (お茶, 机, 棚, 大阪, 차, 책상, 부산, 釜)."
+}

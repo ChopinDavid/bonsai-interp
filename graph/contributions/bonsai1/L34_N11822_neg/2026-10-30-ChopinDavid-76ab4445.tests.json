@@ -1,0 +1,61 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-76ab4445",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N11822-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T08:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N11822",
+   "pole": "-",
+   "label": "a bare 's' piece that starts a word the tokenizer splits, with the rest of the word in the following tokens (' S|op|with' 0.42, ' S|val|bard' 0.38, 'Egyptian|-S|y|rian' 0.67, 'ex|-s|erv|ic|emen' 0.23, 'half|-s|ister'); the same words as a single token (' Syrian' 0.001) or starting with a longer piece (' Sl|igo', ' Sum|atra', '-section') are quiet; ' S|met|ana' scored only 0.05, so not every ' S' piece fires",
+   "fire": [
+    "The Milanese court of the Sforza family employed Leonardo for years.",
+    "The symphony hall will stage Sibelius next season.",
+    "The Romanian city of Sibiu hosts a theatre festival every June.",
+    "Scientists on Svalbard monitor the seed vault through the polar night.",
+    "Her co-sponsor on the bill withdrew before the vote.",
+    "The half-sunk barge blocked the canal for a week.",
+    "The Egyptian-Syrian union was announced in 1958.",
+    "The script writes results.scores to the output folder after each run."
+   ],
+   "quiet": [
+    "The Medici court of Florence employed artists for years.",
+    "The symphony hall will stage Sinatra tributes next season.",
+    "The Irish town of Sligo hosts a music festival every June.",
+    "Scientists on Sumatra monitor the rainforest through the wet season.",
+    "Her non-standard reading of the bill drew criticism before the vote.",
+    "The re-start of the canal works was delayed by a week.",
+    "The new Syrian cabinet was announced in 1958.",
+    "The script calls results.sort before writing the output folder after each run."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on the s piece, one or two misses possible (the Smetana case); near misses under 0.06",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-initial 's' piece of a split word",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 251, density 0.23%, peaks '-s' x7, ' S' x7, '.s' x3, 'ss' x2, 'S' x2, '.S' x2 in class|-s|cheme, ' S|opwith', 'Egyptian|-S|yrian', 'Bezahlung|ss|ystem', 'lottery|/s|weepstakes', '.s|cores', \"'S|ergeant\", 'ex|-s|ervicemen', 'inters|phinx'. Probe: '-S' in Egyptian-Syrian 0.667, ' S' in Sopwith 0.416, Svalbard 0.382, Soweto 0.235, '-s' in ex-servicemen 0.232; Smetana 0.048, single-token Syrian 0.001, Bristol/Mahler controls 0.001-0.058. Tokenizer: Sforza ' S|for|za', Sibelius ' S|ibel|ius', Sibiu ' S|ib|iu', co-sponsor 'co|-s|ponsor', half-sunk 'half|-s|unk', results.scores 'results|.s|cores'; near misses use ' Sinatra', ' Sligo' (' Sl'), ' Sumatra' (' Sum'), 'non-standard' ('-standard'), 're-start' ('-start'), ' Syrian', '.sort' (single tokens); the .scores/.sort items are attached to a name with no space, because ' .scores' splits as ' .|scores'. The trigger is declared as the exact pieces.",
+ "trigger": {
+  "tokens": [
+   " S",
+   "-S",
+   "-s",
+   "/s",
+   ".s",
+   "'S",
+   "ss",
+   "S",
+   ".S"
+  ]
+ }
+}
