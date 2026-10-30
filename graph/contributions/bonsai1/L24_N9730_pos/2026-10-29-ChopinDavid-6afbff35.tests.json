@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-6afbff35",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N9730+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N9730",
+   "pole": "+",
+   "label": "unclear: the probe found no trigger above 0.32. Best guess from the probe: the verb of a temporal or conditional subordinate clause ('until she reaches for the toy' 0.32, 'as soon as Emma begins to reach' 0.30, 'it did not burn up' 0.25, 안오면 0.11); plain main-clause sentences are 0.00-0.02; a broad pole (1.1% of tokens reach 0.1 of max)",
+   "fire": [
+    "The nurse waits until the baby settles before she dims the light.",
+    "As soon as the kettle starts to whistle, turn off the gas.",
+    "If the paint does not dry by noon, we will have to postpone the second coat.",
+    "He kept talking until the audience began to drift towards the exit.",
+    "Whenever the dog hears the gate, it runs to the window.",
+    "Once the glue sets, the joint will hold more weight than the wood itself.",
+    "내일 눈이 안 오면 산에 갈 거예요.",
+    "She stopped singing as soon as the baby reached for the bottle."
+   ],
+   "quiet": [
+    "The nurse dimmed the light and left the room.",
+    "The kettle whistled and he turned off the gas.",
+    "The paint dried by noon and they applied the second coat.",
+    "The audience drifted towards the exit during his speech.",
+    "The dog ran to the window and barked at the gate.",
+    "The glue set overnight and the joint held.",
+    "내일 산에 갈 거예요.",
+    "She sang quietly and the baby held the bottle."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.35, near misses below 0.1; the test is likely to fail on magnitude",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "subordinate-clause verb (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 24.4, density 1.05% (flagged broad), no single token (' tick', 's', ' for', ' not', '일', ' as'): 'stops her tick|ling', '\"s|ucks\" is not', 'find a spot for this', 'did not dehydrate', 내일 비 안오면, 괜찮은 호텔, 'perceived ... as delirium'. Probe: 'keeps on tickling Emma until she reaches' 0.315 (peak ' reaches'), 'stops her tickling as soon as Emma begins' 0.299 (peak ' begins'), 'did not burn up' 0.246, 'perceived ... as a fit' 0.118, 안오면 0.106, 괜찮은 호텔이라고 0.078, 'sucks is not considered' 0.070; committee 0.002, train 0.018. The negation reading failed (the 'keeps on' control scored highest), so the subordinate-clause verb is the best remaining guess."
+}

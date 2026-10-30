@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-f89c409f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N7766-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T03:34:32+00:00",
+ "recipe": {
+  "toolchain_commit": "691dfad4",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N7766_neg/2026-10-29-ChopinDavid-f89c409f.tests.json"
+ },
+ "label": "a source attribution in religious scholarship: the hadith collector after رواه (رواه البخاري 0.69, رواه مسلم 0.67), a bracketed collector after an English hadith ('(Ibn Majah)' 0.38, '(Tirmidhi)' 0.25), a rabbinic name or code (Rav Yeh|uda 0.50, 'Mishneh Torah (Hilchot' 0.30); an academic citation '(Walker, 2017)' 0.01 and Arabic prose without a citation 0.01 are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N7766_neg/2026-10-29-ChopinDavid-f89c409f.tests.json",
+   "prereg_commit": "691dfad4",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.672,
+     "peak": "ه"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.714,
+     "peak": " الب"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.247,
+     "peak": " وم"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.491,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.07,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.624,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.204,
+     "peak": " Mish"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.365,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": " working"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " trade"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.027,
+     "peak": "كه"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": "شر"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " thirty"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.055,
+     "peak": "he"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.428,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "691dfad4",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "hadith/Torah source attribution",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 57.5, density 0.29%, peaks ' (' x5, 'ه' x5 (روا|ه البخاري, (Tirmidhi), (Mishne Torah, Reported by Abu Nu'aym in, Rav Yeh|uda, ابن تيمية-). Probe: رواه البخاري ومسلم 0.687, رواه مسلم 0.665 (peak 'ه'), Rav Yehuda Amital 0.495 (peak 'uda'), '(Ibn Majah)' 0.383 (peak 'bn'), 'Mishneh Torah (Hilchot Teshuvah 2:1)' 0.304 (peak ':'), '(Tirmidhi)' 0.253; '(Walker, 2017)' 0.007, Arabic prose 0.005, bakery filler 0.010. Note ' رواه' splits as ' ر','وا','ه'.",
+ "selection": "random draw"
+}

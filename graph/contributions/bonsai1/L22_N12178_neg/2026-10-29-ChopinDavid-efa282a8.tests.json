@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-efa282a8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N12178-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N12178",
+   "pole": "-",
+   "label": "the present moment as the reference point of a statement ('as I write this piece,' 0.59, 'rise from about two million today' 0.58, 'not currently considered valid' 0.42, 'right now' 0.16); the same statements anchored in the past ('at the time', 'back in 1990') are at 0.01; a broad pole (1.8% of tokens reach 0.1 of max), so near misses may fire weakly",
+   "fire": [
+    "The factory employs about four hundred people today, and the number is expected to grow from there.",
+    "As things stand at the moment, the bridge carries only local traffic.",
+    "Even now, decades after the accident, the plant is still being decommissioned.",
+    "At present the vaccine is not approved for children under five.",
+    "As I type these lines, the rain is still hammering on the roof.",
+    "The species is currently listed as endangered, and its range is still shrinking.",
+    "For the time being, the museum is open only on weekends.",
+    "These days the orchard produces barely a tenth of what it once did."
+   ],
+   "quiet": [
+    "The factory employed about four hundred people in 1975, and the number grew from there.",
+    "As things stood in those days, the bridge carried only local traffic.",
+    "Back then, a decade after the accident, the plant was still being decommissioned.",
+    "At that time the vaccine was not approved for children under five.",
+    "As I typed those lines that night, the rain was still hammering on the roof.",
+    "The species was listed as endangered in 1998, and its range was still shrinking.",
+    "In those years the museum was open only on weekends.",
+    "In the old days the orchard produced far more than it did later."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.6; past-anchored near misses below 0.15; a broad pole, so expect one or two leaks",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "present-moment anchoring",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 16.3, density 1.75% (flagged broad), peaks ',', ' are', ' from', ' if', ' now' ('Right now, I'm playing', 'increase from about 156 million today', 'As I write this piece,', 'are not considered valid'); the + pole promotes ' later', ' early', ' was', 当时 and suppresses ' currently', so the axis is then/now. Probe: 'As I write this piece,' 0.593, 'rise from about two million today' 0.582, 'not currently considered valid' 0.415, 'right now I am mostly playing' 0.159; 'At the time, the city had' -0.014, 'Back in 1990' 0.014, 'Later that year' 0.005, narrative past 0.084, recipe 0.147."
+}

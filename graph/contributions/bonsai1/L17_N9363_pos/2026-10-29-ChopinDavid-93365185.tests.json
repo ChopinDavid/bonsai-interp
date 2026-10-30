@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-93365185",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N9363+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N9363",
+   "pole": "+",
+   "label": "the comparison class in a lagging-behind comparison: the others who already have what the subject lacks ('the kind the NFL and the NBA already have' 1.27, 'that all the other major appliances have' 0.83, 'as other countries surge ahead' 0.64, 'lags far behind semiconductor development' 0.61, 'in all other fields' 0.57); the same entities without the lag comparison are at 0.06 or less",
+   "fire": [
+    "Rail freight in the region has never seen the investment that roads and airports have enjoyed.",
+    "The city still lacks the kind of cycle network that Copenhagen and Amsterdam built decades ago.",
+    "Our rural clinics are falling behind as the urban hospitals race ahead with new scanners.",
+    "Dentistry has not shared in the productivity gains that other branches of medicine have made.",
+    "Wind power in the state trails far behind what neighbouring states have installed.",
+    "Compared with the leaps made in every other sport, swimming technique has barely changed.",
+    "The library's catalogue is years behind the systems that most universities already use.",
+    "Her salary has not kept pace with what her colleagues in the private sector earn."
+   ],
+   "quiet": [
+    "Rail freight in the region carries mostly grain, timber and coal.",
+    "Copenhagen and Amsterdam both have canals that freeze in a hard winter.",
+    "The urban hospitals ordered new scanners for their radiology departments.",
+    "Dentistry students spend their final year treating patients under supervision.",
+    "Neighbouring states share a long border along the river.",
+    "Swimming technique is taught in four strokes at most clubs.",
+    "Most universities publish their library catalogues online.",
+    "Her colleagues in the private sector take the train to work."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.2 on the comparison-class noun or its 'have/already'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "what others have already achieved",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 47.3, density 0.07%, peaks ' have' x3, ' fields', ' ahead', ' has', ' peers', ' those' ('in all other fields, educational innovations are very less', 'the gains all the other major home appliances have seen', 'the NHL, already have', 'other countries surge ahead', 'falling behind those of other countries', 'their peers literally run around them'). Probe: 'the NFL and the NBA already have' 1.270, 'all the other major appliances have' 0.825, 'other countries surge ahead' 0.643, 'lags far behind semiconductor development' 0.609, 'all other fields' 0.570; 'Refrigerators are usually white' 0.004, 'The NFL and the NBA both play' 0.041, 'Students in every country study' 0.056, recipe 0.004."
+}

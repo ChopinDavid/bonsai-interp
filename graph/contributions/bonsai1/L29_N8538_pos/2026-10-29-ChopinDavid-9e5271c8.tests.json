@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-9e5271c8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N8538+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N8538",
+   "pole": "+",
+   "label": "the close of an inline formula or tuple from which a 'where <variable> is ...' definition is expected ('(f, t), where f' 0.61, '1/N, où N' 0.60, 'E = hf, where h' 0.50, '[0, N), where N' 0.44, '(9/10)^k, where k' 0.39); the formula close fires even when no 'where' follows ('(f, t) and prints' 0.49, 'E = hf.' 0.30), while 'where' as a place relative ('a small town, where') is 0.00",
+   "fire": [
+    "The force on the charge is F = qE, where q is the charge and E the field strength.",
+    "The call returns a pair (status, payload), where status is an integer code.",
+    "La période est T = 2π/ω, où ω est la pulsation.",
+    "The variance grows as σ²/n, where n is the number of samples.",
+    "Il valore atteso è np, dove n è il numero di prove e p la probabilità.",
+    "Each thread gets an index in [0, M), where M is the block size.",
+    "The decay follows N(t) = N₀e^(−λt), where λ is the decay constant.",
+    "La función devuelve una tupla (clave, valor), donde clave es una cadena."
+   ],
+   "quiet": [
+    "We drove to the village by the lake, where my grandparents still keep a boat.",
+    "The call returns the payload and logs the status to a file.",
+    "She stopped at the corner shop, where the owner knows everyone by name.",
+    "The number of samples was set by the user at the start of the run.",
+    "Il valore atteso dipende dal numero di prove e dalla probabilità di successo.",
+    "Each thread is given a block of work and reports back when it finishes.",
+    "They moved to a town in the north, where winters are long and dark.",
+    "The decay constant was measured in the lab last year."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on the ',' or ')' after the formula; place-'where' and variable-free prose near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "formula close before 'where'",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 330, density 0.013%, peaks ',' x8, '`,' x4, ')' x2 after [0, N), (f, t)`, 1/N, ln(ax), (9/10)k; the - pole promotes ' where', ' où', ' donde', ' где'. Probe: '(f, t), where f' 0.610, '1/N, où N' 0.601, 'E = hf, where h' 0.502, '(f, t) and prints' 0.494 (peak ')'), '[0, N), where N' 0.444, '(9/10)^k, where k' 0.392, 'E = hf. This relation' 0.304 (peak ' hf'); 'a small town near the coast, where' 0.000, report filler 0.001. The 'where' itself is not needed: the pole fires at the formula's close, where the definition clause is predicted."
+}

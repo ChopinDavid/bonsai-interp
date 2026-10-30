@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-e953388e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N4977-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N4977",
+   "pole": "-",
+   "label": "'list' completing the compound 'bucket list' ('a sure bucket list trip' 1.02, 'The Bucket List' 0.96, 'on my bucket list' 0.82); weaker on other fixed two-word compounds ('quantum leap' 0.38, 'Battle Creek' 0.31); 'shopping list' 0.04, 'reading list' 0.01 and 'bucket' alone 0.01 are quiet",
+   "fire": [
+    "Swimming with whale sharks has been on her bucket list since college.",
+    "Running a marathon was the last item he crossed off his bucket list.",
+    "A trip on the Trans-Siberian railway tops many travellers' bucket lists.",
+    "They watched The Bucket List again and both cried at the ending.",
+    "Add the aurora to your bucket list and go in February for the best chance.",
+    "For most divers the Great Barrier Reef is a bucket list destination.",
+    "He kept a bucket list in a notebook and ticked off a wish every year.",
+    "Seeing a total eclipse was high on my bucket list, and in 2024 I finally did."
+   ],
+   "quiet": [
+    "Swimming with whale sharks has been on her wish list since college.",
+    "Running a marathon was the last item he crossed off his to-do list.",
+    "A trip on the Trans-Siberian railway tops many travellers' itineraries.",
+    "They watched the film again and both cried at the ending.",
+    "Add milk to your shopping list and go to the market before it closes.",
+    "For most divers the reef is a dream destination.",
+    "He kept a checklist in a notebook and ticked off a task every day.",
+    "He carried the bucket of water across the yard to the horses."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.6-1.0 on ' list'/' List'/' lists'; near misses (wish list, to-do list, shopping list, checklist, bucket of water) below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "bucket list",
+ "unit_kind": "lexical",
+ "confidence": 0.75,
+ "notes": "Card: max 12.4, density 0.016%, peaks 'list' x5, ' boom' x4, ' list' x2, ' leap' x2, ' Creek' x2 (The Bucket List, bucket list dive, sweepstakes bucket list, item|list, bug lists, quantum leap, Battle Creek). Probe: 'sure bucket list trip' 1.022, 'The Bucket List' 0.960, 'on my bucket list' 0.818, 'quantum leap' 0.376, 'Battle Creek' 0.312; 'shopping list' 0.040, 'reading list' 0.014, 'filled the bucket' 0.006, orchestra filler 0.012. 'bucket list' splits as ' bucket',' list'; ' checklist' is one token."
+}

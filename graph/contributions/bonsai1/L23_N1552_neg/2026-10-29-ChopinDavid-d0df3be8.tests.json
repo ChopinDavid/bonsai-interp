@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d0df3be8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N1552-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N1552",
+   "pole": "-",
+   "label": "the copula 'is/be' that presents the subject as the thing the reader has been looking for ('this is it' 0.82, 'this post is for you' 0.51, 'insulin is the key' 0.29, 'Martinez is their guy' 0.27); copulas with descriptive, locative or 'about' predicates ('is cold', 'is on the third floor', 'is about') are at 0.02 or less",
+   "fire": [
+    "If you have ever wished for a quieter kettle that still boils fast, this is the one.",
+    "For anyone who wants to learn the piano without a teacher, this course is for you.",
+    "When a club needs a striker who never stops running, Okafor is their man.",
+    "If your garden gets no afternoon sun, this shade-loving fern is the answer.",
+    "Should your old laptop finally give up, a refurbished model might be the perfect solution.",
+    "If you are hunting for a winter coat that is warm but not bulky, look no further: this is it.",
+    "For a city that needs cheap power fast, a gas turbine is exactly what the planners want.",
+    "Whenever the kids are bored on a rainy Sunday, this board game is what you need."
+   ],
+   "quiet": [
+    "The kettle on the counter is white and holds about a litre and a half.",
+    "The piano course is about twelve weeks long and runs every spring.",
+    "Okafor is a striker who joined the club from Lagos two years ago.",
+    "The fern in the corner is slightly brown at the tips from too much sun.",
+    "The laptop might be in the drawer where you left it last week.",
+    "The coat is made of wool and was bought in a sale last winter.",
+    "The planners said the turbine was built in Germany and shipped by sea.",
+    "The board game is on the top shelf next to the puzzles."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on ' is'/' be'; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'this is it' copula",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 89, density 0.07%, peaks ' is' x10, ' be' x6, ' not' x3, ' may' x3 in 'this would be it', 'the insulin molecule is that key', 'this is for you', 'this is their guy', 'might be the perfect solution', 'is who you are looking for'. Probe: 'this is it' 0.822, 'this post is for you' 0.510, 'insulin is the key that opens the door' 0.290, 'Martinez is their guy' 0.268; descriptive copulas 'is cold' 0.008, 'is about two kilometres' 0.007, 'is on the third floor' 0.016, 'is about the migration' 0.005, 'was postponed' 0.004. The copula fires when its predicate answers a need set up by the lead-in."
+}

@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7d029cd5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N5886+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N5886",
+   "pole": "+",
+   "label": "the word-initial piece 'ad' when it is its own token, across scripts (' ад' in адаптировать 0.84 and адекватной 0.77, ' أد' in أدلة 0.55 and أدناه 0.50, ' ad' in ad|mettre 0.45); words where 'ad' is fused into one token (address 0.00, адрес) and Arabic forms where a prefix absorbs the alif (كأدوات 0.00) are quiet",
+   "fire": [
+    "В школе работает новый администратор, который отвечает за расписание.",
+    "Старый адмирал рассказывал внукам о своих плаваниях.",
+    "Для новой камеры нужен специальный адаптер.",
+    "يلعب الممثل عدة أدوار في المسرحية الجديدة.",
+    "درست الطالبة أدب العصر العباسي في الجامعة.",
+    "Les élèves doivent adhérer aux règles de l'école.",
+    "El club quiere adquirir un nuevo jugador antes del verano.",
+    "Les fans vont adorer le nouvel album du groupe."
+   ],
+   "quiet": [
+    "Письмо пришло на старый адрес, и его вернули отправителю.",
+    "The hotel manager wrote the address on the back of the card.",
+    "The children went on an adventure in the woods behind the school.",
+    "She had to admit that the plan had failed.",
+    "قرأ الطلاب عن الأدوات التي استخدمها الفلاحون قديما.",
+    "استشهد المحامي بأدلة كثيرة أمام المحكمة.",
+    "Los niños fueron a la playa después de la escuela.",
+    "Il a lu le rapport avant la réunion du matin."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.85 on the ' ад'/' أد'/' ad' token; near misses below 0.1, with the prefixed Arabic forms (الأ|د|وات, بأ|د|لة) the ones to watch",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-initial 'ad' piece",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 276, density 0.05%, peaks ' أد' x16, ' ад' x5, 'د' x5, 'ад' x2, ' Ad' x2, 'ad' (أد|بيا, أد|وات, أد|لة, ад|екватной, ад|рес at line start, ад|аптировать, ad|mettre, ア|ド|ベンチャー); the - pole promotes admit/admission. Probe: адаптировать 0.839, адекватной 0.774, أدلة 0.551, أدناه 0.496, ad|mettre 0.447; كأدوات 0.003 (prefix absorbs the alif), 'address' 0.004, Russian without ад 0.003, Arabic without أد 0.002. Splits checked: ' администратор' -> ' ад','министр','атор'; ' адмирал' -> ' ад','мир','ал'; ' адаптер' -> ' ад','ап','тер'; ' أدوار' -> ' أد','وار'; ' أدب' -> ' أد','ب'; ' adhérer' -> ' ad','h','érer'; ' adquirir' -> ' ad','quir','ir'; ' adorer' -> ' ad','orer'; ' адрес', ' address', ' adventure', ' admit' are single tokens; ' الأدوات' -> ' الأ','د','وات'; ' بأدلة' -> ' بأ','د','لة'.",
+ "trigger": {
+  "tokens": [
+   " أد",
+   " ад",
+   " ad",
+   "ад",
+   "ad"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bd90e4c1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N9973-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T03:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N9973",
+   "pole": "-",
+   "label": "the function word right before a strongly predictable technical or place name: 'the Belarussian city of' -> Minsk (0.77), 'ethene (' -> ethylene (0.80), 'ethanal (' -> acetaldehyde (0.55), 'a spare bottle of' -> vodka in a Siberian setting (0.33); the same slots before a name the context does not predict ('founded the city of' Boston 0.13, 'a bottle of' lemonade 0.11) are quiet",
+   "fire": [
+    "Negotiators gathered in the Ukrainian capital city of Kyiv to discuss the ceasefire.",
+    "The treaty was signed in the Polish capital of Warsaw in the spring of 1955.",
+    "The dehydration of propan-2-ol yields propene (propylene) as the main product.",
+    "Common table salt is sodium chloride (NaCl), a simple ionic compound.",
+    "The fermentation of sugar produces ethanol (ethyl alcohol) and carbon dioxide.",
+    "Pilgrims travelled to the holy city of Mecca every year during the season of hajj.",
+    "Reduction of propanone (acetone) with sodium borohydride gives propan-2-ol.",
+    "The conference was held in the Czech capital of Prague, where the delegates toured the old town."
+   ],
+   "quiet": [
+    "The expedition set out from the small city of Trenton on a cold morning in March.",
+    "The treaty was signed in a quiet town of fewer than five thousand people.",
+    "Her grandmother always kept a bottle of homemade syrup on the kitchen shelf.",
+    "The mixture is heated slowly (about ten minutes) until the solid dissolves.",
+    "The company was founded in the port city of Hull by two brothers in 1870.",
+    "He poured a glass of something dark and handed it to the guest.",
+    "The engineers tested the pump (a prototype) under full load for a week.",
+    "The novel is set in a village of fishermen on the western coast."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on ' of' or ' ('; near misses below 0.2; the chemistry synonym parentheses are the safest fire items, the place names the least",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot before a predictable name",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 103, density 0.66%, peaks ' of' x8, ' (' x3, ' and' x3, each right before a name the context predicts (people of Novgorod, city of Minsk, ethanal (acetaldehyde), bottle of vodka, before Mat|ins, bran|ched-chain). Probe: 'Belarussian city of Minsk' 0.767, 'ethene (ethylene)' 0.803, 'ethanal (acetaldehyde)' 0.549, 'bottle of vodka' 0.328, 'copolymerization of vinyl acetate' 0.328, 'city of Novgorod' 0.249 (peak on ' Han'), 'city of Boston' 0.132, 'bottle of lemonade' 0.112, football filler 0.029. The pole reads the slot where the next name is predictable, not the Slavic or chemical topic itself."
+}
