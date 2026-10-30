@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-29-moridinamael-cf1d38c3",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L6/N9448+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:39:10+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the piece 'ур' of Russian т|ур and т|ур|нир (tour, tournament), as against Russian sports and travel sentences without those words"
+ },
+ "trigger": {
+  "tokens": [
+   "ур",
+   " Dome"
+  ]
+ },
+ "neighbours": [
+  {
+   "unit": "L6/N9448",
+   "pole": "+",
+   "label": "two word pieces: Russian 'ур' inside тур-words (тур, турнир, турфирма; any topic) and English ' Dome' as in 'Water Dome'",
+   "fire": [
+    "Мы купили тур в Грецию на две недели.",
+    "Шахматный турнир начнётся в субботу.",
+    "Турфирма вернула нам деньги за отменённую поездку.",
+    "Второй тур выборов назначен на воскресенье.",
+    "Туристы собрались у входа в музей.",
+    "Футбольный турнир среди школ прошёл в мае.",
+    "Турагентство предложило горящий тур в Египет.",
+    "The kids spent the whole afternoon splashing around at the Water Dome."
+   ],
+   "quiet": [
+    "Мы купили путёвку в Грецию на две недели.",
+    "Шахматное соревнование начнётся в субботу.",
+    "Агентство вернуло нам деньги за отменённую поездку.",
+    "Повторное голосование назначено на воскресенье.",
+    "Путешественники собрались у входа в музей.",
+    "Футбольный чемпионат среди школ прошёл в мае.",
+    "Агентство предложило горящую путёвку в Египет.",
+    "The kids spent the whole afternoon splashing around at the Water Park."
+   ]
+  }
+ ],
+ "predictions": "Expect fire to separate from near misses on the Russian tur-words; weak absolute values (0.1-0.3 of max). Water Dome sentence likely fires too. Coverage of the pole's strong activations will stay near zero: most of the pole is other tokens.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
