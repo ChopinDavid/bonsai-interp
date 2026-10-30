@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-f1e60066",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N8052-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:40:12+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N8052_neg/2026-10-30-ChopinDavid-f1e60066.tests.json"
+ },
+ "label": "dense early-layer token bag (3.4% of tokens reach a tenth of the small max 0.78; gate-closed leak 36%): '-mail' after E/e (0.89/0.35), 'ريع' in سريع (0.83), 'ed' in soldered (0.64), ' nearly' (0.41); near misses fire too (almost 0.34, by letter 0.15), so an 8+8 test is not expected to hold",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N8052_neg/2026-10-30-ChopinDavid-f1e60066.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.895,
+     "peak": "-mail"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.44,
+     "peak": "-mail"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.215,
+     "peak": " nearly"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.497,
+     "peak": " nearly"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.612,
+     "peak": "ريع"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.772,
+     "peak": "ريع"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.623,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.584,
+     "peak": "ed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.21,
+     "peak": " if"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.048,
+     "peak": " letter"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.389,
+     "peak": " two"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.093,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.096,
+     "peak": "بيع"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.066,
+     "peak": "ع"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.096,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.058,
+     "peak": " before"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.598,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "dense token bag: -mail, سريع, soldered, nearly",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: max 0.78, density 3.37% (FLAG broad), regimes 64% gated / 36% leak; peaks 'ريع' x5 (سريع), '-mail' x5, ' nearly' x5, ' email' x2, ',' and 'ed' (soldered). Probe: 'by E-mail or by phone' 0.892, 'e-mail address' 0.353, 'nearly twenty years' 0.409, 'وسريع الاهتياج' 0.827, 'soldered to wires' 0.644 (peak 'ed'); 'by letter or by phone' 0.151, 'postal address' 0.013, 'almost twenty years' 0.343, 'pale shade of green' 0.100. The bag is real but the unit is broad and weak, with the synonym 'almost' nearly as high as 'nearly'. Tokenizer: bare سريع is one token; the card piece 'ريع' appears only after the و prefix (وس|ريع), so both Arabic fire items use وسريع. Fire items use E-mail, e-mail, nearly x2, وسريع x2, soldered x2; near misses swap telephone, letter, about, just, and drop وسريع, glued, sealed. Registered as dense with the expectation of a fail.",
+ "selection": "random draw"
+}

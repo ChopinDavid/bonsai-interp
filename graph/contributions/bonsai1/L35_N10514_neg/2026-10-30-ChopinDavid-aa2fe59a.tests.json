@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-aa2fe59a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N10514-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N10514",
+   "pole": "-",
+   "label": "the single-letter token ' p' / ' п' that begins a split Spanish or Russian word (p|ide 0.91, p|ista 0.75, p|one 0.76, p|aga 0.75, п|анорамный 0.56, п|ляже 0.52); Spanish and Russian sentences whose p-words are whole or longer-piece tokens are quiet (prop|uesta 0.23, cum|ple 0.03, прекрас|ный 0.00); the card also flags the pole as positional (81% of top peaks at window position 0), which a sentence test cannot measure",
+   "fire": [
+    "La vecina pidió ayuda cuando vio el humo.",
+    "Vivimos en el tercer piso de un edificio antiguo.",
+    "Queda poca leche en la nevera para el desayuno.",
+    "El cachorro se lastimó la pata jugando en el jardín.",
+    "El abuelo puso la mesa antes de que llegaran los invitados.",
+    "Mi hermano pinta paisajes en su tiempo libre.",
+    "В театре сегодня идёт новая пьеса о войне.",
+    "Утром после дождя воздух был чистым, и пыль исчезла с дороги."
+   ],
+   "quiet": [
+    "La vecina llamó para avisar cuando vio el humo.",
+    "Vivimos en la parte alta de un edificio antiguo.",
+    "Queda mucha leche en la nevera para el desayuno.",
+    "El cachorro se durmió junto a su padre en el jardín.",
+    "El abuelo pudo descansar antes de que llegaran los invitados.",
+    "Mi hermano prefiere el campo a la ciudad.",
+    "В театре сегодня идёт новая опера о войне.",
+    "Утром после дождя воздух был чистым, и дорога быстро высохла."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9, peaking on ' p' or ' п'; near misses under 0.25, highest where another p-initial piece (prop, pes, pul) appears",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' p' / ' п' as a one-letter first piece of a split Spanish or Russian word",
+ "unit_kind": "token / spelling",
+ "confidence": 0.65,
+ "notes": "Card: max 292, density 0.35%, FLAG positional (81% of top peaks at position 0); the non-positional peaks are ' p' x4 and ' п' x2 as the first letter of a split word (p|ide, p|ista, p|one, p|aga, п|анорамный, п|ляже), plus ' –' and ' information' at position 0. Tokenizer: pidió, piso, poca, pata, puso, pinta, pala, pila, pinto = ' p' + rest; para, pero, puede, pudo, parte, padre, pena, poder are whole tokens; пьеса, пляж, пыль, пила, пена, пустой = ' п' + rest, пол, пара, после, потом are whole. Probe: pide 0.910, pista 0.750, pone 0.756, paga 0.745, панорамный 0.562, пляже 0.522; 'propuesta pero quiere que se cobre' 0.232 (peak ' prop'), 'cumple con sus impuestos' 0.029, прекрасный 0.000. Fire items use pidió, piso, poca, pata, puso, pinta, пьеса, пыль mid-sentence; near misses are the same sentences with whole-token p-words (para, parte, mucha, padre, pudo, prefiere, опера, дорога). The positional component is noted, not tested; Russian sentence-initial capitals are one-letter tokens (В, У) in both the fire and the quiet item of each pair, so they cancel."
+}

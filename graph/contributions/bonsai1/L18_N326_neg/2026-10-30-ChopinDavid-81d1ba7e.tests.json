@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-81d1ba7e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N326-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N326",
+   "pole": "-",
+   "label": "a substance or particle passing into another state or form of itself: decays into more stable elements (0.66), returns to its stable state (0.54), becomes U-239 (0.74), splice isoforms (0.36), peaking on the token that leads into the new form (' more', ' to', '-'); the same science prose without the change of form is silent (0.005-0.02); 'A and B' matrices (0.08) and anomers interconvert (0.08) are weak",
+   "fire": [
+    "When heated, the white powder turns into its yellow form.",
+    "Carbon-14 decays into nitrogen-14 with a half-life of about 5,700 years.",
+    "The excited electron falls back to its ground state and emits a photon.",
+    "Under high pressure graphite converts to diamond.",
+    "Tritium becomes helium-3 by emitting a beta particle.",
+    "The receptor exists in two isoforms that differ by a single exon.",
+    "Thorium-232 absorbs a neutron and becomes thorium-233.",
+    "On cooling, the molten sulfur returns to its crystalline form."
+   ],
+   "quiet": [
+    "When heated, the white powder gives off a sharp smell.",
+    "Carbon-14 is produced in the upper atmosphere by cosmic rays.",
+    "The electron carries a single negative charge.",
+    "Graphite is soft enough to leave a mark on paper.",
+    "Helium-3 is rare on Earth but more common on the Moon.",
+    "The receptor is expressed mainly in the liver.",
+    "Thorium is more abundant in the crust than uranium.",
+    "Molten sulfur is pumped through heated pipes."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.75, peaking on into/to/becomes or the isotope hyphen; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "entity passing into another state/form of itself (decays into, returns to its ground state, becomes X-239)",
+ "unit_kind": "meaning",
+ "confidence": 0.45,
+ "notes": "Card: max 19, density 0.17%, peaks ' B' (Let A and B be square matrices), 'forms' (splice isoforms), ' more' (decay into more stable elements), ' to' (returns boron to this stable state), ' state' (stripped down state), '链' (直链 forms interconvert), '3' (U-239), code 'old_content = content'. Probe: 'decay into more stable elements' 0.659, 'returns the atom to its stable state' 0.544, 'U-238 absorbs a neutron and becomes U-239' 0.738 (peak '-'), 'splice isoforms are expressed' 0.356, 'A and B be square matrices' 0.077, 'anomers interconvert' 0.082; 'Let the matrix be square' 0.008, rain 0.005, 'protein is expressed in the liver' 0.019. The strong probes share a thing turning into another version of itself, so the test uses that, not the list of variants. Fire items: turns into its yellow form, decays into nitrogen-14, falls back to its ground state, converts to diamond, becomes helium-3, two isoforms, becomes thorium-233, returns to its crystalline form; near misses keep each substance in a static statement."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f1e60066",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N8052-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N8052",
+   "pole": "-",
+   "label": "dense early-layer token bag (3.4% of tokens reach a tenth of the small max 0.78; gate-closed leak 36%): '-mail' after E/e (0.89/0.35), 'ريع' in سريع (0.83), 'ed' in soldered (0.64), ' nearly' (0.41); near misses fire too (almost 0.34, by letter 0.15), so an 8+8 test is not expected to hold",
+   "fire": [
+    "Contact the librarian by E-mail if the book has not arrived.",
+    "Her e-mail bounced because the mailbox was full.",
+    "The old bridge is nearly two hundred years old.",
+    "We had nearly finished the roof when the rain started.",
+    "النهر عميق وسريع الجريان في فصل الربيع.",
+    "الطريق الجديد واسع وسريع من المدينة إلى المطار.",
+    "The wires were soldered to the board by hand.",
+    "The joints were soldered before the pipe was insulated."
+   ],
+   "quiet": [
+    "Contact the librarian by telephone if the book has not arrived.",
+    "Her letter was returned because the address was wrong.",
+    "The old bridge is about two hundred years old.",
+    "We had just finished the roof when the rain started.",
+    "النهر عميق في فصل الربيع.",
+    "الطريق الجديد واسع من المدينة إلى المطار.",
+    "The wires were glued to the board by hand.",
+    "The joints were sealed before the pipe was insulated."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on -mail, ريع, nearly, soldered; several near misses 0.1-0.35 (almost, letter, glued), so the test likely fails as a dense unit",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense token bag: -mail, سريع, soldered, nearly",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: max 0.78, density 3.37% (FLAG broad), regimes 64% gated / 36% leak; peaks 'ريع' x5 (سريع), '-mail' x5, ' nearly' x5, ' email' x2, ',' and 'ed' (soldered). Probe: 'by E-mail or by phone' 0.892, 'e-mail address' 0.353, 'nearly twenty years' 0.409, 'وسريع الاهتياج' 0.827, 'soldered to wires' 0.644 (peak 'ed'); 'by letter or by phone' 0.151, 'postal address' 0.013, 'almost twenty years' 0.343, 'pale shade of green' 0.100. The bag is real but the unit is broad and weak, with the synonym 'almost' nearly as high as 'nearly'. Tokenizer: bare سريع is one token; the card piece 'ريع' appears only after the و prefix (وس|ريع), so both Arabic fire items use وسريع. Fire items use E-mail, e-mail, nearly x2, وسريع x2, soldered x2; near misses swap telephone, letter, about, just, and drop وسريع, glued, sealed. Registered as dense with the expectation of a fail."
+}

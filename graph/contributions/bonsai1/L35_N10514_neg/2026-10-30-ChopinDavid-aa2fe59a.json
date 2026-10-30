@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-aa2fe59a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N10514-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:39:54+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N10514_neg/2026-10-30-ChopinDavid-aa2fe59a.tests.json"
+ },
+ "label": "the single-letter token ' p' / ' п' that begins a split Spanish or Russian word (p|ide 0.91, p|ista 0.75, p|one 0.76, p|aga 0.75, п|анорамный 0.56, п|ляже 0.52); Spanish and Russian sentences whose p-words are whole or longer-piece tokens are quiet (prop|uesta 0.23, cum|ple 0.03, прекрас|ный 0.00); the card also flags the pole as positional (81% of top peaks at window position 0), which a sentence test cannot measure",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N10514_neg/2026-10-30-ChopinDavid-aa2fe59a.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.304,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.428,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.272,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.144,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.378,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.449,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.287,
+     "peak": " п"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.103,
+     "peak": " п"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " hum"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.035,
+     "peak": " antig"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.013,
+     "peak": " des"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " dur"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " los"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.047,
+     "peak": " pre"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.058,
+     "peak": " оп"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": "т"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.295,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "' p' / ' п' as a one-letter first piece of a split Spanish or Russian word",
+ "unit_kind": "token / spelling",
+ "confidence": 0.65,
+ "notes": "Card: max 292, density 0.35%, FLAG positional (81% of top peaks at position 0); the non-positional peaks are ' p' x4 and ' п' x2 as the first letter of a split word (p|ide, p|ista, p|one, p|aga, п|анорамный, п|ляже), plus ' –' and ' information' at position 0. Tokenizer: pidió, piso, poca, pata, puso, pinta, pala, pila, pinto = ' p' + rest; para, pero, puede, pudo, parte, padre, pena, poder are whole tokens; пьеса, пляж, пыль, пила, пена, пустой = ' п' + rest, пол, пара, после, потом are whole. Probe: pide 0.910, pista 0.750, pone 0.756, paga 0.745, панорамный 0.562, пляже 0.522; 'propuesta pero quiere que se cobre' 0.232 (peak ' prop'), 'cumple con sus impuestos' 0.029, прекрасный 0.000. Fire items use pidió, piso, poca, pata, puso, pinta, пьеса, пыль mid-sentence; near misses are the same sentences with whole-token p-words (para, parte, mucha, padre, pudo, prefiere, опера, дорога). The positional component is noted, not tested; Russian sentence-initial capitals are one-letter tokens (В, У) in both the fire and the quiet item of each pair, so they cancel.",
+ "selection": "random draw"
+}

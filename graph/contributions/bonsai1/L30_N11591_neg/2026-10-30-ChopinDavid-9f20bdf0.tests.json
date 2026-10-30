@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9f20bdf0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N11591-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N11591",
+   "pole": "-",
+   "label": "the first token of a multi-token proper name or fixed compound in historical or biographical prose, where the continuation is predictable (Samuel -> Taylor Coleridge 0.74, Catherine -> McAuley 0.36, Young -> Ladies 0.30, Half -> way Covenant 0.30, middle -> class 0.29, Compulsory schooling 0.26); the surname alone is weak (Coleridge 0.11) and the same sentence without the compound is silent (0.06)",
+   "fire": [
+    "In 1763 he was introduced to Samuel Johnson in a bookshop off Covent Garden.",
+    "The school was established by Catherine Beecher for the daughters of merchants.",
+    "Most of the congregation came from the middle class families of the mill town.",
+    "She joined the Young Women's Christian Association soon after it opened in 1866.",
+    "The songs of Samuel Barber were sung at the memorial service.",
+    "The Halfway House on the turnpike served travellers between the two towns.",
+    "He revised the book and published it as My Life and Times in 1881.",
+    "Compulsory attendance laws were passed by most northern states before 1890."
+   ],
+   "quiet": [
+    "In 1763 he was introduced to Johnson in a bookshop off Covent Garden.",
+    "The school was established by Beecher for the daughters of merchants.",
+    "Most of the congregation came from the wealthier families of the mill town.",
+    "She joined the association soon after it opened in 1866.",
+    "The songs of Barber were sung at the memorial service.",
+    "The inn on the turnpike served travellers between the two towns.",
+    "He revised the book and published it again in 1881.",
+    "Attendance laws were passed by most northern states before 1890."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.75, peaking on the first name or compound-initial word (Samuel, Catherine, middle, Young, Half, Compulsory); near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first token of a multi-token name or compound in historical prose (Samuel Taylor Coleridge, middle class)",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.45,
+ "notes": "Card: max 136, density 0.24%, peaks ' Young' (Young Ladies Lyceum), ' Catherine' (Catherine McAuley), ' middle' (middle-aged, middle class), ' Samuel' x3 (Samuel Taylor Coleridge, Samuel Barber, Samuel Hope), ' My' (My Bondage and My Freedom), ' Half' (Halfway Covenant), 'ory' (Compulsory education), all in 19th-century biography and social history. Probe: 'met Samuel Taylor Coleridge' 0.744, 'Catherine McAuley' 0.358, 'Young Ladies Literary Society' 0.298, 'Halfway Covenant' 0.296, 'middle class neighbourhood' 0.294, 'Compulsory schooling ... 1872' 0.256 (peak '8'); 'met Coleridge' 0.107, 'quiet neighbourhood' 0.059, bus floor 0.003. Fire items open a full historical name or fixed compound mid-sentence (Samuel Johnson, Catherine Beecher, middle class, Young Women's Christian Association, Samuel Barber, Halfway House, My Life and Times, Compulsory attendance); near misses keep each sentence with the surname alone or the compound removed."
+}

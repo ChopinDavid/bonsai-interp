@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-d0dfc00f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N420+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:39:04+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N420_pos/2026-10-30-ChopinDavid-d0dfc00f.tests.json"
+ },
+ "label": "statements of rights and values that an institution commits to or guarantees: equality of (0.34), human dignity (0.25), prohibited from discriminating (0.18), advocates for protections (0.15), WITHOUT ANY WARRANTY (0.24), ciudad inclusiva (0.15); the same institutional frames with mundane objectives are weaker (0.08-0.10), floor 0.04",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N420_pos/2026-10-30-ChopinDavid-d0dfc00f.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.117,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.404,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.181,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.14,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.182,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.126,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.309,
+     "peak": " dignity"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.423,
+     "peak": " inclusion"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " society"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.106,
+     "peak": " committed"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " plant"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": " width"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " software"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.168,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.196,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " group"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.181,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "rights-and-values commitments (equality, dignity, non-discrimination, warranty disclaimer)",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 6.4, density 0.67%, peaks ' of' (equality of the sexes), 'inating' (prohibited from discriminating), ' for' (advocate for), ' with' (bolster human dignity with), '保护' (为保护和改善生活环境, environmental protection law), 'iva' (ciudad inclusiva), ' WITHOUT' (WITHOUT ANY WARRANTY), ' que' (aceptas que). Probe: 'equality of women and men' 0.338, 'human dignity through our work' 0.251, 'WITHOUT ANY WARRANTY' 0.238, 'prohibited from discriminating' 0.183, 'advocates for stronger protections' 0.152, 'ciudad ... inclusiva' 0.147; 'committed to finishing the new library' 0.101, 'required to file quarterly tax returns' 0.083, beach floor 0.042. The separation is real but narrow, as the small max predicts. Fire items: charter guarantees freedom of religion, fair treatment, rights of tenants, prohibits harassment, provided without any warranty, protects the privacy, dignity of workers, inclusion of children; near misses keep each institutional frame and replace the value with a date, a store opening, tree planting, corridor widths, an archive format, opening hours, a meeting day and music lessons.",
+ "selection": "random draw"
+}

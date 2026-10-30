@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-f420a63a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N174+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:40:36+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N174_pos/2026-10-30-ChopinDavid-f420a63a.tests.json"
+ },
+ "label": "the word 'example' with its complement: 'one last example before' (0.79, peak on the word after), 'another example of' (0.66); the card's 'expecting' and 'suppose' items did not reproduce (0.05-0.08) and the unit is broad (2.6% of tokens reach a tenth of max), so near misses with instance/case/reason in the same frames may fire weakly",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N174_pos/2026-10-30-ChopinDavid-f420a63a.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.37,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.228,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.225,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.121,
+     "peak": " this"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.151,
+     "peak": " how"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.102,
+     "peak": " tackling"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.619,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.193,
+     "peak": " lecture"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.153,
+     "peak": " reason"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.226,
+     "peak": " early"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.2,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.086,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.124,
+     "peak": " how"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.064,
+     "peak": " simple"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.682,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.217,
+     "peak": " lecture"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.594,
+    "median_fire": 0.209,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "'example' plus its complement (another example of, one more example before)",
+ "unit_kind": "token-in-context",
+ "confidence": 0.4,
+ "notes": "Card: max 6.1, density 2.6% (FLAG broad), peaks ' stopping' (one last example before stopping), ' of' (another example of), ' to' (amendments to pass), newline and code tokens, 'wasn't expecting', 'Suppose you were expecting'. Probe: 'one last example before stopping' 0.788, 'another example of what the author calls' 0.663, 'three proposed amendments managed to pass' 0.255, 'wasn't expecting anyone' 0.077, 'Suppose you were expecting a symphony' 0.054, 'one more loaf before the shop closes' 0.115, Brahms 0.110, kitchen 0.029. Only the 'example' items reproduced, so the test is the word with its complement against synonyms (reason, piece, instance, sign, reminder, scenario, case, problems) in identical frames: it decides whether the pole reads the word or the meaning.",
+ "selection": "random draw"
+}

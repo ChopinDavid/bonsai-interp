@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-27df9dd8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N2052+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N2052",
+   "pole": "+",
+   "label": "the stem piece of a split German verb immediately before its inflectional ending (sch|aff|t 0.65, gl|aub|t 0.63, beauf|trag|te 0.84, w|ähl|te 0.82, vers|uch|te 0.91); the same piece in a noun (Ver|trag 0.03, Vers|uch 0.11) and unsplit verbs (macht 0.10, zeigt 0.02) are quiet",
+   "fire": [
+    "Am Sonntag besuchte sie ihre Großmutter im Krankenhaus.",
+    "Der Minister erklärte, dass die Steuern nicht steigen würden.",
+    "Er bestellte zwei Kaffee und ein Stück Kuchen.",
+    "Der Trainer behauptet, seine Mannschaft sei die beste der Liga.",
+    "Die Bank verlangt eine Gebühr für jede Überweisung.",
+    "Sie überlegte lange, bevor sie die Stelle annahm.",
+    "Die Stadt bezahlte den Umbau des alten Bahnhofs.",
+    "Der Sturm zerstörte mehrere Häuser an der Küste."
+   ],
+   "quiet": [
+    "Am Sonntag war der Besuch bei ihrer Großmutter im Krankenhaus.",
+    "Die Erklärung des Ministers kam zu spät.",
+    "Die Bestellung kam nach zwei Tagen an.",
+    "Die Behauptung des Trainers steht in der Zeitung.",
+    "Die Bank hat eine neue Filiale in der Innenstadt.",
+    "Sie bleibt noch zwei Jahre in der alten Stelle.",
+    "Die Bezahlung des Umbaus kommt aus dem Stadthaushalt.",
+    "Die Zerstörung der Häuser an der Küste war groß."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9, peaking on the stem piece (uch, klär, ell, aupt, lang, leg, ahl, ör); near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German verb stem piece before the -t/-te/-et ending",
+ "unit_kind": "token-in-context",
+ "confidence": 0.75,
+ "notes": "Card: max 512, density 0.033%, peaks 'aff' (schafft), 'trag' (beauftragte), 'aub' (glaubt), 'uch' (beanspruchter, versuchte), ' wag' (wagte), 'ähl' (wählte), 'deck' (entdecken), ' leg' (legt): the piece whose next token is a German verb ending; the negative pole promotes 't', 'te', 'ten'. Probe: schafft 0.654, glaubt 0.628, beauftragte 0.840, wählte 0.815, versuchte 0.911; Vertrag 0.029, Versuch 0.112, macht 0.101 (peak ' lang'), zeigt 0.019. Tokenizer: besuchte = bes|uch|te, erklärte = er|klär|te, bestellte = best|ell|te, behauptet = beh|aupt|et, verlangt = ver|lang|t, überlegte = über|leg|te, bezahlte = bez|ahl|te, zerstörte = zer|st|ör|te; Besuch, Erklärung, Bestellung, Behauptung, Bezahlung, Zerstörung carry the same pieces before a noun suffix; hat, kam, steht, bleibt, kommt, geht are whole tokens. Fire items use the eight split verbs mid-sentence; near misses use the cognate nouns and whole-token verbs."
+}

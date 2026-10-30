@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-61086eb5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N2916+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N2916",
+   "pole": "+",
+   "label": "a byte-fallback token completing a kanji that the tokenizer cannot encode whole (録 in 登録/記録/録画, 覧 in 閲覧/一覧, 索 in 検索, 歴 in 履歴, 討 in 検討, 介 in 紹介) inside Japanese text (0.29-0.59); Japanese sentences whose kanji are all whole tokens are silent (0.003-0.04)",
+   "fire": [
+    "新規登録の前に利用規約をお読みください。",
+    "過去の注文履歴はマイページから確認できます。",
+    "商品名で検索すると関連する記事が表示されます。",
+    "ここでは貴重な資料を館内で閲覧できます。",
+    "インタビューの音声を録音して文字に起こしました。",
+    "参加者の一覧を印刷して受付に置いてください。",
+    "この件については来週の会議で検討します。",
+    "新しいメンバーを皆さんに紹介します。"
+   ],
+   "quiet": [
+    "購入の前に利用規約をお読みください。",
+    "過去の注文内容はマイページから確認できます。",
+    "商品名を入力すると関連する記事が表示されます。",
+    "ここでは貴重な資料を館内で利用できます。",
+    "インタビューの音声を保存して文字に起こしました。",
+    "参加者の名前を印刷して受付に置いてください。",
+    "この件については来週の会議で決定します。",
+    "新しいメンバーを皆さんに案内します。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.6, peaking on a '�' byte token; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "byte-fallback piece of a rare kanji in Japanese text",
+ "unit_kind": "token / spelling",
+ "confidence": 0.6,
+ "notes": "Card: max 92.5, density 0.11%, peak '�' x23 (one token dominates): 登⟦録⟧ x6, 閲⟦覧⟧, ダ⟦ーッ⟧, plus Russian ' р' (р|учкой) x2. Tokenizer: 録, 覧, 索, 歴, 討, 介 are encoded as two or four byte tokens; 確認, 設定, 無料, 資料, 保存, 内容, 完了, 表示, 準備 are whole tokens. Probe: 会員登録 0.482, 閲覧 0.443, 記録 0.589, 録画 0.286 (all peak '�'); the same sentences with 申込 / 利用 / 内容 0.024 / 0.003 / 0.042; Russian красной ручкой 0.132 (peak 'ар'), English floor 0.003. Fire items use 登録, 履歴, 検索, 閲覧, 録音, 一覧, 検討, 紹介 mid-sentence; near misses are the same sentences with whole-token kanji words (購入, 内容, 入力, 利用, 保存, 名前, 決定, 案内)."
+}

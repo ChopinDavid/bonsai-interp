@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0c177a9b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N7517+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N7517",
+   "pole": "+",
+   "label": "New Age spiritual-growth vocabulary: ascension, karmic, divine or collective consciousness, higher vibrations, highest potential, co-creators, lightworkers (0.62-1.07); the same words in physical, medical or church use are silent (engine vibrations 0.03, lost consciousness 0.03, potential energy 0.02, feast of the Ascension 0.07)",
+   "fire": [
+    "Daily meditation lifts your energy toward the fifth-dimensional frequency of ascension.",
+    "Old karmic patterns dissolve once we forgive from the heart.",
+    "Every soul carries a spark of divine consciousness waiting to be remembered.",
+    "The workshop invites you to step into your highest potential as a co-creator.",
+    "Rose quartz is believed to carry the gentle vibrations of unconditional love.",
+    "As humanity awakens, the collective consciousness shifts to a higher vibration.",
+    "Lightworkers say the planet is moving into a new era of spiritual evolution.",
+    "Her guides told her the soul chooses its lessons before each incarnation."
+   ],
+   "quiet": [
+    "Daily exercise lifts your heart rate toward the recommended training zone.",
+    "Old payment patterns are hard to break once a customer has a favourite card.",
+    "Every laptop carries a spare battery that can be swapped in the field.",
+    "The workshop invites you to learn the basics of welding as a beginner.",
+    "The bridge deck is designed to damp the vibrations caused by heavy lorries.",
+    "As the anaesthetic wore off, he slowly regained consciousness in the recovery room.",
+    "Engineers say the dam is moving into a new phase of structural testing.",
+    "Her coach told her the team chooses its captain before each season."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-1.1, peaking on vibration(s), karmic, consciousness, potential, ascension, evolution, incarnation; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "New Age spiritual vocabulary (ascension, karmic, higher vibrations)",
+ "unit_kind": "topic / meaning",
+ "confidence": 0.8,
+ "notes": "Card: max 11.6, density 0.15%, peaks ' consciousness' x4, 'ension' (ascension) x3, 'ic' (karmic) x2, ' potential', ' vibrations', ' collective', 'ators' (co-creators), 'conscious' (Higher Unconscious), ' evolve', all in New Age self-help prose. Probe: 'raise our vibration and move toward ascension' 1.032, 'karmic debts' 1.043, 'divine consciousness within' 0.623, 'co-creators ... highest potential' 0.921, 'higher vibrations of the earth' 1.065; 'engine's vibrations' 0.028, 'lost consciousness' 0.026, 'potential energy' 0.021, 'the church celebrates the Ascension' 0.067. The pole reads the spiritual register, not the words. Fire items are New Age sentences with fresh vocabulary (fifth-dimensional frequency, soul, lightworkers, incarnation, rose quartz); near misses keep the sentence frames with fitness, payments, batteries, welding, bridge engineering, anaesthesia, dam testing and team sport."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-b49d2553",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N11327-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T15:40:11+00:00",
+ "recipe": {
+  "toolchain_commit": "6ef5272f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N11327_neg/2026-10-30-ChopinDavid-b49d2553.tests.json"
+ },
+ "label": "a token after which the left context predicts a bracketed or numeric qualifier: a metal named in an oxidation-state frame (present as copper -> (II) 0.47, iron(II) 0.54), a man-page function name (mktemp -> (3) 0.42-0.63), a journal volume number (97 -> (4) 0.32-0.35), a formula factor (2 -> (1+nu) 0.35); the prediction fires whether or not the bracket follows (copper rather than iron 0.47 = copper(II) 0.47); the same nouns as plain materials or prose mentions are the near misses",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N11327_neg/2026-10-30-ChopinDavid-b49d2553.tests.json",
+   "prereg_commit": "6ef5272f",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.71,
+     "peak": " manganese"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.582,
+     "peak": " iron"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.382,
+     "peak": " fread"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.503,
+     "peak": "("
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.379,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.491,
+     "peak": "8"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.528,
+     "peak": "alt"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.133,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.021,
+     "peak": " copper"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " rust"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.082,
+     "peak": " fopen"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.091,
+     "peak": " malloc"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " Letters"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": "-access"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": "ob"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " describes"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.497,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "6ef5272f",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "predicts a bracketed/numeric qualifier next (metal(II), func(3), vol (issue))",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.4,
+ "notes": "Card: max 199, density 0.26%, peaks digits '6' '5' '0' and ' iron' x2, ' copper' x2, ' child', 'emp' (mkst|emp(3)), 'anganese' (Manganese Dioxide), '2' in E over 2(1+nu): tokens followed by (II), (3), (1), (1+nu), 15), 3.5. Probe: 'present as copper(II) rather than copper(I)' 0.467 and 'present as copper rather than iron' 0.467 (same, both peak ' copper'); 'iron(II)' 0.538; 'mktemp(3), tmpfile(3)' 0.625 (peak '(') and 'manual pages for mktemp and tmpfile' 0.417 (peak 'temp'); 'Journal of Ecology, 97 (4)' 0.347 and 'volume 97, pages' 0.323; 'E / 2(1+nu)' 0.348; 'children walked to school' 0.001. The bracket itself is not needed: the pole fires on the token where a qualifier is expected, so it is a predictor built from left context. Fire items: manganese(II) frames, ferrous iron(II), fopen(3)/malloc(3) citations, journal volume-issue lines, cobalt(II)/cobalt(III), E / 2(1+nu); near misses: copper kettle, iron gate, fopen and malloc described in prose, the journals named without citation numbers, cobalt in glass, modulus in words.",
+ "selection": "random draw"
+}

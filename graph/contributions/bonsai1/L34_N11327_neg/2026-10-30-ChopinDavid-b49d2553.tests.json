@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b49d2553",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N11327-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N11327",
+   "pole": "-",
+   "label": "a token after which the left context predicts a bracketed or numeric qualifier: a metal named in an oxidation-state frame (present as copper -> (II) 0.47, iron(II) 0.54), a man-page function name (mktemp -> (3) 0.42-0.63), a journal volume number (97 -> (4) 0.32-0.35), a formula factor (2 -> (1+nu) 0.35); the prediction fires whether or not the bracket follows (copper rather than iron 0.47 = copper(II) 0.47); the same nouns as plain materials or prose mentions are the near misses",
+   "fire": [
+    "In the reduced enzyme the cofactor is bound as manganese(II) rather than manganese(III).",
+    "The haem group holds its iron in the ferrous, or iron(II), state.",
+    "For details see fopen(3), fclose(3) and the notes under fread(3).",
+    "The function is documented in malloc(3) and in the Linux programmer's manual.",
+    "Biology Letters, 6 (1), 30-33.",
+    "PLoS Biology, 8 (2), e1000301.",
+    "Oxidation of the cobalt(II) complex gives a stable cobalt(III) species.",
+    "The modulus is written as E / 2(1+nu) in the isotropic case."
+   ],
+   "quiet": [
+    "The farmhouse kettle was made of copper and hung above the hearth.",
+    "The old iron gate had rusted shut over the winter.",
+    "The fopen call opens a file and returns a pointer to it.",
+    "The malloc function requests a block of memory from the operating system.",
+    "Biology Letters publishes short papers on all areas of biology.",
+    "PLoS Biology is an open-access journal founded in 2003.",
+    "Cobalt gives glass a deep blue colour when added to the melt.",
+    "The modulus describes how stiff a material is under load."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.65, peaking on the metal name, function name or volume digit; near misses under 0.2 if the hypothesis holds, with material uses of copper/iron the likeliest leaks",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts a bracketed/numeric qualifier next (metal(II), func(3), vol (issue))",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.4,
+ "notes": "Card: max 199, density 0.26%, peaks digits '6' '5' '0' and ' iron' x2, ' copper' x2, ' child', 'emp' (mkst|emp(3)), 'anganese' (Manganese Dioxide), '2' in E over 2(1+nu): tokens followed by (II), (3), (1), (1+nu), 15), 3.5. Probe: 'present as copper(II) rather than copper(I)' 0.467 and 'present as copper rather than iron' 0.467 (same, both peak ' copper'); 'iron(II)' 0.538; 'mktemp(3), tmpfile(3)' 0.625 (peak '(') and 'manual pages for mktemp and tmpfile' 0.417 (peak 'temp'); 'Journal of Ecology, 97 (4)' 0.347 and 'volume 97, pages' 0.323; 'E / 2(1+nu)' 0.348; 'children walked to school' 0.001. The bracket itself is not needed: the pole fires on the token where a qualifier is expected, so it is a predictor built from left context. Fire items: manganese(II) frames, ferrous iron(II), fopen(3)/malloc(3) citations, journal volume-issue lines, cobalt(II)/cobalt(III), E / 2(1+nu); near misses: copper kettle, iron gate, fopen and malloc described in prose, the journals named without citation numbers, cobalt in glass, modulus in words."
+}

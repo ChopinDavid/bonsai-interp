@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-2d8ebc42",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N9920-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N9920",
+   "pole": "-",
+   "label": "the word civil and its spellings: ' civil' / ' Civil' (0.64-0.74), 'ivil' in Zivil- (0.77), 'IL' in CIV|IL (0.80), ' civilians' (0.58); civilization (its own token, 0.02) and civic (0.24) are weak or silent, criminal 0.007",
+   "fire": [
+    "After the accident she brought a civil suit against the haulage company.",
+    "The bridge was designed by a team of civil engineers from Glasgow.",
+    "Thousands of civilians were evacuated before the floodwaters reached the town.",
+    "Die Zivilgesellschaft forderte eine unabhängige Untersuchung.",
+    "THE PARTIES AGREED THAT CIVIL CLAIMS WOULD BE HEARD IN LONDON.",
+    "The 1964 Civil Rights Act outlawed segregation in public places.",
+    "Der Zivilschutz warnte die Bewohner rechtzeitig vor dem Hochwasser.",
+    "The register of births is kept by the civil authorities in each province."
+   ],
+   "quiet": [
+    "After the accident she brought a criminal complaint against the haulage company.",
+    "The bridge was designed by a team of structural engineers from Glasgow.",
+    "Thousands of residents were evacuated before the floodwaters reached the town.",
+    "Die Stadtgesellschaft forderte eine unabhängige Untersuchung.",
+    "THE PARTIES AGREED THAT ALL CLAIMS WOULD BE HEARD IN LONDON.",
+    "The 1965 Voting Rights Act outlawed literacy tests at the polls.",
+    "Der Wetterdienst warnte die Bewohner rechtzeitig vor dem Hochwasser.",
+    "The register of births is kept by the church authorities in each province."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.8 on civil / ivil / IL / civilians; near misses under 0.1 except civic-type words",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the token ' civil' and its spelling pieces (Zivil, CIVIL, civilian)",
+ "unit_kind": "token/lexical",
+ "confidence": 0.85,
+ "notes": "Card: max 34.5, density 0.016%, ' civil' x17, 'ivil' x5 (Z|ivil|isation), 'IL' x3 (CIV|IL), ' Civil' x3, ' civilian'. Tokenizer: civil, Civil, civilian, civilians, civilization, civic are whole tokens; Zivil = Z + ivil, CIVIL = C + IV + IL. Probe: civil court 0.643, civil engineering 0.739, Zivilbevölkerung 0.774 (peak 'ivil'), CIVIL LIABILITY 0.797 (peak 'IL'), civilians 0.580, civic 0.239, civilization 0.019, criminal court 0.007, mechanical engineering 0.000. Fire items use civil, Civil, civilians, Zivil- (Z|ivil|gesellschaft, Z|ivil|schutz) and CIVIL mid-sentence; near misses swap in criminal, structural, residents, Stadt-, ALL, Voting, Wetterdienst, church.",
+ "trigger": {
+  "words": [
+   "civil",
+   "civilian",
+   "civilians",
+   "zivil"
+  ]
+ }
+}
