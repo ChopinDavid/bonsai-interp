@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-9fd1c13f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N417+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:07:49+00:00",
+ "recipe": {
+  "toolchain_commit": "fdd3a7eb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L10_N417_pos/2026-10-30-lm1909-9fd1c13f.tests.json"
+ },
+ "label": "Fungal and mould diseases of plants and buildings (powdery mildew, downy mildew, black mold, fungal colonization), firing on 'mild|ew', 'mold' and the verb after it; other damage to the same plants and walls stays quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N417_pos/2026-10-30-lm1909-9fd1c13f.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.859,
+     "peak": " mild"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.686,
+     "peak": " mild"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.7,
+     "peak": " grew"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.679,
+     "peak": " mild"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.702,
+     "peak": " mold"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.717,
+     "peak": "ew"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.756,
+     "peak": " mold"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.504,
+     "peak": " mold"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.086,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.183,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.345,
+     "peak": "fly"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " vines"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.139,
+     "peak": "amp"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.037,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.701,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "fdd3a7eb",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "mildew / mold (fungal growth)",
+ "unit_kind": "semantic / lexical",
+ "confidence": 0.65,
+ "notes": "Card: ' mild' x3 (powdery⟦ mild⟧ew), 'ew' x3, ' mold' x3, ' colonization' x2, ' opportun' x2; word hits ' mold' cov 8%. Exploratory probe: 'powdery mildew' 1.12, 'Black mold grew' 0.65 (peak on ' grew'); 'a late frost' 0.14.",
+ "selection": "random draw"
+}

@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-18cc5869",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N4389+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:07:38+00:00",
+ "recipe": {
+  "toolchain_commit": "fdd3a7eb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N4389_pos/2026-10-30-lm1909-18cc5869.tests.json"
+ },
+ "label": "Chinese merged tokens that begin with 在 'in/at' (在中国, 在美国, 在这里, 在家, 在北京); the same sentences without such a token stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N4389_pos/2026-10-30-lm1909-18cc5869.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.436,
+     "peak": "在日本"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.281,
+     "peak": "在北京"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.491,
+     "peak": "在学校"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.215,
+     "peak": "家"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.315,
+     "peak": "在这里"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.569,
+     "peak": "在中国"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.145,
+     "peak": "美国"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.066,
+     "peak": "在外面"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.004,
+     "peak": "常常"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.011,
+     "peak": "工作"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.005,
+     "peak": "学生"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": "晚饭"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.004,
+     "peak": "从"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.001,
+     "peak": "朋友"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.012,
+     "peak": "。"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.001,
+     "peak": "的孩子"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.298,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "fdd3a7eb",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "Chinese 在X tokens ('in China', 'in the US')",
+ "unit_kind": "token / lexical",
+ "confidence": 0.65,
+ "notes": "Card: '^\\\\' x5, '在中国' x5, '^' x4, '在外' x3, '在这' x3, '在美国' x2; word hits 在此, 在这, 在中国 at lift 53,333. Tokenizer: 在中国, 在美国, 在这里, 在日本, 在北京, 在学校, 在家, 在外面 are single tokens. Exploratory probe: 在中国 0.57, 在美国 0.51; without 在 -0.01. The '^' regex part is not tested.",
+ "selection": "random draw"
+}

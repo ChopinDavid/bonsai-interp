@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-8409ca00",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N3394-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:07:59+00:00",
+ "recipe": {
+  "toolchain_commit": "fdd3a7eb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N3394_neg/2026-10-30-lm1909-8409ca00.tests.json"
+ },
+ "label": "Low-confidence guess: a contrasting continuation (' But …' after a sentence, 'else:' in code); broad pole, no clear trigger.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N3394_neg/2026-10-30-lm1909-8409ca00.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.077,
+     "peak": " But"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.082,
+     "peak": " wait"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.047,
+     "peak": " But"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.074,
+     "peak": " else"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.049,
+     "peak": " But"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.023,
+     "peak": ":\n"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.038,
+     "peak": " But"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.15,
+     "peak": "()\n"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.034,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": "()\n"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.028,
+     "peak": " plan"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " abs"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": "yes"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " car"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": "_user"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.061,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "fdd3a7eb",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "contrast 'But' / 'else:' (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Broad pole (1.9% of tokens above 0.1). Card: ' But' x4, ':\\n' x2 (else⟦:⏎⟧), ' or' x2, ' false' x2. Exploratory probe weak: '. But it broke' 0.07, 'else:' 0.11. Expected to fail.",
+ "selection": "random draw"
+}
