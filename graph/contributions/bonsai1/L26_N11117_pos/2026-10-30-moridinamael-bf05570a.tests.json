@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-moridinamael-bf05570a",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N11117+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:01:39+00:00",
+ "neighbours": [
+  {
+   "unit": "L26/N11117",
+   "pole": "+",
+   "label": "In multi-line Python code, the indentation whitespace that begins a new statement line inside a function body (script or machine-learning code), and the '.parse' of parser.parse_args()",
+   "short": "Python indent / parse_args",
+   "fire": [
+    "def train(model, loader):\n    model.train()\n    for x, y in loader:\n        loss = model(x, y)",
+    "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('--lr', type=float)\n    args = parser.parse_args()",
+    "def load_data(path):\n    with open(path) as f:\n        lines = f.readlines()\n    return lines",
+    "def evaluate(model, data):\n    model.eval()\n    correct = 0\n    total = len(data)",
+    "def build_optimizer(params, lr):\n    opt = torch.optim.Adam(params, lr=lr)\n    sched = StepLR(opt, step_size=10)\n    return opt, sched",
+    "def parse_config():\n    parser = argparse.ArgumentParser(description='Run experiment')\n    parser.add_argument('--epochs', type=int, default=5)\n    return parser.parse_args()",
+    "def clean(text):\n    text = text.lower()\n    text = text.strip()\n    return text",
+    "def forward(self, x):\n    h = self.fc1(x)\n    h = F.relu(h)\n    return self.fc2(h)"
+   ],
+   "quiet": [
+    "The training loop puts the model in train mode and then computes the loss for each batch from the loader.",
+    "The main function builds an argument parser, adds a learning rate option and reads the command-line arguments.",
+    "Our loader opens the file at the given path, reads all the lines and hands them back.",
+    "During evaluation the model switches to eval mode and we count how many predictions are correct.",
+    "We create an Adam optimizer with the chosen learning rate and add a step scheduler every ten epochs.",
+    "The config helper describes the experiment and sets five epochs as the default number of passes.",
+    "To clean the text, we lowercase it, strip the spaces and return the result.",
+    "In the forward pass the input goes through the first layer, a ReLU and then the second layer."
+   ]
+  }
+ ],
+ "predictions": "Uncertain: the blind fire items are short function bodies; expect maybe 5/8 fire and prose near misses near zero.",
+ "roles": ["reads bonsai1/L24/N6950+"],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "blind-room"
+  ]
+ }
+}
