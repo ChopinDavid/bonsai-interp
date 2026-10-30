@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L7/N5128+",
+ "model": "bonsai1",
+ "layer": 7,
+ "index": 5128,
+ "pole": "+",
+ "label": "the first token of a network address, URL scheme or path inside a string literal in code ('http://1', 'file', '0.0.0.0', 'ssh.' 0.35-0.51); a plain-word literal is weaker ('board' 0.19), a URL in prose fires at 0.32, and code without string literals is quiet",
+ "short": "address string literal in code",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N5128_pos/2026-10-29-ChopinDavid-431e312d.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.442,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.484,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.339,
+     "peak": "file"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.444,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.238,
+     "peak": "smtp"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.245,
+     "peak": ".internal"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.304,
+     "peak": "('"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.177,
+     "peak": "api"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.058,
+     "peak": "5"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.269,
+     "peak": "'"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.114,
+     "peak": "(port"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.051,
+     "peak": "tplib"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.141,
+     "peak": ".quit"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.142,
+     "peak": "\"\n"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.322,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-431e312d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-431e312d",
+   "the first token of a network address, URL scheme or path inside a string literal in code ('http://1', 'file', '0.0.0.0', 'ssh.' 0.35-0.51); a plain-word literal is weaker ('board' 0.19), a URL in prose fires at 0.32, and code without string literals is quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-431e312d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

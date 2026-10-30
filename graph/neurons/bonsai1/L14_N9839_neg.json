@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L14/N9839-",
+ "model": "bonsai1",
+ "layer": 14,
+ "index": 9839,
+ "pole": "-",
+ "label": "an opening straight double quote that splices a quoted fragment into a running sentence after a comma ('the damage was severe, \"far beyond anything' 0.39); sentence-initial quotes, closing quotes, parentheses, single quotes and curly quotes in the same sentences are quiet (0.02-0.03)",
+ "short": "mid-sentence spliced open quote",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N9839_neg/2026-10-29-ChopinDavid-d1620d21.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.456,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.491,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.635,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.243,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.455,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.368,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.255,
+     "peak": " \""
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.38,
+     "peak": " \""
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.017,
+     "peak": " roof"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.063,
+     "peak": " because"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " committee"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": "ym"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.044,
+     "peak": " farmer"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.028,
+     "peak": " doctor"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": "added"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.051,
+     "peak": " only"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.417,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d1620d21"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d1620d21",
+   "an opening straight double quote that splices a quoted fragment into a running sentence after a comma ('the damage was severe, \"far beyond anything' 0.39); sentence-initial quotes, closing quotes, parentheses, single quotes and curly quotes in the same sentences are quiet (0.02-0.03)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d1620d21"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N7307-",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 7307,
+ "pole": "-",
+ "label": "the verb or object that sets up a containment predicate and predicts 'in/within/into': 'must be enclosed [in]' 1.11, 'fitting them [into]' 0.70, 'wrap it [in]' 0.59, 'is enclosed [in]' 0.50, 'housed [within]' 0.23; 'enclosed' as an attachment (0.00) and the same subjects without containment are quiet, though 'must be' before an expected participle in documentation leaks (0.34)",
+ "short": "enclose/wrap predicting 'in'",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N7307_neg/2026-10-29-ChopinDavid-b554ad6b.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.938,
+     "peak": " enclosed"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.835,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.516,
+     "peak": " enclosed"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.274,
+     "peak": " expression"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.26,
+     "peak": " sealed"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.576,
+     "peak": " enclosed"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.113,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.51,
+     "peak": " enclosed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.099,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.268,
+     "peak": " space"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.197,
+     "peak": " rests"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.178,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": " cell"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.058,
+     "peak": " runs"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.022,
+     "peak": "ings"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.513,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-b554ad6b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-b554ad6b",
+   "the verb or object that sets up a containment predicate and predicts 'in/within/into': 'must be enclosed [in]' 1.11, 'fitting them [into]' 0.70, 'wrap it [in]' 0.59, 'is enclosed [in]' 0.50, 'housed [within]' 0.23; 'enclosed' as an attachment (0.00) and the same subjects without containment are quiet, though 'must be' before an expected participle in documentation leaks (0.34)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-b554ad6b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

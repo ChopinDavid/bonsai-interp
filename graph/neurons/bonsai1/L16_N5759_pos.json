@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N5759+",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 5759,
+ "pole": "+",
+ "label": "a media or entertainment celebrity introduced by role and name ('the host of the program, Dr. Sanjay Gupta' 0.46, card: 'the host of the show, Mehmet Oz', 'a performing poet', 'the world's greatest salesman') and, weaker, that persona's own quoted 'I' in interview speech (0.26); ordinary named people in the same frames are quiet",
+ "short": "celebrity introduced by role",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N5759_pos/2026-10-29-ChopinDavid-c01fcc7b.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.12,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.086,
+     "peak": "es"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.092,
+     "peak": "borough"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.335,
+     "peak": "orman"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.292,
+     "peak": " Stern"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.156,
+     "peak": "ini"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.34,
+     "peak": "ay"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.166,
+     "peak": "an"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": "On"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.021,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.061,
+     "peak": " since"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.031,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.054,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.161,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-c01fcc7b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-c01fcc7b",
+   "a media or entertainment celebrity introduced by role and name ('the host of the program, Dr. Sanjay Gupta' 0.46, card: 'the host of the show, Mehmet Oz', 'a performing poet', 'the world's greatest salesman') and, weaker, that persona's own quoted 'I' in interview speech (0.26); ordinary named people in the same frames are quiet",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-c01fcc7b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

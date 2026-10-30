@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N8049+",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 8049,
+ "pole": "+",
+ "label": "an intransitive or middle change-of-state verb whose subject comes into being or into use by itself: Russian participles in -шие (появив|шие|ся 1.18), 'designed to wear all day' 0.40, 'crystals form from' 0.27, 'developed into/below' 0.10-0.18; the transitive uses ('developed a vaccine' 0.01, 'formed a committee' 0.02) are quiet",
+ "short": "intransitive develop/form/wear",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N8049_pos/2026-10-29-ChopinDavid-dea2f8cf.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.287,
+     "peak": "ник"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.612,
+     "peak": "шие"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.127,
+     "peak": "шед"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.536,
+     "peak": " wear"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.149,
+     "peak": " forms"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.119,
+     "peak": " developed"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.092,
+     "peak": " developed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.668,
+     "peak": " wear"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.118,
+     "peak": "ались"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.03,
+     "peak": "стро"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.122,
+     "peak": " рас"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": "obb"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.029,
+     "peak": " formed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.026,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " hiking"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.17,
+     "peak": "ens"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.218,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-dea2f8cf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-dea2f8cf",
+   "an intransitive or middle change-of-state verb whose subject comes into being or into use by itself: Russian participles in -шие (появив|шие|ся 1.18), 'designed to wear all day' 0.40, 'crystals form from' 0.27, 'developed into/below' 0.10-0.18; the transitive uses ('developed a vaccine' 0.01, 'formed a committee' 0.02) are quiet",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-dea2f8cf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

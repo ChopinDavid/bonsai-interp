@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N2359+",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 2359,
+ "pole": "+",
+ "label": "the vocalised Arabic dative preposition ' ل' after a speech verb (وَقَالَ لَهُ 0.46, where diacritics split ' ل' from the pronoun; unvocalised ' له' is one token and silent 0.00) and, from the card only, the 'init' piece of a Python 'def __init__(' header (card 'init' x9; other dunders probed at 0.07)",
+ "short": "Arabic ' ل' after قَالَ; def __init__",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N2359_pos/2026-10-29-ChopinDavid-8fcb54b0.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.33,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.415,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.249,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.426,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.06,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.15,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.06,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.241,
+     "peak": " ل"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "جاب"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.099,
+     "peak": " و"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " المدينة"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.161,
+     "peak": "ي"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": "("
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " له"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.245,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-8fcb54b0"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-8fcb54b0",
+   "the vocalised Arabic dative preposition ' ل' after a speech verb (وَقَالَ لَهُ 0.46, where diacritics split ' ل' from the pronoun; unvocalised ' له' is one token and silent 0.00) and, from the card only, the 'init' piece of a Python 'def __init__(' header (card 'init' x9; other dunders probed at 0.07)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-8fcb54b0"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

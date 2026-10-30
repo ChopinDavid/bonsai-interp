@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N8126+",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 8126,
+ "pole": "+",
+ "label": "dense / positional: 14.5% of tokens reach 0.1 of a max of 1.7 and the gate-closed regime dominates; the card's peaks (' civil' case, ' PhD', ' found', ' birds') are common nouns and verbs in expository prose, and the probe gave 'among birds' 0.36 with everything else 0.03-0.17, so no label is claimed",
+ "short": "dense / positional",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N8126_pos/2026-10-29-ChopinDavid-002f2efb.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.094,
+     "peak": " prosecution"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.103,
+     "peak": " moving"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.111,
+     "peak": " poultry"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.018,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.198,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.112,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.105,
+     "peak": " phrases"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.05,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.186,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.156,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.154,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.128,
+     "peak": " up"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.058,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.112,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.125,
+     "peak": " again"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.04,
+     "peak": "We"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.305,
+    "median_fire": 0.104,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-002f2efb"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-002f2efb",
+   "dense / positional: 14.5% of tokens reach 0.1 of a max of 1.7 and the gate-closed regime dominates; the card's peaks (' civil' case, ' PhD', ' found', ' birds') are common nouns and verbs in expository prose, and the probe gave 'among birds' 0.36 with everything else 0.03-0.17, so no label is claimed",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-002f2efb"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

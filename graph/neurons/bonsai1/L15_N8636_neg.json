@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N8636-",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 8636,
+ "pole": "-",
+ "label": "inside the restated content of an authoritative provision or doctrine: what a treaty cedes ('to cede to Prussia the provinces' 0.43), what a constitution grants ('the power to make treaties' 0.27), what scripture or a theory holds ('his theory about the origin of species' 0.28, 'to love their neighbours' 0.27); the same documents and thinkers named without their content are quiet (0.02-0.04)",
+ "short": "content of a provision or doctrine",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N8636_neg/2026-10-29-ChopinDavid-d397e2c8.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.768,
+     "peak": "eded"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.427,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.203,
+     "peak": " all"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.612,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.388,
+     "peak": "ede"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.177,
+     "peak": " all"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.198,
+     "peak": " equal"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.343,
+     "peak": "ounce"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.017,
+     "peak": " treaty"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": " met"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.042,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": " are"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " bound"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " spent"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.046,
+     "peak": " ratified"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.029,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.366,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d397e2c8"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d397e2c8",
+   "inside the restated content of an authoritative provision or doctrine: what a treaty cedes ('to cede to Prussia the provinces' 0.43), what a constitution grants ('the power to make treaties' 0.27), what scripture or a theory holds ('his theory about the origin of species' 0.28, 'to love their neighbours' 0.27); the same documents and thinkers named without their content are quiet (0.02-0.04)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d397e2c8"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
