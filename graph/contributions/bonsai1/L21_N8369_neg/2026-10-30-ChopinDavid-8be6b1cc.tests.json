@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-8be6b1cc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N8369-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N8369",
+   "pole": "-",
+   "label": "an evidential or glossing marker that points to how a stated fact is shown: 'as indicated by' 0.56, 'as evidenced by' 0.34, a parenthetical gloss after a value '(written 0.05)' 0.27; the same facts joined with 'and' or stated without the marker are silent (0.02-0.05)",
+   "fire": [
+    "The pump was running dry, as indicated by the rising temperature of the casing.",
+    "The patients were anxious, as evidenced by their elevated heart rates before the test.",
+    "Demand fell sharply in March, as shown by the drop in container traffic.",
+    "The soil here is acidic, as indicated by the heather growing along the bank.",
+    "The treatment was effective, as evidenced by the shorter hospital stays in the treated group.",
+    "The rate of return is 8 percent per year (written 0.08 in the formula below).",
+    "The exit code is zero (status = 0) when every test passes.",
+    "The company's position improved, as reflected in the lower borrowing costs it secured in May."
+   ],
+   "quiet": [
+    "The pump was running dry and the temperature of the casing kept rising.",
+    "The patients were anxious and their heart rates were elevated before the test.",
+    "Demand fell sharply in March and container traffic dropped with it.",
+    "The soil here is acidic and heather grows along the bank.",
+    "The treated group had shorter hospital stays than the control group.",
+    "The rate of return is 8 percent per year and compounds annually.",
+    "The exit code is zero when every test passes.",
+    "The company secured lower borrowing costs in May."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.6 on indicated/evidenced/shown or the '('; near misses under 0.1; 'as shown by' and 'as reflected in' were not probed and may be weaker",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "as indicated / evidenced by",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 25.3, density 0.14%, peaks ' (' x6, ',' x4, ' so', ' is', ' then', ' indicated', ' evidenced' in docstrings ('shouldn't interact in any way, so the', 'A custom entity is\\n represented by', 'is idempotent then'), '(written 0.10)', '(status = 0)', 'as indicated by a block 422', 'as evidenced by overall scores'. Probe: 'as indicated by the flashing amber light' 0.562, 'as evidenced by their scores' 0.341, '(written 0.05)' 0.268; the docstring connectives ' so the' 0.064, ' then' 0.091, ' is\\n' 0.031 did not reproduce in short passages; 'and the temperature' 0.015, ', and interest' 0.047, umbrella 0.020. The pole reads the point where a text says how a claim is evidenced or written, so the test is built on that frame; the docstring-connective half is left out."
+}

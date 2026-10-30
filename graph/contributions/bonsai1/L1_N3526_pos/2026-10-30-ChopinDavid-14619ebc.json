@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-14619ebc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N3526+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T10:33:42+00:00",
+ "recipe": {
+  "toolchain_commit": "7610728b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N3526_pos/2026-10-30-ChopinDavid-14619ebc.tests.json"
+ },
+ "label": "dense unit: 92.5% of tokens reach 0.1 of its max of 0.26; slightly higher on rare mid-word pieces and code (sapi|ens 0.95, hospitality 0.88, chiropr 0.70, scipy 0.67, code 0.51) than on plain short prose (0.41), but it is on for nearly all text",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N3526_pos/2026-10-30-ChopinDavid-14619ebc.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 7,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.728,
+     "peak": " chiropr"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.84,
+     "peak": " hospitality"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.553,
+     "peak": " scipy"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.518,
+     "peak": " Homo"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.867,
+     "peak": "="
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.548,
+     "peak": "apist"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.91,
+     "peak": "S"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.471,
+     "peak": " pharmaceutical"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.496,
+     "peak": " went"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.503,
+     "peak": " until"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.34,
+     "peak": "It"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.526,
+     "peak": " likes"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.516,
+     "peak": " cat"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.395,
+     "peak": " station"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.261,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.44,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.641,
+    "near_misses_at_0.3": 7
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7610728b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "dense (everything)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: max 0.26, density 92.5% (FLAG dense), echo regime 100%, peaks '=' x10, 'iropr' x5, ' hospitality' x2, 'IPS', 'ipy', 'ة', ' sapi'. Probe: 'Homo sapiens' 0.949, 'leisure and hospitality' 0.883, 'chiropractor' 0.697, 'import scipy' 0.665, 'x = 5' code 0.511, 'She walked to the shop' 0.414. Registered as dense / positional with a best-guess test (rare word pieces and code against plain prose).",
+ "selection": "random draw"
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-15959e75",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N7616+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N7616",
+   "pole": "+",
+   "label": "a named decision-maker's reported plan or deliberation about a roster or product move in business and sports news ('is considering whether to add' 0.30, 'I want to trade for a centre before the deadline' 0.33, \"Facebook's new reaction buttons\" 0.22); results, statistics and play-by-play about the same people are silent (0.003-0.025)",
+   "fire": [
+    "Apple CEO Tim Cook has said the company is weighing whether to open its payment system to rivals.",
+    "If I am running the Celtics, I want to move a first-round pick for a rim protector before the deadline.",
+    "General manager Brian Cashman said this week that he's hoping to add a starter before camp opens.",
+    "The club must decide whether to keep Kane as captain or hand the armband to a younger player.",
+    "Microsoft's new Copilot features are aimed squarely at Google's office suite.",
+    "Coach Sean Payton insists the plan is to sit the rookie for the remainder of the season.",
+    "The board is considering whether to spin off the streaming unit next year.",
+    "The airline has been planning a low-cost subsidiary, but its chief executive has said the timing is not settled."
+   ],
+   "quiet": [
+    "Apple reported a record quarter with revenue of ninety billion dollars.",
+    "The Celtics beat the Knicks 112-104 behind thirty points from Tatum.",
+    "Cashman has been the Yankees' general manager since 1998.",
+    "Kane scored twice in the second half to seal the win.",
+    "Microsoft was founded in Albuquerque in 1975.",
+    "The rookie threw for 280 yards and two touchdowns on Sunday.",
+    "The streaming unit lost two hundred million dollars last year.",
+    "The airline's shares closed up three percent on Thursday."
+   ]
+  }
+ ],
+ "predictions": "weak: fire items 0.1-0.4, near misses under 0.1; may fail on the median even if the ordering holds",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "executive/coach deliberating a move",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 68.5, density 0.88%, peaks ' to' x7, ' D' x3, ' new' in 'CEO D|ara Khosrowshahi has said', 'whether to retain Manning as the starting quarterback', \"Google's new inbox ads\", 'el presidente del club, Nolan Ryan', \"he's hoping to create a hierarchy\", 'coach Mike Shan|ahan insists', 'If I am running the Dolphins I want to go into this draft', 'try to determine'. Probe: 'I want to trade for a centre before the deadline' 0.332, 'CEO Jack Dorsey has said the company is considering whether to' 0.303, \"Facebook's new reaction buttons\" 0.219, \"he's hoping to sign\" 0.129, 'under the supervision of' 0.085, 'decide whether to keep Rodgers' 0.066; touchdowns 0.025, 'won 3-1' 0.003, revenue 0.023. None of the probes reached the card's register, so this is registered as a low-confidence genre label."
+}

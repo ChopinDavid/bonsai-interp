@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3e22f690",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9571-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N9571",
+   "pole": "-",
+   "label": "the modifier right before a singular head noun naming a service, platform, tool, method, device or system ('a social bookmarking service' 0.98, 'a video calling platform' 0.90, 'a useful screening tool' 0.78, 'storage method' 0.47); the same modifier before a plural head ('streaming services' 0.03) or with no head noun (0.005-0.025) is silent",
+   "fire": [
+    "Dropbox began as a simple file syncing service for students.",
+    "Slack is an instant messaging platform built for workplaces.",
+    "The chest X-ray remains a cheap screening device for tuberculosis.",
+    "Freeze-drying is a widely used preservation method for coffee.",
+    "Mastodon is a decentralised microblogging service with no central owner.",
+    "The app works as a basic translation tool for travellers.",
+    "Shazam is a music recognition service owned by Apple.",
+    "The council launched an online booking system for the sports hall."
+   ],
+   "quiet": [
+    "Dropbox and Box are popular file syncing services for students.",
+    "Slack lets workplaces exchange instant messages in channels.",
+    "The chest X-ray can screen cheaply for tuberculosis.",
+    "Coffee is widely preserved by freeze-drying.",
+    "Mastodon and Bluesky are decentralised microblogging services.",
+    "The app translates menus for travellers in real time.",
+    "Shazam recognises music and is owned by Apple.",
+    "The council now takes bookings for the sports hall online."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.0 on the modifier token (syncing, messaging, screening, preservation, booking); near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "modifier before singular 'service/tool'",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 200, density 0.46%, peaks 'bookmark|ing service', ' consultation service', ' discovery service', ' calling platform', ' screening device', ' storage method', 'see the tools', 'such a network', 'The new method'; the + pole promotes the plural ' services', ' platforms', ' apps' and suppresses the singular ' service', ' tool', ' method', so this - pole predicts a singular head noun of that class. Probe: 'social bookmarking service' 0.977 (ing), 'video calling platform' 0.903, 'useful screening tool' 0.782, 'online consultation service' 0.641, 'storage method' 0.468; 'popular streaming services' 0.030, 'offer online consultations' 0.025, 'hold video calls' 0.005, floor 0.052. Near misses use the plural head or restate the sentence with a verb instead of the head noun."
+}

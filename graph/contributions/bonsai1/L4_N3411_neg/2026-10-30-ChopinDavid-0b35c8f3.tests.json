@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0b35c8f3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3411-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3411",
+   "pole": "-",
+   "label": "the double-dash token that opens a long command-line option ('--verbose' 0.82, \"'--oneline'\" 0.79, 'linestyle='--'' 0.64, 'pip install --upgrade' 0.59) in shell lines, argument lists and strings; single-dash options (0.01), '-=' (0.004) are silent and a prose dash ' -- ' is weaker (0.28)",
+   "fire": [
+    "docker run --rm -it ubuntu bash",
+    "parser.add_argument('--dry-run', action='store_true')",
+    "args = ['rsync', '-avz', '--delete', src, dst]\nsubprocess.run(args, check=True)",
+    "npm run build -- --watch",
+    "cmd += \" --output={}\".format(outfile)",
+    "plt.axhline(0, linestyle='--', linewidth=0.5)",
+    "sudo apt-get install --no-install-recommends curl",
+    "python manage.py migrate --fake-initial"
+   ],
+   "quiet": [
+    "docker run -d -p 8080:80 nginx",
+    "parser.add_argument('-n', type=int, default=1)",
+    "args = ['rsync', '-avz', src, dst]\nsubprocess.run(args, check=True)",
+    "npm run build",
+    "cmd += \" -o {}\".format(outfile)",
+    "plt.axhline(0, linestyle=':', linewidth=0.5)",
+    "sudo apt-get install -y curl",
+    "python manage.py migrate"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on the '--' token; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'--' long-option token",
+ "unit_kind": "lexical",
+ "confidence": 0.8,
+ "notes": "Card: max 19.8, density 0.018%, peaks ' --' x13, \" '--\" x6, \"('--\" x6, '--' x5, ' \"--', '\"--' in openvpn '--script-security', sos_opts.append('--case-id', 'git describe --tags', 'docker inspect --format', 'lineStyle = \"--\"', 'apt-get install -y --fix-missing'. Probe: cmd.append('--verbose') 0.815 (\"('--\"), ['git', 'log', '--oneline'] 0.785 (\" '--\"), linestyle='--' 0.635 ('--'), 'pip install --upgrade' 0.592 (' --'); 'git log -n 5' 0.007, 'pip install -U' 0.012, linestyle='-' 0.009, 'i -= 1' 0.004; prose 'The meeting -- which ran late' 0.276 on the same token. Trigger declared as the exact tokens. Near misses are the same commands with short options or other line styles.",
+ "trigger": {
+  "tokens": [
+   " --",
+   "--",
+   "('--",
+   " '--",
+   " \"--",
+   "\"--"
+  ]
+ }
+}

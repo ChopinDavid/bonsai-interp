@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ef54a654",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N6302-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N6302",
+   "pole": "-",
+   "label": "emphatic auxiliary do/does/did before a lexical verb inside a conditional or concessive clause ('assuming they do decide to' 0.58); the same clauses without the emphatic auxiliary, and other conditionals (if/were/should, 0.03-0.10), are silent",
+   "fire": [
+    "Assuming the council does approve the plan, work could start in May.",
+    "If they do decide to sell the house, the garden will be the selling point.",
+    "Even if it does rain on Saturday, the market will go ahead under the awnings.",
+    "Provided the engine does start in the cold, the trip is on.",
+    "If she did take the money, nobody saw her do it.",
+    "Supposing we do find a buyer, the move would still take months.",
+    "Even where the vaccine does prevent infection, boosters are advised.",
+    "If the battery does run flat, the backup lamp will come on."
+   ],
+   "quiet": [
+    "Assuming the council approves the plan, work could start in May.",
+    "If the owners decide to sell the house, the garden will be the selling point.",
+    "Even if it rains on Saturday, the market will go ahead under the awnings.",
+    "Provided the engine starts in the cold, the trip is on.",
+    "If she took the money, nobody saw her.",
+    "Supposing we find a buyer, the move would still take months.",
+    "Even where the vaccine prevents infection, boosters are advised.",
+    "If the battery runs flat, the backup lamp will come on."
+   ]
+  }
+ ],
+ "predictions": "a guess from one probe hit: fire items 0.2-0.6 on the verb after do/does/did; near misses under 0.15, though the unit is broad (2.4% of tokens) so some may reach 0.1-0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "emphatic 'do' in a conditional",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 19.4, density 2.4% (FLAG broad), no single token: 'assuming they do decide to go underground', 'If you are using bread as the base', 'too long of a delay', 'co-author', '(7:14', 'were this to be', '53% of Americans who', 'mice fed', 'if that were possible', 'martial law'. Probe (conditional hypothesis): 'Assuming they do decide to expand' 0.582 (' decide'); 'If you are using a cast-iron pan as the base' 0.100, 'Were this to become' 0.097, 'If that were possible' 0.031, 'Should the river rise' 0.052, 'Of the 61% of residents who' 0.142; assertions 0.027-0.053. Only the emphatic-do item fired, so the test isolates that: each near miss is the same conditional with the plain verb."
+}

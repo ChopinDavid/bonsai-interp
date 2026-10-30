@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-22552fc6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N3489+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N3489",
+   "pole": "+",
+   "label": "a victory stated from the winner's side: a win or Sieg with its score ('2:0-Sieg' 0.90, '4:1 win' 0.43), 'emerged victorious' 0.70, 'the triumph of light over darkness' 0.43, 'une victoire' 0.25; the same matches reported as defeats (0.006) or draws (0.002) are silent, and 'emerged' alone carries 0.34",
+   "fire": [
+    "Liverpool cruised to a 3:0 win over Everton in the derby.",
+    "Die Gastgeber feierten einen 4:2-Sieg gegen Bremen.",
+    "The underdog emerged victorious after five hard-fought sets.",
+    "Easter celebrates the triumph of life over death.",
+    "Les Bleus ont décroché une belle victoire face à l'Italie.",
+    "The coalition emerged stronger from the crisis than anyone expected.",
+    "England secured a historic series win in India last winter.",
+    "El equipo logró una victoria contundente en la final de la copa."
+   ],
+   "quiet": [
+    "Everton slumped to a 0:3 loss at Liverpool in the derby.",
+    "Bremen kassierte eine 2:4-Niederlage bei den Gastgebern.",
+    "The favourite was knocked out after five hard-fought sets.",
+    "Good Friday marks the day of the crucifixion.",
+    "Les Bleus ont concédé une défaite amère face à l'Italie.",
+    "The coalition was weakened by the crisis more than anyone expected.",
+    "England lost the series in India last winter.",
+    "El equipo sufrió una derrota dolorosa en la final de la copa."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.9 on the score digit, 'emerged', 'triumph' or 'victoire'; near misses (defeat, loss, Niederlage, derrota, crucifixion) under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "victory / win / Sieg",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 408, density 0.092%, peaks ' emerges' (from the python Aghasura), ' Tri|omphe' x2, ' the' (victory of virtues over vices), '철수가' (wins), '3:0-Sieg', 'America emerged stronger', 'Ashes Test win', '5:1 gegen', 'une grande victoire'; the - pole is a next-token predictor of win/victory (' to', ' award'). Probe: '2:0-Sieg' 0.895 (on '0'), 'emerged victorious' 0.701, '4:1 win' 0.431, 'triumph of light over darkness' 0.430, 'victoire éclatante' 0.246; 'goalless draw' 0.002, '1:4 defeat' 0.006, 'emerged from the meeting without a decision' 0.335 (the verb emerge carries some activation on its own), floor 0.000. Near misses report the same contests from the losing side or as the opposite event; 'emerged' is kept out of them because it leaks."
+}

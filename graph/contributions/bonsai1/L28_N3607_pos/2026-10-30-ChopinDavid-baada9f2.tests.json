@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-baada9f2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N3607+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N3607",
+   "pole": "+",
+   "label": "the '=' , '+' or '(' of a numeric definition or formula: a constant assignment ('FLAG_READ = 0x01' 0.43), an arithmetic formula ('width = 2 + (sum of column widths)' 0.49), 'f(n) = 8', 'MAX = int(' 0.19, byte-size call arguments (read(1024) 0.25); assignments from strings (0.01) are silent and from names or calls are weak (0.09-0.21)",
+   "fire": [
+    "class Flags:\n    READ = 0x01\n    WRITE = 0x02\n    EXEC = 0x04",
+    "The number of cells is n = 2 + (k - 1) * 3, where k is the number of rows.",
+    "buf_size = 8 * 1024\nbuf = bytearray(buf_size)",
+    "For a cube of side n the count is f(n) = 6 * (n - 2) ** 2 for the face cubes.",
+    "MAX_DEPTH = int(math.log(MAX_SIZE, 2)) + 1",
+    "offset = base + int(idx / 4)\nvalue = table[offset]",
+    "The perimeter is given by P = 2 * (w + h), and the area by A = w * h.",
+    "timeout_ms = 30 * 1000\nretries = 5"
+   ],
+   "quiet": [
+    "class Flags:\n    READ = 'read'\n    WRITE = 'write'\n    EXEC = 'exec'",
+    "The number of cells depends on the number of rows and the layout chosen.",
+    "buf = bytearray(capacity)\nview = memoryview(buf)",
+    "For a cube the face cubes are those touching exactly one side.",
+    "max_depth = settings.max_depth\nif max_depth is None:\n    max_depth = default_depth",
+    "offset = header.offset\nvalue = table[offset]",
+    "The perimeter is the distance around the shape, and the area is the space inside it.",
+    "timeout = config.timeout\nretries = config.retries"
+   ]
+  }
+ ],
+ "predictions": "a weak unit in the probe (0.16-0.49): fire items 0.2-0.6 on ' =' or ' +' or ' ('; near misses under 0.15; may hold on AUROC and fail on the median",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'=' / '+' of a numeric formula",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 54.5, density 0.14%, peaks ' =' x4, ' (' x4, ' +=' x4, ',' x3, ' +' x2, ' int' x2 in 'row length = 1 + (sum of column lengths)', 'sockrecv(sock, 1)', 'printf(', 'f(n) = 8', 'os.read(child_pty, 4096)', 'MAX_COUNT = int(', 'f.read(1024)', 'MPI_Send(buffer, count', 'undefined = 0x00', 'start + int(i / 8)'; the - pole promotes ' integer'. Probe: 'total width = 2 + (sum of column widths)' 0.485 (' ('), 'FLAG_READ = 0x01' 0.426 (' ='), f.read(1024) 0.248, MAX_RETRIES = int( 0.187, sock.recv(4096) 0.157; sock.recv(bufsize) 0.209 and f.read(chunk_size) 0.086 (a variable argument is not clearly lower, so the numeric-argument reading is dropped), name = user.get('name') 0.010, prose 0.008. The test is built on the numeric assignment / formula frame, which scored highest; near misses are the same assignments from strings, attributes and configuration values, and the same formulas in words."
+}
