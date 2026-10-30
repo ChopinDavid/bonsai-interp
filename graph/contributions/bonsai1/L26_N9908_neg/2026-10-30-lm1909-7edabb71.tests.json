@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-7edabb71",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N9908-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:31:08+00:00",
+ "selection": "picked",
+ "neighbours": [
+  {
+   "unit": "L26/N9908",
+   "pole": "-",
+   "label": "Rule and requirement language in technical codes, standards and manuals: how equipment must be sized, rated or selected ('Conductors shall be sized for 125 percent of the load', 'Fuses must be rated for…', 'obtained by referring to Table 3-9'); everyday sentences about the same equipment stay quiet.",
+   "fire": [
+    "Branch circuits shall be protected by a breaker rated at 20 amperes.",
+    "Vent pipes must be sized according to the total fixture load.",
+    "Anchor bolts shall be spaced not more than six feet apart.",
+    "Each relief valve must be set below the tank's design pressure.",
+    "Handrails shall be installed on both sides of the stairway.",
+    "The duct size is selected from the friction loss chart.",
+    "Ground wires must be at least 6 AWG copper for this service.",
+    "Joists shall bear at least three inches on the supporting wall."
+   ],
+   "quiet": [
+    "The breaker in our hall tripped twice during the storm.",
+    "We sat by the vent pipe and talked until midnight.",
+    "The old bolts on the gate were rusty and loose.",
+    "The plumber fixed the relief valve on our water heater.",
+    "The children slid down the handrail of the stairway.",
+    "We could hear wind whistling through the duct at night.",
+    "My dad keeps a spool of copper wire in the garage.",
+    "The joists in the attic creaked when the cat walked."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.2; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "second-round"
+  ]
+ },
+ "short": "requirement language in technical codes",
+ "unit_kind": "contextual / register",
+ "confidence": 0.6,
+ "notes": "Round 2 for this pole (round 1 in sweep 4: 'manual text referring to Table 3-9' failed because technical sentences without a table reference also fired, e.g. 'The pipe size depends on the expected flow.' 0.73). Refinement probe: 'Conductors shall be sized for 125 percent…' 1.22, 'Fuses must be rated for…' 0.57; 'The minimum slope … is one quarter inch per foot' only 0.08; everyday sentences about pipes and fuses 0.01-0.02. New label: the rule/requirement register."
+}
