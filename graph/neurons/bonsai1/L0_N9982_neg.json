@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N9982-",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 9982,
+ "pole": "-",
+ "label": "a small set of specific continuation tokens, mostly code-identifier pieces after a separator: '_for' (url_for 0.75), '/css' (text/css 0.71), \"('--\" (add_argument('-- 0.72), '.Required' (validators.Required 0.33) and the word piece 'anal' (Spanish sem|anal 1.01); other identifier pieces and prose are quiet (0.02-0.19)",
+ "short": "token set: _for, /css, ('--, .Required, anal",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N9982_neg/2026-10-30-ChopinDavid-665cabad.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.225,
+     "peak": "_for"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.24,
+     "peak": "_for"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.582,
+     "peak": "/css"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.718,
+     "peak": "('--"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.17,
+     "peak": ".Required"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.886,
+     "peak": "anal"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.571,
+     "peak": "('--"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.83,
+     "peak": "anal"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.054,
+     "peak": "="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": "_path"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.235,
+     "peak": " rel"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.12,
+     "peak": "='"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.062,
+     "peak": " StringField"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.128,
+     "peak": " jue"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.073,
+     "peak": "='"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.088,
+     "peak": "ual"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.577,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-665cabad"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-665cabad",
+   "a small set of specific continuation tokens, mostly code-identifier pieces after a separator: '_for' (url_for 0.75), '/css' (text/css 0.71), \"('--\" (add_argument('-- 0.72), '.Required' (validators.Required 0.33) and the word piece 'anal' (Spanish sem|anal 1.01); other identifier pieces and prose are quiet (0.02-0.19)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-665cabad"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

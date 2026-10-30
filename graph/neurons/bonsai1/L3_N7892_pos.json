@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N7892+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 7892,
+ "pole": "+",
+ "label": "The fuels diesel and petrol / gasoline (also 'diesels' for diesel engines), firing on the fuel word or its last piece; other ways of powering the same vehicles stay quiet.",
+ "short": "diesel / petrol (fuel)",
+ "kind": "lexical / semantic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N7892_pos/2026-10-30-lm1909-c8c26999.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.485,
+     "peak": " diesel"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.559,
+     "peak": "rol"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.534,
+     "peak": "els"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.583,
+     "peak": " diesel"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.464,
+     "peak": " petrol"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.527,
+     "peak": " diesel"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.681,
+     "peak": " diesel"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.454,
+     "peak": " petrol"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " batteries"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.144,
+     "peak": " prices"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.059,
+     "peak": " powered"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.054,
+     "peak": " quieter"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " fresh"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.003,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.044,
+     "peak": " switched"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.039,
+     "peak": "Drivers"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.53,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-c8c26999"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-c8c26999",
+   "The fuels diesel and petrol / gasoline (also 'diesels' for diesel engines), firing on the fuel word or its last piece; other ways of powering the same vehicles stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-c8c26999"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

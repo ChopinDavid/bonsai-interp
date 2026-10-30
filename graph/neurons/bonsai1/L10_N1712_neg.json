@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L10/N1712-",
+ "model": "bonsai1",
+ "layer": 10,
+ "index": 1712,
+ "pole": "-",
+ "label": "broad (4.4% of tokens, gate-closed leak 99%, max 3.6): the hedge or quantifier of a generalising claim about people in expository web prose ('as just the pill' 0.88, 'a very common complaint' 0.73, 'all of us experience' 0.62, 'platforms allow for' 0.54, 'most of us were' 0.44); specific first-person narrative and directions are quiet (0.06-0.12)",
+ "short": "quantifier/hedge of a generic claim (broad)",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L10_N1712_neg/2026-10-30-ChopinDavid-9ba4348c.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.436,
+     "peak": " us"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.73,
+     "peak": " very"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.107,
+     "peak": " more"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.879,
+     "peak": " just"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.112,
+     "peak": " us"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.51,
+     "peak": " very"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.119,
+     "peak": " allows"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.151,
+     "peak": " accept"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.1,
+     "peak": " missed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.09,
+     "peak": " move"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.061,
+     "peak": " office"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.057,
+     "peak": " Saturday"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.047,
+     "peak": " funeral"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.076,
+     "peak": " street"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.072,
+     "peak": " cake"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.103,
+     "peak": " accept"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.293,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-9ba4348c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-9ba4348c",
+   "broad (4.4% of tokens, gate-closed leak 99%, max 3.6): the hedge or quantifier of a generalising claim about people in expository web prose ('as just the pill' 0.88, 'a very common complaint' 0.73, 'all of us experience' 0.62, 'platforms allow for' 0.54, 'most of us were' 0.44); specific first-person narrative and directions are quiet (0.06-0.12)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-9ba4348c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

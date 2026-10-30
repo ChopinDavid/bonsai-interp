@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N9630+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 9630,
+ "pole": "+",
+ "label": "unclear: the card peaks on the preposition before a disease or topic entity named earlier in a medical-news document ('dying from muscular dystrophy', 'people with the disease', 'treating ASD', 'origin for microRNAs'), but every isolated probe sentence scored under 0.06; best guess the preposition slot before a second mention of the passage's topic entity, tested with a two-sentence passage",
+ "short": "preposition before the passage's topic entity (guess)",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N9630_pos/2026-10-30-ChopinDavid-a19369a6.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.689,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.601,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.697,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.631,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.218,
+     "peak": " treating"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.232,
+     "peak": "press"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.248,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.042,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.064,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " opened"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " four"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " book"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.424,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-a19369a6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-a19369a6",
+   "unclear: the card peaks on the preposition before a disease or topic entity named earlier in a medical-news document ('dying from muscular dystrophy', 'people with the disease', 'treating ASD', 'origin for microRNAs'), but every isolated probe sentence scored under 0.06; best guess the preposition slot before a second mention of the passage's topic entity, tested with a two-sentence passage",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-a19369a6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L27/N3018+",
+ "model": "bonsai1",
+ "layer": 27,
+ "index": 3018,
+ "pole": "+",
+ "label": "Low-confidence guess: the last syllable of Korean/Japanese words for activity or learning (활|동, 학|습, 学|び), where 'results' is a likely continuation; no clear trigger.",
+ "short": "Korean/Japanese activity/learning words (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N3018_pos/2026-10-30-lm1909-05759765.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.676,
+     "peak": "동"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.868,
+     "peak": "습"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.283,
+     "peak": "び"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.37,
+     "peak": "동"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.546,
+     "peak": "습"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.723,
+     "peak": "習"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.575,
+     "peak": "동"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.788,
+     "peak": "の"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.4,
+     "peak": "운동"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " 적"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.086,
+     "peak": "索"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.308,
+     "peak": " 참여"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.37,
+     "peak": " 사용"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.11,
+     "peak": "を見る"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " 추"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.117,
+     "peak": "表"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.93,
+    "median_fire": 0.625,
+    "near_misses_at_0.3": 3
+   },
+   "contribution": "2026-10-30-lm1909-05759765"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-05759765",
+   "Low-confidence guess: the last syllable of Korean/Japanese words for activity or learning (활|동, 학|습, 学|び), where 'results' is a likely continuation; no clear trigger.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-05759765"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

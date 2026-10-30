@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N9207-",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 9207,
+ "pole": "-",
+ "label": "Low-confidence guess: 'every' / the variable in a 'for every x there is/exists' statement in math or logic; the same statements phrased without a quantifier stay quiet.",
+ "short": "'for every x there exists' (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N9207_neg/2026-10-30-lm1909-ac96257f.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.135,
+     "peak": " real"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.469,
+     "peak": " epsilon"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.204,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.213,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.073,
+     "peak": "For"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.079,
+     "peak": " n"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.057,
+     "peak": "For"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.07,
+     "peak": " input"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.528,
+     "peak": " every"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.035,
+     "peak": " delta"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.08,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " range"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.057,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.027,
+     "peak": " has"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " output"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.805,
+    "median_fire": 0.107,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-lm1909-ac96257f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-ac96257f",
+   "Low-confidence guess: 'every' / the variable in a 'for every x there is/exists' statement in math or logic; the same statements phrased without a quantifier stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-ac96257f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

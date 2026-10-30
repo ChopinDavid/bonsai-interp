@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N5146+",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 5146,
+ "pole": "+",
+ "label": "a country, region or nationality name used as the second element of a proper-name compound after a company or institution (Bell Canada 0.93, Columbia Earth Institute 0.73, Bugaboo USA 0.73, Collins English Dictionary 0.63, Toyota Australia 0.38); the same place names as destinations or plain nouns (emigrated to Canada 0.01) and place-first compounds (Canada Post 0.05) are quiet",
+ "short": "place name as 2nd element of a brand/institution name",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N5146_pos/2026-10-30-ChopinDavid-b527b1f7.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.46,
+     "peak": " Canada"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.207,
+     "peak": " English"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.325,
+     "peak": " English"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.186,
+     "peak": " Australia"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.456,
+     "peak": " Ontario"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.319,
+     "peak": " USA"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.295,
+     "peak": " Canada"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.306,
+     "peak": " Earth"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": " awarded"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " debate"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " Australia"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": "He"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.033,
+     "peak": " USA"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " Day"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.312,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-b527b1f7"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-b527b1f7",
+   "a country, region or nationality name used as the second element of a proper-name compound after a company or institution (Bell Canada 0.93, Columbia Earth Institute 0.73, Bugaboo USA 0.73, Collins English Dictionary 0.63, Toyota Australia 0.38); the same place names as destinations or plain nouns (emigrated to Canada 0.01) and place-first compounds (Canada Post 0.05) are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-b527b1f7"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

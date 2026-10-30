@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N9107-",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 9107,
+ "pole": "-",
+ "label": "a messaging-medium word (email, mail, IM, e-mail, RSS) used as the modifier of a software noun such as client, application, program or reader ('default email application' 0.84, 'graphical IM client' 0.61, 'e-mail programs' 0.37, 'mail client' 0.33); the same words as the message itself (sent an email 0.02) and 'client' in the business sense (0.003) are quiet",
+ "short": "email/IM/mail as modifier of client/application",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N9107_neg/2026-10-30-ChopinDavid-37945115.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.722,
+     "peak": " email"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.257,
+     "peak": " mail"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.421,
+     "peak": " IM"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.522,
+     "peak": " mail"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.171,
+     "peak": " mail"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.053,
+     "peak": " application"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.275,
+     "peak": "-mail"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.138,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.018,
+     "peak": " email"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " mail"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " IM"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " application"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " law"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " thick"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " back"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.266,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-37945115"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-37945115",
+   "a messaging-medium word (email, mail, IM, e-mail, RSS) used as the modifier of a software noun such as client, application, program or reader ('default email application' 0.84, 'graphical IM client' 0.61, 'e-mail programs' 0.37, 'mail client' 0.33); the same words as the message itself (sent an email 0.02) and 'client' in the business sense (0.003) are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-37945115"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

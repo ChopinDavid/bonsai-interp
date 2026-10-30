@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N9359-",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 9359,
+ "pole": "-",
+ "label": "a style or ingredient descriptor in lifestyle copy about decor, hair, food or scent ('industrial farmhouse vibe, with exposed brick' 1.06, 'glass and brass' 1.06, 'arugula' 0.68, 'relaxed summer locks ... wavy hair' 0.43, 'spinach and Cheddar' 0.42, 'a spicy twist' 0.43); the same nouns in news, science or forensic prose are quiet (industrial output 0.09, hair sample 0.14, spinach is rich in iron 0.28)",
+ "short": "style/ingredient descriptor in lifestyle copy",
+ "kind": "semantic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N9359_neg/2026-10-30-ChopinDavid-a7df9c68.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.338,
+     "peak": " industrial"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.447,
+     "peak": " marble"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.631,
+     "peak": " hair"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.33,
+     "peak": "el"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.242,
+     "peak": "ata"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.739,
+     "peak": "ody"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.497,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.622,
+     "peak": "led"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.198,
+     "peak": " barn"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.09,
+     "peak": " production"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " heights"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.06,
+     "peak": "ale"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.119,
+     "peak": "ata"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.049,
+     "peak": "ot"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.15,
+     "peak": "an"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.043,
+     "peak": " been"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.559,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-a7df9c68"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-a7df9c68",
+   "a style or ingredient descriptor in lifestyle copy about decor, hair, food or scent ('industrial farmhouse vibe, with exposed brick' 1.06, 'glass and brass' 1.06, 'arugula' 0.68, 'relaxed summer locks ... wavy hair' 0.43, 'spinach and Cheddar' 0.42, 'a spicy twist' 0.43); the same nouns in news, science or forensic prose are quiet (industrial output 0.09, hair sample 0.14, spinach is rich in iron 0.28)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-a7df9c68"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

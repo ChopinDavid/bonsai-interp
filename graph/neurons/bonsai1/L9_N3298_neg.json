@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N3298-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 3298,
+ "pole": "-",
+ "label": "The closing quotation mark after a single scare-quoted word ('\"Parental\" males', 'a \"digital\" change'), firing on the closing quote; the same sentences without quotes stay quiet.",
+ "short": "closing quote of a scare-quoted word",
+ "kind": "format / contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N3298_neg/2026-10-30-lm1909-afc6c848.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.161,
+     "peak": "\""
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.828,
+     "peak": "\""
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.006,
+     "peak": " tax"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.183,
+     "peak": "\""
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.11,
+     "peak": "\""
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.032,
+     "peak": "His"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.107,
+     "peak": "safe"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.014,
+     "peak": " praised"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " earlier"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": "ics"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.086,
+     "peak": " males"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": "His"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.019,
+     "peak": " century"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " praised"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.805,
+    "median_fire": 0.108,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-afc6c848"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-afc6c848",
+   "The closing quotation mark after a single scare-quoted word ('\"Parental\" males', 'a \"digital\" change'), firing on the closing quote; the same sentences without quotes stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-afc6c848"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
