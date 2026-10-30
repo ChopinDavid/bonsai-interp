@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-99e295bb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N567+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:27:38+00:00",
+ "recipe": {
+  "toolchain_commit": "8d6500cb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N567_pos/2026-10-30-lm1909-99e295bb.tests.json"
+ },
+ "label": "The start of the second branch of an 'or' alternative ('Pass the exam or get your money back', 'Either P is justified or P is not', 'or else'), firing on the word after 'or'; the same sentences joined with 'and' stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N567_pos/2026-10-30-lm1909-99e295bb.tests.json",
+   "prereg_commit": "8d6500cb",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.616,
+     "peak": " receive"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.09,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.245,
+     "peak": " can"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.01,
+     "peak": " walk"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.018,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.089,
+     "peak": " door"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.015,
+     "peak": " must"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.063,
+     "peak": " we"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.1,
+     "peak": " within"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " bridge"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": " camera"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " must"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": "We"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.076,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "8d6500cb",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "second branch of an 'or' alternative",
+ "unit_kind": "contextual / syntactic",
+ "confidence": 0.5,
+ "notes": "Card: ' or' x3, ' to' x2, ' get', ' is', Arabic أن after أو, ' else', ' while' (Pass in first attempt or⟦ get⟧ your money Back; Either P is justified or P⟦ is⟧ not; or⟦ else⟧). Exploratory probe: 'or get your money back' 0.34, 'Either ... or it is false' 0.38, 'or else' 0.17; 'and' versions 0.004-0.005.",
+ "selection": "random draw"
+}

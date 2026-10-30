@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-5cd078ff",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N9539+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:28:07+00:00",
+ "recipe": {
+  "toolchain_commit": "8d6500cb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N9539_pos/2026-10-30-lm1909-5cd078ff.tests.json"
+ },
+ "label": "A baby or small child introduced with 'a' ('a baby in a manger', 'a little boy', 'a young girl'), firing on 'baby/boy/girl' or 'little/young'; adults in the same frames stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N9539_pos/2026-10-30-lm1909-5cd078ff.tests.json",
+   "prereg_commit": "8d6500cb",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.108,
+     "peak": " wrapped"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.119,
+     "peak": " little"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.073,
+     "peak": " night"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.09,
+     "peak": " boy"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.044,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.072,
+     "peak": " young"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.092,
+     "peak": " toddler"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.07,
+     "peak": " girl"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.078,
+     "peak": " woman"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.162,
+     "peak": " night"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.098,
+     "peak": " man"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.047,
+     "peak": " parcel"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.035,
+     "peak": " kitten"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.703,
+    "median_fire": 0.081,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "8d6500cb",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'a baby' / 'a little boy' (a small child)",
+ "unit_kind": "semantic",
+ "confidence": 0.45,
+ "notes": "Card: ' little' x4, ' boy' x3, ' young' x3, ' a' x2, ' guy' x2, ' baby' (Memories of a⟦ little⟧ boy; a young⟦ boy⟧; a⟦ baby⟧ that changed everything; a⟦ young⟧ German monk). Exploratory probe: 'a baby in a manger' 0.75, 'a little boy' 0.22, 'a young monk' 0.15; 'an old man' 0.10.",
+ "selection": "random draw"
+}
