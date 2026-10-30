@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3410eda4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N10768+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N10768",
+   "pole": "+",
+   "label": "'from' (or the place after it) marking the geographic origin of people who travel or migrate: 'coming from out of state' 1.10, 'arriving here from' 0.91, 'sailors from Shanghai' 0.58, 'came from all parts of Poland' 0.51; 'from' as the source of a letter or a material, and settlement with no origin, are silent (≤0.06), as is 'bound for' a destination (0.07)",
+   "fire": [
+    "Most of the miners had come from Cornwall in the 1850s.",
+    "Pilgrims arriving from the north slept in the cloister.",
+    "Families who emigrated from Sicily settled around the harbour.",
+    "Students coming from overseas must register at the gate.",
+    "Traders from Samarkand brought silk and paper to the market.",
+    "The regiment was recruited from villages along the border.",
+    "Guests travelling from out of town can park behind the hall.",
+    "Thousands fled from the capital when the siege began."
+   ],
+   "quiet": [
+    "Most of the miners had learned the trade from their fathers.",
+    "Pilgrims slept in the cloister and left before dawn.",
+    "The harbour wall is built from local limestone.",
+    "Students must register at the gate before the lecture.",
+    "A parcel from Samarkand arrived at the market stall.",
+    "The regiment was quartered in villages along the border.",
+    "Guests can park behind the hall after six.",
+    "The siege began in spring and lasted until the harvest."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on 'from' or the place name; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'from' of a traveller's origin",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 4.19, density 0.439%, peaks ' from' x6, ' to' x3, ' for', ' Deutschland', ' Shanghai', 'Astur|ias' in sentences about where migrants, refugees and sailors came from. Probe: out of state 1.102, arriving from 0.908, from Shanghai 0.580, came from Poland 0.509; bound for 0.072, letter from 0.029, made from 0.056, settled (no origin) 0.032. The origin of moving people is the trigger; the destination and the non-movement 'from' are not."
+}

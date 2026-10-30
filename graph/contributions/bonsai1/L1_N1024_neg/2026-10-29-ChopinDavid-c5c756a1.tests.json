@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-c5c756a1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N1024-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N1024",
+   "pole": "-",
+   "label": "the piece 'ways' closing the word hallways (hall|ways 0.40); a weak, broad layer-1 unit on which the other 'ways' compounds (door|ways, stair|ways 0.16, water|ways, run|ways) and the single tokens ways, pathways and always stay below threshold",
+   "fire": [
+    "The children raced down the hallways after the bell.",
+    "Fresh paint brightened the hallways of the old hospital.",
+    "Security cameras now cover all the hallways on the second floor.",
+    "Teachers patrol the hallways between periods.",
+    "Posters lined the hallways announcing the spring concert.",
+    "Lockers slam in the hallways every morning at eight.",
+    "The hotel's hallways smelled faintly of cigarette smoke.",
+    "Rumours travel fast through school hallways."
+   ],
+   "quiet": [
+    "The children raced down the corridors after the bell.",
+    "Fresh paint brightened the hall of the old hospital.",
+    "Security cameras now cover all the pathways on the campus.",
+    "Teachers always patrol the yard between periods.",
+    "Posters lined the doorways announcing the spring concert.",
+    "There are several ways to reach the gym from here.",
+    "The hotel's lobby smelled faintly of cigarette smoke.",
+    "The railways carried coal from the valley to the port."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.5 on 'ways' of hallways; near misses below 0.25, with doorways the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ways' in hallways",
+ "unit_kind": "token",
+ "confidence": 0.3,
+ "notes": "Card: max 0.59, broad (3.5% of tokens at 0.1 of max, gate-closed leak 98%), peaks 'ways' x7 all in hall|ways, plus Japanese 盤/備 and '-held'. Probe: hallways 0.400 on 'ways'; doorways/stairways 0.164; waterways, runways and byways peaked on ' the' at 0.10-0.24 (the broad floor), pathways/hall 0.061, ways 0.151, always 0.028. Only the hall|ways compound clears 0.3, so the label is the narrow one.",
+ "trigger": {
+  "words": [
+   "hallways"
+  ]
+ }
+}

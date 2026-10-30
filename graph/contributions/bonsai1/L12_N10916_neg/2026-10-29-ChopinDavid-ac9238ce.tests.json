@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-ac9238ce",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N10916-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N10916",
+   "pole": "-",
+   "label": "the connective that introduces the second term of a comparison or relation: 'than' after a comparative (0.67, 0.84), the second 'as' of 'as … as' (0.51), 'in addition to' (0.75), 'replaces' (0.80), 'post-dating' (0.81); the same sentences without a second term, 'addition' as a noun and temporal 'as'/'before' are silent (≤0.11)",
+   "fire": [
+    "The new bridge is far longer than the old ferry crossing.",
+    "Her second novel is every bit as dark as the first.",
+    "The clinic offers counselling in addition to routine check-ups.",
+    "In the north, rye replaces wheat as the bread grain.",
+    "These coins are later issues, post-dating the reform of 1816.",
+    "A cold winter is more dangerous to the vines than a wet one.",
+    "No remedy works better than rest for a sprained ankle.",
+    "The tenor sang just as loudly as the chorus behind him."
+   ],
+   "quiet": [
+    "The new bridge is very long and carries two lanes.",
+    "Her second novel is dark and slow to begin.",
+    "The addition of a clinic was welcomed by the village.",
+    "In the north, rye is the usual bread grain.",
+    "These coins were struck shortly before the reform of 1816.",
+    "A cold winter is dangerous to the vines.",
+    "Rest is the best remedy for a sprained ankle.",
+    "The tenor sang loudly as the chorus filed in behind him."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on than/as/addition/replaces/-dating; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second term of a comparison",
+ "unit_kind": "contextual",
+ "confidence": 0.75,
+ "notes": "Card: max 21, density 0.520%, peaks ' addition' x5 (in addition to), ' than' x4, ' من' x3 (Arabic 'than'), ' as' x2 (as important as), ' على' (تزيد على), 'post-d|ating', ' replaces'. Probe: worse than 0.667, greater than 0.841, as important as 0.505, in addition to 0.752, replaces 0.804, post-dating 0.810; 'is a common failing' 0.007, 'The addition of salt' 0.003, 'worked as a nurse before' 0.112. A relational operator across English and Arabic; the test is English only."
+}

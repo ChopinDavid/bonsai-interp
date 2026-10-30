@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-dae31ef8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N11849-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N11849",
+   "pole": "-",
+   "label": "unclear: a proper name or technical term that opens a new paragraph (⏎L-arginine, ⏎Ella Baker, In addition, Nolen and Draper, ⏎P.S. Answer to CI); the probe's re-mentions inside one paragraph all stayed below 0.08, so this is a low-confidence guess at the paragraph-opening position",
+   "fire": [
+    "The amino acid is common in nuts.\nL-citrulline was first described in 1914 in watermelon.",
+    "The firm designed several parks.\nIn addition, Olmsted and Vaux laid out the surrounding avenues.",
+    "Weight loss was modest in both groups.\nP.S. Answer to the BMI question: the mean BMI fell by two points.",
+    "The campaign spread across the South.\nFannie Lou Hamer has been called the conscience of the movement.",
+    "The region changed hands twice.\nFull Spanish administrative control of the interior came only in 1780.",
+    "The sides are known.\nSo we have calculated the area of the triangle and can move on.",
+    "The strikes continued.\nThere are three good reasons why airstrikes in Syria might prove more useful than in Libya.",
+    "The dream book lists many omens.\nDreaming of a coffin, it says, foretells a long journey."
+   ],
+   "quiet": [
+    "The amino acid is common in nuts.\nIt was first described in 1914 in watermelon.",
+    "The firm designed several parks.\nIn addition, they laid out the surrounding avenues.",
+    "Weight loss was modest in both groups.\nThe mean fell by two points in the second year.",
+    "The campaign spread across the South.\nShe has been called the conscience of the movement.",
+    "The region changed hands twice.\nAdministrative control of the interior came only in 1780.",
+    "The sides are known.\nSo the area can be found and we can move on.",
+    "The strikes continued.\nThere are three good reasons why this approach might prove more useful.",
+    "The dream book lists many omens.\nOne of them, it says, foretells a long journey."
+   ]
+  }
+ ],
+ "predictions": "probably fails: fire items may reach 0.1-0.3 on the paragraph-opening name; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "name opening a paragraph (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 7.47, density 0.138%, no repeated token (' Iraq', ' N'olen, ' CI', L'-'arginine, 'ник', E'lla', ' calculated', ' Portuguese'); most card hits sit just after a ⏎ paragraph break. Probe (one paragraph, '. ' breaks): every item 0.022-0.078, including exact re-mentions of Iraq, Nolen and Draper, CI, L-arginine and Ella Baker. The test keeps the names but moves them to the opening of a second paragraph after a newline, which the probe did not try."
+}

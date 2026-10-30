@@ -1,0 +1,58 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-08a2eed8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N3131-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N3131",
+   "pole": "-",
+   "label": "flavour/aroma nouns describing food quality (flavours 0.55, flavor 0.45, aromas 0.26; 'taste' only 0.11), with a second cluster on formal titles such as 'Journal of Food Science' 0.61 and 'Annual Meeting of the' 0.30; other quality nouns (texture, colour, crust, price) are weak, though the frame 'qualities such as' itself reached 0.34",
+   "fire": [
+    "Slow roasting brings out the flavour of the root vegetables.",
+    "Each barrel adds its own aroma to the ageing spirit.",
+    "The cheese is prized for its nutty flavor and long finish.",
+    "Dried herbs lose their aromas within a few months.",
+    "Smoke lends the sausages their distinctive flavours.",
+    "Breeders now select tomatoes for flavour rather than shelf life.",
+    "A pinch of salt sharpens the flavors of the broth.",
+    "The coffee's aroma filled the small kitchen."
+   ],
+   "quiet": [
+    "Slow roasting brings out the sweetness of the root vegetables.",
+    "Each barrel adds its own colour to the ageing spirit.",
+    "The cheese is prized for its firm texture and long shelf life.",
+    "Dried herbs lose their colour within a few months.",
+    "Smoke lends the sausages their distinctive crust.",
+    "Breeders now select tomatoes for yield rather than shelf life.",
+    "A pinch of salt thickens the broth slightly.",
+    "The coffee's steam filled the small kitchen."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on flavour/flavor/aroma; near misses below 0.2, sweetness the likeliest leak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "flavour/aroma of food",
+ "unit_kind": "lexical",
+ "confidence": 0.45,
+ "notes": "Card: max 16.88, density 0.069%, peaks ' flavor' x6, ' flavours' x3, ' taste' x3, ' aroma', 'Arom|as', 'arô|mes', and a second cluster ' Conference' x3, ' Meeting', 'Journal of Food Science', 'Figure'. Probe: flavours 0.553, flavor 0.453, aromas 0.260, taste 0.113; Journal of Food Science 0.609, Annual Meeting 0.301; 'qualities such as texture' 0.340 on ' qualities', price/crust 0.014, colour 0.131. The test covers the flavour cluster only and declares its words; the title cluster is noted as partial coverage.",
+ "trigger": {
+  "words": [
+   "flavor",
+   "flavors",
+   "flavour",
+   "flavours",
+   "aroma",
+   "aromas"
+  ]
+ }
+}

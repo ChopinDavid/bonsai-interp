@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-95179bcd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N3837+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N3837",
+   "pole": "+",
+   "label": "the first piece of an obscure multi-token proper name in a name slot (from Ra|oul Island 0.66, ibn B|ati 0.57, at Ban|ani Field 0.27): the short onset piece whose continuation is unpredictable; single-token familiar names in the same slots (Hawaii, Wembley, Ali) and well-known split names (Tu|valu, Kir|ib|ati) are silent",
+   "fire": [
+    "The caravan rested at Rasul Wells before crossing the salt flats.",
+    "The chronicle names the governor as Ahmad ibn Prabhu of the eastern march.",
+    "The final was played at Bani Stadium under floodlights.",
+    "They drove north through Ravalli County toward the pass.",
+    "The earthquake was centred near Bhuj and felt across the province.",
+    "Her uncle ran a bookshop in Raipur for thirty years.",
+    "The fort was built by Pratap in the year of the great drought.",
+    "The monks of Prakash monastery kept bees on the hillside."
+   ],
+   "quiet": [
+    "The caravan rested at Omar Wells before crossing the salt flats.",
+    "The chronicle names the governor as Ahmad ibn Hassan of the eastern march.",
+    "The final was played at Delhi Stadium under floodlights.",
+    "They drove north through Clark County toward the pass.",
+    "The earthquake was centred near Karachi and felt across the province.",
+    "Her uncle ran a bookshop in Kiribati for thirty years.",
+    "The fort was built by Said in the year of the great drought.",
+    "The monks of Tokyo monastery kept bees on the hillside."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.7 on the first piece of the obscure name; near misses with familiar single-token or known split names below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "onset piece of an obscure name",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 49.25, density 0.110%, peaks ' Ra' x3, ' الر' x3, ' B' x2, ' Pr' x2, all first pieces of rare names (Raoul Island, ibn Bati, Banani, Snag Lake, Baburam). Probe: Raoul 0.662, Bati 0.569, Banani 0.272, Snag 0.181; Hawaii 0.003, Wembley 0.006, ibn Ali 0.092, Tuvalu/Kiribati 0.031, filler 0.008. Obscurity matters (Kiribati is split but silent), so the fire items use less familiar South Asian and Arabic names with 1-3 letter onset pieces."
+}

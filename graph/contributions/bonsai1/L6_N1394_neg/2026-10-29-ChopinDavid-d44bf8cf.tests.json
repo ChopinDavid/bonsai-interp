@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d44bf8cf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N1394-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N1394",
+   "pole": "-",
+   "label": "a non-initial piece of a romanized Japanese or Iroquoian word that the tokenizer splits into short pieces (kama-|iri 0.89, I|ro|quois 0.48, Gok|ur|aku 0.28, D|ian 0.24, terrac|otta 0.23); single-token or familiar exotic words (Hokkaido, Mohawk, Lipton, sushi) are silent (≤0.04)",
+   "fire": [
+    "The farmhouse kitchen was warmed by an irori sunk into the floor.",
+    "Children once learned the syllabary through the Iroha poem.",
+    "The finest shaded tea is called gyokuro and is brewed cool.",
+    "Wild cats survive only on Iriomote, far to the south.",
+    "Gifts were wrapped in a square furoshiki cloth.",
+    "The white castle is known simply as shiro by the locals.",
+    "A young dolphin is called iruka in the old songs.",
+    "The council fire was kept by the Onondaga at the centre of the league."
+   ],
+   "quiet": [
+    "The farmhouse kitchen served sushi on a long wooden board.",
+    "Children once learned the alphabet through a short rhyme.",
+    "The finest shaded tea is grown near Kyoto and is brewed cool.",
+    "Wild cats survive only on the islands far to the south.",
+    "Gifts were wrapped in a square cotton cloth.",
+    "The white castle is known simply as the keep by the locals.",
+    "A young dolphin is called a calf in the old songs.",
+    "The council fire was kept by the Mohawk at the eastern door of the league."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.9 on an inner piece of the split word; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner piece of a romanized Japanese word",
+ "unit_kind": "lexical",
+ "confidence": 0.35,
+ "notes": "Card: max 4.66, density 0.165%, peaks 'ro' x6 (I|ro|quois), 'ok' x2 (G|ok|uraku), 'k', 'en', 'iri' (kama-iri), 'u' (Sar|u), 'ian', 'otta', 'atak' (W|atak|ushi): inner pieces of transliterated words. Probe: kama-iri 0.890, Iroquois 0.481, Gokuraku 0.277 (peak 'aku'), Dian 0.237, terracotta 0.227, Watakushi 0.225, Saru 0.098; Hokkaido 0.042, Mohawk 0.012, Lipton 0.033. Fire items use words whose splits were checked: ir|ori, I|ro|ha, gy|ok|uro, I|ri|om|ote, f|uro|sh|iki, sh|iro, i|ru|ka, On|ond|aga."
+}

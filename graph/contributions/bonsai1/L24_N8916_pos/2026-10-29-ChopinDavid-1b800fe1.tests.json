@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1b800fe1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N8916+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N8916",
+   "pole": "+",
+   "label": "the number of a referenced enumerated item: 'point 2 of Rule 8D' 0.57, 'Step 1' 0.40, 'Q1' 0.31, 'number 3' 0.23, 'paragraph 2' 0.16; numbers as quantities, years and 'the first time' are silent (0.01)",
+   "fire": [
+    "Under point 3 of the agreement, the tenant pays for repairs.",
+    "Now complete Step 4: attach the bracket to the wall.",
+    "For Q2, candidates must show their working.",
+    "If the engine still stalls, go back to step 2.",
+    "See item 5 of the schedule for the exact fees.",
+    "Exercise 7. Solve the equation for x.",
+    "Marks for Q4 are awarded for method as well as the answer.",
+    "As stated in clause 6, notice must be given in writing."
+   ],
+   "quiet": [
+    "Under the agreement, the tenant pays 3 months of repairs.",
+    "Now attach the 4 brackets to the wall.",
+    "For the exam, 2 candidates failed to show their working.",
+    "If the engine still stalls, wait 2 minutes and try again.",
+    "The schedule lists fees for 5 services.",
+    "She solved 7 equations before lunch.",
+    "The paper was marked out of 40.",
+    "Notice was given in 2006 in writing."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on the digit or the item word; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "number of a referenced step/question/point",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 33, density 0.094%, peaks '1' x5, '5' x3, ' second' x3, ' step' x3, '2' x2, ':\\n' x3 in references to numbered items (paragraph 2 above, go to number 3, Q1, Step 1, point 2 of Rule 8D, Exercício 5.27). Probe: point 2 0.570, Step 1 0.402, Q1 0.314, number 3 0.226, paragraph 2 0.163, lessons list 0.116; 30 students 0.011, 2015 0.011, the first time 0.010. Direction clear, magnitude moderate: half the probe items cleared 0.3, so the fire items favour point/step/Q/item/clause references."
+}

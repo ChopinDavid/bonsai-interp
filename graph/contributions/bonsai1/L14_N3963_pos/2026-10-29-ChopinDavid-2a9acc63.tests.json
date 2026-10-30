@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2a9acc63",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N3963+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N3963",
+   "pole": "+",
+   "label": "transcribed spoken-lecture discourse: a sentence-opening 'And'/'So' or the filler 'you know' inside a talk or interview transcript ('And you know, I wouldn't dream' 1.01, 'And the ratio here does' 0.73, 'So what I want to do' 0.58, 'you know, you add' 0.53); the same content as written exposition and 'know' as a verb are silent (≤0.007)",
+   "fire": [
+    "Okay, so the first thing we do is, you know, we check the baseline reading.",
+    "Thanks for joining us today. And what I want to talk about is the second law.",
+    "Right, so let me pull up the next slide and we'll go through it together.",
+    "This is Ray Carter for the weekend show. And you know, I've never understood this part.",
+    "When you add the acid, you know, slowly, the colour changes right away.",
+    "So the other thing I want to say here is that the numerator does matter.",
+    "Alright, and the reason we care about this, you know, is the ratio changes.",
+    "So here's the deal, I've got two functions and I'm going to divide them."
+   ],
+   "quiet": [
+    "The first step is to check the baseline reading before adding the acid.",
+    "The lecture covered the second law of thermodynamics in detail.",
+    "The next slide shows the results of the second experiment.",
+    "Ray Carter hosts the weekend show and has never understood this part.",
+    "If you know the concentration, the colour change can be predicted.",
+    "The numerator matters because it sets the scale of the ratio.",
+    "We care about this quantity because the ratio changes with temperature.",
+    "Two functions are divided and the quotient is simplified."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on 'And', 'know' or the token after the spoken lead-in; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "spoken-transcript And/So/you know",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 39, density 0.048%, peaks ' know' x10 (all 'you know,'), ' And' x5, ' I' x3 ('So I say to myself', 'what I want to do'), in lecture and podcast transcripts. Probe: 1.009, 0.732, 0.579, 0.532 for the transcript items; 'you know, prevent a dog' only 0.183 (mid-sentence filler in a conditional); written versions 0.003-0.007, 'If you know the answer' 0.003. Register is the trigger, not the words: 'know' as a verb in written prose is silent."
+}

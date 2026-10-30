@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-677e260e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1450-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1450",
+   "pole": "-",
+   "label": "kind-level (generic) reference: an indefinite 'a N' or a copular 'was/had' predicating something of a type rather than a named individual ('the expansion of a franchise' 0.96, 'the head of house, who usually was male' 0.94, 'a burgage tenement was probably' 0.72, 'a search engine is determined' 0.48); the same predicates about a named person or company are silent (≤0.08)",
+   "fire": [
+    "In most villages the smith was also the farrier.",
+    "The reputation of a restaurant depends on its regulars.",
+    "A medieval apprentice usually had to serve seven years.",
+    "Ownership of a cart was a mark of modest prosperity.",
+    "The value of a good dictionary lies in its examples.",
+    "A country doctor was expected to make calls at any hour.",
+    "The cost of a wedding is often borne by the bride's family.",
+    "The captain of a merchant ship had wide powers at sea."
+   ],
+   "quiet": [
+    "In Thornby the smith, John Dale, was also the farrier.",
+    "The reputation of Chez Marie depends on its regulars.",
+    "Thomas Wren had to serve seven years under his master.",
+    "Ownership of the Dale cart passed to his widow.",
+    "The value of Johnson's dictionary lies in its examples.",
+    "Dr Finch was expected to make calls at any hour.",
+    "The cost of Emma's wedding was borne by her family.",
+    "Captain Reed had wide powers aboard the Endeavour."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on 'a' or 'was/had'; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "generic 'a N'/'was' about a type",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 6.56, broad (1.2% of tokens at 0.1 of max), peaks ' a' x5, '.' x4, ' was' x2, ' had' in generic statements (the success of a search engine, the expansion of a franchise, head of house who usually was male). Probe: franchise 0.956, usually was male 0.944, burgage tenement was 0.717, search engine 0.475, 'manufacturer not only had to' 0.236; 'under my grandfather, who was' 0.004, 'Google's success' 0.002, 'Henry Ford had to' -0.024, filler 0.076. The generic/specific contrast is sharp in the probe, so the near misses swap each type for a named instance."
+}

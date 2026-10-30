@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-1780efba",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5695+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:20:11+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N5695",
+   "pole": "+",
+   "label": "an interview or survey question put to the respondent about their own experience ('Do you ever regret' 0.82, 'describe their financial situation' 0.35, 'Have either of your parents ever' 0.30); second-person instructions, third-person reports and factual questions are silent (≤0.08)",
+   "fire": [
+    "Question 7: Have you ever thought about quitting the sport altogether?",
+    "Interviewer: Do you ever get nervous before a big show?",
+    "Next question: What is your biggest regret from those early years?",
+    "And finally, would you ever consider moving back to your hometown?",
+    "We asked readers to describe their current living situation in one word.",
+    "Q3. Do you ever skip breakfast during the week?",
+    "So tell me, have either of your children ever asked about the war?",
+    "Survey item 12: Do you ever feel that your work goes unnoticed?"
+   ],
+   "quiet": [
+    "Question 7 on the exam asks for the boiling point of ethanol.",
+    "The interviewer arrived late and apologised to the band.",
+    "Next, you should tighten the bolts and check the alignment.",
+    "Is the museum open on public holidays?",
+    "Most readers described their living situation as cramped.",
+    "He never skips breakfast during the week.",
+    "Does the train stop at every station after midnight?",
+    "Your work will be reviewed by the committee next month."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on 'ever', 'your' or the situation noun; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "interview question to the respondent",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 8.56, density 0.509%, peaks ' ever' x2, ' you' x2, ' your', ' advice', ' share', ' situation' in interview and survey questions (Do you ever have to buy, Have either of your parents, Anything else you would like to share, asked to describe their financial situation). Probe: 'Do you ever regret' 0.822, financial situation 0.351, 'either of your parents ever' 0.303, 'share with our readers' 0.191, 'What advice would you give' 0.088; 'You should always check' 0.014, 'He asked the mechanic' 0.078, 'Most respondents live' 0.062. The 'ever' questions carry most of it, so the fire items are built on 'Do/Have you ever' and 'your' in interview frames."
+}
