@@ -1,0 +1,166 @@
+{
+ "id": "2026-10-29-moridinamael-aac7cc1e",
+ "kind": "qc",
+ "neuron": "bonsai1/L33/N2091-",
+ "contributor": "moridinamael",
+ "created": "2026-10-30T03:53:58+00:00",
+ "recipe": {
+  "toolchain_commit": "a6adee12",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N2091_neg/2026-10-29-moridinamael-aac7cc1e.tests.json"
+ },
+ "label": "Fires on the bare opening piece of a word the tokenizer splits, strongest for ' m'/' M' (German, English), Arabic ' الم' and Spanish/French ' cong'; quiet on the same sentence with an unsplit whole-word synonym.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N2091_neg/2026-10-29-moridinamael-aac7cc1e.tests.json",
+   "prereg_commit": "a6adee12",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": -0.0,
+     "peak": "fire"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.004,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.083,
+     "peak": " einmal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.04,
+     "peak": " m"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.139,
+     "peak": "M"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.101,
+     "peak": "ika"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.001,
+     "peak": " ال"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.069,
+     "peak": " الم"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.0,
+     "peak": " camp"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " einmal"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " coff"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.191,
+     "peak": " Platz"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " ال"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " الغ"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.648,
+    "median_fire": 0.055,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "inverse-gmoo",
+   "look",
+   "neighbors",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "a6adee12",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "Fires on the bare word-initial piece ' m' that opens a German word the tokenizer splits (m+ächtig, m+itten, m+ässig); quiet on the same German sentences with an unsplit synonym."
+ },
+ "trigger": {
+  "words": [
+   " m",
+   " M",
+   " الم",
+   " cong"
+  ]
+ }
+}
