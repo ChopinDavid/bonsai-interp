@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-moridinamael-23e51d39",
+ "kind": "qc",
+ "neuron": "bonsai1/L34/N4551-",
+ "contributor": "moridinamael",
+ "created": "2026-10-30T18:26:49+00:00",
+ "recipe": {
+  "toolchain_commit": "09e123a5c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N4551_neg/2026-10-30-moridinamael-23e51d39.tests.json"
+ },
+ "label": "The bare token ' dé' opening a French word (dé|rangé, dé|licieux), and ' de' right after an adverb or degree word (complètement de, much more de|formed), where a dé-/de- adjective could start; weak for ' de' meaning 'of' after a noun or quantity (livre de, beaucoup de), silent on whole tokens like déjà or deliberate",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N4551_neg/2026-10-30-moridinamael-23e51d39.tests.json",
+   "prereg_commit": "09e123a5c",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.638,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.549,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.626,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.205,
+     "peak": " dés"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.413,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.638,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.336,
+     "peak": " dé"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.596,
+     "peak": " dé"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.148,
+     "peak": " en"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.263,
+     "peak": " au"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.164,
+     "peak": " en"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.138,
+     "peak": " de"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.235,
+     "peak": "El"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.135,
+     "peak": " de"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.212,
+     "peak": " de"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.135,
+     "peak": "La"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.573,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "09e123a5c",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the French word-opening prefix piece ' dé' (dé|rangé, dé|licieux, dé|modée; not the whole tokens ' dém', ' dés', ' décidé'), as against French sentences on the same topics whose words do not start with a split dé-"
+ }
+}

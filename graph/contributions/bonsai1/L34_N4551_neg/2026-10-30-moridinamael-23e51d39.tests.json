@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-moridinamael-23e51d39",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L34/N4551-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:26:32+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the French word-opening prefix piece ' dé' (dé|rangé, dé|licieux, dé|modée; not the whole tokens ' dém', ' dés', ' décidé'), as against French sentences on the same topics whose words do not start with a split dé-"
+ },
+ "neighbours": [
+  {
+   "unit": "L34/N4551",
+   "pole": "-",
+   "label": "The bare token ' dé' opening a French word (dé|rangé, dé|licieux), and ' de' right after an adverb or degree word (complètement de, much more de|formed), where a dé-/de- adjective could start; weak for ' de' meaning 'of' after a noun or quantity (livre de, beaucoup de), silent on whole tokens like déjà or deliberate",
+   "fire": [
+    "La chambre de mon frère est toujours dérangée le dimanche matin.",
+    "Ce gâteau au chocolat était vraiment délicieux.",
+    "Le train est parti en retard et tout le monde était déçu.",
+    "Il a été complètement désorienté après le long vol de nuit.",
+    "Elle se sentait totalement démotivée avant l'examen final.",
+    "Nous avons dû démonter la vieille armoire pour la déplacer.",
+    "Le chanteur a fait ses débuts sur une petite scène à Lyon.",
+    "La photo était très déformée par l'objectif grand angle."
+   ],
+   "quiet": [
+    "La chambre de mon frère est toujours en désordre le dimanche matin.",
+    "Ce gâteau au chocolat était vraiment excellent.",
+    "Le train est parti en retard et tout le monde était triste.",
+    "Il a été complètement perdu après le long vol de nuit.",
+    "Elle avait déjà fini ses révisions avant l'examen final.",
+    "Nous avons acheté un livre de cuisine pour la vieille maison.",
+    "Le chanteur a bu beaucoup de thé sur une petite scène à Lyon.",
+    "La photo était très floue à cause de l'objectif grand angle."
+   ]
+  }
+ ],
+ "predictions": "Expect ~7/8 fire; the risky ones are 'dérangée' / 'débuts' (maybe tokenized whole) and the 'Elle ... déjà' near miss. A weak spot: the 'quiet' set is French and sentence-initial tokens like 'La'/'Le' may give a ~0.2 baseline.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo"
+  ]
+ }
+}
