@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-30-moridinamael-8c71f77d",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L22/N2000-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:12:44+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "Non-final pieces of split ALL_CAPS error/status constants in code (SERVICE_UNAVAILABLE, ECONNREFUSED, MOVED_PERMANENTLY), whether or not they mean failure; near zero on one-token names (OK, CREATED) and plain English prose; Korean tech-doc word pieces also fire"
+ },
+ "neighbours": [
+  {
+   "unit": "L22/N2000",
+   "pole": "-",
+   "label": "Mid-phrase tokens inside stock technical or error phrases and code identifiers, just before the phrase finishes (timed|out, reset by|peer, out of|date, SERVICE_UN|AVAILABLE); also non-final pieces of Korean words; near zero on ordinary prose",
+   "fire": [
+    "액세스 지점을 non-broadcast(숨겨진) 네트워크로 구성하지 않는 것이",
+    "The request failed with: connection timed out after 30 seconds.",
+    "curl: (56) Recv failure: Connection reset by peer",
+    "Your package index is out of date; run apt update first.",
+    "The gateway returned 503 SERVICE_UNAVAILABLE for every request.",
+    "Traceback ended with java.lang.NullPointerException at line 42.",
+    "fatal: refusing to merge unrelated histories",
+    "Error: ENOENT: no such file or directory, open 'config.json'"
+   ],
+   "quiet": [
+    "We waited half a minute for the reply, then gave up and went home.",
+    "My friend hung up on me in the middle of our phone call.",
+    "The milk in the fridge smelled a little old, so I poured it out.",
+    "The bakery was closed all afternoon, so we bought bread elsewhere.",
+    "She found a missing button on her coat while walking to work.",
+    "The two families decided not to combine their holiday plans.",
+    "I looked everywhere for the letter, but it was not in the drawer.",
+    "The old car finally stopped running on the way to the coast."
+   ]
+  }
+ ],
+ "predictions": "Expect 6/8 fire; Korean and NullPointerException lines uncertain; prose near misses mostly quiet but this pole is broad (3% of tokens), so 1-2 may leak.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
