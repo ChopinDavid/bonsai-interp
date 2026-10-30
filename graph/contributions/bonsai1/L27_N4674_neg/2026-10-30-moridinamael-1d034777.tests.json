@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-30-moridinamael-1d034777",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N4674-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:49:28+00:00",
+ "neighbours": [
+  {
+   "unit": "L27/N4674",
+   "pole": "-",
+   "label": "the words ' bar' (as in barium, bar magnet, bar-code) and ' open' (before a noun, as in open filament) in technical or scientific text; weak for a pub bar or a door that is open",
+   "roles": ["reads bonsai1/L24/N3512-"],
+   "fire": [
+    "The sample was doped with a small amount of bar ium sulfate to improve contrast.",
+    "A bar magnet was placed beneath the glass plate to reveal the field lines in the iron filings.",
+    "Each package carries a bar code that the scanner reads in under a millisecond.",
+    "The lamp failed because the open filament oxidized when air leaked into the bulb.",
+    "Measurements were taken using an open circuit configuration to determine the cell's maximum voltage.",
+    "The steel bar was heated to 900 degrees before quenching in oil.",
+    "In the open loop controller, no feedback signal is used to correct the output.",
+    "A bar chart compares the tensile strength of the five alloys tested."
+   ],
+   "quiet": [
+    "The sample was doped with a small amount of calcium sulfate to improve contrast.",
+    "A horseshoe magnet was placed beneath the glass plate to reveal the field lines in the iron filings.",
+    "Each package carries a QR label that the scanner reads in under a millisecond.",
+    "The lamp failed because the broken filament oxidized when air leaked into the bulb.",
+    "Measurements were taken using a closed circuit configuration to determine the cell's maximum current.",
+    "The steel rod was heated to 900 degrees before quenching in oil.",
+    "In the closed loop controller, a feedback signal is used to correct the output.",
+    "A line graph compares the tensile strength of the five alloys tested."
+   ]
+  }
+ ],
+ "predictions": "Unsure: bar/open fired 0.3-0.9 of max in probes; generic frames may be weaker. Expect most fire items above 0.2, near misses low.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "blind-room"
+  ]
+ }
+}
