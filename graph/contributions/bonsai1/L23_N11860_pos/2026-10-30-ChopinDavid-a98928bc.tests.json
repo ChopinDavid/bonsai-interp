@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a98928bc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N11860+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N11860",
+   "pole": "+",
+   "label": "unclear: the card's top examples (max 59.5) are the last token of a noun phrase inside code docstrings, comments and help strings ('_git_current_hash, which', \"'before'\", 'status update', 'the superclass', 'bottom banner', '*minimum*') and in formal prose ('ISIS' successes', 'Gregory XVI'), but nine single-sentence probes built on them scored 0.007-0.016; best guess is that the pole needs a multi-line code context around the docstring or comment",
+   "fire": [
+    "def current_hash(repo):\n    \"\"\"Return the hash of the checked-out commit, which is used as the cache key.\"\"\"\n    return repo.head.commit.hexsha",
+    "    # The policy engine should raise in 'validate', and the\n    # plugin method must not be called afterwards.\n    with pytest.raises(PolicyError):\n        engine.validate(request)",
+    "def print_status(self, status):\n    \"\"\"Print a progress update in quiet mode.\n\n    Args:\n        status: the current extraction status.\n    \"\"\"",
+    "    if self.can_finalise:\n        # defer to the superclass implementation\n        return super().finalise()",
+    "    parser.add_argument('--no-header', help='Disable the top header')\n    parser.add_argument('--verbose', help='Print extra output')",
+    "    .. note::\n        This is a *lower bound*. The window may widen as needed.",
+    "The ground-motion estimate is based on real measurements, not on a synthetic catalogue.",
+    "Whether the movement's victories, and the full flowering of them, were lasting is another question."
+   ],
+   "quiet": [
+    "def current_hash(repo):\n    return repo.head.commit.hexsha",
+    "    with pytest.raises(PolicyError):\n        engine.validate(request)",
+    "def print_status(self, status):\n    print(status)",
+    "    if self.can_finalise:\n        return super().finalise()",
+    "    parser.add_argument('--no-header')\n    parser.add_argument('--verbose')",
+    "    window = max(window, lower_bound)",
+    "The estimate uses a synthetic catalogue.",
+    "The movement won several victories that year."
+   ]
+  }
+ ],
+ "predictions": "most fire items under 0.3; if the guess is right the docstring and comment items score highest and the bare-code twins stay under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun-phrase end inside code docstrings/comments (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 59.5, density 0.81%, no dominant token (',' x4, 'before', ' professional', ' successes', ' XVI', ' update', ' superclass', ' observations', ' banner', 'minimum'); eight of the top ten sit in Python docstrings, comments or option help strings. Probe: every sentence 0.007-0.016, including a docstring line (0.009), an add_option help string (0.016) and the '*minimum*' note (0.012). The single-line probes did not reproduce the card, so the test uses multi-line code with a docstring or comment (fire) against the same code with the docstring or comment removed (near miss), plus two prose items. Registered as unclear at low confidence."
+}

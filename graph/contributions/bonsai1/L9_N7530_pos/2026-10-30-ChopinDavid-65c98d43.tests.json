@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-65c98d43",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N7530+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N7530",
+   "pole": "+",
+   "label": "the concept of reform (institutional, political or religious) across languages and spellings: reformer 0.51, G|orb|achev 0.64, 改革 0.37, land reform 0.29 (peak on ' sweeping', predicting the word), Re|formation 0.24, ré|forme 0.25; 'form' 0.04, 'transform' 0.004 and 'revolution' 0.11 are quiet",
+   "fire": [
+    "The 1832 Reform Act widened the franchise.",
+    "Moderate reformists won a majority in the city assembly.",
+    "邓小平的改革开放政策改变了中国。",
+    "Реформы Петра Первого изменили русскую армию.",
+    "The Reformed churches of the Netherlands rejected bishops.",
+    "Gorbachev addressed the Congress on economic restructuring.",
+    "Pension reforms sparked strikes across the country.",
+    "Die Reform der Rechtschreibung war umstritten."
+   ],
+   "quiet": [
+    "The 1832 statute widened the franchise.",
+    "Moderate liberals won a majority in the city assembly.",
+    "邓小平的对外开放政策改变了中国。",
+    "Войны Петра Первого изменили русскую армию.",
+    "The Lutheran churches of the Netherlands rejected bishops.",
+    "Brezhnev addressed the Congress on economic planning.",
+    "Pension cuts sparked strikes across the country.",
+    "Die Formulierung des Gesetzes war umstritten."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.65 peaking on the reform piece or on Gorbachev's 'orb'; near misses under 0.15, the 'overhaul'/'cuts' meaning items possibly up to 0.3 because the pole also predicts 'reform' after 'sweeping'",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "reform (reform/reformer/改革/реформа/Gorbachev)",
+ "unit_kind": "concept",
+ "confidence": 0.5,
+ "notes": "Card: max 24.8, density 0.09%, peaks ' reform' x11, 'صلاح' x4 (الإصلاح), 'orb' x4 (Gorbachev), ' reforms' x3, 'form' x2 (Re|form Judaism, Ре|форм|а), ' Reform' x2. Probe: Gorbachev's perestroika 0.638 ('orb'), reformer 0.513, 教育改革 0.370, sweeping land reform 0.285 (peak ' sweeping'), réforme 0.246, Reformation 0.244; 'about the form' 0.037, 'transform into' 0.004, 'revolution overthrew' 0.111. Fire items use Reform Act, reformists, 改革开放, Реформы, Reformed churches, Gorbachev, pension reforms and German Reform mid-sentence; near misses keep the same sentences with statute/liberals/开放/Войны/Lutheran/Brezhnev/cuts/Formulierung."
+}

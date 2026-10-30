@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-56ebffb2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N6698-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N6698",
+   "pole": "-",
+   "label": "a thin covering spread over or under a surface, in food writing and description: 'a dusting of' (0.75, peak on the -ing garnish noun), 'on a bed of' (0.48), 'covered with' (0.29), 'a layer of' (0.26); container and quantity nouns in the same frame ('a bowl of' 0.16, 'a glass of' 0.13, 'a kilogram of' 0.05) are weak",
+   "fire": [
+    "The tart came with a light dusting of icing sugar.",
+    "Grilled halloumi arrived on a bed of rocket and mint.",
+    "A sprinkling of sea salt finishes the caramel.",
+    "The wings were glazed and served on a bed of slaw.",
+    "The fried rice came with a scattering of spring onions.",
+    "The cliff face is covered with orange lichen.",
+    "The gravel path was covered with a layer of wet leaves.",
+    "Each truffle gets a coating of toasted coconut."
+   ],
+   "quiet": [
+    "The tart came with a scoop of vanilla ice cream.",
+    "Grilled halloumi arrived with a side of rocket and mint.",
+    "A pinch of sea salt goes into the caramel.",
+    "The wings were glazed and served with a bowl of slaw.",
+    "The fried rice came with a plate of spring rolls.",
+    "The cliff face is home to nesting gulls.",
+    "The gravel path was blocked by a pile of wet leaves.",
+    "Each truffle weighs about a quarter of an ounce."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8, strongest on 'dusting'/'sprinkling'/'scattering' and 'bed of'; near misses 0.05-0.2 (container quantities)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "coating/garnish layer: a dusting of, on a bed of, covered with",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 26, density 0.18%, peaks ' of' x6 after dust|ing / sprink|ling / hint / bed / layer, ' covered' x2, ' bright' (feet are a bright orange), ' treated' (treated orally): a thin layer applied to a surface. Probe: 'a dusting of cocoa powder' 0.752, 'on a bed of lentils' 0.478, 'covered with fine silver hairs' 0.285, 'a thin layer of frost' 0.260, 'a drizzle of honey' 0.130, 'a hint of smoke' 0.024; near misses 'a bowl of soup' 0.157, 'a glass of red wine' 0.134, 'a kilogram of flour' 0.046. So the pole reads the covering relation (something spread thinly over or under), not the partitive 'of'. Fire items use dusting/sprinkling/scattering/coating/bed of/covered with mid-sentence; near misses keep the dish and swap in a container or quantity."
+}

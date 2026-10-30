@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7a19b45f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N1761+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N1761",
+   "pole": "+",
+   "label": "the parameter name right after an anonymous-function keyword ('fun x ->' 1.00, 'lambda n:' 0.72, 'lambda w:' 0.56, 'lambda event:' 0.54, 'lambda item:' 0.33); a parameter in a named definition ('def square(x)' 0.24) and the Greek letter in prose (0.009) are weak; a bare 'lambda:' with no parameter fires on the keyword itself (0.33)",
+   "fire": [
+    "pairs = [(3, 'c'), (1, 'a')]\nordered = sorted(pairs, key=lambda pair: pair[0])",
+    "self.button.clicked.connect(lambda checked: self.save())",
+    "squares = list(map(lambda value: value ** 2, range(10)))",
+    "let double = fun y -> y * 2 in\ndouble 21",
+    "reducer = lambda acc, cur: acc + cur\ntotal = functools.reduce(reducer, numbers, 0)",
+    "root.bind('<Return>', lambda evt: submit_form())",
+    "handler = lambda *args, **kwargs: None",
+    "let rec sum = fun lst -> match lst with [] -> 0 | h :: t -> h + sum t"
+   ],
+   "quiet": [
+    "pairs = [(3, 'c'), (1, 'a')]\ndef first(pair):\n    return pair[0]\nordered = sorted(pairs, key=first)",
+    "def on_click(checked):\n    self.save()\nself.button.clicked.connect(on_click)",
+    "squares = [value ** 2 for value in range(10)]",
+    "let double y = y * 2 in\ndouble 21",
+    "total = sum(numbers)",
+    "def submit(evt):\n    submit_form()\nroot.bind('<Return>', submit)",
+    "The decay constant lambda sets the half-life of the isotope.",
+    "let rec sum lst = match lst with [] -> 0 | h :: t -> h + sum t"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 peaking on the parameter token after lambda or fun; near misses under 0.25 (named def parameters highest)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "parameter after lambda / fun",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 34.3, density 0.02%, peaks ' x' x6, ' a' x6, ' event' x2, ' self' x2, ',' (lambda x, y), ' y', ' dialog', ' *' (lambda *args) and OCaml 'fun a x'. Probe: 'fun x -> x + 1' 0.999, 'lambda n: n * 2' 0.718, 'lambda w:' 0.557, 'lambda event:' 0.540, 'lambda item:' 0.327, 'add = lambda:' 0.329 (peak ' lambda'), 'def square(x):' 0.236 (peak '(x'), prose wavelength 0.009. Fire items are short code passages with Python lambda and OCaml fun parameters of varied names; near misses rewrite each as a named def, a comprehension, OCaml 'let f y' or prose."
+}
