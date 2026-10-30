@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d31c86b6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N1083-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N1083",
+   "pole": "-",
+   "label": "predicts an upcoming fight or quarrel noun: the article after 'the two X got into a ▁' or 'had a ▁' between two parties, and the first piece of the conflict noun itself (quar-, falling (out), раз-ногласий); fires on 'got into a' even when a taxi follows",
+   "fire": [
+    "Two of the defenders got into a shoving match in the car park after the final whistle.",
+    "The brothers had a bitter quarrel over the will and never spoke again.",
+    "Her parents got into a screaming row every Christmas about whose turn it was to carve.",
+    "The partnership ended after a falling out over the direction of the company.",
+    "Two drunk fans got into a brawl outside the stadium and were held overnight.",
+    "The composer and his librettist had a furious dispute about the final act.",
+    "Из-за разногласий с продюсером режиссёр покинул проект в середине съёмок.",
+    "The cousins got into a fistfight at the wedding and the police were called."
+   ],
+   "quiet": [
+    "Two of the defenders stayed in the car park signing shirts after the final whistle.",
+    "The brothers read the will together and divided the furniture in an afternoon.",
+    "Her parents cooked an enormous dinner every Christmas and fell asleep by the fire.",
+    "The partnership grew after a decision to move the company to Leeds.",
+    "Two cheerful fans sang outside the stadium and were filmed for the news.",
+    "The composer and his librettist shared a long lunch to celebrate the final act.",
+    "После долгих переговоров с продюсером режиссёр подписал контракт в середине лета.",
+    "The cousins danced at the wedding until the band packed up at midnight."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire at 0.5-0.9; near misses without the two-party conflict setup under 0.25",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "upcoming-fight slot",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'the two players got into a fist fight' 0.908 at ' a' and 'got into a taxi' also 0.908 at ' a' (a predictor, blind to the noun); 'got into a heated argument' 0.795; 'had a quarrel' 0.623 at ' quar'; 'falling outs' 0.578; разногласий 0.525 at ' раз'. 'had a barbecue' 0.353, 'broke up after years of touring' 0.218, library floor 0.016. Near misses therefore avoid 'got into a' and 'had a' after two parties rather than only swapping the noun. The + pole suppresses 'fight', 'quarrel', 'argument'."
+}

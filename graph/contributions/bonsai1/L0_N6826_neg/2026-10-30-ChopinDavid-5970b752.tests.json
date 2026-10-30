@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5970b752",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N6826-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N6826",
+   "pole": "-",
+   "label": "token bag: the word pieces 'ains' (Capt|ains, Vill|ains, Rem|ains), 'ured' (lect|ured, conj|ured, ten|ured) and the Chinese word 工作 ('work'); whole-word forms such as 'captured' or 'Mountains' are silent",
+   "fire": [
+    "In the film the Villains get all the best lines.",
+    "The two Captains shook hands before the toss.",
+    "Bronze Age Remains turned up when the motorway was widened.",
+    "The magician conjured a dove from an empty hat.",
+    "She has been tenured at the university since 2015.",
+    "He nurtured the seedlings on the windowsill all winter.",
+    "公司安排新员工先参加培训，两周后才能开始工作。",
+    "他每天早上八点开始工作，直到天黑才回家。"
+   ],
+   "quiet": [
+    "In the film the heroes get all the best lines.",
+    "The two umpires shook hands before the toss.",
+    "Bronze Age pottery turned up when the motorway was widened.",
+    "The magician produced a dove from an empty hat.",
+    "She has been employed at the university since 2015.",
+    "He watered the seedlings on the windowsill all winter.",
+    "公司安排新员工先参加培训，两周后才能开始上岗。",
+    "他每天早上八点开始上课，直到天黑才回家。"
+   ]
+  }
+ ],
+ "predictions": "8/8 fire at 0.4-0.85; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ains' / 'ured' / 工作 pieces",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: Capt|ains 0.728, Rem|ains 0.461, lect|ured 0.715, 工作 0.823. 'captured'/'measured' (single tokens) 0.015; the same sentences with officers/coins/spoken 0.031-0.059; 工作 replaced by 程序 0.071. A layer-0 polysemantic token pole; the trigger is declared so coverage is measured exactly.",
+ "trigger": {
+  "words": [
+   "ains",
+   "ured",
+   "工作"
+  ]
+ }
+}

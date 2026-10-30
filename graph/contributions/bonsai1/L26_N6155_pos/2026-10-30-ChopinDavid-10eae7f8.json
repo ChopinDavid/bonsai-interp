@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-10eae7f8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N6155+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T14:34:01+00:00",
+ "recipe": {
+  "toolchain_commit": "704c1939",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N6155_pos/2026-10-30-ChopinDavid-10eae7f8.tests.json"
+ },
+ "label": "holistic body-and-wellness prose (stress held in the body, energy flow, inner health showing on the skin, mind-body connection), peaking at the clause boundary that follows such a claim; the same sentence shapes about machines, money or gardens stay quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N6155_pos/2026-10-30-ChopinDavid-10eae7f8.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.45,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.842,
+     "peak": " since"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.659,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.627,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.566,
+     "peak": " because"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.144,
+     "peak": " When"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.519,
+     "peak": " up"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.685,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": "ronic"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.077,
+     "peak": " since"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.155,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.236,
+     "peak": " because"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.072,
+     "peak": " Even"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.08,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.643,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "704c1939",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "holistic wellness prose",
+ "unit_kind": "sparse feature",
+ "confidence": "high",
+ "notes": "Probe: body/wellness sentences 0.720-0.853 (peaks at '.', ' feel', ' what'); the same structures about inflation 0.069, a turbine 0.014, a bridge 0.009, a garden 0.239. Peak tokens on the card are '.', ' When', 'If' at clause boundaries inside health text.",
+ "selection": "random draw"
+}

@@ -1,0 +1,159 @@
+{
+ "id": "2026-10-30-ChopinDavid-49c74880",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N9223-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T14:34:02+00:00",
+ "recipe": {
+  "toolchain_commit": "704c1939",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N9223_neg/2026-10-30-ChopinDavid-49c74880.tests.json"
+ },
+ "label": "token bag: ' pain', ' causing' and ' bleeding' (symptom and causation words); a dense unit with a 0.2-0.4 background on most text",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N9223_neg/2026-10-30-ChopinDavid-49c74880.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 7,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.621,
+     "peak": " pain"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.762,
+     "peak": " causing"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.539,
+     "peak": " bleeding"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.732,
+     "peak": " causing"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.587,
+     "peak": " pain"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.623,
+     "peak": " bleeding"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.709,
+     "peak": " causing"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.566,
+     "peak": " pain"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.554,
+     "peak": " sore"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.309,
+     "peak": " common"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.336,
+     "peak": "Heavy"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.406,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.382,
+     "peak": " light"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.423,
+     "peak": " early"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.409,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.2,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.622,
+    "near_misses_at_0.3": 7
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "704c1939",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "pain / causing / bleeding (dense)",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: ' causing' 0.955 and 0.809, ' pain' 0.797, ' bleeding' 0.737; the same sentences with the word replaced 0.218-0.366; an unrelated museum sentence 0.389. The card flags 47% density and a 100% gate-closed regime, so this is background activity with lexical peaks; the trigger words are declared.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "pain",
+   "causing",
+   "bleeding"
+  ]
+ }
+}

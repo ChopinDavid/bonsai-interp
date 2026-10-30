@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-ChopinDavid-f3fa3778",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N10327+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T14:34:15+00:00",
+ "recipe": {
+  "toolchain_commit": "704c1939",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N10327_pos/2026-10-30-ChopinDavid-f3fa3778.tests.json"
+ },
+ "label": "the Chinese conjunction 与 ('and' / 'with') joining two nouns in formal prose; 和 in the same slot is silent. The Russian prefix piece ' не' (не|сметное) is a weaker second trigger",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N10327_pos/2026-10-30-ChopinDavid-f3fa3778.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.077,
+     "peak": "大学"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.171,
+     "peak": "与"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.077,
+     "peak": "双方"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.15,
+     "peak": "与"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.22,
+     "peak": "与"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.027,
+     "peak": "当地"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.101,
+     "peak": "与"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.028,
+     "peak": "与"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.077,
+     "peak": "大学"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.031,
+     "peak": "论坛"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.062,
+     "peak": "双方"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": "学习成绩"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": "科技创新"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.027,
+     "peak": "当地"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": "报告"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": "教练"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.883,
+    "median_fire": 0.089,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "704c1939",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Chinese 与 conjunction",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 与 0.390 and 0.381 in two sentences; the same sentences with 和 0.045 and 0.042. Russian ' не' as a split prefix 0.082 and 0.169, the same sentences without it 0.030-0.042; English floor 0.026. Max is 3.94, so 0.39 is about 1.5 in raw units. The near misses deliberately share the prefix up to the conjunction because the trigger is the token itself, not a prediction, and the 和 controls were silent with that prefix in the probe.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "与"
+  ]
+ }
+}

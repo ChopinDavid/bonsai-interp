@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c0321b00",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N9528+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N9528",
+   "pole": "+",
+   "label": "word-final French/Spanish piece 'ien' or 'ens' (paris|ien, anc|ien, ch|ien, musici|ens, c|ien); a dense unit that sits at 0.2-0.5 on most French text",
+   "fire": [
+    "Le vieux chien dormait sous la table pendant tout le repas.",
+    "Son travail quotidien consiste à répondre aux courriers des lecteurs.",
+    "Le comédien a oublié son texte au milieu du deuxième acte.",
+    "Les techniciens ont réparé la chaudière en moins d'une heure.",
+    "Les citoyens de la commune ont voté contre le nouveau parking.",
+    "Plusieurs pays européens ont fermé leurs frontières cet hiver.",
+    "Nous n'avons pas les moyens de refaire la toiture cette année.",
+    "Un temple égyptien a été découvert près du delta la semaine dernière."
+   ],
+   "quiet": [
+    "Le vieux chat dormait sous la table pendant tout le repas.",
+    "Son travail habituel consiste à répondre aux courriers des lecteurs.",
+    "L'acteur a oublié son texte au milieu du deuxième acte.",
+    "Les ouvriers ont réparé la chaudière en moins d'une heure.",
+    "Les habitants de la commune ont voté contre le nouveau parking.",
+    "Plusieurs pays du nord ont fermé leurs frontières cet hiver.",
+    "Nous n'avons pas le budget pour refaire la toiture cette année.",
+    "Un temple romain a été découvert près du delta la semaine dernière."
+   ]
+  }
+ ],
+ "predictions": "8/8 fire at 0.6-0.8; near misses 0.2-0.5 because the unit is dense (15% of tokens reach 0.1 of max)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "-ien/-ens piece (dense)",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: paris|ien 0.803, pharmaci|ens 0.808, c|ien 0.789, musici|ens 0.708, anc|ien 0.644. French controls without the piece 0.29-0.55 (Se|ine 0.552 is the highest control), English 0.212. The card flags it dense with the gate-closed regime at 100%, so this is background French-suffix activity with a peak on 'ien'/'ens'; near misses avoid '-ine' pieces.",
+ "trigger": {
+  "words": [
+   "ien",
+   "ens"
+  ]
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-12fc2669",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9883+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T14:33:17+00:00",
+ "recipe": {
+  "toolchain_commit": "704c1939",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L23_N9883_pos/2026-10-30-ChopinDavid-12fc2669.tests.json"
+ },
+ "label": "the connector inside an explicit span of letters, numbers or dates: 'from A to E', 'from Monday 12th to Friday 16th', the Python slice '[:n]'; a single endpoint without a span is silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N9883_pos/2026-10-30-ChopinDavid-12fc2669.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.258,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.24,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.443,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.169,
+     "peak": "[:"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.219,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.032,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.181,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.035,
+     "peak": "[:"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " label"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " Tuesday"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.2,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "704c1939",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "from-X-to-Y span connector",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'lettered from A to E' 0.868 at ' to', 'from Monday 12th to Friday 16th' 0.731, 'args[:4]' 0.377 at '[:'. 'range(4)' 0.017 and 'pages 1-4' 0.057 did not fire, so hyphen ranges and range() calls are excluded from the label. Near misses with one endpoint ('group A', 'opens on Monday 12th') 0.005-0.012. The - pole promotes small number words (five, four, six).",
+ "selection": "random draw"
+}

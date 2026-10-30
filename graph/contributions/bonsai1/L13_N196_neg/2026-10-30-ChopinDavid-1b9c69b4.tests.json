@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1b9c69b4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N196-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N196",
+   "pole": "-",
+   "label": "unclear: a weak pole (max 4.7) whose top examples mix a hyphen used as a dash, and the first piece of a rare multi-piece proper noun (' H'|ousatonic, ' Del'|phian, ' Burk'|ina); best guess tested here is the single-letter or short first piece of such a name",
+   "fire": [
+    "The ferry crossed the Housatonic twice a day in summer.",
+    "A storm off Cape Hatteras sank three schooners in a single night.",
+    "The last Hohenzollern prince spent his final years in a Dutch village.",
+    "Many Huguenot families settled in Spitalfields and wove silk.",
+    "The family moved to Hialeah when the racetrack opened.",
+    "Flooding along the Delmarva peninsula closed the coastal road.",
+    "The county seat of Hennepin is a short tram ride from the river.",
+    "Doctors identified Burkitt lymphoma in children across the region."
+   ],
+   "quiet": [
+    "The ferry crossed the Hudson twice a day in summer.",
+    "A storm off Cape Cod sank three schooners in a single night.",
+    "The last Stuart prince spent his final years in a Swiss village.",
+    "Many Irish families settled in Liverpool and worked the docks.",
+    "The family moved to Miami when the racetrack opened.",
+    "Flooding along the Florida coast closed the coastal road.",
+    "The county seat of Dallas is a short tram ride from the river.",
+    "Doctors identified leukaemia in children across the region."
+   ]
+  }
+ ],
+ "predictions": "likely to fail: 2/8 fire above 0.15, near misses 0.03-0.07",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear (weak; rare-name first piece)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: nothing fired. Hyphen-as-dash 'the Pequod- that ship' 0.071 versus the comma version 0.068; 'Technology- MMIS' 0.059 versus the bracket version 0.059; Delphian 0.063; the only lift was ' H'ousatonic 0.179 at ' H'. Plain floors 0.036-0.050. Recorded as unclear with a best-guess test on the rare-name first piece."
+}
