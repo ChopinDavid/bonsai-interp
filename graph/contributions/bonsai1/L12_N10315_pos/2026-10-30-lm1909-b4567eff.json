@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-b4567eff",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N10315+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:21:46+00:00",
+ "recipe": {
+  "toolchain_commit": "4bd423dc",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N10315_pos/2026-10-30-lm1909-b4567eff.tests.json"
+ },
+ "label": "A fractional or multiple comparison of size or amount ('three-quarters of the sun', 'a tenth as heavy as Earth', 'twice the risk', '220% of the risk', '4倍'), firing on 'of', 'as' or 'the' after the fraction or multiple; plain comparisons without a ratio stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N10315_pos/2026-10-30-lm1909-b4567eff.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.405,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.808,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.736,
+     "peak": " times"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.536,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.438,
+     "peak": " twice"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.578,
+     "peak": " size"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.426,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.746,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.068,
+     "peak": " than"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.184,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " disease"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.057,
+     "peak": " than"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.184,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": " now"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.055,
+     "peak": " than"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.557,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4bd423dc",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "fraction/multiple comparisons ('a tenth as heavy as')",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.7,
+ "notes": "Card: ' times' x8, ' half' x4, ' of' x3, ' as' x2, Chinese 倍 (three-quarters⟦ of⟧ the sun; 220%⟦ of⟧ the risk; a tenth as heavy⟦ as⟧ the Earth; 欧美国家的4⟦倍⟧). Exploratory probe: 'a tenth as heavy as' 1.35, 'three-quarters of the size' 0.60, 'twice the risk' 0.58; 'close to Earth' 0.004.",
+ "selection": "random draw"
+}

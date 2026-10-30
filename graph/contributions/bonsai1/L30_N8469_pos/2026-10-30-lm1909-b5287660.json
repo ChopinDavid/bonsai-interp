@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-b5287660",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N8469+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:22:20+00:00",
+ "recipe": {
+  "toolchain_commit": "4bd423dc",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L30_N8469_pos/2026-10-30-lm1909-b5287660.tests.json"
+ },
+ "label": "Low-confidence guess: a contact line that names a person and then a program or office ('directed to K.C. Alexander, DEEP Recycling Program'), firing on the comma or the program name; plain contact instructions stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N8469_pos/2026-10-30-lm1909-b5287660.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.723,
+     "peak": " Outreach"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.445,
+     "peak": " Health"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.477,
+     "peak": " Project"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.398,
+     "peak": " Housing"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.62,
+     "peak": " Partnership"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.192,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.513,
+     "peak": " Initiative"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.733,
+     "peak": " Outreach"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.07,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.126,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.116,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.079,
+     "peak": " out"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.495,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4bd423dc",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "contact name + program in a notice (guess)",
+ "unit_kind": "unclear / prediction",
+ "confidence": 0.25,
+ "notes": "Card: ',' x9, ' executive' x3, ' Outreach' x2 (directed to K.C. Alexander⟦,⟧ DEEP Recycling Program); output promotes ' initiative', ' partnerships', ' project'. Exploratory probe: that sentence 0.42 (peak ' Program'), 'sent by email' 0.07.",
+ "selection": "random draw"
+}

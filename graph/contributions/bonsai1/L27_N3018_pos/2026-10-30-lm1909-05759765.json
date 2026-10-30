@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-05759765",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N3018+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:21:51+00:00",
+ "recipe": {
+  "toolchain_commit": "4bd423dc",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N3018_pos/2026-10-30-lm1909-05759765.tests.json"
+ },
+ "label": "Low-confidence guess: the last syllable of Korean/Japanese words for activity or learning (활|동, 학|습, 学|び), where 'results' is a likely continuation; no clear trigger.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N3018_pos/2026-10-30-lm1909-05759765.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.676,
+     "peak": "동"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.868,
+     "peak": "습"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.283,
+     "peak": "び"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.37,
+     "peak": "동"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.546,
+     "peak": "습"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.723,
+     "peak": "習"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.575,
+     "peak": "동"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.788,
+     "peak": "の"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.4,
+     "peak": "운동"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " 적"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.086,
+     "peak": "索"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.308,
+     "peak": " 참여"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.37,
+     "peak": " 사용"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.11,
+     "peak": "を見る"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " 추"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.117,
+     "peak": "表"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.93,
+    "median_fire": 0.625,
+    "near_misses_at_0.3": 3
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4bd423dc",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "Korean/Japanese activity/learning words (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.05,
+ "notes": "Card: '동' x6, ' 실행' x4, 'ング' x3, '習' x2, '습' x2 (学⟦び⟧たい; 활⟦동⟧ 중에); output promotes ' results', ' counts'. Not probed. Expected to fail.",
+ "selection": "random draw"
+}
