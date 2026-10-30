@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N9407-",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 9407,
+ "pole": "-",
+ "label": "unclear; best guess: observational astronomy prose (exoplanet transits, solar wind, telescopes), peaking on word-start pieces",
+ "short": "astronomy prose",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N9407_neg/2026-10-30-ChopinDavid-a5e27c22.tests.json",
+   "prereg_commit": "14a33d54",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.736,
+     "peak": " trans"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.395,
+     "peak": " magnet"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.08,
+     "peak": "-based"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.279,
+     "peak": " hel"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.515,
+     "peak": " gl"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.178,
+     "peak": " surrounding"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.112,
+     "peak": " monitored"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.537,
+     "peak": " Sun"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": " pressure"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": " air"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " batteries"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.04,
+     "peak": " voltage"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.045,
+     "peak": " heats"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " hour"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.228,
+     "peak": " lines"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.337,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-a5e27c22"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-a5e27c22",
+   "unclear; best guess: observational astronomy prose (exoplanet transits, solar wind, telescopes), peaking on word-start pieces",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-a5e27c22"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

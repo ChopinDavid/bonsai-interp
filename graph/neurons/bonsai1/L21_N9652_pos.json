@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L21/N9652+",
+ "model": "bonsai1",
+ "layer": 21,
+ "index": 9652,
+ "pole": "+",
+ "label": "a placeholder inside a string-interpolation template in code (%s, %d, %(name)s, {}, {name}, ${x}), peaking on the specifier letter or closing brace",
+ "short": "format-string placeholder",
+ "kind": "context",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N9652_pos/2026-10-30-ChopinDavid-29cadaca.tests.json",
+   "prereg_commit": "14a33d54",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.51,
+     "peak": "d"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.179,
+     "peak": "s"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.678,
+     "peak": "}"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.448,
+     "peak": "f"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.496,
+     "peak": "d"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.674,
+     "peak": ")s"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.342,
+     "peak": "f"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.453,
+     "peak": "}"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "(\""
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " *"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.051,
+     "peak": " \""
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.056,
+     "peak": " %"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.036,
+     "peak": "(\""
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.308,
+     "peak": " +"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " survey"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.725,
+     "peak": " +"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.475,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-29cadaca"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-29cadaca",
+   "a placeholder inside a string-interpolation template in code (%s, %d, %(name)s, {}, {name}, ${x}), peaking on the specifier letter or closing brace",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-29cadaca"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
