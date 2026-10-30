@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-a0990d5c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N9984+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:12:05+00:00",
+ "recipe": {
+  "toolchain_commit": "2a0da68b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N9984_pos/2026-10-30-lm1909-a0990d5c.tests.json"
+ },
+ "label": "' import' (and the last module piece before it) in a Python 'from package.module import name' line; plain 'import x' lines stay low.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N9984_pos/2026-10-30-lm1909-a0990d5c.tests.json",
+   "prereg_commit": "2a0da68b",
+   "author": "lm1909",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.248,
+     "peak": " import"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.284,
+     "peak": " import"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.575,
+     "peak": " import"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.468,
+     "peak": ".metrics"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.331,
+     "peak": " import"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.335,
+     "peak": " import"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.372,
+     "peak": " import"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.322,
+     "peak": " import"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.125,
+     "peak": " collections"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.159,
+     "peak": " django"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.085,
+     "peak": "import"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.433,
+     "peak": " sklearn"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.185,
+     "peak": " email"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.096,
+     "peak": " os"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.144,
+     "peak": " torch"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.065,
+     "peak": "import"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.333,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2a0da68b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "' import' in 'from pkg.mod import name'",
+ "unit_kind": "code / contextual",
+ "confidence": 0.7,
+ "notes": "Card: ' import' x19, '.parse' x5 (from urllib⟦.parse⟧ import; from os.path⟦ import⟧ join; from numpy.random⟦ import⟧ normal). Exploratory probe: 'from urllib.parse import' 0.65, 'from os.path import' 0.40, 'from numpy.random import' 0.42; plain 'import os' 0.10.",
+ "selection": "random draw"
+}

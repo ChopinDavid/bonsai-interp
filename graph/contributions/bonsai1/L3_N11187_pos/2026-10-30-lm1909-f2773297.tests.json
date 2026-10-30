@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-f2773297",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N11187+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N11187",
+   "pole": "+",
+   "label": "A name ending in 'ari' (Ferrari, Atari, Qat|ari, calam|ari), whether 'ari' is its own piece or the whole name is one token (' Ferrari', ' Atari'); names with other endings (Porsche, Maserati, Sega) and 'safari' (one token) stay quiet.",
+   "fire": [
+    "My uncle restored a vintage Ferrari in his garage.",
+    "The museum has an Atari arcade cabinet from 1979.",
+    "A Qatari investor bought the football club.",
+    "We ordered fried calamari as a starter.",
+    "Ferrari unveiled a new hybrid model in Geneva.",
+    "Kids queued to play Pong on the Atari.",
+    "The Qatari embassy is on the next street.",
+    "The fishmonger sells fresh calamari on Fridays."
+   ],
+   "quiet": [
+    "My uncle restored a vintage Porsche in his garage.",
+    "The museum has a Sega arcade cabinet from 1979.",
+    "A Saudi investor bought the football club.",
+    "We ordered fried prawns as a starter.",
+    "Maserati unveiled a new hybrid model in Geneva.",
+    "Kids queued to play Pong on the Nintendo.",
+    "The Saudi embassy is on the next street.",
+    "The travel agent sells safari trips on Fridays."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "names ending in '-ari' (Ferrari, Atari)",
+ "unit_kind": "spelling / lexical",
+ "confidence": 0.6,
+ "notes": "Card: 'ari' x18 (Ferr|ari, At|ari), ' Ferrari' x7, ' Atari' x2; word hits 'ari' cov 64%, ' Ferrari' 14%. Tokenizer checked: Q|at|ari, calam|ari split; Ferrari, Atari, safari, Porsche, Sega, Saudi are one token; Maserati is M|aser|ati. Exploratory probe: Ferrari 0.92, Atari 0.65, Qatari 0.30; safari 0.001, Porsche 0.001."
+}

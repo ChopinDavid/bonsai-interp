@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-2f71e843",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N3551+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N3551",
+   "pole": "+",
+   "label": "'Conference' in the name of an event ('the World Conference on …'), and less strongly the word 'concert'; meetings named without 'Conference' stay quiet.",
+   "fire": [
+    "Delegates met at the World Conference on Women in Beijing.",
+    "She presented her paper at the International Conference on Robotics.",
+    "The Asian Conference on Education opens on Monday.",
+    "He chaired the National Conference of Mayors last year.",
+    "The European Conference on Ecology was held in Lyon.",
+    "Tickets for the concert sold out in an hour.",
+    "The Annual Conference on Rural Health moved online.",
+    "The choir gave a concert in the cathedral."
+   ],
+   "quiet": [
+    "Delegates met in Beijing to discuss women's rights.",
+    "She presented her paper at a robotics meeting in Paris.",
+    "The Asian education fair opens on Monday.",
+    "He chaired the national meeting of mayors last year.",
+    "The European ecology society met in Lyon.",
+    "Tickets for the match sold out in an hour.",
+    "The rural health forum moved online.",
+    "The choir sang hymns in the cathedral."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.6; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'Conference' in event names (and 'concert')",
+ "unit_kind": "lexical",
+ "confidence": 0.45,
+ "notes": "Card: ' concert' x4, ' Conference' x3, ' Research' x3, ' Concert' x2, German/French 'Con|cert'. Exploratory probe: 'World Conference on Climate' 0.56, 'played a concert' 0.21, 'went to a concert' 0.07; meeting/picnic 0.01-0.02. A two-word label; 'concert' may be weak."
+}

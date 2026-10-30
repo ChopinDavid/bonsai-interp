@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-e41d49dc",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N6535+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N6535",
+   "pole": "+",
+   "label": "A modifier that starts the name of a kind of study or written report, predicting a plural head like 'studies' or 'reports' ('case' studies, 'research' reports, Environmental 'Impact' Statements, 'Literary' Essays); the same sentences naming the document without such a modifier stay quiet.",
+   "fire": [
+    "The course is built around business case studies.",
+    "Interns write market research reports every quarter.",
+    "The council published an environmental impact assessment.",
+    "Her collected literary essays appeared in 1990.",
+    "Teachers use field trip reports to grade students.",
+    "The journal prints clinical trial results each month.",
+    "We read three feasibility studies before deciding.",
+    "Students present science fair projects in May."
+   ],
+   "quiet": [
+    "The course is built around lectures and seminars.",
+    "Interns write short summaries every quarter.",
+    "The council published a new plan for the river.",
+    "Her collected letters appeared in 1990.",
+    "Teachers use quizzes to grade students.",
+    "The journal prints new articles each month.",
+    "We read three books before deciding.",
+    "Students present their posters in May."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "modifier before 'studies/reports' (case studies)",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.6,
+ "notes": "Card: no single token (' research', ' case', ' meta', ' Science', ' Impact', ' Literary': 8th Grade⟦ Science⟧ Experiments; essays,⟦ research⟧ reports; Environmental⟦ Impact⟧ Statements; a series of⟦ case⟧ studies); output promotes ' analyses', ' studies', ' reports'. Exploratory probe: case studies 0.62, research reports 0.67, Impact Statements 0.55, 'a research report' 0.44; 'a long story' 0.004."
+}

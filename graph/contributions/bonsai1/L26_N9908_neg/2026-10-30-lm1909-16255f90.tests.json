@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-16255f90",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N9908-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N9908",
+   "pole": "-",
+   "label": "Technical-manual text that sends the reader to a numbered table or section ('obtained by referring to Table 3-9.', 'see Table 4-2', 'listed in Section 5.1'), firing at the reference; the same sentences without a table reference stay quiet.",
+   "fire": [
+    "The pipe size is found by referring to Table 4-2.",
+    "Allowable loads are listed in Table 7-1 of the code.",
+    "Select the cable rating from Table 310.16.",
+    "Correction factors are given in Table B-3.",
+    "For wall thickness, see Table 2-5 in Appendix A.",
+    "The design flow is read from Table 6-4.",
+    "Values for other soils appear in Table 3-12.",
+    "Use the spacing shown in Table 9-1 for timber joists."
+   ],
+   "quiet": [
+    "The pipe size depends on the expected flow.",
+    "Allowable loads depend on the beam and its supports.",
+    "Select a cable that can carry the full current.",
+    "Correction factors depend on temperature and altitude.",
+    "Wall thickness depends on the pressure inside.",
+    "The design flow is measured at the outlet.",
+    "Values for other soils vary with moisture.",
+    "Use wider spacing for heavy timber joists."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.65; near misses below 0.1; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "manual text referring to 'Table 3-9'",
+ "unit_kind": "format / contextual",
+ "confidence": 0.5,
+ "notes": "Card: peaks on ' the', ' a', ' is', ' and' in glossary and manual text (Module Derate Factor — A factor that...; obtained by referring⟦ to⟧ Table 3-9); output suppresses ' table', ' tables', ' interpolation', ' standard'. Exploratory probe: 'by referring to Table 3-9.' 0.65 (peak on the final '.'), glossary entry 0.23 or 0.02, plain sentence 0.009."
+}

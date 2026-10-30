@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-fecb0567",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N2615+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N2615",
+   "pole": "+",
+   "label": "The later piece of an herb or spice name that the tokenizer splits (tur|meric, milk th|istle, th|yme, o|reg|ano, c|umin, pap|rika); herbs and spices that are one token (ginger, basil, garlic, cinnamon) stay quiet.",
+   "fire": [
+    "Stir a pinch of turmeric into the lentils.",
+    "Season the lamb with dried thyme and salt.",
+    "Toast the cumin seeds in a dry pan.",
+    "Dust the eggs with smoked paprika before serving.",
+    "Many people take milk thistle as a supplement.",
+    "The tomato sauce needs more oregano.",
+    "Grate a little nutmeg over the custard.",
+    "She brewed a cup of chamomile tea before bed."
+   ],
+   "quiet": [
+    "Stir a pinch of ginger into the lentils.",
+    "Season the lamb with dried mint and salt.",
+    "Toast the sesame seeds in a dry pan.",
+    "Dust the eggs with black pepper before serving.",
+    "Many people take garlic pills as a supplement.",
+    "The tomato sauce needs more basil.",
+    "Grate a little cinnamon over the custard.",
+    "She brewed a cup of lavender tea before bed."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.75; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "final piece of a split herb/spice name",
+ "unit_kind": "spelling / token piece",
+ "confidence": 0.7,
+ "notes": "Card: 'meric' x7 (tur|meric), 'ano' x4, 'istle' x3 (milk th|istle), 'yme' x2 (th|yme). Tokenizer checked: tur|meric, th|yme, c|umin, pap|rika, th|istle, o|reg|ano, nut|meg, cham|om|ile split; ginger, mint, sesame, pepper, garlic, basil, cinnamon, lavender are one token. Exploratory probe: turmeric 0.74, thistle 0.60, oregano 0.63; ginger 0.03, basil -0.11."
+}

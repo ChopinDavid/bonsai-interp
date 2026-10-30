@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8f2b239d",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N11742+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N11742",
+   "pole": "+",
+   "label": "Low-confidence guess: the word that completes a well-known fixed phrase or idiom ('the Wicked Witch of the West', 'move the needle', 'a needle in a haystack'); the same sentences with ordinary wording stay quiet.",
+   "fire": [
+    "The new law barely moved the needle on poverty.",
+    "Finding the file was like looking for a needle in a haystack.",
+    "Settlers headed out to the Wild West in covered wagons.",
+    "She played the Wicked Witch of the West in the school play.",
+    "That tiny donation won't move the needle much.",
+    "Kids loved the cowboy films about the Old West.",
+    "Searching that archive is a needle in a haystack.",
+    "The flying monkeys served the Witch of the West."
+   ],
+   "quiet": [
+    "The new law barely changed the level of poverty.",
+    "Finding the file took most of the afternoon.",
+    "Settlers headed out to new farms in covered wagons.",
+    "She played a scary witch in the school play.",
+    "That tiny donation won't change much.",
+    "Kids loved the cowboy films with horses.",
+    "Searching that archive takes a long time.",
+    "The flying monkeys served the witch in the castle."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8; near misses below 0.3 (pole is broad); uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "word completing a fixed idiom (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Weak, broad pole (corpus max 0.40, 4.2% of tokens above 0.1). Card: ' West' x6, ' needle' x4, Chinese 分 x3 (points), ' west' x3, ' risk', ' Square'. Exploratory probe: 'Wicked Witch of the West' 0.81, 'move the needle' 0.72, '16分' 0.59; plain 'a witch for the party' 0.07. The idiom pattern is a guess at what the list shares."
+}

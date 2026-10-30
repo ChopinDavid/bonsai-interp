@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-2f71e843",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N3551+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:12:26+00:00",
+ "recipe": {
+  "toolchain_commit": "2a0da68b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N3551_pos/2026-10-30-lm1909-2f71e843.tests.json"
+ },
+ "label": "'Conference' in the name of an event ('the World Conference on …'), and less strongly the word 'concert'; meetings named without 'Conference' stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N3551_pos/2026-10-30-lm1909-2f71e843.tests.json",
+   "prereg_commit": "2a0da68b",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.519,
+     "peak": " Conference"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.141,
+     "peak": " Conference"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.288,
+     "peak": " Conference"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.344,
+     "peak": " Conference"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.568,
+     "peak": " Conference"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.116,
+     "peak": " concert"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.17,
+     "peak": " Conference"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.086,
+     "peak": " concert"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " women"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " paper"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " education"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.083,
+     "peak": " meeting"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": " society"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.026,
+     "peak": "Tickets"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " health"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.026,
+     "peak": " hym"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.229,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2a0da68b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'Conference' in event names (and 'concert')",
+ "unit_kind": "lexical",
+ "confidence": 0.45,
+ "notes": "Card: ' concert' x4, ' Conference' x3, ' Research' x3, ' Concert' x2, German/French 'Con|cert'. Exploratory probe: 'World Conference on Climate' 0.56, 'played a concert' 0.21, 'went to a concert' 0.07; meeting/picnic 0.01-0.02. A two-word label; 'concert' may be weak.",
+ "selection": "random draw"
+}

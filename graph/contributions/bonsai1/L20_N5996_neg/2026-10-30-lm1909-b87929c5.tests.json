@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-b87929c5",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N5996-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N5996",
+   "pole": "-",
+   "label": "A phrase that points back to things already named ('a combination of the two', 'a pot of the same name', 'dependent on it'), firing on 'two', 'name' or 'it'; the same sentences with the referent spelled out stay quiet.",
+   "fire": [
+    "You can pay by card or in cash, or use a mix of the two.",
+    "The soup is served in a bowl of the same name.",
+    "Farmers grow rice and beans, and many grow both of the two.",
+    "The town gave its name to the cheese of the same name.",
+    "Tea or coffee? I could never choose between the two.",
+    "The lake lies beside a village of the same name.",
+    "Some prefer the train, some the bus; I use neither of the two.",
+    "The dance comes from the region of the same name."
+   ],
+   "quiet": [
+    "You can pay by card or in cash at the front desk.",
+    "The soup is served in a deep bowl with bread.",
+    "Farmers grow rice and beans on the river plain.",
+    "The town is famous for its soft cheese.",
+    "Tea or coffee? I usually drink tea in the morning.",
+    "The lake lies beside a small fishing village.",
+    "Some prefer the train, some the bus, some the car.",
+    "The dance comes from the mountains in the north."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "pointing back to named things ('the two', 'same name')",
+ "unit_kind": "contextual / discourse",
+ "confidence": 0.4,
+ "notes": "Card: no single token (' two' x3, ' below' x3, ' it' x3, ' known' x3: a combination of the two; see below; a clay pot of the same name; dependent on it). Exploratory probe: 'of the two' 0.43, 'of the same name' 0.35, 'on it' 0.17, 'see below' 0.14; same sentences without the back-reference 0.006-0.015. The test keeps to 'the two' and 'the same name'."
+}

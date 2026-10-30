@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-f2773297",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N11187+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:12:03+00:00",
+ "recipe": {
+  "toolchain_commit": "2a0da68b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N11187_pos/2026-10-30-lm1909-f2773297.tests.json"
+ },
+ "label": "A name ending in 'ari' (Ferrari, Atari, Qat|ari, calam|ari), whether 'ari' is its own piece or the whole name is one token (' Ferrari', ' Atari'); names with other endings (Porsche, Maserati, Sega) and 'safari' (one token) stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N11187_pos/2026-10-30-lm1909-f2773297.tests.json",
+   "prereg_commit": "2a0da68b",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.798,
+     "peak": " Ferrari"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.722,
+     "peak": " Atari"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.279,
+     "peak": "ari"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.287,
+     "peak": "ari"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.125,
+     "peak": "ari"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.565,
+     "peak": " Atari"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.299,
+     "peak": "ari"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.332,
+     "peak": "ari"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": " his"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " cabinet"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " Saudi"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " fried"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.152,
+     "peak": "ati"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": "ong"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.008,
+     "peak": " Saudi"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.0,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.449,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "2a0da68b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "names ending in '-ari' (Ferrari, Atari)",
+ "unit_kind": "spelling / lexical",
+ "confidence": 0.6,
+ "notes": "Card: 'ari' x18 (Ferr|ari, At|ari), ' Ferrari' x7, ' Atari' x2; word hits 'ari' cov 64%, ' Ferrari' 14%. Tokenizer checked: Q|at|ari, calam|ari split; Ferrari, Atari, safari, Porsche, Sega, Saudi are one token; Maserati is M|aser|ati. Exploratory probe: Ferrari 0.92, Atari 0.65, Qatari 0.30; safari 0.001, Porsche 0.001.",
+ "selection": "random draw"
+}
