@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-b60bce6e",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N11893-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N11893",
+   "pole": "-",
+   "label": "Low-confidence guess: a subject pronoun where 'already' is a likely next word ('if you can', 'I just'); no clear trigger.",
+   "fire": [
+    "If you have already paid, ignore this letter.",
+    "I have already eaten, thanks.",
+    "You may already know her brother.",
+    "We had already left when he called.",
+    "They have already sold the house.",
+    "If you already have an account, log in.",
+    "She had already gone to bed.",
+    "I already told you the answer."
+   ],
+   "quiet": [
+    "If the bill is unpaid, call this number.",
+    "Dinner is on the table, thanks.",
+    "Her brother lives in Leeds.",
+    "The call came at nine.",
+    "The house is on sale.",
+    "Accounts can be opened online.",
+    "Bedtime is at ten.",
+    "The answer is on page two."
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.2; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "pronoun before 'already' (guess)",
+ "unit_kind": "unclear / prediction",
+ "confidence": 0.05,
+ "notes": "Card: ' you' x4, ' I' x4, ' just' x3; output promotes ' already', 已, ' has'. Exploratory probe weak: 'if you can' 0.03. The test includes 'already' itself, so it checks whether the pole fires near 'already'. Expected to fail."
+}

@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-2d4c6626",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N2406-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:22:30+00:00",
+ "recipe": {
+  "toolchain_commit": "4bd423dc",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N2406_neg/2026-10-30-lm1909-2d4c6626.tests.json"
+ },
+ "label": "' changing' in 'a changing climate / world / environment' (a world in flux), firing on ' changing'; 'changing' as an action on an object (changing a tyre) stays lower.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N2406_neg/2026-10-30-lm1909-2d4c6626.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.613,
+     "peak": " changing"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.603,
+     "peak": " changing"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.456,
+     "peak": " changing"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.16,
+     "peak": " changing"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.579,
+     "peak": " changing"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.568,
+     "peak": " changing"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.541,
+     "peak": " changing"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.643,
+     "peak": " changing"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.266,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.036,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.179,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.077,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.031,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.037,
+     "peak": "'s"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " at"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.573,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4bd423dc",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'a changing climate/world'",
+ "unit_kind": "lexical / contextual",
+ "confidence": 0.55,
+ "notes": "Card: ' in' x3, ' changing' x2, ' is', ' the', ' World' x2 (food security, especially in a⟦ changing⟧ climate; a land war⟦ in⟧ Asia); output promotes ' where', ' society', ' culture', ' environments'. Exploratory probe: 'in a changing climate' 0.69; 'land war in Asia' 0.29.",
+ "selection": "random draw"
+}

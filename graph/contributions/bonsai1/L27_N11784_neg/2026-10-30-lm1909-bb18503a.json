@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-bb18503a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N11784-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:22:25+00:00",
+ "recipe": {
+  "toolchain_commit": "4bd423dc",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L27_N11784_neg/2026-10-30-lm1909-bb18503a.tests.json"
+ },
+ "label": "' leaving' (and ' left') for what remains after something is removed ('remove the cells, leaving only the skeleton', 'leaving a thin crust'); 'leave/left' as departing or as a direction stays low.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N11784_neg/2026-10-30-lm1909-bb18503a.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.42,
+     "peak": " leaving"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.398,
+     "peak": " leaving"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.446,
+     "peak": " leaving"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.345,
+     "peak": " leaving"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.229,
+     "peak": " leaving"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.588,
+     "peak": " leaving"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.544,
+     "peak": " leaving"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.45,
+     "peak": " leaving"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " ten"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.0,
+     "peak": " town"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.01,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " kitchen"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.156,
+     "peak": " leaving"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " left"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.181,
+     "peak": " left"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.06,
+     "peak": " leaving"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.433,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4bd423dc",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'leaving only …' (what remains)",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.45,
+ "notes": "Card: ' left' x13, ' leaving' x11, ' Left' x3, ' leave' x2 (remove all animal cells⟦ leaving⟧ only the organ structure); word hits ' left' cov 39%, ' leaving' 24%. Exploratory probe: 'leaving only the skeleton' 0.47; 'only two houses were left' 0.17, 'she left the house' 0.17, 'turn left' 0.006.",
+ "selection": "random draw"
+}

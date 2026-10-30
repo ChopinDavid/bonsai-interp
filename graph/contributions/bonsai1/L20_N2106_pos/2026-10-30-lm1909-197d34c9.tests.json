@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-197d34c9",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N2106+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N2106",
+   "pole": "+",
+   "label": "A word for a stake, eligibility or applicability inside a negated statement ('no vested interest', 'not applicable', 'not eligible', 'no stake'), firing on that word; the same statements without such a word stay quiet.",
+   "fire": [
+    "The rule is not applicable to part-time staff.",
+    "I have no financial interest in the company.",
+    "Students over 25 are not eligible for the grant.",
+    "The judge had no personal stake in the case.",
+    "These limits are not applicable in winter.",
+    "He has no vested interest in the outcome.",
+    "Visitors are not eligible to vote.",
+    "We have no commercial interest in the product."
+   ],
+   "quiet": [
+    "The rule was written for part-time staff.",
+    "I bought a few shares in the company.",
+    "Students over 25 can apply next year.",
+    "The judge was new to the case.",
+    "These limits are lower in winter.",
+    "He waited calmly for the outcome.",
+    "Visitors must sign the book.",
+    "We tested the product last week."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.5; near misses below 0.1; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "negated stake / eligibility ('no vested interest')",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.4,
+ "notes": "Card: ' interest' x4, ' eligible' x2, ' applicable', ' off', ' stake' (are not⟦ applicable⟧ to an older victim; no vested⟦ interest⟧); output promotes ' merely', ' available', ' allowed'. Exploratory probe: 'no vested interest' 0.49, 'not applicable' 0.26; 'protects older victims' 0.03."
+}

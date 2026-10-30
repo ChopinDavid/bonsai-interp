@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-cca62771",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N10517+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T01:21:31+00:00",
+ "recipe": {
+  "toolchain_commit": "4bd423dc",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N10517_pos/2026-10-30-lm1909-cca62771.tests.json"
+ },
+ "label": "' Sal' as the first piece of a split place name, mainly Salzburg (Sal|zburg, Sal|aman|ca); places that are one token (Salvador, Salisbury, Vienna) stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N10517_pos/2026-10-30-lm1909-cca62771.tests.json",
+   "prereg_commit": "4bd423dc",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.8,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.156,
+     "peak": "zburg"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.641,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.455,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.465,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.744,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.442,
+     "peak": " Sal"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.36,
+     "peak": " Sal"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.182,
+     "peak": "7"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.03,
+     "peak": " Vienna"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.366,
+     "peak": " In"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.087,
+     "peak": " Salisbury"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": " old"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.144,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.035,
+     "peak": " Salvador"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.092,
+     "peak": " Oxford"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.46,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "4bd423dc",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "' Sal' of Salzburg",
+ "unit_kind": "token piece",
+ "confidence": 0.4,
+ "notes": "Card: ' Sal' x6 (⟦ Sal⟧zburg), ' In' x3, ' Reg', ' Roch'; word hits ' Sal' lift 1,333. Tokenizer: Sal|zburg, Sal|aman|ca; Salvador, Salisbury, Salem are one token. Exploratory probe: 'near Salzburg' 0.20, 'festival in Salzburg' 0.32; Vienna 0.04.",
+ "selection": "random draw"
+}

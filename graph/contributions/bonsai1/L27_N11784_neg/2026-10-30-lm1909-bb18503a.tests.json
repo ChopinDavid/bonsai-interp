@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-bb18503a",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N11784-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N11784",
+   "pole": "-",
+   "label": "' leaving' (and ' left') for what remains after something is removed ('remove the cells, leaving only the skeleton', 'leaving a thin crust'); 'leave/left' as departing or as a direction stays low.",
+   "fire": [
+    "Boil the syrup down, leaving only a thick glaze.",
+    "The flood washed away the soil, leaving bare rock.",
+    "Strip the bark, leaving the smooth wood underneath.",
+    "The fire burned the roof, leaving only the walls.",
+    "Drain the pasta, leaving a little water in the pot.",
+    "Erosion removed the soft rock, leaving tall pillars.",
+    "Scrape off the old paint, leaving clean metal.",
+    "The tide went out, leaving pools among the rocks."
+   ],
+   "quiet": [
+    "Boil the syrup for ten minutes before serving.",
+    "The flood reached the town at dawn.",
+    "Strip the bed and wash the sheets.",
+    "The fire started in the kitchen.",
+    "She was leaving the office when it rained.",
+    "Turn left after the old mill.",
+    "He left the party early.",
+    "The train is leaving from platform two."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.2; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'leaving only …' (what remains)",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.45,
+ "notes": "Card: ' left' x13, ' leaving' x11, ' Left' x3, ' leave' x2 (remove all animal cells⟦ leaving⟧ only the organ structure); word hits ' left' cov 39%, ' leaving' 24%. Exploratory probe: 'leaving only the skeleton' 0.47; 'only two houses were left' 0.17, 'she left the house' 0.17, 'turn left' 0.006."
+}

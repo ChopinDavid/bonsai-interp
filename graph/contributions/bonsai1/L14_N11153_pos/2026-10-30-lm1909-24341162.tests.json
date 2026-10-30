@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-24341162",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N11153+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N11153",
+   "pole": "+",
+   "label": "Low-confidence guess: list joints ('and', ';') in solubility or property lists ('soluble in ethanol and acetone; slightly soluble in water'); plain single-property statements stay quiet.",
+   "fire": [
+    "Freely soluble in methanol and ethanol; slightly soluble in water.",
+    "Soluble in acetone and chloroform; insoluble in hexane.",
+    "Miscible with water and alcohol; immiscible with oil.",
+    "Soluble in ether and benzene; sparingly soluble in water.",
+    "Stable in acid and base; unstable in light.",
+    "Soluble in DMSO and DMF; poorly soluble in water.",
+    "Resistant to heat and cold; sensitive to moisture.",
+    "Soluble in hot water and ethanol; insoluble in ether."
+   ],
+   "quiet": [
+    "Freely soluble in methanol.",
+    "Soluble in acetone.",
+    "Miscible with water.",
+    "Soluble in ether.",
+    "Stable in acid.",
+    "Soluble in DMSO.",
+    "Resistant to heat.",
+    "Soluble in hot water."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.4; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "joints in solubility lists (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: ' and' x14, ',' x5, ' summers' x2, ';' (soluble in tetrahydrofuran, ethanol, acetonitrile, and acetone⟦;⟧ slightly soluble). Exploratory probe: solubility list 0.37, 'work and play hours' 0.07."
+}

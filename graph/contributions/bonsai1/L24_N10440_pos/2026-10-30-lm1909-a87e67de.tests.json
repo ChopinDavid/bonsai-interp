@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a87e67de",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N10440+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:09:27+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N10440",
+   "pole": "+",
+   "label": "' meet' (and the 'to' before it) in 'meet the needs / demand / requirements / targets', i.e. satisfying a requirement; 'meet' as encountering a person stays quiet.",
+   "fire": [
+    "The factory added a shift to meet rising demand.",
+    "The plan does not meet safety standards.",
+    "Schools must meet the needs of every pupil.",
+    "The firm failed to meet its sales targets.",
+    "The hospital hired nurses to meet the requirements.",
+    "Supply cannot meet demand this winter.",
+    "The design meets all building codes.",
+    "We worked late to meet the deadline."
+   ],
+   "quiet": [
+    "The factory added a shift after the holidays.",
+    "The plan was written by the safety team.",
+    "Schools must teach every pupil to read.",
+    "The firm hired a new sales manager.",
+    "The hospital hired nurses from abroad.",
+    "We will meet our cousins at the airport.",
+    "The designers meet every Monday for coffee.",
+    "We worked late and met friends afterwards."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'meet' = satisfy (meet demand / needs)",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.75,
+ "notes": "Card: ' meet' x18, ' to' x4, ' up' x2, ' meeting', ' keep', ' suffice' (needed to⟦ meet⟧ the needs of 98%); output promotes ' meet', ' demand', ' satisfy', ' fulfill'. Exploratory probe: 'to meet demand' 1.05, 'to meet the needs' 0.49; 'to meet her sister' 0.04. Near misses include 'meet' with people."
+}
