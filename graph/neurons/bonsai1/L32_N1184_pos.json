@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L32/N1184+",
+ "model": "bonsai1",
+ "layer": 32,
+ "index": 1184,
+ "pole": "+",
+ "label": "A split stem piece of a Latin or German regional/ethnic adjective or place-derived name, before its suffix (Lug|dunensis, R|öm|ische, europ|äischen, Flem|ish)",
+ "short": "split stem of a Latin/German demonym",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N1184_pos/2026-10-30-ChopinDavid-f87c7819.tests.json",
+   "prereg_commit": "b4634ecb",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.001,
+     "peak": " Arm"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.103,
+     "peak": " Gall"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.002,
+     "peak": " brit"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.12,
+     "peak": " gall"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.035,
+     "peak": "iny"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.013,
+     "peak": "ar"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.006,
+     "peak": "Der"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.274,
+     "peak": " Belg"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": "lichen"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.039,
+     "peak": "ne"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": "irtschaft"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": "ah"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.031,
+     "peak": "iny"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": "ö"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": "Der"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.093,
+     "peak": " Belgian"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.602,
+    "median_fire": 0.024,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-f87c7819"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-f87c7819",
+   "A split stem piece of a Latin or German regional/ethnic adjective or place-derived name, before its suffix (Lug|dunensis, R|öm|ische, europ|äischen, Flem|ish)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-f87c7819"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L19/N8622+",
+ "model": "bonsai1",
+ "layer": 19,
+ "index": 8622,
+ "pole": "+",
+ "label": "Unclear; best guess the distributive 'one' in 'one for each' / 'one per' after a stated count (eight axes, one for each indicator)",
+ "short": "distributive 'one for each'",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N8622_pos/2026-10-30-ChopinDavid-bcdb6911.tests.json",
+   "prereg_commit": "b4634ecb",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.281,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.096,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.155,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.098,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.3,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.112,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.189,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.017,
+     "peak": " received"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " four"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.019,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": " copies"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.047,
+     "peak": " he"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " received"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.134,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-bcdb6911"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-bcdb6911",
+   "Unclear; best guess the distributive 'one' in 'one for each' / 'one per' after a stated count (eight axes, one for each indicator)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-bcdb6911"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

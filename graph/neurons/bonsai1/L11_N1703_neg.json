@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N1703-",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 1703,
+ "pole": "-",
+ "label": "The word 'what' opening a free relative noun phrase after a verb or preposition ('in what became known as', 'gave what may have been'), not the interrogative 'what'",
+ "short": "free-relative 'what'",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N1703_neg/2026-10-30-ChopinDavid-9e5b5860.tests.json",
+   "prereg_commit": "b4634ecb",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.796,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.59,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.941,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.362,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.288,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.534,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.617,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.294,
+     "peak": " what"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": " look"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.059,
+     "peak": " finest"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " what"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.014,
+     "peak": " ship"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " flood"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.212,
+     "peak": " be"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " claim"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.019,
+     "peak": " which"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.562,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-9e5b5860"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-9e5b5860",
+   "The word 'what' opening a free relative noun phrase after a verb or preposition ('in what became known as', 'gave what may have been'), not the interrogative 'what'",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-9e5b5860"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

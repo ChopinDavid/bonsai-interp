@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L11/N4682-",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 4682,
+ "pole": "-",
+ "label": "The word-final piece completing a split name of a hoofed wild herbivore (ant|elope, b|ison, ung|ulate, prong|horn, cerv|id, wil|de|be|est), and the 'it' of open-p|it",
+ "short": "split hoofed-herbivore names",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N4682_neg/2026-10-30-ChopinDavid-20c80a4f.tests.json",
+   "prereg_commit": "b4634ecb",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.605,
+     "peak": "ongo"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.338,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.596,
+     "peak": "ulates"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.718,
+     "peak": "horn"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.388,
+     "peak": "est"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.482,
+     "peak": "ids"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.788,
+     "peak": "it"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.558,
+     "peak": "opes"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.016,
+     "peak": " lion"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.085,
+     "peak": " moved"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.036,
+     "peak": "age"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.149,
+     "peak": " prey"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " decided"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.02,
+     "peak": " cherry"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.577,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-20c80a4f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-20c80a4f",
+   "The word-final piece completing a split name of a hoofed wild herbivore (ant|elope, b|ison, ung|ulate, prong|horn, cerv|id, wil|de|be|est), and the 'it' of open-p|it",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-20c80a4f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
