@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f0d5c093",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N11314+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N11314",
+   "pole": "+",
+   "label": "' for' introducing a ground or reason: 'for one thing' 0.75, 'for standing reasons' 0.35, 'make up for having less oil' 0.29; beneficiary 'for her mother' (-0.01), duration 'for three hours' 0.04 and purpose 'for' are silent; 'for two reasons:' scored only 0.08 and 'Being able to' 0.11, so the reading is inconsistent and the label is low-confidence",
+   "fire": [
+    "I prefer the old station, for one thing, because the platforms are wider.",
+    "The paper was rejected for reasons of scope rather than quality.",
+    "The hearing was postponed for procedural reasons.",
+    "He stayed silent, for fear of making things worse.",
+    "The plan failed for lack of money.",
+    "Why keep the old bridge? Well, for one thing, it carries the water main.",
+    "The appeal was dismissed for want of evidence.",
+    "She chose the smaller car, for another thing, because parking is tight."
+   ],
+   "quiet": [
+    "I prefer the old station, which has wider platforms.",
+    "The paper was accepted for publication in the spring issue.",
+    "The hearing was postponed for two weeks.",
+    "He bought flowers for his neighbour.",
+    "The plan called for more money.",
+    "Why keep the old bridge? It carries the water main.",
+    "The lawyer waited for the evidence to arrive.",
+    "She chose the smaller car for the trip to the coast."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8 on ' for' with 'for one/another thing' highest; 'for reasons of / for lack of / for fear of' may score under 0.3; near misses under 0.1; a partial or fail is possible",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "reason-giving 'for' (for one thing)",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 16.6, density 0.47%, peaks ' for' x11, ' individual' x2, ' being' x2, 联通, 在一起, ' having' in 'actions for standing reasons', 'make up for having less oil', 'Well, for one thing director', 'Being able to step', 'for two reasons:', 'writing for the website for academics'. - pole is quantity nouns (number, speed, extent). Probe: 'Well, for one thing, the director' 0.752, 'for standing reasons' 0.350, 'make up for having less oil' 0.288, 'Being able to walk' 0.109, 'for two reasons:' 0.078 (':'), 'writing for it' 0.057; 'on Monday morning' 0.112, 'a present for her mother' -0.008, 'for three hours' 0.041. Near misses keep 'for' in its beneficiary, duration, purpose or phrasal-verb use."
+}

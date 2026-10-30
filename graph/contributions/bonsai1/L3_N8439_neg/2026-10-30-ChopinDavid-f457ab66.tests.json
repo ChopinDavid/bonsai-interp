@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f457ab66",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N8439-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N8439",
+   "pole": "-",
+   "label": "the final piece of a Latin taxonomic family name: -ace|ae (Mucoraceae 1.02, Portulacaceae 0.77, Rosaceae 0.44) and -ida|e (Hominidae 0.91, Canidae 0.45); other Latin plurals that end in the same pieces (antenn|ae 0.05, formula|e 0.07), single-token algae (0.02) and a genus name (0.03) are silent",
+   "fire": [
+    "Grasses such as wheat and rice belong to the family Poaceae.",
+    "Lions and domestic cats are both members of the Felidae.",
+    "The pea family, Fabaceae, fixes nitrogen in root nodules.",
+    "Brown bears belong to the family Ursidae, along with pandas.",
+    "Mint, sage and basil are all placed in the Lamiaceae.",
+    "Trout and salmon are classified in the Salmonidae.",
+    "Deer form the family Cervidae, which includes moose and elk.",
+    "The daisy family, Asteraceae, is one of the largest among flowering plants."
+   ],
+   "quiet": [
+    "Grasses such as wheat and rice are harvested in late summer.",
+    "Lions and domestic cats both have retractable claws.",
+    "The pea plant fixes nitrogen in root nodules.",
+    "Brown bears hibernate through the coldest months.",
+    "The graduates were listed as alumnae of the college.",
+    "The spiral nebulae were catalogued by Messier.",
+    "The two amoebae divided under the microscope.",
+    "The lower vertebrae bear most of the body's weight."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on the final 'ae' or 'e' piece; near misses under 0.1 (the -ae plurals are the critical ones)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "-aceae / -idae family ending",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 4.75, density 0.20%, gate-closed leak regime 98%, peaks 'ae' x14, 'e' x14, 'est' x4 in Mucorace|ae, Hominida|e, Portulacace|ae, coriace|ae, Urticace|ae, Delphinida|e, Dasyurida|e. Probe: Mucoraceae 1.024, Hominidae 0.908, Portulacaceae 0.770, Canidae 0.453, Rosaceae 0.441; antennae 0.045 ('s), formulae 0.068, algae 0.023, 'genus Rhizopus' 0.031. Tokenizer: Poaceae = Po|ace|ae, Felidae = Fel|ida|e, Fabaceae = Fab|ace|ae, Ursidae = Urs|ida|e, Lamiaceae = L|ami|ace|ae, Salmonidae = Salmon|ida|e, Cervidae = C|erv|ida|e, Asteraceae = Aster|ace|ae; near-miss plurals alumnae = alum|na|e, nebulae = neb|ula|e, amoebae = amo|eb|ae, vertebrae = vert|ebra|e."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bd8ad6b1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N7191-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T09:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N7191",
+   "pole": "-",
+   "label": "in a Python function, the result being built inside a loop or branch for a later return: the accumulator name at line start (result.append 0.56, ret.append 0.68, changed = True 0.53) or an early 'return True' 0.65; the same loops that print or log instead (0.07-0.08) and a function with a single read-then-return (0.21) are weak",
+   "fire": [
+    "def active_users(users):\n    found = []\n    for u in users:\n        if u.is_active:\n            found.append(u)\n    return found",
+    "def contains(self, item):\n    for node in self.nodes:\n        if node.value == item:\n            return True\n    return False",
+    "def tally(words):\n    counts = {}\n    for w in words:\n        counts[w] = counts.get(w, 0) + 1\n    return counts",
+    "def any_dirty(files):\n    dirty = False\n    for f in files:\n        if f.modified:\n            dirty = True\n    return dirty",
+    "def flags(self):\n    mask = 0\n    if self.readable:\n        mask |= READ\n    if self.writable:\n        mask |= WRITE\n    return mask",
+    "def pairs(items):\n    out = []\n    for i, item in enumerate(items):\n        out.append((i, item))\n    return out",
+    "def first_match(pattern, lines):\n    for line in lines:\n        if pattern in line:\n            return line\n    return None",
+    "def total_size(paths):\n    size = 0\n    for p in paths:\n        size += os.path.getsize(p)\n    return size"
+   ],
+   "quiet": [
+    "def show_users(users):\n    for u in users:\n        if u.is_active:\n            print(u.name)\n    print('done')",
+    "def check(self, item):\n    for node in self.nodes:\n        if node.value == item:\n            log.info('found %s', item)\n    log.info('finished')",
+    "def save(words, path):\n    with open(path, 'w') as f:\n        for w in words:\n            f.write(w + '\\n')",
+    "def warn_dirty(files):\n    for f in files:\n        if f.modified:\n            warnings.warn(f.name)",
+    "def describe(self):\n    if self.readable:\n        print('readable')\n    if self.writable:\n        print('writable')",
+    "def version():\n    return '1.4.2'",
+    "def greet(name):\n    message = 'Hello, ' + name\n    print(message)",
+    "def main():\n    args = parse_args()\n    run(args.config)\n    shutdown()"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.8 on the accumulator token or ' True'; near misses under 0.25 (the read-then-return shape may reach 0.2)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "accumulator updated in loop before return",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 87.5, density 0.10%, peaks ' True' x2, ' results' x2, ' ret' x2, ')\\n' x2, '_list' x2, ' indices' in 'indices.append(index)', 'res.append(permission)', 'return True', 'changed = True', 'results.append(result)', 'support |= SUPPORT_NEXT_TRACK', all inside for/if blocks followed by 'return <that name>'. + pole is ':\\n' x31. Probe (multi-line functions): ret.append 0.684 (' ret'), 'return True' 0.654, result.append 0.558 (' result'), changed = True 0.529; the print version 0.068, settings[key] = d[key] with log.info 0.082, data = f.read(); return data 0.205 (' ='), prose 0.008. Fire items are 4-7 line functions that accumulate into a list, dict, flag, mask or sum and return it; near misses keep the loop shape and print, log, write or return a constant."
+}
