@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-4103af96",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N8251+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:44:19+00:00",
+ "recipe": {
+  "toolchain_commit": "7672a35b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N8251_pos/2026-10-30-lm1909-4103af96.tests.json"
+ },
+ "label": "The '-ography / -ographer / -ographic' piece completing 'cartography' (map-making: cart|ography, cart|ographer, cart|ographic); other '-ography' words (oceanography, choreography) and map-making without the word stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N8251_pos/2026-10-30-lm1909-4103af96.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.56,
+     "peak": "ographers"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.897,
+     "peak": "ography"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.929,
+     "peak": "ography"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.61,
+     "peak": "ographer"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.734,
+     "peak": "ographic"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.993,
+     "peak": "ography"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.495,
+     "peak": "ographers"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.939,
+     "peak": "ography"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": "Med"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " modern"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " took"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " influenced"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " marked"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " Chinese"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.816,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7672a35b",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'cartography' (cart|ography)",
+ "unit_kind": "token piece / lexical",
+ "confidence": 0.6,
+ "notes": "Card: 'ography' / 'ographic' / 'ographer' pieces of cart|ography (cart⟦ography⟧ still relies on...; cart⟦ograph⟧ier), and Arabic 'ب'. Tokenizer: cart|ography, cart|ographer, cart|ographers, cart|ographic; ocean|ography, chore|ographer, lith|ography also split. Exploratory probe: cartography 0.93, cartographer 0.57, oceanography 0.001; 'medieval maps' 0.004. So the near misses include other split -ography words.",
+ "selection": "random draw"
+}

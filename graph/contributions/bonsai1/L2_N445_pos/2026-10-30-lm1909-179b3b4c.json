@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-179b3b4c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N445+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:43:52+00:00",
+ "recipe": {
+  "toolchain_commit": "7672a35b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N445_pos/2026-10-30-lm1909-179b3b4c.tests.json"
+ },
+ "label": "' ever' (in 'evergreen' and in 'have you ever', 'ever since'), firing on ' ever'; the same sentences without it stay lower.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N445_pos/2026-10-30-lm1909-179b3b4c.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.123,
+     "peak": " shr"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.528,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.364,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.386,
+     "peak": "Ever"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.239,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.346,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.706,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.271,
+     "peak": " ever"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": "?"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.047,
+     "peak": " meal"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.053,
+     "peak": "ines"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.119,
+     "peak": " phone"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": "Did"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.088,
+     "peak": " winter"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.355,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7672a35b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "' ever' (evergreen, have you ever)",
+ "unit_kind": "token / lexical",
+ "confidence": 0.45,
+ "notes": "Weak, broad pole (corpus max 0.69, 4.5% of tokens above 0.1). Card: ' ever' x12 (a hardy, large,⟦ ever⟧green shrub), ' raised' x5, ' else', ' еще'. Exploratory probe: 'evergreen' 0.33, 'Have you ever' 0.53; 'flowering shrub' 0.11.",
+ "selection": "random draw"
+}

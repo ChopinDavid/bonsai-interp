@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-61762da9",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N5249-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N5249",
+   "pole": "-",
+   "label": "'Federal' in the name of an institution or state ('Federal Bureau of Investigation', 'Federal Land of Berlin', 'Federal Reserve', 'Federal Republic of Germany'); the same institutions named without it stay quiet.",
+   "fire": [
+    "The Federal Reserve raised interest rates.",
+    "He worked for the Federal Aviation Administration.",
+    "The Federal Republic of Germany was founded in 1949.",
+    "A Federal Court judge heard the case.",
+    "The Federal Office for Migration processed the claims.",
+    "Agents of the Federal Bureau of Investigation searched the house.",
+    "The Federal Council meets in Bern.",
+    "She was elected to the Federal Parliament."
+   ],
+   "quiet": [
+    "The central bank raised interest rates.",
+    "He worked for the aviation authority.",
+    "West Germany was founded in 1949.",
+    "A district court judge heard the case.",
+    "The migration office processed the claims.",
+    "Police officers searched the house.",
+    "The town council meets in Bern.",
+    "She was elected to the national parliament."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'Federal' in institution names",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Card: ' Federal' x15, ' /' x2, ' Republic' x2 (FBI -⟦ Federal⟧ Bureau of Investigation; erected by the⟦ Federal⟧ Land of Berlin); word hits ' Federal' cov 35%. Exploratory probe: 'Federal Bureau of Investigation' 0.45, 'Federal Land of Berlin' 0.59; without 'Federal' 0.03-0.04."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-7271ab94",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N5749+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N5749",
+   "pole": "+",
+   "label": "Low-confidence guess: the line break or comma that ends one step of a sequence of steps, in numeric code or prose ('… * dx * dx\\n    mt = …', 'The cook prepares the meal, the waiter picks it up'); no clear trigger.",
+   "fire": [
+    "The baker shapes the dough, the oven bakes it and the clerk sells it.",
+    "    m = b1 * m + (1 - b1) * g\n    v = b2 * v + (1 - b2) * g * g\n    w -= lr * m\n",
+    "The farmer picks the fruit, the driver takes it to market.",
+    "    x = x + dx\n    y = y + dy\n    z = z + dz\n",
+    "The nurse takes the sample, the lab tests it and the doctor reads the result.",
+    "    h = W @ x + b\n    a = relu(h)\n    out = V @ a\n",
+    "The editor checks the text, the printer prints it.",
+    "    s = s + a[i]\n    t = t + b[i]\n"
+   ],
+   "quiet": [
+    "The baker is proud of the bread.",
+    "    w = load_weights(path)\n",
+    "The farmer is tired after the harvest.",
+    "    print(x)\n",
+    "The nurse is kind to every patient.",
+    "    model = Net()\n",
+    "The editor likes short sentences.",
+    "    return total\n"
+   ]
+  }
+ ],
+ "predictions": "fire 0.02-0.15; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "end of a step in a sequence (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: no single token ('\\n' x3, '.\\n' x3, '])\\n', ',', Arabic 'تها'): the end of an Adam-style update line; 'The cook prepares the meal⟦,⟧ the waiter picks it up'. Exploratory probe weak: 0.05-0.13. Expected to fail."
+}

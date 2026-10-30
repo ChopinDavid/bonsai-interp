@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-lm1909-2621aa21",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3292-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3292",
+   "pole": "-",
+   "label": "'Millennial' and 'Millennium' (also 'millennials', 'millennium'); other words for generations or long spans (century, generation, decade) stay quiet.",
+   "fire": [
+    "Many millennials rent rather than buy.",
+    "The brand targets millennial shoppers.",
+    "The Millennium Dome opened in 2000.",
+    "Fears of a millennium bug filled the papers.",
+    "Millennial workers value flexible hours.",
+    "The town built a Millennium Park.",
+    "The survey asked millennials about savings.",
+    "A millennial couple bought the old farm."
+   ],
+   "quiet": [
+    "Many young people rent rather than buy.",
+    "The brand targets teenage shoppers.",
+    "The Olympic Dome opened in 2000.",
+    "Fears of a computer bug filled the papers.",
+    "Younger workers value flexible hours.",
+    "The town built a new park.",
+    "The survey asked students about savings.",
+    "A young couple bought the old farm."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.9; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'millennial' / 'Millennium'",
+ "unit_kind": "token / lexical",
+ "confidence": 0.75,
+ "notes": "Card: ' Millennium' x9, 'ennial' x8 (mill|ennial), ' Century' x3, ' century' x2; word hits ' Millennium' cov 25%, 'ennial' 20%, ' Century' 16%. Exploratory probe: 'Millennial students' 0.83, 'Millennium Bridge' 0.40, 'new century' 0.015.",
+ "trigger": {
+  "words": [
+   "millennial",
+   "millennials",
+   "millennium"
+  ]
+ }
+}

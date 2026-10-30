@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-697f7754",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N1709-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:44:01+00:00",
+ "recipe": {
+  "toolchain_commit": "7672a35b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L17_N1709_neg/2026-10-30-lm1909-697f7754.tests.json"
+ },
+ "label": "Low-confidence guess: punctuation that ends a formula or quoted alternative inside a code comment or docstring ('rho*rho - rho = 0.', '(\"processed.\" or \"raw.\")'); no clear trigger.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N1709_neg/2026-10-30-lm1909-697f7754.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.05,
+     "peak": "ise"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.159,
+     "peak": " or"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.109,
+     "peak": "*x"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.025,
+     "peak": " {"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.027,
+     "peak": " rho"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.01,
+     "peak": " #"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.015,
+     "peak": " +"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.014,
+     "peak": " {"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.011,
+     "peak": " #"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": " #"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " Uses"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " #"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " #"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " names"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": ".\n\n"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " #"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.82,
+    "median_fire": 0.026,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7672a35b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "end of a formula in code comments (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.1,
+ "notes": "Card: no single token ('2' x4, '3' x2, '/' x2, '.\\n\\n', ' or', ' (': rho*rho - rho = 0⟦.⏎⏎⟧; (\"processed_crash.\"⟦ or⟧ \"raw_crash.\")). Exploratory probe: 0.03-0.05. Expected to fail.",
+ "selection": "random draw"
+}

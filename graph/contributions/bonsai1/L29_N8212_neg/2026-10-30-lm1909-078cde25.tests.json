@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-078cde25",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N8212-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N8212",
+   "pole": "-",
+   "label": "' a' right after 'keep / keeps / kept' ('keeps a low profile', 'kept a diary', 'keeps a big dog'), where the kept thing follows; ' a' after other verbs (has, bought, wrote) stays quiet.",
+   "fire": [
+    "The actor keeps a small flat in Rome.",
+    "My grandmother kept a diary for sixty years.",
+    "The minister keeps a low profile these days.",
+    "Sailors kept a careful watch at night.",
+    "She keeps a spare key under the mat.",
+    "He kept a record of every sale.",
+    "The farm keeps a few goats.",
+    "They kept a close eye on the weather."
+   ],
+   "quiet": [
+    "The actor has a small flat in Rome.",
+    "My grandmother wrote a diary for sixty years.",
+    "The minister gave a short speech these days.",
+    "Sailors took a careful look at night.",
+    "She hides a spare key under the mat.",
+    "He made a record of every sale.",
+    "The farm sold a few goats.",
+    "They took a close look at the weather."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' a' after 'keep/kept'",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.6,
+ "notes": "Card: ' a' x4, ' kept' x3, ' he' x2, ' very' (Spektor ... keeps⟦ a⟧ low public profile; The bank ... kept⟦ a⟧ low profile); output (reversed) favours ' low', ' very', ' carefully'. Exploratory probe: 'keeps a low profile' 0.50, 'kept a low profile' 0.47, and 'keeps a big dog' 0.47 too, so the label is the verb 'keep', not the idiom."
+}

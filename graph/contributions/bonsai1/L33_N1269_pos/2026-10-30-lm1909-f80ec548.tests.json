@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-f80ec548",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N1269+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N1269",
+   "pole": "+",
+   "label": "The 'that' or 'it' right after a sign, note, label or caption, where 'said' is expected next ('a sign that said…', 'under his picture it said…'); the same nouns without such a slot stay low.",
+   "fire": [
+    "We passed a sign that said the bridge was closed.",
+    "On the box was a label that said fragile.",
+    "Below the photo it said he was born in 1920.",
+    "She found a note that said meet me at noon.",
+    "The banner over the door said welcome home.",
+    "On the wall was a poster that said no smoking.",
+    "At the bottom of the page it said draft.",
+    "He held a card that said thank you."
+   ],
+   "quiet": [
+    "We passed a sign near the old bridge.",
+    "On the box was a red label.",
+    "Below the photo was a frame of oak.",
+    "She found a note under the door.",
+    "The banner over the door was faded.",
+    "On the wall was a poster of the band.",
+    "At the bottom of the page was a stain.",
+    "He held a card in his hand."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.7; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'that/it' before 'said' for a sign or note",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.5,
+ "notes": "Card: ' that' x7, ' It' x3, ' which' x3, ' report' x3 (The king's⟦ note⟧ said; a sign today⟦ that⟧ said; under his little picture⟦ it⟧ said); output promotes ' said', ' stated', ' mentioned'. Exploratory probe: 'a sign that said' 0.71, 'it said he had died' 0.42, 'the king's note said' 0.23, but 'the king's note was torn' 0.23 too; 'a sign near the road' 0.11."
+}

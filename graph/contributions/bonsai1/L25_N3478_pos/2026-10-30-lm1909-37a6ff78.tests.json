@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-37a6ff78",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N3478+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N3478",
+   "pole": "+",
+   "label": "Low-confidence guess: the line end that closes a simple Python statement in the middle of a block, when the next line is not an 'if' ('…array_split(x, n)\\n', '…< 0.0:\\n'); prose about the same values stays quiet.",
+   "fire": [
+    "    parts = numpy.array_split(data, ncores)\n    total = 0\n",
+    "        elif depth < 0.0:\n            depth = 0.0\n",
+    "    ids = [r['id'] for r in rows]\n    return ids\n",
+    "        while n > 1:\n            n = n // 2\n",
+    "    names = sorted(names)\n    first = names[0]\n",
+    "        for k in keys:\n            del cache[k]\n",
+    "    out = func(x)\n    log(out)\n",
+    "        try:\n            run()\n"
+   ],
+   "quiet": [
+    "The data were split into parts, one per core.",
+    "If the depth is negative it is set to zero.",
+    "The ids are collected from the rows.",
+    "The number is halved until it reaches one.",
+    "The names are sorted and the first is taken.",
+    "Each key is removed from the cache.",
+    "The function is applied and the output logged.",
+    "The program tries to run."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.3; may fail on the median",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "line end inside a Python block (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: ':\\n' x9, '.' x4, ')\\n' x3, '()\\n' x3 (numpy.array_split(limit_parnums, numcores⟦)⏎⟧; elif tk_water_level < 0.0⟦:⏎⟧); output suppresses ' if'. Exploratory probe: 0.12-0.28 on code, prose 0.01. Low confidence."
+}

@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-lm1909-39474489",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N2262-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N2262",
+   "pole": "-",
+   "label": "The word 'intellectual' (also 'Intellectual', 'intellectuals', 'intellect'), in any context; the same sentences without it stay quiet.",
+   "fire": [
+    "Paris drew many young intellectuals in the 1920s.",
+    "The job offers little intellectual challenge.",
+    "He admired her sharp intellect.",
+    "Intellectual property law protects inventions.",
+    "The café was a meeting place for intellectuals.",
+    "Chess is an intellectual game.",
+    "She wrote an intellectual history of the town.",
+    "The professor was a towering intellectual."
+   ],
+   "quiet": [
+    "Paris drew many young painters in the 1920s.",
+    "The job offers little real challenge.",
+    "He admired her sharp wit.",
+    "Patent law protects inventions.",
+    "The café was a meeting place for students.",
+    "Chess is a quiet game.",
+    "She wrote a short history of the town.",
+    "The professor was a towering figure."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "the word 'intellectual'",
+ "unit_kind": "token / lexical",
+ "confidence": 0.85,
+ "notes": "Card: ' intellectual' x25, ' Intellectual' x3, 'lectual' x2; lexical auto test held (AUROC 1.00); word hits ' intellectual' cov 38%, ' intellect' 12%, ' intellectuals' 5%. Exploratory probe: 'a serious intellectual' 0.82, 'a serious student' 0.002.",
+ "trigger": {
+  "words": [
+   "intellectual",
+   "intellectuals",
+   "intellect"
+  ]
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-7a508d34",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N11718+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N11718",
+   "pole": "+",
+   "label": "'wear' as a verb of things wearing out with use ('tires will wear unevenly', 'the pads wear down'); 'wear' meaning to have clothes on, and the same objects without wear, stay quiet.",
+   "fire": [
+    "Cheap brake pads wear quickly in city traffic.",
+    "The hinges will wear if you don't oil them.",
+    "Soft tyres wear faster on hot roads.",
+    "The steps began to wear after centuries of use.",
+    "Misaligned wheels make tyres wear unevenly.",
+    "Plastic gears wear down over time.",
+    "The carpet will wear thin near the door.",
+    "Knife edges wear with daily use."
+   ],
+   "quiet": [
+    "Cheap brake pads squeal in city traffic.",
+    "Guests should wear a jacket to the dinner.",
+    "Soft tyres grip better on hot roads.",
+    "The steps were rebuilt after centuries of use.",
+    "Children wear uniforms at the school.",
+    "Plastic gears are cheap to make.",
+    "She will wear a red dress to the party.",
+    "Knife edges need daily sharpening."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.15; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'wear' = wear out (tyres wear unevenly)",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.5,
+ "notes": "Card: ' in' x4, ' True' x2, ' fat' x2, ' wear', ' brakes' (Underinflated tires are under stress and will⟦ wear⟧ unevenly; applies the⟦ brakes⟧). Exploratory probe: 'tires will wear unevenly' 0.55; 'applies the brakes' -0.01; 'tires are a problem' 0.07. Near misses include 'wear' for clothes, to test the meaning."
+}
