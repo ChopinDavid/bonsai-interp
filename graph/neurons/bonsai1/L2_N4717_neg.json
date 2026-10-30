@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N4717-",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 4717,
+ "pole": "-",
+ "label": "An inflectional suffix piece split from a capitalized stem (Settlement|s, London|ers, Berlin|ers, Bright|en, Tight|en); the same words as single tokens do not fire",
+ "short": "suffix piece after a capitalized stem",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N4717_neg/2026-10-30-ChopinDavid-61f8889b.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.213,
+     "peak": "ers"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.111,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.148,
+     "peak": "ers"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.156,
+     "peak": "ers"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.461,
+     "peak": "en"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.055,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.397,
+     "peak": "en"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.153,
+     "peak": "ments"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.075,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.084,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " countries"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.042,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.048,
+     "peak": " ride"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.067,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.075,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " of"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.154,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-61f8889b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-61f8889b",
+   "An inflectional suffix piece split from a capitalized stem (Settlement|s, London|ers, Berlin|ers, Bright|en, Tight|en); the same words as single tokens do not fire",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-61f8889b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L17/N2594+",
+ "model": "bonsai1",
+ "layer": 17,
+ "index": 2594,
+ "pole": "+",
+ "label": "Attaching a label, tag or mark to an item: label/tag/mark/stamp/designate X with Y, annotate, barcode, assign a class to X",
+ "short": "labeling an item with a tag",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L17_N2594_pos/2026-10-30-ChopinDavid-18a749ee.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.71,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.468,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.126,
+     "peak": " marked"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.143,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.38,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.308,
+     "peak": " lid"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.378,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.201,
+     "peak": " marked"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.349,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.272,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": "legates"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.039,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.12,
+     "peak": " with"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.343,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-18a749ee"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-18a749ee",
+   "Attaching a label, tag or mark to an item: label/tag/mark/stamp/designate X with Y, annotate, barcode, assign a class to X",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-18a749ee"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

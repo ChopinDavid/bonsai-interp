@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L12/N10181-",
+ "model": "bonsai1",
+ "layer": 12,
+ "index": 10181,
+ "pole": "-",
+ "label": "A reading-comprehension or quiz question stem (the passage suggests that, the best title would be, which statement most strengthens, Question: ...)",
+ "short": "quiz question stem",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N10181_neg/2026-10-30-ChopinDavid-1bf060e6.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.845,
+     "peak": " main"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.768,
+     "peak": " be"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.551,
+     "peak": " most"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.311,
+     "peak": " My"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.866,
+     "peak": " best"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.632,
+     "peak": " most"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.9,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.96,
+     "peak": " most"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.045,
+     "peak": " cause"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.248,
+     "peak": " paragraph"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.028,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.046,
+     "peak": " allowed"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.613,
+     "peak": " attitude"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.425,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.296,
+     "peak": " decides"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.511,
+     "peak": " with"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.806,
+    "near_misses_at_0.3": 3
+   },
+   "contribution": "2026-10-30-ChopinDavid-1bf060e6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-1bf060e6",
+   "A reading-comprehension or quiz question stem (the passage suggests that, the best title would be, which statement most strengthens, Question: ...)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-1bf060e6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

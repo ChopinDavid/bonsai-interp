@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L27/N1147+",
+ "model": "bonsai1",
+ "layer": 27,
+ "index": 1147,
+ "pole": "+",
+ "label": "The Russian word piece ' т' (space + т) that opens a word the tokenizer splits (тарелка, тюрьма, тщательно, тонкий, тишина); words that are their own token (так, тоже, там, точно) do not fire",
+ "short": "Russian split piece ' т'",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L27_N1147_pos/2026-10-30-ChopinDavid-a36b87d4.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.725,
+     "peak": " т"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.694,
+     "peak": " т"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.902,
+     "peak": " т"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.832,
+     "peak": " т"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.709,
+     "peak": " т"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.651,
+     "peak": " т"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.772,
+     "peak": " т"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.564,
+     "peak": " т"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": " п"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.097,
+     "peak": " встр"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "ят"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.135,
+     "peak": " ц"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " от"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.048,
+     "peak": " к"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": "О"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.1,
+     "peak": " тр"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.717,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-a36b87d4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-a36b87d4",
+   "The Russian word piece ' т' (space + т) that opens a word the tokenizer splits (тарелка, тюрьма, тщательно, тонкий, тишина); words that are their own token (так, тоже, там, точно) do not fire",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-a36b87d4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

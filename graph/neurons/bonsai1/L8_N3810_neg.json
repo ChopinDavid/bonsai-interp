@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N3810-",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 3810,
+ "pole": "-",
+ "label": "The ':' that introduces a parameter's type annotation inside a function signature (def get(self, key: str), function add(a: number))",
+ "short": "parameter annotation colon in a signature",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N3810_neg/2026-10-30-ChopinDavid-eb356297.tests.json",
+   "prereg_commit": "536af6ce",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.81,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.814,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.596,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.759,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.799,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.87,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.573,
+     "peak": ":"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.491,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.032,
+     "peak": "(path"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.091,
+     "peak": " def"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.045,
+     "peak": "':"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.105,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.037,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.032,
+     "peak": ":\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.141,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " >"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.779,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-eb356297"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-eb356297",
+   "The ':' that introduces a parameter's type annotation inside a function signature (def get(self, key: str), function add(a: number))",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-eb356297"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
