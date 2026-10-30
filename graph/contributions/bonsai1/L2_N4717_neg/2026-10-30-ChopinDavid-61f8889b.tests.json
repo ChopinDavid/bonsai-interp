@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-61f8889b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N4717-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N4717",
+   "pole": "-",
+   "label": "An inflectional suffix piece split from a capitalized stem (Settlement|s, London|ers, Berlin|ers, Bright|en, Tight|en); the same words as single tokens do not fire",
+   "fire": [
+    "Many Berliners spend their summer weekends at the lakes.",
+    "Loyal Dubliners still argue about the best pub in the city.",
+    "The Highlanders marched south in the autumn of 1745.",
+    "Some Westerners find the custom hard to understand.",
+    "Select Brighten from the menu to lift the shadows.",
+    "Use the Tighten setting before you export the image.",
+    "The Lengthen option stretches the clip without changing its pitch.",
+    "Recent Developments in the field were summarised in the report."
+   ],
+   "quiet": [
+    "Many tourists spend their summer weekends at the beach.",
+    "Recent payments to the supplier were summarised in the report.",
+    "The governments of both countries signed the treaty.",
+    "Several departments share the same building.",
+    "Please tighten the bolts before you ride.",
+    "You can sharpen the image before you export it.",
+    "The Statements were filed with the court on Monday.",
+    "The Elements of Style is still widely read."
+   ]
+  }
+ ],
+ "predictions": "Capitalized words that split into stem + -s/-ers/-en/-ments reach 0.4-0.75 on the suffix piece. Capitalized or lowercase words the tokenizer keeps whole (payments, governments, tighten, sharpen, Statements, Elements) stay under 0.15; the broad flag (2.4% of tokens above 0.1 of max) means near misses will not be silent.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "suffix piece after a capitalized stem",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: Londoners 0.733 ('ers'), Straighten 0.710 ('en'), Settlements 0.647 ('s'), lowercase straighten 0.403, all-caps PERMISSIONS 0.142 ('S'); single-token settlements 0.072, exports 0.036, Parisians 0.038, cat floor 0.135. Card: 'en' x7, 'ín' x5, 'S' x4, 's', 'ers', ' Station' peaks on Settlement|s, London|ers, Straight|en, Ste|en, EXPORT|S (max 1.14, layer 2, broad). A layer-2 pole that marks a suffix continuing a capitalized stem; lowercase splits fire more weakly and are kept out of both halves."
+}

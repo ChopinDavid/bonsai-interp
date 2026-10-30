@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1bf060e6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N10181-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N10181",
+   "pole": "-",
+   "label": "A reading-comprehension or quiz question stem (the passage suggests that, the best title would be, which statement most strengthens, Question: ...)",
+   "fire": [
+    "Q3) According to the author, the main cause of the famine was\n(a) drought\n(b) war\n(c) taxation",
+    "7. The best title for this paragraph would be\n(a) A Night at Sea\n(b) The Lost Harbour",
+    "Which of the following, if true, most strengthens the argument above?",
+    "Question: My landlord wants to raise the rent twice in one year. Is that allowed?",
+    "The author's attitude toward the reform can best be described as",
+    "Q12) The word 'remote' in line 4 most nearly means\n(a) distant\n(b) unlikely\n(c) isolated",
+    "Read the passage and answer: the narrator decides to leave because",
+    "Choose the statement that the writer would most likely agree with."
+   ],
+   "quiet": [
+    "The main cause of the famine was a drought that lasted three years.",
+    "She finally chose a title for the paragraph after rewriting it twice.",
+    "The argument was strengthened by new evidence from the archive.",
+    "My landlord raised the rent twice in one year, which was allowed.",
+    "The author's attitude toward the reform softened over the years.",
+    "The word 'remote' is used four times in the opening chapter.",
+    "The narrator decides to leave because the town has nothing left for her.",
+    "The writer would agree with most of the committee's recommendations."
+   ]
+  }
+ ],
+ "predictions": "Question stems reach 0.4-1.0, peaking on the verb or copula that leaves the stem open (suggests, would be, strengthens, 'I', described as, means). The same content as ordinary statements stays under 0.1, though a sentence with 'the passage' as subject reached 0.33 in the probe, so one or two near misses may leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "quiz question stem",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'Q6) The passage suggests that' 0.966 (peak ' suggests'), 'A suitable title for the passage is' 0.722 (' is'), 'most seriously weakens the conclusion' 0.625 ('ens'), 'Question: I've lived in my condo' 0.500 (' I'); 'In 1963,' 0.165, 'The passage was long' 0.331 (' was'), condo-board statement 0.008, book conclusion 0.026, floor 0.039. Card: ' is', ',', ' A', ' that', ' I', ' few', ' weak', ' the', ' was' inside quiz items and Q&A columns (max 6.06, layer 12, density 0.14%, no single token). A weak pole, so the label is a best supported guess."
+}

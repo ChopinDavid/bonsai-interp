@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-18a749ee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N2594+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N2594",
+   "pole": "+",
+   "label": "Attaching a label, tag or mark to an item: label/tag/mark/stamp/designate X with Y, annotate, barcode, assign a class to X",
+   "fire": [
+    "Volunteers tagged every photo with the place where it was taken.",
+    "The warehouse stamps each crate with a serial number before shipping.",
+    "Delegates wore badges marked with their country and role.",
+    "She colour-coded the folders by year, red for 2019 and blue for 2020.",
+    "The surveyor annotated the map with symbols for each well.",
+    "Before the move, we numbered the boxes and listed their contents on the lid.",
+    "All blood samples are barcoded with the patient's identifier.",
+    "The trail is marked with yellow blazes painted on the trees."
+   ],
+   "quiet": [
+    "Volunteers sorted every photo by the year it was taken.",
+    "The warehouse wraps each crate with plastic film before shipping.",
+    "Delegates sat with their country's representatives at lunch.",
+    "She stored the folders by year in the cabinet downstairs.",
+    "The surveyor crossed the field with a tripod and a notebook.",
+    "Before the move, we packed the boxes and carried them to the van.",
+    "All blood samples are chilled with ice during transport.",
+    "The trail is lined with yellow flowers in early spring."
+   ]
+  }
+ ],
+ "predictions": "Sentences in which items are tagged, stamped, numbered, colour-coded, annotated or barcoded with an identifier reach 0.35-0.65, peaking on 'with' or the tag noun. Twins in which the items are sorted, wrapped, stored, packed, chilled or lined with something, but not labeled, stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "labeling an item with a tag",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'designated each seat with a letter' 0.633 (peak ' with'), 'marks every mention of a drug with a category code' 0.607 (' a'), 'labeled each jar with the name' 0.412 (' with'), 'apply as many tags as they like to each bookmark' 0.387 (' each'), 'assigned a class index' 0.382 (' assigned'); 'filled each jar with' 0.011, 'save bookmarks' 0.012, 'counted each seat' 0.014, 'described the side effects' 0.033, floor 0.015. Card: ' labelled', ' with' x3 after labeled/designated, 'quer' (marquer), '_event', ' semantics', ' to' (apply tags to), '_class', ',' before 'with the name', An|not|ate (max 20.4, layer 17); the - pole's output promotes ' assign', ' assignment'. The act of labeling, not the 'with' preposition, is what the near misses remove."
+}

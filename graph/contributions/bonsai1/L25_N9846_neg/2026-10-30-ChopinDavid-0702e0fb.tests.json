@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0702e0fb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N9846-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N9846",
+   "pole": "-",
+   "label": "A Latin-script token embedded in Russian (Cyrillic) text: a product name, file name, path or stray Latin letter (Excel, iPhone, Wi-Fi, settings.ini, OK)",
+   "fire": [
+    "Откройте Excel и вставьте таблицу на первый лист.",
+    "Мой iPhone перестал заряжаться после обновления.",
+    "Пароль от Wi-Fi написан на обратной стороне роутера.",
+    "Настройки хранятся в файле settings.ini в корневой папке.",
+    "Мы смотрели сериал на Netflix всю ночь.",
+    "В ресторане подавали бургер Classic с двойным сыром.",
+    "Он написал мне в Telegram, что опоздает на час.",
+    "Нажмите кнопку OK, чтобы продолжить установку."
+   ],
+   "quiet": [
+    "Откройте таблицу и вставьте данные на первый лист.",
+    "Мой телефон перестал заряжаться после обновления.",
+    "Пароль от сети написан на обратной стороне роутера.",
+    "Настройки хранятся в отдельном файле в корневой папке.",
+    "Open Excel and paste the table into the first sheet.",
+    "My iPhone stopped charging after the update.",
+    "He messaged me on Telegram to say he would be an hour late.",
+    "Click the OK button to continue the installation."
+   ]
+  }
+ ],
+ "predictions": "Russian sentences containing a Latin-script word reach 0.3-1.1 on that word's first token. The same sentences written entirely in Russian stay under 0.25, and the same Latin words inside English sentences stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Latin token inside Russian text",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'где u можно' 1.098 (peak ' u'), Bluem|ountain Cookie 0.499, P.S. 0.488, 'папку C:\\Tools' 0.468, 'ресторане Mexican кухни' 0.328; pure Russian twins 0.085 and 0.214 (the latter peaks on '.' after мексиканском), English 'folder C:\\Tools' 0.048, Korean 'FAQ 페이지' 0.140, floor 0.004. Card: 'P', ' u', 'H', ' F', 'o' (a Latin o inside авиапассажирoв), ' I', ' Mexican', 'A', 'ountain', ' C' all inside Russian or Korean text (max 70, layer 25); the + pole peaks on Cyrillic capitals ' Г', ' Д', ' О'. Script switch is the distinction."
+}

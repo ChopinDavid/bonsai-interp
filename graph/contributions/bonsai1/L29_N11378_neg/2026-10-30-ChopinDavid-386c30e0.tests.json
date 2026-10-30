@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-386c30e0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N11378-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N11378",
+   "pole": "-",
+   "label": "The Arabic word pieces ' ك' and ' الك' (kaf-initial words the tokenizer splits: كاميرا, الكهرباء, الكنيسة); partial, since Spanish 'su continu|o apoyo' and Japanese ご fired as strongly",
+   "fire": [
+    "شربت كوب من الشاي قبل النوم.",
+    "انقطعت الكهرباء عن الحي طوال الليل.",
+    "جلس الضيف على كرسي خشبي قديم.",
+    "يزور السياح الكنيسة القديمة في وسط المدينة.",
+    "نشر الكاتب روايته الأولى في سن العشرين.",
+    "يدور كوكب المريخ حول الشمس في عامين تقريباً.",
+    "اشتريت كريم للبشرة من الصيدلية.",
+    "تقع المكتبة الكبيرة بجانب الجامعة."
+   ],
+   "quiet": [
+    "قرأت كلمة غريبة في نهاية الرسالة.",
+    "لعب الأطفال كرة القدم في الشارع.",
+    "ظل الجو كثير البرودة طوال الصباح.",
+    "سافرت العائلة إلى المطار في الصباح الباكر.",
+    "وضع الطباخ الطعام في المطبخ.",
+    "اشتريت سيارة جديدة الشهر الماضي.",
+    "ذهبنا إلى المصنع لرؤية خط الإنتاج.",
+    "تحدث المدير مع الموظفين عن المشروع الجديد."
+   ]
+  }
+ ],
+ "predictions": "Arabic sentences with a split kaf-word reach 0.3-0.5 on ' ك' or ' الك', so some fire items may land just under 0.3. Arabic sentences whose kaf-words are single tokens (كلمة, كرة, كثير) or whose split words start with ' الم' / ' الط' stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Arabic split pieces ' ك' / ' الك'",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: الكوادر 0.481, الكبار 0.429, كتير 0.409, كاميرا 0.312 (peaks ' الك' / ' ك'); كتاب (whole token) 0.041, المدرسة/الطالب 0.006; but Spanish 'su continuo apoyo' 0.661 (peak 'o'), Japanese ご参加 0.347 (のご), English 'continued support' 0.180. Card: ' الك' x9, ' ك' x6, 'ك' x2 of the top 32 peaks, with ' su', 'ご', '과' and あなたの also present (max 97.5, layer 29, density 0.83%, a broad pole). The Arabic token is the largest single trigger and is tested here; the Spanish/Japanese honorific-possessive cases are a second trigger this test does not cover.",
+ "trigger": {
+  "tokens": [
+   " ك",
+   " الك"
+  ]
+ }
+}

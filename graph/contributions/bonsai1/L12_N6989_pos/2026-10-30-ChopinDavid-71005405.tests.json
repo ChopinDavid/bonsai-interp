@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-71005405",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N6989+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N6989",
+   "pole": "+",
+   "label": "A legal clause that disposes of a right or claim: waiving, releasing, disclaiming, barring or (also) retaining it (waive, non-compete, gag order, renounce, limitation of liability, retain the right to a jury trial)",
+   "fire": [
+    "The tenant hereby waives the right to a hearing before eviction.",
+    "Before the merger, every engineer signed a non-disclosure agreement.",
+    "By entering the race, you release the club from all claims for injury.",
+    "The seller disclaims all implied warranties of fitness for a purpose.",
+    "After the settlement, she relinquished any claim to the estate.",
+    "The union accepted a no-strike clause in exchange for higher pay.",
+    "A confidentiality order prevents the parties from discussing the case publicly.",
+    "Nothing in this agreement shall be construed as a waiver of our moral rights."
+   ],
+   "quiet": [
+    "The tenant must pay rent on the first day of each month.",
+    "Before the merger, every engineer received a new laptop.",
+    "By entering the race, you agree to wear the numbered bib provided.",
+    "The seller delivers the goods within ten working days.",
+    "After the funeral, she inherited the house and the garden.",
+    "The union elected a new treasurer at its annual meeting.",
+    "The court scheduled the hearing for the second week of March.",
+    "Nothing in the museum may be photographed with a flash."
+   ]
+  }
+ ],
+ "predictions": "Clauses that waive, release, disclaim, bar or confirm a right or claim reach 0.4-1.1, peaking on the operative word (waive, non-disclosure, release, disclaims, relinquished, no-strike, waiver). Legal or contractual sentences about payment, delivery, scheduling, inheritance or elections, with no right or claim at stake, stay under 0.2; 'you agree to wear the bib' is the closest near miss and may reach about 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "legal clause on a right or claim",
+ "unit_kind": "topical",
+ "confidence": "medium",
+ "notes": "Probe: non-compete 1.100 (peak 'ete'), waive 1.036, renounce 0.610, gag order 0.567, limitation of liability 0.442; 'retain their right to a jury trial' 0.513 (peak ' retain') shows the pole tracks the right-or-claim object rather than only its surrender; 'grants full ownership' 0.294, 'confirm your attendance' 0.145, 'granted permission to travel' 0.016, garden 0.010. Card: LIMIT|ATION of liability, legal dis|claimers, Non-Compet|e, Arbit|ration, ' waive' x3, ' gag', ren|ounce (max 41.5, layer 12); the output promotes ' contractual', ' compensation', ' clauses', ' indemn'."
+}

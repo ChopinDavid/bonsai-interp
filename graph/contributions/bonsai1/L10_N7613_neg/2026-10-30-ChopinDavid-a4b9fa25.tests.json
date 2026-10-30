@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a4b9fa25",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N7613-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N7613",
+   "pole": "-",
+   "label": "Words treated as the units a language tool handles: dictionary, word list, spell checker, thesaurus, keyboard with word prediction, spelling variants",
+   "fire": [
+    "The spell checker flagged three words in the first paragraph.",
+    "A good thesaurus groups words by meaning rather than alphabetically.",
+    "The crossword solver searches a list of two hundred thousand words.",
+    "Autocomplete suggests the next word as you type on the on-screen keyboard.",
+    "The teacher handed out a vocabulary list of fifty new words.",
+    "Scrabble players memorise every two-letter word in the official dictionary.",
+    "The corpus was tokenised and compared against a stop-word list.",
+    "British and American spelling differ in words like colour and color."
+   ],
+   "quiet": [
+    "The editor flagged three errors in the first paragraph.",
+    "A good atlas groups maps by region rather than alphabetically.",
+    "The route planner searches a map of two hundred thousand roads.",
+    "The calculator shows the running total as you type on the keypad.",
+    "The teacher handed out a reading list of fifty new books.",
+    "Chess players memorise every opening in the official handbook.",
+    "The samples were sorted and compared against a reference table.",
+    "British and American cooking differ in dishes like pudding and pie."
+   ]
+  }
+ ],
+ "predictions": "Sentences about dictionaries, word lists, spell checking, autocomplete or spelling reach 0.35-1.3, peaking on the tool or list noun. Twins about other reference tools and lists (atlas, route planner, calculator, reading list, chess handbook, reference table) stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "words as units of a language tool",
+ "unit_kind": "topical",
+ "confidence": "high",
+ "notes": "Probe: 'words from a dictionary file' 1.296, 'virtual keyboard with word prediction' 1.183, 'anagram dictionary from a word list' 1.063, 'dictionaries ... spellings' 0.605, 'British and American spellings' 0.352; 'in other words' 0.006, encyclopedia 0.002, piano keyboard 0.016, grammar 0.013, floor 0.007. Card: ' spell' x5, ' dictionaries', ' keyboard', ' list', 'Dict', ' dictionary', ' Prediction', 'words' (max 22.5, layer 10); the + pole is about ' meta' tags and pages."
+}

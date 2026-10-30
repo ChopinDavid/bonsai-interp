@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-60a68d7b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N10354+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N10354",
+   "pole": "+",
+   "label": "The character 輕/轻 (light, gentle, easy) as its own token (輕鬆, 輕聲, 輕便, 很輕, 轻声)",
+   "fire": [
+    "她輕輕地關上門，不想吵到任何人。",
+    "這台相機很輕巧，適合旅行時攜帶。",
+    "新系統讓使用者可以輕易找到所需的資料。",
+    "醫生說這只是輕微的扭傷，休息幾天就好。",
+    "這款行李箱非常輕便，單手就能提起。",
+    "他轻声回答，生怕打扰了别人。",
+    "这只箱子很轻，一个人就能搬走。",
+    "經過調整後，整體設計顯得更加輕盈。"
+   ],
+   "quiet": [
+    "她小聲地關上門，不想吵到任何人。",
+    "這台相機很小巧，適合旅行時攜帶。",
+    "新系統讓使用者可以快速找到所需的資料。",
+    "醫生說這只是嚴重的扭傷，需要休息幾週。",
+    "這款行李箱非常堅固，摔了也不會壞。",
+    "他大声回答，生怕别人听不见。",
+    "这只箱子很重，一个人搬不走。",
+    "經過調整後，整體設計顯得更加簡潔。"
+   ]
+  }
+ ],
+ "predictions": "Any sentence in which 輕 or 轻 is its own token reaches 0.6-1.0 on it. Sentences about the same situations with 小聲, 小巧, 快速, 嚴重, 堅固, 大声 or 簡潔 stay under 0.12; 重 (heavy) reached 0.24 in the probe and may leak up to about 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token 輕/轻",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: 他輕聲說話 1.002, 輕鬆前往 0.839, 非常輕 0.690 (all peak 輕); 太重 0.243 (peak 重), 體重 0.033, 很容易 0.114, 薄 0.050, 重要 0.073, 慢慢 0.051, English 'light' 0.207. Card: 輕 x12, 重 x7, 轻 x6, 轻轻 x2 among the top 32 peaks (max 91, layer 25). The tokenizer keeps 年輕, 轻松, 减轻, 轻微 and 轻易 whole, so those do not carry the trigger; the fire items use compounds that split (輕輕, 輕巧, 輕易, 輕微, 輕便, 轻声, 很轻, 輕盈).",
+ "trigger": {
+  "tokens": [
+   "輕",
+   "轻",
+   "轻轻"
+  ]
+ }
+}

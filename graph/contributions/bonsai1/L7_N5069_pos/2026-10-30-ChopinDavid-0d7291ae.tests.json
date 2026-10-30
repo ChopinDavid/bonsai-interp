@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0d7291ae",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N5069+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N5069",
+   "pole": "+",
+   "label": "A non-initial piece of a rare word or name that the tokenizer splits into several tokens (rhabdomy|ol|ysis, t|ucker, Sagu|aro, Rajamou|li); common single-token words in the same slot do not fire",
+   "fire": [
+    "The scan revealed a pheochromocytoma on the left adrenal gland.",
+    "A capercaillie burst out of the trees as we walked past.",
+    "The novels of Nabokov are full of hidden puzzles.",
+    "Direct flights to Antananarivo leave twice a week.",
+    "Long ago, traders carried salt and gold through Timbuktu.",
+    "The poem uses onomatopoeia to echo the sound of rain.",
+    "Her thesis compares Kierkegaard with later existentialists.",
+    "The bus from Tegucigalpa took nine hours to reach the coast."
+   ],
+   "quiet": [
+    "The scan revealed a cyst on the left kidney.",
+    "A pigeon burst out of the trees as we walked past.",
+    "The novels of Dickens are full of memorable villains.",
+    "Direct flights to Madrid leave twice a week.",
+    "Long ago, traders carried salt and gold through the desert.",
+    "The poem uses rhyme to echo the rhythm of rain.",
+    "Her thesis compares Plato with later philosophers.",
+    "The bus from Chicago took nine hours to reach the coast."
+   ]
+  }
+ ],
+ "predictions": "Rare names and technical words split into three or more tokens reach 0.4-1.1 on an inner or final piece. The same frames with common words or single-token names (cyst, pigeon, Dickens, Madrid, desert, rhyme, Plato, Chicago) stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "inner piece of a rare split word",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: bush t|ucker 1.099, rhabdomy|ol|ysis 1.001, Sagu|aro 0.834, Rajamou|li 0.787, Campor|ore|se 0.441; pneumonia 0.059, roast lamb 0.025, Yellowstone 0.037, floor 0.041. Card: scattered pieces 'ol', 'ym', 'li', 'ucker', 'aro', 'ari', 'ore', 'se' in rare words and names, max 3.73 at layer 7 with 36% gate-closed echo; no single token. Unlike L7/N2747+ (names only; rhabdomyolysis 0.02 there), this pole fired on the technical word as strongly as on the names."
+}

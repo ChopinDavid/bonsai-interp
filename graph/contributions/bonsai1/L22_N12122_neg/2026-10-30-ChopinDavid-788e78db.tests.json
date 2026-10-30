@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-788e78db",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N12122-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N12122",
+   "pole": "-",
+   "label": "The complement after a negated ability or knowledge predicate (cannot understand, does not know how, isn't able to control, can't tell whether)",
+   "fire": [
+    "Most small children can't grasp why a promise matters.",
+    "The sensor cannot distinguish smoke from steam.",
+    "Even now, nobody can tell whether the bridge will hold.",
+    "We were unable to determine what caused the outage.",
+    "A puppy does not know how to behave around strangers.",
+    "I couldn't figure out how the lock worked.",
+    "Doctors still aren't able to explain why the treatment fails in some patients.",
+    "Outsiders cannot judge what the family went through."
+   ],
+   "quiet": [
+    "Most small children grasp quickly why a promise matters.",
+    "The sensor can distinguish smoke from steam.",
+    "Even now, everybody can tell that the bridge will hold.",
+    "We were able to determine what caused the outage.",
+    "A puppy does not sleep through the night at first.",
+    "I didn't open the lock because I had lost the key.",
+    "Doctors still haven't published the results of the trial.",
+    "Outsiders rarely visit the village in winter."
+   ]
+  }
+ ],
+ "predictions": "Sentences with can't/cannot/unable/does not know followed by a cognitive or control verb reach 0.3-0.65, peaking on that verb or the wh-word after it. The affirmative twins (can distinguish, were able to determine) stay at 0.04-0.15 and negation of non-cognitive actions (does not sleep, didn't open, haven't published) under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "complement of a negated can/know",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'does not know yet how' 0.603 (peak ' know'), 'cannot understand why' 0.494 (' understand'), 'aren't able to control how' 0.470 (' how'), 'not responsible for' 0.215, \"can't predict where\" 0.165 (peak ' will', weaker); affirmative 'can understand' 0.145, 'can predict' 0.040, 'did not go' 0.042, \"hasn't finished\" 0.013, floor 0.008. Card: peaks ' know', \"'t\", ' understand', ' distinguish', ' control', ' predict' after don't/cannot/impossible to (max 46.5, layer 22, density 0.23%); the + pole peaks on ' no', ' not', '’t'."
+}

@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-2d915113",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N9820+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N9820",
+   "pole": "+",
+   "label": "Dense/positional unit (8% of tokens above 0.1 of a 0.81 max, gate-closed regime 97%); best guess is the Arabic word pieces ' المسل' and ' المل' (المسلسلات, الملحق, الملابس, الملتقى)",
+   "fire": [
+    "اشترت الأم الملابس الجديدة للعيد.",
+    "انعقد الملتقى السنوي للشعراء في بغداد.",
+    "انتهى المسلسل بعد ثلاثين حلقة.",
+    "علّق الطلاب الملصق على باب الفصل.",
+    "اطلع المحامي على الملحق الأخير من العقد.",
+    "تعرض القناة المسلسلات التركية كل مساء.",
+    "غسلت الملابس ونشرتها في الشمس.",
+    "يناقش الملتقى قضايا التعليم في المنطقة."
+   ],
+   "quiet": [
+    "ركض اللاعبون في الملعب الكبير.",
+    "وصلت الطائرة إلى المطار متأخرة.",
+    "يعمل والدي في المصنع منذ عشرين سنة.",
+    "اجتمع الموظفون في المكتب الرئيسي.",
+    "عاد الأطفال إلى المنزل قبل المغرب.",
+    "يقع المركز الثقافي في وسط المدينة.",
+    "رتبت السكرتيرة الملفات في الخزانة.",
+    "نسي الطباخ وضع الملح في الحساء."
+   ]
+  }
+ ],
+ "predictions": "Arabic sentences with a word split as ' المسل' or ' المل' + rest reach 0.3-0.55 on that piece; Arabic twins whose words split after the shorter ' الم' (الملعب, المطار, المصنع, المكتب, الملفات, الملح) or are whole tokens (المنزل, المركز) stay under 0.15. Because the unit is dense, several near misses will not be silent and an 8+8 may not pass; the dense kind is the main claim.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; best guess ' المسل' / ' المل' pieces",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: الملحق 0.516 (peak ' المل'), المسلسلات 0.447 (' المسل'); المدرسة 0.035 (' الم'), الملف 0.076 ('لف'), الملك/الكتاب/البيت 0.012, Japanese 料金 0.316, Chinese 小計 0.109, English 0.092. Card: ' المسل' x6, 'ً' x5, '3' x3, ' المل' x3, '小' x2 among the top 32 peaks, max only 0.81 at layer 3, FLAG broad and FLAG gate-closed regime dominates. The two Arabic pieces are the only configuration that cleared 0.4 in the probe, so they are tested as the best guess for a unit that is mostly positional.",
+ "trigger": {
+  "tokens": [
+   " المسل",
+   " المل"
+  ]
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b89e9d15",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N8151+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N8151",
+   "pole": "+",
+   "label": "The Korean token 홈 (home: 홈쇼핑, 홈 화면, 홈런, 홈경기); English 'Home'/'home' fires only weakly (Home button 0.17, homeostatic 0.26)",
+   "fire": [
+    "어머니는 밤마다 홈쇼핑 방송을 보며 물건을 주문하신다.",
+    "설정을 바꾸려면 홈 화면에서 톱니바퀴 아이콘을 누르세요.",
+    "그는 9회말에 역전 홈런을 쳤다.",
+    "우리 팀은 이번 주말 홈경기에서 승리했다.",
+    "요즘은 헬스장 대신 홈트레이닝을 하는 사람이 많다.",
+    "화면 아래쪽의 홈 버튼을 두 번 누르면 앱 목록이 나온다.",
+    "부모들은 홈스쿨링의 장단점을 두고 토론했다.",
+    "브라우저의 홈 페이지를 검색 엔진으로 바꿨다."
+   ],
+   "quiet": [
+    "어머니는 밤마다 드라마를 보며 뜨개질을 하신다.",
+    "설정을 바꾸려면 메뉴 화면에서 톱니바퀴 아이콘을 누르세요.",
+    "그는 9회말에 역전 안타를 쳤다.",
+    "우리 팀은 이번 주말 원정경기에서 승리했다.",
+    "She stayed home all weekend because of the rain.",
+    "Press the Home key to jump to the start of the line.",
+    "He hit a home run in the ninth inning.",
+    "Students still read the Iliad of Homer today."
+   ]
+  }
+ ],
+ "predictions": "Korean sentences with 홈 as its own token reach 0.5-0.9 on it. Korean twins with 드라마, 메뉴, 안타, 원정 stay under 0.05; English sentences with home/Home stay under 0.3 (Home key may reach about 0.2).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Korean token 홈",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 홈 화면 0.802 (peak ' 홈'); English 'Home button' 0.167, homeostatic 0.255, 'home runs' 0.039, 'at home' 0.001, Homer 0.001, homework 0.000; Korean 집으로 0.008, 'Back button' 0.003. Card: ' Home' x9, 'Home' x8, ' 홈' x4, '홈' x4, ' home' x3 of the top 32 peaks, but the Korean examples are the top ones (134, 75, 69, 66) and the English ones sit at 52-57 of a 134 max (layer 35). The tokenizer keeps ' 홈페이지' whole, so the fire items use 홈쇼핑, 홈 화면, 홈런, 홈경기, 홈트레이닝, 홈 버튼, 홈스쿨링 and '홈 페이지' with a space. English home is partly covered and tested as near misses.",
+ "trigger": {
+  "tokens": [
+   " 홈",
+   "홈"
+  ]
+ }
+}

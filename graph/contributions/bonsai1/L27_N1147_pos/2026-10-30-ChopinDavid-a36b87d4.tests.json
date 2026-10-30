@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a36b87d4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N1147+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:36+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N1147",
+   "pole": "+",
+   "label": "The Russian word piece ' т' (space + т) that opens a word the tokenizer splits (тарелка, тюрьма, тщательно, тонкий, тишина); words that are their own token (так, тоже, там, точно) do not fire",
+   "fire": [
+    "Она поставила тарелку на стол и позвала детей.",
+    "Его отправили в тюрьму на пять лет за кражу.",
+    "Перед отъездом мы тщательно проверили все документы.",
+    "На ней было тонкое летнее платье.",
+    "В старом доме стояла полная тишина.",
+    "Моя тётя живёт в маленьком городе на севере.",
+    "Над полем висела тёмная туча.",
+    "На день рождения мама испекла торт с вишней."
+   ],
+   "quiet": [
+    "Он тоже хотел пойти, но не успел.",
+    "Мы встретимся там, где договорились.",
+    "Нам теперь всё стало понятно.",
+    "В саду цвели яблони и груши.",
+    "Он открыл окно и впустил свежий воздух.",
+    "Папа починил полку на кухне.",
+    "Она точно знала, что делать дальше.",
+    "Мы шли три часа по горной тропе."
+   ]
+  }
+ ],
+ "predictions": "Every sentence with a split т-word reaches 0.6-0.8 on the ' т' token. Russian sentences whose т-words are single tokens (тоже, там, теперь, точно) or whose split words start with another letter (' с'+ад, ' ок'+но, ' п'+ап) stay under 0.1; ' тр'+оп (тропе) is a separate token and should stay low too.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Russian split piece ' т'",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: тело 0.635, тихо 0.797, трагедии 0.797, ткань 0.758, туман 0.775 (all peak ' т'); так 0.098, телефон/стол 0.028, камень/книга/полка 0.046, English floor 0.004. Card: all 32 top peaks are ' т' (max 187, layer 27, density 0.04%); the tokenizer keeps common т-words whole (так, только, тоже, теперь, тогда, там, телефон, театр, турист) and splits the rest after ' т'. Coverage of the pole is therefore the token itself.",
+ "trigger": {
+  "tokens": [
+   " т"
+  ]
+ }
+}
