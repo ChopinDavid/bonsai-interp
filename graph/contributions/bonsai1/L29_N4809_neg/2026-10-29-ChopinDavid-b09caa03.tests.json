@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b09caa03",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N4809-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N4809",
+   "pole": "-",
+   "label": "Gospel narrative about Jesus and his disciples (Jesus washed the feet of his disciples 1.01, the Gospel of Mark says that Peter 0.64, Thomas refused to believe (John 20:25) 0.63); the Pauline epistles (0.08), the Old Testament (Moses 0.01), the Buddha (0.16), Roman history (0.00) and present-day church life (0.00) are silent",
+   "fire": [
+    "On the road to Emmaus two disciples failed to recognise the risen Jesus.",
+    "According to Luke, Jesus chose twelve apostles after a night of prayer.",
+    "When the storm rose on the lake, the disciples woke Jesus in fear.",
+    "Judas betrayed him with a kiss in the garden of Gethsemane.",
+    "In Matthew 16, Peter confesses that Jesus is the Messiah.",
+    "Jesus told his followers the parable of the sower by the sea.",
+    "Mary Magdalene was the first to see the empty tomb (John 20:1).",
+    "James and John, the sons of Zebedee, left their nets to follow him."
+   ],
+   "quiet": [
+    "In Romans, Paul argues that faith rather than the law justifies the believer.",
+    "According to Genesis, Abraham was told to sacrifice his son Isaac.",
+    "When the Red Sea parted, the Israelites crossed on dry ground.",
+    "David defeated Goliath with a sling and a single stone.",
+    "In Exodus 20, God gives Moses the Ten Commandments.",
+    "The Buddha told his monks the parable of the raft.",
+    "Muhammad received the first revelation in the cave of Hira.",
+    "The parish choir rehearses every Thursday evening."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.1 on a function word or name inside the Gospel sentence; near misses (Old Testament, epistles, other founders, parish life) below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Gospel narrative (Jesus and the disciples)",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 344, density 0.063%, peaks ' (', ' of', ',', ' in', ' the', ' as', ' his', ' other', all inside sentences about Jesus, Peter, John, Thomas, the Gospel of John/Phillip, Last Supper, Mt 26, Luke 22; Russian 'посланий апостола Павла' also fires. Logit effect suppresses Christ/Jesus/Thomas/Peter/Philip/John/disciple. Probe: Last Supper and disciples 1.010, Gospel of Mark / Peter 0.636, Thomas (John 20:25) 0.625; Paul to the Corinthians 0.078, Moses 0.006, the Buddha 0.164, Caesar 0.002, parish church 0.003, filler 0.002. The epistle probe suggests the pole wants the narrative about Jesus and the disciples rather than the New Testament as a whole; one near miss (Romans) keeps that boundary under test."
+}

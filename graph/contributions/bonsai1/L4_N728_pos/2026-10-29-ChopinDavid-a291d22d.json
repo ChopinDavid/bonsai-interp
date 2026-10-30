@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-a291d22d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N728+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T02:34:53+00:00",
+ "recipe": {
+  "toolchain_commit": "786f4811",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N728_pos/2026-10-29-ChopinDavid-a291d22d.tests.json"
+ },
+ "label": "the piece that follows a bare 'p'/'pa'/'P' opener in a word the tokenizer splits there (P|ail|in 0.77, pa|ella 0.67, P|ali 0.64, p|ail|lettes 0.51, p|ail 0.43); 'pall|iative' with a longer opener fires weakly (0.28), and single-token palace, pallet, pale and the pieces without the opener (ail|ment, umbr|ella) are silent (≤0.01)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N728_pos/2026-10-29-ChopinDavid-a291d22d.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.457,
+     "peak": "ails"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.341,
+     "peak": "ellas"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.092,
+     "peak": "ahl"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.008,
+     "peak": " east"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.819,
+     "peak": "aille"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.021,
+     "peak": " P"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.01,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.309,
+     "peak": "illard"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " side"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.153,
+     "peak": "io"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.222,
+     "peak": "one"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.032,
+     "peak": " Taiwan"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": "My"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.766,
+    "median_fire": 0.201,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "786f4811",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "piece after a bare p/pa opener",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 11.3, density 0.002%, peaks 'ail' x4, 'ali' x4, ' pall' x3, 'ella' x2, each the continuation of a bare p/pa opener (P|ail|in, Pa|ill|iet, pa|ella, p|ail|leté, P|ali, Pall|io, neopall|ium). Probe: P|ail|in 0.765, pa|ella 0.670, P|ali 0.635, p|ail|lettes 0.514, p|ail 0.428, pall|iative 0.283 (peak on ' pall'); palace 0.006, pallet 0.005, ailment 0.003, Stella/umbrella 0.003, palisade 0.006. Test words split p|ails, pa|ellas, P|ahl|avi, P|ah|ang, p|aille, P|allas, p|alsy, pa|illard; near misses split with a longer opener (Pal|awan, Pal|io, Pal|is|ades, Pall|one, Pad|ang, Pai|wan, pais|ano) or are single tokens (Pablo, pallet).",
+ "selection": "random draw"
+}

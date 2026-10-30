@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d7915d1b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N9839-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N9839",
+   "pole": "-",
+   "label": "the subject or condition phrase of a generic rule or conversion statement, at the token just before its predicate (producing a kilogram of beef requires 1.15, to lose one pound of fat, you 0.96, continuing to browse this site means 0.87, by using this service, you 0.70, recycling one can saves 0.57, one acre absorbs 0.38); the same topics as plain descriptions (the forest covers 0.02, this site uses cookies 0.09) are silent",
+   "fire": [
+    "Charging an electric car overnight costs about three dollars in most states.",
+    "Every hour of walking burns roughly three hundred calories.",
+    "By creating an account, you consent to receive our newsletter.",
+    "Growing one tomato plant yields around ten kilograms of fruit a season.",
+    "Clicking the button below means you have read the policy.",
+    "To fill a bathtub, you need about one hundred and fifty litres of water.",
+    "One litre of petrol produces about 2.3 kilograms of carbon dioxide.",
+    "Skipping breakfast makes people snack more during the morning."
+   ],
+   "quiet": [
+    "The electric car was parked in the garage overnight.",
+    "She walked for an hour along the river yesterday.",
+    "Our newsletter goes out on the first Monday of the month.",
+    "The tomato plants grew tall against the south wall.",
+    "The button below opens the policy document.",
+    "The bathtub was made of enamelled cast iron.",
+    "Petrol prices rose again last week.",
+    "He ate breakfast on the balcony this morning."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.35-1.2 on the last token of the subject or condition phrase; descriptive near misses below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "subject of a generic rule statement",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 20.0, density 0.41%, peaks ' of' x7, ',', ' ton', 'g', ' means', ' understanding', each ending the subject of a generic statement (One ton saves, 1g あたり 4kcal, Producing a barrel of oil creates, Using this website means, By accepting this message, you). Probe: 'Producing a kilogram of beef requires' 1.152 (peak ' of'), 'To lose one pound of fat, you' 0.963, 'Continuing to browse this site means' 0.867, 'By using this service, you' 0.695, 'Recycling one aluminium can saves' 0.568, 'One acre of forest absorbs' 0.379; 'The forest covers six thousand acres' 0.021, 'She recycled the cans' 0.008, 'This site uses cookies' 0.085, filler 0.006. The pole reads the generic rule frame, not the topic."
+}

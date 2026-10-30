@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-20a3068e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N1194+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N1194",
+   "pole": "+",
+   "label": "'barrel' as the barrel of a firearm (the rifle's barrel 0.80, the pistol's barrel length 0.77); other components of hand-held gear fire weakly (knife scales 0.30, rod taper 0.29, pine planks 0.23, folded steel 0.23, piece of gear 0.22); a barrel of crude oil (0.03) and fish scales (0.02) are silent",
+   "fire": [
+    "The shotgun had a twenty-eight inch barrel and a walnut stock.",
+    "Hot gases push the bullet down the barrel at high speed.",
+    "The revolver's barrel was pitted with rust from years in a drawer.",
+    "Rifling cut into the barrel spins the projectile for accuracy.",
+    "He cleaned the barrel with a brass brush and solvent.",
+    "Shorter barrels make a carbine easier to handle in brush.",
+    "The musket's barrel was fixed to the stock with three bands.",
+    "A longer barrel gives the shot a higher muzzle velocity."
+   ],
+   "quiet": [
+    "The wine aged for two years in an oak barrel.",
+    "Rain filled the barrel beside the barn overnight.",
+    "The brewery ships beer in barrels of fifty litres.",
+    "Crude oil fell below sixty dollars a barrel yesterday.",
+    "The pilot performed a barrel roll over the airfield.",
+    "He cleaned the gun's stock with linseed oil.",
+    "The cooper shaped the barrel staves by hand.",
+    "The kitchen scales need a new battery."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on ' barrel'/' barrels' in a firearm; container barrels, barrel roll, gun sentences without the word, and kitchen scales below 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "firearm barrel",
+ "unit_kind": "lexical",
+ "confidence": 0.55,
+ "notes": "Card: max 9.7, density 0.025%, peaks ' barrel' x3, ' screw' x2, ' paper' x2, 'ling' (rifling), ' stat', 'anks' (planks), ' gear', ' sheets', ' taper', ' scales': parts of guns, knives, rods and builds. Probe: rifle's barrel 0.798, pistol's barrel length 0.765; knife scales 0.298, rod taper 0.289, pine planks 0.233, folded steel 0.227, piece of gear 0.216; barrel of crude oil 0.026, fish scales 0.016, filler 0.023. The firearm sense of 'barrel' is the only strong trigger, so the trigger is declared as that word and coverage of the wider part-noun family is expected to be partial.",
+ "trigger": {
+  "words": [
+   "barrel",
+   "barrels"
+  ]
+ }
+}

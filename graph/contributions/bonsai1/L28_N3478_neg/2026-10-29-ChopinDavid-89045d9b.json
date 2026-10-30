@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-89045d9b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N3478-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T02:34:51+00:00",
+ "recipe": {
+  "toolchain_commit": "786f4811",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N3478_neg/2026-10-29-ChopinDavid-89045d9b.tests.json"
+ },
+ "label": "unclear: the probe found no trigger. Best guess from the card (the audience comes out of this sequence, It truly is, art can actually make people, works beautifully to pull you in): the verb or adverb slot of a critic's sentence about a work's effect on its audience; probes of that form scored 0.01-0.17 (the film leaves the audience 0.17, pulls you in 0.03, truly is a marvel 0.01)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N3478_neg/2026-10-29-ChopinDavid-89045d9b.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.024,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.007,
+     "peak": " triumph"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.234,
+     "peak": " actually"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.041,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.01,
+     "peak": " out"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.057,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.177,
+     "peak": " actually"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.027,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " reader"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " phones"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " was"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.914,
+    "median_fire": 0.034,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "786f4811",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "critic's effect-on-audience sentence (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 28.9 against a + pole max of 392, density 0.135%, no single token (' of', ' to', ' comes', ' it', ' truly'); top examples are review prose about what a work does to its audience, plus Castaneda and Call of Duty titles. Probe: 'leaves the audience with a sense of quiet unease' 0.167, 'pulls you in from the first page' 0.026, 'truly is a marvel' 0.012, 'makes visitors reconsider' 0.013, 'Readers can relate' 0.019, controls 0.007-0.022. Nothing reached 0.3; the test registers the best guess so the failure is recorded.",
+ "selection": "random draw"
+}

@@ -1,0 +1,160 @@
+{
+ "id": "2026-10-29-ChopinDavid-2c147dd4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N3577+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T02:35:37+00:00",
+ "recipe": {
+  "toolchain_commit": "786f4811",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N3577_pos/2026-10-29-ChopinDavid-2c147dd4.tests.json"
+ },
+ "label": "the character 入 as its own token opening a word (入会 0.81, 入賞 0.77, 入力 0.68, 入り口 0.66) and Korean 입 (입법 0.75); word-final 入 (購入 0.01), single-token 入学 (0.18) and 出口 (0.07) are silent; English 'entered' leaks 0.46",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N3577_pos/2026-10-29-ChopinDavid-2c147dd4.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.931,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.894,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.739,
+     "peak": "に入"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.816,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.886,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.846,
+     "peak": "入"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.58,
+     "peak": " 입"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.614,
+     "peak": " 입"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.06,
+     "peak": "出口"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": "院"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": "入"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.156,
+     "peak": "入"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.001,
+     "peak": "少ない"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": "工"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.093,
+     "peak": " 입장"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.242,
+     "peak": "入学"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.831,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "786f4811",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "word-initial 入 / 입",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 232, density 0.10%, '入' x23 of the top 32 plus ' 입' x5, '入り', 'に入', ' вход', ' entry' (one token dominates). Logit effect promotes ' into'. Probe: 入会 0.810, 入賞 0.774, 입법 0.753, 入力 0.678, 入り口 0.655; 購入 0.008 (入 after 購 is silent), 入学 0.184 (single token), 出口 0.073, 人 0.002, English 'entered' 0.455 (meaning leak). The pole reads 入 at the start of a word; test words split 入|場, 入|院, 入|社, 入|国, 入|門, 入|札, 입|구, 입|학; near misses use 出|口, 通院, 購|入, 輸|入, 人|口, 입장 (single token), 入学 (single token).",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "入",
+   "入り",
+   "に入",
+   "입"
+  ]
+ }
+}

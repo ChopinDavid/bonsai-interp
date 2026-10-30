@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-5bf061c2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N5774-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N5774",
+   "pole": "-",
+   "label": "unclear: mixed probe. Strongest on the final piece of a multi-piece noun that modifies the next noun (trice|p dips 0.86, bay|onet charge 0.53, Blockchain Revolution 0.37, f|iddle, banjo 0.36) and on Spanish 'número 1 de las ventas' 0.47; Nexus Cannon 0.12, Ocean and Earth 0.10, Spanish 'el partido' 0.19, filler 0.02",
+   "fire": [
+    "He finished with bicep curls and a short stretch.",
+    "The drill ended with a musket volley across the field.",
+    "The track opens with a banjo solo over soft drums.",
+    "She broke two mandolin strings during the show.",
+    "The routine includes deltoid raises with light dumbbells.",
+    "The attackers formed a cutlass line along the deck.",
+    "The course covers blockchain ledger design in week three.",
+    "Her trainer added quadriceps stretches to the plan."
+   ],
+   "quiet": [
+    "He finished with sit-ups and a short stretch.",
+    "The drill ended with a rifle volley across the field.",
+    "The track opens with a piano solo over soft drums.",
+    "She broke two guitar strings during the show.",
+    "The routine includes shoulder raises with light dumbbells.",
+    "The attackers formed a sword line along the deck.",
+    "The course covers database design in week three.",
+    "Her trainer added hamstring stretches to the plan."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.9 on the last piece of the split modifier noun; near misses with single-token modifiers below 0.2; the label is a guess and may fail",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split noun modifying the next noun (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 42.3, density 0.62%, peaks ' el' x5, ' des' x2, ' impact' x2, ' Nexus', ' Blockchain', 'an', 'iddle', 'onet', ' blocking', ' Ocean', 'p': French/Spanish articles and the heads of compounds. Probe: 'tricep dips' 0.856 (peak 'p'), 'bayonet charge' 0.529 ('onet'), 'número 1 de las ventas' 0.472 (' de'), 'Blockchain Revolution' 0.373, 'fiddle, banjo' 0.363 ('iddle'); 'Nexus Cannon' 0.119, 'Ocean and Earth' 0.097, 'el partido' 0.188, filler 0.023. The split-noun-as-modifier reading fits the strongest probes; test modifiers split b|ice|p, mus|ket, ban|jo, mand|olin, delt|oid, cut|lass, quadr|iceps and 'blockchain'; near-miss modifiers are single tokens (rifle, piano, guitar, shoulder, sword, database, hamstring)."
+}

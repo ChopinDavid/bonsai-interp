@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-a2d98405",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N9978+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N9978",
+   "pole": "+",
+   "label": "a physical load bearing down on whatever carries it (crushed beneath a fallen beam 1.16, heavy backpacks 0.92, shelf collapsed under the weight 0.86, bridge sagged under the weight 0.35); 'the weight of the evidence' leaks 0.49; losing body weight (0.01), a grade's weighting (0.14) and 'heavy rain' (0.06) are silent",
+   "fire": [
+    "The roof caved in under the weight of the wet snow.",
+    "Porters carry loads of forty kilograms on their backs up the pass.",
+    "The miner was pinned beneath a slab of rock for six hours.",
+    "The old floorboards groaned under the weight of the piano.",
+    "Her shoulders ached from the heavy pack she had carried all day.",
+    "The pillars support the entire weight of the upper storeys.",
+    "The branch snapped under the weight of the ice and fell.",
+    "The cart's axle bent under the load of bricks."
+   ],
+   "quiet": [
+    "The roof was repainted a dull red after the storm.",
+    "He weighed the options carefully before deciding.",
+    "The miner found a seam of silver after six hours.",
+    "The weight of public opinion turned against the minister.",
+    "She lost ten kilograms on the new diet.",
+    "The upper storeys were added in the nineteenth century.",
+    "Heavy traffic delayed the buses all morning.",
+    "The exam counts for half of the final mark."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.35-1.2 on the load or bearer word (weight, beneath, under, pack, load); near misses below 0.2 except the abstract 'weight of public opinion', which may leak like 'weight of the evidence'",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "load bearing down on a carrier",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 32.5, density 0.051%, peaks ' weight' x11, ' heavy' x3, ' backpack', ' under', ' crushed', all physical loads (weight of the building, roof crumbled under them, crushed to death, bears the weight of all the others). Logit effect promotes heavy/heavier/burden/weighed. Probe: 'crushed beneath the fallen beam' 1.159, 'heavy backpacks' 0.919, 'collapsed under the weight of the books' 0.864, 'weight of the evidence' 0.486 (abstract leak), 'bridge sagged under the weight' 0.351; 'lose weight' 0.008, grade weight 0.143, 'Heavy rain' 0.064, filler 0.010."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b52931de",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N2174+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N2174",
+   "pole": "+",
+   "label": "Japanese text, weakly and broadly: any Japanese sentence scores 0.40-0.49 (peaks on verb and adjective endings た/る/って and on は; max 1.27, 3.9% of tokens at 0.1 of max); Korean 0.30, Chinese 0.18, English 0.04",
+   "fire": [
+    "今朝は早く起きて、駅まで歩いた。",
+    "この店のラーメンはとてもおいしいと思う。",
+    "週末に家族と温泉に行く予定です。",
+    "彼女は新しい仕事を始めたばかりだ。",
+    "電車が遅れて、会議に間に合わなかった。",
+    "庭の桜がようやく咲き始めました。",
+    "子どもたちは公園で元気に遊んでいる。",
+    "この問題は思ったより難しかった。"
+   ],
+   "quiet": [
+    "今天早上我很早起床，走到了车站。",
+    "这家店的拉面非常好吃。",
+    "周末我打算和家人去泡温泉。",
+    "她刚刚开始了一份新工作。",
+    "오늘 아침 일찍 일어나서 역까지 걸어갔다.",
+    "이 가게의 라면은 정말 맛있다.",
+    "The train was late, so I missed the meeting.",
+    "The cherry trees in the garden have finally begun to bloom."
+   ]
+  }
+ ],
+ "predictions": "fire items (Japanese) 0.35-0.55; Chinese and English near misses below 0.25; the two Korean near misses may sit near 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Japanese text (broad, weak)",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 1.27, broad flag (3.9% of tokens at 0.1 of max), gate-closed echo regime 100%, peaks 'た', 'った', 'ん', 'な', 'いた', all Japanese inflections. Probe: past-tense 行った 0.413, んだけれど 0.490, non-past 起きる 0.437, 降るでしょう 0.403, 守ってください 0.491 (tense does not matter); Chinese 0.179, Korean 0.299, English 0.042. The pole marks Japanese text generally rather than a tense; the test checks the language boundary."
+}

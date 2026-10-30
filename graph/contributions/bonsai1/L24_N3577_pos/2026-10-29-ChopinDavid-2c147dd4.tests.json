@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2c147dd4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N3577+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N3577",
+   "pole": "+",
+   "label": "the character 入 as its own token opening a word (入会 0.81, 入賞 0.77, 入力 0.68, 入り口 0.66) and Korean 입 (입법 0.75); word-final 入 (購入 0.01), single-token 入学 (0.18) and 出口 (0.07) are silent; English 'entered' leaks 0.46",
+   "fire": [
+    "コンサートの入場は午後六時からです。",
+    "祖母は先週から入院している。",
+    "四月に新しい会社に入社した。",
+    "ビザがないと入国できません。",
+    "この本はプログラミングの入門書として最適だ。",
+    "工事の入札は来月に行われる。",
+    "지하철 입구는 길 건너편에 있다.",
+    "그는 작년에 대학에 입학했다."
+   ],
+   "quiet": [
+    "コンサートの出口は建物の裏側にあります。",
+    "祖母は先週から通院している。",
+    "四月に新しい車を購入した。",
+    "外国から小麦を輸入している。",
+    "この町は人口が少ない。",
+    "工事は来月に行われる。",
+    "공연장 입장은 오후 6시부터입니다.",
+    "彼は去年大学に入学した。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.6-0.9 on 入 or 입; near misses (出, 人, 通院, word-final 入 in 購入/輸入, single-token 입장, 入学) below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-initial 入 / 입",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 232, density 0.10%, '入' x23 of the top 32 plus ' 입' x5, '入り', 'に入', ' вход', ' entry' (one token dominates). Logit effect promotes ' into'. Probe: 入会 0.810, 入賞 0.774, 입법 0.753, 入力 0.678, 入り口 0.655; 購入 0.008 (入 after 購 is silent), 入学 0.184 (single token), 出口 0.073, 人 0.002, English 'entered' 0.455 (meaning leak). The pole reads 入 at the start of a word; test words split 入|場, 入|院, 入|社, 入|国, 入|門, 入|札, 입|구, 입|학; near misses use 出|口, 通院, 購|入, 輸|入, 人|口, 입장 (single token), 入学 (single token).",
+ "trigger": {
+  "words": [
+   "入",
+   "入り",
+   "に入",
+   "입"
+  ]
+ }
+}

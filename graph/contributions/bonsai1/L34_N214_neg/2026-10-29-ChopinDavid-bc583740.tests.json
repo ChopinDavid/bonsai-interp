@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-bc583740",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N214-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N214",
+   "pole": "-",
+   "label": "a word-opening piece whose continuation is a fixed word tail (cr|um|ple 0.88 on 'um', quadr|uple 0.55; card: equ|ilib|rate, som|ersault, sup|port, .i|pl); 'to' or 'can' before a verb fires weakly (caused prices to climb 0.27, allowed the players to rest 0.00) and prepositional 'to' is silent",
+   "fire": [
+    "She crumpled the letter and threw it into the fire.",
+    "Sales quadrupled after the new store opened.",
+    "The athlete did a perfect somersault off the beam.",
+    "The vote could quintuple the agency's budget next year.",
+    "Leave the solution overnight to equilibrate with the room.",
+    "Don't rumple the sheets before the guests arrive.",
+    "The crumpling of the bumper absorbs the energy of a crash.",
+    "A sextuple bypass is rare but not unheard of."
+   ],
+   "quiet": [
+    "She folded the letter and threw it into the fire.",
+    "Sales doubled after the new store opened.",
+    "The athlete did a perfect tumble off the beam.",
+    "The vote could triple the agency's budget next year.",
+    "Leave the solution overnight to settle in the room.",
+    "Don't wrinkle the sheets before the guests arrive.",
+    "The bending of the bumper absorbs the energy of a crash.",
+    "A multiple bypass is rare but not unheard of."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the piece before the tail (um, quadr, quint, som, ilib, rum, sext); single-token synonyms in the same frames below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word piece before a fixed tail",
+ "unit_kind": "lexical",
+ "confidence": 0.45,
+ "notes": "Card: max 218, density 0.70%, peaks ' to' x11 but also cr|um|ple (max), .i|pl, quadr|uple, equ|ilib|rate, sup|port (line-broken), som|ersault. Probe: the 'to' hypothesis failed (allowed the players to rest 0.003, caused prices to climb 0.269, You can prune 0.087, To start 0.160, prepositional to 0.001-0.002) while the word pieces fired (crumple 0.876 on 'um', quadruple 0.549 on ' quadr'); filler 0.001. The pole is read as a predictor of a fixed word continuation, which the 'to' examples share only weakly. Test words split cr|um|pled, quadr|up|led, som|ers|ault, quint|uple, equ|ilib|rate, rum|ple, cr|um|pling, sext|uple; near-miss synonyms are single tokens (folded, doubled, tumble, triple, settle, multiple) or different splits (wr|inkle)."
+}

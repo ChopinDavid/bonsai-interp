@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-fa45770d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N9388-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N9388",
+   "pole": "-",
+   "label": "the word-internal piece right after a capital 'Mc'/'McA'/'Mac'/'M' opener in a split surname or acronym (Mc|El|roy 0.87, Mc|In|erney 0.71, Mc|I|vor 0.69, M|CI 0.61, Mac|I|vor 0.40, Mc|All|ister 0.34, Mc|Ad|ams 0.33); surnames that are a single token (McCarthy 0.03, McDonald 0.00) and the same pieces without the opener (Elroy, Ivor 0.00) are silent",
+   "fire": [
+    "The surgery was performed by Dr. Anne McElhinney last spring.",
+    "A paper by McEwen (2004) first described the stress response in detail.",
+    "Reading research by McGeown and colleagues shaped the curriculum.",
+    "The tournament was won by Rory McIlroy on the final hole.",
+    "In 1984 John McEnroe lost the French Open final.",
+    "The role was played by James McAvoy in the 2007 film.",
+    "The boat was built by a shipwright named McEachern.",
+    "Our solicitor, Claire McEvoy, drafted the agreement."
+   ],
+   "quiet": [
+    "The surgery was performed by Dr. Anne McMahon last spring.",
+    "A paper by Murphy (2004) first described the stress response in detail.",
+    "Reading research by O'Neill and colleagues shaped the curriculum.",
+    "The tournament was won by Tiger Woods on the final hole.",
+    "In 1984 Jimmy Connors lost the French Open final.",
+    "The role was played by James MacDonald in the 2007 film.",
+    "The boat was built by a shipwright named Elmo Carter.",
+    "Our solicitor, Claire McCarthy, drafted the agreement."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the piece after ' Mc'; near misses (single-token Mc surnames, Mac single tokens, Irish surnames without Mc, El/Iv pieces without the opener) below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece after a Mc/Mac surname opener",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 14.4, density 0.020%, peaks 'El', 'I', 'E', 'Ge', 'Ale', 'le', 'CI' each right after a ' Mc'/' McA'/' M' token (McElroy, McIvor, McEwen, McElmoyle, McGeown, McAlester, McAleese, M|CI). Probe: Mc|El|roy 0.866, Mc|In|erney 0.709, Mc|I|vor 0.691, M|CI 0.606, Mac|I|vor 0.397, Mc|All|ister 0.343, Mc|Ad|ams 0.325; single-token McCarthy 0.026, McDonald 0.000, 'Elroy and Ivor' 0.003, filler 0.009. The pole reads the continuation of a Mc/Mac opener, not the surname or the piece alone. Test words split as Mc|El|hin|ney, Mc|E|wen, Mc|Ge|own, Mc|Il|roy, Mc|En|roe, Mc|Av|oy, Mc|Each|ern, Mc|Ev|oy; near-miss surnames are single tokens (McMahon, Murphy, McCarthy, MacDonald, Ivan) or carry the piece without Mc (El|mo)."
+}

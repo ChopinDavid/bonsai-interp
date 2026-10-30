@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-fa45770d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N9388-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T02:34:01+00:00",
+ "recipe": {
+  "toolchain_commit": "786f4811",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N9388_neg/2026-10-29-ChopinDavid-fa45770d.tests.json"
+ },
+ "label": "the word-internal piece right after a capital 'Mc'/'McA'/'Mac'/'M' opener in a split surname or acronym (Mc|El|roy 0.87, Mc|In|erney 0.71, Mc|I|vor 0.69, M|CI 0.61, Mac|I|vor 0.40, Mc|All|ister 0.34, Mc|Ad|ams 0.33); surnames that are a single token (McCarthy 0.03, McDonald 0.00) and the same pieces without the opener (Elroy, Ivor 0.00) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N9388_neg/2026-10-29-ChopinDavid-fa45770d.tests.json",
+   "prereg_commit": "786f4811",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.955,
+     "peak": "El"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.89,
+     "peak": "E"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.831,
+     "peak": "Ge"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.563,
+     "peak": "Il"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.326,
+     "peak": "En"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.22,
+     "peak": "Av"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.465,
+     "peak": "Each"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.147,
+     "peak": "Ev"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": " spring"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": " O"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " Jimmy"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " MacDonald"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " boat"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": "Our"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.514,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "786f4811",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "piece after a Mc/Mac surname opener",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 14.4, density 0.020%, peaks 'El', 'I', 'E', 'Ge', 'Ale', 'le', 'CI' each right after a ' Mc'/' McA'/' M' token (McElroy, McIvor, McEwen, McElmoyle, McGeown, McAlester, McAleese, M|CI). Probe: Mc|El|roy 0.866, Mc|In|erney 0.709, Mc|I|vor 0.691, M|CI 0.606, Mac|I|vor 0.397, Mc|All|ister 0.343, Mc|Ad|ams 0.325; single-token McCarthy 0.026, McDonald 0.000, 'Elroy and Ivor' 0.003, filler 0.009. The pole reads the continuation of a Mc/Mac opener, not the surname or the piece alone. Test words split as Mc|El|hin|ney, Mc|E|wen, Mc|Ge|own, Mc|Il|roy, Mc|En|roe, Mc|Av|oy, Mc|Each|ern, Mc|Ev|oy; near-miss surnames are single tokens (McMahon, Murphy, McCarthy, MacDonald, Ivan) or carry the piece without Mc (El|mo).",
+ "selection": "random draw"
+}

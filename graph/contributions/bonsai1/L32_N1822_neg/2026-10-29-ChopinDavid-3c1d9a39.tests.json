@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3c1d9a39",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1822-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T02:20:03+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N1822",
+   "pole": "-",
+   "label": "the adjective or determiner slot that opens a fixed phrase or title before its head noun, strongest for 'the long' idioms (takes the long| view 0.55); weaker on the determiner opening a book title (The| Selfish Gene 0.23, The| Loneliness 0.21, The| Longest Day 0.18) and on 'tell the| truth' 0.18; plain 'the' before an ordinary noun is silent (≤0.01)",
+   "fire": [
+    "Investors who think in the long run tend to ignore daily noise.",
+    "Over the long haul, patience beats cleverness.",
+    "The party is playing the long game on tax reform.",
+    "In the long term, the dam will pay for itself.",
+    "He took the long way round to avoid the roadworks.",
+    "That, in short, is the long and short of it.",
+    "Eventually the long arm of the law reached him in Portugal.",
+    "Her publisher preferred the longer view of history that the book took."
+   ],
+   "quiet": [
+    "Investors who sold in March missed the rally.",
+    "The road to the coast was long and dusty.",
+    "The party is debating a new tax bill.",
+    "The dam took six years to build.",
+    "He took the bus to avoid the roadworks.",
+    "That, in short, is the whole story.",
+    "The police caught him in Portugal.",
+    "Her publisher preferred a long introduction to the book."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on ' long'/' longer' inside the idiom; near misses with 'long' as a plain adjective or plain 'the' below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'the long' fixed-phrase slot",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 86.5, density 0.32%, peaks ' the' x8, ' The' x3, '’s' x3, ' Long' x2, ' long' x2, each the slot before a predictable title or idiom head (Baseball's| Great Experiment, The| Long|ing for Beauty, the| absolute| truth, takes the| long| view, The| Lives of a Cell, The| Longest Journey, not telling| the| truth). Logit effect promotes ' The'/' the'. Probe: 'takes the long view' 0.551 (peak ' long'), 'The Selfish Gene' 0.226, 'The Loneliness of the Long Distance Runner' 0.208, 'tell the truth' 0.181, 'The Longest Day' 0.180, 'the whole truth' 0.059; plain 'the' 0.001-0.009. Only the 'long' idiom cleared 0.3, so the test is built on 'the long run/haul/game/term/way round/arm of the law/and short of it/longer view'."
+}
