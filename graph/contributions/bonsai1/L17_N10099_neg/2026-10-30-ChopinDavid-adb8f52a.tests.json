@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-adb8f52a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N10099-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N10099",
+   "pole": "-",
+   "label": "The give/provide benefaction frame at the slot after the recipient where the benefit is named (gives the rider excellent grip, provides the house with insulation)",
+   "fire": [
+    "The raised deck gives the house a clear view over the bay.",
+    "Soft bristles provide the gums with gentle but thorough cleaning.",
+    "A wide stance gives the climber better balance on the ledge.",
+    "The new bypass provides commuters with a faster route into town.",
+    "Double glazing gives the bedroom excellent protection from street noise.",
+    "The loan scheme provides young growers with the capital to buy land.",
+    "Padded straps give the hiker extra comfort on long descents.",
+    "The museum provides visitors with free audio guides in six languages."
+   ],
+   "quiet": [
+    "The house with the raised deck overlooks the bay.",
+    "Gums with soft tissue bleed more easily during cleaning.",
+    "The climber with the widest stance reached the ledge first.",
+    "Commuters took the new bypass into town this morning.",
+    "The bedroom with double glazing faces the street.",
+    "Young growers borrowed the capital to buy land from the scheme.",
+    "The hiker with padded straps descended slowly.",
+    "Visitors collected free audio guides at the museum entrance."
+   ]
+  }
+ ],
+ "predictions": "Sentences of the form 'X gives Y [benefit]' or 'X provides Y with [benefit]' reach 0.17-0.5, peaking on ' with' or the first word of the benefit. Twins with comitative 'with', receive/take/borrow from the recipient's side, or 'give up' stay under 0.03.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "give/provide X (with) a benefit",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'give the rider excellent grip' 0.508 (peak ' excellent'), 'provide the house with insulation' 0.504 (peak ' with'), 'provides small farmers with access' 0.302, 'gives you the energy' 0.222 (peak ' you'), 'provided the school with new' 0.173; 'The rider with the widest tyres' 0.005, 'received ... from' 0.013, 'took out loans' 0.006, 'gave up' 0.020, floor 0.007. Card peaks ' with' x13, ' give' x4, ' gives' x4, ' a' x3, ' you' x2, ' providing', 提供; the + pole's output suppresses access/insight/benefit/opportunities, so this pole predicts the benefit noun."
+}

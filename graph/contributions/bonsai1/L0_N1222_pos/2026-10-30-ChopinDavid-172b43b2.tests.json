@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-172b43b2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N1222+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N1222",
+   "pole": "+",
+   "label": "The token 'example' (example, Example, examples, Examples)",
+   "fire": [
+    "Here is a worked example using last year's figures.",
+    "For example, a bakery might sell bread at a loss on Mondays.",
+    "The textbook gives an example for every rule.",
+    "Example 3 shows the same calculation with negative numbers.",
+    "Follow the examples in the manual before writing your own queries.",
+    "Her essay opens with an example from Roman history.",
+    "The teacher asked for examples of alliteration.",
+    "See the example below for the expected output."
+   ],
+   "quiet": [
+    "Here is a worked solution using last year's figures.",
+    "For instance, a bakery might sell bread at a loss on Mondays.",
+    "The textbook gives an illustration for every rule.",
+    "Figure 3 shows the same calculation with negative numbers.",
+    "Follow the templates in the manual before writing your own queries.",
+    "Her essay opens with a case from Roman history.",
+    "The teacher asked for samples of alliteration.",
+    "See the demo below for the expected output."
+   ]
+  }
+ ],
+ "predictions": "Any sentence containing example/Example/examples reaches 0.6-1.0 on that token. Synonyms and look-alikes (sample, instance, illustration, case, template, demo, exam, exemplary) stay under 0.13.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token example",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: 'In our example' 0.984, 'Example:' 0.685, 'a simple example' 0.634, 'These examples' 0.612; 'sample' 0.082, 'instance' 0.121, 'exam' 0.009, 'exemplary' 0.070, floor 0.004. Card: ' example' x18, ' Example' x9, '.example' x2, ' examples' x2, 'examples' of the top 32 peaks (one token dominates), max 5.28, layer 0. All four spellings are single tokens.",
+ "trigger": {
+  "words": [
+   "example",
+   "Example",
+   "examples",
+   "Examples"
+  ]
+ }
+}

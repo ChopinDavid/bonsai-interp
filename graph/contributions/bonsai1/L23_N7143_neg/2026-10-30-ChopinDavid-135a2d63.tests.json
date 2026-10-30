@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-135a2d63",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N7143-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N7143",
+   "pole": "-",
+   "label": "Onset of a gradual change that comes with time or practice (will begin to feel natural, starts to make sense, will get easier), not a scheduled or punctual beginning; promotes gradually/eventually",
+   "fire": [
+    "Stick with the new keyboard layout and your fingers will start to find the keys on their own.",
+    "Once you have read a few hundred pages, the old spelling begins to look normal.",
+    "With enough repetitions the chord changes will become automatic.",
+    "Over the first winter the raw timber will begin to turn silver.",
+    "As the weeks pass the early mornings get easier to bear.",
+    "Keep writing a page a day and the words start to come without effort.",
+    "Given time, even the sharpest grief will begin to soften.",
+    "After a few seasons the vines will start to produce heavier crops."
+   ],
+   "quiet": [
+    "Press the switch and the new keyboard layout will load on the screen.",
+    "Once you have read the first chapter, the quiz begins on the next page.",
+    "The chord chart starts on the second page of the booklet.",
+    "On the first morning the raw timber was delivered to the yard.",
+    "The weekly meeting begins at nine on Monday mornings.",
+    "She started writing the page at noon and finished before one.",
+    "The service will begin with a reading from the family.",
+    "After the harvest the vines are pruned back hard."
+   ]
+  }
+ ],
+ "predictions": "Habituation and slow-change sentences reach 0.2-0.65, peaking on the inchoative verb or the 'will' before it. 'Begin/start' for scheduled or punctual events (the concert will begin at eight, started the car) and stative twins stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "onset of gradual change over time",
+ "unit_kind": "semantic",
+ "confidence": "medium",
+ "notes": "Probe: 'the stretches will begin to feel natural' 0.621 (peak ' begin'), 'the sting of the rejection will fade' 0.337 (peak ' will'), 'the neighbours became friends' 0.247, 'the jargon starts to make sense' 0.238, 'Day by day the swelling began to go down' 0.142 (peak '.'); 'will begin at eight sharp' 0.006, 'started the car' 0.049, 'began with a reading' 0.009, stative 0.006. Card peaks ' will' x4, ' begin' x3, ' start' x3, ' began' x2, 'As time', 时间一长, 渐渐; the + pole's output suppresses gradually/eventually/slowly/soon/increasingly, so this pole predicts them."
+}

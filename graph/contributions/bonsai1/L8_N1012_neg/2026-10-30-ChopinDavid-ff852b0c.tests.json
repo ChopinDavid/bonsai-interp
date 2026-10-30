@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ff852b0c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N1012-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N1012",
+   "pole": "-",
+   "label": "An object pronoun clitic attached to a verb (Arabic -ها/-ه on a relative-clause verb, Russian его/её after a verb), as opposed to the same pronoun on a noun or preposition",
+   "fire": [
+    "المدرسة التي بناها الأهالي قبل عشرين عاماً ما زالت تعمل.",
+    "الخطة التي وضعتها الحكومة لم تنجح في خفض الأسعار.",
+    "الأغنية التي غناها المطرب في الحفل انتشرت بسرعة.",
+    "الأرض التي زرعها الفلاح أعطت محصولاً جيداً هذا العام.",
+    "Девочка нашла котёнка и принесла его домой.",
+    "Он написал письмо и отправил его на следующий день.",
+    "النصيحة التي قدمها الطبيب ساعدت المريض كثيراً.",
+    "Мы купили лампу и поставили её на стол."
+   ],
+   "quiet": [
+    "المدرسة التي في القرية ما زالت تعمل منذ عشرين عاماً.",
+    "خطة الحكومة وأهدافها لم تنجح في خفض الأسعار.",
+    "صوت المطربة وأغنيتها انتشرا بسرعة في الحفل.",
+    "الفلاح وأرضه أعطيا محصولاً جيداً هذا العام.",
+    "Девочка увидела котёнка, его мама была рядом.",
+    "Он написал письмо, и его ответ пришёл на следующий день.",
+    "تحدث الطبيب عنها مع المريض كثيراً.",
+    "Мы купили лампу, и её свет падал на стол."
+   ]
+  }
+ ],
+ "predictions": "Arabic relative clauses with a verb + -ها and Russian verb + его/её reach 0.1-0.3 on the pronoun token; the test may fail on strength since only one probe item passed 0.29. Possessive -ها/-ه on nouns, -ها on prepositions and possessive его/её before a noun stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "object clitic on a verb (Arabic -ها, Russian его)",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'التي طرحها الكاتب' 0.292 (peak 'ها'), 'التي أرسلتها الوزارة' 0.281 (peak 'تها'), 'понёс её к машине' 0.250 (peak ' её'), 'التي كتبها الشاعر' 0.109; possessive 'بيتها' 0.045, 'التنصل منها' 0.034, 'أختها' 0.043, no-clitic twin 0.011, English floor 0.047. Card peaks 'ها' x11, 'ه' x4, ' его', '친', 'ли' with max 15 and 0.21% density; every Arabic top example is التي + verb + ها with the subject following. Korean and Russian verb-ending peaks are not tested."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-90e8dcde",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N4638+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N4638",
+   "pole": "+",
+   "label": "Unclear: best guess is a Python index or type token (the closing bracket of an index expression, a str annotation, an int in a docstring Args block)",
+   "fire": [
+    "    if failed:\n        raise RuntimeError(f\"Could not fetch {failed[0]} ({len(failed)} of {len(urls)})\")",
+    "    Args:\n        pos (int): index of the track returned by :class:`Playlist`",
+    "    filenames : str\n        Path of the input parameter file.",
+    "parser.add_argument('--kernel', type=str, help='Kernel sizes to generate')",
+    "    for i, (xb, yb) in enumerate(zip(*np.nonzero(M))):\n        x = xs[xb]\n        y = ys[yb]",
+    "    SUPPORTED_TYPES = (1, 4, 7)\n    # state, kind, size",
+    "        payload = {\n            'items': self.rows[row_]\n        }",
+    "Anna, in the third book of the series, is coming to terms with her loss."
+   ],
+   "quiet": [
+    "    if failed:\n        print('Some downloads did not complete')",
+    "    Args:\n        verbose: whether to print progress",
+    "    Returns the parsed configuration as a dictionary.",
+    "parser.add_argument('--verbose', action='store_true', help='Print progress')",
+    "    for xb, yb in pairs:\n        total += xb * yb",
+    "    MAX_RETRIES = 5\n    # give up after this many attempts",
+    "        payload = {\n            'count': len(self.rows)\n        }",
+    "Anna moved to the coast after the third book was published."
+   ]
+  }
+ ],
+ "predictions": "Probably fails: every probe sentence modelled on the card stayed at 0.02-0.04. If anything fires it will be the f-string index ']}' or the docstring Args item, under 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear code index/type token",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: f-string '{keys[0]}' 0.040 (peak ']}'), Args index docstring 0.028, type=str 0.018, names[idx] 0.018, 'path: str' 0.021, prose 'is Lisbon, which is' 0.027, 'is struggling' 0.019, museum floor 0.023. Card peaks ']\\n' x4, ' is' x2, ']}', ' listing', ' str', '=str' with max 23.6 and a very sparse 0.074% density, mixing Python code and a few prose copulas; nothing in the probe reproduced it, so the best-guess test is registered mainly to record the negative."
+}

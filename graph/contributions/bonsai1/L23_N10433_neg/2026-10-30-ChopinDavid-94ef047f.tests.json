@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-94ef047f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N10433-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N10433",
+   "pole": "-",
+   "label": "A degree demonstrative (so, such a, as ... as, be that X who) intensifying an evaluative judgment in a rhetorical or exasperated sentence",
+   "fire": [
+    "I cannot understand how a hospital could treat its staff so badly.",
+    "Nobody expected the council to approve such a wasteful scheme.",
+    "Few politicians change their minds as often as he does.",
+    "Nobody wants to be that neighbour who calls the police over a barbecue.",
+    "How could a bank lose so much money without anyone noticing?",
+    "It baffles me that people queue for hours for such a mediocre burger.",
+    "I have rarely watched a team play as carelessly as they did tonight.",
+    "Do you really want to be that colleague who forwards every chain email?"
+   ],
+   "quiet": [
+    "I cannot understand the hospital's policy, so I asked the staff about it.",
+    "The council approved schemes such as the new bypass and the car park.",
+    "Few politicians have worked as volunteers before entering office.",
+    "Nobody told the neighbour that the police had been called over a barbecue.",
+    "The bank lost money, so the regulator stepped in.",
+    "People queue for hours for burgers such as the ones sold at the stand.",
+    "I watched the team play as a scout for the national side.",
+    "Do you know the colleague who forwards every chain email?"
+   ]
+  }
+ ],
+ "predictions": "Exasperated or rhetorical sentences with 'so + adverb', 'such a + adjective', 'as often/carelessly as' or 'be that person who' reach 0.25-0.45. The same words as conjunction ('so I asked'), 'such as', preposition 'as' or complementizer 'that' stay under 0.05. Post-verbal 'that quickly' did not fire in the probe and is left out.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "degree so/such/as/that in an evaluation",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'waste money so openly' 0.408 (peak ' so'), 'be that person who complains' 0.371 (peak ' that'), 'shouts as often as he does' 0.352 (peak ' he'), 'in such a cramped flat' 0.255 (peak ' such'); 'rejected the plan that quickly' 0.068; 'so I cannot describe' 0.024, 'such as a gym' 0.032, 'as a way of' 0.020, 'think that the manager' 0.022, oven floor 0.027. Card peaks ',' x5, ' such' x4, ' so' x2, ' as' x2, ' that' x2 in opinionated prose; the + pole's output suppresses quite/very/much/many/significantly, so this pole promotes degree words."
+}

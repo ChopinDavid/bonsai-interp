@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c7978ef4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N5791+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N5791",
+   "pole": "+",
+   "label": "' well' as an epistemic hedge after a modal (might well, may well, could well), as opposed to manner 'well'",
+   "fire": [
+    "Such a modest reform might well prove more durable than a sweeping one.",
+    "The rumour may well turn out to be true.",
+    "A warm autumn could well delay the first frost by a month.",
+    "That quiet corner might well become your favourite room.",
+    "The council may well reject the plan again.",
+    "His silence might well have been exhaustion rather than anger.",
+    "Rising costs may well force the bakery to close.",
+    "The old bridge could well outlast the new one."
+   ],
+   "quiet": [
+    "Such a modest reform worked well in the neighbouring county.",
+    "The rumour may turn out to be true.",
+    "A warm autumn suits the vines well.",
+    "That quiet corner might become your favourite room.",
+    "The council rejected the plan as well.",
+    "His silence might have been exhaustion rather than anger.",
+    "The bakery is doing well despite rising costs.",
+    "The old bridge could outlast the new one."
+   ]
+  }
+ ],
+ "predictions": "Direction only: 'might/may/could well' reaches 0.05-0.2 at ' well' while manner 'well' and the same modals without 'well' stay under 0.03. The unit is early-layer and gate-closed for 89% of its activity, so the 0.3 line will probably not be crossed and the test fails on strength.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "modal + well (might well)",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'might well be' 0.147 (peak ' well'), 'might well become' 0.100, 'could well take' 0.076 (peak ' could'), 'may well fall' 0.049 (peak 'Prices'); 'runs well' 0.028, 'did very well' 0.012, 'might be' 0.002, 'may fall' 0.012, discourse 'Well,' -0.002. Card: ' well' x8 of the top 32 peaks, all after might/may, with max 5.19 and 0.002% density; the other peaks (' Alleg', ' Ski', 'can') are untested here."
+}

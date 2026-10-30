@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ec715e6d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N9369-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N9369",
+   "pole": "-",
+   "label": "Soviet or Russian-state institutional context, at the slot right before an institution or place name is given (called the Cheka, Sukhoi Design Bureau, District Administrative Center, the Volga city of Gorky)",
+   "fire": [
+    "Stalin's purges were carried out by the secret police known as the NKVD.",
+    "The T-34 was designed at the Kharkov Locomotive Factory by Koshkin's team.",
+    "The village lies forty kilometres from the District Administrative Center of Daugavpils.",
+    "The rocket engines were built by the Kuznetsov Design Bureau in Kuibyshev.",
+    "The factory in the Ural city of Sverdlovsk produced tanks throughout the war.",
+    "Soviet dissidents were questioned at the KGB headquarters in the Lubyanka.",
+    "The MiG-21 was produced at the Gorky Aviation Plant for twenty years.",
+    "In 1929 the Politburo ordered the collectivisation of farms across the Ukraine."
+   ],
+   "quiet": [
+    "Hoover's investigations were carried out by the federal agents known as the FBI.",
+    "The Sherman was designed at the Detroit Arsenal by Chrysler's team.",
+    "The village lies forty kilometres from the county town of Shrewsbury.",
+    "The rocket engines were built by the Rocketdyne division in Canoga Park.",
+    "The factory in the Ohio city of Dayton produced engines throughout the war.",
+    "Suspects were questioned at the Scotland Yard headquarters in Westminster.",
+    "The Spitfire was produced at the Castle Bromwich factory for five years.",
+    "In 1933 the Cabinet ordered the consolidation of farms across the Midlands."
+   ]
+  }
+ ],
+ "predictions": "Sentences naming Soviet security organs, design bureaus, plants and administrative centres reach 0.25-0.8, peaking on the word before the name. The same frames with American, British or other non-Soviet institutions stay at 0.1-0.2 (they are not silent: the frame alone carries some activation).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Soviet institution about to be named",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'police force called the Cheka' 0.795 (peak ' the'), 'Sukhoi Design Bureau' 0.529 (peak ' Design'), 'Volga city of Gorky' 0.422 (peak 'ork'), 'District Administrative Center of Rokiskis' 0.351, 'local Evenki hunters' 0.267; controls 'agency called the CIA' 0.136, 'Lockheed Skunk Works design team' 0.166, 'county seat of Burlington' 0.183, Russian NKVD sentence only 0.181, bakery 0.010. Card: top examples are Cheka, Soviet tank design team, Mikoyan-Gurevich Design Bureau, Stalinist execution lists, Lviv SSU, with max 226 at layer 32. Near misses keep the frame and swap the state."
+}

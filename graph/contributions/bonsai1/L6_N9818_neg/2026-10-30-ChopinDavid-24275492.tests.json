@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-24275492",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N9818-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T20:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N9818",
+   "pole": "-",
+   "label": "'bridge' or 'port' as the second element of a compound place name or term (land bridge, Stock|bridge, South|port), not the same word standing alone",
+   "fire": [
+    "Mammoths crossed the land bridge from Siberia into Alaska.",
+    "The regiment was raised in Tonbridge in the spring of 1915.",
+    "Her family has run a chandlery in Stockport for three generations.",
+    "The ferry docks at Freeport twice a day in summer.",
+    "A rope footbridge spans the gorge below the village.",
+    "The brewery moved to Woodbridge after the war.",
+    "Trains from Westport to Dublin run every two hours.",
+    "Shoppers crowd Knightsbridge in the weeks before Christmas."
+   ],
+   "quiet": [
+    "Mammoths crossed the bridge of ice from Siberia into Alaska.",
+    "The regiment was raised in Kent in the spring of 1915.",
+    "Her family has run a chandlery by the port for three generations.",
+    "The ferry docks at the port twice a day in summer.",
+    "A rope bridge spans the gorge below the village.",
+    "The brewery moved to the town beside the bridge after the war.",
+    "Trains from the port to Dublin run every two hours.",
+    "Shoppers crowd the bridge in the weeks before Christmas."
+   ]
+  }
+ ],
+ "predictions": "Compounds whose second piece is bridge or port (land bridge, Tonbridge, footbridge, Freeport, Westport) reach 0.4-0.9 on that piece. The standalone nouns 'the bridge', 'the port' in the same sentences stay under 0.03. '-proof' did not fire in the probe (bulletproof 0.007) and is left out of the label.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "-bridge/-port compound second element",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 'land bridge' 0.906 (peak ' bridge'), 'Southport' 0.546 (peak 'port'), 'Stockbridge' 0.460 (peak 'bridge'); 'bulletproof' 0.007 (peak ' bullet'), 'crossed the bridge' 0.012, 'the port' -0.000, 'proof of purchase' 0.000, 'The land was' 0.013. Card peaks 'less' x5, ' bridge' x4, 'bridge' x4, 'Proof' x2, 'port' x2 with max 9.75 and 0.044% density, top examples land bridge, Bluebridge, London Bridge, Southbridge, Stockbridge. 'less' as a compound tail is untested. All test compounds were checked to split as X|bridge or X|port."
+}
