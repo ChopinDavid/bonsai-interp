@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-5972c6e9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N4666+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T14:34:12+00:00",
+ "recipe": {
+  "toolchain_commit": "704c1939",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N4666_pos/2026-10-30-ChopinDavid-5972c6e9.tests.json"
+ },
+ "label": "the closing parenthesis after a year inside a DOI-style identifier (10.1016/0032-0633(94)90028-0, 10.1175/1520-0493(1984)112); DOIs without the bracketed year and years in brackets in prose are silent. Secondary trigger: ' hair' in 'hair fall'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N4666_pos/2026-10-30-ChopinDavid-5972c6e9.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.773,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.728,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.731,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.73,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.639,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.566,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.632,
+     "peak": ")"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.759,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.046,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.062,
+     "peak": " Mater"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.051,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.037,
+     "peak": "1"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.078,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.051,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.037,
+     "peak": " Jones"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.077,
+     "peak": " Rossi"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.729,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "704c1939",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "DOI '(yy)' closing bracket",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: '(1984)' in a 10.1175 DOI 0.716, '(94)' and '(95)' in 10.1016 DOIs 0.802 and 0.702, all peaking at ')'. The same references with dotted modern DOIs 0.059-0.062; 'Smith (1984)' in prose 0.049; the prime-number list 0.289; 'hair fall' 0.581 (a second, unrelated trigger, noted but not tested); floor 0.059. The gate-closed regime dominates (77%).",
+ "selection": "random draw"
+}

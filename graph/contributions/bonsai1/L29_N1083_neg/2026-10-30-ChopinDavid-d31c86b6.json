@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-d31c86b6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N1083-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T14:33:42+00:00",
+ "recipe": {
+  "toolchain_commit": "704c1939",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N1083_neg/2026-10-30-ChopinDavid-d31c86b6.tests.json"
+ },
+ "label": "predicts an upcoming fight or quarrel noun: the article after 'the two X got into a ▁' or 'had a ▁' between two parties, and the first piece of the conflict noun itself (quar-, falling (out), раз-ногласий); fires on 'got into a' even when a taxi follows",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N1083_neg/2026-10-30-ChopinDavid-d31c86b6.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.88,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.684,
+     "peak": " bitter"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.858,
+     "peak": " screaming"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.541,
+     "peak": " falling"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.012,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.797,
+     "peak": " furious"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.079,
+     "peak": "н"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.839,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.202,
+     "peak": " fell"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.061,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": "овор"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.029,
+     "peak": " until"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.818,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "704c1939",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "upcoming-fight slot",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'the two players got into a fist fight' 0.908 at ' a' and 'got into a taxi' also 0.908 at ' a' (a predictor, blind to the noun); 'got into a heated argument' 0.795; 'had a quarrel' 0.623 at ' quar'; 'falling outs' 0.578; разногласий 0.525 at ' раз'. 'had a barbecue' 0.353, 'broke up after years of touring' 0.218, library floor 0.016. Near misses therefore avoid 'got into a' and 'had a' after two parties rather than only swapping the noun. The + pole suppresses 'fight', 'quarrel', 'argument'.",
+ "selection": "random draw"
+}

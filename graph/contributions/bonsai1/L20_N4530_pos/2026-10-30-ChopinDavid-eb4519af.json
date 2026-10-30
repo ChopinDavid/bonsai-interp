@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-eb4519af",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N4530+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T14:32:43+00:00",
+ "recipe": {
+  "toolchain_commit": "704c1939",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N4530_pos/2026-10-30-ChopinDavid-eb4519af.tests.json"
+ },
+ "label": "inconceivability of removal: imagining or conceiving of something without a part of it ('hard to imagine X without Y', 'can't conceive of', 'X without Y seems incomplete', 'what if you took Y out of X'); the plain, possible sense of imagine/conceive stays quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N4530_pos/2026-10-30-ChopinDavid-eb4519af.tests.json",
+   "prereg_commit": "704c1939",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.289,
+     "peak": " picture"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.479,
+     "peak": ";"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.276,
+     "peak": " seems"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.257,
+     "peak": " without"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.286,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.352,
+     "peak": " without"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.292,
+     "peak": " imagine"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.293,
+     "peak": " conceive"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.034,
+     "peak": " picture"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " playing"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.058,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.031,
+     "peak": " picture"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " calendar"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " imagine"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.035,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.29,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "704c1939",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "can't-imagine-X-without-Y",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'hard to imagine Vienna without its coffee houses; the city would lose' 0.418 (peak ' would'); 'took the river out of the history of Cairo? There would be' 0.330; 'without the old argument ... seems incomplete' 0.236; 'cannot conceive of a childhood summer without' 0.232. 'I can conceive of several ways' 0.031 and plain declaratives 0.004-0.005. 'hard to imagine how many tourists' 0.301 at ' imagine': the negated-possibility verb alone carries some of it, so near misses use the positive sense (easy to picture, I can imagine). The - pole promotes 'cannot'/'impossible'/'unthinkable'.",
+ "selection": "random draw"
+}
