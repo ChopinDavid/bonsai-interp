@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-29-ChopinDavid-1175f2cf",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N12226-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:35:57+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N12226_neg/2026-10-29-ChopinDavid-1175f2cf.tests.json"
+ },
+ "label": "the piece 'ie' closing 'facie' in the legal phrase prima facie (prima fac|ie 0.47-0.71); 'borne in mind' (0.19) and 'Ever since' (0.15) from the card are weak, and legal prose without the phrase is at or below zero",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N12226_neg/2026-10-29-ChopinDavid-1175f2cf.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.484,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.753,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.557,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.695,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.591,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.657,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.535,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.709,
+     "peak": "ie"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.002,
+     "peak": " credible"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.122,
+     "peak": " delivery"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.021,
+     "peak": " injunction"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.164,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.054,
+     "peak": " bona"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.087,
+     "peak": " shortfall"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.073,
+     "peak": " lib"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.186,
+     "peak": " stolen"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.624,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "'ie' of prima facie",
+ "unit_kind": "token",
+ "confidence": 0.55,
+ "notes": "Card: max 0.39, density 0.100%, gate-closed leak 75%, peaks 'ie' x4 (all prima fac|ie), ' borne' x2, ' Ever' x2, ' sincere' x2. The + pole is dense (93.8%). Probe: 'prima facie established' 0.707, 'a prima facie case' 0.492 and 0.467; 'borne in mind' 0.190, 'Ever since' 0.152, 'a sincere rejection' 0.033, 'The court dismissed the case' -0.130, 'The pie was left' -0.079, filler -0.178. Tokenizer: ' facie' -> ' fac' + 'ie' in every item; 'bona fide' splits ' f' + 'ide' and is used as a near miss.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "facie"
+  ]
+ }
+}

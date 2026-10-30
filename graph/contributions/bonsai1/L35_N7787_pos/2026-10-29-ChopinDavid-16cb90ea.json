@@ -1,0 +1,166 @@
+{
+ "id": "2026-10-29-ChopinDavid-16cb90ea",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N7787+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:34:13+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N7787_pos/2026-10-29-ChopinDavid-16cb90ea.tests.json"
+ },
+ "label": "the lone piece ' p' opening a split word whose completion is predictable from the collocation (through their p|aces 0.67, including p|ears 0.16); the same piece in a less predictable word (p|umice 0.03, p|imento 0.00), longer p-initial pieces (pl|ums, pen|icillin) and whole-token p words are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N7787_pos/2026-10-29-ChopinDavid-16cb90ea.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.003,
+     "peak": " hunger"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.022,
+     "peak": " its"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.033,
+     "peak": " orange"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.032,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.048,
+     "peak": " white"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.044,
+     "peak": " rain"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.047,
+     "peak": "asant"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.254,
+     "peak": " p"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " hunger"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.033,
+     "peak": " orange"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.048,
+     "peak": " white"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": " rain"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " hunters"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.672,
+    "median_fire": 0.038,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "' p' piece of a predictable word",
+ "unit_kind": "token",
+ "confidence": 0.25,
+ "notes": "Card: max 141, density 0.099%, peaks '-p' x7, ' p' x4, ' P' x4, '_P' x3, '/p' x2: single-letter p pieces opening words that the context predicts (sulfadoxine-p|yrimethamine, including p|ears and hawthorn, through their p|aces, Paper mills / P|ulp mills, CELLP|ADDING, TILE_FORMAT_P|IL, сульфаниламиды и п|енициллин). Probe: 'through their paces' 0.674 on ' p', 'including pears and hawthorn' 0.158, 'with pumice' 0.027, 'chopped pimento' 0.003, 'Pulp mills' after 'Paper mills' 0.028, '-co PREDICTOR' 0.067; pl|ums 0.033, pen|icillin 0.015, whole-token pulp 0.011, apples 0.053. Only the idiom carried it, so the label is the predictable-completion reading and the confidence is low. Tokenizer: pangs, paws, pips, pita, pith, pelt, pheasant, pail all split as ' p' + rest.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "pangs",
+   "paws",
+   "pips",
+   "pita",
+   "pith",
+   "pelt",
+   "pheasant",
+   "pail",
+   "paces",
+   "pears"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-302b74a4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2614-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N2614",
+   "pole": "-",
+   "label": "a quantitative trend or projection about a population-level measure, fired on the verb or quantifier carrying it in either direction ('helping reduce traffic casualties' 0.69, 'helping increase road capacity' 0.57, 'doubles about every 18 months' 0.47, 'consequent low price' 0.44, '47% of all jobs' 0.36, 'from 93 per 1,000 in 1990' 0.32); the same numbers in a one-off narrative ('47 people attended' 0.01) are silent",
+   "fire": [
+    "Cheaper sensors will play a big part in helping cut energy waste in homes.",
+    "Analysts predict that by 2040, 60% of all cars sold will be electric.",
+    "Global literacy rose from 42% in 1960 to 86% in 2015.",
+    "The cost of solar panels has fallen by roughly 90% in a decade.",
+    "Battery capacity per dollar has doubled about every four years.",
+    "Better sanitation helped reduce cholera deaths across the region.",
+    "The disc sold well because of its large capacity and consequent low cost per megabyte.",
+    "Researchers estimate that 35% of office tasks could be automated."
+   ],
+   "quiet": [
+    "The sensor is mounted on the wall beside the meter in each home.",
+    "The dealer sold 60 electric cars at the fair last weekend.",
+    "The literacy class meets in room 42 on Tuesday evenings.",
+    "The solar panel on the shed is about a metre wide.",
+    "The battery in the torch lasted about four hours.",
+    "The sanitation crew parked the lorry behind the clinic.",
+    "The disc was scratched because it was left out of its case.",
+    "Researchers met in the office for the Tuesday seminar."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on reduce/cut/fell/doubled/low or the percentage; near misses (the same topics with a number but no trend) below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "quantitative trend claim",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 77.5, density 0.150%, peaks ' of' x4, ' reduce' x3, '9' x2, ' the', ' low': helping reduce traffic casualties, 47% of all U.S. jobs, 93 children of every 1,000 in 1990, doubles every 18 months, consequent low price. The + pole peaks on increased/increasing/greater. Probe: 'helping reduce traffic casualties' 0.686, 'helping increase road capacity' 0.568 (peak ' helping': the direction is not the trigger), 'doubles about every 18 months' 0.466, 'consequent low price' 0.440, '47% of all jobs' 0.361, 'fell from 93 per 1,000 in 1990' 0.322; 'cut lead times and lower tooling costs' 0.139, '47 people attended' 0.005, 'price was high because' 0.004, filler 0.008. The register of aggregate forecasting carries it; the business-jargon list did not."
+}

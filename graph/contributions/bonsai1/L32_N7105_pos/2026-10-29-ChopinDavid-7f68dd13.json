@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-7f68dd13",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N7105+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:35:10+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N7105_pos/2026-10-29-ChopinDavid-7f68dd13.tests.json"
+ },
+ "label": "a physical speed or velocity being quantified ('a speed of 150 meters per second' 0.65, 'speed must be 0.866c' 0.57, 'a velocity of 1,075 feet per second' 0.53, 'rotates at a speed of' 0.51), fired on speed/velocity, the 'of' or the digits; other quantified magnitudes (a mass of 150 grams 0.01, a temperature of 20 degrees 0.00) and figurative speed (0.01) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N7105_pos/2026-10-29-ChopinDavid-7f68dd13.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.496,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.184,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.275,
+     "peak": " velocity"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.262,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.637,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.033,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.207,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.36,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " burns"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " now"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " pass"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.068,
+     "peak": " electron"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " temperature"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " has"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.269,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "quantified speed or velocity",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 136, density 0.051%, peaks ' ', ' of' x3, ' speed' x2, ' (' x2, ' horizontal' x2 in kinematics (a speed of 150 meters per second, rotates at a speed of 1.0 revolution, speed must be 0.866c, the speed of light, a velocity of 1,075 feet per second). Logit effect promotes v, a, c. Probe: 'a speed of 150 meters per second' 0.652, '0.866c' 0.568, 'a velocity of 1,075 feet' 0.532, 'rotates at a speed of' 0.510, 'a = Δv/Δt' 0.272, 'invariance of the velocity of light' 0.249; 'a mass of 150 grams' 0.014, 'a temperature of 20 degrees' 0.004, 'reforms moved forward at a speed of their own' 0.008, filler 0.011. The quantified speed is the trigger; the bare formula and the unquantified 'velocity of light' sit under threshold.",
+ "selection": "random draw"
+}

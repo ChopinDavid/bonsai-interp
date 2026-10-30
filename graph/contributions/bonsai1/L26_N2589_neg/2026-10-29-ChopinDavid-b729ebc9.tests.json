@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-b729ebc9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2589-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N2589",
+   "pole": "-",
+   "label": "verbs of repairing or healing damage and the object slot after them ('help repair some of the damaged cells' 0.86, 'repair degenerative tissue' 0.80, 'repair the car' 0.65 on ' the', 'repairing the ravages' 0.64, 'healing a lame man' 0.41); 'rebuilding the ravaged towns' (0.35) and 'destroy the damaged cells' (0.29) half-fire on the damage word, the noun 'repair' (0.22) and other transitive verbs (wash the car 0.09) are silent",
+   "fire": [
+    "Volunteers spent the weekend repairing the storm-damaged roof.",
+    "The ointment helps heal small cuts within a few days.",
+    "A good cobbler can repair the sole without replacing it.",
+    "Surgeons hope the graft will repair the damaged nerve.",
+    "It took the council two years to repair the sea wall.",
+    "The body heals a broken bone by laying down new tissue.",
+    "Monks slowly repaired the manuscripts damaged by the flood.",
+    "Rest and fluids help the gut heal after an infection."
+   ],
+   "quiet": [
+    "Volunteers spent the weekend inspecting the roof before the storm.",
+    "The ointment cools small cuts within a few minutes.",
+    "A good cobbler can polish the sole without removing it.",
+    "Surgeons hope the scan will locate the nerve.",
+    "It took the council two years to approve the sea wall.",
+    "The body cools a fever by sweating through the skin.",
+    "Monks slowly copied the manuscripts brought by the abbot.",
+    "Rest and fluids help the body sleep after a long flight."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.9 on repair/repairing/heal/heals or the determiner after them; near misses (inspect, cool, polish, locate, approve, copy) below 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "repair/heal verb and its object",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 70, density 0.261%, peaks ' the' x4, 'ing' x2, ' a' x2, ' of' x2, ' repair' x2, every one on or right after repair/healing (Repair|ing and Maintaining, repair the car, repair some of the damaged cells, healing a lame man, the healing of tympanic membrane). Logit effect of the unit promotes recovery/repair/healing. Probe: 'help repair some of' 0.863, 'may one day repair degenerative' 0.804, 'repair the car' 0.645, 'repairing the ravages' 0.639, 'healing a lame man' 0.405; 'wash the car' 0.089, 'destroy some of the damaged cells' 0.286 (peak ' damaged'), 'rebuilding the ravaged towns' 0.352 (peak 'aged'), 'the repair would cost' 0.218, filler 0.061. Near misses therefore avoid damaged/ravaged/torn as well as the verb."
+}

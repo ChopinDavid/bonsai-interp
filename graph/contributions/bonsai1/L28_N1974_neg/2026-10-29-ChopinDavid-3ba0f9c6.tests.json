@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-3ba0f9c6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N1974-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N1974",
+   "pole": "-",
+   "label": "the separator between entries of a long flat enumeration (table cells, synonym lists, bibliography entries, one-name-per-line lists), which in the card needs many preceding entries: short probes reached only 0.29 on the newline of a five-company list, 0.19 on a synonym list and 0.12 on a wiki table row",
+   "fire": [
+    "Distributors in the region:\nAvon UK\nBetterware Ltd\nCabouchon\nDorling Kindersley Family Learning\nForever Living Products\nHerbalife UK\nKleeneze\nMary Kay Cosmetics\nNeways International\nOriflame UK\nUsborne Books at Home",
+    "assemble, gather, collect, amass, accumulate, heap up, pile up, stack up, round up, muster, marshal, bring together, draw together, rally, convene, congregate, cluster, flock",
+    "| Character | Weapon | Stage | Debut |\n| Astaroth | Axe | Ostrheinsburg | II |\n| Cassandra | Sword | Athens | II |\n| Cervantes | Twin swords | Pirate ship | I |\n| Ivy | Whip sword | Valentine mansion | I |\n| Kilik | Rod | Ling-Sheng Su | I |",
+    "References\n- Baddeley, A. (1986). Working memory. Oxford: Clarendon Press.\n- Cowan, N. (2001). The magical number 4. Behavioral and Brain Sciences, 24, 87-114.\n- Miller, G. (1956). The magical number seven. Psychological Review, 63, 81-97.\n- Shiffrin, R., & Schneider, W. (1977). Controlled and automatic processing. Psychological Review, 84, 127-190.\n- Siegler, R. (1996). Emerging minds. New York: Oxford University Press.",
+    "FIELDS = [\n    'SbmACTION',\n    'SbmAPPROVAL',\n    'SbmCATEGORIES',\n    'SbmCHECKS',\n    'SbmCOLLECTION',\n    'SbmCOOKIES',\n    'SbmDOCTYPE',\n    'SbmFIELD',\n    'SbmFIELDDESC',\n    'SbmFORMATEXTENSION',\n    'SbmFUNCTIONS',\n    'SbmGFILE',\n]",
+    "| Skill | Cost | Effect |\n| Quick Draw | 3 | Act first in the round |\n| Steady Hand | 2 | Ignore recoil |\n| Iron Will | 4 | Resist fear |\n| Keen Eye | 3 | Spot hidden items |\n| Fleet Foot | 2 | Extra movement |\n| Stone Skin | 5 | Reduce damage |",
+    "Attendees: Abbott, Adler, Ahmed, Baker, Banerjee, Bauer, Chen, Costa, Dube, Edwards, Fischer, Garcia, Haddad, Ito, Jensen, Kim, Kowalski, Lee, Moreau, Nakamura, Okafor, Petrov, Quinn, Rossi, Silva, Tanaka",
+    "Li, X. (2009). Tourist satisfaction in rural China. Tourism Management, 30: 12-19.\nLiu, Y. (2011). Festival image. Annals of Tourism Research, 38: 33-41.\nMa, J. (2014). Heritage branding in Yunnan. Journal of Heritage Tourism, 9: 55-67.\nWu, B. (2016). Destination loyalty. Tourism Review, 71: 88-99.\nXu, H. (2018). Rural homestays in Guangxi. Journal of Rural Studies, 60: 101-110."
+   ],
+   "quiet": [
+    "The distributors in the region met in Avon last spring, and most of them agreed that home selling had become harder since the recession.",
+    "We assembled the volunteers in the square, gathered the tools from the van and collected the rubbish along the river before lunch.",
+    "Astaroth carries an axe and first appeared in the second game, where his stage is a ruined castle on the Rhine.",
+    "Baddeley's 1986 book on working memory, published by Clarendon Press in Oxford, remains the standard reference for the field.",
+    "The loader reads each field name from the configuration file and skips any that are not present in the current schema.",
+    "The Quick Draw skill costs three points and lets the character act first in the round, which matters most in ambushes.",
+    "Abbott and Adler arrived early, Ahmed and Baker came together at nine, and the rest of the attendees drifted in before the opening talk.",
+    "Li's 2009 study of tourist satisfaction in rural China found that cleanliness mattered more than price to most visitors."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on a separator late in the list, higher the longer the list; prose near misses below 0.05; likely a partial result because the card's activations sit far deeper into tables than a test item can go",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "separator deep in a flat list",
+ "unit_kind": "contextual",
+ "confidence": 0.25,
+ "notes": "Card: max 344, density 0.018%, peaks ',' x7, '-' x5, '.\\n' x4, \" '\" x4, '|' x2 in wiki tables (|Quick Draw (3)||), a thesaurus list (put with, raise, rake up, rally), reference lists (56-66.\\nWang, Jun; IOS Press.\\n- Schneider), a company list (Pro-Ma Systems UK\\nTahitian Noni) and a quoted-constant list ('S|bm|PUBLICATIONCOMM'). Probe: company list newline 0.287, synonym list comma 0.186, table pipe 0.119, 'Sbm' constant 0.104, bibliography 0.002, dash list 0.002; prose with commas 0.001-0.003, prose newlines 0.002. Direction right, magnitude a tenth of the card, so the test uses longer lists and expects at best a partial hold."
+}

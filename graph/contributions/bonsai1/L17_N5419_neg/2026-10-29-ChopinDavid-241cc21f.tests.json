@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-241cc21f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N5419-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N5419",
+   "pole": "-",
+   "label": "a guess at a weak, mixed pole: one material layered under, around or behind another ('vinyl shapes under the advertising wrap' 0.49, 'braided shield and a plastic sleeve' 0.26, 'strip sits behind the piano's keys' 0.12); the card's other peaks (It, grid, trip, datasets) did not reproduce (0.08-0.14)",
+   "fire": [
+    "Builders lay a sheet of felt under the tiles to keep out damp.",
+    "A thin foam sleeve fits around the pipe before the insulation goes on.",
+    "The gold leaf is laid over a layer of red clay called bole.",
+    "Tuck the lining under the outer fabric before you stitch the hem.",
+    "The wires run beneath a braided copper shield inside the cable.",
+    "A rubber gasket sits between the lid and the rim of the jar.",
+    "The signs are printed on vinyl and laminated under a clear film.",
+    "Fit the membrane behind the plasterboard, not in front of it."
+   ],
+   "quiet": [
+    "Builders deliver the tiles on pallets the week before the roof goes on.",
+    "A plumber checks the pipe for leaks before the water goes on.",
+    "The gold leaf is sold in small books of twenty-five sheets.",
+    "Wash the lining fabric before you cut out the pattern.",
+    "The cable was too short to reach the socket by the window.",
+    "The jar holds about a litre and has a wide glass lid.",
+    "The signs are printed in blue and hung at every junction.",
+    "Order the plasterboard a week early, because deliveries are slow."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.5 on under/around/between/behind or the covering noun; near misses below 0.1; a guess likely to fail or hold only partially",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "layering one material under another",
+ "unit_kind": "contextual",
+ "confidence": 0.25,
+ "notes": "Card: max 8.19 (then 5.5 and below), density 0.099%, no repeated peak token: ' under' x2, ' It', ' grid', ' trip', ' datasets', ' shield', ' on', ' color', ' behind', ' at' (vinyl shapes under the advertising wrap, braided shield and conductive plastic sleeve, color strip sits behind the piano's keys, structures on the front and back). Probe: 'under the advertising wrap' 0.492, 'braided shield and a plastic sleeve' 0.257, 'room for group rides. It's' 0.136, 'structures on the front and back' 0.120, 'behind the piano's keys' 0.118, 'datasets' 0.096, 'power grid' 0.083, 'at night' 0.042, filler 0.039. The only clear hit is the layering frame, so that is the guess."
+}

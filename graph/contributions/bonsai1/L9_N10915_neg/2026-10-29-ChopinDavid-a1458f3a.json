@@ -1,0 +1,161 @@
+{
+ "id": "2026-10-29-ChopinDavid-a1458f3a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N10915-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:35:46+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N10915_neg/2026-10-29-ChopinDavid-a1458f3a.tests.json"
+ },
+ "label": "names of engineering and process technologies, strongest on CNC machining ('3D printer and CNC machine' 0.83, 'control (CNC) fabrication' 0.55) and 'emulsion' (0.62), weaker on convection (0.27), distillation (0.26), Engineering Design (0.26) and CAD (0.16); the same frames with everyday nouns are silent (0.03-0.06)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N10915_neg/2026-10-29-ChopinDavid-a1458f3a.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.494,
+     "peak": " router"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.596,
+     "peak": " CNC"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.526,
+     "peak": "ulsion"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.915,
+     "peak": " milling"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.431,
+     "peak": "ulsion"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.302,
+     "peak": " CNC"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.144,
+     "peak": " still"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.372,
+     "peak": "vection"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": " delivering"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.178,
+     "peak": " dried"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.044,
+     "peak": " sheet"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.036,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.116,
+     "peak": "aw"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.029,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.463,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "engineering process technologies (CNC, emulsion)",
+ "unit_kind": "topic",
+ "confidence": 0.35,
+ "notes": "Card: max 6.47, density 0.103%, peaks ' CNC' x2, ' motors' x2, ' CAD', 'ulsion', ' Design', 'NC', ' Circuit', ' dist' (3D Printer and CNC machine, a CAD system, an em|ulsion, Engineering Design Process, DC Circuit, steam dist|illation, con|vection). Probe: 'CNC machine controlling firmware' 0.831, 'an emulsion on a plastic base' 0.618, '(CNC) fabrication' 0.548, 'convection driven by' 0.267, 'steam distillation' 0.263, 'Engineering Design Process' 0.258, 'a CAD system' 0.162; 'history of the village' 0.034, 'film was shown' 0.052, 'printer and a box of paper' 0.059. A weak, mixed pole; the test leans on CNC and emulsion.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "CNC",
+   "emulsion",
+   "CAD",
+   "distillation",
+   "convection"
+  ]
+ }
+}

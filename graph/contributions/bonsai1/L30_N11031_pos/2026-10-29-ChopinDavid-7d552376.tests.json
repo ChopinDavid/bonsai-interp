@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-7d552376",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N11031+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N11031",
+   "pole": "+",
+   "label": "a guess at a code pole: the line-ending newline of a statement inside a deeply indented Python block, where the card's examples are followed by an indent-only blank line (song[0])\\n        \\n 197); the unit's logit effect promotes whitespace-only lines. Short probes reached only 0.38 on a nested def line and 0.10-0.22 on statement lines, so the pole wants more surrounding code than a test item gives",
+   "fire": [
+    "class Loader:\n    def run(self):\n        for fn in self.files:\n            with open(fn) as f:\n                rows = json.load(f)\n            for row in rows:\n                name = row['name']\n                self.events.append(add_event(name))\n                \n            self.count += len(rows)\n",
+    "    def fetch(self, url):\n        for attempt in range(3):\n            try:\n                response = self.session.get(url, timeout=10)\n                return response.text\n            except IOError:\n                data = ''\n                time.sleep(0.5)\n                \n        return data\n",
+    "        for cols in reader:\n            if not cols[0].strip():\n                continue\n            name = cols[0].replace('.', '')\n            name = add_event(name)\n            \n            source = add_source(name, bibcode=cols[3])\n            add_quantity(name, 'alias', cols[1], source)\n            \n",
+    "class Handler(ContentHandler):\n    def startPrefixMapping(self, prefix, uri):\n        if uri not in self.seen:\n            self.seen.add(uri)\n            self.trackNamespace(prefix, uri)\n        \n    def endPrefixMapping(self, prefix):\n        self.stack.pop()\n        \n",
+    "    async def build(self, query_parameters, header_parameters):\n        url = self._client.format_url(self.base_url)\n        if self.config.user_agent:\n            header_parameters['User-Agent'] = self.config.user_agent\n            request = self._client.get(url, query_parameters, header_parameters)\n            \n        return request\n",
+    "def main():\n    for city in cities:\n        for year in range(2000, 2020):\n            fn = '%s_%d.csv' % (city, year)\n            if os.path.exists(fn):\n                frames.extend(_get_blocks(fn)[1])\n                \n        overall = pd.concat(frames)\n        overall.to_csv(city + '.csv')\n",
+    "    def compare(self, resnum, song):\n        for form in self.forms:\n            if form.matches(song[0]):\n                self.log(\"comparing result %d to '%s'\" % (resnum, song[0]))\n                \n            # compare the two logical forms\n            score = form.score(song[1])\n            self.scores.append(score)\n",
+    "        try:\n            for page in range(1, 20):\n                response2 = session.get(base + str(page))\n                html2 = response2.text\n                with open('../sne-external/page%d.html' % page, 'w') as f:\n                    f.write(html2)\n                    \n        except KeyboardInterrupt:\n            pass\n"
+   ],
+   "quiet": [
+    "import os\nimport sys\nimport json\nrows = json.load(open(sys.argv[1]))\nnames = [row['name'] for row in rows]\nprint(len(names))\n",
+    "The loader opens each file in turn, reads the rows and appends an event for every name it finds.\nWhen it has finished a file it adds the number of rows to a running count.\nThe count is printed at the end.\n",
+    "def add(a, b):\n    return a + b\n\ndef sub(a, b):\n    return a - b\n",
+    "class Handler:\n    def start(self):\n        if self.ready:\n            for item in self.items:\n                while item.pending:\n",
+    "- open the file\n- read the rows\n- add an event for each name\n- count the rows\n- print the total\n",
+    "{\n  \"city\": \"Lyon\",\n  \"year\": 2012,\n  \"frames\": 14,\n  \"source\": \"census\"\n}\n",
+    "#!/bin/sh\nfor f in *.csv; do\n  wc -l \"$f\"\ndone\necho done\n",
+    "To fetch a page the client builds the URL, adds the user-agent header if one is configured, and sends the request. The response text is written to a file named after the page number."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.5 on ')\\n' or '\\n' ending a nested statement, higher where an indent-only line follows; near misses (top-level code, shallow code, prose, data files) below 0.05; likely to fail on magnitude",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "statement newline in deeply nested code",
+ "unit_kind": "contextual",
+ "confidence": 0.2,
+ "notes": "Card: max 197, density 0.056%, peaks ')\\n' x11, '\\n' x3, '])\\n' x2, '()\\n' x2, '))\\n' x2, all closing statements 8-20 spaces deep in Python, usually followed by a whitespace-only line (song[0])\\n        \\n, add_event(sn)\\n    \\n, trackNamespace(prefix, uri)\\n        \\n). The unit promotes '\\n        \\n' and '        \\n'. Probe: nested 'def startElement(...):' passage with an indent-only line 0.379 (peak on the def line), 'html2 = response2.text' passage 0.219, nested request/return 0.122, for/except passages 0.10, top-level code 0.002, prose 0.003, shallow 'x = 1' 0.001. Direction right, magnitude low; the test uses longer, deeper passages with indent-only lines after the statement."
+}

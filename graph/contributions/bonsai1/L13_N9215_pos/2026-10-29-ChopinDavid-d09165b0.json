@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-29-ChopinDavid-d09165b0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N9215+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T01:34:55+00:00",
+ "recipe": {
+  "toolchain_commit": "94c73a53",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L13_N9215_pos/2026-10-29-ChopinDavid-d09165b0.tests.json"
+ },
+ "label": "present-tense 'need'/'needs' as a main verb with a personal subject ('anyone who needs this kind of expertise' 0.40, 'whenever you need it' 0.40, 'people today need to' 0.38); 'need' with a quantity object (0.09), the noun 'need' (0.02) and past 'needed' (0.06) are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N9215_pos/2026-10-29-ChopinDavid-d09165b0.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.429,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.062,
+     "peak": " needs"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.097,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.045,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.085,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.117,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.079,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.143,
+     "peak": " need"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": " locksmith"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": "Anyone"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.055,
+     "peak": " days"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " what"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.074,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.066,
+     "peak": " needed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.058,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": "Most"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.091,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "94c73a53",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "'need' as a present-tense verb",
+ "unit_kind": "token",
+ "confidence": 0.45,
+ "notes": "Card: max 6.12, density 0.321%, gate-closed 63%, peaks ' need' x11, ' mean' x3, ' means' x2, ' try' x2, ' needs': who needs this kind of expertise, when you need it, Young people today need to, which means. Probe: 'anyone who needs this kind' 0.401, 'whenever you need it' 0.403, 'Young people today need to be able' 0.384; 'Whether you need five yards of sand' 0.089, 'is to try every possible key' 0.149, 'do not know whether' 0.085, 'a growing need for' 0.017, 'They needed more time' 0.055, filler 0.028. Modest magnitude (0.4) and one need item at the floor, so the confidence is middling; 'want' and 'require' sit in the near misses to test whether the meaning fires without the word.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "need",
+   "needs"
+  ]
+ }
+}

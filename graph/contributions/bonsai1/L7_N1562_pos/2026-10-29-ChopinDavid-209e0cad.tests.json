@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-209e0cad",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N1562+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T01:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N1562",
+   "pole": "+",
+   "label": "the word 'honest' as a predicate of candour about one's own speech ('let's be honest' 0.83, 'I'm gonna be honest' 0.69, 'very honest with my survey' 0.59), with 'specific' in 'be a little more specific' (0.70); attributive 'an honest man' half-fires (0.29) and 'to be frank' (0.06), 'be careful' (0.03) and other adjectives after 'be' are silent",
+   "fire": [
+    "Look, I'll be honest with you: the first draft was dull.",
+    "We should be honest about how little we actually tested.",
+    "If I'm being honest, the sequel is better than the original.",
+    "Can you be more specific about which error you saw?",
+    "Try to be honest when you fill in the questionnaire.",
+    "To be perfectly honest, I never finished the book.",
+    "Let me be specific: the leak is under the second sink.",
+    "She was brutally honest about the state of the kitchen."
+   ],
+   "quiet": [
+    "Look, I'll be brief with you: the first draft was dull.",
+    "We should be candid about how little we actually tested.",
+    "If I'm being fair, the sequel is better than the original.",
+    "Can you be more careful about which cable you unplug?",
+    "Try to be quick when you fill in the questionnaire.",
+    "To be perfectly frank, I never finished the book.",
+    "Let me be blunt: the leak is under the second sink.",
+    "She was thoroughly practical about the state of the kitchen."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on ' honest' or ' specific'; near misses (frank, candid, blunt, fair, careful, quick, brief after 'be') below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'honest' as a candour predicate",
+ "unit_kind": "token",
+ "confidence": 0.55,
+ "notes": "Card: max 5.88, density 0.110%, peaks ' honest' x10, ' specific' x3, ' frank' x2, ' context' x2: let's be honest, Let us be honest, be frank enough to admit, I can be a little more specific. Probe: 'let's be honest' 0.828, 'I'm gonna be honest here' 0.694, 'a little more specific' 0.695, 'very honest with my survey' 0.586, 'an honest man' 0.287; 'To be frank' 0.055 (peak elsewhere), 'Let's be careful' 0.026, the name Frank 0.031, filler 0.049. Frank did not reproduce the card, so the label is the word 'honest' (plus 'specific'); the near misses use frank, candid and blunt to test the meaning without the word.",
+ "trigger": {
+  "words": [
+   "honest",
+   "specific"
+  ]
+ }
+}
