@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-080b0e7f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N6616+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T22:36:48+00:00",
+ "recipe": {
+  "toolchain_commit": "a9c659db",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N6616_pos/2026-10-30-ChopinDavid-080b0e7f.tests.json"
+ },
+ "label": "second half of a parallel aphorism: a frame repeated with a contrasting filler (once is X, twice is Y; your X is our Y; those who can, do; those who can't, teach)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N6616_pos/2026-10-30-ChopinDavid-080b0e7f.tests.json",
+   "prereg_commit": "a9c659db",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.257,
+     "peak": " our"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.612,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.613,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.219,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.248,
+     "peak": " learn"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.035,
+     "peak": " perfect"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.35,
+     "peak": " cut"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.175,
+     "peak": " bury"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": " schedule"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " made"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.023,
+     "peak": " do"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.076,
+     "peak": " goes"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " team"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.045,
+     "peak": " plan"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.044,
+     "peak": " before"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.253,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "a9c659db",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "parallel aphorism",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Strongest when a copula frame 'X is Y' repeats (0.71-0.89); bare imperative pairs were 0.15-0.29. A proverb without a repeated frame ('slow and steady wins the race') scored 0.131. Fire items mix copula frames and imperative pairs to test the extent.",
+ "selection": "random draw"
+}
