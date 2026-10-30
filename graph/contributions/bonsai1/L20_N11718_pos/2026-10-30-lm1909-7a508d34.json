@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-7a508d34",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N11718+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:44:13+00:00",
+ "recipe": {
+  "toolchain_commit": "7672a35b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L20_N11718_pos/2026-10-30-lm1909-7a508d34.tests.json"
+ },
+ "label": "'wear' as a verb of things wearing out with use ('tires will wear unevenly', 'the pads wear down'); 'wear' meaning to have clothes on, and the same objects without wear, stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N11718_pos/2026-10-30-lm1909-7a508d34.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.092,
+     "peak": " wear"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.026,
+     "peak": " hinges"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.102,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.091,
+     "peak": " wear"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.131,
+     "peak": " wear"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.14,
+     "peak": " wear"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.406,
+     "peak": " thin"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.13,
+     "peak": " use"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.007,
+     "peak": " sque"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.003,
+     "peak": "s"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " hot"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " use"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.003,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " are"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " edges"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.116,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7672a35b",
+  "minutes": 2,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'wear' = wear out (tyres wear unevenly)",
+ "unit_kind": "lexical / semantic",
+ "confidence": 0.5,
+ "notes": "Card: ' in' x4, ' True' x2, ' fat' x2, ' wear', ' brakes' (Underinflated tires are under stress and will⟦ wear⟧ unevenly; applies the⟦ brakes⟧). Exploratory probe: 'tires will wear unevenly' 0.55; 'applies the brakes' -0.01; 'tires are a problem' 0.07. Near misses include 'wear' for clothes, to test the meaning.",
+ "selection": "random draw"
+}

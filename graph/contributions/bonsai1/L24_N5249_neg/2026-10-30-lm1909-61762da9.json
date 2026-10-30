@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-61762da9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N5249-",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:43:57+00:00",
+ "recipe": {
+  "toolchain_commit": "7672a35b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N5249_neg/2026-10-30-lm1909-61762da9.tests.json"
+ },
+ "label": "'Federal' in the name of an institution or state ('Federal Bureau of Investigation', 'Federal Land of Berlin', 'Federal Reserve', 'Federal Republic of Germany'); the same institutions named without it stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N5249_neg/2026-10-30-lm1909-61762da9.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.446,
+     "peak": " Federal"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.543,
+     "peak": " Federal"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.446,
+     "peak": " Federal"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.223,
+     "peak": " Federal"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.446,
+     "peak": " Federal"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.326,
+     "peak": " Federal"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.446,
+     "peak": " Federal"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.42,
+     "peak": " Federal"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.022,
+     "peak": " interest"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.0,
+     "peak": "He"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.032,
+     "peak": " founded"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.01,
+     "peak": " house"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " town"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.024,
+     "peak": " parliament"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.446,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7672a35b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "'Federal' in institution names",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Card: ' Federal' x15, ' /' x2, ' Republic' x2 (FBI -⟦ Federal⟧ Bureau of Investigation; erected by the⟦ Federal⟧ Land of Berlin); word hits ' Federal' cov 35%. Exploratory probe: 'Federal Bureau of Investigation' 0.45, 'Federal Land of Berlin' 0.59; without 'Federal' 0.03-0.04.",
+ "selection": "random draw"
+}

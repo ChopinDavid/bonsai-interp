@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-55e52a70",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N4805+",
+ "contributor": "lm1909",
+ "created": "2026-10-30T00:44:07+00:00",
+ "recipe": {
+  "toolchain_commit": "7672a35b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N4805_pos/2026-10-30-lm1909-55e52a70.tests.json"
+ },
+ "label": "Manhattan-style street addresses with a numbered street ('534 West 25th Street', 'East 86th Street'), firing on the street number after West/East; addresses without a numbered street stay quiet.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N4805_pos/2026-10-30-lm1909-55e52a70.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.558,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.568,
+     "peak": "rd"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.48,
+     "peak": "nd"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.485,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.665,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.288,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.562,
+     "peak": "th"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.638,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.15,
+     "peak": " Harbour"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.25,
+     "peak": " Market"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.187,
+     "peak": " Church"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.058,
+     "peak": " Elm"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.295,
+     "peak": " Queen"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.145,
+     "peak": " Mill"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.147,
+     "peak": " Castle"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.228,
+     "peak": " Park"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.56,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "atlas",
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7672a35b",
+  "minutes": 1,
+  "batch_size": 16,
+  "dtype": "float16"
+ },
+ "short": "numbered Manhattan street addresses",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: 'th' x6, ' ' x5, ' Square', 'rd' x3, ' Times' x2 (78 West⟦ ⟧55th Street; 2 West⟦ ⟧77th Street; 534 West⟦ ⟧25th Street). Exploratory probe: '534 West 25th Street' 0.57, 'Times Square' 0.30; 'a quiet street in Chelsea' 0.11.",
+ "selection": "random draw"
+}
