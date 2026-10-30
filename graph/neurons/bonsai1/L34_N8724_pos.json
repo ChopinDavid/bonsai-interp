@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N8724+",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 8724,
+ "pole": "+",
+ "label": "pre-verb slot of a predicted or caused event: 'will'/'may', causative 'causes it to'/'made to' or 'start to' right before the verb, not the infinitive of an intended or attempted action (wanted to, tried to)",
+ "short": "predicted-event pre-verb slot",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N8724_pos/2026-10-30-ChopinDavid-19890c5e.tests.json",
+   "prereg_commit": "a9c659db",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.242,
+     "peak": " will"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.381,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.263,
+     "peak": " will"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.247,
+     "peak": " may"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.045,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.284,
+     "peak": " trailer"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.24,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.364,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.094,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.1,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.05,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.112,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.053,
+     "peak": "He"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.133,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.07,
+     "peak": " to"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.255,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-19890c5e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-19890c5e",
+   "pre-verb slot of a predicted or caused event: 'will'/'may', causative 'causes it to'/'made to' or 'start to' right before the verb, not the infinitive of an intended or attempted action (wanted to, tried to)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-19890c5e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

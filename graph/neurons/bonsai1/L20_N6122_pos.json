@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L20/N6122+",
+ "model": "bonsai1",
+ "layer": 20,
+ "index": 6122,
+ "pole": "+",
+ "label": "a quantifier over a plurality (several, mostly, all) or the Python list-literal bracket ' [' that opens a set of items, as opposed to a single item or a collection noun",
+ "short": "quantifier / list opener",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L20_N6122_pos/2026-10-30-ChopinDavid-9e7ac7f5.tests.json",
+   "prereg_commit": "a9c659db",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.025,
+     "peak": " s"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.17,
+     "peak": " several"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.192,
+     "peak": " mostly"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.162,
+     "peak": " all"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.021,
+     "peak": " ['"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.047,
+     "peak": " government"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.035,
+     "peak": " described"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.034,
+     "peak": ".path"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": "label"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " storm"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " damage"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": "_tag"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " government"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " dark"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": " name"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.041,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-9e7ac7f5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-9e7ac7f5",
+   "a quantifier over a plurality (several, mostly, all) or the Python list-literal bracket ' [' that opens a set of items, as opposed to a single item or a collection noun",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-9e7ac7f5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
