@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N9939-",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 9939,
+ "pole": "-",
+ "label": "Low-confidence guess: 'a' or 'the' that opens a second, parallel phrase after a comma and 'and' ('a lot of work, and a lot of patient explaining'); the same sentences without the parallel repeat stay quiet.",
+ "short": "parallel 'and a/the' after a comma (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N9939_neg/2026-10-30-lm1909-aaee0658.tests.json",
+   "prereg_commit": "2a0da68b",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.268,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.03,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.009,
+     "peak": " love"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.106,
+     "peak": "They"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.262,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.048,
+     "peak": " seen"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.038,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.034,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.059,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.022,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.0,
+     "peak": " music"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.111,
+     "peak": "They"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.029,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.027,
+     "peak": " seen"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.049,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.68,
+    "median_fire": 0.043,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-aaee0658"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-aaee0658",
+   "Low-confidence guess: 'a' or 'the' that opens a second, parallel phrase after a comma and 'and' ('a lot of work, and a lot of patient explaining'); the same sentences without the parallel repeat stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-aaee0658"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

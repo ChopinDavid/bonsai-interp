@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N7087+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 7087,
+ "pole": "+",
+ "label": "Low-confidence guess: the last digit of a share or proportion close to the whole (95%, 0.95, 98 percent), firing on that digit; small shares and non-proportion numbers stay quiet.",
+ "short": "digit of a near-total share (95%) (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N7087_pos/2026-10-30-lm1909-6c93a926.tests.json",
+   "prereg_commit": "2a0da68b",
+   "author": "lm1909",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.346,
+     "peak": "5"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.123,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.029,
+     "peak": "About"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.035,
+     "peak": "%"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.138,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.165,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.028,
+     "peak": "Nearly"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.093,
+     "peak": "5"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.017,
+     "peak": "sts"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.024,
+     "peak": " paint"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.035,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.018,
+     "peak": " covers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": "Nearly"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.961,
+    "median_fire": 0.108,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-6c93a926"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-6c93a926",
+   "Low-confidence guess: the last digit of a share or proportion close to the whole (95%, 0.95, 98 percent), firing on that digit; small shares and non-proportion numbers stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-6c93a926"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

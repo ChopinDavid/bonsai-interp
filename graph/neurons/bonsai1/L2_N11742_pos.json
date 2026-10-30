@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N11742+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 11742,
+ "pole": "+",
+ "label": "Low-confidence guess: the word that completes a well-known fixed phrase or idiom ('the Wicked Witch of the West', 'move the needle', 'a needle in a haystack'); the same sentences with ordinary wording stay quiet.",
+ "short": "word completing a fixed idiom (guess)",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N11742_pos/2026-10-30-lm1909-8f2b239d.tests.json",
+   "prereg_commit": "2a0da68b",
+   "author": "lm1909",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.853,
+     "peak": " needle"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.54,
+     "peak": " needle"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.28,
+     "peak": " West"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.783,
+     "peak": " West"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.754,
+     "peak": " needle"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.092,
+     "peak": " West"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.531,
+     "peak": " needle"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.668,
+     "peak": " West"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.07,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.047,
+     "peak": " file"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.068,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.149,
+     "peak": " play"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.03,
+     "peak": " donation"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.041,
+     "peak": " cowboy"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.123,
+     "peak": " castle"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.604,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-8f2b239d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-8f2b239d",
+   "Low-confidence guess: the word that completes a well-known fixed phrase or idiom ('the Wicked Witch of the West', 'move the needle', 'a needle in a haystack'); the same sentences with ordinary wording stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-8f2b239d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
