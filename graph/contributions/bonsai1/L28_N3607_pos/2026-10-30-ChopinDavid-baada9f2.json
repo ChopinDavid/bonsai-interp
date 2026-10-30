@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-baada9f2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N3607+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T10:34:45+00:00",
+ "recipe": {
+  "toolchain_commit": "7610728b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N3607_pos/2026-10-30-ChopinDavid-baada9f2.tests.json"
+ },
+ "label": "the '=' , '+' or '(' of a numeric definition or formula: a constant assignment ('FLAG_READ = 0x01' 0.43), an arithmetic formula ('width = 2 + (sum of column widths)' 0.49), 'f(n) = 8', 'MAX = int(' 0.19, byte-size call arguments (read(1024) 0.25); assignments from strings (0.01) are silent and from names or calls are weak (0.09-0.21)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N3607_pos/2026-10-30-ChopinDavid-baada9f2.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.561,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.533,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.469,
+     "peak": " bytearray"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.483,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.242,
+     "peak": " int"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.534,
+     "peak": " +"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.284,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.321,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.095,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " rows"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.576,
+     "peak": " bytearray"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.148,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.263,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.236,
+     "peak": " ="
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.476,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7610728b",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "'=' / '+' of a numeric formula",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 54.5, density 0.14%, peaks ' =' x4, ' (' x4, ' +=' x4, ',' x3, ' +' x2, ' int' x2 in 'row length = 1 + (sum of column lengths)', 'sockrecv(sock, 1)', 'printf(', 'f(n) = 8', 'os.read(child_pty, 4096)', 'MAX_COUNT = int(', 'f.read(1024)', 'MPI_Send(buffer, count', 'undefined = 0x00', 'start + int(i / 8)'; the - pole promotes ' integer'. Probe: 'total width = 2 + (sum of column widths)' 0.485 (' ('), 'FLAG_READ = 0x01' 0.426 (' ='), f.read(1024) 0.248, MAX_RETRIES = int( 0.187, sock.recv(4096) 0.157; sock.recv(bufsize) 0.209 and f.read(chunk_size) 0.086 (a variable argument is not clearly lower, so the numeric-argument reading is dropped), name = user.get('name') 0.010, prose 0.008. The test is built on the numeric assignment / formula frame, which scored highest; near misses are the same assignments from strings, attributes and configuration values, and the same formulas in words.",
+ "selection": "random draw"
+}

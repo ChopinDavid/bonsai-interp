@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-8be6b1cc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N8369-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T10:33:18+00:00",
+ "recipe": {
+  "toolchain_commit": "7610728b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L21_N8369_neg/2026-10-30-ChopinDavid-8be6b1cc.tests.json"
+ },
+ "label": "an evidential or glossing marker that points to how a stated fact is shown: 'as indicated by' 0.56, 'as evidenced by' 0.34, a parenthetical gloss after a value '(written 0.05)' 0.27; the same facts joined with 'and' or stated without the marker are silent (0.02-0.05)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N8369_neg/2026-10-30-ChopinDavid-8be6b1cc.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.394,
+     "peak": " indicated"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.306,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.504,
+     "peak": " shown"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.386,
+     "peak": " indicated"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.215,
+     "peak": " evidenced"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.079,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.077,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.388,
+     "peak": " reflected"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.009,
+     "peak": " casing"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.048,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " he"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " group"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " percent"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " every"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.346,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7610728b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "as indicated / evidenced by",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 25.3, density 0.14%, peaks ' (' x6, ',' x4, ' so', ' is', ' then', ' indicated', ' evidenced' in docstrings ('shouldn't interact in any way, so the', 'A custom entity is\\n represented by', 'is idempotent then'), '(written 0.10)', '(status = 0)', 'as indicated by a block 422', 'as evidenced by overall scores'. Probe: 'as indicated by the flashing amber light' 0.562, 'as evidenced by their scores' 0.341, '(written 0.05)' 0.268; the docstring connectives ' so the' 0.064, ' then' 0.091, ' is\\n' 0.031 did not reproduce in short passages; 'and the temperature' 0.015, ', and interest' 0.047, umbrella 0.020. The pole reads the point where a text says how a claim is evidenced or written, so the test is built on that frame; the docstring-connective half is left out.",
+ "selection": "random draw"
+}

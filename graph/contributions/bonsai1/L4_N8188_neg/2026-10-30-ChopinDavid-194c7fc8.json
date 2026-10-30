@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-194c7fc8",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N8188-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T10:33:08+00:00",
+ "recipe": {
+  "toolchain_commit": "7610728b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N8188_neg/2026-10-30-ChopinDavid-194c7fc8.tests.json"
+ },
+ "label": "credential and identifier field names in code: api_key, host_key, 'Auth-Key', '?key=', username (the key/username piece in an authentication or identity slot, 0.14-0.24); dictionary 'key' (0.07), prose 'key' (0.04-0.10) and other code are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N8188_neg/2026-10-30-ChopinDavid-194c7fc8.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.913,
+     "peak": "-Key"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.144,
+     "peak": "?key"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.175,
+     "peak": "_key"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.141,
+     "peak": "username"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.272,
+     "peak": "_key"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.615,
+     "peak": " keys"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.517,
+     "peak": "_key"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.092,
+     "peak": "_key"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.058,
+     "peak": ".Session"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.091,
+     "peak": "article"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.111,
+     "peak": "s"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.047,
+     "peak": "self"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.061,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.065,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.046,
+     "peak": ")."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.042,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.224,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7610728b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "api_key / username fields in code",
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Card: max 3.16, density 1.0% (FLAG broad), gate-closed leak regime 99%: 'Auth-Key', 'confirmemail?key=', 'access_Key', 'Activation keys', 'server host key', 'login_key', 'ACCESS KEYS', 'switch_username', '삭제 키를', 'primary_key'. Probe: paramiko host_keys 0.244, 'X-Api-Key' 0.197, '?key=' 0.166, config username 0.147, STRIPE_SECRET_KEY 0.143 (peak 'PE', not KEY); dict 'for key, value' 0.071, 'delete key on your keyboard' 0.095, 'the key to a good risotto' 0.040, len(items) 0.065. Every probe stayed under 0.25, so the test is registered as a best guess for a broad unit.",
+ "selection": "random draw"
+}

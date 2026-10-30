@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ef54a654",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N6302-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T10:34:16+00:00",
+ "recipe": {
+  "toolchain_commit": "7610728b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N6302_neg/2026-10-30-ChopinDavid-ef54a654.tests.json"
+ },
+ "label": "emphatic auxiliary do/does/did before a lexical verb inside a conditional or concessive clause ('assuming they do decide to' 0.58); the same clauses without the emphatic auxiliary, and other conditionals (if/were/should, 0.03-0.10), are silent",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N6302_neg/2026-10-30-ChopinDavid-ef54a654.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.216,
+     "peak": " approve"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.406,
+     "peak": " decide"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.176,
+     "peak": " rain"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.084,
+     "peak": " start"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.067,
+     "peak": " take"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.292,
+     "peak": " find"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.103,
+     "peak": " where"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.025,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.155,
+     "peak": " approves"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.058,
+     "peak": " sell"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.154,
+     "peak": " rains"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.032,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " nobody"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.121,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.103,
+     "peak": " where"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.028,
+     "peak": " will"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.711,
+    "median_fire": 0.139,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7610728b",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "emphatic 'do' in a conditional",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 19.4, density 2.4% (FLAG broad), no single token: 'assuming they do decide to go underground', 'If you are using bread as the base', 'too long of a delay', 'co-author', '(7:14', 'were this to be', '53% of Americans who', 'mice fed', 'if that were possible', 'martial law'. Probe (conditional hypothesis): 'Assuming they do decide to expand' 0.582 (' decide'); 'If you are using a cast-iron pan as the base' 0.100, 'Were this to become' 0.097, 'If that were possible' 0.031, 'Should the river rise' 0.052, 'Of the 61% of residents who' 0.142; assertions 0.027-0.053. Only the emphatic-do item fired, so the test isolates that: each near miss is the same conditional with the plain verb.",
+ "selection": "random draw"
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-1dc0a9b9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N7974+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T10:33:41+00:00",
+ "recipe": {
+  "toolchain_commit": "7610728b",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L13_N7974_pos/2026-10-30-ChopinDavid-1dc0a9b9.tests.json"
+ },
+ "label": "hearsay framing of a story about a historical figure: 'the story goes that' 1.27, 'is said to have' 0.69, 'one famous anecdote tells how' 0.64, 'according to legend' 0.51, peaking inside the story that follows; documented statements about the same figures (dates, publications) are silent (0.07-0.11)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N7974_pos/2026-10-30-ChopinDavid-1dc0a9b9.tests.json",
+   "prereg_commit": "7610728b",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.302,
+     "peak": "apt"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.974,
+     "peak": " dropped"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.639,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.523,
+     "peak": " answered"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.391,
+     "peak": " while"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.659,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.729,
+     "peak": "ogen"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.681,
+     "peak": "pt"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.46,
+     "peak": " killed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.036,
+     "peak": "ileo"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.061,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": "ill"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.031,
+     "peak": "8"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.109,
+     "peak": " premiere"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.548,
+     "peak": "ogen"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.034,
+     "peak": "esar"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.67,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7610728b",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "legend has it / is said to have",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 32, density 0.064%, peaks ' to' x5, ' that' x5, ',' x4 in 'One legendary anecd|ote', 'was rumored to have been trained', 'Legends include an instance', 'The story goes that', 'A legend states that', 'according to legend,', 'a well-known story about Napoleon. One day', 'many legends about his life'. Probe: 'The story goes that Newton was sitting under an apple' 1.271, 'is said to have forbidden' 0.685, 'One famous anecdote tells how' 0.642, 'According to legend, the monastery was founded where a' 0.507; 'There are many tales about the wizard Merlin' 0.077 (a fictional figure, no story told), parish records 0.069, Principia 0.109, Third Symphony 0.089, bus timetable 0.004. Near misses are factual sentences about the same eight figures.",
+ "selection": "random draw"
+}
