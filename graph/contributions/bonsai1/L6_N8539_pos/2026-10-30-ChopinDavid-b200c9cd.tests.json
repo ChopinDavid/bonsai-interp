@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b200c9cd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N8539+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N8539",
+   "pole": "+",
+   "label": "' من' as the first piece of a longer Arabic word (من|ظمة 0.53, من|تصف 0.60, من|دوب 0.17), not the preposition من (0.09-0.19); whole-token من-words (منطقة, منزل, منذ) are quiet (0.03-0.23)",
+   "fire": [
+    "حصل الطالب على منحة دراسية لمدة عامين.",
+    "أعلنت الشركة عن منتج جديد في المعرض.",
+    "تولى منصب المدير العام في بداية الشهر.",
+    "وزعت الجمعية منشور التوعية في الأحياء.",
+    "اختارت اللجنة موعدا مناسبا للاجتماع.",
+    "تصدر البلاد منتجات زراعية إلى أوروبا.",
+    "تعمل عدة منظمات إنسانية في المخيم.",
+    "يتبع المعهد منهجا حديثا في تدريس اللغة."
+   ],
+   "quiet": [
+    "عاد الطالب من الجامعة بعد عامين من الدراسة.",
+    "استوردت الشركة الأجهزة من اليابان.",
+    "انتقل المدير من المكتب القديم إلى المبنى الجديد.",
+    "وزعت الجمعية الكتب من الصباح حتى المساء.",
+    "اختارت اللجنة عضوين من كل قسم.",
+    "تصدر البلاد القمح من الموانئ الشمالية.",
+    "تعمل الممرضة في المستشفى منذ خمس سنوات.",
+    "تقع المدرسة في منطقة هادئة قرب المدينة."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.6, peaking on ' من'; near misses 0.03-0.25; a weak early unit (max 3.9), so the margin may be narrow",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' من' as a word-initial piece (منظمة, منتصف), not the preposition",
+ "unit_kind": "token-in-context",
+ "confidence": 0.4,
+ "notes": "Card: max 3.9, density 0.53%, peak ' من' x9, every one the first piece of a longer word (منظمة, مناهج, منتصف, مناهضتها, منشئ), plus 'ное' (доменное), 'о' (hоw), ' than', ' be' (beinahe). Tokenizer: منظمة, مناهج, منتصف, مندوب, منحة, منتج, منصب, منشور, مناسب, منتجات, منهج split as ' من' + rest; من, منطقة, منزل, منذ, منها, منه are whole tokens. Probe: منظمة العفو 0.526, منتصف العام 0.598, مندوب الشركة 0.168, مناهج 0.080 (peak elsewhere); preposition من 0.089 and 0.185, المنطقة 0.226, منزل 0.025, English floor 0.009. Fire items use منحة, منتج, منصب, منشور, مناسبا, منتجات, منظمات, منهجا mid-sentence; near misses use the preposition من and the whole-token words منذ and منطقة in matching sentences (منزلا splits as من|ز|لا, so it was not used)."
+}

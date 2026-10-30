@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-063ed008",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N3890+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N3890",
+   "pole": "+",
+   "label": "unclear: the card's top examples are mid-name and mid-word tokens in 19th-century biographical prose (George W., Persian Gulf, Nancy Elizabeth, Lindsey Carson, Picton, Ontario, def|ibr|inated, benz|ene, diagnostic|ian), but only the chemistry item reproduced in probes (isolated benz|ene 0.84); the biographical name items scored 0.02-0.17; best guess is a 19th-century chemistry/medicine discovery narrative",
+   "fire": [
+    "In 1828 Wöhler prepared urea from ammonium cyanate in his laboratory at Berlin.",
+    "Two years later he isolated toluene from the balsam of Tolu.",
+    "He treated the fever with quinine, as the physicians of Edinburgh then advised.",
+    "In 1847 Simpson introduced chloroform for the relief of pain in childbirth.",
+    "The horse was bled, and the defibrinated blood was returned to its veins.",
+    "He prepared glycerine by saponifying olive oil with litharge.",
+    "The chemist obtained naphthalene from coal tar and described its crystals in 1821.",
+    "She was long remembered as a skilful diagnostician in the county hospital."
+   ],
+   "quiet": [
+    "In 1828 he opened a small school in the parish of St. Mary at Berlin.",
+    "Two years later he removed to Albany and took up the practice of law.",
+    "He served the parish faithfully, as the elders of Edinburgh then expected.",
+    "In 1847 Simpson was appointed to the chair of midwifery at the university.",
+    "The horse was sold at the fair, and the money was returned to the widow.",
+    "He built a mill on the creek and ground wheat for the neighbouring farms.",
+    "The surveyor marked the boundary of the township and described its hills in 1821.",
+    "She was long remembered as a kindly teacher in the county school."
+   ]
+  }
+ ],
+ "predictions": "most fire items under 0.3; if the guess is right the items naming an isolated or introduced substance (urea, toluene, chloroform, naphthalene) score highest and the same-register near misses stay under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "19th-century chemistry/medicine discovery narrative (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 8.9, density 0.90%, no dominant token; examples are 19th-century American biography and history (Mayor George W. Brown, son of Merritt C. and Nancy Elizabeth, Lindsey Carson, born in Picton, Ontario, 37 yrs. ago) plus old medical and chemical prose (defibrinated, diagnostician, Faraday isolated benzene). Probe: 'In 1825 he isolated benzene from illuminating gas' 0.838 (peak 'ene'); 'Mary Ann Todd Harrison' 0.174, 'Lindsey Kerr' 0.088, 'Picton, Ontario' 0.091, 'George W. Hale' 0.037, 'diagnostician' 0.022; modern name items 0.018-0.033, floor 0.053. The name hypothesis did not reproduce, so the test follows the one strong probe: fire items are 19th-century chemistry and medicine discovery sentences (prepared urea, isolated toluene, introduced chloroform, defibrinated blood, glycerine, naphthalene, diagnostician); near misses keep the dates, names and register and drop the science. Registered as unclear at low confidence."
+}

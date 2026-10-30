@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7539ef83",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N8277+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N8277",
+   "pole": "+",
+   "label": "clinical-research prose that treats patients as a data source: samples or records from N patients, data from this trial or cohort, patients enrolled in a registry, a research group pooling data (0.30-0.87, peaking on function tokens after the patient/trial noun); patient-care instructions (0.005-0.008) and non-medical research in the same frames (0.007-0.056) are silent",
+   "fire": [
+    "Researchers reviewed records from 1,240 patients treated at three cancer centres between 2005 and 2012.",
+    "Results from this cohort suggest that cardiologists should screen earlier for the condition.",
+    "Blood samples from 86 participants in the vaccine trial were stored for later analysis.",
+    "The Diabetes Prevention Research Group followed its participants for a further ten years.",
+    "Patients enrolled in the national stroke registry were older than those in earlier trials.",
+    "Findings from the melanoma study were presented at the oncology meeting in Chicago.",
+    "The investigators compared outcomes in patients who received the implant with matched controls.",
+    "Enrolment in the phase II trial of the antibody closed after 150 patients were recruited."
+   ],
+   "quiet": [
+    "The pharmacist reviewed the dosage with the patient and explained the side effects.",
+    "The cardiologist told him to cut down on salt and walk for half an hour a day.",
+    "Apply the ointment to the affected area twice daily until the rash clears.",
+    "The clinic is open on weekday mornings and offers flu shots without an appointment.",
+    "Researchers reviewed records from 1,240 bridges inspected between 2005 and 2012.",
+    "Results from this survey suggest that councils should repair potholes earlier.",
+    "Soil samples from 86 plots in the forest trial were stored for later analysis.",
+    "Findings from the galaxy study were presented at the astronomy meeting in Chicago."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9, peaking on ' the', ' from', ' in', ' with' inside the patient-data phrase; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "clinical-research prose: data/samples from patients, trials, cohorts, registries",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 135, density 0.33%, peaks ' the' (patients from the Glans-Look database), ' from' (data from this trial), 'oma' (Melanoma Task Force), 'ative' (Collaborative Research Group), ' prospective' (trials), 'enter' (multicenter trials), ' for' (demonstration projects in clinics), ' no' (medications in use), 'large' (randomized trials). Probe: 'tumour samples from 212 patients enrolled in the registry' 0.868, 'Data from this trial suggest that oncologists should offer the drug to patients with' 0.541, 'Collaborative Research Group pooled ... nine cohorts' 0.302, 'Three large randomized controlled trials' 0.150, 'no approved medications' 0.065; 'Take one tablet twice a day' 0.005, 'nurse checked his blood pressure' 0.008, 'experiments at the collider' 0.007, 'Data from this survey suggest that commuters' 0.056. So the pole needs patients as research subjects, not medicine or research alone. Fire items: records from 1,240 patients, results from this cohort, blood samples from 86 participants, Research Group, stroke registry, melanoma study, matched controls, phase II enrolment; near misses: four patient-care sentences and four twins with bridges, councils, forest plots and galaxies."
+}

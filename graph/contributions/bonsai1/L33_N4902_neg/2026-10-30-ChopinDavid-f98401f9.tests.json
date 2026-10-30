@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f98401f9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N4902-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N4902",
+   "pole": "-",
+   "label": "the first word of a fixed multi-word name or term, where the continuation is strongly predictable (giant -> sequoia 0.65, Athletic -> Hall of Fame 0.76, Rick -> Pitino 0.50, Equity Income -> fund 0.41, specialise in -> shorting 0.47); the same word used as a free modifier is silent (giant pot 0.045)",
+   "fire": [
+    "The reserve protects one of the last breeding colonies of giant pandas in the wild.",
+    "In 2011 he was elected to the Rock and Roll Hall of Fame alongside his bandmates.",
+    "The diver photographed a giant squid at a depth of six hundred metres.",
+    "Head coach Rick Carlisle rested his starters for the final quarter.",
+    "She runs the Equity Income portfolio at a mid-sized asset manager in Boston.",
+    "The garden centre stocks a dwarf Japanese maple that stays under two metres.",
+    "After the final whistle the Athletic Club supporters poured into the square in Bilbao.",
+    "Many short sellers specialise in shorting companies with weak balance sheets."
+   ],
+   "quiet": [
+    "The reserve protects a stretch of marsh where herons nest in the wild.",
+    "In 2011 he was elected to the town council alongside his neighbours.",
+    "The diver photographed a giant boulder at a depth of six hundred metres.",
+    "Our neighbour Rick rested in the garden for the whole afternoon.",
+    "Her income rose slightly after she moved to a mid-sized firm in Boston.",
+    "The garden centre stocks a small Japanese kettle that holds two litres.",
+    "After the final whistle the athletic young players poured into the square in Bilbao.",
+    "Many consultants specialise in advising companies with weak balance sheets."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8, peaking on the name-initial word (giant, Rock, Rick, Equity, dwarf, Athletic); near misses under 0.1, with the same word as an ordinary adjective or common noun",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first word of a fixed multi-word name (giant sequoia, Athletic Hall of Fame)",
+ "unit_kind": "contextual / prediction",
+ "confidence": 0.4,
+ "notes": "Card: max 136, density 0.33%, no dominant token: ' giant' (buttressed giant mahogany), ' California' (California nutmeg), 'warf' (Dwarf Umbrella Tree), ' Income' (Global Dividend Income portfolios), ' Athletic' (Ithaca College Athletic Hall of Fame), ' Rick' (coach Rick Neuheisel), ' ro' (rosters), ' a' ($335 million hedge vehicle): each peak is the word that opens a fixed name whose next word is predictable. Probe: giant sequoia 0.646, Boston College Athletic Hall of Fame 0.755, coach Rick Pitino 0.496, specialise in shorting 0.469 (peak ' in'), Global Equity Income fund 0.407, Florida nutmeg 0.212, dwarf umbrella tree 0.209; 'a giant pot' 0.045, floor 0.031. So the pole reads the word as the start of a known compound, not the word itself. Fire items open a fixed species name, hall of fame, coach's full name, fund name or club name mid-sentence; near misses keep the sentence and use the same word (giant, Rick, income, athletic, specialise in) outside any fixed name."
+}

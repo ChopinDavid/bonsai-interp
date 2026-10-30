@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d0dfc00f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N420+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N420",
+   "pole": "+",
+   "label": "statements of rights and values that an institution commits to or guarantees: equality of (0.34), human dignity (0.25), prohibited from discriminating (0.18), advocates for protections (0.15), WITHOUT ANY WARRANTY (0.24), ciudad inclusiva (0.15); the same institutional frames with mundane objectives are weaker (0.08-0.10), floor 0.04",
+   "fire": [
+    "The charter guarantees the freedom of religion to every citizen of the republic.",
+    "The company is committed to the fair treatment of every employee regardless of background.",
+    "Volunteers at the centre advocate for the rights of tenants facing eviction.",
+    "The code of conduct prohibits harassment of any kind in the workplace.",
+    "The software is provided without any warranty, express or implied.",
+    "Our policy protects the privacy of every visitor to the museum.",
+    "The union exists to defend the dignity of workers in the fields and packing houses.",
+    "The school promotes the inclusion of children with disabilities in every classroom."
+   ],
+   "quiet": [
+    "The charter sets the date of the annual meeting for every branch of the society.",
+    "The company is committed to opening two new stores in the region this year.",
+    "Volunteers at the centre plant trees along the river every spring.",
+    "The building code specifies the width of every corridor in the building.",
+    "The software is distributed as a single compressed archive, about ten megabytes.",
+    "Our policy sets the opening hours of every gallery in the museum.",
+    "The union meets on the first Tuesday of the month in the packing house canteen.",
+    "The school offers lessons in violin and piano in every year group."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.15-0.4, peaking on the preposition or object after the value word (of, for, with, dignity); near misses 0.04-0.12; weak unit, the margin may not reach the pass threshold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "rights-and-values commitments (equality, dignity, non-discrimination, warranty disclaimer)",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 6.4, density 0.67%, peaks ' of' (equality of the sexes), 'inating' (prohibited from discriminating), ' for' (advocate for), ' with' (bolster human dignity with), '保护' (为保护和改善生活环境, environmental protection law), 'iva' (ciudad inclusiva), ' WITHOUT' (WITHOUT ANY WARRANTY), ' que' (aceptas que). Probe: 'equality of women and men' 0.338, 'human dignity through our work' 0.251, 'WITHOUT ANY WARRANTY' 0.238, 'prohibited from discriminating' 0.183, 'advocates for stronger protections' 0.152, 'ciudad ... inclusiva' 0.147; 'committed to finishing the new library' 0.101, 'required to file quarterly tax returns' 0.083, beach floor 0.042. The separation is real but narrow, as the small max predicts. Fire items: charter guarantees freedom of religion, fair treatment, rights of tenants, prohibits harassment, provided without any warranty, protects the privacy, dignity of workers, inclusion of children; near misses keep each institutional frame and replace the value with a date, a store opening, tree planting, corridor widths, an archive format, opening hours, a meeting day and music lessons."
+}

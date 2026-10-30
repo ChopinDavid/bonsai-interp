@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f420a63a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N174+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N174",
+   "pole": "+",
+   "label": "the word 'example' with its complement: 'one last example before' (0.79, peak on the word after), 'another example of' (0.66); the card's 'expecting' and 'suppose' items did not reproduce (0.05-0.08) and the unit is broad (2.6% of tokens reach a tenth of max), so near misses with instance/case/reason in the same frames may fire weakly",
+   "fire": [
+    "Let me give one more example before we move on to the proof.",
+    "The cathedral is a fine example of early Gothic architecture.",
+    "Here is another example of the same mistake in the second chapter.",
+    "The clearest example of this pattern comes from the coastal villages.",
+    "She used the flood as an example of how quickly plans can change.",
+    "Consider a simple example before tackling the general case.",
+    "This is a textbook example of a conflict of interest.",
+    "We will work through two examples before the end of the lecture."
+   ],
+   "quiet": [
+    "Let me give one more reason before we move on to the proof.",
+    "The cathedral is a fine piece of early Gothic architecture.",
+    "Here is another instance of the same mistake in the second chapter.",
+    "The clearest sign of this pattern comes from the coastal villages.",
+    "She used the flood as a reminder of how quickly plans can change.",
+    "Consider a simple scenario before tackling the general case.",
+    "This is a textbook case of a conflict of interest.",
+    "We will work through two problems before the end of the lecture."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8, peaking on the token after 'example' (of, before); near misses 0.05-0.2, highest for 'instance of' and 'case of'",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'example' plus its complement (another example of, one more example before)",
+ "unit_kind": "token-in-context",
+ "confidence": 0.4,
+ "notes": "Card: max 6.1, density 2.6% (FLAG broad), peaks ' stopping' (one last example before stopping), ' of' (another example of), ' to' (amendments to pass), newline and code tokens, 'wasn't expecting', 'Suppose you were expecting'. Probe: 'one last example before stopping' 0.788, 'another example of what the author calls' 0.663, 'three proposed amendments managed to pass' 0.255, 'wasn't expecting anyone' 0.077, 'Suppose you were expecting a symphony' 0.054, 'one more loaf before the shop closes' 0.115, Brahms 0.110, kitchen 0.029. Only the 'example' items reproduced, so the test is the word with its complement against synonyms (reason, piece, instance, sign, reminder, scenario, case, problems) in identical frames: it decides whether the pole reads the word or the meaning."
+}
