@@ -1,0 +1,154 @@
+{
+ "id": "2026-10-30-lm1909-86af507f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N2959-",
+ "contributor": "lm1909",
+ "created": "2026-10-29T23:59:39+00:00",
+ "recipe": {
+  "toolchain_commit": "eda09fda",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L4_N2959_neg/2026-10-30-lm1909-86af507f.tests.json"
+ },
+ "label": "A multi-author list in a citation (surnames and initials separated by commas or semicolons), strongest on ', et al.' or '; et al.'; citations with a single author in the same style stay lower.",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N2959_neg/2026-10-30-lm1909-86af507f.tests.json",
+   "prereg_commit": "eda09fda",
+   "author": "lm1909",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.712,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.518,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.239,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.275,
+     "peak": " C"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.742,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.679,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.265,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.23,
+     "peak": " K"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.255,
+     "peak": " R"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.176,
+     "peak": " P"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.138,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.275,
+     "peak": " C"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.154,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.244,
+     "peak": " J"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.155,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.23,
+     "peak": " K"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.397,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test",
+   "second-round"
+  ],
+  "detected": [],
+  "toolchain_commit": "eda09fda",
+  "minutes": 1,
+  "batch_size": 3,
+  "dtype": "float16"
+ },
+ "short": "multi-author citation list (', et al.' strongest)",
+ "unit_kind": "contextual / format",
+ "confidence": 0.45,
+ "notes": "Round 2 for this pole (round 1, sweep 1: \"' et' of 'et al.' closing a punctuated author list\" failed on near misses: author lists closing 'and Grant, H.' 0.34, 'and colleagues' 0.44, 'and others' 0.38, while ', et al.' fired 0.33-1.04). Refinement probe: three-author lists without et al. 0.25-0.27; single author 0.07-0.19. New label: the multi-author list itself. Weak pole (corpus max 1.20).",
+ "selection": "picked"
+}
