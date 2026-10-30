@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-567fcfae",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N6814-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N6814",
+   "pole": "-",
+   "label": "the word that names how a term is used or understood, strongest under 'different' ('slightly different meanings' 0.44, 'used in a different way' 0.39 on ' way'); 'the same meaning' also fires (0.38), while 'different from' about an object (0.17) and term talk without usage or sense are quiet (0.01-0.10)",
+   "fire": [
+    "The word 'liberal' carries quite different meanings in Europe and in America.",
+    "Biologists use the term 'race' in a rather different way from the general public.",
+    "The two translations give the phrase slightly different senses.",
+    "In legal writing 'consideration' has a different meaning from its everyday one.",
+    "The same symbol has different referents in the two chapters, which confuses readers.",
+    "Economists and accountants use 'cost' in somewhat different ways.",
+    "The adjective takes on a different connotation when applied to people.",
+    "The verb is used in a slightly different sense in the earlier poems."
+   ],
+   "quiet": [
+    "The word 'liberal' was first recorded in English in the fourteenth century.",
+    "Biologists drove a different route to the field station this year.",
+    "The two translations were printed on slightly different paper.",
+    "In legal writing the clause appears near the end of the contract.",
+    "The same symbol appears in a different colour in the two chapters.",
+    "Economists and accountants sat in different rooms during the audit.",
+    "The adjective is spelled with a double consonant in older texts.",
+    "The verb appears four times in the earlier poems."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.5 on ' meanings', ' way', ' sense(s)', ' referents', ' connotation'; near misses below 0.15, with 'different colour/route' the likeliest leaks",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sense or usage of a term",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 16.0, density 0.42%, peaks ' different' x3, ' meanings', ' way', ' more', ' kind' in 'different meanings to everyone', 'used in a different way', 'slightly different referents', 'slightly different from Google's vision', 'more pervasive than', 'the APA style to be used'; the + pole suppresses ' versions', ' variants'. Probe: 'slightly different meanings in physics and in everyday speech' 0.438, 'used in a different way by lawyers' 0.393 (peak ' way'), 'the same meaning in physics' 0.378 (peak ' meaning'), 'not quite the same' 0.185, 'slightly different from the old one' 0.168, 'more pervasive than' 0.163, 'by lawyers and by economists alike' 0.097, same press 0.009, price 0.013. The pole tracks the sense-or-usage noun more than 'different' itself."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-2f017312",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N12141+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N12141",
+   "pole": "+",
+   "label": "a function word inside a statement that something is already over, obsolete or running out: 'a very dead technology by now' 0.75 (peak ' by'), 'the few that remain' 0.33, 'nothing we can do to stop the decline' 0.30; the same subjects described as growing or continuing are quiet (0.02-0.03)",
+   "fire": [
+    "The fax machine is a very dead piece of office kit by now, though the clinic still has one.",
+    "Most of the mills have closed, and the few that remain run on a single shift.",
+    "There is nothing the editors can do to stop the paper's decline.",
+    "The old coal plant can't keep up with the demand any more, and nobody expects it to.",
+    "Dial-up internet is pretty much gone by now outside a few rural valleys.",
+    "The record shops are closing fast, and the handful that are left cater to collectors.",
+    "There is nothing we can do about the falling enrolment except merge the schools.",
+    "The company has no interest in supporting the old console any more."
+   ],
+   "quiet": [
+    "The fax machine in the clinic is on the second floor by the reception desk.",
+    "Most of the mills are expanding, and the newest runs three shifts a day.",
+    "The editors can do a great deal to improve the paper's layout.",
+    "The new gas plant can keep up with the demand easily, and output is rising.",
+    "Fibre internet is spreading fast across the rural valleys.",
+    "The record shops are opening fast, and the newest cater to young collectors.",
+    "There is a great deal we can do about enrolment, starting with a new bus route.",
+    "The company has a strong interest in supporting the new console."
+   ]
+  }
+ ],
+ "predictions": "'by now' items 0.5-0.8, 'the few that remain' and 'nothing we can do' 0.3-0.4, 'any more' uncertain: 4-6 of 8; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "already over / running out",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 69.5, density 0.22%, peaks ' are'/' is'/' had'/' by'/' can'/' any' in 'density improvements are coming slower and slower', 'a very dead tool by now', 'population growth is no longer driven by', 'nothing we can do to stop it', 'the old one can't keep up', 'may be outdated', 'appears to have peaked', 'this game any more', 'in print right now'. The - pole peaks on ' no' ' longer' ' not' ' never'. Probe: 'Floppy drives are a very dead technology by now' 0.749, 'the few that remain are overbooked' 0.325 (peak ' that'), 'nothing we can do to stop the decline' 0.304, 'no longer able to keep up' 0.122, 'appears to have peaked' 0.049; growth versions 0.024-0.029, museum hours 0.004."
+}

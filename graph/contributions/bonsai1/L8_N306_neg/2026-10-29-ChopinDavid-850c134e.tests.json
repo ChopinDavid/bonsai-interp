@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-850c134e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N306-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N306",
+   "pole": "-",
+   "label": "the head noun that completes a compound name for an event, activity or object type ('Cinco de Mayo' 0.90, 'Easter Story|time' 0.75, 'reading hour' 0.71, 'National Monument' 0.57, 'trekking pole' 0.54, 'Yell Squad' 0.53, 'gun show' 0.41); the same nouns without a type-forming modifier and proper street names are quiet (0.03-0.06)",
+   "fire": [
+    "The school runs a chess club on Thursdays and a science fair every spring.",
+    "Volunteers set up the bake sale in the church hall before nine.",
+    "He bought a hiking pole and a water bottle at the outfitter.",
+    "The county hosts a craft show in the fairground each October.",
+    "Our library's toddler hour starts at ten with songs and a picture book.",
+    "The town's harvest festival draws visitors from three counties.",
+    "She trained with the drill team for two seasons before the state finals.",
+    "The museum's dinosaur exhibit reopens after a year of renovation."
+   ],
+   "quiet": [
+    "The school runs on a budget approved every spring.",
+    "Volunteers set up the tables in the hall before nine.",
+    "He bought a pole to prop up the sagging roof of the shed.",
+    "The county hosts visitors in the fairground each October.",
+    "Our library opens at ten and closes at six on weekdays.",
+    "The town draws visitors from three counties every autumn.",
+    "She trained for two seasons before the finals.",
+    "The museum reopens on Elm Street after a year of renovation."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the head noun; near misses below 0.15; a weak unit (max 4.2) so the margin is small",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "compound head of an event or type",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 4.2 (weak), density 0.23%, regimes 67/33, peaks ' Monument', ' hour', 'ka', ' Museum', 'time', ' Mayo', ' show', ' Squad', ' pole' in 'Easter Story|time', 'Cinco de Mayo', 'gun show loophole', 'Yell Squad', 'trekking pole', 'Dinosaur National Monument'. Probe: 'Cinco de Mayo' 0.898, 'Easter Storytime' 0.754, 'a reading hour' 0.706 (written as a control, it fired), 'Dinosaur National Monument' 0.568, 'trekking pole' 0.540, 'Yell Squad' 0.527, 'gun show loophole' 0.406; 'Main Street' 0.033, 'each afternoon' 0.055. The 'reading hour' leak shows the trigger is the compound head, not a proper name."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-002f2efb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N8126+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N8126",
+   "pole": "+",
+   "label": "dense / positional: 14.5% of tokens reach 0.1 of a max of 1.7 and the gate-closed regime dominates; the card's peaks (' civil' case, ' PhD', ' found', ' birds') are common nouns and verbs in expository prose, and the probe gave 'among birds' 0.36 with everything else 0.03-0.17, so no label is claimed",
+   "fire": [
+    "In a criminal case the prosecution must prove guilt beyond reasonable doubt.",
+    "She undertook a doctorate at Monash before moving into industry.",
+    "The disease is especially common among poultry kept in crowded sheds.",
+    "Lectures will be held in the main hall throughout the autumn term.",
+    "He found the keys by the gate where she had dropped them.",
+    "Wholesale prices for grain rose sharply in the spring.",
+    "The dictionary explains how the words combine in set phrases.",
+    "Their technique is improving all the time with practice."
+   ],
+   "quiet": [
+    "The cat slept on the warm step all afternoon.",
+    "    x = y * 2",
+    "Snow fell overnight and the roads were closed by dawn.",
+    "He tied the boat to the post and walked up the beach.",
+    "The soup needs more salt and a little pepper.",
+    "Birds sang in the hedge as the sun came up.",
+    "The bus was late again on Monday morning.",
+    "We painted the fence white last summer."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.4, near misses 0.0-0.2: the test is expected to fail, recorded to document the unit",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense / positional",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: max 1.73, density 14.5% (FLAG dense), regimes -x- echo 100% (FLAG gate-closed), peaks ' PhD' x2, ' Guard' x2, 'imientos' x2, ' civil', ' found', 'ic', ' birds', ' colonies', ' held', ' wholesale', ' Dictionary', ' improving'. Probe: 'spreads easily among birds' 0.357, 'across most of the county' 0.170, 'return x + 1' 0.146, 'In a civil case' 0.144, 'a PhD at Leeds' 0.129, dog 0.095, classes held 0.039, lake 0.025, train -0.027. The fire items copy the card's expository register; the near misses are plain narrative."
+}

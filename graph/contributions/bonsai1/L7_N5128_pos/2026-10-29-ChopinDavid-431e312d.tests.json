@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-431e312d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N5128+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N5128",
+   "pole": "+",
+   "label": "the first token of a network address, URL scheme or path inside a string literal in code ('http://1', 'file', '0.0.0.0', 'ssh.' 0.35-0.51); a plain-word literal is weaker ('board' 0.19), a URL in prose fires at 0.32, and code without string literals is quiet",
+   "fire": [
+    "    base_url = 'http://172.16.4.2/api/v1'\n    resp = requests.get(base_url)",
+    "DB_HOST = \"http://10.1.1.20:5432\"\nDB_NAME = \"inventory\"",
+    "    self.source = 'file:///opt/data/export.csv'",
+    "    server.bind(host='127.0.0.1', port=9000)",
+    "    conn = smtplib.SMTP('smtp.corp.example.net')",
+    "    REDIS_URL = 'redis://cache.internal:6379/0'",
+    "    ftp.connect('ftp.mirror.example.org', 21)",
+    "    endpoint = \"https://api.example.com/v2/users\"\n    headers = {}"
+   ],
+   "quiet": [
+    "    base_count = 0\n    resp = compute(base_count)",
+    "DB_PORT = 5432\nDB_POOL = 8",
+    "    self.source = 'manual'",
+    "    server.bind(port=9000)",
+    "    conn = smtplib.SMTP()\n    conn.ehlo()",
+    "    REDIS_TTL = 3600",
+    "    ftp.quit()\n    return True",
+    "    label = \"users\"\n    headers = {}"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on the first address token; near misses below 0.2 (plain-word literals the highest)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "address string literal in code",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 11.0, density 0.13%, peaks ':' in 'href=\"https:', '1' in 'http://127.0.0.1' and 'http://180.76', 'file' in 'file:///home', 'board' in self.board = 'board', '0' in host='0.0.0.0', 'ssh' in connect('ssh.example.com'), '(\"' in serialize.url(\"self._config. Probe: API_HOST = \"http://10.0.0.5:8080\" 0.509, host='0.0.0.0' 0.506, image_href = 'http://192.168.0.10' 0.436, connect('ssh.internal.example.org') 0.433, 'file:///var/lib' 0.348; prose URL 'go to http://192.168.0.10' 0.315, self.board = 'board' 0.194, os.path.join 0.095, counter loop 0.007."
+}

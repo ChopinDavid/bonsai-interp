@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-29-ChopinDavid-d397e2c8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N8636-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T04:19:57+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N8636",
+   "pole": "-",
+   "label": "inside the restated content of an authoritative provision or doctrine: what a treaty cedes ('to cede to Prussia the provinces' 0.43), what a constitution grants ('the power to make treaties' 0.27), what scripture or a theory holds ('his theory about the origin of species' 0.28, 'to love their neighbours' 0.27); the same documents and thinkers named without their content are quiet (0.02-0.04)",
+   "fire": [
+    "By the treaty of 1842, China ceded to Britain the island of Hong Kong in perpetuity.",
+    "Article I gives Congress the power to coin money and to regulate commerce among the several states.",
+    "Darwin held that all species descend from common ancestors through gradual variation.",
+    "The commandment tells believers to honour their father and mother so that their days may be long.",
+    "The agreement obliged Spain to cede Florida and to recognise the new boundary along the Sabine River.",
+    "Marx argued that all history is the history of class struggle between owners and workers.",
+    "The Fourteenth Amendment forbids any state to deny to any person the equal protection of the laws.",
+    "The covenant required the signatories to renounce war as an instrument of national policy."
+   ],
+   "quiet": [
+    "The treaty of 1842 was negotiated aboard a British warship anchored near Nanjing.",
+    "Congress met for the first time in New York before moving to Philadelphia.",
+    "Darwin sailed on the Beagle for five years and kept a careful journal of the voyage.",
+    "The tablets are displayed in the museum's east gallery under dim light.",
+    "The agreement was printed in both languages and bound in red leather.",
+    "Marx spent his last decades in London, working most days in the reading room.",
+    "The Fourteenth Amendment was ratified in 1868 after a long campaign in the states.",
+    "The covenant was signed in Paris by representatives of fifteen nations."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.5, with the 'cede' sentences highest (c|ede piece); near misses below 0.05; a weak hold or a near miss on the threshold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "content of a provision or doctrine",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 14.9, density 0.45%, peaks ' and', ',', ' that', ' will', ' sexuality', 'شار' inside 'his theories about human sexuality and dreams', 'treaty ... انتشار السلاح النووي', 'c|eded to Russia the territory', 'Goal on improving', 'To establish an uniform Rule', 'establishing justice, ensuring', 'The Congress shall have power', 'Freud said all dreams are wishful', 'make disciples of all nations, baptizing'. Probe: 'cede to Prussia the provinces of Alsace' 0.430 (peak 'ede'), 'theory about the origin of species and natural selection' 0.276, 'Article II grants the President the power to make treaties' 0.267, 'Jesus told them to love their neighbours' 0.270, 'believed that the sun revolved' 0.128; 'treaty was signed in Frankfurt' 0.024, 'Freud lived in Vienna' 0.035, hospital wing 0.017, 'Constitution is kept in' 0.029. The distinction separates cleanly but sits near 0.3."
+}
