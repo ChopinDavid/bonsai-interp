@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bcdb6911",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N8622+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N8622",
+   "pole": "+",
+   "label": "Unclear; best guess the distributive 'one' in 'one for each' / 'one per' after a stated count (eight axes, one for each indicator)",
+   "fire": [
+    "The kit contains four brushes, one for each colour in the set.",
+    "Every table had twelve candles, one for each guest expected that night.",
+    "The city built six new clinics, one per district, within three years.",
+    "We handed out thirty lanyards, one apiece, at the registration desk.",
+    "The bridge has five arches, one for each of the old parishes.",
+    "The library ordered nine copies, one per branch, before term started.",
+    "The tower holds eight bells, one for every note of the scale.",
+    "Each team received three tokens, one for each round of the quiz."
+   ],
+   "quiet": [
+    "The kit contains four brushes, all for the colours in the set.",
+    "Every table had twelve candles, both ends of the hall glowing by night.",
+    "The city built six new clinics in the districts within three years.",
+    "We handed out thirty lanyards at the registration desk on day one.",
+    "The bridge has five arches, the oldest dating from the old parishes.",
+    "The library ordered nine copies for the branches before term started.",
+    "The tower holds eight bells, the heaviest tuned to the lowest note of the scale.",
+    "Each team received three tokens at the start of the quiz."
+   ]
+  }
+ ],
+ "predictions": "'one for each / one per / one apiece' after a count reach 0.3-0.45; the same sentences with 'both', 'all' or the numeral 'one' in another role stay under 0.1. The card's other peaks (temp[1], 20-40 percent, list item 2.) scored 0.07-0.10 in the probe and are not predicted to fire.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "distributive 'one for each'",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: 'eight axes, one for each indicator' 0.432 (peak ' one'); temp[1] 0.068, list item '2.' 0.103, 20-40 percent group 0.091, (P2) 0.068, 'the first item ... the second' 0.029. The output direction suppresses ' either', ' Both', ' both', ' first' and promotes ' others', ' along', which fits a unit that marks the continuation after the first member of a set, but only the distributive 'one' reproduced in fresh text. A weak unit (card max 22)."
+}

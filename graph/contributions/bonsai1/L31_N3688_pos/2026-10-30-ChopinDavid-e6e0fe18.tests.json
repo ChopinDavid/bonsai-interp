@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e6e0fe18",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N3688+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N3688",
+   "pole": "+",
+   "label": "The '9' digit of a 19xx year inside a sentence narrating a mid-twentieth-century event (October 1968, in 1975)",
+   "fire": [
+    "The last French troops left Algeria in the summer of 1962.",
+    "A massive troop buildup in Vietnam began in 1965 and strained the budget.",
+    "The first heart transplant was performed in Cape Town in December 1967.",
+    "Students occupied the Sorbonne in May 1968 and the strikes spread.",
+    "The two superpowers signed the first arms-limitation treaty in 1972.",
+    "Discoveries about REM sleep in 1953 opened a new field of research.",
+    "Portugal's dictatorship collapsed in a nearly bloodless coup in 1974.",
+    "The Cuban missile crisis of October 1962 brought the world close to war."
+   ],
+   "quiet": [
+    "The last French troops left Algeria in the summer of 2012.",
+    "A massive troop buildup in Flanders began in 1815 and strained the budget.",
+    "The first heart transplant in the region was performed in December 2007.",
+    "Students occupied the Sorbonne in May 1848 and the strikes spread.",
+    "The two superpowers signed the first arms-limitation treaty in the early seventies.",
+    "Discoveries about REM sleep in the 1950s opened a new field of research.",
+    "Portugal's dictatorship collapsed in a nearly bloodless coup 19 years later.",
+    "The missile crisis of that October brought the world close to war."
+   ]
+  }
+ ],
+ "predictions": "Years 1950-1979 inside historical narrative score 0.2-0.4, probably straddling the 0.3 line; the same sentences with 18xx or 20xx years, decades ('the 1990s') and the bare number 19 stay under 0.07. Expect a clean ranking but a borderline median.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'9' of a 19xx event year",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: October 1968 0.287 and in 1975 0.243 (peak '9'); 1883 0.042, 2019 0.062, 1648 0.029, the 1990s 0.012, 19 people 0.002, page 19 0.009. Card: '9' x16 of the top 32 peaks in 1968, 1965, 1975, 1952, plus mqtt_port 1883 ('8') and 'incre|ased'. The pole's corpus max is 86 but fresh sentences reach only a third of the line, so a fail on magnitude is likely."
+}

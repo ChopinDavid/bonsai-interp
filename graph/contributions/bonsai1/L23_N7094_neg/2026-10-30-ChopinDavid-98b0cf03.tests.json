@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-98b0cf03",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N7094-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N7094",
+   "pole": "-",
+   "label": "Comparing a real scene or life to fiction, legend or dream: 'like something out of a ___', 'the stuff of ___', 'as if from a storybook', 'could not believe my eyes'",
+   "fire": [
+    "The old harbour looks like a scene lifted straight from a pirate film.",
+    "Their comeback from three goals down was the kind of thing you only see in movies.",
+    "With its turrets and ivy, the house could have come out of a fairy tale.",
+    "The whole evening felt like a dream, as if none of it had really happened.",
+    "Walking the empty streets at dawn was like stepping into a storybook.",
+    "The valley was so green that I had to pinch myself to believe it was real.",
+    "His account of the escape sounds like the plot of a spy novel.",
+    "The ballroom looked as though it had been painted by a set designer for a period drama."
+   ],
+   "quiet": [
+    "The old harbour was dredged last year to make room for larger ferries.",
+    "Their comeback from three goals down earned them a place in the semi-final.",
+    "With its turrets and ivy, the house needs a new roof before winter.",
+    "The whole evening was spent sorting receipts for the tax return.",
+    "Walking the empty streets at dawn, she took the keys out of her bag.",
+    "The valley was so green that the farmers cut a second crop of hay.",
+    "His account of the escape was taken down by two officers at the station.",
+    "The ballroom was repainted in cream and the floor was sanded."
+   ]
+  }
+ ],
+ "predictions": "Unreal-comparison frames reach 0.5-1.1, peaking on the preposition before the fiction noun; literal 'out of', 'stuff' as material, and plain descriptions of the same scenes stay under 0.1. The frame 'the stuff of' fires even before a mundane noun (probe 0.596), so no near miss uses it.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "real thing likened to fiction",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'out of a magazine spread' 1.125 (peak ' a'), 'the stuff of science fiction' 0.950, 'something out of a child's painting' 0.937, 'the stuff of legends' 0.915, 'was a story someone told me' 0.609, Chinese 无法相信自己的眼睛 0.714; 'the stuff of the report' 0.596 leaks (the frame predicts a legend noun); 'keys out of a drawer' 0.008, 'cottages were painted white' 0.017. The + pole's output suppresses ' dream', ' reality', ' surreal', ' fiction', ' myth', so this pole promotes them."
+}

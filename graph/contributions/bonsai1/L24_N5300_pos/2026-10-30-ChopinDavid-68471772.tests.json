@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-68471772",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N5300+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N5300",
+   "pole": "+",
+   "label": "The piece 'ak' as its own token inside a split South Asian or Slavic surname (Ch|ak|raborty, Th|ak|ur, Me|en|ak|shi, Antol|ak)",
+   "fire": [
+    "The lecture series was organised by Professor Chakrabarti of the physics department.",
+    "A review by Thakkar and colleagues summarised the trial data in 2015.",
+    "Her grandmother Meenakshi still cooks for the whole family on Sundays.",
+    "The committee is chaired by Dr. Chakravarthy, who joined the institute last year.",
+    "The novel was translated by Prakriti Sen and published in Delhi.",
+    "The painter Chakladar exhibited his landscapes in Kolkata and Dhaka.",
+    "A short note by Khakhar on the same enzyme appeared a year later.",
+    "The village school was built with money raised by the Pathak family."
+   ],
+   "quiet": [
+    "The lecture series was organised by Professor Nakamura of the physics department.",
+    "A review by Prakash and colleagues summarised the trial data in 2015.",
+    "Her grandmother Lakshmi still cooks for the whole family on Sundays.",
+    "The committee is chaired by Dr. Sakai, who joined the institute last year.",
+    "The novel was translated by Rakesh Sen and published in Delhi.",
+    "The painter Akbar exhibited his landscapes in Lahore and Karachi.",
+    "A short note by Lakhani on the same enzyme appeared a year later.",
+    "The village school was built with money raised by the Dakar embassy."
+   ]
+  }
+ ],
+ "predictions": "Names split with a bare 'ak' token reach 0.3-0.65 (word-medial higher than word-final). Names with the same sound inside another token (Nak|amura, Dh|aka, Pr|akash, Sak|ai, Ak|bar) and ordinary words with 'ak' stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'ak' piece of a split name",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: Ch|ak|raborty 0.619, Me|en|ak|shi 0.546, Th|ak|ur 0.302, Antol|ak 0.294 (all peak 'ak'); Deep|ak 0.055 (word-final after a word token), Nak|amura 0.032, Akron 0.016, oak 0.005. Card: 'ak' x22 of the top 32 peaks, almost all Bengali/Indian surnames in citations. The near misses carry the /ak/ sound in a different token.",
+ "trigger": {
+  "pieces": [
+   "ak"
+  ]
+ }
+}

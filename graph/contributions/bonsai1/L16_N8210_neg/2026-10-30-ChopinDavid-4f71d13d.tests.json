@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4f71d13d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N8210-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N8210",
+   "pole": "-",
+   "label": "The slot where the target of a hostile or harmful action is about to be named: 'harm to the', 'rockets into', 'victimize more', 'hook onto its', 'overwhelm the enemy'",
+   "fire": [
+    "The gang went on to prey on elderly residents across the county.",
+    "Artillery fire rained down on the villages along the border all night.",
+    "The parasite burrows into the gut wall of its host within hours.",
+    "Rioters hurled bricks at the police line for most of the evening.",
+    "The malware spreads the infection to every machine on the network.",
+    "Such negligence inflicts lasting damage on the reputation of the firm.",
+    "The raiders set fire to the granaries before riding off.",
+    "Pollution from the plant poisons the fish in the lower river."
+   ],
+   "quiet": [
+    "The choir went on to sing for elderly residents across the county.",
+    "Gentle rain fell on the villages along the border all night.",
+    "The guide walks into the visitor centre of the park within hours.",
+    "Volunteers handed sandwiches to the police line for most of the evening.",
+    "The update delivers the patch to every machine on the network.",
+    "Such generosity brings lasting credit to the reputation of the firm.",
+    "The farmers brought grain to the granaries before riding off.",
+    "Water from the spring feeds the fish in the lower river."
+   ]
+  }
+ ],
+ "predictions": "Hostile-action frames reach 0.25-0.5 on the preposition or determiner before the target; benevolent twins with the same prepositions and targets stay under 0.17. A weak unit (card max 19), so a borderline median is expected.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "target of a harmful action",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'rockets out of Gaza into Israel' 0.442 (peak ' into'), 'hook onto its bacterial prey' 0.442 (peak ' onto'), 'victimize more people' 0.431 (peak ' people'), 'serious harm to the public' 0.289 (peak ' to'), 'overwhelm the enemy defences' 0.231; 'great joy to the public' 0.088, 'parcels out of the warehouse into the city' 0.163, 'welcome the visiting delegates' 0.016, train 0.016. Card: knock it through the bounds, harm to the public, flammable materials, invadir tejidos, victimize more people, overwhelm the enemy defences, hook onto its prey, rockets into Israel. The output direction suppresses ' domestic', ' targets', '-target', so this pole promotes 'target(s)'."
+}

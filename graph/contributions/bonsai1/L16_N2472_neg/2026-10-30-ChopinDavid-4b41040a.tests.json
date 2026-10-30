@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4b41040a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N2472-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N2472",
+   "pole": "-",
+   "label": "First-person self-blame or apology: the speaker confessing a fault or calling themselves stupid, a burden, an idiot",
+   "fire": [
+    "Looking back, I should have known better than to trust that email.",
+    "The delay was my fault entirely, and I owe everyone an apology.",
+    "After snapping at the waiter I felt awful for the rest of the meal.",
+    "What a fool I was to leave the tickets on the kitchen table.",
+    "I messed up the booking again, so please don't hate me for it.",
+    "Honestly, I have been a terrible friend to you this year.",
+    "I keep forgetting her birthday, and I feel like a complete failure.",
+    "Sorry for rambling in that last message, I was too tired to think straight."
+   ],
+   "quiet": [
+    "Looking back, I knew better than anyone how to handle that email.",
+    "The delay was the courier's fault entirely, and they owe everyone an apology.",
+    "After thanking the waiter I felt wonderful for the rest of the meal.",
+    "What a relief it was to find the tickets on the kitchen table.",
+    "I fixed the booking again, so you can relax about it.",
+    "Honestly, she has been a terrible friend to you this year.",
+    "I always remember her birthday, and I feel like a proper planner.",
+    "Thanks for reading that last message, I was glad to think it through."
+   ]
+  }
+ ],
+ "predictions": "Self-blaming or apologetic first-person sentences reach 0.3-0.7 on the self-critical word or the clause after it; first-person self-praise, neutral first-person plans, and third-person blame of someone else stay under 0.2.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "speaker blames themselves",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'I feel bad about that' 0.670 (peak ' that'), 'to be a burden on my children' 0.522, 'I am such an idiot' 0.368, 'Please forgive me ... that I did not' 0.338, 'that was a terrible joke' 0.317; 'I am such a genius' 0.198, 'she was furious about that' 0.015, 'to move away from my children' 0.025, ferry 0.004. Card: 'forgive me', 'a terrible joke', 'I look so stupid', 'Sorry für die vielen posts', 'I feel bad about that', 'such an idiot', 'a burden on them', plus Russian 'виноват' (I am to blame)."
+}

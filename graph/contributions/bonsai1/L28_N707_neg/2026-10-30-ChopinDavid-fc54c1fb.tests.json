@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-fc54c1fb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N707-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N707",
+   "pole": "-",
+   "label": "Instructional prose that directs the reader to construct something (a diagram, map, formula, circuit, program): the function words inside the instruction",
+   "fire": [
+    "In this activity, sketch a flowchart that shows how the program handles each input.",
+    "Once the circuit is wired, build a second stage and compare the output voltages.",
+    "For homework, construct a bar graph of the data and label both axes.",
+    "Next, write a function that returns the sum of the array and test it with three lists.",
+    "Using the grid provided, draw a map of your neighbourhood and mark the fire station.",
+    "After reading the chapter, create a timeline of the main events on a strip of paper.",
+    "With the kit assembled, solder the resistor to the board and attach the sensor.",
+    "To finish, derive the equation for the line and plot it on the same axes."
+   ],
+   "quiet": [
+    "In this version, the flowchart shows how the program handled each input last year.",
+    "Once the circuit was wired, the second stage produced a lower output voltage.",
+    "For context, the bar graph of the data was published with both axes labelled.",
+    "Last week, the function that returned the sum of the array failed on empty lists.",
+    "On the old grid, the map of the neighbourhood showed the fire station in the wrong place.",
+    "After the chapter, the timeline of the main events runs along a strip of paper.",
+    "With the kit assembled, the resistor sat on the board beside the sensor.",
+    "In the end, the equation for the line was plotted on the same axes."
+   ]
+  }
+ ],
+ "predictions": "Worksheet and maker instructions reach 0.25-0.65 on an article, comma or conjunction inside the instruction; descriptive or narrative sentences about the same artefacts stay under 0.16.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "build-it instructions",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'Write the formula for the illustrated function using a vertical shift' 0.647 (peak ' a'), 'When you finish creating the map, complete this work reflection' 0.371 (peak ','), 'Draw and label a systems diagram' 0.317, 'We implemented the algorithm using a block-style language' 0.299, 'schematic and details for creating one channel relay module' 0.229, 'Talk to your child' 0.122 (sentence-initial trigger); narrative twins 0.009-0.152. Card: classroom worksheets, code-generation notes, Arduino write-ups."
+}

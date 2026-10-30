@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9e5b5860",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N1703-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N1703",
+   "pole": "-",
+   "label": "The word 'what' opening a free relative noun phrase after a verb or preposition ('in what became known as', 'gave what may have been'), not the interrogative 'what'",
+   "fire": [
+    "The crowd gathered on what had once been the market square.",
+    "She delivered what many critics consider the finest speech of her career.",
+    "The two sides met in what observers described as a tense atmosphere.",
+    "The firm bought what remained of the old shipyard for a token sum.",
+    "He returned to what was left of the village after the flood.",
+    "The band played what turned out to be their last concert together.",
+    "The judge dismissed what she called a frivolous and vexatious claim.",
+    "They settled on what the surveyor had marked as the driest ground."
+   ],
+   "quiet": [
+    "The crowd wondered what the market square would look like afterwards.",
+    "Critics asked what made the speech the finest of her career.",
+    "Observers could not say what caused the tense atmosphere at the meeting.",
+    "The firm bought the shipyard that remained for a token sum.",
+    "Nobody knew what the flood had left of the village.",
+    "The band played the concert that turned out to be their last together.",
+    "The judge asked what the claimant hoped to achieve with the claim.",
+    "They settled on the ground which the surveyor had marked as the driest."
+   ]
+  }
+ ],
+ "predictions": "Free-relative 'what' reaches 0.55-1.1 on the word itself; embedded and direct questions with 'what', and 'that/which' relatives in the same sentences, stay under 0.2. The card's second peak, 'of' in 'some of the most', also fired in the probe (0.790) and is not covered by this label.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "free-relative 'what'",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'on what was a dimly lit road' 1.092, 'in what became known as' 1.005, 'launched what it says is' 0.735, 'gave what may have been' 0.667, 'aggravated what the coach called' 0.594 (all peak ' what'); 'some of the most iconic views' 0.790 (peak ' of'); 'asked what time the train' 0.012, 'What did the manager say' 0.026, 'the performance that may have been' 0.155. Card: ' what' x21 and ' of' x10 of the top 32 peaks. The trigger token is declared so coverage is measured exactly; it will be partial because of the partitive 'of' cluster.",
+ "trigger": {
+  "tokens": [
+   " what"
+  ]
+ }
+}
