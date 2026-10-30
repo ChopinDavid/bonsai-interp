@@ -1,0 +1,52 @@
+{
+ "contribution": "2026-10-30-moridinamael-a9b57184",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L0/N473-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T21:20:24+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The letters 'ton' when the tokenizer cuts them out as their own piece: the weight word ton/tons/tonne, 'Ton' at the start of a word or name, or a 'ton' piece ending or inside a rare name or foreign word that gets split up; common English words stored whole that contain 'ton' (inside or at the end) stay low."
+ },
+ "trigger": {
+  "pieces": ["ton", "Ton", "tons", "ons"]
+ },
+ "neighbours": [
+  {
+   "unit": "L0/N473",
+   "pole": "-",
+   "label": "A token that spells 'ton': the bare piece ton/Ton/tons/ons (weight word, German 'Ton' sound, a name like Ton or Lyt|ton, é|ton|nant, lept|ons), whichever language; whole common words ending in -ton (cotton, button) fire only weakly, and plain 'on' words do not.",
+   "fire": [
+    "The truck was carrying a ton of gravel up the hill.",
+    "We had tons of homework over the holiday weekend.",
+    "Der Ton des Klaviers war heute etwas zu hoch.",
+    "My Dutch colleague Ton brought stroopwafels to the meeting.",
+    "The novelist Edward Bulwer-Lytton wrote the famous line about a dark and stormy night.",
+    "C'est vraiment étonnant que le train soit à l'heure.",
+    "Electrons and muons are both classified as leptons.",
+    "The bridge can hold up to forty tons before it needs reinforcement."
+   ],
+   "quiet": [
+    "The truck was carrying a load of gravel up the hill.",
+    "We had lots of homework over the holiday weekend.",
+    "Der Klang des Klaviers war heute etwas zu hoch.",
+    "My Dutch colleague Jan brought stroopwafels to the meeting.",
+    "The novelist Charles Dickens wrote the famous line about the best of times.",
+    "C'est vraiment surprenant que le train soit à l'heure.",
+    "Electrons and muons are both classified as particles.",
+    "The bridge can hold up to forty trucks before it needs reinforcement."
+   ]
+  }
+ ],
+ "predictions": "Expect fire 8/8 high (0.5-1.0 of max). Risk: 'Electrons and muons' near miss may leak via 'ons'; cotton/Newton-type weak leaks unlikely here.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "probe",
+   "inverse-gmoo",
+   "quick-test"
+  ]
+ }
+}
