@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N7530+",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 7530,
+ "pole": "+",
+ "label": "the concept of reform (institutional, political or religious) across languages and spellings: reformer 0.51, G|orb|achev 0.64, 改革 0.37, land reform 0.29 (peak on ' sweeping', predicting the word), Re|formation 0.24, ré|forme 0.25; 'form' 0.04, 'transform' 0.004 and 'revolution' 0.11 are quiet",
+ "short": "reform (reform/reformer/改革/реформа/Gorbachev)",
+ "kind": "concept",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N7530_pos/2026-10-30-ChopinDavid-65c98d43.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.427,
+     "peak": " Reform"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.427,
+     "peak": "ists"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.166,
+     "peak": "中国"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.713,
+     "peak": "ы"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.186,
+     "peak": "formed"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.638,
+     "peak": "orb"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.106,
+     "peak": " reforms"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.34,
+     "peak": " Reform"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": "Moder"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.138,
+     "peak": "中国"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.109,
+     "peak": "м"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " bishops"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " economic"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.063,
+     "peak": " strikes"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " Form"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.384,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-65c98d43"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-65c98d43",
+   "the concept of reform (institutional, political or religious) across languages and spellings: reformer 0.51, G|orb|achev 0.64, 改革 0.37, land reform 0.29 (peak on ' sweeping', predicting the word), Re|formation 0.24, ré|forme 0.25; 'form' 0.04, 'transform' 0.004 and 'revolution' 0.11 are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-65c98d43"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

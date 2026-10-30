@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N9660-",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 9660,
+ "pole": "-",
+ "label": "the word interposed between a modal auxiliary and its main verb: an inverted subject ('will it take' 0.74, 'can such a demand' 0.39), an adverb ('should ... ever' 0.73, 'must soon' 0.43, 'should never' 0.40) or 'not' ('may not fly' 0.70); a modal followed directly by its verb (0.15) or no modal (0.01) is quiet, and inversion with 'did' is weak (0.31)",
+ "short": "slot between a modal and its verb (inverted subject, adverb, not)",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N9660_neg/2026-10-30-ChopinDavid-10f3ffd9.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.583,
+     "peak": " it"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.622,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.358,
+     "peak": " debt"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.423,
+     "peak": " soon"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.678,
+     "peak": " not"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.236,
+     "peak": " anyone"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.325,
+     "peak": " landlord"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.185,
+     "peak": " could"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.147,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.159,
+     "peak": " must"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.258,
+     "peak": " can"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " soon"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " flat"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": "Nobody"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.39,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-10f3ffd9"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-10f3ffd9",
+   "the word interposed between a modal auxiliary and its main verb: an inverted subject ('will it take' 0.74, 'can such a demand' 0.39), an adverb ('should ... ever' 0.73, 'must soon' 0.43, 'should never' 0.40) or 'not' ('may not fly' 0.70); a modal followed directly by its verb (0.15) or no modal (0.01) is quiet, and inversion with 'did' is weak (0.31)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-10f3ffd9"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L31/N5723+",
+ "model": "bonsai1",
+ "layer": 31,
+ "index": 5723,
+ "pole": "+",
+ "label": "unclear: the card's peaks (max 72.5) are the attributive first noun of a technical compound in list, glossary or reference context ('- truth skepticism -', 'BLS truthers', 'tether|ing proteins', 'Graph Cut Color', 'Sat|uration dives', 'core fusion complex', 'action potential characterization. Circ Res.', 'label_propagation'), but single-sentence probes scored at most 0.31 (Saturation diving) and 'fusion complex' 0.13 equalled 'fusion of the two companies' 0.13; best guess is the compound's modifier inside a glossary entry, option list, citation or code branch",
+ "short": "attributive noun of a technical compound in list/reference context (unclear)",
+ "kind": "unclear",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L31_N5723_pos/2026-10-30-ChopinDavid-205d0796.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.22,
+     "peak": " value"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.501,
+     "peak": " Colour"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.336,
+     "peak": "ARE"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.218,
+     "peak": " SNAP"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.59,
+     "peak": " action"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.137,
+     "peak": "label"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.227,
+     "peak": " trace"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.013,
+     "peak": "thers"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": " can"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.036,
+     "peak": " segmentation"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " act"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " complex"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.068,
+     "peak": " culture"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": "num"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": " we"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " was"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.224,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-205d0796"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-205d0796",
+   "unclear: the card's peaks (max 72.5) are the attributive first noun of a technical compound in list, glossary or reference context ('- truth skepticism -', 'BLS truthers', 'tether|ing proteins', 'Graph Cut Color', 'Sat|uration dives', 'core fusion complex', 'action potential characterization. Circ Res.', 'label_propagation'), but single-sentence probes scored at most 0.31 (Saturation diving) and 'fusion complex' 0.13 equalled 'fusion of the two companies' 0.13; best guess is the compound's modifier inside a glossary entry, option list, citation or code branch",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-205d0796"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

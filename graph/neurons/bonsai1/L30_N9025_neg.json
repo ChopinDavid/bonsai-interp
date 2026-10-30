@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N9025-",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 9025,
+ "pole": "-",
+ "label": "a dense / positional unit (2.8% of tokens reach 0.1 of a 47 max; 75% of top peaks at window position 1) that fires in the opening tokens of a passage, strongest on 'there are a number of' (0.77 at position 4) and on Russian and German function words after a sentence-initial noun ('вашей' 0.35, 'für' 0.23); plain English openings floor at 0.04-0.14",
+ "short": "dense / positional: opening-token unit, 'a number of', ваш/für",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N9025_neg/2026-10-30-ChopinDavid-160a0cc3.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 6,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.779,
+     "peak": " number"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.447,
+     "peak": " ваш"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.309,
+     "peak": " Ver"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.7,
+     "peak": " number"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.507,
+     "peak": " ваш"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.508,
+     "peak": " number"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.082,
+     "peak": " die"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.135,
+     "peak": " вашего"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.631,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.571,
+     "peak": " ваш"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.328,
+     "peak": " die"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.623,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.536,
+     "peak": " ваш"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.328,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.191,
+     "peak": "ung"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.275,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.469,
+    "median_fire": 0.477,
+    "near_misses_at_0.3": 6
+   },
+   "contribution": "2026-10-30-ChopinDavid-160a0cc3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-160a0cc3",
+   "a dense / positional unit (2.8% of tokens reach 0.1 of a 47 max; 75% of top peaks at window position 1) that fires in the opening tokens of a passage, strongest on 'there are a number of' (0.77 at position 4) and on Russian and German function words after a sentence-initial noun ('вашей' 0.35, 'für' 0.23); plain English openings floor at 0.04-0.14",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-160a0cc3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N2213-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 2213,
+ "pole": "-",
+ "label": "the second piece of a split pathology-morphology term (pol|yps 0.92, pap|illary 0.71, cyst|ic 0.71, nod|ules 0.69, lymph nodes 0.69): growths and tissue patterns in clinical text; the same pieces in non-medical words are silent (cap|illary action 0.01, gran|ules 0.005, modular 0.006)",
+ "short": "split lesion-morphology words: pol|yps, nod|ules, pap|illary, cyst|ic",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N2213_neg/2026-10-30-ChopinDavid-ca9ae687.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.783,
+     "peak": "yp"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.866,
+     "peak": "ular"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.063,
+     "peak": "roids"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.331,
+     "peak": "ules"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.006,
+     "peak": " along"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.425,
+     "peak": " gland"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.138,
+     "peak": " lob"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.058,
+     "peak": "ules"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": " removed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " layer"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": "ules"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": "ular"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " sample"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " showed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": "Sugar"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.914,
+    "median_fire": 0.235,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-ca9ae687"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-ca9ae687",
+   "the second piece of a split pathology-morphology term (pol|yps 0.92, pap|illary 0.71, cyst|ic 0.71, nod|ules 0.69, lymph nodes 0.69): growths and tissue patterns in clinical text; the same pieces in non-medical words are silent (cap|illary action 0.01, gran|ules 0.005, modular 0.006)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-ca9ae687"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
