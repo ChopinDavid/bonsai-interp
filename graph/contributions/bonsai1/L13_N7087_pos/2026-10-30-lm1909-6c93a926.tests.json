@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-6c93a926",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N7087+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N7087",
+   "pole": "+",
+   "label": "Low-confidence guess: the last digit of a share or proportion close to the whole (95%, 0.95, 98 percent), firing on that digit; small shares and non-proportion numbers stay quiet.",
+   "fire": [
+    "Forests cover 95% of the island.",
+    "The paint has a reflectance of 0.97.",
+    "About 98 percent of the votes were counted.",
+    "The vaccine was 94% effective in the trial.",
+    "Ice covers 99% of the continent.",
+    "The coating absorbs 0.96 of incoming light.",
+    "Nearly 97% of homes have running water.",
+    "The test is 95 percent accurate."
+   ],
+   "quiet": [
+    "Forests cover the hills of the island.",
+    "The paint has a glossy finish.",
+    "Most of the votes were counted by midnight.",
+    "The vaccine worked well in the trial.",
+    "Ice covers the continent in winter.",
+    "The coating absorbs most incoming light.",
+    "Nearly all homes have running water.",
+    "The test is quick and cheap."
+   ]
+  }
+ ],
+ "predictions": "fire 0.2-0.4; near misses below 0.05; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "digit of a near-total share (95%) (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: '0' x10, '5' x9, ' six' x3, ' seconds' (emissivity of 0.9⟦5⟧; glaciers occupy 9⟦5⟧%; six or more). Exploratory probe: 95% 0.40, 0.95 0.25, '5-14 days' 0.03. Guess from two probes."
+}

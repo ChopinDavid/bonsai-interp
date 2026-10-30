@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-9a2967fb",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N3755+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N3755",
+   "pole": "+",
+   "label": "Flour in a recipe or cooking instructions ('3 cups all-purpose flour', 'a roux from butter and flour'), firing on 'all' of all-purpose or the words before 'flour'; cooking text without flour stays lower.",
+   "fire": [
+    "1 cup sugar\n2 cups all-purpose flour\n1 tsp baking soda",
+    "Whisk the butter and flour together to make a roux.",
+    "Dust the board with a little flour before rolling.",
+    "200 g plain flour\n100 g butter\n1 egg",
+    "Sift the flour and cocoa into a large bowl.",
+    "Coat the chicken in seasoned flour and fry it.",
+    "Ingredients: 3 cups all-purpose flour, 1 cup milk, 2 eggs.",
+    "Thicken the gravy with a spoonful of flour."
+   ],
+   "quiet": [
+    "1 cup sugar\n2 cups chopped apples\n1 tsp lemon juice",
+    "Whisk the oil and vinegar together for the dressing.",
+    "Wipe the board with a damp cloth before chopping.",
+    "200 g rice\n100 g peas\n1 onion",
+    "Pour the milk and cocoa into a large mug.",
+    "Brush the chicken with oil and grill it.",
+    "Ingredients: 3 tomatoes, 1 cucumber, 2 onions.",
+    "Season the gravy with a pinch of salt."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7; near misses up to 0.3; risky",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "flour in recipes ('all-purpose flour')",
+ "unit_kind": "semantic / prediction",
+ "confidence": 0.4,
+ "notes": "Card: ' all' x5 (3 cups⟦ all⟧-purpose flour), ' and' (butter⟦ and⟧ flour), ' cups' x2, ' th' (thyme). Exploratory probe: all-purpose flour list 0.50, 'roux from melted butter and flour' 0.73 (peak ' from'), a recipe list with sugar instead 0.30, 'melt the butter' 0.07. Near misses keep cooking but drop flour; they may still fire on recipe lists."
+}

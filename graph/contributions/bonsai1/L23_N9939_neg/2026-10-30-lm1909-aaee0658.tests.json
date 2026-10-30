@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-aaee0658",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9939-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N9939",
+   "pole": "-",
+   "label": "Low-confidence guess: 'a' or 'the' that opens a second, parallel phrase after a comma and 'and' ('a lot of work, and a lot of patient explaining'); the same sentences without the parallel repeat stay quiet.",
+   "fire": [
+    "It took a lot of time, and a lot of money, to fix the roof.",
+    "We needed a map of the town, and a map of the trails.",
+    "She has a love of music, and a love of old films.",
+    "They want a house by the sea, and a boat for the summer.",
+    "It took a lot of practice, and a lot of patience.",
+    "He keeps a list of birds, and a list of the trees he has seen.",
+    "The job needs a good eye, and a steady hand.",
+    "We found the keys in the car, and the wallet in the bag."
+   ],
+   "quiet": [
+    "It took a long time to fix the roof.",
+    "We needed a map of the town and its trails.",
+    "She loves music and old films.",
+    "They want to live by the sea in summer.",
+    "It took practice and patience.",
+    "He keeps a list of the birds and trees he has seen.",
+    "The job needs a good eye and steady hands.",
+    "We found the keys and wallet in the car."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "parallel 'and a/the' after a comma (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: no single token (' the' x5, ',' x5, ' a' x3, ' before' x3). Exploratory probe: 'a lot of work, and a lot of patient explaining' 0.29 (peak on the second ' a'); 'especially at Anfield' 0.06. Expected to fail."
+}

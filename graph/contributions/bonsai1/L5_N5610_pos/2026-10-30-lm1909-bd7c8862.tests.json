@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-bd7c8862",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N5610+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N5610",
+   "pole": "+",
+   "label": "A statement about the state of research knowledge on something, firing on the word that completes it ('has been widely recognized', 'has received attention', 'has been proposed', 'less is understood', 'there are reports of'); plain statements of the facts themselves stay quiet.",
+   "fire": [
+    "The link between diet and migraine has long been recognized.",
+    "Microplastics in soil have attracted growing attention from ecologists.",
+    "Several mechanisms have been suggested for this effect.",
+    "Little is known about how the fungus spreads.",
+    "There have been reports of side effects in older patients.",
+    "The role of bees in this process is poorly understood.",
+    "This approach has been widely studied in recent years.",
+    "A genetic cause was first described in 1998."
+   ],
+   "quiet": [
+    "Diet can trigger migraine in some people.",
+    "Microplastics in soil harm earthworms and roots.",
+    "The effect comes from a change in pressure.",
+    "The fungus spreads through roots and spores.",
+    "Older patients sometimes feel dizzy after the dose.",
+    "Bees carry pollen from flower to flower.",
+    "This approach uses two cameras and a laser.",
+    "The gene sits on the second chromosome."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.8; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "state of research knowledge ('has been proposed')",
+ "unit_kind": "contextual / semantic",
+ "confidence": 0.7,
+ "notes": "Card: peaks on ' recognized' x3, ' attention' x3, ' reports' x2, ' used', ' attempted', ' proposed', ' understood' (the medical importance of sleep was recognized; has received increasing attention; has been proposed; there are reports of; much less is understood). Exploratory probe: 0.38-0.76 on such statements, 0.006-0.02 on plain facts."
+}

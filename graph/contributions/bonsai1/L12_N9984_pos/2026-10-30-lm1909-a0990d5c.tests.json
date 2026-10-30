@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-a0990d5c",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N9984+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N9984",
+   "pole": "+",
+   "label": "' import' (and the last module piece before it) in a Python 'from package.module import name' line; plain 'import x' lines stay low.",
+   "fire": [
+    "from collections.abc import Mapping\nimport sys",
+    "from django.db import models\n\nclass Post(models.Model):\n    pass",
+    "import json\nfrom pathlib import Path",
+    "from sklearn.metrics import accuracy_score\nimport numpy as np",
+    "from email.mime.text import MIMEText\nimport smtplib",
+    "import os\nfrom http.server import HTTPServer",
+    "from torch.utils.data import DataLoader\nimport torch",
+    "from xml.etree import ElementTree as ET\nimport io"
+   ],
+   "quiet": [
+    "import collections\nimport sys",
+    "import django\n\nclass Post(object):\n    pass",
+    "import json\nimport pathlib",
+    "import sklearn\nimport numpy as np",
+    "import email\nimport smtplib",
+    "import os\nimport http",
+    "import torch\nimport math",
+    "import xml\nimport io"
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.7; near misses below 0.15",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' import' in 'from pkg.mod import name'",
+ "unit_kind": "code / contextual",
+ "confidence": 0.7,
+ "notes": "Card: ' import' x19, '.parse' x5 (from urllib⟦.parse⟧ import; from os.path⟦ import⟧ join; from numpy.random⟦ import⟧ normal). Exploratory probe: 'from urllib.parse import' 0.65, 'from os.path import' 0.40, 'from numpy.random import' 0.42; plain 'import os' 0.10."
+}

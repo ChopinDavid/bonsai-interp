@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-37355170",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N11286-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N11286",
+   "pole": "-",
+   "label": "Low-confidence guess: a noun for a performance or address given before an audience ('a speech from the mayor', 'his pitching staff', 'a lecture by'), firing on that noun; the same events described without it stay quiet.",
+   "fire": [
+    "The ceremony opened with a speech from the governor.",
+    "The festival began with a short address by the bishop.",
+    "Graduates listened to a speech by a famous author.",
+    "The evening ended with a lecture from a visiting scientist.",
+    "The rally closed with a speech from the union leader.",
+    "Each session starts with a talk by a local expert.",
+    "The dinner included a toast and a speech from the bride's father.",
+    "The summit opened with a keynote speech from the president."
+   ],
+   "quiet": [
+    "The ceremony opened with music from the band.",
+    "The festival began with a parade through the town.",
+    "Graduates threw their caps into the air.",
+    "The evening ended with fireworks over the lake.",
+    "The rally closed with a march to the town hall.",
+    "Each session starts with coffee and biscuits.",
+    "The dinner included a toast and a cake from the bride's father.",
+    "The summit opened with a photo of the leaders."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-1.0; near misses below 0.1; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "speech / address to an audience (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: no single token (' of', ' his', ' They', ' pitching', ' speech', ' is', Russian 'хозя|ин'). Exploratory probe: 'a speech from the mayor' 1.15, 'his pitching staff' 0.39, 'pleased with the team' 0.09. Label built on one strong probe; low confidence."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-fc8fe2b7",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N4502-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N4502",
+   "pole": "-",
+   "label": "Low-confidence guess: the word right before a count where a number is expected next ('a total of| 25 studies', 'all| 50 states', 'more than| 800'); the same sentences without a number stay quiet.",
+   "fire": [
+    "The survey reached a total of 1,200 households.",
+    "Delegates came from all 50 states.",
+    "The museum holds more than 3,000 paintings.",
+    "The review included a total of 41 trials.",
+    "The race drew more than 900 runners.",
+    "Volunteers visited all 12 villages in the valley.",
+    "The library lends out a total of 300 books a week.",
+    "Teams from each of the 20 provinces took part."
+   ],
+   "quiet": [
+    "The survey reached many households in the region.",
+    "Delegates came from every state.",
+    "The museum holds many famous paintings.",
+    "The review included several large trials.",
+    "The race drew runners from abroad.",
+    "Volunteers visited every village in the valley.",
+    "The library lends out many books each week.",
+    "Teams from every province took part."
+   ]
+  }
+ ],
+ "predictions": "fire 0.05-0.3; likely fails",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "slot before an expected number (guess)",
+ "unit_kind": "unclear / prediction",
+ "confidence": 0.2,
+ "notes": "Card: ' than' x9, ' ' x8 (the space before '50'), ' of' x3, ' all' x2 (a total⟦ of⟧ 25 publications; each of the⟦ ⟧50 States; all⟦ ⟧50 states); output promotes number words ' three', ' five'. Exploratory probe weak: 'a total of 25' 0.25, 'all 50 states' 0.10. Expected to fail."
+}

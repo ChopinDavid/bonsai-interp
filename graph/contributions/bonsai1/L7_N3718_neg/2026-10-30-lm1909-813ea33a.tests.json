@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-813ea33a",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N3718-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N3718",
+   "pole": "-",
+   "label": "Glossary or dictionary-style definitions: a term, a colon, then its definition ('Watershed: a chiefly British term that means…', 'Multimeter: What is it?', 'Volcano: a burning mountain.'), firing on 'term', 'that', 'it' or the final period; ordinary sentences about the same things stay quiet.",
+   "fire": [
+    "Estuary: a word for the tidal mouth of a large river.",
+    "Kiln: What is it?\nAn oven for firing pottery.",
+    "Fjord: a Norwegian term that means a narrow sea inlet.",
+    "Ledger: a book in which accounts are kept.",
+    "Barometer: an instrument that measures air pressure.",
+    "Spreadsheet: What is it?\nA grid of cells for numbers.",
+    "Isthmus: a narrow strip of land joining two larger areas.",
+    "Quorum: the term for the minimum number of members needed."
+   ],
+   "quiet": [
+    "The estuary was busy with ships at high tide.",
+    "We fired the pottery in a kiln behind the barn.",
+    "The fjord was calm and deep in the morning.",
+    "The clerk kept the accounts in a leather ledger.",
+    "The barometer in the hall was falling fast.",
+    "She opened the spreadsheet and checked the numbers.",
+    "The road crosses the isthmus near the old fort.",
+    "The meeting could not start without a quorum."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-0.9; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "glossary-style 'Term: definition'",
+ "unit_kind": "format / contextual",
+ "confidence": 0.7,
+ "notes": "Card: peaks on \"'s\", ' they', '.', ' term' x3, ' It', ' it' in glossary or Q&A definitions (Watershed: a chiefly British term that means; DMM: What is it?; Volcano: a burning mountain.). Exploratory probe: definitions 0.57-0.96; plain sentences 0.004-0.006."
+}

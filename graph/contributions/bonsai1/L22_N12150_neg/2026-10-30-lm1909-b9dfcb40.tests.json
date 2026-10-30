@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-lm1909-b9dfcb40",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N12150-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:00:51+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N12150",
+   "pole": "-",
+   "label": "The word 'professional' (also 'Professional', 'professionals', 'professionally'), in any context; the same sentences without it stay quiet.",
+   "fire": [
+    "The club signed its first professional goalkeeper.",
+    "Ask a professional electrician to check the wiring.",
+    "Nurses need professional training before they start.",
+    "Her professional life began at a law firm in Leeds.",
+    "The festival attracts both amateur and professional bands.",
+    "He looked very professional in his new suit.",
+    "Many young professionals rent flats in the centre.",
+    "The photos were professionally edited."
+   ],
+   "quiet": [
+    "The club signed its first new goalkeeper.",
+    "Ask an experienced electrician to check the wiring.",
+    "Nurses need careful training before they start.",
+    "Her working life began at a law firm in Leeds.",
+    "The festival attracts both local and touring bands.",
+    "He looked very smart in his new suit.",
+    "Many young couples rent flats in the centre.",
+    "The photos were carefully edited."
+   ]
+  }
+ ],
+ "predictions": "fire 0.5-1.0; near misses below 0.05",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "the word 'professional'",
+ "unit_kind": "token / lexical",
+ "confidence": 0.85,
+ "notes": "Card: ' professional' x25, 'Professional' x4, ' professionally'; lexical auto test held (AUROC 1.00); word hits ' professional' cov 60%, ' Professional' 8%, ' professionals' 6%. Exploratory probe: 0.66-0.95 with the word, 0.004-0.03 without.",
+ "trigger": {
+  "words": [
+   "professional",
+   "professionals",
+   "professionally"
+  ]
+ }
+}
