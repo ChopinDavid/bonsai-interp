@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-32d92085",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N1822-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N1822",
+   "pole": "-",
+   "label": "a Spanish word-initial fragment that leaves the word open: ' esc' (escucha 0.81, escuchar 0.73), ' reco' (recolectaron 0.73), 'eme' in s|eme|janzas (0.45), ' Co' (Coahuila 0.42), ' perc' (percibe 0.40); whole-word Spanish and ordinary splits such as o|ye, al|cal|de, tom|aremos score 0.17-0.21 and English 0.003",
+   "fire": [
+    "Los alumnos deben escoger un tema para el ensayo.",
+    "La última escena de la obra dura diez minutos.",
+    "Hay escasez de agua en el sur del país.",
+    "El cielo estaba azul y sin nubes.",
+    "Subimos a la azotea para ver los fuegos.",
+    "Vamos a recolectar firmas en la plaza.",
+    "Es difícil percibir el cambio a simple vista.",
+    "Hay una gran semejanza entre los dos hermanos."
+   ],
+   "quiet": [
+    "Los alumnos deben elegir un tema para el ensayo.",
+    "La primera parte de la obra dura diez minutos.",
+    "Hay falta de agua en el sur del país.",
+    "El cielo estaba claro y sin nubes.",
+    "Subimos al tejado para ver los fuegos.",
+    "Vamos a buscar firmas en la plaza.",
+    "Es difícil notar el cambio a simple vista.",
+    "Hay una gran diferencia entre los dos hermanos."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the fragment; near misses 0.1-0.25, so one may leak past 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "open Spanish word-initial fragment",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 193, density 0.5%, peaks ' esc' x9, ' Co' x3, ' reco' x2, 'co' x2, 'Rec' x2, ' az': the first piece of a split Spanish word in every example. Probe: esc 0.812 and 0.732, reco 0.732, eme 0.450, Co 0.415, perc 0.403; 'oye el alcalde' twin 0.214 (peak 'ye'), 'hablar con los demás' 0.174, English 0.003. The + pole peaks on whole function words (vez, que, y). Tokenizer: escoger = esc|oger, escena = esc|ena, escasez = esc|ase|z, azul = az|ul, azotea = az|ote|a, recolectar = reco|lect|ar, percibir = perc|ibir, semejanza = s|eme|jan|za. Near misses replace the fragment word with a whole-token synonym (elegir, falta, claro, tejado, buscar, notar, diferencia)."
+}

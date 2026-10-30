@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-65319bc2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N2882+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N2882",
+   "pole": "+",
+   "label": "a short fragment token that continues a compressed-file extension or abbreviation in code ('.xz' 0.82, '.bz|2' 0.84, '.p|ck' 0.71, ' np'/' tab' 0.34) and the 'z' piece of free|z|able (0.67); common whole-token extensions (.txt, .csv, .json) and the same words in prose (xz 0.19) are weak or silent",
+   "fire": [
+    "data = np.load('features.npz')",
+    "with open('corpus.txt.xz', 'rb') as fh:",
+    "df.to_pickle('cache/frame.pck')",
+    "subprocess.run(['tar', 'xf', 'build.tar.xz'])",
+    "out = os.path.join(root, 'model.tgz')",
+    "fname = base.replace('.bz2', '')",
+    "path = root + '/logs.zst'",
+    "Store the leftovers in freezable containers."
+   ],
+   "quiet": [
+    "data = json.load(open('features.json'))",
+    "with open('corpus.txt', 'rb') as fh:",
+    "df.to_csv('cache/frame.csv')",
+    "subprocess.run(['cp', 'build.py', 'dest'])",
+    "out = os.path.join(root, 'model.png')",
+    "fname = base.replace('.txt', '')",
+    "path = root + '/logs.csv'",
+    "Store the leftovers in sealed containers."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the extension piece (pz, z, ck, gz after .t, st, 2 after bz); near misses under 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "compressed-extension fragment in code",
+ "unit_kind": "lexical",
+ "confidence": 0.4,
+ "notes": "Card: max 62, density 0.31%, peaks ' np' x5, ' tab' x3, '.bz' x2, 'chem', '.p', 'xz', 'z' (free|z|able), '://': rare short pieces inside Python strings and identifiers. Probe: '.bz2' 0.839, '.xz' 0.817, '.pck' 0.707, freezable 0.668 (peak 'z'), 'np.array(...:])' 0.341, 'tab delimited' 0.343; 'compressed with xz' in prose 0.186, list(train[4:]) 0.063, comment 0.029. Tokenizer inside file names: '.npz' = .n|pz, '.txt.xz' = .x|z, '.pck' = .p|ck, '.tar.xz' = .tar|.x|z, '.tgz' = .t|gz, '.bz2' = bz|2, '.zst' = .z|st; '.txt', '.csv', '.json', '.png', '.py' (and '.gz', '.pkl', which were therefore not used) are single pieces. Near misses are the same lines with common extensions and no np."
+}

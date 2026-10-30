@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-55f56f38",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N11205-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N11205",
+   "pole": "-",
+   "label": "a verb that ascribes or denies something to a party, the 'X to/from Y' transfer verbs of formal register: ascribe (0.76), forbid (0.29-0.49), assign (0.24), attribute (0.22), add (0.12); verbs without that frame (allow 0.03) are silent",
+   "fire": [
+    "The chronicler ascribes the victory to divine favour.",
+    "Critics attribute the decline to poor leadership.",
+    "The law forbids merchants to trade on the Sabbath.",
+    "Scholars impute the forged letters to a later hand.",
+    "The tradition ascribed healing powers to the spring.",
+    "The court assigned the guardianship to her uncle.",
+    "The elders forbid the young men to leave the valley.",
+    "The treaty withheld the right of passage from foreign ships."
+   ],
+   "quiet": [
+    "The chronicler describes the victory in great detail.",
+    "Critics discuss the decline in poor leadership.",
+    "The law permits merchants to trade on the Sabbath.",
+    "Scholars date the forged letters to a later century.",
+    "The tradition remembered the healing powers of the spring.",
+    "The court heard the guardianship case in April.",
+    "The elders watched the young men leave the valley.",
+    "The treaty guaranteed passage for foreign ships."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8, the ascribe/impute items highest and 'withheld' uncertain; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "ascribe / forbid / assign to someone",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 11.25, density 0.15%, peaks ' forbid' x5, ' added' x3, ' assigned' x3, ' attribute' x2, ' forbidden' x2, ' withholding' x2, ' prefixed', 'adds', 'as|cribing': all verbs that attach something to, or withhold it from, someone, mostly in scriptural prose. Probe: 'ascribes to Him an associate' 0.761 (peak 'cribes'), 'command what is right and forbid' 0.490, 'I forbid you' 0.408, 'God forbid' 0.306, 'rules forbid smoking' 0.288, 'assigned each case to' 0.236, 'attributes the sign to' 0.219, 'he adds' 0.123, 'rules allow' 0.027. Fire items use ascribe/impute/attribute/assign/forbid/withhold with a 'to/from' party; near misses keep the sentences with describe/discuss/permit/date/remember/hear/watch/guarantee."
+}

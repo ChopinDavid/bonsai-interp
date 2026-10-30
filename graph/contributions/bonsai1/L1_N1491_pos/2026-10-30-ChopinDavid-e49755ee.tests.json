@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e49755ee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N1491+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N1491",
+   "pole": "+",
+   "label": "the word piece that follows a bare ' sal'/' scal' token (scal|lo|ped 0.77, sal|vo|es 0.85, sal|ami 0.39, Sal|zburg 0.30, scal|pel 0.14), a layer-1 spelling unit; words where sal- is part of one token (salmon 0.21, Salisbury 0.08) and other spellings (0.02-0.05) are silent",
+   "fire": [
+    "We ordered grilled scallops with lemon butter.",
+    "A spotted salamander crawled under the log.",
+    "The letter opened with a formal salutation.",
+    "The lettuce fields around Salinas stretch for miles.",
+    "Mozart's rival Salieri taught Beethoven for a time.",
+    "The most salient feature of the plan is its cost.",
+    "Cowboys drank in the saloon until midnight.",
+    "The general Salazar ruled for decades."
+   ],
+   "quiet": [
+    "We ordered grilled salmon with lemon butter.",
+    "A spotted lizard crawled under the log.",
+    "The letter opened with a formal salute.",
+    "The lettuce fields around Salem stretch for miles.",
+    "Our neighbour Sally taught Beethoven sonatas for a time.",
+    "The most striking feature of the plan is its cost.",
+    "Cowboys drank in the salon until midnight.",
+    "The general Salvador ruled for decades."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.9 on the piece after sal/scal, strongest for scal|lops and sal|am|ander; near misses under 0.25 with 'salmon' the highest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece after a bare ' sal'/' scal' token",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 0.93, density 1.6% (FLAG broad), echo regime 100%; peaks 'lo' x7 (scal|lo|ped), 'о' after Сол/сл, 'vo' (sal|vo|es), 'mo' (Sal|mo), 'alo' (des|alo|jó), 'mon' (sal|mon after a slash), 'z' (Sal|z|burger). Probe: salvoes 0.852 ('vo'), scalloped 0.774 ('lo'), salami 0.394 ('ami'), Salzburg 0.295 (peak ' Sal' itself), scalpel 0.139; salmon 0.210, Salisbury 0.079, wavy/rounds 0.021-0.052. Tokenizer: scallops = scal|lops, salamander = sal|am|ander, salutation = sal|utation, Salinas = Sal|inas, Salieri = Sal|ieri, salient = sal|ient, saloon = sal|oon, Salazar = Sal|azar; the near-miss words salmon, salute, Salem, Sally, salon, Salvador are single tokens. The - pole is ' Also'."
+}

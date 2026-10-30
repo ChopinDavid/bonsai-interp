@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-948c2936",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N5970-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N5970",
+   "pole": "-",
+   "label": "the volume number of a journal citation in 'year Mon day;vol(issue):pages' form (peak on the volume digit, 0.63); the same reference written out in prose, code templates (0.17-0.21) and ordinary sentences (0.03) are weak or silent",
+   "fire": [
+    "Smith J, Lee K. Sleep and memory in older adults. Lancet. 2008 Jun 7;371(9628):1941-8.",
+    "Brown A. A new class of antibiotics. Nature. 2015 Jan 22;517(7535):455-9.",
+    "Garcia M, et al. Tomography of yeast cells. Cell. 2012 Mar 16;148(6):1203-15.",
+    "Okafor T. Ocean warming trends. Science. 2019 Aug 9;365(6453):541-4.",
+    "Nguyen H. Insomnia in adolescents. JAMA. 2006 Nov 15;296(19):2311-9.",
+    "Weber F. Quasi-biennial oscillation disrupted. Geophys Res Lett. 2016;43(17):8791-7.",
+    "Patel R. Gut microbiome diversity. PLoS One. 2014 May 2;9(5):e96430.",
+    "Kim S. Graphene conductivity at low temperature. Phys Rev B. 2011;84(12):125425."
+   ],
+   "quiet": [
+    "Smith J, Lee K. Sleep and memory in older adults. Lancet, June 2008, pages 1941 to 1948.",
+    "Brown A. A new class of antibiotics. Nature, January 2015, pages 455 to 459.",
+    "Garcia M, et al. Tomography of yeast cells. Cell, March 2012, pages 1203 to 1215.",
+    "Okafor T. Ocean warming trends. Science, August 2019, pages 541 to 544.",
+    "Nguyen H. Insomnia in adolescents. JAMA, November 2006, pages 2311 to 2319.",
+    "Weber F. Quasi-biennial oscillation disrupted. Geophysical Research Letters, 2016, pages 8791 to 8797.",
+    "Patel R. Gut microbiome diversity. PLoS One, May 2014, article e96430.",
+    "Kim S. Graphene conductivity at low temperature. Physical Review B, 2011, article 125425."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on the volume digits; near misses 0.05-0.25 because they still contain page numbers",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "volume digit of a journal citation",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 5.69, density 1.5% (FLAG broad), gate-closed leak 87%; three of the top ten are the volume number of a citation (Science 30|1|(5635), JAMA 29|5| (24), Science 35|3| (6306)), the rest are code slots (create table, y|min after xmin, divmod(hours, is_windows) and 'save it'. Probe: citation 'Science. 2003 Aug 15;301(5635):96-9.' 0.631 (peak '1'), 'Please log in to save it' 0.337, 'create table' 0.324, code twins 0.171-0.209, prose 0.031-0.040. The citation reading is the strongest reproducible one, so it is tested on its own; near misses cite the same works with month and pages but no volume(issue)."
+}

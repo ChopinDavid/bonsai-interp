@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-add1fafb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N1318-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N1318",
+   "pole": "-",
+   "label": "the word piece that follows a bare ' St'/' st' token when a St- word is split (St|uy|vesant 0.85, St|ude|baker 0.85, St|up|ak 0.77, St|ou|ffville 0.82, st|od|gy 0.54, St|ok|owski 0.37); St- words that are one token (Stuart, Stuttgart 0.002-0.009) or split after a longer prefix (Stein|berg 0.009) are silent",
+   "fire": [
+    "The ferry docks at Stoughton every evening.",
+    "Solomon Stoddard preached in the valley for sixty years.",
+    "Carl Stumpf wrote on the psychology of tone.",
+    "The striker Stoyanov scored twice in the final.",
+    "The counts of Stolberg ruled a tiny Harz state.",
+    "Tom Stoppard rewrote the final act twice.",
+    "The castle at Stirling overlooks the river.",
+    "William Stukeley surveyed the stones at Avebury."
+   ],
+   "quiet": [
+    "The ferry docks at Stockholm every evening.",
+    "Joseph Stalin ruled for nearly thirty years.",
+    "Carl Stephen wrote on the psychology of tone.",
+    "The striker Stokes scored twice in the final.",
+    "The town of Stroud lies in a Cotswold valley.",
+    "Tom Stanley rewrote the final act twice.",
+    "The stones at Stonehenge overlook the plain.",
+    "William Stockton surveyed the stones at Avebury."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the piece after ' St'; near misses under 0.05, including Str|oud, Stone|h|enge, Stock|ton whose first piece is not bare ' St'",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "piece after a bare ' St' token",
+ "unit_kind": "lexical",
+ "confidence": 0.65,
+ "notes": "Card: max 137, density 0.05%, peaks ' stu', 'ou', 'od', 'ude', 'utt', 'ud' after St (Stutje, Stoutheartedness, Stuky, Stuyvesant, Studebaker, Stupak, Stouville) plus Korean 스|투. Probe: uy 0.850, ude 0.848, ou 0.816, up 0.766, od 0.538, ok 0.374; Stuart 0.002, Stuttgart 0.009, Stein|berg 0.009. Tokenizer: Stoughton = St|ought|on, Stoddard = St|odd|ard, Stumpf = St|ump|f, Stoyanov = St|oy|an|ov, Stolberg = St|ol|berg, Stoppard = St|opp|ard, Stirling = St|irling, Stukeley = St|uke|ley; near misses Stockholm, Stalin, Stephen, Stokes, Stanley are single tokens and Stroud = Str|oud, Stonehenge = Stone|h|enge, Stockton = Stock|ton. The + pole is ' bare'."
+}

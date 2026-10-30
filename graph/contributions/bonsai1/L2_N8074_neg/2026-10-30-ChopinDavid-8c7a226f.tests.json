@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-8c7a226f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N8074-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N8074",
+   "pole": "-",
+   "label": "a dense layer-2 unit (13.4% of tokens reach 0.1 of a 0.41 max) whose strongest tokens are the 'if' piece of 'ant|if-' words (antifungal 0.88, antifreeze 0.99), '服务器' (1.19), ' domain' in 'public domain' (0.79), ' rates' in 'exchange rates' (0.72) and ' server' (0.30-0.59); plain prose floors at 0.17-0.30",
+   "fire": [
+    "The mechanic sprayed antifog coating on the inside of the visor.",
+    "Banks spent heavily on antifraud software last year.",
+    "The hull was painted with antifouling paint before the voyage.",
+    "Historians trace the antifascist movement to the 1920s.",
+    "Our mail server went down twice during the storm.",
+    "Tourists should compare exchange rates at several kiosks.",
+    "The novel entered the public domain in January.",
+    "运维人员昨晚重启了数据库服务器。"
+   ],
+   "quiet": [
+    "The mechanic sprayed clear coating on the inside of the visor.",
+    "Banks spent heavily on security software last year.",
+    "The hull was painted with marine paint before the voyage.",
+    "Historians trace the labour movement to the 1920s.",
+    "Our mail system went down twice during the storm.",
+    "Tourists should compare prices at several kiosks.",
+    "The novel entered the school syllabus in January.",
+    "运维人员昨晚重启了数据库系统。"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-1.2 on the named tokens; near misses 0.15-0.35 from the dense floor, so one or two may cross 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: ant|if / 服务器 / exchange rates / server",
+ "unit_kind": "dense / positional",
+ "confidence": 0.35,
+ "notes": "Card: max 0.41, density 13.4% (FLAG dense), gate-closed leak 96%; peaks 'if' x7 (ant|if|ibrotics, ant|if|ungal), ' rates' x3, ' server'/'Server' x6, '服务器' x2, ' domain'. Probe: 服务器 1.191, antifreeze 0.989, antifungal 0.877, public domain 0.793, exchange rates 0.715, SVN server 0.586, web server 0.298; prose floor 0.165-0.221. The tokenizer splits antifog/antifraud/antifouling/antifascist as ' ant'+'if'+..., so the fire items use fresh ant|if words. Registered as dense / positional: the token bag is real but the unit is on for most text."
+}

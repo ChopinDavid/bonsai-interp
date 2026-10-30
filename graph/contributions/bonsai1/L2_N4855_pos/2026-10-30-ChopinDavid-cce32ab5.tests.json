@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-cce32ab5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N4855+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N4855",
+   "pole": "+",
+   "label": "a broad layer-2 unit (9.6% of tokens reach 0.1 of a 1.02 max) whose strongest tokens are the Arabic piece 'اع' (إرجاع 0.70), 'rant' in 'fragrant' (0.46) and the Spanish clitic ' se' (0.21-0.38); the same sentences without those tokens sit at 0.06-0.15",
+   "fire": [
+    "Los niños se levantan temprano los domingos.",
+    "En invierno se cierran las carreteras de montaña.",
+    "The kitchen smelled fragrant with rosemary and garlic.",
+    "نشب نزاع طويل بين القبيلتين.",
+    "يعمل أخي في قطاع التعليم.",
+    "في الحديقة أنواع كثيرة من الزهور.",
+    "La fruta se vende en el mercado central.",
+    "تتميز هذه الفنانة بالإبداع في أعمالها."
+   ],
+   "quiet": [
+    "Los niños duermen hasta tarde los domingos.",
+    "En invierno hay nieve en las carreteras de montaña.",
+    "The kitchen smelled strongly of rosemary and garlic.",
+    "نشب خلاف طويل بين القبيلتين.",
+    "يعمل أخي في مجال التعليم.",
+    "في الحديقة زهور كثيرة جميلة.",
+    "La fruta está en el mercado central.",
+    "تتميز هذه الفنانة بالمهارة في أعمالها."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8, the Arabic اع items highest and the Spanish 'se' items weakest; near misses 0.05-0.2 from the broad floor",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: Arabic اع / frag|rant / Spanish se",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: max 1.02, density 9.6% (FLAG broad), echo regime 95%; peaks ' se' x15, 'اع' x3, ' más' x3, 'rant' x2 (frag|rant). Probe: إرجاع 0.697 (peak 'اع'), fragrant 0.457, 'donar se encuentran' 0.376, 'Allí se eleva' 0.205, 'más de 25 cm' 0.153; controls 0.064-0.149. The tokenizer ends نزاع, قطاع, أنواع, استماع, إبداع with the 'اع' piece. Registered as dense / positional with a token-bag test; the Spanish half is expected to be the weak part."
+}

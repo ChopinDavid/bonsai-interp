@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b5974ff9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N6763+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N6763",
+   "pole": "+",
+   "label": "unclear: the card's peaks are nouns about to take a partitive or locative marker in head-final languages (病例|中有, 10U|中, その|うち, 작가|들|이다, Таллин|не, веществ|е), but probes reached only 0.37 (そのうち) and 0.33 (Budapest) with English partitives silent (0.002); best guess is the set noun before a partitive 'of which' in CJK or Russian",
+   "fire": [
+    "参加者のうち三人が遅刻した。",
+    "全体の中で最も重要な点は安全だ。",
+    "这些学生中有一半来自农村。",
+    "在这十个方案中，只有两个可行。",
+    "학생들 중에서 세 명이 상을 받았다.",
+    "В этом веществе содержится много железа.",
+    "Среди участников были студенты из Таллинна.",
+    "그 작품들이 전시회에 출품되었다."
+   ],
+   "quiet": [
+    "参加者は三人とも遅刻した。",
+    "安全は最も重要な点だ。",
+    "这些学生都来自农村。",
+    "这十个方案只有两个可行。",
+    "학생들이 상을 받았다.",
+    "Это вещество содержит много железа.",
+    "Участники приехали на конференцию.",
+    "그 작품은 전시회에 출품되었다."
+   ]
+  }
+ ],
+ "predictions": "fire items mostly under 0.3, with the Japanese うち and Korean 중 items highest; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun before partitive/locative marker (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 225, density 0.04%, no dominant token: 'U' (10U中), '病例' (病例中有), '들' (작가들이다), ' 其中的', ' Budapest', 'лин' (Таллинне), 'その' (そのうちの), ' веществ' (веществе), '分析', '言'. Probe: そのうちの 0.371, Budapest 0.331, 病例中有 0.186, 들 0.098, 其中的 0.024, English 'Of the three hundred applicants' 0.002, 'Among the forty crew' 0.002. The partitive reading is weakly supported in Japanese only; registered as unclear with a multilingual test of nouns before 中/うち/중/locative -е against the same nouns as plain subjects."
+}
