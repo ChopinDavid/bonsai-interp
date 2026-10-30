@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L22/N10765-",
+ "model": "bonsai1",
+ "layer": 22,
+ "index": 10765,
+ "pole": "-",
+ "label": "Low-confidence guess: the attribute or index piece after a name in Python test or numeric code ('return_value' on a mock, 'interface_driver' in a config override, '[0]' on an array), firing on that piece; the same lines with a plain name stay quiet.",
+ "short": "attribute/index piece in test code (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N10765_neg/2026-10-30-lm1909-0004957b.tests.json",
+   "prereg_commit": "8d6500cb",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.071,
+     "peak": "_value"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.084,
+     "peak": "_driver"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.036,
+     "peak": "]"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.063,
+     "peak": "_value"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.081,
+     "peak": "_strategy"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.186,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.286,
+     "peak": "_value"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.022,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": "()\n"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.035,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": "       "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.977,
+    "median_fire": 0.076,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-0004957b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-0004957b",
+   "Low-confidence guess: the attribute or index piece after a name in Python test or numeric code ('return_value' on a mock, 'interface_driver' in a config override, '[0]' on an array), firing on that piece; the same lines with a plain name stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-0004957b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

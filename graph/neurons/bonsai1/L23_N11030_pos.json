@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N11030+",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 11030,
+ "pole": "+",
+ "label": "' from' (and the first number) opening a time span closed by 'until/to' ('closed from Monday until Friday', 'chairman from 1991 until 2009'); 'from' of a source or origin stays quiet.",
+ "short": "' from' opening a time span",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N11030_pos/2026-10-30-lm1909-b7d82f19.tests.json",
+   "prereg_commit": "8d6500cb",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.422,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.421,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.277,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.266,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.231,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.248,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.302,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.151,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " collector"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " leads"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.061,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " shop"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.0,
+     "peak": " country"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.0,
+     "peak": " from"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.003,
+     "peak": "He"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.272,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-b7d82f19"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-b7d82f19",
+   "' from' (and the first number) opening a time span closed by 'until/to' ('closed from Monday until Friday', 'chairman from 1991 until 2009'); 'from' of a source or origin stays quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-b7d82f19"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
