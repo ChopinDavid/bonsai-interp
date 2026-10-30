@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-8784a1f3",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N3875+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N3875",
+   "pole": "+",
+   "label": "The '<' of an inequality in a reported p-value or threshold ('P<0.001', 'p < 0.05'); p-values written with '=' and plain statements stay quiet.",
+   "fire": [
+    "Survival improved with treatment (P<0.01).",
+    "The groups differed significantly (p < 0.05).",
+    "Mortality fell by 20% (P<0.001).",
+    "The effect was strong (p<0.0001).",
+    "Scores rose after training (P < 0.01).",
+    "Both markers were raised (p<0.05).",
+    "The trend was significant (P<0.005).",
+    "Blood pressure dropped (p < 0.001)."
+   ],
+   "quiet": [
+    "Survival improved with treatment (P = 0.21).",
+    "The groups differed slightly (p = 0.08).",
+    "Mortality fell by 20% (P = 0.04).",
+    "The effect was strong in both groups.",
+    "Scores rose after training (P = 0.12).",
+    "Both markers were raised (p = 0.30).",
+    "The trend was not significant.",
+    "Blood pressure dropped (p = 0.06)."
+   ]
+  }
+ ],
+ "predictions": "fire 0.4-1.0; near misses below 0.2",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "'<' in p-values (P<0.001)",
+ "unit_kind": "token / contextual",
+ "confidence": 0.6,
+ "notes": "Weak pole (corpus max 2.50), gate-closed regime. Card: '<' x11, '>' x4, '=' x4 (... mammography (P⟦<⟧0.0001)); cover test held (AUROC 0.97) for a set of symbols. Exploratory probe: 'P<0.001' 1.00, 'P = 0.03' 0.09."
+}

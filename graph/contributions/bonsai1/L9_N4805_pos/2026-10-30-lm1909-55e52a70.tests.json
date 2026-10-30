@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-55e52a70",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N4805+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N4805",
+   "pole": "+",
+   "label": "Manhattan-style street addresses with a numbered street ('534 West 25th Street', 'East 86th Street'), firing on the street number after West/East; addresses without a numbered street stay quiet.",
+   "fire": [
+    "The gallery moved to 520 West 21st Street.",
+    "Her office is at 10 East 53rd Street.",
+    "The bakery on West 72nd Street closes at six.",
+    "They rented a flat on East 86th Street.",
+    "The club is at 151 West 54th Street, New York.",
+    "Meet me at the corner of East 14th Street.",
+    "The museum sits at 1 East 70th Street.",
+    "He lived at 245 West 107th Street."
+   ],
+   "quiet": [
+    "The gallery moved to 520 Harbour Road.",
+    "Her office is at 10 Market Square.",
+    "The bakery on Church Lane closes at six.",
+    "They rented a flat on Elm Avenue.",
+    "The club is at 151 Queen Street, Toronto.",
+    "Meet me at the corner of Mill Road.",
+    "The museum sits at 1 Castle Hill.",
+    "He lived at 245 Park Lane."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "numbered Manhattan street addresses",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: 'th' x6, ' ' x5, ' Square', 'rd' x3, ' Times' x2 (78 West⟦ ⟧55th Street; 2 West⟦ ⟧77th Street; 534 West⟦ ⟧25th Street). Exploratory probe: '534 West 25th Street' 0.57, 'Times Square' 0.30; 'a quiet street in Chelsea' 0.11."
+}

@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-179b3b4c",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N445+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N445",
+   "pole": "+",
+   "label": "' ever' (in 'evergreen' and in 'have you ever', 'ever since'), firing on ' ever'; the same sentences without it stay lower.",
+   "fire": [
+    "Holly is an evergreen shrub.",
+    "Have you ever been to Japan?",
+    "It was the best meal I ever had.",
+    "Ever since the move, she sleeps better.",
+    "Pines are evergreen trees.",
+    "Nobody ever answers that phone.",
+    "Did you ever meet her brother?",
+    "Box hedges stay evergreen all winter."
+   ],
+   "quiet": [
+    "Holly is a prickly shrub.",
+    "Have you been to Japan?",
+    "It was the best meal I had.",
+    "Since the move, she sleeps better.",
+    "Pines are tall trees.",
+    "Nobody answers that phone.",
+    "Did you meet her brother?",
+    "Box hedges stay green all winter."
+   ]
+  }
+ ],
+ "predictions": "fire 0.3-0.6; near misses up to 0.2 (broad)",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "' ever' (evergreen, have you ever)",
+ "unit_kind": "token / lexical",
+ "confidence": 0.45,
+ "notes": "Weak, broad pole (corpus max 0.69, 4.5% of tokens above 0.1). Card: ' ever' x12 (a hardy, large,⟦ ever⟧green shrub), ' raised' x5, ' else', ' еще'. Exploratory probe: 'evergreen' 0.33, 'Have you ever' 0.53; 'flowering shrub' 0.11."
+}

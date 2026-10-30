@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-lm1909-3c051826",
+ "contributor": "lm1909",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N8308-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T00:33:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N8308",
+   "pole": "-",
+   "label": "Low-confidence guess: a date line that opens a new text ('17 September 2015' on its own line before the article); the same date inside a sentence stays quiet.",
+   "fire": [
+    "3 March 2016\nThe council approved the new park.",
+    "12 July 2011\nFloods closed the main road.",
+    "28 January 2019\nThe school reopened after the storm.",
+    "5 May 2014\nPrices rose for a third month.",
+    "21 October 2017\nThe festival drew record crowds.",
+    "9 April 2013\nThe mayor resigned this morning.",
+    "30 November 2012\nSnow fell across the region.",
+    "14 June 2018\nThe bridge finally opened."
+   ],
+   "quiet": [
+    "The council approved the new park on 3 March 2016.",
+    "Floods closed the main road on 12 July 2011.",
+    "The school reopened after the storm on 28 January 2019.",
+    "Prices rose for a third month in May 2014.",
+    "The festival drew record crowds on 21 October 2017.",
+    "The mayor resigned on the morning of 9 April 2013.",
+    "Snow fell across the region on 30 November 2012.",
+    "The bridge finally opened on 14 June 2018."
+   ]
+  }
+ ],
+ "predictions": "fire 0.1-0.3; uncertain",
+ "methods": {
+  "agent": "claude-code opus-5.5",
+  "screens": [
+   "card",
+   "atlas",
+   "probe"
+  ]
+ },
+ "short": "date line opening a text (guess)",
+ "unit_kind": "unclear / positional",
+ "confidence": 0.2,
+ "notes": "Card: '\\n' x13, '1' x6, '.\\n' x6 (<|endoftext|>⟦1⟧7 September 2015; <|endoftext|>⟦2⟧0 August 2012). Exploratory probe: '17 September 2015\\nThe refugees…' 0.26; the date inside the sentence 0.04. Possibly positional (document start); low confidence."
+}
