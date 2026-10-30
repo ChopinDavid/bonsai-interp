@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0976facb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N7906-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N7906",
+   "pole": "-",
+   "label": "the second number of a numeric pair written as a dimension or range: fires on the first digit after ' x ' or '-' ('640 x 480' 0.94, '24-36 hours' 0.59) and on the continuation dots of an aligned matrix (0.63); line breaks inside multi-line code (0.004-0.007), a dimension written without spaces ('800x600' 0.12) and single numbers are silent",
+   "fire": [
+    "The monitor runs at 1920 x 1080 and refreshes at 144 hertz.",
+    "Bake the loaf for 35-40 minutes until the crust is golden.",
+    "The photo was cropped to 1200 x 800 before upload.",
+    "Delivery takes 3-5 business days within the country.",
+    "A standard sheet of plywood measures 4 x 8 feet.",
+    "Symptoms usually appear 12-48 hours after exposure.",
+    "The old game ran at 320 x 240 on the original hardware.",
+    "Expect to pay 150-200 dollars for a decent pair of boots."
+   ],
+   "quiet": [
+    "The monitor is 1080 pixels tall and refreshes at 144 hertz.",
+    "Bake the loaf for 40 minutes until the crust is golden.",
+    "The photo was cropped to 800 pixels wide before upload.",
+    "Delivery takes 5 business days within the country.",
+    "A standard sheet of plywood is 8 feet long.",
+    "Symptoms usually appear 48 hours after exposure.",
+    "The old game ran at 240 lines on the original hardware.",
+    "Expect to pay 200 dollars for a decent pair of boots."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the first digit of the second number; near misses under 0.1; the range form ('-') may score lower than the ' x ' form",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second number of 'A x B' / 'A-B'",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 141, density 0.05%, peaks '\\n' x7 in code, but the three non-newline top examples are '640 x ⟦4⟧80', '640x⟦3⟧63', '24-⟦3⟧6 hours' and the matrix continuation dots. Probe: the newline hypothesis failed ('%\\n name)' 0.007, '.format(...)\\n )' 0.004, XML 0.004, 'x = compute' 0.003), while '640 x 480' 0.941 (peak '4'), matrix dots 0.626 (' .'), '24-36 hours' 0.586 ('3'), '800x600' 0.119 ('x'); prose 0.003. Digits tokenize one per character, so the pole reads the first digit of the second number after the ' x ' or '-' separator. Near misses keep the sentences with one number only."
+}

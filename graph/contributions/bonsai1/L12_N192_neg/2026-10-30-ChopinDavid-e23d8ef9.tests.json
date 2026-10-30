@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e23d8ef9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N192-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N192",
+   "pole": "-",
+   "label": "a verdict on the merit or validity of a work, idea or claim: 'discredited as' 0.67, 'Thumbs down' 0.68, 'judge the quality of' 0.54, 'the configuration is bad' 0.39, 'has not won majority support' 0.38, 'what you think of my analysis' 0.23; neutral reports about the same works (received, submitted, baked: 0.006-0.11) are silent",
+   "fire": [
+    "The committee rated the design poorly and sent it back for revision.",
+    "Her theory was dismissed as unsound by most of her colleagues.",
+    "The critics panned the film as shallow and predictable.",
+    "Nobody could assess the merit of his argument without the data.",
+    "The referees judged the proof to be flawed in its second step.",
+    "His plan never gained the approval of the board.",
+    "The soup was bland and overpriced. Two stars at best.",
+    "We still need to evaluate whether the hypothesis holds up."
+   ],
+   "quiet": [
+    "The committee received the design on Monday and filed it for review.",
+    "Her theory was presented at the conference in Vienna.",
+    "The critics attended the film's premiere on Friday night.",
+    "Nobody could read his argument without the printed handout.",
+    "The referees returned the proof to the author in March.",
+    "His plan was discussed by the board at the annual meeting.",
+    "The soup was served with bread. Two bowls each.",
+    "We still need to type up the hypothesis for the report."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.7 on the evaluative word; near misses under 0.12",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "verdict on merit / validity",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 15.6, density 0.37%, no single token: 'Thumbs down', 'the kickstart is bad', 'has not won majority support', 'Evaluating the likely success', 'judge the quality of', 'evaluate the hypotheses on the basis', 'a lower opinion of', 'Improbable', 'what you think of my analysis', 'discredited as a fringe theory'. Probe: discredited 0.671 ('credited'), Thumbs down 0.676, judge the quality 0.542, bad 0.388, won 0.384, think of 0.226; neutral received 0.083, submitted 0.113, baked 0.006. The + pole is a broad 'However/but' unit. Near misses keep the work and the actors and drop the judgement."
+}

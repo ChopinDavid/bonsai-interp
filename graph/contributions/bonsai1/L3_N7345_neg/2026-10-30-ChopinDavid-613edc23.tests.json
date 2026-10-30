@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-613edc23",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N7345-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N7345",
+   "pole": "-",
+   "label": "the spelling of 'mug' in any sense and form: ' mug' (0.79-0.89), 'm|ugs' 0.90, 'm|ugged' 0.79, 'm|uggy' 0.35, mugshot 0.81, and 'gob|let' 0.85; synonyms without the spelling ('cup' 0.14, 'jar' 0.003) are silent",
+   "fire": [
+    "She handed him a mug of hot chocolate by the fire.",
+    "The shop prints custom mugs with family photos.",
+    "Two men mugged a tourist outside the station last night.",
+    "The knight raised a silver goblet and drank deeply.",
+    "It was a muggy evening and the air smelled of rain.",
+    "Members of the Mug Club get a discount on pints.",
+    "The cafe serves tea in a thick ceramic mug.",
+    "The suspect's mugshot appeared in the morning paper."
+   ],
+   "quiet": [
+    "She handed him a cup of hot chocolate by the fire.",
+    "The shop prints custom plates with family photos.",
+    "Two men robbed a tourist outside the station last night.",
+    "The knight raised a silver chalice and drank deeply.",
+    "It was a humid evening and the air smelled of rain.",
+    "Members of the Pint Club get a discount on beer.",
+    "The cafe serves tea in a thick ceramic bowl.",
+    "The suspect's photograph appeared in the morning paper."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the mug piece; near misses under 0.15; 'muggy' may be the weakest fire item",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "mug / goblet spelling",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: max 39.5, density 0.005%, peaks ' mug' x10, ' Mug' x5, 'let' x3 (goblet), 'ugged' x3, 'ugs' x2, plus mug|uet. Probe: chipped mug 0.892, old mug 0.793, goblet 0.848 (peak 'let'), mugs 0.899 ('ugs'), mugshot 0.810, mugged 0.794 ('ugged'), muggy 0.352 ('uggy'); cup 0.138, jar 0.003. Layer 3, so the bare spelling is tested first; the sense (drinking vessel, face, robbery, weather) does not matter. Near misses swap in a synonym without the spelling."
+}

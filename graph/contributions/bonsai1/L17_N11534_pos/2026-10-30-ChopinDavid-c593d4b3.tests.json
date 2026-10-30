@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c593d4b3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N11534+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N11534",
+   "pole": "+",
+   "label": "'its' and formal nominal reference in old-fashioned expository prose about an institution, work or statute ('the private residence of its owner' 0.54, 'made all of its predecessors obsolete' 0.34, 'failed of the effect of' 0.30); 'its' for an animal ('licked its paw' 0.02), 'their' (0.03) and plain dated facts about the same subjects (0.07-0.13) are weak",
+   "fire": [
+    "The abbey remained the chief seat of its order until the dissolution.",
+    "The work surpassed all of its rivals in the completeness of its tables.",
+    "The academy devotes its revenues to the instruction of poor scholars.",
+    "The town owed much of its prosperity to the wool trade.",
+    "The society extended its influence over the whole province.",
+    "The edition retains the errors of its predecessors without correction.",
+    "The institution has not been slow in fulfilling the purpose of its founder.",
+    "The act fell short of its object, the rates being evaded by the carriers."
+   ],
+   "quiet": [
+    "The dog wagged its tail and ran after the ball.",
+    "The abbey was dissolved in 1539 and the monks were pensioned.",
+    "The engine lost its power halfway up the hill.",
+    "The town has a population of about twelve thousand.",
+    "The bird tucked its head under its wing and slept.",
+    "The edition was printed in Leipzig in 1842.",
+    "The phone keeps its charge for about two days.",
+    "The act was passed in 1844 and repealed ten years later."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.5 on ' its' or the following noun; near misses under 0.15; 'prepares its learners' scored only 0.07 in the probe, so several fire items may be weak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "institutional 'its' in formal prose",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 16.4, density 0.61%, peaks ' its' x4, ' demanding', ' side', ' effect', ' it', ' origin' in Victorian-style prose ('It prepares its learners', 'the private residence of its owner, his family and his dependents', 'on its historic side', 'drawing its inspiration', 'failed of the effect of imposing', 'all of its predecessors obsolete'). Probe: of its owner 0.536, its predecessors 0.341, failed of the effect 0.299, draws its inspiration 0.122, prepares its learners 0.069; cat its paw 0.016, their learners 0.032, founded in 1850 0.070, published in 1687 0.125. Fire items keep the register and the possessive; near misses use 'its' for animals and objects, or the same subjects with dated facts."
+}

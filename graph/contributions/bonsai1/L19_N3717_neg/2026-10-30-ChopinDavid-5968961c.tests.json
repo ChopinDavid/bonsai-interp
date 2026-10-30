@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5968961c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N3717-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N3717",
+   "pole": "-",
+   "label": "the boundary between an 'If' clause and its consequence: the comma or 'then' that closes the condition ('If I didn't love you, then why' 0.75, 'If the county mirrored this trend, there would be' 0.59, 'in your post, we'll' 0.28); temporal 'When'/'after' clauses (0.01-0.06), list and appositive commas (0.02-0.04) and a conditional placed after the main clause (0.05) are silent",
+   "fire": [
+    "If the pump fails during the night, the whole basement will flood.",
+    "If she had taken the earlier train, then she would have made the meeting.",
+    "If the council approves the budget, construction starts in May.",
+    "If you heat the solution above sixty degrees, the crystals dissolve.",
+    "If I were in your position, I would ask for a second opinion.",
+    "If the forecast is right, then we should cancel the regatta.",
+    "If nobody claims the parcel within a week, it goes back to the sender.",
+    "If the engine keeps stalling, take it to a mechanic."
+   ],
+   "quiet": [
+    "When the pump failed during the night, the whole basement flooded.",
+    "After she took the earlier train, she made the meeting with time to spare.",
+    "The council approved the budget, and construction starts in May.",
+    "Heat the solution above sixty degrees, and the crystals dissolve.",
+    "Yesterday, in a long meeting, I asked for a second opinion.",
+    "Because the forecast is bad, we should cancel the regatta.",
+    "Nobody claimed the parcel within a week, so it went back to the sender.",
+    "The engine kept stalling, so he took it to a mechanic."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8 on ',' or ' then'; near misses under 0.1; 'When' clauses in the near misses are the closest configuration and may carry some activation",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "comma closing an 'If' clause",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 9.8, density 0.22%, ',' x16 ('in your post, we'll automatically', 'if I didn't love U, then why', 'if Tompkins County mirrored this trend, this would be', 'when B comes opposite to it, communicates'), plus ' led' to, ' left' Pol Pot, ' will' be lost. Probe: 'then why' 0.749, 'this trend, there would be' 0.588, 'in your post, we'll' 0.281; 'When B comes opposite to C,' 0.059, 'Five years after ..., the family' 0.014, 'However,' 0.008, list 0.020, appositive 0.038, conditional after main clause 0.053. The temporal clauses did not fire, so the pole is specific to the if-then boundary; near misses use when/after/because/so paraphrases of the same content."
+}

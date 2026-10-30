@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-0b53a9b4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1745-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T11:32:47+00:00",
+ "recipe": {
+  "toolchain_commit": "5e29f9fb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N1745_neg/2026-10-30-ChopinDavid-0b53a9b4.tests.json"
+ },
+ "label": "the relativizer or auxiliary that introduces praise in promotional copy ('a stunning wedding that looked like' 0.80, 'a first-rate product that is cost-effective' 0.59, 'constantly seeking to deliver quality' 0.48, 'rest assured that we have' 0.25); the same frames introducing neutral facts ('a product that costs twelve dollars' 0.24) or faults ('has been recalled' 0.10) are weaker",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N1745_neg/2026-10-30-ChopinDavid-0b53a9b4.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.842,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.441,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.03,
+     "peak": " comfort"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.537,
+     "peak": " has"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.126,
+     "peak": " have"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.169,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.166,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.573,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.126,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.029,
+     "peak": " house"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.041,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.053,
+     "peak": " been"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " broke"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.139,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.035,
+     "peak": " that"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.305,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e29f9fb",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "praise slot in promotional copy",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 101, density 0.27%, peaks ' that' x4, ' has' x3, ' to' x2, ' who', ' we' in marketing prose ('a first-rate product that is cost-effective', 'this project incorporates sustainable design', 'constantly seeking to deliver quality', 'a stunning wedding that looks like', 'kitchenware has been revolutionising', 'rest assured that we have enlisted'); the + pole peaks on ' to'/' can' and suppresses 'incorporate(s)'. Probe: wedding that 0.802, product that 0.586, seeking to 0.476, rest assured that we have 0.246, kitchenware has 0.200; neutral product that costs 0.243, recalled 0.104, wedding on Saturday 0.132, committee seeking to fill 0.011. Near misses keep the product and the frame and make the predicate factual or negative.",
+ "selection": "random draw"
+}

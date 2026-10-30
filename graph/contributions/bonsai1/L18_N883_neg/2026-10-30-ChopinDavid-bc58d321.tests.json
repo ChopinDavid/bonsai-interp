@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bc58d321",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N883-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N883",
+   "pole": "-",
+   "label": "unclear: a post-nominal modifier that spells out a relation in expository prose ('King Fernando of Spain, who sponsored' 0.55, 'the degree of relatedness between' 0.34, 'how badly people were treated in' 0.33, 'unhappiness caused by' 0.29); the card's own top example ('rotation of a vector') reproduced at only 0.11, and plain sentences are 0.01-0.05",
+   "fire": [
+    "The bridge was named after Queen Isabella of Castile, who financed the expedition.",
+    "The pattern likely reflects the degree of kinship between the colonies.",
+    "The diary tells us how harshly the prisoners were treated in the fortress.",
+    "It may be a physical reaction to stress caused by the long hours.",
+    "The library was founded by Bishop Anselm of Lucca, who collected the manuscripts.",
+    "The chart shows the level of agreement between the two raters.",
+    "The letters reveal how poorly the servants were treated in the household.",
+    "The rash is probably an allergic response to irritation caused by the soap."
+   ],
+   "quiet": [
+    "The bridge was named after Queen Isabella of Castile in 1492.",
+    "The pattern appears in all of the colonies.",
+    "The diary describes the prisoners in the fortress.",
+    "It may be a physical reaction to the long hours.",
+    "The library was founded by Bishop Anselm of Lucca in 1080.",
+    "The chart shows the two raters' scores.",
+    "The letters describe the servants in the household.",
+    "The rash is probably an allergic reaction to the soap."
+   ]
+  }
+ ],
+ "predictions": "a best guess: fire items 0.1-0.5, near misses under 0.1; likely to hold on ordering at most, with a low median",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "relational post-modifier (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 11.8, density 0.86%, no single token: 'rotation' of a vector, 'diagonal matrix', 'how badly people were treated', 'unhappiness caused by', 'horizon on Saturday', 'King Fernando of Spain, who sponsored', 'the area involved', 'the island, with rations', 'river of blood', 'relatedness between pods'. Probe: ', who sponsored' 0.546, 'degree of relatedness' 0.341, 'treated in the camps' 0.334, 'caused by the noise' 0.292, 'rotation of a vector' 0.113, 'diagonal matrix' 0.050, 'island, with rations' 0.013, umbrella 0.016, 'area involved' 0.023. Four frames reproduced and four did not; the test copies the four that did with new content and removes the relational modifier in the near misses."
+}

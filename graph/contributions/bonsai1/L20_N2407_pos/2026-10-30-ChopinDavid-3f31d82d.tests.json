@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3f31d82d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N2407+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N2407",
+   "pole": "+",
+   "label": "a mid-clause habituality marker stating what is typically the case ('are usually accompanied' 0.17, 'Many students lack' in the card); sentence-initial 'Typically,'/'Generally,' (0.01-0.07), 'always' (0.09) and the exception markers 'Surprisingly'/'Unfortunately' (0.01) are silent in short sentences, so the unit needs a preceding sentence",
+   "fire": [
+    "The letters come from strangers. They usually ask for money rather than advice.",
+    "I have seen many of these cases. The symptoms typically fade within a week.",
+    "Insurance rules vary by state. Premiums are generally not deductible for individuals.",
+    "Not every patient reacts the same way. In most cases the muscle recovers on its own.",
+    "Discounts look generous at first. Normally the marked-down items are the ones nobody wants.",
+    "The rumours sounded dramatic. They usually turn out to be nothing more than gossip.",
+    "Long novels defeat many pupils. Most of them lack the stamina to finish one.",
+    "Cough syrups are sold everywhere. They typically contain a decongestant as well."
+   ],
+   "quiet": [
+    "The letters come from strangers. They always ask for money rather than advice.",
+    "I have seen many of these cases. The symptoms faded within a week this time.",
+    "Insurance rules vary by state. Premiums were surprisingly deductible for individuals last year.",
+    "Not every patient reacts the same way. Unfortunately the muscle did not recover on its own.",
+    "Discounts look generous at first. Yesterday the marked-down items were the ones nobody wanted.",
+    "The rumours sounded dramatic. They turned out to be nothing more than gossip.",
+    "Long novels defeat many pupils. This one never finished the assigned reading.",
+    "Cough syrups are sold everywhere. This one contains a decongestant as well."
+   ]
+  }
+ ],
+ "predictions": "weak: fire items 0.1-0.4 on usually/typically/generally; near misses under 0.1; the probe maximum was only 0.17, so the test may fail on the median",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "usually / typically (habituality)",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 16.1, density 0.2%, peaks ' usually' x6, ' Typically' x2, ' Generally', 'normally,', 'In most cases', 'Sometimes people don't', '一般是', 'Many students lack'; the - pole peaks on ' surprisingly', ' Unfortunately', ' happens', ' but' and suppresses ' commonly'/' common'/' frequent', so the distinction is typical vs. unexpected. Probe (single sentences): 'are usually accompanied' 0.174, 'Typically, the swelling goes' 0.065, 'In most cases,' 0.040, 'Normally,' 0.024, 'Generally,' 0.005; 'always' 0.088, no adverb 0.005, 'Surprisingly' 0.015, 'Unfortunately' 0.008. All weak, which matches the card's mid-document examples; the test therefore gives each item a lead-in sentence and puts the adverb mid-clause. Near misses replace it with a one-off or exception framing."
+}

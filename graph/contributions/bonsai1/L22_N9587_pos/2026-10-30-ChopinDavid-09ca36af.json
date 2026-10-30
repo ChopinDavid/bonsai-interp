@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-09ca36af",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N9587+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T11:33:22+00:00",
+ "recipe": {
+  "toolchain_commit": "5e29f9fb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N9587_pos/2026-10-30-ChopinDavid-09ca36af.tests.json"
+ },
+ "label": "the relation between predecessors and successors: those who came before, what is left or handed on to those who come after, a successor inheriting ('built on the work of those who came before' 0.96, 'leaving for future generations' 0.84, 'gift to succeeding generations' 0.77, 'the wars he inherited' 0.56); the same sentences without the lineage ('the wars he started' 0.19, 'lock the door when you go' 0.19) are low",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N9587_pos/2026-10-30-ChopinDavid-09ca36af.tests.json",
+   "prereg_commit": "5e29f9fb",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.042,
+     "peak": " worked"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.293,
+     "peak": " day"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.216,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.776,
+     "peak": " after"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.366,
+     "peak": " previous"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.388,
+     "peak": " successors"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.236,
+     "peak": " followed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.215,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " scientist"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.007,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " office"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.015,
+     "peak": " coach"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " he"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.048,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.33,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e29f9fb",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "predecessors and successors",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 86.5, density 0.095%, peaks ' after' (those who practice after you), ' succeeding' generations, ' on' (built on Maas-Fjetterstrom), ' came' before me, ' for' future generations, ' successor', 'preced|a', ' he' inherited; the - pole promotes 'predecessors', 'successors', 'inherited'. Probe: those who came before 0.960, future generations 0.842, succeeding generations 0.768, came before me 0.656, inherited 0.555, practise after you 0.204; lock the door 0.188, wars he started 0.189, worked three years 0.020. Near misses keep the subject and the sentence shape and remove the before/after lineage.",
+ "selection": "random draw"
+}

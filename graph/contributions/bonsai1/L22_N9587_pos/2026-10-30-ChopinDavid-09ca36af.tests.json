@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-09ca36af",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N9587+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T11:20:06+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N9587",
+   "pole": "+",
+   "label": "the relation between predecessors and successors: those who came before, what is left or handed on to those who come after, a successor inheriting ('built on the work of those who came before' 0.96, 'leaving for future generations' 0.84, 'gift to succeeding generations' 0.77, 'the wars he inherited' 0.56); the same sentences without the lineage ('the wars he started' 0.19, 'lock the door when you go' 0.19) are low",
+   "fire": [
+    "Every scientist stands on the shoulders of those who worked before her.",
+    "The orchard was planted so that his grandchildren would one day eat its fruit.",
+    "She handed the business on to her nephew, who has run it ever since.",
+    "What kind of planet will we pass on to the children who come after us?",
+    "The new coach inherited a squad built by three previous managers.",
+    "His successors on the throne continued the reforms he had begun.",
+    "The bridge was finished by the engineers who followed him.",
+    "We are the heirs of a tradition that stretches back five centuries."
+   ],
+   "quiet": [
+    "Every scientist spends most of her week writing grant applications.",
+    "The orchard was planted on the sunny slope behind the farmhouse.",
+    "She ran the business from a small office above the bakery.",
+    "What kind of weather will we have for the children's party on Saturday?",
+    "The new coach trained the squad twice a day during the summer.",
+    "His advisers at the palace opposed the reforms he had proposed.",
+    "The bridge was finished by the engineers in just under two years.",
+    "We are the members of a club that meets every Thursday."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.9 on the lineage word (before, after, inherited, successors, pass on); near misses under 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predecessors and successors",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 86.5, density 0.095%, peaks ' after' (those who practice after you), ' succeeding' generations, ' on' (built on Maas-Fjetterstrom), ' came' before me, ' for' future generations, ' successor', 'preced|a', ' he' inherited; the - pole promotes 'predecessors', 'successors', 'inherited'. Probe: those who came before 0.960, future generations 0.842, succeeding generations 0.768, came before me 0.656, inherited 0.555, practise after you 0.204; lock the door 0.188, wars he started 0.189, worked three years 0.020. Near misses keep the subject and the sentence shape and remove the before/after lineage."
+}
