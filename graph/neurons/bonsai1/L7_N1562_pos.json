@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L7/N1562+",
+ "model": "bonsai1",
+ "layer": 7,
+ "index": 1562,
+ "pole": "+",
+ "label": "the word 'honest' as a predicate of candour about one's own speech ('let's be honest' 0.83, 'I'm gonna be honest' 0.69, 'very honest with my survey' 0.59), with 'specific' in 'be a little more specific' (0.70); attributive 'an honest man' half-fires (0.29) and 'to be frank' (0.06), 'be careful' (0.03) and other adjectives after 'be' are silent",
+ "short": "'honest' as a candour predicate",
+ "kind": "token",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N1562_pos/2026-10-29-ChopinDavid-209e0cad.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.913,
+     "peak": " honest"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.037,
+     "peak": " honest"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.039,
+     "peak": " honest"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.46,
+     "peak": " specific"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.668,
+     "peak": " honest"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.015,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.646,
+     "peak": " specific"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.122,
+     "peak": " honest"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.432,
+     "peak": " brief"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.642,
+     "peak": " candid"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.049,
+     "peak": " fair"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": "plug"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.089,
+     "peak": " quick"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " never"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.266,
+     "peak": " blunt"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.101,
+     "peak": " practical"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.727,
+    "median_fire": 0.553,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-29-ChopinDavid-209e0cad"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-209e0cad",
+   "the word 'honest' as a predicate of candour about one's own speech ('let's be honest' 0.83, 'I'm gonna be honest' 0.69, 'very honest with my survey' 0.59), with 'specific' in 'be a little more specific' (0.70); attributive 'an honest man' half-fires (0.29) and 'to be frank' (0.06), 'be careful' (0.03) and other adjectives after 'be' are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-209e0cad"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L6/N3341-",
+ "model": "bonsai1",
+ "layer": 6,
+ "index": 3341,
+ "pole": "-",
+ "label": "a positional unit: the card's top 32 all peak at window position 0 (the first token of the context window, ' –' x6, ' J' x5, ' indicate'), and every probe sentence scored at the floor (≤0.023) whatever its first token; best guess tested here: a sentence opening with an en dash or a bare lowercase word",
+ "short": "window-position-0 unit",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N3341_neg/2026-10-29-ChopinDavid-ff876fe3.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.017,
+     "peak": " dark"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.011,
+     "peak": " generation"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.008,
+     "peak": " tax"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.015,
+     "peak": " letter"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.018,
+     "peak": " long"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.017,
+     "peak": " option"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.021,
+     "peak": " kind"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.011,
+     "peak": " row"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.017,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " generation"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.009,
+     "peak": " tax"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": " letter"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " below"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.015,
+     "peak": " kind"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": " row"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.57,
+    "median_fire": 0.016,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-ff876fe3"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-ff876fe3",
+   "a positional unit: the card's top 32 all peak at window position 0 (the first token of the context window, ' –' x6, ' J' x5, ' indicate'), and every probe sentence scored at the floor (≤0.023) whatever its first token; best guess tested here: a sentence opening with an en dash or a bare lowercase word",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-ff876fe3"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

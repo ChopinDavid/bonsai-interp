@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N12226-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 12226,
+ "pole": "-",
+ "label": "the piece 'ie' closing 'facie' in the legal phrase prima facie (prima fac|ie 0.47-0.71); 'borne in mind' (0.19) and 'Ever since' (0.15) from the card are weak, and legal prose without the phrase is at or below zero",
+ "short": "'ie' of prima facie",
+ "kind": "token",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N12226_neg/2026-10-29-ChopinDavid-1175f2cf.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.484,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.753,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.557,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.695,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.591,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.657,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.535,
+     "peak": "ie"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.709,
+     "peak": "ie"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.002,
+     "peak": " credible"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.122,
+     "peak": " delivery"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.021,
+     "peak": " injunction"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.164,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.054,
+     "peak": " bona"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.087,
+     "peak": " shortfall"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.073,
+     "peak": " lib"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.186,
+     "peak": " stolen"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.624,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-1175f2cf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-1175f2cf",
+   "the piece 'ie' closing 'facie' in the legal phrase prima facie (prima fac|ie 0.47-0.71); 'borne in mind' (0.19) and 'Ever since' (0.15) from the card are weak, and legal prose without the phrase is at or below zero",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-1175f2cf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

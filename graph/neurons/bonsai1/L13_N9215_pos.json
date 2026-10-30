@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N9215+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 9215,
+ "pole": "+",
+ "label": "present-tense 'need'/'needs' as a main verb with a personal subject ('anyone who needs this kind of expertise' 0.40, 'whenever you need it' 0.40, 'people today need to' 0.38); 'need' with a quantity object (0.09), the noun 'need' (0.02) and past 'needed' (0.06) are silent",
+ "short": "'need' as a present-tense verb",
+ "kind": "token",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N9215_pos/2026-10-29-ChopinDavid-d09165b0.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.429,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.062,
+     "peak": " needs"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.097,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.045,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.085,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.117,
+     "peak": " need"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.079,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.143,
+     "peak": " need"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": " locksmith"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": "Anyone"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.055,
+     "peak": " days"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.045,
+     "peak": " what"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.074,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.066,
+     "peak": " needed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.058,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": "Most"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.091,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-d09165b0"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-d09165b0",
+   "present-tense 'need'/'needs' as a main verb with a personal subject ('anyone who needs this kind of expertise' 0.40, 'whenever you need it' 0.40, 'people today need to' 0.38); 'need' with a quantity object (0.09), the noun 'need' (0.02) and past 'needed' (0.06) are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-d09165b0"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

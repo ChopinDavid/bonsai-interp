@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L32/N7105+",
+ "model": "bonsai1",
+ "layer": 32,
+ "index": 7105,
+ "pole": "+",
+ "label": "a physical speed or velocity being quantified ('a speed of 150 meters per second' 0.65, 'speed must be 0.866c' 0.57, 'a velocity of 1,075 feet per second' 0.53, 'rotates at a speed of' 0.51), fired on speed/velocity, the 'of' or the digits; other quantified magnitudes (a mass of 150 grams 0.01, a temperature of 20 degrees 0.00) and figurative speed (0.01) are silent",
+ "short": "quantified speed or velocity",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N7105_pos/2026-10-29-ChopinDavid-7f68dd13.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.496,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.184,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.275,
+     "peak": " velocity"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.262,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.637,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.033,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.207,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.36,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.01,
+     "peak": "9"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " burns"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " now"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": " pass"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.068,
+     "peak": " electron"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " temperature"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.006,
+     "peak": " has"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.269,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-7f68dd13"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-7f68dd13",
+   "a physical speed or velocity being quantified ('a speed of 150 meters per second' 0.65, 'speed must be 0.866c' 0.57, 'a velocity of 1,075 feet per second' 0.53, 'rotates at a speed of' 0.51), fired on speed/velocity, the 'of' or the digits; other quantified magnitudes (a mass of 150 grams 0.01, a temperature of 20 degrees 0.00) and figurative speed (0.01) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-7f68dd13"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

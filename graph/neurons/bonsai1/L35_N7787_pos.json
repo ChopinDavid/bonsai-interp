@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N7787+",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 7787,
+ "pole": "+",
+ "label": "the lone piece ' p' opening a split word whose completion is predictable from the collocation (through their p|aces 0.67, including p|ears 0.16); the same piece in a less predictable word (p|umice 0.03, p|imento 0.00), longer p-initial pieces (pl|ums, pen|icillin) and whole-token p words are silent",
+ "short": "' p' piece of a predictable word",
+ "kind": "token",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N7787_pos/2026-10-29-ChopinDavid-16cb90ea.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.003,
+     "peak": " hunger"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.022,
+     "peak": " its"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.033,
+     "peak": " orange"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.032,
+     "peak": " p"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.048,
+     "peak": " white"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.044,
+     "peak": " rain"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.047,
+     "peak": "asant"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.254,
+     "peak": " p"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " hunger"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": " its"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.033,
+     "peak": " orange"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.048,
+     "peak": " white"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.044,
+     "peak": " rain"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " hunters"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.672,
+    "median_fire": 0.038,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-16cb90ea"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-16cb90ea",
+   "the lone piece ' p' opening a split word whose completion is predictable from the collocation (through their p|aces 0.67, including p|ears 0.16); the same piece in a less predictable word (p|umice 0.03, p|imento 0.00), longer p-initial pieces (pl|ums, pen|icillin) and whole-token p words are silent",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-16cb90ea"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

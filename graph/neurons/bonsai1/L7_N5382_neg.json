@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L7/N5382-",
+ "model": "bonsai1",
+ "layer": 7,
+ "index": 5382,
+ "pole": "-",
+ "label": "mold/mould and casting vocabulary in the sense of shaping material (injection mould|ing 1.05, poured into molds 0.94, a sand mold 0.79, die-c|ast 0.78, Type Found|ry 0.72); the fungus sense is weaker (black mold 0.18, cheese mould 0.44) and the theatrical cast (0.14) and other machining (0.13) are silent",
+ "short": "casting and moulding",
+ "kind": "topic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N5382_neg/2026-10-29-ChopinDavid-84289423.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.955,
+     "peak": " molds"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.529,
+     "peak": "ry"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.735,
+     "peak": " mould"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.743,
+     "peak": "ast"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.14,
+     "peak": " mold"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.798,
+     "peak": " mould"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.647,
+     "peak": " mould"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.429,
+     "peak": "ry"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.195,
+     "peak": " onto"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.198,
+     "peak": " statue"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.154,
+     "peak": " gob"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.146,
+     "peak": " stamped"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.427,
+     "peak": " die"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.247,
+     "peak": " out"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.209,
+     "peak": " machine"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.14,
+     "peak": " cast"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.739,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-29-ChopinDavid-84289423"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-84289423",
+   "mold/mould and casting vocabulary in the sense of shaping material (injection mould|ing 1.05, poured into molds 0.94, a sand mold 0.79, die-c|ast 0.78, Type Found|ry 0.72); the fungus sense is weaker (black mold 0.18, cheese mould 0.44) and the theatrical cast (0.14) and other machining (0.13) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-84289423"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

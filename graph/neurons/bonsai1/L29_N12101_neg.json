@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N12101-",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 12101,
+ "pole": "-",
+ "label": "a distributive or enumerated reference to one unit of a partitioned space ('Lot 13, Concession 6' 0.89 on the comma, 'two rows per locule' 0.76, 'hall 9, stands D06' 0.53, 'each land' 0.49, 'each of the classrooms' 0.45, 'each parking space' 0.36, 'one side wall' 0.36); 'each' over people or time ('Each student', 'Each year' 0.10) is silent",
+ "short": "unit of a partitioned space",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N12101_neg/2026-10-29-ChopinDavid-aef4d257.tests.json",
+   "prereg_commit": "94c73a53",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.345,
+     "peak": " each"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.121,
+     "peak": " per"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.983,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.718,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.425,
+     "peak": " each"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.544,
+     "peak": " per"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.51,
+     "peak": " each"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.415,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.08,
+     "peak": " market"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.027,
+     "peak": " hall"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.034,
+     "peak": " farm"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": "Our"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.146,
+     "peak": " each"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.077,
+     "peak": " four"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.146,
+     "peak": " each"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.072,
+     "peak": " cemetery"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.631,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-ChopinDavid-aef4d257"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-29-ChopinDavid-aef4d257",
+   "a distributive or enumerated reference to one unit of a partitioned space ('Lot 13, Concession 6' 0.89 on the comma, 'two rows per locule' 0.76, 'hall 9, stands D06' 0.53, 'each land' 0.49, 'each of the classrooms' 0.45, 'each parking space' 0.36, 'one side wall' 0.36); 'each' over people or time ('Each student', 'Each year' 0.10) is silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-29-ChopinDavid-aef4d257"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
