@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-2f017312",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N12141+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T04:33:07+00:00",
+ "recipe": {
+  "toolchain_commit": "5e15bf16",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N12141_pos/2026-10-29-ChopinDavid-2f017312.tests.json"
+ },
+ "label": "a function word inside a statement that something is already over, obsolete or running out: 'a very dead technology by now' 0.75 (peak ' by'), 'the few that remain' 0.33, 'nothing we can do to stop the decline' 0.30; the same subjects described as growing or continuing are quiet (0.02-0.03)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N12141_pos/2026-10-29-ChopinDavid-2f017312.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.954,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.144,
+     "peak": " few"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.332,
+     "peak": " do"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.402,
+     "peak": " any"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.19,
+     "peak": " pretty"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.349,
+     "peak": " that"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.305,
+     "peak": " do"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.604,
+     "peak": " any"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.137,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.074,
+     "peak": " are"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " can"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.028,
+     "peak": " rising"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.041,
+     "peak": " fast"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": " do"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " in"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.341,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e15bf16",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "already over / running out",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 69.5, density 0.22%, peaks ' are'/' is'/' had'/' by'/' can'/' any' in 'density improvements are coming slower and slower', 'a very dead tool by now', 'population growth is no longer driven by', 'nothing we can do to stop it', 'the old one can't keep up', 'may be outdated', 'appears to have peaked', 'this game any more', 'in print right now'. The - pole peaks on ' no' ' longer' ' not' ' never'. Probe: 'Floppy drives are a very dead technology by now' 0.749, 'the few that remain are overbooked' 0.325 (peak ' that'), 'nothing we can do to stop the decline' 0.304, 'no longer able to keep up' 0.122, 'appears to have peaked' 0.049; growth versions 0.024-0.029, museum hours 0.004.",
+ "selection": "random draw"
+}

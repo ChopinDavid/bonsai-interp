@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-002f2efb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N8126+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T04:34:39+00:00",
+ "recipe": {
+  "toolchain_commit": "5e15bf16",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N8126_pos/2026-10-29-ChopinDavid-002f2efb.tests.json"
+ },
+ "label": "dense / positional: 14.5% of tokens reach 0.1 of a max of 1.7 and the gate-closed regime dominates; the card's peaks (' civil' case, ' PhD', ' found', ' birds') are common nouns and verbs in expository prose, and the probe gave 'among birds' 0.36 with everything else 0.03-0.17, so no label is claimed",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N8126_pos/2026-10-29-ChopinDavid-002f2efb.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.094,
+     "peak": " prosecution"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.103,
+     "peak": " moving"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.111,
+     "peak": " poultry"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.018,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.198,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.112,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.105,
+     "peak": " phrases"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.05,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.186,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.156,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.154,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.128,
+     "peak": " up"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.058,
+     "peak": " more"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.112,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.125,
+     "peak": " again"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.04,
+     "peak": "We"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.305,
+    "median_fire": 0.104,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e15bf16",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "dense / positional",
+ "unit_kind": "dense / positional",
+ "confidence": 0.15,
+ "notes": "Card: max 1.73, density 14.5% (FLAG dense), regimes -x- echo 100% (FLAG gate-closed), peaks ' PhD' x2, ' Guard' x2, 'imientos' x2, ' civil', ' found', 'ic', ' birds', ' colonies', ' held', ' wholesale', ' Dictionary', ' improving'. Probe: 'spreads easily among birds' 0.357, 'across most of the county' 0.170, 'return x + 1' 0.146, 'In a civil case' 0.144, 'a PhD at Leeds' 0.129, dog 0.095, classes held 0.039, lake 0.025, train -0.027. The fire items copy the card's expository register; the near misses are plain narrative.",
+ "selection": "random draw"
+}

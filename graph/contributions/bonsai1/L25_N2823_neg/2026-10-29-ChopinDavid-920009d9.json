@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-920009d9",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N2823-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T04:33:19+00:00",
+ "recipe": {
+  "toolchain_commit": "5e15bf16",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N2823_neg/2026-10-29-ChopinDavid-920009d9.tests.json"
+ },
+ "label": "the slot that announces a defect or loophole about to be named: 'due to a [quirk/limitation]' 0.63-0.68, 'work around the [bug]' 0.59, 'exploiting [glitches / a loophole]' 0.89-0.91, 'is it a bug' 0.28; 'due to' an ordinary cause is quiet (0.07) and 'exploiting' a resource leaks weakly (0.32)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N2823_neg/2026-10-29-ChopinDavid-920009d9.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.306,
+     "peak": " bug"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.706,
+     "peak": " limitation"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.495,
+     "peak": " glitch"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.282,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.858,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.233,
+     "peak": " an"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.646,
+     "peak": "irk"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.325,
+     "peak": " known"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.077,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.031,
+     "peak": " GB"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " exists"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.034,
+     "peak": " by"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " final"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.052,
+     "peak": " because"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.049,
+     "peak": " to"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.571,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e15bf16",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "predicts a bug or loophole",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 144, density 0.03%, peaks ' a', ' is', ' workaround' x2, ' due' x2, ' to', ' little' in '# Due to a (mis-)feature of TkAqua', 'code to workaround the python bug', 'due to an internal working', 'is it an error with my computer', 'exploiting bugs rather than reporting them', 'exploiting legal technicalities', 'a little-used hearing process'; the + pole suppresses ' loophole', ' bugs', ' glitch', ' limitation', ' trick', ' exploit'. Probe: 'exploiting a loophole in the 2004 statute' 0.911, 'exploiting glitches' 0.894, '# Due to a quirk' 0.681, 'due to a limitation of' 0.633, 'work around the libc bug' 0.587, 'is it a bug' 0.278; 'exploiting the copper deposits' 0.319, 'due to a thunderstorm' 0.065, logging config 0.009.",
+ "selection": "random draw"
+}

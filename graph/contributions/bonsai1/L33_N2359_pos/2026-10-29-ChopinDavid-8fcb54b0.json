@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-29-ChopinDavid-8fcb54b0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N2359+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T04:34:04+00:00",
+ "recipe": {
+  "toolchain_commit": "5e15bf16",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N2359_pos/2026-10-29-ChopinDavid-8fcb54b0.tests.json"
+ },
+ "label": "the vocalised Arabic dative preposition ' ل' after a speech verb (وَقَالَ لَهُ 0.46, where diacritics split ' ل' from the pronoun; unvocalised ' له' is one token and silent 0.00) and, from the card only, the 'init' piece of a Python 'def __init__(' header (card 'init' x9; other dunders probed at 0.07)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N2359_pos/2026-10-29-ChopinDavid-8fcb54b0.tests.json",
+   "prereg_commit": "5e15bf16",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.33,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.415,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.249,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.426,
+     "peak": " ل"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.06,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.15,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.06,
+     "peak": "init"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.241,
+     "peak": " ل"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "جاب"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.099,
+     "peak": " و"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " المدينة"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.161,
+     "peak": "ي"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": "       "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.024,
+     "peak": "("
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " له"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.245,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "5e15bf16",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "Arabic ' ل' after قَالَ; def __init__",
+ "unit_kind": "lexical",
+ "confidence": 0.3,
+ "notes": "Card: max 258, density 0.24%, peaks 'init' x9, '(' x4, ' ل' x3, 'ل' x2, 'call', 'ὶ' in vocalised Biblical Arabic (وَقَالَ لَهُ, وَظَهَرَ لَهُ, عَلَيْهِمْ), 'def check_watched_items( self )', 'def __call__', Greek dative τῷ πατρὶ. Probe: 'وَقَالَ لَهُ: «يَا مُعَلِّمُ' 0.464 (peak ' ل'), 'وَظَهَرَ لَهُ مَلاَكٌ' 0.086, unvocalised 'ثم قال له' 0.004 (' له' single token), 'def __call__' 0.071, 'def __repr__' 0.072, 'def clean_directory( self, folder )' 0.005, 'def run(self)' 0.002, call 0.006, Arabic floor 0.001. __init__ was not probed; the card's 'init' x9 is the reason three fire items use it.",
+ "selection": "random draw"
+}
