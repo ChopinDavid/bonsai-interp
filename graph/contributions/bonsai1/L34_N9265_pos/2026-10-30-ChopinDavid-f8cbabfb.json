@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-ChopinDavid-f8cbabfb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N9265+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T19:34:08+00:00",
+ "recipe": {
+  "toolchain_commit": "b4634ecb",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N9265_pos/2026-10-30-ChopinDavid-f8cbabfb.tests.json"
+ },
+ "label": "The French lone ' d' token opening an elided d' (d'autres, d'abord, d'un, d'honneur) or 'sans doute'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N9265_pos/2026-10-30-ChopinDavid-f8cbabfb.tests.json",
+   "prereg_commit": "b4634ecb",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.594,
+     "peak": " d"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.08,
+     "peak": " d"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.268,
+     "peak": " d"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.839,
+     "peak": " d"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.201,
+     "peak": " d"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.136,
+     "peak": " d"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.189,
+     "peak": " d"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.236,
+     "peak": " d"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.06,
+     "peak": " passé"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": "me"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " avons"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.126,
+     "peak": "ud"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.075,
+     "peak": " depuis"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " fab"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.016,
+     "peak": " le"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.003,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.218,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "b4634ecb",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "French elided ' d' token",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: d'autres 0.907, sans doute 0.657, d'abord 0.443, cour d'honneur 0.363 (all peak ' d'); Découvrez 0.162 (peak ' nouve', the ' D' itself silent), dresse 0.040, l'après-midi 0.075, vitamin D 0.005, Dubai 0.001. Card: ' d' x15, 'd' x4, mostly French d' elisions and 'sans doute', plus Christ|end|om. The token is declared as the trigger so coverage is measured.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   " d"
+  ]
+ }
+}

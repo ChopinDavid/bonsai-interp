@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-70c8f1b0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N8554+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N8554",
+   "pole": "+",
+   "label": "Left-context predictor of a decision verb: the slot after 'help you', 'has one month to', 'make any final', where 'decide' or 'decision' is the likely next word, whatever actually follows",
+   "fire": [
+    "This comparison chart should help you pick the right tent for your trip.",
+    "The jury has three days to reach a verdict in the case.",
+    "Read the small print before you make any major commitments.",
+    "The board will have to settle the matter at its next meeting.",
+    "It is entirely up to you whether to accept the offer.",
+    "These sample photos can help buyers choose between the two lenses.",
+    "The council now has until Friday to vote on the new zoning plan.",
+    "Ask the pharmacist before you make any changes to your dosage."
+   ],
+   "quiet": [
+    "This comparison chart lists the weight and price of every tent.",
+    "The jury listened to three days of testimony in the case.",
+    "The small print runs to twelve pages of dense legal text.",
+    "The board met on Tuesday and the minutes were posted online.",
+    "The offer arrived by email on a Monday morning.",
+    "These sample photos were taken with the two lenses at dusk.",
+    "The council published the new zoning plan on Friday.",
+    "The pharmacist explained the side effects of the new dosage."
+   ]
+  }
+ ],
+ "predictions": "Frames that set up 'decide/decision/choice' as the next word reach 0.3-0.6 even when the continuation differs; sentences on the same topics with no such setup stay under 0.15. The probe showed near-identical scores for 'help you decide' and 'help you understand', so the test's near misses remove the frame, not the word.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicts an upcoming 'decide'",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'help you decide which' 0.551 (peak ' you') and 'help you understand how' 0.551 (same peak); 'one month to decide' 0.388 = 'one month to prepare' 0.388; 'make any final decisions' 0.405 (peak ' final'); 'bases its decision' 0.166 = 'bases its estimate' 0.166; 'help interested customers make the right choice' 0.186; river flood 0.008. The output direction suppresses ' choice', ' choose', ' choosing', so the pole predicts the 'decide' family and steers against 'choice'. Card peaks ' his', ' you', ' to', ' me', ' final' right before decision/decide/becoming involved."
+}

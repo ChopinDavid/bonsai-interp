@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f8cbabfb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N9265+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N9265",
+   "pole": "+",
+   "label": "The French lone ' d' token opening an elided d' (d'autres, d'abord, d'un, d'honneur) or 'sans doute'",
+   "fire": [
+    "Elle a passé la soirée avec d'anciens collègues du bureau.",
+    "Le musée ferme ses portes d'ici la fin du mois.",
+    "Nous avons besoin d'une réponse avant lundi matin.",
+    "Il faudra sans doute attendre le printemps pour les travaux.",
+    "Le village manque d'eau potable depuis la sécheresse.",
+    "Ce fromage est fabriqué à partir d'un lait de chèvre très frais.",
+    "Les élèves étaient d'accord pour reporter la sortie.",
+    "Le vin vient d'une petite cave à quelques kilomètres d'ici."
+   ],
+   "quiet": [
+    "Elle a passé la soirée avec des anciens collègues du bureau.",
+    "Le musée ferme ses portes à la fin du mois.",
+    "Nous avons besoin de la réponse avant lundi matin.",
+    "Il faudra dormir un peu avant de reprendre les travaux.",
+    "Le village manque de pluie depuis le début de la sécheresse.",
+    "Ce fromage est fabriqué dans une ferme de chèvres très ancienne.",
+    "Les élèves étaient debout pour saluer le directeur.",
+    "The patient needs more vitamin D during the dark months."
+   ]
+  }
+ ],
+ "predictions": "Sentences with ' d' before an apostrophe or 'oute' reach 0.35-0.9 on the ' d'; French sentences using single-token de/du/des/dans, the capital ' D' of Découvrez, and English 'vitamin D' stay under 0.17. ' d' followed by another non-elision piece (d|resse) scored only 0.040 in the probe, so one near miss of that kind is included.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "French elided ' d' token",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: d'autres 0.907, sans doute 0.657, d'abord 0.443, cour d'honneur 0.363 (all peak ' d'); Découvrez 0.162 (peak ' nouve', the ' D' itself silent), dresse 0.040, l'après-midi 0.075, vitamin D 0.005, Dubai 0.001. Card: ' d' x15, 'd' x4, mostly French d' elisions and 'sans doute', plus Christ|end|om. The token is declared as the trigger so coverage is measured.",
+ "trigger": {
+  "tokens": [
+   " d"
+  ]
+ }
+}

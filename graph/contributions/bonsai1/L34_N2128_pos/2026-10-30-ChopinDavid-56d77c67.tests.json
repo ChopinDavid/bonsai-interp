@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-56d77c67",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N2128+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N2128",
+   "pole": "+",
+   "label": "The slot right before the name of a press outlet in an attribution or citation (London's Independent, tells The A.V. Club, interview with Game Front, Daily Nation)",
+   "fire": [
+    "The minister gave a long interview to Kenya's Daily Nation about the drought.",
+    "Her essay first ran in Canada's Globe and Mail before it was reprinted abroad.",
+    "The singer tells The A.V. Club that the album took four years to finish.",
+    "In an interview with Rolling Stone, the drummer admitted the tour had nearly broken up the band.",
+    "The claim was repeated by Nigeria's Vanguard and by The Namibian a week later.",
+    "A columnist for Ireland's Irish Times called the budget a missed chance.",
+    "The study was first reported by New Scientist and later by The Guardian.",
+    "The coach told Sky Sports that the striker would miss the rest of the season."
+   ],
+   "quiet": [
+    "The minister gave a long interview to Kenya's farmers about the drought.",
+    "Her essay first ran in Canada's largest cities before it was reprinted abroad.",
+    "The singer tells the audience that the album took four years to finish.",
+    "In an interview with his bandmates, the drummer admitted the tour had nearly broken up the band.",
+    "The claim was repeated by Nigeria's opposition and by the governor a week later.",
+    "A columnist for Ireland's farming lobby called the budget a missed chance.",
+    "The study was first reported by the authors and later by their rivals.",
+    "The coach told the players that the striker would miss the rest of the season."
+   ]
+  }
+ ],
+ "predictions": "Attributions where a newspaper, magazine or site name follows reach 0.15-0.55, peaking on the possessive or 'The' before the name; the same frames continued by a person or a plain noun stay under 0.05. The probe was uneven (told the BBC 0.003), so a borderline median is expected.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "before a press-outlet name",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'the Guardian and London's Independent' 0.544 (peak 's), 'tells The A.V. Club' 0.281 (peak ' The'), 'interview with Game Front' 0.148; 'told the BBC' 0.003 and the New York Times citation 0.034 did not fire; non-outlet twins 0.003-0.018. Card: 9 of 10 top examples precede an outlet name (@ HiTech Legion, Daily Nation, Game Front, The Namibian, the BBC, The New York Times, The A.V. Club, London's Independent, The Guardian). The output promotes ' magazine' and suppresses ' National', ' Sports', ' People', ' Maxim'."
+}

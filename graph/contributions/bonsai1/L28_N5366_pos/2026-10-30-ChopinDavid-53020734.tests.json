@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-53020734",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N5366+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N5366",
+   "pole": "+",
+   "label": "The token right after the name of a canonical modern thinker or writer (philosopher, scientist, novelist): the year, possessive or 'and' that continues an intellectual-history frame",
+   "fire": [
+    "The lecture opened with Russell (1912) on the problems of philosophy.",
+    "Much of the seminar was spent on Heidegger's account of being-toward-death.",
+    "The falsification criterion of Popper and Lakatos still frames the debate.",
+    "Kafka's unfinished novels were published against his wishes.",
+    "The famous incompleteness paper of Gödel (1931) changed logic for good.",
+    "Einstein's 1905 papers appeared in a single volume of Annalen der Physik.",
+    "The genealogical method of Foucault and Derrida unsettled the humanities.",
+    "Dostoevsky's underground man anticipates much of existentialism."
+   ],
+   "quiet": [
+    "The broadcast opened with Federer (2012) on the grass at Wimbledon.",
+    "Much of the evening was spent on Rihanna's account of the tour.",
+    "The pressing game of Klopp and Guardiola still frames the debate.",
+    "Jackson's unfinished albums were released against his wishes.",
+    "The famous rookie season of Jordan (1985) changed the league for good.",
+    "Musk's 2008 investments appeared in a single filing with the regulator.",
+    "The marketing style of Gates and Jobs unsettled the industry.",
+    "Madonna's early singles anticipate much of modern pop."
+   ]
+  }
+ ],
+ "predictions": "Years, possessives and conjunctions right after Russell, Heidegger, Popper, Kafka, Dostoevsky, Einstein, Gödel, Foucault reach 0.35-0.9; the same frames with athletes, pop stars, politicians and executives stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "after a canonical thinker's name",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: Wittgenstein (1922) 0.894 (peak '9'), Sartre and Camus 0.782 (peak ' and'), Turing's 1950 paper 0.509 (peak '0'), Nietzsche's cutting quote 0.468 (peak 's), Orwell's greater works 0.387; Messi's 2012 season 0.004, the coach and the owner 0.005, Beyoncé's cutting remark 0.007, kettle 0.005. Card: Wittgenstein, Russell, Turing, Sartre and Camus, The Philosopher's Toolkit, Rilke, Dirac, Orwell, Nietzsche. The output suppresses ' fundamental', ' foundational', ' basic'."
+}

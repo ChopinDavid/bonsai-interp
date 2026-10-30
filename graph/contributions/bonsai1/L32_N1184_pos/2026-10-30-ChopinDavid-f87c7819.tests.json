@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f87c7819",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1184+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T19:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N1184",
+   "pole": "+",
+   "label": "A split stem piece of a Latin or German regional/ethnic adjective or place-derived name, before its suffix (Lug|dunensis, R|öm|ische, europ|äischen, Flem|ish)",
+   "fire": [
+    "Die Legionen der römischen Armee lagerten am Rhein.",
+    "The province of Gallia Narbonensis was the first Roman foothold beyond the Alps.",
+    "Nach dem Krieg wurde die Stadt Teil der britannischen Besatzungszone.",
+    "Die gallischen Stämme leisteten Caesar jahrelang Widerstand.",
+    "Pliny describes the ports of Hispania Tarraconensis in some detail.",
+    "Viele italienischen Gastarbeiter kamen in den sechziger Jahren nach Wolfsburg.",
+    "Der Handel mit den spanischen Kolonien machte Sevilla reich.",
+    "The tribes of Gallia Belgica were, in Caesar's words, the bravest of all."
+   ],
+   "quiet": [
+    "Die Legionen der kaiserlichen Armee lagerten am Rhein.",
+    "The province of Narbonne was the first Roman foothold beyond the Alps.",
+    "Nach dem Krieg wurde die Stadt Teil der wirtschaftlichen Union.",
+    "Die Stämme am Rhein leisteten Caesar jahrelang Widerstand.",
+    "Pliny describes the ports of the Spanish coast in some detail.",
+    "Viele wunderschönen Gärten entstanden in den sechziger Jahren in Wolfsburg.",
+    "Der Handel mit den Italian merchants machte Sevilla reich.",
+    "The Belgian tribes were, in Caesar's words, the bravest of all."
+   ]
+  }
+ ],
+ "predictions": "German and Latin demonym stems split from their '-ischen'/'-ensis' suffix reach 0.25-0.7; English single-token demonyms (Belgian, Italian, Spanish) and split German adjectives that are not place-derived (w|irtschaft|lichen, w|unders|ch|ö|nen) stay under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split stem of a Latin/German demonym",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: Lug|dunensis 0.681, R|öm|ische 0.564, europ|äischen 0.355, Flem|ish 0.237; к|ир|гизский 0.090, Tür|ke|i 0.059, European 0.038, Turkish (peak ' l' of lira) 0.153. Card peaks ' Flem', ' europ', ' Lug', 'öm', 'ир', 'Ur' of Urdu: stems of nationality words split by the tokenizer, mostly Latin-script. Cyrillic and Turkish split stems were weak, so the label is restricted to Latin/German forms."
+}
