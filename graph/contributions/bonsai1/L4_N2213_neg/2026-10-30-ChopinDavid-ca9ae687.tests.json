@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ca9ae687",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N2213-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N2213",
+   "pole": "-",
+   "label": "the second piece of a split pathology-morphology term (pol|yps 0.92, pap|illary 0.71, cyst|ic 0.71, nod|ules 0.69, lymph nodes 0.69): growths and tissue patterns in clinical text; the same pieces in non-medical words are silent (cap|illary action 0.01, gran|ules 0.005, modular 0.006)",
+   "fire": [
+    "The endoscopist removed a single sessile polyp from the rectum.",
+    "Ultrasound revealed a nodular goitre with a dominant cold nodule.",
+    "Two large fibroids were distorting the uterine cavity.",
+    "The rash consisted of red papules and a few pustules on the chin.",
+    "A vesicular eruption appeared along the dermatome.",
+    "Mammography showed dense glandular tissue in both breasts.",
+    "The biopsy showed invasive lobular carcinoma.",
+    "Casts were seen in the renal tubules on microscopy."
+   ],
+   "quiet": [
+    "The engineer removed a single faulty module from the rack.",
+    "The survey revealed a granular soil with a dominant clay layer.",
+    "Two large globules of oil were floating on the water.",
+    "The frame consisted of tubular steel and a few welded plates.",
+    "A capillary tube draws the sample up by surface tension.",
+    "The map showed dense residential blocks in both districts.",
+    "The committee chose a modular design for the new wing.",
+    "Sugar granules were seen in the jar under the lens."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 peaking on the second piece; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split lesion-morphology words: pol|yps, nod|ules, pap|illary, cyst|ic",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 29.3, density 0.02%, peaks 'ic' x9, 'ular' x3, 'ules' x3, 'illary' x3, ' nod' x3, 'yps' x2 in polyps, nodular, nodules, papillary, lymph node: clinical descriptions of growths. Probe: polyps 0.920 ('yps'), papillary 0.714 ('illary'), cystic 0.705 ('ic'), nodules 0.685 ('ules'), lymph nodes 0.691 (' nodes'); modular kitchen 0.006, capillary action 0.012, fine granules 0.005, fever and cough 0.014. The tokenizer splits polyp, nodular, fibroids, papules, pustules, vesicular, glandular, lobular and tubules into the same kind of pieces, so the fire items use fresh medical words with those splits; near misses use the identical pieces in engineering, soil and kitchen contexts (module, gran|ular, glob|ules, tub|ular steel, cap|illary tube, gran|ules) and two medical sentences without a morphology word."
+}

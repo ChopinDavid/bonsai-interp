@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-63ce349c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N67+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N67",
+   "pole": "+",
+   "label": "the token ' sales' / ' Sales' / '销售' (0.77-0.89, 0.69, 0.68); ' sale' 0.07, 'Revenue' 0.09, ' marketing' 0.16 are silent and ' sold' 0.36 is a weak secondary",
+   "fire": [
+    "Online sales now account for a third of revenue.",
+    "The company reported record sales in the third quarter.",
+    "Our Sales director is flying to Denver tomorrow.",
+    "Car sales slumped during the fuel shortage.",
+    "She spent ten years in pharmaceutical sales.",
+    "这家商店的销售额比去年增加了两成。",
+    "The sales tax on clothing was abolished last year.",
+    "Book sales tend to peak in December."
+   ],
+   "quiet": [
+    "Online orders now account for a third of revenue.",
+    "The company reported record profits in the third quarter.",
+    "Our Marketing director is flying to Denver tomorrow.",
+    "Car production slumped during the fuel shortage.",
+    "She spent ten years in pharmaceutical research.",
+    "这家商店的营业额比去年增加了两成。",
+    "The tax on clothing was abolished last year.",
+    "Books tend to sell best in December."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.6-0.9 on the sales token; near misses under 0.2 except 'sell' or 'sold' items that may reach 0.3-0.4",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the token 'sales' (and 销售)",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: max 5.12, density 0.04%, ' sales' x27 and '销售' x5 of the top 32: one token dominates. Probe: 'Quarterly sales' 0.772, 'The sales team' 0.894, 'Ticket sales' 0.833, 'Sales department' 0.694, '销售业绩' 0.679; 'a big sale' 0.067, 'Revenue' 0.088, 'marketing' 0.162, but 'They sold more cars' 0.364, so the layer-0 unit also reads the sell lemma weakly. Trigger declared as the three tokens; near misses swap in orders, profits, marketing, production, research, 营业额, tax and one 'sell' item.",
+ "trigger": {
+  "words": [
+   "sales",
+   "Sales",
+   "销售"
+  ]
+ }
+}

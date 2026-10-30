@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-160a0cc3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N9025-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N9025",
+   "pole": "-",
+   "label": "a dense / positional unit (2.8% of tokens reach 0.1 of a 47 max; 75% of top peaks at window position 1) that fires in the opening tokens of a passage, strongest on 'there are a number of' (0.77 at position 4) and on Russian and German function words after a sentence-initial noun ('вашей' 0.35, 'für' 0.23); plain English openings floor at 0.04-0.14",
+   "fire": [
+    "In Spain there are a number of rules that visitors find odd.",
+    "Актуальность вашей темы не вызывает сомнений.",
+    "Die Verantwortung für die Kinder liegt bei den Eltern.",
+    "Across Canada there are a number of parks that close in winter.",
+    "Безопасность вашей сети зависит от пароля.",
+    "In the kitchen there were a number of jars with no labels.",
+    "Der Preis für die Fahrkarte ist gestiegen.",
+    "Надёжность вашего автомобиля проверяется ежегодно."
+   ],
+   "quiet": [
+    "After the tour guide had finished explaining the history of the cathedral and the long story of its bells, she added that in Spain there are a number of rules that visitors find odd.",
+    "После того как комиссия подробно обсудила все представленные доклады и выслушала замечания оппонентов, председатель сказал, что актуальность вашей темы не вызывает сомнений.",
+    "Nachdem der Lehrer die ganze Geschichte der Schule und ihrer Gründer erzählt hatte, sagte er, dass die Verantwortung für die Kinder bei den Eltern liegt.",
+    "When the ranger had finished listing the trails, the campsites and the places where bears had been seen, he mentioned that across Canada there are a number of parks that close in winter.",
+    "Когда инженер закончил рассказывать о новых серверах и о старых проблемах с питанием, он напомнил, что безопасность вашей сети зависит от пароля.",
+    "By the time the children had unpacked every box from the move and found the kettle, they noticed that in the kitchen there were a number of jars with no labels.",
+    "Als der Schaffner alle Fahrgäste im Wagen kontrolliert und die Verspätung erklärt hatte, sagte er, dass der Preis für die Fahrkarte gestiegen ist.",
+    "После длинного разговора о зимней резине, маслах и страховке мастер сказал, что надёжность вашего автомобиля проверяется ежегодно."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8 on ' number', ' ваш', ' für' within the first six tokens; the same phrases after a 25-token lead-in score lower, but the broad floor may put some near misses above 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense / positional: opening-token unit, 'a number of', ваш/für",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: max 47, density 2.78% (FLAG broad), FLAG positional: top peaks cluster at window position 1 (75%; 100% within the first 16 tokens); peaks ' и' x4, ' \"' x3, ' für' x2, ' de' x2, '의', ' ваш', ' number' (in france there are a number of issues). Probe: 'In France there are a number of issues' 0.774 (peak ' number'), 'Конфиденциальность вашей работы' 0.354 (' ваш'), 'Die Bedeutung für die Leser' 0.229 (' für'), 'Компания использует' 0.171, '독자들에게 글쓰기의' 0.159, 'Он зажмурился' 0.154, 'The accounts of the Fund include' 0.144, 'Пользователь может удалить' 0.109, 'She walked to the market' 0.039. Registered as dense / positional with a positional test: fire items open with 'there are a number of' / noun + ваш / noun + für; near misses carry the identical phrase after a long clause so it sits past the window's opening tokens."
+}

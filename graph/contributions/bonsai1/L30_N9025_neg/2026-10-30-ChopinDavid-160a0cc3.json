@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-160a0cc3",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N9025-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T13:35:24+00:00",
+ "recipe": {
+  "toolchain_commit": "1903eda7",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L30_N9025_neg/2026-10-30-ChopinDavid-160a0cc3.tests.json"
+ },
+ "label": "a dense / positional unit (2.8% of tokens reach 0.1 of a 47 max; 75% of top peaks at window position 1) that fires in the opening tokens of a passage, strongest on 'there are a number of' (0.77 at position 4) and on Russian and German function words after a sentence-initial noun ('вашей' 0.35, 'für' 0.23); plain English openings floor at 0.04-0.14",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N9025_neg/2026-10-30-ChopinDavid-160a0cc3.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 6,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.779,
+     "peak": " number"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.447,
+     "peak": " ваш"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.309,
+     "peak": " Ver"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.7,
+     "peak": " number"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.507,
+     "peak": " ваш"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.508,
+     "peak": " number"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.082,
+     "peak": " die"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.135,
+     "peak": " вашего"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.631,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.571,
+     "peak": " ваш"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.328,
+     "peak": " die"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.623,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.536,
+     "peak": " ваш"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.328,
+     "peak": " number"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.191,
+     "peak": "ung"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.275,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.469,
+    "median_fire": 0.477,
+    "near_misses_at_0.3": 6
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1903eda7",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "dense / positional: opening-token unit, 'a number of', ваш/für",
+ "unit_kind": "dense / positional",
+ "confidence": 0.3,
+ "notes": "Card: max 47, density 2.78% (FLAG broad), FLAG positional: top peaks cluster at window position 1 (75%; 100% within the first 16 tokens); peaks ' и' x4, ' \"' x3, ' für' x2, ' de' x2, '의', ' ваш', ' number' (in france there are a number of issues). Probe: 'In France there are a number of issues' 0.774 (peak ' number'), 'Конфиденциальность вашей работы' 0.354 (' ваш'), 'Die Bedeutung für die Leser' 0.229 (' für'), 'Компания использует' 0.171, '독자들에게 글쓰기의' 0.159, 'Он зажмурился' 0.154, 'The accounts of the Fund include' 0.144, 'Пользователь может удалить' 0.109, 'She walked to the market' 0.039. Registered as dense / positional with a positional test: fire items open with 'there are a number of' / noun + ваш / noun + für; near misses carry the identical phrase after a long clause so it sits past the window's opening tokens.",
+ "selection": "random draw"
+}

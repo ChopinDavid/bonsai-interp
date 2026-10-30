@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-10f3ffd9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9660-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N9660",
+   "pole": "-",
+   "label": "the word interposed between a modal auxiliary and its main verb: an inverted subject ('will it take' 0.74, 'can such a demand' 0.39), an adverb ('should ... ever' 0.73, 'must soon' 0.43, 'should never' 0.40) or 'not' ('may not fly' 0.70); a modal followed directly by its verb (0.15) or no modal (0.01) is quiet, and inversion with 'did' is weak (0.31)",
+   "fire": [
+    "How long will it be before the harvest fails again?",
+    "Nor must the jury ever learn what the witness withheld.",
+    "By what means can such a debt be repaid?",
+    "The garrison must soon run out of fresh water.",
+    "A sailboat may not leave harbour for days on a flat sea.",
+    "Why should anyone believe a word of it?",
+    "Seldom will a landlord admit the roof was faulty.",
+    "The council could hardly refuse the petition now."
+   ],
+   "quiet": [
+    "It will be years before the harvest fails again.",
+    "The jury must learn what the witness withheld.",
+    "Such a debt can be repaid by instalments.",
+    "The garrison soon ran out of fresh water.",
+    "A sailboat stayed in harbour for days on a flat sea.",
+    "Nobody believed a word of it.",
+    "The landlord seldom admitted the roof was faulty.",
+    "The council refused the petition without much debate."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.8 peaking on the interposed word; near misses 0.01-0.2, the 'can be repaid' item highest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot between a modal and its verb (inverted subject, adverb, not)",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 59.3, density 0.84%, peaks ' not' x7, ' it' x2, ' also' x2, ' soon', ' ever', ' succession', ' opposition' after will/must/should/might/can/may: the main verb is still pending. Probe: 'will it take' 0.744 (peak ' it'), 'should children ever be' 0.731 (' ever'), 'may not fly' 0.696 (' not'), 'must soon lay' 0.428 (' soon'), 'can such a demand be' 0.390 (' demand'), 'should never work' 0.398 (' never'); 'It will take' 0.147, 'did it take' 0.314, no modal 0.010. The positive pole peaks on ' and'. Fire items use inverted questions, 'nor must', adverb-first inversion and modal+adverb/not; near misses put the modal directly before its verb or remove it while keeping soon/seldom/ever."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-73856410",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N4761+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N4761",
+   "pole": "+",
+   "label": "the modal or infinitive 'to' after a subject that is a creature in someone's care (pets, livestock, infants, test subjects): what the dependent needs, should have or is allowed to do ('Puppies need to' 0.55, 'Each rabbit should' 0.46, 'goats to graze' 0.39, 'Infants who were' 0.31); the same frame with a machine or document as subject is weak ('Each engine should' 0.18, 'reports need to' 0.04) and with an adult employee 0.09",
+   "fire": [
+    "Every hamster should have a wheel in its cage.",
+    "Kittens need to be wormed at two weeks of age.",
+    "Lambs who were bottle-fed stayed closer to the farmhouse.",
+    "A newborn might have difficulty latching on at first.",
+    "Let the chickens out to forage for a few hours each afternoon.",
+    "Older dogs need to go out more often during the night.",
+    "The test subjects who skipped breakfast performed worse on the puzzle.",
+    "Young children need to be told the rules more than once."
+   ],
+   "quiet": [
+    "Every printer should have a tray for its paper.",
+    "Tyres need to be rotated at ten thousand miles.",
+    "Houses that were built in the 1930s stayed cooler in summer.",
+    "A new motor might have difficulty starting in the cold.",
+    "Leave the windows open to air the room for a few hours each afternoon.",
+    "Old pipes need to be flushed more often during the winter.",
+    "The managers who skipped the briefing performed worse on the audit.",
+    "The delivery drivers need to be told the route more than once."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6, peaking on ' to', ' should', ' who'; near misses 0.03-0.2, the inanimate 'should have' items highest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "need/should/to after a cared-for creature subject",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 76.5, density 0.33%, peaks ' to' x8, ' should' x3, ' who' x2, ' can', ' might' after guinea pigs, a messy teen, high-risk babies, horses, a drooling dog, test subjects, Fenris, children, kids: every subject is a being that someone looks after. Probe: 'Puppies need to be fed' 0.548, 'Each rabbit should have' 0.458, 'Allow the goats to graze' 0.393, 'Infants who were given' 0.310, 'A toddler might have trouble' 0.164; 'Each engine should have' 0.181, 'A new employee might have trouble' 0.093, 'The reports need to be filed' 0.043, river 0.007. The negative pole peaks on copulas (' be', ' were', ' is'). Fire items keep the frame with hamsters, kittens, lambs, newborns, chickens, old dogs, test subjects and young children; near misses keep the identical frame with printers, tyres, houses, motors, pipes, managers and drivers."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-a780352b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N3538-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T13:34:01+00:00",
+ "recipe": {
+  "toolchain_commit": "1903eda7",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N3538_neg/2026-10-30-ChopinDavid-a780352b.tests.json"
+ },
+ "label": "a piece of an identifier string embedded in running text: the ' Co' of a company name (0.54), digits inside a username handle (@xiaoming_2008 0.39 in Chinese, 0.27 in English) or phone number (0.21), the '.co' of a domain (0.25); the same sentences with the identifier spelled out in words are silent (0.003-0.07)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N3538_neg/2026-10-30-ChopinDavid-a780352b.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.453,
+     "peak": " Co"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.558,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.02,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.307,
+     "peak": ".co"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.556,
+     "peak": " Co"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.069,
+     "peak": "8"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.436,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.034,
+     "peak": ".co"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.243,
+     "peak": " countries"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.051,
+     "peak": "微博"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " fines"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": "詳しく"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.107,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " free"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.021,
+     "peak": "："
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " River"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.859,
+    "median_fire": 0.371,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1903eda7",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "identifier piece: Co, handle digits, domain, phone",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 16.1, density 0.05%, peaks '.com' x5, ' Co' x2, '.co' x2, digits and letters inside handles (billli|u_seattle, jjhyy|z1010, chao|x), a phone number, 网络有限公司: identifiers inside Chinese and Japanese web pages. Probe: 'Electronics Co., Ltd' 0.536 (peak ' Co'), '@xiaoming_2008' 0.388 in Chinese and 0.272 in English, 'www.sample.co.jp' 0.245 (peak '.co'), '010-65881234' 0.214, but 'www.example.com' only 0.065 in Chinese and 0.017 in English, 华强电子有限公司 0.072, plain Chinese 0.003. So the language of the surrounding text matters less than the card suggested and '.com' is weak in a short sentence. Fire items put a Co. name, a digit-bearing handle, a phone number or a .co/.co.uk domain mid-sentence in English, Chinese, Spanish and Japanese; near misses are the same sentences with the identifier replaced by words.",
+ "selection": "random draw"
+}

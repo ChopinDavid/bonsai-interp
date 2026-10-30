@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ae0ff2cc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N3850+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N3850",
+   "pole": "+",
+   "label": "a dense layer-2 unit (13.5% of tokens reach 0.1 of a 0.35 max) whose strongest tokens are ' successive' / 'Success|ive' (0.73-0.84), 'Suddenly' (0.80) and ' reproduce' (0.34); ordinary prose floors at 0.17-0.25, so near misses sit close under threshold",
+   "fire": [
+    "The team won four successive titles.",
+    "Successive droughts emptied the reservoir.",
+    "Then, suddenly, the engine cut out.",
+    "The bridge collapsed after three successive floods.",
+    "Everyone was laughing, and suddenly the room fell silent.",
+    "Our editor refused to reproduce the photograph.",
+    "He served under successive prime ministers.",
+    "The press may not reproduce these images without permission."
+   ],
+   "quiet": [
+    "The team won four consecutive titles.",
+    "Repeated droughts emptied the reservoir.",
+    "Then, abruptly, the engine cut out.",
+    "The bridge collapsed after three severe floods.",
+    "Everyone was laughing, and then the room fell silent.",
+    "Our editor refused to print the photograph.",
+    "He served under several prime ministers.",
+    "The press may not publish these images without permission."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on the declared tokens (lowercase ' suddenly' untested, may be weaker); near misses 0.15-0.3 from the dense floor, so one or two may cross 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: successive / Suddenly / reproduce",
+ "unit_kind": "dense / positional",
+ "confidence": 0.4,
+ "notes": "Card: max 0.35, density 13.5% (FLAG dense), gate-closed echo 98%; peaks ' successive' x8, 'ive' x4 (Success|ive, success|ifs), ' Suddenly' x3, 'ant' x2, ' outcome' x2, ' reproduce', ' parler'. Probe: 'Successive governments' 0.843 ('ive'), 'Suddenly the lights' 0.796, 'Three successive storms' 0.725, 'may not reproduce' 0.338; floor 'without warning' 0.248, 'Several governments' 0.185, 'entendu parler' 0.177, 'incontestable' 0.189, 'cat sat' 0.172. Trigger declared as the token set; fire items place successive/Successive/suddenly/reproduce mid-sentence, near misses swap in consecutive/repeated/abruptly/then/print/publish. Registered as dense / positional: the token bag reproduces but the unit is on for most text.",
+ "trigger": {
+  "words": [
+   "successive",
+   "Successive",
+   "suddenly",
+   "Suddenly",
+   "reproduce"
+  ]
+ }
+}

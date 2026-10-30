@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-51b76be3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1733-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1733",
+   "pole": "-",
+   "label": "the digit or suffix piece of an immunology designation: CD4 (1.08 on '4'), CD8 (0.46), lymphaden|opathy (0.29), H3N2 (0.22), immun|odef|iciency (0.18), H7N9 (0.12); other alphanumeric medical codes are silent (B12 0.005, chromosome 21 0.006, Windows 7 0.002)",
+   "fire": [
+    "A CD4 count below 200 defines advanced HIV disease.",
+    "The CD4+ helper cells coordinate the antibody response.",
+    "Regulatory CD4 cells keep autoimmunity in check.",
+    "Cytotoxic CD8+ lymphocytes were expanded in culture.",
+    "The H5N1 virus killed millions of farmed birds.",
+    "Human H1N1 cases rose sharply in the spring.",
+    "Generalised lymphadenopathy is common in early infection.",
+    "The child was born with a rare primary immunodeficiency."
+   ],
+   "quiet": [
+    "A haemoglobin count below 8 defines severe anaemia.",
+    "The B12 injections restored her energy within weeks.",
+    "Chromosome 7 carries the gene for cystic fibrosis.",
+    "The HbA1c result was higher than last year.",
+    "The MRSA outbreak closed two wards.",
+    "Vitamin D3 supplements are cheap and widely used.",
+    "The T4 vertebra was fractured in the fall.",
+    "The p53 gene is mutated in half of all tumours."
+   ]
+  }
+ ],
+ "predictions": "CD4 and CD8 items 0.4-1.0 peaking on the digit; the flu-subtype and -opathy/-deficiency items 0.1-0.3; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "CD4/CD8, H5N1, -adenopathy, -deficiency immunology codes",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 28.8, density 0.01%, peaks '4' x6 (CD4, CD44), '1' x4 (H1N1), 'opathy' x3, '5' x2 (H5N1), 'odef' x2, 'uci': HIV and influenza immunology. Probe: 'CD4 cells' 1.077 ('4'), 'CD8 T cells' 0.458 ('8'), 'lymphadenopathy' 0.288 ('opathy'), 'H3N2 strain' 0.220 ('2'), 'immunodeficiency' 0.184 ('odef'), 'H7N9 outbreak' 0.123 ('9'); 'Vitamin B12' 0.005, 'Chromosome 21' 0.006, 'Windows 7' 0.002. Fire items use CD4 (three), CD8, H5N1, H1N1, lymphadenopathy and immunodeficiency mid-sentence; near misses are medical sentences with other alphanumeric codes (haemoglobin count, B12, chromosome 7, HbA1c, MRSA, D3, T4 vertebra, p53)."
+}

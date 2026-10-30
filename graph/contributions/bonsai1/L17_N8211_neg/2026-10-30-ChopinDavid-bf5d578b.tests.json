@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bf5d578b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N8211-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N8211",
+   "pole": "-",
+   "label": "one analytical or engineering technique paired with another ('chromatography coupled with mass spectrometry' 0.77, 'steam reforming used with fuel cells' 0.48, 'immunostaining combined with confocal microscopy' 0.27, 'apply EM to hidden Markov models' 0.17), peaking on ' with' or on the second technique; 'with' outside a method pairing (0.02) and a technique on its own are silent",
+   "fire": [
+    "Liquid chromatography coupled with tandem mass spectrometry quantified the metabolites.",
+    "Raman scattering combined with atomic force microscopy maps the surface chemistry.",
+    "Pulsed-field electrophoresis has been used with Southern blotting to size the fragments.",
+    "Capillary electrophoresis coupled with laser-induced fluorescence detects trace amines.",
+    "Fourier-transform infrared spectroscopy combined with chemometrics classifies the oils.",
+    "Pyrolysis has been used with fuel cells to recover energy from waste plastics.",
+    "Electron microscopy coupled with energy-dispersive X-ray analysis identifies the particles.",
+    "Flow cytometry combined with cell sorting isolates the rare population."
+   ],
+   "quiet": [
+    "Liquid chromatography quantified the metabolites in under an hour.",
+    "Raman scattering reveals the vibrational modes of the surface.",
+    "Pulsed-field electrophoresis separates very long DNA fragments.",
+    "The dog walked along the beach with its owner.",
+    "Olive oils are classified by their acidity and origin.",
+    "Waste plastics are shredded and then melted.",
+    "The particles were collected with a fine brush.",
+    "She shared the lab with two postdocs."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 peaking on ' with' or the second method's name; near misses under 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "technique coupled/combined/used with another technique",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 13.6, density 0.17%, peaks ' with' x5 (combined with MS, coupled with flame ionization, used with fuel cells), ' digital' (full-field digital mammography), 's' (apply EM to GMMs), ' augment', ' enhanced', ' cells'. Probe: 'coupled with mass spectrometry' 0.770 (peak ' with'), 'used with solid oxide fuel cells' 0.475 (peak ' cells'), 'combined with confocal microscopy' 0.270, 'replacing standard digital mammography' 0.175, 'apply the EM algorithm to hidden Markov models' 0.174; 'greatly enhanced by the addition of a fluorescent tag' 0.030, 'concert with her brother' 0.022, 'coupled to the rear carriage' 0.020. Fire items pair two named lab or process techniques with coupled/combined/used with; near misses keep one technique alone or use 'with' for company or instrument."
+}

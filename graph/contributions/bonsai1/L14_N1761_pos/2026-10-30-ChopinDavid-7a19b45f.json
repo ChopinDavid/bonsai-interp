@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-7a19b45f",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N1761+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T13:34:26+00:00",
+ "recipe": {
+  "toolchain_commit": "1903eda7",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N1761_pos/2026-10-30-ChopinDavid-7a19b45f.tests.json"
+ },
+ "label": "the parameter name right after an anonymous-function keyword ('fun x ->' 1.00, 'lambda n:' 0.72, 'lambda w:' 0.56, 'lambda event:' 0.54, 'lambda item:' 0.33); a parameter in a named definition ('def square(x)' 0.24) and the Greek letter in prose (0.009) are weak; a bare 'lambda:' with no parameter fires on the keyword itself (0.33)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N1761_pos/2026-10-30-ChopinDavid-7a19b45f.tests.json",
+   "prereg_commit": "1903eda7",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.568,
+     "peak": " pair"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.792,
+     "peak": " checked"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.411,
+     "peak": " value"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.652,
+     "peak": " y"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.523,
+     "peak": " acc"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.509,
+     "peak": " evt"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.437,
+     "peak": " *"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.349,
+     "peak": " lst"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.349,
+     "peak": "(pair"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.276,
+     "peak": "checked"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.037,
+     "peak": "value"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.017,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.002,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.229,
+     "peak": "(evt"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.123,
+     "peak": " lst"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.992,
+    "median_fire": 0.516,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "1903eda7",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "parameter after lambda / fun",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 34.3, density 0.02%, peaks ' x' x6, ' a' x6, ' event' x2, ' self' x2, ',' (lambda x, y), ' y', ' dialog', ' *' (lambda *args) and OCaml 'fun a x'. Probe: 'fun x -> x + 1' 0.999, 'lambda n: n * 2' 0.718, 'lambda w:' 0.557, 'lambda event:' 0.540, 'lambda item:' 0.327, 'add = lambda:' 0.329 (peak ' lambda'), 'def square(x):' 0.236 (peak '(x'), prose wavelength 0.009. Fire items are short code passages with Python lambda and OCaml fun parameters of varied names; near misses rewrite each as a named def, a comprehension, OCaml 'let f y' or prose.",
+ "selection": "random draw"
+}

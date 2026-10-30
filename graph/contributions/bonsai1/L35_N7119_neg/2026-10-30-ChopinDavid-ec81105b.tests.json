@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ec81105b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N7119-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N7119",
+   "pole": "-",
+   "label": "unclear: the card's peaks (max 68) are the continuation bytes of a byte-split CJK character (Korean 패/팸/휴대/죽음/휠/측, kanji 駿/攪/揺/擇), but single sentences with such splits scored only 0.01-0.26 (薔薇 0.26, 鬱 0.07, Korean 뜨개질/떡볶이 0.01); best guess is the second byte of a rare kanji inside a longer Japanese passage",
+   "fire": [
+    "庭の手入れをするのが祖母の日課だった。今年も薔薇が見事に開いた。",
+    "長い雨が続いて気分が沈む。こんな鬱な日は家で本を読むに限る。",
+    "市場で新鮮な果物を買った。檸檬の香りが台所に漂った。",
+    "彼は返事をする前に少し躊躇した。それから静かに話した。",
+    "午後になって空が急に暗くなった。驟雨が通りを洗い流した。",
+    "春になると公園は人でいっぱいになる。桜の下で弁当を食べるのが楽しみだ。",
+    "朝の通勤はいつも同じだ。駅まで歩いて電車に乗る。",
+    "週末はいつも静かに過ごす。図書館で午後を過ごすことが多い。"
+   ],
+   "quiet": [
+    "庭の手入れをするのが祖母の日課だった。今年も花が見事に開いた。",
+    "長い雨が続いて気分が沈む。こんな雨の日は家で本を読むに限る。",
+    "市場で新鮮な野菜を買った。料理の香りが台所に漂った。",
+    "彼は返事をする前に少し考えた。それから静かに笑った。",
+    "午後になって空が急に暗くなった。雨が通りを洗い流した。",
+    "春になると公園は人でいっぱいになる。花の下で弁当を食べるのが楽しみだ。",
+    "朝の通勤はいつも同じだ。学校まで歩いて先生に会う。",
+    "週末はいつも静かに過ごす。公園で午後を過ごすことが多い。"
+   ]
+  }
+ ],
+ "predictions": "most fire items under 0.3, the rarest kanji (薔薇, 躊躇, 驟雨) highest; near misses (whole-token kanji only) under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "continuation byte of a byte-split rare kanji (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 68, density 0.14%, '�' x21 and ' �' x9 of the top 32: byte-fallback tokens in Korean, Chinese and Japanese text, the peak on the middle byte of the character. Tokenizer: most space-initial Korean syllables and many kanji (薔薇, 鬱, 檸檬, 躊躇, 驟雨, 桜, 駅, 図書館) are byte-split, while 花, 雨, 海, 学校, 公園, 料理 are whole tokens. Probe: 薔薇の花 0.259 (peak '�'), 鬱陶しい 0.070, 컴퓨터를 켰다 0.070, the other Korean byte splits 0.008-0.009, whole-token Korean 0.015-0.022, whole-token Japanese 0.009-0.012. The final-layer unit evidently needs more context than one short sentence, so the test uses two-sentence Japanese passages with one byte-split kanji in the second sentence (fire) against the same passages with a whole-token word in its place (near miss), split-checked with the tokenizer. Registered as unclear at low confidence."
+}

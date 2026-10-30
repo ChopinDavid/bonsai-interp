@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-205d0796",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N5723+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N5723",
+   "pole": "+",
+   "label": "unclear: the card's peaks (max 72.5) are the attributive first noun of a technical compound in list, glossary or reference context ('- truth skepticism -', 'BLS truthers', 'tether|ing proteins', 'Graph Cut Color', 'Sat|uration dives', 'core fusion complex', 'action potential characterization. Circ Res.', 'label_propagation'), but single-sentence probes scored at most 0.31 (Saturation diving) and 'fusion complex' 0.13 equalled 'fusion of the two companies' 0.13; best guess is the compound's modifier inside a glossary entry, option list, citation or code branch",
+   "fire": [
+    "- external-world skepticism - Doubts the existence of anything beyond the mind\n- value skepticism - Doubts that anything is objectively good",
+    "Options for the segmentation step are None, Watershed, Graph Cut Colour and Graph Cut Depth. Default is None.",
+    "Tethering factors, Rab GTPases and SNARE proteins act in sequence at the membrane.",
+    "The core docking complex formed by syntaxin and SNAP-25 was crystallised.",
+    "Cardiac myocytes were characterised by action potential duration. Circ Res. 2004;95:1-9.",
+    "    elif algorithm == 'label_spreading':\n        pnum = 6",
+    "The diagram we drew last week is an example of a planar tangle; the trace of it is planar too.",
+    "The so-called birthers claimed the certificate was forged."
+   ],
+   "quiet": [
+    "- Most philosophers doubt that anything beyond the mind can be known for certain.",
+    "The segmentation step can be skipped if the image is small. The default is to skip it.",
+    "Several proteins act in sequence at the membrane before the vesicle fuses.",
+    "The complex was crystallised after two years of trials.",
+    "The heart cells were kept alive in culture for a week.",
+    "    else:\n        pnum = 6",
+    "The diagram we drew last week was wrong in two places.",
+    "Some people claimed the certificate was forged."
+   ]
+  }
+ ],
+ "predictions": "most fire items under 0.3; if the guess is right the glossary bullet, option list and code-branch items score highest; near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "attributive noun of a technical compound in list/reference context (unclear)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 72.5, density 0.18%, no dominant token: ' truth' x2 (truth skepticism, truthers), 'ing' x3 (tethering), ' Color', 'uration', ' fusion', ' action', 'label', ' trace', ' home', ' Task'. Probe: 'Saturation diving' 0.309 ('uration'), 'An action potential' 0.199, 'fusion complex' 0.130 and 'fusion of the two companies' 0.130, 'Label propagation' 0.009, 'The truthers insisted' 0.006; head-noun controls 0.002-0.009. The attributive reading alone did not separate, and the card's values come from glossary bullets, option lists, citations and code, so the test rebuilds those contexts with fresh compounds (value skepticism, Graph Cut Colour, tethering factors, docking complex, action potential duration, label_spreading, planar tangle, birthers) against the same contexts without the compound. Registered as unclear at low confidence."
+}

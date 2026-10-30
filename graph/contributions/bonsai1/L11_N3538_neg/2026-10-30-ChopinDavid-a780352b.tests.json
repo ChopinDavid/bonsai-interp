@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a780352b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N3538-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N3538",
+   "pole": "-",
+   "label": "a piece of an identifier string embedded in running text: the ' Co' of a company name (0.54), digits inside a username handle (@xiaoming_2008 0.39 in Chinese, 0.27 in English) or phone number (0.21), the '.co' of a domain (0.25); the same sentences with the identifier spelled out in words are silent (0.003-0.07)",
+   "fire": [
+    "Nanjing Golden Harvest Machinery Co., Ltd exports pumps to forty countries.",
+    "欢迎关注我的微博 @lily_1992，每天更新。",
+    "Pedidos por WhatsApp: 0414-7721038 (Caracas).",
+    "詳しくは http://www.kaze.co.jp/info をご覧ください。",
+    "Tianjin Bohai Chemical Co. was founded in 1952.",
+    "My handle on the forum is tiger_88, feel free to message me.",
+    "联系方式：微信 wangwei2001，电话 13912345678。",
+    "Visit shop.rivermill.co.uk for the full catalogue."
+   ],
+   "quiet": [
+    "Nanjing Golden Harvest Machinery exports pumps to forty countries.",
+    "欢迎关注我的微博，每天更新。",
+    "Pedidos por WhatsApp los fines de semana (Caracas).",
+    "詳しくは公式サイトをご覧ください。",
+    "Tianjin Bohai Chemical was founded in nineteen fifty-two.",
+    "My name on the forum is Tiger, feel free to message me.",
+    "联系方式：请在工作时间致电办公室。",
+    "Visit the River Mill shop for the full catalogue."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 peaking on ' Co', a digit or a domain piece; near misses under 0.1; the '.com' items may be weak (probe .com 0.02-0.07)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "identifier piece: Co, handle digits, domain, phone",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 16.1, density 0.05%, peaks '.com' x5, ' Co' x2, '.co' x2, digits and letters inside handles (billli|u_seattle, jjhyy|z1010, chao|x), a phone number, 网络有限公司: identifiers inside Chinese and Japanese web pages. Probe: 'Electronics Co., Ltd' 0.536 (peak ' Co'), '@xiaoming_2008' 0.388 in Chinese and 0.272 in English, 'www.sample.co.jp' 0.245 (peak '.co'), '010-65881234' 0.214, but 'www.example.com' only 0.065 in Chinese and 0.017 in English, 华强电子有限公司 0.072, plain Chinese 0.003. So the language of the surrounding text matters less than the card suggested and '.com' is weak in a short sentence. Fire items put a Co. name, a digit-bearing handle, a phone number or a .co/.co.uk domain mid-sentence in English, Chinese, Spanish and Japanese; near misses are the same sentences with the identifier replaced by words."
+}

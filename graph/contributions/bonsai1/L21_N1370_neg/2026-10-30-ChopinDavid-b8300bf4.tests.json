@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b8300bf4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N1370-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T13:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N1370",
+   "pole": "-",
+   "label": "the first word of a body passage that begins on a new line after a lead-in (an attribution ending in a colon, a speaker label, a title or preface line): 'wrote:\\nFor all' 0.27, 'edition.\\nThe reader' 0.12; the same content run inline after 'wrote that' (0.04) or as a bare sentence (0.03) is silent",
+   "fire": [
+    "In a column for the Times, the economist Joseph Stiglitz wrote:\nFor three decades the gains have gone to the top.",
+    "From the dedication of the 1702 edition.\nThe author begs leave to address these pages to his patron.",
+    "MARIA SANCHEZ, REPORTER:\nIt was nearly dawn when the first trucks rolled in.",
+    "Here is a passage on commerce:\nTo trade, more than to conquest, the city owed its wealth.",
+    "The minister's statement read as follows:\nThe government has no plans to raise the levy.",
+    "Chapter One\nThe house stood at the end of a lane that nobody used.",
+    "A reader in Leeds asks:\nFor how long should seed potatoes be chitted?",
+    "Transcript, 09:14.\nThe pilot reported smoke in the cabin."
+   ],
+   "quiet": [
+    "In a column for the Times, the economist Joseph Stiglitz wrote that for three decades the gains have gone to the top.",
+    "In the dedication of the 1702 edition the author begs leave to address these pages to his patron.",
+    "Maria Sanchez reported that it was nearly dawn when the first trucks rolled in.",
+    "A passage on commerce says that to trade, more than to conquest, the city owed its wealth.",
+    "The minister's statement said the government has no plans to raise the levy.",
+    "In chapter one the house stands at the end of a lane that nobody uses.",
+    "A reader in Leeds asks for how long seed potatoes should be chitted.",
+    "At 09:14 on the transcript the pilot reported smoke in the cabin."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.1-0.4 peaking on the first token of the second line; near misses under 0.06; several fire items may stay under 0.3 because the probe values were low",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first word of a passage after a lead-in line",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: max 15.4, density 0.30%, peaks 'The' x5, ' It', 'For', 'To', '2' (Retrieved ... 2012) at the first token after a newline that follows a speaker label ('BRANDON RITTIMAN: It'), a title line ('The Epistle Dedicatory'), or 'Krugman wrote:'. Probe: 'Paul Krugman wrote:\\nFor all the talk' 0.266 (peak 'For'), 'From the preface to the 1674 edition.\\nThe reader' 0.117, 'civil society:\\nTo civil society' 0.070, 'REPORTER: It was' 0.047; inline 'wrote that for all' 0.038, bare sentences 0.032-0.040, 'Retrieved 12 March 2015' 0.047. The direction is right but the values are small, so the test uses longer lead-ins (column attribution, dedication, transcript label, chapter heading, reader's question) with the body on the next line; near misses run the same words inline in one sentence."
+}
