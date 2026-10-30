@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3bc4faf2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N4970+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N4970",
+   "pole": "+",
+   "label": "a slot in a statement about whether an unwanted condition (contamination, disease, error, discrimination) occurs or persists ('once absorbed by an organism' 0.75, 'a moldy, musty smell' 0.55, 'make mistakes' 실수를 0.52, 'if it does present' 0.40, 'never existed/remedied' 0.38-0.39); the same frames about neutral events are quiet ('once absorbed by the roots' 0.03, 'if it does get enough sun' 0.02, 'so much music is never recorded' 0.07)",
+   "fire": [
+    "Lead is dangerous because, once ingested, it stays in the bones for years.",
+    "The infection is easy to miss if it does flare up in winter.",
+    "Damp timber soon gives off a sour, mildewy smell.",
+    "Most fraud goes unreported, and so much of it is never prosecuted.",
+    "There is no evidence that such a defect ever occurred in the earlier batch.",
+    "The toxin spreads quickly once it enters the bloodstream.",
+    "Rust is hard to stop if it does take hold under the paint.",
+    "Many errors slip through, and some are never corrected."
+   ],
+   "quiet": [
+    "Calcium is useful because, once ingested, it strengthens the bones for years.",
+    "The festival is easy to reach if it does take place in summer.",
+    "Fresh bread soon gives off a warm, yeasty smell.",
+    "Most donations go unannounced, and so much of the money is never publicised.",
+    "There is no evidence that such a feature ever appeared in the earlier model.",
+    "The glow spreads quickly once the lamp warms up.",
+    "The habit is easy to keep if it does fit into the morning.",
+    "Many songs are recorded, and some are never released."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.8 on 'once', 'does', 'never', the odour adjective or the verb; near misses below 0.15; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unwanted-condition occurrence slot",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 21.9, density 0.28%, peaks ' discrimination' is never remedied, ' does' present, 실수'를', ' once' absorbed, ' it' was hunted, ' never' existed, ' mold'y, 発'症'; the - pole peaks ' be' x11 and suppresses identifiable/detect/discern. Probe: 'once absorbed by an organism, remains' 0.749 (' once'), 'a moldy, musty smell' 0.547 (' mold'), Korean 실수를 0.523, 'if it does present in adulthood' 0.404 (' in'), 'such a system never existed' 0.392, 'so much discrimination is never remedied' 0.383, 'hunted to near extinction' 0.240, neutral twins 0.015-0.068. The near misses reuse each frame with a harmless or desirable event."
+}

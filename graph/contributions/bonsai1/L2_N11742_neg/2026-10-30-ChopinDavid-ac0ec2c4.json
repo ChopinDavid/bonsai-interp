@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ac0ec2c4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N11742-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T06:35:48+00:00",
+ "recipe": {
+  "toolchain_commit": "30018502",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N11742_neg/2026-10-30-ChopinDavid-ac0ec2c4.tests.json"
+ },
+ "label": "broad (9.2% of tokens, max 0.29, gate-closed 96%): a non-initial piece of a word the tokenizer splits into several pieces (Gigg|les 0.83, نعن|اع 0.82, co|oking 0.79, Octop|uses 0.73, исп|уг|анного 0.64); sentences of whole-word tokens still reach 0.25-0.34, so near misses will leak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N11742_neg/2026-10-30-ChopinDavid-ac0ec2c4.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.211,
+     "peak": "uses"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.236,
+     "peak": " slept"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.204,
+     "peak": " laughed"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.623,
+     "peak": "уг"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.632,
+     "peak": "اع"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.214,
+     "peak": " flo"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.113,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.113,
+     "peak": "ogs"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.118,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.155,
+     "peak": " slept"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.111,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.119,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.134,
+     "peak": " milk"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.104,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.104,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.101,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.212,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "30018502",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "non-initial word piece (broad)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 0.29, density 9.2%, flagged broad and gate-closed; peaks 'اع', ' Так', 'уг', ' gamble', 'isions', ' representation', 'oking', 'les', 'uses', 'ع'. Probe: 'Giggles' 0.834 ('les'), 'النعناع' 0.824 ('اع'), 'penetrationInductioncooking' 0.791 ('oking'), 'Octopuses' 0.725 ('uses'), 'испуганного' 0.641 ('уг'), 'representation' 0.525, 'gamble' 0.338, 'train leaves at nine' 0.254, 'Такой дневник' 0.151 ('ник'). The test uses rare split words (platyp|uses, Sn|ugg|les, k|ook|ab|ur|ra, wal|r|uses, rat|at|ou|ille, hedge|h|ogs) against the same sentences with common whole-word nouns; a Russian or Arabic near miss would itself split, so the near misses are English only.",
+ "selection": "random draw"
+}

@@ -1,0 +1,160 @@
+{
+ "id": "2026-10-30-ChopinDavid-027057bb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N11831+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T06:36:00+00:00",
+ "recipe": {
+  "toolchain_commit": "30018502",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N11831_pos/2026-10-30-ChopinDavid-027057bb.tests.json"
+ },
+ "label": "the piece ' cart'/' Cart'/'Cart' as the start of a longer word (cart|ilage 0.72, Cart|wright 0.74, Cart|agena 0.68, cart|on 0.65, Cart|oon 0.60) and the piece or word ' ad' (ad|age 0.55, 'the ad ran' 0.54); the whole word ' cart' (0.12), ' car' (0.14) and the single-token ' Cartesian' (0.40) are weaker",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N11831_pos/2026-10-30-ChopinDavid-027057bb.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.682,
+     "peak": " cart"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.746,
+     "peak": " cart"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.72,
+     "peak": " Cart"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.596,
+     "peak": " cart"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.539,
+     "peak": " ad"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.485,
+     "peak": " Ad"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.497,
+     "peak": " ad"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.727,
+     "peak": " Cart"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.049,
+     "peak": " carpets"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.191,
+     "peak": " cart"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.0,
+     "peak": " mapping"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.146,
+     "peak": " Cats"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.012,
+     "peak": " bids"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.145,
+     "peak": " card"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.639,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "30018502",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "' cart'/' ad' word-start piece",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: max 194, density 0.12%, peaks ' Cart' x7, ' cart' x6, ' Car' x6, ' Ad' x4, 'Ad' x2, 'Cart' x2 in Cart|ilage, C|art|wright, Cart|esians, Car|o, Ad|verblog, ad|age.com, Cart|oon; the - pole is the piece 'ad' x16. Probe: 'Caroline Cartwright' 0.735, 'cushioned by cartilage' 0.722, 'off Cartagena' 0.680, 'one-litre carton' 0.646, 'Cartoon penguins' 0.595, 'the ad ran' 0.540, 'old adage' 0.545, 'Cartesian view' 0.397 (single token), 'parked the car' 0.136, 'shopping cart' 0.119. The whole word 'cart' is quiet while 'ad' as a word fires, so the trigger declares the pieces cart/Cart/ad/Ad; splits checked for every item (cart|ography, cart|wheel, Cart|ier, cart|ographer, ad|obe, Ad|ir|ond|ack, ad|-h|oc, Cart|man).",
+ "selection": "random draw",
+ "trigger": {
+  "pieces": [
+   "cart",
+   "Cart",
+   "ad",
+   "Ad"
+  ]
+ }
+}

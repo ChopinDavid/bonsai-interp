@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-95b36697",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N10736+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N10736",
+   "pole": "+",
+   "label": "the slot right before an expected medical or clinical term: ' of' in 'American Academy of' (0.85, predicting Pediatrics/Family Physicians), 'core stability' before exercise (0.56), 'any symptoms' (0.43); 'Royal Academy of' (arts, 0.08), non-medical 'developed a taste' (0.16) and 'undergo an audit' (0.16) are quiet",
+   "fire": [
+    "Screen-time limits for toddlers are recommended by the American Academy of Pediatrics.",
+    "The new vaccination guidance came from the American Academy of Family Physicians.",
+    "He is a fellow of the American College of Surgeons and teaches in Houston.",
+    "The American Academy of Dermatology advises wearing sunscreen all year round.",
+    "Core stability exercises are a staple of every physiotherapy programme.",
+    "Report any symptoms you notice to the clinic within a day.",
+    "The American Academy of Ophthalmology recommends a full eye exam at forty.",
+    "She presented the data at the American College of Cardiology meeting."
+   ],
+   "quiet": [
+    "Screen-time limits for toddlers are recommended by the parents' committee at the nursery.",
+    "The new design guidance came from the Royal Academy of Engineering.",
+    "He is a fellow of the Royal Society of Arts and teaches in Bristol.",
+    "The Academy of Motion Picture Arts and Sciences announced the nominees on Tuesday.",
+    "Balance exercises are a staple of every beginners' dance class.",
+    "Report any changes you notice to the office within a day.",
+    "The Academy of Ancient Music performed Bach's cantatas at the festival.",
+    "She presented the data at the American Bar Association meeting."
+   ]
+  }
+ ],
+ "predictions": "the 'American Academy/College of' items 0.6-0.9 on ' of'; 'symptoms' and 'core stability' 0.4-0.6; near misses below 0.2, with the Royal/Engineering/Motion Picture academies the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot before a predicted medical term",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 14.9, density 0.32%, ' of' x9 all in 'American Academy of Child and Adolescent Psychiatry / Pediatrics', plus ' stability' (core stability exercise), ' symptoms', ' developed' a chill, ' Operation' unterziehen; the direct logit promotes medical/clinical/health/therapy/disease. Probe: 'American Academy of Pediatrics' 0.853 (' of'), 'core stability exercise' 0.562 (' exercise'), 'any symptoms you are having' 0.428, 'developed a chill' 0.283 (' a'), 'transferred to the cardiology ward' 0.204, 'undergo another operation' 0.180, 'developed a taste for jazz' 0.159, 'undergo an audit' 0.159, 'Royal Academy of Arts' 0.080 (peak ' to', so ' of' after a non-medical academy is quiet). The unit fires where the next token is predicted to be medical, so the near misses change the institution rather than the word after ' of'."
+}

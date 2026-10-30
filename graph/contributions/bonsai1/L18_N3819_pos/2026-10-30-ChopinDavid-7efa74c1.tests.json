@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7efa74c1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N3819+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N3819",
+   "pole": "+",
+   "label": "unclear: the card's peaks (',' after 'on a playground', 'stress|ors', 'harpsich|ord', ' cars' in the turn lane, ' Pascal', ' neighborhoods') did not reproduce in isolated sentences (max 0.20, most below 0.03); best guess is the end of a noun phrase that opens an enumeration or qualification in longer expository text, so the test rebuilds the card contexts with their preceding clause",
+   "fire": [
+    "Bullying is a sign of dysfunction, period. Whether it takes place on a playground, in a classroom or on the bus, it has to be stopped.",
+    "The term is used loosely. It applies mainly to a large group of pro-inflammatory stressors that are also pro-fibrotic.",
+    "The sonata was written for the keyboard. Those playing it could use a harpsichord, a clavichord or a spinet.",
+    "Driving needs attention. When you wait at an intersection you should be checking out cars in the turn lane, noting which way they will go.",
+    "Knuth wanted literate programs. He wrote the WEB system (using TeX and Pascal), and it has been expanded upon since.",
+    "Copenhagen's centre is dense. Most of the surrounding neighborhoods, including Østerbro, are mainly residential.",
+    "Canals linked the empire. The Lingqu Canal in Guangxi Province was joined to the Grand Canal in the Tang dynasty.",
+    "The market is wide open. Considering all the possible consumers of Google Glass, the device has the potential to reach millions."
+   ],
+   "quiet": [
+    "Reading is a habit, period. Whether it takes place at night or at dawn, it has to be fed.",
+    "The word is used loosely. It applies mainly to a small group of accountants who are also auditors.",
+    "The letter was written for the mayor. Those reading it could use a magnifier.",
+    "Travel needs planning. When you wait at a bus stop you should be checking the timetable, noting which route to take.",
+    "Knuth wanted a holiday. He wrote the book in the summer (while on leave), and it has been reprinted since.",
+    "Copenhagen's centre is dense. The suburbs are mainly residential.",
+    "Rivers linked the empire. The canal in the north was joined to the river in the Tang dynasty.",
+    "The outcome is uncertain. Considering all the possible results, the plan has the potential to fail."
+   ]
+  }
+ ],
+ "predictions": "fire items probably 0.0-0.3 with one or two rising when the longer context restores the card's activation; near misses below 0.1; a fail or exploratory outcome is expected",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun phrase opening an enumeration (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 26.1, density 0.20%, peaks ',' x5, ' cars' x2, ' or' x2, 'ors', 'ord', ' Pascal', ' neighborhoods', ' Province', ' are'. Probe (one-sentence versions of the card contexts): 'Whether it happens on a playground, on the way home' 0.090 (' on'), 'harpsichord, clavichord, spinet' 0.030, 'cars in the turn lane and pedestrians' 0.015, 'TeX and Pascal' 0.009, 'neighborhoods, including Østerbro' 0.009, 'opportunities are virtually unlimited' 0.025, 'Bullying is harmful wherever it happens' 0.196 (' wherever', the highest), single harpsichord 0.007. Nothing separates; the test adds the preceding sentence to each card context in case the unit needs mid-document position, and the near misses keep the two-sentence shape with ordinary nouns."
+}

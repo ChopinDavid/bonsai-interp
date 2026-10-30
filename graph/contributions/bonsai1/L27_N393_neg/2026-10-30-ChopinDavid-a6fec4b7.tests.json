@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a6fec4b7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N393-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N393",
+   "pole": "-",
+   "label": "the complement of visual-appearance 'look' and 'look' itself in that sense ('looks so much better' 0.69, 'looked infinitely better than' 0.81, 'how that jacket will look on them' 0.64, 'sieht auch gut aus' 0.84); 'look at' (0.06), 'looked serious' without a comparison (0.12), 'sounds/feels better' (0.05-0.14) and 'is better' (0.00) are quiet, 'tastes better' 0.31 partial",
+   "fire": [
+    "The old brick looks far better after a wash than anyone expected.",
+    "Honestly, the cheaper frame looked better on the wall than the gilt one.",
+    "Customers can preview how the paint will look in their living room.",
+    "Die neue Fassade sieht wirklich gut aus.",
+    "With the shutters painted, the cottage looks much better from the road.",
+    "Try the dress on; it will look better with flat shoes.",
+    "The garden looked better in May than it does now.",
+    "Nobody denies the new kit looks better than the old stripes."
+   ],
+   "quiet": [
+    "The old boiler works far better after a service than anyone expected.",
+    "Honestly, the cheaper frame fitted better on the wall than the gilt one.",
+    "Customers can look at the paint samples in the showroom.",
+    "Die neue Heizung funktioniert wirklich gut.",
+    "With the shutters repaired, the cottage is much warmer in winter.",
+    "Try the dress on; it will fit better with the belt.",
+    "The garden grew better in May than it does now.",
+    "Nobody denies the new kit sells better than the old stripes."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.9 on ' better', ' look' or ' gut'; near misses below 0.2 with 'works/fits better' the closest; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'look better' / appearance 'look'",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: max 171, density 0.09%, peaks ' look' x6, ' better' x5, ' looks' x2, ' auch' (sieht auch gut aus), ' looked' in 'looked infinitely better'; the + pole is 'look like / sound / live'. Probe: 'sieht auch gut aus' 0.836 (' gut'), 'looked infinitely better than' 0.809, 'looks so much better in photos' 0.692, 'how that jacket will look on them' 0.637, 'tastes better with fresh basil' 0.309, 'engine sounds better' 0.141, 'had looked altogether serious' 0.117, 'look at the clock' 0.057, 'feels better' 0.053, 'approach is better' 0.003. The near misses keep each sentence and swap the appearance verb for works/fits/sells/grew or 'look at'."
+}

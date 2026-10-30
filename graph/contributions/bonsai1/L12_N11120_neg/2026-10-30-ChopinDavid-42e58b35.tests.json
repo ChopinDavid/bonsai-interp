@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-42e58b35",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N11120-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N11120",
+   "pole": "-",
+   "label": "a plural or cataphoric pointer to an enumeration that follows ('for a few reasons:' 0.50, 'drills used which include' 0.33, 'as detailed below' 0.26); the singular 'for a good reason' (0.18), 'as mentioned above' (0.04) and 'the following day' (0.01) are quiet; 'as follows:' (0.07) and 'the following form' (0.14) did not reproduce in short sentences",
+   "fire": [
+    "We chose the smaller venue for several reasons: cost, parking and noise.",
+    "The plan failed for two main reasons, which I will explain in turn.",
+    "The kit contains a number of tools which include a torque wrench and a gauge.",
+    "As described below, each node keeps its own copy of the ledger.",
+    "There are three reasons why the bridge was never finished.",
+    "The park offers many activities which include kayaking and archery.",
+    "The procedure is outlined below, step by step.",
+    "I am writing to you for a couple of reasons, the first being the rent."
+   ],
+   "quiet": [
+    "We chose the smaller venue because the cost was lower.",
+    "The plan failed for one simple reason, as I explained earlier.",
+    "The kit contains a torque wrench and a gauge in a padded case.",
+    "As described above, each node keeps its own copy of the ledger.",
+    "There is no reason why the bridge was never finished.",
+    "The park offers kayaking and archery in the summer months.",
+    "The procedure was outlined earlier, step by step.",
+    "I am writing to you about the rent, which is overdue."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6 on ' reasons', ' include' or ' below'; near misses below 0.2; a weak hold or a fail at the 0.3 line",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "cataphoric 'for several reasons' / 'which include' / 'below'",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 9.4, density 1.1% (flagged broad), peaks '.' x5, ' reasons' x3, ' following' x2, ' that' x2, ' below', ' I', ' which', ' follows'. Probe: 'a mistake for a few reasons:' 0.498, 'many drills used which include' 0.328, 'As detailed below' 0.256, 'for a good reason' 0.180, 'the following online form' 0.136, 'summarized as follows:' 0.073, 'As mentioned above' 0.041, plain result sentence 0.032, 'the following day' 0.010. Only the plural 'reasons' and 'which include' crossed 0.3, so the test leans on those two frames plus 'below', and the near misses use the singular, the anaphoric 'above' or no pointer."
+}

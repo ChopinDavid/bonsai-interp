@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-91947ad2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N3841-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N3841",
+   "pole": "-",
+   "label": "the fridge or minibar item of a room-amenities list, at the piece where the word is being spelled (' mini' before -bar 0.53, ' fr' of fridges 0.51, 'einen' before Kühlschrank 0.42); the single-token ' refrigerator' and ' fridge' in a storage instruction only reach 0.25 on the article before them, and the same amenity lists without a fridge item are 0.14",
+   "fire": [
+    "The suite comes with a kettle, a mini-bar and a balcony overlooking the bay.",
+    "Rooms are fitted with hairdryers, fridges and complimentary toiletries.",
+    "Jedes Apartment hat eine Küche mit Kühlschrank, Herd und Geschirrspüler.",
+    "Chaque chambre dispose d'un réfrigérateur, d'un coffre-fort et de la climatisation.",
+    "Amenities include cable TV, a mini-fridge and free off-street parking.",
+    "Guests will find bathrobes, slippers and a well-stocked minibar in every room.",
+    "The cakes are kept refrigerated overnight and glazed in the morning.",
+    "Каждый номер оснащён телевизором, мини-баром и сейфом."
+   ],
+   "quiet": [
+    "The suite comes with a kettle, a writing desk and a balcony overlooking the bay.",
+    "Rooms are fitted with hairdryers, irons and complimentary toiletries.",
+    "Jedes Apartment hat eine Küche mit Herd, Backofen und Geschirrspüler.",
+    "Chaque chambre dispose d'un bureau, d'un coffre-fort et de la climatisation.",
+    "Amenities include cable TV, a microwave and free off-street parking.",
+    "Guests will find bathrobes, slippers and a well-stocked bookshelf in every room.",
+    "The cakes are baked overnight and glazed in the morning.",
+    "Каждый номер оснащён телевизором, феном и сейфом."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.35-0.6 on ' mini', ' fr', 'fr' (ré|fr), ' K' or the article before the fridge word; near misses 0.05-0.2; a hold with the refrigerated item the weakest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "fridge/minibar in an amenities list",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 544, density 0.023%, peaks 'fr' in Re|fr|igerator / ré|fr|igérateur, ' mini' before -bar, ' fr' in fridges, ' K' before ühlschrank, ' the' before refrigerator in storage instructions; the + pole promotes table/seat and suppresses fridge/refrigerator/freezer/kitchen, so the pole marks an upcoming refrigerator word. Probe: 'a desk, a mini-bar and' 0.528 (' mini'), 'bathrooms, fridges and' 0.508 (' fr'), 'einen Kühlschrank' 0.415 (' einen'), 'Refrigerators are' 0.268 ('iger'), 'store them in the refrigerator' 0.246 (' the') identical to 'store them in the pantry' 0.246, 'into the fridge' 0.225, 'in the freezer' 0.222, 'a desk, a wardrobe and' 0.142, dishwasher 0.042. The single-token words carry little; the multi-piece spellings inside amenity lists carry most, so the test keeps the list frame and swaps the fridge item for another amenity."
+}

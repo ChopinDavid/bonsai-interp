@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-08aa88e1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N10337-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N10337",
+   "pole": "-",
+   "label": "unclear, broad (2.6% of tokens, gate-closed regime 83%): best guess a biographical career statement at the punctuation or verb that continues it ('earned a BA degree, with honours,' 0.81, 'Field exercises stressed' 0.49, 'for 12 years, serving as' 0.25); recipes, code and casual prose 0.05-0.09",
+   "fire": [
+    "Ms. Alvarez earned a master's degree, with distinction, in public health at Johns Hopkins.",
+    "He served on the city council for eight years, chairing the finance committee.",
+    "Dr. Okafor holds a PhD in chemistry from Leeds and spent a decade at Unilever.",
+    "Before joining the firm, she practised law in Boston, specialising in patents.",
+    "Mr. Tan worked at the central bank for 15 years, latterly as deputy governor.",
+    "She graduated with first-class honours in history and later taught at Durham.",
+    "Most recently, he led the marketing team at LifeSize as senior vice president.",
+    "The course stressed fieldwork, with students mapping two valleys each term."
+   ],
+   "quiet": [
+    "The recipe calls for two cups of flour, with a pinch of salt, and a little warm milk.",
+    "The river flooded the lower town for eight days, cutting off the only bridge.",
+    "The museum holds a collection of Roman coins from Leeds and a mosaic from Bath.",
+    "Before the storm hit, the harbour was closed and the boats were pulled ashore.",
+    "The bridge carried traffic for 150 years, latterly as a footpath.",
+    "The cake rose beautifully in the oven and later cooled on the rack.",
+    "Most recently, the river burst its banks near the old mill.",
+    "The map showed the fieldwork sites, with two valleys marked in red."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.8 with wide spread; near misses 0.05-0.25 with weak leaks on commas; a partial or failed test is likely",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "career-biography continuation (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.25,
+ "notes": "Card: max 3.08 (weak), density 2.6%, flagged broad and gate-closed; peaks ',' after 'with honours', ',' after 'for 12 years', Arabic ' ت'/' أن'/' في', ' stressed', ' to' in 'early eighties, to the mid-eighties', Japanese '。' after a career sentence. Probe: 'earned a BA degree, with honours, in economics' 0.805 (','), 'Field exercises stressed hillslope' 0.490, 'Senate for 12 years, serving as' 0.251, Arabic refugees 0.226, Jordan ratified 0.220, 'Development work began' 0.183, email command 0.086, chicken joke 0.062, cake recipe 0.050. Only the CV-style sentences rose above 0.25, so the guess is the career-biography register; a reviewer should treat a hold as information only."
+}

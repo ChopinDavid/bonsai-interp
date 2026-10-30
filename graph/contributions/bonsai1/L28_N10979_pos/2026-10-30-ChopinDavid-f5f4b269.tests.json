@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f5f4b269",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N10979+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N10979",
+   "pole": "+",
+   "label": "the word that continues a physical-form description of a body part, plant or landform in a breed standard or guidebook ('curled at the ends' 1.02, 'straight or slightly convex' 0.92, 'arch outward like' 0.81, 'runs down to' 0.53, 'lying close against' 0.35); the same body parts in care instructions (0.03) and the same verbs in abstract senses ('prices sloping downward' 0.01, 'committee runs' 0.01) are quiet",
+   "fire": [
+    "The tail is carried low, curved at the tip, and never curls over the back.",
+    "The muzzle is long and tapers slightly or evenly toward the nose.",
+    "The leaves spread outward like a fan from the top of the stem.",
+    "A gravel path runs down from the terrace to the stream.",
+    "The ears are set high and fold forward close to the cheeks.",
+    "Her hair hung straight to the shoulders, curled under at the ends.",
+    "The ridge rises steeply or in gentle steps toward the summit.",
+    "The petals are rounded at the base and pointed at the tip, arching back like a cup."
+   ],
+   "quiet": [
+    "The tail is brushed weekly, checked at the vet, and never clipped.",
+    "The muzzle is cleaned daily or whenever the dog has eaten.",
+    "The leaves are harvested in March from the top of the stem.",
+    "A bus runs down from the terminal to the station every hour.",
+    "The ears are checked monthly and cleaned with a soft cloth.",
+    "Her hair was washed on Sundays and trimmed every other month.",
+    "The price rises steeply or in small steps toward the summer.",
+    "The petals are picked at dawn and dried in the shade like tea."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on the preposition, conjunction or verb inside the shape phrase; near misses below 0.1; a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "physical-form description continuation",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 70.5, density 0.23%, peaks ' at' (curled at the ends), ' or' (straight or slightly convex profile), ' like' (arches outward like an umbrella), 'ping' (sloping shoulders), ' lying' (coat lying close), ' runs' (lawn runs down), ' along' (lain along neck), ' set' high on the head. Probe: 'curled at the ends' 1.017, 'straight or slightly convex profile' 0.918, 'arch outward like an umbrella' 0.805, 'lawn runs down to' 0.530, 'lying close against the body' 0.353, 'Long, sloping shoulders' 0.281 (sentence-initial), 'coat should be brushed' 0.026, 'prices sloping downward' 0.007, 'committee runs' 0.010. The near misses keep each body part or landform and replace the shape phrase with care, use or schedule."
+}

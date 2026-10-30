@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-610f4f79",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N11655-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N11655",
+   "pole": "-",
+   "label": "the classifying stem of a mineral or chemical species name before its second part ('carbonate' crystals 0.80, 'carbon' dioxide 0.75, calc|ite 0.50) and, weaker, the adjective of a monastic order (Cisterc|ian 0.55, Benedict|ine 0.42) or 'tribes'men (0.31); the same sentences with generic words (rock, gas, monks) and 'carbonated water' (0.06) are quiet",
+   "fire": [
+    "The cave walls are coated with carbonate crystals that glitter under a torch.",
+    "Volcanic vents release carbon dioxide and sulphur into the lake water.",
+    "Dolomite differs from calcite in holding magnesium as well as calcium.",
+    "Thin layers of silicate minerals give the shale its sheen.",
+    "Large gypsum crystals filled the cavity in the Naica mine.",
+    "The abbey was founded by Cistercian monks in 1132.",
+    "The Augustinian canons kept a school beside the church.",
+    "A Benedictine community still farms the land around the priory."
+   ],
+   "quiet": [
+    "The cave walls are coated with a soft mud that glitters under a torch.",
+    "Volcanic vents release hot gas and steam into the lake water.",
+    "The two stones differ in holding magnesium as well as calcium.",
+    "Thin layers of dark clay give the shale its sheen.",
+    "Large empty pockets filled the cavity in the Naica mine.",
+    "The abbey was founded by local monks in 1132.",
+    "The village elders kept a school beside the church.",
+    "A small community still farms the land around the priory."
+   ]
+  }
+ ],
+ "predictions": "mineral items 0.4-0.8, order items 0.3-0.6; near misses below 0.15; a hold, with the orders the weakest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "mineral-species stem / monastic-order adjective",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 6.2, density 0.19%, peaks ' particles' (ice particles), ' oriented' crystals, ' carbonate' crystals, 'ian' Cistercian, 'ite' calcite, ' particle' shot noise, 'ine' Benedictine, ' carbon' dioxide, ' tribes'men, ' Nation'. Probe: 'mosaic of carbonate crystals' 0.802, 'combines with carbon dioxide' 0.748, 'Cistercian hermitage' 0.546 ('ian'), 'mineral calcite' 0.503 ('ite'), 'Benedictine edition' 0.416 ('ine'), 'tribesmen' 0.311, 'Ice particles and droplets' 0.066 (sentence-initial, the card's top context did not reproduce), 'carbonated water' 0.058, committee 0.046, marble floor 0.033. Two clusters share a shape: a stem naming the kind (of mineral, of order) before its head."
+}

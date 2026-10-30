@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-027057bb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N11831+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T06:20:18+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N11831",
+   "pole": "+",
+   "label": "the piece ' cart'/' Cart'/'Cart' as the start of a longer word (cart|ilage 0.72, Cart|wright 0.74, Cart|agena 0.68, cart|on 0.65, Cart|oon 0.60) and the piece or word ' ad' (ad|age 0.55, 'the ad ran' 0.54); the whole word ' cart' (0.12), ' car' (0.14) and the single-token ' Cartesian' (0.40) are weaker",
+   "fire": [
+    "The museum's new wing is devoted to cartography from the age of sail.",
+    "The gymnast finished her routine with a cartwheel and a bow.",
+    "The watch was a Cartier that had belonged to her grandmother.",
+    "A cartographer spent two summers surveying the northern coast.",
+    "The walls were built of adobe bricks dried in the sun.",
+    "They spent a week hiking in the Adirondack mountains.",
+    "The committee was formed on an ad-hoc basis to review the bids.",
+    "Every child in the class could imitate Cartman from the show."
+   ],
+   "quiet": [
+    "The museum's new wing is devoted to carpets from the age of sail.",
+    "The farmer loaded the cart with hay and led the horse home.",
+    "The watch was a gift that had belonged to her grandmother.",
+    "A surveyor spent two summers mapping the northern coast.",
+    "The walls were built of clay bricks dried in the sun.",
+    "They spent a week hiking in the Catskill mountains.",
+    "The committee was adamant that the bids be reviewed again.",
+    "The admin team sent the address to every card holder."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.5-0.8 on the piece; near misses below 0.2 ('cart' and 'card' as words, 'adamant'/'admin' single tokens); a hold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' cart'/' ad' word-start piece",
+ "unit_kind": "token",
+ "confidence": 0.7,
+ "notes": "Card: max 194, density 0.12%, peaks ' Cart' x7, ' cart' x6, ' Car' x6, ' Ad' x4, 'Ad' x2, 'Cart' x2 in Cart|ilage, C|art|wright, Cart|esians, Car|o, Ad|verblog, ad|age.com, Cart|oon; the - pole is the piece 'ad' x16. Probe: 'Caroline Cartwright' 0.735, 'cushioned by cartilage' 0.722, 'off Cartagena' 0.680, 'one-litre carton' 0.646, 'Cartoon penguins' 0.595, 'the ad ran' 0.540, 'old adage' 0.545, 'Cartesian view' 0.397 (single token), 'parked the car' 0.136, 'shopping cart' 0.119. The whole word 'cart' is quiet while 'ad' as a word fires, so the trigger declares the pieces cart/Cart/ad/Ad; splits checked for every item (cart|ography, cart|wheel, Cart|ier, cart|ographer, ad|obe, Ad|ir|ond|ack, ad|-h|oc, Cart|man).",
+ "trigger": {
+  "pieces": [
+   "cart",
+   "Cart",
+   "ad",
+   "Ad"
+  ]
+ }
+}

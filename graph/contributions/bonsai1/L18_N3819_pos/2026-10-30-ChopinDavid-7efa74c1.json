@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-7efa74c1",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N3819+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T06:35:34+00:00",
+ "recipe": {
+  "toolchain_commit": "30018502",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N3819_pos/2026-10-30-ChopinDavid-7efa74c1.tests.json"
+ },
+ "label": "unclear: the card's peaks (',' after 'on a playground', 'stress|ors', 'harpsich|ord', ' cars' in the turn lane, ' Pascal', ' neighborhoods') did not reproduce in isolated sentences (max 0.20, most below 0.03); best guess is the end of a noun phrase that opens an enumeration or qualification in longer expository text, so the test rebuilds the card contexts with their preceding clause",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N3819_pos/2026-10-30-ChopinDavid-7efa74c1.tests.json",
+   "prereg_commit": "30018502",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.153,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.011,
+     "peak": "rot"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.049,
+     "peak": "ord"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.034,
+     "peak": " cars"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.009,
+     "peak": " ("
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.004,
+     "peak": " neighborhoods"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.014,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.012,
+     "peak": " Glass"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.077,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " also"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": " magn"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.043,
+     "peak": " you"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.009,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.012,
+     "peak": " residential"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " dynasty"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.02,
+     "peak": " possible"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.523,
+    "median_fire": 0.013,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "30018502",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "noun phrase opening an enumeration (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: max 26.1, density 0.20%, peaks ',' x5, ' cars' x2, ' or' x2, 'ors', 'ord', ' Pascal', ' neighborhoods', ' Province', ' are'. Probe (one-sentence versions of the card contexts): 'Whether it happens on a playground, on the way home' 0.090 (' on'), 'harpsichord, clavichord, spinet' 0.030, 'cars in the turn lane and pedestrians' 0.015, 'TeX and Pascal' 0.009, 'neighborhoods, including Østerbro' 0.009, 'opportunities are virtually unlimited' 0.025, 'Bullying is harmful wherever it happens' 0.196 (' wherever', the highest), single harpsichord 0.007. Nothing separates; the test adds the preceding sentence to each card context in case the unit needs mid-document position, and the near misses keep the two-sentence shape with ordinary nouns.",
+ "selection": "random draw"
+}
