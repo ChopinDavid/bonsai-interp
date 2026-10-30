@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-898e3c58",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N7868-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N7868",
+   "pole": "-",
+   "label": "' on' after a verb of striking (banging on 0.60, pound on 0.34, hanger-on 0.52, the piece 'on' of Dog|on 0.99) and the second word of a lexicalised two-word name (hate crime 0.48, Human Relations 0.44, Gang of Eight 0.35); ' on' as plain location (left the book on the table 0.01) and the same frames with another second word (prosecuted as a burglary 0.02) are quiet",
+   "fire": [
+    "Someone kept knocking on the window until the guard came out.",
+    "He stood there hammering on the gate for ten minutes.",
+    "The Dogon villages cling to the cliffs of the Bandiagara escarpment.",
+    "Police recorded the assault as a hate crime and referred it to prosecutors.",
+    "She was dismissed as a hanger-on who never paid for a drink.",
+    "His first article appeared in Human Relations and drew a sharp reply.",
+    "A new Gang of Eight is trying to revive the budget talks.",
+    "Rain was drumming on the roof of the tent all night."
+   ],
+   "quiet": [
+    "Someone kept waving at the window until the guard came out.",
+    "He stood there waiting at the gate for ten minutes.",
+    "The Fulani villages spread across the plains below the escarpment.",
+    "Police recorded the assault as a robbery and referred it to prosecutors.",
+    "She was praised as a volunteer who never missed a shift.",
+    "His first article appeared in a local newspaper and drew a sharp reply.",
+    "A new committee of eight is trying to revive the budget talks.",
+    "Rain was falling on the roof of the tent all night."
+   ]
+  }
+ ],
+ "predictions": "the on-items 0.3-1.0, the compound-name items 0.3-0.5 with the Gang of Eight item at risk; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'on' after striking verbs; 2nd word of a fixed two-word name",
+ "unit_kind": "polysemantic",
+ "confidence": 0.35,
+ "notes": "Card: max 14.9 (Dogon), density 0.02%, peaks ' on' x6, ' College' x3, ' Railroad' x3, 'udd' x3, 'com' x3, 'son' x2 in Dog|on textiles, hate crime(s), Human Relations, hanger-on, Hod|son, banging on a drum, Gang of Eight, pound on the law. Probe: Dogon 0.990 ('on'), banging on 0.601, hanger-on 0.517, hate crime 0.478, Human Relations 0.443, Gang of Eight 0.347, pound on 0.340; 'prosecuted as a burglary' 0.022, 'left the book on the table' 0.008. The two halves share the ' on'/'on' token and a compound-completion reading; the label keeps both as a list because the probe did not find one pattern behind them."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-898e3c58",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N7868-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T07:33:51+00:00",
+ "recipe": {
+  "toolchain_commit": "e1c598ed",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L6_N7868_neg/2026-10-30-ChopinDavid-898e3c58.tests.json"
+ },
+ "label": "' on' after a verb of striking (banging on 0.60, pound on 0.34, hanger-on 0.52, the piece 'on' of Dog|on 0.99) and the second word of a lexicalised two-word name (hate crime 0.48, Human Relations 0.44, Gang of Eight 0.35); ' on' as plain location (left the book on the table 0.01) and the same frames with another second word (prosecuted as a burglary 0.02) are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N7868_neg/2026-10-30-ChopinDavid-898e3c58.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.176,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.487,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.02,
+     "peak": "on"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.429,
+     "peak": " crime"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.562,
+     "peak": "-on"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.468,
+     "peak": " Relations"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.366,
+     "peak": " Eight"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.062,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.012,
+     "peak": " guard"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " stood"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": "ment"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " reply"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.009,
+     "peak": " budget"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.015,
+     "peak": " roof"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.449,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e1c598ed",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'on' after striking verbs; 2nd word of a fixed two-word name",
+ "unit_kind": "polysemantic",
+ "confidence": 0.35,
+ "notes": "Card: max 14.9 (Dogon), density 0.02%, peaks ' on' x6, ' College' x3, ' Railroad' x3, 'udd' x3, 'com' x3, 'son' x2 in Dog|on textiles, hate crime(s), Human Relations, hanger-on, Hod|son, banging on a drum, Gang of Eight, pound on the law. Probe: Dogon 0.990 ('on'), banging on 0.601, hanger-on 0.517, hate crime 0.478, Human Relations 0.443, Gang of Eight 0.347, pound on 0.340; 'prosecuted as a burglary' 0.022, 'left the book on the table' 0.008. The two halves share the ' on'/'on' token and a compound-completion reading; the label keeps both as a list because the probe did not find one pattern behind them.",
+ "selection": "random draw"
+}

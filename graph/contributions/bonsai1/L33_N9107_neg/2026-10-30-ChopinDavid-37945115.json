@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-37945115",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N9107-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T07:34:29+00:00",
+ "recipe": {
+  "toolchain_commit": "e1c598ed",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N9107_neg/2026-10-30-ChopinDavid-37945115.tests.json"
+ },
+ "label": "a messaging-medium word (email, mail, IM, e-mail, RSS) used as the modifier of a software noun such as client, application, program or reader ('default email application' 0.84, 'graphical IM client' 0.61, 'e-mail programs' 0.37, 'mail client' 0.33); the same words as the message itself (sent an email 0.02) and 'client' in the business sense (0.003) are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N9107_neg/2026-10-30-ChopinDavid-37945115.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.722,
+     "peak": " email"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.257,
+     "peak": " mail"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.421,
+     "peak": " IM"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.522,
+     "peak": " mail"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.171,
+     "peak": " mail"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.053,
+     "peak": " application"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.275,
+     "peak": "-mail"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.138,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.018,
+     "peak": " email"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.019,
+     "peak": " mail"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.052,
+     "peak": " IM"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.033,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " application"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": " law"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " thick"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " back"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.266,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e1c598ed",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "email/IM/mail as modifier of client/application",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 460, density 0.05%, peaks ' email' x5, ' IM' x3, ' mail' x3, ' RSS' x3, ' Mail' x2, '邮件' before application/client/services/programs/spam filter; the + pole peaks on ' client' x15 and suppresses client/clients, so the - pole predicts the software-client noun. Probe: 'default email application' 0.838 (' email'), 'graphical IM client' 0.605, 'e-mail programs come with a built-in calendar' 0.371 (' calendar'), 'receiver's mail client' 0.332, 'any RSS reader' 0.299, 'Many email services block' 0.250; 'mobile applications' 0.068, 'sent an email to the team' 0.018, 'law firm lost its biggest client' 0.003. The test keeps the medium word next to a software noun and drops it (or the software noun) in the near misses.",
+ "selection": "random draw"
+}

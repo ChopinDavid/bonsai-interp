@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a7df9c68",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N9359-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N9359",
+   "pole": "-",
+   "label": "a style or ingredient descriptor in lifestyle copy about decor, hair, food or scent ('industrial farmhouse vibe, with exposed brick' 1.06, 'glass and brass' 1.06, 'arugula' 0.68, 'relaxed summer locks ... wavy hair' 0.43, 'spinach and Cheddar' 0.42, 'a spicy twist' 0.43); the same nouns in news, science or forensic prose are quiet (industrial output 0.09, hair sample 0.14, spinach is rich in iron 0.28)",
+   "fire": [
+    "The kitchen pairs reclaimed oak with matte black fixtures for a warm industrial feel.",
+    "Think whitewashed brick, brass pendants and a long marble island.",
+    "Soft beachy waves are this season's easiest look for medium-length hair.",
+    "Toss baby kale and shaved fennel with a lemony dressing.",
+    "Serve the frittata with a handful of rocket and a drizzle of chilli oil.",
+    "The diffuser fills the room with bergamot and a warm, woody base note.",
+    "Add rattan accents and plenty of trailing plants for a boho vibe.",
+    "Go for a tousled bob with face-framing layers and a soft fringe."
+   ],
+   "quiet": [
+    "The oak beams in the barn were replaced after the fire in 1998.",
+    "Brick production fell sharply as the housing market cooled.",
+    "Wave heights in the bay reached four metres during the storm.",
+    "Kale belongs to the same species as cabbage and broccoli.",
+    "The frittata recipe was first printed in a 1911 cookbook.",
+    "Bergamot oil is extracted from the peel of a citrus fruit grown in Calabria.",
+    "Rattan is harvested from climbing palms in the forests of Indonesia.",
+    "The barber's shop on the corner has been open since 1954."
+   ]
+  }
+ ],
+ "predictions": "the decor items 0.6-1.1, the hair/food/scent items 0.3-0.7 with one or two at risk; near misses below 0.3, the botanical ones the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "style/ingredient descriptor in lifestyle copy",
+ "unit_kind": "semantic",
+ "confidence": 0.4,
+ "notes": "Card: max 18.3, density 0.14%, peaks ' hair' x4, ' industrial' x3, ' Summer' x2, ' spinach' x2, 'ula' (arugula), ' brass', ' spicy' in decor, hairstyle listicle and recipe copy; the + pole is ' page'. Probe: 'mixes industrial and mid-century styling with a lot of glass' 1.062 (' glass'), 'industrial farmhouse vibe, with exposed brick' 1.057 (' exposed'), arugula 0.680 ('ula'), 'relaxed summer locks ... wavy hair' 0.428, 'spicy twist' 0.425, 'spinach and Cheddar' 0.417; 'Industrial output fell' 0.087, 'hair sample ... DNA' 0.144, 'Spinach is rich in iron' 0.283 ('ach'). The register carries it more than the noun: decor material lists are strongest."
+}

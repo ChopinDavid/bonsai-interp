@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-ddb04e40",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N11328-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T07:33:34+00:00",
+ "recipe": {
+  "toolchain_commit": "e1c598ed",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N11328_neg/2026-10-30-ChopinDavid-ddb04e40.tests.json"
+ },
+ "label": "a first-person description of the poster's own setup or situation in a help-seeking forum post, at the punctuation or copula that closes each fact ('My setup: a gas wall boiler, ...' 0.53, 'I'm on Illustrator CS2 ... the Epson driver is v. 1.84.' 0.58, 'So that's the background. Here are my questions' 0.59, 'I'm 33, married, and for two days' 0.36); the same facts stated in third-person documentation are quiet (0.02-0.23)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N11328_neg/2026-10-30-ChopinDavid-ddb04e40.tests.json",
+   "prereg_commit": "e1c598ed",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.492,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.577,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.562,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.306,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.528,
+     "peak": " reads"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.08,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 1.101,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.324,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.031,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.045,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.037,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " periods"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": " replace"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.032,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.045,
+     "peak": " on"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.51,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e1c598ed",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "first-person setup description in a help request",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 24.8, density 0.08%, peaks ',' x5, ' is' x4, '.' x4, ':' x2 in tech-support and medical Q&A posts (browser console is throwing errors, Russian boiler question, 'Valve:', Arabic fertility question, 'I have ...', Epson driver is v. 1.84, 'So that's the background story.'). Probe: 'So that's the background. Here are my questions' 0.587 ('.'), 'Epson driver is v. 1.84.' 0.577, 'My setup: a gas wall boiler' 0.531 (':'), 'I'm 33, married,' 0.364 (','), 'console is throwing errors' 0.156 (lower than expected); third-person 'console throws an error when' 0.232, boiler spec 0.026, Illustrator history 0.030, abdominal pain causes 0.017.",
+ "selection": "random draw"
+}

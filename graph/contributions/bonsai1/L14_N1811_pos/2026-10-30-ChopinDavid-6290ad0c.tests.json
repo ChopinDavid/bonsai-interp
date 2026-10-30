@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6290ad0c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N1811+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N1811",
+   "pole": "+",
+   "label": "dense (20.8% of tokens at 0.1 of max, max 1.41, gate-closed echo 100%): best guess a mild preference for technical, legal or biomedical register (erythropoietin 0.59, JSON Web Token 0.37, insulin 0.34) over casual conversation (0.17-0.18); an 8 + 8 test is not expected to pass",
+   "fire": [
+    "Serum ferritin below 30 micrograms per litre confirms iron deficiency even when haemoglobin is normal.",
+    "The appellate court applied the Chevron doctrine and deferred to the agency's reading of the statute.",
+    "Tokens are issued by the OAuth 2.0 authorization server and expire after one hour.",
+    "The pathogen is transmitted by leafhoppers that feed on the xylem of infected grapevines.",
+    "Glucagon raises blood sugar by signalling the liver to release stored glycogen.",
+    "Under Article 5, the committee may extend the deadline by a further ninety days.",
+    "The enzyme catalyses the conversion of angiotensin I to angiotensin II in the lungs.",
+    "The specification requires that all requests be signed with an HMAC-SHA256 digest."
+   ],
+   "quiet": [
+    "We're out of milk again, can you grab some on your way home?",
+    "The kids built a fort out of sofa cushions and refused to come out for dinner.",
+    "I finally finished that book you lent me, and the ending made me cry.",
+    "Let's meet at the café by the station around half past ten.",
+    "My neighbour's dog barks every time the postman comes up the path.",
+    "It rained all weekend, so we stayed in and played board games.",
+    "Happy anniversary to the two of you, have a wonderful evening!",
+    "He forgot his umbrella again and got soaked walking back from the bus."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.6, near misses 0.15-0.25; several fire items under 0.3, so a fail or partial is expected",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; technical register (guess)",
+ "unit_kind": "dense / positional",
+ "confidence": 0.2,
+ "notes": "Card: max 1.41, FLAG dense 20.8%, FLAG gate-closed regime -x- echo 100%; peaks scattered: ' key', ' Unity', ' Hann', 'iet' (erythropoietin), '8', 'ar', ' Web', ' inheritance'. Probe: erythropoietin 0.588, JSON Web Token 0.368, insulin molecule 0.336, '1989' 0.312, sharpshooter 0.261, Daubert 0.232; pizza 0.172, pick up the kids 0.180, birthday card 0.175. The contrast is real but small and the unit is on for a fifth of all tokens, so it is recorded as dense with a register guess."
+}

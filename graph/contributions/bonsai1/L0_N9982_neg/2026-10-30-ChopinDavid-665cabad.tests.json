@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-665cabad",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N9982-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N9982",
+   "pole": "-",
+   "label": "a small set of specific continuation tokens, mostly code-identifier pieces after a separator: '_for' (url_for 0.75), '/css' (text/css 0.71), \"('--\" (add_argument('-- 0.72), '.Required' (validators.Required 0.33) and the word piece 'anal' (Spanish sem|anal 1.01); other identifier pieces and prose are quiet (0.02-0.19)",
+   "fire": [
+    "result = await asyncio.wait_for(fetch(url), timeout=5)",
+    "return redirect(url_for('index'))",
+    "<link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">",
+    "parser.add_argument('--verbose', action='store_true', help='Print progress.')",
+    "name = StringField('Name', [validators.Required()])",
+    "La revista semanal sale a la venta todos los jueves.",
+    "ap.add_argument('--output', default='out.txt')",
+    "Tenemos una reunión semanal del equipo cada lunes por la mañana."
+   ],
+   "quiet": [
+    "result = await asyncio.wait_until(fetch(url), timeout=5)",
+    "return redirect(url_path('index'))",
+    "<link rel=\"stylesheet\" type=\"text/html\" href=\"main.css\">",
+    "parser.add_argument(\"-v\", action='store_true', help='Print progress.')",
+    "name = StringField('Name', [validators.Length(min=3)])",
+    "La revista mensual sale a la venta todos los jueves.",
+    "ap.add_argument(\"-o\", default='out.txt')",
+    "Tenemos una reunión mensual del equipo cada lunes por la mañana."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-1.0 on the declared token; the .Required items near 0.3 are at risk; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token set: _for, /css, ('--, .Required, anal",
+ "unit_kind": "token",
+ "confidence": 0.4,
+ "notes": "Card: layer 0, max 0.33, FLAG broad 2.1%, peaks '/css' x3, 'anal' x2, '1' x2, '_for' x2, \"('--\" x2, '.stderr' x2, '_ops', 'ilde', '.adapters', '.Required', ':`'. Probe: 'semanal' 1.014 ('anal'), url_for 0.748 ('_for'), text/css 0.710, add_argument('-- 0.718, validators.Required 0.327, math_ops 0.185 (peak '.x'); prose 0.018-0.051, 'x = 1' 0.035. A layer-0 unit is a token detector, so the trigger is declared as the exact tokens and the near misses swap each token for a neighbour ('_until', '/html', '-v', '.Length', 'mensual').",
+ "trigger": {
+  "tokens": [
+   "_for",
+   "/css",
+   "('--",
+   ".Required",
+   "anal"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c2cf8f9a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N11231+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N11231",
+   "pole": "+",
+   "label": "a German inflectional ending split off as its own token, completing a past-tense verb or plural noun: 'te' (räum|te 1.31, tanz|te 0.88), 'ten' (rauch|ten 1.02), 'nen' (Ton|nen 0.64, Farbtö|nen 0.58), 'nte'/'ute'; German verbs that are single tokens (sagte 0.15) and English words ending in -ten (kitten, written, eaten) are quiet",
+   "fire": [
+    "Am Wochenende kochten wir zusammen ein großes Essen für die Nachbarn.",
+    "Nach dem Umzug wohnte sie drei Jahre lang in einer kleinen Dachwohnung.",
+    "Die Kinder spielten den ganzen Nachmittag im Garten.",
+    "Er kaufte am Markt frische Äpfel und machte daraus einen Kuchen.",
+    "In der Nacht hörten wir das Gewitter über den Bergen.",
+    "Die Firma baute zwei neue Hallen am Stadtrand.",
+    "Der Laden verkauft Stoffe in vielen Farben und Farbtönen.",
+    "Das Schiff transportiert jedes Jahr mehrere tausend Tonnen Getreide."
+   ],
+   "quiet": [
+    "Wir haben heute viel Zeit und gehen in den Park.",
+    "Das Haus ist alt und schön, aber sehr kalt im Winter.",
+    "Das Wetter ist gut und die Sonne ist warm.",
+    "Er sagte, das Essen ist gut und der Wein auch.",
+    "The kitten slept on the pile of freshly written letters.",
+    "They had eaten most of the bread before the soup was ready.",
+    "Der Hund ist im Garten und der Mann ist im Haus.",
+    "Ich bin hier und du bist dort, das ist gut so."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.3 on the ending piece; near misses below 0.2, the German present-tense sentences the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "German -te/-ten/-nen ending as its own token",
+ "unit_kind": "token",
+ "confidence": 0.6,
+ "notes": "Card: max 8.2, density 0.02%, peaks 'en' x6, 'ten' x3, 'nen' x3, 'ste' x3, 'te' x2, 'ute' x2 in räum|te, rauch|ten, tanz|te, treuest|en, Ton|nen, Bronsht|en, Ba|ute|ile, Farbtö|nen, bran|nte; the - pole is Russian 'им'. Probe: räumte 1.313 ('te'), rauchten 1.020 ('ten'), tanzte 0.878, Tonnen 0.637 ('nen'), Farbtönen 0.576, brannte/löschte 0.427 ('te'); 'Er sagte, dass er den Garten liebt' 0.151 (sagte and Garten are single tokens), English 0.021-0.023. Tokenizer: kochten -> ' k','och','ten'; spielten -> ' spiel','ten'; machte -> ' mach','te'; kaufte -> ' ka','uf','te'; hörten -> ' h','ör','ten'; baute -> ' ba','ute'; wohnte -> ' w','oh','nte'; the near-miss German sentences use words that stay whole (Haus, ist, alt, Wetter, gut, Garten) and kitten/written/eaten are single tokens."
+}

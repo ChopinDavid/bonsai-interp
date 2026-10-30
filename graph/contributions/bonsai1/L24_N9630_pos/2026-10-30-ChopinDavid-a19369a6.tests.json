@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a19369a6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N9630+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N9630",
+   "pole": "+",
+   "label": "unclear: the card peaks on the preposition before a disease or topic entity named earlier in a medical-news document ('dying from muscular dystrophy', 'people with the disease', 'treating ASD', 'origin for microRNAs'), but every isolated probe sentence scored under 0.06; best guess the preposition slot before a second mention of the passage's topic entity, tested with a two-sentence passage",
+   "fire": [
+    "Duchenne muscular dystrophy weakens every muscle in the body. The foundation represents boys dying from the disease and their families.",
+    "Tay-Sachs is a rare inherited disorder of the nervous system. Parents who have watched a child die from Tay-Sachs are pressing for wider screening.",
+    "Stargardt's disease destroys central vision in young people. New therapies aim to protect the sight of patients with the disease.",
+    "Colon cancer remains the second deadliest cancer in the country. The number of people dying from the disease has barely changed since 1990.",
+    "Autism spectrum disorder is diagnosed in one child in 36. Clinicians still face major challenges in treating ASD.",
+    "HER2 is a protein that drives some breast cancers. The drug should be tested in patients whose tumours over-express the protein.",
+    "MicroRNAs regulate genes in almost every animal. The findings point to an ancient evolutionary origin for microRNAs.",
+    "Sheringham Point has guided ships since 1912. The book covers the full history of the lighthouse and its keepers."
+   ],
+   "quiet": [
+    "Duchenne muscular dystrophy weakens every muscle in the body. The foundation was set up in 1985 by a group of parents in Ohio.",
+    "Tay-Sachs is a rare inherited disorder of the nervous system. The screening programme began in Montreal in the early seventies.",
+    "Stargardt's disease destroys central vision in young people. The clinic opened a second office in Leeds last autumn.",
+    "Colon cancer remains the second deadliest cancer in the country. The new screening kits are posted to everyone over fifty.",
+    "Autism spectrum disorder is diagnosed in one child in 36. The conference will be held in Denver next March.",
+    "HER2 is a protein that drives some breast cancers. The trial recruited four hundred women across twelve hospitals.",
+    "MicroRNAs regulate genes in almost every animal. The paper was published on Tuesday in a leading journal.",
+    "Sheringham Point has guided ships since 1912. The book was printed in full colour and runs to two hundred pages."
+   ]
+  }
+ ],
+ "predictions": "likely a fail: fire items may reach 0.1-0.4 if the earlier mention matters, near misses stay near 0; if all stay under 0.1 the unit depends on long-document context",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "preposition before the passage's topic entity (guess)",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: max 86.5, density 0.19%, peaks ' of' x8, ' with' x6, ' from' x4, ' for' x3, ' by' x3, ' against' x2, all in medical/science news where the object is the document topic (the disease, the molecule, Teotihuacan); the - pole promotes 'this/these'. Probe (single sentences): 'die from malaria' 0.057, 'living with the disease' 0.011, 'origin of these genes' 0.024, 'role for microRNAs' 0.028, 'history of the lighthouse' 0.030, 'food source for hummingbirds' 0.011; controls 0.007-0.011. Nothing fired, so the test adds a first sentence that introduces the entity and puts the preposition slot before its second mention; the near misses keep the first sentence and continue with an unrelated fact."
+}

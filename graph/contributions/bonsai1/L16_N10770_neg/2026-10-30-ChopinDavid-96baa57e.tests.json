@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-96baa57e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N10770-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N10770",
+   "pole": "-",
+   "label": "personal data, valuables or resources as the target of theft or exploitation, peaking on the stolen item or its owner ('from your credit card to your insurance number' 0.69, 'stole the phone numbers of millions of users' 0.64, 'gather personal information by posing as' 0.63, 'share too much information about yourself' 0.53); the same items handled legitimately (update your card number 0.07, the form asks for your name 0.03) are quiet",
+   "fire": [
+    "Phishing emails trick people into handing over their bank details.",
+    "Fraudsters harvest passwords from the fake login pages they set up.",
+    "The breach exposed the medical records of two million patients.",
+    "Pickpockets on the metro go for wallets and phones left in back pockets.",
+    "Burglars target homes where jewellery and cash are easy to find.",
+    "The ransomware gang threatened to leak customers' addresses and card numbers.",
+    "Con artists prey on pensioners and drain their life savings.",
+    "The invaders stripped the colony of its timber and its gold."
+   ],
+   "quiet": [
+    "Reminder emails ask people to confirm their bank details once a year.",
+    "The password manager stores passwords from every login page you use.",
+    "The archive holds the medical records of two million patients.",
+    "Commuters on the metro keep wallets and phones in their back pockets.",
+    "Insurers prefer homes where jewellery and cash are kept in a safe.",
+    "The retailer asked customers to update their addresses and card numbers.",
+    "Advisers help pensioners plan how to spend their life savings.",
+    "The settlers sold the colony's timber and gold at the port."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.7; near misses below 0.15, with 'the password manager stores passwords' the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "data or assets as the target of theft / exploitation",
+ "unit_kind": "semantic",
+ "confidence": 0.6,
+ "notes": "Card: max 31.8, density 0.1%, peaks ' information' x3, ' personal' x3, ' your' x2, ' their' x2 in identity-theft and hacking text (credit card numbers, bank account details, medical information within HIE, hackers leaking phone numbers, aliens raiding earth of its resources); the + pole suppresses 'vulnerable/targeting/weakness'. Probe: 'from your credit card to your insurance number' 0.694 (' number'), 'Hackers stole the phone numbers of millions of users' 0.640, 'Scammers gather personal information' 0.629, 'Identity thieves go wherever the opportunities are' 0.593, 'share too much information about yourself' 0.531, 'valuable information like card numbers and passwords' 0.415; 'update your card number' 0.071, 'form asks for your name, phone number' 0.025, 'gather information about bird numbers' 0.002."
+}

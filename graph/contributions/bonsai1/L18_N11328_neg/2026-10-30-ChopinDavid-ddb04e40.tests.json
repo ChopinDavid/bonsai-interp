@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ddb04e40",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N11328-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N11328",
+   "pole": "-",
+   "label": "a first-person description of the poster's own setup or situation in a help-seeking forum post, at the punctuation or copula that closes each fact ('My setup: a gas wall boiler, ...' 0.53, 'I'm on Illustrator CS2 ... the Epson driver is v. 1.84.' 0.58, 'So that's the background. Here are my questions' 0.59, 'I'm 33, married, and for two days' 0.36); the same facts stated in third-person documentation are quiet (0.02-0.23)",
+   "fire": [
+    "I'm running WordPress 5.2 with the Yoast plugin, and since the update my sitemap is empty. Any ideas?",
+    "My setup: Ryzen 5 3600, 16 GB RAM, RTX 2060. The game stutters every few seconds. Is it the RAM?",
+    "I've got a 2012 MacBook Pro on Mojave and the fan runs constantly. Here's what I've tried so far.",
+    "I'm 41, no kids, and my periods have been irregular for six months. Should I be worried?",
+    "Here's my situation: the boiler fires up, runs for a minute, then shuts off. The pressure gauge reads 0.8.",
+    "So that's the story. My question is: do I need a new pump or just a new seal?",
+    "I use Lightroom 6 on Windows 10 and the export dialog freezes every time. The printer driver is v. 3.2.",
+    "My dog is 9, a lab mix, and she's been limping on her back left leg for two days. Vet says wait."
+   ],
+   "quiet": [
+    "WordPress 5.2 shipped with an updated sitemap module that works with the Yoast plugin.",
+    "The Ryzen 5 3600 pairs well with 16 GB of RAM and an RTX 2060 for 1080p gaming.",
+    "The 2012 MacBook Pro runs Mojave and uses a single fan to cool the processor.",
+    "Irregular periods after forty are often an early sign of the menopause.",
+    "A boiler that fires and then shuts off usually has low pressure; the gauge should read above 1.0.",
+    "A worn seal lets water past the pump and is far cheaper to replace than the pump itself.",
+    "Lightroom 6 on Windows 10 exports to JPEG, TIFF and DNG through the export dialog.",
+    "A labrador of nine that limps on a hind leg should be checked for cruciate ligament damage."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.6 on ':' '.' ',' or ' is' inside the post; near misses below 0.25, with the one that keeps 'throws an error' the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "first-person setup description in a help request",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 24.8, density 0.08%, peaks ',' x5, ' is' x4, '.' x4, ':' x2 in tech-support and medical Q&A posts (browser console is throwing errors, Russian boiler question, 'Valve:', Arabic fertility question, 'I have ...', Epson driver is v. 1.84, 'So that's the background story.'). Probe: 'So that's the background. Here are my questions' 0.587 ('.'), 'Epson driver is v. 1.84.' 0.577, 'My setup: a gas wall boiler' 0.531 (':'), 'I'm 33, married,' 0.364 (','), 'console is throwing errors' 0.156 (lower than expected); third-person 'console throws an error when' 0.232, boiler spec 0.026, Illustrator history 0.030, abdominal pain causes 0.017."
+}

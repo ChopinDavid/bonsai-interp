@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-8f49be95",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N2697-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N2697",
+   "pole": "-",
+   "label": "the slot where an exact proportion follows an approximate one: the first digit of a percentage restating a verbal fraction ('nearly three-quarters (72%)' 0.66, 'two in three (64%)' 0.95) and the verb that introduces a 'more than X% of its income' share threshold ('a household that spends more than 10%' 1.08); the same numbers as plain counts, ages, years or journal volumes are quiet (0.01-0.09)",
+   "fire": [
+    "Roughly half (48%) of respondents said they would vote again.",
+    "Almost one in five (19%) of the pupils missed more than ten days of school.",
+    "About a third (34 percent) of the homes were built before 1950.",
+    "More than two-thirds (68%) of the drivers admitted using a phone at the wheel.",
+    "A household is rent-burdened if it spends more than 30% of its income on housing.",
+    "The rule flags any fund that devotes more than 10% of its assets to a single stock.",
+    "Nearly nine in ten (88%) of the clinics reported staff shortages.",
+    "Water poverty means a family pays more than 3% of its income for water."
+   ],
+   "quiet": [
+    "The survey was sent to 48 households in the village last spring.",
+    "The pupils were split into 19 groups for the field trip.",
+    "The homes on Elm Street were built in 1950 by the same firm.",
+    "The drivers waited 68 minutes for the road to reopen.",
+    "A household of four was given 30 square metres of garden.",
+    "The fund holds 10 stocks and publishes the list every quarter.",
+    "The 88 clinics reported their figures on Monday.",
+    "The family pays its water bill in 3 instalments each year."
+   ]
+  }
+ ],
+ "predictions": "the parenthetical-percentage items 0.5-1.0 on the digit, the 'spends more than' items 0.4-1.1 on the verb; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "exact proportion after an approximate one / share threshold",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 33.8, density 0.13%, peaks '7' x3, '6' x3, ' ' x3, '3' x2, '_count', ' spends' in 'nearly three-quarters (72%)', '(72 percent)', 'household spends more than 10%', 'nearly 2 in 3 (64%)', 'aged 60 and above', 'already 16 Routers', target_d_count >=; the + pole promotes 'greater/exceeding/above' and suppresses 'less/equal/smaller'. Probe: 'spends more than 10% of its income' 1.077 (' spends'), 'two in three (64%)' 0.947 ('6'), 'three-quarters (72%)' 0.656 ('7'); 'aged 60 and above' 0.089, '16 routers' 0.010, target_d_count 0.015, '72 people' 0.014, 'Journal 95.5' 0.019, 'turned 60' 0.017. The comparison-to-threshold reading is what fires; the age and count readings do not."
+}

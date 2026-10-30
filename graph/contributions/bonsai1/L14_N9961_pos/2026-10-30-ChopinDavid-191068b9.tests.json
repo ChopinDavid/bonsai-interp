@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-191068b9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N9961+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N9961",
+   "pole": "+",
+   "label": "the continuation after 'other N' that points to further members of a set beyond the ones already mentioned ('many other examples outside this list,' 0.49, 'Other articles in the series' 0.35, 'other people who know my child' 0.26); 'the same N', 'these N' and 'the first N' in the same frames are quiet (0.02-0.04)",
+   "fire": [
+    "There are plenty of other examples beyond these, and new ones turn up every month.",
+    "Other posts in this series cover budgeting and retirement savings.",
+    "What do other parents who have been through this recommend?",
+    "Many other species in the genus also carry the same toxin.",
+    "The other three bills also passed without a single amendment.",
+    "You can find other recipes in the archive, sorted by season.",
+    "Several other towns along the coast have adopted similar rules.",
+    "Other members of the crew who survived the wreck settled in Lima."
+   ],
+   "quiet": [
+    "There are exactly six examples in this chapter, and each one is worked in full.",
+    "The first post in this series covers budgeting and retirement savings.",
+    "What do the parents who have been through this recommend?",
+    "This species in particular also carries the same toxin.",
+    "The same three bills also passed without a single amendment.",
+    "You can find the recipes in the archive, sorted by season.",
+    "The largest town along the coast has adopted similar rules.",
+    "The members of the crew who survived the wreck settled in Lima."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.5, so two to four may miss the 0.3 line; near misses below 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "continuation after 'other N' (further members of a set)",
+ "unit_kind": "contextual",
+ "confidence": 0.35,
+ "notes": "Card: max 12.6, density 0.43%, peaks ' in' x4, ',' x2, ' same' x2, ' other' x2, ' leaders', ' who', ' papers', ' that', ' also', ' summer', ' else' after 'few other future leaders', 'other people who', 'More papers in', 'other works that', 'The other two also', 'many other examples outside of this list,', 'Other articles in', 'During the following summer', 'What else'. The - pole peaks on ' of' and ' other' itself. Probe: 'many other examples outside this list,' 0.491 (','), 'Other articles in the series' 0.354 (' in'), 'other people who' 0.256, 'The other two measures also' 0.174, 'other works that' 0.162, 'Few other future leaders' 0.071; 'The same two measures' 0.016, 'These articles in' 0.030, 'The first leader' 0.044. A real but weak contrast; the fire items copy the strongest frames (plural 'other N' followed by a locative or relative)."
+}

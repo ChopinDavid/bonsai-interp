@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0443a0fd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N4867+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T07:20:14+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N4867",
+   "pole": "+",
+   "label": "the moving surface of the sea (rough seas 0.48, surf 0.57, waves crashing 0.57) and, as a second trigger of the same unit, Gaussian-statistics terms (erf(x) 0.83, standard deviations 0.52); rivers, lakes and figurative 'a sea of umbrellas' are quiet (0.04-0.13)",
+   "fire": [
+    "The ferry was cancelled because of heavy seas in the channel.",
+    "Surfers waited beyond the breakers for the next big set of waves.",
+    "Foam from the breaking surf hissed up the sand and over our feet.",
+    "Wind-driven waves pounded the breakwater for most of the night.",
+    "The return was almost three standard deviations above its historical mean.",
+    "Numerically the complementary error function erfc(z) is more stable for large z.",
+    "Salt spray from the rough sea coated every window of the lighthouse.",
+    "The sea was choppy, with white-capped waves slapping the hull."
+   ],
+   "quiet": [
+    "The ferry was cancelled because of thick fog in the harbour.",
+    "Skaters waited by the rink for the next big session of the day.",
+    "Water from the burst pipe ran across the floor and over our feet.",
+    "Heavy rain pounded the tin roof for most of the night.",
+    "The return was almost three percentage points above last year's figure.",
+    "Numerically the trapezoidal rule is more stable than naive summation for long series.",
+    "Mud from the flooded river coated every window of the mill.",
+    "The lake was glassy, with ducks drifting near the reeds."
+   ]
+  }
+ ],
+ "predictions": "the six ocean items 0.4-0.7, the two statistics items 0.5-0.9; near misses below 0.15, with the percentage-points item the closest",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sea waves/surf, plus erf / standard deviations",
+ "unit_kind": "polysemantic",
+ "confidence": 0.5,
+ "notes": "Card: max 22.3, density 0.03%, peaks ' sea' x4, ' waves' x3, ' surf' x3, ' seas' x2 (rough seas, wild sea-banks, waves of distortion, surf of Zuma Beach, swells) and also 'fc' in erfc, 'f' in erf, 'sigma', ' standard' deviations, 'probabilities between'. Probe: erf(x) 0.833, waves crashed 0.572 (' crashed'), surf 0.568, standard deviations 0.516, rough seas 0.482, swells 0.265 (peak ' were'); 'a sea of umbrellas' 0.128, river 0.038, lake 0.063. Two unrelated triggers share the unit, so the label names both and the test carries six ocean and two statistics items; swells is left out as the weakest."
+}
