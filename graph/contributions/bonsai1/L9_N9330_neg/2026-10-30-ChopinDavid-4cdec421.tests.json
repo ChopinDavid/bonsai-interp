@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4cdec421",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N9330-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N9330",
+   "pole": "-",
+   "label": "body-conformation description of an animal's or person's frame: shoulders, withers, chest, hips, hind limbs, loin and 'broad' or 'deep' as build ('24 inches at the withers ... deep chest' 0.55, 'hind legs are well muscled' 0.52, 'hip dysplasia' 0.39, 'pecho ancho' 0.34, 'shoulders were broad' 0.32); the same words in other senses ('shouldered the bag' 0.01, 'broad agreement' 0.05, 'the lake is deep' 0.03) and breed descriptions without anatomy (0.015) are silent",
+   "fire": [
+    "A good ram should have a wide chest and strong, straight hind legs.",
+    "Dogs of this line are screened for elbow and hip dysplasia before mating.",
+    "The mare measures 16 hands at the withers and has a short, strong back.",
+    "He was a stocky man, broad in the shoulder and thick through the chest.",
+    "The hindquarters are heavily muscled and the loin is short and wide.",
+    "La raza tiene la espalda recta y las caderas estrechas.",
+    "Judges look for a level topline, a deep brisket and well-sprung ribs.",
+    "The bull's shoulders slope smoothly into a broad, well-fleshed back."
+   ],
+   "quiet": [
+    "A good ram will cover forty ewes in a single season.",
+    "Dogs of this line are known for their calm temperament and loyalty.",
+    "The mare won two races at Newmarket before she was retired.",
+    "He was a quiet man, broad in his interests and slow to anger.",
+    "The hindmost car in the convoy carried the supplies.",
+    "La raza es popular entre las familias con niños pequeños.",
+    "Judges look for a confident trot and a steady gaze in the ring.",
+    "The bull market lasted a decade and lifted every index."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.3-0.7 on the body-part or build word; near misses under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "animal body conformation",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 29, density 0.033%, peaks ' back' x4, ' broad' x3, ' hind' x3, 'should|ered' x2, ' shoulders', ' deep' in dog-breed standards ('25 inches at the shoulders', 'The chest is deep and the back is short', 'displasia de c|adera', 'Body is broad, muscular and compact', 'curved profile', 'broad-shouldered men', 'hind limbs', 'hip dysplasia'). Probe: 'stands 24 inches at the withers and has a deep chest' 0.550 (ers), 'hind legs are well muscled' 0.516, 'hip dysplasia' 0.394, 'pecho ancho y las patas traseras' 0.343, 'shoulders were broad' 0.318; 'shouldered the heavy bag' 0.013, 'broad agreement' 0.051, 'friendly with children and easy to train' 0.015, 'The lake is deep' 0.028. Near misses keep the animals, the Spanish and the words broad/hind/bull in non-anatomical senses."
+}

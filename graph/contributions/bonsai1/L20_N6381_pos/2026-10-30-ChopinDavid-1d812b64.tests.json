@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1d812b64",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N6381+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N6381",
+   "pole": "+",
+   "label": "the opening quote of the string argument of a print or logging call ('print(\"' 0.62 and 0.49, \"logging.info('\" 0.48) whatever the string says; the same strings assigned to a variable, returned or compared (0.19-0.24 at most) and prose about counting (0.03) are weaker",
+   "fire": [
+    "for row in rows:\n    total += row.amount\nprint(\"Total amount:\", total)",
+    "if not os.path.exists(path):\n    print('Config file missing, using defaults')",
+    "conn = connect(dsn)\nlogging.info('Connected to database %s', dsn)",
+    "result = run_job(job)\nlogger.warning(\"Job finished with status %s\", result.status)",
+    "int main(void) {\n    printf(\"Starting server on port %d\\n\", port);\n    return 0;\n}",
+    "const items = await fetchItems();\nconsole.log(\"Loaded items:\", items.length);",
+    "for name in names:\n    # print 'checking', name\n    check(name)",
+    "    def run(self):\n        print(\"Running step\", self.name)\n        self.step()"
+   ],
+   "quiet": [
+    "for row in rows:\n    total += row.amount\nmessage = \"Total amount: \" + str(total)",
+    "if not os.path.exists(path):\n    raise FileNotFoundError('Config file missing')",
+    "conn = connect(dsn)\nstatus = 'Connected to database'",
+    "result = run_job(job)\nif result.status == \"failed\":\n    retry(job)",
+    "int main(void) {\n    const char *banner = \"Starting server\";\n    return 0;\n}",
+    "const items = await fetchItems();\nconst label = \"Loaded items: \" + items.length;",
+    "for name in names:\n    # checking each name in turn\n    check(name)",
+    "    def run(self):\n        self.label = \"Running step\"\n        self.step()"
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-0.7 on the '(\"' or \"('\" token; near misses under 0.25; printf and console.log were not probed and may be weaker; the raise ValueError(' near miss may leak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "print(\" / logging.info(' opening quote",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: max 25.5, density 0.51%, peaks ')\\n', '.', ' \",', '*)', 'Dict', '_time' in 'print(\"Type 0: \", len(c1))', 'print(wordDict)', 'logging.info('Number of keyspaces', 'print \"处理后词表长度\"', '#print 'fragments_list''. The - pole promotes ' size', ' quantity', ' length', so the first hypothesis was 'printing a count'. Probe: print(\"Group A:\", len(c1)) 0.619 and print(\"Done sorting the points\") 0.486 both peak on '(\"'; logging.info('Number of rows fetched: %d', len(rows)) 0.476 and logging.info('Fetched rows from the orders table') 0.476 are identical and peak on \"('\": the count makes no difference, the print/log call's opening quote does. Commented '# print 'word count'' 0.237, 'colonies may be counted' 0.166, 'Population: 2.3 million' 0.237, Counter without print 0.189, prose counting 0.026. Fire items are print/logging/printf/console.log calls with a string argument; near misses put equivalent strings in assignments, comparisons, a raise and a comment."
+}

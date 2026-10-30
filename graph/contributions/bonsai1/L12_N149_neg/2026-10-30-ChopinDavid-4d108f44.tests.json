@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4d108f44",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N149-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N149",
+   "pole": "-",
+   "label": "antiquarian gazetteer and biographical prose: parish entries ('on the road from Birr to Templemore' 0.64), a clerical living or office held ('a living which he held till his death' 0.46), feudal titles and offices (Freih|err 0.90, Earl 0.18, portreeve and burgesses 0.23); modern prose about the same places and jobs is silent (0.02-0.06)",
+   "fire": [
+    "KILMORE, a parish, in the barony of Kinalea, 5 miles (S. W.) from Cork, on the road from Bandon to Kinsale; containing 2,310 inhabitants.",
+    "The village stands on the high road from Dumfries to Carlisle, about a mile from the old bridge.",
+    "In 1802 he was appointed rector of Haddington, a preferment which he retained until his decease.",
+    "Karl Theodor, Freiherr von Dalberg, became Archbishop of Mainz in 1802.",
+    "The manor was held of the Earl of Chester by the service of one knight's fee.",
+    "The town was anciently governed by a bailiff and twelve burgesses chosen yearly.",
+    "His Highness the Nawab granted the lease of the lands to the Company in 1765.",
+    "Near the summit of the hill are the remains of a camp, supposed to be of Danish origin."
+   ],
+   "quiet": [
+    "Kinsale is a twenty-minute drive from Cork along the main coast road.",
+    "The bypass around Dumfries opened in 2019 and cut traffic in the village.",
+    "In 2002 she was hired as a project manager and stayed with the firm for a decade.",
+    "Karl runs a small bakery in Mainz with his brother.",
+    "The farm was sold to a housing developer last autumn.",
+    "The town council meets on the first Tuesday of every month.",
+    "The company signed a lease on the new warehouse in 2021.",
+    "There is a car park and a picnic area near the top of the hill."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.2-0.9 on the title, office or road word; near misses under 0.1; a weak unit (max 4.1), so several fire items may land under 0.3",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "gazetteer / antiquarian prose",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 4.09, density 0.45%, leak regime 47%, no single token: Freih|err von Sauerbronn, 'on the road from Croom to Ballingarry', 'traversed by a high road', 'a position which he held', 'the island served as a quarantine', 'Gilbert Duncanson of the Park', 'a bailiff', 'His Highness', 'immovable property'. Probe: Freiherr von Hardenberg 0.897 (err), gazetteer parish entry 0.637 (' road'), 'a living which he held' 0.460, portreeve and burgesses 0.229, Earl of Desmond 0.178, 'high road from Belfast' 0.161; modern road directions 0.021, modern community centre 0.041, recipe 0.064. The pole reads the register of 19th-century topographical dictionaries and peerage prose rather than any one word."
+}

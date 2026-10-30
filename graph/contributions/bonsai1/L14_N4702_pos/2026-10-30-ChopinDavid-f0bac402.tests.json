@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f0bac402",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N4702+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N4702",
+   "pole": "+",
+   "label": "'free' meaning at no charge inside an offer or giveaway ('download a free guide' 0.74, 'get a free X', 'giving away free', 'provides free access'); 'free' as liberty or unoccupied (0.005-0.025), '-free' compounds (0.024) and the gratis meaning without the word ('at no cost' 0.09, 'gratuit' 0.12) are silent",
+   "fire": [
+    "Sign up today and get a free month of premium access.",
+    "The dealership is giving away free oil changes with every purchase.",
+    "Grab our free checklist for planning a vegetable garden.",
+    "Attendees will receive a free T-shirt and a drink voucher.",
+    "The library provides free access to several newspaper archives.",
+    "They offered free shipping on orders over fifty dollars.",
+    "Students can collect a free copy of the handbook at reception.",
+    "The app comes with a free trial of the full feature set."
+   ],
+   "quiet": [
+    "Sign up today and get a month of premium access for ten dollars.",
+    "After the verdict the prisoners were set free that same evening.",
+    "Keep your hands free when you climb the ladder.",
+    "Attendees will receive a lanyard and a printed programme.",
+    "The tenant is free to leave once the notice period ends.",
+    "The horses were allowed to roam free across the moor.",
+    "Students can purchase a copy of the handbook at reception.",
+    "The dairy now sells a lactose-free yoghurt in two flavours."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.25-0.8 on ' free'; near misses under 0.1; 'free admission' scored only 0.10 in the probe, so some fire items may be weak",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "free (gratis) in an offer",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: max 28.4, density 0.072%, ' free' x19 of 32 peaks plus ' charge' (free of charge), ' provided' (a free copy provided), 'бесплат|ную', ' gratuito'; the - pole also peaks on ' free'/'免费'/'無料'. Probe: 'Download our free guide' 0.743, 'a free tote bag' 0.257, 'free admission' 0.104 (peak ' on'), 'at no cost' 0.086, 'accès gratuit' 0.124, 'a free man' 0.005, 'a free afternoon' 0.025, 'gluten-free' 0.024, paid admission 0.014. Fire items put ' free' after a verb of giving/getting/offering as in the card's top examples; near misses keep the offers and sentences but use paid versions or the liberty/unoccupied/-free senses."
+}

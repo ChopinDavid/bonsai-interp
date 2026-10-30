@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1dc0a9b9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N7974+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N7974",
+   "pole": "+",
+   "label": "hearsay framing of a story about a historical figure: 'the story goes that' 1.27, 'is said to have' 0.69, 'one famous anecdote tells how' 0.64, 'according to legend' 0.51, peaking inside the story that follows; documented statements about the same figures (dates, publications) are silent (0.07-0.11)",
+   "fire": [
+    "Legend has it that Archimedes leapt from his bath shouting that he had found it.",
+    "Galileo is said to have dropped two cannonballs from the leaning tower of Pisa.",
+    "The story goes that Handel wrote the Messiah in twenty-four days without leaving his room.",
+    "One well-known anecdote tells how Churchill answered a hostess who called him drunk.",
+    "According to tradition, King Alfred let the cakes burn while hiding in a peasant's hut.",
+    "Mozart is rumored to have composed the overture on the night before the premiere.",
+    "A famous tale about Diogenes has him wandering Athens with a lamp in daylight.",
+    "It is said that Caesar wept before a statue of Alexander in Cadiz."
+   ],
+   "quiet": [
+    "Archimedes was killed during the Roman capture of Syracuse in 212 BC.",
+    "Galileo published the Dialogue in 1632 and was tried by the Inquisition the next year.",
+    "Handel's Messiah was first performed in Dublin in April 1742.",
+    "Churchill became prime minister in May 1940 after Chamberlain resigned.",
+    "King Alfred defeated the Danes at Edington in 878.",
+    "Mozart's Don Giovanni had its premiere in Prague in October 1787.",
+    "Diogenes lived in Corinth for part of his later life.",
+    "Caesar served as quaestor in Hispania Ulterior in 69 BC."
+   ]
+  }
+ ],
+ "predictions": "fire items 0.4-1.3 on or after the hearsay marker; near misses under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "legend has it / is said to have",
+ "unit_kind": "contextual",
+ "confidence": 0.65,
+ "notes": "Card: max 32, density 0.064%, peaks ' to' x5, ' that' x5, ',' x4 in 'One legendary anecd|ote', 'was rumored to have been trained', 'Legends include an instance', 'The story goes that', 'A legend states that', 'according to legend,', 'a well-known story about Napoleon. One day', 'many legends about his life'. Probe: 'The story goes that Newton was sitting under an apple' 1.271, 'is said to have forbidden' 0.685, 'One famous anecdote tells how' 0.642, 'According to legend, the monastery was founded where a' 0.507; 'There are many tales about the wizard Merlin' 0.077 (a fictional figure, no story told), parish records 0.069, Principia 0.109, Third Symphony 0.089, bus timetable 0.004. Near misses are factual sentences about the same eight figures."
+}

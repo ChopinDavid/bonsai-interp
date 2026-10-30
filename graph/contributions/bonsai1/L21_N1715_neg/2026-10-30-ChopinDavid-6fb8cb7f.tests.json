@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6fb8cb7f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N1715-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T10:20:09+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N1715",
+   "pole": "-",
+   "label": "the second member of a paired structure: the second argument of a mirrored pair ('(labels, predictions)' 0.65), the second half of a parallel or contrastive saying ('the worst ... the best' 0.28, \"can't have it and they'll want it\" 0.30), 'for every turnover he commits' 0.30; the first half alone is silent (0.02-0.03)",
+   "fire": [
+    "metrics.update_state(y_true, y_pred)\nloss = loss_fn(y_true, y_pred)",
+    "What we lose in speed we make up for in accuracy.",
+    "Give a man a fish and he eats for a day; teach him to fish and he eats for a lifetime.",
+    "She scores a goal for every three chances she creates.",
+    "The more you practise, the less you fear the stage.",
+    "Pick the design you can build fastest and justify your choice in a paragraph.",
+    "acc = accuracy_score(labels, predictions)\ncm = confusion_matrix(labels, predictions)",
+    "Praise them in public and correct them in private."
+   ],
+   "quiet": [
+    "metrics.reset_state()\nloss = loss_fn(batch)",
+    "We lose a little speed with the new engine.",
+    "Give a man a fish and he eats for a day.",
+    "She scores about a goal a game.",
+    "Practise every day before the show.",
+    "Pick the design you can build fastest.",
+    "acc = accuracy_score(results)\nprint(acc)",
+    "Praise them in public whenever you can."
+   ]
+  }
+ ],
+ "predictions": "weak and broad: fire items 0.2-0.7 on the second element; near misses under 0.1; likely to hold on AUROC only",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second half of a pair",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: max 15.4, density 1.3% (FLAG broad), no single token: 'implement and explain', 'يتناول|ون', 'X.shape', 'the best times ... the worst', '(label, predictions)', 'on paper embossed', 'response_list or kwargs):', 'for every turnover he commits', 'this.Js(k)', \"they can't have it & they'll want it\". Probe: self.acc_metric(labels, predictions) 0.646, \"they'll want it\" 0.303, 'turnover he commits' 0.297, 'be the best days' 0.284, 'and explain why' 0.115, 'or kwargs' 0.060; 'easiest to implement.' 0.022, 'three assists per game' 0.031, floor 0.054. Registered as unclear; fire items pair a mirrored code argument or a parallel clause, near misses stop after the first half."
+}
