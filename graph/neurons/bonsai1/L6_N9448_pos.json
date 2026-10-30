@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-24-ChopinDavid-fc5e42c3"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L6_N9448_pos/2026-10-29-moridinamael-cf1d38c3.tests.json",
+   "prereg_commit": "b984c09b",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.072,
+     "peak": "ур"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.125,
+     "peak": "ур"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.128,
+     "peak": "ур"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.207,
+     "peak": "ур"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.044,
+     "peak": "ей"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.204,
+     "peak": "ур"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.166,
+     "peak": "ур"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.326,
+     "peak": " Dome"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.046,
+     "peak": "в"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.058,
+     "peak": "нов"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.076,
+     "peak": " нам"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.121,
+     "peak": "ес"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.077,
+     "peak": "еш"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.178,
+     "peak": "ё"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.06,
+     "peak": " пут"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.121,
+     "peak": " whole"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.75,
+    "median_fire": 0.147,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-29-moridinamael-cf1d38c3"
   }
  ],
  "label_history": [
@@ -138,21 +260,28 @@
    "2026-10-24-ChopinDavid-fc5e42c3",
    "the piece 'ур' of Russian т|ур and т|ур|нир (tour, tournament), as against Russian sports and travel sentences without those words",
    "held"
+  ],
+  [
+   "2026-10-29-moridinamael-cf1d38c3",
+   "two word pieces: Russian 'ур' inside тур-words (тур, турнир, турфирма; any topic) and English ' Dome' as in 'Water Dome'",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-24-ChopinDavid-fc5e42c3"
+  "2026-10-24-ChopinDavid-fc5e42c3",
+  "2026-10-29-moridinamael-cf1d38c3"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": {
@@ -161,11 +290,11 @@
   "strong": 2630
  },
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
