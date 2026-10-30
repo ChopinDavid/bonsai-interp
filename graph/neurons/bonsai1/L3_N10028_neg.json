@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-24-ChopinDavid-4e4dcde3"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N10028_neg/2026-10-30-moridinamael-49c95dec.tests.json",
+   "prereg_commit": "9491cbde4",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.616,
+     "peak": "s"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.079,
+     "peak": " reviewed"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.057,
+     "peak": " converts"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.032,
+     "peak": " writing"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.025,
+     "peak": " service"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.049,
+     "peak": " clusters"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.114,
+     "peak": " reb"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.166,
+     "peak": " guarding"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.152,
+     "peak": "ed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.079,
+     "peak": " reviewed"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.065,
+     "peak": " record"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": " writing"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " service"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.046,
+     "peak": " directory"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.145,
+     "peak": "ased"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.196,
+     "peak": " guarding"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.539,
+    "median_fire": 0.068,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-49c95dec"
   }
  ],
  "label_history": [
@@ -138,21 +260,28 @@
    "2026-10-24-ChopinDavid-4e4dcde3",
    "the plural 's' split off as its own token at the end of a code identifier ('_ctrl|s', 'Struct|s', 'idx|s'), as against the singular identifier and plurals that are a single token",
    "held"
+  ],
+  [
+   "2026-10-30-moridinamael-49c95dec",
+   "a word-final 's' (plural noun or verb -s) that the tokenizer splits off as its own token after a stem, in prose or code ('underclock|s', 'Convert|s', 'diff|s'), as against the same word whole, possessives or other endings",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-24-ChopinDavid-4e4dcde3"
+  "2026-10-24-ChopinDavid-4e4dcde3",
+  "2026-10-30-moridinamael-49c95dec"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": {
@@ -161,11 +290,11 @@
   "strong": 2220
  },
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
