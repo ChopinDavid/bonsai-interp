@@ -1,0 +1,295 @@
+{
+ "id": "bonsai1/L11/N10048+",
+ "model": "bonsai1",
+ "layer": 11,
+ "index": 10048,
+ "pole": "+",
+ "label": "Wildlife management that moves wild animals into or between wild habitats: releasing, relocating, tagging-and-release, stocking waters and hatchery rearing for the wild (firing on 'release(d)', 'into', the moved animals); pets, zoo and farm animals handled in the same way stay quiet.",
+ "short": "moving animals into the wild (release, relocate, stock)",
+ "kind": "semantic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10048_pos/2026-10-30-lm1909-0305c4d6.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.338,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.668,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.875,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.037,
+     "peak": " released"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.625,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.549,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.764,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.737,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.41,
+     "peak": " turtles"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.025,
+     "peak": " feed"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.332,
+     "peak": "ery"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.08,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " release"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.014,
+     "peak": " river"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": "ized"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.065,
+     "peak": " released"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.75,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-lm1909-0305c4d6"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10048_pos/2026-10-30-lm1909-197f383f.tests.json",
+   "prereg_commit": "eda09fda",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.382,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.582,
+     "peak": " them"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.389,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.244,
+     "peak": " back"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.394,
+     "peak": " population"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.149,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.732,
+     "peak": " free"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.298,
+     "peak": "roduced"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.015,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": " them"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " ducks"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.192,
+     "peak": " back"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.013,
+     "peak": " gold"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.103,
+     "peak": " it"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.073,
+     "peak": " into"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.386,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-197f383f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-0305c4d6",
+   "Releasing captured or captive animals into the wild or into water ('release(d) ... into the river/wild'), firing on 'release(d)' and the following 'into'; other kinds of release (films, prisoners, earnings) and other handling of animals stay low.",
+   "failed"
+  ],
+  [
+   "2026-10-30-lm1909-197f383f",
+   "Wildlife management that moves wild animals into or between wild habitats: releasing, relocating, tagging-and-release, stocking waters and hatchery rearing for the wild (firing on 'release(d)', 'into', the moved animals); pets, zoo and farm animals handled in the same way stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-0305c4d6",
+  "2026-10-30-lm1909-197f383f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 1,
+  "qc": 0
+ }
+}

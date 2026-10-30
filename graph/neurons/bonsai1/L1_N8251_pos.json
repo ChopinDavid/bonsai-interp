@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N8251+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 8251,
+ "pole": "+",
+ "label": "The '-ography / -ographer / -ographic' piece completing 'cartography' (map-making: cart|ography, cart|ographer, cart|ographic); other '-ography' words (oceanography, choreography) and map-making without the word stay quiet.",
+ "short": "'cartography' (cart|ography)",
+ "kind": "token piece / lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N8251_pos/2026-10-30-lm1909-4103af96.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.56,
+     "peak": "ographers"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.897,
+     "peak": "ography"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.929,
+     "peak": "ography"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.61,
+     "peak": "ographer"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.734,
+     "peak": "ographic"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.993,
+     "peak": "ography"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.495,
+     "peak": "ographers"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.939,
+     "peak": "ography"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.0,
+     "peak": "Med"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " modern"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " took"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " influenced"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.001,
+     "peak": " marked"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.001,
+     "peak": " Chinese"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.816,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-4103af96"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-4103af96",
+   "The '-ography / -ographer / -ographic' piece completing 'cartography' (map-making: cart|ography, cart|ographer, cart|ographic); other '-ography' words (oceanography, choreography) and map-making without the word stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-4103af96"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,295 @@
+{
+ "id": "bonsai1/L4/N2959-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 2959,
+ "pole": "-",
+ "label": "A multi-author list in a citation (surnames and initials separated by commas or semicolons), strongest on ', et al.' or '; et al.'; citations with a single author in the same style stay lower.",
+ "short": "multi-author citation list (', et al.' strongest)",
+ "kind": "contextual / format",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N2959_neg/2026-10-30-lm1909-c2a3db9b.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 3,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.776,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.334,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.986,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.477,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.441,
+     "peak": " E"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.036,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.609,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.812,
+     "peak": " et"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.342,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.266,
+     "peak": " L"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.202,
+     "peak": " F"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.278,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.441,
+     "peak": " E"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.376,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.242,
+     "peak": " J"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.243,
+     "peak": ","
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.945,
+    "median_fire": 0.693,
+    "near_misses_at_0.3": 3
+   },
+   "contribution": "2026-10-30-lm1909-c2a3db9b"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N2959_neg/2026-10-30-lm1909-86af507f.tests.json",
+   "prereg_commit": "eda09fda",
+   "author": "lm1909",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.712,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.518,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.239,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.275,
+     "peak": " C"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.742,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.679,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.265,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.23,
+     "peak": " K"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.255,
+     "peak": " R"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.176,
+     "peak": " P"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.138,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.275,
+     "peak": " C"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.154,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.244,
+     "peak": " J"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.155,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.23,
+     "peak": " K"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.875,
+    "median_fire": 0.397,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-86af507f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-c2a3db9b",
+   "' et' of 'et al.' closing a punctuated author list (after a comma, semicolon or list dash: 'Lee, K.; et al.', '- et al.'); author lists that close with 'and Name', 'and colleagues' or 'and others' stay quiet.",
+   "failed"
+  ],
+  [
+   "2026-10-30-lm1909-86af507f",
+   "A multi-author list in a citation (surnames and initials separated by commas or semicolons), strongest on ', et al.' or '; et al.'; citations with a single author in the same style stay lower.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-c2a3db9b",
+  "2026-10-30-lm1909-86af507f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N3292-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 3292,
+ "pole": "-",
+ "label": "'Millennial' and 'Millennium' (also 'millennials', 'millennium'); other words for generations or long spans (century, generation, decade) stay quiet.",
+ "short": "'millennial' / 'Millennium'",
+ "kind": "token / lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3292_neg/2026-10-30-lm1909-2621aa21.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.295,
+     "peak": " millennials"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.741,
+     "peak": "ennial"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.403,
+     "peak": " Millennium"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.04,
+     "peak": " millennium"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.833,
+     "peak": "ennial"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.498,
+     "peak": " Millennium"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.185,
+     "peak": " millennials"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.727,
+     "peak": "ennial"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.019,
+     "peak": " buy"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.011,
+     "peak": " shoppers"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.016,
+     "peak": "ears"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.023,
+     "peak": " flexible"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.002,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " savings"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " bought"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.451,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-2621aa21"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-2621aa21",
+   "'Millennial' and 'Millennium' (also 'millennials', 'millennium'); other words for generations or long spans (century, generation, decade) stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-2621aa21"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

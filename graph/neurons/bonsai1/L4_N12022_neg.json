@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N12022-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 12022,
+ "pole": "-",
+ "label": "Dense unit (37% of tokens above 0.1 of max). Best guess tested: upper-case constant names in code lists (INPUT_OBJECT, ENUM, NET, MOD, ATTR).",
+ "short": "dense (upper-case code constants)",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N12022_neg/2026-10-30-lm1909-76edef6b.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.819,
+     "peak": " INTERFACE"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.584,
+     "peak": " MOD"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.504,
+     "peak": "_NAME"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.441,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.565,
+     "peak": "INPUT"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.533,
+     "peak": "ATTERN"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.632,
+     "peak": "_READ"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.676,
+     "peak": "HOOK"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.221,
+     "peak": "_schema"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.13,
+     "peak": "flags"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.201,
+     "peak": " name"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.196,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.137,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.274,
+     "peak": "_re"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.357,
+     "peak": "mode"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.523,
+     "peak": "hook"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.575,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-lm1909-76edef6b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-76edef6b",
+   "Dense unit (37% of tokens above 0.1 of max). Best guess tested: upper-case constant names in code lists (INPUT_OBJECT, ENUM, NET, MOD, ATTR).",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-76edef6b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

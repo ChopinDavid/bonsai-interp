@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N6380+",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 6380,
+ "pole": "+",
+ "label": "' post' as a bicycle seat post in a list of bike components ('Magura brakes, a Thomson post and a WTB saddle'); 'post' in other senses (fence post, blog post, mail) and component lists without it stay low.",
+ "short": "' post' = bike seat post in a parts list",
+ "kind": "lexical / contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N6380_pos/2026-10-30-lm1909-c3f3e54f.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 3,
+   "n_false_pos": 4,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.584,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.136,
+     "peak": " dro"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.166,
+     "peak": " Brooks"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.154,
+     "peak": " post"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.786,
+     "peak": " post"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.056,
+     "peak": " post"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.044,
+     "peak": "Up"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.514,
+     "peak": " DT"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.584,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.498,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " about"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.685,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " post"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.011,
+     "peak": "Up"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.364,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.633,
+    "median_fire": 0.16,
+    "near_misses_at_0.3": 4
+   },
+   "contribution": "2026-10-30-lm1909-c3f3e54f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-c3f3e54f",
+   "' post' as a bicycle seat post in a list of bike components ('Magura brakes, a Thomson post and a WTB saddle'); 'post' in other senses (fence post, blog post, mail) and component lists without it stay low.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-c3f3e54f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

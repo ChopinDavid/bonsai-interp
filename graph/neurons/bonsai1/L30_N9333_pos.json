@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N9333+",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 9333,
+ "pole": "+",
+ "label": "A minus sign that opens a negative exponent or a negative index, where '1' is the usual next token (g^{-1}, mol-1, cm^-1, m s^-2, range(n, -1, -1)); the same quantities written with positive exponents or in words stay quiet.",
+ "short": "minus sign of a negative exponent (-1)",
+ "kind": "contextual / prediction",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N9333_pos/2026-10-30-lm1909-3dadbf0f.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.473,
+     "peak": "^-"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.718,
+     "peak": "^{-"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.718,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.606,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.465,
+     "peak": "-"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.436,
+     "peak": " -"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.154,
+     "peak": "^{-"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.263,
+     "peak": "^-"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " per"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": " transpose"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": "um"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.001,
+     "peak": "2"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " per"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " +="
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " sigma"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " per"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.469,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-3dadbf0f"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-3dadbf0f",
+   "A minus sign that opens a negative exponent or a negative index, where '1' is the usual next token (g^{-1}, mol-1, cm^-1, m s^-2, range(n, -1, -1)); the same quantities written with positive exponents or in words stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-3dadbf0f"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

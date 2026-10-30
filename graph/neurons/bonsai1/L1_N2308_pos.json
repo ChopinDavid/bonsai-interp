@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N2308+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 2308,
+ "pole": "+",
+ "label": "The German piece 'ver' in the middle of a compound noun, after the first noun (Brust|ver|größerung, Strom|ver|brauch, Daten|ver|arbeitung, Gewichts|ver|lust); 'Ver-' at the start of a word and compounds without 'ver' stay quiet.",
+ "short": "German mid-compound 'ver' piece",
+ "kind": "token piece",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N2308_pos/2026-10-30-lm1909-7921fe88.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.565,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.446,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.357,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.526,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.603,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.56,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.973,
+     "peak": "ver"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.003,
+     "peak": "Der"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.287,
+     "peak": "k"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.187,
+     "peak": "men"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.064,
+     "peak": "sz"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": "stoff"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.115,
+     "peak": "operation"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.132,
+     "peak": "quelle"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.001,
+     "peak": " Re"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.281,
+     "peak": "qual"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.543,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-7921fe88"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-7921fe88",
+   "The German piece 'ver' in the middle of a compound noun, after the first noun (Brust|ver|größerung, Strom|ver|brauch, Daten|ver|arbeitung, Gewichts|ver|lust); 'Ver-' at the start of a word and compounds without 'ver' stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-7921fe88"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

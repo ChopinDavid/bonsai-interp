@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L14/N3028-",
+ "model": "bonsai1",
+ "layer": 14,
+ "index": 3028,
+ "pole": "-",
+ "label": "Low-confidence guess: \"',\" closing the first string argument of a Python call that takes a second argument (_table_wrapper('t1', 'foo')), and string-method pieces like '.rstrip'; calls with one argument stay quiet.",
+ "short": "\"',\" after a first string argument (guess)",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N3028_neg/2026-10-30-lm1909-3cb7110c.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.023,
+     "peak": "_table"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.014,
+     "peak": " '"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.02,
+     "peak": " params"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.116,
+     "peak": "rstrip"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.021,
+     "peak": "',"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.021,
+     "peak": "',"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.027,
+     "peak": "',"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.01,
+     "peak": " open"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": "_table"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.017,
+     "peak": "(base"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": "(query"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": "()"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": ")"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": ".lower"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.011,
+     "peak": ")"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.719,
+    "median_fire": 0.021,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-3cb7110c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-3cb7110c",
+   "Low-confidence guess: \"',\" closing the first string argument of a Python call that takes a second argument (_table_wrapper('t1', 'foo')), and string-method pieces like '.rstrip'; calls with one argument stay quiet.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-3cb7110c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

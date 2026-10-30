@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L1/N4656+",
+ "model": "bonsai1",
+ "layer": 1,
+ "index": 4656,
+ "pole": "+",
+ "label": "Dense unit with no specific trigger: on for most tokens (78% of corpus tokens reach 0.1 of max), strongest on ' the' and other function words; best guess tested here: ' the' in ordinary prose versus the same prose without 'the'.",
+ "short": "dense (function words, ' the')",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N4656_pos/2026-10-30-lm1909-b5348c82.tests.json",
+   "prereg_commit": "486f6f4e",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 8,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.688,
+     "peak": " sunset"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.446,
+     "peak": "My"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.664,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.696,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.462,
+     "peak": " project"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.487,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.747,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.745,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.684,
+     "peak": " sunset"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.39,
+     "peak": "My"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.592,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.558,
+     "peak": " door"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.457,
+     "peak": " team"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.511,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.346,
+     "peak": " our"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.677,
+     "peak": " my"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.719,
+    "median_fire": 0.676,
+    "near_misses_at_0.3": 8
+   },
+   "contribution": "2026-10-30-lm1909-b5348c82"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-b5348c82",
+   "Dense unit with no specific trigger: on for most tokens (78% of corpus tokens reach 0.1 of max), strongest on ' the' and other function words; best guess tested here: ' the' in ordinary prose versus the same prose without 'the'.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-b5348c82"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

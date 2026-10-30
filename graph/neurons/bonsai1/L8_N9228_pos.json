@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N9228+",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 9228,
+ "pole": "+",
+ "label": "The first piece of a split word whose ending is predictable from context: ' arch' of 'archipelago' and ' horn' of 'horned (owl)'; the same places and animals described without those words stay quiet.",
+ "short": "' arch'(ipelago) / ' horn'(ed owl)",
+ "kind": "token piece / prediction",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N9228_pos/2026-10-30-lm1909-8ad6d314.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.717,
+     "peak": " arch"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.772,
+     "peak": " horn"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.72,
+     "peak": " arch"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.177,
+     "peak": "ed"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.716,
+     "peak": " arch"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.638,
+     "peak": " horn"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.391,
+     "peak": " arch"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.201,
+     "peak": "ed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.047,
+     "peak": "Ind"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.018,
+     "peak": " barn"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.018,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.063,
+     "peak": " sp"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": " edge"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": "ny"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": " over"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.041,
+     "peak": " sand"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.677,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-8ad6d314"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-8ad6d314",
+   "The first piece of a split word whose ending is predictable from context: ' arch' of 'archipelago' and ' horn' of 'horned (owl)'; the same places and animals described without those words stay quiet.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-8ad6d314"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

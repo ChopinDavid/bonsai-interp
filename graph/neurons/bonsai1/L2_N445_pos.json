@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N445+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 445,
+ "pole": "+",
+ "label": "' ever' (in 'evergreen' and in 'have you ever', 'ever since'), firing on ' ever'; the same sentences without it stay lower.",
+ "short": "' ever' (evergreen, have you ever)",
+ "kind": "token / lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N445_pos/2026-10-30-lm1909-179b3b4c.tests.json",
+   "prereg_commit": "7672a35b",
+   "author": "lm1909",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.123,
+     "peak": " shr"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.528,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.364,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.386,
+     "peak": "Ever"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.239,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.346,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.706,
+     "peak": " ever"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.271,
+     "peak": " ever"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.023,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": "?"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.047,
+     "peak": " meal"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.022,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.053,
+     "peak": "ines"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.119,
+     "peak": " phone"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.031,
+     "peak": "Did"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.088,
+     "peak": " winter"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.355,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-179b3b4c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-179b3b4c",
+   "' ever' (in 'evergreen' and in 'have you ever', 'ever since'), firing on ' ever'; the same sentences without it stay lower.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-179b3b4c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

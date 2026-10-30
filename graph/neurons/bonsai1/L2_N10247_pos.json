@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N10247+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 10247,
+ "pole": "+",
+ "label": "The piece 'كت' in Arabic شراكته / بشراكتها / شراكتنا ('its/her/our partnership'), where 'partnership' takes a possessive suffix; شراكة without a suffix and other Arabic words stay low.",
+ "short": "Arabic 'كت' in شراكته (partnership + suffix)",
+ "kind": "token piece",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N10247_pos/2026-10-30-lm1909-3f04de0b.tests.json",
+   "prereg_commit": "86670ebf",
+   "author": "lm1909",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.667,
+     "peak": "كت"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.673,
+     "peak": "كت"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.578,
+     "peak": "كت"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.719,
+     "peak": "كت"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.949,
+     "peak": "كت"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.488,
+     "peak": "كت"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.554,
+     "peak": "كت"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.755,
+     "peak": "كت"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.116,
+     "peak": "خر"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.016,
+     "peak": "اق"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.062,
+     "peak": "عد"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.138,
+     "peak": "خر"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.023,
+     "peak": "ورد"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.137,
+     "peak": "عز"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " المتح"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.67,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-3f04de0b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-3f04de0b",
+   "The piece 'كت' in Arabic شراكته / بشراكتها / شراكتنا ('its/her/our partnership'), where 'partnership' takes a possessive suffix; شراكة without a suffix and other Arabic words stay low.",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-3f04de0b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

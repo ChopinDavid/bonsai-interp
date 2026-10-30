@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N7277+",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 7277,
+ "pole": "+",
+ "label": "Dense unit (13% of tokens above 0.1 of max). Best guess tested: Spanish 'mult|itud' and English ' nice' / ' time'.",
+ "short": "dense (Spanish 'multitud', 'nice')",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N7277_pos/2026-10-30-lm1909-87cfe712.tests.json",
+   "prereg_commit": "fdd3a7eb",
+   "author": "lm1909",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.503,
+     "peak": "itud"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.601,
+     "peak": "itud"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.05,
+     "peak": "!"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.169,
+     "peak": " nice"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.408,
+     "peak": "itud"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.513,
+     "peak": "itud"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.063,
+     "peak": " time"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.103,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.075,
+     "peak": " ag"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.115,
+     "peak": " llen"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.147,
+     "peak": " long"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.037,
+     "peak": " you"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.24,
+     "peak": "Hay"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.127,
+     "peak": " al"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.184,
+     "peak": " trip"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.155,
+     "peak": " warm"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.656,
+    "median_fire": 0.288,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-lm1909-87cfe712"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-lm1909-87cfe712",
+   "Dense unit (13% of tokens above 0.1 of max). Best guess tested: Spanish 'mult|itud' and English ' nice' / ' time'.",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "lm1909"
+ ],
+ "contributions": [
+  "2026-10-30-lm1909-87cfe712"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
