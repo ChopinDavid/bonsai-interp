@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-moridinamael-5c4b6d35",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N3512-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T15:12:28+00:00",
+ "roles": ["reads bonsai1/L22/N2000-"],
+ "neighbours": [
+  {
+   "unit": "L24/N3512",
+   "pole": "-",
+   "label": "a middle piece of a technical name or code inside a longer passage (identifier segment after _ or ., split rare word, unit, part number)",
+   "fire": [
+    "To fix the bug, change the value of config.network_retry_timeout_ms in the settings file before restarting the service.",
+    "The function calls self.data_loader.prefetch_buffer_size inside the training loop, which slowed everything down.",
+    "Order replacement part number HX-4472-BRK-09 from the supplier if the bracket cracks again.",
+    "The log showed an error from module auth.session_manager.validate_token after the upgrade last night.",
+    "Set the environment variable MAX_UPLOAD_CHUNK_SIZE to a larger value and redeploy the container.",
+    "The pump is rated at 3.5 kWh per cycle according to the manual we found in the shed.",
+    "Researchers isolated the compound tetrahydrocannabivarin from the sample and published their results.",
+    "We traced the leak to the object user_profile_cache_v2 that was never cleared between requests."
+   ],
+   "quiet": [
+    "To fix the bug, change the timeout value in the settings file before restarting the service.",
+    "The function reads the buffer size inside the training loop, which slowed everything down.",
+    "Order a replacement bracket from the supplier if the old one cracks again.",
+    "The log showed an error from the login system after the upgrade last night.",
+    "Set the upload limit to a larger value and deploy the container again.",
+    "The pump uses a lot of power per cycle according to the manual we found in the shed.",
+    "Researchers isolated a new compound from the plant sample and published their results.",
+    "We traced the leak to a cache that was never cleared between requests."
+   ]
+  }
+ ],
+ "predictions": "Unsure: the resident probe read this neuron low on short sentences; expect a partial pass at best (maybe 5/8 fire clear of near misses).",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
