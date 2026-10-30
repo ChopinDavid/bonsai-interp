@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N6668+",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 6668,
+ "pole": "+",
+ "label": "layer-0 token detector: ' await' as the first token after indentation on a Python line (0.60, 0.78), more weakly ' self' and ' #' in the same position and the closing 'html' tag name (0.40); 'await' unindented (0.05) or in prose (0.04), 'self' in prose (0.05) and other indented line-initial tokens (' raise' 0.22) are quiet or weak",
+ "short": "indented line-initial ' await' / ' self'",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N6668_pos/2026-10-30-ChopinDavid-a42f4f2e.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.79,
+     "peak": " await"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.714,
+     "peak": " await"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.72,
+     "peak": " await"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.664,
+     "peak": " await"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.736,
+     "peak": " await"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.1,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.282,
+     "peak": " self"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.76,
+     "peak": "html"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.121,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.157,
+     "peak": " print"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.125,
+     "peak": " data"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": ".bus"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.094,
+     "peak": " queue"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.152,
+     "peak": "s"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.038,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.228,
+     "peak": ">"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.717,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-a42f4f2e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-a42f4f2e",
+   "layer-0 token detector: ' await' as the first token after indentation on a Python line (0.60, 0.78), more weakly ' self' and ' #' in the same position and the closing 'html' tag name (0.40); 'await' unindented (0.05) or in prose (0.04), 'self' in prose (0.05) and other indented line-initial tokens (' raise' 0.22) are quiet or weak",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-a42f4f2e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

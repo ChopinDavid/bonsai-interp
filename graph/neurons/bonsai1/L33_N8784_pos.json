@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L33/N8784+",
+ "model": "bonsai1",
+ "layer": 33,
+ "index": 8784,
+ "pole": "+",
+ "label": "online advertising and digital marketing discourse: display ads, affiliate links, AdWords, SEO and social media optimisation (0.46-0.82 on the connectives inside such lists); offline advertising (billboards 0.27, print subscriptions 0.29) is weak and other business services (tax preparation 0.02, an orchard's income 0.004) are quiet",
+ "short": "online advertising / digital marketing",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N8784_pos/2026-10-30-ChopinDavid-6d6aceaa.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.648,
+     "peak": " from"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.63,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.349,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.296,
+     "peak": " content"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.46,
+     "peak": " Google"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.122,
+     "peak": " sold"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.873,
+     "peak": " native"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.422,
+     "peak": " banner"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.002,
+     "peak": " income"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.028,
+     "peak": " drain"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": "A"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.001,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.107,
+     "peak": " news"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.08,
+     "peak": " and"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.441,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-6d6aceaa"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-6d6aceaa",
+   "online advertising and digital marketing discourse: display ads, affiliate links, AdWords, SEO and social media optimisation (0.46-0.82 on the connectives inside such lists); offline advertising (billboards 0.27, print subscriptions 0.29) is weak and other business services (tax preparation 0.02, an orchard's income 0.004) are quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-6d6aceaa"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

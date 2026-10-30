@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L35/N10300-",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 10300,
+ "pole": "-",
+ "label": "a byte-fallback piece inside a katakana or hangul transliteration of a Western loanword (オーブン 0.40, 오퍼 0.33, 뉴욕 0.28, ニューヨーク 0.25); native Japanese and Korean words (0.003-0.02) are quiet; a weak unit, and loanwords without a long-vowel or multi-byte piece (ヒルズ 0.08, オファー情報 0.007) miss",
+ "short": "byte piece inside a katakana/hangul loanword",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N10300_neg/2026-10-30-ChopinDavid-80abb9ee.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.003,
+     "peak": "出"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.011,
+     "peak": "注"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.002,
+     "peak": "ビ"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.409,
+     "peak": "ー�"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.007,
+     "peak": " 마"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.007,
+     "peak": "았"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.001,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.44,
+     "peak": "ー�"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": "出"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": "注"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.001,
+     "peak": "を"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.009,
+     "peak": "来"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": "침"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": "�"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": "釜"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.594,
+    "median_fire": 0.007,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-80abb9ee"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-80abb9ee",
+   "a byte-fallback piece inside a katakana or hangul transliteration of a Western loanword (オーブン 0.40, 오퍼 0.33, 뉴욕 0.28, ニューヨーク 0.25); native Japanese and Korean words (0.003-0.02) are quiet; a weak unit, and loanwords without a long-vowel or multi-byte piece (ヒルズ 0.08, オファー情報 0.007) miss",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-80abb9ee"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

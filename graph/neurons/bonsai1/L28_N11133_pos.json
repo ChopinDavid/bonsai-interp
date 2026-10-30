@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L28/N11133+",
+ "model": "bonsai1",
+ "layer": 28,
+ "index": 11133,
+ "pole": "+",
+ "label": "plant pathology and crop genetics: diseases of crops and their vectors (bacterial diseases of tomatoes 0.78, citrus greening 0.57) and plant genetic resources or resistance genes in crops (0.47, 0.29); the same frames for animal or human disease (Lyme disease in dogs 0.24, drug resistance in patients 0.17, cat viruses 0.13) are weaker and ornamental gardening without disease (0.00) is quiet",
+ "short": "crop diseases and plant genetics",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N11133_pos/2026-10-30-ChopinDavid-4b137dd2.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.412,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.838,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.25,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.636,
+     "peak": " bacterial"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.308,
+     "peak": " bacterial"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.178,
+     "peak": " an"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.217,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.022,
+     "peak": " banana"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " infections"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.107,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " samples"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.168,
+     "peak": " resistance"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " dogs"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " collected"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " quarantine"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.279,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-4b137dd2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-4b137dd2",
+   "plant pathology and crop genetics: diseases of crops and their vectors (bacterial diseases of tomatoes 0.78, citrus greening 0.57) and plant genetic resources or resistance genes in crops (0.47, 0.29); the same frames for animal or human disease (Lyme disease in dogs 0.24, drug resistance in patients 0.17, cat viruses 0.13) are weaker and ornamental gardening without disease (0.00) is quiet",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-4b137dd2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
