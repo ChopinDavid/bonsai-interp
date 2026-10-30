@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L26/N8501-",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 8501,
+ "pole": "-",
+ "label": "an English determiner or modifier ('the', 'their', 'original', 'current') right after a word of matching, conforming or comparing",
+ "short": null,
+ "kind": null,
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N8501_neg/2026-10-30-moridinamael-8e5c3df4.tests.json",
+   "prereg_commit": "5d4d55bfc",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.107,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.132,
+     "peak": " original"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.187,
+     "peak": " current"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.114,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.082,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.093,
+     "peak": " earlier"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.077,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.231,
+     "peak": " original"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.291,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.088,
+     "peak": " bank"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.172,
+     "peak": " your"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.027,
+     "peak": " inspected"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.109,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.081,
+     "peak": " laid"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.016,
+     "peak": " start"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.672,
+    "median_fire": 0.111,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-8e5c3df4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-moridinamael-8e5c3df4",
+   "an English determiner or modifier ('the', 'their', 'original', 'current') right after a word of matching, conforming or comparing",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L24/N9629+"
+ ],
+ "contributors": [
+  "moridinamael"
+ ],
+ "contributions": [
+  "2026-10-30-moridinamael-8e5c3df4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
