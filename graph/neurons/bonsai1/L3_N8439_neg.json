@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N8439-",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 8439,
+ "pole": "-",
+ "label": "the final piece of a Latin taxonomic family name: -ace|ae (Mucoraceae 1.02, Portulacaceae 0.77, Rosaceae 0.44) and -ida|e (Hominidae 0.91, Canidae 0.45); other Latin plurals that end in the same pieces (antenn|ae 0.05, formula|e 0.07), single-token algae (0.02) and a genus name (0.03) are silent",
+ "short": "-aceae / -idae family ending",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N8439_neg/2026-10-30-ChopinDavid-f457ab66.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.525,
+     "peak": "ae"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.442,
+     "peak": "e"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.725,
+     "peak": "ae"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.16,
+     "peak": "e"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.727,
+     "peak": "ae"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.513,
+     "peak": "e"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.62,
+     "peak": "e"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.875,
+     "peak": "ae"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.049,
+     "peak": " late"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.06,
+     "peak": " claws"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.091,
+     "peak": "ules"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.026,
+     "peak": " months"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.057,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.066,
+     "peak": " spiral"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.03,
+     "peak": " two"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.068,
+     "peak": "e"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.573,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-f457ab66"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-f457ab66",
+   "the final piece of a Latin taxonomic family name: -ace|ae (Mucoraceae 1.02, Portulacaceae 0.77, Rosaceae 0.44) and -ida|e (Hominidae 0.91, Canidae 0.45); other Latin plurals that end in the same pieces (antenn|ae 0.05, formula|e 0.07), single-token algae (0.02) and a genus name (0.03) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-f457ab66"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

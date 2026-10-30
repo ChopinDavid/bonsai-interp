@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N8761-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 8761,
+ "pole": "-",
+ "label": "the imperial civil-service examination system of East Asia: 'imperial examination' 1.97, 科举 0.99, 'Ming examinations' 1.39 (eight-legged essay), 'jinshi degree' 1.28 (shi), and more weakly a European 'state examination' for office (0.41); modern school and driving tests (0.01-0.04), court history without examinations (0.13) and 'civil officials' alone (0.03) are silent",
+ "short": "imperial examination system",
+ "kind": "sparse feature",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N8761_neg/2026-10-30-ChopinDavid-c75418e6.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.426,
+     "peak": " examinations"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.238,
+     "peak": "考试"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.499,
+     "peak": " examination"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.04,
+     "peak": "uren"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.602,
+     "peak": " classics"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.172,
+     "peak": " examination"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.561,
+     "peak": " examinations"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.771,
+     "peak": " examination"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.182,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.202,
+     "peak": "朝"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.134,
+     "peak": "de"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " provincial"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": " algebra"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": "als"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.029,
+     "peak": "orea"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": "9"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.686,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-c75418e6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-c75418e6",
+   "the imperial civil-service examination system of East Asia: 'imperial examination' 1.97, 科举 0.99, 'Ming examinations' 1.39 (eight-legged essay), 'jinshi degree' 1.28 (shi), and more weakly a European 'state examination' for office (0.41); modern school and driving tests (0.01-0.04), court history without examinations (0.13) and 'civil officials' alone (0.03) are silent",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-c75418e6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

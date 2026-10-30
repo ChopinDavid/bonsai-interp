@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L16/N10967-",
+ "model": "bonsai1",
+ "layer": 16,
+ "index": 10967,
+ "pole": "-",
+ "label": "LeetCode-style Python solution code: 'class Solution' docstrings with ':type s: str' lines (0.92), 'return \"invalid-size\"' error-string lines (0.87), '# TODO: Use ...' hint comments (0.67), a plain word_break solution (0.54 on the parameter comma) and comments naming variables (0.37); a numpy script (0.06), prose (0.03) and non-Python code are weak",
+ "short": "LeetCode-style Python solution code",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N10967_neg/2026-10-30-ChopinDavid-1a535ff0.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.692,
+     "peak": "type"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.697,
+     "peak": "'\n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.061,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.469,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.054,
+     "peak": "\"\n"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.363,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.267,
+     "peak": " prices"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.485,
+     "peak": " exactly"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.214,
+     "peak": "print"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.358,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.106,
+     "peak": " BY"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.018,
+     "peak": "\n"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.325,
+     "peak": "out"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.028,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.153,
+     "peak": "_pal"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.046,
+     "peak": " <"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.416,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-1a535ff0"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-1a535ff0",
+   "LeetCode-style Python solution code: 'class Solution' docstrings with ':type s: str' lines (0.92), 'return \"invalid-size\"' error-string lines (0.87), '# TODO: Use ...' hint comments (0.67), a plain word_break solution (0.54 on the parameter comma) and comments naming variables (0.37); a numpy script (0.06), prose (0.03) and non-Python code are weak",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-1a535ff0"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

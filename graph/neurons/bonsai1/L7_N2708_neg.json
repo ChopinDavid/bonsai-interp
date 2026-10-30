@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L7/N2708-",
+ "model": "bonsai1",
+ "layer": 7,
+ "index": 2708,
+ "pole": "-",
+ "label": "polysemantic, weak unit (max 4.6): (a) the idiom 'the time came / its time has come' (0.59-0.92 on came/come) and (b) the ambient temperature of a season or body of water ('the heat is on' 0.83, 'hot part of the summer' 0.77, 'warmer waters' 0.61); 'the cold is on' also fires (0.61), so (b) is temperature rather than heat; 'when the letter came' 0.14 and 'quiet part of the summer' 0.29 are weaker",
+ "short": "time has come / seasonal and water temperature",
+ "kind": "sparse feature",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N2708_neg/2026-10-30-ChopinDavid-f0ba2fdf.tests.json",
+   "prereg_commit": "c25795b1",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.863,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.282,
+     "peak": " part"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.61,
+     "peak": " waters"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.833,
+     "peak": " came"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.553,
+     "peak": " come"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.789,
+     "peak": " water"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.36,
+     "peak": " part"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.136,
+     "peak": " fish"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.135,
+     "peak": " river"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.302,
+     "peak": " part"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " capital"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.077,
+     "peak": " her"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.683,
+     "peak": " water"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.114,
+     "peak": " part"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.008,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.891,
+    "median_fire": 0.582,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-f0ba2fdf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-f0ba2fdf",
+   "polysemantic, weak unit (max 4.6): (a) the idiom 'the time came / its time has come' (0.59-0.92 on came/come) and (b) the ambient temperature of a season or body of water ('the heat is on' 0.83, 'hot part of the summer' 0.77, 'warmer waters' 0.61); 'the cold is on' also fires (0.61), so (b) is temperature rather than heat; 'when the letter came' 0.14 and 'quiet part of the summer' 0.29 are weaker",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-f0ba2fdf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
