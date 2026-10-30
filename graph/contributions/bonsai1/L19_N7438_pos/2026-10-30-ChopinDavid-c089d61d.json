@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-c089d61d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N7438+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T08:34:35+00:00",
+ "recipe": {
+  "toolchain_commit": "f0d45dcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N7438_pos/2026-10-30-ChopinDavid-c089d61d.tests.json"
+ },
+ "label": "the line break after a code line that reassigns a variable to a slice of itself (name = name[4:] 0.52, url = url[:-1] 0.39); slicing a different variable (first = parts[0] 0.04), a non-slice reassignment (total = count * 2 0.03) and a slice of a method result (path = path.split('/')[-1] 0.11) are weak or quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N7438_pos/2026-10-30-ChopinDavid-c089d61d.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.288,
+     "peak": ":]\n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.223,
+     "peak": "]\n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.074,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.564,
+     "peak": "]\n"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.181,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.401,
+     "peak": "   "
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.073,
+     "peak": " query"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.256,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.414,
+     "peak": "()\n"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.205,
+     "peak": "()\n"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.019,
+     "peak": " count"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.025,
+     "peak": "'):\n"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.531,
+     "peak": " '')\n"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.032,
+     "peak": " query"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.074,
+     "peak": ")\n"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.711,
+    "median_fire": 0.239,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f0d45dcd",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "newline after x = x[slice]",
+ "unit_kind": "contextual",
+ "confidence": 0.45,
+ "notes": "Card: max 11.3, density 0.045%, peaks '\\n' x5, ']\\n\\n' x2, ':]\\n' x2 after new_field = new_field.split('.')[-1], isbn = isbn[4:], url_hash = url_hash[1], oldversion = oldversion[3:], plus ' so' (so long as) and ' any'. Probe: name = name[4:] 0.522 (':]\\n'), url = url[:-1] 0.385, path = path.split('/')[-1] 0.114, first = parts[0] 0.040, total = count * 2 0.034, tokens = text.split() 0.017, 'so long as' 0.108, 'but any station' 0.192, control 0.026. Fire items are three-line snippets with a direct self-slice on the middle line; near misses keep the same shape and replace the self-slice with a method call, arithmetic or an index into another variable.",
+ "selection": "random draw"
+}

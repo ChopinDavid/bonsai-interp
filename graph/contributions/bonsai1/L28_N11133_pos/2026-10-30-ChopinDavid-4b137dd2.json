@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-4b137dd2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N11133+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T08:36:56+00:00",
+ "recipe": {
+  "toolchain_commit": "f0d45dcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L28_N11133_pos/2026-10-30-ChopinDavid-4b137dd2.tests.json"
+ },
+ "label": "plant pathology and crop genetics: diseases of crops and their vectors (bacterial diseases of tomatoes 0.78, citrus greening 0.57) and plant genetic resources or resistance genes in crops (0.47, 0.29); the same frames for animal or human disease (Lyme disease in dogs 0.24, drug resistance in patients 0.17, cat viruses 0.13) are weaker and ornamental gardening without disease (0.00) is quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L28_N11133_pos/2026-10-30-ChopinDavid-4b137dd2.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.412,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.838,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.25,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.636,
+     "peak": " bacterial"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.308,
+     "peak": " bacterial"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.178,
+     "peak": " an"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.217,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.022,
+     "peak": " banana"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.003,
+     "peak": " infections"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.107,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " samples"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.168,
+     "peak": " resistance"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " dogs"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.004,
+     "peak": " collected"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.004,
+     "peak": " quarantine"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.279,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f0d45dcd",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "crop diseases and plant genetics",
+ "unit_kind": "contextual",
+ "confidence": 0.55,
+ "notes": "Card: max 135, density 0.057%, peaks ' genetic' x2, ' Genetic' x2, ' as' x2, ' molecular' x2, 'lla' (Xyle|lla fastidiosa), 'ight' (bl|ight-resistance) in 'genes and genetic mechanisms underlying the resistance', 'bacteria known as Citrus Greening Disease', 'Candidatus liberibacter', 'Bacterial diseases of tomatoes (Speck, Spot and Canker)', 'Plant Genetic Resources'. Probe: tomato diseases 0.784, citrus greening 0.574, plant genetic resources 0.470, wheat resistance genes 0.293; Lyme in dogs 0.239, human drug resistance 0.169, blight-resistant chestnut 0.137, cat viruses 0.129, roses 0.000, committee 0.004. Near misses keep each frame and move the disease or gene bank to humans, dogs, cows, poultry or fossils.",
+ "selection": "random draw"
+}

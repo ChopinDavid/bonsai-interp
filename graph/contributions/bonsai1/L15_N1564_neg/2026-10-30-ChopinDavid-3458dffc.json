@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-3458dffc",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N1564-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T08:36:43+00:00",
+ "recipe": {
+  "toolchain_commit": "f0d45dcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N1564_neg/2026-10-30-ChopinDavid-3458dffc.tests.json"
+ },
+ "label": "the manner-or-condition detail of taking part or complying: 'wearing purple| on June 15th' 1.35, 'must be| in the original packaging' 0.87, 'no need to have| any special skills' 0.39; it fires whether the sentence instructs or reports ('He showed his support by wearing purple on' 0.67, 'She returned the item in its original packaging' 0.49), so the trigger is the participation detail rather than the imperative; descriptions without such a detail (0.004-0.13) are quiet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N1564_neg/2026-10-30-ChopinDavid-3458dffc.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 1.335,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.497,
+     "peak": " sealed"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.56,
+     "peak": " dressed"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.601,
+     "peak": " arrive"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.378,
+     "peak": " original"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.188,
+     "peak": " experience"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.221,
+     "peak": " wear"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.264,
+     "peak": " dropping"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.014,
+     "peak": " red"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.047,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " much"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.002,
+     "peak": " small"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.007,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " spans"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": " held"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " box"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.438,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f0d45dcd",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "how-to-take-part / compliance detail",
+ "unit_kind": "contextual",
+ "confidence": 0.4,
+ "notes": "Card: max 14, density 0.34%, peaks ' should' x4, ' be' x2, ' on' (wearing purple on June 15th), 'ines' (dressed to the nines), ' any' (no need to have any special skills), ' packaging' (original packaging), ' Be' (Be specific), ' sending' (donate by sending), ' acquire' (acquire your own ISBN), ' include' (must include), ' up' (dial up). Probe: 'wearing purple on June 15th' 1.345 (' on'), 'must be in the original packaging' 0.871 (' in'), 'He showed his support by wearing purple on' 0.673, 'She returned the item in its original packaging' 0.485, 'No need to have any special skills' 0.390, 'acquire your own ISBN' 0.162, 'dial up the intensity' 0.133, descriptive 'Authors who self-publish usually acquire' 0.045, workout control 0.004. The narrative twins fired too, so the label is the participation/compliance detail; near misses keep the nouns (wearing, envelope, receipt, helmet, box) in plain descriptions.",
+ "selection": "random draw"
+}

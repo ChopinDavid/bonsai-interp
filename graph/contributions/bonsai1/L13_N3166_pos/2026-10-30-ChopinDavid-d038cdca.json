@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-d038cdca",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N3166+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T08:36:35+00:00",
+ "recipe": {
+  "toolchain_commit": "f0d45dcd",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L13_N3166_pos/2026-10-30-ChopinDavid-d038cdca.tests.json"
+ },
+ "label": "inter-individual variation: a statement that people, cases or platforms differ from one another (some people may not carry the gene 0.83, everyone is different 0.55, which individuals are more likely 0.52, each patient is affected differently 0.49, platform specific 0.47); universal claims (everyone needs water 0.07) and general facts about the topic (0.003-0.007) are quiet, though 'all patients received the same dose' leaks 0.32",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N3166_pos/2026-10-30-ChopinDavid-d038cdca.tests.json",
+   "prereg_commit": "f0d45dcd",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.587,
+     "peak": " same"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.702,
+     "peak": " another"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.153,
+     "peak": " others"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.358,
+     "peak": " individual"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.345,
+     "peak": " hardware"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.299,
+     "peak": " alike"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.189,
+     "peak": " individuals"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.447,
+     "peak": " own"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.045,
+     "peak": " song"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " doses"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.065,
+     "peak": "ners"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.06,
+     "peak": " see"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.019,
+     "peak": " need"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " many"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": " daily"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.351,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "f0d45dcd",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "people/cases differ from one another",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 14.6, density 0.57%, peaks ' individuals' x3, ' people' x3, ' but' x2, 'There', ' specific', ' different', ' differently', ' unique' in 'everyone is different and so is their hearing', 'some people may not have this gene', 'each person is affected differently', 'every home and homemaker is unique', 'platform specific', 'which individuals might be more likely'. Probe: 'Some people may not carry this gene at all' 0.828, 'Everyone is different' 0.553, 'every homemaker is unique' 0.548, 'which individuals are more likely' 0.515, 'affected differently' 0.489, 'platform specific' 0.466; 'All patients received the same dose' 0.317, 'Everyone needs water' 0.065, connective tissue fact 0.007, library 0.003. Fire items state variation between individuals without reusing the probe wording; near misses are uniform facts or rules about the same topics.",
+ "selection": "random draw"
+}
