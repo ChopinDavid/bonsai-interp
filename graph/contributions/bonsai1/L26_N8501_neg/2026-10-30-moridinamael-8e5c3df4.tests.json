@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-30-moridinamael-8e5c3df4",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N8501-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T14:31:24+00:00",
+ "roles": ["reads bonsai1/L24/N9629+"],
+ "neighbours": [
+  {
+   "unit": "L26/N8501",
+   "pole": "-",
+   "label": "an English determiner or modifier ('the', 'their', 'original', 'current') right after a word of matching, conforming or comparing",
+   "fire": [
+    "The signature on the check did not match the one on file at the bank.",
+    "Please make sure your new password matches the original before saving.",
+    "All buildings in the district must conform to the current zoning code.",
+    "When we compared their results with ours, the numbers were nearly identical.",
+    "The replacement tile was chosen to match the original pattern in the hallway.",
+    "Her findings are consistent with the earlier study from 2015.",
+    "Students should compare their answers to the key at the back of the book.",
+    "The repainted car was tinted to match its original factory color."
+   ],
+   "quiet": [
+    "Name: Orvosi hetilap\n- PubMed Source",
+    "The signature on the check was smudged by the rain on the way to the bank.",
+    "Please make sure you write down your new password before saving.",
+    "All buildings in the district were inspected by a city official last spring.",
+    "When we published our results, the numbers surprised everyone in the lab.",
+    "The replacement tile cracked a week after it was laid in the hallway.",
+    "Her findings were presented at a conference in Denver last week.",
+    "Students should hand in homework at the start of class on Monday."
+   ]
+  }
+ ],
+ "predictions": "Expect a partial hold: fire sentences around 0.2-0.5 of max, near misses mostly under 0.2; the dash leak may reach about 0.3.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "blind-room"
+  ]
+ }
+}
