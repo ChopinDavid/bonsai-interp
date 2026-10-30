@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-30-moridinamael-0a6c1f0d",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L30/N4200+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T12:46:25+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the words ' hung' (hung over, hung on a wall, hung up on) and ' hit' in the passive sense of being struck by misfortune ('were hit hardest'), as against an active physical hit or 'hungry'"
+ },
+ "neighbours": [
+  {
+   "unit": "L30/N4200",
+   "pole": "+",
+   "label": "the token ' hung' in any sense (strongest in hung over, hung up on, hung jury), and 'hit' / 'struck' / 'hammered' used passively for being struck by misfortune ('were hit hardest by'); not active hitting, not the whole word 'hungry'",
+   "fire": [
+    "He woke up badly hung over after the wedding reception.",
+    "The trial ended with a hung jury after three days of deliberation.",
+    "She's still hung up on her ex from college.",
+    "He hung the painting above the fireplace.",
+    "The coastal towns were hit hardest by the hurricane.",
+    "Small farms were struck by a devastating drought last summer.",
+    "Retailers were hammered by the sudden drop in consumer spending.",
+    "The phone call ended abruptly when he hung up on me."
+   ],
+   "quiet": [
+    "He woke up feeling awful after the wedding reception.",
+    "The trial ended with the jury unable to agree after three days.",
+    "She still thinks about her ex from college.",
+    "He placed the painting above the fireplace.",
+    "The coastal towns suffered most from the hurricane.",
+    "Small farms endured a devastating drought last summer.",
+    "Retailers struggled with the sudden drop in consumer spending.",
+    "The kids were hungry after the long hike."
+   ]
+  }
+ ],
+ "predictions": "Expect hung-over/jury/hit-hardest to fire; the literal painting 'hung' and 'struck by drought' are the risks (probed 0.44 and 0.37-ish earlier), so maybe 6-7/8 fire, 0-1 near misses.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "bank-solo",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
