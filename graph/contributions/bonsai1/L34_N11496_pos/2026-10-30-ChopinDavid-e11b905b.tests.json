@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e11b905b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N11496+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N11496",
+   "pole": "+",
+   "label": "unclear; best guess: the closing token of a top-level Python block in a longer module (test class, migration, helper), right before the blank lines that precede the next def or class",
+   "fire": [
+    "import unittest\n\nfrom app.models import Order\n\n\nclass OrderTests(unittest.TestCase):\n\n    def test_total(self):\n        order = Order(items=[3, 4])\n        self.assertEqual(order.total(), 7)\n\n    def test_empty(self):\n        self.assertEqual(Order(items=[]).total(), 0)\n\n\nclass CustomerTests(unittest.TestCase):",
+    "from django.db import migrations\n\n\nclass Migration(migrations.Migration):\n\n    dependencies = [\n        ('shop', '0007_order_notes'),\n    ]\n\n    operations = [\n        migrations.RemoveField('order', 'notes'),\n    ]\n\n\n",
+    "\"\"\"Utilities for reading log files.\n\nEach line is parsed into a timestamp and a message; the error message\nfor a bad line includes the line number.\n\"\"\"\n\nimport re\n\n\ndef parse_line(line):\n    return re.match(r'(\\S+) (.*)', line).groups()\n\n\ndef parse_lines(lines):",
+    "class ListFilterTests(TestCase):\n    def test_lookup(self):\n        modeladmin = BookAdmin(Book, site)\n        modeladmin.list_filter = [DepartmentFilter, ]\n\n\nclass OtherTests(TestCase):\n    def test_nothing(self):\n        pass\n\n\n",
+    "def one_hot(indices, depth):\n    shape = [indices.shape[0], depth]\n    return tf.one_hot(indices, depth, dtype=tf.float32)\n\n\ndef to_dense(tensor, shape):\n    return tf.reshape(tensor, [shape[0], shape[1], shape[2]])\n\n\n",
+    "    def test_change_attributes(self):\n        self.assertContains(response, 'bodyclass_consistency_check ')\n\n    def test_extended_template(self):\n        self.assertContains(response, 'extended_bodyclass ')\n\n\nclass SecureViewTests(TestCase):",
+    "import re\n\ntry:\n    import simplejson as json\nexcept ImportError:\n    import json\n\n\n__revision__ = '$Format:%H$'\n\n\ndef load(path):\n    with open(path) as fh:\n        return json.load(fh)\n\n\n",
+    "    operations = [\n        migrations.RunPython(forwards, backwards),\n    ]\n\n\nclass Migration2(migrations.Migration):\n    dependencies = [('ws', '0019_ws_application')]\n\n    operations = [\n        migrations.AlterField('ws', 'name', models.CharField(max_length=80)),\n    ]\n\n\n"
+   ],
+   "quiet": [
+    "The order tests check that the total of three and four is seven and that an empty order totals zero.\n\nThe customer tests follow in the next section.",
+    "Migration seven removes the notes column from the order table.\n\nNo further changes are planned for this release.",
+    "Each line of the log is parsed into a timestamp and a message; a bad line is reported with its line number.\n\nThe parser is described below.",
+    "SELECT id, name\nFROM department\nWHERE active = 1\nORDER BY name;\n\n\nSELECT id, title\nFROM book;",
+    "<ul>\n  <li>apples</li>\n  <li>pears</li>\n</ul>\n\n\n<p>Prices are per kilogram.</p>",
+    "Dear Dr Allen,\n\nThank you for sending the revised figures.\n\nWe will review them before Friday.\n\nKind regards,\nMaria",
+    "Chapter Two\n\nThe river had risen overnight, and by morning the lower fields were under water.\n\n\nChapter Three",
+    "- flour\n- sugar\n- eggs\n\n\nMix the dry ingredients first, then add the eggs."
+   ]
+  }
+ ],
+ "predictions": "likely to fail: 0-2/8 fire. Short probe snippets ending at a block boundary scored 0.011-0.069; these items are longer passages in case the pole needs module context.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear (Python block end)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Every card example is the last token of a statement before '\\n\\n\\n' and a new def/class in Python files (tests, migrations). Nine probe snippets reproducing that boundary stayed under 0.07, so either the pole needs a long file prefix or the reading is wrong. Expected to fail."
+}

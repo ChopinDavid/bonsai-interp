@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-522932cf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N3583-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N3583",
+   "pole": "-",
+   "label": "taking a side in a dispute between parties: side with, take sides between, declare for, hand over to or pass on to the other party",
+   "fire": [
+    "The governor openly sided with the mill owners against the striking weavers.",
+    "Most of the villages refused to choose sides between the two warring clans.",
+    "The neutral kingdom was pressed to declare for one of the rival emperors.",
+    "The informant turned the fugitives over to the occupying troops for a reward.",
+    "Moscow came out in support of the junta's crackdown on the protesters.",
+    "The bishop forwarded the complaint on to the royal court instead of judging it himself.",
+    "His cousins urged him to break with the party and join the opposition.",
+    "The elders backed the younger brother's claim against the elder's."
+   ],
+   "quiet": [
+    "The governor met the mill owners and the weavers to hear their complaints.",
+    "Most of the villages lie between the two rivers on the northern plain.",
+    "The neutral kingdom traded wool and timber with both empires.",
+    "The fugitives hid in the mill for three days before moving on.",
+    "Moscow announced a new rail line to the northern ports.",
+    "The bishop read the complaint aloud and filed it in the archive.",
+    "His cousins urged him to rest before the long journey.",
+    "The elders listened to both brothers tell the story of the harvest."
+   ]
+  }
+ ],
+ "predictions": "3-4/8 fire (probe: take sides between 0.513, handed over to 0.250, pass on to 0.218, urged him to break off 0.139, 'prevent a conflict between' 0.011); near misses under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "siding between parties",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "The + pole is friendly communication (talk to, chat, converse, relationship). Only 'take sides between' cleared 0.30 in the probe; hand-over and pass-on frames were 0.22-0.25, so this is a weak pole and the label is a best guess at the allegiance theme in the card (support of Beijing's actions, took China's side, handed you over, choose sides)."
+}

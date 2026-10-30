@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9e7ac7f5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N6122+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N6122",
+   "pole": "+",
+   "label": "a quantifier over a plurality (several, mostly, all) or the Python list-literal bracket ' [' that opens a set of items, as opposed to a single item or a collection noun",
+   "fire": [
+    "    self._offsets = [0, 4, 8]\n    self._labels = [s.lower() for s in labels]",
+    "The village had been without power for several days after the storm.",
+    "The damage was caused mostly by flooding rather than by wind.",
+    "The auditors reviewed all records from the past three years.",
+    "    default_tags = ['draft', 'review']\n    return default_tags",
+    "The fund is invested mostly in government bonds.",
+    "Police interviewed several witnesses who described the car as dark blue.",
+    "    paths = [os.path.join(root, f) for f in files]\n    return paths"
+   ],
+   "quiet": [
+    "    self._offset = 0\n    self._label = label.lower()",
+    "The village had been without power for a single day after the storm.",
+    "The damage was caused by flooding rather than by wind.",
+    "The auditors reviewed the record from last year.",
+    "    default_tag = 'draft'\n    return default_tag",
+    "The fund holds a series of government bonds.",
+    "Police interviewed the witness who described the car as dark blue.",
+    "    path = os.path.join(root, name)\n    return path"
+   ]
+  }
+ ],
+ "predictions": "6/8 fire (probe: ' [' 0.646, mostly 0.614, several 0.430, all 0.216; 'group of four' 0.026); singular twins 0.017-0.082, tuple '(' 0.145, 'a series of' 0.021",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "quantifier / list opener",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "The - pole peaks on collection nouns (list, series, range, number of), so the + pole is the quantifying word or bracket and the - pole the noun that names the collection. 'all' was weak (0.216) and 'group of four' silent, so the fire set leans on several, mostly and brackets."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-eb4277f0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N7335-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N7335",
+   "pole": "-",
+   "label": "' of' inside a fixed institutional or military title compound (prisoners of war, chief engineer of, corps of, Secretary of State)",
+   "fire": [
+    "Hundreds of prisoners of war were held in the fortress until the armistice.",
+    "She was appointed chief engineer of the new tunnel project in 1998.",
+    "The third corps of the Grande Armée crossed the river at dawn.",
+    "He took command of the garrison after the colonel fell ill.",
+    "The Secretary of State met the delegation in the east wing.",
+    "The Chief of Staff briefed the president on the evacuation.",
+    "The Court of Appeals upheld the ruling on Monday.",
+    "The Department of Agriculture published the new grain forecast."
+   ],
+   "quiet": [
+    "Hundreds of prisoners in the fortress were released after the armistice.",
+    "She was appointed chief engineer at the new tunnel project in 1998.",
+    "Most of the soldiers had crossed the river by dawn.",
+    "He bought a sack of flour and a jar of honey at the market.",
+    "The secretary met the delegation in the east wing of the palace.",
+    "The staff briefed the president on the evacuation routes.",
+    "The court upheld the ruling on Monday afternoon.",
+    "The department published the new grain forecast in March."
+   ]
+  }
+ ],
+ "predictions": "4-5/8 fire (probe: chief engineer of 0.543, prisoners of war 0.521, but editor of the Guardian 0.066 and corps of 0.186); partitive and measure 'of' 0.08-0.10, 'engineer at' 0.190",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "title-compound 'of'",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Early-layer pole with max 0.78, broad (3.5% of tokens at 0.1 max) and 60% gate-closed regime. ' of' is 19 of the top 32 peaks. The probe split: role-noun + of fired for engineer/prisoners but not editor, so the label is a guess at the shared frame."
+}

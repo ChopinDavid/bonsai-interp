@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-080b0e7f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N6616+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N6616",
+   "pole": "+",
+   "label": "second half of a parallel aphorism: a frame repeated with a contrasting filler (once is X, twice is Y; your X is our Y; those who can, do; those who can't, teach)",
+   "fire": [
+    "Your schedule is our schedule, and your deadline is our deadline.",
+    "One mistake is bad luck, two mistakes are a habit.",
+    "Those who plan, prosper; those who drift, drown.",
+    "Eat to live, don't live to eat.",
+    "Fail fast, learn faster.",
+    "A good plan today beats a perfect plan tomorrow.",
+    "Measure twice, cut once.",
+    "In peace, sons bury their fathers; in war, fathers bury their sons."
+   ],
+   "quiet": [
+    "We will adjust our schedule to meet your deadline.",
+    "He made two mistakes in the first week and was warned.",
+    "People who plan ahead usually do better in business.",
+    "She eats a light supper and goes to bed early.",
+    "The team failed the first test but learned a lot from it.",
+    "The plan was approved today and work starts tomorrow.",
+    "He measured the board carefully before cutting it.",
+    "In the war, many fathers lost their sons."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire (probe: 'once is an accident, twice is a pattern' 0.893, 'your comfort is our business, your business is our priority' 0.710, 'those who can, do; those who can't, teach' 0.346, 'think globally, act locally' 0.292, 'work hard, play hard' 0.151); plain statements with the same words 0.005-0.032",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "parallel aphorism",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Strongest when a copula frame 'X is Y' repeats (0.71-0.89); bare imperative pairs were 0.15-0.29. A proverb without a repeated frame ('slow and steady wins the race') scored 0.131. Fire items mix copula frames and imperative pairs to test the extent."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-19890c5e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N8724+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N8724",
+   "pole": "+",
+   "label": "pre-verb slot of a predicted or caused event: 'will'/'may', causative 'causes it to'/'made to' or 'start to' right before the verb, not the infinitive of an intended or attempted action (wanted to, tried to)",
+   "fire": [
+    "Once the ice thickens, the branches will sag under the weight and eventually snap.",
+    "The pressure difference causes the air to rush through the gap at high speed.",
+    "When the spring releases, the hammer will swing forward and strike the pin.",
+    "Strong winds may push the raft toward the rocks before the tide turns.",
+    "As the glacier retreats, the meltwater begins to carve new channels in the valley floor.",
+    "The uneven load made the trailer sway from side to side on the bend.",
+    "Heating the solution causes the crystals to dissolve within a few minutes.",
+    "If the fence is left open, the goats will wander into the neighbour's orchard."
+   ],
+   "quiet": [
+    "The engineers wanted to measure the pressure difference across the gap.",
+    "The farmer tried to close the fence before the goats noticed.",
+    "She hoped to reach the valley floor before the storm arrived.",
+    "The crew was ordered to lower the raft into the water at dawn.",
+    "He decided to replace the pin after the hammer jammed again.",
+    "The children ran to the orchard with baskets for the apples.",
+    "Her grandfather's will left the farm to the youngest daughter.",
+    "The guide planned to show us the glacier from the upper trail."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire above 0.30 (probe: causes X to warp 0.491, start to roll 0.439, will tumble 0.382, will consider 0.311, may bounce 0.279); near misses with intention infinitives 0.01-0.05 (wanted to 0.045, tried to 0.010, prepositional to 0.017)",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicted-event pre-verb slot",
+ "unit_kind": "contextual",
+ "confidence": "medium-low",
+ "notes": "Broad pole (1.1% of tokens at 0.1 max). The - pole's top examples are 'to' after attempt/purpose predicates (trying to steal, attempted to replicate, ordered to record), so the distinction is predicted/caused event (+) versus intended action (-). 'The committee will consider' fired 0.311, so the physical-verb reading from the card was dropped."
+}

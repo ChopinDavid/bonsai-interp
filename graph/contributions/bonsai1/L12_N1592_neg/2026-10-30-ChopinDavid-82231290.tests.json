@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-82231290",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N1592-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T22:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N1592",
+   "pole": "-",
+   "label": "the token ' muscle'/' muscles' in its bodily-tissue sense, the strongest trigger of a broad weak pole",
+   "fire": [
+    "After a long run, the lactic acid in your muscle breaks down within an hour.",
+    "Protein helps repair muscle fibres that tear during heavy lifting.",
+    "The cramp in his calf muscle woke him before dawn.",
+    "Cold weather makes the muscles around the neck tighten.",
+    "The heart is a muscle that never rests.",
+    "Stretching warms the muscles and lowers the risk of injury.",
+    "She felt every muscle in her back ache after the move.",
+    "The drug relaxes smooth muscle in the walls of the airways."
+   ],
+   "quiet": [
+    "After a long run, the glycogen in your liver is used up within an hour.",
+    "Protein helps repair skin cells that are damaged by the sun.",
+    "The pain in his knee joint woke him before dawn.",
+    "Cold weather makes the tendons around the ankle stiffen.",
+    "The heart beats about seventy times a minute at rest.",
+    "Stretching warms the body and lowers the risk of injury.",
+    "She felt every bone in her back ache after the move.",
+    "The drug relaxes the walls of the airways."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire (probe: 'in your muscle' 0.934); other tissues and physiology without the word 0.1-0.35 (development of T cells 0.345, rainy season 0.189), so the near misses will fire weakly. Coverage will be partial: the pole is broad (1.1% at 0.1 max) and muscle is 2 of its top 32 peaks.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token 'muscle'",
+ "unit_kind": "lexical",
+ "confidence": "medium-low",
+ "notes": "Max is only 3.88 and the card is diverse (在一起, grow, targeted, season, gravity). One probe sentence with ' muscle' reached 0.934 while six other physiology/process sentences stayed at 0.10-0.35, so the word is tested as a partial trigger. The + pole is the word 'occasion/reason'.",
+ "trigger": {
+  "words": [
+   "muscle",
+   "muscles"
+  ]
+ }
+}
