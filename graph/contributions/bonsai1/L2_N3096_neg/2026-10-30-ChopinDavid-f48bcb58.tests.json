@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f48bcb58",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N3096-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N3096",
+   "pole": "-",
+   "label": "the plural suffix piece that closes a split noun ('ants' in cool|ants, lubric|ants; 'unts' in ha|unts), on a weak and broad unit",
+   "fire": [
+    "Engine coolants must be replaced before the first hard frost.",
+    "Industrial lubricants left a film on every surface in the workshop.",
+    "Two accountants reviewed the ledger before the audit closed.",
+    "The cellar was one of the favourite haunts of the local badgers.",
+    "Mild stimulants such as tea were allowed during the trial.",
+    "Several claimants withdrew before the hearing began.",
+    "The water carried residues of farm defoliants into the stream.",
+    "Local informants described the raid in detail."
+   ],
+   "quiet": [
+    "Engine fluids must be replaced before the first hard frost.",
+    "Industrial oils left a film on every surface in the workshop.",
+    "Two auditors reviewed the ledger before the audit closed.",
+    "The cellar was one of the favourite dens of the local badgers.",
+    "Mild drinks such as tea were allowed during the trial.",
+    "Several witnesses withdrew before the hearing began.",
+    "The water carried residues of farm chemicals into the stream.",
+    "Local residents described the raid in detail."
+   ]
+  }
+ ],
+ "predictions": "A weak unit (corpus max 0.86) that reaches its highest values on the ants/unts plural piece; single-token plurals of the same meaning should stay lower, but the broad density means near misses will fire weakly.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "plural 'ants'/'unts' piece of a split noun",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card flags broad (2.4% of tokens past 0.1 max) and a gate-closed majority, so an 8+8 may not separate. Probe: stimul|ants 0.605, ha|unts 0.529, ' spent' 0.367, normal|ity 0.347; unrelated controls 0.049-0.099. Only words whose tok.py split ends in a separate 'ants' piece are used as fire items (pollutants, occupants and contaminants are single tokens and were excluded)."
+}

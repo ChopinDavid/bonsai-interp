@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-613dac97",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N8168+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N8168",
+   "pole": "+",
+   "label": "the predicate of an encyclopedic definition or superlative fact about a thing (X is a form/measure of Y, the largest/deepest Z), not the same subject matter told as narrative",
+   "fire": [
+    "The exhibit covers several branches of physics. Entropy is a measure of the disorder present in a closed system.",
+    "Students often confuse the two instruments. A barometer is a device for measuring atmospheric pressure.",
+    "The guide lists several records. Angel Falls in Venezuela is the tallest uninterrupted waterfall on the planet.",
+    "Our tour began at the coast. The Sahara is the largest hot desert in the world and covers much of North Africa.",
+    "Chemistry students memorise these terms. An alloy is a mixture of two or more metals melted together.",
+    "The lecture turned to linguistics. A morpheme is the smallest unit of meaning in a language.",
+    "Guides mention this fact often. Lake Superior is the biggest of the Great Lakes by surface area.",
+    "The textbook introduces the idea early. Osmosis is the movement of water across a semipermeable membrane."
+   ],
+   "quiet": [
+    "The exhibit covers several branches of physics. I wandered through it for an hour and bought a poster.",
+    "Students often confuse the two instruments. My teacher tapped the glass and frowned at the needle.",
+    "The guide lists several records. We never reached the waterfall because the road was flooded.",
+    "Our tour began at the coast. We drove inland for two days and slept in a tent each night.",
+    "Chemistry students memorise these terms. He melted the metal in a crucible and poured it into a mould.",
+    "The lecture turned to linguistics. She fell asleep in the back row and missed the handout.",
+    "Guides mention this fact often. We rented a canoe on the lake and paddled until dusk.",
+    "The textbook introduces the idea early. I spilled coffee on page forty and had to buy another copy."
+   ]
+  }
+ ],
+ "predictions": "Fires on the copular predicate of definitional and superlative reference statements; near-silent when the same topic continues as first-person or past-tense narrative.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "encyclopedic definition or superlative predicate",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Card: no single peak token, peaks ' of', ' largest', ' a' inside reference prose. Probe: 'sonnet is a form of poetry' 0.531, 'Doppler effect describes the change' 0.627, 'deepest freshwater lake' 0.546, 'largest rainforest' 0.385; narrative controls 0.020-0.046. Each test item keeps a one-sentence lead-in so the trigger is never sentence-initial."
+}

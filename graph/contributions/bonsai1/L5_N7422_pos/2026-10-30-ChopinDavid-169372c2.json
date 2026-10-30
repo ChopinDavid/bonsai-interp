@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-169372c2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N7422+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T18:35:25+00:00",
+ "recipe": {
+  "toolchain_commit": "7cc1ed63",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L5_N7422_pos/2026-10-30-ChopinDavid-169372c2.tests.json"
+ },
+ "label": "the word pieces of the nucleotide / nucleoside / nuclide family (nucle|ot, nucle|otide, |ides, |cl|ides), not nucleus or nuclear",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N7422_pos/2026-10-30-ChopinDavid-169372c2.tests.json",
+   "prereg_commit": "7cc1ed63",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.761,
+     "peak": "otide"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.48,
+     "peak": "otide"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.704,
+     "peak": "otide"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.785,
+     "peak": "otide"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.555,
+     "peak": "ot"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.704,
+     "peak": "cl"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.833,
+     "peak": "otide"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.916,
+     "peak": "ot"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.019,
+     "peak": " acid"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.005,
+     "peak": "qu"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.003,
+     "peak": " region"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.004,
+     "peak": " measures"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.02,
+     "peak": " peptides"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.162,
+     "peak": " isot"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.007,
+     "peak": " loop"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " label"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.732,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7cc1ed63",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "nucleotide-family word pieces",
+ "unit_kind": "token",
+ "confidence": "high",
+ "notes": "Card: 'ot' x10, 'otide' x6, ' nucle' x6. Probe: nucleosides 0.971, nucleotides 0.904, nucleotide 0.692, radionuclides 0.663; nucleus 0.087 and nuclear 0.035 are the discriminating misses, so the label excludes them. tok.py: oligonucleotide -> olig|on|ucle|otide, dinucleotide -> din|ucle|otide; 'nucleic' shares ' nucle' and is deliberately kept out of the near misses.",
+ "selection": "random draw"
+}

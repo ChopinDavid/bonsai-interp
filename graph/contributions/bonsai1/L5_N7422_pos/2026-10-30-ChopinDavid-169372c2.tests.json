@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-169372c2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N7422+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N7422",
+   "pole": "+",
+   "label": "the word pieces of the nucleotide / nucleoside / nuclide family (nucle|ot, nucle|otide, |ides, |cl|ides), not nucleus or nuclear",
+   "fire": [
+    "The enzyme adds one nucleotide at a time to the growing strand.",
+    "Sequencing costs fell once oligonucleotide synthesis became routine.",
+    "Each dinucleotide repeat in the region was counted separately.",
+    "The assay measures how quickly deoxynucleotide pools are depleted.",
+    "Short oligonucleotides were used as primers in the reaction.",
+    "Long-lived radionuclides remain a problem for waste storage.",
+    "The polynucleotide chain folds back on itself near the loop.",
+    "Modified nucleotides are incorporated to label the product."
+   ],
+   "quiet": [
+    "The enzyme adds one amino acid at a time to the growing chain.",
+    "Sequencing costs fell once primer synthesis became routine.",
+    "Each short repeat in the region was counted separately.",
+    "The assay measures how quickly ATP pools are depleted.",
+    "Short peptides were used as substrates in the reaction.",
+    "Long-lived isotopes remain a problem for waste storage.",
+    "The protein chain folds back on itself near the loop.",
+    "Modified bases are incorporated to label the product."
+   ]
+  }
+ ],
+ "predictions": "Fires on the ot/otide/ides pieces wherever the nucleotide family appears, including oligo- and radio- compounds; nucleus, nuclear and same-domain synonyms stay low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "nucleotide-family word pieces",
+ "unit_kind": "token",
+ "confidence": "high",
+ "notes": "Card: 'ot' x10, 'otide' x6, ' nucle' x6. Probe: nucleosides 0.971, nucleotides 0.904, nucleotide 0.692, radionuclides 0.663; nucleus 0.087 and nuclear 0.035 are the discriminating misses, so the label excludes them. tok.py: oligonucleotide -> olig|on|ucle|otide, dinucleotide -> din|ucle|otide; 'nucleic' shares ' nucle' and is deliberately kept out of the near misses."
+}

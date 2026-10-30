@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1282e344",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N411-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N411",
+   "pole": "-",
+   "label": "the expression of variation across individuals or occasions (varies from X to X, different for everyone, as they wish, in the eye of the beholder), against a single fixed stated value",
+   "fire": [
+    "The right dose varies from patient to patient, so the label gives a range.",
+    "What counts as polite differs from culture to culture in ways visitors notice.",
+    "The best time to prune is different for every variety in the orchard.",
+    "Interpretation of the poem is left to the reader, as each will see it differently.",
+    "Costs change from year to year depending on the price of fuel.",
+    "How much sleep someone needs is not the same for any two people.",
+    "Teams may split the workload among themselves however they prefer.",
+    "Tolerance for spice varies widely from one diner to the next."
+   ],
+   "quiet": [
+    "The recommended dose is ten milligrams twice a day for adults.",
+    "Politeness here means removing your shoes at the door, without exception.",
+    "The best time to prune this variety is the last week of February.",
+    "The poem was written in 1847 and runs to exactly forty lines.",
+    "Costs were fixed at twelve pounds a tonne for the whole contract.",
+    "Adults are advised to sleep eight hours a night.",
+    "Each team member is assigned twelve cases by the supervisor.",
+    "The kitchen adds one teaspoon of chilli to every portion."
+   ]
+  }
+ ],
+ "predictions": "Fires where the text says a quantity or judgement differs between people, cultures or years; the same topic with one fixed value stays near zero.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "varies by individual or occasion",
+ "unit_kind": "meaning",
+ "confidence": "high",
+ "notes": "Probe: 'from year to year' 0.926, 'different for everyone' 0.766, 'eye of the beholder' 0.681, 'as they wish' 0.351, 'from person to person' 0.343; fixed-value twins 0.013-0.045. The + pole promotes ' positively'/' negatively'/' different', consistent with a relativity reading rather than a single word."
+}

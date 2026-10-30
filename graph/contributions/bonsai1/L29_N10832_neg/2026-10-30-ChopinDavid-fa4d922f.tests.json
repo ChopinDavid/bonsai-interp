@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-fa4d922f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N10832-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N10832",
+   "pole": "-",
+   "label": "a token inside scholarly reference apparatus: a citation, a dictionary-of-biography entry, or the editor's name in an antiquarian preface, as against the same content in modern casual register",
+   "fire": [
+    "Brown, Alice. \"Carew, Thomas.\" Dictionary of Welsh Biography (online ed.). University of Wales Press. doi:10.9876/dwb/4411.",
+    "Hartmann, Die Inschriften von Ephesos, pp. 44-51, with plates XI and XII.",
+    "The critical edition was prepared by Wilhelm Dindorf, a philologist at Leipzig.",
+    "See further the entry in these related articles: Diet of Worms, Schmalkaldic League.",
+    "The Gentleman's Magazine for 1788 noticed the pamphlet in its usual acid tone.",
+    "Thompson, \"Notes on the Antonine Wall,\" Proceedings of the Society of Antiquaries, vol. 12, p. 318.",
+    "The commentary was revised by Karl Lachmann for the second Berlin edition.",
+    "Cf. Mommsen, Roemische Geschichte, iii. 221, and the note at iv. 17."
+   ],
+   "quiet": [
+    "Alice wrote a short online profile of the poet for the Welsh heritage website.",
+    "The guidebook shows photographs of the inscriptions on pages forty to fifty.",
+    "The new edition was put together by a young editor working from home in Leipzig.",
+    "Read more on our blog: the Diet of Worms explained in five minutes.",
+    "The magazine for parents reviewed the pamphlet in its usual cheerful tone.",
+    "My notes on the Roman wall are in a folder somewhere in the attic.",
+    "The commentary was tidied up by a freelancer for the paperback reprint.",
+    "Compare the two histories: both run to about two hundred pages."
+   ]
+  }
+ ],
+ "predictions": "Fires inside bibliographic citations and antiquarian scholarly prose; the same facts in blog or everyday register stay low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "scholarly citation and reference register",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: an ODNB-style citation with doi 1.029, 'written by Ludwig Meyer, a physician' 0.836, Bell's Life 0.274, Britannica cross-reference 0.211, Seligmann page citation 0.138; the matched modern-register twins 0.009-0.086. The 0.836 on a name inside a scholarly preface, against 0.034 for the same sentence about a cookbook, is what makes this a register reading rather than a punctuation reading."
+}

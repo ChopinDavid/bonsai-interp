@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-93990fd3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N6572-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N6572",
+   "pole": "-",
+   "label": "the token ' Jewish' (and ' Judaism') used as an ethno-religious modifier, not another ethno-religious modifier in the same frame",
+   "fire": [
+    "The archive holds letters from Jewish merchants who traded along the Rhine.",
+    "Several Jewish holidays follow the lunar calendar rather than the solar one.",
+    "The neighbourhood had three synagogues serving a growing Jewish population.",
+    "Scholars of Judaism met in Vienna to discuss the manuscripts.",
+    "A Jewish cemetery on the hillside dates from the fourteenth century.",
+    "The exhibition traces Jewish music from Eastern Europe to New York.",
+    "Her grandmother kept a Jewish household and lit candles every Friday.",
+    "Enrolment at the Jewish day school doubled within a decade."
+   ],
+   "quiet": [
+    "The archive holds letters from Flemish merchants who traded along the Rhine.",
+    "Several Hindu holidays follow the lunar calendar rather than the solar one.",
+    "The neighbourhood had three mosques serving a growing Muslim population.",
+    "Scholars of Buddhism met in Vienna to discuss the manuscripts.",
+    "A Catholic cemetery on the hillside dates from the fourteenth century.",
+    "The exhibition traces Roma music from Eastern Europe to New York.",
+    "Her grandmother kept a Lutheran household and lit candles every Sunday.",
+    "Enrolment at the Quaker day school doubled within a decade."
+   ]
+  }
+ ],
+ "predictions": "Fires on ' Jewish' wherever it modifies a noun; the identical sentence with Hindu, Muslim, Catholic, Lutheran or Quaker in that slot stays low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the token ' Jewish'",
+ "unit_kind": "token",
+ "confidence": "medium",
+ "notes": "Weak unit, corpus max 3.31, ' Jewish' is 6 of the top 32 peaks. Probe: Jewish 0.340, Judaism 0.165, Japanese 0.045, Netherlands 0.079, Europe 0.102, and the matched twins without the word 0.038-0.069. The test is a straight token swap because the probes gave no evidence for a wider topical reading.",
+ "trigger": {
+  "words": [
+   " Jewish",
+   " Judaism"
+  ]
+ }
+}

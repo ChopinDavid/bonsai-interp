@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-3aba67b3",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N5148-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T18:35:41+00:00",
+ "recipe": {
+  "toolchain_commit": "7cc1ed63",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L26_N5148_neg/2026-10-30-ChopinDavid-3aba67b3.tests.json"
+ },
+ "label": "the preposition heading a phrase whose object is a body tissue or body fluid as a medium (in the fluids of the intestine, through the tissue of the cornea), not the same frame with a non-biological medium",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N5148_neg/2026-10-30-ChopinDavid-3aba67b3.tests.json",
+   "prereg_commit": "7cc1ed63",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.397,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.186,
+     "peak": " cor"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.777,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.281,
+     "peak": " warm"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.311,
+     "peak": "ous"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.145,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.025,
+     "peak": " matures"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.216,
+     "peak": " layers"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.196,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.091,
+     "peak": " dense"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.275,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.132,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.077,
+     "peak": " binds"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " quickly"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.08,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.048,
+     "peak": " uneven"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.248,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "7cc1ed63",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "preposition before a biological medium",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Card: peaks ' in', ' as', ' of', ' with'; the + pole suppresses body/biological/human/tissue tokens, so this pole reads that context. Probe: 'aqueous environment of the gut' 0.927, 'same concentration as the fluid in the human body' 0.801, 'penetrate into living tissue' 0.273; the hardest control, 'damp environment of the boathouse', already reached 0.299, so some near misses are expected to leak.",
+ "selection": "random draw"
+}

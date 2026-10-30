@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9fb6d0f5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N2751-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T18:20:10+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N2751",
+   "pole": "-",
+   "label": "the connective (and / then / please / simply / comma) that pivots into the next imperative step of a software or navigation instruction, not the same subject matter reported as narrative",
+   "fire": [
+    "Open the account page in your browser, and click Manage Subscriptions near the bottom.",
+    "Locate the message in your inbox, then choose Forward from the toolbar.",
+    "To update your address, sign in to the portal and select Edit Profile.",
+    "If the download stalls, please click Retry rather than refreshing the page.",
+    "Choose the photo you want to crop, then drag the corner handles inward.",
+    "Once the installer opens, simply click Next and accept the default location.",
+    "Find the row for last month, and select Download as CSV from the menu.",
+    "To leave the group, open the member list and tap Leave Group at the bottom."
+   ],
+   "quiet": [
+    "Her account page loaded slowly, and the subscription list never appeared at all.",
+    "He found the message in his inbox, but the attachment had already expired.",
+    "The portal lost my new address twice before the clerk fixed it by hand.",
+    "The download stalled at ninety percent and the log blamed the proxy server.",
+    "She cropped the photo on her phone and sent it to the printer that evening.",
+    "The installer opened a second window and offered a toolbar nobody wanted.",
+    "The report for last month arrived as a spreadsheet with three empty columns.",
+    "He left the group quietly and nobody noticed until the next meeting."
+   ]
+  }
+ ],
+ "predictions": "Fires on the connective introducing a second imperative in click-here instructions; the same topics written as past-tense description stay low.",
+ "methods": {
+  "agent": "claude-code opus-5",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pivot into the next step of a UI instruction",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Card: ' and' x9, ',' x5, ' can' x5, ' please' x2, ' then' x2; top examples are all click/go instructions. Probe: 'then select Share' 0.711, 'and click Security' 0.642, 'simply click Checkout' 0.642, 'please click the link' 0.439; narrative 'shared and smiled' 0.315 and physical instructions 0.210 are the closest misses, so near misses are descriptive rather than physical-imperative."
+}
