@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-moridinamael-5c4b6d35",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N3512-",
+ "contributor": "moridinamael",
+ "created": "2026-10-30T15:12:42+00:00",
+ "recipe": {
+  "toolchain_commit": "186a7319f",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N3512_neg/2026-10-30-moridinamael-5c4b6d35.tests.json"
+ },
+ "label": "a middle piece of a technical name or code inside a longer passage (identifier segment after _ or ., split rare word, unit, part number)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N3512_neg/2026-10-30-moridinamael-5c4b6d35.tests.json",
+   "prereg_commit": "186a7319f",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.159,
+     "peak": " restarting"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.073,
+     "peak": ".pref"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.122,
+     "peak": " supplier"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.095,
+     "peak": " auth"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.1,
+     "peak": "ploy"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.045,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.103,
+     "peak": " isolated"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.183,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.095,
+     "peak": " change"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.076,
+     "peak": " size"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.09,
+     "peak": " one"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.139,
+     "peak": " login"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.145,
+     "peak": " again"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.041,
+     "peak": " we"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.113,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " requests"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.633,
+    "median_fire": 0.102,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "step-down"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "186a7319f",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "roles": [
+  "reads bonsai1/L22/N2000-"
+ ]
+}
