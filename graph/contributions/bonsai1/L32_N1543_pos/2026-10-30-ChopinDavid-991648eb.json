@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-991648eb",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N1543+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T05:33:49+00:00",
+ "recipe": {
+  "toolchain_commit": "89cacc73",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N1543_pos/2026-10-30-ChopinDavid-991648eb.tests.json"
+ },
+ "label": "inside an enumeration of retail merchandise or household goods (clothing, jewelry, handbags, cribs, toys: 0.66-0.85, Russian игрушек, бижутерии 0.61), peaking on the comma or the piece that begins the next item; lists of places (0.00), people (0.01) and ingredients (0.00) in the same frames are quiet, and a single garment ('bought a new coat' 0.18) is weak",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N1543_pos/2026-10-30-ChopinDavid-991648eb.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.244,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.52,
+     "peak": " night"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.2,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.782,
+     "peak": " baby"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.689,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.242,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.543,
+     "peak": ","
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.278,
+     "peak": " purs"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.091,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.008,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": "We"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " don"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.048,
+     "peak": "rig"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.09,
+     "peak": "Under"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.014,
+     "peak": "ries"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.399,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "89cacc73",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "list of merchandise",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 162, density 0.27%, peaks ',' in 'игрушек, бижутерии', ' under' in 'frilly underclothes', ' baby' in 'ironing boards, baby cribs', ' Hand' in 'Shoes, Handbags, Wallets', 'hand' in 'dolls (handmade', ''s' in 'women's clothing'. The output suppresses ' items', ' objects', ' pieces', so the pole predicts a specific goods noun. Probe: 'television sets, ironing boards, baby cribs' 0.852 (peak ' baby'), 'frilly underclothes, lace collars' 0.726, 'toys, jewelry, scarves, handbags' 0.663 (peak ' hand'), Russian craft list 0.607, 'get jewelry and flowers' 0.240, 'bought a new coat' 0.183, cities 0.004, professions 0.005, ingredients 0.004.",
+ "selection": "random draw"
+}

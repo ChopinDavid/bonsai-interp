@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-0e6a07a7",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N5514-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-30T05:32:27+00:00",
+ "recipe": {
+  "toolchain_commit": "89cacc73",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N5514_neg/2026-10-30-ChopinDavid-0e6a07a7.tests.json"
+ },
+ "label": "explicit delegation to a parent class's method inside a Python method body: the token right after the receiver in 'super(Cls, self).method(...)' (0.95), 'super().method(...)' (0.53) or 'Base.method(self, ...)' (0.47-0.51); ordinary 'self.method()' and 'module.func()' calls in the same bodies are quiet (0.01-0.05)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N5514_neg/2026-10-30-ChopinDavid-0e6a07a7.tests.json",
+   "prereg_commit": "89cacc73",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.6,
+     "peak": "write"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.233,
+     "peak": " super"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.34,
+     "peak": ")\n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.792,
+     "peak": "item"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.462,
+     "peak": "process"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.459,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.594,
+     "peak": ")."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.282,
+     "peak": ".Thread"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.086,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.02,
+     "peak": " parent"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.015,
+     "peak": ".connected"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.374,
+     "peak": "]"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.016,
+     "peak": " return"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.028,
+     "peak": " db"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": ".sleep"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.461,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "89cacc73",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "parent-class method delegation",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: max 80, density 0.05%, peaks ').' x10 after 'super(X, self', '.__' in 'CatalogBase.__init__(self)', 'Factory'/'Protocol' in 'ReconnectingClientFactory.clientConnectionLost(self, ...)'. Probe: super(TestIperf, self).clean 0.948 (peak ').'), super().get_context_data 0.525 (peak '().'), ReconnectingClientFactory.clientConnectionLost(self,...) 0.509, CatalogBase.__init__(self) 0.467 (peak 'Base'), Java super.onCreate 0.267, prose about super 0.101, self.startDrag 0.047, json.dumps(self.data) 0.007, script-level table.load 0.004. The test keeps the class headers and method bodies identical and removes only the delegation call.",
+ "selection": "random draw"
+}
