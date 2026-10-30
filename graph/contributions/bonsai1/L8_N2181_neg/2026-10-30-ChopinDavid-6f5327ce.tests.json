@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6f5327ce",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N2181-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N2181",
+   "pole": "-",
+   "label": "A spatial direction or vista adverbial: gazing or extending toward a distant point (all the way up and down, far off, skyward, toward the horizon, 远方)",
+   "fire": [
+    "From the ridge she looked out across the valley toward the far hills.",
+    "The road ran straight up over the pass and out of sight.",
+    "Smoke drifted skyward from the chimneys of the village.",
+    "The trail dropped steeply down into the gorge below us.",
+    "On a clear day you can see all the way out to the islands.",
+    "The geese flew off toward the horizon in a long line.",
+    "Lights stretched away along the shore as far as the eye could follow.",
+    "他站在山顶上，望向远处的村庄。"
+   ],
+   "quiet": [
+    "The committee came out in favour of the new proposal.",
+    "The question is still up for debate among the members.",
+    "Prices drifted downward after the announcement in March.",
+    "The meeting ran down the list of complaints one by one.",
+    "They stayed out of the argument all the way through dinner.",
+    "The company is working toward a settlement with the union.",
+    "He read the contract along with the attached schedule.",
+    "她把文件放在桌子上，然后离开了。"
+   ]
+  }
+ ],
+ "predictions": "Vista and direction items reach 0.3-0.8 on the preposition or direction word; the same prepositions in non-spatial senses (in favour, up for debate, toward a settlement) stay under 0.2. Abstract 'drifted downward' is the hardest near miss.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "spatial direction / distant vista",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: 望着远方 0.847, 'all the way up and down the highway' 0.706 (peak ' up'), 'gazed far into the distance, toward the snow on the mountains' 0.461 (peak ' on'), Sunward 0.334 ('ward'), 'cover the earth' 0.160, 'in the rain outside the station' 0.169, 'in support of' 0.034, 'until next spring' 0.031. Card max 4.59, density 0.6%: a weak, fairly broad unit; peaks ' in' x6, ' up' x3, ' el' x3, ' في' x3 across languages."
+}

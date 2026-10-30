@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-03863fe6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N8624+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N8624",
+   "pole": "+",
+   "label": "The one-letter piece ' M' opening a split word or name (M|urchison, M|olyneux, M|alt|itol)",
+   "fire": [
+    "The explorer Mungo Park traced the course of the Niger.",
+    "Rector William Mompesson kept the plague inside the village of Eyam.",
+    "The novelist Deborah Moggach set a novel in seventeenth-century Amsterdam.",
+    "Lady Anne Mowbray was married at the age of five.",
+    "Mineralogists call the iron-rich black variety Marmatite.",
+    "Health officials in Mwanza reported a drop in malaria cases.",
+    "The politician Mhairi Black entered Parliament at twenty.",
+    "Zulu speakers call South Africa Mzansi in everyday talk."
+   ],
+   "quiet": [
+    "Sugar-free gum is usually sweetened with Xylitol.",
+    "The pianist Ivo Pogorelich divided the critics at Warsaw.",
+    "The border town of Nogales straddles two countries.",
+    "The astronomer Carl Sagan hosted a famous television series.",
+    "Elena Kagan joined the Supreme Court in 2010.",
+    "The heroine Dagny Taggart runs a railroad in the novel.",
+    "Robert Mugabe was succeeded by Emmerson Mnangagwa.",
+    "Thabo Mbeki served two terms as president."
+   ]
+  }
+ ],
+ "predictions": "Every ' M'-split name reaches 0.3-0.75. Names split on other one-letter pieces (X|ylitol, P|ogorelich, N|ogales, S|agan, K|agan, D|agny) stay under 0.05; two-letter M pieces (Mn|angagwa, Mb|eki) and whole-token M-names are the hard near misses and should stay under 0.2.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "the ' M' one-letter piece",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Probe: Maltitol 0.713, Murchison 0.683, Mordy 0.575, Macclesfield 0.449, Molyneux 0.347 (all peak ' M'); Burchison 0.009, Kolyneux 0.007 (same tails with B/K pieces), Michael/Microsoft 0.126, Mort|lake 0.192. Card: ' M' x24 of the top 32 peaks. All test words tokenizer-checked: fires split as ' M' + tail, near misses as another single letter, ' Mn'/' Mb', or a whole token.",
+ "trigger": {
+  "tokens": [
+   " M"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-21544506",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N5840-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N5840",
+   "pole": "-",
+   "label": "Unclear: a weak, fairly dense unit whose top examples are '=' inside commented formulas plus scattered unrelated tokens; best guess an '=' in a code comment or inline formula",
+   "fire": [
+    "# threshold chosen from the calibration run\n# T = 0.85 +- 0.02\nself.assertGreater(score, 0.83)",
+    "# gain = 2.5 dB per stage\nstages = 4\ntotal_gain = 2.5 * stages",
+    "    # expected: R = V / I = 12 / 0.5\n    self.assertAlmostEqual(r, 24.0, 0.01)",
+    "# window length N = 256 samples\nN = 256\nframes = len(signal) // N",
+    "# tolerance eps = 1e-6\neps = 1e-6\nassert abs(a - b) < eps",
+    "    # area = pi * r**2\n    area = math.pi * r ** 2\n    return area",
+    "# learning rate lr = 0.001 (Adam)\nopt = Adam(model.parameters(), lr=0.001)",
+    "# c = 299792458 m/s\nc = 299792458\nt = d / c"
+   ],
+   "quiet": [
+    "The threshold was chosen from the calibration run and sits just below the usual score.",
+    "Each amplifier stage adds a fixed gain, so four stages give ten decibels.",
+    "The resistance works out to twenty-four ohms when twelve volts drive half an amp.",
+    "Each frame holds two hundred and fifty-six samples of the signal.",
+    "The two values are considered equal when they differ by less than a millionth.",
+    "The area of a circle grows with the square of its radius.",
+    "The optimiser uses a small learning rate so training stays stable.",
+    "Light covers almost three hundred thousand kilometres in a second."
+   ]
+  }
+ ],
+ "predictions": "Expected to fail: in the probe no sentence reached 0.3 and the commented-formula items scored 0.04-0.10. The test records whether '=' in comments beats prose at all.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear ('=' in commented formulas)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: all nine sentences 0.012-0.297; the highest was a plain code assignment block (peak newline, 0.297), the '# LRA = 10 +- 1 LU' comment 0.104, '# I = -23 +- 0.1' 0.038, E = mc^2 0.012, frond 0.073, actors do age 0.131. Card max 8.88 with density 0.48% and peaks ' =' x6, ',' x2 and single odd words (penis, keyboard, Onegin): no coherent trigger."
+}

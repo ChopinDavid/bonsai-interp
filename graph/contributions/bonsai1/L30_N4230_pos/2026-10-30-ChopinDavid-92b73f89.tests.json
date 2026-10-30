@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-92b73f89",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N4230+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N4230",
+   "pole": "+",
+   "label": "The slot before the verb in a description of a trained or habitual bodily skill: what a child, pet or exerciser is learning to do (able to sound out, slowly lower, sit and stay, always keeps its head low)",
+   "fire": [
+    "The horse is being taught to stand still while the farrier works.",
+    "Most toddlers at this age can already stack three blocks.",
+    "Keep your back straight and gently raise the dumbbell to shoulder height.",
+    "Our retriever will fetch the paper and drop it at the door.",
+    "The kitten already knows to use the litter tray.",
+    "Pupils in this group should be able to read these sight words fluently.",
+    "Breathe out as you slowly bend forward from the hips.",
+    "The parrot has learned to ring a bell when it wants food."
+   ],
+   "quiet": [
+    "The software should be able to handle files of several gigabytes.",
+    "The committee slowly reached a decision after three meetings.",
+    "Students should be able to afford the new textbook this year.",
+    "The server always restarts at midnight for maintenance.",
+    "The paint will slowly fade if the shutters face south.",
+    "The bridge can usually carry forty tons without trouble.",
+    "The firm has learned to price its bids more carefully.",
+    "The river bends gently toward the east below the mill."
+   ]
+  }
+ ],
+ "predictions": "Learner/animal/exercise items reach 0.3-0.7 on the word before the action verb; the same frames applied to software, committees, prices, servers and rivers stay under 0.25. 'The committee slowly' type items are the likely leak (0.248 in the probe).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pre-verb slot of a trained bodily skill",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: 'learning to sit and stay' 0.724 (peak ' and'), 'sled dog always keeps its head low while pulling' 0.650 (' while'), 'should be able to sound out unfamiliar words' 0.494, 'slowly lower your hips' 0.419, 'tail is always wagging' 0.303, 'able to spell these words' 0.230; 'stock price should be able to recover' 0.100, 'committee slowly worked' 0.248, bridge 1932 0.086. Card: dog training, phonics instruction and exercise directions, peaking on ' to'/' always'/' slowly'/' and' before the action. The - pole's logit effect suppresses ' pull'/' up'."
+}

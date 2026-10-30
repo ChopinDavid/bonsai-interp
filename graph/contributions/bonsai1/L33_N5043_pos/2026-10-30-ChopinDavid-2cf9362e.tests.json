@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-2cf9362e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N5043+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N5043",
+   "pole": "+",
+   "label": "A g-bearing continuation piece ('og', 'ag', 'agan', or the vowel right after a lone 'G') inside a split name or word (N|og|uchi, int|ag|lio, G|á|bor)",
+   "fire": [
+    "The pianist Ivo Pogorelich stunned the jury in Warsaw.",
+    "Crossing at Nogales takes longer on holiday weekends.",
+    "Physicist John Kogut worked on lattice gauge theory.",
+    "Readers of the Bhagavad Gita return to it throughout life.",
+    "The novel Vagabond follows a drifter through Provence.",
+    "In the novel, Dagny Taggart keeps the railroad running.",
+    "The biologist Gáspár Jékely studies marine larvae.",
+    "The astronomer Carl Sagan wrote Pale Blue Dot."
+   ],
+   "quiet": [
+    "Folk tunes from Transylvania fill the quartets of Bartók.",
+    "The banjo player Béla Fleck toured with a symphony orchestra.",
+    "The poet Kalidasa described the monsoon clouds.",
+    "King Nebuchadnezzar rebuilt the walls of Babylon.",
+    "The actor Logan Lerman starred in the film.",
+    "In the final season Ragnar sails for England.",
+    "The magazine Vogue published her first photographs.",
+    "Rector William Mompesson stayed in Eyam during the plague."
+   ]
+  }
+ ],
+ "predictions": "Split names whose second piece carries a g reach 0.4-0.85; split names without a g piece (Bart|ó|k, B|é|la, Kal|id|asa, M|omp|esson) and whole-token g-names (Logan, Hogan, Ragnar, Vogue) stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "g-bearing piece inside a split name",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: Zagreb/Vogel 0.854 (peak 'og'), Gábor 0.846 ('á'), Noguchi 0.724, intaglio 0.717 ('ag'), anterograde 0.608, Gogol 0.430; retrograde (retro|grade) 0.006, Bartók 0.002, Mortlake 0.018. Card: 'og' x12, 'á' x4, 'ag' x4, ' Vog' x4, ' Zag' x3. The - pole peaks on ' g'/'g'/'-g'/' г' as its own token, so the neuron separates a g that opens a piece (-) from a g carried inside a continuation piece (+). All test words tokenizer-checked."
+}

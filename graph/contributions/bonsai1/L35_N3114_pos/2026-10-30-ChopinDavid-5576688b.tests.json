@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-5576688b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N3114+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-30T17:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L35/N3114",
+   "pole": "+",
+   "label": "Positional unit: fires on the first token of a context window regardless of its content (100% of top peaks at window position 0, mostly a mid-sentence ' for'); not a feature of any text",
+   "fire": [
+    "for the first time in years the harbour froze over.",
+    "tasks like these take most of the morning.",
+    "– for instance – the clerk and the registrar.",
+    "en route to the summit the party lost two tents.",
+    "characteristics of the soil determine which vines will thrive.",
+    "for a small fee the museum will store your luggage.",
+    "strategy documents rarely survive first contact with the market.",
+    "for several reasons the bridge was never rebuilt."
+   ],
+   "quiet": [
+    "The harbour froze over for the first time in years.",
+    "These tasks take most of the morning.",
+    "The clerk and the registrar, for instance, were both absent.",
+    "The party lost two tents on the way to the summit.",
+    "Which vines thrive depends on the soil.",
+    "The museum will store your luggage for a small fee.",
+    "Few strategy documents survive first contact with the market.",
+    "The bridge was never rebuilt, for several reasons."
+   ]
+  }
+ ],
+ "predictions": "Expected to fail: every probe sentence scored 0.000-0.002. Sentence scoring never reproduces the corpus window boundary that the pole responds to.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "positional: first token of the window",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: nine sentences, including fragments starting with lowercase 'for'/'tasks'/'characteristics' to mimic a window cut, all 0.000-0.002. Card FLAG positional: all top peaks at position 0, with ' for' x20 of the top 32, max 378 but density 0.099% exactly equal at 0.1 and 0.3 of max (a flat response to the window start). Recorded as dense / positional; the best-guess test uses mid-sentence fragments against full sentences."
+}
