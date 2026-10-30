@@ -4,10 +4,10 @@
  "layer": 0,
  "index": 473,
  "pole": "-",
- "label": "The letters 'ton' when the tokenizer cuts them out as their own piece: the weight word ton/tons/tonne, 'Ton' at the start of a word or name, or a 'ton' piece ending or inside a rare name or foreign word that gets split up; common English words stored whole that contain 'ton' (inside or at the end) stay low.",
+ "label": "A token that spells 'ton': the bare piece ton/Ton/tons/ons (weight word, German 'Ton' sound, a name like Ton or Lyt|ton, é|ton|nant, lept|ons), whichever language; whole common words ending in -ton (cotton, button) fire only weakly, and plain 'on' words do not.",
  "short": "'ton' as its own token piece",
  "kind": "token/lexical",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,12 +131,139 @@
     "near_misses_at_0.3": 1
    },
    "contribution": "2026-10-21-moridinamael-880f3ab5"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N473_neg/2026-10-30-moridinamael-a9b57184.tests.json",
+   "prereg_commit": "d08e58902",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.56,
+     "peak": " ton"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.658,
+     "peak": " tons"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.706,
+     "peak": " Ton"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.971,
+     "peak": " Ton"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.881,
+     "peak": "ton"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.605,
+     "peak": "ton"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.37,
+     "peak": "ons"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.672,
+     "peak": " tons"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.004,
+     "peak": " hill"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " lots"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " heute"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " colleague"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.014,
+     "peak": " times"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.015,
+     "peak": " vraiment"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.096,
+     "peak": "rons"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.033,
+     "peak": " reinforcement"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.665,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-a9b57184"
   }
  ],
  "label_history": [
   [
    "2026-10-21-moridinamael-880f3ab5",
    "The letters 'ton' when the tokenizer cuts them out as their own piece: the weight word ton/tons/tonne, 'Ton' at the start of a word or name, or a 'ton' piece ending or inside a rare name or foreign word that gets split up; common English words stored whole that contain 'ton' (inside or at the end) stay low.",
+   "held"
+  ],
+  [
+   "2026-10-30-moridinamael-a9b57184",
+   "A token that spells 'ton': the bare piece ton/Ton/tons/ons (weight word, German 'Ton' sound, a name like Ton or Lyt|ton, é|ton|nant, lept|ons), whichever language; whole common words ending in -ton (cotton, button) fire only weakly, and plain 'on' words do not.",
    "held"
   ]
  ],
@@ -149,25 +276,22 @@
   "moridinamael"
  ],
  "contributions": [
-  "2026-10-21-moridinamael-880f3ab5"
+  "2026-10-21-moridinamael-880f3ab5",
+  "2026-10-30-moridinamael-a9b57184"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.2485,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 2459
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
-  "qc": 0
+  "qc": 1
  }
 }
