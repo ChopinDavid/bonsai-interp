@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ca22acb3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N4329-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N4329",
+   "pole": "-",
+   "label": "Unclear; best guess: a clarifying aside that glosses the preceding term, inside parentheses or a code comment ('(often not visible to users)', '# the text of the button', 'but that's a different matter)')",
+   "fire": [
+    "The meter reads the RMS voltage (the effective value of the alternating signal) once per second.",
+    "    width,  # the width of the button in pixels (often ignored on mobile)\n    height, # the height of the button",
+    "Some clinics take walk-ins, but that's a different matter entirely; book ahead anyway.",
+    "The two circles touch (externally in the first case and internally in the second) at a single point.",
+    "    assert resp.status_code == 200  # the view renders the empty form\n    assert 'form-row' in resp.text",
+    "The leaves that serve as the plant's main store of water are thick and waxy.",
+    "Mercury (the planet closest to the sun, not the metal) completes an orbit in 88 days.",
+    "Her income was independent of the effects of the recession on the rest of the family."
+   ],
+   "quiet": [
+    "The meter reads the voltage once per second and logs it to a card.",
+    "    width = 120\n    height = 40\n    label = 'Submit'",
+    "Some clinics take walk-ins every weekday morning until eleven.",
+    "The two circles have the same radius and are drawn in red.",
+    "    resp = client.get('/form/')\n    assert resp.status_code == 200",
+    "The leaves are thick and waxy and grow in pairs along the stem.",
+    "Mercury completes an orbit of the sun in 88 days.",
+    "Her income rose steadily during the recession while the rest of the family struggled."
+   ]
+  }
+ ],
+ "predictions": "Weak: fire median ~0.2 and a likely fail (the first hypothesis, relational predicates with a prepositional complement, scored at most 0.23 in the probe). Near misses <=0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: parenthetical gloss",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card: referring to himself, (Vrms value of ...), but that's a different matter), flowers serving as, independent of the effects of, (often not visible to users), (externally and internally), '# The lambda function', Correspondences. Probe of the bare relational predicates failed (applies to 0.10, visible to 0.10, serving as 0.06, effects of 0.23). Re-reading the card, most peaks sit inside a parenthesis or comment, so this round tests the aside pattern; a first look, not a confident label."
+}

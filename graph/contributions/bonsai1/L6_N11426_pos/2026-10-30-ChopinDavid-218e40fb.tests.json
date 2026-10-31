@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-218e40fb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N11426+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N11426",
+   "pole": "+",
+   "label": "Verb of a physical flux (light, water, particles, gas) striking, entering or passing through a surface or medium",
+   "fire": [
+    "A photon striking the retina triggers a chemical change in the rod cell.",
+    "Groundwater seeping into the tunnel had to be pumped out every night.",
+    "When the laser beam hits the mirror, part of it passes straight through.",
+    "Cosmic rays penetrate the hull and leave tracks in the detector.",
+    "Sound waves entering the ear canal set the eardrum vibrating.",
+    "Hot gas escaping through the vent cooled as it crossed the chamber.",
+    "Rainwater percolating through the limestone dissolves it slowly.",
+    "X-rays passing through soft tissue reach the film almost unhindered."
+   ],
+   "quiet": [
+    "A chemist studying the retina described a change in the rod cell.",
+    "Workers walking into the tunnel had to be counted every night.",
+    "When the technician adjusts the mirror, part of it points straight up.",
+    "Astronauts inspect the hull and leave notes in the logbook.",
+    "A nurse entering the clinic set the bell ringing.",
+    "The gas bill arriving in the post was higher than expected.",
+    "The guide describing the limestone explained how it formed.",
+    "Patients waiting in the clinic reached the desk almost immediately."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.5 (probe: strikes 0.73, pass through 0.64, hitting 0.59, seeps 0.52, enters 0.34). Human agents with the same verbs <=0.05 (probe 'entered the room' 0.016); flux subjects with non-contact verbs <=0.2 (warmed 0.19). Abstract 'hit the markets' leaked 0.27 in the probe, so none used.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "flux strikes/enters/passes through medium",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: sunlight hitting the dish 15.6, light strikes 14.8, light travels, rays enter the fiber, blood entering, neutrino traverse, water seeps. The distinction is physical flux vs. agent: same verb with a person scores near zero."
+}

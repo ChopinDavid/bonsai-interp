@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-21eabb9a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N6951+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N6951",
+   "pole": "+",
+   "label": "The 'is' of a Python 'x is not None' check, predicting 'not', inside a function body with surrounding code (one-line snippets scored near zero in the probe)",
+   "fire": [
+    "def forward(self, x, mask=None):\n        h = self.encoder(x)\n        if mask is not None:\n            h = h * mask\n        return h",
+    "    def save(self, path=None):\n        target = path if path is not None else self.default_path\n        with open(target, 'w') as f:\n            f.write(self.dump())",
+    "def build(cfg, logger=None):\n    model = Net(cfg)\n    if logger is not None:\n        logger.info('built %s', model)\n    return model",
+    "    def __init__(self, data, labels=None):\n        self.data = data\n        self.labels = labels if labels is not None else []\n        self.n = len(data)",
+    "def run(args):\n    out = compute(args.input)\n    if args.output is not None and out is not None:\n        write(args.output, out)",
+    "    def get(self, key, default=None):\n        value = self._store.get(key)\n        if value is not None:\n            return value\n        return default",
+    "def plot(ax, data, title=None):\n    ax.plot(data)\n    if title is not None:\n        ax.set_title(title)\n    ax.grid(True)",
+    "    def close(self):\n        if self._conn is not None:\n            self._conn.close()\n            self._conn = None"
+   ],
+   "quiet": [
+    "def forward(self, x, mask=None):\n        h = self.encoder(x)\n        if mask:\n            h = h * mask\n        return h",
+    "    def save(self, path=None):\n        target = path or self.default_path\n        with open(target, 'w') as f:\n            f.write(self.dump())",
+    "def build(cfg, logger=None):\n    model = Net(cfg)\n    if logger == 'verbose':\n        print('built', model)\n    return model",
+    "    def __init__(self, data, labels=None):\n        self.data = data\n        self.labels = list(labels or [])\n        self.n = len(data)",
+    "def run(args):\n    out = compute(args.input)\n    if isinstance(out, dict) and len(out) > 0:\n        write(args.output, out)",
+    "    def get(self, key, default=None):\n        value = self._store.get(key)\n        if key in self._store:\n            return value\n        return default",
+    "def plot(ax, data, title=None):\n    ax.plot(data)\n    if len(title) > 0:\n        ax.set_title(title)\n    ax.grid(True)",
+    "    def close(self):\n        if self._open:\n            self._conn.close()\n            self._open = False"
+   ]
+  }
+ ],
+ "predictions": "Uncertain. One-line probes scored 0.004-0.30 (only the inline 'x if x is not None else' form reached 0.30), so this test asks whether a function body of 3-5 lines restores the card's activations (max 131). If it holds, fire median ~0.4 on ' is'; if it fails, the pole needs longer file context. Near misses ('if mask:', 'or', '==', isinstance, 'in') <=0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Python 'is' before 'not None'",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: all top 32 peaks on ' is' (x30), ' be', ' must' in 'is not None' checks inside Python code; negative pole peaks on ' not'/' !='. Logit effect suppresses ' nothing', ' empty', ' void', ' blank': the unit anticipates a null check. Fire items follow the code-pole rule from earlier sweeps: multi-line passages with earlier context."
+}

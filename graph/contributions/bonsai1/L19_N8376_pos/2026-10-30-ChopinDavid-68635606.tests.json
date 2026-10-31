@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-68635606",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N8376+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N8376",
+   "pole": "+",
+   "label": "A hyphen separating digit groups inside a formatted identifier: ZIP+4 postal codes, phone numbers, ISBNs (not year or page ranges, not hyphenated words)",
+   "fire": [
+    "Send returns to 2300 Oak Avenue, Portland, OR 97214-3610 with the receipt.",
+    "For reservations phone 1-888-555-0147 any day of the week.",
+    "The hardcover is catalogued as ISBN 978-1-4028-9462-6.",
+    "Mail the form to PO Box 410, Albany, NY 12201-0410 before June.",
+    "Customer service can be reached on 0800-123-4567 during office hours.",
+    "The first edition carried ISBN 0-19-852663-6 on its back cover.",
+    "Their warehouse is at 88 Dock Road, Houston, TX 77002-1750.",
+    "Fax your order to 212-555-0182 and allow two days for confirmation."
+   ],
+   "quiet": [
+    "Send returns to 2300 Oak Avenue in Portland with the receipt.",
+    "The store was open from 1985-2003 before it closed.",
+    "The hardcover runs to 462 pages and weighs 1.2 kilograms.",
+    "The well-built cabin stood thirty-two miles from the nearest road.",
+    "Customer service handled 123,456 calls during the quarter.",
+    "The first edition sold 852,663 copies in its first year.",
+    "The pages 77-102 cover the history of the dock.",
+    "Fax machines sold about 2.5 million units in 1990 alone."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.5 on the identifier hyphen (probe 0.49-0.58 for ZIP+4, phone, ISBN). Ranges 1985-2003 and 77-102 <=0.03 (probe 1914-1918 0.019); plain numbers and hyphenated words <=0.02; a spaced phone number scored 0.19 in the probe so none used.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "hyphen in digit-group identifier",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: '-' x29 of top 32, in 02110-1301, 1-800-253-6476, ISBN 978-0-674-02223-2. The token is the same '-' as in ranges and compounds; the probe shows it fires only when the hyphen joins digit groups of an identifier."
+}

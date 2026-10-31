@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-8228839a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N8768-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N8768",
+   "pole": "-",
+   "label": "Dense layer-2 unit (38% of tokens above 0.1 of max); best guess the token ' persons' (formal plural of person), with weak activation on much other text",
+   "fire": [
+    "The shelter can house up to sixty persons on a cold night.",
+    "Any persons found on the premises after dark will be reported.",
+    "Rates are given per 100,000 persons aged over seventy.",
+    "The lifeboat is rated for twelve persons and their gear.",
+    "Several persons of interest were interviewed by detectives.",
+    "The vaccine does not protect every one of the persons who receive it.",
+    "A list of displaced persons was posted outside the town hall.",
+    "The census counted 4,312 persons living in the parish."
+   ],
+   "quiet": [
+    "The shelter can house up to sixty families on a cold night.",
+    "Any vehicles found on the premises after dark will be reported.",
+    "Rates are given per 100,000 residents aged over seventy.",
+    "The lifeboat is rated for twelve passengers and their gear.",
+    "Several witnesses of interest were interviewed by detectives.",
+    "The vaccine does not protect every one of the patients who receive it.",
+    "A list of damaged houses was posted outside the town hall.",
+    "The census counted 4,312 people living in the parish."
+   ]
+  }
+ ],
+ "predictions": "Fire >=0.6 on ' persons' (probe 0.66-0.92). Near misses 0.2-0.4 because the unit is dense (probe: people 0.38, visitors 0.25, flooded 0.33, 'uls' 0.81), so the test probably fails on the quiet side as the dense flag predicts.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense: token ' persons'",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Card: ' persons' x25 of top 32 but max only 0.40 and gate-closed regime 100%. Trigger declared so coverage is measured exactly.",
+ "trigger": {
+  "words": [
+   "persons"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-de4f2dd2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N2401-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N2401",
+   "pole": "-",
+   "label": "The slot where 'experience' is the predicted next word: after 'N years of', 'gained valuable', 'from personal', 'años de', 'практический' and similar lead-ins, in any language (fires whether or not the word follows)",
+   "fire": [
+    "Our team brings over twenty years of experience in bridge design.",
+    "During the internship he gained hands-on experience with industrial robots.",
+    "Speaking from personal experience, the ferry crossing can be rough.",
+    "Buscamos un cocinero con cinco años de experiencia en cocina italiana.",
+    "Студенты получают практический опыт в лаборатории.",
+    "Wir bieten Praktikanten wertvolle Erfahrung im Projektmanagement.",
+    "The job requires previous experience with payroll software.",
+    "She drew on decades of experience to calm the frightened crew."
+   ],
+   "quiet": [
+    "Our team brings over twenty bridges to completion every year.",
+    "During the internship he gained a reputation for arriving early.",
+    "Speaking from the balcony, the mayor thanked the crowd.",
+    "Buscamos un cocinero con cinco cuchillos propios y mucha paciencia.",
+    "Студенты получают стипендию каждый месяц.",
+    "Wir bieten Praktikanten einen Arbeitsplatz im Zentrum der Stadt.",
+    "The job requires a driving licence and a clean record.",
+    "Experience is the best teacher, as the old saying goes."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.5, peaking on the token before 'experience' (probe: años de 0.72, практический 0.66, years of 0.53, personal 0.43, valuable 0.40). Near misses without the predicting lead-in <=0.15; sentence-initial 'Experience' quiet (probe 0.01).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot predicting 'experience'",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Next-token predictor: 'ten years of service' scored 0.528, identical to 'ten years of experience', and 'from the window' 0.385, so the setup fires regardless of what follows. Near misses therefore remove the setup, not just the word. The output suppresses ' experience' tokens (card), consistent with a prediction unit."
+}

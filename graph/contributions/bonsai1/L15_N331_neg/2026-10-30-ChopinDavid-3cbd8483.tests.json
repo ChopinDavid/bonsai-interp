@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3cbd8483",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N331-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N331",
+   "pole": "-",
+   "label": "Something put forward to be searched, tried, voted on or contested: the target of a search or scan, a nominee or shortlisted entry, a ballot measure, a contest entry or attempt (not the searcher, not the outcome)",
+   "fire": [
+    "The function returns the set of directories to scan for plugins.",
+    "Three of her short films were shortlisted for the festival prize.",
+    "Council will put the parking levy to a public vote in May.",
+    "Forty riders entered the time trial on the final morning.",
+    "The user can specify which tables to query for the report.",
+    "His bid for the party leadership failed by eleven votes.",
+    "Each contestant gets one attempt at the final puzzle.",
+    "The amendment qualified for the ballot after a recount of signatures."
+   ],
+   "quiet": [
+    "The function returns the set of directories that were created today.",
+    "Three of her short films were screened at the festival gala.",
+    "Council will install the parking meters on the high street in May.",
+    "Forty riders finished the mountain stage on the final morning.",
+    "The user can specify which tables to delete from the report.",
+    "His term as party leader ended after eleven years.",
+    "Each contestant gets one slice of the final cake.",
+    "The amendment took effect after a review of the wording."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.4 (probe: on the ballot 0.73, folders to search 0.58, nominated for 0.38, compete in 0.32). Outcome twins (won, appointed, finished, took effect) <=0.05 (probe <=0.012).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "object of search, trial, vote or contest",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: indices to query, nominants, nominated for, paths scanned for, on the ballot, directories to search for, free-throw attempt, compete in. Probe: 'the board is searching for a new CEO' only 0.071, so the agent side of a search does not fire; the pole marks the thing submitted to the process."
+}

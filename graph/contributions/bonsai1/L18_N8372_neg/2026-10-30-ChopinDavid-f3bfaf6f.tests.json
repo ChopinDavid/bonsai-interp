@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f3bfaf6f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N8372-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N8372",
+   "pole": "-",
+   "label": "Column separator in a tabular data row: wiki/markdown cell bars ('||', '|') and the aligned whitespace between columns of a plain-text table, in a data row after a header row",
+   "fire": [
+    "|Country||Capital||Population|\n|Norway||Oslo||5.4 million|",
+    "|Item||Price||Stock|\n|Hammer||$12.50||34|",
+    "| Team | Played | Won | Lost |\n| Lions | 10 | 7 | 3 |",
+    "Filename        Size    Modified\nnotes.txt       2048    12-Mar-2019",
+    "|Plant||Light||Water|\n|Fern||Shade||Weekly|",
+    "|Rank||Driver||Time|\n|1||Hamilton||1:32.4|",
+    "PID   USER   CPU   COMMAND\n4412  root   0.3   sshd",
+    "|Year||Winner||Score|\n|2010||Spain||1-0|"
+   ],
+   "quiet": [
+    "Norway's capital is Oslo and its population is about 5.4 million.",
+    "The hammer costs $12.50 and there are 34 in stock.",
+    "The Lions played ten, won seven and lost three.",
+    "The file notes.txt is 2048 bytes and was modified on 12 March 2019.",
+    "ls -l | grep notes | sort -k5",
+    "Hamilton finished first with a time of 1:32.4.",
+    "if (pid == 4412 || user == 'root') kill(pid);",
+    "Spain won the 2010 final 1-0."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.3, a borderline hold (probe: single wiki rows 0.20-0.25, a whitespace-aligned listing 0.56); two-row tables may score higher than the single rows probed. Prose versions and code pipes ('|' in a shell, '||' in C) <=0.01 (probe 0.002-0.007).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "cell separator in table row",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: ' |' in a radio table -46, '||' in La Redoute and salary tables, aligned whitespace in a file listing -29.9 and a knot table. Fire items are two-line tables (header then data row) because the card peaks sit after a row break; the probe used single rows and scored lower."
+}

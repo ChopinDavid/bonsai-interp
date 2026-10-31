@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-80abf75d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N10762+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N10762",
+   "pole": "+",
+   "label": "A named scholarship, fellowship or volunteer-exchange programme and its holder: Fulbright, Rhodes Scholar, Chevening, Marshall, Erasmus, Peace Corps, fellowships",
+   "fire": [
+    "He went to Oxford on a Marshall Scholarship after finishing at Howard.",
+    "Two of the lab's postdocs hold Marie Curie fellowships.",
+    "She served three years in the Peace Corps before entering law school.",
+    "The Erasmus programme sends thousands of students abroad every year.",
+    "As a Fulbright scholar she taught English in a Korean high school.",
+    "The institute awarded him a Guggenheim Fellowship in 2004.",
+    "Many Rhodes Scholars have gone on to careers in public service.",
+    "Her year as a Gates Cambridge Scholar changed the course of her research."
+   ],
+   "quiet": [
+    "He went to Oxford on a Saturday after finishing at the office.",
+    "Two of the lab's postdocs hold keys to the cold room.",
+    "She served three years in the Marine Corps before entering law school.",
+    "The ferry programme sends thousands of tourists across every year.",
+    "As a visiting parent she taught English in a Korean high school.",
+    "The institute awarded him a parking space in 2004.",
+    "Many Rhodes residents have gone on to careers in tourism.",
+    "Her year as a Cambridge undergraduate changed the course of her research."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.55 (probe: Fulbright 0.92, Rhodes Scholar 0.65, Chevening 0.51, Peace Corps 0.43, fellowships 0.40). Near misses <=0.1 (Marine Corps 0.05, 'a year in Chile teaching' 0.18); 'Rhodes residents' (the island) the likeliest leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "named scholarship / fellowship programme",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Card: Fulbright 59, Chevening 41, visiting fellow 39, exchange programmes 35, Rhodes Scholar 31, fellowships 30, Peace Corps 30. The probe separates the programme sense from the military 'Corps' and from plain study abroad."
+}

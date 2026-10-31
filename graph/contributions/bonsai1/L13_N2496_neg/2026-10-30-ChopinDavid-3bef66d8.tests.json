@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3bef66d8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N2496-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N2496",
+   "pole": "-",
+   "label": "A proper name as an item inside an inline comma-separated list of names (countries, players, people), as opposed to the same kind of name in running prose or a list of common nouns",
+   "fire": [
+    "The treaty was signed by Austria, Denmark, Portugal, Sweden and Finland.",
+    "The relay squad included Bolt, Blake, Carter and Frater.",
+    "Branches opened in Lisbon, Porto, Madrid, Seville and Valencia within a year.",
+    "The panel featured Morrison, Atwood, Rushdie and Ishiguro.",
+    "Shipments went out to Kenya, Uganda, Tanzania and Rwanda last month.",
+    "The committee consisted of Schmidt, Novak, Fischer and Bauer.",
+    "The band toured Japan, Korea, Taiwan and the Philippines in 2015.",
+    "Goals came from Suárez, Cavani and Forlán in the second half."
+   ],
+   "quiet": [
+    "The treaty was signed in Vienna after months of negotiation.",
+    "The relay squad trained in Kingston for most of the winter.",
+    "Branches opened across the peninsula within a year.",
+    "The panel discussed memory, exile and the limits of fiction.",
+    "Shipments of maize, beans, rice and sugar went out last month.",
+    "The committee consisted of teachers, nurses and two engineers.",
+    "The band toured for most of 2015 before recording again.",
+    "Goals came from a corner, a penalty and a counter-attack in the second half."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.5 (probe: Peru in a country list 0.68, Hernández in a player list 0.55). Lists of common nouns <=0.06 (probe recipe 0.059); names in prose <=0.02 (Mexico hosted 0.012).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "name inside inline list of names",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: Spain in a table, Mexico in a country list, Hernández at the end of a squad list, ';' in entity tables, Red-breasted in a bird list. Probe: a wiki table row (0.012) and a semicolon author list (0.08) did not fire, a species list fired weakly (0.23); the inline comma list of proper names is what transferred."
+}

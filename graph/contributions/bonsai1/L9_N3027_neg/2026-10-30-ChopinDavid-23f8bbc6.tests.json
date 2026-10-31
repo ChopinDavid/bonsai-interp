@@ -1,0 +1,61 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-23f8bbc6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N3027-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N3027",
+   "pole": "-",
+   "label": "A hanging or flowing garment and its lower edge: hem, hemline, skirt, dress, gown, robes (not collars, cuffs or jackets, and not 'hem' as hesitation)",
+   "fire": [
+    "Mud had splashed the hem of her skirt during the walk.",
+    "The bride's gown trailed a metre behind her along the aisle.",
+    "He let down the hem so the trousers would reach his shoes.",
+    "The monks wore coarse brown robes tied with a rope.",
+    "Her pleated skirt swung as she climbed the steps.",
+    "A simple linen dress hung on the back of the door.",
+    "The tailor pinned the hemline just below the knee.",
+    "Silk evening dresses in every colour filled the costume department."
+   ],
+   "quiet": [
+    "Mud had splashed the sleeve of her jacket during the walk.",
+    "The bride's veil lifted a little in the breeze along the aisle.",
+    "He tightened the belt so the trousers would stay up.",
+    "The monks wore sandals and carried wooden bowls.",
+    "Her wool scarf fluttered as she climbed the steps.",
+    "A simple straw hat hung on the back of the door.",
+    "The tailor pinned the collar just below the chin.",
+    "Leather boots in every size filled the costume department."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.7 (probe: hem 0.62-0.88, her dress 0.71, flowing robes 0.66). Collars, cuffs, jackets, hats, boots <=0.15 (probe collar of her coat 0.15, knitted cuffs 0.02). 'Hemmed and hawed' scored 0.27 in the probe, so the hesitation sense is excluded from the near misses and noted as a weak leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "hem / skirt / dress / robe",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Card: hem x9, dress x3, skirt x3, flowing robes, платье. The logit effect suppresses ' gown', ' robes', ' sleeves', ' cloak'. Probe showed the pole is wider than the word hem: dress and robes fire without it, while upper garments do not.",
+ "trigger": {
+  "words": [
+   "hem",
+   "hemline",
+   "dress",
+   "dresses",
+   "skirt",
+   "skirts",
+   "robe",
+   "robes",
+   "gown"
+  ]
+ }
+}
