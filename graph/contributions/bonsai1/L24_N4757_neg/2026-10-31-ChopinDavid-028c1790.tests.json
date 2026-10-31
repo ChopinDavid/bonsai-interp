@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-028c1790",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N4757-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N4757",
+   "pole": "-",
+   "label": "The exemplification opener in technical exposition ('For instance,', 'For example,', 'As an example,', 'In this problem') that introduces a worked case right after a general statement",
+   "fire": [
+    "A vector space may have many bases. For instance, in the plane any two non-parallel vectors form one.",
+    "Sorting algorithms differ in their worst case. For example, quicksort degrades to quadratic time on sorted input.",
+    "Not every ring has unique factorisation. As an example, consider the integers extended by the square root of minus five.",
+    "Many functions are not expressible in the simply typed calculus. For instance, the fixed-point combinator has no type.",
+    "A graph can be stored in several ways. For example, an adjacency matrix uses quadratic space.",
+    "Recursion is not always efficient. In this problem we consider a variant that avoids repeated calls.",
+    "Some matrices have no inverse. For instance, any matrix with a zero row is singular.",
+    "Closures capture variables by reference. As an example, a loop variable captured in a callback changes after the loop ends."
+   ],
+   "quiet": [
+    "A vector space may have many bases, and in the plane any two non-parallel vectors form one.",
+    "Sorting algorithms differ in their worst case, and quicksort degrades to quadratic time on sorted input.",
+    "Not every ring has unique factorisation; the integers extended by the square root of minus five are the classic case.",
+    "Many functions are not expressible in the simply typed calculus. For decades, the fixed-point combinator was the standard illustration.",
+    "A graph can be stored in several ways, of which an adjacency matrix is the simplest.",
+    "Recursion is not always efficient. In this library we use a variant that avoids repeated calls.",
+    "Some matrices have no inverse; any matrix with a zero row is singular.",
+    "Closures capture variables by reference. An instance of this class therefore holds a loop variable."
+   ]
+  }
+ ],
+ "predictions": "Two-sentence mathematical or programming passages whose second sentence opens with For instance / For example / As an example / In this problem peak on ' instance'/' example'/'In' at 0.1-0.4. The same passages with the example joined by 'and', a semicolon or 'For decades' stay under 0.05. The probe's general-science versions scored only 0.12-0.16, so a median above 0.3 is unlikely.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'for instance' opener in exposition",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'For example, the Arctic tern' 0.156, 'In particular, the Arctic tern' 0.137, 'For instance, a steel rail' 0.119, 'As an example, consider' 0.035 (sentence-initial); controls 'For years' 0.008, 'This example shows' 0.011, 'an instance of the class' 0.028, floor 0.016-0.023. Card: ' example' x7, ' instance' x3, 'In' in 'For instance, in three dimensions', 'As an example, the fact that', 'In this problem we consider' (max 11.5, layer 24, density 0.33%): the card's contexts are mathematics and CS exposition, which the probe did not use."
+}

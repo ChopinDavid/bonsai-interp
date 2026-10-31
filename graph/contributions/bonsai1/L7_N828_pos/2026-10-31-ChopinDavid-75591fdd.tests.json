@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-75591fdd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N828+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N828",
+   "pole": "+",
+   "label": "The piece that completes a word or fixed phrase whose ending was already predictable from its beginning (repro|ducible, Beh|ney, Bhag|avad, Bachelor of| Arts, non-to|xic): the model is finishing something it has already recognised; whole-token twins and unpredictable splits (irre|ducible) stay low",
+   "fire": [
+    "The experiment was criticised as irreproducible by two other labs.",
+    "She completed a Master of Fine Arts at the university in Iowa.",
+    "The commander's indefatigable energy impressed the whole regiment.",
+    "The hermit spent his life reciting the Upanishads.",
+    "In the Mahabharata, Arjuna hesitates before the battle.",
+    "Her father studied at Kearney State College in the 1960s.",
+    "The chemist measured the hemoglobin in each sample.",
+    "He finished his Doctor of Philosophy in 1998."
+   ],
+   "quiet": [
+    "The experiment was criticised as flawed by two other labs.",
+    "She completed a diploma at the university in Iowa.",
+    "The commander's relentless energy impressed the whole regiment.",
+    "The hermit spent his life reciting the scriptures.",
+    "In the epic, the prince hesitates before the battle.",
+    "Her father studied at Kennedy High School in the 1960s.",
+    "The chemist measured the iron in each sample.",
+    "He finished his thesis in 1998."
+   ]
+  }
+ ],
+ "predictions": "Split names and words with a recognisable start (irrepro|ducible, Master of Fine| Arts, indefatig|able, Upanish|ads, Mahabhar|ata, Kear|ney, hem|oglobin, Doctor of| Philosophy) peak on the final piece at 0.3-0.8. Whole-token twins (flawed, diploma, relentless, scriptures, Kennedy, iron, thesis) stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predictable final piece of a split word",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: 'reproducible' 0.767 ('ducible'), 'Behney' 0.677 ('ney'), 'Bachelor of Arts' 0.585 (' Arts'), 'Bhagavad-Gita' 0.419 ('avad'), 'non-toxic' 0.268 ('xic'), 'bake your own' 0.244 (' own'); but 'irreducible' 0.075 (also ends in 'ducible', so the piece alone is not the trigger); whole-token twins 'toxic' 0.037, 'printable' 0.027, 'degree' 0.059. Card: REPRODUC|IBLE, repro|ducible, fabmethe|us, Beh|ney, Chen|ey, Bhag|avad, Non-to|xic, Bachelor of| Arts, BAKE YOUR| OWN (max 3.5, layer 7, density 0.41%)."
+}

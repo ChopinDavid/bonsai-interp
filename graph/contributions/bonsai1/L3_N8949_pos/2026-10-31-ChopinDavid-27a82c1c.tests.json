@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-27a82c1c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N8949+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N8949",
+   "pole": "+",
+   "label": "Dense layer-3 unit (11.5% of tokens above a tenth of its max of 0.56); readings are highest on the noun or verb that completes a set phrase or compound (client application, stand out, pan stand, quart|ier), with a floor near 0.13 on ordinary text",
+   "fire": [
+    "The team shipped a desktop application for editing photos.",
+    "Good design helps a product stand out on a crowded shelf.",
+    "Il habite un petit quartier au nord de Lyon.",
+    "The museum shop sells a wooden stand for tablets.",
+    "Developers submitted the mobile application for review last week.",
+    "Her bright red coat made her stand out in the grey crowd.",
+    "The laptop ships with a Snapdragon chip and a bright screen.",
+    "The new web application loads in under a second."
+   ],
+   "quiet": [
+    "The team shipped a desktop computer for editing photos.",
+    "Good design helps a product sell well on a crowded shelf.",
+    "Il habite une petite maison au nord de Lyon.",
+    "The museum shop sells a wooden box for tablets.",
+    "Developers submitted the mobile game for review last week.",
+    "Her bright red coat kept her warm in the grey crowd.",
+    "The laptop ships with a fast chip and a bright screen.",
+    "The new web page loads in under a second."
+   ]
+  }
+ ],
+ "predictions": "Sentences with 'application', 'stand out', 'stand', 'quartier' or 'Snapdragon' peak at 0.15-0.6 on that word; the rephrased twins (computer, sell well, box, maison, fast chip, web page) score 0.1-0.2 because the unit is dense. Expect several near misses at or above 0.3 relative to max.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; completes a set phrase",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: 'client application' 0.566 (' application'), 'stand out from the group' 0.461 (' stand'), 'quartier' 0.416 ('ier'), 'pan stand' 0.295, 'Snapdragon' 0.143; controls 'sit apart' 0.131, 'fast processor' 0.123, 'cat sat on the warm roof' 0.153. Card: dense flag 11.5%, gate-closed 98%, peaks ' stand' x2, 'ier' x2, 'dragon' x2, ' applications' x2 (max 0.56, layer 3). Registered as dense with a best-guess test."
+}

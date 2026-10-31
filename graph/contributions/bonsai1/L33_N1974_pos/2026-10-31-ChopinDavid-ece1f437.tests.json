@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-ece1f437",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N1974+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N1974",
+   "pole": "+",
+   "label": "In protein biochemistry prose, the position just before a peptide, protein, amine or amino-acid term is named (small| peptides, numerous other| peptide hormones, sulphur-containing| amino acid, pol|ypeptide, mono|amine): the unit anticipates protein-chemistry vocabulary",
+   "fire": [
+    "Insulin is a small protein made of two chains joined by disulphide bonds.",
+    "Trypsin cuts the polypeptide after every lysine or arginine residue.",
+    "Serotonin is a monoamine neurotransmitter derived from tryptophan.",
+    "Collagen is the most abundant structural protein in mammals.",
+    "Methionine is an essential amino acid that starts most polypeptide chains.",
+    "Oxytocin and vasopressin are short peptide hormones released by the pituitary.",
+    "The kinase phosphorylates a serine residue near the carboxyl terminus.",
+    "Ubiquitin is a small regulatory protein that tags other proteins for degradation."
+   ],
+   "quiet": [
+    "Quartz is a hard crystalline mineral made of silicon and oxygen.",
+    "The saw cuts the plank after every third mark on the rail.",
+    "The monorail is a single-track railway raised above the street.",
+    "Basalt is the most abundant volcanic rock on the ocean floor.",
+    "Helium is a noble gas that starts the second column of the periodic table.",
+    "Mercury and Venus are small rocky planets close to the sun.",
+    "The gardener prunes the branches near the top of the hedge.",
+    "A polygon is a closed figure made of straight line segments."
+   ]
+  }
+ ],
+ "predictions": "Sentences about proteins, peptides, amino acids and monoamines peak at 0.3-1.1 on the word before the term (small, structural, essential, short, regulatory, pol-, mono-). Mineral, geological, astronomical and everyday twins, including whole-token polygon and the split monorail, stay under 0.2.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "anticipates peptide/protein terms",
+ "unit_kind": "semantic",
+ "confidence": "high",
+ "notes": "Probe: 'Enkephalins are small peptides' 1.128 (' small'), 'numerous other peptide hormones' 0.893 (' other'), 'sulphur-containing amino acid' 0.566 ('-containing'), 'polypeptide chain' 0.393 (' pol'), 'monoamine transporters' 0.331 ('amine'); 'polycyclic aromatic hydrocarbons' 0.197 (' aromatic'), monorail 0.003, dipole 0.008, 'numerous other projects' 0.000. Card: ' pol'(ycyclic, ypeptide), ' mono'(amine), ' numerous' secondary hormones, ' a' peptide, ' PRO'TEINS, Enkephalins' are', sulphur'-containing', carnosine' di'peptidase (max 230, layer 33, density 0.09%). The - pole peaks on Russian/Arabic ' к'/' ك'."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-dfd6b954",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3180+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N3180",
+   "pole": "+",
+   "label": "A measure noun that heads a quantity phrase and is about to be followed by 'of' (the body's levels of sodium, a large amount of protein, enormous numbers of eggs, high concentrations of lead): the quantity word itself, not the substance measured",
+   "fire": [
+    "Divers must watch the body's levels of nitrogen during a long ascent.",
+    "Volcanic eruptions release huge amounts of sulphur dioxide into the stratosphere.",
+    "The lagoon supports vast numbers of flamingos every winter.",
+    "Blood tests showed high concentrations of lead in the children's blood.",
+    "The reactor consumes small quantities of enriched uranium each year.",
+    "Only a tiny fraction of the seeds survive the first winter.",
+    "Fever raises the body's production of white blood cells.",
+    "The storm dumped record volumes of rain on the coastal towns."
+   ],
+   "quiet": [
+    "Divers must watch the nitrogen in their blood during a long ascent.",
+    "Volcanic eruptions release sulphur dioxide into the stratosphere.",
+    "The lagoon supports flamingos every winter.",
+    "Blood tests showed lead in the children's blood.",
+    "The reactor consumes enriched uranium each year.",
+    "Only the hardiest seeds survive the first winter.",
+    "Fever stimulates white blood cells to multiply.",
+    "The storm dumped heavy rain on the coastal towns."
+   ]
+  }
+ ],
+ "predictions": "Sentences with 'levels/amounts/numbers/concentrations/quantities/fraction/production/volumes of X' peak on that noun at 0.2-0.6. The same sentences with the substance named directly (release sulphur dioxide, supports flamingos) stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "quantity noun before 'of'",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'a large amount of protein' 0.536 (' amount'), \"the body's levels of sodium\" 0.527 (' levels'), 'enormous numbers of eggs' 0.341, 'sufficient quantities of reserves' 0.210, \"the body's release of\" 0.199; the same sentences without the measure noun 0.010-0.031. Card: ' levels', ' quantities' x3, ' numbers', ' amount', ' release', ' discovery' before 'of' (max 8.4, layer 8, density 0.09%)."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-27a82c1c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N8949+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T06:36:37+00:00",
+ "recipe": {
+  "toolchain_commit": "b7577ffb1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N8949_pos/2026-10-31-ChopinDavid-27a82c1c.tests.json"
+ },
+ "label": "Dense layer-3 unit (11.5% of tokens above a tenth of its max of 0.56); readings are highest on the noun or verb that completes a set phrase or compound (client application, stand out, pan stand, quart|ier), with a floor near 0.13 on ordinary text",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N8949_pos/2026-10-31-ChopinDavid-27a82c1c.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.303,
+     "peak": " application"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.139,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.483,
+     "peak": "ier"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.204,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.127,
+     "peak": " application"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.161,
+     "peak": " coat"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.045,
+     "peak": " Snapdragon"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.108,
+     "peak": " application"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.179,
+     "peak": " desktop"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.071,
+     "peak": " design"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.187,
+     "peak": " petite"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.197,
+     "peak": " museum"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.087,
+     "peak": "ers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.161,
+     "peak": " coat"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.039,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.083,
+     "peak": " new"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.648,
+    "median_fire": 0.15,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "b7577ffb1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "dense; completes a set phrase",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: 'client application' 0.566 (' application'), 'stand out from the group' 0.461 (' stand'), 'quartier' 0.416 ('ier'), 'pan stand' 0.295, 'Snapdragon' 0.143; controls 'sit apart' 0.131, 'fast processor' 0.123, 'cat sat on the warm roof' 0.153. Card: dense flag 11.5%, gate-closed 98%, peaks ' stand' x2, 'ier' x2, 'dragon' x2, ' applications' x2 (max 0.56, layer 3). Registered as dense with a best-guess test.",
+ "selection": "random draw"
+}

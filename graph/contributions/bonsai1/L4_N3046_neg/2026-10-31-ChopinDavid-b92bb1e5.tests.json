@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-b92bb1e5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N3046-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N3046",
+   "pole": "-",
+   "label": "A short sub-word piece inside code or an odd spelling (file-mode strings 'wb'/'rb', identifier fragments such as Get|Morgan|Fingerprint, ti.ijk, np.un|r|avel, w|anna), against ordinary prose made of whole-word tokens, which sits at or below zero",
+   "fire": [
+    "with gzip.open(dst, 'wb') as out:\n    out.write(blob)",
+    "buf = np.frombuffer(raw, dtype=np.uint8)",
+    "self.conn.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)",
+    "fp = AllChem.GetMACCSKeysFingerprint(mol)",
+    "idx = np.unravel_index(k, grid.shape)",
+    "gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)",
+    "os.makedirs(outdir, exist_ok=True)",
+    "gonna grab a coffee, wanna come?"
+   ],
+   "quiet": [
+    "The jury returned its verdict after two days.",
+    "She opened the window and let the cold air in.",
+    "The train to Boston leaves every hour on the hour.",
+    "Our neighbours painted their fence a pale shade of blue.",
+    "The bakery sells fresh bread until noon on Sundays.",
+    "He read the letter twice before answering it.",
+    "The river froze solid for the first time in years.",
+    "They planted three apple trees along the back wall."
+   ]
+  }
+ ],
+ "predictions": "Code lines whose identifiers split into fragments peak at 0.3-0.9 on a fragment ('wb', 'buffer', 'sockopt', 'MAC', 'avel', 'cvtColor', 'makedirs', 'na'). Plain prose sentences of whole-word tokens stay under 0.05 (the probe's prose control was -0.263). A tiny-amplitude pole (card max 0.16, broad flag 2.2%).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sub-word pieces in code",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 'GetMorganFingerprintAsBitVect' 0.963 ('organ'), \"open(out_path, 'wb')\" 0.732 ('wb'), 'wanna see' 0.672 ('anna'), \"'wb'\" in f = open 0.578, 'ti.ijk' 0.441, \"'rb'\" 0.440, \"'w'\" 0.381; prose 'The report was written in Boston' -0.263. Card: 'wb' x6, ' Bi' x3, 'organ', 'anna', 'ijk', '_block', 'мет' (max 0.16, layer 4, broad flag, gate-closed 100%). The file mode 'wb' is the commonest peak but 'rb' and 'w' fire almost as much, so the label is the code fragment, not the mode."
+}
