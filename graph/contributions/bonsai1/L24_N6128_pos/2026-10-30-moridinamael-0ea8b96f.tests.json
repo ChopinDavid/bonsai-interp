@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-30-moridinamael-0ea8b96f",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L24/N6128+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:33:31+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "The frequency adverb 'often' (including 'more often than not' and pre-nominal 'often overlooked'); weaker on synonyms, quiet on other frequency words such as rarely, sometimes, seldom, never."
+ },
+ "neighbours": [
+  {
+   "unit": "L24/N6128",
+   "pole": "+",
+   "label": "The word family for 'frequent': 'often', 'common'/'Common', 'frequent(ly)' and their translations (souvent, häufig, よく); quiet on other frequency ideas (rarely, many, every day, prone to).",
+   "fire": [
+    "She often walks to the library after lunch.",
+    "Colds are common in winter, especially among young children.",
+    "He is a frequent visitor to the old harbor café.",
+    "Trains to the coast run frequently on weekends.",
+    "Il pleut souvent en Bretagne au printemps.",
+    "Diese Frage wird häufig gestellt.",
+    "私はよくこの公園で本を読みます。",
+    "Common mistakes include forgetting to save your work."
+   ],
+   "quiet": [
+    "She rarely walks to the library after lunch.",
+    "Colds spread among young children in winter.",
+    "He visits the old harbor café every day.",
+    "Trains to the coast run on weekends.",
+    "Il pleut parfois en Bretagne au printemps.",
+    "Diese Frage wird selten gestellt.",
+    "私は時々この公園で本を読みます。",
+    "Many mistakes involve forgetting to save your work."
+   ]
+  }
+ ],
+ "predictions": "Expect 7-8/8 fire (common and the Japanese may be weaker), near misses under 0.2; rarely/parfois/selten could leak a little.",
+ "trigger": {"words": ["often", "common", "frequent", "frequently", "commonly", "souvent", "häufig"]},
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors"
+  ]
+ }
+}
