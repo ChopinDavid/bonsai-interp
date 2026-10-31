@@ -4,7 +4,7 @@
  "layer": 35,
  "index": 5693,
  "pole": "+",
- "label": "The character 駐 at the start of 駐車場 (parking lot) inside a full Japanese or Chinese sentence saying a hotel, inn, hospital or similar place has a parking lot. 駐 in other words (駐在 'stationed', 駐留, 駐車 as the verb 'to park', as in 'no parking'), other places' facilities without 駐車場, other first characters of two-character words, and a bare one-line list item '無料駐車場' stay low. Known weaker leak: 吉 in 唐吉訶德 (Don Quixote).",
+ "label": "The opening character of a Japanese or Chinese compound word whose remaining characters are nearly forced (拡→拡大, 駐→駐車場, 吉→唐吉訶德, 欺→欺詐), inside longer running text; not short stand-alone phrases",
  "short": null,
  "kind": null,
  "status": "failed",
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-21-moridinamael-1a6e0375"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N5693_pos/2026-10-30-moridinamael-18da9980.tests.json",
+   "prereg_commit": "a90432aba",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.231,
+     "peak": "欺"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.082,
+     "peak": "&"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": -0.12,
+     "peak": "周"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": -0.459,
+     "peak": "会"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.289,
+     "peak": "吉"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.005,
+     "peak": "欺"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": -0.069,
+     "peak": "駐"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": -0.201,
+     "peak": "天"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.357,
+     "peak": "欺"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.668,
+     "peak": "�"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": -0.554,
+     "peak": "駐"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": -0.074,
+     "peak": "唐"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.768,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.709,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.043,
+     "peak": "ix"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.062,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 1,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.797,
+    "median_fire": -0.032,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-18da9980"
   }
  ],
  "label_history": [
@@ -138,18 +260,25 @@
    "2026-10-21-moridinamael-1a6e0375",
    "The character 駐 at the start of 駐車場 (parking lot) inside a full Japanese or Chinese sentence saying a hotel, inn, hospital or similar place has a parking lot. 駐 in other words (駐在 'stationed', 駐留, 駐車 as the verb 'to park', as in 'no parking'), other places' facilities without 駐車場, other first characters of two-character words, and a bare one-line list item '無料駐車場' stay low. Known weaker leak: 吉 in 唐吉訶德 (Don Quixote).",
    "failed"
+  ],
+  [
+   "2026-10-30-moridinamael-18da9980",
+   "The opening character of a Japanese or Chinese compound word whose remaining characters are nearly forced (拡→拡大, 駐→駐車場, 吉→唐吉訶德, 欺→欺詐), inside longer running text; not short stand-alone phrases",
+   "failed"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [
-  "reads bonsai1/L34/N4510+"
+  "reads bonsai1/L34/N4510+",
+  "reads bonsai1/L23/N6033-"
  ],
  "contributors": [
   "moridinamael"
  ],
  "contributions": [
-  "2026-10-21-moridinamael-1a6e0375"
+  "2026-10-21-moridinamael-1a6e0375",
+  "2026-10-30-moridinamael-18da9980"
  ],
  "qc": {
   "confirm": 0,
@@ -159,10 +288,10 @@
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
   "qc": 0
  }
