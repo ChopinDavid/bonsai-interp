@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-a7970e7d",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N10126-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T03:35:53+00:00",
+ "recipe": {
+  "toolchain_commit": "67ffadda5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L32_N10126_neg/2026-10-30-ChopinDavid-a7970e7d.tests.json"
+ },
+ "label": "In verb-final clauses (Korean, German), the object noun or object particle of a schooling or training phrase before its verb (교육을 받다, Schule besuchen, 훈련을 받다, Ausbildung machen); objects of other verbs (eat an apple, write a letter, buy a house) do not carry it",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N10126_neg/2026-10-30-ChopinDavid-a7970e7d.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.687,
+     "peak": "을"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.261,
+     "peak": "을"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.304,
+     "peak": "를"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.458,
+     "peak": "을"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.474,
+     "peak": "ule"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.097,
+     "peak": "bildung"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.139,
+     "peak": " Universität"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.202,
+     "peak": "icht"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.126,
+     "peak": "를"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.054,
+     "peak": "을"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.02,
+     "peak": " �"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": "를"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": "sten"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "isch"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " Haus"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " Mädchen"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.282,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "67ffadda5",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "schooling object before its verb (ko/de)",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: '교육을 받았다' 0.843 ('을'), 'keine Schule besuchen' 0.632 ('ule'), '설문 조사를 실시했다' 0.367 (' 실'), '시험을 치렀다' 0.206, Russian 'Образование он смог получить' 0.020; '사과를 먹었다' 0.004, '책을 읽었다' 0.005, 'den Apfel gegessen' 0.001, English 'received his education in Boston' 0.034, floor 0.005. Card: '을' x10, '를' x4 before 이수하다/진행/받다/수행 (training, survey, education, test), 'Sch|ule besuchen', 'Qualifikationsr|unde bestehen', Arabic ' التي' (max 234, layer 32, density 0.05%); the + pole promotes ' taking', ' attending', ' participating'. Education objects are strongest; survey/test objects are weaker.",
+ "selection": "random draw"
+}
