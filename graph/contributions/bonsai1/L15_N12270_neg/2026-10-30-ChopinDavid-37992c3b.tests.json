@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-37992c3b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N12270-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N12270",
+   "pole": "-",
+   "label": "Human potential as a collective resource that is lost or must be nurtured: human capital, 'our future', lost productivity, wasted or unlocked potential of people",
+   "fire": [
+    "Economists warned that the brain drain amounted to a slow haemorrhage of human capital.",
+    "Every child who dies of malaria is a loss of potential that the whole country pays for.",
+    "These students are the future of the nation, and we cannot afford to waste a single one.",
+    "Chronic illness drains an economy through lost productivity long before it shows up in hospital bills.",
+    "Years of conflict have squandered the talents of an entire generation of young people.",
+    "The scholarship fund exists to nurture the potential of children from poor villages.",
+    "Early retirement of skilled workers represents a real loss of productive capacity for the region.",
+    "The report measured the lost earnings of girls who never finished secondary school."
+   ],
+   "quiet": [
+    "Economists warned that the devaluation amounted to a slow haemorrhage of foreign reserves.",
+    "Every tree that dies of blight is a loss of timber that the whole mill pays for.",
+    "These bonds mature in the future, and we cannot afford to sell a single one early.",
+    "Rust drains a car's value long before the engine shows any sign of trouble.",
+    "Years of drought have emptied the reservoirs of an entire province.",
+    "The repair fund exists to maintain the bridges of the poorer villages.",
+    "Early closure of the mine represents a real loss of tax revenue for the region.",
+    "The report measured the lost rainfall of regions that never recovered from the drought."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.55 (probe: human capital 0.81, potential of a community 0.86, our future 0.61, lost productivity 0.44). Near misses with loss/capital/future/potential in non-human senses <=0.1 (probe <=0.02); 'loss of tax revenue' the likeliest leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "human potential as lost/nurtured resource",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: loss of human capital -38.8, potential life -30.4, our future -28.8, lost productivity -24.6. Probe separated the meaning from the words: financial loss 0.002, capital equipment 0.009, weather future 0.019."
+}

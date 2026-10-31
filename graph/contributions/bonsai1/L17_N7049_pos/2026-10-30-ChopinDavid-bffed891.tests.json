@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-bffed891",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N7049+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N7049",
+   "pole": "+",
+   "label": "Unclear broad unit (4% of tokens above 0.1 of max); best guess: a noun naming a body of text or an unsolved question (documents, references, records, sources, mystery) in expository prose",
+   "fire": [
+    "The archive holds thousands of documents relating to the shipyard.",
+    "Historians still regard the disappearance as an unsolved mystery.",
+    "The footnotes and references fill nearly half of the book.",
+    "Parish records show that the mill was rebuilt twice.",
+    "The missing manuscripts remain a puzzle for scholars.",
+    "These letters are among the few surviving sources for the period.",
+    "The question of who built the tower is still a mystery.",
+    "Court transcripts from the trial were released last year."
+   ],
+   "quiet": [
+    "The warehouse holds thousands of crates belonging to the shipyard.",
+    "Historians still regard the harbour as an important port.",
+    "The gardens and orchards fill nearly half of the estate.",
+    "Parish bells show that the tower was rebuilt twice.",
+    "The missing paintings remain in a vault in Zurich.",
+    "These coins are among the few surviving objects from the period.",
+    "The tower that was built in the ninth century is still standing.",
+    "Court buildings from the trial era were restored last year."
+   ]
+  }
+ ],
+ "predictions": "Weak: fire median ~0.3 (probe documents 0.38, mystery 0.34, cross-references 0.08). Broad unit, so near misses 0.05-0.2 (floor sentence scored 0.19 on ' the'). Likely a fail or a weak hold.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: documents/mystery nouns",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card peaks: documents 5.5, References 5.4, Dipsea, mystery, Mists, Arirang, It, DOM, TOR, Cædmon. Probe: the proper-name openings (DOM 0.05, TOR 0.05, Dipsea 0.19, Mists 0.18) did not transfer; documents/mystery did weakly."
+}

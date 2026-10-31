@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-ChopinDavid-8228839a",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N8768-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T01:32:20+00:00",
+ "recipe": {
+  "toolchain_commit": "a16734dc3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L2_N8768_neg/2026-10-30-ChopinDavid-8228839a.tests.json"
+ },
+ "label": "Dense layer-2 unit (38% of tokens above 0.1 of max); best guess the token ' persons' (formal plural of person), with weak activation on much other text",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N8768_neg/2026-10-30-ChopinDavid-8228839a.tests.json",
+   "prereg_commit": "a16734dc3",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 6,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.789,
+     "peak": " persons"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.678,
+     "peak": " persons"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.031,
+     "peak": " persons"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.837,
+     "peak": " persons"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.802,
+     "peak": " persons"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.728,
+     "peak": " persons"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.736,
+     "peak": " persons"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.998,
+     "peak": " persons"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.282,
+     "peak": " cold"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.305,
+     "peak": " premises"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.479,
+     "peak": " residents"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.418,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.161,
+     "peak": " detectives"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.366,
+     "peak": " patients"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.405,
+     "peak": " houses"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.417,
+     "peak": " parish"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.796,
+    "near_misses_at_0.3": 6
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "a16734dc3",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "dense: token ' persons'",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Card: ' persons' x25 of top 32 but max only 0.40 and gate-closed regime 100%. Trigger declared so coverage is measured exactly.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "persons"
+  ]
+ }
+}

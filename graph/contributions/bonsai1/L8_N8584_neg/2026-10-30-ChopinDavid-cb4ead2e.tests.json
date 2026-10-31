@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-cb4ead2e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N8584-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N8584",
+   "pole": "-",
+   "label": "Wi-Fi wireless-LAN designations: the digits of 802.11x standards, 'Wi-Fi'/'wi-fi'/'WiFi', 'WLAN' and consumer router brands such as Netgear or Linksys",
+   "fire": [
+    "The access point is dual-band and supports 802.11a/b/g/n clients.",
+    "Older tablets with 802.11g radios will connect at a slower rate.",
+    "Hotel wi-fi is free in the lobby but costs extra in the rooms.",
+    "Reset the Netgear router by holding the button for ten seconds.",
+    "Unser Büro hat ein eigenes WLAN für Gäste.",
+    "The new standard, marketed as Wi-Fi 6, is based on 802.11ax.",
+    "A Linksys WRT54G was the most hacked router of its era.",
+    "Turn off the WiFi radio to save battery on long flights."
+   ],
+   "quiet": [
+    "The docking station is dual-output and supports HDMI 2.1 monitors.",
+    "Older tablets with USB 2.0 ports will charge at a slower rate.",
+    "Hotel parking is free in the garage but costs extra at the kerb.",
+    "Reset the Canon printer by holding the button for ten seconds.",
+    "Unser Büro hat einen eigenen Drucker für Gäste.",
+    "The new standard, marketed as USB4, is based on Thunderbolt 3.",
+    "A Nokia 3310 was the most popular phone of its era.",
+    "Turn off the GPS radio to save battery on long flights."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.6 (probe: 802.11ac 1.02, 802.11n 0.84, wi-fi 0.52, Netgear 0.49, WLAN 0.46). Other hardware specs (USB, HDMI, printers, phones) <=0.05 (probe USB 0.04, IEEE 1394 0.03); 'GPS radio' the likeliest leak (Ethernet scored 0.15).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Wi-Fi / 802.11 / WLAN designations",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Card: 802.11 digits -35 to -26, Netgear -23, W-LAN -23, wi-fi -21.5. The pole is specific to wireless LAN, not to IEEE numbering or connectivity in general."
+}

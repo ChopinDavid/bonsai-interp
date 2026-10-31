@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3541be29",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N7087+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:20:12+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N7087",
+   "pole": "+",
+   "label": "Late Roman Empire under barbarian pressure: 3rd-5th century AD invasions, raids and the fall of the West (Goths, Vandals, Saxons, Franks, Huns), peaking just before an invader, emperor or date is named",
+   "fire": [
+    "In 406 the Rhine froze and the Vandals, Alans and Suebi poured into Gaul.",
+    "The Western Empire finally fell in 476 when Odoacer deposed the last emperor.",
+    "Stilicho spent his career holding back the Goths on the frontiers of Italy.",
+    "Britain was left to fend off the Picts and Saxons after the legions withdrew in 410.",
+    "The Ostrogoths under Theodoric took Ravenna from Odoacer in 493.",
+    "Aurelian walled the city of Rome in the 270s as Germanic raids grew bolder.",
+    "The Franks crossed the lower Rhine and settled in Toxandria in the 4th century.",
+    "Gaiseric's Vandals sailed from Carthage and plundered Rome in 455."
+   ],
+   "quiet": [
+    "In 52 BC Vercingetorix united the Gauls against Caesar at Alesia.",
+    "The Republic finally ended in 27 BC when Octavian became Augustus.",
+    "Scipio spent his career fighting Carthage in Spain and Africa.",
+    "Britain was conquered by Claudius after the legions landed in AD 43.",
+    "The Normans under William took England from Harold in 1066.",
+    "Trajan built his forum in the 110s as the empire reached its greatest extent.",
+    "The Mongols crossed the Volga and settled on the steppe in the 13th century.",
+    "Drake's fleet sailed from Plymouth and plundered Cádiz in 1587."
+   ]
+  }
+ ],
+ "predictions": "Fire median ~0.45 (probe: Alaric 0.57, Adrianople 0.52, Saxon raiders 0.48, Vandals 0.37; Huns only 0.21). Roman Republic and early Empire twins <=0.1 (Caesar 0.09); medieval and modern invasions <=0.1 (Vikings 0.10, Napoleon 0.01).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "late Roman barbarian invasions",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: barbarian invaders of the Roman Empire 386, barbarian raids since AD 360, invading Sueves 468, Alaric 410, Visigoths destroyed Rome, Saxon raiders 2nd-3rd centuries AD. Peaks fall on ' the', ' Al', ' Car', a space before a date: the unit anticipates the name or date in this period."
+}
