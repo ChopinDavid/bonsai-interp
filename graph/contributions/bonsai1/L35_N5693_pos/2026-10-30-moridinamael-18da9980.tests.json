@@ -1,0 +1,47 @@
+{
+ "contribution": "2026-10-30-moridinamael-18da9980",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N5693+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:10:36+00:00",
+ "neighbours": [
+  {
+   "unit": "L35/N5693",
+   "pole": "+",
+   "label": "The opening character of a Japanese or Chinese compound word whose remaining characters are nearly forced (拡→拡大, 駐→駐車場, 吉→唐吉訶德, 欺→欺詐), inside longer running text; not short stand-alone phrases",
+   "fire": [
+    "因為，正是企業的不誠信，才會産生技術侵權、才會虛假廣告氾濫、才會過度宣傳産品功能、才會對消費者進行欺詐。",
+    "Suica&N'EX套票從2007年3月開賣以來就一直很受歡迎，原本是限機場出發的單程套票(3500円)，因為大受好評，從2010年7月開始推出雙程套票(5500円)。",
+    "由於近年來城市人口不斷增加，市政府決定在車站附近擴建一座大型的駐車場，以緩解周邊道路的交通壓力。",
+    "会社は来年度から海外市場への事業拡大を本格的に進める方針を発表し、現地の社員を大幅に増やす予定だと説明した。",
+    "他小時候最喜歡讀的書是《唐吉訶德》，常常一邊讀一邊模仿主角對著風車揮舞木棍，逗得全家人哈哈大笑。",
+    "警方表示，這個犯罪集團長期利用假冒的投資網站對老年人進行欺詐，涉案金額已經超過三千萬元。",
+    "駅前の駐輪場はいつも満車なので、私は少し遠いけれど公園の横にある無料のスペースに自転車を停めることにしている。",
+    "雖然天氣預報說今天下午會有颱風經過，但是許多遊客仍然堅持前往海邊拍照，讓救生員十分擔心。"
+   ],
+   "quiet": [
+    "欺詐",
+    "拡大",
+    "駐車場",
+    "唐吉訶德",
+    "Because the city's population keeps growing, the government decided to build a large parking garage near the station to ease traffic.",
+    "The company announced it will seriously pursue business expansion into overseas markets starting next fiscal year.",
+    "His favorite childhood book was Don Quixote, and he often imitated the hero by waving a stick at windmills.",
+    "Police said the criminal group used fake investment websites to defraud elderly people of more than thirty million."
+   ]
+  }
+ ],
+ "predictions": "Expect a fail or a weak pass: the pole is sparse and scattered, resident probes were low (0.1-0.3 of max) and bare 拡大 was silent.",
+ "roles": ["reads bonsai1/L23/N6033-"],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "step-down"
+  ]
+ }
+}
