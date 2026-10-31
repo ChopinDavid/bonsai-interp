@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-e092f256",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N7542-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N7542",
+   "pole": "-",
+   "label": "introducing an added difficulty with the words complicate/complication/difficult/harder: 'to complicate matters further', 'to make things even more difficult', 'a further complication is'; the simplify/easier twins and plain 'difficult'/'complicated' as descriptions do not fire",
+   "fire": [
+    "To complicate things further, the ferry timetable changes on public holidays.",
+    "Making matters more difficult, the only bridge into town was closed for repairs.",
+    "To make it even harder, the instructions were printed only in Finnish.",
+    "The real complication is that the two databases use different customer IDs.",
+    "Things were complicated further by a strike at the port.",
+    "To make matters more difficult, the grant money arrives in a different currency.",
+    "A further complication arose when the lead actor fell ill a week before opening.",
+    "To complicate the picture, the earlier survey counted part-time staff as well."
+   ],
+   "quiet": [
+    "To simplify things, the ferry timetable is the same every day of the year.",
+    "Making matters easier, a second bridge into town opened last month.",
+    "To make it simpler, the instructions were printed in four languages.",
+    "The real advantage is that the two databases share the same customer IDs.",
+    "The difficult climb took the group most of the morning.",
+    "The grant application form was long and complicated.",
+    "The lead actor recovered in time for a difficult opening night.",
+    "The earlier survey was simpler, counting only full-time staff."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.5-0.9 peaking on 'licate', ' difficult', ' complication' or ' harder'; simplify/easier twins 0.1-0.25, descriptive difficult/complicated under 0.15. 'To simplify matters' (0.239 in the probe) is the near miss most likely to leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "adding a complication",
+ "unit_kind": "contextual",
+ "confidence": 0.7,
+ "notes": "Card: 'To make things even more difficult' (-11.9), 'To comp|licate it further', 'To complicate things further', 'A complication is that', 'To complicate matters further', 'not avoiding the question'; the + pole suppresses ' challenge', ' difficult'. Probe: complicate matters further 0.821, make things even more difficult 0.905, a further complication 0.548; 'Adding to the confusion' 0.044 (the meaning without the word does not fire); 'To simplify matters' 0.239, 'make things easier' 0.132, 'helpful feature' 0.022, 'exam was difficult' 0.014, 'complicated recipe' 0.147."
+}

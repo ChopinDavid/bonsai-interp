@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-d42b27cf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N10511+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N10511",
+   "pole": "+",
+   "label": "a single-letter Х/х token opening a Russian word that the tokenizer splits (Х|арьков, х|рам, х|имия), and likewise a Latin H attached to a slash or hyphen (/H|urt, -h|is); whole-token words that contain х (холод, плохо, хотя) do not count",
+   "fire": [
+    "Поезд в Харьков отправляется каждое утро в восемь часов.",
+    "Студенты сдавали экзамен по химии в большой аудитории.",
+    "Старый храм на берегу реки был отреставрирован прошлым летом.",
+    "Она купила свежего хлеба и вернулась домой к обеду.",
+    "Я сказала ему: Хочу увидеть море этим летом.",
+    "После долгой болезни он стал худой и бледный.",
+    "The story was filed under Angst/Hurt/Comfort and ran to twelve chapters.",
+    "The old scout was called Walks-with-his-dog by the children of the fort."
+   ],
+   "quiet": [
+    "Поезд в Казань отправляется каждое утро в восемь часов.",
+    "Студенты сдавали экзамен по физике в большой аудитории.",
+    "Зимой здесь очень холодно, и река замерзает до весны.",
+    "Она купила свежего молока и вернулась домой к обеду.",
+    "Он сказал, что дела идут плохо, но он не сдаётся.",
+    "Они продолжали работать, хотя было уже поздно.",
+    "The story was filed under Angst and Comfort and ran to twelve chapters.",
+    "The old scout was called Walks with his dog by the children of the fort."
+   ]
+  }
+ ],
+ "predictions": "Russian fire items 0.3-0.5 on ' Х'/' х' (probe: 0.30-0.48), the /H item 0.5-0.6, the -his item uncertain; Russian near misses without a lone Х token under 0.05, Latin ones near 0.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "lone Х/х word-initial token",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: ' Х' x4, ' х' x4, 'Х' x3, '-h' x6, '/H' x4 of the top 32; examples Х|ристианский, Х|отя (after a quote), Х|орошо, H|uddle, /H|umor, h|ats, -h|is. Probe: Хорошо 0.330, Хабаровске 0.295, Христианский 0.433, хвороста/хриплым 0.482; same sentences without Х-words 0.006/0.013; Drama/Humor 0.598; Huddle (' H' after a comma) 0.100; hats 0.003. Plain ' H' barely fires, so the Latin side is restricted to the slash/hyphen forms. A -pole peak on ' h' x18 suggests the two poles split lone-h by context; not tested here.",
+ "trigger": {
+  "tokens": [
+   " Х",
+   " х",
+   "Х",
+   "/H",
+   "-h"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-a0fb3b78",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N974+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N974",
+   "pole": "+",
+   "label": "a capitalized common word in title-case position mid-sentence ('the Future of Work', 'the Appropriations Committee'), strongest on the first piece of a multi-token one; the same words in lower case do not fire",
+   "fire": [
+    "The report, titled the Future of Work, was released on Monday.",
+    "He served on the Agriculture Committee and later on the Appropriations Subcommittee.",
+    "The exhibition on the Decline of the Roman Empire drew record crowds.",
+    "Her lecture on the Foundations of Modern Chemistry was well attended.",
+    "They published Formal Guidelines for the Prevention of Infection last year.",
+    "The debate over the Separation of Powers continues in the courts.",
+    "The museum's gallery on the Origins of Democracy reopened in May.",
+    "The conference on the Governance of Artificial Intelligence ended on Friday."
+   ],
+   "quiet": [
+    "The report, about the future of work, was released on Monday.",
+    "He served on the agriculture committee and later on the appropriations subcommittee.",
+    "The exhibition on the decline of the Roman Empire drew record crowds.",
+    "Her lecture on the foundations of modern chemistry was well attended.",
+    "They published formal guidelines for the prevention of infection last year.",
+    "The debate over the separation of powers continues in the courts.",
+    "The museum's gallery on the origins of democracy reopened in May.",
+    "The conference on the governance of artificial intelligence ended on Friday."
+   ]
+  }
+ ],
+ "predictions": "Weak layer-3 unit (max 2.0, 1.8% of tokens at 0.1 max): fire items spread 0.1-0.8 depending on whether the capitalized word splits (Appropri 0.78, Future 0.42, Monarch 0.14); lowercase twins under 0.1. Likely fewer than 8 fire items clear 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "title-case common word",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: ' Future' (the Future of Electric Vehicles), ' Democr'acies, ' McC'owan, ' Appropri'ations, 'En' in listMoisEn, ' Formal', ' Ej'ército, Cyrillic ' Н'/' Хо', ' Danger'. Probe: 'the Appropriations Committee' 0.782, 'the Future of Public Transport' 0.417, Ejército 0.257, Monarchies 0.138, McCallister 0.030; lowercase twins 0.024-0.070; floor 0.005. Proper names (McCallister) did not fire, so the test uses title-cased common words."
+}

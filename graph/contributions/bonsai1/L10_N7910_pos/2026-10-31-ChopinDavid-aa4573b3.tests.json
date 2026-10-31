@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-aa4573b3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L10/N7910+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L10/N7910",
+   "pole": "+",
+   "label": "the domain token of a URL-shortener link (bit.ly, goo.gl, tinyurl.com), as opposed to an ordinary full-domain web address",
+   "fire": [
+    "Tickets for the gala are on sale now at http://bit.ly/3Rt7Wq2",
+    "The recording of yesterday's lecture is at bit.ly/lecture14 for anyone who missed it.",
+    "Full results and photos: http://bit.ly/9Kq2pLm",
+    "To sign up for the newsletter visit http://goo.gl/Tz8mN4 and enter your email.",
+    "The map of the route is posted at tinyurl.com/riverwalk2024 for the volunteers.",
+    "Our quarterly report is available here: https://bit.ly/2zQ4Hn8",
+    "You can download the form at http://goo.gl/fKd92c before the deadline.",
+    "The survey takes two minutes: tinyurl.com/parksurvey"
+   ],
+   "quiet": [
+    "Tickets for the gala are on sale now at https://www.cityopera.org/tickets",
+    "The recording of yesterday's lecture is at https://lectures.university.edu/week14 for anyone who missed it.",
+    "Full results and photos: http://www.marathonresults.net/2024",
+    "To sign up for the newsletter visit https://news.gardenclub.org and enter your email.",
+    "The map of the route is posted at https://maps.trailvolunteers.org for the volunteers.",
+    "She replied warmly and friendly to every email, no matter how late it arrived.",
+    "The bill is likely to pass the senate early next week.",
+    "The survey takes two minutes and is hosted at https://forms.parkdistrict.gov/survey"
+   ]
+  }
+ ],
+ "predictions": "bit.ly items 0.8-1.0 on '.ly', goo.gl 0.5-0.7 on '.gl', tinyurl 0.3-0.5 on 'url'; ordinary domains under 0.1 and the -ly words near 0.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "URL-shortener domain",
+ "unit_kind": "lexical",
+ "confidence": 0.75,
+ "notes": "Card: '.ly' x12 (all bit.ly), '.com' x5, ' link' x2, '://' x2; every top example is a bit.ly link. Probe: http://bit.ly/... 0.965, bit.ly/springwebinar 0.864, 'Services such as bit.ly' 0.857, goo.gl 0.657 (peak '.gl'), tinyurl.com 0.445 (peak 'url'), ow.ly 0.326; docs.example.com 0.042, 'friendly' 0.006, no-URL floor 0.005. The pole generalises beyond the '.ly' token to other shortener domains, so the label is the shortener, not the token; the tinyurl items are the weak end.",
+ "trigger": {
+  "tokens": [
+   ".ly",
+   ".gl",
+   "url"
+  ]
+ }
+}

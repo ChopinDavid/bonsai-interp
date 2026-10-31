@@ -1,0 +1,60 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-6eb4a968",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L2/N1810-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L2/N1810",
+   "pole": "-",
+   "label": "a diacritic-letter token (ō, ā, ī, ū, ín, án, ṅ) inside a romanized proper name (Taishō, Efraín, Mazatlán, Nīšāpūr); the plain spellings, and accented Spanish words that are whole tokens (está, año), do not fire",
+   "fire": [
+    "The temple of Hōryū-ji holds some of the oldest wooden buildings in the world.",
+    "The merchant district of Kyōto was rebuilt after the fires of the Ōnin war.",
+    "The poet Nārāyaṇa composed hymns to the sun god Sūrya.",
+    "The island of Sāmoa was divided between Germany and the United States in 1899.",
+    "Pilgrims gathered at the Sāñcī stupa for the spring festival.",
+    "The Chūō line runs from Tokyo station westward through Shinjuku.",
+    "The town of Tehuacán lies in the dry south of the state of Puebla.",
+    "The poet Joaquín Pasos was born in Granada, Nicaragua."
+   ],
+   "quiet": [
+    "The temple of Horyuji holds some of the oldest wooden buildings in the world.",
+    "The merchant district of Kyoto was rebuilt after the fires of the Onin war.",
+    "The poet Narayana composed hymns to the sun god Surya.",
+    "The island of Samoa was divided between Germany and the United States in 1899.",
+    "La estación está cerrada hasta el próximo año por obras.",
+    "The Chuo line runs from Tokyo station westward through Shinjuku.",
+    "The town of Tehuacan lies in the dry south of the state of Puebla.",
+    "El café de la esquina abre temprano cada día de la semana."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.7-1.0 on the diacritic token; plain-spelling twins 0.1-0.35 (Nishapur 0.343 was the highest), Spanish whole-token accents under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "diacritic piece in a romanized name",
+ "unit_kind": "lexical",
+ "confidence": 0.75,
+ "notes": "Card: 'ō' x8, 'ā' x6, 'án' x3, 'ín' x2, 'ṅ' x1 of the top 32, all inside transliterated names (Śaṅkara, Taishō, Efraín, Heijōkyō, Lavín, Fārsnāma, Nīšāpūr, Mazatlán, Tōgō). Probe: Taishō 1.000, Efraín 0.946, Mazatlán 0.831, Śaṅkara 0.798, Nīšāpūr 0.767; Taisho 0.172, Efrain 0.114, Nishapur 0.343, 'próximo año' 0.139. Layer-2, broad flag (2.4% of tokens at 0.1 max).",
+ "trigger": {
+  "pieces": [
+   "ō",
+   "ā",
+   "ī",
+   "ū",
+   "ín",
+   "án",
+   "ṅ",
+   "ṇ"
+  ]
+ }
+}
