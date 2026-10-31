@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c46867a6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N8149+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N8149",
+   "pole": "+",
+   "label": "Python deep-learning framework code: model definitions and training calls in keras, tensorflow or torch (keras.Model, tf.nn, nn.Module, optimizer.step)",
+   "fire": [
+    "import tensorflow as tf\n\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(128, activation='relu'),\n    tf.keras.layers.Dropout(0.2),\n    tf.keras.layers.Dense(10)\n])\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy')",
+    "import torch\nimport torch.nn.functional as F\n\nclass Net(torch.nn.Module):\n    def forward(self, x):\n        x = F.relu(self.conv1(x))\n        return F.log_softmax(self.fc(x.view(-1, 320)), dim=1)",
+    "from keras.layers import Embedding, LSTM\n\nmodel.add(Embedding(vocab_size, 64, input_length=maxlen))\nmodel.add(LSTM(32, return_sequences=False))\nmodel.fit(x_train, y_train, epochs=5, batch_size=64)",
+    "    with tf.variable_scope('decoder'):\n        outputs, state = tf.nn.seq2seq.attention_decoder(dec_inputs, enc_state, cell)\n        logits = tf.matmul(outputs[-1], W) + b",
+    "import torch.nn as nn\n\nencoder = nn.TransformerEncoderLayer(d_model=512, nhead=8)\noutput = encoder(src)\nloss = nn.CrossEntropyLoss()(output.view(-1, 512), target.view(-1))",
+    "def build_model(input_shape):\n    inputs = keras.Input(shape=input_shape)\n    x = keras.layers.Conv2D(32, 3, activation='relu')(inputs)\n    outputs = keras.layers.GlobalAveragePooling2D()(x)\n    return keras.Model(inputs, outputs)",
+    "optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)\nfor epoch in range(10):\n    optimizer.zero_grad()\n    loss = criterion(model(inputs), labels)\n    loss.backward()\n    optimizer.step()",
+    "    cell = tf.contrib.rnn.BasicLSTMCell(num_units=256)\n    outputs, _ = tf.nn.dynamic_rnn(cell, embedded, sequence_length=lengths, dtype=tf.float32)\n    return tf.reduce_mean(outputs, axis=1)"
+   ],
+   "quiet": [
+    "import sqlite3\n\nconn = sqlite3.connect('orders.db')\ncur = conn.cursor()\ncur.execute('SELECT id, total FROM orders WHERE total > ?', (100,))\nrows = cur.fetchall()",
+    "import json\nimport logging\n\nclass Config:\n    def load(self, path):\n        with open(path) as fh:\n            self.data = json.load(fh)\n        logging.info('loaded %d keys', len(self.data))",
+    "from flask import Flask, request\n\napp = Flask(__name__)\n\n@app.route('/submit', methods=['POST'])\ndef submit():\n    name = request.form['name']\n    return f'Hello {name}'",
+    "    with open('report.csv', 'w', newline='') as fh:\n        writer = csv.writer(fh)\n        writer.writerow(['date', 'count'])\n        writer.writerows(records)",
+    "import re\n\npattern = re.compile(r'\\d{4}-\\d{2}-\\d{2}')\ndates = pattern.findall(text)\nprint(sorted(set(dates)))",
+    "def parse_args():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('--port', type=int, default=8080)\n    parser.add_argument('--verbose', action='store_true')\n    return parser.parse_args()",
+    "import threading\nimport queue\n\njobs = queue.Queue()\nfor url in urls:\n    jobs.put(url)\nworkers = [threading.Thread(target=crawl, args=(jobs,)) for _ in range(4)]",
+    "import numpy as np\n\ngrid = np.zeros((10, 10))\ngrid[2:5, 3:7] = 1\ntotal = grid.sum(axis=0)\nprint(total.max())"
+   ]
+  }
+ ],
+ "predictions": "8/8 fire with a median above 0.5 (keras 0.92, tf.nn 0.64, torch 0.42 in probe). Non-ML Python (sqlite, flask, csv, argparse) should stay under 0.05; the numpy near miss is the one that might register.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "keras/tensorflow/torch code",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: tokens inside keras/tensorflow/torch code (' keras', '.seq', tf.nn, nn.Module, '=' in layer kwargs). Probe: keras Input/Dense/Model 0.921, tf.nn.rnn_cell/dynamic_rnn 0.642, torch nn.Module/LSTM 0.417; os/shutil 0.007, requests 0.009, pandas 0.012, prose 'trained with Keras' 0.075, SQL 0.004. Fire items are multi-line passages (one-line snippets score low on code poles)."
+}

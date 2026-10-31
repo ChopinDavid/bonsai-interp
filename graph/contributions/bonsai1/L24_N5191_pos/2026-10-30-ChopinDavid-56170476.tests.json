@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-56170476",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N5191+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N5191",
+   "pole": "+",
+   "label": "the act of searching for something (searches/searching X for Y, .find and re.search in code), as against having found it (found, discovered, recovered)",
+   "fire": [
+    "Rescue teams are searching the valley for two hikers who missed their check-in.",
+    "The new tool searches your inbox for attachments larger than ten megabytes.",
+    "Customs officers searched every container for undeclared cigarettes.",
+    "    hits = [line for line in log if line.find('timeout') != -1]\n    return hits",
+    "Librarians spent the morning searching the stacks for a misplaced folio.",
+    "The crawler searches each page for links and queues them for later.",
+    "    m = re.search(r'id=(\\d+)', url)\n    if m:\n        return m.group(1)",
+    "Detectives are still searching for the van seen outside the bank."
+   ],
+   "quiet": [
+    "Rescue teams found two hikers in the valley an hour after sunrise.",
+    "The new tool compresses attachments larger than ten megabytes in your inbox.",
+    "Customs officers seized undeclared cigarettes from a container on Tuesday.",
+    "    log.sort()\n    return log[:10]",
+    "Librarians discovered the misplaced folio on a trolley in the basement.",
+    "The crawler stores each page it downloads and records the time.",
+    "    url = url.replace('http://', 'https://')\n    return url",
+    "Detectives recovered the van seen outside the bank from a canal."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire with a median near 0.35; 'searches ... for' forms strongest (0.86 in probe), code .find/.search 0.29-0.31. The 'found/discovered/recovered' twins should stay under 0.10 (0.061 in probe); the code near misses may register weakly since any directory listing scored 0.37.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "searching, not finding",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: '.find', '.search', ' searches', ' find', ' Search', 'find /usr/src -name', os.listdir in prose and code; the negative pole peaks on ' found'. Probe: 'searches every drive for Windows system files' 0.855, 'searching the woods for the missing boy' 0.299, 'text.find' 0.310, 'os.listdir' comprehension 0.294 but plain 'sorted(os.listdir(path))' 0.374 (listing leaks), 'look up' 0.125, 'deletes every temporary file' 0.206; 'found the missing boy' 0.061, 'read the definition' 0.031. The distinction is searching versus the result; code near misses here avoid listing and filtering."
+}

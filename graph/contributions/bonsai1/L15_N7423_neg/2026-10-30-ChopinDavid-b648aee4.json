@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-b648aee4",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N7423-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T04:34:51+00:00",
+ "recipe": {
+  "toolchain_commit": "d3067319c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N7423_neg/2026-10-30-ChopinDavid-b648aee4.tests.json"
+ },
+ "label": "a sample or ingredient passing through a chain of preparation steps (extracted by, diluted into, resuspended and centrifuged, strained and reduced) in lab protocols and recipes",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N7423_neg/2026-10-30-ChopinDavid-b648aee4.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.67,
+     "peak": " buffer"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.403,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.211,
+     "peak": " into"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.243,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.217,
+     "peak": " then"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.09,
+     "peak": "one"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.168,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.154,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.033,
+     "peak": " cells"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.028,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.027,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.04,
+     "peak": " packets"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.091,
+     "peak": " placed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.028,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.031,
+     "peak": " was"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.214,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3067319c",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "stepwise sample preparation",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: max 10.94; peaks on the token after a processing step ('extracting these compounds from the plant tissue by', 'diluted into suspensions', 'lipid extract is first separated by', 'lysed in a homogenizer.', 'softened in butter', 'tossed with a bit of sugar', 'come together in stages'). Probe: 'pellet is resuspended in cold buffer and centrifuged' 0.377, 'blanched ... then drained and chopped' 0.156, 'separated by column chromatography' 0.083, 'Whisk the butter into the warm sauce' 0.010; twins 0.017-0.076. Fire items follow the protocol register (passive chains) rather than imperative recipes.",
+ "selection": "random draw"
+}

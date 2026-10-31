@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-8745b9bb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N3798-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N3798",
+   "pole": "-",
+   "label": "a means framed as a way or method of doing something (a low-cost method to measure, a quick way for nurses to check, designed to provide, a tool for)",
+   "fire": [
+    "The app gives farmers a cheap way to track rainfall on their own fields.",
+    "Scientists now have a reliable method to date the charcoal from the hearth.",
+    "The grant was designed to provide small theatres with a steady income.",
+    "The questionnaire is used as a simple tool for teachers to spot dyslexia early.",
+    "A rope ladder offers an easy means of reaching the loft without a staircase.",
+    "The new lane was built to give cyclists a safer route into town.",
+    "Sand filters are a low-cost way for villages to clean drinking water.",
+    "The kit is intended as a quick way to test soil for lead."
+   ],
+   "quiet": [
+    "The app shows farmers how much rain fell on their own fields last night.",
+    "Scientists dated the charcoal from the hearth to the ninth century.",
+    "The grant paid small theatres a steady income for three years.",
+    "Teachers spotted the dyslexia early thanks to the questionnaire.",
+    "The loft is reached by a rope ladder because there is no staircase.",
+    "Cyclists use the new lane into town because it is safer.",
+    "Villages with sand filters have cleaner drinking water.",
+    "The kit found lead in the soil within a few minutes."
+   ]
+  }
+ ],
+ "predictions": "Likely to fail: the probe peaked at 0.208 ('a quick, reliable way for nurses to check balance') and the twin without the means framing still scored 0.129. Expect 2-3/8 fire and a median under 0.20.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "a way or method to",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card: broad (1.5%), max 7.25, no single token; the examples share means/method framing ('a low-cost method to conduct', 'can be used as a quick, reliable and easy way for clinicians', 'designed to provide ... with', 'other methods of administration', 'what to work on and how to do it') with noise ('heraldic', 'dewormers', 'alphabetically'). Probe: 'quick, reliable way for nurses to check balance' 0.208, 'a low-cost method to measure traffic flow' 0.131, 'designed to provide chemists with' 0.070, 'advantages over liquid washes' 0.053; twins 0.045-0.129. Registered as the best guess for an unclear pole."
+}

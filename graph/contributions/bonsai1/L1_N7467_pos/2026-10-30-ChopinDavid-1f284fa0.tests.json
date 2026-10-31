@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1f284fa0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N7467+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N7467",
+   "pole": "+",
+   "label": "layer-1 token detector for ' worth', ' tutors', ' groups' and ' territories': the token itself in any context (net worth, worth fighting for, volunteer tutors, focus groups)",
+   "fire": [
+    "The old coins are worth far more than their face value today.",
+    "Private tutors charge about forty dollars an hour in the city.",
+    "The study divided the patients into three groups by age.",
+    "Spain lost most of its overseas territories in the nineteenth century.",
+    "It is worth remembering that the bridge took twelve years to build.",
+    "The school hires tutors for pupils who fall behind in maths.",
+    "Small discussion groups met after the lecture to argue the point.",
+    "The northern territories were governed from a distant capital."
+   ],
+   "quiet": [
+    "The old coins are valued far above their face value today.",
+    "Private teachers charge about forty dollars an hour in the city.",
+    "The study divided the patients into three cohorts by age.",
+    "Spain lost most of its overseas colonies in the nineteenth century.",
+    "It is useful to remember that the bridge took twelve years to build.",
+    "The school hires coaches for pupils who fall behind in maths.",
+    "Small discussion circles met after the lecture to argue the point.",
+    "The northern provinces were governed from a distant capital."
+   ]
+  }
+ ],
+ "predictions": "6-8/8 fire with a median near 0.5 (worth 0.52-0.70, tutors 0.76, groups 0.49 in probe). The pole is dense (13.8% of tokens reach 0.1 of a tiny 0.17 max), so the synonym twins will register at 0.13-0.30 and one or two may cross 0.30; ' territories' is untested in the probe.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "tokens worth/tutors/groups",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Card: FLAG dense (13.8% of tokens at 0.1 of max, max 0.17), echo regime 100%; peaks ' worth' x8, ' tutors' x3, ' territories' x2, ' TOTAL' x2, ' groups'. Probe: 'net worth' 0.701, 'volunteer tutors' 0.760, 'is worth more than' 0.515, 'focus groups' 0.486; twins 'valued at' 0.289, 'savings ... went public' 0.298, 'volunteer teachers' 0.130, 'focus sessions' 0.225. Trigger declared so coverage is measured exactly; the dense flag means the test may still fail on near-miss leaks even if the tokens fire.",
+ "trigger": {
+  "words": [
+   "worth",
+   "tutors",
+   "groups",
+   "territories"
+  ]
+ }
+}

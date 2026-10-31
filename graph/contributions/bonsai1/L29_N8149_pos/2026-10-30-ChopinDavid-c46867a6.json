@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-c46867a6",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N8149+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T04:33:51+00:00",
+ "recipe": {
+  "toolchain_commit": "d3067319c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N8149_pos/2026-10-30-ChopinDavid-c46867a6.tests.json"
+ },
+ "label": "Python deep-learning framework code: model definitions and training calls in keras, tensorflow or torch (keras.Model, tf.nn, nn.Module, optimizer.step)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N8149_pos/2026-10-30-ChopinDavid-c46867a6.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.521,
+     "peak": " ="
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.344,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.792,
+     "peak": " return"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.737,
+     "peak": ".seq"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.56,
+     "peak": "output"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.666,
+     "peak": " keras"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.223,
+     "peak": "),"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.654,
+     "peak": ".nn"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.005,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": "d"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.06,
+     "peak": " ="
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": " '"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.033,
+     "peak": "{"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.016,
+     "peak": "('--"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.05,
+     "peak": " queue"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": "\n\n"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.607,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3067319c",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "keras/tensorflow/torch code",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: tokens inside keras/tensorflow/torch code (' keras', '.seq', tf.nn, nn.Module, '=' in layer kwargs). Probe: keras Input/Dense/Model 0.921, tf.nn.rnn_cell/dynamic_rnn 0.642, torch nn.Module/LSTM 0.417; os/shutil 0.007, requests 0.009, pandas 0.012, prose 'trained with Keras' 0.075, SQL 0.004. Fire items are multi-line passages (one-line snippets score low on code poles).",
+ "selection": "random draw"
+}

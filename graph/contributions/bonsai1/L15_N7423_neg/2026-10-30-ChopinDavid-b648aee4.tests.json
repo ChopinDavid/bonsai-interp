@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b648aee4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N7423-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N7423",
+   "pole": "-",
+   "label": "a sample or ingredient passing through a chain of preparation steps (extracted by, diluted into, resuspended and centrifuged, strained and reduced) in lab protocols and recipes",
+   "fire": [
+    "After harvesting, the cells are lysed in detergent buffer and the lysate is cleared by spinning at full speed.",
+    "The pigment was extracted from the dried petals by shaking with warm ethanol overnight.",
+    "The supernatant is diluted into fresh medium and filtered through a 0.2 micron membrane.",
+    "Once cooled, the stock is strained, skimmed of fat and reduced by half over a low flame.",
+    "Ground seeds are soaked in cold water, then the slurry is pressed through muslin to collect the milk.",
+    "The precipitate was washed twice with acetone and dried under vacuum before weighing.",
+    "Mince the shallots finely, sweat them in butter, then deglaze the pan with the white wine.",
+    "Each fraction was concentrated by evaporation and redissolved in a small volume of buffer."
+   ],
+   "quiet": [
+    "The cells grew to confluence in three days and looked healthy under the microscope.",
+    "The dried petals keep their colour for about a year if stored away from light.",
+    "The fresh medium is kept in the fridge and lasts about two weeks.",
+    "The stock tasted rich and salty and the guests asked for the recipe.",
+    "The seeds are sold in small paper packets at the market every Saturday.",
+    "The sample weighed four grams and was labelled and placed in the cabinet.",
+    "The shallots were sweet and the white wine was a little too cold.",
+    "The buffer bottle was nearly empty, so we ordered another case."
+   ]
+  }
+ ],
+ "predictions": "4-5/8 fire, median near 0.2: lab-protocol passives scored 0.377 in the probe but the recipe forms only 0.010-0.156. Near misses that keep the sample and drop the processing should stay under 0.10.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "stepwise sample preparation",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: max 10.94; peaks on the token after a processing step ('extracting these compounds from the plant tissue by', 'diluted into suspensions', 'lipid extract is first separated by', 'lysed in a homogenizer.', 'softened in butter', 'tossed with a bit of sugar', 'come together in stages'). Probe: 'pellet is resuspended in cold buffer and centrifuged' 0.377, 'blanched ... then drained and chopped' 0.156, 'separated by column chromatography' 0.083, 'Whisk the butter into the warm sauce' 0.010; twins 0.017-0.076. Fire items follow the protocol register (passive chains) rather than imperative recipes."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-56170476",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N5191+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T04:34:34+00:00",
+ "recipe": {
+  "toolchain_commit": "d3067319c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L24_N5191_pos/2026-10-30-ChopinDavid-56170476.tests.json"
+ },
+ "label": "the act of searching for something (searches/searching X for Y, .find and re.search in code), as against having found it (found, discovered, recovered)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N5191_pos/2026-10-30-ChopinDavid-56170476.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.431,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.65,
+     "peak": " searches"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.121,
+     "peak": " searched"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.18,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.384,
+     "peak": " searching"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.671,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.22,
+     "peak": ".search"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.259,
+     "peak": " searching"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.127,
+     "peak": " found"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.014,
+     "peak": " your"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " container"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.039,
+     "peak": ".sort"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.069,
+     "peak": "io"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.033,
+     "peak": " downloads"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": ".replace"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.057,
+     "peak": "Detect"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.322,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3067319c",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "searching, not finding",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: '.find', '.search', ' searches', ' find', ' Search', 'find /usr/src -name', os.listdir in prose and code; the negative pole peaks on ' found'. Probe: 'searches every drive for Windows system files' 0.855, 'searching the woods for the missing boy' 0.299, 'text.find' 0.310, 'os.listdir' comprehension 0.294 but plain 'sorted(os.listdir(path))' 0.374 (listing leaks), 'look up' 0.125, 'deletes every temporary file' 0.206; 'found the missing boy' 0.061, 'read the definition' 0.031. The distinction is searching versus the result; code near misses here avoid listing and filtering.",
+ "selection": "random draw"
+}

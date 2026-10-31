@@ -1,0 +1,160 @@
+{
+ "id": "2026-10-30-ChopinDavid-1f284fa0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N7467+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T04:34:22+00:00",
+ "recipe": {
+  "toolchain_commit": "d3067319c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L1_N7467_pos/2026-10-30-ChopinDavid-1f284fa0.tests.json"
+ },
+ "label": "layer-1 token detector for ' worth', ' tutors', ' groups' and ' territories': the token itself in any context (net worth, worth fighting for, volunteer tutors, focus groups)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L1_N7467_pos/2026-10-30-ChopinDavid-1f284fa0.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.581,
+     "peak": " worth"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.776,
+     "peak": " tutors"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.223,
+     "peak": " age"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.658,
+     "peak": " territories"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.456,
+     "peak": " worth"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.535,
+     "peak": " tutors"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.327,
+     "peak": "Small"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.609,
+     "peak": " territories"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.259,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.423,
+     "peak": " teachers"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.165,
+     "peak": " into"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.223,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.224,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.233,
+     "peak": " hires"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.325,
+     "peak": "Small"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.099,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.898,
+    "median_fire": 0.558,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3067319c",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "tokens worth/tutors/groups",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Card: FLAG dense (13.8% of tokens at 0.1 of max, max 0.17), echo regime 100%; peaks ' worth' x8, ' tutors' x3, ' territories' x2, ' TOTAL' x2, ' groups'. Probe: 'net worth' 0.701, 'volunteer tutors' 0.760, 'is worth more than' 0.515, 'focus groups' 0.486; twins 'valued at' 0.289, 'savings ... went public' 0.298, 'volunteer teachers' 0.130, 'focus sessions' 0.225. Trigger declared so coverage is measured exactly; the dense flag means the test may still fail on near-miss leaks even if the tokens fire.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "worth",
+   "tutors",
+   "groups",
+   "territories"
+  ]
+ }
+}

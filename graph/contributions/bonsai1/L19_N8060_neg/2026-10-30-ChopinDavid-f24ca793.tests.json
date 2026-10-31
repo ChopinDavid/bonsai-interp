@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f24ca793",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N8060-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N8060",
+   "pole": "-",
+   "label": "the earliest origin of a thing in history: first described in an ancient source, oldest known, pioneering, introduced in <year>, founded in <year>",
+   "fire": [
+    "The condition was first described in one of the earliest surviving Egyptian papyri.",
+    "This dish appears in the oldest known cookbook, written in Rome in the fourth century.",
+    "His pioneering voyage opened the route that later explorers followed for a century.",
+    "The technique was first mentioned in a Chinese treatise on silk from the Han period.",
+    "The game was introduced in 1891 and spread through the colleges within a decade.",
+    "The word is first recorded in a monastery chronicle of the ninth century.",
+    "Her early experiments laid the foundation for everything that came after.",
+    "The order was founded in 1098 by a group of monks who left a richer abbey."
+   ],
+   "quiet": [
+    "The condition is described in the second chapter of the modern textbook.",
+    "This dish appears on the menu of the small café near the station.",
+    "His latest voyage took the yacht around the island in three days.",
+    "The technique is mentioned briefly in the instructions that come with the kit.",
+    "The game was played in the garden on Sunday until it got dark.",
+    "The word is used mainly in the north and sounds odd to southerners.",
+    "Her recent experiments were published in the spring issue of the journal.",
+    "The abbey was repainted in 2018 by a team of local volunteers."
+   ]
+  }
+ ],
+ "predictions": "Likely to fail or hold weakly: in the probe only 'first described in a Persian medical text' reached 0.261 (peaking on ' medical'); 'introduced in 2009', 'ended by the Treaty' and 'In 1920' scored 0.008-0.060. Expect 2-4/8 fire and a median under 0.20; near misses under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "historical first origin",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: 'first described in one of the oldest books', 'introduced in 2008 after the publication of a white paper', 'war was ended by the Treaty of Westminster', 'His pioneering journey', 'In 1957, the EEC', 'Augsburg Confession of 1530', plus code noise (SELinux, ARM7TDMI). Probe: 'first described in a Persian medical text from the tenth century' 0.261 (peak ' medical'), 'described in detail in chapter four' 0.148, others 0.002-0.060 including 'founded in 1887 by two brothers' 0.002. The test leans on earliest/oldest/pioneering framing, the only configuration that registered."
+}
