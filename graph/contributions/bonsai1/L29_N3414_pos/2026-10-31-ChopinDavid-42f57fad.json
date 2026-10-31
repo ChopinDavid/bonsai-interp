@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-42f57fad",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N3414+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T07:33:07+00:00",
+ "recipe": {
+  "toolchain_commit": "96a23feac",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N3414_pos/2026-10-31-ChopinDavid-42f57fad.tests.json"
+ },
+ "label": "a numeric rate or threshold inside a statistics statement: the digits of 'tax rate of 22 percent', 'no more than 9.4% of births', 'at least 34 weeks', 'less than 2500 grams'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N3414_pos/2026-10-31-ChopinDavid-42f57fad.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.109,
+     "peak": "1"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.123,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.521,
+     "peak": "2"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.612,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.075,
+     "peak": " per"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.119,
+     "peak": "6"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.413,
+     "peak": "9"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.443,
+     "peak": " least"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.029,
+     "peak": "Under"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " possible"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.16,
+     "peak": " small"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.125,
+     "peak": " taxed"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.012,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.067,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " among"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.155,
+     "peak": " born"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.812,
+    "median_fire": 0.268,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "96a23feac",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "numeric rate or threshold",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: peaks ' federal' (52, effective federal income tax rate of 20), '9' (9.6% of live births, tax rate was 90%), ' fetal', 'Mer|zen|ich', 'Seraf|et|inides', 'Ф|ет|исов'. Probe: federal tax rate of 22 percent 0.495 (peak '2'), preterm births 9.4% 0.425 (peak '9'), tax rate 70% 0.309, 32 weeks 0.252; Fetal 0.607, Fetisov 0.413; Marie 0.071; bakery 0.021, library 9 pm 0.022. Two components (rate digits in statistics, and the 'Fet' spelling); the test takes the numeric-rate reading and leaves the spelling as an uncovered second trigger.",
+ "selection": "random draw"
+}

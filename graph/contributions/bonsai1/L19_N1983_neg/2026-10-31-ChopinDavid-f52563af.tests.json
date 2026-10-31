@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-f52563af",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N1983-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N1983",
+   "pole": "-",
+   "label": "the end-of-line token ('.\\n', '.\"\"\"\\n') that closes a sentence inside a Python comment or docstring with code following; the same sentences as prose, and code without comments, are the other side (the + pole takes '.\\n' in prose)",
+   "fire": [
+    "import json\n\n# Load the config once at import time. Later calls reuse the cached dict.\n_config = json.load(open('config.json'))\n\ndef get(key):\n    return _config[key]",
+    "def normalize(v):\n    \"\"\"Return the unit vector in the direction of v. A zero vector is returned unchanged.\"\"\"\n    n = np.linalg.norm(v)\n    if n == 0:\n        return v\n    return v / n",
+    "    for item in queue:\n        # Skip entries that were already processed in the previous pass.\n        if item.done:\n            continue\n        handle(item)",
+    "class Cache(object):\n    \"\"\"A tiny LRU cache. Entries expire after `ttl` seconds.\"\"\"\n\n    def __init__(self, ttl=60):\n        self.ttl = ttl\n        self.store = {}",
+    "    # The server may send a partial frame first. Wait for the rest before parsing.\n    buf += sock.recv(4096)\n    if len(buf) < FRAME_LEN:\n        return None",
+    "import logging\n\nlog = logging.getLogger(__name__)\n\n# Set DEBUG here to see every request. The default is far too noisy for production.\nlog.setLevel(logging.INFO)",
+    "def retry(fn, times=3):\n    \"\"\"Call fn until it succeeds. The last exception is re-raised after `times` failures.\"\"\"\n    for i in range(times):\n        try:\n            return fn()\n        except Exception:\n            if i == times - 1:\n                raise",
+    "    # Rows are sorted by timestamp, so the first match is the earliest. Stop there.\n    for row in rows:\n        if row.id == target:\n            return row"
+   ],
+   "quiet": [
+    "Load the config once at import time. Later calls reuse the cached dictionary.\nThe helper then looks up each key.",
+    "Return the unit vector in the direction of v. A zero vector is returned unchanged.\nThe norm is computed first.",
+    "import json\n\n_config = json.load(open('config.json'))\n\ndef get(key):\n    return _config[key]",
+    "def normalize(v):\n    n = np.linalg.norm(v)\n    if n == 0:\n        return v\n    return v / n",
+    "The server may send a partial frame first. Wait for the rest before parsing.\nOnly then is the frame decoded.",
+    "class Cache(object):\n    def __init__(self, ttl=60):\n        self.ttl = ttl\n        self.store = {}",
+    "Rows are sorted by timestamp, so the first match is the earliest. Stop there.\nThe remaining rows are ignored.",
+    "    for row in rows:\n        if row.id == target:\n            return row\n    return None"
+   ]
+  }
+ ],
+ "predictions": "Weak in short snippets: the probe's comment/docstring endings scored 0.10-0.22, so fire items are expected at 0.1-0.3 and most will miss the threshold; prose and comment-free code under 0.08. Longer passages are used in case the unit needs more code context.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "sentence end inside a code comment",
+ "unit_kind": "contextual",
+ "confidence": 0.3,
+ "notes": "Card: '.\\n' x10, ' \"\"\"\\n' x7 of the top 32, all closing a comment or docstring sentence in Python ('ALWAYS specify a \"-std=<something>\".\\n', 'like shown here.\\n#sys.path.insert', 'the current event.\\n'); the + pole peaks on '.\\n' x19 in prose. Probe: docstring '.\"\"\"\\n' 0.215, comment '.\\n' 0.104 and 0.112, indented comment 0.027; prose twins 0.021-0.039, comment-free code 0.030-0.074. Direction supported, amplitude low."
+}

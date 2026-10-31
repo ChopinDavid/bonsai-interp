@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-9836a339",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N5374+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L19/N5374",
+   "pole": "+",
+   "label": "a reference back to an origin or earlier state in historical prose ('once known as', 'its founder', 'grown from', 'prior to that', 'had elapsed from the night'), as opposed to a description of the present state",
+   "fire": [
+    "The abbey was rebuilt twice after fires. It still keeps the charter granted by its founder, a Norman knight.",
+    "The regiment fought in both world wars. Before 1881 it had been known as the 43rd Foot.",
+    "The town now has a university and an airport. It has grown from a fishing hamlet of three hundred souls in 1820.",
+    "The firm makes turbines today. Prior to that it manufactured sewing machines in a shed by the canal.",
+    "The bridge carries six lanes of traffic. Its original span, built of timber in 1790, was swept away in a flood.",
+    "Several weeks had passed from the night of the raid before anyone was charged.",
+    "The chapel was endowed by his old patron, the Duke of Weimar, in the year of his death.",
+    "Reykjavik is the capital today. The Althing once met at Thingvellir, in the open air."
+   ],
+   "quiet": [
+    "The abbey has a gift shop and a café. It welcomes about ninety thousand visitors every year.",
+    "The regiment is based near Salisbury. It currently has about six hundred soldiers.",
+    "The town now has a university and an airport. It is the largest settlement on the northern coast.",
+    "The firm makes turbines today. Its factory employs most of the workers in the valley.",
+    "The bridge carries six lanes of traffic. Its deck is inspected every spring.",
+    "The raid took place at night and the police arrived within minutes.",
+    "The chapel is open to visitors every afternoon except Monday.",
+    "Reykjavik is the capital today. The parliament meets in a stone building by the lake."
+   ]
+  }
+ ],
+ "predictions": "The probe refuted this reading in single sentences (all nine sentences, including copies of the top examples, scored 0.004-0.123), so the test is expected to fail; two-sentence historical passages are used in case the unit needs document context. Fire items probably 0.05-0.2, near misses similar.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "origin / earlier-state reference",
+ "unit_kind": "unclear",
+ "confidence": 0.15,
+ "notes": "Card: ' from' (Eight weeks had elapsed from the night), ' old' (his old patron), ' founder' x2, ' from' (grown from 360 in 19..), ' as' (once known as), ' of' (son of Dharma), ' are' (before 1917 are referred to as), ' in' (made in the traditional way); the - pole promotes ' new' and suppresses ' earlier'. Probe: once known as 0.004, grown from 0.042, its founder 0.123, before 1917 0.046, prior to the arrival 0.032; present-state twins 0.016-0.045. Max 11.3, density 0.19%. Hypothesis not supported; reported as a best guess at low confidence."
+}

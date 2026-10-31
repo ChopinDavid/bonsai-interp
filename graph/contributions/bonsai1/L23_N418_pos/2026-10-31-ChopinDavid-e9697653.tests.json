@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-e9697653",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N418+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N418",
+   "pole": "+",
+   "label": "the character '性' as its own token, i.e. the abstract suffix -性 (-ness/-ity: 重要性, 协调性, ニュース性); '性' fused into a longer token (性别, 性格, 可能性, 安全性) does not count",
+   "fire": [
+    "各部门之间缺乏协调性，导致项目进度一再推迟。",
+    "新材料的敏感性较强，必须在低温环境下保存。",
+    "该条目的中立性存在争议，请补充更多来源。",
+    "这种药物的成瘾性很低，可以长期服用。",
+    "企业的适应性决定了它能否在市场变化中生存。",
+    "气候变化是一个全球性问题，需要国际合作。",
+    "彼の作品は芸術性が高く評価されている。",
+    "この番組は話題性があるので視聴率が高い。"
+   ],
+   "quiet": [
+    "申请表上需要填写姓名、年龄和性别。",
+    "她的性格温和，从不与人争吵。",
+    "这款手机的性能比上一代提升了很多。",
+    "我们必须考虑计划失败的可能性。",
+    "产品的安全性是消费者最关心的问题。",
+    "这项工作的性质决定了员工需要经常加班。",
+    "这部小说深刻地描写了人性的复杂。",
+    "女性员工在公司管理层中的比例逐年上升。"
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.4-0.9 peaking on the lone '性' token; near misses whose 性 sits inside a fused token stay 0.08-0.25 (性质 0.244 in the probe is the risk).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "suffix 性 as own token",
+ "unit_kind": "lexical",
+ "confidence": 0.7,
+ "notes": "Card: '性' x19 of the top 32 peaks (營業性質, ニュース性, 地区性, 协调性, 适应性, 中立性, 成瘾性, 敏感性), plus Japanese 'に' x12. Probe: 协调性 0.489, ニュース性 0.799 (lone '性' tokens); fused tokens 性质 0.244, 性的 0.111, 性格 0.124, 性别 0.154, 男性/女性 0.095; floor 0.078, Japanese に 0.137. Tokenizer: 重要性/敏感性/适应性/全球性/個性 split off '性'; 可能性, 安全性, 性能, 性质, 人性, 个性, 性别, 性格, 男性, 女性 are single tokens.",
+ "trigger": {
+  "pieces": [
+   "性"
+  ]
+ }
+}

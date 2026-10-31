@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-6e923cee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N6074+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N6074",
+   "pole": "+",
+   "label": "the head noun that closes a risk-or-requirement compound in health advice ('malaria-risk regions', 'daily protein needs', 'high-exposure jobs')",
+   "fire": [
+    "Travellers heading into dengue-risk areas should pack long sleeves and repellent.",
+    "Most adults can cover their daily calcium needs with two servings of dairy.",
+    "Workers in high-exposure jobs must be told what solvents they are handling.",
+    "Children in flood-prone districts should be taught to recognise warning sirens.",
+    "Athletes rarely meet their daily iron needs without eating red meat or supplements.",
+    "Patients in high-risk groups are offered the vaccine before the general public.",
+    "Keep pets out of tick-infested fields during the warmer months.",
+    "Older adults should check their weekly fibre intake and adjust their diet."
+   ],
+   "quiet": [
+    "Travellers heading into the mountains should pack long sleeves and a warm hat.",
+    "Most adults enjoy two servings of dairy with their breakfast.",
+    "Workers in the factory must be told when the shift pattern changes.",
+    "Children in the district should be taught to swim before the age of ten.",
+    "Athletes rarely eat red meat on the morning of a race.",
+    "Patients in the waiting room are offered tea before the appointment.",
+    "Keep pets indoors during the fireworks on New Year's Eve.",
+    "Older adults should check their letters and reply to the council."
+   ]
+  }
+ ],
+ "predictions": "Weak unit (max 9.4): fire items 0.15-0.35, near misses under 0.1. Likely fails the 0.3 threshold; recorded as a best guess.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "health-advice compound head",
+ "unit_kind": "unclear",
+ "confidence": 0.2,
+ "notes": "Card: no single token; heads of compound noun phrases in expository prose (telepresence systems, high dynamic range photography, daily fiber needs, Zika-risk places, seed market, Type 2 Diabetes). Probe: malaria-risk regions 0.308, daily protein needs 0.231, pesticide market 0.158, conferencing systems 0.088, astrophotography 0.039, warmest on record 0.059; floors 0.03-0.06. Only the risk/needs compounds in advice reached 0.2+, so the test targets that frame."
+}

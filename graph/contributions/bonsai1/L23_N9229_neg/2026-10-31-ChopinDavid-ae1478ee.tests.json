@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-ae1478ee",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N9229-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N9229",
+   "pole": "-",
+   "label": "the perfect auxiliary (has/have) in the result clause that follows an instruction in a how-to ('you'll notice that the stretch has moved', 'you will see that the mixture has started to foam')",
+   "fire": [
+    "Tighten the last bolt and you'll see that the frame has stopped wobbling.",
+    "After the fifth rinse, you will notice that the water has turned clear.",
+    "Leave the dough for an hour and you'll find it has doubled in size.",
+    "Run the test again and you should see that the error has disappeared.",
+    "Press the pedal gently; you'll feel that the clutch has started to bite.",
+    "Once the paint dries, notice how the colour has deepened.",
+    "Reload the page and you'll see that the counter has reset to zero.",
+    "Breathe out slowly and you will notice that your shoulders have dropped."
+   ],
+   "quiet": [
+    "Tighten the last bolt and you'll see that the frame stops wobbling.",
+    "After the fifth rinse, you will notice that the water runs clear.",
+    "Leave the dough for an hour and then shape it into a loaf.",
+    "Run the test again and check the log for errors.",
+    "My neighbour has moved to a flat nearer the station.",
+    "The council has started to repaint the railings along the river.",
+    "The counter on the website has reset to zero overnight.",
+    "Her shoulders have dropped since she began the exercises."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.4-0.6 peaking on ' has'/' have'; instruction frames with the simple present under 0.05; narrative perfects outside a how-to are the real test and may leak to 0.2-0.4.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "has/have in how-to result",
+ "unit_kind": "contextual",
+ "confidence": 0.5,
+ "notes": "Card: 'And with that we've got it - we have calculated' (-66), 'you'll notice that the noodle will', 'The tension has moved up', 'Check that there are', 'Assert we called', 'You have just pulled'; the + pole suppresses have/has/had/'ve. Probe: 'you'll notice that the stretch has moved' 0.591 (peak ' has'), 'you will see that the mixture has started' 0.480 (' has'), 'check that the output folder contains' 0.247 (' that'), 'with that we have found the area' 0.074; instruction without result clause 0.006-0.011, narrative 0.012. The auxiliary carried the activation, so the label names it."
+}

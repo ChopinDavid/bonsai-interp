@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-d1186932",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N10677-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N10677",
+   "pole": "-",
+   "label": "the token ' the' immediately after 'in' ('in the drawer', 'in the Senate'); 'the' after other prepositions fires less (on 0.28, during 0.23, at 0.16) and 'in a' does not",
+   "fire": [
+    "The keys were left in the drawer beside the stove.",
+    "Nobody in the village remembered the old bridge.",
+    "She sat quietly in the back row and listened.",
+    "The company opened a second office in the capital last spring.",
+    "He kept his savings in the bank rather than at home.",
+    "The children played in the garden until it got dark.",
+    "Prices in the supermarket have climbed again this month.",
+    "The painting hung in the hallway for forty years."
+   ],
+   "quiet": [
+    "The keys were left by the stove in a drawer.",
+    "Nobody from the village remembered the old bridge.",
+    "She sat quietly near the back row and listened.",
+    "The company opened a second office near the capital last spring.",
+    "He kept his savings with the bank rather than at home.",
+    "The children played by the garden wall until it got dark.",
+    "Prices at the supermarket have climbed again this month.",
+    "The painting hung in a hallway for forty years."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.40-0.45 on ' the'; near misses with at/by/near/from/with + the 0.1-0.28 (the 'on the' case was 0.28, so a leak near 0.3 is possible), 'in a' and no-preposition sentences under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'the' after 'in'",
+ "unit_kind": "lexical",
+ "confidence": 0.6,
+ "notes": "Card: ' the' x29 of the top 32 peaks, every one directly after 'in'; density 0.86% at 0.1 max. Probe: 'in the Senate' 0.442, 'in the hotel' 0.428, 'in the thirteenth' 0.432; 'on the floor' 0.281, 'during the' 0.234, 'at the' 0.159; 'of the foot' 0.074, no 'the' 0.048-0.074. Layer-1 token-pair unit."
+}

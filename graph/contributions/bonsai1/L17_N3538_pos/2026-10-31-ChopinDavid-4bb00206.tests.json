@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-4bb00206",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N3538+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N3538",
+   "pole": "+",
+   "label": "the past-time baseline of a then-versus-now comparison ('than it did in 2005', 'than they were ten years ago', 'what it sold in 1985'); comparisons across places or groups, and past dates without a comparison, are the other side",
+   "fire": [
+    "The river carries far less water today than it did in the 1970s, when the dam was new.",
+    "Houses here cost roughly three times what they did twenty years ago.",
+    "Fewer students study Latin now than they did in my grandmother's day.",
+    "The orchestra is much larger than it was in 1995, when it had only forty players.",
+    "Our winters are noticeably milder than they were a generation ago.",
+    "The factory produces twice as many cars as it did in 2010.",
+    "Fewer people smoke today than did in the years just after the war.",
+    "The newspaper sells a fraction of the copies it sold in 1985."
+   ],
+   "quiet": [
+    "The river carries far less water than the neighbouring Danube, which is fed by the Alps.",
+    "Houses here cost roughly three times what they do in the villages further north.",
+    "Fewer students study Latin than study Spanish at the same school.",
+    "The orchestra was founded in 1995 with only forty players.",
+    "Our winters are noticeably milder than those on the eastern side of the mountains.",
+    "The factory began producing cars in 2010 and still employs most of the town.",
+    "Fewer people smoke in Sweden than in Greece, according to the survey.",
+    "The newspaper was first printed in 1985 and sold door to door."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.35-0.9 peaking on the year digit or the 'did/were' after 'than'; place-comparison near misses under 0.05; the three plain past-date near misses 0.1-0.25 (probe: 'founded in 2005, when' 0.254).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "then-vs-now past baseline",
+ "unit_kind": "contextual",
+ "confidence": 0.6,
+ "notes": "Card: 'than it was just seven years ago', 'than kids did in 1977', 'than it did in 1968', 'than it was in 1990', 'than it was a few decades ago', 'used to be higher', 'since the Dust Bowl days'; the - pole promotes ' today', ' currently'. Probe: 'than it did in 2005' 0.900, 'than their parents did in the 1980s' 0.661, 'what they were ten years ago' 0.372, 'since the mill closed in the 1990s' 0.277, 'founded in 2005, when' 0.254; 'than they are in the suburbs' 0.040, 'than their peers in the Netherlands' 0.008, 'than the neighbouring city' 0.008, narrative 0.016."
+}

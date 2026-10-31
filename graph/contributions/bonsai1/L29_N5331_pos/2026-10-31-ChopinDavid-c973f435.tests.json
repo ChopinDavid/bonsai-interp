@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-c973f435",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N5331+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N5331",
+   "pole": "+",
+   "label": "the token ' Gulf' in an American place or event name (Gulf of Mexico, Gulf Coast, Gulf War, Gulfport, Gulf of Alaska); lowercase 'gulf' and other coasts, bays and wars do not fire, and the Persian Gulf fires only weakly",
+   "fire": [
+    "Hurricane season keeps insurers along the Gulf Coast nervous every August.",
+    "The rig was drilling in deep water in the Gulf of Mexico when the blowout happened.",
+    "Veterans of the Gulf War gathered in Houston for the anniversary.",
+    "The family drove down to Gulf Shores for a week on the beach.",
+    "Red snapper from the Gulf of Mexico is prized by restaurants in New Orleans.",
+    "A strong earthquake struck the Gulf of Alaska early on Tuesday.",
+    "Students at Gulf Coast State College return to campus next week.",
+    "The oil spill in the Gulf devastated the shrimp fishery for years."
+   ],
+   "quiet": [
+    "Hurricane season keeps insurers along the Atlantic coast nervous every August.",
+    "The rig was drilling in deep water off the coast of Brazil when the blowout happened.",
+    "Veterans of the Korean War gathered in Houston for the anniversary.",
+    "The family drove down to Myrtle Beach for a week on the beach.",
+    "Red snapper from the Caribbean is prized by restaurants in New Orleans.",
+    "A strong earthquake struck the Bay of Biscay early on Tuesday.",
+    "There is a widening gulf between the two parties on tax policy.",
+    "The golf course by the shore was flooded after the storm."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.4-0.9 on ' Gulf'; near misses under 0.25 (Bay of Bengal reached 0.217, lowercase gulf 0.125).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' Gulf' in a US name",
+ "unit_kind": "lexical",
+ "confidence": 0.8,
+ "notes": "Card: ' Gulf' x21 of the top 32 (Gulf Coast, Gulf of Mexico, Gulf of Alaska, Gulf War, Gulfshore, Gulfport). Probe: Gulf of Mexico 0.866, Gulfport 0.734, Gulf Coast 0.512, Gulf War 0.429, Persian Gulf 0.194; lowercase 'a wide gulf between' 0.125 (tokenized g|ulf), Atlantic coast 0.033, North Sea 0.102, Bay of Bengal 0.217.",
+ "trigger": {
+  "words": [
+   "Gulf"
+  ]
+ }
+}

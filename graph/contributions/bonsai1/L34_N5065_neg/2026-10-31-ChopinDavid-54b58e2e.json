@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-54b58e2e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N5065-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T07:35:24+00:00",
+ "recipe": {
+  "toolchain_commit": "96a23feac",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N5065_neg/2026-10-31-ChopinDavid-54b58e2e.tests.json"
+ },
+ "label": "a continuation piece of an all-caps word that the tokenizer splits into several tokens (OR|IENTATION, S|ILE|NT, DEC|ENT|RAL|IZATION, E|ARTH|QU|AKE); the same words in lower or title case, and whole-token acronyms (NASA, USA), do not fire",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N5065_neg/2026-10-31-ChopinDavid-54b58e2e.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.678,
+     "peak": "IENTATION"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.114,
+     "peak": " ON"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.159,
+     "peak": " THE"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.512,
+     "peak": " E"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.277,
+     "peak": "PRETTY"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.19,
+     "peak": " CONF"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.703,
+     "peak": "ILE"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.131,
+     "peak": "_RE"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.219,
+     "peak": ".orientation"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": "ised"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.067,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.055,
+     "peak": "print"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": " front"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.108,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.234,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "96a23feac",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "split all-caps word piece",
+ "unit_kind": "lexical",
+ "confidence": 0.5,
+ "notes": "Card: ' OF' x3, ' E' x4, ' WITH', ' &', peaks inside all-caps headings (DEFINITION OF DECENTRALIZATION, ZONE OF SUPER STRONG), E|ARTHQUAKE, E|-MAIL, OR|IENTATION_VERTICAL, CRC|_SIZE, E|VEN; the + pole also peaks in caps (' SPACE', ' OF', ' YOUR'), so the two poles split all-caps text by something not fully resolved. Probe: gtk.ORIENTATION_HORIZONTAL 0.678 (peak 'IENTATION'), SILENT MODE line 0.260 ('ILE'), LOG_LEVEL_DEFAULT 0.226, ALL ORDERS heading 0.204, A SHORT HISTORY heading 0.056; lowercase twins 0.018-0.138. The split-piece reading fits the strongest probes.",
+ "selection": "random draw"
+}

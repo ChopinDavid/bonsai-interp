@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-42f57fad",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N3414+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T07:20:07+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N3414",
+   "pole": "+",
+   "label": "a numeric rate or threshold inside a statistics statement: the digits of 'tax rate of 22 percent', 'no more than 9.4% of births', 'at least 34 weeks', 'less than 2500 grams'",
+   "fire": [
+    "Under the new rules, the county's property tax rate rose to 1.8 percent of assessed value.",
+    "The hospital aims to keep its caesarean rate below 25% of all deliveries.",
+    "Babies weighing less than 2500 grams at birth are classed as low birth weight.",
+    "In 1965 the top income tax bracket was taxed at 91% in the United States.",
+    "The agency set a goal of reducing infant mortality to no more than 5.5 deaths per thousand births.",
+    "Her effective state income tax rate came to 6.2 percent after deductions.",
+    "Vaccination coverage must reach at least 95% of children to stop measles spreading.",
+    "Premature infants born after at least 34 weeks usually need no breathing support."
+   ],
+   "quiet": [
+    "Under the new rules, the county's property tax rate rose for the first time in a decade.",
+    "The hospital aims to keep its caesarean rate as low as safely possible.",
+    "Babies who are small at birth are watched closely during their first weeks.",
+    "In the sixties the top income tax bracket was taxed very heavily in the United States.",
+    "The agency set a goal of reducing infant mortality across the whole region.",
+    "Her effective state income tax rate came out lower than expected after deductions.",
+    "Vaccination coverage must be very high among children to stop measles spreading.",
+    "Premature infants born only slightly early usually need no breathing support."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.6 peaking on a digit of the rate; near misses with the same topic but a non-numeric quantity stay under 0.1. Risk: the pole also fires on the spelling 'Fet-' (Fetal 0.61, Fetisov 0.41), which this label does not cover, so even a hold is partial.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "numeric rate or threshold",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: peaks ' federal' (52, effective federal income tax rate of 20), '9' (9.6% of live births, tax rate was 90%), ' fetal', 'Mer|zen|ich', 'Seraf|et|inides', 'Ф|ет|исов'. Probe: federal tax rate of 22 percent 0.495 (peak '2'), preterm births 9.4% 0.425 (peak '9'), tax rate 70% 0.309, 32 weeks 0.252; Fetal 0.607, Fetisov 0.413; Marie 0.071; bakery 0.021, library 9 pm 0.022. Two components (rate digits in statistics, and the 'Fet' spelling); the test takes the numeric-rate reading and leaves the spelling as an uncovered second trigger."
+}
