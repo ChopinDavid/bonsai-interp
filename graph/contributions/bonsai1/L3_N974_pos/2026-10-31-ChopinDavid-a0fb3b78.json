@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-a0fb3b78",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N974+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T07:34:15+00:00",
+ "recipe": {
+  "toolchain_commit": "96a23feac",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L3_N974_pos/2026-10-31-ChopinDavid-a0fb3b78.tests.json"
+ },
+ "label": "a capitalized common word in title-case position mid-sentence ('the Future of Work', 'the Appropriations Committee'), strongest on the first piece of a multi-token one; the same words in lower case do not fire",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N974_pos/2026-10-31-ChopinDavid-a0fb3b78.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.383,
+     "peak": " Future"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.492,
+     "peak": " Appropri"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.172,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.106,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.709,
+     "peak": " Formal"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.121,
+     "peak": " Separ"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.087,
+     "peak": " Democracy"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.105,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.037,
+     "peak": " released"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.047,
+     "peak": "committee"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.033,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.05,
+     "peak": " lecture"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.021,
+     "peak": " published"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.029,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.025,
+     "peak": " museum"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.044,
+     "peak": " intelligence"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.146,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "96a23feac",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "title-case common word",
+ "unit_kind": "unclear",
+ "confidence": 0.3,
+ "notes": "Card: ' Future' (the Future of Electric Vehicles), ' Democr'acies, ' McC'owan, ' Appropri'ations, 'En' in listMoisEn, ' Formal', ' Ej'ército, Cyrillic ' Н'/' Хо', ' Danger'. Probe: 'the Appropriations Committee' 0.782, 'the Future of Public Transport' 0.417, Ejército 0.257, Monarchies 0.138, McCallister 0.030; lowercase twins 0.024-0.070; floor 0.005. Proper names (McCallister) did not fire, so the test uses title-cased common words.",
+ "selection": "random draw"
+}

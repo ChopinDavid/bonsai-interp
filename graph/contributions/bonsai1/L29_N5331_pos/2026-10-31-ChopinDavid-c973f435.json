@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-31-ChopinDavid-c973f435",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N5331+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T07:34:58+00:00",
+ "recipe": {
+  "toolchain_commit": "96a23feac",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N5331_pos/2026-10-31-ChopinDavid-c973f435.tests.json"
+ },
+ "label": "the token ' Gulf' in an American place or event name (Gulf of Mexico, Gulf Coast, Gulf War, Gulfport, Gulf of Alaska); lowercase 'gulf' and other coasts, bays and wars do not fire, and the Persian Gulf fires only weakly",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N5331_pos/2026-10-31-ChopinDavid-c973f435.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.388,
+     "peak": " Gulf"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.678,
+     "peak": " Gulf"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.706,
+     "peak": " Gulf"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.763,
+     "peak": " Gulf"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.599,
+     "peak": " Gulf"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.701,
+     "peak": " Gulf"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.747,
+     "peak": " Gulf"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.68,
+     "peak": " Gulf"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.042,
+     "peak": " Atlantic"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.045,
+     "peak": " deep"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.103,
+     "peak": "ans"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.05,
+     "peak": " Caribbean"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.374,
+     "peak": " Bay"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.15,
+     "peak": "ulf"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.03,
+     "peak": " golf"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.691,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "96a23feac",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "' Gulf' in a US name",
+ "unit_kind": "lexical",
+ "confidence": 0.8,
+ "notes": "Card: ' Gulf' x21 of the top 32 (Gulf Coast, Gulf of Mexico, Gulf of Alaska, Gulf War, Gulfshore, Gulfport). Probe: Gulf of Mexico 0.866, Gulfport 0.734, Gulf Coast 0.512, Gulf War 0.429, Persian Gulf 0.194; lowercase 'a wide gulf between' 0.125 (tokenized g|ulf), Atlantic coast 0.033, North Sea 0.102, Bay of Bengal 0.217.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "Gulf"
+  ]
+ }
+}
