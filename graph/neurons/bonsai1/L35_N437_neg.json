@@ -1,0 +1,169 @@
+{
+ "id": "bonsai1/L35/N437-",
+ "model": "bonsai1",
+ "layer": 35,
+ "index": 437,
+ "pole": "-",
+ "label": "a faint, dense background on almost any text (code, prose, Japanese) with no specific trigger, not specific to repeated names",
+ "short": null,
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N437_neg/2026-10-30-moridinamael-5856a28c.tests.json",
+   "prereg_commit": "53c0e5a87",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.308,
+     "peak": " next"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.279,
+     "peak": " add"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.479,
+     "peak": "が"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.222,
+     "peak": " her"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.575,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.294,
+     "peak": " chemical"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.37,
+     "peak": "パン"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.266,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.136,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.149,
+     "peak": "…"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.16,
+     "peak": "—"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.1,
+     "peak": "!"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.152,
+     "peak": "?"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.142,
+     "peak": ";"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.116,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.138,
+     "peak": "-"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.301,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-5856a28c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-moridinamael-5856a28c",
+   "a faint, dense background on almost any text (code, prose, Japanese) with no specific trigger, not specific to repeated names",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [
+  "reads bonsai1/L23/N2165+"
+ ],
+ "contributors": [
+  "moridinamael"
+ ],
+ "contributions": [
+  "2026-10-30-moridinamael-5856a28c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
