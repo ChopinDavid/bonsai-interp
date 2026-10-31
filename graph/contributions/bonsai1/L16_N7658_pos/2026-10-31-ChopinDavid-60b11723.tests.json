@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-60b11723",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N7658+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N7658",
+   "pole": "+",
+   "label": "marriage and betrothal as a social institution (engagement, fiancé, bride and groom, the husband's family, patriarchal custom), as opposed to family or kinship without marriage",
+   "fire": [
+    "Their parents arranged the betrothal when the two were still children, and the wedding followed ten years later.",
+    "By custom the bride moved into her husband's household and worked under her mother-in-law.",
+    "He proposed on the pier at sunset, and she showed off the ring to everyone at the office the next morning.",
+    "The couple announced their engagement in the local paper and set a date for the spring.",
+    "In a patrilineal society the wife's children belonged to her husband's clan, not to her own.",
+    "Grandfather disapproved of the match because the groom's family owned no land.",
+    "After thirty years of marriage they still held hands at the dinner table.",
+    "The dowry was paid in cattle, and the two families feasted together for three days."
+   ],
+   "quiet": [
+    "Their parents arranged piano lessons when the two were still children, and the recitals followed every spring.",
+    "By custom the apprentice moved into the workshop and worked under the master's foreman.",
+    "He arrived on the pier at sunset, and showed off the fish he had caught to everyone at the office the next morning.",
+    "The company announced its earnings in the local paper and set a date for the shareholder meeting.",
+    "In a hunting society the boys learned to track game from their uncles, not from their mothers.",
+    "Grandfather disapproved of the plan because the neighbour's family owned no tractor.",
+    "After thirty years of teaching she still graded essays at the dinner table.",
+    "The rent was paid in cash, and the two tenants cleaned the hallway together on Sundays."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.4-1.0 on the marriage word or the kin word after it; family-without-marriage and other-sense 'engagement' twins under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "marriage / betrothal context",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'patriarchal society ... her own husband' 1.007, 'engagement and upcoming marriage' 0.634, 'married woman kept close ties with her own lineage ... husband's village' 0.580, fiancée 0.578, 'lived with the husband's family' 0.457; 'second date to the cinema' 0.316 (courtship leaks); employee engagement 0.005; grandmother baking 0.012."
+}

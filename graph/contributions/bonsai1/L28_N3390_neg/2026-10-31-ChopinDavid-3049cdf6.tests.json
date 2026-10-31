@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-3049cdf6",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N3390-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N3390",
+   "pole": "-",
+   "label": "the ':\\n' token ending a block header (if, else, for, with, def, try) in indented Python; statement-ending ')\\n', newlines inside an open bracket, XML tag ends and prose newlines do not fire",
+   "fire": [
+    "class Loader:\n    def read(self, path):\n        with open(path) as fh:\n            for line in fh:\n                if line.startswith('#'):\n                    continue\n                yield line",
+    "def merge(a, b):\n    out = {}\n    for key in a:\n        if key in b:\n            out[key] = a[key] + b[key]\n        else:\n            out[key] = a[key]\n    return out",
+    "    def save(self):\n        try:\n            self.conn.commit()\n        except Exception:\n            self.conn.rollback()\n            raise",
+    "def walk(node):\n    while node is not None:\n        if node.left:\n            walk(node.left)\n        node = node.right",
+    "class Server:\n    def handle(self, req):\n        if req.method == 'GET':\n            return self.get(req)\n        elif req.method == 'POST':\n            return self.post(req)",
+    "def main():\n    for i in range(3):\n        for j in range(3):\n            if i == j:\n                print(i)",
+    "    def close(self):\n        if self.sock is None:\n            return\n        with self.lock:\n            self.sock.close()\n            self.sock = None",
+    "def check(items):\n    total = 0\n    for item in items:\n        if item.ok:\n            total += 1\n    return total"
+   ],
+   "quiet": [
+    "    fh = open(path)\n    lines = fh.readlines()\n    fh.close()\n    return lines",
+    "    out = merge(\n        a,\n        b,\n        strict=True,\n    )\n    print(out)",
+    "    conn.commit()\n    conn.close()\n    log.info('saved')",
+    "    <server>\n        <host>localhost</host>\n        <port>8080</port>\n    </server>",
+    "    config = dict(\n        name='srv',\n        port=8080,\n    )",
+    "    total = 0\n    total += len(items)\n    total *= 2\n    return total",
+    "    sock.close()\n    sock = None\n    lock.release()",
+    "The loader reads the file line by line.\nIt skips comments.\nThen it yields each line."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.6 on a ':\\n' token of a nested block header; quiet items (no block header) under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "block-header colon-newline",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'if new_shape is None:\\n' 0.443, 'with ops.device(device):\\n' 0.370; XML '/>\\n' 0.059; ')\\n' statement end 0.033; open-paren continuation 0.010 and 0.006; prose newlines 0.017; one-line 'if x is None: x = 1' 0.001. Card tops (200-292) are deeply indented headers; the + pole is the newline inside an open bracket."
+}

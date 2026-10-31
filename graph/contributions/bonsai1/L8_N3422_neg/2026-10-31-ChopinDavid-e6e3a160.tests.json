@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-e6e3a160",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3422-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N3422",
+   "pole": "-",
+   "label": "a news-headline line (title-case or verbless headline) followed by body text: peaks at the headline's verb ('Says') or its closing newline; the same content as an ordinary sentence with a full stop does not fire",
+   "fire": [
+    "Council Approves New Bike Lanes Despite Protests From Shop Owners\nThe vote passed six to three after a heated debate.",
+    "READ MORE: Record number of seals counted on the east coast\nThe survey was carried out by volunteers in May.",
+    "Scientists Say Coral Reefs Could Recover If Warming Slows\nThe study tracked reefs in three oceans for a decade.",
+    "Rising rents push young families out of the city centre\nEstate agents reported a sharp fall in first-time buyers.",
+    "Minister Says Rail Strike Will Not Delay The New Timetable\nUnion leaders responded within hours.",
+    "Local bakery wins national award for sourdough loaf\nThe owner credited a starter that is forty years old.",
+    "Flood warnings issued for towns along the lower valley\nResidents were told to move cars to higher ground.",
+    "Mayor Discusses Plans For The Old Harbour At Public Meeting\nAround two hundred people attended."
+   ],
+   "quiet": [
+    "The council approved the new bike lanes despite protests from shop owners.\nThe vote passed six to three after a heated debate.",
+    "A record number of seals was counted on the east coast this year.\nThe survey was carried out by volunteers in May.",
+    "Scientists said that coral reefs could recover if warming slows.\nThe study tracked reefs in three oceans for a decade.",
+    "Rising rents are pushing young families out of the city centre.\nEstate agents reported a sharp fall in first-time buyers.",
+    "The minister said the rail strike would not delay the new timetable.\nUnion leaders responded within hours.",
+    "A local bakery won a national award for its sourdough loaf.\nThe owner credited a starter that is forty years old.",
+    "Flood warnings were issued for towns along the lower valley.\nResidents were told to move cars to higher ground.",
+    "The mayor discussed plans for the old harbour at a public meeting.\nAround two hundred people attended."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.25-0.65 on 'Says'/'on' inside the headline or on its ending newline; full-sentence twins under 0.05. Very short headlines may score low (probe: 'Judge Discusses Work of Court' 0.081).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "news headline line",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'But Numerous Economic Experts Say We Have A Revenue Problem\\n' 0.650 on ' Say', 'READ MORE: Population of Scotland's islands on the rise\\n' 0.590 on ' on', 'Restoring the peninsula's forests by growing native tree species\\n' 0.403 on '\\n', 'Sonam Kapoor Says ...' 0.399, 'Ocean temperature rises faster ...\\n' 0.256; short 'Judge Discusses Work of Court\\n' 0.081; prose + newline 0.024 and 0.015; floor 0.012. The + pole is the plain newline token."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-75666e64",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N5190+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N5190",
+   "pole": "+",
+   "label": "EU integration and regional-policy context (Member States, cohesion and structural funds, eastern enlargement, the Commission): fires on function tokens inside such prose",
+   "fire": [
+    "Since enlargement, the poorer Member States have drawn heavily on cohesion funds to build roads and rail.",
+    "The Commission's regional policy channels structural funds to lagging regions through multi-annual programmes.",
+    "Convergence between the old and the new Member States slowed after the financial crisis.",
+    "Under the common agricultural policy, direct payments to farmers in eastern Europe were phased in over ten years.",
+    "The Court of Auditors found that rural development grants in the newer members were poorly monitored.",
+    "Freedom of movement let workers from the accession countries take jobs in the older industrial regions.",
+    "Brussels tied the recovery money to reforms in the member countries' judicial systems.",
+    "Along the eastern border, cross-border cooperation programmes paid for bridges and customs posts."
+   ],
+   "quiet": [
+    "Since statehood, the poorer counties have drawn heavily on federal highway money to build roads and rail.",
+    "The governor's regional policy channels state funds to lagging districts through five-year plans.",
+    "Convergence between the coastal and the inland provinces of China slowed after the financial crisis.",
+    "Under the farm bill, direct payments to growers in the Midwest were phased in over ten years.",
+    "The auditor general found that rural development grants in the northern territories were poorly monitored.",
+    "Internal migration let workers from the hill districts take jobs in the older industrial cities.",
+    "Delhi tied the relief money to reforms in the states' police systems.",
+    "Along the southern border, the two neighbouring provinces paid for bridges and customs posts."
+   ]
+  }
+ ],
+ "predictions": "Fire items score 0.4-0.9 on a function word or the word after it; national-policy twins (US federal, India, China) stay under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "EU regional policy context",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'in central and eastern Europe, the new Member States applied for' 0.925, Commission LIFE/structural funds 0.610, EU-15 vs newer Member States 0.596, 'Commission in Brussels ... cohesion budget ... poorer regions of the bloc' 0.721 (meaning without 'EU'/'European'); 'workers from across the EU' only 0.158; Soviet collapse / new republics / World Bank 0.401 (post-communist transition leaks); US federal/state grant 0.004; 'dealer in Europe' 0.022."
+}

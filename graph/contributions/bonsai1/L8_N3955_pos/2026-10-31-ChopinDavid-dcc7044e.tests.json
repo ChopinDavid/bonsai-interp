@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-dcc7044e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N3955+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N3955",
+   "pole": "+",
+   "label": "news-style attribution of a claim to a generic or unnamed expert source ('a recent study shows', 'one analyst says', 'according to a leading astronomer', 'sources say'); named characters' speech in narrative does not fire",
+   "fire": [
+    "Rising sea levels will swamp the delta within decades, according to one climate scientist.",
+    "The merger is unlikely to clear regulators, a banking analyst told the paper.",
+    "Nearly half of the bridges are overdue for repair, a new report finds.",
+    "One former official said the agency had ignored the warnings for years.",
+    "Sleep loss blunts memory even in healthy adults, researchers say.",
+    "The stadium deal makes no financial sense, one economist argues.",
+    "The outbreak likely began in a single market, a health expert says.",
+    "Sources close to the deal say the price could reach two billion."
+   ],
+   "quiet": [
+    "Rising sea levels will swamp the delta within decades, Tom told his daughter on the walk home.",
+    "The merger is unlikely to clear regulators, she muttered to herself at the bus stop.",
+    "Nearly half of the bridges are overdue for repair, the sign on the gate warned.",
+    "My uncle said the shop had ignored the complaints for years.",
+    "Sleep loss blunts memory, Anna reminded her brother at breakfast.",
+    "The stadium deal makes no sense, Grandpa grumbled over his newspaper.",
+    "We study the outbreak in class every Tuesday and read a chapter aloud.",
+    "Close to the deadline, the price rose to two billion."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.4-0.95 on the source noun or the speech verb; narrative 'Maria said' twins under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unnamed expert attribution",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'one industry insider' 0.959, 'As one NFL scout said' 0.930, 'One analyst says' 0.829, 'a hypertension specialist says' 0.806, 'A recent study shows' 0.780, 'according to a leading astronomer' 0.490; 'Maria said she would be late' 0.022; 'I study chemistry' 0.061; floor 0.016."
+}

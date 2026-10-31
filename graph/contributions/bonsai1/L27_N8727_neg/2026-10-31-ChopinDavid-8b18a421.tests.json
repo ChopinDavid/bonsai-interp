@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-8b18a421",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N8727-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N8727",
+   "pole": "-",
+   "label": "physical-process description of a material (its surface, pores, grain, mixture or molecule being penetrated, coated, smoothed or broken): the determiner or noun slot naming the material",
+   "fire": [
+    "A sealant fills the tiny pores in the brick so that water cannot soak into the wall.",
+    "Sanding opens the grain of the timber and lets the oil sink into the fibres.",
+    "When the batter rests, the starch absorbs moisture and the mixture thickens.",
+    "Bleach breaks the bonds in the dye molecule and the fabric loses its colour.",
+    "The glaze melts in the kiln and forms a glassy coating over the rough clay.",
+    "Rust forms wherever moisture reaches the bare metal beneath the paint.",
+    "A gentle acid etches the enamel and roughens its surface so the resin can grip.",
+    "The lotion leaves a thin film on the skin that slows the loss of water."
+   ],
+   "quiet": [
+    "A new rule fills the gaps in the contract so that disputes cannot drag into court.",
+    "Training opens the minds of the recruits and lets the ideas sink in over time.",
+    "When the market rests, the bank absorbs losses and the mood thickens with worry.",
+    "The scandal breaks the bonds in the coalition and the party loses its majority.",
+    "The rumour spreads through the school and forms a rough picture of what happened.",
+    "Resentment forms wherever criticism reaches the staff beneath the managers.",
+    "A sharp question tests the witness and roughens the mood so the lawyer can press.",
+    "The lecture leaves a strong impression on the students that slows the loss of interest."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.9 on 'the'/'its' before the material noun or on the noun; the same verbs with abstract or social objects under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "material surface/pore process",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'porous surface, allowing the ink to seep into the pores' 0.830, 'penetrates deep into the pores of the wood' 0.550, 'bubbles within the mixture' 0.464, 'smoothens the surface' 0.446, 'the sugar molecule' 0.417, 'fining agents to clarify their product' 0.264; 'policy smoothens the application' 0.085; 'clarify their position' 0.026; football floor 0.004. Promotes-list shows the pole pushes ' surface', ' structure', ' texture'."
+}

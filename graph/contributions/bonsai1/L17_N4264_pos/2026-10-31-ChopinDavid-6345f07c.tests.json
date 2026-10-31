@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-6345f07c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L17/N4264+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L17/N4264",
+   "pole": "+",
+   "label": "the brand token 'Google' named among software products or services (Google Play, Google Docs); other brands in the same slot do not fire",
+   "fire": [
+    "For email we use Gmail, for files we use Google Drive, and for meetings we use Zoom.",
+    "The school issued Chromebooks and moved every assignment onto Google Classroom.",
+    "Most of the maps in the report were drawn with Google Earth and exported as images.",
+    "You can sign in with Facebook, Twitter, or Google, whichever account you prefer.",
+    "Analytics from Google showed that half of the visitors came from mobile phones.",
+    "The team compared Bing, DuckDuckGo and Google on a hundred test queries.",
+    "Our calendar lives in Google Calendar, and reminders go out through Slack.",
+    "The translation was done with Google Translate and then checked by a native speaker."
+   ],
+   "quiet": [
+    "For email we use Outlook, for files we use Dropbox, and for meetings we use Zoom.",
+    "The school issued iPads and moved every assignment onto Microsoft Teams.",
+    "Most of the maps in the report were drawn with ArcGIS and exported as images.",
+    "You can sign in with Facebook, Twitter, or Apple, whichever account you prefer.",
+    "Analytics from Adobe showed that half of the visitors came from mobile phones.",
+    "The team compared Bing, DuckDuckGo and Yahoo on a hundred test queries.",
+    "Our calendar lives in Outlook, and reminders go out through Slack.",
+    "The translation was done with DeepL and then checked by a native speaker."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.25-0.6 on 'Google'; other brands (Microsoft, Apple, Dropbox) under 0.15. Low-amplitude unit (max 9.75, density 0.7%), so some near misses may leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "brand token 'Google'",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: 'Edmodo, Ning, WordPress, and Google Docs' 0.510 on ' Google'; '- Music streaming (Google Play)' 0.296 on 'Google'; '/etc/pulp' 0.170 on 'etc'; 'state and federal agencies' 0.114; code lines 0.03-0.08; 'Put it in your pocket' 0.023. Card tops are mixed (code, lists); this token is the only repeatable trigger found.",
+ "trigger": {
+  "words": [
+   "Google"
+  ]
+ }
+}

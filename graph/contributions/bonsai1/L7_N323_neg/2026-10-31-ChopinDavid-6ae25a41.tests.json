@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-6ae25a41",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N323-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N323",
+   "pole": "-",
+   "label": "the relative word or participle opening a comma-set-off non-restrictive clause (', which', ', who', ', que', ', qui', ', known as', ', signed in'); restrictive relatives and interrogative which/who do not fire",
+   "fire": [
+    "The bridge, which was built in 1932, carries four lanes of traffic.",
+    "Our neighbour, who keeps bees, brought over a jar of honey.",
+    "The report - which runs to three hundred pages - was published on Monday.",
+    "The method, known as cold pressing, keeps more of the oil's flavour.",
+    "El museo, que abrió en 1990, recibe medio millón de visitantes al año.",
+    "Le maire, qui a été élu en mai, a promis de rénover la gare.",
+    "The treaty, signed in Vienna, ended thirty years of border disputes.",
+    "Her brother, whom she had not seen in years, turned up at the wedding."
+   ],
+   "quiet": [
+    "The bridge that was built in 1932 carries four lanes of traffic.",
+    "The neighbour who keeps bees brought over a jar of honey.",
+    "Nobody knows which report was published on Monday.",
+    "The method known as cold pressing keeps more of the oil's flavour.",
+    "El museo que abrió en 1990 recibe medio millón de visitantes al año.",
+    "Le maire qui a été élu en mai a promis de rénover la gare.",
+    "The treaty signed in Vienna ended thirty years of border disputes.",
+    "She asked who had turned up at the wedding without an invitation."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.7 on the relative word after the comma or dash; restrictive and interrogative twins under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "non-restrictive relative opener",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: ', which includes' 0.657, ', known as backcrossing' 0.657, ', que se pondrá' 0.427, ', who worked' 0.326; 'The man who worked' 0.020, 'Books which include' 0.042, 'I wonder who' 0.012, 'Which of these' 0.010; floor 0.011."
+}

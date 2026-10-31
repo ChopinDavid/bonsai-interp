@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-51ca1eb0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N5454+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N5454",
+   "pole": "+",
+   "label": "the pieces of a word that the tokenizer splits at 'var'/'vari' (var|iances, Vari|ance, vari|ational, vari|ate, in|var|iance, k_var in code); whole-token vari- words (variance, variable, various, variety) do not fire",
+   "fire": [
+    "Each covariate was standardised before the variances were pooled across sites.",
+    "The random variate is drawn once per iteration and reused in both estimators.",
+    "Lorentz invariance requires the equations to look the same in every inertial frame.",
+    "    total_var = np.var(samples, axis=0)\n    print(total_var.shape)",
+    "A variational autoencoder learns a distribution over the latent code rather than a point.",
+    "The Variance class exposes a running estimate that updates with each new sample.",
+    "    for name in ('x_var', 'y_var'):\n        print(cfg[name])",
+    "Unequal variances between the groups violate the assumption behind the t-test."
+   ],
+   "quiet": [
+    "Each sample was standardised before the variance was pooled across sites.",
+    "The random variable is drawn once per iteration and reused in both estimators.",
+    "The equations are invariant under rotation in every inertial frame.",
+    "    total = np.mean(samples, axis=0)\n    print(total.shape)",
+    "A variety of autoencoders learn a code rather than a distribution.",
+    "The Variation class exposes a running estimate that updates with each new sample.",
+    "    for name in ('x_val', 'y_val'):\n        print(cfg[name])",
+    "Various differences between the groups violate the assumption behind the t-test."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.7 on the var piece or the piece after it; single-token twins under 0.2 (variance alone scored 0.195 in the probe, so one near miss may sit near the line).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split 'vari-' word pieces",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: vari|ational 0.690 and 0.606 (peak on 'ational'), 'finite var|iances' 0.632, Vari|ance class 0.458, k_var 0.406, 'var|iances and covariances' 0.330; single-token 'variance ... variables' 0.195; 'various varieties ... variety' 0.022; floor 0.005. Negative pole is the same unit on 'quant' pieces.",
+ "trigger": {
+  "pieces": [
+   "var",
+   "vari",
+   "Vari",
+   "Var"
+  ]
+ }
+}

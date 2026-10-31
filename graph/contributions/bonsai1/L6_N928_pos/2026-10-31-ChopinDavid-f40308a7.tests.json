@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-f40308a7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L6/N928+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L6/N928",
+   "pole": "+",
+   "label": "the token right after a slash in non-URL slash syntax (a digit, dot or backslash: '1989 /08', 'Rs. 2,500/-', '/00', sed '/\\1', '--wiki /.t') and a bare backslash escape or line continuation; the same digits after a hyphen or colon, and slashes inside URLs, do not fire",
+   "fire": [
+    "Date of issue: 2014 /03 /22, valid for five years.",
+    "The fee was fixed at Rs. 2,500/-. It must be paid before the hearing.",
+    "    value = value.replace('/01', '-01')",
+    "sed 's/^\\(.*\\):.*/\\1/' names.txt",
+    "tar czf backup.tgz docs/ \\\n    && echo done",
+    "Run the checker with --config /.local/check.conf from the project root.",
+    "The verse is cited as al-Baqara /255 in the margin.",
+    "    path = base + '/00/' + name"
+   ],
+   "quiet": [
+    "Date of issue: 2014-03-22, valid for five years.",
+    "The fee was fixed at Rs. 2,500. It must be paid before the hearing.",
+    "    value = value.replace('-01', '.01')",
+    "grep -n ':01' names.txt",
+    "tar czf backup.tgz docs && echo done",
+    "Run the checker with --config check.conf from the project root.",
+    "The verse is cited as al-Baqara 2:255 in the margin.",
+    "Visit https://example.org/00/intro for the page."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.8 on the token after the slash or on the backslash; hyphen/colon twins and URL paths under 0.1. Very sparse unit (density 0.009%).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token after non-URL slash",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: sed 's/\\(...\\);/\\1 NOTIFICATION' 0.818 on '\\\\', '('/00', '')' 0.529 on '0', 'done | \\\\' continuation 0.484, '--wiki /.t' 0.432, '1989 /08 /18' 0.422 on '0', 'Rs. 18,91,556/-.' 0.331 on '-.'; '1989-08-18' 0.011; 'http://example.com/08/18' 0.046; floor 0.006."
+}

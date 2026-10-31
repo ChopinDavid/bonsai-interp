@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-efc26ca7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N7135-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N7135",
+   "pole": "-",
+   "label": "the modifier slot in an evaluative 'X is / became / remains a [adj] ___' frame that anticipates an acclaim noun (wonder, marvel, sensation, phenomenon, classic, tradition, gem); the same adjectives in plain descriptive frames do not fire",
+   "fire": [
+    "Seen from the ridge at sunset, the valley is nothing short of a scenic masterpiece.",
+    "With four straight titles, the team has turned into a sporting dynasty.",
+    "Her cookbook quickly became a national sensation and sold out in a week.",
+    "Over the decades the little diner has grown into a local institution, beloved by three generations.",
+    "Thanks to the film, the beach has become a global tourist magnet.",
+    "His debut album remains an undisputed classic of the genre.",
+    "The fireworks over the harbour have become an annual spectacle that draws huge crowds.",
+    "For fans of old cinemas, the restored theatre is an architectural gem."
+   ],
+   "quiet": [
+    "Seen from the ridge at sunset, the valley has a scenic road running along its floor.",
+    "With four buses a day, the team travels to a sporting venue in the next town.",
+    "Her cookbook includes a national recipe index and a list of suppliers.",
+    "The little diner hires a local plumber whenever the pipes freeze.",
+    "Thanks to the ferry, the beach has a global mix of visitors each summer.",
+    "His debut album was recorded in an undisputed hurry over two weekends.",
+    "The fireworks over the harbour cost the council an annual sum it debates each spring.",
+    "For fans of old cinemas, the restored theatre has an architectural plan on display."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.4-0.9 on the adjective before the acclaim noun; descriptive twins with a different lead-in under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "acclaim-noun modifier slot",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'ultimate way to experience this natural wonder' 0.925 on ' natural', 'pop culture phenomenon' 0.825, 'a holiday tradition' 0.682, 'worldwide best seller' 0.645, 'a world cultural relic' 0.632, 'biomechanical marvel' 0.538; 'sets her sights on another natural environment' 0.440 (leak); 'follows a natural channel' 0.008; 'opened a cultural centre' 0.093; floor 0.001. Activation sits on the adjective, so the lead-in frame carries it; near misses change the lead-in, not only the head. Output suppresses ' wonder', ' marvel', ' sensation', ' classic' for the + pole, so this pole promotes them."
+}

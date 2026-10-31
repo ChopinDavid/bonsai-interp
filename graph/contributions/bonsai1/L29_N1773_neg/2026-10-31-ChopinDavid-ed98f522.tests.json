@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-ed98f522",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N1773-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N1773",
+   "pole": "-",
+   "label": "'and'/'et' (or the second item) coordinating two parallel technical or geographic proper names of the same kind (ReentrantLock and CyclicBarrier, Central Kalimantan and South Sumatra); 'Unicode' in code is a second facet",
+   "fire": [
+    "The scheduler relies on two helpers, ThreadPoolExecutor and CountDownLatch, to fan out the work.",
+    "Heavy rain flooded parts of West Java and Central Sulawesi over the weekend.",
+    "The library ships with two parsers, SAXParser and DOMParser, that accept the same configuration.",
+    "The outbreak was first recorded in Northern Luzon and Eastern Visayas before spreading south.",
+    "Le projet utilise deux bibliothèques, Hibernate et Spring, pour la couche de persistance.",
+    "Both ConcurrentHashMap and CopyOnWriteArrayList are safe to share between threads.",
+    "Mining concessions cover large areas of East Kalimantan and North Maluku.",
+    "The benchmark compares LinkedBlockingQueue and ArrayBlockingQueue under heavy load."
+   ],
+   "quiet": [
+    "The scheduler relies on two helpers, a thread pool and a latch, to fan out the work.",
+    "Heavy rain flooded parts of the island and the river delta over the weekend.",
+    "The library ships with two parsers, one strict and one lenient, that accept the same configuration.",
+    "The outbreak was first recorded in the north and the east before spreading south.",
+    "Le projet utilise deux bibliothèques, une pour le cache et une pour la persistance.",
+    "Both the map and the list are safe to share between threads.",
+    "Mining concessions cover large areas of forest and wetland in the interior.",
+    "The benchmark compares a bounded queue and an unbounded queue under heavy load."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-1.0 on 'and'/'et' or the second name; the same sentences with common nouns in place of the names under 0.15. Expect partial coverage at best.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "pair of parallel proper names",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Weak pole (max 80 vs + pole 524). Probe: 'two classes, ReentrantLock and CyclicBarrier' 1.025 on ' and'; 'Central Kalimantan and South Sumatra' 0.534 on ' and'; 'known Unicode equivalents' 0.616 and prose '160 Unicode characters' 0.666; utf8mb4/gb18030 tuple 0.342; unichr 0.197; plain imports 0.141; arithmetic 0.012; floor 0.005."
+}

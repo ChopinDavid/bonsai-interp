@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-9010f290",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L31/N2349+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L31/N2349",
+   "pole": "+",
+   "label": "a slot inside a multi-token proper name or term where its continuation is fixed: the '(' opening an acronym after a spelled-out name (Central Intelligence Agency (CIA)) or the first piece of a split surname or place name; ordinary parentheticals and single-token names do not fire",
+   "fire": [
+    "The National Aeronautics and Space Administration (NASA) delayed the launch by a week.",
+    "Patients with chronic obstructive pulmonary disease (COPD) were excluded from the trial.",
+    "The Organisation for Economic Co-operation and Development (OECD) revised its forecast.",
+    "A randomised controlled trial (RCT) is the usual standard for drug approval.",
+    "Senator Margherita Scognamiglio chaired the hearing on school safety.",
+    "The ferry crosses the Strait of Juan de Fuca twice a day in summer.",
+    "Coach Thaddeus Okonkwo-Ferreira praised the defence after the match.",
+    "The reservoir lies in the Pyhäjärvi basin north of the town."
+   ],
+   "quiet": [
+    "The launch was delayed by a week (the third delay this year) because of weather.",
+    "Patients with a chronic cough (lasting more than eight weeks) were excluded from the trial.",
+    "The forecast was revised (downward, as usual) after the quarterly data.",
+    "A controlled trial (the usual standard) is required for drug approval.",
+    "Senator Smith chaired the hearing on school safety.",
+    "The ferry crosses the bay twice a day in summer.",
+    "Coach Brown praised the defence after the match.",
+    "The reservoir lies in the basin north of the town."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.2-0.7 on ' (' or the first name piece; quiet items under 0.1, though the unit is flagged broad (2.4% of tokens reach 0.1 of max) so some will leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "named-term continuation slot",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: 'discectomy and fusion (ACDF)' 0.688 on ' (', 'Donatella Ferranti' 0.690 on ' Ferr', 'Central Intelligence Agency (CIA)' 0.632 on 'C', 'World Health Organization (WHO)' 0.488, 'Georgia and Haro Straits' 0.412 on ' Har', 'Magnetic resonance imaging (MRI)' 0.221; 'met on Tuesday (as it always does)' 0.028; 'algebra, geometry, calculus, statistics, and' 0.052; floor 0.090."
+}

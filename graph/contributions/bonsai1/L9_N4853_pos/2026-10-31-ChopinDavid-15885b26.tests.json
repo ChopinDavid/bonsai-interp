@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-15885b26",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N4853+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N4853",
+   "pole": "+",
+   "label": "fish and seafood species names and fishery terms (coho, sockeye, bigeye tuna, halibut, caviar, farmed, spawning), peaking on the species-name pieces; other animals and foods in the same frames do not fire",
+   "fire": [
+    "The trawlers landed mostly haddock and pollock, with a few boxes of mackerel.",
+    "Smoked herring and pickled sardines were the staple of the winter diet.",
+    "The hatchery releases kokanee fry into the lake every spring.",
+    "Fresh oysters and mussels are sold by the dozen at the harbour stall.",
+    "Longline boats target yellowfin and albacore far offshore.",
+    "The chum and pink salmon runs peak in late August on this river.",
+    "Alaskan halibut is caught on longlines and flash-frozen on board.",
+    "Anchovies are netted at night when the schools rise to the surface."
+   ],
+   "quiet": [
+    "The ranchers sold mostly Herefords and Angus, with a few Holstein heifers.",
+    "Smoked ham and pickled cabbage were the staple of the winter diet.",
+    "The nursery releases ladybirds into the greenhouse every spring.",
+    "Fresh eggs and butter are sold by the dozen at the market stall.",
+    "Helicopter crews track caribou and musk oxen far inland.",
+    "The elk and mule deer migrations peak in late October on this range.",
+    "Alaskan reindeer are herded on foot and sheared in the spring.",
+    "Moths are netted at night when the swarms rise to the lamps."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.7 on a species-name piece or the fishery word after it; livestock, game animals and non-fish foods under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "fish / seafood species",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 'ranched or farmed' (tuna) 0.669 on 'med', 'steelhead and rainbow trout' 0.469, 'for coho' 0.453 on 'ho', 'bigeye tuna ... albacore' 0.410 on 'ore', 'Coho salmon' 0.382, 'caviar' 0.310 on 'avi'; 'Hereford and Angus cattle on the ranch' 0.010; 'A rainbow appeared' 0.054; floor 0.006."
+}

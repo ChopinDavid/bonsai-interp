@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-dbc61d65",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N2588+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N2588",
+   "pole": "+",
+   "label": "the verb or preposition that states a measured change or effect in a reported finding (reduces, lowers, decline in, rise in, so too have fallen); static descriptions and temporal narrative do not fire",
+   "fire": [
+    "Regular exercise lowers blood pressure by several points in most adults.",
+    "Enrolment has fallen in rural schools, and so, too, has the number of teachers.",
+    "The new tax cut raised take-home pay for the lowest earners.",
+    "There was a sharp rise in the number of complaints after the price change.",
+    "Adding insulation cuts heating bills by about a third.",
+    "The drought caused a steep drop in the wheat harvest across the plains.",
+    "Screen time before bed shortens sleep in teenagers, the survey found.",
+    "The ban led to a noticeable decline in smoking among young women."
+   ],
+   "quiet": [
+    "Regular exercise is popular among most adults in the town.",
+    "Enrolment is handled in the rural schools by the same office as the teachers.",
+    "The new tax form lists take-home pay for the lowest earners.",
+    "There was a long queue at the counter after the shop opened.",
+    "Adding insulation is a weekend job for about two people.",
+    "The farmers gathered at the hall across the plains for the harvest fair.",
+    "Screen time before bed is common among teenagers, the survey noted.",
+    "The ban was announced at a press conference for young women."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.25-0.65 on the change verb or the 'in' after a change noun; static twins under 0.1. Weak unit (max 5.41), so amplitudes are modest.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "measured change / effect predicate",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'getting vaccinated reduces your flu risk' 0.649 on ' reduces', 'significant decline in the abundance' 0.456 on ' in', 'so, too, have overall federal taxes' 0.403 on ' have', 'violated by' 0.370, 'has to do with' 0.258, 'What he denies is' 0.252; 'It's because' only 0.123 (card peak token, but weak in probe); 'met on Tuesday and the definition was read' 0.042; floor 0.043."
+}

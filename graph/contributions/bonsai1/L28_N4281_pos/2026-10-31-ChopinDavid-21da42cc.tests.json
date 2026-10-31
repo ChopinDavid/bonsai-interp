@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-21da42cc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N4281+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T08:20:05+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N4281",
+   "pole": "+",
+   "label": "a word piece continuing a word that the tokenizer splits after a 'di-'/'dis-' start (di|ab|atic, diss|ipation, D|IA|LECT, dis|ulf|ide); whole-token di- words (direct, distance) and split words with other prefixes do not fire",
+   "fire": [
+    "Water helps the salt undergo dissociation into its two ions.",
+    "Sexually dimorphic birds show bright plumage only in the males.",
+    "The diaphragm contracts and flattens as the lungs fill with air.",
+    "A diatomic gas such as nitrogen stores energy in rotation as well as motion.",
+    "A dichroic filter reflects one colour and passes the rest.",
+    "A dissonant chord resolves to a consonant one at the end of the phrase.",
+    "The dichotomy between theory and practice is sharper in medicine than in law.",
+    "A disulfide bridge holds the two chains of the protein together."
+   ],
+   "quiet": [
+    "The pressure of the gas was different at the two ends of the pipe.",
+    "A monatomic gas such as helium stores energy only in motion.",
+    "The muscle contracts and flattens as the lungs fill with air.",
+    "A tetrahedral molecule such as methane has four bonds at equal angles.",
+    "A polarising filter reflects one colour and passes the rest.",
+    "A consonant chord ends the phrase with a feeling of rest.",
+    "The distance between theory and practice is greater in medicine than in law.",
+    "A hydrogen bond holds the two chains of the protein together."
+   ]
+  }
+ ],
+ "predictions": "Fire items 0.3-0.9 on the first or second piece after the di-/dis- start; single-token di- words and mon|atomic / tet|rah|edral style splits under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split di-/dis- word piece",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: non-d|iss|ip|ative 0.876 on '-dis'(-d|iss), diabatic 0.808 on 'ab', DIALECT 0.828 on 'IA', dissipation 0.771 on ' diss', ad|i|ab|atic 0.609 on 'i', di|urnal 0.319, dip|ole 0.185 (weak: 'dip' is a word); single-token 'direct distance ... different' 0.010; floor 0.007. Negative pole is the same unit on relativ/definit/infinit pieces."
+}
