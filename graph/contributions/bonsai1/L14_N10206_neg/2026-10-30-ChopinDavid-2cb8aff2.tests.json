@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-2cb8aff2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N10206-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N10206",
+   "pole": "-",
+   "label": "unclear; best guess: numerical-method code and the point where a mathematical expression is introduced (identified by, given by, mid = 0.5*(…))",
+   "fire": [
+    "The roots are located by applying the bisection method to the first derivative.",
+    "    x_mid = 0.5*(x_lo + x_hi)\n    if g(x_mid) * g(x_lo) < 0:\n        x_hi = x_mid",
+    "The eigenvalues of A are obtained by solving the characteristic polynomial.",
+    "    for src in sources:\n        dist = {}  # shortest path lengths\n        dist[src] = 0.0",
+    "    # evaluate the Legendre polynomial at the quadrature nodes\n    p = np.polyval(coeffs, nodes)",
+    "The determinant of a 2 by 2 matrix is obtained by cross-multiplying the diagonals.",
+    "    assert np.allclose(mc.e_tot, -75.98, atol=1e-6)\n    assert mc.converged",
+    "The proper time along the geodesic is given, with τ the affine parameter, as the integral of ds."
+   ],
+   "quiet": [
+    "The roots are located in the upper layer of soil near the trunk.",
+    "    name = first + ' ' + last\n    if name in seen:\n        continue",
+    "The leaders of the party are chosen by a vote of the members.",
+    "    for src in sources:\n        text = fetch(src)\n        store(text)",
+    "    # send the welcome email to new users\n    mailer.send(user.email, template)",
+    "The outline of a good essay is made by listing the main points first.",
+    "    assert response.status == 200\n    assert 'ok' in response.text",
+    "The proper way to greet the host is given, with a bow, as the first lesson."
+   ]
+  }
+ ],
+ "predictions": "Likely fail: no probe sentence exceeded 0.144 and the 'given by' frame scored 0.025-0.043. Gate-closed regime 96%, max 6.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: numerical code / formula",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card: 'identified [by] the first derivative', '0.[5]*(mu_l + mu_u)', 'given [by]', numpy code indents, 'proper [time]', 'mc[_N]2.e_tot'. Probe: dijkstra dist code 0.144 on ' for', 'identified by setting the first derivative' 0.094, garden control 0.092, mid = 0.5* 0.072, speech given by the mayor 0.057, variance given by 0.043, ellipse given by 0.025, names list code 0.026. Recorded as a best guess."
+}

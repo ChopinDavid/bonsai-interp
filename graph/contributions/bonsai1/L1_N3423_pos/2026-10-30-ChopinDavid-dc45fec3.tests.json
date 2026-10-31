@@ -1,0 +1,56 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-dc45fec3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N3423+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N3423",
+   "pole": "+",
+   "label": "the tokens ' sure' (strongest in 'make sure'), Russian ' на', the piece ' foss' (fossa) and Arabic ' من'",
+   "fire": [
+    "Always make sure the ladder is on level ground before climbing.",
+    "We need to make sure that every guest has a seat.",
+    "Double-check to make sure the oven is off when you leave.",
+    "Be sure to bring your ticket to the gate.",
+    "Он надеется на хорошую погоду в выходные.",
+    "Она положила книгу на стол и вышла.",
+    "The cranial fossa houses the lower part of the brain.",
+    "A deep fossa was visible on the X-ray of the hip joint."
+   ],
+   "quiet": [
+    "Always check that the ladder is on level ground before climbing.",
+    "We need to confirm that every guest has a seat.",
+    "Double-check that the oven is off when you leave.",
+    "Remember to bring your ticket to the gate.",
+    "Он надеется, что погода будет хорошей.",
+    "Мария положила книгу и вышла из комнаты.",
+    "The skull houses the lower part of the brain.",
+    "A deep crack was visible on the X-ray of the hip joint."
+   ]
+  }
+ ],
+ "predictions": "Hold 7/8 with median around 0.4; 'be sure' is weaker (0.25) than 'make sure' (0.46). Russian near misses avoid ' в', which leaked to 0.223 in the probe.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "tokens sure / на / foss / من",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Layer 1 polysemantic token pole: card peaks ' من' x7, ' sure' x6 (make sure), ' на' x5, ' foss' x3. Probe: 'make sure' 0.461, 'be sure to' 0.246, 'I am sure' 0.135, ' на' 0.444, ' foss' in fossa 0.489, ' من' 0.123; controls: fossil (single token) -0.010, 'check that' 0.056, Arabic without من 0.077, Russian with ' в' 0.223. Fire items use make/be sure, на and fossa; the weak من is in the trigger but not in the test.",
+ "trigger": {
+  "words": [
+   "sure",
+   "на",
+   "foss",
+   "من"
+  ]
+ }
+}

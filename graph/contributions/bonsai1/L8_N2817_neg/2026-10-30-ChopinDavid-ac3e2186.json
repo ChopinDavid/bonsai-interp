@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-30-ChopinDavid-ac3e2186",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N2817-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T00:34:20+00:00",
+ "recipe": {
+  "toolchain_commit": "25dc6b963",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L8_N2817_neg/2026-10-30-ChopinDavid-ac3e2186.tests.json"
+ },
+ "label": "the word 'shape' as a drawing or geometry term, in code and in graphics-software instructions",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N2817_neg/2026-10-30-ChopinDavid-ac3e2186.tests.json",
+   "prereg_commit": "25dc6b963",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.245,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.531,
+     "peak": " shape"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.179,
+     "peak": " Shape"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.565,
+     "peak": " shape"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.033,
+     "peak": " shape"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.102,
+     "peak": " covering"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.326,
+     "peak": " circles"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.385,
+     "peak": "olerance"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.05,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.078,
+     "peak": "ounding"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.021,
+     "peak": " menu"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " so"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.053,
+     "peak": ".\"\"\""
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.058,
+     "peak": " better"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": "   "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.285,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "25dc6b963",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "'shape' in graphics/geometry",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Card: shape list literal, Vector Shape, shapefile, Shape Bender, polygon mask, path vertices; tiny max 5.3. Probe: 'convert it to a vector shape' 0.979 (prose), 'for shape in shapes' 0.558, 'rasterize_polygon(width, height)' 0.686 on ' height', right triangle 0.205, clip_polygon docstring 0.032; non-geometry code 0.04-0.07, Text tool 0.014, prose control 0.035. The word ' shape' is the strong carrier; other 2D-geometry parameters fire less reliably, so the label is the word in that context.",
+ "selection": "random draw",
+ "trigger": {
+  "words": [
+   "shape"
+  ]
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ac3e2186",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L8/N2817-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L8/N2817",
+   "pole": "-",
+   "label": "the word 'shape' as a drawing or geometry term, in code and in graphics-software instructions",
+   "fire": [
+    "Use the Selection tool to drag the shape until it snaps to the guide.",
+    "    for shape in layer.items:\n        bbox = shape.bounding_box()\n        canvas.draw(bbox)",
+    "Right-click the layer and choose Convert to Shape Layer from the menu.",
+    "    kind = ['Rectangle', 'Oval', 'Star']\n    shape = Shape(kind[0], fill='red')",
+    "Hold Shift while you drag so the shape keeps its proportions.",
+    "def union(a, b):\n    \"\"\"Return a new shape covering both input outlines.\"\"\"",
+    "The Shape Builder tool lets you merge overlapping circles into one outline.",
+    "    outline = shape.to_polygon(tolerance=0.01)\n    export_svg(outline, 'part.svg')"
+   ],
+   "quiet": [
+    "Use the Selection tool to drag the layer until it snaps to the guide.",
+    "    for item in layer.items:\n        bbox = item.bounding_box()\n        canvas.draw(bbox)",
+    "Right-click the layer and choose Convert to Smart Object from the menu.",
+    "    kind = ['Bold', 'Italic', 'Underline']\n    style = Style(kind[0], color='red')",
+    "Hold Shift while you drag so the text box keeps its proportions.",
+    "def merge(a, b):\n    \"\"\"Return a new dict covering both input mappings.\"\"\"",
+    "The economy is in better shape than it was a year ago.",
+    "    text = doc.to_markdown(width=80)\n    export_pdf(text, 'notes.pdf')"
+   ]
+  }
+ ],
+ "predictions": "Hold 6/8 or better; the geometry-context near miss without the word (bounding_box, canvas) may leak to 0.3-0.6 as 'height' did in the probe, and the abstract 'in better shape' near miss tests whether the word alone fires.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'shape' in graphics/geometry",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Card: shape list literal, Vector Shape, shapefile, Shape Bender, polygon mask, path vertices; tiny max 5.3. Probe: 'convert it to a vector shape' 0.979 (prose), 'for shape in shapes' 0.558, 'rasterize_polygon(width, height)' 0.686 on ' height', right triangle 0.205, clip_polygon docstring 0.032; non-geometry code 0.04-0.07, Text tool 0.014, prose control 0.035. The word ' shape' is the strong carrier; other 2D-geometry parameters fire less reliably, so the label is the word in that context.",
+ "trigger": {
+  "words": [
+   "shape"
+  ]
+ }
+}

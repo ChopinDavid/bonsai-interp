@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-397e6842",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N11996+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N11996",
+   "pole": "+",
+   "label": "commentary on the plot and characters of a story (novel, play, film) from the reader's or viewer's standpoint",
+   "fire": [
+    "As for the gardener, he is killed off in the second act, and his death sets the sisters free.",
+    "Readers must wait until almost the final chapter before the detective names the thief.",
+    "Ambition drives nearly every character in this play, especially the younger brother.",
+    "The heroine seems vain at first, but by the last act we realise she has been protecting everyone.",
+    "Most of the fun of this film comes from watching the two leads argue in the car.",
+    "The old captain, we learn early on, has never told anyone about the shipwreck.",
+    "The twins have little in common, a contrast the author illustrates in every chapter.",
+    "The first act is slow and introduces the village; this is where we meet the baker and his daughter."
+   ],
+   "quiet": [
+    "As for the gardener, he was dismissed in 1911, and his departure left the estate unkempt.",
+    "Voters had to wait until almost midnight before the returning officer named the winner.",
+    "Ambition drove nearly every member of the cabinet, especially the younger minister.",
+    "The new manager seemed vain at first, but by the end of the year we realised she had been protecting the team.",
+    "Most of the fun of this road trip came from arguing with my brother in the car.",
+    "The old captain, we learned at the inquest, had never told anyone about the collision.",
+    "The twins have little in common, a contrast their teachers notice in every class.",
+    "The first hour is slow and covers the village's history; this is when the guide introduces the baker and his daughter."
+   ]
+  }
+ ],
+ "predictions": "Hold 7/8 with median above 0.4; the real-event twins should stay under 0.2, the guided-tour near miss is the likeliest leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "plot and character commentary",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: 'he dies in the movie', 'until nearly the end of the book', 'characters in this book', 'by the end is discovered', 'pleasure in reading', 'we are told', 'illustrated throughout the novel', 'Main characters have'. Probe: 'she dies before the final chapter' 0.882, 'by the end we see that he is deeply loyal' 0.732, 'characters in this novel' 0.656, 'until nearly the last page' 0.351, 'pleasure of reading this book' 0.222; history twins 'she died in 1843' 0.136, 'conspirators' 0.078, recipe 'by the end you will see' 0.156, hike 0.019, 'the town's mayor, we are told' 0.175."
+}

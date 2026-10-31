@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-d7b9a08c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N6138+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N6138",
+   "pole": "+",
+   "label": "the word that opens a gloss of a term just mentioned: 'which is/are …', 'who is …', 'i.e.', 'stands for', 'short for', 'that is'",
+   "fire": [
+    "The warranty excludes consumable parts, which are listed on the back of the receipt.",
+    "The drug is known as ACE, which stands for angiotensin-converting enzyme.",
+    "Applicants must provide a guarantor who is a resident of the state.",
+    "The grant covers indirect costs, i.e. rent, utilities and administration.",
+    "Locals call it the Beeb, short for the British Broadcasting Corporation.",
+    "Tickets are valid only for off-peak services, which are the trains leaving after 9.30.",
+    "The file is saved in CSV format, which is plain text with comma-separated fields.",
+    "The agency hired a fixer, that is, a local who arranges permits and interviews."
+   ],
+   "quiet": [
+    "The warranty excludes consumable parts after the first twelve months.",
+    "The drug was approved in 1981 and is still widely prescribed.",
+    "Applicants must provide a guarantor before the lease is signed.",
+    "The grant covers indirect costs for the first three years of the project.",
+    "Locals gather at the Beeb on Friday nights for the quiz.",
+    "Tickets are valid only for off-peak services on weekdays.",
+    "The file is saved in CSV format by default when you export.",
+    "The agency hired a fixer before the crew arrived in the capital."
+   ]
+  }
+ ],
+ "predictions": "Hold 6/8: probe gloss openers scored 0.22-0.39 and the plain continuations 0.006-0.014; 'consisted of' did not fire (0.036) so it is excluded. Median near 0.30.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "gloss opener for a term",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: 'final-sale items, which [are] identified by', 'i[.e]. women and men', 'who [is] 18 or older', 'stands [for]', 'short [for]', 'DIR_MIN = [']min'', '([academic-artistic)'. Probe: 'which are marked with a red tag' 0.341, 'adult who is at least twenty-one' 0.386, 'i.e. renters and owners' 0.251, 'short for a lunchtime seminar' 0.292, 'stands for Resource Reservation Protocol' 0.221, 'consisted of a white cross' 0.036; the same sentences continued without a gloss 0.006-0.014."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c451a71b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N10087-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N10087",
+   "pole": "-",
+   "label": "unclear; best guess: reading a value out of a store or carrying knowledge from one domain to another (get from a queue, transfer learning from X to Y)",
+   "fire": [
+    "    def getName(self, idx):\n        return self.idxToName[idx]",
+    "    while running:\n        item = work_queue.get(timeout=2)\n        handle(item)",
+    "Managers struggle to reason the other direction: from the symptoms on the shop floor back to the decisions that caused them.",
+    "He succeeded in transferring his skills from the chessboard to the trading desk.",
+    "    def load_settings(self):\n        \"\"\"Read user preferences from the config file.\"\"\"",
+    "Write a program that reads the compressed file and the key, then recovers the original text.",
+    "    payload = self._inbox.get_nowait()\n    if payload is None:\n        continue",
+    "The hard part is carrying what students learn in the lab over to the exam hall."
+   ],
+   "quiet": [
+    "    def setName(self, idx, name):\n        self.idxToName[idx] = name",
+    "    while running:\n        work_queue.put(item)\n        count += 1",
+    "Managers on the shop floor make dozens of small decisions every morning.",
+    "He spent his evenings at the chessboard and his days at the trading desk.",
+    "    def save_settings(self):\n        \"\"\"Write user preferences to the config file.\"\"\"",
+    "Write a program that prints the first hundred prime numbers to the screen.",
+    "    self._outbox.put(payload)\n    if payload is None:\n        continue",
+    "The students spent the morning in the lab and the afternoon in the exam hall."
+   ]
+  }
+ ],
+ "predictions": "Likely fail: the probe transferred only for the 'go the other way: from X back to Y' frame (0.216); getter code and conversion frames were 0.03-0.07. Expect median under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: retrieval / transfer",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card mixes getValue(self, name) 78, 'the other way: from aggregate reports to learning needs', 'transferring his learning from the soccer field to the classroom', queue.get, 'reads the encrypted text', 'Save project data from class', and two aphorisms about counting and remembering. Probe: 'work the other way: from test scores back to the lessons' 0.216, 'Translate from German' 0.072, 'came home from the pool' 0.066, 'converts the dates from the Julian' 0.029, to_dict docstring 0.027, lookup getter 0.003, 'learned from the pool into the lab' 0.007, temporal from-to 0.002. No hypothesis transfers well; this test records a best guess."
+}

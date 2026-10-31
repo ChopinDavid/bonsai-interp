@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-9b7e92d0",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N11474-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T00:34:51+00:00",
+ "recipe": {
+  "toolchain_commit": "25dc6b963",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N11474_neg/2026-10-30-ChopinDavid-9b7e92d0.tests.json"
+ },
+ "label": "unclear; best guess: the verb or its object completing a clause about a specific, just-identified thing in informal how-to or report prose (your doctor prescribes, I noticed the totals, this pump is wobbling)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N11474_neg/2026-10-30-ChopinDavid-9b7e92d0.tests.json",
+   "prereg_commit": "25dc6b963",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.451,
+     "peak": "cribes"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.304,
+     "peak": "totals"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.16,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.479,
+     "peak": "cribes"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.118,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.137,
+     "peak": " is"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.184,
+     "peak": " measured"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.225,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.109,
+     "peak": " recommend"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.085,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.084,
+     "peak": " dryer"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.024,
+     "peak": "Many"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.063,
+     "peak": " same"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.158,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.056,
+     "peak": " shelf"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.023,
+     "peak": " original"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.205,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "25dc6b963",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "unclear: predicate in informal report",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card peaks on ' to' (referred to), ' says', ' compared', ' is', ' lanes', 'cribes', ' together' in first-person or how-to prose; no single token. Probe: 'If your doctor prescribes amoxicillin' 0.516 on 'cribes', 'I noticed that the totals' 0.289, 'this old pump is wobbling' 0.199, 'northbound lanes will' 0.107, 'pump wobbles whenever' 0.130, 'I referred to the manual' 0.010, 'she says she will' 0.045, encyclopedic control 0.038, report control 0.142. The fire items copy the three configurations that scored, with fresh content; the near misses are generic statements on the same topics.",
+ "selection": "random draw"
+}

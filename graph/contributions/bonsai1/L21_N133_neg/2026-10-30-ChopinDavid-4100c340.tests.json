@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4100c340",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L21/N133-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L21/N133",
+   "pole": "-",
+   "label": "the first word of the main clause after a comma-closed fronted scope phrase (For X, / In X, / On X, / With X,), strongest when it is 'if' or 'when'",
+   "fire": [
+    "For PDF exports, if the fonts are not embedded the layout may shift.",
+    "On shared hosting, when the traffic spikes the site may go offline for a minute.",
+    "In primary classrooms, if the group is large, split the activity into two rounds.",
+    "With stainless pans, if the oil is not hot enough the fish will stick.",
+    "In a biology lab, for example, students often mistake air bubbles for cells.",
+    "For compound names, in addition to the main entry, the index lists each part.",
+    "On gravel roads, when the surface is loose, brake earlier than you think you need to.",
+    "For legacy accounts, if the password was never changed, access is suspended."
+   ],
+   "quiet": [
+    "The layout may shift if the fonts are not embedded in a PDF export.",
+    "In 2016, the hosting company moved all its servers to Frankfurt.",
+    "Split the activity into two rounds if the group in a primary classroom is large.",
+    "The fish will stick to a stainless pan if the oil is not hot enough.",
+    "Students in a biology lab often mistake air bubbles for cells.",
+    "The index lists each part of a compound name after the main entry.",
+    "In 2003, when the factory closed, the town lost half its jobs.",
+    "Access is suspended for legacy accounts whose password was never changed."
+   ]
+  }
+ ],
+ "predictions": "Hold 8/8 with median above 0.7; the same clauses with the fronted phrase moved or removed should stay under 0.07. The one temporal fronted phrase ('In 2003, when') tests scope-setting against time-setting and may leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "clause opener after fronted scope phrase",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: 'For manual documents, [if]', 'On SVC, [when]', 'On the Wiki, [read]', 'In adulthood, [in] addition', 'In junior primary, [if]', 'With thin walled parts, [if]', 'In a physics class, [for] example'. Probe: 'For scanned documents, if' 1.060, 'In secondary school, if' 0.903, 'With cast iron pans, if' 0.869, 'On older routers, when' 0.764, 'For hierarchical names, in addition' 0.689, 'In a chemistry lab, for example' 0.658; 'In 1998, the company' 0.067, sentence-initial 'If' 0.050, mid-sentence 'if' 0.023-0.031."
+}

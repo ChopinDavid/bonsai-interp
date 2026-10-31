@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-35b1c679",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N2861-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N2861",
+   "pole": "-",
+   "label": "the word that introduces the second, compared term of a quantity relation: 'and other X' after a class member, 'N units of A to make one unit of B', 'replace A with B'",
+   "fire": [
+    "Most of the vitamin comes from oranges and other citrus fruit rather than from supplements.",
+    "Children in the trial ate fewer sweets and other snacks than the control group.",
+    "It takes about seven kilograms of grain to produce one kilogram of beef.",
+    "Roughly two tonnes of ore are needed to yield one tonne of refined copper.",
+    "Swap the white rice with the brown variety that keeps you full for longer.",
+    "They replaced the old diesel buses with the electric models that run all day on one charge.",
+    "Farmers now lose a smaller share of their harvest to rot and other spoilage than a decade ago.",
+    "A single hive needs about two million flower visits to make one jar of honey."
+   ],
+   "quiet": [
+    "Most of the vitamin comes from oranges picked in the winter months.",
+    "Children in the trial ate sweets at every meal during the first week.",
+    "The farm raises about seven hundred head of beef cattle on the lower pasture.",
+    "The mine produced refined copper for over fifty years before it closed.",
+    "Cook the white rice until it is fluffy and let it rest for ten minutes.",
+    "The old diesel buses were sold to a company in the north last year.",
+    "Farmers store their harvest in cool sheds behind the main barn.",
+    "A single hive can hold about fifty thousand bees at the height of summer."
+   ]
+  }
+ ],
+ "predictions": "Weak hold at best (5/8); broad pole (1.0% of tokens at 0.1 max) so near misses with plain measures may leak to 0.1-0.2.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second term of a quantity relation",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card peaks on function words inside comparisons and conversions (milk and other dairy than, more to build than, one gallon of, substitute with). Probe: 'bread and other grains' 0.354 on ' other', 'to make one litre of' 0.288 on ' of', 'replace with' 0.250 on ' with'; 'more than the old one' only 0.092, 'list of twelve' 0.023, 'referred to as' 0.026, unrelated controls 0.012-0.015. So the 'than' comparison itself is weak; the and-other / ratio / substitution frames carry it."
+}

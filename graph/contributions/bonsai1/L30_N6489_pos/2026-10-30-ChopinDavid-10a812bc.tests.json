@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-10a812bc",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N6489+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N6489",
+   "pole": "+",
+   "label": "a common-word token used as the first piece of a longer surname (Carbon|ell, Pick|les, Mos|ely, Abd|allah), after a given name or title",
+   "fire": [
+    "The keynote was delivered by Dr. Laura Fieldhouse of the Institute of Marine Science.",
+    "Second place went to Daniel Stonebridge, who finished just two seconds behind.",
+    "The report was co-authored by Professor Amir Mostafa and three postdoctoral fellows.",
+    "Her lawyer, Margaret Hardcastle, declined to comment on the ruling.",
+    "The painting was attributed to Giovanni Marchetti by a curator in Florence.",
+    "The award went to Ruth Silverstein for her work on coral bleaching.",
+    "In the semifinal, Oliver Fairweather beat the top seed in straight sets.",
+    "The expedition was led by Captain James Longstreet, a veteran of two polar winters."
+   ],
+   "quiet": [
+    "The keynote was delivered by Dr. Laura Mitchell of the Institute of Marine Science.",
+    "Second place went to Daniel Carter, who finished just two seconds behind.",
+    "The report was co-authored by Professor Amir Hassan and three postdoctoral fellows.",
+    "Her lawyer, Margaret Collins, declined to comment on the ruling.",
+    "The painting was attributed to Giovanni Rossi by a curator in Florence.",
+    "The award went to Ruth Klein for her work on coral bleaching.",
+    "In the semifinal, Oliver Brooks beat the top seed in straight sets.",
+    "The expedition was led by Captain James Hunt, a veteran of two polar winters."
+   ]
+  }
+ ],
+ "predictions": "Likely fail or weak (2-4/8): in the probe only Carbonell (a card piece, 0.439) and Okonkwo (0.156) transferred; names split into non-word pieces (Szczepanski, Brzezinski, Rajagopalan) scored 0.02-0.05. Single-token surname near misses should stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "word-piece opening a surname",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: U|ka|oma, Carbon|ell, P|ign|atelli, Abd|allah, Mos|ely, Pick|les, P|ia|zzetta: the activation is on a piece that is itself a word or common prefix, with the rest of the surname still to come. Probe: Carbonell 0.439 on ' Carbon', Okonkwo 0.156 on ' Ok', Vandenbroucke 0.051, Nakamura Logistics 0.054, Szczepanski 0.017, Rajagopalan 0.027, Brzezinski 0.032; Smith/Brown controls 0.027-0.028. Test uses fresh surnames whose first piece is an English word (Field|house, Stone|bridge, Most|afa, Hard|castle, March|etti, Silver|stein, Fair|weather, Long|street), checked with the tokenizer."
+}
