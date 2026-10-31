@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N1696-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 1696,
+ "pole": "-",
+ "label": "exclusive control of a market or resource: monopoly/monopolise, cornering the market, buying up every rival, near-monopoly",
+ "short": "monopolising a market",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N1696_neg/2026-10-30-ChopinDavid-e3f66301.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.764,
+     "peak": " monopoly"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.846,
+     "peak": " market"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.962,
+     "peak": " monopol"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 1.176,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.799,
+     "peak": " up"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.896,
+     "peak": " monopol"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.669,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.689,
+     "peak": " market"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.045,
+     "peak": "eries"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.028,
+     "peak": " market"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.179,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.133,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.029,
+     "peak": " across"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.007,
+     "peak": " merger"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.022,
+     "peak": " ran"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.082,
+     "peak": "opoly"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.823,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-e3f66301"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-e3f66301",
+   "exclusive control of a market or resource: monopoly/monopolise, cornering the market, buying up every rival, near-monopoly",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-e3f66301"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

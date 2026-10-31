@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N2894+",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 2894,
+ "pole": "+",
+ "label": "comparison against a reference: the word that links a thing to the standard it is measured against (compared with/to, measured against, relative to, versus)",
+ "short": "compared against a standard",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N2894_pos/2026-10-30-ChopinDavid-3749f1c5.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.284,
+     "peak": " compared"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.597,
+     "peak": " against"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.03,
+     "peak": " relative"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.102,
+     "peak": " versus"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.201,
+     "peak": " against"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.465,
+     "peak": " comparing"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.031,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.059,
+     "peak": " against"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.006,
+     "peak": "atory"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.156,
+     "peak": " criteria"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.005,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": "Her"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.018,
+     "peak": " agency"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.013,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.151,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-3749f1c5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-3749f1c5",
+   "comparison against a reference: the word that links a thing to the standard it is measured against (compared with/to, measured against, relative to, versus)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-3749f1c5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N9041+",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 9041,
+ "pole": "+",
+ "label": "the party on the receiving end of a benefit or teaching: the recipient noun or pronoun after to/for/teaching (benefits to all sides, teaching others, beneficial for grandchildren, born unto thee)",
+ "short": "recipient of benefit",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N9041_pos/2026-10-30-ChopinDavid-3579a0c4.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.146,
+     "peak": " both"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.29,
+     "peak": " others"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.214,
+     "peak": " everyone"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.427,
+     "peak": " parties"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.468,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.052,
+     "peak": " children"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.185,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.041,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.068,
+     "peak": " communities"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.13,
+     "peak": " came"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.028,
+     "peak": " athletes"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.207,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.157,
+     "peak": " over"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.049,
+     "peak": "Children"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.129,
+     "peak": " residents"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.112,
+     "peak": " families"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.75,
+    "median_fire": 0.2,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-3579a0c4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-3579a0c4",
+   "the party on the receiving end of a benefit or teaching: the recipient noun or pronoun after to/for/teaching (benefits to all sides, teaching others, beneficial for grandchildren, born unto thee)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-3579a0c4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
