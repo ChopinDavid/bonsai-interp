@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-fe335954",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N1310+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N1310",
+   "pole": "+",
+   "label": "In Spanish text, the short space-initial piece that opens a word the tokenizer splits (' n'+orte, ' n'+ubes, ' an'+illo, ' an'+ualmente, ' j'+ardín); Spanish words that are their own token (noche, nada, nunca, niños, antes, joven) do not carry it",
+   "fire": [
+    "El viento del norte trajo nieve a la sierra.",
+    "Las nubes grises cubrían toda la ciudad al amanecer.",
+    "Pelaron una naranja y la compartieron en el banco.",
+    "Le regaló un anillo de plata el día de su boda.",
+    "El anuncio apareció en todos los periódicos del país.",
+    "Los vecinos plantaron rosas en el jardín del edificio.",
+    "La golondrina construyó su nido bajo el tejado.",
+    "La revista se publica anualmente desde 1990."
+   ],
+   "quiet": [
+    "La noche cayó y nadie quería volver a casa.",
+    "Los niños nunca dicen nada antes de cenar.",
+    "El nombre del negocio cambió el año pasado.",
+    "Un joven animal corría por el campo abierto.",
+    "El equipo nacional ganó el partido antes del descanso.",
+    "Mi abuela compró un vestido nuevo para la boda.",
+    "Ellos nunca supieron su nombre ni su edad.",
+    "El año nuevo empieza con una gran fiesta en la plaza."
+   ]
+  }
+ ],
+ "predictions": "Spanish sentences containing norte, nubes, naranja, anillo, anuncio, jardín, nido or anualmente reach 0.45-0.65 on the ' n'/' an'/' j' piece. Spanish sentences whose n/an/j-words are whole tokens stay around 0.2-0.3 (the pole has a Spanish-text floor), and English stays near 0.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Spanish split pieces ' n', ' an', ' j'",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: norte 0.596, nubes 0.616, anualmente 0.578, naranja/anillo 0.602, juntos 0.470 (all peak on the piece); whole-token Spanish controls 0.271 ('quería', peak ' quer'), 0.252, 0.214 (peak '.'); English 'north wing' 0.007. Card: ' n' x8, ' an' x7, ' j' x2, ' N' x2, ' un' x2 among the top peaks (max 223, layer 34); the - pole peaks on ' de', ' que', ' sus'. The Spanish floor of about 0.25 on whole-token sentences is the risk for the near misses.",
+ "trigger": {
+  "tokens": [
+   " n",
+   " an",
+   " j"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-96baa0d4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N7911+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N7911",
+   "pole": "+",
+   "label": "A general rule or procedure stated as instruction: a formula, a how-to recipe ('to find X, multiply ... by ...') or a grammar rule ('nouns ending in y form the plural by ...'), as opposed to narrative about the same things",
+   "fire": [
+    "To convert Celsius to Fahrenheit, multiply by nine, divide by five and add thirty-two.",
+    "Verbs ending in a single consonant double it before adding “ing” (e.g., run, running).",
+    "To find the volume of a cylinder, multiply the area of the base by the height.",
+    "The standard form of a linear equation is y = mx + b, where m is the slope.",
+    "To check whether a number is divisible by three, add its digits and see if the sum is divisible by three.",
+    "Adjectives of one syllable form the comparative by adding “er” (e.g., tall, taller).",
+    "The perimeter of a rectangle is twice the length plus twice the width.",
+    "To measure your resting pulse, count the beats for fifteen seconds and multiply by four."
+   ],
+   "quiet": [
+    "It was thirty-two degrees in the shade when we finally reached the village.",
+    "He was running late again, so he skipped breakfast and caught the bus.",
+    "The old water tank was a rusty cylinder about two metres high.",
+    "She drew a straight line across the page and labelled it with a date.",
+    "The three of us split the bill and left before the band started.",
+    "The taller of the two brothers worked at the harbour for years.",
+    "The rectangle of light from the window moved slowly across the floor.",
+    "His pulse was still racing when the doctor finally came in."
+   ]
+  }
+ ],
+ "predictions": "Formulas, how-to procedures and grammar rules reach 0.4-1.0 somewhere inside the rule (the operand, the quoted ending, the variable). Narrative or descriptive sentences on the same topics stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "stated rule or procedure",
+ "unit_kind": "semantic",
+ "confidence": "medium",
+ "notes": "Probe: plural rule with quoted endings 0.957 (peak '”'), triangle area 0.468 (' by'), quadratic form 0.461 (' c'), storm distance 0.434 (' seconds'), 'Syntax:' line 0.181, Gherkin scenario 0.040; narrative beach/thunder 0.041, 'For example, cities' 0.025, floor 0.054. Card: sparse (0.03% of tokens at 0.1 max, max 12, layer 15), peaks in Gherkin templates, a plural rule, 'count the seconds', 'Ax^2 + ... + F = 0', 'To find the electron configuration'. The - pole peaks on ' example', ' say', ' instance': exemplification is the other side."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ffbbe00b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N2583-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N2583",
+   "pole": "-",
+   "label": "A narrative of African-American history (slavery, emancipation, the Great Migration, civil rights), fired on the function word before a place or group (born into slavery in Georgia, educated in Boston, moved to Kansas, wounded Black soldiers); the same biographical frames in European settings do not carry it",
+   "fire": [
+    "Freed after the war, he was educated in Ohio and later taught in Mississippi.",
+    "Born a slave in Virginia, she escaped to Philadelphia in 1849.",
+    "The Freedmen's Bureau opened schools for former slaves in Georgia and Alabama.",
+    "Thousands of Black families left the Deep South for Chicago during the Great Migration.",
+    "He was the first African-American admitted to the bar in Tennessee.",
+    "After Reconstruction, Black voters in Louisiana were driven from the polls.",
+    "Her grandfather, born into slavery in Kentucky, bought land in Kansas after emancipation.",
+    "The sit-ins spread from Greensboro to lunch counters across the South."
+   ],
+   "quiet": [
+    "Trained after the war, he was educated in Leeds and later taught in Dundee.",
+    "Born a miller's son in Bavaria, he moved to Hamburg in 1849.",
+    "The new ministry opened schools for farm children in Styria and Carinthia.",
+    "Thousands of Irish families left the west for Liverpool during the famine.",
+    "He was the first Welsh speaker admitted to the bar in Cardiff.",
+    "After the reform, rural voters in Brittany were drawn into the new parties.",
+    "Her grandfather, born on a croft in Skye, bought land in Alberta after the war.",
+    "The strikes spread from Lyon to textile mills across the Rhône valley."
+   ]
+  }
+ ],
+ "predictions": "Biographical and historical sentences about enslaved and free Black Americans reach 0.3-1.2 on 'in', 'to', 'of' or 'Black' before a place or group. The same sentence frames set in Britain, Germany, Austria, Ireland, Wales or France stay under 0.25.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "African-American history narrative",
+ "unit_kind": "semantic",
+ "confidence": "medium",
+ "notes": "Probe: 'Born into slavery in Georgia, she was later educated in Boston' 1.185 (' in'), 'freedmen moved to Kansas' 0.438 (' of'), 'wounded Black soldiers' 0.378 (' Black'), 'cities like Atlanta reshaped Black political life' 0.285 (' Black'), 'Black passengers were allowed to sit' 0.165; 'engineers moved to Kansas' 0.242, 'cities like Lyon' 0.125, 'Born in Munich, educated in Vienna' 0.054, floor 0.010. Card: ' in' x9, ' to' x3, ' like', ' Black', 'W(idow)' in passages about the Confederacy, Freedom Riders, Black schoolteachers and soldiers (max 148, layer 32, density 0.6%); the + pole suppresses ' African', ' blacks', so this pole promotes them. The slavery sentence was far stronger than the migration ones, so fire items keep slavery or emancipation in the context."
+}

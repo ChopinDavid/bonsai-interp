@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-f6e50faa",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N7051-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N7051",
+   "pole": "-",
+   "label": "The noun that completes an emphatic 'no <noun>' denial of an easy way out (no shortcuts, no excuses, no exceptions, never ... by halves): the thing being categorically ruled out",
+   "fire": [
+    "When it comes to learning a language, there are no shortcuts, only daily practice.",
+    "The coach made it clear that he would accept no excuses for missing training.",
+    "The rule applies to everyone on the team, and there are no exceptions.",
+    "Her grandmother never did anything by halves, least of all a birthday cake.",
+    "In this business there are no guarantees, however hard you work.",
+    "The surgeon warned that there was no substitute for careful preparation.",
+    "The inspector tolerated no half measures when it came to safety.",
+    "When he restores an old car there are no compromises on the original parts."
+   ],
+   "quiet": [
+    "When it comes to learning a language, there are several shortcuts that daily practice makes easier.",
+    "The coach listened to the excuses for missing training and let it go.",
+    "The rule applies to most of the team, with a few exceptions for the goalkeepers.",
+    "Her grandmother baked half a birthday cake and froze the rest.",
+    "In this business the guarantees are written into every contract.",
+    "The surgeon said careful preparation was a good substitute for luck.",
+    "The inspector suggested a few half measures to save money on safety.",
+    "When he restores an old car he makes many compromises on the original parts."
+   ]
+  }
+ ],
+ "predictions": "Sentences that rule something out with 'no shortcuts / no excuses / no exceptions / by halves' reach 0.5-1.0 on that noun. The same nouns affirmed (several shortcuts, the excuses, a few exceptions, half a cake) stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun ruled out by emphatic 'no'",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'anything by halves' 1.038, 'no excuses' 0.737, 'no shortcuts' 0.647, 'no third way' 0.310 (adjective between no and noun weakens it), 'unsatisfied with' 0.111, 'Nothing could be done' 0.079; the same nouns affirmed: 'three shortcuts' 0.033, 'accepted the excuses' 0.036, 'half of the book' 0.011, floor 0.014. Card: peaks on ' shortcuts', ' halves', ' third', ' hype', 'uses' (Excuses) after no/never (max 36, layer 20, density 0.12%). The - pole promotes nothing legible; the + pole suppresses ' easy', ' simplistic', ' everything'."
+}

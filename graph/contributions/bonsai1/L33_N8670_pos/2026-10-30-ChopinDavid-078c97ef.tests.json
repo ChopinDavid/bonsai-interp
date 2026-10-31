@@ -1,0 +1,55 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-078c97ef",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N8670+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N8670",
+   "pole": "+",
+   "label": "The word piece ' mon' / ' Mon' that opens a word the tokenizer splits (mon|ies, mon|soon, mon|oxide, mon|ogram, mon|ologue, Mon|mouth); mon-words that are their own token (money, Monday, month, monitor, monarch, monument, Monaco) do not carry it",
+   "fire": [
+    "The treasurer must account for all monies received from the fair.",
+    "Farmers wait anxiously for the monsoon to break in June.",
+    "The lecturer's monotonous delivery emptied the hall by noon.",
+    "A faulty boiler can release carbon monoxide into the house.",
+    "Each towel was embroidered with a small monogram in blue thread.",
+    "Her monograph on Roman glass took eleven years to complete.",
+    "The actor delivered the final monologue without a single pause.",
+    "The town of Monmouth sits where two rivers meet."
+   ],
+   "quiet": [
+    "The treasurer must account for all money received from the fair.",
+    "Farmers wait anxiously for Monday's market to open in June.",
+    "The lecturer's dull delivery emptied the hall by noon.",
+    "A faulty boiler can leave the house without heat for a month.",
+    "Each towel was embroidered with a small monkey in blue thread.",
+    "Her study of Roman glass took eleven years and a monumental effort.",
+    "The actor delivered the final lines without a single pause.",
+    "The town of Monaco sits where the mountains meet the sea."
+   ]
+  }
+ ],
+ "predictions": "Sentences with a split mon-word reach 0.1-0.5 on the ' mon' piece (monies strongest). Sentences whose mon-words are whole tokens (money, Monday, month, monkey, Monaco) stay under 0.03.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split piece ' mon' / ' Mon'",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: monies 0.476, monotonous 0.349, monsoon 0.251, monogamous 0.117 (all peak ' mon'), monolith 0.037 (peak ' at', the piece did not fire there); monarch 0.004, money/Monday/month 0.012, monument 0.004, dominant 0.007. Card: ' mon' x10, ' Mon' x7, 'Mon' x3 before ogamous/ies/etizes/arch (max 160, layer 33); the card's top contexts (monogamous after a marriage passage, Recovery Act monies) are stronger than isolated sentences, so the strength varies by context and some fire items may fall under 0.3. The - pole peaks on ' cruel', ' mar'.",
+ "trigger": {
+  "tokens": [
+   " mon",
+   " Mon",
+   "Mon"
+  ]
+ }
+}

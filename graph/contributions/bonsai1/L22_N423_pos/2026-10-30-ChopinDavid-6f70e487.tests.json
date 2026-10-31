@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6f70e487",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N423+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N423",
+   "pole": "+",
+   "label": "Unclear; best guess: first-person habit or experience statements, fired on the adverb or particle after 'I've' / 'I am' / 'I usually' (I've never used, I am used to, the club I usually run with)",
+   "fire": [
+    "To be honest, I've never liked the taste of coffee.",
+    "At this point I am used to the noise from the trains.",
+    "The friends I usually travel with are all busy this summer.",
+    "Lately I've always kept a spare key in my coat pocket.",
+    "I have never understood why people enjoy camping in the rain.",
+    "By now I am used to getting up before the kids.",
+    "The route I normally cycle along was flooded last week.",
+    "Honestly, I've rarely seen the river this high."
+   ],
+   "quiet": [
+    "To be honest, the coffee here has never tasted good.",
+    "At this point the noise from the trains is constant.",
+    "The friends she usually travels with are all busy this summer.",
+    "Lately the spare key has been kept in the coat pocket.",
+    "People have never understood why camping in the rain is fun.",
+    "By now the kids are used to getting up before dawn.",
+    "The route along the river was flooded last week.",
+    "Honestly, the river has rarely been this high."
+   ]
+  }
+ ],
+ "predictions": "If the guess is right, first-person 'I've never / I am used to / I usually' sentences reach 0.3-0.55 on never/to/usually, and the same statements in the third person or without the first-person frame stay under 0.2. The pole is broad (2% of tokens at 0.1 max), so weak firing on near misses is expected.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: first-person habit adverb",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: \"I've never used\" 0.548 (' never'), 'I am used to' 0.312 (' to'), 'I usually run with' 0.294 (' usually'), 'I have been wanting' 0.285 (' for'), \"Weren't all\" 0.206 (' all'); 'She has never used' 0.168, 'The café has been closed' 0.082, 'The runners meet' 0.064, floor 0.008. Card: broad flag (2.0% at 0.1 max, max 14, layer 22), peaks on ' never', ' been', ' used', ' with', ' having' after I've/I have/I am/was; the - pole suppresses ' naturally', ' recently', ' normally', ' originally', so this pole promotes such adverbs. Recorded as unclear with this best guess."
+}

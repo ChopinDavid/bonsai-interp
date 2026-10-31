@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-2874de8a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N11615+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N11615",
+   "pole": "+",
+   "label": "Greenhouse-gas potency: a gas's heat-trapping or warming strength compared with carbon dioxide (a potent greenhouse gas, global warming potential, 21 veces más potente, traps 25 times as much heat); 'potent' and 'warming' outside that comparison do not carry it",
+   "fire": [
+    "Sulphur hexafluoride is the most potent greenhouse gas ever evaluated, thousands of times stronger than CO2.",
+    "Per molecule, methane traps about eighty times more heat than carbon dioxide over twenty years.",
+    "The global warming potential of HFC-134a is roughly 1,400 relative to carbon dioxide.",
+    "Black carbon is a powerful warming agent, though it stays in the air only days.",
+    "Refrigerant leaks matter because these gases are far more potent than CO2 at trapping heat.",
+    "El óxido nitroso es casi 300 veces más potente que el CO2 como gas de efecto invernadero.",
+    "Water vapour amplifies warming, but it is methane's heat-trapping strength that worries scientists.",
+    "Landfill methane is such a potent warming gas that capturing it is a cheap climate win."
+   ],
+   "quiet": [
+    "Sulphur hexafluoride is used as an insulating gas in high-voltage switchgear.",
+    "Per household, the city collects about eighty kilograms of food waste a year.",
+    "The warming of the soup took longer than the recipe promised.",
+    "Black pepper is a powerful flavouring, though a little goes a long way.",
+    "Refrigerant leaks matter because the compressor can fail without enough gas.",
+    "El café de esta región es mucho más fuerte que el de la costa.",
+    "The greenhouse behind the cottage was full of tomato plants.",
+    "Landfill sites must be lined with clay so that liquids cannot seep into the ground."
+   ]
+  }
+ ],
+ "predictions": "Sentences comparing a gas's warming strength with CO2 reach 0.6-0.9 on 'potent', 'warming', 'potente' or the heat-trapping verb, with or without the word potent. 'potent' for sauces or pepper, 'warming' of soup, a garden greenhouse, SF6 as an insulating gas and landfill liners stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "greenhouse-gas potency comparison",
+ "unit_kind": "semantic",
+ "confidence": "high",
+ "notes": "Probe: 'far more potent greenhouse gas than carbon dioxide' 0.872 (' potent'), 'global warming potential about 300 times' 0.818 (' warming'), '21 veces más potente' 0.794 ('ente'), 'traps as much heat as 25 tonnes of carbon dioxide' 0.628 (' traps', the meaning without the word), 'most abundant greenhouse gas' 0.366 (' gas'), 'Methane is a colourless gas' 0.466 (peak ' a': after 'Methane is a' the pole already expects 'potent'); 'chili sauce far more potent' 0.010, 'Global warming is melting' 0.042, floor 0.001. Card: ' warming' x6, ' potent' x5, ' gases' x3, ' greenhouse' x2, 'ente', '-red' (infra-red absorber) in methane/N2O potency passages (max 64, layer 12, density 0.014%); the - pole peaks on ' bone', ' melting'. Near misses avoid 'Methane is a' because that prefix alone fires 0.47."
+}

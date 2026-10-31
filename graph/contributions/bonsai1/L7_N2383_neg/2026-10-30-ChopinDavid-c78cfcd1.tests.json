@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-c78cfcd1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N2383-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L7/N2383",
+   "pole": "-",
+   "label": "The second member of a coordinated pair of complementary counterparts (western and eastern, yes and no, niece and nephew, heat and cool, locked and unlocked, Friday and Saturday); 'and' joining unrelated items does not carry it",
+   "fire": [
+    "The clinic has separate entrances for the upper and lower floors.",
+    "Her aunt and uncle drove up from Cornwall for the wedding.",
+    "The thermostat can heat and cool the room within minutes.",
+    "Classes run on Tuesday and Wednesday evenings during term.",
+    "The jury must weigh the positive and negative effects of the merger.",
+    "He locked and unlocked the door several times to test the key.",
+    "The survey asked for both the strengths and weaknesses of the course.",
+    "Sort the samples into the wet and dry categories before weighing."
+   ],
+   "quiet": [
+    "The clinic has separate entrances for the upper floors and the car park.",
+    "Her aunt and a neighbour drove up from Cornwall for the wedding.",
+    "The thermostat can heat the room and log the temperature.",
+    "Classes run on Tuesday and attendance is recorded during term.",
+    "The jury must weigh the positive effects and the legal costs of the merger.",
+    "He locked the door and tested the key several times.",
+    "The survey asked for the strengths and the overall rating of the course.",
+    "Sort the samples into the wet category and label the jars before weighing."
+   ]
+  }
+ ],
+ "predictions": "The counterpart word after 'and' (lower, uncle, cool, Wednesday, negative, unlocked, weaknesses, dry) reaches 0.5-0.8. The same sentences where 'and' joins an unrelated item (the car park, a neighbour, log the temperature, the legal costs) stay under 0.25.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "second term of a counterpart pair",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'yes and no' 0.755, 'western and eastern' 0.705, 'niece and nephew' 0.625, 'reduce and oxidize' 0.544 ('ize'), 'uninstalled and reinstalled' 0.548, 'Friday and Saturday' 0.509; 'western wing and a large garden' 0.226, 'niece and the dog' 0.012, 'Friday and the results' 0.020, floor 0.004. Card: ' eastern', 'ize', ' no', ' nephew', ' Saturday', ' affect', 'aise' (bonne et mauvaise), 'installed' after 'and'/'et' (max 17.4, layer 7, density 0.26%); the + pole peaks on ' disagree', ' dead', ' lose'."
+}

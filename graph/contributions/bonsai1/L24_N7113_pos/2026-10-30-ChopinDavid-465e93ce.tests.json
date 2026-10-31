@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-465e93ce",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N7113+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N7113",
+   "pole": "+",
+   "label": "The noun 'reason(s)' naming a cause in an explanatory assertion (one of the major reasons for, the chief reason for, several reasons why); synonyms (causes, factors, because of) are the near misses",
+   "fire": [
+    "Poor drainage is one of the main reasons for the flooding in the valley.",
+    "The chief reason for the delay was a shortage of steel.",
+    "There are several reasons why the bridge was never finished.",
+    "High rents remain the biggest reason that young families leave the city.",
+    "Doctors list smoking among the leading reasons for the rise in lung disease.",
+    "Another reason for the crop failure was the late frost in May.",
+    "Cost is one of the major reasons that hospitals postpone upgrades.",
+    "The committee gave two reasons for rejecting the plan."
+   ],
+   "quiet": [
+    "Poor drainage is one of the main causes of the flooding in the valley.",
+    "The delay happened because of a shortage of steel.",
+    "There are several factors behind the bridge never being finished.",
+    "High rents are the biggest problem that young families face in the city.",
+    "Doctors list smoking among the leading risks for lung disease.",
+    "The late frost in May also contributed to the crop failure.",
+    "Cost is one of the major obstacles that hospitals face with upgrades.",
+    "The committee gave two conditions for approving the plan."
+   ]
+  }
+ ],
+ "predictions": "'one of the main reasons for', 'the chief reason for', 'several reasons why' reach 0.3-0.5 on reason(s). The same causal claims worded with causes, because of, factors, problem, risks, contributed to, obstacles stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'reason(s)' as the named cause",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 'one of the major reasons for poor concentration' 0.421 (' reasons'); 'effective home remedy' 0.093, 'some of the most sought-after courses' 0.065, 'What worries doctors is' 0.046, 'Dubai is the perfect destination' 0.029; narrative controls 0.000-0.034. Card: ' reasons' x3, ' reason' x3, ' due' x2, ' is' x3 in listicle prose ('one of the major reasons for failure', 'some of the top-notch courses', 'an effective home remedy', Arabic أسباب = reasons) (max 38, layer 24, broad 0.96%). Only the reasons configuration transferred from the card, so the label is the word; the - pole peaks on ' which', ' that', ' as'.",
+ "trigger": {
+  "words": [
+   "reason",
+   "reasons"
+  ]
+ }
+}
