@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-moridinamael-92f6c064",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N2165+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T02:37:19+00:00",
+ "roles": ["reads bonsai1/L22/N6735+"],
+ "neighbours": [
+  {
+   "unit": "L23/N2165",
+   "pole": "+",
+   "label": "the word ' reality' in 'but in reality', right after a stated misbelief (weak, sparse peak on a dense, faint pole)",
+   "fire": [
+    "Many people believe goldfish have a three-second memory, but in reality they can remember things for months.",
+    "It looks like the sun circles the Earth, but in reality the Earth orbits the sun.",
+    "Most tourists assume the desert is always hot, but in reality the nights there can be freezing.",
+    "He thought the job would be easy money, but in reality it took up every weekend.",
+    "People often say bulls hate the color red, but in reality they are mostly colorblind to it.",
+    "The plan seemed foolproof on paper, but in reality nobody had checked the budget.",
+    "Kids are told that bats are blind, but in reality most bats can see quite well.",
+    "We expected the old bridge to be fragile, but in reality it was stronger than the new one."
+   ],
+   "quiet": [
+    "Many people believe goldfish have a three-second memory, but actually they can remember things for months.",
+    "It looks like the sun circles the Earth, but in fact the Earth orbits the sun.",
+    "Most tourists find the desert hot during the day and cold at night.",
+    "He put on the headset and stepped into a virtual reality game about pirates.",
+    "People often say bulls hate the color red, though they are mostly colorblind to it.",
+    "The new reality show follows six families renovating old farmhouses.",
+    "Kids learn that bats use echolocation to find insects at night.",
+    "We expected the old bridge to be fragile, and it really was."
+   ]
+  }
+ ],
+ "predictions": "Expect fail or weak: the spike on ' reality' was 0.1-0.65 of max in probes, so the 0.20 median bar is borderline.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "step-down",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
