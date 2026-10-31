@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L29/N12164+",
+ "model": "bonsai1",
+ "layer": 29,
+ "index": 12164,
+ "pole": "+",
+ "label": "The predicate opener (should, was, reported, said, were) right after a named technical, scientific or corporate subject in science or product reporting (NASA's rover Curiosity should, Moderna reported, the lung slice method was proposed); everyday subjects with the same verbs stay low",
+ "short": "predicate after a technical subject",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N12164_pos/2026-10-31-ChopinDavid-750a02d5.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.331,
+     "peak": " should"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.353,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.733,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.482,
+     "peak": " should"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.448,
+     "peak": " were"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.488,
+     "peak": " vaccine"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.458,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.853,
+     "peak": " should"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.149,
+     "peak": " should"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.124,
+     "peak": " reported"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.033,
+     "peak": " foot"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.285,
+     "peak": " should"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.07,
+     "peak": " were"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " farmer"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.14,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.489,
+     "peak": " should"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.47,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-31-ChopinDavid-750a02d5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-750a02d5",
+   "The predicate opener (should, was, reported, said, were) right after a named technical, scientific or corporate subject in science or product reporting (NASA's rover Curiosity should, Moderna reported, the lung slice method was proposed); everyday subjects with the same verbs stay low",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-750a02d5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

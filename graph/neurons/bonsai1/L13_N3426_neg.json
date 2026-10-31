@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L13/N3426-",
+ "model": "bonsai1",
+ "layer": 13,
+ "index": 3426,
+ "pole": "-",
+ "label": "A question left open: the expression that marks an answer as unknown or undecided (remains to be seen, anyone's guess, an open question, nobody knows, hard to tell, unclear, up to you), as opposed to the same question given a settled answer",
+ "short": "answer marked unknown or undecided",
+ "kind": "semantic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L13_N3426_neg/2026-10-31-ChopinDavid-49be36f2.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.47,
+     "peak": " remains"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.423,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.556,
+     "peak": " still"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.34,
+     "peak": " knows"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.35,
+     "peak": " tell"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.421,
+     "peak": " unclear"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.474,
+     "peak": " up"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.319,
+     "peak": " question"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.043,
+     "peak": " confirmed"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": " outage"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.175,
+     "peak": " recorded"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.069,
+     "peak": " obvious"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.064,
+     "peak": "-up"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.131,
+     "peak": " is"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.206,
+     "peak": " settled"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.422,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-49be36f2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-49be36f2",
+   "A question left open: the expression that marks an answer as unknown or undecided (remains to be seen, anyone's guess, an open question, nobody knows, hard to tell, unclear, up to you), as opposed to the same question given a settled answer",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-49be36f2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N8949+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 8949,
+ "pole": "+",
+ "label": "Dense layer-3 unit (11.5% of tokens above a tenth of its max of 0.56); readings are highest on the noun or verb that completes a set phrase or compound (client application, stand out, pan stand, quart|ier), with a floor near 0.13 on ordinary text",
+ "short": "dense; completes a set phrase",
+ "kind": "dense / positional",
+ "status": "dense",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N8949_pos/2026-10-31-ChopinDavid-27a82c1c.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.303,
+     "peak": " application"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.139,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.483,
+     "peak": "ier"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.204,
+     "peak": " stand"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.127,
+     "peak": " application"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.161,
+     "peak": " coat"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.045,
+     "peak": " Snapdragon"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.108,
+     "peak": " application"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.179,
+     "peak": " desktop"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.071,
+     "peak": " design"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.187,
+     "peak": " petite"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.197,
+     "peak": " museum"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.087,
+     "peak": "ers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.161,
+     "peak": " coat"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.039,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.083,
+     "peak": " new"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.648,
+    "median_fire": 0.15,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-27a82c1c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-27a82c1c",
+   "Dense layer-3 unit (11.5% of tokens above a tenth of its max of 0.56); readings are highest on the noun or verb that completes a set phrase or compound (client application, stand out, pan stand, quart|ier), with a floor near 0.13 on ordinary text",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-27a82c1c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

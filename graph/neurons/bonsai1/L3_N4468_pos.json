@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N4468+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 4468,
+ "pole": "+",
+ "label": "After 'and' (or French 'et'), the quantifier or determiner that opens a second parallel partitive phrase (and one of, and half of them, and those who, et les petits): the start of the mirrored second half of a coordination",
+ "short": "'and' + second partitive opener",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N4468_pos/2026-10-31-ChopinDavid-2d0640f7.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.12,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.122,
+     "peak": " thirds"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.053,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.117,
+     "peak": " one"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.449,
+     "peak": " half"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.218,
+     "peak": " those"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.066,
+     "peak": " crew"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.146,
+     "peak": " les"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.051,
+     "peak": " largest"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.122,
+     "peak": " thirds"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.03,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.037,
+     "peak": " novel"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.156,
+     "peak": " left"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.065,
+     "peak": " outnumber"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.066,
+     "peak": " crew"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.058,
+     "peak": "Les"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.121,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-2d0640f7"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-2d0640f7",
+   "After 'and' (or French 'et'), the quantifier or determiner that opens a second parallel partitive phrase (and one of, and half of them, and those who, et les petits): the start of the mirrored second half of a coordination",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-2d0640f7"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

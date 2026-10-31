@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L4/N3046-",
+ "model": "bonsai1",
+ "layer": 4,
+ "index": 3046,
+ "pole": "-",
+ "label": "A short sub-word piece inside code or an odd spelling (file-mode strings 'wb'/'rb', identifier fragments such as Get|Morgan|Fingerprint, ti.ijk, np.un|r|avel, w|anna), against ordinary prose made of whole-word tokens, which sits at or below zero",
+ "short": "sub-word pieces in code",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L4_N3046_neg/2026-10-31-ChopinDavid-b92bb1e5.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.877,
+     "peak": "wb"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.382,
+     "peak": "(raw"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.073,
+     "peak": "_REUSE"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.286,
+     "peak": "ol"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.124,
+     "peak": "r"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.195,
+     "peak": "_BGR"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.181,
+     "peak": "(out"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.356,
+     "peak": " grab"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": -0.085,
+     "peak": " after"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": -0.067,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.134,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.125,
+     "peak": " blue"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": -0.043,
+     "peak": " bread"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.118,
+     "peak": " twice"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.099,
+     "peak": " solid"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": -0.008,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.24,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-b92bb1e5"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-b92bb1e5",
+   "A short sub-word piece inside code or an odd spelling (file-mode strings 'wb'/'rb', identifier fragments such as Get|Morgan|Fingerprint, ti.ijk, np.un|r|avel, w|anna), against ordinary prose made of whole-word tokens, which sits at or below zero",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-b92bb1e5"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

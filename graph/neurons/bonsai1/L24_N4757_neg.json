@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N4757-",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 4757,
+ "pole": "-",
+ "label": "The exemplification opener in technical exposition ('For instance,', 'For example,', 'As an example,', 'In this problem') that introduces a worked case right after a general statement",
+ "short": "'for instance' opener in exposition",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N4757_neg/2026-10-31-ChopinDavid-028c1790.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.102,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.491,
+     "peak": " example"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.524,
+     "peak": " example"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.265,
+     "peak": " instance"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.147,
+     "peak": " an"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.13,
+     "peak": " we"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.005,
+     "peak": " row"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.234,
+     "peak": " example"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.103,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.309,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.042,
+     "peak": ";"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.049,
+     "peak": " simply"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.069,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.065,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.022,
+     "peak": ";"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.029,
+     "peak": " variable"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.781,
+    "median_fire": 0.191,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-31-ChopinDavid-028c1790"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-028c1790",
+   "The exemplification opener in technical exposition ('For instance,', 'For example,', 'As an example,', 'In this problem') that introduces a worked case right after a general statement",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-028c1790"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
