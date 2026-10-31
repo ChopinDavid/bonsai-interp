@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-7aae66cd",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N4770+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T00:35:30+00:00",
+ "recipe": {
+  "toolchain_commit": "25dc6b963",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L34_N4770_pos/2026-10-30-ChopinDavid-7aae66cd.tests.json"
+ },
+ "label": "a colour or direction adjective opening a fixed name or idiom whose next word is predictable (silver bullet, golden goose, Black Sea, Green Belt)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N4770_pos/2026-10-30-ChopinDavid-7aae66cd.tests.json",
+   "prereg_commit": "25dc6b963",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.838,
+     "peak": " silver"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.268,
+     "peak": " Black"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.335,
+     "peak": " Golden"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.463,
+     "peak": " golden"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.089,
+     "peak": " black"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.461,
+     "peak": " Black"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.027,
+     "peak": " Green"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.509,
+     "peak": " silver"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " silver"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.203,
+     "peak": " black"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.135,
+     "peak": " golden"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " goose"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.055,
+     "peak": " oil"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.097,
+     "peak": " black"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.608,
+     "peak": " silver"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.75,
+    "median_fire": 0.398,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "25dc6b963",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "colour word opening a set name",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: silver bullet 179, Silver Leaf, Black Sea, Southern Watch, 'black' operations, Черный котел, black gold, Silver Linings, Goldenbaby. Probe: Silver Linings Playbook 0.935, silver bullet 0.726, golden goose 0.525, black gold 0.353, Black Sea 0.306, black operations 0.113; literal: painted silver 0.094, golden colour 0.105, calm and black 0.188, black cat 0.283. Late layer (34), consistent with predicting the idiom's next word.",
+ "selection": "random draw"
+}
