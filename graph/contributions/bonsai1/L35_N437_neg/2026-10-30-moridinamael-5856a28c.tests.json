@@ -1,0 +1,49 @@
+{
+ "contribution": "2026-10-30-moridinamael-5856a28c",
+ "contributor": "moridinamael",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N437-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:41:09+00:00",
+ "roles": ["reads bonsai1/L23/N2165+"],
+ "neighbours": [
+  {
+   "unit": "L35/N437",
+   "pole": "-",
+   "label": "a faint, dense background on almost any text (code, prose, Japanese) with no specific trigger, not specific to repeated names",
+   "fire": [
+    "The committee postponed its decision until the budget report arrives next week.",
+    "def add(a, b):\n    return a + b",
+    "今日は雨が降っているので、家で本を読みます。",
+    "She folded the map, tucked it into her coat, and walked toward the harbor.",
+    "for (int i = 0; i < n; i++) { total += values[i]; }",
+    "Photosynthesis converts light energy into chemical energy stored in glucose.",
+    "駅の近くに新しいパン屋ができました。",
+    "Please remember to water the plants while I'm away on Thursday."
+   ],
+   "quiet": [
+    ".",
+    "…",
+    "—",
+    "!",
+    "?",
+    ";",
+    ",",
+    "-"
+   ]
+  }
+ ],
+ "unit_kind": "dense / positional",
+ "predictions": "Unsure: the pole is dense (64% of tokens above 0.1 of max) and faint; fire sentences may reach 0.1-0.2, below the 0.20 median bar. Expect a fail on the median.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "bank-solo",
+   "inverse-gmoo",
+   "step-down"
+  ]
+ }
+}
