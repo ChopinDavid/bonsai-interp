@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-bbd6779c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N2980+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T06:36:19+00:00",
+ "recipe": {
+  "toolchain_commit": "b7577ffb1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L14_N2980_pos/2026-10-31-ChopinDavid-bbd6779c.tests.json"
+ },
+ "label": "The consequent of an unreal or hypothetical condition (if he were alive he would probably, had the storm hit later the harvest would have been lost, wouldn't it be nice if, habría sido): counterfactual 'would', as opposed to habitual, polite, reported or real-conditional 'would'",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L14_N2980_pos/2026-10-31-ChopinDavid-bbd6779c.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.513,
+     "peak": " course"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.403,
+     "peak": " probably"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.196,
+     "peak": " thousands"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.171,
+     "peak": " if"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.274,
+     "peak": " would"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.166,
+     "peak": " had"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.326,
+     "peak": "ría"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.095,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.05,
+     "peak": "ions"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.033,
+     "peak": " line"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.038,
+     "peak": " passing"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.015,
+     "peak": " at"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.003,
+     "peak": " noon"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.021,
+     "peak": " would"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.045,
+     "peak": "á"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.069,
+     "peak": " would"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.235,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "b7577ffb1",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "counterfactual 'would'",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'If he were alive today, he would probably' 0.666 (' today'), 'Had the storm hit a day later, the harvest would have' 0.507 (' have'), \"Wouldn't it be wonderful if\" 0.388 (' if'), Spanish 'hubiera llovido ... habría' 0.343 ('ría'), 'Without the dam, the valley would be' 0.292; habitual 0.005, polite 0.010, reported 0.011, factual 0.009, 'I would be grateful if you could' 0.004. Card: ' would' x7, ' have' x4, ' if' x2, ' worse', 'iera' in counterfactuals (max 20.5, layer 14, density 0.04%). The - pole also peaks on ' would' x10: the two poles split the uses of 'would'.",
+ "selection": "random draw"
+}

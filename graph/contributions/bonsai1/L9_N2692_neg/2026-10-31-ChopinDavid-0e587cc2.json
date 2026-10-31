@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-0e587cc2",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N2692-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T06:36:56+00:00",
+ "recipe": {
+  "toolchain_commit": "b7577ffb1",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L9_N2692_neg/2026-10-31-ChopinDavid-0e587cc2.tests.json"
+ },
+ "label": "The conjunction that adds the last member of an enumeration of three or more items (brain, spinal cord, and optic nerve; имя, адрес, телефон и почта; not to mention), as opposed to the 'and' of a two-item pair or of two clauses",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N2692_neg/2026-10-31-ChopinDavid-0e587cc2.tests.json",
+   "prereg_commit": "b7577ffb1",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.156,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.151,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.563,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.281,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.113,
+     "peak": "рон"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.078,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.222,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.538,
+     "peak": " mention"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.192,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.065,
+     "peak": " light"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.478,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.058,
+     "peak": "Participants"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.07,
+     "peak": "рон"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.062,
+     "peak": "ye"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.131,
+     "peak": " audience"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.086,
+     "peak": " station"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.797,
+    "median_fire": 0.189,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "b7577ffb1",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "list-closing 'and'",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'the brain, the spinal cord, and the optic nerve' 0.524 (peak ' the' after and), Russian 'номер телефона и адрес' 0.451 (' и'), 'not to mention' 0.231, 'teachers, principals, and superintendents' 0.103, 'name, address, phone number and email' 0.061; two-item 'blood films and bone marrow' 0.107, 'The brain and the spinal cord' 0.153, clausal 'and went home' 0.056. Card: ' and' x5, ' the' x4, ' mention' x2, ' of', ' и' in '(i.e., brain, spinal cord, and optic nerve)', '(e.g., teachers, principals, and superintendents)' (max 2.8, layer 9, broad flag, gate-closed 76%).",
+ "selection": "random draw"
+}
