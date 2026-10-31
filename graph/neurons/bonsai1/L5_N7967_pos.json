@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L5/N7967+",
+ "model": "bonsai1",
+ "layer": 5,
+ "index": 7967,
+ "pole": "+",
+ "label": "the continuation piece 'an' / 'ay' / 'ian' of a proper name split after Ha-/Han-/Hin-/An- (Hain|an, Han|an, Hen|an, Hin|ay|ana); not names whose split keeps the vowel in the first piece (H|anoi, Han|uman)",
+ "short": "'an' piece of split Ha-/An- names",
+ "kind": "token/lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L5_N7967_pos/2026-10-31-ChopinDavid-c41a3fb1.tests.json",
+   "prereg_commit": "e8c513a68",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.834,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.064,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.25,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.01,
+     "peak": "unn"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.01,
+     "peak": " Syria"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.119,
+     "peak": "an"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.698,
+     "peak": "ane"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.56,
+     "peak": "ay"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.07,
+     "peak": "anoi"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.246,
+     "peak": "uman"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.006,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": " rivers"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.01,
+     "peak": " wrestler"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.009,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.146,
+     "peak": "ley"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.127,
+     "peak": "Han"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.719,
+    "median_fire": 0.184,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-c41a3fb1"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-c41a3fb1",
+   "the continuation piece 'an' / 'ay' / 'ian' of a proper name split after Ha-/Han-/Hin-/An- (Hain|an, Han|an, Hen|an, Hin|ay|ana); not names whose split keeps the vowel in the first piece (H|anoi, Han|uman)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-c41a3fb1"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

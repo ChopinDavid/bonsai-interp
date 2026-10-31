@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L3/N7074+",
+ "model": "bonsai1",
+ "layer": 3,
+ "index": 7074,
+ "pole": "+",
+ "label": "the contracted auxiliary clitic 've or 'll after a pronoun (you've, we'll), weaker on possessive 's and 're; not the full forms have/will",
+ "short": "clitic 've / 'll after pronoun",
+ "kind": "token/lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L3_N7074_pos/2026-10-31-ChopinDavid-0ef97526.tests.json",
+   "prereg_commit": "e8c513a68",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.23,
+     "peak": "'ll"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.299,
+     "peak": "'ve"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.27,
+     "peak": "'ll"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.306,
+     "peak": "'ve"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.213,
+     "peak": "'ll"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.229,
+     "peak": "'ve"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.166,
+     "peak": "'ll"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.166,
+     "peak": "'ve"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.048,
+     "peak": " shall"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.025,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.026,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.029,
+     "peak": " seen"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.027,
+     "peak": " find"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.016,
+     "peak": "'t"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.23,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-0ef97526"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-0ef97526",
+   "the contracted auxiliary clitic 've or 'll after a pronoun (you've, we'll), weaker on possessive 's and 're; not the full forms have/will",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-0ef97526"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
