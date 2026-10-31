@@ -1,0 +1,51 @@
+{
+ "contribution": "2026-10-30-moridinamael-31324f20",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L22/N6735+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T01:56:41+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the word 'content' ending the web boilerplate 'Skip to main content' (other site boilerplate such as cookie banners, nav bars, newsletter lines or 'Registered in England and Wales' is only weak), and the '--' of a flag after '(see' in command-line help text"
+ },
+ "neighbours": [
+  {
+   "unit": "L22/N6735",
+   "pole": "+",
+   "label": "the word 'content' ending the 'Skip to (main) content' accessibility link, after other web-page text (a narrow part of a diffuse pole)",
+   "fire": [
+    "Home | About Us | Contact Skip to main content Welcome to the city library website.",
+    "Menu Search Login Skip to content The best hiking trails in the region are listed below.",
+    "Accessibility Statement Cookie Policy Skip to main content Latest news from the district council.",
+    "Toggle navigation Skip to content Shop Cart (0) Free shipping on orders over $50.",
+    "Sign in Register Skip to main content University of Westbrook Department of Physics",
+    "Español | English Skip to content Our clinic is open Monday through Friday.",
+    "Search this site Skip to main content Annual Report 2023 now available.",
+    "Main menu Skip to content Recipes Breakfast Lunch Dinner Desserts"
+   ],
+   "quiet": [
+    "We drove from Dublin to Belfast in Northern Ireland last summer.",
+    "Home | About Us | Contact Welcome to the city library website and its main collection.",
+    "Menu Search Login The best hiking trails in the region are listed below.",
+    "Accessibility Statement Cookie Policy Latest news from the district council.",
+    "Toggle navigation Shop Cart (0) Free shipping on orders over $50.",
+    "Sign in Register University of Westbrook Department of Physics",
+    "Español | English Our clinic is open Monday through Friday.",
+    "Search this site Annual Report 2023 now available."
+   ]
+  }
+ ],
+ "predictions": "Expect about 5-6/8 fire above 0.2 and 0 near misses at 0.3; risk: bare 'Skip to content' without a period scored near zero in my earlier look, so some fire items may miss.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "neighbors",
+   "quick-test"
+  ]
+ }
+}
