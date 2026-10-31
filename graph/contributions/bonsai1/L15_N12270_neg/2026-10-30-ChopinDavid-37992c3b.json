@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-37992c3b",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N12270-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T01:32:11+00:00",
+ "recipe": {
+  "toolchain_commit": "a16734dc3",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L15_N12270_neg/2026-10-30-ChopinDavid-37992c3b.tests.json"
+ },
+ "label": "Human potential as a collective resource that is lost or must be nurtured: human capital, 'our future', lost productivity, wasted or unlocked potential of people",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N12270_neg/2026-10-30-ChopinDavid-37992c3b.tests.json",
+   "prereg_commit": "a16734dc3",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.417,
+     "peak": " capital"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.901,
+     "peak": " potential"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.434,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.608,
+     "peak": " lost"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.498,
+     "peak": " talents"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.383,
+     "peak": " potential"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.628,
+     "peak": " capacity"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.129,
+     "peak": " earnings"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.106,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.309,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.062,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.044,
+     "peak": "'s"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " reservoir"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " repair"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.227,
+     "peak": " revenue"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.072,
+     "peak": " recovered"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.466,
+    "near_misses_at_0.3": 1
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "a16734dc3",
+  "minutes": 0,
+  "batch_size": 16
+ },
+ "short": "human potential as lost/nurtured resource",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: loss of human capital -38.8, potential life -30.4, our future -28.8, lost productivity -24.6. Probe separated the meaning from the words: financial loss 0.002, capital equipment 0.009, weather future 0.019.",
+ "selection": "random draw"
+}
