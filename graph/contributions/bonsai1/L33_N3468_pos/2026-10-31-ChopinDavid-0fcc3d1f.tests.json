@@ -1,0 +1,60 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-0fcc3d1f",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N3468+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L33/N3468",
+   "pole": "+",
+   "label": "A lone b/B/б piece that opens an acronym or an unfamiliar split word (b|ionic, ear|b|uds, B|PC, NF|PA, б|урь): the letter spelled as its own token; common words that happen to split (b|ungalow) and whole-token b-words (bungalow's twin cottage, gzip, Bluetooth) do not carry it",
+   "fire": [
+    "The kernel mounts the cache through bcache before the root filesystem is ready.",
+    "Engineers traced the outage to a faulty BGP announcement from the upstream provider.",
+    "We profiled the service with bpftrace during the outage.",
+    "Several bottles were tested for BPA before the recall was announced.",
+    "The study found a bimodal distribution of response times.",
+    "Samsung shipped the phone with Bixby enabled by default.",
+    "Freight on the BNSF line was delayed by the flooding.",
+    "Они купили бензин на заправке у дороги."
+   ],
+   "quiet": [
+    "The kernel mounts the disk through the bootloader before the root filesystem is ready.",
+    "Engineers traced the outage to a faulty BIOS setting on the upstream server.",
+    "We profiled the service with a debugger during the outage.",
+    "Several bottles were tested for lead before the recall was announced.",
+    "The study found a bitmask of response flags in the log.",
+    "Samsung shipped the phone with Bluetooth enabled by default.",
+    "Freight on the branch line was delayed by the flooding.",
+    "Они купили билет на поезд у дороги."
+   ]
+  }
+ ],
+ "predictions": "Acronyms and technical words that start with a lone ' b'/' B'/' б' token (bcache, BGP, BPA, bimodal, Bixby, BNSF, bpftrace, бензин) peak on that piece at 0.1-0.6. Whole-token twins (bootloader, BIOS, bakery, lead, bitmask, Bluetooth, branch, билет) stay under 0.05. The probe's 'bungalow' 0.003 and 'bzip2' 0.106 show the token alone is not sufficient, so some fire items may stay low.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "lone b/B piece opening a split word",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Probe: 'снежных бурь' 0.545 (' б'), 'bionic' 0.469 (' b'), 'earbuds' 0.379 ('b'); but 'bursar' 0.124, 'bzip2' 0.106, 'bungalow' 0.003; other letter pieces 'brontosaurus' 0.136 (' br'), 'fcntl' 0.005; whole-token twins 0.003-0.006. Card: ' B' x8, ' b' x5, 'b' x4, ' б' x3, '-b' x2, 'б' x2 of the top 32 peaks, in NESC, arc-fault, bcr, NFPA, bionic, bd2k, BPC, Earbuds (max 179, layer 33, density 0.09%).",
+ "trigger": {
+  "tokens": [
+   " b",
+   " B",
+   "b",
+   " б",
+   " Б",
+   "б",
+   "-b",
+   "/b"
+  ]
+ }
+}

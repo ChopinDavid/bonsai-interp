@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-750a02d5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N12164+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N12164",
+   "pole": "+",
+   "label": "The predicate opener (should, was, reported, said, were) right after a named technical, scientific or corporate subject in science or product reporting (NASA's rover Curiosity should, Moderna reported, the lung slice method was proposed); everyday subjects with the same verbs stay low",
+   "fire": [
+    "The James Webb Space Telescope should begin science operations by summer.",
+    "Pfizer reported a similar drop in antibody levels after six months.",
+    "The CRISPR-based assay was proposed as a faster alternative to PCR testing.",
+    "SpaceX's Starship prototype should attempt its first orbital flight this spring.",
+    "The lithium-sulphur cells were cycled 500 times before capacity fell below 80 percent.",
+    "AstraZeneca said the vaccine remained effective against the new variant.",
+    "The hydrogel coating was shown to reduce bacterial growth on implants.",
+    "Intel's new chip should reach consumer laptops by the end of the year."
+   ],
+   "quiet": [
+    "My grandmother should arrive by summer if the trains are running.",
+    "The teacher reported a similar drop in attendance after the holidays.",
+    "The old footpath was proposed as a shortcut to the village school.",
+    "Our neighbour's son should attempt his driving test this spring.",
+    "The children were counted twice before the bus left the car park.",
+    "The farmer said the fence remained standing after the storm.",
+    "The kitchen floor was shown to the landlord during the inspection.",
+    "The baker's new loaf should reach the shelves by the end of the week."
+   ]
+  }
+ ],
+ "predictions": "News-style sentences whose subject is a telescope, company, assay, prototype, cell, vaccine or chip peak on the verb or auxiliary at 0.2-0.6. The same frames with a grandmother, teacher, footpath, son, children, farmer or baker as subject stay under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "predicate after a technical subject",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: \"NASA's newest rover, Curiosity, should land\" 0.602 (' should'), 'Moderna reported the same trend' 0.477 (' the'), 'The lung slice method was proposed' 0.381 (' was'), 'cars were reassembled and driven 800 km before' 0.269, 'The rover is a six-wheeled' 0.201, 'Many adults do have' 0.167, 'asked to read ... and' 0.132; 'Children in kindergarten should find' 0.058, 'The children sat quietly' 0.028, 'It rained all day and' 0.069. Card: ' and' x4, ' should' x4, ' was' x3, ' will', ' reported', ' do' after subjects in reading-test, rover, Moderna trial, car-test and e-liquid reports (max 54, layer 29, density 0.85%). The - pole promotes 'successfully/achieving/failing'."
+}

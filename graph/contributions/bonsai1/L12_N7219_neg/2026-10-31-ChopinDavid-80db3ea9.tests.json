@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-80db3ea9",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N7219-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N7219",
+   "pole": "-",
+   "label": "Unclear: the card peaks on catching/caught/beat in fishing and sports recaps, but probes of casual first-person blog prose scored 0.09-0.28 while a formal 'anglers caught fish' control scored 0.337; best guess is the catching or beating verb of a fishing or sports haul",
+   "fire": [
+    "By noon the boys had caught a dozen bass off the old pier.",
+    "We spent the whole weekend catching trout in the upper river.",
+    "The home side beat the champions for the first time in a decade.",
+    "He landed a forty-pound salmon on his very first cast.",
+    "The crew kept hauling in mackerel until the deck was slippery.",
+    "She caught three perch and a small pike before breakfast.",
+    "Our team beat their rivals by two goals in the final.",
+    "They were reeling in bluegill faster than they could bait the hooks."
+   ],
+   "quiet": [
+    "By noon the boys had caught a bad cold from the rain.",
+    "We spent the whole weekend catching up on sleep.",
+    "The home side painted the stadium for the first time in a decade.",
+    "He caught the last bus home after his very first shift.",
+    "The crew kept painting the hull until the deck was slippery.",
+    "She caught sight of three deer before breakfast.",
+    "Our team met their rivals for lunch after the final.",
+    "They were setting the tables faster than the guests could arrive."
+   ]
+  }
+ ],
+ "predictions": "Fishing and sports sentences (caught a dozen bass, catching trout, beat the champions, landed a salmon, hauling in mackerel) may peak at 0.1-0.4 on the verb or the fish; the same frames with non-haul senses (caught a cold, catching up on sleep, caught the bus, met their rivals) should stay under 0.15. Low confidence; the register hypothesis already failed in the probe.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear; fishing/sports catching verb",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: 'The anglers caught fish throughout the morning' 0.337 (' fish'), 'So sometimes people get lost' 0.284 ('So'), 'We just kept catching fish ... and I' 0.169 (' I'), 'They slept with their hands' 0.145, \"Today's race was very familiar\" 0.130, 'I love looking back' 0.088; formal twins 0.038-0.101. The casual-register hypothesis is refuted (the formal fishing sentence scored highest), so the test turns to the fishing/sports catch. Card: ' caught' x3, ' catching', ' beat' x2, ' very', ' to', ' sometimes', ' with' in blog and sports text (max 5.0, layer 12, density 0.88%)."
+}

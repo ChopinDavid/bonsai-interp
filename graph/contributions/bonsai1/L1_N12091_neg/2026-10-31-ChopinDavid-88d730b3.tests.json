@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-88d730b3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N12091-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N12091",
+   "pole": "-",
+   "label": "Dense layer-1 unit (22.7% of tokens above a tenth of its max of 0.29); its strongest readings sit on fl/fr/bl word pieces (Arabic فل and فر, ' blank', ' Flor', Flem|ish), but the floor on ordinary text is about 0.2 of max, so no 8 + 8 label can be clean",
+   "fire": [
+    "You can leave the second line blank if it does not apply.",
+    "تم فتح القفل بالمفتاح القديم.",
+    "The Florentine merchants shipped wool across the Alps.",
+    "The Flemish weavers settled in Norwich in the sixteenth century.",
+    "A blank page stared back at him all morning.",
+    "سافر الأفراد إلى المدينة في الصباح.",
+    "The form has a blank box for the date of birth.",
+    "Her cousin from Florida sent a blanket for the baby."
+   ],
+   "quiet": [
+    "You can leave the second line empty if it does not apply.",
+    "تم إغلاق الباب بالمفتاح القديم.",
+    "The Venetian merchants shipped silk across the Alps.",
+    "The Dutch weavers settled in Norwich in the sixteenth century.",
+    "An empty page stared back at him all morning.",
+    "سافر الناس إلى المدينة في الصباح.",
+    "The form has a small box for the date of birth.",
+    "Her cousin from Oregon sent a quilt for the baby."
+   ]
+  }
+ ],
+ "predictions": "Sentences containing blank, القفل, Flor-, Flem- or الأفراد peak at 0.3-0.9 on the piece; the same sentences with empty/الباب/Venetian/Dutch/الناس score 0.05-0.3 because the unit is dense. Expect several near misses at or above 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense; fl/fr/bl pieces",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: 'القفل' 0.894 ('فل'), 'blank' 0.482, 'Florentine' 0.284 ('rent'), 'Flemish' 0.264 (peak ' mostly', not the piece); controls 'Spanish painters ... Madrid' 0.283, 'empty' 0.207, 'cat sat' 0.189, 'Venetian' 0.059. Card: dense flag 22.7%, gate-closed 99%, peaks 'فر' x7, 'blank' x5, 'ler' x3, 'فل' x2, ' Flor' x2 (layer 1). Registered as dense with a best-guess test."
+}

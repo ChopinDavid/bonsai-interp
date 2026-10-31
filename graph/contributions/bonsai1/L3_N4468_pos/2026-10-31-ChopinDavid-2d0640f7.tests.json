@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-2d0640f7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N4468+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N4468",
+   "pole": "+",
+   "label": "After 'and' (or French 'et'), the quantifier or determiner that opens a second parallel partitive phrase (and one of, and half of them, and those who, et les petits): the start of the mirrored second half of a coordination",
+   "fire": [
+    "The cathedral is one of the largest in Spain and one of the least visited.",
+    "Two thirds of the voters backed the measure and one third of them opposed it.",
+    "Some of the guests arrived by train and some of them by car.",
+    "The novel is both one of his shortest works and one of his darkest.",
+    "Half of the fields were planted with wheat and half of them left fallow.",
+    "There were those who wanted to fight and those who wanted to flee.",
+    "Most of the crew slept below deck and a few of them kept watch.",
+    "Les riches seraient épargnés et les pauvres paieraient la facture."
+   ],
+   "quiet": [
+    "The cathedral is one of the largest in Spain, though few tourists visit it.",
+    "Two thirds of the voters backed the measure while the rest opposed it.",
+    "Some of the guests arrived by train, the others by car.",
+    "The novel is one of his shortest works, but it is also very dark.",
+    "Half of the fields were planted with wheat and left to ripen.",
+    "Those who wanted to fight were outnumbered by the ones who wanted to flee.",
+    "Most of the crew slept below deck while the officers kept watch.",
+    "Les riches seraient épargnés, mais pas les pauvres."
+   ]
+  }
+ ],
+ "predictions": "Coordinations whose second half repeats a partitive opener (and one of, and half of, and some of, and those who, et les) peak on that opener at 0.1-0.3; the same sentences with the second half rephrased (while the rest, with a beautiful square) stay under 0.1. A low-amplitude broad pole (card max 4.4, 1.1% of tokens above a tenth of max), so a median above 0.3 is unlikely.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'and' + second partitive opener",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'and half of them' 0.229, 'and one of the most' 0.166, 'et les petits' 0.162, 'those who ... and those who' 0.130; controls 'with a beautiful old square' 0.106 (' old'), 'while the others' 0.054, 'came early' 0.042, 'sang and danced' 0.036, floor 0.038. Card: ' one' x6, ' half', ' those', ' les', ' des' after and/et (max 4.38, layer 3, broad flag, gate-closed 98%). Direction right, amplitude small."
+}

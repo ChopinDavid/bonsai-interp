@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-ff32f4ae",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N4647-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N4647",
+   "pole": "-",
+   "label": "Demons as a race or faction in fantasy or anime narrative (humans and demons at war, the king of the demons, the Demon Lord's army), not the idiom of personal demons and not other fantasy races such as dragons, elves or vampires",
+   "fire": [
+    "For three centuries the border fortress had held back the armies of the demons.",
+    "In the second season the demons finally break the seal and pour into the human realm.",
+    "The young priestess was raised to believe that all demons were born evil.",
+    "Legend says the sword was forged to slay the demons that once ruled the valley.",
+    "Our guild takes contracts to hunt demons in the mountains north of the capital.",
+    "The villagers whispered that a demon had been living in the abandoned shrine.",
+    "After the war, humans and demons signed an uneasy truce at the river crossing.",
+    "The Demon King's generals gathered in the throne room to plan the invasion."
+   ],
+   "quiet": [
+    "For three centuries the border fortress had held back the armies of the orcs.",
+    "In the second season the vampires finally break the seal and pour into the human realm.",
+    "The young priestess was raised to believe that all dragons were born evil.",
+    "Legend says the sword was forged to slay the giants that once ruled the valley.",
+    "Our guild takes contracts to hunt wolves in the mountains north of the capital.",
+    "He spent years battling the demons of addiction and self-doubt.",
+    "After the war, humans and elves signed an uneasy truce at the river crossing.",
+    "The Goblin King's generals gathered in the throne room to plan the invasion."
+   ]
+  }
+ ],
+ "predictions": "Fantasy sentences in which demons are a people or army reach 0.3-0.8 on ' demons'/' demon' (or on the word after 'Demon' in a title). The same sentences with orcs, vampires, dragons, giants, elves or goblins stay under 0.2 (vampires leaked 0.167 in the probe), and 'the demons of addiction' stays near 0.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "demons as a fantasy faction",
+ "unit_kind": "semantic",
+ "confidence": "medium",
+ "notes": "Probe: 'humans and demons had been at war' 0.766 (' demons'), 'The Demon Lord's army' 0.450 (peak ' Lord'), 'king of the demons' 0.312; 'inner demons' 0.015; Russian 'Король демонов' 0.123 (peak 'он'); twins: vampires 0.167, dragons 0.053, Elf Queen 0.023, floor 0.009. Card: ' demons' x2, ' Demon' in anime/fantasy text, Russian дем|он|ов (max 17.9, layer 11, density 0.08%); the other peaks (系, 各種, Soul) are unrelated."
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-bbd6779c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N2980+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N2980",
+   "pole": "+",
+   "label": "The consequent of an unreal or hypothetical condition (if he were alive he would probably, had the storm hit later the harvest would have been lost, wouldn't it be nice if, habría sido): counterfactual 'would', as opposed to habitual, polite, reported or real-conditional 'would'",
+   "fire": [
+    "If the Romans had discovered gunpowder, history would have taken a very different course.",
+    "Had the goalkeeper stayed on his line, the shot would probably have been saved.",
+    "Without antibiotics, a simple scratch would still kill thousands of people every year.",
+    "Wouldn't it be strange if dolphins turned out to understand our songs?",
+    "Were the bridge a metre lower, the ferry would never fit beneath it.",
+    "If I had taken the earlier train, I would have missed the whole commotion.",
+    "Si el río hubiera crecido un metro más, el pueblo habría quedado bajo el agua.",
+    "A medieval peasant would have found the idea of a weekend absurd."
+   ],
+   "quiet": [
+    "Every winter the Romans would send fresh legions to the northern frontier.",
+    "The goalkeeper said he would stay on his line for the penalty.",
+    "Would you mind passing the salt before the soup gets cold?",
+    "Dolphins would often follow the boat for miles when we fished at dawn.",
+    "The ferry would leave the harbour at six and return by noon each day.",
+    "I told the conductor I would take the earlier train the next morning.",
+    "El río crecerá un metro más si sigue lloviendo toda la semana.",
+    "A medieval peasant would rise at dawn and work until dusk."
+   ]
+  }
+ ],
+ "predictions": "Counterfactual conditionals peak at 0.3-0.7 on ' would', ' have', ' if' or the condition word (' today'). Habitual 'every winter the Romans would', reported 'said he would', polite 'would you mind' and real conditionals stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "counterfactual 'would'",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'If he were alive today, he would probably' 0.666 (' today'), 'Had the storm hit a day later, the harvest would have' 0.507 (' have'), \"Wouldn't it be wonderful if\" 0.388 (' if'), Spanish 'hubiera llovido ... habría' 0.343 ('ría'), 'Without the dam, the valley would be' 0.292; habitual 0.005, polite 0.010, reported 0.011, factual 0.009, 'I would be grateful if you could' 0.004. Card: ' would' x7, ' have' x4, ' if' x2, ' worse', 'iera' in counterfactuals (max 20.5, layer 14, density 0.04%). The - pole also peaks on ' would' x10: the two poles split the uses of 'would'."
+}

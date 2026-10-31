@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-0e587cc2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N2692-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N2692",
+   "pole": "-",
+   "label": "The conjunction that adds the last member of an enumeration of three or more items (brain, spinal cord, and optic nerve; имя, адрес, телефон и почта; not to mention), as opposed to the 'and' of a two-item pair or of two clauses",
+   "fire": [
+    "The kit contains a compass, a whistle, a mirror, and a small knife.",
+    "Symptoms include fever, headache, stiff neck, and sensitivity to light.",
+    "The eye consists of the cornea, the lens, the retina, and the optic nerve.",
+    "Participants were drawn from nurses, pharmacists, physiotherapists, and midwives.",
+    "В заявке укажите имя, фамилию, телефон и адрес электронной почты.",
+    "The study covered wheat, barley, oats, and rye grown on the same plots.",
+    "The orchestra needs strings, brass, woodwind, and percussion for this piece.",
+    "He packed shirts, socks, a razor, and a paperback, not to mention his camera."
+   ],
+   "quiet": [
+    "The kit contains a compass and a small knife.",
+    "Symptoms include fever and sensitivity to light.",
+    "The eye consists of the lens and the retina.",
+    "Participants were drawn from nurses and midwives.",
+    "В заявке укажите имя и адрес электронной почты.",
+    "The study covered wheat and rye grown on the same plots.",
+    "The orchestra tuned up and the audience fell silent.",
+    "He packed his bag and left for the station."
+   ]
+  }
+ ],
+ "predictions": "Lists of four items peak on the final ' and'/' и' (or the determiner after it) at 0.1-0.5; two-item pairs and clausal 'and' stay under 0.15. The probe gave 0.524 and 0.451 for the anatomical and Russian lists but only 0.06-0.10 for two other lists, so a median above 0.3 is doubtful (broad pole, 3.3% of tokens).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "list-closing 'and'",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'the brain, the spinal cord, and the optic nerve' 0.524 (peak ' the' after and), Russian 'номер телефона и адрес' 0.451 (' и'), 'not to mention' 0.231, 'teachers, principals, and superintendents' 0.103, 'name, address, phone number and email' 0.061; two-item 'blood films and bone marrow' 0.107, 'The brain and the spinal cord' 0.153, clausal 'and went home' 0.056. Card: ' and' x5, ' the' x4, ' mention' x2, ' of', ' и' in '(i.e., brain, spinal cord, and optic nerve)', '(e.g., teachers, principals, and superintendents)' (max 2.8, layer 9, broad flag, gate-closed 76%)."
+}

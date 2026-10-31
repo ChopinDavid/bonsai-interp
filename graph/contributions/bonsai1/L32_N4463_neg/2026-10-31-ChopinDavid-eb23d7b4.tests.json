@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-eb23d7b4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N4463-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N4463",
+   "pole": "-",
+   "label": "A list of Indian film actors' names: the comma or 'and' between names in a Bollywood or South Indian cast credit (starring Aamir Khan, Gracy Singh and Rachel Shelley; Cast : Rajinikanth, Kamal Haasan, ...), much weaker for Hollywood or European casts in the same format",
+   "fire": [
+    "Dil Chahta Hai is a film directed by Farhan Akhtar, starring Aamir Khan, Saif Ali Khan, Akshaye Khanna and Preity Zinta.",
+    "Cast : Mohanlal, Mammootty, Suresh Gopi, Shobana",
+    "The film features Hrithik Roshan, Priyanka Chopra and Madhuri Dixit in lead roles.",
+    "Baahubali was directed by S. S. Rajamouli and stars Prabhas, Rana Daggubati, Anushka Shetty and Tamannaah.",
+    "Kahaani is a 2012 thriller directed by Sujoy Ghosh, starring Vidya Balan, Parambrata Chatterjee and Nawazuddin Siddiqui.",
+    "Starring : Nagarjuna, Trisha Krishnan, Vijay Sethupathi",
+    "The ensemble cast includes Irrfan Khan, Tabu, Konkona Sen Sharma and Pankaj Tripathi.",
+    "Mughal-e-Azam starred Prithviraj Kapoor, Dilip Kumar, Madhubala and Durga Khote."
+   ],
+   "quiet": [
+    "The Departed is a film directed by Martin Scorsese, starring Leonardo DiCaprio, Matt Damon, Jack Nicholson and Mark Wahlberg.",
+    "Cast : Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
+    "The film features Brad Pitt, Angelina Jolie and Edward Norton in lead roles.",
+    "Gladiator was directed by Ridley Scott and stars Russell Crowe, Joaquin Phoenix, Connie Nielsen and Oliver Reed.",
+    "Amélie is a 2001 comedy directed by Jean-Pierre Jeunet, starring Audrey Tautou, Mathieu Kassovitz and Jamel Debbouze.",
+    "Starring : Hugh Grant, Julia Roberts, Rhys Ifans",
+    "The ensemble cast includes Bill Murray, Scarlett Johansson, Anna Faris and Giovanni Ribisi.",
+    "Casablanca starred Humphrey Bogart, Ingrid Bergman, Paul Henreid and Claude Rains."
+   ]
+  }
+ ],
+ "predictions": "Cast credits of Indian films peak at 0.4-0.9 on the comma or 'and' before the next actor's name. Identical credits for Western films stay mostly under 0.3, though the bare 'Cast :' format leaked at 0.365 in the probe, so one or two Western near misses may reach 0.3.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "Indian film cast list",
+ "unit_kind": "semantic",
+ "confidence": "medium",
+ "notes": "Probe: 'Cast : Rajinikanth, Kamal Haasan, Sridevi, Jayaprada' 0.876 (','), 'Lagaan ... starring Aamir Khan, Gracy Singh and' 0.688 (' and'), 'debut of actors like Naseeruddin Shah, Shabana Azmi and' 0.380; Western twins: 'Cast : Tom Hanks, Meg Ryan,' 0.365, 'Inception ... starring Leonardo DiCaprio' 0.095; Indian-English loan/SEO prose 0.187, 0.141; neutral 0.004-0.058. Card: Pestonjee 'starring' -128, commas between Om Puri, Pankaj Kapur, Naseeruddin Shah, Chiranjeevi, Radhika (max 128, layer 32, density 0.31%); the lower card examples are Indian-English web prose ('in a hurry', 'We always care')."
+}

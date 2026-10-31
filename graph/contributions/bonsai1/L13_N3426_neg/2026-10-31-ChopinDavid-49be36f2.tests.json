@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-49be36f2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N3426-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T06:20:39+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N3426",
+   "pole": "-",
+   "label": "A question left open: the expression that marks an answer as unknown or undecided (remains to be seen, anyone's guess, an open question, nobody knows, hard to tell, unclear, up to you), as opposed to the same question given a settled answer",
+   "fire": [
+    "Whether the bridge will reopen before winter remains to be seen.",
+    "What caused the outage is anyone's guess at this point.",
+    "How the committee will vote is still an open question.",
+    "Who wrote the anonymous letter, nobody knows.",
+    "Whether the treatment helped or merely coincided with recovery is hard to tell.",
+    "Where the money went is unclear even to the auditors.",
+    "Should we paint the fence white or green? That's entirely up to you.",
+    "Why the species vanished so quickly is a question that has never been settled."
+   ],
+   "quiet": [
+    "The bridge will reopen before winter, the council confirmed on Monday.",
+    "What caused the outage was a fallen tree on the main line.",
+    "How the committee voted is recorded in the minutes.",
+    "Who wrote the anonymous letter was obvious from the handwriting.",
+    "The treatment helped, as the follow-up scans clearly showed.",
+    "Where the money went is listed line by line in the auditors' report.",
+    "We painted the fence white, and it looks much brighter now.",
+    "Why the species vanished was settled by the fossil record decades ago."
+   ]
+  }
+ ],
+ "predictions": "Sentences that declare a question unresolved reach 0.3-0.7 on the marker (' seen', ' guess', ' open', ' knows', ' tell', ' unclear', ' up'). The same questions answered or settled (the council confirmed, was a fallen tree, is recorded in the minutes) stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "answer marked unknown or undecided",
+ "unit_kind": "semantic",
+ "confidence": "medium",
+ "notes": "Probe: 'That's up to you' 0.703 (' up'), \"I don't know\" 0.585 (\"'t\"), 'a matter of debate' 0.561, 'still unknown' 0.431, 'difficult to say' 0.354; German 'ist unklar' 0.113; settled twins 0.009-0.031. \"I don't care\" also scored 0.585 on \"'t\", so the unit fires predictively on 'I don't' before the verb is seen: the test avoids the \"don't\" frame on both sides. Card: don't/know not/matter of debate/difficult to say/up to you/We'll see/still unknown (max 29.9, layer 13, density 0.05%)."
+}
