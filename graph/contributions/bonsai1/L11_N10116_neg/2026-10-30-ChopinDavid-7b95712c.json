@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-7b95712c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10116-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T04:33:06+00:00",
+ "recipe": {
+  "toolchain_commit": "d3067319c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N10116_neg/2026-10-30-ChopinDavid-7b95712c.tests.json"
+ },
+ "label": "evidence under examination: documents, records, data or samples as the thing reviewed, obtained, tested or shown (records reviewed by the newspaper, emails show, samples tested)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N10116_neg/2026-10-30-ChopinDavid-7b95712c.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.518,
+     "peak": " obtained"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.158,
+     "peak": " examined"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.147,
+     "peak": " samples"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.137,
+     "peak": " reveal"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.53,
+     "peak": " reviewed"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.349,
+     "peak": " tested"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.555,
+     "peak": " inspected"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 1.01,
+     "peak": "ed"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.123,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.055,
+     "peak": " audit"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.122,
+     "peak": " samples"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.012,
+     "peak": " staff"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.072,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": "ies"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.261,
+     "peak": "Investigators"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.027,
+     "peak": " night"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.433,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3067319c",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "evidence being examined",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: max 3.53, leak regime 78%; top examples split between evidence verbs ('documents show', 'data reviewed by', 'bottles tested', 'CT scans', 'Department of Justice documents') and the nose/snoring cluster (' respiratory' x4, 'snore'). Probe: 'records reviewed by the newspaper' 0.873, 'samples tested at the lab' 0.353, 'emails show that' 0.265, 'respiratory infections' 0.195; 'emails were sent ... about' 0.100, 'samples were stored' 0.083, story about the bridge 0.011. 'snore' 0.923 is the other cluster, left out of this label on purpose.",
+ "selection": "random draw"
+}

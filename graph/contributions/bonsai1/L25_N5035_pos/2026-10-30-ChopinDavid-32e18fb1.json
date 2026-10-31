@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-32e18fb1",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N5035+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T04:33:23+00:00",
+ "recipe": {
+  "toolchain_commit": "d3067319c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L25_N5035_pos/2026-10-30-ChopinDavid-32e18fb1.tests.json"
+ },
+ "label": "young children's class making or practising something: the object slot of make/create/build/paint/practise in a school or nursery report (made a paper plate chick, practising our dance)",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L25_N5035_pos/2026-10-30-ChopinDavid-32e18fb1.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.406,
+     "peak": " collage"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.645,
+     "peak": " their"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.513,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.394,
+     "peak": "ising"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.825,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.201,
+     "peak": " paper"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.399,
+     "peak": " own"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.445,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.079,
+     "peak": " new"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.086,
+     "peak": " own"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.039,
+     "peak": " mock"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.494,
+     "peak": " their"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.358,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.027,
+     "peak": " sorted"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.02,
+     "peak": " own"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.069,
+     "peak": " a"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.425,
+    "near_misses_at_0.3": 2
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3067319c",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "kids' classroom craft activity",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: peaks on ' a', ' our', ' their', ' create' in kindergarten/class newsletters ('make a paper plate chick', 'completed a worksheet', 'practising our festive dance', 'finished our animal models'). Probe: 'children created their own puppets' 0.701, 'kindergarten class will make a paper plate turtle' 0.597, 'second graders built a volcano' 0.565, 'first graders are practising their song' 0.489; engineers make a prototype 0.010, accountants created their own spreadsheet 0.113, children listening to a story 0.199, band practising its set 0.222, pottery club shaped a bowl 0.215. The trigger needs both the children and the making.",
+ "selection": "random draw"
+}

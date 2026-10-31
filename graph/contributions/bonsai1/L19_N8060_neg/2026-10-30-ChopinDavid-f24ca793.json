@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-30-ChopinDavid-f24ca793",
+ "kind": "interpret",
+ "neuron": "bonsai1/L19/N8060-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T04:34:43+00:00",
+ "recipe": {
+  "toolchain_commit": "d3067319c",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L19_N8060_neg/2026-10-30-ChopinDavid-f24ca793.tests.json"
+ },
+ "label": "the earliest origin of a thing in history: first described in an ancient source, oldest known, pioneering, introduced in <year>, founded in <year>",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L19_N8060_neg/2026-10-30-ChopinDavid-f24ca793.tests.json",
+   "prereg_commit": "d3067319c",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.15,
+     "peak": "ri"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.084,
+     "peak": " known"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.007,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.165,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.034,
+     "peak": " through"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.039,
+     "peak": "icle"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.008,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.052,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.02,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.026,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.007,
+     "peak": " island"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.083,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.006,
+     "peak": " dark"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " sou"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.023,
+     "peak": " spring"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": "8"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.82,
+    "median_fire": 0.045,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "d3067319c",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "historical first origin",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: 'first described in one of the oldest books', 'introduced in 2008 after the publication of a white paper', 'war was ended by the Treaty of Westminster', 'His pioneering journey', 'In 1957, the EEC', 'Augsburg Confession of 1530', plus code noise (SELinux, ARM7TDMI). Probe: 'first described in a Persian medical text from the tenth century' 0.261 (peak ' medical'), 'described in detail in chapter four' 0.148, others 0.002-0.060 including 'founded in 1887 by two brothers' 0.002. The test leans on earliest/oldest/pioneering framing, the only configuration that registered.",
+ "selection": "random draw"
+}
