@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-30-moridinamael-6fdaa846",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L4/N11795+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T02:59:37+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "sentence-initial 'Thus' (and more weakly 'Hence') that draws a conclusion from the previous sentence, as against other sentence-initial connectives and mid-sentence 'thus'"
+ },
+ "neighbours": [
+  {
+   "unit": "L4/N11795",
+   "pole": "+",
+   "label": "'Thus' or 'Hence' starting a sentence in formal prose, and an unspaced dash opening an aside after a noun; not 'Therefore', 'However', 'Moreover' or spaced hyphens",
+   "fire": [
+    "The samples were contaminated during transport. Thus the results of the second trial must be discarded.",
+    "Hence the committee recommends that the proposal be deferred until the next fiscal year.",
+    "The function is continuous on a closed interval. Hence it attains both a maximum and a minimum.",
+    "Thus, the court concluded that the contract had been validly formed.",
+    "Demand for grain fell sharply after the harvest. Thus prices in the regional markets declined for three consecutive months.",
+    "Hence, any solution to the equation must also satisfy the boundary condition.",
+    "The manuscript—long thought lost in the fire of 1731—was rediscovered in a private library.",
+    "The treaty—signed under considerable pressure—failed to secure a lasting peace."
+   ],
+   "quiet": [
+    "The samples were contaminated during transport. Therefore the results of the second trial must be discarded.",
+    "Moreover, the committee recommends that the proposal be deferred until the next fiscal year.",
+    "The function is continuous on a closed interval, so it attains both a maximum and a minimum.",
+    "However, the court concluded that the contract had been validly formed.",
+    "Demand for grain fell sharply after the harvest, and prices in the regional markets declined for three consecutive months.",
+    "Therefore, any solution to the equation must also satisfy the boundary condition.",
+    "The manuscript - long thought lost in the fire of 1731 - was rediscovered in a private library.",
+    "The treaty, signed under considerable pressure, failed to secure a lasting peace."
+   ]
+  }
+ ],
+ "predictions": "Thus/Hence fire clearly; dash items weaker (maybe 0.2-0.4); expect 6-8/8 fire, 0-1 near misses above bar",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
