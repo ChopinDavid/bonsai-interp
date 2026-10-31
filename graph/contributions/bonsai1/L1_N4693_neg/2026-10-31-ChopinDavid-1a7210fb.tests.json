@@ -1,0 +1,57 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-1a7210fb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N4693-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N4693",
+   "pole": "-",
+   "label": "dense layer-1 unit (20% of tokens above 0.1 of max); strongest on the split pieces ' underst' (understory, understated), 'ary' after Coron-, ' irres' (irresolute), and the words ' backward' and ' hierarchy'",
+   "fire": [
+    "The clinic was understaffed during the winter outbreak.",
+    "She served as understudy for the lead role all season.",
+    "Calling the flood a nuisance was an understatement.",
+    "The dog crept backward from the open door.",
+    "He was admitted to the Coronary Care Unit after chest pain.",
+    "The general was irresolute and let the chance slip away.",
+    "Lean slightly backward to balance the kayak.",
+    "A strict hierarchy governed life in the monastery."
+   ],
+   "quiet": [
+    "The clinic was overstaffed during the quiet summer months.",
+    "Few visitors understand the rules of the game.",
+    "Calling the flood a nuisance was an exaggeration.",
+    "The dog crept forward from the open door.",
+    "He was admitted to the cardiac care unit after chest pain.",
+    "The general was irresponsible and let the chance slip away.",
+    "Lean slightly forward to balance the kayak.",
+    "A strict order governed life in the monastery."
+   ]
+  }
+ ],
+ "predictions": "fire 6-8 of 8 at 0.5-0.9; near misses leak at 0.1-0.4 because the unit is dense (lowercase coronary scored 0.407, a plain sentence 0.318), so AUROC may hold while quiet items sit near the threshold",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "dense L1; pieces underst / Coron-ary / irres",
+ "unit_kind": "dense / positional",
+ "confidence": "low",
+ "notes": "Probe: understory 0.742, understated 0.586, Coron|ary 0.885, irres|olute 0.778, backward 0.732, hierarchy 0.775; whole-token understand 0.125, coronary 0.407, 'ferns grew under the oaks' 0.318 on ' o'. Dense flag from the card; the test records the pieces as a best guess rather than a clean label.",
+ "trigger": {
+  "pieces": [
+   " underst",
+   "ary",
+   " irres",
+   " backward",
+   " hierarchy"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-def82e59",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N10574+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L16/N10574",
+   "pole": "+",
+   "label": "unclear: the first member of a coordinated pair or list of complementary approaches or categories ('both physical and emotional', 'recycling, composting and')",
+   "fire": [
+    "Chronic stress has both physical and mental consequences.",
+    "The council promotes recycling and reuse of household packaging.",
+    "Good coaching addresses both technical and tactical weaknesses.",
+    "The programme combines recycling, composting and waste-to-energy plants.",
+    "Recovery after surgery involves both physical and psychological adjustment.",
+    "Patients receive both medical and social support after discharge.",
+    "The curriculum balances both theoretical and practical training.",
+    "The plant handles recycling of glass, paper and aluminium."
+   ],
+   "quiet": [
+    "Chronic stress has serious consequences for the heart.",
+    "The council collects household packaging every Tuesday.",
+    "Good coaching corrects tactical weaknesses over time.",
+    "The programme funds three new waste-to-energy plants.",
+    "Recovery after surgery takes about six weeks.",
+    "Patients receive a follow-up call after discharge.",
+    "The curriculum includes two years of practical training.",
+    "The plant sorts glass, paper and aluminium by weight."
+   ]
+  }
+ ],
+ "predictions": "weak: fire 3-6 of 8 at 0.1-0.55; near misses under 0.08; the probe's treatment-list items (drugs, surgery, conservative measures) scored under 0.1, so the hypothesis rests on two hits",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear; first of coordinated categories",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: 'both physical and emotional factors' 0.568, 'recycling, composting and energy recovery' 0.496; conservative measures 0.090, drugs/surgery 0.058, fructose 0.039, osteoporosis 0.130, remote-controlled 0.075, museum options list 0.038, floor 0.059. Max 4.72 with a gate-closed regime (65%); no clear trigger, so the test is a best guess."
+}

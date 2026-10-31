@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-875173bf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N2698+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N2698",
+   "pole": "+",
+   "label": "the article or adjective slot before the head noun in Spanish, Italian, Portuguese or Russian (un plazo, nuovo comando, хорошее место); absent in French, German and English",
+   "fire": [
+    "El tribunal fijó un nuevo plazo para presentar las pruebas.",
+    "En primer lugar, debemos revisar el presupuesto anual.",
+    "Il comune ha approvato un progetto per il nuovo ponte.",
+    "Questo libro racconta la storia di un piccolo villaggio.",
+    "O professor explicou o problema com um exemplo simples.",
+    "Ela comprou um carro novo no mês passado.",
+    "Это очень интересная книга о древнем Риме.",
+    "Мы нашли хорошее кафе рядом с вокзалом."
+   ],
+   "quiet": [
+    "Le tribunal a fixé un nouveau délai pour présenter les preuves.",
+    "Das Gericht setzte eine neue Frist für die Vorlage der Beweise.",
+    "The court set a new deadline for submitting the evidence.",
+    "Zuerst müssen wir das jährliche Budget prüfen.",
+    "Ce livre raconte l'histoire d'un petit village.",
+    "Trabajamos mucho y descansamos poco.",
+    "Ieri abbiamo camminato tanto e dormito poco.",
+    "We found a good café next to the station."
+   ]
+  }
+ ],
+ "predictions": "fire 8 of 8 at 0.4-1.1; French, German and English twins under 0.02; Spanish or Italian without a determiner-noun pair under 0.1",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "es/it/pt/ru prenominal modifier slot",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: 'un nuovo comando' 1.129 on nuovo, 'de un plazo' 0.792, 'a mediano plazo' 0.687 on iano, 'En segundo lugar' 0.641, 'Digite o número' 0.471, 'хорошее место' 0.367; Spanish without determiners 0.069; English 0.000, French 'un délai' 0.005, German 0.003. Max 496; the pole predicts a Romance/Russian head noun from its modifier, and French is excluded."
+}

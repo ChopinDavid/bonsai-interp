@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-022fc865",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N5456+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N5456",
+   "pole": "+",
+   "label": "a generalizing predicate in reflective self-help prose about life, hope or disappointment (always opens, rarely exceeds), not the same syntax in technical prose",
+   "fire": [
+    "The truth is that fear rarely survives the first honest conversation.",
+    "What matters is that hope always finds a smaller door when the big one closes.",
+    "We learn that disappointment never lasts as long as we expect.",
+    "Grace is what happens when you stop demanding that life be fair.",
+    "The strange thing is that gratitude often arrives after the loss, not before.",
+    "Our plans seldom survive contact with reality, and that is where growth begins.",
+    "In the end, kindness is remembered longer than cleverness.",
+    "You discover that peace is rarely found where you first looked for it."
+   ],
+   "quiet": [
+    "The problem is that the seal rarely survives the first pressure test.",
+    "What matters is that the valve always opens when the sensor trips.",
+    "We found that the coating never lasts as long as the supplier claims.",
+    "Corrosion is what happens when you leave steel exposed to salt water.",
+    "The odd thing is that the error often appears after the update, not before.",
+    "Estimates seldom survive contact with the full dataset, so we revise them monthly.",
+    "In the audit, late invoices were flagged more often than missing ones.",
+    "You will find that the fuse is rarely located where the manual shows it."
+   ]
+  }
+ ],
+ "predictions": "fire 3-6 of 8 at 0.1-0.35; technical twins under 0.06; AUROC may be high while the median falls below 0.3, so a fail is possible",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "reflective life-generalization predicate",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: 'rarely exceeds them' 0.347, 'another always opens' 0.245, 'what happens when you place your hope' 0.182, 'chance to grow' 0.118, 'how deep the loneliness was' 0.075, 'we can even accept' 0.009; technical twins 0.013-0.053. The register carries a small but consistent signal; max 11.44 so probe values are low."
+}

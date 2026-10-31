@@ -1,0 +1,53 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-99d73ecf",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N2705+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N2705",
+   "pole": "+",
+   "label": "the token '，并' (Chinese clause-linking 并 fused with the preceding full-width comma, including ，并不 and ，并且)",
+   "fire": [
+    "学校新建了一座图书馆，并向全体学生开放。",
+    "他每天早上跑步半小时，并坚持记录自己的成绩。",
+    "公司调整了产品价格，并推出了新的会员计划。",
+    "研究人员收集了大量样本，并对数据进行了分析。",
+    "市政府修复了古桥，并将其列为保护文物。",
+    "这项计划听起来简单，并不意味着容易实施。",
+    "她完成了论文，并顺利通过了答辩。",
+    "志愿者清理了海滩，并在沿岸种植了树木。"
+   ],
+   "quiet": [
+    "学校新建了一座图书馆，而且向全体学生开放。",
+    "他每天早上跑步半小时，然后记录自己的成绩。",
+    "公司调整了产品价格，同时推出了新的会员计划。",
+    "研究人员收集了大量样本，也对数据进行了分析。",
+    "市政府修复了古桥，还将其列为保护文物。",
+    "她完成了论文，顺利通过了答辩。",
+    "志愿者清理了海滩和沿岸的树林。",
+    "The volunteers cleaned the beach and then planted trees along the shore."
+   ]
+  }
+ ],
+ "predictions": "fire 8 of 8 at 0.45-0.9; Chinese twins with 而且/然后/同时/也/还 after the comma under 0.1; English 'and then' under 0.15",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "token '，并'",
+ "unit_kind": "token/lexical",
+ "confidence": "high",
+ "notes": "Probe: ，并 0.530, 0.879, 0.471; 然而，并不是 0.458 (so the token, not the additive meaning); 和 0.001, ，同时 0.007, ，而且 0.082; English '. And then' 0.127, ' and' 0.013. The tokenizer fuses ，并 into one token while ，和 / ，而且 / ，同时 split after the comma.",
+ "trigger": {
+  "tokens": [
+   "，并"
+  ]
+ }
+}

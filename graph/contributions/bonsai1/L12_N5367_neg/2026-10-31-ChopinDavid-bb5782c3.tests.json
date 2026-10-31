@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-bb5782c3",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5367-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N5367",
+   "pole": "-",
+   "label": "an elliptical tag that rounds off a clause as an afterthought ('and all', 'and counting', ', tops', 'or what', 'on camera and off'), not the same word used as a full argument",
+   "fire": [
+    "The hotel was nice and all, but the beach was too far away.",
+    "The repair should take an hour, tops.",
+    "Our little club has raised ten thousand pounds and counting.",
+    "Is this the best pie you have ever tasted or what!",
+    "She is funny on camera and off.",
+    "He has coached three champions and counting.",
+    "You will wait five minutes for a table, tops.",
+    "I liked the lecture and all, but it ran far too long."
+   ],
+   "quiet": [
+    "The hotel was nice, but the beach was too far away.",
+    "The repair should take about an hour.",
+    "Our little club has raised ten thousand pounds this year.",
+    "Is this the best pie you have ever tasted?",
+    "She is funny when the camera is off.",
+    "He has coached three champions in ten years.",
+    "You will wait five minutes for a table on a busy night.",
+    "I liked all of the lecture except the ending."
+   ]
+  }
+ ],
+ "predictions": "fire 6-8 of 8 at 0.4-0.7; the same words as full arguments under 0.05; 'and everything' scored 0.013 in the probe so that form is avoided",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "elliptical clause-closing tag (and all / tops)",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: ', tops' 0.688, 'and counting' 0.637, 'and all' 0.522, 'on stage and off' 0.499, 'or what!' 0.428; 'and everything' 0.013, 'From that summer on' 0.015; full arguments (everything into the car, all the students, counted, turned off) 0.011-0.028. The pole marks a clause-final tag with elided content, not the lexical items themselves."
+}
