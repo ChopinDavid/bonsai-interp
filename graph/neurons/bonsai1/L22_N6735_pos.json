@@ -4,10 +4,10 @@
  "layer": 22,
  "index": 6735,
  "pole": "+",
- "label": "the word 'content' ending the web boilerplate 'Skip to main content' (other site boilerplate such as cookie banners, nav bars, newsletter lines or 'Registered in England and Wales' is only weak), and the '--' of a flag after '(see' in command-line help text",
+ "label": "the word 'content' ending the 'Skip to (main) content' accessibility link, after other web-page text (a narrow part of a diffuse pole)",
  "short": null,
  "kind": null,
- "status": "failed",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 0
    },
    "contribution": "2026-10-24-moridinamael-2719258a"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N6735_pos/2026-10-30-moridinamael-31324f20.tests.json",
+   "prereg_commit": "5dfc08373",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.387,
+     "peak": " content"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.211,
+     "peak": " below"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.556,
+     "peak": " content"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.397,
+     "peak": " content"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.445,
+     "peak": " content"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.199,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.67,
+     "peak": " content"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.238,
+     "peak": " content"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.058,
+     "peak": " Ireland"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.083,
+     "peak": " website"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.157,
+     "peak": " below"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.061,
+     "peak": " Cookie"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.094,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": -0.209,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.092,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.012,
+     "peak": " "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 1,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.392,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-31324f20"
   }
  ],
  "label_history": [
@@ -138,6 +260,11 @@
    "2026-10-24-moridinamael-2719258a",
    "the word 'content' ending the web boilerplate 'Skip to main content' (other site boilerplate such as cookie banners, nav bars, newsletter lines or 'Registered in England and Wales' is only weak), and the '--' of a flag after '(see' in command-line help text",
    "failed"
+  ],
+  [
+   "2026-10-30-moridinamael-31324f20",
+   "the word 'content' ending the 'Skip to (main) content' accessibility link, after other web-page text (a narrow part of a diffuse pole)",
+   "held"
   ]
  ],
  "examples": [],
@@ -149,21 +276,22 @@
   "moridinamael"
  ],
  "contributions": [
-  "2026-10-24-moridinamael-2719258a"
+  "2026-10-24-moridinamael-2719258a",
+  "2026-10-30-moridinamael-31324f20"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
  "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
+  "level": 2,
+  "name": "re-tested",
+  "test_rounds": 2,
+  "sentences": 32,
   "contributors": 1,
-  "qc": 0
+  "qc": 1
  }
 }
