@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-2d85a2de",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N10280-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L29/N10280",
+   "pole": "-",
+   "label": "the opening piece of a split Greek- or Latin-derived technical word (immun|o-, imm|uno, ap|ol-, apo-, auto|ant-) before its stem; weaker on whole-token kin such as 'immune'",
+   "fire": [
+    "Serum immunoglobulin levels fell sharply after the transplant.",
+    "The biopsy was stained by immunohistochemistry to locate the receptor.",
+    "Checkpoint immunotherapy has changed the outlook for melanoma.",
+    "An immunoassay detected the toxin at nanogram concentrations.",
+    "Her autoantibody titres rose before any symptoms appeared.",
+    "The gene encodes an apolipoprotein that carries cholesterol in the blood.",
+    "Sweat from apocrine glands has a stronger odour than eccrine sweat.",
+    "Early Roman emperors were granted apotheosis after death."
+   ],
+   "quiet": [
+    "The vaccine gives lasting immunity against measles.",
+    "The hospital installed an autofocus camera in the operating theatre.",
+    "Preachers warned that the apocalypse was near.",
+    "The doctor ordered an autopsy the following morning.",
+    "An automatic door closed behind the surgeon.",
+    "The fans queued for a signed photo after the match.",
+    "The mitochondrial membrane folds inward into deep ridges.",
+    "The pharmacist checked the prescription twice before dispensing it."
+   ]
+  }
+ ],
+ "predictions": "fire 7-8 of 8 at 0.3-0.85; everyday whole-token auto-/apo- words (autopsy, apocalypse, automatic) under 0.05; 'immunity' may leak around 0.4 like 'immune' did",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split Greek prefix piece (immuno-, apo-, auto-)",
+ "unit_kind": "token/lexical",
+ "confidence": "medium",
+ "notes": "Probe: ap|ol|ipoprotein 0.845, immun|odeficiencies 0.739, apo|theosis 0.741, imm|uno|affinity 0.640, auto|antibodies 0.354, immun|ocompromised 0.303; whole-token immune 0.453 (leak), Chlor|ophyll 0.403, apost|le 0.184, automatically 0.006. The + pole is ' phot'/'ochond', so the neuron splits Greek prefixes by family; quiet items avoid chloro- and immune."
+}

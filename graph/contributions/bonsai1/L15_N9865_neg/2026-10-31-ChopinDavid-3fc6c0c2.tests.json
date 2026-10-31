@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-3fc6c0c2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N9865-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N9865",
+   "pole": "-",
+   "label": "a physical property or detectable signal named in natural-science exposition (brightness, densities, gravity, radar, migration of a protein), not the same word in everyday use",
+   "fire": [
+    "Spectrographs recorded a shift in wavelength as the galaxy receded from the telescope.",
+    "The rover's instrument measures how the soil conducts heat during the cold Martian night.",
+    "Ice in the crater floors reflects radar pulses more strongly than the bare regolith around it.",
+    "Jupiter's moons have densities that suggest rocky cores beneath their icy shells.",
+    "Labelled antibodies revealed the migration of the receptor from the membrane to the nucleus.",
+    "Variable stars change their brightness over periods of days or weeks.",
+    "Neutron star matter has a gravity so strong that light bends sharply around it.",
+    "Heavy water absorbs neutrons differently from ordinary water, which matters in a reactor."
+   ],
+   "quiet": [
+    "The hall was bright with lanterns during the harvest festival.",
+    "Rural migration to the cities has reshaped the labour market since the 1950s.",
+    "The two cafés price their coffee differently, so students favour the cheaper one.",
+    "Police used a radar gun to catch speeding drivers on the bypass.",
+    "The report described population densities in the suburbs of Lyon.",
+    "The seriousness of the charges gave the hearing a particular gravity.",
+    "You will hear the choir rehearsing if you pass the chapel at noon.",
+    "The dancers were lighter on their feet after a week of rest."
+   ]
+  }
+ ],
+ "predictions": "fire 7-8 of 8 at 0.5-0.8; the same words in everyday or social contexts under 0.05; 'population densities' may leak a little",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "physical property/signal word in science prose",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: brightness 0.647, differently (neutrons) 0.616, radar 0.602, densities 0.804, migration (protein) 0.807; same words outside science: bright coat 0.009, bird migration festival 0.023, ledgers formatted differently 0.034; budget floor 0.011. The pole fires on the measurable-property word only when the sentence is physical-science exposition."
+}

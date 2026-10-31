@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-e7a5cdca",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N10590+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L22/N10590",
+   "pole": "+",
+   "label": "the comparison operator word: the verb 'compare' (active, present) or 'between' directly after a resemblance noun (resemblance, similarity, parallel)",
+   "fire": [
+    "Critics often compare her early novels with those of Woolf.",
+    "The teacher asked the class to compare the two translations line by line.",
+    "Visitors remarked on the resemblance between the twins and their grandfather.",
+    "It is tempting to compare the brain to a computer, but the analogy breaks down.",
+    "Biologists have long noticed the similarity between bat wings and human hands.",
+    "Before buying, compare the warranties offered by each manufacturer.",
+    "The report draws a parallel between the two financial crises.",
+    "You cannot compare a wooden boat with a steel hull on strength alone."
+   ],
+   "quiet": [
+    "Critics often praise her early novels and ignore the later ones.",
+    "The teacher asked the class to read the two translations aloud.",
+    "Visitors remarked on the warmth between the twins and their grandfather.",
+    "It is tempting to ignore the brain's complexity, but the simplification fails.",
+    "Biologists have long studied the bones between the wrist and the fingers.",
+    "Before buying, read the warranties offered by each manufacturer.",
+    "The report describes the decade between the two financial crises.",
+    "A wooden boat was moored beside the steel hull all winter."
+   ]
+  }
+ ],
+ "predictions": "fire 5-8 of 8; 'compare' 0.3-0.5, 'resemblance between' up to 0.65, but 'analogy between' scored only 0.05 in the probe so some fire items may miss; spatial and temporal 'between' under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'compare' / resemblance 'between'",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: 'noted the resemblance between' 0.661, 'don't compare X to' 0.342; 'compared the diet of X with' 0.090, 'analogy between a heart and' 0.054, 'determines whether' 0.035, 'line from X to Y' 0.017; spatial between 0.009, from Leeds 0.114, floor 0.010. Only the present-tense verb and a resemblance-noun complement carried it; expect partial coverage."
+}

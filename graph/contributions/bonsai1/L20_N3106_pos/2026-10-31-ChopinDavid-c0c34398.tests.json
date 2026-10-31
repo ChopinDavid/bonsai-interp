@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-c0c34398",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N3106+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N3106",
+   "pole": "+",
+   "label": "unclear: the end of a statement inside an indented Python method body (self.x = None, a call followed by newline, a trailing comma in a dict literal)",
+   "fire": [
+    "class Cache:\n    def __init__(self, size):\n        self.size = size\n        self.items = {}\n\n    def clear(self):\n        self.items.clear()\n        self.hits = 0\n        self.misses = 0\n",
+    "class Logger:\n    def flush(self):\n        if self.buffer:\n            self.stream.write(self.buffer)\n            self.stream.flush()\n            self.buffer = \"\"\n        self.count += 1\n",
+    "    def to_dict(self):\n        return {\n            KEY_NAME: self.name,\n            KEY_AGE: self.age,\n            KEY_EMAIL: self.email,\n        }\n",
+    "class Player:\n    def stop(self):\n        self.timer.cancel()\n        self.timer = None\n        self.state = STOPPED\n        self.emit(\"stopped\")\n",
+    "    def on_close(self, event):\n        self.save_settings()\n        self.window.hide()\n        self.window.destroy()\n        self.window = None\n",
+    "class Trainer:\n    def epoch_end(self):\n        self.train_loss.reset_states()\n        self.train_acc.reset_states()\n        self.step = 0\n",
+    "class Queue:\n    def push(self, item):\n        self.items.append(item)\n        self.size += 1\n        self.notify_all()\n",
+    "    def disconnect(self):\n        self.socket.close()\n        self.socket = None\n        self.connected = False\n        self.log(\"disconnected\")\n"
+   ],
+   "quiet": [
+    "class Cache {\n  constructor(size) {\n    this.size = size;\n    this.items = {};\n  }\n  clear() {\n    this.items = {};\n    this.hits = 0;\n  }\n}\n",
+    "cache:\n  size: 100\n  items: {}\n  hits: 0\n  misses: 0\n",
+    "size = 100\nitems = {}\nhits = 0\nmisses = 0\nprint(size, hits)\n",
+    "The cache stores up to one hundred items and resets its hit counter when cleared.",
+    "def flush(stream, buffer):\n    stream.write(buffer)\n    stream.flush()\n    return \"\"\n",
+    "SELECT name, age, email\nFROM players\nWHERE state = 'stopped'\nORDER BY age;\n",
+    "void stop() {\n    timer.cancel();\n    timer = null;\n    state = STOPPED;\n}\n",
+    "When the player stops, the timer is cancelled and the state is set to stopped."
+   ]
+  }
+ ],
+ "predictions": "likely fail: four probe snippets of this shape scored 0.014-0.050; longer class passages are the remaining guess, so fire may be 0-3 of 8",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear; Python method-body line end",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: Python method bodies 0.044, 0.050, 0.014, 0.040; JS 0.015, top-level Python 0.069 and 0.017, prose 0.021, YAML 0.006. The card's top examples are deep inside Python classes (self.hwindow.destroy(), reset_states(), ATTR_MAX_AGE: self.max_age,), with one prose outlier (' Senior' Corps). Max 33.25 but no probe configuration reached 0.1."
+}

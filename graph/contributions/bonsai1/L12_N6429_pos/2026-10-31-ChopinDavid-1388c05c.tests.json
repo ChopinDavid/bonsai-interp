@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-1388c05c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N6429+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N6429",
+   "pole": "+",
+   "label": "the punctuation or conjunction right after a word used as a mention ('words like not or never', 'the word X,') or closing an unquoted 'he thought'",
+   "fire": [
+    "Writers should avoid hedges like perhaps or somewhat in a conclusion.",
+    "Prefer short verbs such as cut or fix over their noun forms.",
+    "In this manual the term operator\nmeans the person who holds the licence.",
+    "Fillers like basically or literally weaken a speech.",
+    "Nobody will notice, Ellen thought, if I leave through the garden.",
+    "It is already too late, he thought again, and sat back down.",
+    "The word robot, as Čapek coined it, meant forced labour.",
+    "Use whom, not who, after a preposition in formal prose."
+   ],
+   "quiet": [
+    "Writers should avoid hedging in a conclusion.",
+    "Prefer short verbs over long noun phrases.",
+    "In this manual the operator is the person who holds the licence.",
+    "Fillers weaken a speech more than silence does.",
+    "\"Nobody will notice if I leave through the garden,\" Ellen said.",
+    "It was already too late, and he sat back down.",
+    "The robot, as Čapek imagined it, was a forced labourer.",
+    "Use a preposition before the relative pronoun in formal prose."
+   ]
+  }
+ ],
+ "predictions": "fire 4-7 of 8; word-mention coordination up to 0.9 but ', X thought,' only 0.13-0.28 in the probe, so the median may sit near 0.3; quoted speech and ordinary uses under 0.07",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "boundary after a mentioned word / unquoted 'thought'",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: 'words like not or never' 0.888 on ' or'; 'Only my parents, Bliss thought,' 0.276; 'he thought again.' 0.190; 'The word hobbit,' 0.153; 'the term small issuer\\nmeans' 0.125; 'she thought, this is' 0.125; 'fewer, not less,' 0.075; quoted speech 'she said' 0.014, 'she knew' 0.064, no reporting 0.034, hobbit used normally 0.012. Max 12.69; the mention case is far stronger than the thought case."
+}

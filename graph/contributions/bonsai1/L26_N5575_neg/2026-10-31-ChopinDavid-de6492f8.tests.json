@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-de6492f8",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N5575-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N5575",
+   "pole": "-",
+   "label": "unclear: a modal or hedged auxiliary after the subject in a first-person opinion or a mathematical stipulation (I would say, I don't think, let A be, can be estimated)",
+   "fire": [
+    "Asked about the merger, I would say the timing is wrong.",
+    "I don't think the committee will accept a late report.",
+    "Let f be a continuous function on the closed interval.",
+    "The error can be bounded by a constant times the step size.",
+    "I would argue that the second draft is stronger.",
+    "Honestly, I would rather walk than wait for the bus.",
+    "Let n be the number of vertices in the graph.",
+    "The remainder can be computed in a single pass."
+   ],
+   "quiet": [
+    "Asked about the merger, I said the timing was wrong.",
+    "The committee rejected the late report.",
+    "f is a continuous function on the closed interval.",
+    "The error is bounded by a constant times the step size.",
+    "The second draft is stronger, in my view.",
+    "Honestly, I walked instead of waiting for the bus.",
+    "n is the number of vertices in the graph.",
+    "The remainder is computed in a single pass."
+   ]
+  }
+ ],
+ "predictions": "fire 4-7 of 8 at 0.3-0.55; indicative twins leaked at 0.2-0.35 in the probe, so a fail by AUROC or median is likely",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear; hedged modal (I would / let A be)",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: 'I would love' 0.539, 'Let A and B be square matrices' 0.516, 'I would say' 0.509, 'can be estimated' 0.384, 'I don't think' 0.271; 'could be scathing' 0.018, 'we can save' 0.018; indicative twins: 'I say yes' 0.322, 'A and B are square matrices' 0.351, 'I think' 0.206, 'is estimated' 0.170, 'were scathing' 0.017. The modal adds only 0.1-0.2 over its indicative twin."
+}

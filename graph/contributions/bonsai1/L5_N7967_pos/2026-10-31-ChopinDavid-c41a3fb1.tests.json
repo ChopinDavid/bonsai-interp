@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-c41a3fb1",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N7967+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N7967",
+   "pole": "+",
+   "label": "the continuation piece 'an' / 'ay' / 'ian' of a proper name split after Ha-/Han-/Hin-/An- (Hain|an, Han|an, Hen|an, Hin|ay|ana); not names whose split keeps the vowel in the first piece (H|anoi, Han|uman)",
+   "fire": [
+    "The ferry to Hainan leaves from Haikou's old port every evening.",
+    "Tainan was the island's capital long before Taipei grew.",
+    "The city of Jinan is known for its artesian springs.",
+    "The highlands of Yunnan produce some of China's finest tea.",
+    "General Moshe Dayan lost an eye in Syria in 1941.",
+    "Handan was the capital of the ancient state of Zhao.",
+    "Hanane finished second in the marathon despite the heat.",
+    "Scholars of Hinayana texts rely on the Pali canon."
+   ],
+   "quiet": [
+    "The night train to Hanoi leaves from the old station every evening.",
+    "Devotees of Hanuman gather at the hill temple on Tuesdays.",
+    "Hangzhou is known for its silk and its lake.",
+    "Wuhan sits at the meeting of two great rivers.",
+    "The wrestler Hanson won the title in 1960.",
+    "Hamilton was the island's capital long before the war.",
+    "Hanley finished second in the marathon despite the heat.",
+    "Hanover was the seat of a royal house."
+   ]
+  }
+ ],
+ "predictions": "fire 7-8 of 8 at 0.6-1.0; Jin|an and Day|an test whether a non-H lead still carries it and may be lower; near misses under 0.2",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "'an' piece of split Ha-/An- names",
+ "unit_kind": "token/lexical",
+ "confidence": "medium",
+ "notes": "Probe: Han|an 0.993, Hain|an|ese 0.930, Hain|an 0.816, Hen|an / Hun|an 0.779, An|ian 0.701, Hann|an 0.697, Hin|ay|ana 0.655; H|anoi 0.061, Han|uman 0.200, Hang|zhou -0.002, H|aryana 0.010. Layer-5 spelling unit: the pole fires on the short vowel-initial piece that continues a split name."
+}

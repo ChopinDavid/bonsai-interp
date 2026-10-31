@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-af6c482b",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L28/N4362+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L28/N4362",
+   "pole": "+",
+   "label": "the particle of a departure or return motion with a get/take/run/hurry verb (get out, get away, bring it back, ran back); not arrival with 'come' and not non-motion 'get'",
+   "fire": [
+    "Grab your coat; we need to get out of this building now.",
+    "After the funeral she wanted to get away from the city for a while.",
+    "He promised to bring the ladder back before dark.",
+    "The children ran back to the house when the thunder started.",
+    "Let's get out of the rain and find a café.",
+    "I must take these books back to the library today.",
+    "She hurried back to the hotel to fetch her passport.",
+    "They were desperate to get off the island before the storm."
+   ],
+   "quiet": [
+    "Grab your coat; the heating in this building has failed.",
+    "After the funeral she came to the city for a while.",
+    "He promised to paint the ladder before dark.",
+    "The children came into the house when the thunder started.",
+    "Let's get a table by the window at the café.",
+    "I must renew these library books today.",
+    "She came to the hotel to collect her passport.",
+    "They were desperate to get news from the island before the storm."
+   ]
+  }
+ ],
+ "predictions": "fire 5-8 of 8 at 0.15-0.6; 'go back' scored only 0.08 in the probe so items use get/take/bring/run; 'came back', 'come into' and non-motion 'get' under 0.05",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "departure/return particle (get out, take back)",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: 'get out of here' 0.567, 'take this van back' 0.411, 'walk back to Harlem' 0.320, 'get back to Kansas' 0.158, 'get away from' 0.155, 'go back to bed' 0.082; 'came back' 0.003, 'Come here' 0.033, 'get a new job' 0.037, 'hurt his back' 0.007, floor 0.008. The - pole is came/come, so the neuron separates go-direction from come-direction; the + side is weaker than the card's max 184 suggests."
+}

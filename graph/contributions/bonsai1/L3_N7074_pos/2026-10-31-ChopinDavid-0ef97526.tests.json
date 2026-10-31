@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-31-ChopinDavid-0ef97526",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L3/N7074+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T05:20:17+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L3/N7074",
+   "pole": "+",
+   "label": "the contracted auxiliary clitic 've or 'll after a pronoun (you've, we'll), weaker on possessive 's and 're; not the full forms have/will",
+   "fire": [
+    "By the time the kettle boils, I'll have set the table.",
+    "If they've already left, we can lock the gate.",
+    "Tell her we'll meet at the fountain at six.",
+    "You've grown at least an inch since the summer.",
+    "When the rain stops, they'll start mowing the field.",
+    "I've never seen the river this high in March.",
+    "He'll be surprised to find the shop closed.",
+    "After the concert, we've a long drive home."
+   ],
+   "quiet": [
+    "By the time the kettle boils, I will have set the table.",
+    "If they have already left, we can lock the gate.",
+    "Tell her we shall meet at the fountain at six.",
+    "You have grown at least an inch since the summer.",
+    "When the rain stops, they will start mowing the field.",
+    "I have never seen the river this high in March.",
+    "He won't be surprised to find the shop closed.",
+    "After the concert, we don't have a long drive home."
+   ]
+  }
+ ],
+ "predictions": "fire 6-8 of 8 at 0.15-0.4 (small max, broad flag 2.6%); full forms and n't under 0.06; the median may fall below 0.3 even if AUROC is high",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "clitic 've / 'll after pronoun",
+ "unit_kind": "token/lexical",
+ "confidence": "low",
+ "notes": "Probe: you've 0.395, we've 0.232, you'll 0.234, she'll 0.160, God's 0.202, you're 0.151, don't 0.055; full forms 'you have' 0.017, 'you will' 0.031. Layer-3 unit with max 1.32 and a gate-closed regime; the clitic token is the trigger, with 're close behind so quiet items avoid it.",
+ "trigger": {
+  "tokens": [
+   "'ve",
+   "'ll"
+  ]
+ }
+}
