@@ -1,0 +1,158 @@
+{
+ "id": "2026-10-31-ChopinDavid-6aea9e6e",
+ "kind": "interpret",
+ "neuron": "bonsai1/L22/N1698-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T05:34:09+00:00",
+ "recipe": {
+  "toolchain_commit": "e8c513a68",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L22_N1698_neg/2026-10-31-ChopinDavid-6aea9e6e.tests.json"
+ },
+ "label": "the Arabic token ' أما' (as for / whereas), the topic-contrast particle that opens the second clause of a contrast",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N1698_neg/2026-10-31-ChopinDavid-6aea9e6e.tests.json",
+   "prereg_commit": "e8c513a68",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.889,
+     "peak": " أما"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.87,
+     "peak": " أما"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.976,
+     "peak": " أما"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.887,
+     "peak": " أما"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 1.046,
+     "peak": " أما"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.093,
+     "peak": " أما"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.73,
+     "peak": " أما"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.839,
+     "peak": " أما"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.197,
+     "peak": " لكن"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.165,
+     "peak": "ال"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.171,
+     "peak": "بدأ"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.2,
+     "peak": " كانت"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.078,
+     "peak": " عدد"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.068,
+     "peak": "ع"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.159,
+     "peak": " أن"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.165,
+     "peak": " ولم"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.888,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e8c513a68",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "Arabic token ' أما'",
+ "unit_kind": "token/lexical",
+ "confidence": "high",
+ "notes": "Probe: ، أما 1.033, 1.144, 0.830, sentence-initial أما after a full stop 0.735; لكن 0.150, بينما 0.082, و 0.065, فيما يتعلق 0.208, English whereas 0.021. ' أما' and 'أما' are single tokens.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   " أما",
+   "أما"
+  ]
+ }
+}

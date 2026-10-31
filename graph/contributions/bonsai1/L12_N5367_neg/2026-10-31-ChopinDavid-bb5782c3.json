@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-bb5782c3",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N5367-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T05:35:10+00:00",
+ "recipe": {
+  "toolchain_commit": "e8c513a68",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L12_N5367_neg/2026-10-31-ChopinDavid-bb5782c3.tests.json"
+ },
+ "label": "an elliptical tag that rounds off a clause as an afterthought ('and all', 'and counting', ', tops', 'or what', 'on camera and off'), not the same word used as a full argument",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L12_N5367_neg/2026-10-31-ChopinDavid-bb5782c3.tests.json",
+   "prereg_commit": "e8c513a68",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.114,
+     "peak": " all"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.458,
+     "peak": " tops"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.628,
+     "peak": " counting"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.215,
+     "peak": " what"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.172,
+     "peak": " off"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.041,
+     "peak": " counting"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.168,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.025,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.008,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.013,
+     "peak": " repair"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.017,
+     "peak": " raised"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.02,
+     "peak": " you"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.068,
+     "peak": " off"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.011,
+     "peak": " coached"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.026,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " liked"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.194,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e8c513a68",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "elliptical clause-closing tag (and all / tops)",
+ "unit_kind": "context",
+ "confidence": "medium",
+ "notes": "Probe: ', tops' 0.688, 'and counting' 0.637, 'and all' 0.522, 'on stage and off' 0.499, 'or what!' 0.428; 'and everything' 0.013, 'From that summer on' 0.015; full arguments (everything into the car, all the students, counted, turned off) 0.011-0.028. The pole marks a clause-final tag with elided content, not the lexical items themselves.",
+ "selection": "random draw"
+}

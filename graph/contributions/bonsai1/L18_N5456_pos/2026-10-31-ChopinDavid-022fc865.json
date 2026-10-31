@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-022fc865",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N5456+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T05:34:53+00:00",
+ "recipe": {
+  "toolchain_commit": "e8c513a68",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L18_N5456_pos/2026-10-31-ChopinDavid-022fc865.tests.json"
+ },
+ "label": "a generalizing predicate in reflective self-help prose about life, hope or disappointment (always opens, rarely exceeds), not the same syntax in technical prose",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N5456_pos/2026-10-31-ChopinDavid-022fc865.tests.json",
+   "prereg_commit": "e8c513a68",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.212,
+     "peak": " first"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.481,
+     "peak": " door"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.403,
+     "peak": " as"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.059,
+     "peak": " demanding"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.155,
+     "peak": " loss"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.219,
+     "peak": " with"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.184,
+     "peak": " remembered"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.555,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.053,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.032,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.048,
+     "peak": " as"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.124,
+     "peak": " happens"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.027,
+     "peak": " that"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.062,
+     "peak": " with"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.057,
+     "peak": " ones"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.052,
+     "peak": " it"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.215,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "e8c513a68",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "reflective life-generalization predicate",
+ "unit_kind": "context",
+ "confidence": "low",
+ "notes": "Probe: 'rarely exceeds them' 0.347, 'another always opens' 0.245, 'what happens when you place your hope' 0.182, 'chance to grow' 0.118, 'how deep the loneliness was' 0.075, 'we can even accept' 0.009; technical twins 0.013-0.053. The register carries a small but consistent signal; max 11.44 so probe values are low.",
+ "selection": "random draw"
+}
