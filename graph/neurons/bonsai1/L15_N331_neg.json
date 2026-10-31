@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N331-",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 331,
+ "pole": "-",
+ "label": "Something put forward to be searched, tried, voted on or contested: the target of a search or scan, a nominee or shortlisted entry, a ballot measure, a contest entry or attempt (not the searcher, not the outcome)",
+ "short": "object of search, trial, vote or contest",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N331_neg/2026-10-30-ChopinDavid-3cbd8483.tests.json",
+   "prereg_commit": "a16734dc3",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.425,
+     "peak": " scan"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.201,
+     "peak": "listed"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.202,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.119,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.025,
+     "peak": " query"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.11,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.033,
+     "peak": " contestant"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.291,
+     "peak": " ballot"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.028,
+     "peak": " today"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.03,
+     "peak": " gala"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.022,
+     "peak": " will"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.019,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " eleven"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.033,
+     "peak": " contestant"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.025,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.16,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-3cbd8483"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-3cbd8483",
+   "Something put forward to be searched, tried, voted on or contested: the target of a search or scan, a nominee or shortlisted entry, a ballot measure, a contest entry or attempt (not the searcher, not the outcome)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-3cbd8483"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

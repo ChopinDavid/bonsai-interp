@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N12270-",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 12270,
+ "pole": "-",
+ "label": "Human potential as a collective resource that is lost or must be nurtured: human capital, 'our future', lost productivity, wasted or unlocked potential of people",
+ "short": "human potential as lost/nurtured resource",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N12270_neg/2026-10-30-ChopinDavid-37992c3b.tests.json",
+   "prereg_commit": "a16734dc3",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.417,
+     "peak": " capital"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 1.901,
+     "peak": " potential"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.434,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.608,
+     "peak": " lost"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.498,
+     "peak": " talents"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.383,
+     "peak": " potential"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.628,
+     "peak": " capacity"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.129,
+     "peak": " earnings"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.106,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.309,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.062,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.044,
+     "peak": "'s"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.005,
+     "peak": " reservoir"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.006,
+     "peak": " repair"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.227,
+     "peak": " revenue"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.072,
+     "peak": " recovered"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.466,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-37992c3b"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-37992c3b",
+   "Human potential as a collective resource that is lost or must be nurtured: human capital, 'our future', lost productivity, wasted or unlocked potential of people",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-37992c3b"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

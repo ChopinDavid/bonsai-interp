@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L9/N3027-",
+ "model": "bonsai1",
+ "layer": 9,
+ "index": 3027,
+ "pole": "-",
+ "label": "A hanging or flowing garment and its lower edge: hem, hemline, skirt, dress, gown, robes (not collars, cuffs or jackets, and not 'hem' as hesitation)",
+ "short": "hem / skirt / dress / robe",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L9_N3027_neg/2026-10-30-ChopinDavid-23f8bbc6.tests.json",
+   "prereg_commit": "a16734dc3",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.752,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.453,
+     "peak": " trailed"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.79,
+     "peak": " hem"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.238,
+     "peak": " robes"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.491,
+     "peak": " skirt"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.263,
+     "peak": " dress"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.893,
+     "peak": " hem"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.28,
+     "peak": " dresses"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.194,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.178,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.077,
+     "peak": " up"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.058,
+     "peak": " wore"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.232,
+     "peak": "ed"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.041,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.067,
+     "peak": " tailor"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.031,
+     "peak": " filled"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.472,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-23f8bbc6"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-23f8bbc6",
+   "A hanging or flowing garment and its lower edge: hem, hemline, skirt, dress, gown, robes (not collars, cuffs or jackets, and not 'hem' as hesitation)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-23f8bbc6"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
