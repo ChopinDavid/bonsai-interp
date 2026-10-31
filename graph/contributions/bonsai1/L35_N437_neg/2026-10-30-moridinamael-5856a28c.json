@@ -1,0 +1,167 @@
+{
+ "id": "2026-10-30-moridinamael-5856a28c",
+ "kind": "interpret",
+ "neuron": "bonsai1/L35/N437-",
+ "contributor": "moridinamael",
+ "created": "2026-10-31T03:41:21+00:00",
+ "recipe": {
+  "toolchain_commit": "53c0e5a87",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L35_N437_neg/2026-10-30-moridinamael-5856a28c.tests.json"
+ },
+ "label": "a faint, dense background on almost any text (code, prose, Japanese) with no specific trigger, not specific to repeated names",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L35_N437_neg/2026-10-30-moridinamael-5856a28c.tests.json",
+   "prereg_commit": "53c0e5a87",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.308,
+     "peak": " next"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.279,
+     "peak": " add"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.479,
+     "peak": "が"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.222,
+     "peak": " her"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.575,
+     "peak": " "
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.294,
+     "peak": " chemical"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.37,
+     "peak": "パン"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.266,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.136,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.149,
+     "peak": "…"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.16,
+     "peak": "—"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.1,
+     "peak": "!"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.152,
+     "peak": "?"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.142,
+     "peak": ";"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.116,
+     "peak": ","
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.138,
+     "peak": "-"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.301,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "bank-solo",
+   "card",
+   "inverse-gmoo",
+   "look",
+   "probe",
+   "quick-test",
+   "step-down"
+  ],
+  "detected": [
+   "bank-solo",
+   "look"
+  ],
+  "toolchain_commit": "53c0e5a87",
+  "minutes": 0,
+  "batch_size": 1
+ },
+ "unit_kind": "dense / positional",
+ "roles": [
+  "reads bonsai1/L23/N2165+"
+ ],
+ "edges": [
+  {
+   "from": "bonsai1/L23/N2165+",
+   "to": "bonsai1/L35/N437-",
+   "kind": "feeds",
+   "weight": 0.01,
+   "method": "single-unit zero ablation, downstream (play step --down)"
+  }
+ ]
+}
