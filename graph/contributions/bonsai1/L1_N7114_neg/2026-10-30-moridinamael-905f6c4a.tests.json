@@ -1,0 +1,50 @@
+{
+ "contribution": "2026-10-30-moridinamael-905f6c4a",
+ "contributor": "moridinamael",
+ "kind": "qc",
+ "neuron": "bonsai1/L1/N7114-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:06:48+00:00",
+ "qc": {
+  "verdict": "refine",
+  "label_under_test": "the piece '플' in Korean 어플 ('app', short for application)"
+ },
+ "neighbours": [
+  {
+   "unit": "L1/N7114",
+   "pole": "-",
+   "label": "a piece inside or ending a longer Korean, Russian or Japanese word (like 플 in 어플, -ением in Russian, 業 in 取引業者), not short whole words and not English",
+   "fire": [
+    "스마트폰에 새 어플리케이션을 설치했어요.",
+    "Исследование показало заметное улучшение кровообращения у пациентов.",
+    "取引業者との契約が来月更新される予定だ。",
+    "그는 작년부터 프로그래밍 공부를 시작했다.",
+    "Правительство объявило о строительстве новой железнодорожной станции.",
+    "東京都庁の情報通信技術担当者が計画を説明した。",
+    "우리 회사는 클라우드 서비스를 직접 운영합니다.",
+    "Преподавательница рассказывала нам о достопримечательностях города."
+   ],
+   "quiet": [
+    "I installed a new app on my smartphone.",
+    "The study showed a clear improvement in the patients' blood circulation.",
+    "The contract with the dealer will be renewed next month.",
+    "He started studying programming last year.",
+    "The government announced it will build a new railway station.",
+    "An official from the Tokyo office explained the plan.",
+    "Our company runs its own cloud service.",
+    "The teacher told us about the sights of the city."
+   ]
+  }
+ ],
+ "predictions": "Expect a partial hold at best: Korean 어플 and Russian suffix sentences should fire; some Japanese and Korean loanword sentences may stay under 0.20. English near misses should be quiet.",
+ "methods": {
+  "agent": "claude-sonnet-5-5 (letsplay stream)",
+  "screens": [
+   "card",
+   "look",
+   "probe",
+   "inverse-gmoo",
+   "bank-solo"
+  ]
+ }
+}
