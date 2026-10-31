@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N5065-",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 5065,
+ "pole": "-",
+ "label": "a continuation piece of an all-caps word that the tokenizer splits into several tokens (OR|IENTATION, S|ILE|NT, DEC|ENT|RAL|IZATION, E|ARTH|QU|AKE); the same words in lower or title case, and whole-token acronyms (NASA, USA), do not fire",
+ "short": "split all-caps word piece",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N5065_neg/2026-10-31-ChopinDavid-54b58e2e.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 3,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.678,
+     "peak": "IENTATION"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.114,
+     "peak": " ON"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.159,
+     "peak": " THE"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.512,
+     "peak": " E"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.277,
+     "peak": "PRETTY"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.19,
+     "peak": " CONF"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.703,
+     "peak": "ILE"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.131,
+     "peak": "_RE"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.219,
+     "peak": ".orientation"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.009,
+     "peak": "ised"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.014,
+     "peak": ":"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.067,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.055,
+     "peak": "print"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.017,
+     "peak": " front"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.108,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.234,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-54b58e2e"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-54b58e2e",
+   "a continuation piece of an all-caps word that the tokenizer splits into several tokens (OR|IENTATION, S|ILE|NT, DEC|ENT|RAL|IZATION, E|ARTH|QU|AKE); the same words in lower or title case, and whole-token acronyms (NASA, USA), do not fire",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-54b58e2e"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

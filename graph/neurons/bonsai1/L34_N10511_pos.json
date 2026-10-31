@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N10511+",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 10511,
+ "pole": "+",
+ "label": "a single-letter Х/х token opening a Russian word that the tokenizer splits (Х|арьков, х|рам, х|имия), and likewise a Latin H attached to a slash or hyphen (/H|urt, -h|is); whole-token words that contain х (холод, плохо, хотя) do not count",
+ "short": "lone Х/х word-initial token",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N10511_pos/2026-10-31-ChopinDavid-d42b27cf.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.132,
+     "peak": " Х"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.371,
+     "peak": " х"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.49,
+     "peak": " х"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.429,
+     "peak": " х"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.228,
+     "peak": " Х"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.197,
+     "peak": " х"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.349,
+     "peak": "/H"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.201,
+     "peak": "-h"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.007,
+     "peak": " вос"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.004,
+     "peak": "из"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.016,
+     "peak": " вес"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.006,
+     "peak": " м"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.004,
+     "peak": " но"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": "озд"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.005,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.006,
+     "peak": " by"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.288,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-31-ChopinDavid-d42b27cf"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-d42b27cf",
+   "a single-letter Х/х token opening a Russian word that the tokenizer splits (Х|арьков, х|рам, х|имия), and likewise a Latin H attached to a slash or hyphen (/H|urt, -h|is); whole-token words that contain х (холод, плохо, хотя) do not count",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-d42b27cf"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

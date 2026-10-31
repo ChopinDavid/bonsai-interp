@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L2/N1810-",
+ "model": "bonsai1",
+ "layer": 2,
+ "index": 1810,
+ "pole": "-",
+ "label": "a diacritic-letter token (ō, ā, ī, ū, ín, án, ṅ) inside a romanized proper name (Taishō, Efraín, Mazatlán, Nīšāpūr); the plain spellings, and accented Spanish words that are whole tokens (está, año), do not fire",
+ "short": "diacritic piece in a romanized name",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L2_N1810_neg/2026-10-31-ChopinDavid-6eb4a968.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.804,
+     "peak": "ū"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.678,
+     "peak": "ō"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 1.067,
+     "peak": "ṇ"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.563,
+     "peak": "ā"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.788,
+     "peak": "ī"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.644,
+     "peak": "ō"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.767,
+     "peak": "án"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.586,
+     "peak": "ín"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.186,
+     "peak": "u"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.073,
+     "peak": "in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.251,
+     "peak": "a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.124,
+     "peak": " "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.158,
+     "peak": "ación"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.249,
+     "peak": "uku"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.261,
+     "peak": "bla"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.3,
+     "peak": " café"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.723,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-31-ChopinDavid-6eb4a968"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-6eb4a968",
+   "a diacritic-letter token (ō, ā, ī, ū, ín, án, ṅ) inside a romanized proper name (Taishō, Efraín, Mazatlán, Nīšāpūr); the plain spellings, and accented Spanish words that are whole tokens (está, año), do not fire",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-6eb4a968"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

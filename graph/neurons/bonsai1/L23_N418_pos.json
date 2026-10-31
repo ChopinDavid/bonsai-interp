@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L23/N418+",
+ "model": "bonsai1",
+ "layer": 23,
+ "index": 418,
+ "pole": "+",
+ "label": "the character '性' as its own token, i.e. the abstract suffix -性 (-ness/-ity: 重要性, 协调性, ニュース性); '性' fused into a longer token (性别, 性格, 可能性, 安全性) does not count",
+ "short": "suffix 性 as own token",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L23_N418_pos/2026-10-31-ChopinDavid-e9697653.tests.json",
+   "prereg_commit": "96a23feac",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.6,
+     "peak": "性"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.67,
+     "peak": "性"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.516,
+     "peak": "性"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.554,
+     "peak": "性"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.664,
+     "peak": "性"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.506,
+     "peak": "性"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.52,
+     "peak": "性"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.309,
+     "peak": "性"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.102,
+     "peak": "性别"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.116,
+     "peak": "性格"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.064,
+     "peak": "性能"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.098,
+     "peak": "的可能性"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.23,
+     "peak": "安全性"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.304,
+     "peak": "性质"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.175,
+     "peak": "人性"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.079,
+     "peak": "比例"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.537,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-31-ChopinDavid-e9697653"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-31-ChopinDavid-e9697653",
+   "the character '性' as its own token, i.e. the abstract suffix -性 (-ness/-ity: 重要性, 协调性, ニュース性); '性' fused into a longer token (性别, 性格, 可能性, 安全性) does not count",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-31-ChopinDavid-e9697653"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
