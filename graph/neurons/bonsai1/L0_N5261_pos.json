@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L0/N5261+",
+ "model": "bonsai1",
+ "layer": 0,
+ "index": 5261,
+ "pole": "+",
+ "label": "The token ' page' right after 'web' (web page), plus the Arabic ' بنفس' (by oneself) piece; 'website', 'webpage' as one word and ' page' after other words (next page, page 12) carry it weakly or not at all",
+ "short": "' page' after web, and ' بنفس'",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L0_N5261_pos/2026-10-30-ChopinDavid-10e2d0c0.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.838,
+     "peak": " page"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.465,
+     "peak": " page"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.934,
+     "peak": " page"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.654,
+     "peak": " page"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.702,
+     "peak": " page"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.694,
+     "peak": " page"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.732,
+     "peak": " بنفس"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.7,
+     "peak": " بنفس"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.055,
+     "peak": " full"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.201,
+     "peak": " loads"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.211,
+     "peak": " page"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.126,
+     "peak": " page"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.032,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.029,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.083,
+     "peak": "رد"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.375,
+     "peak": " مع"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.701,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-10e2d0c0"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-10e2d0c0",
+   "The token ' page' right after 'web' (web page), plus the Arabic ' بنفس' (by oneself) piece; 'website', 'webpage' as one word and ' page' after other words (next page, page 12) carry it weakly or not at all",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-10e2d0c0"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

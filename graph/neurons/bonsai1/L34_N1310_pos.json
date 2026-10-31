@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N1310+",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 1310,
+ "pole": "+",
+ "label": "In Spanish text, the short space-initial piece that opens a word the tokenizer splits (' n'+orte, ' n'+ubes, ' an'+illo, ' an'+ualmente, ' j'+ardín); Spanish words that are their own token (noche, nada, nunca, niños, antes, joven) do not carry it",
+ "short": "Spanish split pieces ' n', ' an', ' j'",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N1310_pos/2026-10-30-ChopinDavid-fe335954.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 7,
+   "n_false_pos": 2,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.475,
+     "peak": " n"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.407,
+     "peak": " n"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.463,
+     "peak": " n"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.355,
+     "peak": " an"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.458,
+     "peak": " an"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.246,
+     "peak": "."
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.484,
+     "peak": " n"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.625,
+     "peak": " an"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.293,
+     "peak": " quer"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.169,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.235,
+     "peak": " camb"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.217,
+     "peak": " abi"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.389,
+     "peak": " gan"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.418,
+     "peak": " compr"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": -0.0,
+     "peak": "El"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.143,
+     "peak": " plaza"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.906,
+    "median_fire": 0.461,
+    "near_misses_at_0.3": 2
+   },
+   "contribution": "2026-10-30-ChopinDavid-fe335954"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-fe335954",
+   "In Spanish text, the short space-initial piece that opens a word the tokenizer splits (' n'+orte, ' n'+ubes, ' an'+illo, ' an'+ualmente, ' j'+ardín); Spanish words that are their own token (noche, nada, nunca, niños, antes, joven) do not carry it",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-fe335954"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

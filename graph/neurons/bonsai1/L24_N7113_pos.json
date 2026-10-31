@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L24/N7113+",
+ "model": "bonsai1",
+ "layer": 24,
+ "index": 7113,
+ "pole": "+",
+ "label": "The noun 'reason(s)' naming a cause in an explanatory assertion (one of the major reasons for, the chief reason for, several reasons why); synonyms (causes, factors, because of) are the near misses",
+ "short": "'reason(s)' as the named cause",
+ "kind": "lexical",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N7113_pos/2026-10-30-ChopinDavid-465e93ce.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.126,
+     "peak": " reasons"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.021,
+     "peak": "The"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.043,
+     "peak": " reasons"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.008,
+     "peak": " reason"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.079,
+     "peak": " reasons"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.036,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.114,
+     "peak": " reasons"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.013,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.151,
+     "peak": " causes"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.062,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.044,
+     "peak": " factors"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.011,
+     "peak": " rents"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.011,
+     "peak": " lung"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.073,
+     "peak": " obstacles"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": " two"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.594,
+    "median_fire": 0.039,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-465e93ce"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-465e93ce",
+   "The noun 'reason(s)' naming a cause in an explanatory assertion (one of the major reasons for, the chief reason for, several reasons why); synonyms (causes, factors, because of) are the near misses",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-465e93ce"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

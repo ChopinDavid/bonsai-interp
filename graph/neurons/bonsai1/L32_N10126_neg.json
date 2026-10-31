@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L32/N10126-",
+ "model": "bonsai1",
+ "layer": 32,
+ "index": 10126,
+ "pole": "-",
+ "label": "In verb-final clauses (Korean, German), the object noun or object particle of a schooling or training phrase before its verb (교육을 받다, Schule besuchen, 훈련을 받다, Ausbildung machen); objects of other verbs (eat an apple, write a letter, buy a house) do not carry it",
+ "short": "schooling object before its verb (ko/de)",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L32_N10126_neg/2026-10-30-ChopinDavid-a7970e7d.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.687,
+     "peak": "을"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.261,
+     "peak": "을"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.304,
+     "peak": "를"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.458,
+     "peak": "을"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.474,
+     "peak": "ule"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.097,
+     "peak": "bildung"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.139,
+     "peak": " Universität"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.202,
+     "peak": "icht"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.126,
+     "peak": "를"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.054,
+     "peak": "을"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.02,
+     "peak": " �"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": "를"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": "sten"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.003,
+     "peak": "isch"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.002,
+     "peak": " Haus"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " Mädchen"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.282,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-a7970e7d"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-a7970e7d",
+   "In verb-final clauses (Korean, German), the object noun or object particle of a schooling or training phrase before its verb (교육을 받다, Schule besuchen, 훈련을 받다, Ausbildung machen); objects of other verbs (eat an apple, write a letter, buy a house) do not carry it",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-a7970e7d"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

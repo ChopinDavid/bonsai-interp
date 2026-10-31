@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L18/N10255-",
+ "model": "bonsai1",
+ "layer": 18,
+ "index": 10255,
+ "pole": "-",
+ "label": "Unclear; best guess: a calendar-time expression naming a span or point (the first 24 hours, the second week of March, on 27 January, on their anniversary), fired on the preposition or unit word",
+ "short": "unclear: calendar span or date point",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L18_N10255_neg/2026-10-30-ChopinDavid-6c8a2a6a.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 1,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.179,
+     "peak": " hours"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.134,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.16,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.133,
+     "peak": " on"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.284,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.038,
+     "peak": "eth"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.92,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.184,
+     "peak": "0"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.036,
+     "peak": " north"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.044,
+     "peak": " branch"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.029,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.109,
+     "peak": " opens"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.054,
+     "peak": " email"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.073,
+     "peak": " garden"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.035,
+     "peak": " entrance"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.169,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-6c8a2a6a"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-6c8a2a6a",
+   "Unclear; best guess: a calendar-time expression naming a span or point (the first 24 hours, the second week of March, on 27 January, on their anniversary), fired on the preposition or unit word",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-6c8a2a6a"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

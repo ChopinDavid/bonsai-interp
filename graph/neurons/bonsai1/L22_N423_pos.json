@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L22/N423+",
+ "model": "bonsai1",
+ "layer": 22,
+ "index": 423,
+ "pole": "+",
+ "label": "Unclear; best guess: first-person habit or experience statements, fired on the adverb or particle after 'I've' / 'I am' / 'I usually' (I've never used, I am used to, the club I usually run with)",
+ "short": "unclear: first-person habit adverb",
+ "kind": "unclear",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L22_N423_pos/2026-10-30-ChopinDavid-6f70e487.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.47,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.163,
+     "peak": " this"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.309,
+     "peak": " usually"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.174,
+     "peak": "'ve"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.289,
+     "peak": " never"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.066,
+     "peak": "By"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.265,
+     "peak": " normally"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.203,
+     "peak": "'ve"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.047,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.091,
+     "peak": " this"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.247,
+     "peak": " usually"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.216,
+     "peak": " key"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.158,
+     "peak": " understood"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.039,
+     "peak": "By"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.055,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.108,
+     "peak": " has"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.828,
+    "median_fire": 0.234,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-6f70e487"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-6f70e487",
+   "Unclear; best guess: first-person habit or experience statements, fired on the adverb or particle after 'I've' / 'I am' / 'I usually' (I've never used, I am used to, the club I usually run with)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-6f70e487"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

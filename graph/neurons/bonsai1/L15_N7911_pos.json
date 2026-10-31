@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L15/N7911+",
+ "model": "bonsai1",
+ "layer": 15,
+ "index": 7911,
+ "pole": "+",
+ "label": "A general rule or procedure stated as instruction: a formula, a how-to recipe ('to find X, multiply ... by ...') or a grammar rule ('nouns ending in y form the plural by ...'), as opposed to narrative about the same things",
+ "short": "stated rule or procedure",
+ "kind": "semantic",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L15_N7911_pos/2026-10-30-ChopinDavid-96baa0d4.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.37,
+     "peak": " multiply"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.47,
+     "peak": "”"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.308,
+     "peak": " multiply"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.265,
+     "peak": " m"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.694,
+     "peak": " add"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.682,
+     "peak": "”"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.147,
+     "peak": " the"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.316,
+     "peak": " multiply"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.046,
+     "peak": " when"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.061,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.031,
+     "peak": " two"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.062,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.035,
+     "peak": " split"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.038,
+     "peak": " the"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.04,
+     "peak": "."
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.059,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.343,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-96baa0d4"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-96baa0d4",
+   "A general rule or procedure stated as instruction: a formula, a how-to recipe ('to find X, multiply ... by ...') or a grammar rule ('nouns ending in y form the plural by ...'), as opposed to narrative about the same things",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-96baa0d4"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

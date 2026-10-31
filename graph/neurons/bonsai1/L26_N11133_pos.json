@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L26/N11133+",
+ "model": "bonsai1",
+ "layer": 26,
+ "index": 11133,
+ "pole": "+",
+ "label": "An adjective or possessive naming a learned profession or discipline used as a modifier of a role, body or title (scientific adviser, medical officer, Teachers' Union, the Artists' Guild, Scientific Committee)",
+ "short": "discipline modifier of a role or body",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L26_N11133_pos/2026-10-30-ChopinDavid-93f63fd2.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.653,
+     "peak": " scientific"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.169,
+     "peak": " medical"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.579,
+     "peak": "'"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.478,
+     "peak": " Surgical"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.794,
+     "peak": "'"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.543,
+     "peak": " scientific"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.124,
+     "peak": " medical"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.881,
+     "peak": " Scientific"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.183,
+     "peak": " trusted"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.015,
+     "peak": " town"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.028,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.148,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.076,
+     "peak": " Rotary"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.11,
+     "peak": "atory"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.053,
+     "peak": " journal"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.111,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.953,
+    "median_fire": 0.561,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-93f63fd2"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-93f63fd2",
+   "An adjective or possessive naming a learned profession or discipline used as a modifier of a role, body or title (scientific adviser, medical officer, Teachers' Union, the Artists' Guild, Scientific Committee)",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-93f63fd2"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
