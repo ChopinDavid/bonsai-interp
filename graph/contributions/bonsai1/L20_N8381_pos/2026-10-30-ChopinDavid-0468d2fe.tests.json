@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-0468d2fe",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L20/N8381+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L20/N8381",
+   "pole": "+",
+   "label": "the noun counted by a distributive or plural quantifier: the head noun right after each / every / many / several (each card, many days, every symptom)",
+   "fire": [
+    "In this game each player draws exactly seven tiles at the start.",
+    "During the drought many wells in the district ran dry by August.",
+    "The inspector checked every bolt on the bridge before it reopened.",
+    "Over the years several attempts were made to drain the marsh.",
+    "At the fair each stall sold a different kind of cheese.",
+    "There are many reasons why the bridge was never finished.",
+    "Before the launch every valve was tested twice under pressure.",
+    "In the archive several letters mention the fire of 1842."
+   ],
+   "quiet": [
+    "In this game the player draws exactly seven tiles at the start.",
+    "During the drought the village well ran dry by August.",
+    "The inspector checked the main bolt on the bridge before it reopened.",
+    "Over the years an attempt was made to drain the marsh.",
+    "At the fair the cheese stall sold three kinds of cheddar.",
+    "There is a simple reason why the bridge was never finished.",
+    "Before the launch the main valve was tested twice under pressure.",
+    "In the archive one letter mentions the fire of 1842."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire with a median near 0.25; 'each' and 'many' forms strongest (0.46-0.48 in probe), 'a few'/'most' weaker. The definite-singular twins should stay under 0.10 (0.040-0.064 in probe). Broad pole (1% of tokens), so some near misses will register weakly.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "noun after each/many/every",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: no single token; peaks on ' card' (each card), ' days' (many days), ' moments' (a few moments), ' shoes' (most shoes), ' word' (word separator), ' for'; flagged broad. Probe: 'each card appears' 0.456, 'many days this winter' 0.484, 'Every symptom on the list' 0.287, 'a few moments' 0.190, 'most shoes' 0.144; the same sentences with 'the ace', 'the moment', 'the shop' 0.040-0.064. The hypothesis is the quantified instance noun; 'a few' and 'most' are weaker, so the test uses each/every/many/several."
+}

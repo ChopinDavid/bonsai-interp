@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3579a0c4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N9041+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N9041",
+   "pole": "+",
+   "label": "the party on the receiving end of a benefit or teaching: the recipient noun or pronoun after to/for/teaching (benefits to all sides, teaching others, beneficial for grandchildren, born unto thee)",
+   "fire": [
+    "The new bridge will bring real gains to both communities on the river.",
+    "She spent her retirement mentoring others who wanted to start a bakery.",
+    "A good night's sleep is beneficial for everyone, not only for athletes.",
+    "The settlement offers something to all parties, including the farmers downstream.",
+    "He devoted his last years to passing the craft on to younger weavers.",
+    "The scholarship gives children from the valley a chance they never had.",
+    "Volunteers deliver hot meals to the elderly residents of the tower block.",
+    "The reforms promised relief to small shopkeepers and their families."
+   ],
+   "quiet": [
+    "Both communities on the river celebrated when the new bridge opened.",
+    "Others who wanted to start a bakery came to her for advice in retirement.",
+    "Everyone, not only athletes, sleeps better after a long walk.",
+    "All parties, including the farmers downstream, signed the settlement on Monday.",
+    "Younger weavers took over the workshop in his last years.",
+    "Children from the valley walk two hours to reach the school.",
+    "The elderly residents of the tower block complained about the broken lift.",
+    "Small shopkeepers and their families marched through the town on Saturday."
+   ]
+  }
+ ],
+ "predictions": "4-5/8 fire, median near 0.2; 'to all sides'-type phrases strongest (0.53 in probe), 'teaching others' 0.31. The same parties as subjects should stay under 0.15. Broad pole (2.1% of tokens), so the result may be a weak hold or a fail.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "recipient of benefit",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: broad (2.1%), peaks on ' them', ' sides', ' others', ' thee', ' you', ' grandchildren', ' Christians' as objects/recipients. Probe: 'benefits to all sides in the dispute' 0.526, 'teaching others' 0.309; but 'leave them behind' 0.039 (a card example type) and 'left her daughter at' 0.066, so plain patients do not fire: the hypothesis narrows to beneficiaries/recipients. Twins with the parties as subjects 0.021-0.156."
+}

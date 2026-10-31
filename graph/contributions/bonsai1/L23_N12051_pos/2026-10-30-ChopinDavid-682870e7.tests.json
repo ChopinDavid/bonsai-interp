@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-682870e7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N12051+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N12051",
+   "pole": "+",
+   "label": "a digit inside source code or a URL (quoted paths, identifiers, numeric literals, test fixtures), as against a number in running prose",
+   "fire": [
+    "    self.assertEqual(len(queryset), 3)\n    response = self.client.post('/api/users/17/activate/')",
+    "    thumb = MEDIA_ROOT + '/thumbs/640/360/' + filename\n    return thumb",
+    "    session['cart_id'] = 'c9f31'\n    session.save()",
+    "    with self.assertRaisesRegex(ValueError, 'expected 3 columns'):\n        load_table('bad.csv')",
+    "Full details are at https://www.example.com/articles/58213 and in the attached PDF.",
+    "    config = {'max_length': '128', 'blank': 'False', 'db_index': 'True'}",
+    "    mock_time.return_value = 1510000000.5\n    self.assertEqual(stamp(), '2017-11-06')",
+    "    cache.set('user:4421:profile', data, timeout=3600)"
+   ],
+   "quiet": [
+    "The library holds 58,213 volumes and opens at nine on weekdays.",
+    "About 640 people attended the concert, and 360 of them stayed for the encore.",
+    "He turned 17 in November 2017 and passed his driving test the same month.",
+    "The recipe makes 3 loaves and takes about 128 minutes from start to finish.",
+    "Trains leave at 06:15 and 07:45, and the fare is 4.50 each way.",
+    "The temple was rebuilt in 1510 after a fire destroyed the original hall.",
+    "Her office is on the 4th floor of the building at 44 Mill Lane.",
+    "The committee approved 3,600 dollars for new chairs and a 15 percent raise."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire with a median near 0.5; digits in quoted URL paths are strongest (0.90 in probe), short literals like '42' weaker (0.24-0.44). Prose numbers should stay under 0.05 (0.010 in probe), including dates, prices and addresses.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "digit in code or URL",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: digit tokens in test fixtures and URL strings ('/mimages/.../500/280', '/2/history/', 'forum_key = 1234', max_length '255', tn.gov/news/49866). Probe: '/api/orders/42/items/' 0.903, URL in prose 'example.org/news/49866' 0.786, '/images/300/150/' 0.581, 'range(1234)' 0.543, 'timeout = 42 / retries = 300' 0.444, date string 0.339, status_code 200 0.258, 'ab12cd34' 0.236; prose '42 Market Street ... 1990 ... 300 bikes' 0.010. The distinction is code/URL versus prose, not quoted versus unquoted."
+}

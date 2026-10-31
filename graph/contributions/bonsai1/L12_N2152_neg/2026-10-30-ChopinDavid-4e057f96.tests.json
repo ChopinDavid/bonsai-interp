@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4e057f96",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L12/N2152-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L12/N2152",
+   "pole": "-",
+   "label": "' and' adding a further noun phrase to a chain (a drought and a famine; a tent and a stove and a lantern): coordination of noun phrases, not of clauses",
+   "fire": [
+    "The farm lost its barn to a flood and a fire within the same year.",
+    "She packed a tent and a stove and a small lantern for the trip.",
+    "The clinic hired two nurses and a receptionist and reopened on Monday.",
+    "The village has a church and a school and a single shop.",
+    "Visitors can see the mill and the old bridge and a row of cottages.",
+    "He suffered a broken arm and a concussion in the crash.",
+    "The museum acquired a sketch and a letter and the artist's palette.",
+    "Dinner was soup and bread and a slice of cold ham."
+   ],
+   "quiet": [
+    "The farm lost its barn to flooding within the same year.",
+    "She packed a tent, a stove, a small lantern for the trip.",
+    "The clinic hired two nurses, then reopened on Monday.",
+    "The village has a church beside a school near the only shop.",
+    "Visitors can see the mill or the old bridge or a row of cottages.",
+    "He suffered a broken arm, and he was kept in hospital overnight.",
+    "The museum acquired a sketch with the artist's palette.",
+    "Dinner was soup, bread, then a slice of cold ham."
+   ]
+  }
+ ],
+ "predictions": "Likely to fail on the median: the probe never passed 0.113 (max 4.91 on the card, a weak pole). Chains with 'and a' should score highest; clause-level 'and' and comma lists near zero.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "and in a noun chain",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card: ' and' x27 of the top 32, mostly joining a second noun phrase ('a drought and a famine', 'mops and powered ...', 'earnings and raising'); regimes split 55/45 with the leak regime. Probe: 'apples and pears and a loaf' 0.113 (peak on ' a'), 'rain and strong winds' 0.057 but its 'or' twin also 0.057 (peak on ' rain', not on 'and'), 'chemistry and biology' 0.015, clause 'and then he walked' 0.024. Best guess registered; the near misses swap the chain for a comma list, 'or', a preposition or a clause."
+}

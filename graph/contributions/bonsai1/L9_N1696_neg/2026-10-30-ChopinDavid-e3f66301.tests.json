@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-e3f66301",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L9/N1696-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L9/N1696",
+   "pole": "-",
+   "label": "exclusive control of a market or resource: monopoly/monopolise, cornering the market, buying up every rival, near-monopoly",
+   "fire": [
+    "By 1900 Standard Oil controlled a virtual monopoly over the refining business.",
+    "Critics say the two chains have cornered the market for cheap eyeglasses.",
+    "The guild tried to monopolize the wool trade and keep foreign weavers out.",
+    "A single carrier enjoys a near-monopoly on flights out of the island.",
+    "The retailer has been buying up small bookshops across the country to eliminate competition.",
+    "Regulators feared the merger would give one company monopolistic control over the grid.",
+    "For years the railway held an effective monopoly on freight between the two cities.",
+    "Hoarders cornered the market in rice and prices tripled within a month."
+   ],
+   "quiet": [
+    "By 1900 Standard Oil operated three refineries along the river.",
+    "Critics say the two chains have expanded into the market for cheap eyeglasses.",
+    "The guild tried to regulate the wool trade and train foreign weavers.",
+    "A single carrier runs the morning flight out of the island.",
+    "The retailer has been opening small bookshops across the country to attract readers.",
+    "Regulators feared the merger would raise prices for customers of the grid.",
+    "For years the railway ran a daily freight service between the two cities.",
+    "We spent the rainy afternoon playing Monopoly and eating popcorn."
+   ]
+  }
+ ],
+ "predictions": "7-8/8 fire with a median above 0.5; the board game 'Monopoly' should stay low (0.095 in probe), and the twins that keep the company and the market but drop exclusive control under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "monopolising a market",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: ' monopol', ' monopoly', 'on' after monopoly, 'cornered the market', 'buying up'; one-pole regime. Probe: 'held a monopoly on' 0.857, 'cornered the market in' 0.797, 'wanted to monopolise the salt trade' 0.709, 'buying up every rival studio' 0.643, 'sole supplier of' 0.224 (meaning without the word, weak); twins 0.030-0.143, 'played Monopoly' 0.095. The meaning carries without the word for 'cornered the market' and 'buying up'; the word without the meaning (the game) does not fire."
+}

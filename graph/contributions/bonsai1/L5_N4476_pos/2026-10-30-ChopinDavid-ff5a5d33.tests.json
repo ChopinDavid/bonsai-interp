@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-ff5a5d33",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L5/N4476+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L5/N4476",
+   "pole": "+",
+   "label": "the preposition that completes a reduced-relative participle attached directly to its noun (repairs left by the blitz, species regarded as extinct, farmers prized for their skill, buyers faced with)",
+   "fire": [
+    "The houses built by the railway company still line the old main street.",
+    "A substance regarded as harmless in 1950 is now banned in most countries.",
+    "The wines prized for their sweetness come from vineyards near the lake.",
+    "Students faced with a blank page often start by copying the title.",
+    "Every letter signed by the general was later sold at auction.",
+    "The animals kept as pets in the palace included two leopards.",
+    "A road known for its hairpin bends climbs from the village to the pass.",
+    "Timber cut by the settlers was floated downriver to the mill."
+   ],
+   "quiet": [
+    "The houses on the old main street were built in the railway era.",
+    "In 1950 chemists regarded the substance as harmless, and it was sold freely.",
+    "The wines from vineyards near the lake are prized by connoisseurs.",
+    "Students often start by copying the title when they face a blank page.",
+    "The general signed every letter himself before it was sold at auction.",
+    "The palace kept two leopards as pets alongside the hounds.",
+    "The road climbs from the village to the pass, and it is known for hairpin bends.",
+    "The settlers cut timber in winter and floated it downriver to the mill."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire with a median near 0.4. Finite twins ('the settlers cut timber') and the predicative 'are prized by' should stay under 0.10; comma-set-off participles scored only 0.015-0.041 in the probe, so the attachment must be tight.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "by/as/for after noun+participle",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: ' by' x17, ' in', ' as', ' for', ' with' right after a participle that modifies the preceding noun ('roof repairs left by the blitz', 'reservations maintained by', 'organs regarded as vestigial', 'animals prized for their fur', 'buyers faced with'). Probe: 'species once regarded as extinct' 0.568, 'Farmers prized for their skill' 0.607; but 'The cottage, damaged by the storm,' 0.015 and 'The council, faced with rising costs,' 0.041: a comma-set-off participle does not fire, the participle must follow its noun directly. Finite twins 0.011-0.022, 'by Friday' 0.012, 'stood by the river' 0.018."
+}

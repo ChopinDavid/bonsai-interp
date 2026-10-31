@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-3749f1c5",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L23/N2894+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L23/N2894",
+   "pole": "+",
+   "label": "comparison against a reference: the word that links a thing to the standard it is measured against (compared with/to, measured against, relative to, versus)",
+   "fire": [
+    "Laboratory results were compared with the values published in the 1998 survey.",
+    "The committee measured each proposal against the criteria set out in the charter.",
+    "Sales this quarter look weak relative to the same period last year.",
+    "Reviewers rated the translation versus the original for accuracy and tone.",
+    "Her times were benchmarked against the national record holders in her age group.",
+    "The forecast model is evaluated by comparing its output to observed rainfall.",
+    "When set beside the earlier draft, the new chapter reads far more smoothly.",
+    "Customers often weigh the price of a subscription against the cost of buying outright."
+   ],
+   "quiet": [
+    "Laboratory results were published in the appendix of the 1998 survey.",
+    "The committee printed the criteria set out in the charter for every member.",
+    "Sales this quarter look weak because two large orders were delayed.",
+    "Reviewers praised the translation for its accuracy and tone.",
+    "Her times improved steadily after she joined the national training camp.",
+    "The forecast model is run every six hours on the agency's main computer.",
+    "She propped the ladder against the shed and climbed up to clear the gutter.",
+    "Customers often pay for a subscription without reading the renewal terms."
+   ]
+  }
+ ],
+ "predictions": "6-7/8 fire, median near 0.25; 'compared with' is the strongest form (0.41 in probe), bare 'against'/'versus'/'relative to' sit at 0.19-0.27. Near misses with 'against' in its physical sense should stay near 0.02.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "compared against a standard",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: peaks on ' against', ' to', ' with', ' compared', ' than' after compare/evaluate/judge verbs; logit effect promotes compare/comparison. Probe: 'was compared with the national average' 0.411, 'relative to the previous model' 0.270, 'judged ... by how closely it matched' 0.214, 'checked every invoice against the signed contracts' 0.207, 'versus' 0.194; 'leaned against the wall' 0.015, twins without the comparison 0.008-0.060. Weak absolute level: the hold depends on the 0.20 median."
+}

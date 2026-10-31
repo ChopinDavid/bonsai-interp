@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7b95712c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N10116-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L11/N10116",
+   "pole": "-",
+   "label": "evidence under examination: documents, records, data or samples as the thing reviewed, obtained, tested or shown (records reviewed by the newspaper, emails show, samples tested)",
+   "fire": [
+    "Court filings obtained by the Associated Press describe a pattern of late payments.",
+    "The audit, based on invoices examined by two accountants, found a shortfall of nine million.",
+    "Water samples analysed at the state laboratory contained high levels of nitrate.",
+    "Leaked memos reveal that managers were warned about the leak in March.",
+    "Satellite data reviewed by the agency show the glacier retreating every summer.",
+    "Tissue biopsies tested for the mutation came back positive in a third of cases.",
+    "Flight logs inspected by investigators indicate the plane had flown with a faulty sensor.",
+    "Phone records subpoenaed by the committee place him in the city that night."
+   ],
+   "quiet": [
+    "Court filings were delivered to the Associated Press by courier on Friday.",
+    "The audit cost nine million and took two accountants most of the year.",
+    "Water samples were collected from the river and shipped to the state laboratory.",
+    "Managers sent memos to the staff in March about the leak.",
+    "The agency launched a new satellite over the glacier last summer.",
+    "Tissue biopsies were stored at the hospital in a locked freezer.",
+    "Investigators flew to the city where the plane was built.",
+    "The committee met him in the city that night for dinner."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire with a median near 0.3; 'reviewed/obtained by' forms strongest (0.87 in probe), 'show/reveal' weaker (0.27). Near misses that keep the evidence noun but store/send it should stay under 0.10. This label is partial: a second cluster (snore, nose, respiratory; 'snore' 0.92) is not covered.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "evidence being examined",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: max 3.53, leak regime 78%; top examples split between evidence verbs ('documents show', 'data reviewed by', 'bottles tested', 'CT scans', 'Department of Justice documents') and the nose/snoring cluster (' respiratory' x4, 'snore'). Probe: 'records reviewed by the newspaper' 0.873, 'samples tested at the lab' 0.353, 'emails show that' 0.265, 'respiratory infections' 0.195; 'emails were sent ... about' 0.100, 'samples were stored' 0.083, story about the bridge 0.011. 'snore' 0.923 is the other cluster, left out of this label on purpose."
+}

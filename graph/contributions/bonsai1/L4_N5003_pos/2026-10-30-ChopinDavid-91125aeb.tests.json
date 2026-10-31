@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-91125aeb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L4/N5003+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T04:20:34+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L4/N5003",
+   "pole": "+",
+   "label": "Italian text: the pieces of Italian words the tokenizer splits (elabor-azione, pic-cola, mont-agna, rapport-i, basil-ica) inside an Italian sentence; the same pieces in French, Spanish or English twins fire much less",
+   "fire": [
+    "Il comune ha chiesto una nuova elaborazione dei dati sul traffico in centro.",
+    "La piccola chiesa di montagna si trova sopra il paese, vicino al lago.",
+    "Secondo il rapporto annuale, la collaborazione tra le scuole è cresciuta molto.",
+    "Abbiamo mangiato una pizza piccola davanti alla basilica e poi siamo tornati in albergo.",
+    "Il laboratorio di chimica della provincia di Torino resta chiuso fino a lunedì.",
+    "Dopo mesi di lavoro, la commissione ha elaborato un piano per le montagne.",
+    "Gli studenti devono elaborare un progetto sulla storia della loro provincia.",
+    "Il museo conserva un piccolo ritratto e una lettera del pittore montano."
+   ],
+   "quiet": [
+    "La mairie a demandé une nouvelle élaboration des données sur le trafic en centre-ville.",
+    "The small mountain church sits above the village, close to the lake.",
+    "Selon le rapport annuel, la collaboration entre les écoles a beaucoup augmenté.",
+    "We ate a small pizza in front of the cathedral and then walked back to the hotel.",
+    "Le laboratoire de chimie du département reste fermé jusqu'à lundi.",
+    "After months of work, the commission drafted a plan for the mountains.",
+    "Los estudiantes deben preparar un proyecto sobre la historia de su provincia.",
+    "The museum keeps a small portrait and a letter from the mountain painter."
+   ]
+  }
+ ],
+ "predictions": "5-6/8 fire with a median near 0.3; 'elabor' words strongest (elaborazione 0.89 in probe), rapporti weak (0.21). French élaboration 0.055 and English 0.019 should stay low; the Spanish twin is the riskiest near miss (elaboración 0.308).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "split Italian word pieces",
+ "unit_kind": "lexical",
+ "confidence": "low",
+ "notes": "Card: layer-4 pole, peaks on 'abor' (Elaborazione), ' elabor' (elabora), ' rapport' (rapporti), ' Rom', ' Province' of Pisa, ' Mont'ane, ' Pic'cola, and ' also' in Italian-flavoured English. Probe: 'l'elaborazione del nuovo piano' 0.894, 'Roma ... basilica' 0.350 (peak basil), 'La elaboración' (Spanish) 0.308, 'I rapporti tra le due città' 0.206, 'Rome ... basilica' (English) 0.131, French 'L'élaboration' 0.055, English 'elaboration' 0.019, French Paris twin 0.000. The pole wants an Italian word split into pieces, with Italian context raising it. Tokenizer: elaborazione = ' elabor'+'azione', piccola = ' pic'+'cola', montagna = ' mont'+'agna', rapporti = ' rapport'+'i', basilica = ' basil'+'ica', laboratorio = ' labor'+'atorio'; Spanish provincia and French laboratoire split similarly, so the near misses test context, not only the split."
+}
