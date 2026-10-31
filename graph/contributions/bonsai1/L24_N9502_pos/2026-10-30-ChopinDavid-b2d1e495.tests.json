@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-b2d1e495",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L24/N9502+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L24/N9502",
+   "pole": "+",
+   "label": "The slot that opens a plot synopsis: the colon or newline after Plot/Synopsis/Movie summary, or the article after 'tells the story of' / '<actor> plays' in a film or book write-up",
+   "fire": [
+    "Director: Billy Wilder\nPlot: An insurance salesman is talked into murder by a bored housewife.",
+    "The film tells the story of a retired teacher who takes in a runaway boy.",
+    "Storyline:\nA small-town sheriff tracks a bank robber across three states.",
+    "Tom Hanks plays a widower whose son calls a late-night radio show.",
+    "Movie synopsis of The Wave :\nA geologist races to warn a village before the fjord collapses.",
+    "The novel follows a young clerk who inherits a failing bookshop.",
+    "Summary: A chess prodigy battles addiction on her way to the world title.",
+    "In the series, Olivia Colman plays a detective investigating a child's death on the cliffs."
+   ],
+   "quiet": [
+    "Director: Billy Wilder\nRuntime: 107 minutes, black and white.",
+    "The manual tells the reader how to reset the thermostat.",
+    "Instructions:\nUnplug the router and wait thirty seconds before restarting.",
+    "Tom Hanks plays golf most weekends near his home.",
+    "Weather summary for Tuesday :\nLight rain in the morning, clearing by noon.",
+    "The footpath follows a young river down to the failing mill.",
+    "Summary: Revenue grew nine percent while costs stayed flat.",
+    "In the interview, Olivia Colman describes her childhood on the Norfolk coast."
+   ]
+  }
+ ],
+ "predictions": "Plot:/Storyline:/Summary: headers followed by a synopsis, 'the film tells the story of a', 'the novel follows a' and '<actor> plays a <character>' reach 0.3-1.0 at the token that opens the synopsis. Non-narrative headers (Runtime, Instructions, Weather summary), 'tells the reader how', 'plays golf' and a footpath that 'follows a river' stay under 0.1.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "plot-synopsis opener",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: 'PLOT:' after a cast list 1.027 (':'), 'Movie summary of The Lighthouse :\\n' 0.835, 'Jeff Bridges plays a' 0.774 (' a'), 'The novel tells the story of a' 0.605 (' a'), 'Synopsis:\\nTwo strangers' 0.329 (' strangers'); 'Ingredients:' 0.090, 'The report tells us' 0.017, 'plays tennis' 0.076, floor 0.014. Card: ':' , ' plays', '\\n', ' tells', ' :\\n' after PLOT/Plot/Movie summary/synopsis (max 104, layer 24, density 0.09%); the - pole promotes ' protagonist', ' lives', ' Story'."
+}

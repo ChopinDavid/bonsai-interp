@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7e2f46a4",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L27/N4291+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L27/N4291",
+   "pole": "+",
+   "label": "People referred to collectively as a stock, population or resource (human capital, a population close to 1.4 billion, empowering women, cases found) rather than things counted the same way",
+   "fire": [
+    "The report treats an organization's human resources as its main competitive advantage.",
+    "Investment in human capital pays off over decades, not quarters.",
+    "The country's population has grown to nearly 90 million since independence.",
+    "The town now has over three thousand inhabitants, most of them farmers.",
+    "The foundation works to empower rural women through small loans.",
+    "Five more cases of the fever were found in the camp this week.",
+    "Economists measure human development by health, schooling and income.",
+    "The census counted about 20,000 residents in the valley."
+   ],
+   "quiet": [
+    "The report treats a company's mineral reserves as its main competitive advantage.",
+    "Investment in rail capital pays off over decades, not quarters.",
+    "The forest has grown to nearly 90 thousand hectares since replanting.",
+    "The town now has over three thousand houses, most of them timber.",
+    "The foundation works to restore wetlands through small grants.",
+    "Five more cracks in the dam were found during the inspection this week.",
+    "Engineers measure bridge wear by vibration, load and age.",
+    "The survey counted about 20,000 trees in the valley."
+   ]
+  }
+ ],
+ "predictions": "Sentences about human populations, human capital or groups of people reach 0.3-0.8, strongest on 'human' in 'human capital/resources'. The same sentence frames applied to crates, hectares, houses, cracks or trees stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "people as a population or resource",
+ "unit_kind": "semantic",
+ "confidence": "low",
+ "notes": "Probe: 'human capital' 0.729 (peak ' human'), 'population close to 1.4 billion' 0.332 (' to'), 'sixty thousand people' 0.274 (peak '.'), 'cases were found' 0.265 (' in'), 'aims to empower young women' 0.216; the same frames with crates 0.015, kilometres 0.005, engine 0.004, floor 0.006. Card: broad flag (1.1% of tokens at 0.1 max, max 31.6, layer 27), peaks on 法/高达/接近 before population figures, ' human', ' relationships', ' from parents'; the - pole suppresses ' people', ' person', ' humans', so this pole promotes them: it fires where people are the implied referent. Fire items are expected to be weaker than 'human capital'."
+}

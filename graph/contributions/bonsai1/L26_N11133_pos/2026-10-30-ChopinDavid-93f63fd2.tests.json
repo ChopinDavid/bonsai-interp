@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-93f63fd2",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N11133+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N11133",
+   "pole": "+",
+   "label": "An adjective or possessive naming a learned profession or discipline used as a modifier of a role, body or title (scientific adviser, medical officer, Teachers' Union, the Artists' Guild, Scientific Committee)",
+   "fire": [
+    "In 1951 she became scientific adviser to the Ministry of Supply.",
+    "The town's chief medical officer ordered the wells to be sealed.",
+    "The Teachers' Union called a strike over class sizes.",
+    "He read a paper to the Royal Medical and Surgical Society.",
+    "The Artists' Guild rented a hall for its annual show.",
+    "She joined the scientific staff of the observatory in 1924.",
+    "The journal's medical editor rejected the paper twice.",
+    "He was elected to the Scientific Committee of the Antarctic expedition."
+   ],
+   "quiet": [
+    "In 1951 she became a trusted adviser to the Ministry of Supply.",
+    "The town's chief officer ordered the wells to be sealed.",
+    "The drivers' union called a strike over long shifts.",
+    "He read a paper to the local history society.",
+    "The Rotary Club rented a hall for its annual show.",
+    "She joined the catering staff of the observatory in 1924.",
+    "The journal's senior editor rejected the paper twice.",
+    "He was elected to the steering committee of the Antarctic expedition."
+   ]
+  }
+ ],
+ "predictions": "Role and body names modified by scientific/medical/Teachers'/Artists' reach 0.3-0.9 on the modifier, strongest for 'scientific adviser'. The same roles and bodies with non-discipline modifiers (trusted adviser, drivers' union, Rotary Club, steering committee, catering staff) stay under 0.15.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "discipline modifier of a role or body",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'appointed scientific adviser' 0.899, \"The Artist's Way\" 0.395 (\"'s\"), 'Scientific American' 0.394, 'Teachers College' 0.361, 'British Medical Journal' 0.122 only; 'the scientific method' 0.335 (the common adjective also fires), 'medical team' 0.230, \"artist's studio\" 0.153, floor 0.068. Card: ' scientific' x4, ' Scientific' x4, ' Medical' x3, '’s' x3 before advisor/Act/Journal/Voice/College/Outlook (max 61, layer 26); the - pole suppresses ' physicists', ' economists', ' scientists', so this pole promotes profession nouns. The risk is that the plain adjective (scientific method 0.335) fires as much as the role modifier."
+}

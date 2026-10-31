@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a7970e7d",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L32/N10126-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L32/N10126",
+   "pole": "-",
+   "label": "In verb-final clauses (Korean, German), the object noun or object particle of a schooling or training phrase before its verb (교육을 받다, Schule besuchen, 훈련을 받다, Ausbildung machen); objects of other verbs (eat an apple, write a letter, buy a house) do not carry it",
+   "fire": [
+    "그녀는 서울에서 음악 교육을 받았다.",
+    "신입 사원들은 안전 교육을 이수해야 한다.",
+    "그는 야간 학교를 다념다.",
+    "그는 직업 훈련을 받고 있다.",
+    "Die Kinder mussten jeden Tag die Schule besuchen.",
+    "Er hat eine Ausbildung zum Schreiner gemacht.",
+    "Sie konnte erst nach dem Krieg eine Universität besuchen.",
+    "Viele Mädchen durften damals keinen Unterricht erhalten."
+   ],
+   "quiet": [
+    "그녀는 서울에서 작은 가게를 열었다.",
+    "신입 사원들은 점심을 함께 먹었다.",
+    "그는 밤마다 편지를 썼다.",
+    "그는 새 자전거를 사고 있다.",
+    "Die Kinder mussten jeden Tag den Hund füttern.",
+    "Er hat einen Tisch aus Eiche gemacht.",
+    "Sie konnte erst nach dem Krieg ein Haus kaufen.",
+    "Viele Mädchen durften damals keine Hosen tragen."
+   ]
+  }
+ ],
+ "predictions": "Korean sentences with 교육을/훈련을/학교를 before 받다/이수하다/다니다 and German sentences with Schule/Universität/Ausbildung/Unterricht before besuchen/machen/erhalten reach 0.3-0.85 on the object or its particle. The same frames with a shop, lunch, letters, a bicycle, a dog, a table, a house or trousers as object stay under 0.05.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "schooling object before its verb (ko/de)",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: '교육을 받았다' 0.843 ('을'), 'keine Schule besuchen' 0.632 ('ule'), '설문 조사를 실시했다' 0.367 (' 실'), '시험을 치렀다' 0.206, Russian 'Образование он смог получить' 0.020; '사과를 먹었다' 0.004, '책을 읽었다' 0.005, 'den Apfel gegessen' 0.001, English 'received his education in Boston' 0.034, floor 0.005. Card: '을' x10, '를' x4 before 이수하다/진행/받다/수행 (training, survey, education, test), 'Sch|ule besuchen', 'Qualifikationsr|unde bestehen', Arabic ' التي' (max 234, layer 32, density 0.05%); the + pole promotes ' taking', ' attending', ' participating'. Education objects are strongest; survey/test objects are weaker."
+}

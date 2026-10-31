@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-10e2d0c0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L0/N5261+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L0/N5261",
+   "pole": "+",
+   "label": "The token ' page' right after 'web' (web page), plus the Arabic ' بنفس' (by oneself) piece; 'website', 'webpage' as one word and ' page' after other words (next page, page 12) carry it weakly or not at all",
+   "fire": [
+    "The link opens a new web page with the full schedule.",
+    "Every web page on the site loads the same style sheet.",
+    "She bookmarked the web page so she could find it again.",
+    "The form on this web page must be submitted before Friday.",
+    "A broken image spoiled an otherwise tidy web page.",
+    "Copy the address of the web page and paste it into the email.",
+    "قرأ الرسالة بنفسه قبل أن يرد عليها.",
+    "ذهبت إلى السوق بنفسها لشراء الخضار."
+   ],
+   "quiet": [
+    "The link opens a new website with the full schedule.",
+    "Every web site on the server loads the same style sheet.",
+    "She bookmarked the next page so she could find it again.",
+    "The form on page 12 must be submitted before Friday.",
+    "A broken image spoiled an otherwise tidy webpage.",
+    "Copy the address of the office and paste it into the email.",
+    "قرأ الرسالة في المساء قبل أن يرد عليها.",
+    "ذهبت إلى السوق مع أختها لشراء الخضار."
+   ]
+  }
+ ],
+ "predictions": "'web page' sentences reach 0.6-0.8 on ' page' and Arabic sentences with بنفسه/بنفسها reach about 0.6 on ' بنفس'. 'website', 'webpage', 'next page', 'page 12' and the Arabic sentences without بنفس stay under 0.25.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "' page' after web, and ' بنفس'",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: 'web page' 0.737 and 0.766 (' page'), 'the worst of all' 0.658 (' of'), Arabic بنفسه 0.636 (' بنفس'); 'front page' 0.221, 'page 42' 0.091, 'website' 0.062, 'generates a report' 0.015, floor 0.032. Card: ' page' x14 after 'web', ' بنفس' x7, ' of' x3 (max 0.36, layer 0, broad 2.2%); the - pole is the 'password' token family. A layer-0 pole: ' page' depends on the preceding 'web' (front page 0.22, page 42 0.09). 'worst of all' is left out of the label because ' of' is too common to declare as a trigger.",
+ "trigger": {
+  "tokens": [
+   " page",
+   " بنفس"
+  ]
+ }
+}

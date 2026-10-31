@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-4af80a4e",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L14/N5616+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L14/N5616",
+   "pole": "+",
+   "label": "Unclear; best guess: a Python control-flow keyword (for, if) inside an indented function body, with nested loops and conditionals; flat code of assignments and prints does not carry it",
+   "fire": [
+    "def count_even(nums):\n    total = 0\n    for n in nums:\n        if n % 2 == 0:\n            total += 1\n    return total\n",
+    "def flatten(items):\n    out = []\n    for item in items:\n        if isinstance(item, list):\n            out.extend(flatten(item))\n        else:\n            out.append(item)\n    return out\n",
+    "class Grid:\n    def neighbours(self, x, y):\n        cells = []\n        for dx in (-1, 0, 1):\n            for dy in (-1, 0, 1):\n                if dx or dy:\n                    cells.append((x + dx, y + dy))\n        return cells\n",
+    "def first_match(words, prefix):\n    for w in words:\n        if w.startswith(prefix):\n            return w\n    return None\n",
+    "import os\n\n\ndef list_py(root):\n    found = []\n    for name in os.listdir(root):\n        if name.endswith('.py'):\n            found.append(name)\n    return found\n",
+    "def longest(lines):\n    best = ''\n    for line in lines:\n        if len(line) > len(best):\n            best = line\n    return best\n",
+    "def parse(rows):\n    table = {}\n    for row in rows:\n        key, value = row.split('=')\n        if key:\n            table[key.strip()] = value.strip()\n    return table\n",
+    "def primes(limit):\n    found = []\n    for n in range(2, limit):\n        if all(n % p for p in found):\n            found.append(n)\n    return found\n"
+   ],
+   "quiet": [
+    "def count_items(nums):\n    total = len(nums)\n    total += 1\n    return total\n",
+    "def wrap(items):\n    out = []\n    out.append(items)\n    out.extend(items)\n    return out\n",
+    "class Grid:\n    def corner(self, x, y):\n        cells = []\n        cells.append((x + 1, y + 1))\n        return cells\n",
+    "def first_word(words, prefix):\n    w = words[0]\n    return w + prefix\n",
+    "import os\n\n\ndef here():\n    root = os.getcwd()\n    name = os.path.basename(root)\n    return name\n",
+    "def header(lines):\n    best = lines[0]\n    best = best.strip()\n    return best\n",
+    "def pair(row):\n    key, value = row.split('=')\n    table = {key.strip(): value.strip()}\n    return table\n",
+    "SELECT n FROM numbers WHERE n > 1 ORDER BY n LIMIT 10;"
+   ]
+  }
+ ],
+ "predictions": "If the guess is right, multi-line Python functions with a for loop and an if inside it reach 0.3-0.8 on 'if' or 'for'; functions and scripts made only of assignments, calls and returns, SQL, and prose stay under 0.2. The pole is broad (1.1% at 0.1 max, max 5.4), so this is a best guess.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: nested for/if in a Python body",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: def with for+if 0.764 (peak ' if'), 'import re ... re.sub' 0.419 (' ='), 'cellular automata and differential equations' 0.631 (' equations'), make_fixed method 0.183, 'multiplication as stacking boxes' 0.111, SQL 0.157 (' WHERE'), flat 'x = 5' script 0.096, prose 0.112/0.017. Card: ' for' x2 in indented Python loops, ' equations', ' re', ' multiplication', '_fixed' (max 5.4, layer 14, broad 1.1%); the - pole peaks on ' chess', ' formal', ' graph', ' grammar'. Two configurations fired (nested control flow and 'differential equations'); the test takes the code one and records the pole as unclear."
+}

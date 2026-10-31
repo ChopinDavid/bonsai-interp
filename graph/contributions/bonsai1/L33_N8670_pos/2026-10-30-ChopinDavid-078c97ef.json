@@ -1,0 +1,159 @@
+{
+ "id": "2026-10-30-ChopinDavid-078c97ef",
+ "kind": "interpret",
+ "neuron": "bonsai1/L33/N8670+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T03:35:15+00:00",
+ "recipe": {
+  "toolchain_commit": "67ffadda5",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L33_N8670_pos/2026-10-30-ChopinDavid-078c97ef.tests.json"
+ },
+ "label": "The word piece ' mon' / ' Mon' that opens a word the tokenizer splits (mon|ies, mon|soon, mon|oxide, mon|ogram, mon|ologue, Mon|mouth); mon-words that are their own token (money, Monday, month, monitor, monarch, monument, Monaco) do not carry it",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L33_N8670_pos/2026-10-30-ChopinDavid-078c97ef.tests.json",
+   "prereg_commit": "67ffadda5",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.391,
+     "peak": " mon"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.397,
+     "peak": " mon"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.255,
+     "peak": " mon"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.004,
+     "peak": " faulty"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.11,
+     "peak": " mon"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.35,
+     "peak": " mon"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.311,
+     "peak": " mon"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.171,
+     "peak": " Mon"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.001,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.002,
+     "peak": "iously"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.004,
+     "peak": " dull"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.005,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.002,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.004,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.003,
+     "peak": " without"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.002,
+     "peak": " the"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.969,
+    "median_fire": 0.283,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "67ffadda5",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "split piece ' mon' / ' Mon'",
+ "unit_kind": "lexical",
+ "confidence": "medium",
+ "notes": "Probe: monies 0.476, monotonous 0.349, monsoon 0.251, monogamous 0.117 (all peak ' mon'), monolith 0.037 (peak ' at', the piece did not fire there); monarch 0.004, money/Monday/month 0.012, monument 0.004, dominant 0.007. Card: ' mon' x10, ' Mon' x7, 'Mon' x3 before ogamous/ies/etizes/arch (max 160, layer 33); the card's top contexts (monogamous after a marriage passage, Recovery Act monies) are stronger than isolated sentences, so the strength varies by context and some fire items may fall under 0.3. The - pole peaks on ' cruel', ' mar'.",
+ "selection": "random draw",
+ "trigger": {
+  "tokens": [
+   " mon",
+   " Mon",
+   "Mon"
+  ]
+ }
+}

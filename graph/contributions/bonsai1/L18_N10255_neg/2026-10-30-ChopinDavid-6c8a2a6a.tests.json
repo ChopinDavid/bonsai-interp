@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-6c8a2a6a",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L18/N10255-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T03:20:21+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L18/N10255",
+   "pole": "-",
+   "label": "Unclear; best guess: a calendar-time expression naming a span or point (the first 24 hours, the second week of March, on 27 January, on their anniversary), fired on the preposition or unit word",
+   "fire": [
+    "Deliveries made in the first 48 hours after the storm were free of charge.",
+    "Sales figures from the third week of April were the strongest on record.",
+    "The road will be closed on 14 June for the parade.",
+    "The exhibition opens on the first Monday of September.",
+    "Most complaints arrive within the first 24 hours of a product launch.",
+    "The ceremony was held on their fortieth wedding anniversary.",
+    "The clinic sees walk-in patients during the last week of each month.",
+    "Applications must be posted by 30 November at the latest."
+   ],
+   "quiet": [
+    "Deliveries made to the north of the city were free of charge.",
+    "Sales figures from the Birmingham branch were the strongest on record.",
+    "The road will be closed near the bridge for the parade.",
+    "The exhibition opens in the east wing of the museum.",
+    "Most complaints arrive by email rather than by phone.",
+    "The ceremony was held in the garden behind the chapel.",
+    "The clinic sees walk-in patients at the side entrance.",
+    "Applications must be posted to the registrar's office."
+   ]
+  }
+ ],
+ "predictions": "If the guess is right, date and span expressions reach 0.3 or more on the preposition or unit word; the same sentence frames with place phrases (to the north, near the bridge, in the east wing) stay under 0.15. The probe reached only 0.29, so most fire items may fall short.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: calendar span or date point",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Probe: 'the second week of March' 0.293 (' of'), 'for the first 24 hours' 0.289 (' hours'), 'inaugurated on 27 January 1995' 0.133 (peak '2'), 'held on Saturday' 0.062, 'departs on Tuesday' 0.049; 'inaugurated by the mayor' 0.166 (' in'), 'lying on the table' 0.032, 'during the summer' -0.010, floor 0.048. Card: ' on' x7 before dates (on 15 February, on Saturday, on 27 January, on their anniversary), ' of' before months, 'first 24 hours', 'by the very nature' (max 11.5, layer 18, density 0.43%); the + pole promotes ' during', ' late', ' early', ' seasonal'. The probe did not reproduce the card's strength, so the pole is recorded as unclear with this best guess."
+}
