@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L34/N4770+",
+ "model": "bonsai1",
+ "layer": 34,
+ "index": 4770,
+ "pole": "+",
+ "label": "a colour or direction adjective opening a fixed name or idiom whose next word is predictable (silver bullet, golden goose, Black Sea, Green Belt)",
+ "short": "colour word opening a set name",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L34_N4770_pos/2026-10-30-ChopinDavid-7aae66cd.tests.json",
+   "prereg_commit": "25dc6b963",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 1,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.838,
+     "peak": " silver"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.268,
+     "peak": " Black"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.335,
+     "peak": " Golden"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.463,
+     "peak": " golden"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.089,
+     "peak": " black"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.461,
+     "peak": " Black"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.027,
+     "peak": " Green"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.509,
+     "peak": " silver"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.03,
+     "peak": " silver"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.203,
+     "peak": " black"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.135,
+     "peak": " golden"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.029,
+     "peak": " goose"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.055,
+     "peak": " oil"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.097,
+     "peak": " black"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.01,
+     "peak": " city"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.608,
+     "peak": " silver"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.75,
+    "median_fire": 0.398,
+    "near_misses_at_0.3": 1
+   },
+   "contribution": "2026-10-30-ChopinDavid-7aae66cd"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-7aae66cd",
+   "a colour or direction adjective opening a fixed name or idiom whose next word is predictable (silver bullet, golden goose, Black Sea, Green Belt)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-7aae66cd"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

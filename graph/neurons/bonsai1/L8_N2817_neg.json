@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L8/N2817-",
+ "model": "bonsai1",
+ "layer": 8,
+ "index": 2817,
+ "pole": "-",
+ "label": "the word 'shape' as a drawing or geometry term, in code and in graphics-software instructions",
+ "short": "'shape' in graphics/geometry",
+ "kind": "lexical",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L8_N2817_neg/2026-10-30-ChopinDavid-ac3e2186.tests.json",
+   "prereg_commit": "25dc6b963",
+   "author": "ChopinDavid",
+   "n_fire": 4,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.245,
+     "peak": " to"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.531,
+     "peak": " shape"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.179,
+     "peak": " Shape"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.565,
+     "peak": " shape"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.033,
+     "peak": " shape"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.102,
+     "peak": " covering"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.326,
+     "peak": " circles"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.385,
+     "peak": "olerance"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.05,
+     "peak": " to"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.078,
+     "peak": "ounding"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.021,
+     "peak": " menu"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.013,
+     "peak": "   "
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " so"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.053,
+     "peak": ".\"\"\""
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.058,
+     "peak": " better"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.01,
+     "peak": "   "
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.938,
+    "median_fire": 0.285,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-ac3e2186"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-ac3e2186",
+   "the word 'shape' as a drawing or geometry term, in code and in graphics-software instructions",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-ac3e2186"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

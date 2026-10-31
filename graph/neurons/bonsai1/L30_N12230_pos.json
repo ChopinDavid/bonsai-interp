@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L30/N12230+",
+ "model": "bonsai1",
+ "layer": 30,
+ "index": 12230,
+ "pole": "+",
+ "label": "the word before an expected possessive determiner in a set phrase (punches above its weight, most of their income, finden Sie in unserer …)",
+ "short": "slot before a predicted possessive",
+ "kind": "contextual",
+ "status": "failed",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L30_N12230_pos/2026-10-30-ChopinDavid-9a2db3d7.tests.json",
+   "prereg_commit": "25dc6b963",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.586,
+     "peak": " above"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.237,
+     "peak": " bulk"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.179,
+     "peak": " of"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.068,
+     "peak": " pull"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.21,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.012,
+     "peak": " founder"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.496,
+     "peak": " de"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.022,
+     "peak": " hand"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.038,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.236,
+     "peak": " bulk"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.178,
+     "peak": " of"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.003,
+     "peak": " attend"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.284,
+     "peak": " auf"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.027,
+     "peak": " closed"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.136,
+     "peak": " modifier"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.022,
+     "peak": " way"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.648,
+    "median_fire": 0.195,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-9a2db3d7"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-9a2db3d7",
+   "the word before an expected possessive determiner in a set phrase (punches above its weight, most of their income, finden Sie in unserer …)",
+   "failed"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-9a2db3d7"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}

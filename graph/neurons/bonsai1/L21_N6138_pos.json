@@ -1,0 +1,167 @@
+{
+ "id": "bonsai1/L21/N6138+",
+ "model": "bonsai1",
+ "layer": 21,
+ "index": 6138,
+ "pole": "+",
+ "label": "the word that opens a gloss of a term just mentioned: 'which is/are …', 'who is …', 'i.e.', 'stands for', 'short for', 'that is'",
+ "short": "gloss opener for a term",
+ "kind": "contextual",
+ "status": "held",
+ "depth": "quick",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L21_N6138_pos/2026-10-30-ChopinDavid-d7b9a08c.tests.json",
+   "prereg_commit": "25dc6b963",
+   "author": "ChopinDavid",
+   "n_fire": 2,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.098,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.32,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.284,
+     "peak": " a"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.119,
+     "peak": ".e"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.144,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.266,
+     "peak": " are"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.05,
+     "peak": " plain"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.343,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.013,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.01,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.02,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.01,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.028,
+     "peak": " for"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.094,
+     "peak": " on"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.018,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.017,
+     "peak": "."
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.984,
+    "median_fire": 0.205,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-ChopinDavid-d7b9a08c"
+  }
+ ],
+ "label_history": [
+  [
+   "2026-10-30-ChopinDavid-d7b9a08c",
+   "the word that opens a gloss of a term just mentioned: 'which is/are …', 'who is …', 'i.e.', 'stands for', 'short for', 'that is'",
+   "held"
+  ]
+ ],
+ "examples": [],
+ "evidence": [],
+ "roles": [],
+ "contributors": [
+  "ChopinDavid"
+ ],
+ "contributions": [
+  "2026-10-30-ChopinDavid-d7b9a08c"
+ ],
+ "qc": {
+  "confirm": 0,
+  "dispute": 0,
+  "refine": 0
+ },
+ "replications": [],
+ "coverage": null,
+ "scrutiny": {
+  "level": 1,
+  "name": "tested",
+  "test_rounds": 1,
+  "sentences": 16,
+  "contributors": 1,
+  "qc": 0
+ }
+}
