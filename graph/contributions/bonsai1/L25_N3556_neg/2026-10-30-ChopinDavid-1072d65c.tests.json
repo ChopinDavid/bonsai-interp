@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-1072d65c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L25/N3556-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L25/N3556",
+   "pole": "-",
+   "label": "a recipe step that combines components prepared earlier in the text (fold the flour mixture into the egg mixture), peaking on the connective",
+   "fire": [
+    "Sift the flour, baking powder and cinnamon into a bowl.\nIn another bowl, whisk the eggs with the oil, then fold the flour mixture into the egg mixture.",
+    "Melt the chocolate over simmering water and let it cool.\nBeat the butter with the sugar until pale, then stir the melted chocolate into the butter.",
+    "Toast the spices in a dry pan until fragrant.\nSimmer the lentils for twenty minutes, then add the toasted spices to the lentils.",
+    "Mash the bananas in a large bowl.\nIn a jug, mix the milk and vanilla, then pour the milk mixture over the mashed bananas.",
+    "Crush the biscuits into fine crumbs.\nMelt the butter in a pan, then combine the crumbs with the melted butter and press into the tin.",
+    "Whisk the yolks with half the sugar until thick.\nWhip the cream to soft peaks, then fold the whipped cream into the yolk mixture.",
+    "Dissolve the yeast in warm water with a pinch of sugar.\nCombine the flour and salt, then add the yeast mixture to the flour and knead.",
+    "Roast the peppers until the skins blister.\nBlend the tomatoes with garlic, then stir the roasted peppers into the tomato sauce."
+   ],
+   "quiet": [
+    "Sift the flour, baking powder and cinnamon into a bowl.\nPreheat the oven to 180 degrees and line a loaf tin with paper.",
+    "Melt the chocolate over simmering water and let it cool.\nChill the bowl in the fridge for at least an hour before serving.",
+    "Toast the spices in a dry pan until fragrant.\nStore them in an airtight jar away from direct light.",
+    "Mash the bananas in a large bowl.\nBake for forty minutes until a skewer comes out clean.",
+    "Crush the biscuits into fine crumbs.\nPress the crumbs firmly into the base of the tin and chill.",
+    "Whisk the yolks with half the sugar until thick.\nServe the custard warm with a dusting of nutmeg.",
+    "Dissolve the yeast in warm water with a pinch of sugar.\nLeave it in a warm place until the surface is frothy.",
+    "Roast the peppers until the skins blister.\nPeel them under running water and discard the seeds."
+   ]
+  }
+ ],
+ "predictions": "Weak hold or fail (4-5/8): only the recipe configuration transferred in the probe (0.457); re-mention coordination in prose did not (0.03-0.08). Broad pole (1.3%), so other recipe steps may leak to 0.1-0.2.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "recipe step combining earlier mixtures",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: 'mixing bowl[.\\n]In a large bowl', 'Add dry ingredients [to] the butter mixture', 'either John [or] Jesus', 'bottled [and] canned', 'Baroness [and] Philipson', repeated identifiers in code. Probe: two-step recipe 'add the dry ingredients to the butter mixture' 0.457 on ' the', repeated user_name tuple 0.134, 'Both the Charter and the Declaration' 0.081, 'neither Peter nor Andrew' after introduction 0.059, 'bottled and tap' 0.028; single-step recipe 0.046, single-mention controls 0.006-0.066. The re-mention coordination idea failed; the recipe combining step is the only configuration that fired."
+}

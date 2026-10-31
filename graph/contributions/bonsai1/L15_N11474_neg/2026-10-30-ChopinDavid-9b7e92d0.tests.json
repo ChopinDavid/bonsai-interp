@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9b7e92d0",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L15/N11474-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L15/N11474",
+   "pole": "-",
+   "label": "unclear; best guess: the verb or its object completing a clause about a specific, just-identified thing in informal how-to or report prose (your doctor prescribes, I noticed the totals, this pump is wobbling)",
+   "fire": [
+    "If your dentist prescribes a stronger painkiller, do not drive until you know how it affects you.",
+    "When I rechecked the invoice I saw that the subtotals did not add up.",
+    "The belt on this old dryer is squeaking, is that something I can fix myself?",
+    "If your vet prescribes a special diet, keep the other pets away from the bowl.",
+    "After the update I compared the two files and the timestamps were off by an hour.",
+    "The fan in this laptop is rattling, could that be a loose screw?",
+    "When I measured the shelf again the width was two centimetres short.",
+    "If the pharmacist substitutes a generic brand, the dose stays the same."
+   ],
+   "quiet": [
+    "Dentists usually recommend a soft diet for a few days after an extraction.",
+    "The invoice was sent to the wrong address and arrived a week late.",
+    "This old dryer has served the family well for almost twenty years.",
+    "Many vets now offer evening appointments for working owners.",
+    "The two files were created on the same day by different users.",
+    "The laptop came with a two-year warranty and a padded sleeve.",
+    "The shelf is made of oak and was built by a local carpenter.",
+    "Generic brands are usually cheaper than the original medicine."
+   ]
+  }
+ ],
+ "predictions": "Likely fail (2-4/8): probe values were scattered (prescribes 0.516, totals 0.289, pump is 0.199, lanes will 0.107, referred to 0.010) and a floor sentence reached 0.142. Broad pole (0.38%).",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: predicate in informal report",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card peaks on ' to' (referred to), ' says', ' compared', ' is', ' lanes', 'cribes', ' together' in first-person or how-to prose; no single token. Probe: 'If your doctor prescribes amoxicillin' 0.516 on 'cribes', 'I noticed that the totals' 0.289, 'this old pump is wobbling' 0.199, 'northbound lanes will' 0.107, 'pump wobbles whenever' 0.130, 'I referred to the manual' 0.010, 'she says she will' 0.045, encyclopedic control 0.038, report control 0.142. The fire items copy the three configurations that scored, with fresh content; the near misses are generic statements on the same topics."
+}

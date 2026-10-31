@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-7aae66cd",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L34/N4770+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L34/N4770",
+   "pole": "+",
+   "label": "a colour or direction adjective opening a fixed name or idiom whose next word is predictable (silver bullet, golden goose, Black Sea, Green Belt)",
+   "fire": [
+    "Hospitals began to see the new scanner as a silver bullet for late diagnosis.",
+    "The trade route ran along the southern shore of the Black Sea to the Danube delta.",
+    "Vineyards along the Golden Gate were torn up to make room for houses.",
+    "The dispute threatens to kill the golden goose that funds the whole league.",
+    "For the Texas economy, black gold still matters more than tourism.",
+    "Fans lined up for the midnight screening of The Black Swan.",
+    "Planners wanted a Green Belt around the city to stop the sprawl.",
+    "Every cloud has a silver lining, as the coach kept telling the players."
+   ],
+   "quiet": [
+    "Hospitals painted the new wing a pale silver to brighten the corridors.",
+    "The trade route ran along the shore past a black cliff to the river delta.",
+    "Vineyards turned golden in October and were photographed by tourists.",
+    "The dispute concerns a goose that wandered onto the neighbour's land.",
+    "For the Texas economy, oil still matters more than tourism.",
+    "Fans lined up for the midnight screening in black raincoats.",
+    "Planners wanted a belt of trees around the city to stop the sprawl.",
+    "Every window had a silver frame, as the architect kept telling the owners."
+   ]
+  }
+ ],
+ "predictions": "Hold 6/8: idioms scored 0.31-0.94 in the probe; literal colour uses 0.09-0.19 except the cliché 'black cat' at 0.283, so the near misses avoid set phrases.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "colour word opening a set name",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Card: silver bullet 179, Silver Leaf, Black Sea, Southern Watch, 'black' operations, Черный котел, black gold, Silver Linings, Goldenbaby. Probe: Silver Linings Playbook 0.935, silver bullet 0.726, golden goose 0.525, black gold 0.353, Black Sea 0.306, black operations 0.113; literal: painted silver 0.094, golden colour 0.105, calm and black 0.188, black cat 0.283. Late layer (34), consistent with predicting the idiom's next word."
+}

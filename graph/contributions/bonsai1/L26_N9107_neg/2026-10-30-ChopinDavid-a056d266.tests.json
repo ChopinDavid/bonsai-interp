@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-a056d266",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L26/N9107-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L26/N9107",
+   "pole": "-",
+   "label": "a footnote reference number attached directly to sentence-final punctuation (…of war.14 The delegates)",
+   "fire": [
+    "The harbour was fortified a second time after the raid of 1667.12 The new walls still stand today.",
+    "The governor dismissed the petition without reading it.45 His successor took a different view.",
+    "Grain prices doubled within a single season;19 the poor relief rolls grew accordingly.",
+    "Few of the recruits had ever seen the sea before boarding.7 Many were ill for the whole crossing.",
+    "The manuscript was copied at least three times in the twelfth century.88 Two copies survive in Paris.",
+    "The company's charter was renewed for another twenty years.31 Shareholders received no dividend that decade.",
+    "His account of the siege is the only one written by a participant.203 Later chroniclers relied on it heavily.",
+    "The mine closed for good in 1931.56 The village lost half its population within a decade."
+   ],
+   "quiet": [
+    "The harbour was fortified a second time after the raid of 1667. 12 new bastions were added to the walls.",
+    "The governor dismissed the petition after 45 minutes of debate.",
+    "Grain prices rose by 19 per cent within a single season.",
+    "Few of the recruits had ever seen the sea before boarding ship 7 at the quay.",
+    "The manuscript was copied at least three times, as noted on p.88 of the catalogue.",
+    "The company's charter was renewed for 20.5 years under the new act.",
+    "His account of the siege runs to 203 pages in the printed edition.",
+    "The mine closed for good in 1931, and 56 families left the village."
+   ]
+  }
+ ],
+ "predictions": "Hold 8/8 with median near 0.45 (first digit of the number); spaced numbers, decimals, section numbers and years should stay under 0.06. The 'p.88' near miss tests a glued digit that is not a footnote.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "footnote number after full stop",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Card: every top example is the first digit of a number glued to a sentence-final '.' or ';' in scholarly prose (Jeldi.30, remained.30–34, fault;10, Conventions.161). Probe: war.14 0.491, companies.27 0.444, grounds;8 0.387, detail.102 0.573; 'war. 14 delegates' 0.053, '2.27 million' 0.005, 'section 8' 0.003, 'in 1902' 0.003, 'chapter 3.2' 0.026."
+}

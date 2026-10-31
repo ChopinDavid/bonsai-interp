@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-9a2db3d7",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L30/N12230+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L30/N12230",
+   "pole": "+",
+   "label": "the word before an expected possessive determiner in a set phrase (punches above its weight, most of their income, finden Sie in unserer …)",
+   "fire": [
+    "The small charity consistently punched above its weight in policy debates.",
+    "Most freelancers earn the bulk of their income from two or three clients.",
+    "The village has lost much of its charm since the bypass opened.",
+    "Every team member must pull their weight during the final sprint.",
+    "Die vollständigen Bedingungen finden Sie in unseren Allgemeinen Geschäftsbedingungen.",
+    "The old firm finally lost its way after the founder retired.",
+    "Les clients peuvent modifier leur réservation jusqu'à la veille de leur arrivée.",
+    "The board gave the manager a free hand to run things in her own way."
+   ],
+   "quiet": [
+    "The small charity consistently sat at the back of the room in policy debates.",
+    "Most freelancers earn the bulk of the fee at the end of the project.",
+    "The village has lost much of the old forest since the bypass opened.",
+    "Every team member must attend the meeting during the final sprint.",
+    "Die vollständigen Bedingungen finden Sie auf der letzten Seite.",
+    "The old firm finally closed the factory after the founder retired.",
+    "Les clients peuvent modifier la réservation jusqu'à la veille du départ.",
+    "The board gave the manager a free hand to run things in the usual way."
+   ]
+  }
+ ],
+ "predictions": "Weak, maybe 4/8: English idioms scored 0.55 but the German article control (auf der, 0.306) fired as much as the possessive (in unserer, 0.337), and French/Russian/Spanish possessives scored 0.06-0.12. The article near misses may leak.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "slot before a predicted possessive",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Card: 'где [находится] Ваш сайт', 'lors [de] votre arrivée', 'доступ [к] вашей', 'libre [es] nuestra', 'au sein [de] leur', 'finden Sie [in] unserer', 'punches [above] its weight', 'the Atlantic [Ocean] its name', 'make most [of] their money'; the negative pole's output promotes your/my/их. Probe: 'punches above its weight' 0.548, 'make most of their income' 0.555, 'finden Sie in unserer' 0.337, 'finden Sie auf der' 0.306, 'dès votre arrivée' 0.124, 'dès la fin' 0.133, 'находится ваш' 0.104, 'es nuestra' 0.062, 'access to your information' 0.034, English article controls 0.003-0.011."
+}

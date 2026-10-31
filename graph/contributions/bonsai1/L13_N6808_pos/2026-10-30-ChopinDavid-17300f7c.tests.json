@@ -1,0 +1,48 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-17300f7c",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L13/N6808+",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L13/N6808",
+   "pole": "+",
+   "label": "unclear; best guess: web and command-line boilerplate fragments (Scroll down for video, ls flag clusters, doi suffixes)",
+   "fire": [
+    "Scroll down for video of the rescue",
+    "alias la='ls -lah --color=always'",
+    "Scroll down for more pictures of the wedding",
+    "Nat Rev Neurosci 2012; 13: 251-66 doi: 10.1038/nrn3171",
+    "Call Us Now for same-day emergency plumbing",
+    "chmod -R 755 /var/www/html && ls -alF",
+    "Click here for video highlights of the match",
+    "Hum Mol Genet 2009; 18: 4301-11 doi: 10.1093/hmg/ddp382"
+   ],
+   "quiet": [
+    "The rescue crew reached the stranded hikers before dark.",
+    "She listed the files in the folder and deleted the oldest ones.",
+    "The wedding was held in a small chapel outside the town.",
+    "The review article summarised ten years of brain imaging studies.",
+    "The plumber arrived within an hour and fixed the leaking pipe.",
+    "The web server stores its pages in a folder under var.",
+    "The match ended in a draw after a late equaliser.",
+    "The genetics paper identified a new mutation in the gene."
+   ]
+  }
+ ],
+ "predictions": "Likely fail: the probe hits (0.81, 0.87) were near-copies of card strings and the doi line scored 0.241; fresh variants may not transfer. Broad pole (4.9% at 0.1 max), gate-closed regime, tiny max 1.8.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "unclear: boilerplate fragments",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Card: doi digit 1.81, 'Scroll down for video', 'ls -hAlF', 'Call Us Now', 'T(4)', Greek letter, 'Ov.', SQL identifier: alphanumeric code-like fragments, no single token. Probe: 'alias ll=ls -lAhF' 0.809 on 'Ah', 'Scroll down for video of the demolition' 0.872 on ' video', doi line 0.241, 'Call Us Today' 0.123, 'Serum T4' 0.080, Domesday 0.042, prose controls 0.027-0.102. Recorded as a best guess."
+}

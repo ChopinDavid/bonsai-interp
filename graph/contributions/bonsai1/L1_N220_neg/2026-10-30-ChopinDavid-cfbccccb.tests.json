@@ -1,0 +1,54 @@
+{
+ "contribution": "2026-10-30-ChopinDavid-cfbccccb",
+ "contributor": "ChopinDavid",
+ "kind": "interpret",
+ "neuron": "bonsai1/L1/N220-",
+ "protocol": "quick-8+8@3",
+ "written": "2026-10-31T00:20:13+00:00",
+ "selection": "random draw",
+ "neighbours": [
+  {
+   "unit": "L1/N220",
+   "pole": "-",
+   "label": "the tokens ' Boston' and ' Francisco'",
+   "fire": [
+    "The marathon in Boston draws runners from every state.",
+    "Cable cars still climb the hills of San Francisco every morning.",
+    "Our flight to Boston was delayed by a snowstorm.",
+    "The painter Francisco Goya spent his last years in Bordeaux.",
+    "Clam chowder in Boston is thicker than the version served in Manhattan.",
+    "The earthquake of 1906 destroyed much of San Francisco.",
+    "A tea party in Boston harbour sparked a revolution.",
+    "Tech workers have been leaving San Francisco for cheaper cities."
+   ],
+   "quiet": [
+    "The marathon in Chicago draws runners from every state.",
+    "Cable cars still climb the hills of Lisbon every morning.",
+    "Our flight to Denver was delayed by a snowstorm.",
+    "The painter Diego Velázquez spent his last years in Madrid.",
+    "Clam chowder in Maine is thicker than the version served in Manhattan.",
+    "The earthquake of 1985 destroyed much of Mexico City.",
+    "A tea party in Philadelphia sparked a protest.",
+    "Tech workers have been leaving Seattle for cheaper cities."
+   ]
+  }
+ ],
+ "predictions": "Hold 8/8 with median near 0.55; other city names should score 0.1-0.26 (broad pole, 2.9% at 0.1 max). 'Francisco Goya' tests the token as a given name.",
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe"
+  ]
+ },
+ "short": "tokens Boston / Francisco",
+ "unit_kind": "lexical",
+ "confidence": "high",
+ "notes": "Layer 1 token pole: card ' Boston' x16, ' Francisco' x8 of the top 32, plus Korean particles. Probe: Boston 0.610/0.516, Francisco 0.571/0.625; Chicago 0.183, Seattle 0.147, San Diego 0.176, Los Angeles 0.110, San Jose 0.255 (on ' the').",
+ "trigger": {
+  "words": [
+   "Boston",
+   "Francisco"
+  ]
+ }
+}
