@@ -4,10 +4,10 @@
  "layer": 24,
  "index": 6128,
  "pole": "+",
- "label": "The frequency adverb 'often' (including 'more often than not' and pre-nominal 'often overlooked'); weaker on synonyms, quiet on other frequency words such as rarely, sometimes, seldom, never.",
+ "label": "The word family for 'frequent': 'often', 'common'/'Common', 'frequent(ly)' and their translations (souvent, häufig, よく); quiet on other frequency ideas (rarely, many, every day, prone to).",
  "short": "' often'",
  "kind": "token",
- "status": "partial",
+ "status": "held",
  "depth": "quick",
  "tests": [
   {
@@ -131,6 +131,128 @@
     "near_misses_at_0.3": 1
    },
    "contribution": "2026-10-22-ChopinDavid-9e49673c"
+  },
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L24_N6128_pos/2026-10-30-moridinamael-0ea8b96f.tests.json",
+   "prereg_commit": "71dc2848b",
+   "author": "blind:claude-opus-5-5 (label-only)",
+   "n_fire": 7,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.561,
+     "peak": " often"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.339,
+     "peak": " common"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.394,
+     "peak": " frequent"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.204,
+     "peak": " frequently"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.651,
+     "peak": " souvent"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.459,
+     "peak": " häufig"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.435,
+     "peak": "よく"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.752,
+     "peak": "Common"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.122,
+     "peak": " rarely"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.006,
+     "peak": " young"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.012,
+     "peak": " old"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.002,
+     "peak": " coast"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.201,
+     "peak": "fois"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.176,
+     "peak": "ten"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.084,
+     "peak": "々"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.054,
+     "peak": "Many"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.447,
+    "near_misses_at_0.3": 0
+   },
+   "contribution": "2026-10-30-moridinamael-0ea8b96f"
   }
  ],
  "label_history": [
@@ -138,34 +260,37 @@
    "2026-10-22-ChopinDavid-9e49673c",
    "The frequency adverb 'often' (including 'more often than not' and pre-nominal 'often overlooked'); weaker on synonyms, quiet on other frequency words such as rarely, sometimes, seldom, never.",
    "held"
+  ],
+  [
+   "2026-10-30-moridinamael-0ea8b96f",
+   "The word family for 'frequent': 'often', 'common'/'Common', 'frequent(ly)' and their translations (souvent, häufig, よく); quiet on other frequency ideas (rarely, many, every day, prone to).",
+   "held"
   ]
  ],
  "examples": [],
  "evidence": [],
  "roles": [],
  "contributors": [
-  "ChopinDavid"
+  "ChopinDavid",
+  "moridinamael"
  ],
  "contributions": [
-  "2026-10-22-ChopinDavid-9e49673c"
+  "2026-10-22-ChopinDavid-9e49673c",
+  "2026-10-30-moridinamael-0ea8b96f"
  ],
  "qc": {
   "confirm": 0,
   "dispute": 0,
-  "refine": 0
+  "refine": 1
  },
  "replications": [],
- "coverage": {
-  "value": 0.4858,
-  "method": "estimated from the label's quoted words (token measure)",
-  "strong": 3419
- },
+ "coverage": null,
  "scrutiny": {
-  "level": 1,
-  "name": "tested",
-  "test_rounds": 1,
-  "sentences": 16,
-  "contributors": 1,
-  "qc": 0
+  "level": 3,
+  "name": "checked",
+  "test_rounds": 2,
+  "sentences": 32,
+  "contributors": 2,
+  "qc": 1
  }
 }
