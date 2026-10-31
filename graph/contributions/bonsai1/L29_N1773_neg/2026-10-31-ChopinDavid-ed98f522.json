@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-ed98f522",
+ "kind": "interpret",
+ "neuron": "bonsai1/L29/N1773-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T08:33:33+00:00",
+ "recipe": {
+  "toolchain_commit": "22db18c81",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L29_N1773_neg/2026-10-31-ChopinDavid-ed98f522.tests.json"
+ },
+ "label": "'and'/'et' (or the second item) coordinating two parallel technical or geographic proper names of the same kind (ReentrantLock and CyclicBarrier, Central Kalimantan and South Sumatra); 'Unicode' in code is a second facet",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L29_N1773_neg/2026-10-31-ChopinDavid-ed98f522.tests.json",
+   "prereg_commit": "22db18c81",
+   "author": "ChopinDavid",
+   "n_fire": 5,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.827,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.345,
+     "peak": " Central"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.158,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.017,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.167,
+     "peak": " et"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 1.235,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.347,
+     "peak": " and"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.817,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.259,
+     "peak": " a"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.023,
+     "peak": " rain"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.011,
+     "peak": " configuration"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.008,
+     "peak": " outbreak"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.008,
+     "peak": " projet"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.013,
+     "peak": " list"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.013,
+     "peak": " compares"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 0.922,
+    "median_fire": 0.346,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "22db18c81",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "pair of parallel proper names",
+ "unit_kind": "unclear",
+ "confidence": "low",
+ "notes": "Weak pole (max 80 vs + pole 524). Probe: 'two classes, ReentrantLock and CyclicBarrier' 1.025 on ' and'; 'Central Kalimantan and South Sumatra' 0.534 on ' and'; 'known Unicode equivalents' 0.616 and prose '160 Unicode characters' 0.666; utf8mb4/gb18030 tuple 0.342; unichr 0.197; plain imports 0.141; arithmetic 0.012; floor 0.005.",
+ "selection": "random draw"
+}

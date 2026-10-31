@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-60b11723",
+ "kind": "interpret",
+ "neuron": "bonsai1/L16/N7658+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T08:33:19+00:00",
+ "recipe": {
+  "toolchain_commit": "22db18c81",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L16_N7658_pos/2026-10-31-ChopinDavid-60b11723.tests.json"
+ },
+ "label": "marriage and betrothal as a social institution (engagement, fiancé, bride and groom, the husband's family, patriarchal custom), as opposed to family or kinship without marriage",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L16_N7658_pos/2026-10-31-ChopinDavid-60b11723.tests.json",
+   "prereg_commit": "22db18c81",
+   "author": "ChopinDavid",
+   "n_fire": 8,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.497,
+     "peak": "thal"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.651,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.781,
+     "peak": " ring"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.653,
+     "peak": " engagement"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.787,
+     "peak": "'s"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.328,
+     "peak": " groom"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.322,
+     "peak": " marriage"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.411,
+     "peak": "ry"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.061,
+     "peak": " parents"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.012,
+     "peak": " and"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.021,
+     "peak": " showed"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.007,
+     "peak": "The"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.095,
+     "peak": " mothers"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.06,
+     "peak": " family"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.017,
+     "peak": "After"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.009,
+     "peak": "The"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.574,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "22db18c81",
+  "minutes": 1,
+  "batch_size": 16
+ },
+ "short": "marriage / betrothal context",
+ "unit_kind": "contextual",
+ "confidence": "medium",
+ "notes": "Probe: 'patriarchal society ... her own husband' 1.007, 'engagement and upcoming marriage' 0.634, 'married woman kept close ties with her own lineage ... husband's village' 0.580, fiancée 0.578, 'lived with the husband's family' 0.457; 'second date to the cinema' 0.316 (courtship leaks); employee engagement 0.005; grandmother baking 0.012.",
+ "selection": "random draw"
+}

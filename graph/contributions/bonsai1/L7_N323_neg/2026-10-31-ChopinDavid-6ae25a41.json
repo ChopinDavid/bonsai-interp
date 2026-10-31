@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-6ae25a41",
+ "kind": "interpret",
+ "neuron": "bonsai1/L7/N323-",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T08:34:27+00:00",
+ "recipe": {
+  "toolchain_commit": "22db18c81",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L7_N323_neg/2026-10-31-ChopinDavid-6ae25a41.tests.json"
+ },
+ "label": "the relative word or participle opening a comma-set-off non-restrictive clause (', which', ', who', ', que', ', qui', ', known as', ', signed in'); restrictive relatives and interrogative which/who do not fire",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L7_N323_neg/2026-10-31-ChopinDavid-6ae25a41.tests.json",
+   "prereg_commit": "22db18c81",
+   "author": "ChopinDavid",
+   "n_fire": 6,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.407,
+     "peak": " which"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.208,
+     "peak": " who"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.667,
+     "peak": " which"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.72,
+     "peak": " known"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.638,
+     "peak": " que"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.442,
+     "peak": " qui"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.269,
+     "peak": " signed"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.356,
+     "peak": " whom"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.025,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.021,
+     "peak": " keeps"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.008,
+     "peak": " knows"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.059,
+     "peak": " known"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.067,
+     "peak": " que"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.034,
+     "peak": " été"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.014,
+     "peak": " signed"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.007,
+     "peak": " had"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "held",
+   "stats": {
+    "auroc": 1.0,
+    "median_fire": 0.424,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "22db18c81",
+  "minutes": 2,
+  "batch_size": 16
+ },
+ "short": "non-restrictive relative opener",
+ "unit_kind": "contextual",
+ "confidence": "high",
+ "notes": "Probe: ', which includes' 0.657, ', known as backcrossing' 0.657, ', que se pondrá' 0.427, ', who worked' 0.326; 'The man who worked' 0.020, 'Books which include' 0.042, 'I wonder who' 0.012, 'Which of these' 0.010; floor 0.011.",
+ "selection": "random draw"
+}

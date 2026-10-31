@@ -1,0 +1,152 @@
+{
+ "id": "2026-10-31-ChopinDavid-dbc61d65",
+ "kind": "interpret",
+ "neuron": "bonsai1/L11/N2588+",
+ "contributor": "ChopinDavid",
+ "created": "2026-10-31T08:35:27+00:00",
+ "recipe": {
+  "toolchain_commit": "22db18c81",
+  "command": "python -m bonsai_interp.graph.play run graph/contributions/bonsai1/L11_N2588_pos/2026-10-31-ChopinDavid-dbc61d65.tests.json"
+ },
+ "label": "the verb or preposition that states a measured change or effect in a reported finding (reduces, lowers, decline in, rise in, so too have fallen); static descriptions and temporal narrative do not fire",
+ "tests": [
+  {
+   "protocol": "quick-8+8@3",
+   "tests_file": "graph/contributions/bonsai1/L11_N2588_pos/2026-10-31-ChopinDavid-dbc61d65.tests.json",
+   "prereg_commit": "22db18c81",
+   "author": "ChopinDavid",
+   "n_fire": 0,
+   "n_false_pos": 0,
+   "n_written": [
+    8,
+    8
+   ],
+   "per_sentence": [
+    {
+     "set": "fire",
+     "i": 0,
+     "act": 0.16,
+     "peak": " lowers"
+    },
+    {
+     "set": "fire",
+     "i": 1,
+     "act": 0.211,
+     "peak": " has"
+    },
+    {
+     "set": "fire",
+     "i": 2,
+     "act": 0.05,
+     "peak": " for"
+    },
+    {
+     "set": "fire",
+     "i": 3,
+     "act": 0.037,
+     "peak": " was"
+    },
+    {
+     "set": "fire",
+     "i": 4,
+     "act": 0.174,
+     "peak": " by"
+    },
+    {
+     "set": "fire",
+     "i": 5,
+     "act": 0.231,
+     "peak": " in"
+    },
+    {
+     "set": "fire",
+     "i": 6,
+     "act": 0.21,
+     "peak": "ens"
+    },
+    {
+     "set": "fire",
+     "i": 7,
+     "act": 0.254,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 0,
+     "act": 0.061,
+     "peak": " town"
+    },
+    {
+     "set": "quiet",
+     "i": 1,
+     "act": 0.057,
+     "peak": " in"
+    },
+    {
+     "set": "quiet",
+     "i": 2,
+     "act": 0.031,
+     "peak": " form"
+    },
+    {
+     "set": "quiet",
+     "i": 3,
+     "act": 0.05,
+     "peak": " was"
+    },
+    {
+     "set": "quiet",
+     "i": 4,
+     "act": 0.022,
+     "peak": " weekend"
+    },
+    {
+     "set": "quiet",
+     "i": 5,
+     "act": 0.055,
+     "peak": " gathered"
+    },
+    {
+     "set": "quiet",
+     "i": 6,
+     "act": 0.024,
+     "peak": " time"
+    },
+    {
+     "set": "quiet",
+     "i": 7,
+     "act": 0.018,
+     "peak": " announced"
+    }
+   ],
+   "probed_before": {
+    "fire": 0,
+    "quiet": 0,
+    "source": "this checkout's .probe-log, before the pre-registration commit"
+   },
+   "outcome": "failed",
+   "stats": {
+    "auroc": 0.883,
+    "median_fire": 0.192,
+    "near_misses_at_0.3": 0
+   }
+  }
+ ],
+ "methods": {
+  "agent": "claude-code fable-5.1",
+  "screens": [
+   "card",
+   "probe",
+   "quick-test"
+  ],
+  "detected": [],
+  "toolchain_commit": "22db18c81",
+  "minutes": 3,
+  "batch_size": 16
+ },
+ "short": "measured change / effect predicate",
+ "unit_kind": "contextual",
+ "confidence": "low",
+ "notes": "Probe: 'getting vaccinated reduces your flu risk' 0.649 on ' reduces', 'significant decline in the abundance' 0.456 on ' in', 'so, too, have overall federal taxes' 0.403 on ' have', 'violated by' 0.370, 'has to do with' 0.258, 'What he denies is' 0.252; 'It's because' only 0.123 (card peak token, but weak in probe); 'met on Tuesday and the definition was read' 0.042; floor 0.043.",
+ "selection": "random draw"
+}
